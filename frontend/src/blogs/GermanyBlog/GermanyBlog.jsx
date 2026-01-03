@@ -139,7 +139,7 @@ const GermanyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Understanding BIS Certification and FMCS
                 </h2>
 
@@ -158,7 +158,7 @@ const GermanyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why German Manufacturers Need BIS Certification
                 </h2>
 
@@ -193,7 +193,7 @@ const GermanyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     The BIS Certification Journey for German Manufacturers
                 </h2>
 
@@ -220,7 +220,7 @@ const GermanyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Documentation and Compliance Requirements
                 </h2>
 
@@ -254,7 +254,7 @@ const GermanyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Challenges German Exporters Face
                 </h2>
 
@@ -277,7 +277,7 @@ const GermanyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why Choose Sun Certification India as Your BIS Partner in Germany
                 </h2>
 
@@ -296,7 +296,7 @@ const GermanyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     The Impact of BIS Certification on Market Success
                 </h2>
 
@@ -311,7 +311,7 @@ const GermanyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

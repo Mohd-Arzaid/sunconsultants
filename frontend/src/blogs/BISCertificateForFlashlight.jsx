@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -191,7 +191,7 @@ const MainContentLeft = () => {
           market meet prescribed safety, quality, and performance benchmarks.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Meaning of BIS Certification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -227,7 +227,7 @@ const MainContentLeft = () => {
           illumination.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Scope of IS 2083:2024
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -241,7 +241,7 @@ const MainContentLeft = () => {
           <li>Emergency and utility flashlights</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Key Areas Covered by the Standard
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -282,7 +282,7 @@ const MainContentLeft = () => {
           <li>Premature failure</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Certification Ensures
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -346,7 +346,7 @@ const MainContentLeft = () => {
           ISI Mark Certification Scheme (Scheme-I) and involves multiple stages.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 1 – Product Identification & Standard Mapping
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -360,7 +360,7 @@ const MainContentLeft = () => {
           <li>Variants and models</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 2 – Online BIS Application
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -375,7 +375,7 @@ const MainContentLeft = () => {
           <li>Manufacturing process information</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 3 – Payment of BIS Fees
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -389,7 +389,7 @@ const MainContentLeft = () => {
           <li>Marking fee</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 4 – Product Testing as per IS 2083:2024
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -415,7 +415,7 @@ const MainContentLeft = () => {
           Test reports are directly submitted to BIS by the laboratory.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 5 – Factory Inspection
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -434,7 +434,7 @@ const MainContentLeft = () => {
           mandatory.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 6 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -450,7 +450,7 @@ const MainContentLeft = () => {
           India.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 7 – Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -470,7 +470,7 @@ const MainContentLeft = () => {
           Documents Required for BIS Certification of Flashlights
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Manufacturing Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -482,7 +482,7 @@ const MainContentLeft = () => {
           <li>Factory layout</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -493,7 +493,7 @@ const MainContentLeft = () => {
           <li>Internal test reports</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -503,7 +503,7 @@ const MainContentLeft = () => {
           <li>Trademark certificate (if applicable)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS-Specific Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">

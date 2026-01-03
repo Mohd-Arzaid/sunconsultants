@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -10,7 +10,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { SlashIcon } from "lucide-react";
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
@@ -195,7 +194,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS Certification?
         </h2>
 
@@ -205,7 +204,7 @@ const MainContentLeft = () => {
           safety and quality standards.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -226,7 +225,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Which BIS Standard Applies to Storage Units? (IS 17634:2022)
         </h2>
 
@@ -244,7 +243,7 @@ const MainContentLeft = () => {
           safe use under daily operational conditions.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Key Requirements of IS 17634:2022
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -267,7 +266,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification for Storage Units is Mandatory
         </h2>
 
@@ -276,7 +275,7 @@ const MainContentLeft = () => {
           Structural failure can result in severe injury or property damage.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Reasons BIS Certification is Required
         </h3>
 
@@ -298,7 +297,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Certification Process for Storage Units (IS 17634:2022)
         </h2>
 
@@ -307,7 +306,7 @@ const MainContentLeft = () => {
           Scheme-I) involving product testing and factory inspection.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 1 – Identify Applicability
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -323,7 +322,7 @@ const MainContentLeft = () => {
           Confirm the correct standard: IS 17634:2022.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 2 – BIS Application Filing
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -338,7 +337,7 @@ const MainContentLeft = () => {
           <li>Process flow diagrams</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 3 – Pay BIS Fees
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">Includes:</p>
@@ -350,7 +349,7 @@ const MainContentLeft = () => {
           <li>Marking fee</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 4 – Product Testing (IS 17634:2022 Requirements)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -373,7 +372,7 @@ const MainContentLeft = () => {
           Test results must reflect full compliance.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 5 – Factory Inspection
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -388,7 +387,7 @@ const MainContentLeft = () => {
           <li>Compliance with Scheme of Testing and Inspection (STI)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 6 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -400,7 +399,7 @@ const MainContentLeft = () => {
           <li>CML Number</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 7 – Post-License Requirements
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -413,7 +412,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Scope of BIS License for Storage Units
         </h2>
 
@@ -434,7 +433,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification of Storage Units
         </h2>
 
@@ -442,7 +441,7 @@ const MainContentLeft = () => {
           Below is the complete list of BIS CERTIFICATION DOCUMENTS:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           1. Manufacturing Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -454,7 +453,7 @@ const MainContentLeft = () => {
           <li>Calibration certificates</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           2. Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -464,7 +463,7 @@ const MainContentLeft = () => {
           <li>Trademark certificate (optional but recommended)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           3. Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -475,7 +474,7 @@ const MainContentLeft = () => {
           <li>Safety features</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           4. BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -492,7 +491,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Testing Requirements for Storage Units (IS 17634:2022)
         </h2>
 
@@ -501,7 +500,7 @@ const MainContentLeft = () => {
           benchmarks.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
           Major Tests Under IS 17634:2022
         </h3>
 
@@ -856,7 +855,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Common Challenges & How to Avoid Them
         </h2>
 
@@ -897,7 +896,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Benefits of BIS Certification for Storage Units
         </h2>
 
@@ -915,7 +914,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Penalties for Non-Compliance
         </h2>
 
@@ -940,7 +939,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Who Needs BIS Certification for Storage Units?
         </h2>
 
@@ -960,7 +959,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why Choose Us for BIS Certification Consulting?
         </h2>
 
@@ -988,7 +987,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
@@ -1010,7 +1009,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           FAQs — BIS Certificate for Storage Units (IS 17634:2022)
         </h2>
 
@@ -1215,6 +1214,19 @@ const MainContentLeft = () => {
           </div>
         </div>
 
+        {/* PDF Viewer Section */}
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src="/BIS-Product-Pdf/IS-17634-2022-Sun-Certifications-India.pdf"
+            title="BIS Certificate for Storage Unit - IS 17634:2022 PDF"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        </div>
+
         <ManyUsersAlsoRead />
 
         <FaqAuthorEng questionNumber={3} />
@@ -1238,7 +1250,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
+                India&apos;s Best Certificate Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>

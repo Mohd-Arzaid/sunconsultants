@@ -186,7 +186,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                 </p>
 
                 {/* What is BIS Certificate Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     What is BIS?
                 </h2>
 
@@ -196,7 +196,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                     and consumer safety through standardization.
                 </p>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     What is BIS Certificate?
                 </h2>
 
@@ -234,7 +234,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Next Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Overview of IS 17634:2022
                 </h2>
 
@@ -292,7 +292,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* BIS Certification Process Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     End-Use Applications of BIS-Certified Storage Units
                 </h2>
 
@@ -349,7 +349,7 @@ const StorageUnitsBlogMainContentLeft = () => {
 
 
                 {/* Step 3 */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     BIS Certification Process for Storage Units
                 </h3>
 
@@ -358,7 +358,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                 </p>
 
                 {/* Step 4 */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 1: BIS Application
                 </h3>
 
@@ -367,7 +367,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                 </p>
 
                 {/* Step 5 */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 2: Submission of Documents
                 </h3>
 
@@ -426,7 +426,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                     These Documents for BIS Certification are critical for approval.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 3: Product Testing
                 </h3>
 
@@ -434,7 +434,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                     Samples of storage units are tested in BIS-recognized laboratories to evaluate design, strength, durability, and load-bearing capacity.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 4: Factory Inspection
                 </h3>
 
@@ -442,7 +442,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                     A BIS officer visits the manufacturing unit to verify compliance with BIS Standards.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 5: Grant of BIS Certificate
                 </h3>
 
@@ -464,7 +464,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* BIS Certificate Registration Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Cost of BIS Certification
                 </h2>
 
@@ -513,7 +513,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Cost of BIS Certification Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     BIS Consultants in India
                 </h2>
 
@@ -588,7 +588,7 @@ const StorageUnitsBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* BIS Consultants Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

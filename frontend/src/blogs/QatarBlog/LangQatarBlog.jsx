@@ -145,7 +145,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           فهم شهادة BIS ونظام FMCS
         </h2>
 
@@ -180,7 +180,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           لماذا تعتبر شهادة BIS ضرورية لمصدري قطر
         </h2>
 
@@ -241,7 +241,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           الصناعات في قطر التي تتطلب شهادة BIS
         </h2>
 
@@ -303,7 +303,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           دور الممثل الهندي المعتمد (AIR)
         </h2>
 
@@ -340,7 +340,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           عملية شهادة BIS لمصنعي قطر
         </h2>
 
@@ -355,7 +355,7 @@ const LangQatarBlogMainContentLeft = () => {
           إليك نظرة تفصيلية على العملية:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 1: تقديم الطلب
         </h3>
 
@@ -364,7 +364,7 @@ const LangQatarBlogMainContentLeft = () => {
           تفاصيل الشركة ومعلومات المنتج والمستندات الداعمة.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 2: تعيين الممثل الهندي المعتمد (AIR)
         </h3>
 
@@ -373,7 +373,7 @@ const LangQatarBlogMainContentLeft = () => {
           التعاملات مع BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 3: اختبار المنتج
         </h3>
 
@@ -383,7 +383,7 @@ const LangQatarBlogMainContentLeft = () => {
           يلبي متطلبات السلامة والأداء والجودة.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 4: تفتيش المصنع
         </h3>
 
@@ -392,7 +392,7 @@ const LangQatarBlogMainContentLeft = () => {
           أنظمة الإنتاج وقدرات الاختبار وإجراءات مراقبة الجودة.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 5: المراجعة والموافقة
         </h3>
 
@@ -401,7 +401,7 @@ const LangQatarBlogMainContentLeft = () => {
           إذا كان المنتج يتوافق مع المعايير المحددة، يتم منح الشهادة.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 6: منح ترخيص BIS
         </h3>
 
@@ -410,7 +410,7 @@ const LangQatarBlogMainContentLeft = () => {
           المعتمدة.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 7: المراقبة المستمرة
         </h3>
 
@@ -428,7 +428,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           المستندات المطلوبة لشهادة BIS في قطر
         </h2>
 
@@ -458,7 +458,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           التحديات التي يواجهها مصدرو قطر مع شهادة BIS
         </h2>
 
@@ -511,7 +511,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           كيف تدعم Sun Certifications India الشركات القطرية
         </h2>
 
@@ -574,7 +574,7 @@ const LangQatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           الخلاصة
         </h2>
 

@@ -152,7 +152,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Understanding BIS Certification and the FMCS Scheme
         </h2>
 
@@ -190,7 +190,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Essential for Bahraini Exporters
         </h2>
 
@@ -253,7 +253,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Industries in Bahrain That Require BIS Certification
         </h2>
 
@@ -317,7 +317,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Role of the Authorized Indian Representative (AIR)
         </h2>
 
@@ -368,7 +368,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Certification Process for Bahrain Manufacturers
         </h2>
 
@@ -379,7 +379,7 @@ const BahrainBlogMainContentLeft = () => {
           professional certification partner can make the process seamless.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 1: Application Submission
         </h3>
 
@@ -389,7 +389,7 @@ const BahrainBlogMainContentLeft = () => {
           specifications, and production processes.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 2: Appointment of Authorized Indian Representative (AIR)
         </h3>
 
@@ -398,7 +398,7 @@ const BahrainBlogMainContentLeft = () => {
           manufacturer for all BIS-related correspondence.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 3: Product Testing
         </h3>
 
@@ -408,7 +408,7 @@ const BahrainBlogMainContentLeft = () => {
           (IS). Test reports form a critical part of the certification process.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 4: Factory Inspection
         </h3>
 
@@ -418,7 +418,7 @@ const BahrainBlogMainContentLeft = () => {
           assurance procedures, and overall compliance with BIS requirements.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 5: Evaluation of Test and Inspection Reports
         </h3>
 
@@ -427,7 +427,7 @@ const BahrainBlogMainContentLeft = () => {
           production process meet the required quality and safety parameters.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 6: Grant of BIS License
         </h3>
 
@@ -436,7 +436,7 @@ const BahrainBlogMainContentLeft = () => {
           manufacturer to use the ISI Mark on the product.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 7: Surveillance and Renewal
         </h3>
 
@@ -449,7 +449,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification in Bahrain
         </h2>
 
@@ -492,7 +492,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Challenges Bahrain Exporters Face with BIS Certification
         </h2>
 
@@ -552,7 +552,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           How Sun Certifications India Supports Bahrain Businesses
         </h2>
 
@@ -625,7 +625,7 @@ const BahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 

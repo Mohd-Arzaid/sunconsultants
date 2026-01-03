@@ -160,7 +160,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Cos&apos;è la Certificazione BIS?
         </h2>
 
@@ -189,12 +189,12 @@ const LangItalyBlogMainContentLeft = () => {
           schemi principali:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. Schema di Certificazione per Produttori Nazionali (Schema-I) – per
           i produttori indiani.
         </h3>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. Schema di Certificazione per Produttori Stranieri (FMCS) – per i
           produttori esteri che esportano prodotti in India.
         </h3>
@@ -202,7 +202,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Comprendere il BIS FMCS (Schema di Certificazione per Produttori
           Stranieri)
         </h2>
@@ -255,7 +255,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Perché la Certificazione BIS è Essenziale per gli Esportatori Italiani
         </h2>
 
@@ -296,7 +296,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Industrie in Italia che Richiedono la Certificazione BIS
         </h2>
 
@@ -377,7 +377,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Ruolo del Rappresentante Indiano Autorizzato (AIR)
         </h2>
 
@@ -425,7 +425,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Processo di Certificazione BIS per i Produttori Italiani
         </h2>
 
@@ -441,7 +441,7 @@ const LangItalyBlogMainContentLeft = () => {
           Le fasi chiave includono:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. Preparazione e Presentazione della Domanda
         </h3>
 
@@ -452,7 +452,7 @@ const LangItalyBlogMainContentLeft = () => {
           flusso del processo.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. Nomina del Rappresentante Indiano Autorizzato (AIR)
         </h3>
 
@@ -462,7 +462,7 @@ const LangItalyBlogMainContentLeft = () => {
           processo di certificazione.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. Audit della Fabbrica da Parte dei Funzionari BIS
         </h3>
 
@@ -472,7 +472,7 @@ const LangItalyBlogMainContentLeft = () => {
           qualità, le materie prime e l&apos;aderenza agli standard BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. Test del Prodotto
         </h3>
 
@@ -482,7 +482,7 @@ const LangItalyBlogMainContentLeft = () => {
           Indiano pertinente.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. Valutazione e Approvazione
         </h3>
 
@@ -492,7 +492,7 @@ const LangItalyBlogMainContentLeft = () => {
           sotto lo schema FMCS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. Uso del Marchio ISI
         </h3>
 
@@ -501,7 +501,7 @@ const LangItalyBlogMainContentLeft = () => {
           certificati e sull&apos;imballaggio, confermando la conformità BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           7. Rinnovo e Audit di Sorveglianza
         </h3>
 
@@ -519,7 +519,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documenti Richiesti per la Certificazione BIS in Italia
         </h2>
 
@@ -560,7 +560,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Sfide che gli Esportatori Italiani Affrontano con la Certificazione
           BIS
         </h2>
@@ -609,7 +609,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Come Sun Certifications India Supporta le Aziende Italiane
         </h2>
 
@@ -665,7 +665,7 @@ const LangItalyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusione
         </h2>
 

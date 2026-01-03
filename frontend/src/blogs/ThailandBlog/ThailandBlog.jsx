@@ -155,7 +155,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS Certification? Understanding BIS FMCS
         </h2>
 
@@ -201,7 +201,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Essential for Thailand Exporters
         </h2>
 
@@ -280,7 +280,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Industries in Thailand That Require BIS Certification
         </h2>
 
@@ -355,7 +355,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Role of Authorized Indian Representative (AIR)
         </h2>
 
@@ -388,7 +388,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Certification Process for Thailand Manufacturers
         </h2>
 
@@ -401,7 +401,7 @@ const ThailandBlogMainContentLeft = () => {
           Here&apos;s how the process typically unfolds:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. Identify Applicable Indian Standard (IS)
         </h3>
 
@@ -410,7 +410,7 @@ const ThailandBlogMainContentLeft = () => {
           product category. Each product type is governed by a unique IS code.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. Appointment of Authorized Indian Representative (AIR)
         </h3>
 
@@ -419,7 +419,7 @@ const ThailandBlogMainContentLeft = () => {
           documentation, and certification activities in India.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. Submission of Application
         </h3>
 
@@ -429,7 +429,7 @@ const ThailandBlogMainContentLeft = () => {
           and quality control details.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. Factory Inspection by BIS Officials
         </h3>
 
@@ -439,7 +439,7 @@ const ThailandBlogMainContentLeft = () => {
           norms.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. Product Sampling and Testing
         </h3>
 
@@ -449,7 +449,7 @@ const ThailandBlogMainContentLeft = () => {
           applicable Indian Standards.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. Grant of License
         </h3>
 
@@ -459,7 +459,7 @@ const ThailandBlogMainContentLeft = () => {
           on their products.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           7. Post-Certification Compliance
         </h3>
 
@@ -477,7 +477,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification in Thailand
         </h2>
 
@@ -508,7 +508,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Challenges Thailand Exporters Face with BIS Certification
         </h2>
 
@@ -574,7 +574,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           How Sun Certifications India Supports Thailand Businesses
         </h2>
 
@@ -608,7 +608,7 @@ const ThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 

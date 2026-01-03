@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import {
@@ -10,7 +10,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { SlashIcon } from "lucide-react";
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
@@ -180,7 +179,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS Certification?
         </h2>
 
@@ -189,7 +188,7 @@ const MainContentLeft = () => {
           Bureau of Indian Standards, the national standards authority of India.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           What is BIS Certificate?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -199,7 +198,7 @@ const MainContentLeft = () => {
           Mark.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -221,7 +220,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Standard Applicable for Beds – IS 17635:2022
         </h2>
 
@@ -238,7 +237,7 @@ const MainContentLeft = () => {
           for beds used in residential and commercial environments.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           IS 17635:2022 Covers
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -260,7 +259,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Mandatory for Beds
         </h2>
 
@@ -270,7 +269,7 @@ const MainContentLeft = () => {
           long-term health risks.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Reasons BIS Certification for Beds is Required
         </h3>
 
@@ -293,7 +292,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Certification Process for Beds (IS 17635:2022)
         </h2>
 
@@ -302,7 +301,7 @@ const MainContentLeft = () => {
           under the ISI Certification Scheme.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 1 – Identify Standard & Product Scope
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -310,7 +309,7 @@ const MainContentLeft = () => {
           variants.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 2 – BIS Application (Online)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -324,7 +323,7 @@ const MainContentLeft = () => {
           <li>Quality control details</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 3 – BIS Certification Fees
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -338,7 +337,7 @@ const MainContentLeft = () => {
           <li>Marking fees</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 4 – Product Testing
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -356,7 +355,7 @@ const MainContentLeft = () => {
           <li>Edge safety test</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 5 – Factory Inspection
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -370,7 +369,7 @@ const MainContentLeft = () => {
           <li>Testing equipment</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 6 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -382,7 +381,7 @@ const MainContentLeft = () => {
           <li>CML number</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 7 – Post-Certification Compliance
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -394,7 +393,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Scope of BIS License for Beds
         </h2>
 
@@ -420,7 +419,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification of Beds
         </h2>
 
@@ -428,7 +427,7 @@ const MainContentLeft = () => {
           Here is a complete list of BIS Certificate Documents:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -441,7 +440,7 @@ const MainContentLeft = () => {
           <li>Quality control plan</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -451,7 +450,7 @@ const MainContentLeft = () => {
           <li>Trademark certificate (if applicable)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -464,7 +463,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Testing Requirements for Beds (IS 17635:2022)
         </h2>
 
@@ -472,7 +471,7 @@ const MainContentLeft = () => {
           Beds must undergo rigorous testing to ensure compliance.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
           Mandatory Tests
         </h3>
 
@@ -556,7 +555,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Common Challenges & How to Avoid Them
         </h2>
 
@@ -586,7 +585,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Benefits of BIS Certification for Beds
         </h2>
 
@@ -603,7 +602,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Penalties for Non-Compliance
         </h2>
 
@@ -622,7 +621,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Who Needs BIS Certificate for Beds?
         </h2>
 
@@ -646,7 +645,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why Choose Us for BIS Certification for Beds?
         </h2>
 
@@ -668,7 +667,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
@@ -683,7 +682,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           FAQs – BIS Certificate for Beds
         </h2>
 
@@ -763,6 +762,19 @@ const MainContentLeft = () => {
           </div>
         </div>
 
+        {/* PDF Viewer Section */}
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src="/BIS-Product-Pdf/IS-17635-2022-Sun-Certifications-India.pdf"
+            title="BIS Certificate for Beds - IS 17635:2022 PDF"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        </div>
+
         <ManyUsersAlsoRead />
 
         <FaqAuthorEng questionNumber={1} />
@@ -786,7 +798,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
+                India&apos;s Best Certificate Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>

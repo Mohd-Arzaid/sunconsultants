@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -187,7 +187,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS Certification?
         </h2>
 
@@ -198,7 +198,7 @@ const MainContentLeft = () => {
           under the BIS Act, 2016.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -209,7 +209,7 @@ const MainContentLeft = () => {
           and approved through a defined certification process.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Mark / ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -219,7 +219,7 @@ const MainContentLeft = () => {
           Standard and is safe for use.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Why BIS Exists
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -236,12 +236,12 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Applicable BIS Standard for Storage Water Tank for All Glass Evacuated
           Tubes Solar Water Heating Systems
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           IS 16542:2016 – Indian Standard Explained
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -261,7 +261,7 @@ const MainContentLeft = () => {
           <li>Structural integrity under operating conditions</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -274,7 +274,7 @@ const MainContentLeft = () => {
           <li>Deliver safe and hygienic hot water</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -289,12 +289,12 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Mandatory for Storage Water Tank for All
           Glass Evacuated Tubes Solar Water Heating Systems
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           1. Consumer Safety Risks
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -303,7 +303,7 @@ const MainContentLeft = () => {
           BIS certification minimizes these risks.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           2. Government Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -311,7 +311,7 @@ const MainContentLeft = () => {
           products cannot be legally sold in India.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           3. Legal Implications
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -319,7 +319,7 @@ const MainContentLeft = () => {
           goods, and prosecution under the BIS Act, 2016.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           4. Market & Brand Benefits
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -331,12 +331,12 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Step-by-Step BIS Certification Process for Storage Water Tank for All
           Glass Evacuated Tubes Solar Water Heating Systems
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -345,7 +345,7 @@ const MainContentLeft = () => {
           application.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -362,7 +362,7 @@ const MainContentLeft = () => {
           This step formally initiates the BIS certificate registration process.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Fees & Cost Structure
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -380,7 +380,7 @@ const MainContentLeft = () => {
           capacity variants, and testing scope.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Product Sample Testing
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -388,7 +388,7 @@ const MainContentLeft = () => {
           16542:2016.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -401,7 +401,7 @@ const MainContentLeft = () => {
           <li>Testing facilities</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -410,7 +410,7 @@ const MainContentLeft = () => {
           storage tanks.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -426,7 +426,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Scope of BIS License as per IS 16542:2016
         </h2>
 
@@ -455,11 +455,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -469,7 +469,7 @@ const MainContentLeft = () => {
           <li>Quality control plan</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -478,7 +478,7 @@ const MainContentLeft = () => {
           <li>Trademark authorization (if applicable)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -488,7 +488,7 @@ const MainContentLeft = () => {
           <li>Installation and user manual</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Application Documents 
         </h3> 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -504,7 +504,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Testing Requirements as per IS 16542:2016
         </h2>
 
@@ -527,11 +527,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Common Challenges & How to Avoid Them
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Design Non-Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -539,7 +539,7 @@ const MainContentLeft = () => {
           production.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Test Failures
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -547,7 +547,7 @@ const MainContentLeft = () => {
           or materials.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Documentation Gaps
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -558,11 +558,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Benefits of BIS Certification for Manufacturers & Importers
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -570,7 +570,7 @@ const MainContentLeft = () => {
           <li>Smooth customs clearance</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -578,7 +578,7 @@ const MainContentLeft = () => {
           <li>Wider market acceptance</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -586,7 +586,7 @@ const MainContentLeft = () => {
           <li>Enhanced brand reputation</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Market Expansion
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -596,7 +596,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Who Needs BIS Certification for Storage Water Tank for All Glass
           Evacuated Tubes Solar Water Heating Systems?
         </h2>
@@ -617,7 +617,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why Choose Us for BIS Certification Consulting?
         </h2>
 
@@ -639,7 +639,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
@@ -665,7 +665,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           FAQs – BIS Certification for Storage Water Tank for All Glass
           Evacuated Tubes Solar Water Heating Systems
         </h2>

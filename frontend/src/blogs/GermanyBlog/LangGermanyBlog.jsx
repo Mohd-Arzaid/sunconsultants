@@ -155,7 +155,7 @@ const LangGermanyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS-Zertifizierung und FMCS verstehen
         </h2>
 
@@ -188,7 +188,7 @@ const LangGermanyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Warum deutsche Hersteller eine BIS-Zertifizierung benötigen
         </h2>
 
@@ -246,7 +246,7 @@ const LangGermanyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Der BIS-Zertifizierungsweg für deutsche Hersteller
         </h2>
 
@@ -299,7 +299,7 @@ const LangGermanyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Dokumentations- und Konformitätsanforderungen
         </h2>
 
@@ -343,7 +343,7 @@ const LangGermanyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Herausforderungen für deutsche Exporteure
         </h2>
 
@@ -380,7 +380,7 @@ const LangGermanyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Warum Sun Certification India als Ihr BIS-Partner in Deutschland
           wählen
         </h2>
@@ -415,7 +415,7 @@ const LangGermanyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Der Einfluss der BIS-Zertifizierung auf den Markterfolg
         </h2>
 
@@ -441,7 +441,7 @@ const LangGermanyBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Fazit
         </h2>
 

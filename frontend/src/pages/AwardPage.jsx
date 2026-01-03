@@ -67,7 +67,7 @@ const MetaTags = () => {
   const ogTitle = "Awards & Recognition | Sun Certifications India";
   const twitterTitle = "Awards & Recognition — Sun Certifications India";
   const metaDescription =
-    "Explore awards and recognition certificates received by Sun Certifications India for excellence in BIS certification services, including recognition from Footwear India Expo and Agra Footwear Conclave.";
+    "Explore awards and recognition certificates received by Sun Certifications India for excellence in BIS certification services.";
   const ogDescription =
     "Sun Certifications India has been recognized and awarded for outstanding contributions to BIS certification services. View our collection of awards and recognition certificates from industry events and organizations.";
   const twitterDescription =

@@ -135,7 +135,7 @@ const SpainBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Understanding BIS Certification and Its Importance
                 </h2>
 
@@ -174,7 +174,7 @@ const SpainBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why BIS Certification Matters for Spanish Manufacturers
                 </h2>
 
@@ -212,7 +212,7 @@ const SpainBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     The FMCS Certification Process for Spanish Exporters
                 </h2>
 
@@ -224,7 +224,7 @@ const SpainBlogMainContentLeft = () => {
                     Here&apos;s how the process unfolds for Spanish businesses:
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     1. Application Filing
                 </h3>
 
@@ -232,7 +232,7 @@ const SpainBlogMainContentLeft = () => {
                     The process begins with submitting an application to BIS along with all required documentation, including product specifications, business details, and compliance records.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     2. Document Review
                 </h3>
 
@@ -240,7 +240,7 @@ const SpainBlogMainContentLeft = () => {
                     The BIS authority evaluates the submitted application and may request clarifications or additional documents.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     3. Product Testing
                 </h3>
 
@@ -248,7 +248,7 @@ const SpainBlogMainContentLeft = () => {
                     Samples of the product are sent to BIS-recognized laboratories in India for rigorous testing. These labs verify compliance with Indian standards across safety, quality, and performance parameters.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     4. Factory Inspection
                 </h3>
 
@@ -256,7 +256,7 @@ const SpainBlogMainContentLeft = () => {
                     A BIS officer may conduct an on-site audit of the Spanish manufacturing facility. This inspection ensures that production capabilities, quality management systems, and processes meet Indian regulatory expectations.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     5. Certification Approval
                 </h3>
 
@@ -267,7 +267,7 @@ const SpainBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Documents Required for BIS Certification from Spain
                 </h2>
 
@@ -304,7 +304,7 @@ const SpainBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Challenges Faced by Spanish Manufacturers
                 </h2>
 
@@ -338,7 +338,7 @@ const SpainBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     How Sun Certification India Helps Spanish Manufacturers
                 </h2>
 
@@ -379,7 +379,7 @@ const SpainBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     The Strategic Advantage of BIS Certification
                 </h2>
 
@@ -410,7 +410,7 @@ const SpainBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

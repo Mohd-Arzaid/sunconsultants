@@ -140,7 +140,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     What is BIS Certification?
                 </h2>
 
@@ -156,18 +156,18 @@ const ItalyBlogMainContentLeft = () => {
                     The BIS certification covers a wide range of products — including electrical appliances, electronic goods, construction materials, chemicals, automotive components, medical devices, and industrial machinery. Depending on the product category, BIS offers two main schemes:
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     1. Domestic Manufacturers Certification Scheme (Scheme-I) – for Indian manufacturers.
                 </h3>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     2. Foreign Manufacturers Certification Scheme (FMCS) – for overseas manufacturers who export products to India.
                 </h3>
 
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Understanding BIS FMCS (Foreign Manufacturers Certification Scheme)
                 </h2>
 
@@ -206,7 +206,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why BIS Certification is Essential for Italian Exporters
                 </h2>
 
@@ -229,7 +229,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Industries in Italy That Require BIS Certification
                 </h2>
 
@@ -269,7 +269,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Role of Authorized Indian Representative (AIR)
                 </h2>
 
@@ -308,7 +308,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     BIS Certification Process for Italian Manufacturers
                 </h2>
 
@@ -320,7 +320,7 @@ const ItalyBlogMainContentLeft = () => {
                     The key steps include:
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     1. Application Preparation and Submission
                 </h3>
 
@@ -328,7 +328,7 @@ const ItalyBlogMainContentLeft = () => {
                     The manufacturer must identify the applicable Indian Standard (IS) and submit an online application through the BIS portal, accompanied by required technical documents, product details, and process flow diagrams.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     2. Nomination of Authorized Indian Representative (AIR)
                 </h3>
 
@@ -336,7 +336,7 @@ const ItalyBlogMainContentLeft = () => {
                     Before filing, the manufacturer must officially designate an AIR who will act as the liaison throughout the certification process.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     3. Factory Audit by BIS Officials
                 </h3>
 
@@ -344,7 +344,7 @@ const ItalyBlogMainContentLeft = () => {
                     A BIS inspection team visits the manufacturing facility in Italy to verify production capabilities, quality control systems, raw materials, and adherence to BIS standards.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     4. Product Testing
                 </h3>
 
@@ -352,7 +352,7 @@ const ItalyBlogMainContentLeft = () => {
                     Samples are collected during the audit and sent to BIS-recognized laboratories in India for testing according to the relevant Indian Standard.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     5. Evaluation and Approval
                 </h3>
 
@@ -360,7 +360,7 @@ const ItalyBlogMainContentLeft = () => {
                     Once the test reports and inspection findings are deemed satisfactory, BIS grants the license to the manufacturer under the FMCS scheme.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     6. Use of the ISI Mark
                 </h3>
 
@@ -368,7 +368,7 @@ const ItalyBlogMainContentLeft = () => {
                     The manufacturer can then affix the ISI mark on certified products and packaging, confirming BIS compliance.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     7. Renewal and Surveillance Audits
                 </h3>
 
@@ -383,7 +383,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Documents Required for BIS Certification in Italy
                 </h2>
 
@@ -423,7 +423,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Challenges Italian Exporters Face with BIS Certification
                 </h2>
 
@@ -457,7 +457,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     How Sun Certifications India Supports Italian Businesses
                 </h2>
 
@@ -495,7 +495,7 @@ const ItalyBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

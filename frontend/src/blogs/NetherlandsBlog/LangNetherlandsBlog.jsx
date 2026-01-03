@@ -153,7 +153,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Wat is BIS-certificering? BIS FMCS begrijpen
         </h2>
 
@@ -209,7 +209,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Waarom BIS-certificering essentieel is voor Nederlandse exporteurs
         </h2>
 
@@ -288,7 +288,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Industrieën in Nederland die BIS-certificering vereisen
         </h2>
 
@@ -359,7 +359,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Rol van Geautoriseerde Indiase Vertegenwoordiger (AIR)
         </h2>
 
@@ -399,7 +399,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS-certificeringsproces voor Nederlandse fabrikanten
         </h2>
 
@@ -410,7 +410,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
           Nederland:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. Identificeer toepasselijke Indiase norm (IS)
         </h3>
 
@@ -419,7 +419,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
           producttype heeft een overeenkomstige IS-code gedefinieerd door BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. Stel Geautoriseerde Indiase Vertegenwoordiger (AIR) aan
         </h3>
 
@@ -428,7 +428,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
           het bedrijf wettelijk te vertegenwoordigen bij BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. Dien de aanvraag in
         </h3>
 
@@ -438,7 +438,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
           wordt ingediend bij het BIS-hoofdkantoor in India.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. Fabrieksinspectie
         </h3>
 
@@ -448,7 +448,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
           normen te verifiëren.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. Producttesten
         </h3>
 
@@ -458,7 +458,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
           voldoen aan de specifieke IS (Indiase norm) standaard.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. Verlening van licentie
         </h3>
 
@@ -469,7 +469,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
           producten te gebruiken.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           7. Post-certificeringstoezicht
         </h3>
 
@@ -478,7 +478,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
           voortdurende naleving van de normen te waarborgen.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Procesduur
         </h3>
 
@@ -500,7 +500,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Vereiste documenten voor BIS-certificering in Nederland
         </h2>
 
@@ -537,7 +537,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Uitdagingen waarmee Nederlandse exporteurs worden geconfronteerd bij
           BIS-certificering
         </h2>
@@ -602,7 +602,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Hoe Sun Certifications India Nederlandse bedrijven ondersteunt
         </h2>
 
@@ -651,7 +651,7 @@ const LangNetherlandsBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusie
         </h2>
 

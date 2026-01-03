@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -183,7 +183,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS Certification?
         </h2>
 
@@ -192,7 +192,7 @@ const MainContentLeft = () => {
           Bureau of Indian Standards, the national standards authority of India.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -214,7 +214,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Applicable Standard – IS 17632:2022 for Chairs & Stools
         </h2>
 
@@ -233,7 +233,7 @@ const MainContentLeft = () => {
           places, and institutional settings.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Products Covered Under IS 17632:2022
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -254,7 +254,7 @@ const MainContentLeft = () => {
           <li>Step stools (within defined criteria)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Key Safety & Performance Parameters
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -281,7 +281,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Mandatory for Chairs & Stools
         </h2>
 
@@ -299,7 +299,7 @@ const MainContentLeft = () => {
           <li>Instability leading to falls</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Benefits of BIS Certification
         </h3>
 
@@ -321,7 +321,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Certification Process for Chairs and Stools (IS 17632:2022)
         </h2>
 
@@ -330,7 +330,7 @@ const MainContentLeft = () => {
           testing, inspection, and application verification.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 1 – Identify Product Type & Standard
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -338,7 +338,7 @@ const MainContentLeft = () => {
           design variants and materials used.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 2 – Submit BIS Application Online
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -352,7 +352,7 @@ const MainContentLeft = () => {
           <li>Manufacturing process workflow</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 3 – Pay BIS Certification Fees
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">Fees include:</p>
@@ -364,7 +364,7 @@ const MainContentLeft = () => {
           <li>Marking fees</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 4 – Product Testing as per IS 17632:2022
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -389,7 +389,7 @@ const MainContentLeft = () => {
           Test results must show full compliance with IS 17632:2022.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 5 – Factory Inspection by BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -405,7 +405,7 @@ const MainContentLeft = () => {
           <li>Compliance with BIS Scheme of Testing & Inspection (STI)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 6 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -417,7 +417,7 @@ const MainContentLeft = () => {
           <li>Approval to affix the ISI Mark on chairs and stools</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 7 – Post-License Obligations
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -433,7 +433,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Scope of BIS License for Chairs & Stools
         </h2>
 
@@ -448,11 +448,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification of Chairs & Stools
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -464,7 +464,7 @@ const MainContentLeft = () => {
           <li>Factory layout & floor plan</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -475,7 +475,7 @@ const MainContentLeft = () => {
           <li>Internal quality test reports</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -484,7 +484,7 @@ const MainContentLeft = () => {
           <li>Trademark certificate (optional)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -497,7 +497,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Testing Requirements for Chairs & Stools (IS 17632:2022)
         </h2>
 
@@ -506,7 +506,7 @@ const MainContentLeft = () => {
           testing.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
           Mandatory Tests
         </h3>
 
@@ -583,7 +583,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Common Challenges & How to Avoid Them
         </h2>
 
@@ -620,7 +620,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Benefits of BIS Certification for Chairs & Stools
         </h2>
 
@@ -638,7 +638,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Penalties for Non-Compliance
         </h2>
 
@@ -662,7 +662,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Who Needs BIS Certification for Chairs & Stools?
         </h2>
 
@@ -687,7 +687,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
@@ -708,7 +708,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           FAQs – BIS Certificate for Chairs and Stools
         </h2>
 
@@ -800,6 +800,19 @@ const MainContentLeft = () => {
               drawings, etc.
             </p>
           </div>
+        </div>
+
+        {/* PDF Viewer Section */}
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src="/BIS-Product-Pdf/IS-17632-2022-Sun-Certifications-India.pdf"
+            title="BIS Certificate for Chair & Stools - IS 17632:2022 PDF"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
         </div>
 
         <ManyUsersAlsoRead />

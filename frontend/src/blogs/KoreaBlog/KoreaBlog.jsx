@@ -140,7 +140,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     What is BIS Certification? Understanding BIS FMCS
                 </h2>
 
@@ -183,7 +183,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why BIS Certification is Essential for Korean Exporters
                 </h2>
 
@@ -214,7 +214,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Industries in Korea That Require BIS Certification
                 </h2>
 
@@ -254,7 +254,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Role of Authorized Indian Representative (AIR)
                 </h2>
 
@@ -289,7 +289,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     BIS Certification Process for Korean Manufacturers
                 </h2>
 
@@ -297,7 +297,7 @@ const KoreaBlogMainContentLeft = () => {
                     The BIS certification process for Korean exporters under the FMCS scheme involves several key stages. While it may seem detailed, each step ensures that products meet Indian quality standards before reaching consumers.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     1. Application Preparation:
                 </h3>
 
@@ -305,7 +305,7 @@ const KoreaBlogMainContentLeft = () => {
                     The manufacturer identifies the relevant Indian Standard (IS) applicable to their product and prepares the application form with complete technical details.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     2. Appointment of AIR:
                 </h3>
 
@@ -313,7 +313,7 @@ const KoreaBlogMainContentLeft = () => {
                     Before submitting the application, the Korean manufacturer must appoint an Authorized Indian Representative who will handle all interactions with BIS on their behalf.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     3. Submission and Review:
                 </h3>
 
@@ -321,7 +321,7 @@ const KoreaBlogMainContentLeft = () => {
                     The application, along with required documents, is submitted to BIS. The authority reviews it for completeness and accuracy.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     4. Factory Inspection:
                 </h3>
 
@@ -329,7 +329,7 @@ const KoreaBlogMainContentLeft = () => {
                     BIS officials visit the manufacturing facility in Korea to assess the production process, equipment, and quality control measures. This ensures the manufacturer's capability to produce consistently compliant products.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     5. Product Testing:
                 </h3>
 
@@ -337,7 +337,7 @@ const KoreaBlogMainContentLeft = () => {
                     During or after the audit, product samples are drawn and sent to BIS-recognized laboratories in India for testing as per the specified Indian Standard.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     6. Evaluation and Grant of License:
                 </h3>
 
@@ -345,7 +345,7 @@ const KoreaBlogMainContentLeft = () => {
                     If the audit and testing results are satisfactory, BIS grants the certification license, allowing the use of the ISI mark on the product and packaging.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     7. Post-Certification Surveillance:
                 </h3>
 
@@ -360,7 +360,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Documents Required for BIS Certification in Korea
                 </h2>
 
@@ -403,7 +403,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Challenges Korean Exporters Face with BIS Certification
                 </h2>
 
@@ -430,7 +430,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     How Sun Certifications India Supports Korean Businesses
                 </h2>
 
@@ -472,7 +472,7 @@ const KoreaBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

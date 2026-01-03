@@ -175,7 +175,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Understanding BIS FMCS Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Understanding BIS FMCS
                 </h2>
 
@@ -210,7 +210,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Why BIS Certification is Essential Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why BIS Certification is Essential for Indonesian Exporters
                 </h2>
 
@@ -243,7 +243,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* The Role of AIR Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     The Role of an Authorized Indian Representative (AIR)
                 </h2>
 
@@ -274,7 +274,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Challenges Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Challenges Indonesian Exporters Face with BIS Certification
                 </h2>
 
@@ -328,7 +328,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Industries Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Industries in Indonesia That Require BIS Certification
                 </h2>
 
@@ -387,7 +387,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Long-Term Benefits Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Long-Term Benefits of BIS Certification
                 </h2>
 
@@ -428,7 +428,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Why Sun Certifications India Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why Sun Certifications India is the Trusted Partner in Indonesia
                 </h2>
 
@@ -458,7 +458,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* How Sun Certifications India Supports Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     How Sun Certifications India Supports Indonesian Businesses
                 </h2>
 
@@ -490,7 +490,7 @@ const IndonesiaBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Conclusion Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

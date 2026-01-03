@@ -137,7 +137,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS認証とは？BIS FMCSの理解
         </h2>
 
@@ -176,7 +176,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           日本の輸出業者にとってBIS認証が不可欠な理由
         </h2>
 
@@ -215,7 +215,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS認証を必要とする日本の産業
         </h2>
 
@@ -264,7 +264,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           インド代理人（AIR）の役割
         </h2>
 
@@ -297,7 +297,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           日本の製造業者のためのBIS認証プロセス
         </h2>
 
@@ -305,7 +305,7 @@ const LangJapanBlogMainContentLeft = () => {
           FMCSの下でのBIS認証プロセスは、必要なインド規格への準拠を確認するための体系的なアプローチに従います。日本の製造業者にとって、主要な段階には以下が含まれます：
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. 申請の提出：
         </h3>
 
@@ -313,7 +313,7 @@ const LangJapanBlogMainContentLeft = () => {
           製造業者は、製品に適用されるインド規格（IS）を特定し、必要な技術的詳細、工場情報、プロセス文書とともにBISに申請を提出します。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. AIRの任命：
         </h3>
 
@@ -321,7 +321,7 @@ const LangJapanBlogMainContentLeft = () => {
           申請提出前に、製造業者は、プロセス全体を通じてBISと対話するインド代理人を任命する必要があります。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. 工場監査：
         </h3>
 
@@ -329,7 +329,7 @@ const LangJapanBlogMainContentLeft = () => {
           BIS当局者は、日本の製造施設を訪問し、生産能力、品質管理システム、および関連するインド規格への全体的な適合性を評価します。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. 製品試験：
         </h3>
 
@@ -337,7 +337,7 @@ const LangJapanBlogMainContentLeft = () => {
           監査中に、製品サンプルが収集され、インドのBIS認定研究所に送られて試験されます。試験により、製品がインド規格に従ってすべての安全性と性能パラメータを満たしていることが保証されます。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. 評価とライセンスの付与：
         </h3>
 
@@ -345,7 +345,7 @@ const LangJapanBlogMainContentLeft = () => {
           監査と試験結果が満足のいくものであれば、BISは製造業者に認証ライセンスを付与し、製品にISIマークを使用することを許可します。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. 認証後のコンプライアンス：
         </h3>
 
@@ -360,7 +360,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           日本でのBIS認証に必要な書類
         </h2>
 
@@ -386,7 +386,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           日本の輸出業者がBIS認証で直面する課題
         </h2>
 
@@ -416,7 +416,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Sun Certifications Indiaが日本企業をサポートする方法
         </h2>
 
@@ -458,7 +458,7 @@ const LangJapanBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           結論
         </h2>
 

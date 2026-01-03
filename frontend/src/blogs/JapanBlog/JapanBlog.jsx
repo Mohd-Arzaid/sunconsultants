@@ -136,7 +136,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     What is BIS Certification? Understanding BIS FMCS
                 </h2>
 
@@ -183,7 +183,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why BIS Certification is Essential for Japanese Exporters
                 </h2>
 
@@ -222,7 +222,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Industries in Japan That Require BIS Certification
                 </h2>
 
@@ -262,7 +262,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Role of Authorized Indian Representative (AIR)
                 </h2>
 
@@ -301,7 +301,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     BIS Certification Process for Japanese Manufacturers
                 </h2>
 
@@ -309,7 +309,7 @@ const JapanBlogMainContentLeft = () => {
                     The BIS certification process under FMCS follows a systematic approach to verify compliance with the required Indian Standard. For Japanese manufacturers, the key stages include:
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     1. Application Submission:
                 </h3>
 
@@ -317,7 +317,7 @@ const JapanBlogMainContentLeft = () => {
                     The manufacturer identifies the applicable Indian Standard (IS) for the product and submits the application to BIS along with required technical details, factory information, and process documentation.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     2. Appointment of AIR:
                 </h3>
 
@@ -325,7 +325,7 @@ const JapanBlogMainContentLeft = () => {
                     Before application submission, the manufacturer must appoint an Authorized Indian Representative who will interact with BIS during the entire process.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     3. Factory Audit:
                 </h3>
 
@@ -333,7 +333,7 @@ const JapanBlogMainContentLeft = () => {
                     BIS officials visit the Japanese manufacturing facility to assess the production capabilities, quality control systems, and overall conformity with the relevant Indian Standard.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     4. Product Testing:
                 </h3>
 
@@ -341,7 +341,7 @@ const JapanBlogMainContentLeft = () => {
                     During the audit, product samples are collected and sent to BIS-recognized laboratories in India for testing. Testing ensures that the product meets all safety and performance parameters as per the Indian Standard.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     5. Evaluation and Grant of License:
                 </h3>
 
@@ -349,7 +349,7 @@ const JapanBlogMainContentLeft = () => {
                     Once the audit and test results are satisfactory, BIS grants a certification license to the manufacturer, allowing the use of the ISI mark on their products.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     6. Post-Certification Compliance:
                 </h3>
 
@@ -364,7 +364,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Documents Required for BIS Certification in Japan
                 </h2>
 
@@ -404,7 +404,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Challenges Japanese Exporters Face with BIS Certification
                 </h2>
 
@@ -434,7 +434,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     How Sun Certifications India Supports Japanese Businesses
                 </h2>
 
@@ -472,7 +472,7 @@ const JapanBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

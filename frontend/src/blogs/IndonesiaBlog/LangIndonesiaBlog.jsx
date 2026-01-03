@@ -143,7 +143,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Memahami BIS FMCS
         </h2>
 
@@ -176,7 +176,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Mengapa Sertifikasi BIS Penting untuk Eksportir Indonesia
         </h2>
 
@@ -209,7 +209,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Peran Perwakilan India Resmi (AIR)
         </h2>
 
@@ -238,7 +238,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Tantangan yang Dihadapi Eksportir Indonesia dengan Sertifikasi BIS
         </h2>
 
@@ -293,7 +293,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Industri di Indonesia yang Memerlukan Sertifikasi BIS
         </h2>
 
@@ -351,7 +351,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Manfaat Jangka Panjang Sertifikasi BIS
         </h2>
 
@@ -395,7 +395,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Mengapa Sun Certifications India adalah Mitra Tepercaya di Indonesia
         </h2>
 
@@ -426,7 +426,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Bagaimana Sun Certifications India Mendukung Bisnis Indonesia
         </h2>
 
@@ -457,7 +457,7 @@ const LangIndonesiaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Kesimpulan
         </h2>
 

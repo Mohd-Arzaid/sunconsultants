@@ -150,7 +150,7 @@ const NetherlandsBlogMainContentLeft = () => {
 
 
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     What is BIS Certification? Understanding BIS FMCS
                 </h2>
 
@@ -202,7 +202,7 @@ const NetherlandsBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why BIS Certification is Essential for Netherlands Exporters
                 </h2>
 
@@ -241,7 +241,7 @@ const NetherlandsBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Industries in the Netherlands That Require BIS Certification
                 </h2>
 
@@ -276,7 +276,7 @@ const NetherlandsBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Role of Authorized Indian Representative (AIR)
                 </h2>
 
@@ -311,7 +311,7 @@ const NetherlandsBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     BIS Certification Process for Netherlands Manufacturers
                 </h2>
 
@@ -320,7 +320,7 @@ const NetherlandsBlogMainContentLeft = () => {
                     The BIS certification process under the FMCS follows a structured, transparent approach designed to ensure quality assurance. Here's an overview of the process for manufacturers in the Netherlands:
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     1. Identify Applicable Indian Standard (IS)
                 </h3>
 
@@ -328,7 +328,7 @@ const NetherlandsBlogMainContentLeft = () => {
                     Determine the Indian Standard relevant to the product category. Each product type has a corresponding IS code defined by BIS.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     2. Appoint Authorized Indian Representative (AIR)
                 </h3>
 
@@ -336,7 +336,7 @@ const NetherlandsBlogMainContentLeft = () => {
                     Before applying, the manufacturer must nominate an AIR in India to legally represent the company before BIS.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     3. Submit the Application
                 </h3>
 
@@ -344,7 +344,7 @@ const NetherlandsBlogMainContentLeft = () => {
                     The application form, along with necessary documents (such as technical details, factory layout, and quality control system), is submitted to the BIS headquarters in India.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     4. Factory Inspection
                 </h3>
 
@@ -352,7 +352,7 @@ const NetherlandsBlogMainContentLeft = () => {
                     BIS officials visit the Dutch manufacturing facility to verify the production process, quality management systems, and conformity to Indian Standards.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     5. Product Testing
                 </h3>
 
@@ -360,7 +360,7 @@ const NetherlandsBlogMainContentLeft = () => {
                     Samples from the factory are selected and sent to BIS-recognized laboratories in India for testing. The test results must comply with the specific IS (Indian Standard) standard.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     6. Grant of License
                 </h3>
 
@@ -368,7 +368,7 @@ const NetherlandsBlogMainContentLeft = () => {
                     Upon successful completion of the factory audit and product testing, BIS grants the license. The manufacturer is then authorized to use the <span className="font-medium text-[#1e1e1e]">ISI mark</span> on their products.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     7. Post-Certification Surveillance
                 </h3>
 
@@ -376,7 +376,7 @@ const NetherlandsBlogMainContentLeft = () => {
                     BIS conducts periodic surveillance and random sample testing to ensure ongoing compliance with the standards.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Process Duration
                 </h3>
 
@@ -387,7 +387,7 @@ const NetherlandsBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Documents Required for BIS Certification in the Netherlands
                 </h2>
 
@@ -430,7 +430,7 @@ const NetherlandsBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Challenges Netherlands Exporters Face with BIS Certification
                 </h2>
 
@@ -465,7 +465,7 @@ const NetherlandsBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     How Sun Certifications India Supports Netherlands Businesses
                 </h2>
 
@@ -507,7 +507,7 @@ const NetherlandsBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

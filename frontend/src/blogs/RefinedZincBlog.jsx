@@ -138,7 +138,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 </p>
 
                 {/* What is BIS Certificate Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     What is BIS Certificate?
                 </h2>
 
@@ -167,7 +167,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Next Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why Refined Zinc Need BIS Certification Now
                 </h2>
 
@@ -187,7 +187,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* BIS Certification Process Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     BIS Certification Process for Refined Zinc
                 </h2>
 
@@ -196,7 +196,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 </p>
 
                 {/* Step 1 */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 1: BIS Application
                 </h3>
 
@@ -205,7 +205,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 </p>
 
                 {/* Step 2 */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 2: Submission of Documents
                 </h3>
 
@@ -227,7 +227,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 </p>
 
                 {/* Step 3 */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 3: Product Testing
                 </h3>
 
@@ -236,7 +236,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 </p>
 
                 {/* Step 4 */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 4: Inspection by BIS Officer
                 </h3>
 
@@ -245,7 +245,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 </p>
 
                 {/* Step 5 */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     Step 5: Grant of BIS Certificate
                 </h3>
 
@@ -261,7 +261,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* BIS Certificate Registration Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     BIS Certificate Registration and Online Application
                 </h2>
 
@@ -274,7 +274,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 </p>
 
                 {/* Cost of BIS Certification Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Cost of BIS Certification
                 </h2>
 
@@ -295,7 +295,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* BIS Consultants Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     BIS Consultants in Delhi and Across India
                 </h2>
 
@@ -321,7 +321,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 </p>
 
                 {/* Key Takeaways Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Key Takeaways from BIS Notification
                 </h2>
 
@@ -340,7 +340,7 @@ const RefinedZincBlogMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Conclusion Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 
@@ -363,6 +363,19 @@ const RefinedZincBlogMainContentLeft = () => {
                         alt="BIS Certification for Refined Nickel IS 2782:2023 mandatory from 17 October 2025 for micro, small, medium, large manufacturers and importers. Sun Certifications India consultancy services for BIS certificate, ISI mark and Bureau of Indian Standards compliance in India."
                         title="BIS Certification for Refined Nickel IS 2782:2023 – Mandatory from 17 October 2025"
                         className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
+                    />
+                </div>
+
+                {/* PDF Viewer Section */}
+                <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+                    <iframe
+                        src="/BIS-Product-Pdf/IS-209-2024-Sun-Certifications-India.pdf"
+                        title="BIS Certificate for Refined Zinc - IS 209:2024 PDF"
+                        className="w-full h-[800px] bg-white"
+                        style={{
+                            boxShadow:
+                                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                        }}
                     />
                 </div>
 

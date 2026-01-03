@@ -177,14 +177,14 @@ const MainContentLeft = () => {
           BIS認証は、インドの国家標準機関であるインド標準局が管理する品質および安全性コンプライアンスプログラムです。製品が指定されたインド規格に準拠し、安全で信頼性が高く、使用に適していることを保証します。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS証明書とは何ですか？
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           BIS証明書は、製造業者に発行される公式ライセンスで、ISIマークの使用を許可し、BISが規定する製品規格への準拠を示します。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS証明書の意味
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -260,7 +260,7 @@ const MainContentLeft = () => {
           <li>有害な仕上げまたは鋭いエッジ</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           二段ベッドのBISライセンスが必須である理由
         </h3>
 
@@ -288,7 +288,7 @@ const MainContentLeft = () => {
           インドでのBIS認証プロセスには、テスト、書類、工場検査が含まれます。以下がステップバイステップの手順です：
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ステップ1 — 適用性と規格の決定
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -298,7 +298,7 @@ const MainContentLeft = () => {
           <li>製品カテゴリーと製造ユニットの詳細を確認します。</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ステップ2 — BIS申請（フォーム提出）
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -318,7 +318,7 @@ const MainContentLeft = () => {
           このステップで公式承認サイクルが開始されます。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ステップ3 — BIS証明書費用の支払い
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -340,7 +340,7 @@ const MainContentLeft = () => {
           <li>テストパラメータ</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ステップ4 — サンプルテスト（IS 17636:2022に基づく）
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -364,7 +364,7 @@ const MainContentLeft = () => {
           テストレポートはBISポータルに直接アップロードされます。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ステップ5 — BIS工場検査
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -381,7 +381,7 @@ const MainContentLeft = () => {
           BISテスト・検査スキーム（STI）への準拠を確認します。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ステップ6 — BISライセンスの付与
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -396,7 +396,7 @@ const MainContentLeft = () => {
           これで、二段ベッドとパッケージにBISマークを合法的に使用できます。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ステップ7 — ライセンス後の義務
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -436,7 +436,7 @@ const MainContentLeft = () => {
           以下がBIS証明書の書類の完全なリストです：
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           製造業者の書類
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -450,7 +450,7 @@ const MainContentLeft = () => {
           <li>ISO 9001証明書（利用可能な場合）</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           法的書類
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -460,7 +460,7 @@ const MainContentLeft = () => {
           <li>商標登録書類（オプション）</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           技術書類
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -471,7 +471,7 @@ const MainContentLeft = () => {
           <li>内部テストレポート</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS申請書類
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -495,7 +495,7 @@ const MainContentLeft = () => {
           テストはBIS登録プロセスの必須部分です。二段ベッドは安全性と耐久性を確保するために厳格なテストを受けます。
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
           二段ベッドの検査・テストスキーム
         </h3>
 

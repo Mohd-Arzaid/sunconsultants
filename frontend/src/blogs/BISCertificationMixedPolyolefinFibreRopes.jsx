@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -195,7 +195,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS Certification?
         </h2>
 
@@ -208,7 +208,7 @@ const MainContentLeft = () => {
           quality benchmarks.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -218,7 +218,7 @@ const MainContentLeft = () => {
           known as the ISI Mark, on the product and its packaging.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ISI Mark Explanation
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -234,7 +234,7 @@ const MainContentLeft = () => {
           </li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Why BIS Exists
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -255,7 +255,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Applicable BIS Standard for Mixed Polyolefin Fibre Ropes
         </h2>
 
@@ -274,7 +274,7 @@ const MainContentLeft = () => {
           fibre ropes.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -289,11 +289,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Mandatory for Mixed Polyolefin Fibre Ropes
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           1. Consumer & Worker Safety Risks
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -309,7 +309,7 @@ const MainContentLeft = () => {
           damage, and operational downtime.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           2. Government Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -318,7 +318,7 @@ const MainContentLeft = () => {
           certification.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           3. Legal Implications
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -331,7 +331,7 @@ const MainContentLeft = () => {
           <li>Import clearance rejection</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           4. Market & Brand Benefits
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -346,12 +346,12 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Step-by-Step BIS Certification Process for Mixed Polyolefin Fibre
           Ropes
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -367,7 +367,7 @@ const MainContentLeft = () => {
           Correct classification ensures accurate testing and faster approval.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -385,7 +385,7 @@ const MainContentLeft = () => {
           delays.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Fees & Cost Structure for BIS Licence
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -403,7 +403,7 @@ const MainContentLeft = () => {
           cost of BIS certification effectively.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Product Sample Testing (as per IS 14929:2022)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -411,7 +411,7 @@ const MainContentLeft = () => {
           compliance with the standard before certification proceeds.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -424,7 +424,7 @@ const MainContentLeft = () => {
           <li>Quality assurance and record-keeping systems</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -433,7 +433,7 @@ const MainContentLeft = () => {
           polyolefin fibre ropes.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -448,7 +448,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Scope of BIS License as per IS 14929:2022
         </h2>
 
@@ -468,11 +468,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -481,7 +481,7 @@ const MainContentLeft = () => {
           <li>List of machinery and testing equipment</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -490,7 +490,7 @@ const MainContentLeft = () => {
           <li>Authorized signatory authorization</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -499,7 +499,7 @@ const MainContentLeft = () => {
           <li>In-house test procedures</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -515,7 +515,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Testing Requirements as per IS 14929:2022
         </h2>
 
@@ -595,7 +595,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Common Challenges & How to Avoid Them
         </h2>
 
@@ -627,11 +627,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Benefits of BIS Certification for Manufacturers & Importers
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -639,7 +639,7 @@ const MainContentLeft = () => {
           <li>Smooth customs clearance</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -647,7 +647,7 @@ const MainContentLeft = () => {
           <li>Increased market acceptance</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -655,7 +655,7 @@ const MainContentLeft = () => {
           <li>Improved customer confidence</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Market Expansion
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -666,7 +666,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Penalties for Non-Compliance
         </h2>
 
@@ -684,7 +684,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Who Needs BIS Certification for Mixed Polyolefin Fibre Ropes?
         </h2>
 
@@ -704,7 +704,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
@@ -733,13 +733,13 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           FAQs – BIS Certification for Mixed Polyolefin Fibre Ropes
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               1. What is the BIS Full Form?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -748,7 +748,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               2. Is BIS certification mandatory for mixed polyolefin fibre
               ropes?
             </h3>
@@ -758,7 +758,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               3. What is the BIS Certificate full form?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -767,7 +767,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               4. Can I apply for BIS certificate online?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -776,7 +776,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               5. How long does the BIS certification process take?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -785,7 +785,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               6. What is the BIS certification cost?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -794,7 +794,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               7. Do importers need BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -803,7 +803,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               8. Can foreign manufacturers apply for BIS license?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -812,7 +812,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               9. Is BIS registration the same as BIS license?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -821,7 +821,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               10. What happens if products fail testing?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -830,7 +830,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               11. Is ISI marking mandatory after certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -839,7 +839,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               12. How long is the BIS license valid?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -848,7 +848,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               13. Are surveillance audits compulsory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -857,7 +857,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               14. Can the license scope be extended later?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -866,7 +866,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               15. Can uncertified ropes be sold online?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">

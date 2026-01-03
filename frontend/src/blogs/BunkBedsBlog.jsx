@@ -178,7 +178,7 @@ const BunkBedsBlogMainContentLeft = () => {
         </p>
 
         {/* What is BIS Certificate Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS?
         </h2>
 
@@ -188,7 +188,7 @@ const BunkBedsBlogMainContentLeft = () => {
           product quality benchmarks.
         </p>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS Certificate?
         </h2>
 
@@ -226,7 +226,7 @@ const BunkBedsBlogMainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Next Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why Bunk Beds Under IS 17636:2022 Require BIS Certification in India
         </h2>
 
@@ -257,7 +257,7 @@ const BunkBedsBlogMainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* BIS Certification Process Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Certification Process for Bunk Beds Under IS 17636:2022
         </h2>
 
@@ -266,7 +266,7 @@ const BunkBedsBlogMainContentLeft = () => {
         </p>
 
         {/* Step 1 */}
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 1: BIS Application
         </h3>
 
@@ -276,7 +276,7 @@ const BunkBedsBlogMainContentLeft = () => {
         </p>
 
         {/* Step 2 */}
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 2: Submission of BIS Certification Documents
         </h3>
 
@@ -300,7 +300,7 @@ const BunkBedsBlogMainContentLeft = () => {
         </p>
 
         {/* Step 3 */}
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 3: Product Testing
         </h3>
 
@@ -311,7 +311,7 @@ const BunkBedsBlogMainContentLeft = () => {
         </p>
 
         {/* Step 4 */}
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 4: Factory Inspection
         </h3>
 
@@ -321,7 +321,7 @@ const BunkBedsBlogMainContentLeft = () => {
         </p>
 
         {/* Step 5 */}
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 5: Grant of BIS Certificate
         </h3>
 
@@ -339,7 +339,7 @@ const BunkBedsBlogMainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* BIS Certificate Registration Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Cost of BIS Certification
         </h2>
 
@@ -371,7 +371,7 @@ const BunkBedsBlogMainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Cost of BIS Certification Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Consultants in India
         </h2>
 
@@ -405,7 +405,7 @@ const BunkBedsBlogMainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* BIS Consultants Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 

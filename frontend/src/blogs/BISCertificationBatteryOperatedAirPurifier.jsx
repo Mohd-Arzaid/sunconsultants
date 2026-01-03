@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -177,7 +177,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           What is BIS Certification?
         </h2>
 
@@ -189,7 +189,7 @@ const MainContentLeft = () => {
           safety, quality, and reliability.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -211,7 +211,7 @@ const MainContentLeft = () => {
           <li>Enable enforcement of safety regulations</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           ISI Mark Explanation
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -228,11 +228,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Applicable BIS Standard for Battery Operated Air Purifier
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           IS 302 (Part 1):2024 – Safety of Household and Similar Electrical
           Appliances
         </h3>
@@ -242,7 +242,7 @@ const MainContentLeft = () => {
           electrical appliances intended for household and similar use.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Scope of IS 302 (Part 1):2024
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -258,7 +258,7 @@ const MainContentLeft = () => {
           <li>Insulation, creepage, and clearance requirements</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -276,7 +276,7 @@ const MainContentLeft = () => {
           <li>The appliance remains safe throughout its intended lifecycle</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -289,11 +289,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Mandatory for Battery Operated Air Purifier
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Consumer Safety Risks
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -306,7 +306,7 @@ const MainContentLeft = () => {
           <li>Mechanical failure of internal components</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Government and Regulatory Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -315,7 +315,7 @@ const MainContentLeft = () => {
           Certificate India is illegal.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Implications
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -328,7 +328,7 @@ const MainContentLeft = () => {
           <li>Criminal liability under BIS Act</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Market and Brand Benefits
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -344,12 +344,12 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Step-by-Step BIS Certification Process for Battery Operated Air
           Purifier
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Applicability & Standard Identification for BIS Licence
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -361,7 +361,7 @@ const MainContentLeft = () => {
           <li>Voltage, battery type, charger configuration</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -378,7 +378,7 @@ const MainContentLeft = () => {
           certificate registration.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Fees & Cost Structure for BIS Certificate for Air Purifier
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -399,7 +399,7 @@ const MainContentLeft = () => {
           <li>Manufacturing location</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Product Sample Testing (As per IS 302 Part 1:2024)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -413,7 +413,7 @@ const MainContentLeft = () => {
           <li>Battery safety and charging safety</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -426,7 +426,7 @@ const MainContentLeft = () => {
           <li>In-house testing facilities</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -440,11 +440,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -453,7 +453,7 @@ const MainContentLeft = () => {
           <li>List of machinery and testing equipment</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -462,7 +462,7 @@ const MainContentLeft = () => {
           <li>Brand authorization (if applicable)</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -472,7 +472,7 @@ const MainContentLeft = () => {
           <li>User manual and labels</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -489,7 +489,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Testing Requirements as per IS 302 (Part 1):2024
         </h2>
 
@@ -512,11 +512,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Common Challenges & How to Avoid Them
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Common Problems
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -526,7 +526,7 @@ const MainContentLeft = () => {
           <li>Non-compliant labeling</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Solutions & Best Practices
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -539,11 +539,11 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Benefits of BIS Certification for Manufacturers & Importers
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -551,7 +551,7 @@ const MainContentLeft = () => {
           <li>Protection from penalties</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -559,7 +559,7 @@ const MainContentLeft = () => {
           <li>Acceptance on e-commerce platforms</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -567,7 +567,7 @@ const MainContentLeft = () => {
           <li>Higher customer confidence</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Market Expansion
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -578,7 +578,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Who Needs BIS Certification for Battery Operated Air Purifier?
         </h2>
 
@@ -593,7 +593,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why Choose Us for BIS Certification Consulting?
         </h2>
 
@@ -617,7 +617,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
@@ -641,13 +641,13 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           FAQs – BIS Certification for Battery Operated Air Purifier
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q1. Is BIS certification mandatory for battery operated air
               purifiers?
             </h3>
@@ -657,7 +657,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q2. What is the BIS certificate full form?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -666,7 +666,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q3. How long does BIS certification take?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -676,7 +676,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q4. What is the BIS certificate cost?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -685,7 +685,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q5. Can importers apply for BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -694,7 +694,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q6. Is ISI Mark mandatory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -703,7 +703,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q7. Are battery safety tests included?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -712,7 +712,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q8. Is factory inspection compulsory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -721,7 +721,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q9. Can multiple models be covered?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -730,7 +730,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q10. Is online application required?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -739,7 +739,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q11. Can foreign brands get BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -748,7 +748,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q12. What happens if BIS rules are violated?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -757,7 +757,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q13. Does BIS certification improve sales?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -766,7 +766,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q14. Is renewal required?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
@@ -775,7 +775,7 @@ const MainContentLeft = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
               Q15. Can consultants speed up approval?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">

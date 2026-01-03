@@ -139,7 +139,7 @@ const FranceBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     What is BIS Certification?
                 </h2>
 
@@ -174,7 +174,7 @@ const FranceBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Why French Manufacturers Need BIS Certification
                 </h2>
 
@@ -212,7 +212,7 @@ const FranceBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     The FMCS Certification Process for French Exporters
                 </h2>
 
@@ -220,7 +220,7 @@ const FranceBlogMainContentLeft = () => {
                     The BIS certification process under FMCS is thorough and designed to ensure that only products meeting Indian standards enter the market. To start the BIS certification process, the applicant must appoint an Authorized Indian Representative to coordinate with the BIS authorities. Here&apos;s how the journey typically unfolds for French manufacturers:
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     1. Application Submission
                 </h3>
 
@@ -228,7 +228,7 @@ const FranceBlogMainContentLeft = () => {
                     The manufacturer must file an application with BIS, providing all necessary details about the product, production facilities, and quality control processes.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     2. Document Review
                 </h3>
 
@@ -236,7 +236,7 @@ const FranceBlogMainContentLeft = () => {
                     BIS authorities carefully review the application and supporting documents. Any errors, inconsistencies, or missing details can cause delays, which is why expert consultancy is valuable at this stage.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     3. Product Testing
                 </h3>
 
@@ -244,7 +244,7 @@ const FranceBlogMainContentLeft = () => {
                     Samples of the product must be sent to BIS-recognized laboratories in India for testing. The tests ensure that the product meets all relevant Indian Standards for quality, safety, and performance.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     4. Factory Inspection
                 </h3>
 
@@ -252,7 +252,7 @@ const FranceBlogMainContentLeft = () => {
                     BIS officers may conduct a physical inspection of the French manufacturing unit. They assess production capabilities, quality management systems, raw material procurement, and safety practices to confirm compliance with Indian regulations.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     5. Certification Issuance
                 </h3>
 
@@ -260,7 +260,7 @@ const FranceBlogMainContentLeft = () => {
                     Once all evaluations are successfully completed, BIS issues the certification. The manufacturer is then authorized to use the BIS Mark on products exported to India.
                 </p>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     6. Post-Certification Compliance
                 </h3>
 
@@ -271,7 +271,7 @@ const FranceBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Documentation Required for BIS Certification in France
                 </h2>
 
@@ -311,7 +311,7 @@ const FranceBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Challenges Faced by French Exporters
                 </h2>
 
@@ -341,7 +341,7 @@ const FranceBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Sun Certification India – Your Trusted BIS Partner in France
                 </h2>
 
@@ -382,7 +382,7 @@ const FranceBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     The Business Advantage of BIS Certification for French Exporters
                 </h2>
 
@@ -412,7 +412,7 @@ const FranceBlogMainContentLeft = () => {
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion
                 </h2>
 

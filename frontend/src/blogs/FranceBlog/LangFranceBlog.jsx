@@ -158,7 +158,7 @@ const LangFranceBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Qu&apos;est-ce que la certification BIS ?
         </h2>
 
@@ -209,7 +209,7 @@ const LangFranceBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Pourquoi les fabricants français ont besoin de la certification BIS
         </h2>
 
@@ -259,7 +259,7 @@ const LangFranceBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Le processus de certification FMCS pour les exportateurs français
         </h2>
 
@@ -272,7 +272,7 @@ const LangFranceBlogMainContentLeft = () => {
           parcours se déroule généralement pour les fabricants français :
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. Soumission de la demande
         </h3>
 
@@ -282,7 +282,7 @@ const LangFranceBlogMainContentLeft = () => {
           production et les processus de contrôle qualité.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. Examen des documents
         </h3>
 
@@ -293,7 +293,7 @@ const LangFranceBlogMainContentLeft = () => {
           précieux à ce stade.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. Tests de produits
         </h3>
 
@@ -304,7 +304,7 @@ const LangFranceBlogMainContentLeft = () => {
           de qualité, de sécurité et de performance.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. Inspection de l&apos;usine
         </h3>
 
@@ -316,7 +316,7 @@ const LangFranceBlogMainContentLeft = () => {
           sécurité pour confirmer la conformité aux réglementations indiennes.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. Délivrance de la certification
         </h3>
 
@@ -326,7 +326,7 @@ const LangFranceBlogMainContentLeft = () => {
           BIS sur les produits exportés vers l&apos;Inde.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. Conformité post-certification
         </h3>
 
@@ -340,7 +340,7 @@ const LangFranceBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documentation requise pour la certification BIS en France
         </h2>
 
@@ -383,7 +383,7 @@ const LangFranceBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Défis rencontrés par les exportateurs français
         </h2>
 
@@ -438,7 +438,7 @@ const LangFranceBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Sun Certification India – Votre partenaire BIS de confiance en France
         </h2>
 
@@ -506,7 +506,7 @@ const LangFranceBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           L&apos;avantage commercial de la certification BIS pour les
           exportateurs français
         </h2>
@@ -546,7 +546,7 @@ const LangFranceBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 

@@ -139,7 +139,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           การรับรอง BIS คืออะไร? ทำความเข้าใจ BIS FMCS
         </h2>
 
@@ -166,7 +166,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           ทำไมการรับรอง BIS จึงจำเป็นสำหรับผู้ส่งออกไทย
         </h2>
 
@@ -225,7 +225,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           อุตสาหกรรมในประเทศไทยที่ต้องการการรับรอง BIS
         </h2>
 
@@ -284,7 +284,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           บทบาทของตัวแทนอินเดียที่ได้รับอนุญาต (AIR)
         </h2>
 
@@ -307,7 +307,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           กระบวนการรับรอง BIS สำหรับผู้ผลิตไทย
         </h2>
 
@@ -319,7 +319,7 @@ const LangThailandBlogMainContentLeft = () => {
           นี่คือวิธีการที่กระบวนการดำเนินไปโดยทั่วไป:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. ระบุมาตรฐานอินเดียที่เกี่ยวข้อง (IS)
         </h3>
 
@@ -327,7 +327,7 @@ const LangThailandBlogMainContentLeft = () => {
           ขั้นตอนแรกคือการกำหนดมาตรฐานอินเดียที่เกี่ยวข้องสำหรับหมวดหมู่ผลิตภัณฑ์ของคุณ ผลิตภัณฑ์แต่ละประเภทถูกควบคุมโดยรหัส IS ที่ไม่ซ้ำกัน
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. การแต่งตั้งตัวแทนอินเดียที่ได้รับอนุญาต (AIR)
         </h3>
 
@@ -335,7 +335,7 @@ const LangThailandBlogMainContentLeft = () => {
           ผู้ผลิตไทยต้องแต่งตั้ง AIR เพื่อจัดการการสื่อสาร เอกสาร และกิจกรรมการรับรองในอินเดีย
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. การส่งใบสมัคร
         </h3>
 
@@ -343,7 +343,7 @@ const LangThailandBlogMainContentLeft = () => {
           ผู้ผลิตส่งใบสมัคร BIS พร้อมกับเอกสารที่ละเอียด รวมถึงข้อมูลทางเทคนิค ข้อกำหนดผลิตภัณฑ์ และรายละเอียดการควบคุมคุณภาพ
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. การตรวจสอบโรงงานโดยเจ้าหน้าที่ BIS
         </h3>
 
@@ -351,7 +351,7 @@ const LangThailandBlogMainContentLeft = () => {
           เจ้าหน้าที่ BIS เยี่ยมชมสถานที่ผลิตในประเทศไทยเพื่อประเมินกระบวนการผลิต กลไกการควบคุมคุณภาพ และการปฏิบัติตามมาตรฐาน BIS โดยรวม
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. การสุ่มตัวอย่างและการทดสอบผลิตภัณฑ์
         </h3>
 
@@ -359,7 +359,7 @@ const LangThailandBlogMainContentLeft = () => {
           ตัวอย่างผลิตภัณฑ์จะถูกเก็บรวบรวมระหว่างการตรวจสอบและส่งไปยังห้องปฏิบัติการที่ได้รับการยอมรับจาก BIS ในอินเดียเพื่อทดสอบตามมาตรฐานอินเดียที่เกี่ยวข้อง
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. การมอบใบอนุญาต
         </h3>
 
@@ -367,7 +367,7 @@ const LangThailandBlogMainContentLeft = () => {
           หลังจากตรวจสอบสำเร็จและผลการทดสอบที่น่าพอใจ BIS จะออกใบอนุญาตการรับรอง ผู้ผลิตสามารถติดเครื่องหมาย ISI บนผลิตภัณฑ์ของพวกเขาได้แล้ว
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           7. การปฏิบัติตามหลังการรับรอง
         </h3>
 
@@ -382,7 +382,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           เอกสารที่จำเป็นสำหรับการรับรอง BIS ในประเทศไทย
         </h2>
 
@@ -410,7 +410,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           ความท้าทายที่ผู้ส่งออกไทยเผชิญกับการรับรอง BIS
         </h2>
 
@@ -465,7 +465,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           วิธีที่ Sun Certifications India สนับสนุนธุรกิจไทย
         </h2>
 
@@ -488,7 +488,7 @@ const LangThailandBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           สรุป
         </h2>
 

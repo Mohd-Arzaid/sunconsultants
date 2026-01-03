@@ -143,7 +143,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Understanding BIS Certification and FMCS Scheme
         </h2>
 
@@ -175,7 +175,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Essential for Vietnamese Exporters
         </h2>
 
@@ -236,7 +236,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Industries in Vietnam That Require BIS Certification
         </h2>
 
@@ -293,7 +293,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Role of the Authorized Indian Representative (AIR)
         </h2>
 
@@ -344,7 +344,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Certification Process for Vietnam Manufacturers
         </h2>
 
@@ -355,7 +355,7 @@ const VietnamBlogMainContentLeft = () => {
           works:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. Application Submission
         </h3>
 
@@ -365,7 +365,7 @@ const VietnamBlogMainContentLeft = () => {
           address, and relevant technical documents.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. Nomination of AIR
         </h3>
 
@@ -374,7 +374,7 @@ const VietnamBlogMainContentLeft = () => {
           (AIR) to act as the local contact point for BIS in India.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. Product Testing
         </h3>
 
@@ -384,7 +384,7 @@ const VietnamBlogMainContentLeft = () => {
           form a key part of the certification process.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. Factory Inspection
         </h3>
 
@@ -394,7 +394,7 @@ const VietnamBlogMainContentLeft = () => {
           conformity to BIS guidelines.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. Evaluation and Grant of License
         </h3>
 
@@ -403,7 +403,7 @@ const VietnamBlogMainContentLeft = () => {
           license to the manufacturer under the FMCS scheme.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. Marking Permission
         </h3>
 
@@ -412,7 +412,7 @@ const VietnamBlogMainContentLeft = () => {
           intended for export to India.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           7. Surveillance and Renewal
         </h3>
 
@@ -425,7 +425,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification in Vietnam
         </h2>
 
@@ -462,7 +462,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Challenges Vietnamese Exporters Face with BIS Certification
         </h2>
 
@@ -518,7 +518,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           How Sun Certifications India Supports Vietnamese Businesses
         </h2>
 
@@ -570,7 +570,7 @@ const VietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 

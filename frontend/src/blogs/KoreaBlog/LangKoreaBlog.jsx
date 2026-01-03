@@ -153,7 +153,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS 인증이란 무엇입니까? BIS FMCS 이해하기
         </h2>
 
@@ -199,7 +199,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           한국 수출업체에게 BIS 인증이 필수적인 이유
         </h2>
 
@@ -244,7 +244,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS 인증이 필요한 한국의 산업
         </h2>
 
@@ -312,7 +312,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           공인 인도 대리인(AIR)의 역할
         </h2>
 
@@ -347,7 +347,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           한국 제조업체를 위한 BIS 인증 프로세스
         </h2>
 
@@ -357,7 +357,7 @@ const LangKoreaBlogMainContentLeft = () => {
           도달하기 전에 인도 품질 표준을 충족하도록 보장합니다.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. 신청 준비:
         </h3>
 
@@ -366,7 +366,7 @@ const LangKoreaBlogMainContentLeft = () => {
           기술 세부 정보로 신청서를 준비합니다.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. AIR 임명:
         </h3>
 
@@ -375,7 +375,7 @@ const LangKoreaBlogMainContentLeft = () => {
           공인 인도 대리인을 임명해야 합니다.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. 제출 및 검토:
         </h3>
 
@@ -384,7 +384,7 @@ const LangKoreaBlogMainContentLeft = () => {
           검토합니다.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. 공장 검사:
         </h3>
 
@@ -394,7 +394,7 @@ const LangKoreaBlogMainContentLeft = () => {
           제품을 생산할 수 있는 능력을 보장합니다.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. 제품 테스트:
         </h3>
 
@@ -403,7 +403,7 @@ const LangKoreaBlogMainContentLeft = () => {
           테스트하기 위해 인도의 BIS 인증 실험실로 보냅니다.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. 평가 및 라이선스 부여:
         </h3>
 
@@ -412,7 +412,7 @@ const LangKoreaBlogMainContentLeft = () => {
           사용할 수 있도록 인증 라이선스를 부여합니다.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           7. 인증 후 감시:
         </h3>
 
@@ -436,7 +436,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           한국에서 BIS 인증에 필요한 문서
         </h2>
 
@@ -465,7 +465,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           한국 수출업체가 BIS 인증에서 직면하는 과제
         </h2>
 
@@ -502,7 +502,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Sun Certifications India가 한국 기업을 지원하는 방법
         </h2>
 
@@ -539,7 +539,7 @@ const LangKoreaBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           결론
         </h2>
 

@@ -148,7 +148,7 @@ const LangSpainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Comprendiendo la certificación BIS y su importancia
         </h2>
 
@@ -195,7 +195,7 @@ const LangSpainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Por qué la certificación BIS es importante para los fabricantes
           españoles
         </h2>
@@ -237,7 +237,7 @@ const LangSpainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           El proceso de certificación FMCS para exportadores españoles
         </h2>
 
@@ -255,7 +255,7 @@ const LangSpainBlogMainContentLeft = () => {
           Así es como se desarrolla el proceso para las empresas españolas:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. Presentación de la solicitud
         </h3>
 
@@ -265,7 +265,7 @@ const LangSpainBlogMainContentLeft = () => {
           del producto, detalles del negocio y registros de cumplimiento.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. Revisión de documentos
         </h3>
 
@@ -274,7 +274,7 @@ const LangSpainBlogMainContentLeft = () => {
           aclaraciones o documentos adicionales.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. Pruebas de producto
         </h3>
 
@@ -285,7 +285,7 @@ const LangSpainBlogMainContentLeft = () => {
           calidad y rendimiento.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. Inspección de fábrica
         </h3>
 
@@ -296,7 +296,7 @@ const LangSpainBlogMainContentLeft = () => {
           procesos cumplan con las expectativas regulatorias indias.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. Aprobación de la certificación
         </h3>
 
@@ -310,7 +310,7 @@ const LangSpainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documentos requeridos para la certificación BIS desde España
         </h2>
 
@@ -346,7 +346,7 @@ const LangSpainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Desafíos enfrentados por los fabricantes españoles
         </h2>
 
@@ -388,7 +388,7 @@ const LangSpainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Cómo Sun Certification India ayuda a los fabricantes españoles
         </h2>
 
@@ -436,7 +436,7 @@ const LangSpainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           La ventaja estratégica de la certificación BIS
         </h2>
 
@@ -468,7 +468,7 @@ const LangSpainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusión
         </h2>
 

@@ -134,7 +134,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           فهم شهادة BIS ونظام FMCS
         </h2>
 
@@ -157,7 +157,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           لماذا تعتبر شهادة BIS ضرورية للمصدرين البحرينيين
         </h2>
 
@@ -206,7 +206,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           الصناعات في البحرين التي تتطلب شهادة BIS
         </h2>
 
@@ -259,7 +259,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           دور الممثل الهندي المعتمد (AIR)
         </h2>
 
@@ -298,7 +298,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           عملية شهادة BIS لمصنعي البحرين
         </h2>
 
@@ -306,7 +306,7 @@ const LangBahrainBlogMainContentLeft = () => {
           عملية شهادة BIS للمصنعين البحرينيين تحت نظام FMCS تتضمن عدة خطوات منهجية، من التطبيق إلى الموافقة. بينما تتطلب وثائق شاملة والالتزام بالمعايير، يمكن لشريك الشهادة المهني جعل العملية سلسة.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 1: تقديم الطلب
         </h3>
 
@@ -314,7 +314,7 @@ const LangBahrainBlogMainContentLeft = () => {
           يقدم المصنع طلباً عبر الإنترنت من خلال بوابة BIS، مع تقديم تفاصيل أساسية مثل معلومات الشركة ومواصفات المنتج وعمليات الإنتاج.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 2: تعيين الممثل الهندي المعتمد (AIR)
         </h3>
 
@@ -322,7 +322,7 @@ const LangBahrainBlogMainContentLeft = () => {
           يتم تعيين ممثل محلي في الهند للعمل نيابة عن المصنع لجميع المراسلات المتعلقة بـ BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 3: اختبار المنتج
         </h3>
 
@@ -330,7 +330,7 @@ const LangBahrainBlogMainContentLeft = () => {
           يجب اختبار عينات المنتج في المختبرات المعترف بها من BIS في الهند للتحقق من الامتثال للمعيار الهندي (IS) المعمول به. تشكل تقارير الاختبار جزءاً حاسماً من عملية الشهادة.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 4: تفتيش المصنع
         </h3>
 
@@ -338,7 +338,7 @@ const LangBahrainBlogMainContentLeft = () => {
           يقوم مسؤولو BIS بإجراء تفتيش لمنشأة التصنيع في البحرين. الهدف هو تقييم أنظمة الإنتاج وإجراءات ضمان الجودة والامتثال العام لمتطلبات BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 5: تقييم تقارير الاختبار والتفتيش
         </h3>
 
@@ -346,7 +346,7 @@ const LangBahrainBlogMainContentLeft = () => {
           يراجع BIS جميع التقارير لضمان أن كل من المنتج وعملية الإنتاج تلبي معايير الجودة والسلامة المطلوبة.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 6: منح ترخيص BIS
         </h3>
 
@@ -354,7 +354,7 @@ const LangBahrainBlogMainContentLeft = () => {
           إذا تم استيفاء جميع الشروط، يصدر BIS الشهادة، مما يسمح للمصنع باستخدام علامة ISI على المنتج.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           الخطوة 7: المراقبة والتجديد
         </h3>
 
@@ -365,7 +365,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           المستندات المطلوبة لشهادة BIS في البحرين
         </h2>
 
@@ -403,7 +403,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           التحديات التي يواجهها مصدرو البحرين مع شهادة BIS
         </h2>
 
@@ -454,7 +454,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           كيف تدعم Sun Certifications India الشركات البحرينية
         </h2>
 
@@ -517,7 +517,7 @@ const LangBahrainBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           الخلاصة
         </h2>
 

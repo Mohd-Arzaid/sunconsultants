@@ -213,8 +213,8 @@ export const WhatsOurCustomersSaySection = () => {
             {duplicatedTestimonials.map((testimonial, index) => {
               // Mark duplicates as hidden from SEO (only first set should be indexed)
               const isDuplicate = index >= testimonials.length;
-              const avatarAlt = `Customer testimonial avatar for ${testimonial.name} - ${testimonial.role} - Sun Certifications India`;
-              const avatarTitle = `Customer testimonial avatar for ${testimonial.name} - ${testimonial.role} - Sun Certifications India`;
+              const avatarAlt = `Customer testimonial  for ${testimonial.name} - ${testimonial.role} - Sun Certifications India`;
+              const avatarTitle = `Customer testimonial  for ${testimonial.name} - ${testimonial.role} - Sun Certifications India`;
 
               return (
                 <div

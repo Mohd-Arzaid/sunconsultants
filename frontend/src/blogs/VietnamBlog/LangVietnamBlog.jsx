@@ -144,7 +144,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Hiểu về Chứng nhận BIS và Chương trình FMCS
         </h2>
 
@@ -176,7 +176,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Tại sao Chứng nhận BIS là Cần thiết cho Nhà xuất khẩu Việt Nam
         </h2>
 
@@ -240,7 +240,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Các Ngành công nghiệp tại Việt Nam Yêu cầu Chứng nhận BIS
         </h2>
 
@@ -295,7 +295,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Vai trò của Đại diện Ấn Độ được Ủy quyền (AIR)
         </h2>
 
@@ -346,7 +346,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Quy trình Chứng nhận BIS cho Nhà sản xuất Việt Nam
         </h2>
 
@@ -356,7 +356,7 @@ const LangVietnamBlogMainContentLeft = () => {
           Dưới đây là một phác thảo chi tiết về cách nó hoạt động:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           1. Nộp Đơn
         </h3>
 
@@ -366,7 +366,7 @@ const LangVietnamBlogMainContentLeft = () => {
           tài liệu kỹ thuật liên quan.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           2. Đề cử AIR
         </h3>
 
@@ -375,7 +375,7 @@ const LangVietnamBlogMainContentLeft = () => {
           động như điểm liên hệ địa phương cho BIS ở Ấn Độ.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           3. Thử nghiệm Sản phẩm
         </h3>
 
@@ -385,7 +385,7 @@ const LangVietnamBlogMainContentLeft = () => {
           Báo cáo thử nghiệm tạo thành một phần chính của quy trình chứng nhận.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           4. Kiểm tra Nhà máy
         </h3>
 
@@ -395,7 +395,7 @@ const LangVietnamBlogMainContentLeft = () => {
           phù hợp với các hướng dẫn BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           5. Đánh giá và Cấp Giấy phép
         </h3>
 
@@ -404,7 +404,7 @@ const LangVietnamBlogMainContentLeft = () => {
           giấy phép cho nhà sản xuất theo chương trình FMCS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           6. Quyền Gắn Nhãn
         </h3>
 
@@ -413,7 +413,7 @@ const LangVietnamBlogMainContentLeft = () => {
           sản phẩm dự định xuất khẩu sang Ấn Độ.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           7. Giám sát và Gia hạn
         </h3>
 
@@ -426,7 +426,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Tài liệu Yêu cầu cho Chứng nhận BIS tại Việt Nam
         </h2>
 
@@ -461,7 +461,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Thách thức mà Nhà xuất khẩu Việt Nam Gặp phải với Chứng nhận BIS
         </h2>
 
@@ -516,7 +516,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Cách Sun Certifications India Hỗ trợ Doanh nghiệp Việt Nam
         </h2>
 
@@ -566,7 +566,7 @@ const LangVietnamBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Kết luận
         </h2>
 

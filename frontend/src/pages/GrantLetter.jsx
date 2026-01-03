@@ -220,6 +220,7 @@ const AuditGallery = () => {
     {
       id: 6,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter06.jpg",
+      alt: "BIS Certificate Grant Letter successfully obtained for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for expert assistance from Sun Certifications India.",
       description:
         "BIS certification grant letter for toys under IS 9873 Part 1:2019",
     },

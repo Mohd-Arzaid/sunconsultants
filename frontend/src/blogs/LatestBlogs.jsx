@@ -45,6 +45,7 @@ const blogs = [
     description:
       "Everything manufacturers need to know about the mandatory BIS certification for tin ingots from 17th October 2025. Learn about the application process, required documents, costs, and compliance requirements.",
     slug: "bis-certificate-for-tin-ingots",
+    date: "14 September 2025",
   },
   {
     id: 2,
@@ -53,6 +54,7 @@ const blogs = [
     description:
       "Complete guide for manufacturers on obtaining BIS certification for refined zinc. Understand the certification process, documentation requirements, and compliance deadlines under IS 209:2024.",
     slug: "bis-certificate-for-refined-zinc",
+    date: "15 September 2025",
   },
   {
     id: 3,
@@ -61,6 +63,7 @@ const blogs = [
     description:
       "Get BIS Certificate for bunk beds under IS 17636:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
     slug: "blogs/isi-products/bunk-beds-is-17636",
+    date: "02 October 2025",
   },
   {
     id: 4,
@@ -69,6 +72,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Storage Unit under IS 17634:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for cabinets, wardrobes, and storage furniture.",
     slug: "blogs/isi-products/storage-unit-is-17634",
+    date: "02 October 2025",
   },
   {
     id: 5,
@@ -165,6 +169,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Work Chairs under IS 17631:2022. Complete compliance guide covering process, documents, testing requirements, fees, timeline, and benefits for BIS Certification in India. Mandatory for all manufacturers and importers.",
     slug: "blogs/isi-products/work-chairs-is-17631",
+    date: "10 October 2025",
   },
   {
     id: 18,
@@ -173,6 +178,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Chair & Stool under IS 17632:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for general purpose chairs and stools.",
     slug: "blogs/isi-products/chairs-and-stools-is-17632",
+    date: "12 October 2025",
   },
   {
     id: 19,
@@ -181,6 +187,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Tables & Desks under IS 17633:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
     slug: "blogs/isi-products/tables-&-desks-is-17633",
+    date: "14 October 2025",
   },
   {
     id: 20,
@@ -189,6 +196,7 @@ const blogs = [
     description:
       "Get BIS Certificate for beds under IS 17635:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for manufacturers and importers.",
     slug: "blogs/isi-products/beds-is-17635",
+    date: "16 October 2025",
   },
   {
     id: 21,
@@ -197,6 +205,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for stainless steel welded pipes and tubes.",
     slug: "blogs/isi-products/welded-pipes-&-tubes-is-17876",
+    date: "18 October 2025",
   },
   {
     id: 22,
@@ -447,7 +456,7 @@ const LatestBlogsSearchBar = ({ searchQuery, handleSearch }) => {
  * Individual blog card component
  * Displays blog information with color-coded header and hover effects
  */
-const BlogCardItem = ({ color, title, description, slug }) => {
+const BlogCardItem = ({ color, title, description, slug, date }) => {
   const detailUrl = `/${slug}`;
 
   return (
@@ -456,6 +465,19 @@ const BlogCardItem = ({ color, title, description, slug }) => {
       <div className="h-3 md:h-4" style={{ backgroundColor: color }}></div>
 
       <div className="p-5 md:p-8 flex flex-col flex-grow">
+        {/* Date display - top right */}
+        {date && (
+          <div className="flex items-center justify-end mb-4">
+            <span className="text-gray-500 font-geist text-sm flex gap-2 items-center justify-center">
+              <span
+                className="w-2 h-2 rounded-full"
+                style={{ backgroundColor: color }}
+              ></span>
+              {date}
+            </span>
+          </div>
+        )}
+
         {/* Blog title - clickable */}
         <Link to={detailUrl}>
           <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-4 min-h-[4rem] flex items-start cursor-pointer hover:text-blue-600 transition-colors duration-200">
@@ -529,6 +551,7 @@ const LatestBlogsCard = ({ searchQuery, currentPage, itemsPerPage }) => {
             title={blog.title}
             description={blog.description}
             slug={blog.slug}
+            date={blog.date}
           />
         ))
       ) : (

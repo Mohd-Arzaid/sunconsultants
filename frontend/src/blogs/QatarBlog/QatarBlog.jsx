@@ -155,7 +155,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Understanding BIS Certification and the FMCS Scheme
         </h2>
 
@@ -194,7 +194,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Why BIS Certification is Essential for Qatar Exporters
         </h2>
 
@@ -264,7 +264,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Industries in Qatar That Require BIS Certification
         </h2>
 
@@ -327,7 +327,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Role of the Authorized Indian Representative (AIR)
         </h2>
 
@@ -373,7 +373,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           BIS Certification Process for Qatar Manufacturers
         </h2>
 
@@ -388,7 +388,7 @@ const QatarBlogMainContentLeft = () => {
           Here&apos;s a detailed look at the process:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 1: Application Submission
         </h3>
 
@@ -398,7 +398,7 @@ const QatarBlogMainContentLeft = () => {
           documents.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 2: Appointment of Authorized Indian Representative (AIR)
         </h3>
 
@@ -407,7 +407,7 @@ const QatarBlogMainContentLeft = () => {
           manufacturer in all dealings with BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 3: Product Testing
         </h3>
 
@@ -418,7 +418,7 @@ const QatarBlogMainContentLeft = () => {
           requirements.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 4: Factory Inspection
         </h3>
 
@@ -428,7 +428,7 @@ const QatarBlogMainContentLeft = () => {
           and quality control procedures.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 5: Review and Approval
         </h3>
 
@@ -438,7 +438,7 @@ const QatarBlogMainContentLeft = () => {
           standards, the certification is granted.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 6: Grant of BIS License
         </h3>
 
@@ -447,7 +447,7 @@ const QatarBlogMainContentLeft = () => {
           on all certified products.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 7: Ongoing Surveillance
         </h3>
 
@@ -465,7 +465,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification in Qatar
         </h2>
 
@@ -505,7 +505,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Challenges Qatar Exporters Face with BIS Certification
         </h2>
 
@@ -561,7 +561,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           How Sun Certifications India Supports Qatar Businesses
         </h2>
 
@@ -631,7 +631,7 @@ const QatarBlogMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
