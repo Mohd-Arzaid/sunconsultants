@@ -261,7 +261,7 @@ const blogs = [
     title: "BIS Certificate for Fibre Ropes – Polyethylene – IS 17636:2022",
     description:
       "Get BIS Certificate for Fibre Ropes (Polyethylene) under IS 17636:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyethylene fibre ropes.",
-    slug: "blogs/isi-products/fibre-ropes-polyethylene-17636",
+    slug: "blogs/isi-products/fibre-ropes-polyethylene-8674",
   },
   {
     id: 29,

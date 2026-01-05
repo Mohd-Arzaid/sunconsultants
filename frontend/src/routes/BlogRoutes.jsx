@@ -579,7 +579,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/isi-products/fibre-ropes-polyethylene-17636"
+        path="/blogs/isi-products/fibre-ropes-polyethylene-8674"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationFibreRopes />

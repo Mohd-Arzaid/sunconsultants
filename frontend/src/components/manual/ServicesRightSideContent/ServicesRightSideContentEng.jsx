@@ -164,7 +164,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/solar-flat-plate-collector-is-12933",
     "/blogs/isi-products/chairs-and-stools-is-17632",
     "/blogs/isi-products/fibre-ropes-polyster-is-17609",
-    "/blogs/isi-products/fibre-ropes-polyethylene-17636",
+    "/blogs/isi-products/fibre-ropes-polyethylene-8674",
     "/blogs/isi-products/fibre-ropes-polyamide-is-4572",
     "/blogs/isi-products/steel-wire-ropes-is-1804",
     "/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022",
@@ -1037,7 +1037,7 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for General Purpose Chairs and Stools - English Page";
     if (path.includes("/blogs/isi-products/fibre-ropes-polyster-is-17609"))
       return "BIS Certificate for Fibre Ropes of Polyester - English Page";
-    if (path.includes("/blogs/isi-products/fibre-ropes-polyethylene-17636"))
+    if (path.includes("/blogs/isi-products/fibre-ropes-polyethylene-8674"))
       return "BIS Certificate for Fibre Ropes - Polyethylene - English Page";
     if (path.includes("/blogs/isi-products/fibre-ropes-polyamide-is-4572"))
       return "BIS Certificate for Fibre Ropes - Polyamide - English Page";

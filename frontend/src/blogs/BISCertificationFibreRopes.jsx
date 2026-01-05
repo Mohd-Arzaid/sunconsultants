@@ -48,7 +48,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Fibre Ropes - Polyethylene, BIS License for Fibre Ropes - Polyethylene, IS 8674:2013, BIS Certification for Fibre Ropes - Polyethylene";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyethylene-17636";
+    "https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyethylene-8674";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
