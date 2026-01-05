@@ -214,6 +214,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Seamless Pipes & Tubes under IS 17875:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for seamless steel pipes and tubes.",
     slug: "blogs/isi-products/seamless-pipes-&-tubes-is-17875",
+    date: "20 October 2025",
   },
   {
     id: 23,
@@ -222,6 +223,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Flashlight under IS 2083:2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for flashlights and torches.",
     slug: "blogs/isi-products/flashlight-is-2083",
+    date: "05 December 2025",
   },
   {
     id: 24,
@@ -230,6 +232,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Electric Fence Energizers under IS 302-2-76:1999. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for electric fence energizers.",
     slug: "blogs/isi-products/electric-fence-energizers-is-302-2-76",
+    date: "05 December 2025",
   },
   {
     id: 25,
@@ -238,6 +241,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Solar Water Heating Systems under IS 16542:2016. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for solar water heating systems.",
     slug: "blogs/isi-products/solar-water-heating-systems-is-16542",
+    date: "05 December 2025",
   },
   {
     id: 26,
@@ -246,6 +250,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Solar Flat Plate Collector under IS 12933:2003. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for solar flat plate collectors.",
     slug: "blogs/isi-products/solar-flat-plate-collector-is-12933",
+    date: "10 December 2025",
   },
   {
     id: 27,
@@ -254,6 +259,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Fibre Ropes of Polyester under IS 17609:2021. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyester fibre ropes.",
     slug: "blogs/isi-products/fibre-ropes-polyster-is-17609",
+    date: "14 December 2025",
   },
   {
     id: 28,
@@ -262,6 +268,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Fibre Ropes (Polyethylene) under IS 17636:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyethylene fibre ropes.",
     slug: "blogs/isi-products/fibre-ropes-polyethylene-8674",
+    date: "15 December 2025",
   },
   {
     id: 29,
@@ -270,6 +277,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Fibre Ropes (Polyamide) under IS 4572:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyamide fibre ropes.",
     slug: "blogs/isi-products/fibre-ropes-polyamide-is-4572",
+    date: "15 December 2025",
   },
   {
     id: 30,
@@ -278,6 +286,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Steel Wire Ropes under IS 1804:2004. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for steel wire ropes.",
     slug: "blogs/isi-products/steel-wire-ropes-is-1804",
+    date: "10 December 2025",
   },
   {
     id: 31,
@@ -286,6 +295,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Mixed Polyolefin Fibre Ropes under IS 14929:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for mixed polyolefin fibre ropes.",
     slug: "blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022",
+    date: "22 December 2025",
   },
   {
     id: 32,
@@ -295,6 +305,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Composite Synthetic Fibre Ropes under IS 14928:2001. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for composite synthetic fibre ropes.",
     slug: "blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928",
+    date: "10 December 2025",
   },
   {
     id: 33,
@@ -303,6 +314,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Manila Ropes under IS 1084. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for manila ropes.",
     slug: "blogs/isi-products/manila-ropes-is-1084",
+    date: "15 December 2025",
   },
   {
     id: 34,
@@ -311,6 +323,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Flat Woven Webbing Slings under IS 15041. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for flat woven webbing slings.",
     slug: "blogs/isi-products/flat-woven-webbing-slings-is-15041",
+    date: "15 December 2025",
   },
   {
     id: 35,
@@ -319,6 +332,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Combination Side Cutting Pliers under IS 3650. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for combination side cutting pliers.",
     slug: "blogs/isi-products/combination-side-cutting-pliers-is-3650",
+    date: "15 December 2025",
   },
   {
     id: 36,
@@ -327,6 +341,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Pipe Wrenches (Heavy Duty) under IS 4003. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for heavy duty pipe wrenches.",
     slug: "blogs/isi-products/pipe-wrenches-is-4003",
+    date: "20 December 2025",
   },
   {
     id: 37,
@@ -335,6 +350,7 @@ const blogs = [
     description:
       "Ring Wrenches (also known as ring spanners) are indispensable hand tools used across automotive workshops, mechanical maintenance, heavy engineering",
     slug: "blogs/isi-products/ring-wrenches-is-2029",
+    date: "22 December 2025",
   },
   {
     id: 38,
@@ -343,6 +359,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Open-Jaw Wrenches under IS 2028:2004. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for open-jaw wrenches (open-end spanners).",
     slug: "blogs/isi-products/open-jaw-wrenches-is-2028",
+    date: "22 December 2025",
   },
   {
     id: 39,
@@ -351,6 +368,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Single-ended Open-jaw Adjustable Wrenches under IS 6149:1984. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for adjustable wrenches.",
     slug: "blogs/isi-products/adjustable-wrenches-is-6149",
+    date: "22 December 2025",
   },
   {
     id: 40,
@@ -359,6 +377,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Chain Pipe Wrenches under IS 4123:1982. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for chain pipe wrenches used in heavy industrial applications.",
     slug: "blogs/isi-products/chain-pipe-wrenches-is-4123",
+    date: "20 December 2025",
   },
   {
     id: 41,
@@ -368,6 +387,7 @@ const blogs = [
     description:
       "Get BIS Certificate for Battery Operated Air Purifier under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for battery operated air purifiers.",
     slug: "blogs/isi-products/battery-operated-air-purifier-is-302",
+    date: "25 December 2025",
   },
   {
     id: 42,
@@ -377,6 +397,7 @@ const blogs = [
     description:
       "Foot Warmers and Heating Mats have become increasingly popular in India due to changing lifestyles, rising awareness of personal comfort, and growing demand for localized heating solutions. These products are widely used in homes, offices, hospitals, hotels, hostels, clinics, and personal spaces, especially during winter seasons or in air-conditioned environments.",
     slug: "blogs/isi-products/foot-warmer-&-heating-mats-is-302",
+    date: "25 December 2025",
   },
   {
     id: 43,
@@ -386,6 +407,7 @@ const blogs = [
     description:
       "The Indian oral-care market has witnessed rapid growth in recent years, with Battery-Operated Toothbrushes becoming a preferred choice among consumers seeking better hygiene, convenience, and effective plaque removal. These toothbrushes are widely used in homes, hotels, hospitals, travel kits, and personal care routines, especially by children, elderly users, and people with limited hand mobility.",
     slug: "blogs/isi-products/battery-operated-tootbrush-is-302",
+    date: "25 December 2025",
   },
 ];
 

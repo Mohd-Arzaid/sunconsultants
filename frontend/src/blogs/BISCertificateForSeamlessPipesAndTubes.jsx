@@ -928,6 +928,19 @@ const MainContentLeft = () => {
           </div>
         </div>
 
+        {/* PDF Viewer Section */}
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src="/BIS-Product-Pdf/IS-17875-2022-Sun-Certifications-India.pdf"
+            title="BIS Certificate for Seamless Pipes & Tubes - IS 17875:2022 PDF"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        </div>
+
         <ManyUsersAlsoRead />
         <FaqAuthorEng questionNumber={2} />
       </div>
