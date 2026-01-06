@@ -79,6 +79,8 @@ const ServicesRightSideContentDutch = () => {
     "/bis-schema-x-certificering-voor-transformators",
     // Weaving Machines Dutch Page URL
     "/bis-schema-x-certificering-voor-weefmachines-getouwen",
+    // Bunk Beds Dutch Page Url
+    "/blogs/isi-products/stapelbedden-is-17636",
   ];
 
   // Check if current path should show these components
@@ -699,6 +701,8 @@ const ContactFormServicesRightSideContentDutch = () => {
       return "Transformers - Dutch Page";
     if (path.includes("/bis-schema-x-certificering-voor-weefmachines-getouwen"))
       return "Weaving Machines - Dutch Page";
+    if (path.includes("/blogs/isi-products/stapelbedden-is-17636"))
+      return "BIS Certificate for Bunk Beds (Dutch)";
     return "";
   };
 

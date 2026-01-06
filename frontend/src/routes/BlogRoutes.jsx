@@ -56,8 +56,20 @@ const VietnamBlog = lazy(() => import("@/blogs/VietnamBlog/VietnamBlog"));
 const BISCertificateForBunkBeds = lazy(() =>
   import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBeds")
 );
+const BISCertificateForBunkBedsFrench = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsFrench")
+);
+const BISCertificateForBunkBedsDutch = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsDutch")
+);
+const BISCertificateForBunkBedsArabic = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsArabic")
+);
 const BISCertificateForBunkBedsJapanese = lazy(() =>
   import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsJapanese")
+);
+const BISCertificateForBunkBedsChinese = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsChinese")
 );
 const BISCertificateForBeds = lazy(() =>
   import("@/blogs/BISCertificateForBeds")
@@ -464,10 +476,42 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/lits-superposes-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/stapelbedden-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/asrat-muzdawijat-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsArabic />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/nidan-beddo-is-17636"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBunkBedsJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/shuang-ceng-chuang-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsChinese />
           </Suspense>
         }
       />

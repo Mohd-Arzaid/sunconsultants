@@ -30,8 +30,6 @@ const ServicesRightSideContentFrench = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
-   
-
     "/certification-bis-schema-x-pour-equipements-de-traitement-thermique",
     "/certification-bis-schema-x-pour-compresseurs",
     "/certification-bis-en-france",
@@ -42,6 +40,8 @@ const ServicesRightSideContentFrench = () => {
     "/fr/quest-ce-que-le-certificat-bis-indien",
     // BISFM (FMCS - Foreign Manufacturers) French Page Url
     "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde",
+    // Bunk Beds French Page Url
+    "/blogs/isi-products/lits-superposes-is-17636",
   ];
 
   // Check if current path should show these components
@@ -573,7 +573,11 @@ const ContactFormServicesRightSideContentFrench = () => {
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration (French)";
 
-    if (path.includes("/certification-bis-schema-x-pour-equipements-de-traitement-thermique"))
+    if (
+      path.includes(
+        "/certification-bis-schema-x-pour-equipements-de-traitement-thermique"
+      )
+    )
       return "Schema X Certification for Heat Treatment Equipment (French)";
 
     if (path.includes("/certification-bis-en-france"))
@@ -592,6 +596,8 @@ const ContactFormServicesRightSideContentFrench = () => {
       )
     )
       return "BISFM (FMCS - Foreign Manufacturers) French Page";
+    if (path.includes("/blogs/isi-products/lits-superposes-is-17636"))
+      return "BIS Certificate for Bunk Beds (French)";
   };
 
   const [formData, setFormData] = useState({

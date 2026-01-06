@@ -35,6 +35,7 @@ const ServicesRightSideContentChinese = () => {
     "/zh/yin-du-bis-fang-an-x-ren-zheng",
     "/zh/bis-isi-mark-renzheng",
     "/zh/bis-zheng-shu-shi-shen-me-yin-du-bis",
+    "/blogs/isi-products/shuang-ceng-chuang-is-17636",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
     "/bis-fang-an-x-ya-suo-ji-ren-zheng",
     "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
@@ -694,6 +695,10 @@ const ContactFormServicesRightSideContentChinese = () => {
     // Weaving Machines Chinese Page Url
     if (path.includes("/bis-fang-an-x-zhi-ji-ren-zheng"))
       return "Weaving Machines Chinese - 中文页面";
+
+    // Bunk Beds Chinese Page Url
+    if (path.includes("/blogs/isi-products/shuang-ceng-chuang-is-17636"))
+      return "Bunk Beds Chinese - 中文页面";
   };
 
   const [formData, setFormData] = useState({

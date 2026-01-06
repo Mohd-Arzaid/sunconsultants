@@ -62,6 +62,8 @@ const ServicesRightSideContentArabic = () => {
     "/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-fawq-1000-folt",
     "/shahadat-bis-mukhatat-x-lil-muhawilat",
     "/shahadat-bis-mukhatat-x-lil-alat-al-nasij-wa-al-anwal",
+    // Bunk Beds Arabic Page Url
+    "/blogs/isi-products/asrat-muzdawijat-is-17636",
   ];
 
   // Check if current path should show these components
@@ -683,6 +685,9 @@ const ContactFormServicesRightSideContentArabic = () => {
       return "Transformers Arabic (Scheme X)";
     if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-nasij-wa-al-anwal"))
       return "Weaving Machines Arabic (Scheme X)";
+    if (path.includes("/blogs/isi-products/asrat-muzdawijat-is-17636"))
+      return "BIS Certificate for Bunk Beds (Arabic)";
+    return "";
   };
 
   const [formData, setFormData] = useState({
