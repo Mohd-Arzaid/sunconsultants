@@ -873,47 +873,11 @@ const MainContentLeft = () => {
 
         <ManyUsersAlsoReadJapanese />
 
-        <FaqAuthorJapanese questionNumber={5} />import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
-import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
-import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { SlashIcon } from "lucide-react";
-import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import { BoxReveal } from "@/components/magicui/box-reveal";
-import { Separator } from "@/components/ui/separator";
-import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterEng from "@/components/manual/Footer/FooterEng";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHeader,
-  TableRow,
-  TableHead,
-} from "@/components/ui/table";
-
-const BISCertificateForBunkBeds = () => {
-  return (
-    <div className="relative w-full">
-      <MetaTags />
-      <BreadcrumbContent />
-      <MainContent />
-      <Services />
-      <VideoSection />
-      <FooterEng />
+        <FaqAuthorJapanese questionNumber={5} />
+      </div>
     </div>
   );
 };
-
-export default BISCertificateForBunkBeds;
 
 const MetaTags = () => {
   const title = "BIS Certificate for Bunk Beds | IS 17636:2022 BIS License";
