@@ -1,4 +1,6 @@
-import ServicesRightSideContentJapanese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentJapanese";
+import FaqAuthorVietnamese from "@/components/common/FaqAuthor/FaqAuthorVietnamese";
+import ManyUsersAlsoReadVietnamese from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadVietnamese";
+import ServicesRightSideContentVietnamese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentVietnamese";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -13,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
+import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
 import {
   Table,
   TableBody,
@@ -22,42 +24,41 @@ import {
   TableRow,
   TableHead,
 } from "@/components/ui/table";
-import FaqAuthorJapanese from "../../components/common/FaqAuthor/FaqAuthorJapanese";
-import ManyUsersAlsoReadJapanese from "../../components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadJapanese";
 
-const BISCertificateForBunkBedsJapanese = () => {
+const BISCertificateForBunkBedsVietnamese = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
-      <ServicesJapanese />
+      <Services />
       <VideoSection />
-      <FooterJapanese />
+      <FooterVietnamese />
     </div>
   );
 };
 
-export default BISCertificateForBunkBedsJapanese;
+export default BISCertificateForBunkBedsVietnamese;
 
 const MetaTags = () => {
-  const title = "二段ベッドのBIS認証 | IS 17636:2022 BISライセンス";
-  const ogTitle = "二段ベッドのBIS認証 – IS 17636:2022ガイド";
-  const twitterTitle = "二段ベッドのBISライセンス | IS 17636:2022";
+  const title =
+    "Giấy chứng nhận BIS cho Giường tầng | Giấy phép BIS IS 17636:2022";
+  const ogTitle = "Chứng nhận BIS cho Giường tầng – Hướng dẫn IS 17636:2022";
+  const twitterTitle = "Giấy phép BIS cho Giường tầng | IS 17636:2022";
   const metaDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証を取得。インドでのBIS認証のプロセス、書類、テスト、費用、タイムライン。";
+    "Nhận Giấy chứng nhận BIS cho giường tầng theo IS 17636:2022. Quy trình, tài liệu, kiểm tra, chi phí & thời gian cho Chứng nhận BIS tại Ấn Độ.";
   const ogDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証の完全ガイド。プロセス、費用、書類、テスト、BISライセンスのメリットを理解する。";
+    "Hướng dẫn đầy đủ về Chứng nhận BIS cho giường tầng theo IS 17636:2022. Tìm hiểu quy trình, chi phí, tài liệu, kiểm tra & lợi ích giấy phép BIS.";
   const twitterDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証を申請。インドでのBISプロセス、書類、テスト、費用、タイムラインを学ぶ。";
+    "Đăng ký Giấy chứng nhận BIS cho giường tầng theo IS 17636:2022. Tìm hiểu quy trình BIS, tài liệu, kiểm tra, phí & thời gian tại Ấn Độ.";
   const metaKeywords =
-    "二段ベッドのBIS認証, 二段ベッドのBISライセンス, IS 17636:2022, 二段ベッドのBIS認証";
+    "Giấy chứng nhận BIS cho Giường tầng, Giấy phép BIS cho Giường tầng, IS 17636:2022, Chứng nhận BIS cho Giường tầng";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/nidan-beddo-is-17636";
+    "https://bis-certifications.com/blogs/isi-products/giuong-tang-is-17636";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
-    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+    "Dhruv Aggarwal, Trưởng phòng Vận hành tại Sun Certification India";
 
   return (
     <Helmet>
@@ -90,7 +91,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">ホーム</Link>
+                    <Link to="/">Trang chủ</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -99,7 +100,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">最新のブログ</Link>
+                    <Link to="/Blogs">Blog mới nhất</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -108,7 +109,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    二段ベッドのBIS認証 – IS 17636:2022
+                    Giấy chứng nhận BIS cho Giường tầng – IS 17636:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -128,7 +129,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentJapanese />
+        <ServicesRightSideContentVietnamese />
       </div>
     </div>
   );
@@ -140,363 +141,398 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証 – IS 17636:2022 BIS認証の完全ガイド
+          Giấy chứng nhận BIS cho Giường tầng – Hướng dẫn đầy đủ về Chứng nhận
+          BIS IS 17636:2022
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforBunkBeds.png"
-            title="二段ベッドのBISライセンス"
-            alt="二段ベッドのBIS認証 - IS 17636:2022 BIS認証"
+            title="Giấy phép BIS cho Giường tầng"
+            alt="Giấy chứng nhận BIS cho Giường tầng - Chứng nhận BIS IS 17636:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドのBIS認証は、IS
-          17636:2022に基づき、インドで必須要件となっています。この規格は、家庭、ホステル、寮、PG宿泊施設、学校、ホテル、商業施設で使用される二段ベッドの安全性、性能、構造要件を定めています。インドの製造業者または外国の製造業者を問わず、インド市場で二段ベッドを販売、輸入、輸出、または流通させる前に、二段ベッドのBIS認証を取得する必要があります。
+          Giấy chứng nhận BIS cho Giường tầng là yêu cầu bắt buộc tại Ấn Độ theo
+          IS 17636:2022, quy định các yêu cầu về an toàn, hiệu suất và cấu trúc
+          cho giường tầng được sử dụng trong nhà, ký túc xá, ký túc xá, chỗ ở
+          PG, trường học, khách sạn và cơ sở thương mại. Bất kỳ nhà sản xuất
+          nào—Ấn Độ hoặc nước ngoài—phải có Chứng nhận BIS cho Giường tầng trước
+          khi bán, nhập khẩu, xuất khẩu hoặc phân phối giường tầng trong thị
+          trường Ấn Độ.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          省スペース家具への需要の増加に伴い、二段ベッドは重要な製品カテゴリーとなっています。しかし、落下、崩壊、挟み込み、構造的故障などの安全リスクにより、消費者保護を確保するために二段ベッドのBISライセンスが重要になっています。この包括的なページでは、二段ベッドのBIS登録、テスト要件、書類、費用、タイムライン、罰則、メリットについてご案内します。
+          Với nhu cầu ngày càng tăng về nội thất tiết kiệm không gian, giường
+          tầng đã trở thành một danh mục sản phẩm thiết yếu. Tuy nhiên, rủi ro
+          an toàn như ngã, sụp đổ, mắc kẹt và hỏng cấu trúc khiến Giấy phép BIS
+          cho Giường tầng trở nên quan trọng để đảm bảo bảo vệ người tiêu dùng.
+          Trang này toàn diện sẽ hướng dẫn bạn qua Đăng ký BIS cho Giường tầng,
+          yêu cầu kiểm tra, tài liệu, phí, thời gian, hình phạt và lợi ích.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          製造業者、輸入業者、輸出業者、貿易業者、またはスタートアップであるかどうかにかかわらず、このガイドはインド標準局（BIS）のコンプライアンス要件を理解するのに役立ちます。
+          Dù bạn là nhà sản xuất, nhà nhập khẩu, nhà xuất khẩu, thương nhân hay
+          khởi nghiệp, hướng dẫn này giúp bạn hiểu các yêu cầu tuân thủ theo Cục
+          Tiêu chuẩn Ấn Độ (BIS).
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          BIS認証とは何ですか？
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Chứng nhận BIS là gì?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証は、インドの国家標準機関であるインド標準局が管理する品質および安全性コンプライアンスプログラムです。製品が指定されたインド規格に準拠し、安全で信頼性が高く、使用に適していることを保証します。
+          Chứng nhận BIS là chương trình tuân thủ chất lượng và an toàn được
+          quản lý bởi Cục Tiêu chuẩn Ấn Độ, cơ quan tiêu chuẩn quốc gia của Ấn
+          Độ. Nó đảm bảo rằng sản phẩm tuân thủ các Tiêu chuẩn Ấn Độ được chỉ
+          định và an toàn, đáng tin cậy và phù hợp để sử dụng.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS証明書とは何ですか？
+          Giấy chứng nhận BIS là gì?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS証明書は、製造業者に発行される公式ライセンスで、ISIマークの使用を許可し、BISが規定する製品規格への準拠を示します。
+          Giấy chứng nhận BIS là giấy phép chính thức được cấp cho nhà sản xuất
+          cho phép họ sử dụng Dấu ISI, chứng minh sự tuân thủ với tiêu chuẩn sản
+          phẩm do BIS quy định.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS証明書の意味
+          Ý nghĩa Giấy chứng nhận BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          製品が以下を通過したことを証明します：
+          Nó chứng minh sản phẩm đã vượt qua:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>実験室テスト</li>
-          <li>工場検査</li>
-          <li>品質管理評価</li>
-          <li>安全性コンプライアンス</li>
-          <li>インド規格への準拠</li>
+          <li>Kiểm tra trong phòng thí nghiệm</li>
+          <li>Kiểm tra nhà máy</li>
+          <li>Đánh giá kiểm soát chất lượng</li>
+          <li>Tuân thủ an toàn</li>
+          <li>Phù hợp với Tiêu chuẩn Ấn Độ</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証製品には、BISロゴ（ISIマークとも呼ばれる）が表示され、インドの品質基準を満たしていることを示します。
+          Sản phẩm được chứng nhận BIS hiển thị Logo BIS, còn được gọi là Dấu
+          ISI, có nghĩa là nó đáp ứng các tiêu chuẩn chất lượng Ấn Độ.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドに適用されるBIS規格は？（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tiêu chuẩn BIS nào áp dụng cho Giường tầng? (IS 17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドは、新しく導入された規格に基づき、必須のBIS認証の対象となります：
+          Giường tầng thuộc chứng nhận BIS bắt buộc theo tiêu chuẩn mới được
+          giới thiệu:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17636:2022</strong> — 二段ベッド – 安全性要件
+          🔹 <strong>IS 17636:2022</strong> — Giường tầng – Yêu cầu An toàn
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          この規格は、二段ベッドが厳格な安全性、構造、耐久性の基準を満たすことを保証します。以下をカバーします：
+          Tiêu chuẩn này đảm bảo rằng giường tầng đáp ứng các tiêu chí an toàn,
+          xây dựng và độ bền nghiêm ngặt. Nó bao gồm:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>構造的安定性</li>
-          <li>ガードレール</li>
-          <li>挟み込みの危険</li>
-          <li>耐荷重能力</li>
-          <li>寸法要件</li>
-          <li>材料仕様</li>
-          <li>エッジと表面仕上げ</li>
-          <li>はしごの構造</li>
-          <li>耐久性および性能テスト</li>
+          <li>Ổn định cấu trúc</li>
+          <li>Lan can bảo vệ</li>
+          <li>Nguy cơ mắc kẹt</li>
+          <li>Khả năng chịu tải</li>
+          <li>Yêu cầu kích thước</li>
+          <li>Thông số kỹ thuật vật liệu</li>
+          <li>Cạnh và hoàn thiện bề mặt</li>
+          <li>Xây dựng thang</li>
+          <li>Kiểm tra độ bền và hiệu suất</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インドで二段ベッドを販売したい製造業者は、IS
-          17636:2022に基づく二段ベッドのBISライセンスを取得する必要があります。
+          Bất kỳ nhà sản xuất nào muốn bán giường tầng tại Ấn Độ phải có Giấy
+          phép BIS cho Giường tầng theo IS 17636:2022.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドにBIS認証が必要な理由
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tại sao cần Chứng nhận BIS cho Giường tầng
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドは子供や大人に広く使用されており、安全性への懸念からコンプライアンスが不可欠です。BISは以下を防ぐために認証を義務付けています：
+          Giường tầng được sử dụng rộng rãi bởi trẻ em và người lớn, và mối quan
+          tâm về an toàn làm cho việc tuân thủ trở nên cần thiết. BIS đã làm cho
+          chứng nhận trở thành bắt buộc để ngăn chặn:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>崩壊または構造的故障</li>
-          <li>身体の部位の挟み込み</li>
-          <li>上段からの落下</li>
-          <li>はしご関連の怪我</li>
-          <li>材料品質の低さ</li>
-          <li>火災の危険</li>
-          <li>有害な仕上げまたは鋭いエッジ</li>
+          <li>Sụp đổ hoặc hỏng cấu trúc</li>
+          <li>Mắc kẹt các bộ phận cơ thể</li>
+          <li>Ngã từ tầng trên</li>
+          <li>Chấn thương liên quan đến thang</li>
+          <li>Chất lượng vật liệu kém</li>
+          <li>Nguy cơ cháy</li>
+          <li>Hoàn thiện nguy hiểm hoặc cạnh sắc</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          二段ベッドのBISライセンスが必須である理由
+          Lý do Giấy phép BIS cho Giường tầng là Bắt buộc
         </h3>
 
         <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>機械的強度と耐久性を確保</li>
-          <li>消費者、特に子供を怪我から保護</li>
-          <li>統一された品質基準を維持</li>
-          <li>ブランドの信頼性と信頼性の構築に役立つ</li>
-          <li>政府規制への準拠を確保</li>
-          <li>法的問題と罰則を防止</li>
+          <li>Đảm bảo độ bền cơ học và độ bền</li>
+          <li>Bảo vệ người tiêu dùng—đặc biệt là trẻ em—khỏi chấn thương</li>
+          <li>Duy trì tiêu chuẩn chất lượng đồng nhất</li>
+          <li>Giúp thương hiệu xây dựng niềm tin và uy tín</li>
+          <li>Đảm bảo tuân thủ các quy định của chính phủ</li>
+          <li>Ngăn chặn các vấn đề pháp lý và hình phạt</li>
         </ol>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS登録なしでは、製造業者と輸入業者はインド市場で合法的に製品を販売することはできません。
+          Không có đăng ký BIS, nhà sản xuất và nhà nhập khẩu không thể hợp pháp
+          bán sản phẩm trong thị trường Ấn Độ.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証プロセス（ステップバイステップ）（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Quy trình Chứng nhận BIS từng bước cho Giường tầng (IS 17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インドでのBIS認証プロセスには、テスト、書類、工場検査が含まれます。以下がステップバイステップの手順です：
+          Quy trình chứng nhận BIS tại Ấn Độ bao gồm kiểm tra, tài liệu và kiểm
+          tra nhà máy. Đây là quy trình từng bước:
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ1 — 適用性と規格の決定
+          Bước 1 — Xác định Khả năng áp dụng & Tiêu chuẩn
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>IS 17636:2022</strong> — 必須
+            <strong>IS 17636:2022</strong> — Bắt buộc
           </li>
-          <li>製品カテゴリーと製造ユニットの詳細を確認します。</li>
+          <li>Xác nhận danh mục sản phẩm và chi tiết đơn vị sản xuất.</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ2 — BIS申請（フォーム提出）
+          Bước 2 — Đơn đăng ký BIS (Gửi biểu mẫu)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS Manakオンラインポータルを通じてオンラインで申請します。
+          Nộp đơn trực tuyến qua Cổng thông tin trực tuyến BIS Manak.
         </p>
         <p className="text-gray-600 text-base font-geist mb-3">
-          要件には以下が含まれます：
+          Yêu cầu bao gồm:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製造業者の詳細</li>
-          <li>工場住所と証明</li>
-          <li>製品カテゴリーとブランド</li>
-          <li>製造能力</li>
-          <li>品質管理プロセス</li>
+          <li>Chi tiết nhà sản xuất</li>
+          <li>Địa chỉ nhà máy và bằng chứng</li>
+          <li>Danh mục sản phẩm & thương hiệu</li>
+          <li>Khả năng sản xuất</li>
+          <li>Quy trình kiểm soát chất lượng</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          このステップで公式承認サイクルが開始されます。
+          Bước này bắt đầu chu kỳ phê duyệt chính thức.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ3 — BIS証明書費用の支払い
+          Bước 3 — Thanh toán Chi phí Giấy chứng nhận BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          提出後、以下を支払います：
+          Sau khi gửi, thanh toán:
         </p>
         <ul className="list-disc ml-6 mb-3 space-y-2 text-gray-600 text-base font-geist">
-          <li>申請費用</li>
-          <li>テスト費用</li>
-          <li>監査費用</li>
-          <li>マーキング費用</li>
+          <li>Phí đăng ký</li>
+          <li>Phí kiểm tra</li>
+          <li>Phí kiểm toán</li>
+          <li>Phí đánh dấu</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-3">
-          費用は以下によって異なります：
+          Phí phụ thuộc vào:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品バリエーションの数</li>
-          <li>ブランド名</li>
-          <li>工場の場所</li>
-          <li>テストパラメータ</li>
+          <li>Số lượng biến thể sản phẩm</li>
+          <li>Tên thương hiệu</li>
+          <li>Vị trí nhà máy</li>
+          <li>Thông số kiểm tra</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ4 — サンプルテスト（IS 17636:2022に基づく）
+          Bước 4 — Kiểm tra Mẫu (Theo IS 17636:2022)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          テストはBIS認定の実験室で実施されます。
+          Kiểm tra được thực hiện trong phòng thí nghiệm được BIS công nhận.
         </p>
         <p className="text-gray-600 text-base font-geist mb-3">
-          テストには以下が含まれます：
+          Các kiểm tra bao gồm:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>構造的安定性テスト</li>
-          <li>衝撃テスト</li>
-          <li>挟み込みテスト</li>
-          <li>ガードレール強度テスト</li>
-          <li>仕上げ品質テスト</li>
-          <li>はしご安全性テスト</li>
-          <li>負荷テスト</li>
-          <li>耐久性テスト</li>
-          <li>エッジ安全性評価</li>
+          <li>Kiểm tra độ ổn định cấu trúc</li>
+          <li>Kiểm tra tác động</li>
+          <li>Kiểm tra mắc kẹt</li>
+          <li>Kiểm tra độ bền lan can</li>
+          <li>Kiểm tra chất lượng hoàn thiện</li>
+          <li>Kiểm tra an toàn thang</li>
+          <li>Kiểm tra tải trọng</li>
+          <li>Kiểm tra độ bền</li>
+          <li>Đánh giá an toàn cạnh</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          テストレポートはBISポータルに直接アップロードされます。
+          Báo cáo kiểm tra được tải trực tiếp lên cổng thông tin BIS.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ5 — BIS工場検査
+          Bước 5 — Kiểm tra Nhà máy BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS担当者が工場を訪問し、以下を確認します：
+          Cán bộ BIS đến thăm nhà máy để xác minh:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>品質管理体制</li>
-          <li>原材料管理</li>
-          <li>工程中の検査</li>
-          <li>最終製品テスト</li>
-          <li>生産能力</li>
+          <li>Hệ thống quản lý chất lượng</li>
+          <li>Kiểm soát nguyên vật liệu</li>
+          <li>Kiểm tra trong quá trình</li>
+          <li>Kiểm tra sản phẩm cuối cùng</li>
+          <li>Khả năng sản xuất</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BISテスト・検査スキーム（STI）への準拠を確認します。
+          Họ kiểm tra sự tuân thủ với Chương trình Kiểm tra & Kiểm tra BIS
+          (STI).
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ6 — BISライセンスの付与
+          Bước 6 — Cấp Giấy phép BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          すべてのステップがクリアされると、BISは以下を発行します：
+          Sau khi tất cả các bước được hoàn tất, BIS cấp:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS証明書</li>
-          <li>ISIマーク承認</li>
-          <li>CMLライセンス番号</li>
+          <li>Giấy chứng nhận BIS</li>
+          <li>Phê duyệt Dấu ISI</li>
+          <li>Số Giấy phép CML</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          これで、二段ベッドとパッケージにBISマークを合法的に使用できます。
+          Bây giờ bạn có thể hợp pháp sử dụng Dấu BIS trên giường tầng và bao
+          bì.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ7 — ライセンス後の義務
+          Bước 7 — Nghĩa vụ Sau Giấy phép
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          製造業者は以下を実施する必要があります：
+          Nhà sản xuất phải:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>内部テストの維持</li>
-          <li>定期的なBIS検査の許可</li>
-          <li>1年または2年ごとのライセンス更新</li>
+          <li>Duy trì kiểm tra nội bộ</li>
+          <li>Cho phép kiểm tra BIS định kỳ</li>
+          <li>Gia hạn giấy phép mỗi 1 hoặc 2 năm</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBISライセンスの範囲
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Phạm vi Giấy phép BIS cho Giường tầng
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong>{" "}
-          この規格は、家庭用および非家庭用の二段ベッドの性能と安全性、すなわち強度、安定性、耐久性に関する要件をカバーします。この規格は、完成床面から800mm以上の高さで使用されるベッドベースの単一ベッドにも適用され、下のスペースの用途に関係なく適用されます。
+          <strong>1.1</strong> Tiêu chuẩn này bao gồm các yêu cầu liên quan đến
+          hiệu suất và an toàn, đó là độ bền, độ ổn định và độ bền của giường
+          tầng cho sử dụng trong nước và ngoài nước. Tiêu chuẩn này cũng áp dụng
+          cho giường đơn để sử dụng ở độ cao của đế giường 800 mm hoặc cao hơn
+          so với mức sàn hoàn thiện, bất kể việc sử dụng không gian bên dưới
+          được đặt.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong>{" "}
-          この規格は、完全に製造/組み立てられた二段ベッドに適用されます。組み立て済みユニットにも適用され、その場合、この規格の要件は組み立て済みユニットに適用されます。
+          <strong>1.2</strong> Tiêu chuẩn này áp dụng cho giường tầng được sản
+          xuất/ chế tạo hoàn toàn. Nó cũng áp dụng cho các đơn vị sẵn sàng lắp
+          ráp; trong trường hợp đó các yêu cầu của tiêu chuẩn này sẽ áp dụng cho
+          đơn vị đã lắp ráp.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証に必要な書類
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tài liệu Cần thiết cho Chứng nhận BIS của Giường tầng
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          以下がBIS証明書の書類の完全なリストです：
+          Đây là danh sách đầy đủ các Tài liệu Giấy chứng nhận BIS:
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          製造業者の書類
+          Tài liệu Nhà sản xuất
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>工場登録証明書</li>
-          <li>製造プロセスフローチャート</li>
-          <li>機械・設備のリスト</li>
-          <li>テスト設備のリスト</li>
-          <li>校正証明書</li>
-          <li>工場レイアウト/プラントレイアウト</li>
-          <li>CEO/取締役からの承認書</li>
-          <li>ISO 9001証明書（利用可能な場合）</li>
+          <li>Giấy chứng nhận đăng ký nhà máy</li>
+          <li>Sơ đồ quy trình sản xuất</li>
+          <li>Danh sách máy móc & thiết bị</li>
+          <li>Danh sách thiết bị kiểm tra</li>
+          <li>Giấy chứng nhận hiệu chuẩn</li>
+          <li>Bố trí nhà máy/bố trí nhà máy</li>
+          <li>Thư ủy quyền từ CEO/Giám đốc</li>
+          <li>Giấy chứng nhận ISO 9001 (nếu có)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          法的書類
+          Tài liệu Pháp lý
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>身分証明書</li>
-          <li>住所証明</li>
-          <li>ブランド承認（サードパーティブランドの場合）</li>
-          <li>商標登録書類（オプション）</li>
+          <li>Giấy tờ tùy thân</li>
+          <li>Giấy tờ địa chỉ</li>
+          <li>Ủy quyền thương hiệu (nếu là thương hiệu bên thứ ba)</li>
+          <li>Tài liệu đăng ký nhãn hiệu (tùy chọn)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          技術書類
+          Tài liệu Kỹ thuật
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品仕様</li>
-          <li>材料リスト</li>
-          <li>安全機能の説明</li>
-          <li>品質管理計画</li>
-          <li>内部テストレポート</li>
+          <li>Thông số kỹ thuật sản phẩm</li>
+          <li>Hóa đơn nguyên vật liệu</li>
+          <li>Mô tả tính năng an toàn</li>
+          <li>Kế hoạch kiểm soát chất lượng</li>
+          <li>Báo cáo kiểm tra nội bộ</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS申請書類
+          Tài liệu Đơn đăng ký BIS
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>誓約書と宣言</li>
-          <li>テスト依頼フォーム</li>
-          <li>サンプル承認書</li>
+          <li>Cam kết & tuyên bố</li>
+          <li>Biểu mẫu yêu cầu kiểm tra</li>
+          <li>Thư phê duyệt mẫu</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          適切な書類を用意することで、遅延を減らし、スムーズな承認を確保できます。
+          Có tài liệu phù hợp giảm thiểu sự chậm trễ và đảm bảo phê duyệt suôn
+          sẻ.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのテスト要件（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Yêu cầu Kiểm tra cho Giường tầng (IS 17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          テストはBIS登録プロセスの必須部分です。二段ベッドは安全性と耐久性を確保するために厳格なテストを受けます。
+          Kiểm tra là một phần bắt buộc của quy trình đăng ký BIS. Giường tầng
+          trải qua các kiểm tra nghiêm ngặt để đảm bảo an toàn và độ bền.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドの検査・テストスキーム
+          Chương trình Kiểm tra và Kiểm tra cho Giường tầng
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -504,10 +540,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  条項
+                  Điều khoản
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  要件
+                  Yêu cầu
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -517,7 +553,7 @@ const MainContentLeft = () => {
                   4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  設計と仕上げ
+                  Thiết kế và tay nghề
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -525,7 +561,7 @@ const MainContentLeft = () => {
                   5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  寸法
+                  Kích thước
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -533,7 +569,7 @@ const MainContentLeft = () => {
                   7.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  上段ベッドの安全バリア
+                  Rào chắn An toàn Giường trên
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -541,7 +577,7 @@ const MainContentLeft = () => {
                   7.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  隙間
+                  Khe hở
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -549,7 +585,7 @@ const MainContentLeft = () => {
                   7.4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  ベッドベース
+                  Đế giường
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -557,7 +593,7 @@ const MainContentLeft = () => {
                   7.5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  はしご
+                  Thang
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -565,7 +601,7 @@ const MainContentLeft = () => {
                   7.6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  フレームと固定具の強度
+                  Độ bền của Khung và Bộ phận cố định
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -573,7 +609,7 @@ const MainContentLeft = () => {
                   7.7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  安定性
+                  Độ ổn định
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors">
@@ -581,7 +617,7 @@ const MainContentLeft = () => {
                   7.8
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  上段ベッドと下段ベッドの固定
+                  Cố định Giường trên với Giường dưới
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -589,268 +625,280 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          テストはBIS認定の実験室でのみ実施する必要があります。
+          Các kiểm tra phải được thực hiện chỉ tại phòng thí nghiệm được BIS
+          công nhận.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          一般的な課題と回避方法
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Thách thức Thường gặp & Cách Tránh
         </h2>
 
         <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>製品分類の誤り</strong>
+            <strong>Phân loại Sản phẩm Không đúng</strong>
             <br />
-            常に正しいインド規格を確認してください。
+            Luôn xác minh Tiêu chuẩn Ấn Độ chính xác.
           </li>
           <li>
-            <strong>不適切な書類</strong>
+            <strong>Tài liệu Không phù hợp</strong>
             <br />
-            書類の不足は遅延の原因となります。事前に準備してください。
+            Tài liệu thiếu gây chậm trễ—chuẩn bị trước.
           </li>
           <li>
-            <strong>実験室テストの失敗</strong>
+            <strong>Kiểm tra Phòng thí nghiệm Thất bại</strong>
             <br />
-            高品質の材料、溶接、ガードレール、仕上げを確保してください。
+            Đảm bảo vật liệu chất lượng cao, hàn, lan can và hoàn thiện.
           </li>
           <li>
-            <strong>検査準備が整っていない工場</strong>
+            <strong>Nhà máy Chưa sẵn sàng cho Kiểm tra</strong>
             <br />
-            QMSとテスト設備が適切に維持されていることを確認してください。
+            Đảm bảo QMS và thiết bị kiểm tra được bảo trì đúng cách.
           </li>
           <li>
-            <strong>商標の問題</strong>
+            <strong>Vấn đề Nhãn hiệu</strong>
             <br />
-            ブランド名はライセンス申請と一致する必要があります。
+            Tên thương hiệu phải khớp với đơn đăng ký giấy phép.
           </li>
         </ol>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          これらを早期に解決することで、処理時間を大幅に短縮できます。
+          Giải quyết những vấn đề này sớm giảm thời gian xử lý đáng kể.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          製造業者と輸入業者にとってのBIS認証のメリット
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Lợi ích của Chứng nhận BIS cho Nhà sản xuất & Nhà nhập khẩu
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドで合法的に二段ベッドを販売</li>
-          <li>顧客との信頼関係を構築</li>
-          <li>製品返品を削減</li>
-          <li>ブランドの評判を向上</li>
-          <li>安全性コンプライアンスを確保</li>
-          <li>競争優位性を獲得</li>
-          <li>小売チェーンとeコマースプラットフォームへの展開</li>
-          <li>政府入札へのアクセス</li>
-          <li>罰則と法的措置を回避</li>
+          <li>Bán giường tầng hợp pháp tại Ấn Độ</li>
+          <li>Xây dựng niềm tin với khách hàng</li>
+          <li>Giảm trả lại sản phẩm</li>
+          <li>Cải thiện danh tiếng thương hiệu</li>
+          <li>Đảm bảo tuân thủ an toàn</li>
+          <li>Đạt được lợi thế cạnh tranh</li>
+          <li>Mở rộng vào chuỗi bán lẻ & nền tảng thương mại điện tử</li>
+          <li>Truy cập đấu thầu chính phủ</li>
+          <li>Tránh hình phạt & hành động pháp lý</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          非準拠に対する罰則
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS認証なしで二段ベッドを販売すると、以下の結果になる可能性があります：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品の差し押さえ</li>
-          <li>金銭的罰則</li>
-          <li>工場閉鎖命令</li>
-          <li>法的起訴</li>
-          <li>インド市場からの禁止</li>
-          <li>ブランドのブラックリスト化</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          コンプライアンスは任意ではなく、必須です。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証が必要なのは誰ですか？
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Hình phạt cho Vi phạm
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          以下の事業者は二段ベッドのBISライセンスを取得する必要があります：
+          Bán giường tầng không có Chứng nhận BIS có thể dẫn đến:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドの製造業者</li>
-          <li>インドに輸出する外国の製造業者</li>
-          <li>輸入業者</li>
-          <li>流通業者</li>
-          <li>eコマース販売者</li>
-          <li>OEM/ODM製造業者</li>
-          <li>家具ブランドと小売業者</li>
+          <li>Tịch thu sản phẩm</li>
+          <li>Hình phạt tài chính</li>
+          <li>Lệnh đóng cửa nhà máy</li>
+          <li>Truy tố pháp lý</li>
+          <li>Cấm khỏi thị trường Ấn Độ</li>
+          <li>Đưa vào danh sách đen thương hiệu</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          各工場（会社ではなく）には別々のBISライセンスが必要です。
+          Tuân thủ không phải là tùy chọn—nó là bắt buộc.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          BIS認証コンサルティングで私たちを選ぶ理由
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Ai Cần Chứng nhận BIS cho Giường tầng?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          二段ベッドのBIS登録について、エンドツーエンドのサポートを提供します。以下を含みます：
+          Các thực thể sau phải có Giấy phép BIS cho Giường tầng:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>規格の解釈（IS 17636:2022）</li>
-          <li>書類の準備</li>
-          <li>実験室テストの調整</li>
-          <li>BISポータル申請</li>
-          <li>工場検査サポート</li>
-          <li>BIS担当者との連絡</li>
-          <li>ライセンス承認支援</li>
-          <li>認証後のコンプライアンス</li>
+          <li>Nhà sản xuất Ấn Độ</li>
+          <li>Nhà sản xuất nước ngoài xuất khẩu sang Ấn Độ</li>
+          <li>Nhà nhập khẩu</li>
+          <li>Nhà phân phối</li>
+          <li>Người bán thương mại điện tử</li>
+          <li>Nhà sản xuất OEM/ODM</li>
+          <li>Thương hiệu nội thất & nhà bán lẻ</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          長年の専門知識により、迅速で正確、かつ手間のかからないBIS認証を保証します。
+          Mỗi nhà máy (không phải công ty) yêu cầu giấy phép BIS riêng.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          よくある質問 — 二段ベッドのBIS認証
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tại sao Chọn Chúng tôi cho Tư vấn Chứng nhận BIS?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Chúng tôi cung cấp hỗ trợ toàn diện cho Đăng ký BIS cho Giường tầng,
+          bao gồm:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Giải thích tiêu chuẩn (IS 17636:2022)</li>
+          <li>Chuẩn bị tài liệu</li>
+          <li>Điều phối kiểm tra phòng thí nghiệm</li>
+          <li>Đơn đăng ký cổng thông tin BIS</li>
+          <li>Hỗ trợ kiểm tra nhà máy</li>
+          <li>Giao tiếp với cán bộ BIS</li>
+          <li>Hỗ trợ phê duyệt giấy phép</li>
+          <li>Tuân thủ sau chứng nhận</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Với nhiều năm kinh nghiệm, chúng tôi đảm bảo chứng nhận BIS nhanh
+          chóng, chính xác và không rắc rối.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Câu hỏi Thường gặp — Chứng nhận BIS cho Giường tầng
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. インドで二段ベッドのBIS認証は必須ですか？</strong>
+              <strong>
+                1. Chứng nhận BIS có bắt buộc cho giường tầng tại Ấn Độ không?
+              </strong>
               <br />
-              はい。IS
-              17636:2022に基づき、すべての製造業者と輸入業者に義務付けられています。
+              Có. Theo IS 17636:2022, nó là bắt buộc cho tất cả nhà sản xuất và
+              nhà nhập khẩu.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>2. Chứng nhận BIS cho giường tầng mất bao lâu?</strong>
+              <br />
+              Thường 30–45 ngày tùy thuộc vào sự sẵn sàng và tài liệu.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. 二段ベッドのBIS認証にはどのくらい時間がかかりますか？
+                3. Nhà sản xuất nước ngoài có thể đăng ký BIS không?
               </strong>
               <br />
-              準備状況と書類によって異なりますが、通常30〜45日です。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. 外国の製造業者はBISに申請できますか？</strong>
-              <br />
-              はい、FMCS（外国製造業者認証スキーム）を通じて申請できます。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. BIS証明書をオンラインで申請できますか？</strong>
-              <br />
-              はい、BIS Manakオンラインポータルを通じて申請できます。
+              Có, thông qua FMCS (Chương trình Chứng nhận Nhà sản xuất Nước
+              ngoài).
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                6. 二段ベッドの認証にはどのようなテストが必要ですか？
+                4. Tôi có thể đăng ký Giấy chứng nhận BIS trực tuyến không?
               </strong>
               <br />
-              負荷テスト、ガードレールテスト、安定性テスト、衝撃テスト、挟み込みテストなど。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. BISライセンスの有効期限はどのくらいですか？</strong>
-              <br />
-              通常1〜2年で、更新可能です。
+              Có, thông qua Cổng thông tin trực tuyến BIS Manak.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. 1つのライセンスで複数のモデルをカバーできますか？
+                6. Các kiểm tra nào được yêu cầu cho chứng nhận giường tầng?
               </strong>
               <br />
-              同じ規格とカテゴリーに該当する場合のみ可能です。
+              Kiểm tra tải trọng, kiểm tra lan can, kiểm tra độ ổn định, kiểm
+              tra tác động, kiểm tra mắc kẹt , v.v.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. 二段ベッドにISIマークは必要ですか？</strong>
+              <strong>7. Giấy phép BIS có hiệu lực bao lâu?</strong>
               <br />
-              はい、認証後はISIマークが必須です。
+              Thường 1–2 năm và có thể gia hạn.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. Một giấy phép có thể bao gồm nhiều mẫu không?</strong>
+              <br />
+              Chỉ khi chúng nằm trong cùng tiêu chuẩn và danh mục.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>9. Dấu ISI có bắt buộc trên giường tầng không?</strong>
+              <br />
+              Có, Dấu ISI là bắt buộc sau chứng nhận.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                10. 製品が実験室テストに不合格になった場合はどうなりますか？
+                10. Điều gì xảy ra nếu sản phẩm của tôi không vượt qua kiểm tra
+                phòng thí nghiệm?
               </strong>
               <br />
-              製品を修正し、サンプルを再提出する必要があります。
+              Bạn phải sửa đổi sản phẩm và gửi lại mẫu.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>11. BISは工場のインフラをチェックしますか？</strong>
+              <strong>11. BIS có kiểm tra cơ sở hạ tầng nhà máy không?</strong>
               <br />
-              はい、検査中にチェックします。
+              Có, trong quá trình kiểm tra.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>12. 貿易業者はBISに申請できますか？</strong>
+              <strong>12. Thương nhân có thể đăng ký BIS không?</strong>
               <br />
-              ブランド所有者であり、製造業者との契約がある場合のみ可能です。
+              Chỉ khi họ là chủ sở hữu thương hiệu và có hợp đồng với nhà sản
+              xuất.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>13. BISロゴとは何ですか？</strong>
+              <strong>13. Logo BIS là gì?</strong>
               <br />
-              製品の適合性を示す標準的なISIマークシンボルです。
+              Đó là biểu tượng Dấu ISI tiêu chuẩn cho biết sự phù hợp sản phẩm.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>14. BIS認証にはどのような書類が必要ですか？</strong>
+              <strong>14. Tài liệu nào cần thiết cho chứng nhận BIS?</strong>
               <br />
-              工場ライセンス、レイアウト、機械リスト、BOM、QC計画、テストレポートなど。
+              Giấy phép nhà máy, bố trí, danh sách máy móc, BOM, kế hoạch QC,
+              báo cáo kiểm tra, v.v.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>15. BISテストは工場で行われますか？</strong>
+              <strong>
+                15. Kiểm tra BIS được thực hiện tại nhà máy không?
+              </strong>
               <br />
-              いいえ、BIS認定の実験室でのみ実施されます。
+              Không, chỉ tại các phòng thí nghiệm được BIS công nhận.
             </p>
           </div>
         </div>
@@ -858,35 +906,56 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          結論
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Kết luận
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS
-          17636:2022に基づく二段ベッドのBIS証明書の取得は、インドでの消費者安全性、製品の信頼性、法的コンプライアンスを確保するために、必須であるだけでなく、不可欠です。認証プロセスには、製品テスト、書類、工場検査、ライセンス発行が含まれます。適切な計画と専門家のガイダンスにより、プロセスはスムーズで迅速、かつ費用対効果の高いものになります。
+          Việc có được Giấy chứng nhận BIS cho Giường tầng theo IS 17636:2022
+          không chỉ là bắt buộc mà còn cần thiết để đảm bảo an toàn người tiêu
+          dùng, độ tin cậy sản phẩm và tuân thủ pháp lý tại Ấn Độ. Quy trình
+          chứng nhận bao gồm kiểm tra sản phẩm, tài liệu, kiểm tra nhà máy, và
+          cấp giấy phép. Với kế hoạch phù hợp và hướng dẫn chuyên gia, quy trình
+          trở nên suôn sẻ, nhanh chóng và hiệu quả về chi phí.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          製造業者、輸入業者、またはブランド所有者であるかどうかにかかわらず、BIS認証を取得することで、市場での地位を強化し、顧客の信頼を高め、新しいビジネス機会を開くことができます。私たちの専門コンサルティングチームは、二段ベッドのエンドツーエンドのBIS認証をサポートする準備ができています。
+          Dù bạn là nhà sản xuất, nhà nhập khẩu hay chủ sở hữu thương hiệu, việc
+          có chứng nhận BIS tăng cường vị thế thị trường của bạn, tăng niềm tin
+          của khách hàng và mở ra các cơ hội kinh doanh mới. Đội ngũ tư vấn
+          chuyên gia của chúng tôi sẵn sàng hỗ trợ bạn với Chứng nhận BIS toàn
+          diện cho giường tầng.
         </p>
 
-        <ManyUsersAlsoReadJapanese />
+        {/* PDF Viewer Section */}
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src="/BIS-Product-Pdf/IS-17636-2021-Sun-Certifications-India.pdf"
+            title="Giấy chứng nhận BIS cho Giường tầng - IS 17636:2021 PDF"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        </div>
 
-        <FaqAuthorJapanese questionNumber={5} />
+        <ManyUsersAlsoReadVietnamese />
+
+        <FaqAuthorVietnamese questionNumber={5} />
       </div>
     </div>
   );
 };
 
-const ServicesJapanese = () => {
+const Services = () => {
   return (
     <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              私たちのサービス
+              Dịch vụ của Chúng tôi
             </h2>
           </BoxReveal>
 
@@ -894,7 +963,7 @@ const ServicesJapanese = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                インド最高の証明書コンサルタント
+                Tư vấn Chứng nhận Tốt nhất Ấn Độ
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -909,13 +978,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BISロゴ"
-                title="BISロゴ"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              外国製造業者向けBISマーク（ISIライセンス）
+              Dấu BIS (Giấy phép ISI) cho Sản xuất Nước ngoài
             </p>
           </Link>
 
@@ -926,13 +995,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="CDSCOロゴ"
-                title="CDSCOロゴ"
+                alt="Logo CDSCO"
+                title="Logo CDSCO"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO登録認証
+              Chứng nhận Đăng ký CDSCO
             </p>
           </Link>
 
@@ -943,13 +1012,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRSロゴ"
-                title="BISCRSロゴ"
+                alt="Logo BISCRS"
+                title="Logo BISCRS"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS（CRS）登録
+              Đăng ký BIS (CRS)
             </p>
           </Link>
 
@@ -960,13 +1029,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
-                alt="プラスチック廃棄物管理"
-                title="プラスチック廃棄物管理"
+                alt="Quản lý Chất thải Nhựa"
+                title="Quản lý Chất thải Nhựa"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              プラスチック廃棄物管理
+              Quản lý Chất thải Nhựa
             </p>
           </Link>
 
@@ -977,13 +1046,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPR証明書ロゴ"
-                title="EPR証明書ロゴ"
+                alt="Logo Giấy chứng nhận EPR"
+                title="Logo Giấy chứng nhận EPR"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR証明書認証
+              Chứng nhận Giấy chứng nhận EPR
             </p>
           </Link>
 
@@ -994,13 +1063,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPCロゴ"
-                title="LMPCロゴ"
+                alt="Logo LMPC"
+                title="Logo LMPC"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC証明書認証
+              Chứng nhận Giấy chứng nhận LMPC
             </p>
           </Link>
 
@@ -1011,13 +1080,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BISロゴ"
-                title="BISロゴ"
+                alt="Logo BIS"
+                title="Logo BIS"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS登録証明書
+              Giấy chứng nhận Đăng ký BIS
             </p>
           </Link>
 
@@ -1028,13 +1097,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIマークロゴ"
-                title="ISIマークロゴ"
+                alt="Logo Dấu ISI"
+                title="Logo Dấu ISI"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              インド製造業者向けISIマーク（BIS）
+              DẤU ISI (BIS) cho Nhà sản xuất Ấn Độ
             </p>
           </Link>
         </div>

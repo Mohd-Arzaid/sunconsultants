@@ -1,4 +1,6 @@
-import ServicesRightSideContentJapanese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentJapanese";
+import FaqAuthorKorean from "@/components/common/FaqAuthor/FaqAuthorKorean";
+import ManyUsersAlsoReadKorean from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadKorean";
+import ServicesRightSideContentKorean from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentKorean";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -13,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
+import FooterKorean from "@/components/manual/Footer/FooterKorean";
 import {
   Table,
   TableBody,
@@ -22,42 +24,39 @@ import {
   TableRow,
   TableHead,
 } from "@/components/ui/table";
-import FaqAuthorJapanese from "../../components/common/FaqAuthor/FaqAuthorJapanese";
-import ManyUsersAlsoReadJapanese from "../../components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadJapanese";
 
-const BISCertificateForBunkBedsJapanese = () => {
+const BISCertificateForBunkBedsKorean = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
-      <ServicesJapanese />
+      <Services />
       <VideoSection />
-      <FooterJapanese />
+      <FooterKorean />
     </div>
   );
 };
 
-export default BISCertificateForBunkBedsJapanese;
+export default BISCertificateForBunkBedsKorean;
 
 const MetaTags = () => {
-  const title = "二段ベッドのBIS認証 | IS 17636:2022 BISライセンス";
-  const ogTitle = "二段ベッドのBIS認証 – IS 17636:2022ガイド";
-  const twitterTitle = "二段ベッドのBISライセンス | IS 17636:2022";
+  const title = "이층 침대용 BIS 인증서 | IS 17636:2022 BIS 라이선스";
+  const ogTitle = "이층 침대용 BIS 인증 – IS 17636:2022 가이드";
+  const twitterTitle = "이층 침대용 BIS 라이선스 | IS 17636:2022";
   const metaDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証を取得。インドでのBIS認証のプロセス、書類、テスト、費用、タイムライン。";
+    "IS 17636:2022에 따른 이층 침대용 BIS 인증서를 받으세요. 인도의 BIS 인증을 위한 프로세스, 문서, 테스트, 비용 및 일정.";
   const ogDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証の完全ガイド。プロセス、費用、書類、テスト、BISライセンスのメリットを理解する。";
+    "IS 17636:2022에 따른 이층 침대용 BIS 인증에 대한 완전한 가이드. 프로세스, 비용, 문서, 테스트 및 BIS 라이선스 혜택을 알아보세요.";
   const twitterDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証を申請。インドでのBISプロセス、書類、テスト、費用、タイムラインを学ぶ。";
+    "IS 17636:2022에 따른 이층 침대용 BIS 인증서를 신청하세요. 인도에서 BIS 프로세스, 문서, 테스트, 수수료 및 일정을 알아보세요.";
   const metaKeywords =
-    "二段ベッドのBIS認証, 二段ベッドのBISライセンス, IS 17636:2022, 二段ベッドのBIS認証";
+    "이층 침대용 BIS 인증서, 이층 침대용 BIS 라이선스, IS 17636:2022, 이층 침대용 BIS 인증";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/nidan-beddo-is-17636";
+    "https://bis-certifications.com/blogs/isi-products/icheung-chimdae-is-17636";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
-  const publisher =
-    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+  const publisher = "Dhruv Aggarwal, Sun Certification India 운영 책임자";
 
   return (
     <Helmet>
@@ -90,7 +89,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">ホーム</Link>
+                    <Link to="/">홈</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -99,7 +98,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">最新のブログ</Link>
+                    <Link to="/Blogs">최신 블로그</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -108,7 +107,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    二段ベッドのBIS認証 – IS 17636:2022
+                    이층 침대용 BIS 인증서 – IS 17636:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -128,7 +127,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentJapanese />
+        <ServicesRightSideContentKorean />
       </div>
     </div>
   );
@@ -140,363 +139,383 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証 – IS 17636:2022 BIS認証の完全ガイド
+          이층 침대용 BIS 인증서 – IS 17636:2022 BIS 인증 완전 가이드
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforBunkBeds.png"
-            title="二段ベッドのBISライセンス"
-            alt="二段ベッドのBIS認証 - IS 17636:2022 BIS認証"
+            title="이층 침대용 BIS 라이선스"
+            alt="이층 침대용 BIS 인증서 - IS 17636:2022 BIS 인증"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドのBIS認証は、IS
-          17636:2022に基づき、インドで必須要件となっています。この規格は、家庭、ホステル、寮、PG宿泊施設、学校、ホテル、商業施設で使用される二段ベッドの安全性、性能、構造要件を定めています。インドの製造業者または外国の製造業者を問わず、インド市場で二段ベッドを販売、輸入、輸出、または流通させる前に、二段ベッドのBIS認証を取得する必要があります。
+          이층 침대용 BIS 인증서는 IS 17636:2022에 따라 인도에서 필수
+          요구사항이며, 가정, 호스텔, 기숙사, PG 숙소, 학교, 호텔 및 상업
+          시설에서 사용되는 이층 침대의 안전, 성능 및 구조적 요구사항을
+          규정합니다. 인도 또는 외국 제조업체는 인도 시장에서 이층 침대를 판매,
+          수입, 수출 또는 유통하기 전에 이층 침대용 BIS 인증을 받아야 합니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          省スペース家具への需要の増加に伴い、二段ベッドは重要な製品カテゴリーとなっています。しかし、落下、崩壊、挟み込み、構造的故障などの安全リスクにより、消費者保護を確保するために二段ベッドのBISライセンスが重要になっています。この包括的なページでは、二段ベッドのBIS登録、テスト要件、書類、費用、タイムライン、罰則、メリットについてご案内します。
+          공간 절약형 가구에 대한 수요가 증가함에 따라 이층 침대는 필수 제품
+          카테고리가 되었습니다. 그러나 낙상, 붕괴, 끼임 및 구조적 실패와 같은
+          안전 위험으로 인해 이층 침대용 BIS 라이선스는 소비자 보호를 보장하는
+          데 중요합니다. 이 포괄적인 페이지는 이층 침대용 BIS 등록, 테스트
+          요구사항, 문서화, 수수료, 일정, 처벌 및 혜택을 안내합니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          製造業者、輸入業者、輸出業者、貿易業者、またはスタートアップであるかどうかにかかわらず、このガイドはインド標準局（BIS）のコンプライアンス要件を理解するのに役立ちます。
+          제조업체, 수입업체, 수출업체, 무역업체 또는 스타트업이든, 이 가이드는
+          인도 표준국(BIS)의 규정 준수 요구사항을 이해하는 데 도움이 됩니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          BIS認証とは何ですか？
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS 인증이란 무엇인가요?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証は、インドの国家標準機関であるインド標準局が管理する品質および安全性コンプライアンスプログラムです。製品が指定されたインド規格に準拠し、安全で信頼性が高く、使用に適していることを保証します。
+          BIS 인증은 인도의 국가 표준 기관인 인도 표준국이 관리하는 품질 및 안전
+          규정 준수 프로그램입니다. 제품이 지정된 인도 표준을 준수하고 안전하고
+          신뢰할 수 있으며 사용하기에 적합한지 보장합니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS証明書とは何ですか？
+          BIS 인증서란 무엇인가요?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS証明書は、製造業者に発行される公式ライセンスで、ISIマークの使用を許可し、BISが規定する製品規格への準拠を示します。
+          BIS 인증서는 제조업체에게 발급되는 공식 라이선스로, ISI 마크를 사용할
+          수 있게 하며 BIS가 규정한 제품 표준을 준수함을 보여줍니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS証明書の意味
+          BIS 인증서의 의미
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          製品が以下を通過したことを証明します：
+          제품이 다음을 통과했음을 증명합니다:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>実験室テスト</li>
-          <li>工場検査</li>
-          <li>品質管理評価</li>
-          <li>安全性コンプライアンス</li>
-          <li>インド規格への準拠</li>
+          <li>실험실 테스트</li>
+          <li>공장 검사</li>
+          <li>품질 관리 평가</li>
+          <li>안전 규정 준수</li>
+          <li>인도 표준 준수</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証製品には、BISロゴ（ISIマークとも呼ばれる）が表示され、インドの品質基準を満たしていることを示します。
+          BIS 인증 제품은 BIS 로고(ISI 마크라고도 함)를 표시하여 인도 품질
+          기준을 충족함을 나타냅니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドに適用されるBIS規格は？（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          이층 침대에 적용되는 BIS 표준은 무엇인가요? (IS 17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドは、新しく導入された規格に基づき、必須のBIS認証の対象となります：
+          이층 침대는 새로 도입된 표준에 따라 필수 BIS 인증 대상입니다:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17636:2022</strong> — 二段ベッド – 安全性要件
+          🔹 <strong>IS 17636:2022</strong> — 이층 침대 – 안전 요구사항
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          この規格は、二段ベッドが厳格な安全性、構造、耐久性の基準を満たすことを保証します。以下をカバーします：
+          이 표준은 이층 침대가 엄격한 안전, 구조 및 내구성 기준을 충족하도록
+          보장합니다. 다음을 포함합니다:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>構造的安定性</li>
-          <li>ガードレール</li>
-          <li>挟み込みの危険</li>
-          <li>耐荷重能力</li>
-          <li>寸法要件</li>
-          <li>材料仕様</li>
-          <li>エッジと表面仕上げ</li>
-          <li>はしごの構造</li>
-          <li>耐久性および性能テスト</li>
+          <li>구조적 안정성</li>
+          <li>가드레일</li>
+          <li>끼임 위험</li>
+          <li>하중 지지 능력</li>
+          <li>치수 요구사항</li>
+          <li>재료 사양</li>
+          <li>가장자리 및 표면 마감</li>
+          <li>사다리 구조</li>
+          <li>내구성 및 성능 테스트</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インドで二段ベッドを販売したい製造業者は、IS
-          17636:2022に基づく二段ベッドのBISライセンスを取得する必要があります。
+          인도에서 이층 침대를 판매하려는 모든 제조업체는 IS 17636:2022에 따라
+          이층 침대용 BIS 라이선스를 받아야 합니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドにBIS認証が必要な理由
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          이층 침대에 BIS 인증이 필요한 이유
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドは子供や大人に広く使用されており、安全性への懸念からコンプライアンスが不可欠です。BISは以下を防ぐために認証を義務付けています：
+          이층 침대는 어린이와 성인에게 널리 사용되며, 안전 문제로 인해 규정
+          준수가 필수적입니다. BIS는 다음을 방지하기 위해 인증을 의무화했습니다:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>崩壊または構造的故障</li>
-          <li>身体の部位の挟み込み</li>
-          <li>上段からの落下</li>
-          <li>はしご関連の怪我</li>
-          <li>材料品質の低さ</li>
-          <li>火災の危険</li>
-          <li>有害な仕上げまたは鋭いエッジ</li>
+          <li>붕괴 또는 구조적 실패</li>
+          <li>신체 부위 끼임</li>
+          <li>상층 침대에서 낙상</li>
+          <li>사다리 관련 부상</li>
+          <li>낮은 재료 품질</li>
+          <li>화재 위험</li>
+          <li>위험한 마감 또는 날카로운 가장자리</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          二段ベッドのBISライセンスが必須である理由
+          이층 침대용 BIS 라이선스가 필수인 이유
         </h3>
 
         <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>機械的強度と耐久性を確保</li>
-          <li>消費者、特に子供を怪我から保護</li>
-          <li>統一された品質基準を維持</li>
-          <li>ブランドの信頼性と信頼性の構築に役立つ</li>
-          <li>政府規制への準拠を確保</li>
-          <li>法的問題と罰則を防止</li>
+          <li>기계적 강도와 내구성 보장</li>
+          <li>소비자(특히 어린이)를 부상으로부터 보호</li>
+          <li>균일한 품질 표준 유지</li>
+          <li>브랜드가 신뢰와 신뢰성 구축에 도움</li>
+          <li>정부 규정 준수 보장</li>
+          <li>법적 문제 및 처벌 방지</li>
         </ol>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS登録なしでは、製造業者と輸入業者はインド市場で合法的に製品を販売することはできません。
+          BIS 등록 없이는 제조업체와 수입업체가 법적으로 인도 시장에서 제품을
+          판매할 수 없습니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証プロセス（ステップバイステップ）（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          이층 침대용 BIS 인증 프로세스 단계별 가이드 (IS 17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インドでのBIS認証プロセスには、テスト、書類、工場検査が含まれます。以下がステップバイステップの手順です：
+          인도의 BIS 인증 프로세스에는 테스트, 문서화 및 공장 검사가 포함됩니다.
+          다음은 단계별 절차입니다:
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ1 — 適用性と規格の決定
+          1단계 — 적용 가능성 및 표준 결정
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>IS 17636:2022</strong> — 必須
+            <strong>IS 17636:2022</strong> — 필수
           </li>
-          <li>製品カテゴリーと製造ユニットの詳細を確認します。</li>
+          <li>제품 카테고리 및 제조 단위 세부사항을 확인합니다.</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ2 — BIS申請（フォーム提出）
+          2단계 — BIS 신청 (양식 제출)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS Manakオンラインポータルを通じてオンラインで申請します。
+          BIS Manak 온라인 포털을 통해 온라인으로 신청합니다.
         </p>
         <p className="text-gray-600 text-base font-geist mb-3">
-          要件には以下が含まれます：
+          요구사항에는 다음이 포함됩니다:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製造業者の詳細</li>
-          <li>工場住所と証明</li>
-          <li>製品カテゴリーとブランド</li>
-          <li>製造能力</li>
-          <li>品質管理プロセス</li>
+          <li>제조업체 세부사항</li>
+          <li>공장 주소 및 증명</li>
+          <li>제품 카테고리 및 브랜드</li>
+          <li>제조 능력</li>
+          <li>품질 관리 프로세스</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          このステップで公式承認サイクルが開始されます。
+          이 단계는 공식 승인 주기를 시작합니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ3 — BIS証明書費用の支払い
+          3단계 — BIS 인증서 비용 지불
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          提出後、以下を支払います：
+          제출 후 다음을 지불합니다:
         </p>
         <ul className="list-disc ml-6 mb-3 space-y-2 text-gray-600 text-base font-geist">
-          <li>申請費用</li>
-          <li>テスト費用</li>
-          <li>監査費用</li>
-          <li>マーキング費用</li>
+          <li>신청 수수료</li>
+          <li>테스트 수수료</li>
+          <li>감사 수수료</li>
+          <li>마킹 수수료</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-3">
-          費用は以下によって異なります：
+          수수료는 다음에 따라 다릅니다:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品バリエーションの数</li>
-          <li>ブランド名</li>
-          <li>工場の場所</li>
-          <li>テストパラメータ</li>
+          <li>제품 변형 수</li>
+          <li>브랜드 이름</li>
+          <li>공장 위치</li>
+          <li>테스트 매개변수</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ4 — サンプルテスト（IS 17636:2022に基づく）
+          4단계 — 샘플 테스트 (IS 17636:2022에 따라)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          テストはBIS認定の実験室で実施されます。
+          테스트는 BIS 인정 실험실에서 수행됩니다.
         </p>
         <p className="text-gray-600 text-base font-geist mb-3">
-          テストには以下が含まれます：
+          테스트에는 다음이 포함됩니다:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>構造的安定性テスト</li>
-          <li>衝撃テスト</li>
-          <li>挟み込みテスト</li>
-          <li>ガードレール強度テスト</li>
-          <li>仕上げ品質テスト</li>
-          <li>はしご安全性テスト</li>
-          <li>負荷テスト</li>
-          <li>耐久性テスト</li>
-          <li>エッジ安全性評価</li>
+          <li>구조적 안정성 테스트</li>
+          <li>충격 테스트</li>
+          <li>끼임 테스트</li>
+          <li>가드레일 강도 테스트</li>
+          <li>마감 품질 테스트</li>
+          <li>사다리 안전 테스트</li>
+          <li>하중 테스트</li>
+          <li>내구성 테스트</li>
+          <li>가장자리 안전 평가</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          テストレポートはBISポータルに直接アップロードされます。
+          테스트 보고서는 BIS 포털에 직접 업로드됩니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ5 — BIS工場検査
+          5단계 — BIS 공장 검사
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS担当者が工場を訪問し、以下を確認します：
+          BIS 담당자가 공장을 방문하여 다음을 확인합니다:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>品質管理体制</li>
-          <li>原材料管理</li>
-          <li>工程中の検査</li>
-          <li>最終製品テスト</li>
-          <li>生産能力</li>
+          <li>품질 관리 시스템</li>
+          <li>원자재 관리</li>
+          <li>공정 중 검사</li>
+          <li>최종 제품 테스트</li>
+          <li>생산 능력</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BISテスト・検査スキーム（STI）への準拠を確認します。
+          BIS 테스트 및 검사 계획(STI) 준수를 확인합니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ6 — BISライセンスの付与
+          6단계 — BIS 라이선스 발급
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          すべてのステップがクリアされると、BISは以下を発行します：
+          모든 단계가 완료되면 BIS는 다음을 발급합니다:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS証明書</li>
-          <li>ISIマーク承認</li>
-          <li>CMLライセンス番号</li>
+          <li>BIS 인증서</li>
+          <li>ISI 마크 승인</li>
+          <li>CML 라이선스 번호</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          これで、二段ベッドとパッケージにBISマークを合法的に使用できます。
+          이제 이층 침대와 포장에 BIS 마크를 법적으로 사용할 수 있습니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ7 — ライセンス後の義務
+          7단계 — 라이선스 발급 후 의무사항
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          製造業者は以下を実施する必要があります：
+          제조업체는 다음을 수행해야 합니다:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>内部テストの維持</li>
-          <li>定期的なBIS検査の許可</li>
-          <li>1年または2年ごとのライセンス更新</li>
+          <li>내부 테스트 유지</li>
+          <li>정기적인 BIS 검사 허용</li>
+          <li>라이선스를 1년 또는 2년마다 갱신</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBISライセンスの範囲
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          이층 침대용 BIS 라이선스 범위
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong>{" "}
-          この規格は、家庭用および非家庭用の二段ベッドの性能と安全性、すなわち強度、安定性、耐久性に関する要件をカバーします。この規格は、完成床面から800mm以上の高さで使用されるベッドベースの単一ベッドにも適用され、下のスペースの用途に関係なく適用されます。
+          <strong>1.1</strong> 이 표준은 가정용 및 비가정용 이층 침대의 성능 및
+          안전, 즉 강도, 안정성 및 내구성과 관련된 요구사항을 다룹니다. 이
+          표준은 또한 마감 바닥면에서 침대 바닥 높이가 800mm 이상인 단일
+          침대에도 적용되며, 아래 공간의 용도와 관계없이 적용됩니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong>{" "}
-          この規格は、完全に製造/組み立てられた二段ベッドに適用されます。組み立て済みユニットにも適用され、その場合、この規格の要件は組み立て済みユニットに適用されます。
+          <strong>1.2</strong> 이 표준은 완전히 제조/제작된 이층 침대에
+          적용됩니다. 조립 준비 완료 단위에도 적용되며, 이 경우 이 표준의
+          요구사항은 조립된 단위에 적용됩니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証に必要な書類
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          이층 침대용 BIS 인증에 필요한 문서
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          以下がBIS証明書の書類の完全なリストです：
+          다음은 BIS 인증서 문서의 전체 목록입니다:
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          製造業者の書類
+          제조업체 문서
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>工場登録証明書</li>
-          <li>製造プロセスフローチャート</li>
-          <li>機械・設備のリスト</li>
-          <li>テスト設備のリスト</li>
-          <li>校正証明書</li>
-          <li>工場レイアウト/プラントレイアウト</li>
-          <li>CEO/取締役からの承認書</li>
-          <li>ISO 9001証明書（利用可能な場合）</li>
+          <li>공장 등록 증명서</li>
+          <li>제조 공정 흐름도</li>
+          <li>기계 및 장비 목록</li>
+          <li>테스트 장비 목록</li>
+          <li>교정 증명서</li>
+          <li>공장 배치/플랜트 배치</li>
+          <li>CEO/이사 인증서</li>
+          <li>ISO 9001 인증서(있는 경우)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          法的書類
+          법적 문서
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>身分証明書</li>
-          <li>住所証明</li>
-          <li>ブランド承認（サードパーティブランドの場合）</li>
-          <li>商標登録書類（オプション）</li>
+          <li>신분 증명</li>
+          <li>주소 증명</li>
+          <li>브랜드 인증(제3자 브랜드인 경우)</li>
+          <li>상표 등록 문서(선택사항)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          技術書類
+          기술 문서
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品仕様</li>
-          <li>材料リスト</li>
-          <li>安全機能の説明</li>
-          <li>品質管理計画</li>
-          <li>内部テストレポート</li>
+          <li>제품 사양</li>
+          <li>자재 명세서</li>
+          <li>안전 기능 설명</li>
+          <li>품질 관리 계획</li>
+          <li>내부 테스트 보고서</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS申請書類
+          BIS 신청 문서
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>誓約書と宣言</li>
-          <li>テスト依頼フォーム</li>
-          <li>サンプル承認書</li>
+          <li>약정 및 선언</li>
+          <li>테스트 요청 양식</li>
+          <li>샘플 승인서</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          適切な書類を用意することで、遅延を減らし、スムーズな承認を確保できます。
+          적절한 문서를 갖추면 지연을 줄이고 원활한 승인을 보장합니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのテスト要件（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          이층 침대 테스트 요구사항 (IS 17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          テストはBIS登録プロセスの必須部分です。二段ベッドは安全性と耐久性を確保するために厳格なテストを受けます。
+          테스트는 BIS 등록 프로세스의 필수 부분입니다. 이층 침대는 안전성과
+          내구성을 보장하기 위해 엄격한 테스트를 거칩니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドの検査・テストスキーム
+          이층 침대 검사 및 테스트 계획
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -504,10 +523,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  条項
+                  조항
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  要件
+                  요구사항
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -517,7 +536,7 @@ const MainContentLeft = () => {
                   4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  設計と仕上げ
+                  디자인 및 제작
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -525,7 +544,7 @@ const MainContentLeft = () => {
                   5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  寸法
+                  치수
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -533,7 +552,7 @@ const MainContentLeft = () => {
                   7.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  上段ベッドの安全バリア
+                  상층 침대 안전 장벽
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -541,7 +560,7 @@ const MainContentLeft = () => {
                   7.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  隙間
+                  간격
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -549,7 +568,7 @@ const MainContentLeft = () => {
                   7.4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  ベッドベース
+                  침대 바닥
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -557,7 +576,7 @@ const MainContentLeft = () => {
                   7.5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  はしご
+                  사다리
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -565,7 +584,7 @@ const MainContentLeft = () => {
                   7.6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  フレームと固定具の強度
+                  프레임 및 고정 장치의 강도
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -573,7 +592,7 @@ const MainContentLeft = () => {
                   7.7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  安定性
+                  안정성
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors">
@@ -581,7 +600,7 @@ const MainContentLeft = () => {
                   7.8
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  上段ベッドと下段ベッドの固定
+                  상층 침대를 하층 침대에 고정
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -589,268 +608,269 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          テストはBIS認定の実験室でのみ実施する必要があります。
+          테스트는 BIS 인정 실험실에서만 수행해야 합니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          一般的な課題と回避方法
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          일반적인 문제 및 해결 방법
         </h2>
 
         <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>製品分類の誤り</strong>
+            <strong>잘못된 제품 분류</strong>
             <br />
-            常に正しいインド規格を確認してください。
+            항상 올바른 인도 표준을 확인하세요.
           </li>
           <li>
-            <strong>不適切な書類</strong>
+            <strong>부적절한 문서화</strong>
             <br />
-            書類の不足は遅延の原因となります。事前に準備してください。
+            누락된 문서는 지연을 초래합니다—미리 준비하세요.
           </li>
           <li>
-            <strong>実験室テストの失敗</strong>
+            <strong>실험실 테스트 실패</strong>
             <br />
-            高品質の材料、溶接、ガードレール、仕上げを確保してください。
+            고품질 재료, 용접, 가드레일 및 마감을 보장하세요.
           </li>
           <li>
-            <strong>検査準備が整っていない工場</strong>
+            <strong>검사 준비가 안 된 공장</strong>
             <br />
-            QMSとテスト設備が適切に維持されていることを確認してください。
+            QMS 및 테스트 장비가 제대로 유지 관리되도록 하세요.
           </li>
           <li>
-            <strong>商標の問題</strong>
+            <strong>상표 문제</strong>
             <br />
-            ブランド名はライセンス申請と一致する必要があります。
+            브랜드 이름은 라이선스 신청서와 일치해야 합니다.
           </li>
         </ol>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          これらを早期に解決することで、処理時間を大幅に短縮できます。
+          이러한 문제를 조기에 해결하면 처리 시간이 크게 단축됩니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          製造業者と輸入業者にとってのBIS認証のメリット
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          제조업체 및 수입업체를 위한 BIS 인증의 혜택
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドで合法的に二段ベッドを販売</li>
-          <li>顧客との信頼関係を構築</li>
-          <li>製品返品を削減</li>
-          <li>ブランドの評判を向上</li>
-          <li>安全性コンプライアンスを確保</li>
-          <li>競争優位性を獲得</li>
-          <li>小売チェーンとeコマースプラットフォームへの展開</li>
-          <li>政府入札へのアクセス</li>
-          <li>罰則と法的措置を回避</li>
+          <li>인도에서 이층 침대를 법적으로 판매</li>
+          <li>고객과의 신뢰 구축</li>
+          <li>제품 반품 감소</li>
+          <li>브랜드 평판 향상</li>
+          <li>안전 규정 준수 보장</li>
+          <li>경쟁 우위 확보</li>
+          <li>소매 체인 및 전자상거래 플랫폼으로 확장</li>
+          <li>정부 입찰 접근</li>
+          <li>처벌 및 법적 조치 방지</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          非準拠に対する罰則
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS認証なしで二段ベッドを販売すると、以下の結果になる可能性があります：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品の差し押さえ</li>
-          <li>金銭的罰則</li>
-          <li>工場閉鎖命令</li>
-          <li>法的起訴</li>
-          <li>インド市場からの禁止</li>
-          <li>ブランドのブラックリスト化</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          コンプライアンスは任意ではなく、必須です。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証が必要なのは誰ですか？
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          규정 미준수에 대한 처벌
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          以下の事業者は二段ベッドのBISライセンスを取得する必要があります：
+          BIS 인증 없이 이층 침대를 판매하면 다음이 발생할 수 있습니다:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドの製造業者</li>
-          <li>インドに輸出する外国の製造業者</li>
-          <li>輸入業者</li>
-          <li>流通業者</li>
-          <li>eコマース販売者</li>
-          <li>OEM/ODM製造業者</li>
-          <li>家具ブランドと小売業者</li>
+          <li>제품 압수</li>
+          <li>재정적 처벌</li>
+          <li>공장 폐쇄 명령</li>
+          <li>법적 기소</li>
+          <li>인도 시장 금지</li>
+          <li>브랜드 블랙리스트</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          各工場（会社ではなく）には別々のBISライセンスが必要です。
+          규정 준수는 선택사항이 아닙니다—필수입니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          BIS認証コンサルティングで私たちを選ぶ理由
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          이층 침대용 BIS 인증이 필요한 사람은 누구인가요?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          二段ベッドのBIS登録について、エンドツーエンドのサポートを提供します。以下を含みます：
+          다음 기업은 이층 침대용 BIS 라이선스를 받아야 합니다:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>規格の解釈（IS 17636:2022）</li>
-          <li>書類の準備</li>
-          <li>実験室テストの調整</li>
-          <li>BISポータル申請</li>
-          <li>工場検査サポート</li>
-          <li>BIS担当者との連絡</li>
-          <li>ライセンス承認支援</li>
-          <li>認証後のコンプライアンス</li>
+          <li>인도 제조업체</li>
+          <li>인도로 수출하는 외국 제조업체</li>
+          <li>수입업체</li>
+          <li>유통업체</li>
+          <li>전자상거래 판매자</li>
+          <li>OEM/ODM 제조업체</li>
+          <li>가구 브랜드 및 소매업체</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          長年の専門知識により、迅速で正確、かつ手間のかからないBIS認証を保証します。
+          모든 공장(회사가 아님)은 별도의 BIS 라이선스가 필요합니다.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          よくある質問 — 二段ベッドのBIS認証
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS 인증 컨설팅을 위해 저희를 선택하는 이유
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          저희는 이층 침대용 BIS 등록을 위한 엔드투엔드 지원을 제공하며, 다음을
+          포함합니다:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>표준 해석 (IS 17636:2022)</li>
+          <li>문서 준비</li>
+          <li>실험실 테스트 조정</li>
+          <li>BIS 포털 신청</li>
+          <li>공장 검사 지원</li>
+          <li>BIS 담당자와의 소통</li>
+          <li>라이선스 승인 지원</li>
+          <li>인증 후 규정 준수</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          수년간의 전문 지식으로 빠르고 정확하며 번거로움 없는 BIS 인증을
+          보장합니다.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          FAQ — 이층 침대용 BIS 인증
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. インドで二段ベッドのBIS認証は必須ですか？</strong>
+              <strong>
+                1. 인도에서 이층 침대에 대한 BIS 인증이 필수인가요?
+              </strong>
               <br />
-              はい。IS
-              17636:2022に基づき、すべての製造業者と輸入業者に義務付けられています。
+              네. IS 17636:2022에 따라 모든 제조업체와 수입업체에게 필수입니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>2. 이층 침대용 BIS 인증에는 얼마나 걸리나요?</strong>
+              <br />
+              일반적으로 준비 상태와 문서에 따라 30–45일이 소요됩니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>3. 외국 제조업체도 BIS를 신청할 수 있나요?</strong>
+              <br />
+              네, FMCS(외국 제조업체 인증 계획)를 통해 가능합니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. BIS 인증서를 온라인으로 신청할 수 있나요?</strong>
+              <br />
+              네, BIS Manak 온라인 포털을 통해 가능합니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>6. 이층 침대 인증에 필요한 테스트는 무엇인가요?</strong>
+              <br />
+              하중 테스트, 가드레일 테스트, 안정성 테스트, 충격 테스트, 끼임
+              테스트 등입니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>7. BIS 라이선스는 얼마나 유효한가요?</strong>
+              <br />
+              일반적으로 1–2년이며 갱신 가능합니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. 二段ベッドのBIS認証にはどのくらい時間がかかりますか？
+                8. 하나의 라이선스로 여러 모델을 포함할 수 있나요?
               </strong>
               <br />
-              準備状況と書類によって異なりますが、通常30〜45日です。
+              동일한 표준 및 카테고리에 속하는 경우에만 가능합니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. 外国の製造業者はBISに申請できますか？</strong>
+              <strong>9. 이층 침대에 ISI 마크가 필요한가요?</strong>
               <br />
-              はい、FMCS（外国製造業者認証スキーム）を通じて申請できます。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. BIS証明書をオンラインで申請できますか？</strong>
-              <br />
-              はい、BIS Manakオンラインポータルを通じて申請できます。
+              네, 인증 후 ISI 마크는 필수입니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                6. 二段ベッドの認証にはどのようなテストが必要ですか？
+                10. 제품이 실험실 테스트에 실패하면 어떻게 되나요?
               </strong>
               <br />
-              負荷テスト、ガードレールテスト、安定性テスト、衝撃テスト、挟み込みテストなど。
+              제품을 수정하고 샘플을 다시 제출해야 합니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. BISライセンスの有効期限はどのくらいですか？</strong>
+              <strong>11. BIS가 공장 인프라를 확인하나요?</strong>
               <br />
-              通常1〜2年で、更新可能です。
+              네, 검사 중에 확인합니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                8. 1つのライセンスで複数のモデルをカバーできますか？
-              </strong>
+              <strong>12. 무역업체도 BIS를 신청할 수 있나요?</strong>
               <br />
-              同じ規格とカテゴリーに該当する場合のみ可能です。
+              브랜드 소유자이고 제조업체와 계약이 있는 경우에만 가능합니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. 二段ベッドにISIマークは必要ですか？</strong>
+              <strong>13. BIS 로고란 무엇인가요?</strong>
               <br />
-              はい、認証後はISIマークが必須です。
+              제품 적합성을 나타내는 표준 ISI 마크 기호입니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                10. 製品が実験室テストに不合格になった場合はどうなりますか？
-              </strong>
+              <strong>14. BIS 인증에 필요한 문서는 무엇인가요?</strong>
               <br />
-              製品を修正し、サンプルを再提出する必要があります。
+              공장 라이선스, 배치, 기계 목록, BOM, QC 계획, 테스트 보고서
+              등입니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>11. BISは工場のインフラをチェックしますか？</strong>
+              <strong>15. BIS 테스트는 공장에서 수행되나요?</strong>
               <br />
-              はい、検査中にチェックします。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>12. 貿易業者はBISに申請できますか？</strong>
-              <br />
-              ブランド所有者であり、製造業者との契約がある場合のみ可能です。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>13. BISロゴとは何ですか？</strong>
-              <br />
-              製品の適合性を示す標準的なISIマークシンボルです。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>14. BIS認証にはどのような書類が必要ですか？</strong>
-              <br />
-              工場ライセンス、レイアウト、機械リスト、BOM、QC計画、テストレポートなど。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>15. BISテストは工場で行われますか？</strong>
-              <br />
-              いいえ、BIS認定の実験室でのみ実施されます。
+              아니요, BIS 인정 실험실에서만 수행됩니다.
             </p>
           </div>
         </div>
@@ -858,35 +878,54 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          結論
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          결론
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS
-          17636:2022に基づく二段ベッドのBIS証明書の取得は、インドでの消費者安全性、製品の信頼性、法的コンプライアンスを確保するために、必須であるだけでなく、不可欠です。認証プロセスには、製品テスト、書類、工場検査、ライセンス発行が含まれます。適切な計画と専門家のガイダンスにより、プロセスはスムーズで迅速、かつ費用対効果の高いものになります。
+          IS 17636:2022에 따른 이층 침대용 BIS 인증서를 받는 것은 필수일 뿐만
+          아니라 인도에서 소비자 안전, 제품 신뢰성 및 법적 규정 준수를 보장하는
+          데 필수적입니다. 인증 프로세스에는 제품 테스트, 문서화, 공장 검사, 및
+          라이선스 발급이 포함됩니다. 적절한 계획과 전문가의 지도로 프로세스는
+          원활하고 빠르며 비용 효율적이 됩니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          製造業者、輸入業者、またはブランド所有者であるかどうかにかかわらず、BIS認証を取得することで、市場での地位を強化し、顧客の信頼を高め、新しいビジネス機会を開くことができます。私たちの専門コンサルティングチームは、二段ベッドのエンドツーエンドのBIS認証をサポートする準備ができています。
+          제조업체, 수입업체 또는 브랜드 소유자이든, BIS 인증을 받으면 시장
+          지위가 강화되고 고객 신뢰가 증가하며 새로운 비즈니스 기회가 열립니다.
+          저희 전문 컨설팅 팀은 이층 침대용 엔드투엔드 BIS 인증을 지원할 준비가
+          되어 있습니다.
         </p>
 
-        <ManyUsersAlsoReadJapanese />
+        {/* PDF Viewer Section */}
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src="/BIS-Product-Pdf/IS-17636-2021-Sun-Certifications-India.pdf"
+            title="이층 침대용 BIS 인증서 - IS 17636:2021 PDF"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        </div>
 
-        <FaqAuthorJapanese questionNumber={5} />
+        <ManyUsersAlsoReadKorean />
+
+        <FaqAuthorKorean questionNumber={5} />
       </div>
     </div>
   );
 };
 
-const ServicesJapanese = () => {
+const Services = () => {
   return (
     <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              私たちのサービス
+              저희 서비스
             </h2>
           </BoxReveal>
 
@@ -894,7 +933,7 @@ const ServicesJapanese = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                インド最高の証明書コンサルタント
+                인도의 최고 인증 컨설턴트
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -909,13 +948,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BISロゴ"
-                title="BISロゴ"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              外国製造業者向けBISマーク（ISIライセンス）
+              외국 제조용 BIS 마크 (ISI 라이선스)
             </p>
           </Link>
 
@@ -926,13 +965,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="CDSCOロゴ"
-                title="CDSCOロゴ"
+                alt="CDSCO 로고"
+                title="CDSCO 로고"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO登録認証
+              CDSCO 등록 인증
             </p>
           </Link>
 
@@ -943,13 +982,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRSロゴ"
-                title="BISCRSロゴ"
+                alt="BISCRS 로고"
+                title="BISCRS 로고"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS（CRS）登録
+              BIS (CRS) 등록
             </p>
           </Link>
 
@@ -960,13 +999,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
-                alt="プラスチック廃棄物管理"
-                title="プラスチック廃棄物管理"
+                alt="플라스틱 폐기물 관리"
+                title="플라스틱 폐기물 관리"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              プラスチック廃棄物管理
+              플라스틱 폐기물 관리
             </p>
           </Link>
 
@@ -977,13 +1016,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPR証明書ロゴ"
-                title="EPR証明書ロゴ"
+                alt="EPR 인증서 로고"
+                title="EPR 인증서 로고"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR証明書認証
+              EPR 인증서 인증
             </p>
           </Link>
 
@@ -994,13 +1033,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPCロゴ"
-                title="LMPCロゴ"
+                alt="LMPC 로고"
+                title="LMPC 로고"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC証明書認証
+              LMPC 인증서 인증
             </p>
           </Link>
 
@@ -1011,13 +1050,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BISロゴ"
-                title="BISロゴ"
+                alt="BIS 로고"
+                title="BIS 로고"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS登録証明書
+              BIS 등록 인증서
             </p>
           </Link>
 
@@ -1028,13 +1067,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIマークロゴ"
-                title="ISIマークロゴ"
+                alt="ISI 마크 로고"
+                title="ISI 마크 로고"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              インド製造業者向けISIマーク（BIS）
+              인도 제조업체용 ISI 마크 (BIS)
             </p>
           </Link>
         </div>

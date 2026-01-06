@@ -33,7 +33,7 @@ const ServicesRightSideContentGerman = () => {
     "/de/bis-isi-mark-zertifizierung",
 
     "/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung",
-    
+
     "/bis-zertifizierung-in-deutschland",
     "/de/was-ist-crs-bis-oder-crs-registrierung",
     // ISI Mark German Page Url
@@ -44,7 +44,8 @@ const ServicesRightSideContentGerman = () => {
     "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
     // Schema X Certification for Pumps and Liquid Elevators
     "/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege",
-
+    // BIS Certificate for Bunk Beds German Page Url
+    "/blogs/isi-products/etagenbetten-is-17636",
   ];
 
   // Check if current path should show these components
@@ -573,10 +574,13 @@ const ContactFormServicesRightSideContentGerman = () => {
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration (German)";
 
-    if (path.includes("/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung"))
+    if (
+      path.includes(
+        "/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung"
+      )
+    )
       return "Schema X Certification for Heat Treatment Equipment (German)";
 
-      
     if (path.includes("/bis-zertifizierung-in-deutschland"))
       return "Germany Blog German";
     if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
@@ -586,7 +590,11 @@ const ContactFormServicesRightSideContentGerman = () => {
     if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
       return "BIS Certification (German)";
 
-    if (path.includes("/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege"))
+    if (
+      path.includes(
+        "/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege"
+      )
+    )
       return "Schema X Certification for Pumps and Liquid Elevators (German)";
     if (
       path.includes(
@@ -594,6 +602,8 @@ const ContactFormServicesRightSideContentGerman = () => {
       )
     )
       return "BIS Mark (ISI License) for Foreign Manufacturers - German Page";
+    if (path.includes("/blogs/isi-products/etagenbetten-is-17636"))
+      return "BIS Certificate for Bunk Beds (German)";
   };
 
   const [formData, setFormData] = useState({
@@ -605,7 +615,7 @@ const ContactFormServicesRightSideContentGerman = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+  const { fullName, email, phoneNumber, message } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({

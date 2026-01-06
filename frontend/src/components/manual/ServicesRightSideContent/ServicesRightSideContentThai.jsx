@@ -79,6 +79,8 @@ const ServicesRightSideContentThai = () => {
     "/kan-rap-rong-bis-phaen-x-samrab-transformer",
     // Weaving Machines Thai Page URL
     "/kan-rap-rong-bis-phaen-x-samrab-khrueang-tan",
+    // BIS Certificate for Bunk Beds Thai Page Url
+    "/blogs/isi-products/teng-song-chan-is-17636",
   ];
 
   // Check if current path should show these components
@@ -695,6 +697,10 @@ const ContactFormServicesRightSideContentThai = () => {
       )
     )
       return "BISFM (Foreign Manufacturers) - Thai Page";
+
+    // BIS Certificate for Bunk Beds Thai
+    if (path.includes("/blogs/isi-products/teng-song-chan-is-17636"))
+      return "BIS Certificate for Bunk Beds (Thai)";
   };
 
   const [formData, setFormData] = useState({
@@ -706,7 +712,7 @@ const ContactFormServicesRightSideContentThai = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+  const { fullName, email, phoneNumber, message } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({

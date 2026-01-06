@@ -36,6 +36,7 @@ const ServicesRightSideContentChinese = () => {
     "/zh/bis-isi-mark-renzheng",
     "/zh/bis-zheng-shu-shi-shen-me-yin-du-bis",
     "/blogs/isi-products/shuang-ceng-chuang-is-17636",
+    "/blogs/isi-products/chuangju-is-17635",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
     "/bis-fang-an-x-ya-suo-ji-ren-zheng",
     "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
@@ -699,6 +700,9 @@ const ContactFormServicesRightSideContentChinese = () => {
     // Bunk Beds Chinese Page Url
     if (path.includes("/blogs/isi-products/shuang-ceng-chuang-is-17636"))
       return "Bunk Beds Chinese - 中文页面";
+    // BIS Certificate for Beds Chinese
+    if (path.includes("/blogs/isi-products/chuangju-is-17635"))
+      return "BIS Certificate for Beds (Chinese)";
   };
 
   const [formData, setFormData] = useState({
@@ -710,7 +714,7 @@ const ContactFormServicesRightSideContentChinese = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+  const { fullName, email, phoneNumber, message } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({

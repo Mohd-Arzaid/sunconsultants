@@ -60,6 +60,8 @@ const ServicesRightSideContentKorean = () => {
     "/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo",
     "/bis-seukim-x-injeung-byeonab-gi",
     "/bis-seukim-x-injeung-jigjo-gi",
+    // BIS Certificate for Bunk Beds Korean Page Url
+    "/blogs/isi-products/icheung-chimdae-is-17636",
   ];
 
   // Check if current path should show these components
@@ -641,6 +643,10 @@ const ContactFormServicesRightSideContentKorean = () => {
       return "Scheme X - Transformers (Korean)";
     if (path.includes("/bis-seukim-x-injeung-jigjo-gi"))
       return "Scheme X - Weaving Machines (Korean)";
+
+    // BIS Certificate for Bunk Beds Korean
+    if (path.includes("/blogs/isi-products/icheung-chimdae-is-17636"))
+      return "BIS Certificate for Bunk Beds (Korean)";
   };
 
   const [formData, setFormData] = useState({
@@ -652,7 +658,7 @@ const ContactFormServicesRightSideContentKorean = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+  const { fullName, email, phoneNumber, message } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({

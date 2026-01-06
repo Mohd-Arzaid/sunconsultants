@@ -78,6 +78,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-transformator",
     // Weaving Machines Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun",
+    // BIS Certificate for Bunk Beds Indonesian Page Url
+    "/blogs/isi-products/ranjang-susun-is-17636",
   ];
 
   // Check if current path should show these components
@@ -607,7 +609,11 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration (Indonesian)";
-    if (path.includes("/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"))
+    if (
+      path.includes(
+        "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"
+      )
+    )
       return "BIS FMCS Certification - Indonesian Page";
     if (path.includes("/sertifikasi-bis-di-indonesia"))
       return "Indonesia Blog (Indonesian)";
@@ -729,6 +735,10 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // Weaving Machines Scheme X Product (Indonesian) Page Url
     if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun"))
       return "Weaving Machines Scheme X Product (Indonesian)";
+
+    // BIS Certificate for Bunk Beds Indonesian
+    if (path.includes("/blogs/isi-products/ranjang-susun-is-17636"))
+      return "BIS Certificate for Bunk Beds (Indonesian)";
   };
 
   const [formData, setFormData] = useState({
@@ -740,7 +750,7 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+  const { fullName, email, phoneNumber, message } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({

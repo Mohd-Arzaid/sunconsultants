@@ -78,6 +78,8 @@ const ServicesRightSideContentItalian = () => {
     "/certificazione-bis-schema-x-per-trasformatori",
     // Weaving Machines Scheme X Product (Italian) Page Url
     "/certificazione-bis-schema-x-per-macchine-per-tessitura-telai",
+    // BIS Certificate for Bunk Beds Italian Page Url
+    "/blogs/isi-products/letti-a-castello-is-17636",
   ];
 
   // Check if current path should show these components
@@ -756,6 +758,10 @@ const ContactFormServicesRightSideContentItalian = () => {
       )
     )
       return "Weaving Machines Scheme X Product (Italian)";
+
+    // BIS Certificate for Bunk Beds Italian
+    if (path.includes("/blogs/isi-products/letti-a-castello-is-17636"))
+      return "BIS Certificate for Bunk Beds (Italian)";
   };
 
   const [formData, setFormData] = useState({
@@ -767,7 +773,7 @@ const ContactFormServicesRightSideContentItalian = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+  const { fullName, email, phoneNumber, message } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({

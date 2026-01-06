@@ -1,4 +1,6 @@
-import ServicesRightSideContentJapanese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentJapanese";
+import FaqAuthorIndonesian from "@/components/common/FaqAuthor/FaqAuthorIndonesian";
+import ManyUsersAlsoReadIndonesian from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadIndonesian";
+import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -13,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
+import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
 import {
   Table,
   TableBody,
@@ -22,42 +24,40 @@ import {
   TableRow,
   TableHead,
 } from "@/components/ui/table";
-import FaqAuthorJapanese from "../../components/common/FaqAuthor/FaqAuthorJapanese";
-import ManyUsersAlsoReadJapanese from "../../components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadJapanese";
 
-const BISCertificateForBunkBedsJapanese = () => {
+const BISCertificateForBunkBedsIndonesian = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
-      <ServicesJapanese />
+      <Services />
       <VideoSection />
-      <FooterJapanese />
+      <FooterIndonesian />
     </div>
   );
 };
 
-export default BISCertificateForBunkBedsJapanese;
+export default BISCertificateForBunkBedsIndonesian;
 
 const MetaTags = () => {
-  const title = "二段ベッドのBIS認証 | IS 17636:2022 BISライセンス";
-  const ogTitle = "二段ベッドのBIS認証 – IS 17636:2022ガイド";
-  const twitterTitle = "二段ベッドのBISライセンス | IS 17636:2022";
+  const title =
+    "Sertifikat BIS untuk Ranjang Susun | IS 17636:2022 Lisensi BIS";
+  const ogTitle = "Sertifikasi BIS untuk Ranjang Susun – Panduan IS 17636:2022";
+  const twitterTitle = "Lisensi BIS untuk Ranjang Susun | IS 17636:2022";
   const metaDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証を取得。インドでのBIS認証のプロセス、書類、テスト、費用、タイムライン。";
+    "Dapatkan Sertifikat BIS untuk ranjang susun di bawah IS 17636:2022. Proses, dokumen, pengujian, biaya & timeline untuk Sertifikasi BIS di India.";
   const ogDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証の完全ガイド。プロセス、費用、書類、テスト、BISライセンスのメリットを理解する。";
+    "Panduan lengkap Sertifikasi BIS untuk ranjang susun sesuai IS 17636:2022. Ketahui proses, biaya, dokumen, pengujian & manfaat lisensi BIS.";
   const twitterDescription =
-    "IS 17636:2022に基づく二段ベッドのBIS認証を申請。インドでのBISプロセス、書類、テスト、費用、タイムラインを学ぶ。";
+    "Ajukan Sertifikat BIS untuk ranjang susun di bawah IS 17636:2022. Pelajari proses BIS, dokumen, pengujian, biaya & timeline di India.";
   const metaKeywords =
-    "二段ベッドのBIS認証, 二段ベッドのBISライセンス, IS 17636:2022, 二段ベッドのBIS認証";
+    "Sertifikat BIS untuk Ranjang Susun, Lisensi BIS untuk Ranjang Susun, IS 17636:2022, Sertifikasi BIS untuk Ranjang Susun";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/nidan-beddo-is-17636";
+    "https://bis-certifications.com/blogs/isi-products/ranjang-susun-is-17636";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
-  const publisher =
-    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+  const publisher = "Dhruv Aggarwal, Kepala Operasi di Sun Certification India";
 
   return (
     <Helmet>
@@ -90,7 +90,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">ホーム</Link>
+                    <Link to="/">Beranda</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -99,7 +99,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">最新のブログ</Link>
+                    <Link to="/Blogs">Blog Terbaru</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -108,7 +108,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    二段ベッドのBIS認証 – IS 17636:2022
+                    Sertifikat BIS untuk Ranjang Susun – IS 17636:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -128,7 +128,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentJapanese />
+        <ServicesRightSideContentIndonesian />
       </div>
     </div>
   );
@@ -140,363 +140,403 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証 – IS 17636:2022 BIS認証の完全ガイド
+          Sertifikat BIS untuk Ranjang Susun – Panduan Lengkap Sertifikasi BIS
+          IS 17636:2022
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforBunkBeds.png"
-            title="二段ベッドのBISライセンス"
-            alt="二段ベッドのBIS認証 - IS 17636:2022 BIS認証"
+            title="Lisensi BIS untuk Ranjang Susun"
+            alt="Sertifikat BIS untuk Ranjang Susun - Sertifikasi BIS IS 17636:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドのBIS認証は、IS
-          17636:2022に基づき、インドで必須要件となっています。この規格は、家庭、ホステル、寮、PG宿泊施設、学校、ホテル、商業施設で使用される二段ベッドの安全性、性能、構造要件を定めています。インドの製造業者または外国の製造業者を問わず、インド市場で二段ベッドを販売、輸入、輸出、または流通させる前に、二段ベッドのBIS認証を取得する必要があります。
+          Sertifikat BIS untuk Ranjang Susun adalah persyaratan wajib di India
+          di bawah IS 17636:2022, yang menetapkan persyaratan keselamatan,
+          kinerja, dan struktural untuk ranjang susun yang digunakan di rumah,
+          asrama, tempat tinggal, akomodasi PG, sekolah, hotel, dan komersial
+          perusahaan. Setiap produsen—India atau asing—harus memperoleh
+          Sertifikasi BIS untuk Ranjang Susun sebelum menjual, mengimpor,
+          mengekspor, atau mendistribusikan ranjang susun di pasar India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          省スペース家具への需要の増加に伴い、二段ベッドは重要な製品カテゴリーとなっています。しかし、落下、崩壊、挟み込み、構造的故障などの安全リスクにより、消費者保護を確保するために二段ベッドのBISライセンスが重要になっています。この包括的なページでは、二段ベッドのBIS登録、テスト要件、書類、費用、タイムライン、罰則、メリットについてご案内します。
+          Dengan meningkatnya permintaan untuk furnitur hemat ruang, ranjang
+          susun telah menjadi kategori produk yang penting. Namun, risiko
+          keselamatan seperti jatuh, runtuh, terperangkap, dan kegagalan
+          struktural membuat Lisensi BIS untuk Ranjang Susun sangat penting
+          untuk memastikan perlindungan konsumen. Halaman komprehensif ini akan
+          memandu Anda melalui Registrasi BIS untuk Ranjang Susun, persyaratan
+          pengujian, dokumentasi, biaya, timeline, sanksi, dan manfaat.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          製造業者、輸入業者、輸出業者、貿易業者、またはスタートアップであるかどうかにかかわらず、このガイドはインド標準局（BIS）のコンプライアンス要件を理解するのに役立ちます。
+          Baik Anda adalah produsen, importir, eksportir, pedagang, atau
+          start-up, panduan ini membantu Anda memahami persyaratan kepatuhan di
+          bawah Bureau of Indian Standards (BIS).
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          BIS認証とは何ですか？
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Apa itu Sertifikasi BIS?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証は、インドの国家標準機関であるインド標準局が管理する品質および安全性コンプライアンスプログラムです。製品が指定されたインド規格に準拠し、安全で信頼性が高く、使用に適していることを保証します。
+          Sertifikasi BIS adalah program kepatuhan kualitas dan keselamatan yang
+          diatur oleh Bureau of Indian Standards, badan standar nasional India.
+          Ini memastikan bahwa produk sesuai dengan Standar India yang
+          ditentukan dan aman, dapat diandalkan, dan layak digunakan.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS証明書とは何ですか？
+          Apa itu Sertifikat BIS?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS証明書は、製造業者に発行される公式ライセンスで、ISIマークの使用を許可し、BISが規定する製品規格への準拠を示します。
+          Sertifikat BIS adalah lisensi resmi yang dikeluarkan untuk produsen
+          yang memungkinkan mereka menggunakan Tanda ISI, menunjukkan kepatuhan
+          terhadap standar produk yang ditentukan BIS.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS証明書の意味
+          Arti Sertifikat BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          製品が以下を通過したことを証明します：
+          Ini membuktikan bahwa produk telah lulus:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>実験室テスト</li>
-          <li>工場検査</li>
-          <li>品質管理評価</li>
-          <li>安全性コンプライアンス</li>
-          <li>インド規格への準拠</li>
+          <li>Pengujian laboratorium</li>
+          <li>Inspeksi pabrik</li>
+          <li>Penilaian kontrol kualitas</li>
+          <li>Kepatuhan keselamatan</li>
+          <li>Kesesuaian dengan Standar India</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証製品には、BISロゴ（ISIマークとも呼ばれる）が表示され、インドの品質基準を満たしていることを示します。
+          Produk yang disertifikasi BIS menampilkan Logo BIS, juga dikenal
+          sebagai Tanda ISI, yang menandakan bahwa produk tersebut memenuhi
+          tolok ukur kualitas India.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドに適用されるBIS規格は？（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Standar BIS Mana yang Berlaku untuk Ranjang Susun? (IS 17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドは、新しく導入された規格に基づき、必須のBIS認証の対象となります：
+          Ranjang susun termasuk dalam sertifikasi BIS wajib sesuai dengan
+          standar yang baru diperkenalkan:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17636:2022</strong> — 二段ベッド – 安全性要件
+          🔹 <strong>IS 17636:2022</strong> — Ranjang Susun – Persyaratan
+          Keselamatan
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          この規格は、二段ベッドが厳格な安全性、構造、耐久性の基準を満たすことを保証します。以下をカバーします：
+          Standar ini memastikan bahwa ranjang susun memenuhi kriteria
+          keselamatan, konstruksi, dan daya tahan yang ketat. Ini mencakup:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>構造的安定性</li>
-          <li>ガードレール</li>
-          <li>挟み込みの危険</li>
-          <li>耐荷重能力</li>
-          <li>寸法要件</li>
-          <li>材料仕様</li>
-          <li>エッジと表面仕上げ</li>
-          <li>はしごの構造</li>
-          <li>耐久性および性能テスト</li>
+          <li>Stabilitas struktural</li>
+          <li>Pagar pengaman</li>
+          <li>Bahaya terperangkap</li>
+          <li>Kapasitas menahan beban</li>
+          <li>Persyaratan dimensi</li>
+          <li>Spesifikasi material</li>
+          <li>Tepi dan finishing permukaan</li>
+          <li>Konstruksi tangga</li>
+          <li>Pengujian daya tahan dan kinerja</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インドで二段ベッドを販売したい製造業者は、IS
-          17636:2022に基づく二段ベッドのBISライセンスを取得する必要があります。
+          Setiap produsen yang ingin menjual ranjang susun di India harus
+          memperoleh Lisensi BIS untuk Ranjang Susun di bawah IS 17636:2022.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドにBIS認証が必要な理由
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Mengapa Sertifikasi BIS Diperlukan untuk Ranjang Susun
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          二段ベッドは子供や大人に広く使用されており、安全性への懸念からコンプライアンスが不可欠です。BISは以下を防ぐために認証を義務付けています：
+          Ranjang susun banyak digunakan oleh anak-anak dan orang dewasa, dan
+          kekhawatiran keselamatan membuat kepatuhan menjadi penting. BIS telah
+          membuat sertifikasi wajib untuk mencegah:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>崩壊または構造的故障</li>
-          <li>身体の部位の挟み込み</li>
-          <li>上段からの落下</li>
-          <li>はしご関連の怪我</li>
-          <li>材料品質の低さ</li>
-          <li>火災の危険</li>
-          <li>有害な仕上げまたは鋭いエッジ</li>
+          <li>Runtuh atau kegagalan struktural</li>
+          <li>Terperangkapnya bagian tubuh</li>
+          <li>Jatuh dari ranjang atas</li>
+          <li>Cedera terkait tangga</li>
+          <li>Kualitas material yang buruk</li>
+          <li>Bahaya kebakaran</li>
+          <li>Finishing berbahaya atau tepi tajam</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          二段ベッドのBISライセンスが必須である理由
+          Alasan Lisensi BIS untuk Ranjang Susun Wajib
         </h3>
 
         <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>機械的強度と耐久性を確保</li>
-          <li>消費者、特に子供を怪我から保護</li>
-          <li>統一された品質基準を維持</li>
-          <li>ブランドの信頼性と信頼性の構築に役立つ</li>
-          <li>政府規制への準拠を確保</li>
-          <li>法的問題と罰則を防止</li>
+          <li>Memastikan kekuatan mekanis dan daya tahan</li>
+          <li>Melindungi konsumen—terutama anak-anak—dari cedera</li>
+          <li>Mempertahankan standar kualitas yang seragam</li>
+          <li>Membantu merek membangun kepercayaan dan kredibilitas</li>
+          <li>Memastikan kepatuhan terhadap peraturan pemerintah</li>
+          <li>Mencegah masalah hukum dan sanksi</li>
         </ol>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS登録なしでは、製造業者と輸入業者はインド市場で合法的に製品を販売することはできません。
+          Tanpa registrasi BIS, produsen dan importir tidak dapat secara hukum
+          menjual produk di pasar India.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証プロセス（ステップバイステップ）（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Proses Sertifikasi BIS Langkah demi Langkah untuk Ranjang Susun (IS
+          17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インドでのBIS認証プロセスには、テスト、書類、工場検査が含まれます。以下がステップバイステップの手順です：
+          Proses sertifikasi BIS di India melibatkan pengujian, dokumentasi, dan
+          inspeksi pabrik. Berikut adalah prosedur langkah demi langkah:
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ1 — 適用性と規格の決定
+          Langkah 1 — Tentukan Keterapan & Standar
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>IS 17636:2022</strong> — 必須
+            <strong>IS 17636:2022</strong> — Wajib
           </li>
-          <li>製品カテゴリーと製造ユニットの詳細を確認します。</li>
+          <li>Konfirmasi kategori produk dan detail unit manufaktur.</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ2 — BIS申請（フォーム提出）
+          Langkah 2 — Aplikasi BIS (Pengajuan Formulir)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS Manakオンラインポータルを通じてオンラインで申請します。
+          Ajukan secara online melalui Portal Online BIS Manak.
         </p>
         <p className="text-gray-600 text-base font-geist mb-3">
-          要件には以下が含まれます：
+          Persyaratan meliputi:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製造業者の詳細</li>
-          <li>工場住所と証明</li>
-          <li>製品カテゴリーとブランド</li>
-          <li>製造能力</li>
-          <li>品質管理プロセス</li>
+          <li>Detail produsen</li>
+          <li>Alamat pabrik dan bukti</li>
+          <li>Kategori produk & merek</li>
+          <li>Kemampuan manufaktur</li>
+          <li>Proses kontrol kualitas</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          このステップで公式承認サイクルが開始されます。
+          Langkah ini memulai siklus persetujuan resmi.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ3 — BIS証明書費用の支払い
+          Langkah 3 — Bayar Biaya Sertifikat BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          提出後、以下を支払います：
+          Setelah pengajuan, bayar:
         </p>
         <ul className="list-disc ml-6 mb-3 space-y-2 text-gray-600 text-base font-geist">
-          <li>申請費用</li>
-          <li>テスト費用</li>
-          <li>監査費用</li>
-          <li>マーキング費用</li>
+          <li>Biaya aplikasi</li>
+          <li>Biaya pengujian</li>
+          <li>Biaya audit</li>
+          <li>Biaya penandaan</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-3">
-          費用は以下によって異なります：
+          Biaya tergantung pada:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品バリエーションの数</li>
-          <li>ブランド名</li>
-          <li>工場の場所</li>
-          <li>テストパラメータ</li>
+          <li>Jumlah varian produk</li>
+          <li>Nama merek</li>
+          <li>Lokasi pabrik</li>
+          <li>Parameter pengujian</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ4 — サンプルテスト（IS 17636:2022に基づく）
+          Langkah 4 — Pengujian Sampel (Sesuai IS 17636:2022)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          テストはBIS認定の実験室で実施されます。
+          Pengujian dilakukan di laboratorium yang diakui BIS.
         </p>
         <p className="text-gray-600 text-base font-geist mb-3">
-          テストには以下が含まれます：
+          Pengujian meliputi:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>構造的安定性テスト</li>
-          <li>衝撃テスト</li>
-          <li>挟み込みテスト</li>
-          <li>ガードレール強度テスト</li>
-          <li>仕上げ品質テスト</li>
-          <li>はしご安全性テスト</li>
-          <li>負荷テスト</li>
-          <li>耐久性テスト</li>
-          <li>エッジ安全性評価</li>
+          <li>Uji stabilitas struktural</li>
+          <li>Uji dampak</li>
+          <li>Uji terperangkap</li>
+          <li>Uji kekuatan pagar pengaman</li>
+          <li>Uji kualitas finishing</li>
+          <li>Uji keselamatan tangga</li>
+          <li>Uji beban</li>
+          <li>Uji daya tahan</li>
+          <li>Evaluasi keselamatan tepi</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          テストレポートはBISポータルに直接アップロードされます。
+          Laporan pengujian diunggah langsung ke portal BIS.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ5 — BIS工場検査
+          Langkah 5 — Inspeksi Pabrik BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS担当者が工場を訪問し、以下を確認します：
+          Petugas BIS mengunjungi pabrik untuk memverifikasi:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>品質管理体制</li>
-          <li>原材料管理</li>
-          <li>工程中の検査</li>
-          <li>最終製品テスト</li>
-          <li>生産能力</li>
+          <li>Sistem manajemen kualitas</li>
+          <li>Kontrol bahan baku</li>
+          <li>Inspeksi dalam proses</li>
+          <li>Pengujian produk akhir</li>
+          <li>Kemampuan produksi</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BISテスト・検査スキーム（STI）への準拠を確認します。
+          Mereka memeriksa kepatuhan terhadap Skema Pengujian & Inspeksi BIS
+          (STI).
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ6 — BISライセンスの付与
+          Langkah 6 — Pemberian Lisensi BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          すべてのステップがクリアされると、BISは以下を発行します：
+          Setelah semua langkah selesai, BIS mengeluarkan:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS証明書</li>
-          <li>ISIマーク承認</li>
-          <li>CMLライセンス番号</li>
+          <li>Sertifikat BIS</li>
+          <li>Persetujuan Tanda ISI</li>
+          <li>Nomor Lisensi CML</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          これで、二段ベッドとパッケージにBISマークを合法的に使用できます。
+          Anda sekarang dapat secara hukum menggunakan Tanda BIS pada ranjang
+          susun dan kemasan.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ7 — ライセンス後の義務
+          Langkah 7 — Kewajiban Pasca-Lisensi
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          製造業者は以下を実施する必要があります：
+          Produsen harus:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>内部テストの維持</li>
-          <li>定期的なBIS検査の許可</li>
-          <li>1年または2年ごとのライセンス更新</li>
+          <li>Mempertahankan pengujian internal</li>
+          <li>Mengizinkan inspeksi BIS berkala</li>
+          <li>Memperbarui lisensi setiap 1 atau 2 tahun</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBISライセンスの範囲
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Ruang Lingkup Lisensi BIS untuk Ranjang Susun
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong>{" "}
-          この規格は、家庭用および非家庭用の二段ベッドの性能と安全性、すなわち強度、安定性、耐久性に関する要件をカバーします。この規格は、完成床面から800mm以上の高さで使用されるベッドベースの単一ベッドにも適用され、下のスペースの用途に関係なく適用されます。
+          <strong>1.1</strong> Standar ini mencakup persyaratan yang berkaitan
+          dengan kinerja dan keselamatan yaitu kekuatan, stabilitas dan daya
+          tahan ranjang susun untuk penggunaan domestik dan non-domestik.
+          Standar ini juga berlaku untuk ranjang tunggal untuk digunakan pada
+          ketinggian dasar ranjang 800 mm atau lebih di atas tingkat lantai
+          jadi, terlepas dari penggunaan ruang di bawahnya.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong>{" "}
-          この規格は、完全に製造/組み立てられた二段ベッドに適用されます。組み立て済みユニットにも適用され、その場合、この規格の要件は組み立て済みユニットに適用されます。
+          <strong>1.2</strong> Standar ini berlaku untuk ranjang susun yang
+          sepenuhnya diproduksi/ difabrikasi. Ini juga berlaku untuk unit siap
+          rakit; dalam hal ini persyaratan standar ini akan berlaku untuk unit
+          yang dirakit.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証に必要な書類
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Dokumen yang Diperlukan untuk Sertifikasi BIS Ranjang Susun
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          以下がBIS証明書の書類の完全なリストです：
+          Berikut adalah daftar lengkap Dokumen Sertifikat BIS:
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          製造業者の書類
+          Dokumen Produsen
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>工場登録証明書</li>
-          <li>製造プロセスフローチャート</li>
-          <li>機械・設備のリスト</li>
-          <li>テスト設備のリスト</li>
-          <li>校正証明書</li>
-          <li>工場レイアウト/プラントレイアウト</li>
-          <li>CEO/取締役からの承認書</li>
-          <li>ISO 9001証明書（利用可能な場合）</li>
+          <li>Sertifikat registrasi pabrik</li>
+          <li>Diagram alir proses manufaktur</li>
+          <li>Daftar mesin & peralatan</li>
+          <li>Daftar peralatan uji</li>
+          <li>Sertifikat kalibrasi</li>
+          <li>Layout pabrik/layout pabrik</li>
+          <li>Surat otorisasi dari CEO/Direktur</li>
+          <li>Sertifikat ISO 9001 (jika tersedia)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          法的書類
+          Dokumen Hukum
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>身分証明書</li>
-          <li>住所証明</li>
-          <li>ブランド承認（サードパーティブランドの場合）</li>
-          <li>商標登録書類（オプション）</li>
+          <li>Bukti identitas</li>
+          <li>Bukti alamat</li>
+          <li>Otorisasi merek (jika merek pihak ketiga)</li>
+          <li>Dokumen registrasi merek dagang (opsional)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          技術書類
+          Dokumen Teknis
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品仕様</li>
-          <li>材料リスト</li>
-          <li>安全機能の説明</li>
-          <li>品質管理計画</li>
-          <li>内部テストレポート</li>
+          <li>Spesifikasi produk</li>
+          <li>Daftar material</li>
+          <li>Deskripsi fitur keselamatan</li>
+          <li>Rencana kontrol kualitas</li>
+          <li>Laporan uji internal</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS申請書類
+          Dokumen Aplikasi BIS
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>誓約書と宣言</li>
-          <li>テスト依頼フォーム</li>
-          <li>サンプル承認書</li>
+          <li>Perjanjian & deklarasi</li>
+          <li>Formulir permintaan uji</li>
+          <li>Surat persetujuan sampel</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          適切な書類を用意することで、遅延を減らし、スムーズな承認を確保できます。
+          Memiliki dokumen yang tepat mengurangi penundaan dan memastikan
+          persetujuan yang lancar.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのテスト要件（IS 17636:2022）
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Persyaratan Pengujian untuk Ranjang Susun (IS 17636:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          テストはBIS登録プロセスの必須部分です。二段ベッドは安全性と耐久性を確保するために厳格なテストを受けます。
+          Pengujian adalah bagian wajib dari proses registrasi BIS. Ranjang
+          susun menjalani pengujian ketat untuk memastikan keselamatan dan daya
+          tahan.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドの検査・テストスキーム
+          Skema Inspeksi dan Pengujian untuk Ranjang Susun
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -504,10 +544,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  条項
+                  Klausul
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  要件
+                  Persyaratan
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -517,7 +557,7 @@ const MainContentLeft = () => {
                   4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  設計と仕上げ
+                  Desain dan pengerjaan
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -525,7 +565,7 @@ const MainContentLeft = () => {
                   5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  寸法
+                  Dimensi
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -533,7 +573,7 @@ const MainContentLeft = () => {
                   7.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  上段ベッドの安全バリア
+                  Penghalang Keselamatan Ranjang Atas
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -541,7 +581,7 @@ const MainContentLeft = () => {
                   7.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  隙間
+                  Celah
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -549,7 +589,7 @@ const MainContentLeft = () => {
                   7.4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  ベッドベース
+                  Dasar Ranjang
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -557,7 +597,7 @@ const MainContentLeft = () => {
                   7.5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  はしご
+                  Tangga
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -565,7 +605,7 @@ const MainContentLeft = () => {
                   7.6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  フレームと固定具の強度
+                  Kekuatan Rangka dan Pengikat
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -573,7 +613,7 @@ const MainContentLeft = () => {
                   7.7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  安定性
+                  Stabilitas
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors">
@@ -581,7 +621,7 @@ const MainContentLeft = () => {
                   7.8
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  上段ベッドと下段ベッドの固定
+                  Pengikatan Ranjang Atas ke Ranjang Bawah
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -589,268 +629,284 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          テストはBIS認定の実験室でのみ実施する必要があります。
+          Pengujian harus dilakukan hanya di laboratorium yang diakui BIS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          一般的な課題と回避方法
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tantangan Umum & Cara Menghindarinya
         </h2>
 
         <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>製品分類の誤り</strong>
+            <strong>Kategorisasi Produk yang Salah</strong>
             <br />
-            常に正しいインド規格を確認してください。
+            Selalu verifikasi Standar India yang benar.
           </li>
           <li>
-            <strong>不適切な書類</strong>
+            <strong>Dokumentasi yang Tidak Tepat</strong>
             <br />
-            書類の不足は遅延の原因となります。事前に準備してください。
+            Dokumen yang hilang menyebabkan penundaan—siapkan sebelumnya.
           </li>
           <li>
-            <strong>実験室テストの失敗</strong>
+            <strong>Uji Laboratorium Gagal</strong>
             <br />
-            高品質の材料、溶接、ガードレール、仕上げを確保してください。
+            Pastikan material berkualitas tinggi, pengelasan, pagar pengaman,
+            dan finishing.
           </li>
           <li>
-            <strong>検査準備が整っていない工場</strong>
+            <strong>Pabrik Tidak Siap untuk Inspeksi</strong>
             <br />
-            QMSとテスト設備が適切に維持されていることを確認してください。
+            Pastikan QMS dan peralatan uji dipelihara dengan baik.
           </li>
           <li>
-            <strong>商標の問題</strong>
+            <strong>Masalah Merek Dagang</strong>
             <br />
-            ブランド名はライセンス申請と一致する必要があります。
+            Nama merek harus sesuai dengan aplikasi lisensi.
           </li>
         </ol>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          これらを早期に解決することで、処理時間を大幅に短縮できます。
+          Menyelesaikan ini lebih awal mengurangi waktu pemrosesan secara
+          drastis.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          製造業者と輸入業者にとってのBIS認証のメリット
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Manfaat Sertifikasi BIS untuk Produsen & Importir
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドで合法的に二段ベッドを販売</li>
-          <li>顧客との信頼関係を構築</li>
-          <li>製品返品を削減</li>
-          <li>ブランドの評判を向上</li>
-          <li>安全性コンプライアンスを確保</li>
-          <li>競争優位性を獲得</li>
-          <li>小売チェーンとeコマースプラットフォームへの展開</li>
-          <li>政府入札へのアクセス</li>
-          <li>罰則と法的措置を回避</li>
+          <li>Secara hukum menjual ranjang susun di India</li>
+          <li>Membangun kepercayaan dengan pelanggan</li>
+          <li>Mengurangi pengembalian produk</li>
+          <li>Meningkatkan reputasi merek</li>
+          <li>Memastikan kepatuhan keselamatan</li>
+          <li>Memperoleh keunggulan kompetitif</li>
+          <li>Memperluas ke rantai ritel & platform e-commerce</li>
+          <li>Akses ke tender pemerintah</li>
+          <li>Menghindari sanksi & tindakan hukum</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          非準拠に対する罰則
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS認証なしで二段ベッドを販売すると、以下の結果になる可能性があります：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品の差し押さえ</li>
-          <li>金銭的罰則</li>
-          <li>工場閉鎖命令</li>
-          <li>法的起訴</li>
-          <li>インド市場からの禁止</li>
-          <li>ブランドのブラックリスト化</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          コンプライアンスは任意ではなく、必須です。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          二段ベッドのBIS認証が必要なのは誰ですか？
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sanksi untuk Ketidakpatuhan
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          以下の事業者は二段ベッドのBISライセンスを取得する必要があります：
+          Menjual ranjang susun tanpa Sertifikasi BIS dapat mengakibatkan:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドの製造業者</li>
-          <li>インドに輸出する外国の製造業者</li>
-          <li>輸入業者</li>
-          <li>流通業者</li>
-          <li>eコマース販売者</li>
-          <li>OEM/ODM製造業者</li>
-          <li>家具ブランドと小売業者</li>
+          <li>Penyitaan produk</li>
+          <li>Sanksi finansial</li>
+          <li>Perintah penutupan pabrik</li>
+          <li>Tuntutan hukum</li>
+          <li>Larangan dari pasar India</li>
+          <li>Pemblokiran merek</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          各工場（会社ではなく）には別々のBISライセンスが必要です。
+          Kepatuhan bukan opsional—ini wajib.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          BIS認証コンサルティングで私たちを選ぶ理由
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Siapa yang Membutuhkan Sertifikasi BIS untuk Ranjang Susun?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          二段ベッドのBIS登録について、エンドツーエンドのサポートを提供します。以下を含みます：
+          Entitas berikut harus memperoleh Lisensi BIS untuk Ranjang Susun:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>規格の解釈（IS 17636:2022）</li>
-          <li>書類の準備</li>
-          <li>実験室テストの調整</li>
-          <li>BISポータル申請</li>
-          <li>工場検査サポート</li>
-          <li>BIS担当者との連絡</li>
-          <li>ライセンス承認支援</li>
-          <li>認証後のコンプライアンス</li>
+          <li>Produsen India</li>
+          <li>Produsen asing yang mengekspor ke India</li>
+          <li>Importir</li>
+          <li>Distributor</li>
+          <li>Penjual e-commerce</li>
+          <li>Produsen OEM/ODM</li>
+          <li>Merek furnitur & pengecer</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          長年の専門知識により、迅速で正確、かつ手間のかからないBIS認証を保証します。
+          Setiap pabrik (bukan perusahaan) memerlukan lisensi BIS terpisah.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          よくある質問 — 二段ベッドのBIS認証
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Mengapa Memilih Kami untuk Konsultasi Sertifikasi BIS?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Kami menyediakan dukungan end-to-end untuk Registrasi BIS untuk
+          Ranjang Susun, termasuk:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Interpretasi standar (IS 17636:2022)</li>
+          <li>Persiapan dokumentasi</li>
+          <li>Koordinasi pengujian laboratorium</li>
+          <li>Aplikasi portal BIS</li>
+          <li>Dukungan inspeksi pabrik</li>
+          <li>Komunikasi dengan petugas BIS</li>
+          <li>Bantuan persetujuan lisensi</li>
+          <li>Kepatuhan pasca-sertifikasi</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dengan pengalaman bertahun-tahun, kami memastikan sertifikasi BIS yang
+          cepat, akurat, dan tanpa hambatan.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          FAQ — Sertifikasi BIS untuk Ranjang Susun
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. インドで二段ベッドのBIS認証は必須ですか？</strong>
+              <strong>
+                1. Apakah sertifikasi BIS wajib untuk ranjang susun di India?
+              </strong>
               <br />
-              はい。IS
-              17636:2022に基づき、すべての製造業者と輸入業者に義務付けられています。
+              Ya. Di bawah IS 17636:2022, ini wajib untuk semua produsen dan
+              importir.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. 二段ベッドのBIS認証にはどのくらい時間がかかりますか？
+                2. Berapa lama Sertifikasi BIS untuk ranjang susun?
               </strong>
               <br />
-              準備状況と書類によって異なりますが、通常30〜45日です。
+              Biasanya 30–45 hari tergantung pada kesiapan dan dokumentasi.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. 外国の製造業者はBISに申請できますか？</strong>
+              <strong>3. Bisakah produsen asing mengajukan BIS?</strong>
               <br />
-              はい、FMCS（外国製造業者認証スキーム）を通じて申請できます。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. BIS証明書をオンラインで申請できますか？</strong>
-              <br />
-              はい、BIS Manakオンラインポータルを通じて申請できます。
+              Ya, melalui FMCS (Skema Sertifikasi Produsen Asing).
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                6. 二段ベッドの認証にはどのようなテストが必要ですか？
+                4. Bisakah saya mengajukan Sertifikat BIS secara online?
               </strong>
               <br />
-              負荷テスト、ガードレールテスト、安定性テスト、衝撃テスト、挟み込みテストなど。
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. BISライセンスの有効期限はどのくらいですか？</strong>
-              <br />
-              通常1〜2年で、更新可能です。
+              Ya, melalui Portal Online BIS Manak.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. 1つのライセンスで複数のモデルをカバーできますか？
+                6. Pengujian apa yang diperlukan untuk sertifikasi ranjang
+                susun?
               </strong>
               <br />
-              同じ規格とカテゴリーに該当する場合のみ可能です。
+              Uji beban, uji pagar pengaman, uji stabilitas, uji dampak, uji
+              terperangkap, dll.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. 二段ベッドにISIマークは必要ですか？</strong>
+              <strong>7. Berapa lama lisensi BIS berlaku?</strong>
               <br />
-              はい、認証後はISIマークが必須です。
+              Biasanya 1–2 tahun dan dapat diperpanjang.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. Bisakah satu lisensi mencakup beberapa model?</strong>
+              <br />
+              Hanya jika mereka berada dalam standar dan kategori yang sama.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                10. 製品が実験室テストに不合格になった場合はどうなりますか？
+                9. Apakah Tanda ISI diperlukan pada ranjang susun?
               </strong>
               <br />
-              製品を修正し、サンプルを再提出する必要があります。
+              Ya, Tanda ISI wajib setelah sertifikasi.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>11. BISは工場のインフラをチェックしますか？</strong>
+              <strong>
+                10. Apa yang terjadi jika produk saya gagal dalam pengujian
+                laboratorium?
+              </strong>
               <br />
-              はい、検査中にチェックします。
+              Anda harus memodifikasi produk dan mengirimkan ulang sampel.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>12. 貿易業者はBISに申請できますか？</strong>
+              <strong>11. Apakah BIS memeriksa infrastruktur pabrik?</strong>
               <br />
-              ブランド所有者であり、製造業者との契約がある場合のみ可能です。
+              Ya, selama inspeksi.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>13. BISロゴとは何ですか？</strong>
+              <strong>12. Bisakah pedagang mengajukan BIS?</strong>
               <br />
-              製品の適合性を示す標準的なISIマークシンボルです。
+              Hanya jika mereka adalah pemilik merek dan memiliki kontrak dengan
+              produsen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>14. BIS認証にはどのような書類が必要ですか？</strong>
+              <strong>13. Apa itu Logo BIS?</strong>
               <br />
-              工場ライセンス、レイアウト、機械リスト、BOM、QC計画、テストレポートなど。
+              Ini adalah simbol Tanda ISI standar yang menunjukkan kesesuaian
+              produk.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>15. BISテストは工場で行われますか？</strong>
+              <strong>
+                14. Dokumen apa yang diperlukan untuk sertifikasi BIS?
+              </strong>
               <br />
-              いいえ、BIS認定の実験室でのみ実施されます。
+              Lisensi pabrik, layout, daftar mesin, BOM, rencana QC, laporan
+              uji, dll.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>15. Apakah pengujian BIS dilakukan di pabrik?</strong>
+              <br />
+              Tidak, hanya di laboratorium yang diakui BIS.
             </p>
           </div>
         </div>
@@ -858,35 +914,56 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          結論
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Kesimpulan
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS
-          17636:2022に基づく二段ベッドのBIS証明書の取得は、インドでの消費者安全性、製品の信頼性、法的コンプライアンスを確保するために、必須であるだけでなく、不可欠です。認証プロセスには、製品テスト、書類、工場検査、ライセンス発行が含まれます。適切な計画と専門家のガイダンスにより、プロセスはスムーズで迅速、かつ費用対効果の高いものになります。
+          Memperoleh Sertifikat BIS untuk Ranjang Susun di bawah IS 17636:2022
+          tidak hanya wajib tetapi juga penting untuk memastikan keselamatan
+          konsumen, keandalan produk, dan kepatuhan hukum di India. Proses
+          sertifikasi melibatkan pengujian produk, dokumentasi, inspeksi pabrik,
+          dan penerbitan lisensi. Dengan perencanaan yang tepat dan bimbingan
+          ahli, proses menjadi lancar, cepat, dan hemat biaya.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          製造業者、輸入業者、またはブランド所有者であるかどうかにかかわらず、BIS認証を取得することで、市場での地位を強化し、顧客の信頼を高め、新しいビジネス機会を開くことができます。私たちの専門コンサルティングチームは、二段ベッドのエンドツーエンドのBIS認証をサポートする準備ができています。
+          Baik Anda adalah produsen, importir, atau pemilik merek, mendapatkan
+          sertifikasi BIS memperkuat posisi pasar Anda, meningkatkan kepercayaan
+          pelanggan, dan membuka peluang bisnis baru. Tim konsultasi ahli kami
+          siap membantu Anda dengan Sertifikasi BIS end-to-end untuk ranjang
+          susun.
         </p>
 
-        <ManyUsersAlsoReadJapanese />
+        {/* PDF Viewer Section */}
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src="/BIS-Product-Pdf/IS-17636-2021-Sun-Certifications-India.pdf"
+            title="Sertifikat BIS untuk Ranjang Susun - IS 17636:2021 PDF"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        </div>
 
-        <FaqAuthorJapanese questionNumber={5} />
+        <ManyUsersAlsoReadIndonesian />
+
+        <FaqAuthorIndonesian questionNumber={5} />
       </div>
     </div>
   );
 };
 
-const ServicesJapanese = () => {
+const Services = () => {
   return (
     <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              私たちのサービス
+              Layanan Kami
             </h2>
           </BoxReveal>
 
@@ -894,7 +971,7 @@ const ServicesJapanese = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                インド最高の証明書コンサルタント
+                Konsultan Sertifikat Terbaik India
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -909,13 +986,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BISロゴ"
-                title="BISロゴ"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              外国製造業者向けBISマーク（ISIライセンス）
+              Tanda BIS (Lisensi ISI) untuk Produsen Asing
             </p>
           </Link>
 
@@ -926,13 +1003,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="CDSCOロゴ"
-                title="CDSCOロゴ"
+                alt="Logo CDSCO"
+                title="Logo CDSCO"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO登録認証
+              Sertifikasi Registrasi CDSCO
             </p>
           </Link>
 
@@ -943,13 +1020,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRSロゴ"
-                title="BISCRSロゴ"
+                alt="Logo BISCRS"
+                title="Logo BISCRS"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS（CRS）登録
+              Registrasi BIS (CRS)
             </p>
           </Link>
 
@@ -960,13 +1037,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
-                alt="プラスチック廃棄物管理"
-                title="プラスチック廃棄物管理"
+                alt="Manajemen Limbah Plastik"
+                title="Manajemen Limbah Plastik"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              プラスチック廃棄物管理
+              Manajemen Limbah Plastik
             </p>
           </Link>
 
@@ -977,13 +1054,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPR証明書ロゴ"
-                title="EPR証明書ロゴ"
+                alt="Logo Sertifikat EPR"
+                title="Logo Sertifikat EPR"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR証明書認証
+              Sertifikasi Sertifikat EPR
             </p>
           </Link>
 
@@ -994,13 +1071,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPCロゴ"
-                title="LMPCロゴ"
+                alt="Logo LMPC"
+                title="Logo LMPC"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC証明書認証
+              Sertifikasi Sertifikat LMPC
             </p>
           </Link>
 
@@ -1011,13 +1088,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BISロゴ"
-                title="BISロゴ"
+                alt="Logo BIS"
+                title="Logo BIS"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS登録証明書
+              Sertifikat Registrasi BIS
             </p>
           </Link>
 
@@ -1028,13 +1105,13 @@ const ServicesJapanese = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIマークロゴ"
-                title="ISIマークロゴ"
+                alt="Logo Tanda ISI"
+                title="Logo Tanda ISI"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              インド製造業者向けISIマーク（BIS）
+              TANDA ISI (BIS) untuk Produsen India
             </p>
           </Link>
         </div>

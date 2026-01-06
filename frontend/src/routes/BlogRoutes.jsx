@@ -71,8 +71,39 @@ const BISCertificateForBunkBedsJapanese = lazy(() =>
 const BISCertificateForBunkBedsChinese = lazy(() =>
   import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsChinese")
 );
+const BISCertificateForBunkBedsGerman = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsGerman")
+);
+const BISCertificateForBunkBedsIndonesian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsIndonesian"
+  )
+);
+const BISCertificateForBunkBedsItalian = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsItalian")
+);
+const BISCertificateForBunkBedsKorean = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsKorean")
+);
+const BISCertificateForBunkBedsSpanish = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsSpanish")
+);
+const BISCertificateForBunkBedsThai = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsThai")
+);
+const BISCertificateForBunkBedsVietnamese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsVietnamese"
+  )
+);
 const BISCertificateForBeds = lazy(() =>
-  import("@/blogs/BISCertificateForBeds")
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBeds")
+);
+const BISCertificateForBedsArabic = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsArabic")
+);
+const BISCertificateForBedsChinese = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsChinese")
 );
 const BISCertificateForStorageUnit = lazy(() =>
   import("@/blogs/BISCertificateForStorageUnit")
@@ -515,6 +546,62 @@ export const BlogRoutes = () => {
           </Suspense>
         }
       />
+      <Route
+        path="/blogs/isi-products/etagenbetten-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ranjang-susun-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/letti-a-castello-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/icheung-chimdae-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/literas-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/teng-song-chan-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/giuong-tang-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsVietnamese />
+          </Suspense>
+        }
+      />
 
       {/* Bunk beds page Pages End */}
 
@@ -531,6 +618,22 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBeds />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/asrat-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chuangju-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsChinese />
           </Suspense>
         }
       />

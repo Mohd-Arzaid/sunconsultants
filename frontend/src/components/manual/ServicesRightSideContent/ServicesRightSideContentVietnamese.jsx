@@ -41,6 +41,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/vi/chung-chi-bis-la-gi-bis-an-do",
     // BISFM PATH
     "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
+    // BIS Certificate for Bunk Beds Vietnamese Page Url
+    "/blogs/isi-products/giuong-tang-is-17636",
   ];
 
   // Check if current path should show these components
@@ -573,7 +575,11 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     if (path.includes("/chung-nhan-bis-scheme-x-cho-may-nen-khi"))
       return "Scheme X - Compressors (Vietnamese)";
 
-    if (path.includes("/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"))
+    if (
+      path.includes(
+        "/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"
+      )
+    )
       return "Scheme X - Pumps and Liquid Elevators (Vietnamese)";
     if (path.includes("/chung-nhan-bis-tai-viet-nam"))
       return "Vietnam Blog (Vietnamese)";
@@ -589,6 +595,10 @@ const ContactFormServicesRightSideContentVietnamese = () => {
       )
     )
       return "BIS Mark (ISI License) for Foreign Manufacturers (Vietnamese)";
+
+    // BIS Certificate for Bunk Beds Vietnamese
+    if (path.includes("/blogs/isi-products/giuong-tang-is-17636"))
+      return "BIS Certificate for Bunk Beds (Vietnamese)";
   };
 
   const [formData, setFormData] = useState({
@@ -600,7 +610,7 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+  const { fullName, email, phoneNumber, message } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({

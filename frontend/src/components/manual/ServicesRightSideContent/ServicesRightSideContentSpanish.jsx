@@ -30,12 +30,11 @@ const ServicesRightSideContentSpanish = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
-    
     "/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos",
     "/certificacion-bis-scheme-x-para-compresores",
 
-     "/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico",
-    
+    "/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico",
+
     "/certificacion-bis-en-espana",
     "/es/que-es-crs-bis-o-registro-crs",
     // ISI Mark Spanish Page Url
@@ -44,6 +43,8 @@ const ServicesRightSideContentSpanish = () => {
     "/es/que-es-el-certificado-bis-bis-indio",
     // BISFM Spanish Page Url
     "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
+    // BIS Certificate for Bunk Beds Spanish Page Url
+    "/blogs/isi-products/literas-is-17636",
   ];
 
   // Check if current path should show these components
@@ -567,11 +568,19 @@ const ContactFormServicesRightSideContentSpanish = () => {
   // Function to get page name based on URL
   const getPageName = () => {
     const path = window.location.pathname;
-  
-    if (path.includes("/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"))
+
+    if (
+      path.includes(
+        "/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"
+      )
+    )
       return "BIS Schema X for Pumps and Liquid Elevators (Spanish)";
 
-    if (path.includes("/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"))
+    if (
+      path.includes(
+        "/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
+      )
+    )
       return "Schema X Certification for Heat Treatment Equipment (Spanish)";
     if (path.includes("/certificacion-bis-en-espana"))
       return "Spain Blog (Spanish)";
@@ -590,6 +599,10 @@ const ContactFormServicesRightSideContentSpanish = () => {
       )
     )
       return "BISFM (Foreign Manufacturers) - Spanish Page";
+
+    // BIS Certificate for Bunk Beds Spanish
+    if (path.includes("/blogs/isi-products/literas-is-17636"))
+      return "BIS Certificate for Bunk Beds (Spanish)";
   };
 
   const [formData, setFormData] = useState({
@@ -601,7 +614,7 @@ const ContactFormServicesRightSideContentSpanish = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+  const { fullName, email, phoneNumber, message } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({
