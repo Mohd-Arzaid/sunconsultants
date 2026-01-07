@@ -191,6 +191,16 @@ const blogs = [
   },
   {
     id: 20,
+    color: "#8B5CF6", // Purple
+    title: "BIS Certificate for Furniture in India – Complete Detailed Guide",
+    description:
+      "Complete guide to BIS Certification for Furniture in India. Learn about BIS License, BIS Mark, applicable standards, certification process, cost, documents, compliance requirements, and how to get BIS Certificate for furniture manufacturers.",
+    slug: "blogs/isi-products/furniture",
+    date: "15 October 2025",
+    image: "/blogImages/BISLicenseforFurniture.png",
+  },
+  {
+    id: 21,
     color: "#3B82F6", // Blue
     title: "BIS Certificate for Beds – IS 17635:2022",
     description:
@@ -199,7 +209,7 @@ const blogs = [
     date: "16 October 2025",
   },
   {
-    id: 21,
+    id: 22,
     color: "#EC4899", // Pink
     title: "BIS Certificate for Welded Pipes & Tubes – IS 17876:2022",
     description:
@@ -208,7 +218,7 @@ const blogs = [
     date: "18 October 2025",
   },
   {
-    id: 22,
+    id: 23,
     color: "#8B5CF6", // Purple
     title: "BIS Certificate for Seamless Pipes & Tubes – IS 17875:2022",
     description:
@@ -217,7 +227,7 @@ const blogs = [
     date: "20 October 2025",
   },
   {
-    id: 23,
+    id: 24,
     color: "#F59E0B", // Amber/Orange
     title: "BIS Certificate for Flashlight – IS 2083:2024",
     description:
@@ -226,7 +236,7 @@ const blogs = [
     date: "05 December 2025",
   },
   {
-    id: 24,
+    id: 25,
     color: "#8B5CF6", // Purple
     title: "BIS Certificate for Electric Fence Energizers – IS 302-2-76:1999",
     description:
@@ -235,7 +245,7 @@ const blogs = [
     date: "05 December 2025",
   },
   {
-    id: 25,
+    id: 26,
     color: "#10B981", // Green
     title: "BIS Certificate for Solar Water Heating Systems – IS 16542:2016",
     description:
@@ -244,7 +254,7 @@ const blogs = [
     date: "05 December 2025",
   },
   {
-    id: 26,
+    id: 27,
     color: "#3B82F6", // Blue
     title: "BIS Certificate for Solar Flat Plate Collector – IS 12933:2003",
     description:
@@ -253,7 +263,7 @@ const blogs = [
     date: "10 December 2025",
   },
   {
-    id: 27,
+    id: 28,
     color: "#EC4899", // Pink
     title: "BIS Certificate for Fibre Ropes of Polyester – IS 17609:2021",
     description:
@@ -262,7 +272,7 @@ const blogs = [
     date: "14 December 2025",
   },
   {
-    id: 28,
+    id: 29,
     color: "#EF4444", // Red
     title: "BIS Certificate for Fibre Ropes – Polyethylene – IS 17636:2022",
     description:
@@ -271,7 +281,7 @@ const blogs = [
     date: "15 December 2025",
   },
   {
-    id: 29,
+    id: 30,
     color: "#F59E0B", // Amber/Orange
     title: "BIS Certificate for Fibre Ropes – Polyamide – IS 4572:2022",
     description:
@@ -280,7 +290,7 @@ const blogs = [
     date: "15 December 2025",
   },
   {
-    id: 30,
+    id: 31,
     color: "#1E40AF", // Blue
     title: "BIS Certificate for Steel Wire Ropes – IS 1804:2004",
     description:
@@ -289,7 +299,7 @@ const blogs = [
     date: "10 December 2025",
   },
   {
-    id: 31,
+    id: 32,
     color: "#8B5CF6", // Purple
     title: "BIS Certificate for Mixed Polyolefin Fibre Ropes – IS 14929:2022",
     description:
@@ -298,7 +308,7 @@ const blogs = [
     date: "22 December 2025",
   },
   {
-    id: 32,
+    id: 33,
     color: "#10B981", // Green
     title:
       "BIS Certificate for Composite Synthetic Fibre Ropes – IS 14928:2001",
@@ -308,7 +318,7 @@ const blogs = [
     date: "10 December 2025",
   },
   {
-    id: 33,
+    id: 34,
     color: "#3B82F6", // Blue
     title: "BIS Certificate for Manila Ropes – IS 1084",
     description:
@@ -317,7 +327,7 @@ const blogs = [
     date: "15 December 2025",
   },
   {
-    id: 34,
+    id: 35,
     color: "#EC4899", // Pink
     title: "BIS Certificate for Flat Woven Webbing Slings – IS 15041",
     description:
@@ -326,7 +336,7 @@ const blogs = [
     date: "15 December 2025",
   },
   {
-    id: 35,
+    id: 36,
     color: "#EF4444", // Red
     title: "BIS Certificate for Combination Side Cutting Pliers – IS 3650",
     description:
@@ -335,7 +345,7 @@ const blogs = [
     date: "15 December 2025",
   },
   {
-    id: 36,
+    id: 37,
     color: "#F59E0B", // Amber/Orange
     title: "BIS Certificate for Pipe Wrenches – Heavy Duty – IS 4003",
     description:
@@ -344,7 +354,7 @@ const blogs = [
     date: "20 December 2025",
   },
   {
-    id: 37,
+    id: 38,
     color: "#10B981", // Green
     title: "BIS Certificate for Ring Wrenches – IS 2029:1998",
     description:
@@ -353,7 +363,7 @@ const blogs = [
     date: "22 December 2025",
   },
   {
-    id: 38,
+    id: 39,
     color: "#8B5CF6", // Purple
     title: "BIS Certificate for Open-Jaw Wrenches – IS 2028:2004",
     description:
@@ -362,7 +372,7 @@ const blogs = [
     date: "22 December 2025",
   },
   {
-    id: 39,
+    id: 40,
     color: "#EC4899", // Pink
     title: "BIS Certificate for Adjustable Wrenches – IS 6149:1984",
     description:
@@ -371,7 +381,7 @@ const blogs = [
     date: "22 December 2025",
   },
   {
-    id: 40,
+    id: 41,
     color: "#DC2626", // Red
     title: "BIS Certificate for Chain Pipe Wrenches – IS 4123:1982",
     description:
@@ -380,7 +390,7 @@ const blogs = [
     date: "20 December 2025",
   },
   {
-    id: 41,
+    id: 42,
     color: "#10B981", // Green
     title:
       "BIS Certificate for Battery Operated Air Purifier – IS 302 (Part 1):2024",
@@ -390,7 +400,7 @@ const blogs = [
     date: "25 December 2025",
   },
   {
-    id: 42,
+    id: 43,
     color: "#F59E0B", // Amber/Orange
     title:
       "BIS Certification Foot Warmer and Heating Mats – Complete Guide to IS 302 (Part 1):2024",
@@ -400,7 +410,7 @@ const blogs = [
     date: "25 December 2025",
   },
   {
-    id: 43,
+    id: 44,
     color: "#3B82F6", // Blue
     title:
       "BIS Certification Battery-Operated Toothbrush – Complete Guide to IS 302 (Part 1):2024",

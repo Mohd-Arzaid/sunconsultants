@@ -111,6 +111,9 @@ const BISCertificateForStorageUnit = lazy(() =>
 const BISCertificateForTablesAndDesksUnit = lazy(() =>
   import("@/blogs/BISCertificateForTablesAndDesksUnit")
 );
+const BISCertificateForFurniture = lazy(() =>
+  import("@/blogs/BISCertificateforFurniture")
+);
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs")
 );
@@ -650,6 +653,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForTablesAndDesksUnit />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/furniture"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurniture />
           </Suspense>
         }
       />
