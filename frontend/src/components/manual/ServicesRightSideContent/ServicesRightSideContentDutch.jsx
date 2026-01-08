@@ -83,6 +83,8 @@ const ServicesRightSideContentDutch = () => {
     "/blogs/isi-products/stapelbedden-is-17636",
     // Beds Dutch Page Url
     "/blogs/isi-products/bedden-is-17635",
+    // Work Chairs Dutch Page Url
+    "/blogs/isi-products/werkstoelen-is-17631",
   ];
 
   // Check if current path should show these components
@@ -707,6 +709,8 @@ const ContactFormServicesRightSideContentDutch = () => {
       return "BIS Certificate for Bunk Beds (Dutch)";
     if (path.includes("/blogs/isi-products/bedden-is-17635"))
       return "BIS Certificate for Beds (Dutch)";
+    if (path.includes("/blogs/isi-products/werkstoelen-is-17631"))
+      return "BIS Certificate for Work Chairs (Dutch)";
     return "";
   };
 

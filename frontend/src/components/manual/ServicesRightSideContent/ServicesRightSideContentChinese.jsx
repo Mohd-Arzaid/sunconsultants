@@ -37,6 +37,7 @@ const ServicesRightSideContentChinese = () => {
     "/zh/bis-zheng-shu-shi-shen-me-yin-du-bis",
     "/blogs/isi-products/shuang-ceng-chuang-is-17636",
     "/blogs/isi-products/chuangju-is-17635",
+    "/blogs/isi-products/gong-zuo-yi-is-17631",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
     "/bis-fang-an-x-ya-suo-ji-ren-zheng",
     "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
@@ -703,6 +704,10 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certificate for Beds Chinese
     if (path.includes("/blogs/isi-products/chuangju-is-17635"))
       return "BIS Certificate for Beds (Chinese)";
+    // BIS Certificate for Work Chairs Chinese
+    if (path.includes("/blogs/isi-products/gong-zuo-yi-is-17631"))
+      return "BIS Certificate for Work Chairs (Chinese)";
+    return "";
   };
 
   const [formData, setFormData] = useState({

@@ -3256,10 +3256,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
 
-
-  
-
- 
   <!-- BIS Certificate for Bunk Beds - Japanese  Start -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/nidan-beddo-is-17636</loc>
@@ -3427,31 +3423,8 @@
     <lastmod>2025-01-16</lastmod>
   </url>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- BIS Certificate for Beds - English Ends -->
+ 
 
      <!-- {/* ==================================================================== */}
       {/* ==================================================================== */}
@@ -3464,12 +3437,140 @@
 
 
   <!-- BIS Certificate for Work Chairs - English -->
+  <!-- BIS Certificate for Work Chairs - English Start -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/work-chairs-is-17631</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Work Chairs - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/karasi-al-amal-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/gong-zuo-yi-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/werkstoelen-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - French -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/chaises-de-travail-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/arbeitsstuhle-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - Indonesian Start -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/kursi-kerja-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - Italian Start -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/sedie-da-lavoro-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - Japanese Start -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/sagyou-you-isu-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - Korean Start -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/eobmuyong-uija-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
+
+
   <!-- BIS Certificate for Chair & Stools - English -->
   <url>
     <loc>https://bis-certifications.com/bis-certification-for-chair-&amp;-stools-is-17632</loc>

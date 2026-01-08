@@ -1,6 +1,6 @@
-import FaqAuthorGerman from "@/components/common/FaqAuthor/FaqAuthorGerman";
-import ManyUsersAlsoReadGerman from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadGerman";
-import ServicesRightSideContentGerman from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentGerman";
+import FaqAuthorIndonesian from "@/components/common/FaqAuthor/FaqAuthorIndonesian";
+import ManyUsersAlsoReadIndonesian from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadIndonesian";
+import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterGerman from "@/components/manual/Footer/FooterGerman";
+import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
 import {
   Table,
   TableBody,
@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForBunkBedsGerman = () => { 
+const BISCertificateForWorkChairsIndonesian = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -33,32 +33,30 @@ const BISCertificateForBunkBedsGerman = () => {
       <MainContent />
       <Services />
       <VideoSection />
-      <FooterGerman />
+      <FooterIndonesian />
     </div>
   );
 };
 
-export default BISCertificateForBunkBedsGerman;
+export default BISCertificateForWorkChairsIndonesian;
 
 const MetaTags = () => {
-  const title = "BIS-Zertifikat für Etagenbetten | IS 17636:2022 BIS-Lizenz";
-  const ogTitle =
-    "BIS-Zertifizierung für Etagenbetten – IS 17636:2022 Leitfaden";
-  const twitterTitle = "BIS-Lizenz für Etagenbetten | IS 17636:2022";
+  const title = "Sertifikat BIS untuk Kursi Kerja | IS 17631:2022 Lisensi BIS";
+  const ogTitle = "Sertifikasi BIS untuk Kursi Kerja – Panduan IS 17631:2022";
+  const twitterTitle = "Lisensi BIS untuk Kursi Kerja | IS 17631:2022";
   const metaDescription =
-    "Erhalten Sie ein BIS-Zertifikat für Etagenbetten nach IS 17636:2022. Prozess, Dokumente, Tests, Kosten und Zeitplan für die BIS-Zertifizierung in Indien.";
+    "Dapatkan Sertifikat BIS untuk kursi kerja di bawah IS 17631:2022. Proses, dokumen, pengujian, biaya & timeline untuk Sertifikasi BIS di India.";
   const ogDescription =
-    "Vollständiger Leitfaden zur BIS-Zertifizierung für Etagenbetten gemäß IS 17636:2022. Erfahren Sie Prozess, Kosten, Dokumente, Tests und BIS-Lizenzvorteile.";
+    "Panduan lengkap untuk Sertifikasi BIS untuk Kursi Kerja sesuai IS 17631:2022. Ketahui proses, biaya, dokumen, pengujian & manfaat lisensi BIS.";
   const twitterDescription =
-    "Beantragen Sie ein BIS-Zertifikat für Etagenbetten nach IS 17636:2022. Lernen Sie den BIS-Prozess, Dokumente, Tests, Gebühren und Zeitplan in Indien kennen.";
+    "Ajukan Sertifikat BIS untuk Kursi Kerja di bawah IS 17631:2022. Pelajari proses BIS, dokumen, pengujian, biaya & timeline di India.";
   const metaKeywords =
-    "BIS-Zertifikat für Etagenbetten, BIS-Lizenz für Etagenbetten, IS 17636:2022, BIS-Zertifizierung für Etagenbetten";
+    "Sertifikat BIS untuk Kursi Kerja, Lisensi BIS untuk Kursi Kerja, IS 17631:2022, Sertifikasi BIS untuk Kursi Kerja";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/etagenbetten-is-17636";
+    "https://bis-certifications.com/blogs/isi-products/kursi-kerja-is-17631";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
-  const publisher =
-    "Dhruv Aggarwal, Leiter der Betriebsabteilung bei Sun Certification India";
+  const publisher = "Dhruv Aggarwal, Kepala Operasi di Sun Certification India";
 
   return (
     <Helmet>
@@ -68,6 +66,7 @@ const MetaTags = () => {
       <meta name="author" content={author} />
       <meta name="publisher" content={publisher} />
       {/* Open Graph Tags */}
+
       <meta property="og:title" content={ogTitle} />
       <meta property="og:description" content={ogDescription} />
       <meta property="og:url" content={websiteUrl} />
@@ -91,7 +90,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Startseite</Link>
+                    <Link to="/">Beranda</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -100,7 +99,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">Neueste Blogs</Link>
+                    <Link to="/Blogs">Blog Terbaru</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -109,7 +108,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS-Zertifikat für Etagenbetten – IS 17636:2022
+                    Sertifikat BIS untuk Kursi Kerja – IS 17631:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -129,7 +128,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentGerman />
+        <ServicesRightSideContentIndonesian />
       </div>
     </div>
   );
@@ -137,415 +136,367 @@ const MainContent = () => {
 
 const MainContentLeft = () => {
   return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+    <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS-Zertifikat für Etagenbetten – Vollständiger Leitfaden zur IS
-          17636:2022 BIS-Zertifizierung
+          Sertifikat BIS untuk Kursi Kerja – Panduan Kepatuhan Lengkap untuk IS
+          17631:2022
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforBunkBeds.png"
-            title="BIS-Lizenz für Etagenbetten"
-            alt="BIS-Zertifikat für Etagenbetten - IS 17636:2022 BIS-Zertifizierung"
+            src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
+            title="Lisensi BIS untuk Kursi Kerja"
+            alt="Sertifikat BIS untuk Kursi Kerja - IS 17631:2022 Sertifikasi BIS"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Zertifikat für Etagenbetten ist eine obligatorische
-          Anforderung in Indien nach IS 17636:2022, das die Sicherheits-,
-          Leistungs- und strukturellen Anforderungen für Etagenbetten festlegt,
-          die in Wohnungen, Hostels, Schlafsälen, PG-Unterkünften, Schulen,
-          Hotels und gewerblichen Einrichtungen verwendet werden. Jeder
-          Hersteller—ob indisch oder ausländisch—muss eine BIS Zertifizierung
-          für Etagenbetten erhalten, bevor er Etagenbetten im indischen Markt
-          verkauft, importiert, exportiert oder vertreibt.
+          Peningkatan penggunaan kursi kantor dan tugas—baik di ruang kerja
+          perusahaan, pusat co-working, kantor rumah, atau pengaturan
+          institusional—telah membuat keselamatan dan kinerja ergonomis menjadi
+          penting. Untuk memastikan produsen menyediakan produk kursi yang
+          stabil secara struktural, tahan lama, dan aman bagi pengguna,
+          Pemerintah India telah mewajibkan Sertifikasi BIS untuk Kursi Kerja di
+          bawah IS 17631:2022.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mit der steigenden Nachfrage nach platzsparenden Möbeln sind
-          Etagenbetten zu einer wesentlichen Produktkategorie geworden.
-          Sicherheitsrisiken wie Stürze, Zusammenbrüche, Einklemmungen und
-          strukturelle Ausfälle machen die BIS-Lizenz für Etagenbetten jedoch
-          entscheidend, um den Verbraucherschutz zu gewährleisten. Diese
-          umfassende Seite führt Sie durch die BIS-Registrierung für
-          Etagenbetten, Testanforderungen, Dokumentation, Gebühren, Zeitpläne,
-          Strafen und Vorteile.
+          Kursi kerja biasanya menahan beban berulang, gerakan tubuh
+          terus-menerus, kemiringan, putaran, dan penyesuaian ketinggian.
+          Kegagalan dalam fitur kinerja apa pun dapat menyebabkan cedera serius.
+          Inilah mengapa kepatuhan terhadap IS 17631:2022 – Kursi Kerja:
+          Persyaratan Keselamatan sekarang wajib untuk semua produsen dan
+          importir.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ob Sie Hersteller, Importeur, Exporteur, Händler oder Start-up sind,
-          dieser Leitfaden hilft Ihnen, die Compliance-Anforderungen unter dem
-          Bureau of Indian Standards (BIS) zu verstehen.
+          Panduan ini menjelaskan proses lisensi BIS lengkap, termasuk standar,
+          pengujian, biaya, dokumentasi, tanggung jawab, manfaat, dan
+          tantangan—dibuat dengan konten segar untuk menghindari duplikasi di
+          seluruh situs web Anda.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Was ist BIS-Zertifizierung?
+          Memahami Sertifikasi BIS untuk Kursi Kerja
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Die BIS-Zertifizierung ist ein Qualitäts- und
-          Sicherheits-Compliance-Programm, das vom Bureau of Indian Standards,
-          der nationalen Normungsorganisation Indiens, verwaltet wird. Es stellt
-          sicher, dass Produkte den festgelegten indischen Standards entsprechen
-          und sicher, zuverlässig und gebrauchstauglich sind.
+          Bureau of Indian Standards (BIS) mengawasi kualitas dan keselamatan
+          produk yang disediakan di pasar India. Setiap produk yang termasuk
+          dalam Standar India yang tercantum dalam Perintah Kontrol Kualitas
+          wajib harus dievaluasi dan disertifikasi oleh BIS sebelum dijual.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Was ist ein BIS-Zertifikat?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ein BIS-Zertifikat ist eine offizielle Lizenz, die einem Hersteller
-          ausgestellt wird und es ihm ermöglicht, das ISI-Zeichen zu verwenden,
-          was die Einhaltung der von BIS vorgeschriebenen Produktstandards
-          demonstriert.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bedeutung des BIS-Zertifikats
+          Sertifikat BIS – Apa yang Diwakilinya
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Es beweist, dass das Produkt bestanden hat:
+          Sertifikat BIS menunjukkan bahwa kursi kerja:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Laborprüfungen</li>
-          <li>Werksinspektion</li>
-          <li>Qualitätskontrolle-Bewertung</li>
-          <li>Sicherheits-Compliance</li>
-          <li>Konformität mit indischen Standards</li>
+          <li>Telah lulus pengujian kinerja dan daya tahan</li>
+          <li>Memenuhi spesifikasi material dan konstruksi</li>
+          <li>Aman untuk penggunaan harian jangka panjang</li>
+          <li>Mematuhi pedoman ergonomis dan struktural dalam Standar India</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ein BIS-zertifiziertes Produkt zeigt das BIS-Logo, auch bekannt als
-          das ISI Zeichen, an, was bedeutet, dass es indische Qualitätsstandards
-          erfüllt.
+          Produsen yang memenuhi persyaratan ini diberikan Lisensi BIS yang
+          memungkinkan mereka untuk menempelkan Tanda ISI.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Welcher BIS-Standard gilt für Etagenbetten? (IS 17636:2022)
+          Standar yang Berlaku untuk Kursi Kerja – IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Etagenbetten fallen unter die obligatorische BIS-Zertifizierung gemäß
-          dem neu eingeführten Standard:
+          Standar yang mengatur untuk kursi tugas dan kantor adalah:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17636:2022</strong> — Etagenbetten –
-          Sicherheitsanforderungen
+          🔹 <strong>IS 17631:2022</strong> – Kursi Kerja: Persyaratan
+          Keselamatan
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Dieser Standard stellt sicher, dass Etagenbetten strenge Sicherheits-,
-          Konstruktions- und Haltbarkeitskriterien erfüllen. Er umfasst:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Strukturelle Stabilität</li>
-          <li>Schutzgeländer</li>
-          <li>Einklemmgefahren</li>
-          <li>Tragfähigkeit</li>
-          <li>Abmessungsanforderungen</li>
-          <li>Materialspezifikationen</li>
-          <li>Kanten und Oberflächenbeschichtung</li>
-          <li>Leiterkonstruktion</li>
-          <li>Haltbarkeits- und Leistungstests</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Jeder Hersteller, der Etagenbetten in Indien verkaufen möchte, muss
-          eine BIS Lizenz für Etagenbetten nach IS 17636:2022 erhalten.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum ist BIS-Zertifizierung für Etagenbetten erforderlich?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Etagenbetten werden häufig von Kindern und Erwachsenen verwendet, und
-          Sicherheitsbedenken machen Compliance unerlässlich. BIS hat die
-          Zertifizierung obligatorisch gemacht, um zu verhindern:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zusammenbruch oder strukturelles Versagen</li>
-          <li>Einklemmung von Körperteilen</li>
-          <li>Sturz vom oberen Bett</li>
-          <li>Leiter-bezogene Verletzungen</li>
-          <li>Schlechte Materialqualität</li>
-          <li>Brandgefahren</li>
-          <li>Gefährliche Beschichtungen oder scharfe Kanten</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Gründe, warum die BIS-Lizenz für Etagenbetten obligatorisch ist
-        </h3>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Gewährleistet mechanische Festigkeit und Haltbarkeit</li>
-          <li>Schützt Verbraucher—insbesondere Kinder—vor Verletzungen</li>
-          <li>Hält einheitliche Qualitätsstandards aufrecht</li>
-          <li>Hilft Marken, Vertrauen und Glaubwürdigkeit aufzubauen</li>
-          <li>Stellt die Einhaltung staatlicher Vorschriften sicher</li>
-          <li>Verhindert rechtliche Probleme und Strafen</li>
-        </ol>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ohne BIS-Registrierung können Hersteller und Importeure das Produkt
-          nicht legal im indischen Markt verkaufen.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Schritt-für-Schritt BIS-Zertifizierungsprozess für Etagenbetten (IS
-          17636:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der BIS-Zertifizierungsprozess in Indien umfasst Tests, Dokumentation
-          und Werksinspektionen. Hier ist das Schritt-für-Schritt Verfahren:
+          Standar ini berfokus pada kursi yang dimaksudkan untuk penggunaan
+          jangka panjang di lingkungan kerja.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 1 — Anwendbarkeit und Standard bestimmen
+          Produk yang Dicakup oleh Standar Ini
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            <strong>IS 17636:2022</strong> — Obligatorisch
-          </li>
-          <li>
-            Bestätigen Sie die Produktkategorie und Details der
-            Fertigungseinheit.
-          </li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 2 — BIS-Antrag (Formularübermittlung)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Bewerben Sie sich online über das BIS Manak Online Portal.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Anforderungen umfassen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Herstellerdetails</li>
-          <li>Werkadresse und Nachweis</li>
-          <li>Produktkategorie & Marke</li>
-          <li>Fertigungskapazitäten</li>
-          <li>Qualitätskontrollprozesse</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dieser Schritt startet den offiziellen Genehmigungszyklus.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 3 — BIS-Zertifikatskosten bezahlen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Nach der Einreichung zahlen Sie:
-        </p>
-        <ul className="list-disc ml-6 mb-3 space-y-2 text-gray-600 text-base font-geist">
-          <li>Antragsgebühren</li>
-          <li>Testgebühren</li>
-          <li>Prüfgebühren</li>
-          <li>Kennzeichnungsgebühren</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Gebühren hängen ab von:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Anzahl der Produktvarianten</li>
-          <li>Markennamen</li>
-          <li>Werkstandort</li>
-          <li>Testparameter</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 4 — Probenprüfung (Gemäß IS 17636:2022)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Die Prüfung wird in einem BIS-anerkannten Labor durchgeführt.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Tests umfassen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Struktureller Stabilitätstest</li>
-          <li>Schlagtest</li>
-          <li>Einklemmtest</li>
-          <li>Schutzgeländer-Festigkeitstest</li>
-          <li>Oberflächenqualitätstest</li>
-          <li>Leitersicherheitstest</li>
-          <li>Belastungstest</li>
-          <li>Haltbarkeitstest</li>
-          <li>Kantensicherheitsbewertung</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der Prüfbericht wird direkt auf das BIS-Portal hochgeladen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 5 — BIS-Werksinspektion
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Ein BIS-Beamter besucht das Werk, um zu überprüfen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Qualitätsmanagementsystem</li>
-          <li>Rohstoffkontrolle</li>
-          <li>Zwischenprüfungen</li>
-          <li>Endproduktprüfung</li>
-          <li>Produktionskapazität</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sie überprüfen die Einhaltung des BIS-Schemas für Prüfung und
-          Inspektion (STI).
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 6 — Erteilung der BIS-Lizenz
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Sobald alle Schritte abgeschlossen sind, stellt BIS aus:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS-Zertifikat</li>
-          <li>ISI-Zeichen-Genehmigung</li>
-          <li>CML-Lizenznummer</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sie können jetzt das BIS-Zeichen legal auf Etagenbetten und
-          Verpackungen verwenden.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 7 — Nach-Lizenz-Verpflichtungen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Hersteller müssen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Interne Tests durchführen</li>
-          <li>Periodische BIS-Inspektionen zulassen</li>
-          <li>Die Lizenz alle 1 oder 2 Jahre erneuern</li>
+          <li>Kursi kantor ergonomis</li>
+          <li>Kursi tugas</li>
+          <li>Kursi putar</li>
+          <li>Kursi meja kerja</li>
+          <li>Kursi kerja dengan ketinggian dapat disesuaikan</li>
+          <li>Kursi kerja eksekutif</li>
+          <li>Kursi kerja dengan punggung mesh atau kain</li>
+          <li>Kursi yang dilengkapi dengan sandaran lengan</li>
+          <li>Kursi dengan mekanisme kemiringan/penguncian</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Geltungsbereich der BIS-Lizenz für Etagenbetten
+          Mengapa Kepatuhan IS 17631:2022 Sangat Penting
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Dieser Standard umfasst die Anforderungen
-          bezüglich der Leistung und Sicherheit, das heißt Festigkeit,
-          Stabilität und Haltbarkeit von Etagenbetten für den häuslichen und
-          nicht-häuslichen Gebrauch. Dieser Standard gilt auch für Einzelbetten,
-          die in einer Höhe der Bettbasis von 800 mm oder mehr über dem fertigen
-          Fußbodenniveau verwendet werden, unabhängig von der Verwendung, für
-          die der Raum darunter genutzt wird.
+          Kursi kerja berbeda secara signifikan dari kursi serbaguna karena:
         </p>
 
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Mendukung gerakan terus-menerus</li>
+          <li>Menggunakan mekanisme mekanis dan penyesuaian</li>
+          <li>Membawa beban dinamis</li>
+          <li>Memerlukan daya tahan untuk penggunaan jangka panjang</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Kursi yang dibuat dengan buruk mungkin gagal di:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Sambungan dasar</li>
+          <li>Mekanisme putar</li>
+          <li>Sistem pengangkat gas</li>
+          <li>Dukungan kursi/punggung</li>
+          <li>Struktur kaki atau roda</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Hal ini dapat menyebabkan cedera di tempat kerja, waktu henti
+          operasional, dan masalah tanggung jawab produk.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Sertifikasi BIS Wajib Memastikan
+        </h3>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Desain ergonomis yang aman</li>
+          <li>Kapasitas menahan beban yang andal</li>
+          <li>Daya tahan kuat di bawah pengujian siklik</li>
+          <li>Ketahanan terhadap keausan mekanis</li>
+          <li>Kepatuhan terhadap parameter keselamatan pengguna</li>
+        </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Dieser Standard gilt für vollständig
-          hergestellte/ gefertigte Etagenbetten. Er gilt auch für montagefertige
-          Einheiten; in diesem Fall gelten die Anforderungen dieses Standards
-          für die montierte Einheit.
+          Dengan demikian, memperoleh Lisensi BIS untuk Kursi Kerja tidak dapat
+          ditawar untuk produsen India dan asing.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Für die BIS-Zertifizierung von Etagenbetten erforderliche Dokumente
+          Ruang Lingkup Lisensi BIS untuk Kursi Kerja
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Hier ist eine vollständige Liste der BIS-Zertifikatsdokumente:
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Herstellerdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Werkregistrierungszertifikat</li>
-          <li>Fertigungsprozess-Flussdiagramm</li>
-          <li>Liste der Maschinen & Ausrüstung</li>
-          <li>Liste der Prüfausrüstung</li>
-          <li>Kalibrierungszertifikate</li>
-          <li>Werklayout/Anlagenlayout</li>
-          <li>Autorisierungsschreiben von CEO/Direktor</li>
-          <li>ISO 9001 Zertifikat (falls verfügbar)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Rechtliche Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identitätsnachweis</li>
-          <li>Adressnachweis</li>
-          <li>Markenautorisierung (bei Drittmarke)</li>
-          <li>Markenregistrierungsdokument (optional)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technische Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produktspezifikationen</li>
-          <li>Stückliste</li>
-          <li>Beschreibung der Sicherheitsmerkmale</li>
-          <li>Qualitätskontrollplan</li>
-          <li>Interne Prüfberichte</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS-Antragsdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Verpflichtungserklärungen & Erklärungen</li>
-          <li>Prüfantragsformular</li>
-          <li>Proben-Genehmigungsschreiben</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ordnungsgemäße Dokumente reduzieren Verzögerungen und gewährleisten
-          eine reibungslose Genehmigung.
+          Standar ini mencakup persyaratan untuk kursi kerja. Standar ini
+          berlaku untuk kursi kerja yang sepenuhnya diproduksi/dibuat. Ini juga
+          berlaku untuk unit siap rakitan; dalam hal ini persyaratan standar ini
+          akan berlaku untuk unit yang dirakit.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Prüfanforderungen für Etagenbetten (IS 17636:2022)
+          Proses Sertifikasi BIS Langkah demi Langkah untuk Kursi Kerja (IS
+          17631:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Prüfungen sind ein obligatorischer Teil des
-          BIS-Registrierungsprozesses. Etagenbetten unterziehen sich strengen
-          Tests, um Sicherheit und Haltbarkeit zu gewährleisten.
+          Proses sertifikasi untuk kursi kerja melibatkan campuran evaluasi
+          laboratorium, audit pabrik, dan pemeriksaan teknis.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Langkah 1 – Evaluasi Produk & Pemetaan Standar
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Identifikasi semua varian kursi dan selaraskan dengan IS 17631:2022.
+          Pahami model mana yang memiliki konstruksi yang sama dan mana yang
+          memerlukan pengujian terpisah.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Langkah 2 – Pengajuan Aplikasi Online
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Produsen mengajukan aplikasi melalui Portal BIS Manak Online.
+          Informasi yang diperlukan meliputi:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Detail lokasi manufaktur</li>
+          <li>Kontrol bahan baku</li>
+          <li>Spesifikasi teknis</li>
+          <li>Kemampuan produksi</li>
+          <li>Dokumentasi kepemilikan merek</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Langkah 3 – Pembayaran Biaya
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Biaya harus dibayar untuk:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Aplikasi</li>
+          <li>Pemrosesan</li>
+          <li>Pengujian</li>
+          <li>Inspeksi</li>
+          <li>Penandaan</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Langkah 4 – Pengujian Sampel (Persyaratan IS 17631:2022)
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Laboratorium yang diakui BIS mengevaluasi kursi terhadap beberapa
+          kriteria keselamatan dan kinerja.
+        </p>
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
+          Tes Kursi Kerja Meliputi
+        </h4>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Pengujian beban statis kursi dan punggung</li>
+          <li>Siklus pembebanan daya tahan</li>
+          <li>Pengujian putar/rotasi</li>
+          <li>Ketahanan mekanisme kemiringan</li>
+          <li>Kinerja mekanisme pengangkat gas</li>
+          <li>Kekuatan roda dan hambatan gulir</li>
+          <li>Stabilitas dasar dan pengujian kelebihan beban</li>
+          <li>Kemampuan beban sandaran lengan</li>
+          <li>Pengujian ketahanan benturan</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Laboratorium mengeluarkan laporan pengujian terperinci kepada BIS.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Langkah 5 – Audit Pabrik
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Inspektur BIS meninjau fasilitas:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Sistem produksi</li>
+          <li>Catatan inspeksi material</li>
+          <li>Proses jaminan kualitas internal</li>
+          <li>Instrumen pengujian & log kalibrasi</li>
+          <li>Kepatuhan terhadap Skema Pengujian & Inspeksi (STI)</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Langkah 6 – Pemberian Lisensi BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Setelah konformitas dikonfirmasi, BIS memberikan:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Sertifikasi Lisensi BIS/Tanda ISI</li>
+          <li>Nomor CML unik</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Langkah 7 – Kepatuhan Konsisten
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Produsen harus:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Mempertahankan pemeriksaan internal yang berkelanjutan</li>
+          <li>Mengikuti aturan penandaan</li>
+          <li>Bekerja sama selama inspeksi pengawasan</li>
+          <li>Memperbarui lisensi secara berkala</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Dokumen yang Diperlukan untuk Sertifikasi BIS Kursi Kerja
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Satu set dokumen lengkap memastikan persetujuan yang lebih cepat.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Dokumen Bisnis & Pabrik
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Registrasi pabrik</li>
+          <li>Diagram & tata letak manufaktur</li>
+          <li>Alur kerja produksi</li>
+          <li>Daftar mesin</li>
+          <li>Daftar peralatan uji</li>
+          <li>Sertifikat kalibrasi</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Dokumen Teknis
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Gambar teknik kursi</li>
+          <li>Spesifikasi mekanisme</li>
+          <li>Lembar data material</li>
+          <li>Daftar material</li>
+          <li>Instruksi perakitan</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Dokumen Hukum
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Bukti identitas penandatangan yang berwenang</li>
+          <li>Surat otorisasi merek</li>
+          <li>Sertifikat merek dagang</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Dokumen Khusus BIS
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Formulir aplikasi</li>
+          <li>Perjanjian</li>
+          <li>Formulir permintaan pengujian</li>
+          <li>Sampel label</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Persyaratan Pengujian sesuai IS 17631:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Kursi kerja menjalani pengujian yang lebih kompleks daripada kursi
+          umum karena bagian yang bergerak.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Schema für Inspektion und Prüfung von Etagenbetten
+          Tes Utama yang Dilakukan
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -553,10 +504,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Klausel
+                  Klausul
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Anforderung
+                  Persyaratan
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -566,71 +517,103 @@ const MainContentLeft = () => {
                   4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design und Verarbeitung
+                  Desain dan pengerjaan
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  5
+                  7.3.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Abmessungen
+                  Penggulingan Tepi Depan
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2
+                  7.3.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sicherheitsbarrieren für oberes Bett
+                  Penggulingan ke Depan
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
+                  7.3.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Lücken
+                  Penggulingan ke Depan untuk Kursi dengan Sandaran Kaki
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4
+                  7.3.4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Bettbasis
+                  Penggulingan ke Samping untuk Kursi Tanpa Sandaran Lengan
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.5
+                  7.3.5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leiter
+                  Penggulingan ke Samping untuk Kursi dengan Sandaran Lengan
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6
+                  7.3.6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Festigkeit von Rahmen und Befestigungen
+                  Penggulingan ke Belakang untuk Kursi Tanpa Sandaran Punggung
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
+                  7.4.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stabilität
+                  Pengujian Beban Statis Tepi Depan Kursi
                 </TableCell>
               </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors">
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.8
+                  7.4.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Befestigung des oberen Bettes am unteren Bett
+                  Pengujian Beban Statis Gabungan Kursi dan Punggung
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.3
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Pengujian Beban Statis Sandaran Lengan ke Bawah — Pusat
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.4
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Pengujian Beban Statis Sandaran Lengan ke Bawah — Depan
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.5
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Pengujian Beban Statis Sandaran Lengan ke Samping
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.6
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Pengujian Beban Statis Sandaran Kaki
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -638,327 +621,235 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Tests müssen nur in einem BIS-anerkannten Labor durchgeführt werden.
+          Tes-tes ini mensimulasikan bulan atau tahun penggunaan rutin dalam
+          beberapa hari.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Häufige Herausforderungen & wie man sie vermeidet
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Falsche Produktkategorisierung</strong>
-            <br />
-            Überprüfen Sie immer den korrekten indischen Standard.
-          </li>
-          <li>
-            <strong>Unzureichende Dokumentation</strong>
-            <br />
-            Fehlende Dokumente verursachen Verzögerungen—bereiten Sie sie im
-            Voraus vor.
-          </li>
-          <li>
-            <strong>Fehlgeschlagene Labortests</strong>
-            <br />
-            Stellen Sie hochwertige Materialien, Schweißarbeiten, Schutzgeländer
-            und Oberflächenbehandlung sicher.
-          </li>
-          <li>
-            <strong>Werk nicht bereit für Inspektion</strong>
-            <br />
-            Stellen Sie sicher, dass QMS und Prüfausrüstung ordnungsgemäß
-            gewartet werden.
-          </li>
-          <li>
-            <strong>Markenprobleme</strong>
-            <br />
-            Der Markenname muss mit dem Lizenzantrag übereinstimmen.
-          </li>
-        </ol>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die frühzeitige Lösung dieser Probleme reduziert die Bearbeitungszeit
-          erheblich.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vorteile der BIS-Zertifizierung für Hersteller & Importeure
+          Tantangan Umum dalam Sertifikasi BIS untuk Kursi Kerja
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Rechtlich Etagenbetten in Indien verkaufen</li>
-          <li>Vertrauen bei Kunden aufbauen</li>
-          <li>Produktrückgaben reduzieren</li>
-          <li>Markenreputation verbessern</li>
-          <li>Sicherheits-Compliance gewährleisten</li>
-          <li>Wettbewerbsvorteil erlangen</li>
-          <li>Erweiterung in Einzelhandelsketten & E-Commerce-Plattformen</li>
-          <li>Zugang zu staatlichen Ausschreibungen</li>
-          <li>Strafen & rechtliche Schritte vermeiden</li>
+          <li>
+            <strong>✔ 1. Kegagalan dalam pengujian mekanis/kemiringan</strong> –
+            Sering disebabkan oleh mekanisme yang lemah atau perangkat keras
+            berkualitas rendah.
+          </li>
+          <li>
+            <strong>✔ 2. Ketidakpatuhan mekanisme pengangkat gas</strong> –
+            Pengangkat gas harus memenuhi parameter tekanan dan keselamatan yang
+            ketat.
+          </li>
+          <li>
+            <strong>✔ 3. Infrastruktur pengujian yang tidak memadai</strong> –
+            Pengujian kursi kerja memerlukan rig khusus.
+          </li>
+          <li>
+            <strong>✔ 4. Pengelompokan produk yang salah</strong> – Mekanisme
+            berbeda = pengujian terpisah.
+          </li>
+          <li>
+            <strong>✔ 5. Ketidakpatuhan STI</strong> – Kesalahan STI dapat
+            menunda penerbitan lisensi.
+          </li>
+          <li>
+            <strong>✔ 6. Ketidakcocokan dokumen</strong> – Nama merek dan nama
+            model harus sesuai dengan aplikasi BIS secara tepat.
+          </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Strafen bei Nichteinhaltung
+          Keuntungan Sertifikasi BIS untuk Kursi Kerja
+        </h2>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Memfasilitasi penjualan legal di seluruh India</li>
+          <li>Meningkatkan kepercayaan pelanggan & reputasi merek</li>
+          <li>Memastikan daya tahan jangka panjang</li>
+          <li>Mengurangi klaim garansi dan kegagalan</li>
+          <li>Melindungi dari sanksi regulasi</li>
+          <li>Memungkinkan pencantuman di platform e-commerce</li>
+          <li>Wajib untuk tender pemerintah dan pasokan perusahaan</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sanksi untuk Menjual Kursi Kerja Tanpa Sertifikasi BIS
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Der Verkauf von Etagenbetten ohne BIS-Zertifizierung kann zu Folgendem
-          führen:
+          Ketidakpatuhan dapat mengakibatkan:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produktbeschlagnahme</li>
-          <li>Geldstrafen</li>
-          <li>Werkstilllegungsanordnungen</li>
-          <li>Rechtliche Verfolgung</li>
-          <li>Verbot vom indischen Markt</li>
-          <li>Schwarze Liste der Marke</li>
+          <li>Sanksi finansial yang berat</li>
+          <li>Penyitaan inventaris</li>
+          <li>Perintah penghentian produksi</li>
+          <li>Larangan impor</li>
+          <li>Tuntutan pidana</li>
+          <li>Pembatalan lisensi bisnis</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Compliance ist nicht optional—sie ist obligatorisch.
+          Penegakan ketat dilakukan di bawah Undang-Undang BIS, 2016.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wer benötigt eine BIS-Zertifizierung für Etagenbetten?
+          Siapa yang Harus Memperoleh Sertifikasi BIS untuk Kursi Kerja?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Die folgenden Unternehmen müssen eine BIS-Lizenz für Etagenbetten
-          erhalten:
-        </p>
+        <p className="text-gray-600 text-base font-geist mb-3">Wajib untuk:</p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indische Hersteller</li>
-          <li>Ausländische Hersteller, die nach Indien exportieren</li>
-          <li>Importeure</li>
-          <li>Vertriebspartner</li>
-          <li>E-Commerce-Verkäufer</li>
-          <li>OEM/ODM-Hersteller</li>
-          <li>Möbelmarken & Einzelhändler</li>
+          <li>Produsen India</li>
+          <li>Produsen asing yang mengekspor ke India</li>
+          <li>Pemilik merek</li>
+          <li>Importir</li>
+          <li>Pemasok OEM/ODM</li>
+          <li>Distributor gudang</li>
+          <li>Merek furnitur ritel dan online</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Jedes Werk (nicht Unternehmen) benötigt eine separate BIS-Lizenz.
+          Setiap pabrik memerlukan lisensi BIS yang unik.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum uns für BIS-Zertifizierungsberatung wählen?
+          Kesimpulan
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Wir bieten umfassende Unterstützung für die BIS-Registrierung von
-          Etagenbetten, einschließlich:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standardinterpretation (IS 17636:2022)</li>
-          <li>Dokumentationsvorbereitung</li>
-          <li>Labortestkoordination</li>
-          <li>BIS-Portal-Antrag</li>
-          <li>Werksinspektionsunterstützung</li>
-          <li>Kommunikation mit BIS-Beamten</li>
-          <li>Lizenzgenehmigungsunterstützung</li>
-          <li>Nach-Zertifizierungs-Compliance</li>
-        </ul>
-
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mit jahrelanger Expertise gewährleisten wir eine schnelle, genaue und
-          problemlose BIS Zertifizierung.
+          Sertifikat BIS untuk Kursi Kerja di bawah IS 17631:2022 sangat penting
+          untuk memastikan produk kursi yang aman, tahan lama, dan ergonomis di
+          India. Sertifikasi wajib meningkatkan kepercayaan pelanggan,
+          mengurangi risiko tanggung jawab produk, dan memastikan kepatuhan
+          terhadap standar kualitas nasional. Dengan dukungan profesional,
+          perjalanan sertifikasi—dari pengujian hingga inspeksi hingga
+          lisensi—menjadi efisien dan dapat diprediksi.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs — BIS-Zertifizierung für Etagenbetten
+          FAQ – Sertifikat BIS untuk Kursi Kerja (IS 17631:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Ist die BIS-Zertifizierung für Etagenbetten in Indien
-                obligatorisch?
-              </strong>
+              <strong>1. Kursi mana yang termasuk dalam IS 17631:2022?</strong>
               <br />
-              Ja. Nach IS 17636:2022 ist sie für alle Hersteller und Importeure
-              obligatorisch.
+              Setiap kursi yang dirancang untuk lingkungan kerja, termasuk kursi
+              ergonomis kantor, kursi tugas, kursi putar, dan kursi yang dapat
+              disesuaikan.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. Wie lange dauert die BIS-Zertifizierung für Etagenbetten?
+                2. Apakah Sertifikasi BIS wajib untuk kursi kerja?
               </strong>
               <br />
-              Typischerweise 30–45 Tage, abhängig von Bereitschaft und
-              Dokumentation.
+              Ya. Sertifikasi BIS wajib sebelum memproduksi, menjual, atau
+              mengimpor kursi kerja di India.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                3. Können ausländische Hersteller sich für BIS bewerben?
+                3. Apa yang membuat pengujian kursi kerja berbeda dari pengujian
+                kursi umum?
               </strong>
               <br />
-              Ja, über das FMCS (Foreign Manufacturers Certification Scheme).
+              Kursi kerja menggunakan mekanisme seperti putar, pengangkat gas,
+              sistem kemiringan, dan roda—memerlukan pengujian mekanis dan daya
+              tahan yang canggih.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. Berapa lama proses sertifikasi BIS?</strong>
+              <br />
+              Biasanya 30–45 hari untuk produsen India dan sekitar 120 hari
+              untuk produsen asing, tergantung pada pengujian dan dokumentasi.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Bisakah produsen asing mengajukan?</strong>
+              <br />
+              Ya, melalui FMCS (Skema Sertifikasi Produsen Asing).
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                4. Kann ich mich online für ein BIS-Zertifikat bewerben?
+                6. Apa yang terjadi jika kursi gagal dalam pengujian BIS?
               </strong>
               <br />
-              Ja, über das BIS Manak Online Portal.
+              Kursi harus didesain ulang, diperbaiki, dan diuji ulang hingga
+              memenuhi IS 17631:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                6. Welche Tests sind für die Etagenbetten-Zertifizierung
-                erforderlich?
+                7. Dokumen apa yang diperlukan untuk aplikasi BIS?
               </strong>
               <br />
-              Belastungstest, Schutzgeländer-Test, Stabilitätstest, Schlagtest,
-              Einklemmtest usw.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Wie lange ist eine BIS-Lizenz gültig?</strong>
-              <br />
-              Normalerweise 1–2 Jahre und erneuerbar.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Kann eine Lizenz mehrere Modelle abdecken?</strong>
-              <br />
-              Nur wenn sie unter denselben Standard und dieselbe Kategorie
-              fallen.
+              Detail pabrik, gambar produk, daftar mesin, dokumen QC,
+              kepemilikan merek, dan dokumen hukum.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                9. Ist das ISI-Zeichen auf Etagenbetten erforderlich?
+                8. Apakah semua model kursi memerlukan pengujian terpisah?
               </strong>
               <br />
-              Ja, das ISI-Zeichen ist nach der Zertifizierung obligatorisch.
+              Jika model berbeda dalam desain, mekanisme, atau struktur,
+              pengujian terpisah mungkin diperlukan.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                10. Was passiert, wenn mein Produkt die Labortests nicht
-                besteht?
+                9. Apakah penandaan ISI wajib setelah persetujuan?
               </strong>
               <br />
-              Sie müssen das Produkt ändern und Proben erneut einreichen.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>11. Überprüft BIS die Werksinfrastruktur?</strong>
-              <br />
-              Ja, während der Inspektion.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>12. Können Händler sich für BIS bewerben?</strong>
-              <br />
-              Nur wenn sie Markeninhaber sind und einen Vertrag mit Herstellern
-              haben.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>13. Was ist das BIS-Logo?</strong>
-              <br />
-              Es ist das standardmäßige ISI-Zeichen-Symbol, das die
-              Produktkonformität anzeigt.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                14. Welche Dokumente werden für die BIS-Zertifizierung benötigt?
-              </strong>
-              <br />
-              Werkslizenz, Layout, Maschinenliste, Stückliste, QC-Plan,
-              Prüfberichte usw.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>15. Werden BIS-Tests im Werk durchgeführt?</strong>
-              <br />
-              Nein, nur in BIS-anerkannten Labors.
+              Ya, tanda ISI harus muncul pada produk, label, dan kemasan.
             </p>
           </div>
         </div>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Fazit
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die Erlangung eines BIS-Zertifikats für Etagenbetten nach IS
-          17636:2022 ist nicht nur obligatorisch, sondern auch wesentlich, um
-          Verbrauchersicherheit, Produktzuverlässigkeit und rechtliche
-          Compliance in Indien zu gewährleisten. Der Zertifizierungsprozess
-          umfasst Produkttests, Dokumentation, Werksinspektion und
-          Lizenzausstellung. Mit ordnungsgemäßer Planung und fachkundiger
-          Anleitung wird der Prozess reibungslos, schnell und kosteneffektiv.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ob Sie Hersteller, Importeur oder Markeninhaber sind, die BIS
-          Zertifizierung stärkt Ihre Marktposition, erhöht das Kundenvertrauen
-          und erschließt neue Geschäftsmöglichkeiten. Unser Expertenteam für
-          Beratung ist bereit, Sie bei der umfassenden BIS-Zertifizierung für
-          Etagenbetten zu unterstützen.
-        </p>
-
         {/* PDF Viewer Section */}
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
-            src="/BIS-Product-Pdf/IS-17636-2021-Sun-Certifications-India.pdf"
-            title="BIS-Zertifikat für Etagenbetten - IS 17636:2021 PDF"
+            src="/BIS-Product-Pdf/IS-17631-2022-Sun-Certifications-India.pdf"
+            title="Sertifikat BIS untuk Kursi Kerja - IS 17631:2022 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -967,9 +858,9 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoReadGerman />
+        <ManyUsersAlsoReadIndonesian />
 
-        <FaqAuthorGerman questionNumber={5} />
+        <FaqAuthorIndonesian questionNumber={4} />
       </div>
     </div>
   );
@@ -977,12 +868,12 @@ const MainContentLeft = () => {
 
 const Services = () => {
   return (
-    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
+    <div className="pt-6 md:pt-8 pb-12 md:pb-16 overflow-x-hidden">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Unsere Dienstleistungen
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
+              Layanan Kami
             </h2>
           </BoxReveal>
 
@@ -990,7 +881,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Indiens bester Zertifikatsberater
+                Konsultan Sertifikat Terbaik India
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -1011,7 +902,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS-Zeichen (ISI-Lizenz) für ausländische Hersteller
+              Tanda BIS (Lisensi ISI) untuk Produsen Asing
             </p>
           </Link>
 
@@ -1022,13 +913,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="CDSCO Logo"
-                title="CDSCO Logo"
+                alt="Logo CDSCO"
+                title="Logo CDSCO"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO-Registrierungszertifizierung
+              Sertifikasi Registrasi CDSCO
             </p>
           </Link>
 
@@ -1039,13 +930,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS logo"
-                title="BISCRS logo"
+                alt="Logo BISCRS"
+                title="Logo BISCRS"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registrierung
+              Registrasi BIS (CRS)
             </p>
           </Link>
 
@@ -1056,13 +947,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
-                alt="PlasticWasteManagement"
-                title="PlasticWasteManagement"
+                alt="Manajemen Limbah Plastik"
+                title="Manajemen Limbah Plastik"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Kunststoffabfallmanagement
+              Manajemen Limbah Plastik
             </p>
           </Link>
 
@@ -1073,13 +964,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate logo"
-                title="EPRCertificate logo"
+                alt="Logo Sertifikat EPR"
+                title="Logo Sertifikat EPR"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR-Zertifikatszertifizierungen
+              Sertifikasi Sertifikat EPR
             </p>
           </Link>
 
@@ -1090,13 +981,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC logo"
-                title="LMPC logo"
+                alt="Logo LMPC"
+                title="Logo LMPC"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC-Zertifikatszertifizierungen
+              Sertifikasi Sertifikat LMPC
             </p>
           </Link>
 
@@ -1107,13 +998,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="Logo BIS"
+                title="Logo BIS"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS-Registrierungszertifikat
+              Sertifikat Registrasi BIS
             </p>
           </Link>
 
@@ -1124,13 +1015,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark logo"
-                title="ISIMark logo"
+                alt="Logo Tanda ISI"
+                title="Logo Tanda ISI"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI-ZEICHEN (BIS) für indische Hersteller
+              TANDA ISI (BIS) untuk Produsen India
             </p>
           </Link>
         </div>

@@ -44,6 +44,8 @@ const ServicesRightSideContentFrench = () => {
     "/blogs/isi-products/lits-superposes-is-17636",
     // Beds French Page Url
     "/blogs/isi-products/lits-is-17635",
+    // Work Chairs French Page Url
+    "/blogs/isi-products/chaises-de-travail-is-17631",
   ];
 
   // Check if current path should show these components
@@ -602,6 +604,8 @@ const ContactFormServicesRightSideContentFrench = () => {
       return "BIS Certificate for Bunk Beds (French)";
     if (path.includes("/blogs/isi-products/lits-is-17635"))
       return "BIS Certificate for Beds (French)";
+    if (path.includes("/blogs/isi-products/chaises-de-travail-is-17631"))
+      return "BIS Certificate for Work Chairs (French)";
     return "";
   };
 

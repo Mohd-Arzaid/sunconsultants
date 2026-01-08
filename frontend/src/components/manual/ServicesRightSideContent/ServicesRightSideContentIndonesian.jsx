@@ -82,6 +82,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/ranjang-susun-is-17636",
     // BIS Certificate for Beds Indonesian Page Url
     "/blogs/isi-products/ranjang-is-17635",
+    // BIS Certificate for Work Chairs Indonesian Page Url
+    "/blogs/isi-products/kursi-kerja-is-17631",
   ];
 
   // Check if current path should show these components
@@ -744,6 +746,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Beds Indonesian
     if (path.includes("/blogs/isi-products/ranjang-is-17635"))
       return "BIS Certificate for Beds (Indonesian)";
+    // BIS Certificate for Work Chairs Indonesian
+    if (path.includes("/blogs/isi-products/kursi-kerja-is-17631"))
+      return "BIS Certificate for Work Chairs (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

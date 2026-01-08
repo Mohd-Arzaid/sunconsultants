@@ -66,6 +66,8 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/asrat-muzdawijat-is-17636",
     // BIS Certificate for Beds Arabic Page Url
     "/blogs/isi-products/asrat-is-17635",
+    // BIS Certificate for Work Chairs Arabic Page Url
+    "/blogs/isi-products/karasi-al-amal-is-17631",
   ];
 
   // Check if current path should show these components
@@ -692,6 +694,9 @@ const ContactFormServicesRightSideContentArabic = () => {
     // BIS Certificate for Beds Arabic
     if (path.includes("/blogs/isi-products/asrat-is-17635"))
       return "BIS Certificate for Beds (Arabic)";
+    // BIS Certificate for Work Chairs Arabic
+    if (path.includes("/blogs/isi-products/karasi-al-amal-is-17631"))
+      return "BIS Certificate for Work Chairs (Arabic)";
     return "";
   };
 

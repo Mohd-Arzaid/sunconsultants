@@ -64,6 +64,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/icheung-chimdae-is-17636",
     // BIS Certificate for Beds Korean Page Url
     "/blogs/isi-products/chimdae-is-17635",
+    // BIS Certificate for Work Chairs Korean Page Url
+    "/blogs/isi-products/eobmuyong-uija-is-17631",
   ];
 
   // Check if current path should show these components
@@ -652,6 +654,9 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Beds Korean
     if (path.includes("/blogs/isi-products/chimdae-is-17635"))
       return "BIS Certificate for Beds (Korean)";
+    // BIS Certificate for Work Chairs Korean
+    if (path.includes("/blogs/isi-products/eobmuyong-uija-is-17631"))
+      return "BIS Certificate for Work Chairs (Korean)";
   };
 
   const [formData, setFormData] = useState({

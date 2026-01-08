@@ -1,6 +1,6 @@
-import FaqAuthorGerman from "@/components/common/FaqAuthor/FaqAuthorGerman";
-import ManyUsersAlsoReadGerman from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadGerman";
-import ServicesRightSideContentGerman from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentGerman";
+import FaqAuthorChinese from "@/components/common/FaqAuthor/FaqAuthorChinese";
+import ManyUsersAlsoReadChinese from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadChinese";
+import ServicesRightSideContentChinese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentChinese";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterGerman from "@/components/manual/Footer/FooterGerman";
+import FooterChinese from "@/components/manual/Footer/FooterChinese";
 import {
   Table,
   TableBody,
@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForBunkBedsGerman = () => { 
+const BISCertificateForWorkChairsChinese = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -33,32 +33,31 @@ const BISCertificateForBunkBedsGerman = () => {
       <MainContent />
       <Services />
       <VideoSection />
-      <FooterGerman />
+      <FooterChinese />
     </div>
   );
 };
 
-export default BISCertificateForBunkBedsGerman;
+export default BISCertificateForWorkChairsChinese;
 
 const MetaTags = () => {
-  const title = "BIS-Zertifikat für Etagenbetten | IS 17636:2022 BIS-Lizenz";
-  const ogTitle =
-    "BIS-Zertifizierung für Etagenbetten – IS 17636:2022 Leitfaden";
-  const twitterTitle = "BIS-Lizenz für Etagenbetten | IS 17636:2022";
+  const title = "工作椅BIS证书 | IS 17631:2022 BIS许可证";
+  const ogTitle = "工作椅BIS认证 – IS 17631:2022指南";
+  const twitterTitle = "工作椅BIS许可证 | IS 17631:2022";
   const metaDescription =
-    "Erhalten Sie ein BIS-Zertifikat für Etagenbetten nach IS 17636:2022. Prozess, Dokumente, Tests, Kosten und Zeitplan für die BIS-Zertifizierung in Indien.";
+    "获取IS 17631:2022标准下的工作椅BIS证书。了解印度BIS认证的流程、文件、测试、成本和时间表。";
   const ogDescription =
-    "Vollständiger Leitfaden zur BIS-Zertifizierung für Etagenbetten gemäß IS 17636:2022. Erfahren Sie Prozess, Kosten, Dokumente, Tests und BIS-Lizenzvorteile.";
+    "根据IS 17631:2022标准，工作椅BIS认证完整指南。了解流程、成本、文件、测试和BIS许可证优势。";
   const twitterDescription =
-    "Beantragen Sie ein BIS-Zertifikat für Etagenbetten nach IS 17636:2022. Lernen Sie den BIS-Prozess, Dokumente, Tests, Gebühren und Zeitplan in Indien kennen.";
+    "申请IS 17631:2022标准下的工作椅BIS证书。了解印度的BIS流程、文件、测试、费用和时间表。";
   const metaKeywords =
-    "BIS-Zertifikat für Etagenbetten, BIS-Lizenz für Etagenbetten, IS 17636:2022, BIS-Zertifizierung für Etagenbetten";
+    "工作椅BIS证书, 工作椅BIS许可证, IS 17631:2022, 工作椅BIS认证";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/etagenbetten-is-17636";
+    "https://bis-certifications.com/blogs/isi-products/gong-zuo-yi-is-17631";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
-    "Dhruv Aggarwal, Leiter der Betriebsabteilung bei Sun Certification India";
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   return (
     <Helmet>
@@ -68,6 +67,7 @@ const MetaTags = () => {
       <meta name="author" content={author} />
       <meta name="publisher" content={publisher} />
       {/* Open Graph Tags */}
+
       <meta property="og:title" content={ogTitle} />
       <meta property="og:description" content={ogDescription} />
       <meta property="og:url" content={websiteUrl} />
@@ -91,7 +91,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Startseite</Link>
+                    <Link to="/">首页</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -100,7 +100,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">Neueste Blogs</Link>
+                    <Link to="/Blogs">最新博客</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -109,7 +109,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS-Zertifikat für Etagenbetten – IS 17636:2022
+                    工作椅BIS证书 – IS 17631:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -129,7 +129,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentGerman />
+        <ServicesRightSideContentChinese />
       </div>
     </div>
   );
@@ -137,415 +137,335 @@ const MainContent = () => {
 
 const MainContentLeft = () => {
   return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+    <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS-Zertifikat für Etagenbetten – Vollständiger Leitfaden zur IS
-          17636:2022 BIS-Zertifizierung
+          工作椅BIS证书 – IS 17631:2022完整合规指南
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforBunkBeds.png"
-            title="BIS-Lizenz für Etagenbetten"
-            alt="BIS-Zertifikat für Etagenbetten - IS 17636:2022 BIS-Zertifizierung"
+            src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
+            title="工作椅BIS许可证"
+            alt="工作椅BIS证书 - IS 17631:2022 BIS认证"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Zertifikat für Etagenbetten ist eine obligatorische
-          Anforderung in Indien nach IS 17636:2022, das die Sicherheits-,
-          Leistungs- und strukturellen Anforderungen für Etagenbetten festlegt,
-          die in Wohnungen, Hostels, Schlafsälen, PG-Unterkünften, Schulen,
-          Hotels und gewerblichen Einrichtungen verwendet werden. Jeder
-          Hersteller—ob indisch oder ausländisch—muss eine BIS Zertifizierung
-          für Etagenbetten erhalten, bevor er Etagenbetten im indischen Markt
-          verkauft, importiert, exportiert oder vertreibt.
+          办公和任务座椅的使用日益增加——无论是在企业工作空间、联合办公中心、家庭办公室还是机构设置中——使得安全性和人体工程学性能变得至关重要。为确保制造商提供结构稳定、耐用且对用户安全的座椅产品，印度政府已强制要求工作椅在IS
+          17631:2022标准下进行BIS认证。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mit der steigenden Nachfrage nach platzsparenden Möbeln sind
-          Etagenbetten zu einer wesentlichen Produktkategorie geworden.
-          Sicherheitsrisiken wie Stürze, Zusammenbrüche, Einklemmungen und
-          strukturelle Ausfälle machen die BIS-Lizenz für Etagenbetten jedoch
-          entscheidend, um den Verbraucherschutz zu gewährleisten. Diese
-          umfassende Seite führt Sie durch die BIS-Registrierung für
-          Etagenbetten, Testanforderungen, Dokumentation, Gebühren, Zeitpläne,
-          Strafen und Vorteile.
+          工作椅通常需要承受重复载荷、持续的身体运动、倾斜、旋转和高度调节。任何性能特性的故障都可能导致严重伤害。这就是为什么遵守IS
+          17631:2022 – 工作椅：安全要求现在对所有制造商和进口商都是强制性的。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ob Sie Hersteller, Importeur, Exporteur, Händler oder Start-up sind,
-          dieser Leitfaden hilft Ihnen, die Compliance-Anforderungen unter dem
-          Bureau of Indian Standards (BIS) zu verstehen.
+          本指南解释了完整的BIS许可流程，包括标准、测试、费用、文件、责任、优势和挑战——采用全新内容编写，以避免在您的网站上重复。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Was ist BIS-Zertifizierung?
+          了解工作椅BIS认证
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Die BIS-Zertifizierung ist ein Qualitäts- und
-          Sicherheits-Compliance-Programm, das vom Bureau of Indian Standards,
-          der nationalen Normungsorganisation Indiens, verwaltet wird. Es stellt
-          sicher, dass Produkte den festgelegten indischen Standards entsprechen
-          und sicher, zuverlässig und gebrauchstauglich sind.
+          印度标准局（BIS）监督在印度市场供应的产品的质量和安全。任何属于强制性质量控制命令中列出的印度标准的产品必须在销售前由BIS评估和认证。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Was ist ein BIS-Zertifikat?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ein BIS-Zertifikat ist eine offizielle Lizenz, die einem Hersteller
-          ausgestellt wird und es ihm ermöglicht, das ISI-Zeichen zu verwenden,
-          was die Einhaltung der von BIS vorgeschriebenen Produktstandards
-          demonstriert.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bedeutung des BIS-Zertifikats
+          BIS证书 – 它代表什么
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Es beweist, dass das Produkt bestanden hat:
+          BIS证书表明工作椅：
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Laborprüfungen</li>
-          <li>Werksinspektion</li>
-          <li>Qualitätskontrolle-Bewertung</li>
-          <li>Sicherheits-Compliance</li>
-          <li>Konformität mit indischen Standards</li>
+          <li>已通过性能和耐久性测试</li>
+          <li>符合材料和结构规格</li>
+          <li>可安全长期日常使用</li>
+          <li>符合印度标准中的人体工程学和结构指南</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ein BIS-zertifiziertes Produkt zeigt das BIS-Logo, auch bekannt als
-          das ISI Zeichen, an, was bedeutet, dass es indische Qualitätsstandards
-          erfüllt.
+          满足这些要求的制造商将获得BIS许可证，允许他们使用ISI标记。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Welcher BIS-Standard gilt für Etagenbetten? (IS 17636:2022)
+          工作椅适用标准 – IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Etagenbetten fallen unter die obligatorische BIS-Zertifizierung gemäß
-          dem neu eingeführten Standard:
+          任务和办公工作椅的管辖标准是：
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17636:2022</strong> — Etagenbetten –
-          Sicherheitsanforderungen
+          🔹 <strong>IS 17631:2022</strong> – 工作椅：安全要求
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Dieser Standard stellt sicher, dass Etagenbetten strenge Sicherheits-,
-          Konstruktions- und Haltbarkeitskriterien erfüllen. Er umfasst:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Strukturelle Stabilität</li>
-          <li>Schutzgeländer</li>
-          <li>Einklemmgefahren</li>
-          <li>Tragfähigkeit</li>
-          <li>Abmessungsanforderungen</li>
-          <li>Materialspezifikationen</li>
-          <li>Kanten und Oberflächenbeschichtung</li>
-          <li>Leiterkonstruktion</li>
-          <li>Haltbarkeits- und Leistungstests</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Jeder Hersteller, der Etagenbetten in Indien verkaufen möchte, muss
-          eine BIS Lizenz für Etagenbetten nach IS 17636:2022 erhalten.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum ist BIS-Zertifizierung für Etagenbetten erforderlich?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Etagenbetten werden häufig von Kindern und Erwachsenen verwendet, und
-          Sicherheitsbedenken machen Compliance unerlässlich. BIS hat die
-          Zertifizierung obligatorisch gemacht, um zu verhindern:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zusammenbruch oder strukturelles Versagen</li>
-          <li>Einklemmung von Körperteilen</li>
-          <li>Sturz vom oberen Bett</li>
-          <li>Leiter-bezogene Verletzungen</li>
-          <li>Schlechte Materialqualität</li>
-          <li>Brandgefahren</li>
-          <li>Gefährliche Beschichtungen oder scharfe Kanten</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Gründe, warum die BIS-Lizenz für Etagenbetten obligatorisch ist
-        </h3>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Gewährleistet mechanische Festigkeit und Haltbarkeit</li>
-          <li>Schützt Verbraucher—insbesondere Kinder—vor Verletzungen</li>
-          <li>Hält einheitliche Qualitätsstandards aufrecht</li>
-          <li>Hilft Marken, Vertrauen und Glaubwürdigkeit aufzubauen</li>
-          <li>Stellt die Einhaltung staatlicher Vorschriften sicher</li>
-          <li>Verhindert rechtliche Probleme und Strafen</li>
-        </ol>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ohne BIS-Registrierung können Hersteller und Importeure das Produkt
-          nicht legal im indischen Markt verkaufen.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Schritt-für-Schritt BIS-Zertifizierungsprozess für Etagenbetten (IS
-          17636:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der BIS-Zertifizierungsprozess in Indien umfasst Tests, Dokumentation
-          und Werksinspektionen. Hier ist das Schritt-für-Schritt Verfahren:
+          本标准专注于用于工作环境中长期使用的座椅。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 1 — Anwendbarkeit und Standard bestimmen
+          本标准涵盖的产品
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            <strong>IS 17636:2022</strong> — Obligatorisch
-          </li>
-          <li>
-            Bestätigen Sie die Produktkategorie und Details der
-            Fertigungseinheit.
-          </li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 2 — BIS-Antrag (Formularübermittlung)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Bewerben Sie sich online über das BIS Manak Online Portal.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Anforderungen umfassen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Herstellerdetails</li>
-          <li>Werkadresse und Nachweis</li>
-          <li>Produktkategorie & Marke</li>
-          <li>Fertigungskapazitäten</li>
-          <li>Qualitätskontrollprozesse</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dieser Schritt startet den offiziellen Genehmigungszyklus.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 3 — BIS-Zertifikatskosten bezahlen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Nach der Einreichung zahlen Sie:
-        </p>
-        <ul className="list-disc ml-6 mb-3 space-y-2 text-gray-600 text-base font-geist">
-          <li>Antragsgebühren</li>
-          <li>Testgebühren</li>
-          <li>Prüfgebühren</li>
-          <li>Kennzeichnungsgebühren</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Gebühren hängen ab von:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Anzahl der Produktvarianten</li>
-          <li>Markennamen</li>
-          <li>Werkstandort</li>
-          <li>Testparameter</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 4 — Probenprüfung (Gemäß IS 17636:2022)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Die Prüfung wird in einem BIS-anerkannten Labor durchgeführt.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Tests umfassen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Struktureller Stabilitätstest</li>
-          <li>Schlagtest</li>
-          <li>Einklemmtest</li>
-          <li>Schutzgeländer-Festigkeitstest</li>
-          <li>Oberflächenqualitätstest</li>
-          <li>Leitersicherheitstest</li>
-          <li>Belastungstest</li>
-          <li>Haltbarkeitstest</li>
-          <li>Kantensicherheitsbewertung</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der Prüfbericht wird direkt auf das BIS-Portal hochgeladen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 5 — BIS-Werksinspektion
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Ein BIS-Beamter besucht das Werk, um zu überprüfen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Qualitätsmanagementsystem</li>
-          <li>Rohstoffkontrolle</li>
-          <li>Zwischenprüfungen</li>
-          <li>Endproduktprüfung</li>
-          <li>Produktionskapazität</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sie überprüfen die Einhaltung des BIS-Schemas für Prüfung und
-          Inspektion (STI).
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 6 — Erteilung der BIS-Lizenz
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Sobald alle Schritte abgeschlossen sind, stellt BIS aus:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS-Zertifikat</li>
-          <li>ISI-Zeichen-Genehmigung</li>
-          <li>CML-Lizenznummer</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sie können jetzt das BIS-Zeichen legal auf Etagenbetten und
-          Verpackungen verwenden.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 7 — Nach-Lizenz-Verpflichtungen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Hersteller müssen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Interne Tests durchführen</li>
-          <li>Periodische BIS-Inspektionen zulassen</li>
-          <li>Die Lizenz alle 1 oder 2 Jahre erneuern</li>
+          <li>人体工程学办公椅</li>
+          <li>任务椅</li>
+          <li>转椅</li>
+          <li>工作台椅</li>
+          <li>可调节高度的工作椅</li>
+          <li>行政工作椅</li>
+          <li>网布或织物靠背工作椅</li>
+          <li>配备扶手的椅子</li>
+          <li>带倾斜/锁定机构的椅子</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Geltungsbereich der BIS-Lizenz für Etagenbetten
+          为什么IS 17631:2022合规性至关重要
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Dieser Standard umfasst die Anforderungen
-          bezüglich der Leistung und Sicherheit, das heißt Festigkeit,
-          Stabilität und Haltbarkeit von Etagenbetten für den häuslichen und
-          nicht-häuslichen Gebrauch. Dieser Standard gilt auch für Einzelbetten,
-          die in einer Höhe der Bettbasis von 800 mm oder mehr über dem fertigen
-          Fußbodenniveau verwendet werden, unabhängig von der Verwendung, für
-          die der Raum darunter genutzt wird.
+          工作椅与通用椅子显著不同，因为它们：
         </p>
 
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>支持持续运动</li>
+          <li>使用机械和调节机制</li>
+          <li>承受动态载荷</li>
+          <li>需要长期使用的耐久性</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          制作不良的椅子可能在以下方面失效：
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>底座接头</li>
+          <li>旋转机制</li>
+          <li>气动升降系统</li>
+          <li>座椅/靠背支撑</li>
+          <li>腿或脚轮结构</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          这可能导致工作场所伤害、运营停机时间和产品责任问题。
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          强制性BIS认证确保
+        </h3>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>安全的人体工程学设计</li>
+          <li>可靠的承载能力</li>
+          <li>循环测试下的强耐久性</li>
+          <li>抗机械磨损</li>
+          <li>符合用户安全参数</li>
+        </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Dieser Standard gilt für vollständig
-          hergestellte/ gefertigte Etagenbetten. Er gilt auch für montagefertige
-          Einheiten; in diesem Fall gelten die Anforderungen dieses Standards
-          für die montierte Einheit.
+          因此，对于印度和外国制造商来说，获得工作椅BIS许可证是不可协商的。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Für die BIS-Zertifizierung von Etagenbetten erforderliche Dokumente
+          工作椅BIS许可证范围
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Hier ist eine vollständige Liste der BIS-Zertifikatsdokumente:
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Herstellerdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Werkregistrierungszertifikat</li>
-          <li>Fertigungsprozess-Flussdiagramm</li>
-          <li>Liste der Maschinen & Ausrüstung</li>
-          <li>Liste der Prüfausrüstung</li>
-          <li>Kalibrierungszertifikate</li>
-          <li>Werklayout/Anlagenlayout</li>
-          <li>Autorisierungsschreiben von CEO/Direktor</li>
-          <li>ISO 9001 Zertifikat (falls verfügbar)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Rechtliche Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identitätsnachweis</li>
-          <li>Adressnachweis</li>
-          <li>Markenautorisierung (bei Drittmarke)</li>
-          <li>Markenregistrierungsdokument (optional)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technische Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produktspezifikationen</li>
-          <li>Stückliste</li>
-          <li>Beschreibung der Sicherheitsmerkmale</li>
-          <li>Qualitätskontrollplan</li>
-          <li>Interne Prüfberichte</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS-Antragsdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Verpflichtungserklärungen & Erklärungen</li>
-          <li>Prüfantragsformular</li>
-          <li>Proben-Genehmigungsschreiben</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ordnungsgemäße Dokumente reduzieren Verzögerungen und gewährleisten
-          eine reibungslose Genehmigung.
+          本标准涵盖工作椅的要求。本标准适用于完全制造/制作的工作椅。它也适用于即装即用单元；在这种情况下，本标准的要求应适用于组装单元。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Prüfanforderungen für Etagenbetten (IS 17636:2022)
+          工作椅BIS认证流程步骤（IS 17631:2022）
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Prüfungen sind ein obligatorischer Teil des
-          BIS-Registrierungsprozesses. Etagenbetten unterziehen sich strengen
-          Tests, um Sicherheit und Haltbarkeit zu gewährleisten.
+          工作椅的认证过程涉及实验室评估、工厂审计和技术审查的混合。
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          步骤1 – 产品评估和标准映射
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          识别所有椅子变体并将其与IS
+          17631:2022对齐。了解哪些型号共享相同的结构，哪些需要单独测试。
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          步骤2 – 在线申请提交
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          制造商通过Manak在线BIS门户提交申请。所需信息包括：
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>制造现场详情</li>
+          <li>原材料控制</li>
+          <li>技术规格</li>
+          <li>生产能力</li>
+          <li>品牌所有权文件</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          步骤3 – 费用支付
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          必须支付以下费用：
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>申请费</li>
+          <li>处理费</li>
+          <li>测试费</li>
+          <li>检查费</li>
+          <li>标记费</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          步骤4 – 样品测试（IS 17631:2022要求）
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS认可的实验室根据多项安全和性能标准评估椅子。
+        </p>
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
+          工作椅测试包括
+        </h4>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>座椅和靠背静态载荷测试</li>
+          <li>耐久性加载循环</li>
+          <li>旋转/旋转测试</li>
+          <li>倾斜机构耐久性</li>
+          <li>气动升降机构性能</li>
+          <li>脚轮强度和滚动阻力</li>
+          <li>底座稳定性和过载测试</li>
+          <li>扶手载荷能力</li>
+          <li>抗冲击测试</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          实验室向BIS发布详细的测试报告。
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          步骤5 – 工厂审计
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS检查员审查设施：
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>生产系统</li>
+          <li>材料检查记录</li>
+          <li>内部质量保证流程</li>
+          <li>测试仪器和校准日志</li>
+          <li>符合测试和检查方案（STI）</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          步骤6 – 授予BIS许可证
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          一旦确认符合性，BIS授予：
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>BIS许可证/ISI标记认证</li>
+          <li>唯一的CML编号</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          步骤7 – 持续合规
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">制造商必须：</p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>保持持续的内部检查</li>
+          <li>遵守标记规则</li>
+          <li>在监督检查期间配合</li>
+          <li>定期更新许可证</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          工作椅BIS认证所需文件
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          完整的文件集可确保更快的批准。
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          商业和工厂文件
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>工厂注册</li>
+          <li>制造图和布局</li>
+          <li>生产工作流程</li>
+          <li>机械清单</li>
+          <li>测试设备清单</li>
+          <li>校准证书</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          技术文件
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>椅子工程图纸</li>
+          <li>机构规格</li>
+          <li>材料数据表</li>
+          <li>材料清单</li>
+          <li>组装说明</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          法律文件
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>授权签字人身份证明</li>
+          <li>品牌授权信</li>
+          <li>商标证书</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          BIS特定文件
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>申请表</li>
+          <li>承诺书</li>
+          <li>测试申请表</li>
+          <li>标签样本</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          根据IS 17631:2022的测试要求
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          由于移动部件，工作椅比普通椅子需要更复杂的测试。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Schema für Inspektion und Prüfung von Etagenbetten
+          进行的关键测试
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -553,10 +473,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Klausel
+                  条款
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Anforderung
+                  要求
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -566,71 +486,103 @@ const MainContentLeft = () => {
                   4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design und Verarbeitung
+                  设计和工艺
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  5
+                  7.3.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Abmessungen
+                  前缘翻倒
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2
+                  7.3.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sicherheitsbarrieren für oberes Bett
+                  向前翻倒
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
+                  7.3.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Lücken
+                  带脚凳椅子的向前翻倒
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4
+                  7.3.4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Bettbasis
+                  无扶手椅子的侧向翻倒
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.5
+                  7.3.5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leiter
+                  带扶手椅子的侧向翻倒
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6
+                  7.3.6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Festigkeit von Rahmen und Befestigungen
+                  无靠背椅子的向后翻倒
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
+                  7.4.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stabilität
+                  座椅前缘静态载荷测试
                 </TableCell>
               </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors">
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.8
+                  7.4.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Befestigung des oberen Bettes am unteren Bett
+                  座椅和靠背组合静态载荷测试
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.3
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  扶手向下静态载荷测试 — 中央
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.4
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  扶手向下静态载荷测试 — 前部
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.5
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  扶手侧向静态载荷测试
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.6
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  脚凳静态载荷测试
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -638,327 +590,204 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Tests müssen nur in einem BIS-anerkannten Labor durchgeführt werden.
+          这些测试在几天内模拟数月或数年的常规使用。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Häufige Herausforderungen & wie man sie vermeidet
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Falsche Produktkategorisierung</strong>
-            <br />
-            Überprüfen Sie immer den korrekten indischen Standard.
-          </li>
-          <li>
-            <strong>Unzureichende Dokumentation</strong>
-            <br />
-            Fehlende Dokumente verursachen Verzögerungen—bereiten Sie sie im
-            Voraus vor.
-          </li>
-          <li>
-            <strong>Fehlgeschlagene Labortests</strong>
-            <br />
-            Stellen Sie hochwertige Materialien, Schweißarbeiten, Schutzgeländer
-            und Oberflächenbehandlung sicher.
-          </li>
-          <li>
-            <strong>Werk nicht bereit für Inspektion</strong>
-            <br />
-            Stellen Sie sicher, dass QMS und Prüfausrüstung ordnungsgemäß
-            gewartet werden.
-          </li>
-          <li>
-            <strong>Markenprobleme</strong>
-            <br />
-            Der Markenname muss mit dem Lizenzantrag übereinstimmen.
-          </li>
-        </ol>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die frühzeitige Lösung dieser Probleme reduziert die Bearbeitungszeit
-          erheblich.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vorteile der BIS-Zertifizierung für Hersteller & Importeure
+          工作椅BIS认证的常见挑战
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Rechtlich Etagenbetten in Indien verkaufen</li>
-          <li>Vertrauen bei Kunden aufbauen</li>
-          <li>Produktrückgaben reduzieren</li>
-          <li>Markenreputation verbessern</li>
-          <li>Sicherheits-Compliance gewährleisten</li>
-          <li>Wettbewerbsvorteil erlangen</li>
-          <li>Erweiterung in Einzelhandelsketten & E-Commerce-Plattformen</li>
-          <li>Zugang zu staatlichen Ausschreibungen</li>
-          <li>Strafen & rechtliche Schritte vermeiden</li>
+          <li>
+            <strong>✔ 1. 机械/倾斜测试失败</strong> –
+            通常由薄弱机制或低质量硬件引起。
+          </li>
+          <li>
+            <strong>✔ 2. 气动升降机构不合规</strong> –
+            气动升降必须满足严格的压力和安全参数。
+          </li>
+          <li>
+            <strong>✔ 3. 测试基础设施不足</strong> – 工作椅测试需要专门的设备。
+          </li>
+          <li>
+            <strong>✔ 4. 产品分组不正确</strong> – 不同机制 = 单独测试。
+          </li>
+          <li>
+            <strong>✔ 5. STI不合规</strong> – STI错误可能延迟许可证颁发。
+          </li>
+          <li>
+            <strong>✔ 6. 文件不匹配</strong> –
+            品牌名称和型号名称必须与BIS申请完全匹配。
+          </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Strafen bei Nichteinhaltung
+          工作椅BIS认证的优势
+        </h2>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>促进在印度的合法销售</li>
+          <li>提升客户信任和品牌声誉</li>
+          <li>确保长期耐久性</li>
+          <li>减少保修索赔和故障</li>
+          <li>保护免受监管处罚</li>
+          <li>可在电子商务平台上架</li>
+          <li>政府招标和企业供应的强制性要求</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          销售无BIS认证工作椅的处罚
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Der Verkauf von Etagenbetten ohne BIS-Zertifizierung kann zu Folgendem
-          führen:
+          不合规可能导致：
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produktbeschlagnahme</li>
-          <li>Geldstrafen</li>
-          <li>Werkstilllegungsanordnungen</li>
-          <li>Rechtliche Verfolgung</li>
-          <li>Verbot vom indischen Markt</li>
-          <li>Schwarze Liste der Marke</li>
+          <li>巨额经济处罚</li>
+          <li>库存没收</li>
+          <li>生产停工令</li>
+          <li>禁止进口</li>
+          <li>刑事起诉</li>
+          <li>营业执照取消</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Compliance ist nicht optional—sie ist obligatorisch.
+          根据2016年BIS法案严格执行。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wer benötigt eine BIS-Zertifizierung für Etagenbetten?
+          谁必须获得工作椅BIS认证？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Die folgenden Unternehmen müssen eine BIS-Lizenz für Etagenbetten
-          erhalten:
+          强制性适用于：
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indische Hersteller</li>
-          <li>Ausländische Hersteller, die nach Indien exportieren</li>
-          <li>Importeure</li>
-          <li>Vertriebspartner</li>
-          <li>E-Commerce-Verkäufer</li>
-          <li>OEM/ODM-Hersteller</li>
-          <li>Möbelmarken & Einzelhändler</li>
+          <li>印度制造商</li>
+          <li>向印度出口的外国制造商</li>
+          <li>品牌所有者</li>
+          <li>进口商</li>
+          <li>OEM/ODM供应商</li>
+          <li>仓库分销商</li>
+          <li>零售和在线家具品牌</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Jedes Werk (nicht Unternehmen) benötigt eine separate BIS-Lizenz.
+          每个工厂都需要唯一的BIS许可证。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum uns für BIS-Zertifizierungsberatung wählen?
+          结论
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Wir bieten umfassende Unterstützung für die BIS-Registrierung von
-          Etagenbetten, einschließlich:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standardinterpretation (IS 17636:2022)</li>
-          <li>Dokumentationsvorbereitung</li>
-          <li>Labortestkoordination</li>
-          <li>BIS-Portal-Antrag</li>
-          <li>Werksinspektionsunterstützung</li>
-          <li>Kommunikation mit BIS-Beamten</li>
-          <li>Lizenzgenehmigungsunterstützung</li>
-          <li>Nach-Zertifizierungs-Compliance</li>
-        </ul>
-
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mit jahrelanger Expertise gewährleisten wir eine schnelle, genaue und
-          problemlose BIS Zertifizierung.
+          根据IS
+          17631:2022标准，工作椅BIS证书对于确保印度安全、耐用且符合人体工程学的座椅产品至关重要。强制性认证增强了客户信任，降低了产品责任风险，并确保符合国家质量标准。在专业支持下，从测试到检查再到许可的认证过程变得高效且可预测。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs — BIS-Zertifizierung für Etagenbetten
+          常见问题 – 工作椅BIS证书（IS 17631:2022）
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Ist die BIS-Zertifizierung für Etagenbetten in Indien
-                obligatorisch?
-              </strong>
+              <strong>1. 哪些椅子属于IS 17631:2022？</strong>
               <br />
-              Ja. Nach IS 17636:2022 ist sie für alle Hersteller und Importeure
-              obligatorisch.
+              任何为工作环境设计的椅子，包括办公人体工程学椅、任务椅、转椅和可调节椅子。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                2. Wie lange dauert die BIS-Zertifizierung für Etagenbetten?
-              </strong>
+              <strong>2. 工作椅BIS认证是强制性的吗？</strong>
               <br />
-              Typischerweise 30–45 Tage, abhängig von Bereitschaft und
-              Dokumentation.
+              是的。在印度制造、销售或进口工作椅之前，BIS认证是强制性的。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                3. Können ausländische Hersteller sich für BIS bewerben?
-              </strong>
+              <strong>3. 工作椅测试与普通椅子测试有何不同？</strong>
               <br />
-              Ja, über das FMCS (Foreign Manufacturers Certification Scheme).
+              工作椅使用旋转、气动升降、倾斜系统和脚轮等机制——需要先进的机械和耐久性测试。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. Kann ich mich online für ein BIS-Zertifikat bewerben?
-              </strong>
+              <strong>4. BIS认证需要多长时间？</strong>
               <br />
-              Ja, über das BIS Manak Online Portal.
+              对于印度制造商通常需要30-45天，对于外国制造商大约需要120天，具体取决于测试和文件。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                6. Welche Tests sind für die Etagenbetten-Zertifizierung
-                erforderlich?
-              </strong>
+              <strong>5. 外国制造商可以申请吗？</strong>
               <br />
-              Belastungstest, Schutzgeländer-Test, Stabilitätstest, Schlagtest,
-              Einklemmtest usw.
+              可以，通过FMCS（外国制造商认证计划）。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Wie lange ist eine BIS-Lizenz gültig?</strong>
+              <strong>6. 如果椅子BIS测试失败怎么办？</strong>
               <br />
-              Normalerweise 1–2 Jahre und erneuerbar.
+              必须重新设计、纠正并重新测试，直到符合IS 17631:2022。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Kann eine Lizenz mehrere Modelle abdecken?</strong>
+              <strong>7. BIS申请需要哪些文件？</strong>
               <br />
-              Nur wenn sie unter denselben Standard und dieselbe Kategorie
-              fallen.
+              工厂详情、产品图纸、机械清单、质量控制文件、品牌所有权和法律文件。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                9. Ist das ISI-Zeichen auf Etagenbetten erforderlich?
-              </strong>
+              <strong>8. 所有椅子型号都需要单独测试吗？</strong>
               <br />
-              Ja, das ISI-Zeichen ist nach der Zertifizierung obligatorisch.
+              如果型号在设计、机制或结构上不同，可能需要单独测试。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                10. Was passiert, wenn mein Produkt die Labortests nicht
-                besteht?
-              </strong>
+              <strong>9. 批准后ISI标记是强制性的吗？</strong>
               <br />
-              Sie müssen das Produkt ändern und Proben erneut einreichen.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>11. Überprüft BIS die Werksinfrastruktur?</strong>
-              <br />
-              Ja, während der Inspektion.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>12. Können Händler sich für BIS bewerben?</strong>
-              <br />
-              Nur wenn sie Markeninhaber sind und einen Vertrag mit Herstellern
-              haben.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>13. Was ist das BIS-Logo?</strong>
-              <br />
-              Es ist das standardmäßige ISI-Zeichen-Symbol, das die
-              Produktkonformität anzeigt.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                14. Welche Dokumente werden für die BIS-Zertifizierung benötigt?
-              </strong>
-              <br />
-              Werkslizenz, Layout, Maschinenliste, Stückliste, QC-Plan,
-              Prüfberichte usw.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>15. Werden BIS-Tests im Werk durchgeführt?</strong>
-              <br />
-              Nein, nur in BIS-anerkannten Labors.
+              是的，ISI标记必须出现在产品、标签和包装上。
             </p>
           </div>
         </div>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Fazit
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die Erlangung eines BIS-Zertifikats für Etagenbetten nach IS
-          17636:2022 ist nicht nur obligatorisch, sondern auch wesentlich, um
-          Verbrauchersicherheit, Produktzuverlässigkeit und rechtliche
-          Compliance in Indien zu gewährleisten. Der Zertifizierungsprozess
-          umfasst Produkttests, Dokumentation, Werksinspektion und
-          Lizenzausstellung. Mit ordnungsgemäßer Planung und fachkundiger
-          Anleitung wird der Prozess reibungslos, schnell und kosteneffektiv.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ob Sie Hersteller, Importeur oder Markeninhaber sind, die BIS
-          Zertifizierung stärkt Ihre Marktposition, erhöht das Kundenvertrauen
-          und erschließt neue Geschäftsmöglichkeiten. Unser Expertenteam für
-          Beratung ist bereit, Sie bei der umfassenden BIS-Zertifizierung für
-          Etagenbetten zu unterstützen.
-        </p>
-
         {/* PDF Viewer Section */}
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
-            src="/BIS-Product-Pdf/IS-17636-2021-Sun-Certifications-India.pdf"
-            title="BIS-Zertifikat für Etagenbetten - IS 17636:2021 PDF"
+            src="/BIS-Product-Pdf/IS-17631-2022-Sun-Certifications-India.pdf"
+            title="工作椅BIS证书 - IS 17631:2022 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -967,9 +796,9 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoReadGerman />
+        <ManyUsersAlsoReadChinese />
 
-        <FaqAuthorGerman questionNumber={5} />
+        <FaqAuthorChinese questionNumber={4} />
       </div>
     </div>
   );
@@ -977,12 +806,12 @@ const MainContentLeft = () => {
 
 const Services = () => {
   return (
-    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
+    <div className="pt-6 md:pt-8 pb-12 md:pb-16 overflow-x-hidden">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Unsere Dienstleistungen
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
+              我们的服务
             </h2>
           </BoxReveal>
 
@@ -990,7 +819,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Indiens bester Zertifikatsberater
+                印度最佳证书顾问
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -1011,7 +840,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS-Zeichen (ISI-Lizenz) für ausländische Hersteller
+              外国制造商BIS标志（ISI许可证）
             </p>
           </Link>
 
@@ -1022,13 +851,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="CDSCO Logo"
-                title="CDSCO Logo"
+                alt="CDSCO标志"
+                title="CDSCO标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO-Registrierungszertifizierung
+              CDSCO注册认证
             </p>
           </Link>
 
@@ -1039,13 +868,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS logo"
-                title="BISCRS logo"
+                alt="BISCRS标志"
+                title="BISCRS标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registrierung
+              BIS（CRS）注册
             </p>
           </Link>
 
@@ -1056,13 +885,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
-                alt="PlasticWasteManagement"
-                title="PlasticWasteManagement"
+                alt="塑料废物管理"
+                title="塑料废物管理"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Kunststoffabfallmanagement
+              塑料废物管理
             </p>
           </Link>
 
@@ -1073,13 +902,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate logo"
-                title="EPRCertificate logo"
+                alt="EPR证书标志"
+                title="EPR证书标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR-Zertifikatszertifizierungen
+              EPR证书认证
             </p>
           </Link>
 
@@ -1090,13 +919,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC logo"
-                title="LMPC logo"
+                alt="LMPC标志"
+                title="LMPC标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC-Zertifikatszertifizierungen
+              LMPC证书认证
             </p>
           </Link>
 
@@ -1107,13 +936,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="BIS标志"
+                title="BIS标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS-Registrierungszertifikat
+              BIS注册证书
             </p>
           </Link>
 
@@ -1124,13 +953,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark logo"
-                title="ISIMark logo"
+                alt="ISI标志"
+                title="ISI标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI-ZEICHEN (BIS) für indische Hersteller
+              印度制造商ISI标志（BIS）
             </p>
           </Link>
         </div>

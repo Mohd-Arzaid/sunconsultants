@@ -145,7 +145,50 @@ const BISCertificateForFurniture = lazy(() =>
   import("@/blogs/BISCertificateforFurniture")
 );
 const BISCertificateForWorkChairs = lazy(() =>
-  import("@/blogs/BISCertificateForWorkChairs")
+  import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
+);
+const BISCertificateForWorkChairsArabic = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsArabic"
+  )
+);
+const BISCertificateForWorkChairsChinese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsChinese"
+  )
+);
+const BISCertificateForWorkChairsDutch = lazy(() =>
+  import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsDutch")
+);
+const BISCertificateForWorkChairsFrench = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsFrench"
+  )
+);
+const BISCertificateForWorkChairsGerman = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsGerman"
+  )
+);
+const BISCertificateForWorkChairsIndonesian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsIndonesian"
+  )
+);
+const BISCertificateForWorkChairsItalian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsItalian"
+  )
+);
+const BISCertificateForWorkChairsJapanese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsJapanese"
+  )
+);
+const BISCertificateForWorkChairsKorean = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsKorean"
+  )
 );
 const BISCertificateForChairAndStools = lazy(() =>
   import("@/blogs/BISCertificateForChairAndStools")
@@ -779,6 +822,78 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWorkChairs />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/karasi-al-amal-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/gong-zuo-yi-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/werkstoelen-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chaises-de-travail-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/arbeitsstuhle-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/kursi-kerja-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/sedie-da-lavoro-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/sagyou-you-isu-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/eobmuyong-uija-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsKorean />
           </Suspense>
         }
       />

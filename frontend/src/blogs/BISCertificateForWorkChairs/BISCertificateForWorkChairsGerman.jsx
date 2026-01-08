@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForBunkBedsGerman = () => { 
+const BISCertificateForWorkChairsGerman = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -38,27 +38,27 @@ const BISCertificateForBunkBedsGerman = () => {
   );
 };
 
-export default BISCertificateForBunkBedsGerman;
+export default BISCertificateForWorkChairsGerman;
 
 const MetaTags = () => {
-  const title = "BIS-Zertifikat für Etagenbetten | IS 17636:2022 BIS-Lizenz";
+  const title = "BIS-Zertifikat für Arbeitsstühle | IS 17631:2022 BIS-Lizenz";
   const ogTitle =
-    "BIS-Zertifizierung für Etagenbetten – IS 17636:2022 Leitfaden";
-  const twitterTitle = "BIS-Lizenz für Etagenbetten | IS 17636:2022";
+    "BIS-Zertifizierung für Arbeitsstühle – IS 17631:2022 Leitfaden";
+  const twitterTitle = "BIS-Lizenz für Arbeitsstühle | IS 17631:2022";
   const metaDescription =
-    "Erhalten Sie ein BIS-Zertifikat für Etagenbetten nach IS 17636:2022. Prozess, Dokumente, Tests, Kosten und Zeitplan für die BIS-Zertifizierung in Indien.";
+    "Erhalten Sie ein BIS-Zertifikat für Arbeitsstühle nach IS 17631:2022. Prozess, Dokumente, Tests, Kosten und Zeitplan für die BIS-Zertifizierung in Indien.";
   const ogDescription =
-    "Vollständiger Leitfaden zur BIS-Zertifizierung für Etagenbetten gemäß IS 17636:2022. Erfahren Sie Prozess, Kosten, Dokumente, Tests und BIS-Lizenzvorteile.";
+    "Vollständiger Leitfaden zur BIS-Zertifizierung für Arbeitsstühle gemäß IS 17631:2022. Erfahren Sie Prozess, Kosten, Dokumente, Tests und BIS-Lizenzvorteile.";
   const twitterDescription =
-    "Beantragen Sie ein BIS-Zertifikat für Etagenbetten nach IS 17636:2022. Lernen Sie den BIS-Prozess, Dokumente, Tests, Gebühren und Zeitplan in Indien kennen.";
+    "Beantragen Sie ein BIS-Zertifikat für Arbeitsstühle nach IS 17631:2022. Erfahren Sie BIS-Prozess, Dokumente, Tests, Gebühren und Zeitplan in Indien.";
   const metaKeywords =
-    "BIS-Zertifikat für Etagenbetten, BIS-Lizenz für Etagenbetten, IS 17636:2022, BIS-Zertifizierung für Etagenbetten";
+    "BIS-Zertifikat für Arbeitsstühle, BIS-Lizenz für Arbeitsstühle, IS 17631:2022, BIS-Zertifizierung für Arbeitsstühle";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/etagenbetten-is-17636";
+    "https://bis-certifications.com/blogs/isi-products/arbeitsstuhle-is-17631";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
-    "Dhruv Aggarwal, Leiter der Betriebsabteilung bei Sun Certification India";
+    "Dhruv Aggarwal, Leiter der Betriebe bei Sun Certification India";
 
   return (
     <Helmet>
@@ -68,6 +68,7 @@ const MetaTags = () => {
       <meta name="author" content={author} />
       <meta name="publisher" content={publisher} />
       {/* Open Graph Tags */}
+
       <meta property="og:title" content={ogTitle} />
       <meta property="og:description" content={ogDescription} />
       <meta property="og:url" content={websiteUrl} />
@@ -109,7 +110,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS-Zertifikat für Etagenbetten – IS 17636:2022
+                    BIS-Zertifikat für Arbeitsstühle – IS 17631:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -137,415 +138,373 @@ const MainContent = () => {
 
 const MainContentLeft = () => {
   return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+    <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS-Zertifikat für Etagenbetten – Vollständiger Leitfaden zur IS
-          17636:2022 BIS-Zertifizierung
+          BIS-Zertifikat für Arbeitsstühle – Ein vollständiger
+          Compliance-Leitfaden für IS 17631:2022
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforBunkBeds.png"
-            title="BIS-Lizenz für Etagenbetten"
-            alt="BIS-Zertifikat für Etagenbetten - IS 17636:2022 BIS-Zertifizierung"
+            src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
+            title="BIS-Lizenz für Arbeitsstühle"
+            alt="BIS-Zertifikat für Arbeitsstühle - IS 17631:2022 BIS-Zertifizierung"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Zertifikat für Etagenbetten ist eine obligatorische
-          Anforderung in Indien nach IS 17636:2022, das die Sicherheits-,
-          Leistungs- und strukturellen Anforderungen für Etagenbetten festlegt,
-          die in Wohnungen, Hostels, Schlafsälen, PG-Unterkünften, Schulen,
-          Hotels und gewerblichen Einrichtungen verwendet werden. Jeder
-          Hersteller—ob indisch oder ausländisch—muss eine BIS Zertifizierung
-          für Etagenbetten erhalten, bevor er Etagenbetten im indischen Markt
-          verkauft, importiert, exportiert oder vertreibt.
+          Die zunehmende Nutzung von Büro- und Arbeitsstühlen—ob in
+          Unternehmensräumen, Co-Working-Zentren, Home Offices oder
+          institutionellen Einrichtungen—hat Sicherheit und ergonomische
+          Leistung unerlässlich gemacht. Um sicherzustellen, dass Hersteller
+          strukturell stabile, langlebige und benutzerfreundliche Sitzprodukte
+          liefern, hat die indische Regierung die BIS-Zertifizierung für
+          Arbeitsstühle nach IS 17631:2022 vorgeschrieben.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mit der steigenden Nachfrage nach platzsparenden Möbeln sind
-          Etagenbetten zu einer wesentlichen Produktkategorie geworden.
-          Sicherheitsrisiken wie Stürze, Zusammenbrüche, Einklemmungen und
-          strukturelle Ausfälle machen die BIS-Lizenz für Etagenbetten jedoch
-          entscheidend, um den Verbraucherschutz zu gewährleisten. Diese
-          umfassende Seite führt Sie durch die BIS-Registrierung für
-          Etagenbetten, Testanforderungen, Dokumentation, Gebühren, Zeitpläne,
-          Strafen und Vorteile.
+          Arbeitsstühle sind typischerweise wiederholten Belastungen,
+          kontinuierlichen Körperbewegungen, Neigungen, Drehungen und
+          Höhenverstellungen ausgesetzt. Ein Ausfall einer Leistungsfunktion
+          kann zu schweren Verletzungen führen. Deshalb ist die Einhaltung von
+          IS 17631:2022 – Arbeitsstühle: Sicherheitsanforderungen jetzt für alle
+          Hersteller und Importeure obligatorisch.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ob Sie Hersteller, Importeur, Exporteur, Händler oder Start-up sind,
-          dieser Leitfaden hilft Ihnen, die Compliance-Anforderungen unter dem
-          Bureau of Indian Standards (BIS) zu verstehen.
+          Dieser Leitfaden erläutert den vollständigen BIS-Lizenzierungsprozess,
+          einschließlich Standards, Tests, Gebühren, Dokumentation,
+          Verantwortlichkeiten, Vorteilen und Herausforderungen—erstellt mit
+          frischem Inhalt, um Duplikate auf Ihrer Website zu vermeiden.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Was ist BIS-Zertifizierung?
+          Verständnis der BIS-Zertifizierung für Arbeitsstühle
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Die BIS-Zertifizierung ist ein Qualitäts- und
-          Sicherheits-Compliance-Programm, das vom Bureau of Indian Standards,
-          der nationalen Normungsorganisation Indiens, verwaltet wird. Es stellt
-          sicher, dass Produkte den festgelegten indischen Standards entsprechen
-          und sicher, zuverlässig und gebrauchstauglich sind.
+          Das Bureau of Indian Standards (BIS) überwacht die Qualität und
+          Sicherheit von Produkten, die auf dem indischen Markt angeboten
+          werden. Jedes Produkt, das unter einen indischen Standard fällt, der
+          in einer obligatorischen Qualitätskontrollverordnung aufgeführt ist,
+          muss vor dem Verkauf von BIS bewertet und zertifiziert werden.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Was ist ein BIS-Zertifikat?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ein BIS-Zertifikat ist eine offizielle Lizenz, die einem Hersteller
-          ausgestellt wird und es ihm ermöglicht, das ISI-Zeichen zu verwenden,
-          was die Einhaltung der von BIS vorgeschriebenen Produktstandards
-          demonstriert.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bedeutung des BIS-Zertifikats
+          BIS-Zertifikat – Was es bedeutet
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Es beweist, dass das Produkt bestanden hat:
+          Ein BIS-Zertifikat zeigt an, dass ein Arbeitsstuhl:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Laborprüfungen</li>
-          <li>Werksinspektion</li>
-          <li>Qualitätskontrolle-Bewertung</li>
-          <li>Sicherheits-Compliance</li>
-          <li>Konformität mit indischen Standards</li>
+          <li>Leistungs- und Haltbarkeitstests bestanden hat</li>
+          <li>Material- und Konstruktionsspezifikationen erfüllt</li>
+          <li>Für langfristige tägliche Nutzung sicher ist</li>
+          <li>
+            Den ergonomischen und strukturellen Richtlinien in indischen
+            Standards entspricht
+          </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ein BIS-zertifiziertes Produkt zeigt das BIS-Logo, auch bekannt als
-          das ISI Zeichen, an, was bedeutet, dass es indische Qualitätsstandards
-          erfüllt.
+          Herstellern, die diese Anforderungen erfüllen, wird eine BIS-Lizenz
+          erteilt, die es ihnen ermöglicht, das ISI-Zeichen anzubringen.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Welcher BIS-Standard gilt für Etagenbetten? (IS 17636:2022)
+          Anwendbarer Standard für Arbeitsstühle – IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Etagenbetten fallen unter die obligatorische BIS-Zertifizierung gemäß
-          dem neu eingeführten Standard:
+          Der maßgebliche Standard für Arbeits- und Bürostühle ist:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17636:2022</strong> — Etagenbetten –
+          🔹 <strong>IS 17631:2022</strong> – Arbeitsstühle:
           Sicherheitsanforderungen
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Dieser Standard stellt sicher, dass Etagenbetten strenge Sicherheits-,
-          Konstruktions- und Haltbarkeitskriterien erfüllen. Er umfasst:
+          Dieser Standard konzentriert sich auf Sitzmöbel, die für den
+          langfristigen Einsatz in Arbeitsumgebungen bestimmt sind.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Von diesem Standard abgedeckte Produkte
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Ergonomische Bürostühle</li>
+          <li>Arbeitsstühle</li>
+          <li>Drehstühle</li>
+          <li>Büroarbeitsstühle</li>
+          <li>Höhenverstellbare Arbeitsstühle</li>
+          <li>Executive-Arbeitsstühle</li>
+          <li>Arbeitsstühle mit Mesh- oder Stoffrücken</li>
+          <li>Stühle mit Armlehnen</li>
+          <li>Stühle mit Neigungs-/Verriegelungsmechanismen</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Warum die Einhaltung von IS 17631:2022 kritisch ist
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Arbeitsstühle unterscheiden sich erheblich von Allzweckstühlen, da
+          sie:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Strukturelle Stabilität</li>
-          <li>Schutzgeländer</li>
-          <li>Einklemmgefahren</li>
-          <li>Tragfähigkeit</li>
-          <li>Abmessungsanforderungen</li>
-          <li>Materialspezifikationen</li>
-          <li>Kanten und Oberflächenbeschichtung</li>
-          <li>Leiterkonstruktion</li>
-          <li>Haltbarkeits- und Leistungstests</li>
+          <li>Kontinuierliche Bewegung unterstützen</li>
+          <li>Mechanische und Verstellmechanismen verwenden</li>
+          <li>Dynamische Lasten tragen</li>
+          <li>Haltbarkeit für langfristige Nutzung erfordern</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Schlecht gebaute Stühle können versagen bei:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Basisverbindungen</li>
+          <li>Drehmechanismen</li>
+          <li>Gasdruckfedersystemen</li>
+          <li>Sitz-/Rückenstütze</li>
+          <li>Bein- oder Rollenstruktur</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Dies kann zu Arbeitsplatzverletzungen, Betriebsausfällen und
+          Produkthaftungsproblemen führen.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Obligatorische BIS-Zertifizierung gewährleistet
+        </h3>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Sicheres ergonomisches Design</li>
+          <li>Zuverlässige Tragfähigkeit</li>
+          <li>Starke Haltbarkeit bei zyklischen Tests</li>
+          <li>Widerstandsfähigkeit gegen mechanischen Verschleiß</li>
+          <li>Einhaltung der Benutzersicherheitsparameter</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Jeder Hersteller, der Etagenbetten in Indien verkaufen möchte, muss
-          eine BIS Lizenz für Etagenbetten nach IS 17636:2022 erhalten.
+          Daher ist die Erlangung einer BIS-Lizenz für Arbeitsstühle für
+          indische und ausländische Hersteller nicht verhandelbar.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum ist BIS-Zertifizierung für Etagenbetten erforderlich?
+          Umfang der BIS-Lizenz für Arbeitsstühle
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Etagenbetten werden häufig von Kindern und Erwachsenen verwendet, und
-          Sicherheitsbedenken machen Compliance unerlässlich. BIS hat die
-          Zertifizierung obligatorisch gemacht, um zu verhindern:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zusammenbruch oder strukturelles Versagen</li>
-          <li>Einklemmung von Körperteilen</li>
-          <li>Sturz vom oberen Bett</li>
-          <li>Leiter-bezogene Verletzungen</li>
-          <li>Schlechte Materialqualität</li>
-          <li>Brandgefahren</li>
-          <li>Gefährliche Beschichtungen oder scharfe Kanten</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Gründe, warum die BIS-Lizenz für Etagenbetten obligatorisch ist
-        </h3>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Gewährleistet mechanische Festigkeit und Haltbarkeit</li>
-          <li>Schützt Verbraucher—insbesondere Kinder—vor Verletzungen</li>
-          <li>Hält einheitliche Qualitätsstandards aufrecht</li>
-          <li>Hilft Marken, Vertrauen und Glaubwürdigkeit aufzubauen</li>
-          <li>Stellt die Einhaltung staatlicher Vorschriften sicher</li>
-          <li>Verhindert rechtliche Probleme und Strafen</li>
-        </ol>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ohne BIS-Registrierung können Hersteller und Importeure das Produkt
-          nicht legal im indischen Markt verkaufen.
+          Dieser Standard deckt die Anforderungen für Arbeitsstühle ab. Dieser
+          Standard gilt für vollständig hergestellte/gefertigte Arbeitsstühle.
+          Er gilt auch für montagefertige Einheiten; in diesem Fall gelten die
+          Anforderungen dieses Standards für die montierten Einheiten.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Schritt-für-Schritt BIS-Zertifizierungsprozess für Etagenbetten (IS
-          17636:2022)
+          Schritt-für-Schritt BIS-Zertifizierungsprozess für Arbeitsstühle (IS
+          17631:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Der BIS-Zertifizierungsprozess in Indien umfasst Tests, Dokumentation
-          und Werksinspektionen. Hier ist das Schritt-für-Schritt Verfahren:
+          Der Zertifizierungsprozess für Arbeitsstühle umfasst eine Mischung aus
+          Laborevaluierung, Werksaudit und technischer Prüfung.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 1 — Anwendbarkeit und Standard bestimmen
+          Schritt 1 – Produktbewertung & Standardzuordnung
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            <strong>IS 17636:2022</strong> — Obligatorisch
-          </li>
-          <li>
-            Bestätigen Sie die Produktkategorie und Details der
-            Fertigungseinheit.
-          </li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 2 — BIS-Antrag (Formularübermittlung)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Bewerben Sie sich online über das BIS Manak Online Portal.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Anforderungen umfassen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Herstellerdetails</li>
-          <li>Werkadresse und Nachweis</li>
-          <li>Produktkategorie & Marke</li>
-          <li>Fertigungskapazitäten</li>
-          <li>Qualitätskontrollprozesse</li>
-        </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Dieser Schritt startet den offiziellen Genehmigungszyklus.
+          Identifizieren Sie alle Stuhlvarianten und ordnen Sie sie IS
+          17631:2022 zu. Verstehen Sie, welche Modelle die gleiche Konstruktion
+          teilen und welche separate Tests erfordern.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 3 — BIS-Zertifikatskosten bezahlen
+          Schritt 2 – Online-Antragseinreichung
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Nach der Einreichung zahlen Sie:
-        </p>
-        <ul className="list-disc ml-6 mb-3 space-y-2 text-gray-600 text-base font-geist">
-          <li>Antragsgebühren</li>
-          <li>Testgebühren</li>
-          <li>Prüfgebühren</li>
-          <li>Kennzeichnungsgebühren</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Gebühren hängen ab von:
+          Der Hersteller reicht den Antrag über das Manak Online BIS-Portal ein.
+          Erforderliche Informationen umfassen:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Anzahl der Produktvarianten</li>
-          <li>Markennamen</li>
-          <li>Werkstandort</li>
-          <li>Testparameter</li>
+          <li>Details zum Herstellungsstandort</li>
+          <li>Rohstoffkontrollen</li>
+          <li>Technische Spezifikationen</li>
+          <li>Produktionskapazitäten</li>
+          <li>Markeneigentumsdokumentation</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 4 — Probenprüfung (Gemäß IS 17636:2022)
+          Schritt 3 – Gebührenzahlung
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Die Prüfung wird in einem BIS-anerkannten Labor durchgeführt.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Tests umfassen:
+          Gebühren müssen gezahlt werden für:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Struktureller Stabilitätstest</li>
-          <li>Schlagtest</li>
-          <li>Einklemmtest</li>
-          <li>Schutzgeländer-Festigkeitstest</li>
-          <li>Oberflächenqualitätstest</li>
-          <li>Leitersicherheitstest</li>
-          <li>Belastungstest</li>
-          <li>Haltbarkeitstest</li>
-          <li>Kantensicherheitsbewertung</li>
+          <li>Antrag</li>
+          <li>Bearbeitung</li>
+          <li>Tests</li>
+          <li>Inspektion</li>
+          <li>Kennzeichnung</li>
         </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Schritt 4 – Probenprüfung (IS 17631:2022 Anforderungen)
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Ein von BIS anerkanntes Labor bewertet den Stuhl nach mehreren
+          Sicherheits- und Leistungskriterien.
+        </p>
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
+          Arbeitsstuhltests umfassen
+        </h4>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Sitz- und Rückenstatiklasttests</li>
+          <li>Haltbarkeitsbelastungszyklen</li>
+          <li>Dreh-/Rotationsprüfung</li>
+          <li>Neigungsmechanismus-Belastbarkeit</li>
+          <li>Gasdruckfeder-Leistung</li>
+          <li>Rollenfestigkeit und Rollwiderstand</li>
+          <li>Basisstabilität und Überlastprüfung</li>
+          <li>Armlehnen-Tragfähigkeit</li>
+          <li>Schlagfestigkeitstests</li>
+        </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          Der Prüfbericht wird direkt auf das BIS-Portal hochgeladen.
+          Das Labor erstellt einen detaillierten Prüfbericht für BIS.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 5 — BIS-Werksinspektion
+          Schritt 5 – Werksaudit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Ein BIS-Beamter besucht das Werk, um zu überprüfen:
+          BIS-Inspektoren prüfen die Einrichtung:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Qualitätsmanagementsystem</li>
-          <li>Rohstoffkontrolle</li>
-          <li>Zwischenprüfungen</li>
-          <li>Endproduktprüfung</li>
-          <li>Produktionskapazität</li>
+          <li>Produktionssystem</li>
+          <li>Materialprüfungsaufzeichnungen</li>
+          <li>Interne Qualitätssicherungsprozesse</li>
+          <li>Prüfinstrumente & Kalibrierungsprotokolle</li>
+          <li>Einhaltung des Prüf- und Inspektionsschemas (STI)</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sie überprüfen die Einhaltung des BIS-Schemas für Prüfung und
-          Inspektion (STI).
-        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 6 — Erteilung der BIS-Lizenz
+          Schritt 6 – Erteilung der BIS-Lizenz
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Sobald alle Schritte abgeschlossen sind, stellt BIS aus:
+          Sobald die Konformität bestätigt ist, erteilt BIS:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS-Zertifikat</li>
-          <li>ISI-Zeichen-Genehmigung</li>
-          <li>CML-Lizenznummer</li>
+          <li>Die BIS-Lizenz/ISI-Marken-Zertifizierung</li>
+          <li>Eine eindeutige CML-Nummer</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sie können jetzt das BIS-Zeichen legal auf Etagenbetten und
-          Verpackungen verwenden.
-        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 7 — Nach-Lizenz-Verpflichtungen
+          Schritt 7 – Kontinuierliche Einhaltung
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
           Hersteller müssen:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Interne Tests durchführen</li>
-          <li>Periodische BIS-Inspektionen zulassen</li>
-          <li>Die Lizenz alle 1 oder 2 Jahre erneuern</li>
+          <li>Laufende interne Kontrollen durchführen</li>
+          <li>Kennzeichnungsregeln befolgen</li>
+          <li>Bei Überwachungsinspektionen kooperieren</li>
+          <li>Die Lizenz regelmäßig erneuern</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Geltungsbereich der BIS-Lizenz für Etagenbetten
+          Für die BIS-Zertifizierung von Arbeitsstühlen erforderliche Dokumente
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Dieser Standard umfasst die Anforderungen
-          bezüglich der Leistung und Sicherheit, das heißt Festigkeit,
-          Stabilität und Haltbarkeit von Etagenbetten für den häuslichen und
-          nicht-häuslichen Gebrauch. Dieser Standard gilt auch für Einzelbetten,
-          die in einer Höhe der Bettbasis von 800 mm oder mehr über dem fertigen
-          Fußbodenniveau verwendet werden, unabhängig von der Verwendung, für
-          die der Raum darunter genutzt wird.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Dieser Standard gilt für vollständig
-          hergestellte/ gefertigte Etagenbetten. Er gilt auch für montagefertige
-          Einheiten; in diesem Fall gelten die Anforderungen dieses Standards
-          für die montierte Einheit.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Für die BIS-Zertifizierung von Etagenbetten erforderliche Dokumente
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Hier ist eine vollständige Liste der BIS-Zertifikatsdokumente:
+          Ein vollständiger Satz von Dokumenten gewährleistet eine schnellere
+          Genehmigung.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Herstellerdokumente
+          Geschäfts- & Werksdokumente
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Werkregistrierungszertifikat</li>
-          <li>Fertigungsprozess-Flussdiagramm</li>
-          <li>Liste der Maschinen & Ausrüstung</li>
-          <li>Liste der Prüfausrüstung</li>
+          <li>Werksregistrierung</li>
+          <li>Herstellungsdiagramm & Layout</li>
+          <li>Produktionsablauf</li>
+          <li>Maschinenliste</li>
+          <li>Prüfgeräteliste</li>
           <li>Kalibrierungszertifikate</li>
-          <li>Werklayout/Anlagenlayout</li>
-          <li>Autorisierungsschreiben von CEO/Direktor</li>
-          <li>ISO 9001 Zertifikat (falls verfügbar)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Rechtliche Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identitätsnachweis</li>
-          <li>Adressnachweis</li>
-          <li>Markenautorisierung (bei Drittmarke)</li>
-          <li>Markenregistrierungsdokument (optional)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technische Dokumente
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produktspezifikationen</li>
+          <li>Stuhlkonstruktionszeichnungen</li>
+          <li>Mechanismus-Spezifikationen</li>
+          <li>Materialdatenblätter</li>
           <li>Stückliste</li>
-          <li>Beschreibung der Sicherheitsmerkmale</li>
-          <li>Qualitätskontrollplan</li>
-          <li>Interne Prüfberichte</li>
+          <li>Montageanleitungen</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS-Antragsdokumente
+          Rechtliche Dokumente
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Verpflichtungserklärungen & Erklärungen</li>
-          <li>Prüfantragsformular</li>
-          <li>Proben-Genehmigungsschreiben</li>
+          <li>Identitätsnachweis des autorisierten Unterzeichners</li>
+          <li>Markenautorisierungsschreiben</li>
+          <li>Markenzertifikat</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ordnungsgemäße Dokumente reduzieren Verzögerungen und gewährleisten
-          eine reibungslose Genehmigung.
-        </p>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          BIS-spezifische Dokumente
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Antragsformular</li>
+          <li>Verpflichtungserklärungen</li>
+          <li>Prüfantragsformular</li>
+          <li>Etikettenmuster</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Prüfanforderungen für Etagenbetten (IS 17636:2022)
+          Prüfanforderungen gemäß IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Prüfungen sind ein obligatorischer Teil des
-          BIS-Registrierungsprozesses. Etagenbetten unterziehen sich strengen
-          Tests, um Sicherheit und Haltbarkeit zu gewährleisten.
+          Arbeitsstühle unterliegen aufgrund beweglicher Teile komplexeren Tests
+          als allgemeine Stühle.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Schema für Inspektion und Prüfung von Etagenbetten
+          Durchgeführte Haupttests
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -556,7 +515,7 @@ const MainContentLeft = () => {
                   Klausel
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Anforderung
+                  Anforderungen
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -571,66 +530,98 @@ const MainContentLeft = () => {
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  5
+                  7.3.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Abmessungen
+                  Vorderkanten-Umkippen
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2
+                  7.3.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sicherheitsbarrieren für oberes Bett
+                  Vorwärts-Umkippen
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
+                  7.3.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Lücken
+                  Vorwärts-Umkippen für Stühle mit Fußstütze
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4
+                  7.3.4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Bettbasis
+                  Seitwärts-Umkippen für Stühle ohne Armlehnen
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.5
+                  7.3.5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leiter
+                  Seitwärts-Umkippen für Stühle mit Armlehnen
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6
+                  7.3.6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Festigkeit von Rahmen und Befestigungen
+                  Rückwärts-Umkippen für Stühle ohne Rückenlehne
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
+                  7.4.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stabilität
+                  Sitz-Vorderkanten-Statiklasttest
                 </TableCell>
               </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors">
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.8
+                  7.4.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Befestigung des oberen Bettes am unteren Bett
+                  Kombinierter Sitz- und Rücken-Statiklasttest
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.3
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Armlehnen-Abwärts-Statiklasttest — Zentral
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.4
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Armlehnen-Abwärts-Statiklasttest — Vorne
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.5
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Armlehnen-Seitwärts-Statiklasttest
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.4.6
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Fußstütze-Statiklasttest
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -638,296 +629,113 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Tests müssen nur in einem BIS-anerkannten Labor durchgeführt werden.
+          Diese Tests simulieren Monate oder Jahre regelmäßiger Nutzung
+          innerhalb weniger Tage.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Häufige Herausforderungen & wie man sie vermeidet
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Falsche Produktkategorisierung</strong>
-            <br />
-            Überprüfen Sie immer den korrekten indischen Standard.
-          </li>
-          <li>
-            <strong>Unzureichende Dokumentation</strong>
-            <br />
-            Fehlende Dokumente verursachen Verzögerungen—bereiten Sie sie im
-            Voraus vor.
-          </li>
-          <li>
-            <strong>Fehlgeschlagene Labortests</strong>
-            <br />
-            Stellen Sie hochwertige Materialien, Schweißarbeiten, Schutzgeländer
-            und Oberflächenbehandlung sicher.
-          </li>
-          <li>
-            <strong>Werk nicht bereit für Inspektion</strong>
-            <br />
-            Stellen Sie sicher, dass QMS und Prüfausrüstung ordnungsgemäß
-            gewartet werden.
-          </li>
-          <li>
-            <strong>Markenprobleme</strong>
-            <br />
-            Der Markenname muss mit dem Lizenzantrag übereinstimmen.
-          </li>
-        </ol>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die frühzeitige Lösung dieser Probleme reduziert die Bearbeitungszeit
-          erheblich.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vorteile der BIS-Zertifizierung für Hersteller & Importeure
+          Häufige Herausforderungen bei der BIS-Zertifizierung für Arbeitsstühle
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Rechtlich Etagenbetten in Indien verkaufen</li>
-          <li>Vertrauen bei Kunden aufbauen</li>
-          <li>Produktrückgaben reduzieren</li>
-          <li>Markenreputation verbessern</li>
-          <li>Sicherheits-Compliance gewährleisten</li>
-          <li>Wettbewerbsvorteil erlangen</li>
-          <li>Erweiterung in Einzelhandelsketten & E-Commerce-Plattformen</li>
-          <li>Zugang zu staatlichen Ausschreibungen</li>
-          <li>Strafen & rechtliche Schritte vermeiden</li>
+          <li>
+            <strong>✔ 1. Ausfall bei mechanischen/Neigungstests</strong> – Oft
+            verursacht durch schwache Mechanismen oder minderwertige Hardware.
+          </li>
+          <li>
+            <strong>✔ 2. Nichtkonformität des Gasdruckfedermechanismus</strong>{" "}
+            – Gasdruckfedern müssen strenge Druck- und Sicherheitsparameter
+            erfüllen.
+          </li>
+          <li>
+            <strong>✔ 3. Unzureichende Testinfrastruktur</strong> – Tests von
+            Arbeitsstühlen erfordern spezialisierte Prüfstände.
+          </li>
+          <li>
+            <strong>✔ 4. Falsche Produktgruppierung</strong> – Verschiedene
+            Mechanismen = separate Tests.
+          </li>
+          <li>
+            <strong>✔ 5. STI-Nichtkonformität</strong> – STI-Fehler können die
+            Lizenzausstellung verzögern.
+          </li>
+          <li>
+            <strong>✔ 6. Dokumenteninkonsistenzen</strong> – Markenname und
+            Modellname müssen genau mit der BIS-Bewerbung übereinstimmen.
+          </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Strafen bei Nichteinhaltung
+          Vorteile der BIS-Zertifizierung für Arbeitsstühle
+        </h2>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Ermöglicht legale Verkäufe in ganz Indien</li>
+          <li>Steigert das Kundenvertrauen & Markenreputation</li>
+          <li>Gewährleistet langfristige Haltbarkeit</li>
+          <li>Reduziert Garantieansprüche und Ausfälle</li>
+          <li>Schützt vor regulatorischen Strafen</li>
+          <li>Ermöglicht Auflistung auf E-Commerce-Plattformen</li>
+          <li>
+            Obligatorisch für Regierungsausschreibungen und
+            Unternehmenslieferungen
+          </li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Strafen für den Verkauf von Arbeitsstühlen ohne BIS-Zertifizierung
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Der Verkauf von Etagenbetten ohne BIS-Zertifizierung kann zu Folgendem
-          führen:
+          Nichtkonformität kann zu Folgendem führen:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produktbeschlagnahme</li>
-          <li>Geldstrafen</li>
-          <li>Werkstilllegungsanordnungen</li>
-          <li>Rechtliche Verfolgung</li>
-          <li>Verbot vom indischen Markt</li>
-          <li>Schwarze Liste der Marke</li>
+          <li>Schwere finanzielle Strafen</li>
+          <li>Beschlagnahmung des Inventars</li>
+          <li>Produktionsstilllegungsanordnungen</li>
+          <li>Importverbot</li>
+          <li>Strafverfolgung</li>
+          <li>Widerruf der Geschäftslizenz</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Compliance ist nicht optional—sie ist obligatorisch.
+          Strenge Durchsetzung erfolgt unter dem BIS-Gesetz von 2016.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wer benötigt eine BIS-Zertifizierung für Etagenbetten?
+          Wer muss eine BIS-Zertifizierung für Arbeitsstühle erhalten?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Die folgenden Unternehmen müssen eine BIS-Lizenz für Etagenbetten
-          erhalten:
+          Obligatorisch für:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indische Hersteller</li>
           <li>Ausländische Hersteller, die nach Indien exportieren</li>
+          <li>Markeninhaber</li>
           <li>Importeure</li>
-          <li>Vertriebspartner</li>
-          <li>E-Commerce-Verkäufer</li>
-          <li>OEM/ODM-Hersteller</li>
-          <li>Möbelmarken & Einzelhändler</li>
+          <li>OEM/ODM-Lieferanten</li>
+          <li>Lagerhändler</li>
+          <li>Einzelhandels- und Online-Möbelmarken</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Jedes Werk (nicht Unternehmen) benötigt eine separate BIS-Lizenz.
+          Jedes Werk benötigt eine eindeutige BIS-Lizenz.
         </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum uns für BIS-Zertifizierungsberatung wählen?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Wir bieten umfassende Unterstützung für die BIS-Registrierung von
-          Etagenbetten, einschließlich:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standardinterpretation (IS 17636:2022)</li>
-          <li>Dokumentationsvorbereitung</li>
-          <li>Labortestkoordination</li>
-          <li>BIS-Portal-Antrag</li>
-          <li>Werksinspektionsunterstützung</li>
-          <li>Kommunikation mit BIS-Beamten</li>
-          <li>Lizenzgenehmigungsunterstützung</li>
-          <li>Nach-Zertifizierungs-Compliance</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Mit jahrelanger Expertise gewährleisten wir eine schnelle, genaue und
-          problemlose BIS Zertifizierung.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs — BIS-Zertifizierung für Etagenbetten
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Ist die BIS-Zertifizierung für Etagenbetten in Indien
-                obligatorisch?
-              </strong>
-              <br />
-              Ja. Nach IS 17636:2022 ist sie für alle Hersteller und Importeure
-              obligatorisch.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                2. Wie lange dauert die BIS-Zertifizierung für Etagenbetten?
-              </strong>
-              <br />
-              Typischerweise 30–45 Tage, abhängig von Bereitschaft und
-              Dokumentation.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                3. Können ausländische Hersteller sich für BIS bewerben?
-              </strong>
-              <br />
-              Ja, über das FMCS (Foreign Manufacturers Certification Scheme).
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. Kann ich mich online für ein BIS-Zertifikat bewerben?
-              </strong>
-              <br />
-              Ja, über das BIS Manak Online Portal.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                6. Welche Tests sind für die Etagenbetten-Zertifizierung
-                erforderlich?
-              </strong>
-              <br />
-              Belastungstest, Schutzgeländer-Test, Stabilitätstest, Schlagtest,
-              Einklemmtest usw.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Wie lange ist eine BIS-Lizenz gültig?</strong>
-              <br />
-              Normalerweise 1–2 Jahre und erneuerbar.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Kann eine Lizenz mehrere Modelle abdecken?</strong>
-              <br />
-              Nur wenn sie unter denselben Standard und dieselbe Kategorie
-              fallen.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                9. Ist das ISI-Zeichen auf Etagenbetten erforderlich?
-              </strong>
-              <br />
-              Ja, das ISI-Zeichen ist nach der Zertifizierung obligatorisch.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                10. Was passiert, wenn mein Produkt die Labortests nicht
-                besteht?
-              </strong>
-              <br />
-              Sie müssen das Produkt ändern und Proben erneut einreichen.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>11. Überprüft BIS die Werksinfrastruktur?</strong>
-              <br />
-              Ja, während der Inspektion.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>12. Können Händler sich für BIS bewerben?</strong>
-              <br />
-              Nur wenn sie Markeninhaber sind und einen Vertrag mit Herstellern
-              haben.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>13. Was ist das BIS-Logo?</strong>
-              <br />
-              Es ist das standardmäßige ISI-Zeichen-Symbol, das die
-              Produktkonformität anzeigt.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                14. Welche Dokumente werden für die BIS-Zertifizierung benötigt?
-              </strong>
-              <br />
-              Werkslizenz, Layout, Maschinenliste, Stückliste, QC-Plan,
-              Prüfberichte usw.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>15. Werden BIS-Tests im Werk durchgeführt?</strong>
-              <br />
-              Nein, nur in BIS-anerkannten Labors.
-            </p>
-          </div>
-        </div>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -937,28 +745,124 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Die Erlangung eines BIS-Zertifikats für Etagenbetten nach IS
-          17636:2022 ist nicht nur obligatorisch, sondern auch wesentlich, um
-          Verbrauchersicherheit, Produktzuverlässigkeit und rechtliche
-          Compliance in Indien zu gewährleisten. Der Zertifizierungsprozess
-          umfasst Produkttests, Dokumentation, Werksinspektion und
-          Lizenzausstellung. Mit ordnungsgemäßer Planung und fachkundiger
-          Anleitung wird der Prozess reibungslos, schnell und kosteneffektiv.
+          Das BIS-Zertifikat für Arbeitsstühle nach IS 17631:2022 ist
+          entscheidend für die Gewährleistung sicherer, langlebiger und
+          ergonomisch solider Sitzprodukte in Indien. Die obligatorische
+          Zertifizierung stärkt das Kundenvertrauen, reduziert
+          Produkthaftungsrisiken und gewährleistet die Einhaltung nationaler
+          Qualitätsstandards. Mit professioneller Unterstützung wird der
+          Zertifizierungsprozess—von Tests über Inspektionen bis zur
+          Lizenzierung—effizient und vorhersehbar.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ob Sie Hersteller, Importeur oder Markeninhaber sind, die BIS
-          Zertifizierung stärkt Ihre Marktposition, erhöht das Kundenvertrauen
-          und erschließt neue Geschäftsmöglichkeiten. Unser Expertenteam für
-          Beratung ist bereit, Sie bei der umfassenden BIS-Zertifizierung für
-          Etagenbetten zu unterstützen.
-        </p>
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          FAQs – BIS-Zertifikat für Arbeitsstühle (IS 17631:2022)
+        </h2>
+
+        <div className="space-y-4 mb-4">
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>1. Welche Stühle fallen unter IS 17631:2022?</strong>
+              <br />
+              Jeder Stuhl, der für Arbeitsumgebungen konzipiert ist,
+              einschließlich ergonomischer Bürostühle, Arbeitsstühle, Drehstühle
+              und verstellbare Stühle.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                2. Ist die BIS-Zertifizierung für Arbeitsstühle obligatorisch?
+              </strong>
+              <br />
+              Ja. Die BIS-Zertifizierung ist vor der Herstellung, dem Verkauf
+              oder dem Import von Arbeitsstühlen in Indien obligatorisch.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                3. Was unterscheidet Tests von Arbeitsstühlen von Tests
+                allgemeiner Stühle?
+              </strong>
+              <br />
+              Arbeitsstühle verwenden Mechanismen wie Drehungen, Gasdruckfedern,
+              Neigungssysteme und Rollen—was fortgeschrittene mechanische und
+              Belastbarkeitstests erfordert.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. Wie lange dauert die BIS-Zertifizierung?</strong>
+              <br />
+              Typischerweise 30–45 Tage für indische Hersteller und etwa 120
+              Tage für ausländische Hersteller, abhängig von Tests und
+              Dokumentation.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Können ausländische Hersteller sich bewerben?</strong>
+              <br />
+              Ja, über das FMCS (Foreign Manufacturers Certification Scheme).
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                6. Was passiert, wenn ein Stuhl die BIS-Tests nicht besteht?
+              </strong>
+              <br />
+              Er muss neu gestaltet, korrigiert und erneut getestet werden, bis
+              er IS 17631:2022 entspricht.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                7. Welche Dokumente sind für die BIS-Bewerbung erforderlich?
+              </strong>
+              <br />
+              Werksdetails, Produktzeichnungen, Maschinenliste, QC-Dokumente,
+              Markeneigentum und rechtliche Papiere.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. Erfordern alle Stuhlmodelle separate Tests?</strong>
+              <br />
+              Wenn sich Modelle in Design, Mechanismus oder Struktur
+              unterscheiden, können separate Tests erforderlich sein.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. Ist die ISI-Kennzeichnung nach Genehmigung obligatorisch?
+              </strong>
+              <br />
+              Ja, das ISI-Zeichen muss auf dem Produkt, dem Etikett und der
+              Verpackung erscheinen.
+            </p>
+          </div>
+        </div>
 
         {/* PDF Viewer Section */}
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
-            src="/BIS-Product-Pdf/IS-17636-2021-Sun-Certifications-India.pdf"
-            title="BIS-Zertifikat für Etagenbetten - IS 17636:2021 PDF"
+            src="/BIS-Product-Pdf/IS-17631-2022-Sun-Certifications-India.pdf"
+            title="BIS-Zertifikat für Arbeitsstühle - IS 17631:2022 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -969,7 +873,7 @@ const MainContentLeft = () => {
 
         <ManyUsersAlsoReadGerman />
 
-        <FaqAuthorGerman questionNumber={5} />
+        <FaqAuthorGerman questionNumber={4} />
       </div>
     </div>
   );
@@ -977,11 +881,11 @@ const MainContentLeft = () => {
 
 const Services = () => {
   return (
-    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
+    <div className="pt-6 md:pt-8 pb-12 md:pb-16 overflow-x-hidden">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
               Unsere Dienstleistungen
             </h2>
           </BoxReveal>
@@ -1011,7 +915,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS-Zeichen (ISI-Lizenz) für ausländische Hersteller
+              BIS-Marke (ISI-Lizenz) für ausländische Hersteller
             </p>
           </Link>
 
@@ -1079,7 +983,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR-Zertifikatszertifizierungen
+              EPR-Zertifikat-Zertifizierungen
             </p>
           </Link>
 
@@ -1096,7 +1000,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC-Zertifikatszertifizierungen
+              LMPC-Zertifikat-Zertifizierungen
             </p>
           </Link>
 
@@ -1130,7 +1034,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI-ZEICHEN (BIS) für indische Hersteller
+              ISI-MARKE (BIS) für indische Hersteller
             </p>
           </Link>
         </div>

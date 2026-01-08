@@ -82,6 +82,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/letti-a-castello-is-17636",
     // BIS Certificate for Beds Italian Page Url
     "/blogs/isi-products/letti-is-17635",
+    // BIS Certificate for Work Chairs Italian Page Url
+    "/blogs/isi-products/sedie-da-lavoro-is-17631",
   ];
 
   // Check if current path should show these components
@@ -767,6 +769,9 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS Certificate for Beds Italian
     if (path.includes("/blogs/isi-products/letti-is-17635"))
       return "BIS Certificate for Beds (Italian)";
+    // BIS Certificate for Work Chairs Italian
+    if (path.includes("/blogs/isi-products/sedie-da-lavoro-is-17631"))
+      return "BIS Certificate for Work Chairs (Italian)";
   };
 
   const [formData, setFormData] = useState({
