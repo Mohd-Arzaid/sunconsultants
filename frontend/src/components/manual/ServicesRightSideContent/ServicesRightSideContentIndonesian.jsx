@@ -80,6 +80,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun",
     // BIS Certificate for Bunk Beds Indonesian Page Url
     "/blogs/isi-products/ranjang-susun-is-17636",
+    // BIS Certificate for Beds Indonesian Page Url
+    "/blogs/isi-products/ranjang-is-17635",
   ];
 
   // Check if current path should show these components
@@ -739,6 +741,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Bunk Beds Indonesian
     if (path.includes("/blogs/isi-products/ranjang-susun-is-17636"))
       return "BIS Certificate for Bunk Beds (Indonesian)";
+    // BIS Certificate for Beds Indonesian
+    if (path.includes("/blogs/isi-products/ranjang-is-17635"))
+      return "BIS Certificate for Beds (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

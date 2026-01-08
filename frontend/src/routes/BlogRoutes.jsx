@@ -105,6 +105,36 @@ const BISCertificateForBedsArabic = lazy(() =>
 const BISCertificateForBedsChinese = lazy(() =>
   import("@/blogs/BISCertificateForBeds/BISCertificateForBedsChinese")
 );
+const BISCertificateForBedsDutch = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsDutch")
+);
+const BISCertificateForBedsFrench = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsFrench")
+);
+const BISCertificateForBedsGerman = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsGerman")
+);
+const BISCertificateForBedsIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsIndonesian")
+);
+const BISCertificateForBedsItalian = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsItalian")
+);
+const BISCertificateForBedsJapanese = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsJapanese")
+);
+const BISCertificateForBedsKorean = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsKorean")
+);
+const BISCertificateForBedsSpanish = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsSpanish")
+);
+const BISCertificateForBedsThai = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsThai")
+);
+const BISCertificateForBedsVietnamese = lazy(() =>
+  import("@/blogs/BISCertificateForBeds/BISCertificateForBedsVietnamese")
+);
 const BISCertificateForStorageUnit = lazy(() =>
   import("@/blogs/BISCertificateForStorageUnit")
 );
@@ -637,6 +667,86 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBedsChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/bedden-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/lits-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/betten-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ranjang-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/letti-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/beddo-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chimdae-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/camas-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/teng-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/giuong-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBedsVietnamese />
           </Suspense>
         }
       />

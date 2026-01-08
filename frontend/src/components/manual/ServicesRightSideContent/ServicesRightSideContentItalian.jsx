@@ -80,6 +80,8 @@ const ServicesRightSideContentItalian = () => {
     "/certificazione-bis-schema-x-per-macchine-per-tessitura-telai",
     // BIS Certificate for Bunk Beds Italian Page Url
     "/blogs/isi-products/letti-a-castello-is-17636",
+    // BIS Certificate for Beds Italian Page Url
+    "/blogs/isi-products/letti-is-17635",
   ];
 
   // Check if current path should show these components
@@ -762,6 +764,9 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS Certificate for Bunk Beds Italian
     if (path.includes("/blogs/isi-products/letti-a-castello-is-17636"))
       return "BIS Certificate for Bunk Beds (Italian)";
+    // BIS Certificate for Beds Italian
+    if (path.includes("/blogs/isi-products/letti-is-17635"))
+      return "BIS Certificate for Beds (Italian)";
   };
 
   const [formData, setFormData] = useState({

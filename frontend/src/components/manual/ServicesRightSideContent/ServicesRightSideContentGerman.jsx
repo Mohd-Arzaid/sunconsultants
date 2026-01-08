@@ -46,6 +46,8 @@ const ServicesRightSideContentGerman = () => {
     "/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege",
     // BIS Certificate for Bunk Beds German Page Url
     "/blogs/isi-products/etagenbetten-is-17636",
+    // BIS Certificate for Beds German Page Url
+    "/blogs/isi-products/betten-is-17635",
   ];
 
   // Check if current path should show these components
@@ -604,6 +606,8 @@ const ContactFormServicesRightSideContentGerman = () => {
       return "BIS Mark (ISI License) for Foreign Manufacturers - German Page";
     if (path.includes("/blogs/isi-products/etagenbetten-is-17636"))
       return "BIS Certificate for Bunk Beds (German)";
+    if (path.includes("/blogs/isi-products/betten-is-17635"))
+      return "BIS Certificate for Beds (German)";
   };
 
   const [formData, setFormData] = useState({

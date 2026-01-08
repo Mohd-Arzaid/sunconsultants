@@ -45,6 +45,8 @@ const ServicesRightSideContentSpanish = () => {
     "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
     // BIS Certificate for Bunk Beds Spanish Page Url
     "/blogs/isi-products/literas-is-17636",
+    // BIS Certificate for Beds Spanish Page Url
+    "/blogs/isi-products/camas-is-17635",
   ];
 
   // Check if current path should show these components
@@ -603,6 +605,10 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Bunk Beds Spanish
     if (path.includes("/blogs/isi-products/literas-is-17636"))
       return "BIS Certificate for Bunk Beds (Spanish)";
+
+    // BIS Certificate for Beds Spanish
+    if (path.includes("/blogs/isi-products/camas-is-17635"))
+      return "BIS Certificate for Beds (Spanish)";
   };
 
   const [formData, setFormData] = useState({

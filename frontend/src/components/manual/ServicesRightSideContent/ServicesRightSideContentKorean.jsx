@@ -62,6 +62,8 @@ const ServicesRightSideContentKorean = () => {
     "/bis-seukim-x-injeung-jigjo-gi",
     // BIS Certificate for Bunk Beds Korean Page Url
     "/blogs/isi-products/icheung-chimdae-is-17636",
+    // BIS Certificate for Beds Korean Page Url
+    "/blogs/isi-products/chimdae-is-17635",
   ];
 
   // Check if current path should show these components
@@ -647,6 +649,9 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Bunk Beds Korean
     if (path.includes("/blogs/isi-products/icheung-chimdae-is-17636"))
       return "BIS Certificate for Bunk Beds (Korean)";
+    // BIS Certificate for Beds Korean
+    if (path.includes("/blogs/isi-products/chimdae-is-17635"))
+      return "BIS Certificate for Beds (Korean)";
   };
 
   const [formData, setFormData] = useState({

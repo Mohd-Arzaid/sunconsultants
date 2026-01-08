@@ -81,6 +81,8 @@ const ServicesRightSideContentThai = () => {
     "/kan-rap-rong-bis-phaen-x-samrab-khrueang-tan",
     // BIS Certificate for Bunk Beds Thai Page Url
     "/blogs/isi-products/teng-song-chan-is-17636",
+    // BIS Certificate for Beds Thai Page Url
+    "/blogs/isi-products/teng-is-17635",
   ];
 
   // Check if current path should show these components
@@ -701,6 +703,10 @@ const ContactFormServicesRightSideContentThai = () => {
     // BIS Certificate for Bunk Beds Thai
     if (path.includes("/blogs/isi-products/teng-song-chan-is-17636"))
       return "BIS Certificate for Bunk Beds (Thai)";
+
+    // BIS Certificate for Beds Thai
+    if (path.includes("/blogs/isi-products/teng-is-17635"))
+      return "BIS Certificate for Beds (Thai)";
   };
 
   const [formData, setFormData] = useState({

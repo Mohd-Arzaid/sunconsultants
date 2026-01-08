@@ -35,6 +35,8 @@ const ServicesRightSideContentJapanese = () => {
     "/nihon-niokeru-bis-ninsho",
     "/ja/crs-bis-toha-nani-ka-crs-toroku",
     "/blogs/isi-products/nidan-beddo-is-17636",
+    // BIS Certificate for Beds Japanese Page Url
+    "/blogs/isi-products/beddo-is-17635",
     // ISIMark Japanese Page Url
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
@@ -722,6 +724,9 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // Bunk Beds Japanese Page Url
     if (path.includes("/blogs/isi-products/nidan-beddo-is-17636"))
       return "Bunk Beds - Japanese Page";
+    // BIS Certificate for Beds Japanese
+    if (path.includes("/blogs/isi-products/beddo-is-17635"))
+      return "BIS Certificate for Beds (Japanese)";
   };
 
   const [formData, setFormData] = useState({

@@ -43,6 +43,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
     // BIS Certificate for Bunk Beds Vietnamese Page Url
     "/blogs/isi-products/giuong-tang-is-17636",
+    // BIS Certificate for Beds Vietnamese Page Url
+    "/blogs/isi-products/giuong-is-17635",
   ];
 
   // Check if current path should show these components
@@ -599,6 +601,10 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     // BIS Certificate for Bunk Beds Vietnamese
     if (path.includes("/blogs/isi-products/giuong-tang-is-17636"))
       return "BIS Certificate for Bunk Beds (Vietnamese)";
+
+    // BIS Certificate for Beds Vietnamese
+    if (path.includes("/blogs/isi-products/giuong-is-17635"))
+      return "BIS Certificate for Beds (Vietnamese)";
   };
 
   const [formData, setFormData] = useState({

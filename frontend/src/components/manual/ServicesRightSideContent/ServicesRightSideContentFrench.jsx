@@ -42,6 +42,8 @@ const ServicesRightSideContentFrench = () => {
     "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde",
     // Bunk Beds French Page Url
     "/blogs/isi-products/lits-superposes-is-17636",
+    // Beds French Page Url
+    "/blogs/isi-products/lits-is-17635",
   ];
 
   // Check if current path should show these components
@@ -598,6 +600,9 @@ const ContactFormServicesRightSideContentFrench = () => {
       return "BISFM (FMCS - Foreign Manufacturers) French Page";
     if (path.includes("/blogs/isi-products/lits-superposes-is-17636"))
       return "BIS Certificate for Bunk Beds (French)";
+    if (path.includes("/blogs/isi-products/lits-is-17635"))
+      return "BIS Certificate for Beds (French)";
+    return "";
   };
 
   const [formData, setFormData] = useState({
