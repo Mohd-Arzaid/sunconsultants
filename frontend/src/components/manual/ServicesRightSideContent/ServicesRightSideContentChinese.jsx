@@ -38,6 +38,7 @@ const ServicesRightSideContentChinese = () => {
     "/blogs/isi-products/shuang-ceng-chuang-is-17636",
     "/blogs/isi-products/chuangju-is-17635",
     "/blogs/isi-products/gong-zuo-yi-is-17631",
+    "/blogs/isi-products/yizi-he-dengzi-is-17632",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
     "/bis-fang-an-x-ya-suo-ji-ren-zheng",
     "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
@@ -707,6 +708,9 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certificate for Work Chairs Chinese
     if (path.includes("/blogs/isi-products/gong-zuo-yi-is-17631"))
       return "BIS Certificate for Work Chairs (Chinese)";
+    // BIS Certificate for Chair And Stools Chinese
+    if (path.includes("/blogs/isi-products/yizi-he-dengzi-is-17632"))
+      return "BIS Certificate for Chair And Stools (Chinese)";
     return "";
   };
 
