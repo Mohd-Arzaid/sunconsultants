@@ -3567,12 +3567,76 @@
   </url>
   <!-- BIS Certificate for Chair & Stools - Chinese End -->
 
-
-
-
-
-
-
+   <!-- BIS Certificate for General Purpose Chairs and Stools - Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/stoelen-en-krukken-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - French -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/chaises-et-tabourets-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/stuhle-und-hocker-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/kursi-dan-bangku-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/sedie-e-sgabelli-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/isu-to-suturu-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/uija-mich-seutul-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+   <!-- BIS Certificate for General Purpose Chairs and Stools - Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/sillas-y-taburetes-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - Thai -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/ghao-lae-mang-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/ghe-va-ghe-dau-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 
 
 
@@ -3662,6 +3726,7 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+ 
   
   <!-- BIS Certificate for Fibre Ropes of Polyester - English -->
   <url>
