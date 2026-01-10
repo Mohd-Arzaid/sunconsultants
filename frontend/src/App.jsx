@@ -69,6 +69,8 @@ import { BlogRoutes } from "./routes/BlogRoutes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
 import FaqsPageRoutes from "./routes/FaqsPageRoutes";
 
+import MessageFromManagementDesk from "./pages/MessageFromManagementDesk";
+
 // ============================================
 // Admin Routes (Commented out)
 // ============================================
@@ -111,6 +113,12 @@ function App() {
         {FaqsPageRoutes()}
 
         {/* Core Pages */}
+
+        <Route
+          path="/message-from-management-desk"
+          element={<MessageFromManagementDesk />}
+        />
+
         <Route
           path="/about"
           element={
