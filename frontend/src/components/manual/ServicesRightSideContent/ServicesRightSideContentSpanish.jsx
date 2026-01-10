@@ -47,6 +47,10 @@ const ServicesRightSideContentSpanish = () => {
     "/blogs/isi-products/literas-is-17636",
     // BIS Certificate for Beds Spanish Page Url
     "/blogs/isi-products/camas-is-17635",
+    // BIS Certificate for Work Chairs Spanish Page Url
+    "/blogs/isi-products/sillas-de-trabajo-is-17631",
+    // BIS Certificate for Chair And Stools Spanish Page Url
+    "/blogs/isi-products/sillas-y-taburetes-is-17632",
   ];
 
   // Check if current path should show these components
@@ -609,6 +613,13 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Beds Spanish
     if (path.includes("/blogs/isi-products/camas-is-17635"))
       return "BIS Certificate for Beds (Spanish)";
+
+    // BIS Certificate for Work Chairs Spanish
+    if (path.includes("/blogs/isi-products/sillas-de-trabajo-is-17631"))
+      return "BIS Certificate for Work Chairs (Spanish)";
+    // BIS Certificate for Chair And Stools Spanish
+    if (path.includes("/blogs/isi-products/sillas-y-taburetes-is-17632"))
+      return "BIS Certificate for Chair And Stools (Spanish)";
   };
 
   const [formData, setFormData] = useState({

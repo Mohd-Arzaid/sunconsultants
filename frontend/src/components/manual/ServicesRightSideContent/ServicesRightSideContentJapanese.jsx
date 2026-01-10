@@ -39,6 +39,8 @@ const ServicesRightSideContentJapanese = () => {
     "/blogs/isi-products/beddo-is-17635",
     // BIS Certificate for Work Chairs Japanese Page Url
     "/blogs/isi-products/sagyou-you-isu-is-17631",
+    // BIS Certificate for Chair And Stools Japanese Page Url
+    "/blogs/isi-products/isu-to-suturu-is-17632",
     // ISIMark Japanese Page Url
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
@@ -732,6 +734,9 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS Certificate for Work Chairs Japanese
     if (path.includes("/blogs/isi-products/sagyou-you-isu-is-17631"))
       return "BIS Certificate for Work Chairs (Japanese)";
+    // BIS Certificate for Chair And Stools Japanese
+    if (path.includes("/blogs/isi-products/isu-to-suturu-is-17632"))
+      return "BIS Certificate for Chair And Stools (Japanese)";
   };
 
   const [formData, setFormData] = useState({

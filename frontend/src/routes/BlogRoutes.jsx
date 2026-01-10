@@ -190,8 +190,83 @@ const BISCertificateForWorkChairsKorean = lazy(() =>
     "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsKorean"
   )
 );
+const BISCertificateForWorkChairsSpanish = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsSpanish"
+  )
+);
+const BISCertificateForWorkChairsThai = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsThai"
+  )
+);
+const BISCertificateForWorkChairsVietnamese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsVietnamese"
+  )
+);
 const BISCertificateForChairAndStools = lazy(() =>
-  import("@/blogs/BISCertificateForChairAndStools")
+  import("@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStools")
+);
+const BISCertificateForChairAndStoolsArabic = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsArabic"
+  )
+);
+const BISCertificateForChairAndStoolsChinese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsChinese"
+  )
+);
+const BISCertificateForChairAndStoolsDutch = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsDutch"
+  )
+);
+const BISCertificateForChairAndStoolsFrench = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsFrench"
+  )
+);
+const BISCertificateForChairAndStoolsGerman = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsGerman"
+  )
+);
+const BISCertificateForChairAndStoolsIndonesian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsIndonesian"
+  )
+);
+const BISCertificateForChairAndStoolsItalian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsItalian"
+  )
+);
+const BISCertificateForChairAndStoolsJapanese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsJapanese"
+  )
+);
+const BISCertificateForChairAndStoolsKorean = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsKorean"
+  )
+);
+const BISCertificateForChairAndStoolsSpanish = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsSpanish"
+  )
+);
+const BISCertificateForChairAndStoolsThai = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsThai"
+  )
+);
+const BISCertificateForChairAndStoolsVietnamese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsVietnamese"
+  )
 );
 const BISCertificateForWeldedPipesAndTubes = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes")
@@ -898,10 +973,130 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/sillas-de-trabajo-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ghao-ngan-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ghe-lam-viec-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairsVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/chairs-and-stools-is-17632"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForChairAndStools />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/karasi-wa-masaaid-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/yizi-he-dengzi-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/stoelen-en-krukken-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chaises-et-tabourets-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/stuhle-und-hocker-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/kursi-dan-bangku-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/sedie-e-sgabelli-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/isu-to-suturu-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/uija-mich-seutul-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/sillas-y-taburetes-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ghao-lae-mang-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ghe-va-ghe-dau-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStoolsVietnamese />
           </Suspense>
         }
       />

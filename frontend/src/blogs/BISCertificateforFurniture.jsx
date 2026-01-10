@@ -586,6 +586,35 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Testing Requirements for Furniture
+        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Testing is a mandatory part of the BIS registration process. Furniture
+          undergo rigorous tests to ensure safety and durability.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Mandatory Tests for Furniture:
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Structural Load Test</li>
+          <li>Stability Test</li>
+          <li>Guardrail Strength Test</li>
+          <li>Impact Test</li>
+          <li>Entrapment Hazard Test</li>
+          <li>Ladder Strength & Angle Test</li>
+          <li>Material Safety Test</li>
+          <li>Edge Radius & Sharpness Test</li>
+          <li>Mattress Support Test</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tests must be performed at a BIS-recognized lab only.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documents Required for BIS Certification for Furniture
         </h2>
         <p className="text-gray-600 text-base font-geist mb-4">

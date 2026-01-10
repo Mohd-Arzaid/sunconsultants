@@ -50,6 +50,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/betten-is-17635",
     // Work Chairs German Page Url
     "/blogs/isi-products/arbeitsstuhle-is-17631",
+    // Chair And Stools German Page Url
+    "/blogs/isi-products/stuhle-und-hocker-is-17632",
   ];
 
   // Check if current path should show these components
@@ -612,6 +614,8 @@ const ContactFormServicesRightSideContentGerman = () => {
       return "BIS Certificate for Beds (German)";
     if (path.includes("/blogs/isi-products/arbeitsstuhle-is-17631"))
       return "BIS Certificate for Work Chairs (German)";
+    if (path.includes("/blogs/isi-products/stuhle-und-hocker-is-17632"))
+      return "BIS Certificate for Chair And Stools (German)";
     return "";
   };
 
