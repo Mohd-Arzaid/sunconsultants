@@ -303,28 +303,47 @@ const BISCertificateForFlashlightDutch = lazy(() =>
   import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightDutch")
 );
 const BISCertificateForFlashlightFrench = lazy(() =>
-  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightFrench")
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightFrench"
+  )
 );
 const BISCertificateForFlashlightGerman = lazy(() =>
-  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightGerman")
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightGerman"
+  )
 );
 const BISCertificateForFlashlightIndonesian = lazy(() =>
-  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightIndonesian")
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightIndonesian"
+  )
 );
 const BISCertificateForFlashlightItalian = lazy(() =>
-  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightItalian")
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightItalian"
+  )
 );
 const BISCertificateForFlashlightJapanese = lazy(() =>
-  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightJapanese")
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightJapanese"
+  )
 );
 const BISCertificateForFlashlightKorean = lazy(() =>
-  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightKorean")
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightKorean"
+  )
 );
 const BISCertificateForFlashlightSpanish = lazy(() =>
-  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightSpanish")
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightSpanish"
+  )
 );
 const BISCertificateForFlashlightThai = lazy(() =>
   import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightThai")
+);
+const BISCertificateForFlashlightVietnamese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightVietnamese"
+  )
 );
 const BISCertificationSolarFlatPlate = lazy(() =>
   import("@/blogs/BISCertificationSolarFlatPlate")
