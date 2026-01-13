@@ -1,6 +1,6 @@
-import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
-import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
-import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
+import FaqAuthorDutch from "@/components/common/FaqAuthor/FaqAuthorDutch";
+import ManyUsersAlsoReadDutch from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadDutch";
+import ServicesRightSideContentDutch from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentDutch";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterEng from "@/components/manual/Footer/FooterEng";
+import FooterDutch from "@/components/manual/Footer/FooterDutch";
 import {
   Table,
   TableBody,
@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForChairAndStools = () => {
+const BISCertificateForFlashlightDutch = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -33,27 +33,27 @@ const BISCertificateForChairAndStools = () => {
       <MainContent />
       <Services />
       <VideoSection />
-      <FooterEng />
+      <FooterDutch />
     </div>
   );
 };
 
-export default BISCertificateForChairAndStools;
+export default BISCertificateForFlashlightDutch;
 
 const MetaTags = () => {
-  const title = "BIS Certificate for Chair & Stool | IS 17632:2022 BIS License";
-  const ogTitle = "BIS Certification for Chair & Stool – IS 17632:2022 Guide";
-  const twitterTitle = "BIS License for Chair & Stool | IS 17632:2022";
+  const title = "BIS Certificaat voor Zaklamp | IS 2083:2024 BIS Licentie";
+  const ogTitle = "BIS Certificering voor Zaklamp – IS 2083:2024 Gids";
+  const twitterTitle = "BIS Licentie voor Zaklamp | IS 2083:2024";
   const metaDescription =
-    "Get BIS Certificate for Chair & Stool under IS 17632:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Verkrijg BIS Certificaat voor Zaklamp onder IS 2083:2024. Proces, documenten, testen, kosten en tijdlijn voor BIS Certificering in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Chair & Stool as per IS 17632:2022. Know process, cost, documents, testing & BIS license benefits.";
+    "Volledige gids voor BIS Certificering voor Zaklamp volgens IS 2083:2024. Ken het proces, kosten, documenten, testen en BIS licentie voordelen.";
   const twitterDescription =
-    "Apply for BIS Certificate for Chair & Stool under IS 17632:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Vraag BIS Certificaat aan voor Zaklamp onder IS 2083:2024. Leer BIS proces, documenten, testen, kosten en tijdlijn in India.";
   const metaKeywords =
-    "BIS Certificate for Chair & Stool, BIS License for Chair & Stool, IS 17632:2022, BIS Certification for Chair & Stool";
+    "BIS Certificaat voor Zaklamp, BIS Licentie voor Zaklamp, IS 2083:2024, BIS Certificering voor Zaklamp";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/chairs-and-stools-is-17632";
+    "https://bis-certifications.com/blogs/isi-products/zaklamp-is-2083";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -76,77 +76,6 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
-      {/* Hreflang Tags */}
-      <link
-        rel="alternate"
-        hrefLang="x-default"
-        href="https://bis-certifications.com/bis-certification-for-chair-&-stools-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="en"
-        href="https://bis-certifications.com/bis-certification-for-chair-&-stools-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ar"
-        href="https://bis-certifications.com/blogs/isi-products/karasi-wa-masaaid-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="zh"
-        href="https://bis-certifications.com/blogs/isi-products/yizi-he-dengzi-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="nl"
-        href="https://bis-certifications.com/blogs/isi-products/stoelen-en-krukken-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="fr"
-        href="https://bis-certifications.com/blogs/isi-products/chaises-et-tabourets-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="de"
-        href="https://bis-certifications.com/blogs/isi-products/stuhle-und-hocker-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="id"
-        href="https://bis-certifications.com/blogs/isi-products/kursi-dan-bangku-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="it"
-        href="https://bis-certifications.com/blogs/isi-products/sedie-e-sgabelli-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ja"
-        href="https://bis-certifications.com/blogs/isi-products/isu-to-suturu-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ko"
-        href="https://bis-certifications.com/blogs/isi-products/uija-mich-seutul-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="es"
-        href="https://bis-certifications.com/blogs/isi-products/sillas-y-taburetes-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="th"
-        href="https://bis-certifications.com/blogs/isi-products/ghao-lae-mang-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="vi"
-        href="https://bis-certifications.com/blogs/isi-products/ghe-va-ghe-dau-is-17632"
-      />
     </Helmet>
   );
 };
@@ -170,7 +99,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">Latest Blogs</Link>
+                    <Link to="/Blogs">Laatste Blogs</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -179,7 +108,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Chair & Stools – IS 17632:2022
+                    BIS Certificaat voor Zaklamp – IS 2083:2024
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -199,7 +128,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentEng />
+        <ServicesRightSideContentDutch />
       </div>
     </div>
   );
@@ -211,664 +140,662 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for General Purpose Chairs and Stools – Complete Guide
-          to IS 17632:2022
+          BIS Certificaat voor Zaklamp onder IS 2083:2024 – Volledige Compliance
+          Gids
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="BIS License for Chair & Stools"
-            alt="BIS Certificate for Chair & Stools - IS 17632:2022 BIS Certification"
+            src="/BISCertificationProductsImages/BISLicenseforFlashlight.png"
+            title="BIS Licentie voor Zaklamp"
+            alt="BIS Certificaat voor Zaklamp - IS 2083:2024 BIS Certificering"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for General Purpose Chairs and Stools is a
-          mandatory requirement under Indian Standard IS 17632:2022. This
-          standard specifies the safety, durability, and performance
-          requirements for chairs and stools used in homes, offices, commercial
-          areas, educational institutions, cafeterias, restaurants, hotels, and
-          public spaces.
+          Zaklampen (vaak aangeduid als fakkels) zijn essentiële draagbare
+          verlichtingsapparaten die worden gebruikt in huishoudens, industrieën,
+          hulpdiensten, veiligheidsdiensten, buitenactiviteiten en
+          rampenbestrijding. Omdat zaklampen elektrische producten zijn die
+          batterijen, circuits, lichtbronnen en behuizingen bevatten, is
+          kwaliteit en veiligheidsnaleving van cruciaal belang.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chairs and stools are among the most used furniture items and are
-          constantly subjected to load, movement, and repetitive stress. A
-          structurally weak chair or stool can collapse suddenly, leading to
-          injuries. To prevent such hazards and ensure consumer safety, the
-          Bureau of Indian Standards (BIS) requires every manufacturer and
-          importer to obtain BIS Certification for Chairs and Stools before
-          selling them in India.
+          Om de productkwaliteit, prestaties en consumentenveiligheid te
+          reguleren, heeft het Bureau of Indian Standards (BIS) IS 2083:2024 –
+          Zaklamp: Specificatie bekendgemaakt, waardoor BIS Certificering
+          verplicht is voor zaklampen die in India worden verkocht, vervaardigd
+          of geïmporteerd.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This page provides a complete guide to BIS Certification for chairs
-          and stools under IS 17632:2022, including the certification process,
-          required documents, testing requirements, fees, challenges, penalties,
-          and benefits.
+          Deze pagina biedt een uitgebreide en originele uitleg van BIS
+          Certificering voor zaklampen, inclusief de toepasselijke standaard,
+          certificeringsproces, testvereisten, documentatie, kosten, tijdlijnen,
+          boetes en nalevingsverantwoordelijkheden.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          Wat is BIS Certificering en Waarom het van Toepassing is op Zaklampen
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product compliance system governed by the
-          Bureau of Indian Standards, the national standards authority of India.
+          Het Bureau of Indian Standards (BIS) is India&apos;s nationale
+          normalisatie-instantie die verantwoordelijk is voor het waarborgen dat
+          producten die op de Indiase markt worden verkocht voldoen aan
+          voorgeschreven veiligheids-, kwaliteits- en prestatienormen.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
+          Betekenis van BIS Certificering
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS Certificate ensures that a product:
+          Een BIS Certificaat bevestigt dat een zaklamp:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Meets Indian safety and quality standards</li>
-          <li>Has passed BIS-approved lab testing</li>
-          <li>Has undergone factory inspection</li>
-          <li>Saves consumers from unsafe or substandard products</li>
+          <li>Voldoet aan de Indiase Standaard IS 2083:2024</li>
+          <li>Alle verplichte laboratoriumtests heeft doorstaan</li>
+          <li>Voldoet aan elektrische, mechanische en prestatie-eisen</li>
+          <li>Veilig is voor consumentengebruik</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Certified products display the ISI Mark, demonstrating compliance with
-          Indian Standards.
+          Eenmaal goedgekeurd, mag de fabrikant het ISI-merk aanbrengen, wat
+          naleving van Indiase Standaarden betekent.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable Standard – IS 17632:2022 for Chairs & Stools
+          Toepasselijke Indiase Standaard – IS 2083:2024 (Zaklamp: Specificatie)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Standard for chairs and stools is:
+          🔹 <strong>IS 2083:2024</strong> – Zaklamp: Specificatie
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – General Purpose Chairs and Stools:
-          Safety Requirements
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This standard covers all non-specialized chairs and stools used for
-          seating purposes in homes, offices, commercial environments, public
-          places, and institutional settings.
+          IS 2083:2024 definieert de constructie-, prestatie-, veiligheids- en
+          testvereisten voor draagbare zaklampen die worden gebruikt voor
+          algemene verlichting.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Products Covered Under IS 17632:2022
+          Reikwijdte van IS 2083:2024
         </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De standaard dekt:
+        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>General-purpose chairs</li>
-          <li>Dining chairs</li>
-          <li>Office visitor chairs</li>
-          <li>Study chairs</li>
-          <li>Cafeteria chairs</li>
-          <li>Restaurant chairs</li>
-          <li>Meeting room chairs</li>
-          <li>Waiting area chairs</li>
-          <li>Wooden chairs</li>
-          <li>Metal chairs</li>
-          <li>Plastic chairs (non-specialized)</li>
-          <li>General-purpose stools</li>
-          <li>Bar stools</li>
-          <li>Dining stools</li>
-          <li>Step stools (within defined criteria)</li>
+          <li>Handzaklampen (fakkels)</li>
+          <li>Op batterijen werkende zaklampen</li>
+          <li>Oplaadbare zaklampen</li>
+          <li>LED zaklampen</li>
+          <li>Nood- en gebruikszaklampen</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Key Safety & Performance Parameters
+          Belangrijke Gebieden Gedekt door de Standaard
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 evaluates:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural strength</li>
-          <li>Stability</li>
-          <li>Durability under repeated use</li>
-          <li>Seat strength</li>
-          <li>Backrest performance</li>
-          <li>Leg impact resistance</li>
-          <li>Joint strength</li>
-          <li>Surface finish quality</li>
-          <li>Edge and corner safety</li>
-          <li>Material quality</li>
+          <li>Elektrische veiligheid</li>
+          <li>Lichtprestaties</li>
+          <li>Mechanische sterkte</li>
+          <li>Batterijcompatibiliteit</li>
+          <li>Schakelaar duurzaamheid</li>
+          <li>Bescherming tegen oververhitting</li>
+          <li>Weerstand tegen normale slijtage</li>
+          <li>Markerings- en etiketteringsvereisten</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          All chairs and stools sold in India must comply with these parameters
-          and obtain a BIS License for Chairs and Stools.
+          Elke zaklamp die onder deze reikwijdte valt, moet een BIS Licentie
+          voor Zaklamp verkrijgen voordat deze de Indiase markt betreedt.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Chairs & Stools
+          Waarom BIS Certificering Verplicht is voor Zaklampen
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chairs and stools bear human weight and are used frequently across all
-          environments. Structural failure can lead to:
+          Zaklampen worden breed gebruikt door consumenten van alle
+          leeftijdsgroepen en in kritieke situaties zoals noodsituaties,
+          stroomuitval en industriële operaties. Ondermaatse zaklampen kunnen
+          veroorzaken:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Collapsing chairs</li>
-          <li>Breakage of legs</li>
-          <li>Seat cracking</li>
-          <li>Backrest failure</li>
-          <li>Injury due to sharp edges</li>
-          <li>Instability leading to falls</li>
+          <li>Elektrische kortsluitingen</li>
+          <li>Batterijlekkage of explosie</li>
+          <li>Oververhitting</li>
+          <li>Brandgevaar</li>
+          <li>Slechte verlichtingsprestaties</li>
+          <li>Voortijdig falen</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Benefits of BIS Certification
+          BIS Certificering Waarborgt
         </h3>
-
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ensures safe seating products</li>
-          <li>Prevents accidents and injuries</li>
-          <li>Improves product durability</li>
-          <li>Prevents substandard imports</li>
-          <li>Establishes uniform market quality</li>
-          <li>Enhances customer confidence</li>
-          <li>Mandatory by Indian law (BIS QCOs)</li>
+          <li>Elektrische en gebruikersveiligheid</li>
+          <li>Consistente lichtopbrengst</li>
+          <li>Duurzame constructie</li>
+          <li>Veilige batterijwerking</li>
+          <li>Naleving van Indiase regelgevingsvereisten</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Without BIS Certification, manufacturers cannot legally sell chairs or
-          stools in India.
+          Het verkopen van niet-gecertificeerde zaklampen is een wettelijke
+          overtreding onder de BIS Act, 2016.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Process for Chairs and Stools (IS 17632:2022)
+          Reikwijdte van BIS Licentie voor Zaklamp
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS process follows the ISI Mark Certification Scheme, involving
-          testing, inspection, and application verification.
+          <strong>1.1</strong> Deze standaard specificeert de vereisten en tests
+          voor zaklampen aangedreven door verwisselbare primaire batterijen en
+          verwisselbare/ingebouwde secundaire batterijen met een maximale
+          spanning van 48 V DC.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>1.2</strong> Deze standaard is van toepassing op vooraf
+          gefocuste en focusserende typen zaklampen met gloeilamp en LED-module
+          als lichtbron.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          <strong>1.3</strong> Het volgende valt niet onder de reikwijdte van
+          deze standaard:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            Snoer- en stekkerverbonden handlampen die binnen de reikwijdte van
+            IS 10322 (Deel 5/Sec 6) vallen;
+          </li>
+          <li>
+            Noodverlichting die binnen de reikwijdte van IS 10322 (Deel 5/Sec 8)
+            valt; en
+          </li>
+          <li>Zaklampen die bestemd zijn voor gevaarlijke locaties.</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certificeringsproces voor Zaklampen (IS 2083:2024)
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Het BIS certificeringsproces voor zaklampen wordt uitgevoerd onder het
+          ISI Mark Certificeringsschema (Schema-I) en omvat meerdere fasen.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 1 – Identify Product Type & Standard
+          Stap 1 – Productidentificatie en Standaardmapping
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De fabrikant moet bevestigen dat het product in aanmerking komt als
+          zaklamp onder IS 2083:2024 en identificeren:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Type zaklamp</li>
+          <li>Stroombron (batterij/oplaadbaar)</li>
+          <li>Lichtbron (LED, lamp, enz.)</li>
+          <li>Varianten en modellen</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Stap 2 – Online BIS Aanvraag
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De aanvraag wordt ingediend via het BIS Manak Online Portaal, samen
+          met:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Fabrikantgegevens</li>
+          <li>Fabriekadres</li>
+          <li>Productbeschrijving</li>
+          <li>Merk-/handelsmerkengegevens</li>
+          <li>Productieprocesinformatie</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Stap 3 – Betaling van BIS Kosten
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Toepasselijke kosten omvatten:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Aanvraagkosten</li>
+          <li>Verwerkingskosten</li>
+          <li>Producttestkosten</li>
+          <li>Fabrieksinspectiekosten</li>
+          <li>Markeringskosten</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Stap 4 – Producttesten volgens IS 2083:2024
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Confirm that the chair/stool falls under IS 17632:2022. Identify
-          design variants and materials used.
+          Monsters worden getest in een door BIS erkend laboratorium.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 2 – Submit BIS Application Online
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Application is filed through the BIS Manak Online Portal, requiring:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturer details</li>
-          <li>Factory information</li>
-          <li>Product specifications</li>
-          <li>Brand/trademark details</li>
-          <li>Manufacturing process workflow</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 3 – Pay BIS Certification Fees
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Fees include:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Processing fee</li>
-          <li>Sample testing charges</li>
-          <li>Factory inspection fees</li>
-          <li>Marking fees</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 4 – Product Testing as per IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory testing is performed in a BIS-recognized laboratory.
-        </p>
         <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tests Include:
+          Verplichte Tests voor Zaklampen
         </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stability Test</li>
-          <li>Strength Test for Seat</li>
-          <li>Backrest Durability Test</li>
-          <li>Leg Forward/Side/Rearward Loading Test</li>
-          <li>Seat Impact Test</li>
-          <li>Drop Test</li>
-          <li>Fatigue Test</li>
-          <li>Surface Finish Test</li>
-          <li>Sharp Edge Test</li>
-          <li>Structural durability under repeated cycles</li>
+          <li>Lichtintensiteitstest</li>
+          <li>Lichtopbrengststabiliteitstest</li>
+          <li>Batterijuithoudingsvermogenstest</li>
+          <li>Schakelaarwerkingstest</li>
+          <li>Mechanische sterkte (valtest)</li>
+          <li>Isolatieweerstandstest</li>
+          <li>Temperatuurstijgingstest</li>
+          <li>Elektrische veiligheidstest</li>
+          <li>Markerings- en etiketteringsverificatie</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Testrapporten worden rechtstreeks door het laboratorium bij BIS
+          ingediend.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Stap 5 – Fabrieksinspectie
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Een BIS-functionaris voert een inspectie ter plaatse uit om te
+          verifiëren:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Productie-opstelling</li>
+          <li>Kwaliteitscontrolesysteem</li>
+          <li>Inkomende materiaalscontrole</li>
+          <li>Procescontroles</li>
+          <li>Eindproducttesten</li>
+          <li>Kalibratie van testinstrumenten</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Test results must show full compliance with IS 17632:2022.
+          Naleving van het Test- en Inspectieschema (STI) is verplicht.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 5 – Factory Inspection by BIS
+          Stap 6 – Verlening van BIS Licentie
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS officer visits the factory to evaluate:
+          Na succesvolle testen en inspectie geeft BIS uit:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process</li>
-          <li>Raw material inspection</li>
-          <li>Quality control procedures</li>
-          <li>Testing capability</li>
-          <li>Calibration of equipment</li>
-          <li>Production volume</li>
-          <li>Compliance with BIS Scheme of Testing & Inspection (STI)</li>
+          <li>BIS Certificaat</li>
+          <li>ISI Mark goedkeuring</li>
+          <li>CML (Certificate of Manufacturing Licence) nummer</li>
         </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De fabrikant kan nu legaal zaklampen vervaardigen en verkopen in
+          India.
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 6 – Grant of BIS License
+          Stap 7 – Post-Certificering Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          If testing and inspection are successful, BIS issues:
+          Na certificering moeten fabrikanten:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS Certificate (ISI Mark License)</li>
-          <li>CML Number</li>
-          <li>Approval to affix the ISI Mark on chairs and stools</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 7 – Post-License Obligations
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Use the ISI Mark as per BIS labeling requirements</li>
-          <li>Maintain quality control records</li>
-          <li>Undergo regular BIS surveillance inspections</li>
-          <li>Renew license every 1–2 years</li>
+          <li>ISI Mark correct gebruiken op product en verpakking</li>
+          <li>Batchgewijze kwaliteitsgegevens bijhouden</li>
+          <li>BIS toezichtsinspecties toestaan</li>
+          <li>De licentie periodiek vernieuwen</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of BIS License for Chairs & Stools
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard covers the requirements for general purpose chairs and
-          stools. This standard applies to completely manufactured/fabricated
-          general purpose chairs and stools. It also applies to
-          ready-to-assemble units; in that case the requirements of this
-          standard shall apply to the assembled units.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification of Chairs & Stools
+          Vereiste Documenten voor BIS Certificering van Zaklampen
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manufacturer Documents
+          Productiedocumenten
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license/registration</li>
-          <li>Manufacturing process flowchart</li>
-          <li>Machinery list</li>
-          <li>In-house testing equipment list</li>
-          <li>Calibration certificates</li>
-          <li>Factory layout & floor plan</li>
+          <li>Fabriekregistratie/licentie</li>
+          <li>Productieproces flowchart</li>
+          <li>Lijst van machines</li>
+          <li>Lijst van intern testapparatuur</li>
+          <li>Kalibratiecertificaten</li>
+          <li>Fabrieksindeling</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technical Documents
+          Technische Documenten
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chair/stool drawings</li>
-          <li>Dimensions & specifications</li>
-          <li>Bill of materials</li>
-          <li>Safety features description</li>
-          <li>Internal quality test reports</li>
+          <li>Productspecificatieblad</li>
+          <li>Circuitdiagrammen</li>
+          <li>Batterijspecificaties</li>
+          <li>Materiaallijst</li>
+          <li>Interne testrapporten</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Legal Documents
+          Juridische Documenten
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identity & address proof</li>
-          <li>Brand authorization letter</li>
-          <li>Trademark certificate (optional)</li>
+          <li>Identiteitsbewijs van gemachtigde ondertekenaar</li>
+          <li>Adresbewijs</li>
+          <li>Merkautomatiseringsbrief</li>
+          <li>Handelsmerkencertificaat (indien van toepassing)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Application Documents
+          BIS-Specifieke Documenten
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application form</li>
-          <li>Test request form</li>
-          <li>Declaration forms</li>
-          <li>Authorization letter</li>
+          <li>BIS aanvraagformulier</li>
+          <li>Verplichtingen en verklaringen</li>
+          <li>Testverzoekbrief</li>
+          <li>Label ontwerp (ISI markeringsformaat)</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testing Requirements for Chairs & Stools (IS 17632:2022)
+          Testvereisten onder IS 2083:2024 (Gedetailleerd)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 includes extensive mechanical, structural, and safety
-          testing.
+          Zaklampen moeten rigoureuze testen ondergaan om veiligheid en
+          prestaties te waarborgen.
         </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Mandatory Tests
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Alleen producten die alle verplichte tests doorstaan, komen in
+          aanmerking voor BIS goedkeuring.
+        </p>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clause
+                  Clausule
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirement
+                  Vereiste
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
+                  5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design and workmanship
+                  Test voor afwerking
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
+                  6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Forwards Overbalancing and Sideways Overbalancing for Chairs
-                  without Arms
+                  Controle van afmetingen
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
+                  7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rearwards Overbalancing
+                  Controle van markeringen
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
+                  13.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sideways Overbalancing for Chairs with Arms
+                  Functionele test voor schakelaar
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
+                  14
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stools/ Poufs (All Directions)
+                  Isolatieweerstandstest
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
+                  16
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Strength Test
+                  Lichtverdelingstest
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  18
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Circuitstroom van LED zaklamp
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  19
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Test voor laadstroom in ingebouwde oplaadbare batterij
+                  werkende zaklampen
                 </TableCell>
               </TableRow>
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          These tests ensure safe daily use under real-world conditions.
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Veelvoorkomende Uitdagingen in BIS Certificering voor Zaklampen
+        </h2>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Falen in temperatuurstijgingstest</li>
+          <li>Inconsistente lichtopbrengst</li>
+          <li>Slechte schakelaar duurzaamheid</li>
+          <li>Batterijcompatibiliteitsproblemen</li>
+          <li>Onjuist ISI-labelformaat</li>
+          <li>Onvolledige documentatie</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Voorafgaande testen en expertbegeleiding verminderen aanzienlijk de
+          risico&apos;s van afwijzing.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Common Challenges & How to Avoid Them
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Chair failing stability tests</strong>
-            <br />
-            Occurs due to improper weight distribution.
-            <br />
-            Fix: Improve leg design, widen base area.
-          </li>
-          <li>
-            <strong>Weak joints causing test failures</strong>
-            <br />
-            Fix: Use reinforced materials & better connectors.
-          </li>
-          <li>
-            <strong>Inadequate in-house testing equipment</strong>
-            <br />
-            Fix: Install required BIS-compliant instruments.
-          </li>
-          <li>
-            <strong>Documentation inconsistencies</strong>
-            <br />
-            Fix: Prepare documents systematically before applying.
-          </li>
-          <li>
-            <strong>Product variants not mapped properly</strong>
-            <br />
-            Fix: Group products based on structure & test parameters.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Chairs & Stools
+          Voordelen van BIS Certificering voor Zaklampfabrikanten
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal permission to sell in India</li>
-          <li>Improved product safety</li>
-          <li>Enhanced customer trust</li>
-          <li>Lower product liability risk</li>
-          <li>Required for e-commerce listings</li>
-          <li>Essential for government tenders</li>
-          <li>Higher brand credibility</li>
-          <li>Competitive advantage</li>
+          <li>Wettelijke toestemming om te verkopen in India</li>
+          <li>Verbeterd consumentenvertrouwen</li>
+          <li>Verbeterde productbetrouwbaarheid</li>
+          <li>Acceptatie op e-commerceplatforms</li>
+          <li>In aanmerking komen voor overheidsopdrachten</li>
+          <li>Verminderde aansprakelijkheid en terugroepacties</li>
+          <li>Sterke merkgeloofwaardigheid</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
+          Boetes voor het Verkopen van Zaklampen Zonder BIS Certificering
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling chairs or stools without BIS certification may lead to:
+          Niet-naleving kan resulteren in:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary fines</li>
-          <li>Product recall/seizure</li>
-          <li>Cancellation of factory licenses</li>
-          <li>Criminal prosecution</li>
-          <li>Import restrictions</li>
-          <li>Market blacklisting</li>
+          <li>Productinbeslagname</li>
+          <li>Zware geldelijke boetes</li>
+          <li>Importverboden</li>
+          <li>Productie-stilleggingen</li>
+          <li>Strafrechtelijke vervolging onder de BIS Act</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Penalties are enforced under the BIS Act, 2016.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Chairs & Stools?
+          Wie Heeft BIS Certificering Nodig voor Zaklampen?
         </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory for:
-        </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Foreign manufacturers exporting to India</li>
-          <li>Importers</li>
-          <li>Brand owners/traders</li>
-          <li>OEM/ODM suppliers</li>
-          <li>Retail chains</li>
-          <li>Online sellers</li>
+          <li>Indiase fabrikanten</li>
+          <li>Buitenlandse fabrikanten die exporteren naar India</li>
+          <li>Importeurs</li>
+          <li>Merkeigenaren</li>
+          <li>OEM/ODM leveranciers</li>
+          <li>Online verkopers en distributeurs</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each factory requires a separate BIS License.
+          Elke productie-eenheid vereist een afzonderlijke BIS licentie.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Conclusion
+          Conclusie
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for General Purpose Chairs and Stools under IS
-          17632:2022 is mandatory for ensuring product safety, structural
-          stability, and durability. BIS certification not only helps
-          manufacturers maintain high-quality standards but also enables legal
-          market access and increases consumer confidence.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          With professional assistance, the certification process—from testing
-          to inspection and approval—becomes smooth, predictable, and fully
-          compliant.
+          Het BIS Certificaat voor Zaklamp onder IS 2083:2024 is een verplichte
+          regelgevingsvereiste die veiligheid, prestaties en betrouwbaarheid van
+          draagbare verlichtingsproducten in India waarborgt. Naleving beschermt
+          niet alleen consumenten, maar versterkt ook merkgeloofwaardigheid en
+          markttoegang. Met professionele begeleiding kunnen fabrikanten en
+          importeurs BIS certificering soepel en efficiënt verkrijgen.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS Certificate for Chairs and Stools
+          Veelgestelde Vragen – BIS Certificaat voor Zaklamp (IS 2083:2024)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                1. Is BIS Certification mandatory for chairs and stools?
+                1. Is BIS Certificering verplicht voor zaklampen in India?
               </strong>
               <br />
-              Yes, as per IS 17632:2022, all general-purpose chairs and stools
-              must be BIS certified before being sold in India.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required?</strong>
-              <br />
-              Stability, strength, durability, impact, fatigue, and material
-              safety tests.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. How long does BIS certification take?</strong>
-              <br />
-              Typically 30–45 days.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. What is the certification cost?</strong>
-              <br />
-              Around ₹60,000–₹1,30,000 depending on testing and inspection.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Can foreign manufacturers apply?</strong>
-              <br />
-              Yes, under the FMCS scheme.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Is ISI marking mandatory?</strong>
-              <br />
-              Yes, after BIS license is granted.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Why do chairs fail BIS testing?</strong>
-              <br />
-              Common causes include weak legs, poor joint strength, and
-              instability.
+              Ja. Zaklampen die onder IS 2083:2024 vallen, moeten BIS
+              gecertificeerd zijn.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. Can multiple models be covered under one license?
+                2. Welke standaard is van toepassing op zaklampen?
               </strong>
               <br />
-              Only if they meet similarity and standard compliance criteria.
+              IS 2083:2024 – Zaklamp: Specificatie.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is a factory inspection required?</strong>
+              <strong>3. Hoe lang duurt het BIS-proces?</strong>
               <br />
-              Yes, it is compulsory for ISI mark certification.
+              Ongeveer 30-45 werkdagen voor Indiase Fabrikanten en ongeveer 120
+              dagen voor Buitenlandse Fabrikanten.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. What documents are needed?</strong>
+              <strong>
+                4. Kunnen buitenlandse fabrikanten BIS certificering aanvragen?
+              </strong>
               <br />
-              Factory license, technical specs, machinery list, QC plan, product
-              drawings, etc.
+              Ja, via het FMCS-schema.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Is ISI-markering verplicht?</strong>
+              <br />
+              Ja, ISI Mark moet worden weergegeven op gecertificeerde zaklampen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                6. Wat gebeurt er als een zaklamp de test niet doorstaat?
+              </strong>
+              <br />
+              Het product moet worden gecorrigeerd en opnieuw getest.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>7. Zijn oplaadbare zaklampen ook gedekt?</strong>
+              <br />
+              Ja, als ze binnen de reikwijdte van IS 2083:2024 vallen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. Hoe lang is de BIS licentie geldig?</strong>
+              <br />
+              1-2 jaar, verlengbaar.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. Kunnen meerdere modellen onder één licentie worden gedekt?
+              </strong>
+              <br />
+              Ja, als ze voldoen aan gelijkeniscriteria.
             </p>
           </div>
         </div>
@@ -876,8 +803,8 @@ const MainContentLeft = () => {
         {/* PDF Viewer Section */}
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
-            src="/BIS-Product-Pdf/IS-17632-2022-Sun-Certifications-India.pdf"
-            title="BIS Certificate for Chair & Stools - IS 17632:2022 PDF"
+            src="/BIS-Product-Pdf/IS-2083-2024-Sun-Certifications-India.pdf"
+            title="BIS Certificate for Flashlight - IS 2083:2024 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -886,9 +813,8 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoRead />
-
-        <FaqAuthorEng questionNumber={1} />
+        <ManyUsersAlsoReadDutch />
+        <FaqAuthorDutch questionNumber={4} />
       </div>
     </div>
   );
@@ -901,7 +827,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
-              Our Services
+              Onze Diensten
             </h2>
           </BoxReveal>
 
@@ -909,7 +835,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India&apos;s Best Certificate Consultant
+                India&apos;s Beste Certificaat Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -930,7 +856,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Mark (ISI License) for Foreign Manufacture
+              BIS Mark (ISI Licentie) voor Buitenlandse Fabrikanten
             </p>
           </Link>
 
@@ -947,7 +873,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO Registration Certification
+              CDSCO Registratie Certificering
             </p>
           </Link>
 
@@ -964,7 +890,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registration
+              BIS (CRS) Registratie
             </p>
           </Link>
 
@@ -981,7 +907,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Plastic Waste Management
+              Beheer van Plastic Afval
             </p>
           </Link>
 
@@ -998,7 +924,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR Certificate certifications
+              EPR Certificaat certificeringen
             </p>
           </Link>
 
@@ -1015,7 +941,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC Certificate certifications
+              LMPC Certificaat certificeringen
             </p>
           </Link>
 
@@ -1032,7 +958,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Registration Certificate
+              BIS Registratie Certificaat
             </p>
           </Link>
 
@@ -1049,7 +975,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI MARK (BIS) for Indian Manufactures
+              ISI MARK (BIS) voor Indiase Fabrikanten
             </p>
           </Link>
         </div>

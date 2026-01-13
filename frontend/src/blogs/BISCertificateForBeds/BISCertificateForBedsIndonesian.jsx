@@ -75,6 +75,77 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+      {/* Hreflang Tags */}
+      <link
+        rel="alternate"
+        hrefLang="x-default"
+        href="https://bis-certifications.com/blogs/isi-products/beds-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="en"
+        href="https://bis-certifications.com/blogs/isi-products/beds-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ar"
+        href="https://bis-certifications.com/blogs/isi-products/asrat-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="zh"
+        href="https://bis-certifications.com/blogs/isi-products/chuangju-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="nl"
+        href="https://bis-certifications.com/blogs/isi-products/bedden-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="fr"
+        href="https://bis-certifications.com/blogs/isi-products/lits-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="de"
+        href="https://bis-certifications.com/blogs/isi-products/betten-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="id"
+        href="https://bis-certifications.com/blogs/isi-products/ranjang-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="it"
+        href="https://bis-certifications.com/blogs/isi-products/letti-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ja"
+        href="https://bis-certifications.com/blogs/isi-products/beddo-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ko"
+        href="https://bis-certifications.com/blogs/isi-products/chimdae-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="es"
+        href="https://bis-certifications.com/blogs/isi-products/camas-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="th"
+        href="https://bis-certifications.com/blogs/isi-products/teng-is-17635"
+      />
+      <link
+        rel="alternate"
+        hrefLang="vi"
+        href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
+      />
     </Helmet>
   );
 };

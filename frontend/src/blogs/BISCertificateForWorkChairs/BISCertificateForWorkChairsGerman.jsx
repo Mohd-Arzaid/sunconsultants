@@ -78,6 +78,77 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+      {/* Hreflang Tags */}
+      <link
+        rel="alternate"
+        hrefLang="x-default"
+        href="https://bis-certifications.com/blogs/isi-products/work-chairs-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="en"
+        href="https://bis-certifications.com/blogs/isi-products/work-chairs-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ar"
+        href="https://bis-certifications.com/blogs/isi-products/karasi-al-amal-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="zh"
+        href="https://bis-certifications.com/blogs/isi-products/gong-zuo-yi-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="nl"
+        href="https://bis-certifications.com/blogs/isi-products/werkstoelen-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="fr"
+        href="https://bis-certifications.com/blogs/isi-products/chaises-de-travail-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="de"
+        href="https://bis-certifications.com/blogs/isi-products/arbeitsstuhle-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="id"
+        href="https://bis-certifications.com/blogs/isi-products/kursi-kerja-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="it"
+        href="https://bis-certifications.com/blogs/isi-products/sedie-da-lavoro-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ja"
+        href="https://bis-certifications.com/blogs/isi-products/sagyou-you-isu-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ko"
+        href="https://bis-certifications.com/blogs/isi-products/eobmuyong-uija-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="es"
+        href="https://bis-certifications.com/blogs/isi-products/sillas-de-trabajo-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="th"
+        href="https://bis-certifications.com/blogs/isi-products/ghao-ngan-is-17631"
+      />
+      <link
+        rel="alternate"
+        hrefLang="vi"
+        href="https://bis-certifications.com/blogs/isi-products/ghe-lam-viec-is-17631"
+      />
     </Helmet>
   );
 };

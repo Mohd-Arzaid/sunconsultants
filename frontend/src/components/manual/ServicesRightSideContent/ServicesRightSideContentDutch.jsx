@@ -87,6 +87,8 @@ const ServicesRightSideContentDutch = () => {
     "/blogs/isi-products/werkstoelen-is-17631",
     // Chair And Stools Dutch Page Url
     "/blogs/isi-products/stoelen-en-krukken-is-17632",
+    // BIS Certificate for Flashlight Dutch Page Url
+    "/blogs/isi-products/zaklamp-is-2083",
   ];
 
   // Check if current path should show these components
@@ -715,6 +717,9 @@ const ContactFormServicesRightSideContentDutch = () => {
       return "BIS Certificate for Work Chairs (Dutch)";
     if (path.includes("/blogs/isi-products/stoelen-en-krukken-is-17632"))
       return "BIS Certificate for Chair And Stools (Dutch)";
+    // BIS Certificate for Flashlight Dutch
+    if (path.includes("/blogs/isi-products/zaklamp-is-2083"))
+      return "BIS Certificate for Flashlight (Dutch)";
     return "";
   };
 

@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForChairAndStools = () => {
+const BISCertificateForFlashlight = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -38,22 +38,22 @@ const BISCertificateForChairAndStools = () => {
   );
 };
 
-export default BISCertificateForChairAndStools;
+export default BISCertificateForFlashlight;
 
 const MetaTags = () => {
-  const title = "BIS Certificate for Chair & Stool | IS 17632:2022 BIS License";
-  const ogTitle = "BIS Certification for Chair & Stool – IS 17632:2022 Guide";
-  const twitterTitle = "BIS License for Chair & Stool | IS 17632:2022";
+  const title = "BIS Certificate for Flashlight | IS 2083:2024 BIS License";
+  const ogTitle = "BIS Certification for Flashlight – IS 2083:2024 Guide";
+  const twitterTitle = "BIS License for Flashlight | IS 2083:2024";
   const metaDescription =
-    "Get BIS Certificate for Chair & Stool under IS 17632:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Flashlight under IS 2083:2024. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Chair & Stool as per IS 17632:2022. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Flashlight as per IS 2083:2024. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Chair & Stool under IS 17632:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Flashlight under IS 2083:2024. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Chair & Stool, BIS License for Chair & Stool, IS 17632:2022, BIS Certification for Chair & Stool";
+    "BIS Certificate for Flashlight, BIS License for Flashlight, IS 2083:2024, BIS Certification for Flashlight";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/chairs-and-stools-is-17632";
+    "https://bis-certifications.com/blogs/isi-products/flashlight-is-2083";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -76,77 +76,6 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
-      {/* Hreflang Tags */}
-      <link
-        rel="alternate"
-        hrefLang="x-default"
-        href="https://bis-certifications.com/bis-certification-for-chair-&-stools-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="en"
-        href="https://bis-certifications.com/bis-certification-for-chair-&-stools-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ar"
-        href="https://bis-certifications.com/blogs/isi-products/karasi-wa-masaaid-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="zh"
-        href="https://bis-certifications.com/blogs/isi-products/yizi-he-dengzi-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="nl"
-        href="https://bis-certifications.com/blogs/isi-products/stoelen-en-krukken-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="fr"
-        href="https://bis-certifications.com/blogs/isi-products/chaises-et-tabourets-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="de"
-        href="https://bis-certifications.com/blogs/isi-products/stuhle-und-hocker-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="id"
-        href="https://bis-certifications.com/blogs/isi-products/kursi-dan-bangku-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="it"
-        href="https://bis-certifications.com/blogs/isi-products/sedie-e-sgabelli-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ja"
-        href="https://bis-certifications.com/blogs/isi-products/isu-to-suturu-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ko"
-        href="https://bis-certifications.com/blogs/isi-products/uija-mich-seutul-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="es"
-        href="https://bis-certifications.com/blogs/isi-products/sillas-y-taburetes-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="th"
-        href="https://bis-certifications.com/blogs/isi-products/ghao-lae-mang-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="vi"
-        href="https://bis-certifications.com/blogs/isi-products/ghe-va-ghe-dau-is-17632"
-      />
     </Helmet>
   );
 };
@@ -179,7 +108,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Chair & Stools – IS 17632:2022
+                    BIS Certificate for Flashlight – IS 2083:2024
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -211,375 +140,393 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for General Purpose Chairs and Stools – Complete Guide
-          to IS 17632:2022
+          BIS Certificate for Flashlight under IS 2083:2024 – Complete
+          Compliance Guide
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="BIS License for Chair & Stools"
-            alt="BIS Certificate for Chair & Stools - IS 17632:2022 BIS Certification"
+            src="/BISCertificationProductsImages/BISLicenseforFlashlight.png"
+            title="BIS License for Flashlight"
+            alt="BIS Certificate for Flashlight - IS 2083:2024 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for General Purpose Chairs and Stools is a
-          mandatory requirement under Indian Standard IS 17632:2022. This
-          standard specifies the safety, durability, and performance
-          requirements for chairs and stools used in homes, offices, commercial
-          areas, educational institutions, cafeterias, restaurants, hotels, and
-          public spaces.
+          Flashlights (commonly referred to as torches) are essential portable
+          lighting devices used across households, industries, emergency
+          services, security operations, outdoor activities, and disaster
+          management. Because flashlights are electrical products that involve
+          batteries, circuitry, light sources, and enclosures, quality and
+          safety compliance is critical.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chairs and stools are among the most used furniture items and are
-          constantly subjected to load, movement, and repetitive stress. A
-          structurally weak chair or stool can collapse suddenly, leading to
-          injuries. To prevent such hazards and ensure consumer safety, the
-          Bureau of Indian Standards (BIS) requires every manufacturer and
-          importer to obtain BIS Certification for Chairs and Stools before
-          selling them in India.
+          To regulate product quality, performance, and consumer safety, the
+          Bureau of Indian Standards (BIS) has notified IS 2083:2024 –
+          Flashlight: Specification, making BIS Certification mandatory for
+          flashlights sold, manufactured, or imported into India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This page provides a complete guide to BIS Certification for chairs
-          and stools under IS 17632:2022, including the certification process,
-          required documents, testing requirements, fees, challenges, penalties,
-          and benefits.
+          This page provides a comprehensive and original explanation of BIS
+          Certification for flashlights, covering the applicable standard,
+          certification process, testing requirements, documentation, fees,
+          timelines, penalties, and compliance responsibilities.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          What is BIS Certification and Why It Applies to Flashlights
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product compliance system governed by the
-          Bureau of Indian Standards, the national standards authority of India.
+          The Bureau of Indian Standards (BIS) is India&apos;s national
+          standards authority responsible for ensuring that products sold in the
+          Indian market meet prescribed safety, quality, and performance
+          benchmarks.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
+          Meaning of BIS Certification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS Certificate ensures that a product:
+          A BIS Certificate confirms that a flashlight:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Meets Indian safety and quality standards</li>
-          <li>Has passed BIS-approved lab testing</li>
-          <li>Has undergone factory inspection</li>
-          <li>Saves consumers from unsafe or substandard products</li>
+          <li>Conforms to Indian Standard IS 2083:2024</li>
+          <li>Has passed all mandatory laboratory tests</li>
+          <li>Meets electrical, mechanical, and performance requirements</li>
+          <li>Is safe for consumer use</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Certified products display the ISI Mark, demonstrating compliance with
-          Indian Standards.
+          Once approved, the manufacturer is permitted to affix the ISI Mark,
+          which signifies compliance with Indian Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable Standard – IS 17632:2022 for Chairs & Stools
+          Applicable Indian Standard – IS 2083:2024 (Flashlight: Specification)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Standard for chairs and stools is:
+          🔹 <strong>IS 2083:2024</strong> – Flashlight: Specification
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – General Purpose Chairs and Stools:
-          Safety Requirements
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This standard covers all non-specialized chairs and stools used for
-          seating purposes in homes, offices, commercial environments, public
-          places, and institutional settings.
+          IS 2083:2024 defines the construction, performance, safety, and
+          testing requirements for portable flashlights used for general
+          illumination.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Products Covered Under IS 17632:2022
+          Scope of IS 2083:2024
         </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard covers:
+        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>General-purpose chairs</li>
-          <li>Dining chairs</li>
-          <li>Office visitor chairs</li>
-          <li>Study chairs</li>
-          <li>Cafeteria chairs</li>
-          <li>Restaurant chairs</li>
-          <li>Meeting room chairs</li>
-          <li>Waiting area chairs</li>
-          <li>Wooden chairs</li>
-          <li>Metal chairs</li>
-          <li>Plastic chairs (non-specialized)</li>
-          <li>General-purpose stools</li>
-          <li>Bar stools</li>
-          <li>Dining stools</li>
-          <li>Step stools (within defined criteria)</li>
+          <li>Handheld flashlights (torches)</li>
+          <li>Battery-operated flashlights</li>
+          <li>Rechargeable flashlights</li>
+          <li>LED flashlights</li>
+          <li>Emergency and utility flashlights</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Key Safety & Performance Parameters
+          Key Areas Covered by the Standard
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 evaluates:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural strength</li>
-          <li>Stability</li>
-          <li>Durability under repeated use</li>
-          <li>Seat strength</li>
-          <li>Backrest performance</li>
-          <li>Leg impact resistance</li>
-          <li>Joint strength</li>
-          <li>Surface finish quality</li>
-          <li>Edge and corner safety</li>
-          <li>Material quality</li>
+          <li>Electrical safety</li>
+          <li>Luminous performance</li>
+          <li>Mechanical strength</li>
+          <li>Battery compatibility</li>
+          <li>Switch durability</li>
+          <li>Protection against overheating</li>
+          <li>Resistance to normal wear and tear</li>
+          <li>Marking and labeling requirements</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          All chairs and stools sold in India must comply with these parameters
-          and obtain a BIS License for Chairs and Stools.
+          Any flashlight that falls under this scope must obtain a BIS License
+          for Flashlight before entering the Indian market.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Chairs & Stools
+          Why BIS Certification is Mandatory for Flashlights
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chairs and stools bear human weight and are used frequently across all
-          environments. Structural failure can lead to:
+          Flashlights are widely used by consumers of all age groups and in
+          critical situations such as emergencies, power outages, and industrial
+          operations. Substandard flashlights can cause:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Collapsing chairs</li>
-          <li>Breakage of legs</li>
-          <li>Seat cracking</li>
-          <li>Backrest failure</li>
-          <li>Injury due to sharp edges</li>
-          <li>Instability leading to falls</li>
+          <li>Electrical short circuits</li>
+          <li>Battery leakage or explosion</li>
+          <li>Overheating</li>
+          <li>Fire hazards</li>
+          <li>Poor illumination performance</li>
+          <li>Premature failure</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Benefits of BIS Certification
+          BIS Certification Ensures
         </h3>
-
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ensures safe seating products</li>
-          <li>Prevents accidents and injuries</li>
-          <li>Improves product durability</li>
-          <li>Prevents substandard imports</li>
-          <li>Establishes uniform market quality</li>
-          <li>Enhances customer confidence</li>
-          <li>Mandatory by Indian law (BIS QCOs)</li>
+          <li>Electrical and user safety</li>
+          <li>Consistent light output</li>
+          <li>Durable construction</li>
+          <li>Safe battery operation</li>
+          <li>Compliance with Indian regulatory requirements</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Without BIS Certification, manufacturers cannot legally sell chairs or
-          stools in India.
+          Selling non-certified flashlights is a legal violation under the BIS
+          Act, 2016.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Process for Chairs and Stools (IS 17632:2022)
+          Scope of BIS License for Flashlight
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS process follows the ISI Mark Certification Scheme, involving
-          testing, inspection, and application verification.
+          <strong>1.1</strong> This standard specifies the requirements and
+          tests for flashlights powered by replaceable primary batteries and
+          replaceable/built-in secondary batteries with a maximum voltage of 48
+          V d.c.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 1 – Identify Product Type & Standard
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Confirm that the chair/stool falls under IS 17632:2022. Identify
-          design variants and materials used.
+          <strong>1.2</strong> This standard is applicable to pre-focused as
+          well as focusing type of flashlights with incandescent bulb and LED
+          module as light source.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          <strong>1.3</strong> The following are not covered under the scope of
+          this standard:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            Cord and plug connected handlamps that are within the scope of IS
+            10322 (Part 5/Sec 6);
+          </li>
+          <li>
+            Emergency lighting that is within the scope of IS 10322 (Part 5/Sec
+            8); and
+          </li>
+          <li>Flashlights that are intended for hazardous locations.</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certification Process for Flashlights (IS 2083:2024)
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS certification process for flashlights is conducted under the
+          ISI Mark Certification Scheme (Scheme-I) and involves multiple stages.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 2 – Submit BIS Application Online
+          Step 1 – Product Identification & Standard Mapping
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Application is filed through the BIS Manak Online Portal, requiring:
+          The manufacturer must confirm that the product qualifies as a
+          flashlight under IS 2083:2024 and identify:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Type of flashlight</li>
+          <li>Power source (battery/rechargeable)</li>
+          <li>Light source (LED, bulb, etc.)</li>
+          <li>Variants and models</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Step 2 – Online BIS Application
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The application is submitted through the BIS Manak Online Portal,
+          along with:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Manufacturer details</li>
-          <li>Factory information</li>
-          <li>Product specifications</li>
+          <li>Factory address</li>
+          <li>Product description</li>
           <li>Brand/trademark details</li>
-          <li>Manufacturing process workflow</li>
+          <li>Manufacturing process information</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 3 – Pay BIS Certification Fees
+          Step 3 – Payment of BIS Fees
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Fees include:</p>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Applicable fees include:
+        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Application fee</li>
-          <li>Processing fee</li>
-          <li>Sample testing charges</li>
-          <li>Factory inspection fees</li>
-          <li>Marking fees</li>
+          <li>Processing charges</li>
+          <li>Product testing fees</li>
+          <li>Factory inspection charges</li>
+          <li>Marking fee</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 4 – Product Testing as per IS 17632:2022
+          Step 4 – Product Testing as per IS 2083:2024
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory testing is performed in a BIS-recognized laboratory.
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Samples are tested at a BIS-recognized laboratory.
         </p>
+
         <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tests Include:
+          Mandatory Tests for Flashlights
         </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stability Test</li>
-          <li>Strength Test for Seat</li>
-          <li>Backrest Durability Test</li>
-          <li>Leg Forward/Side/Rearward Loading Test</li>
-          <li>Seat Impact Test</li>
-          <li>Drop Test</li>
-          <li>Fatigue Test</li>
-          <li>Surface Finish Test</li>
-          <li>Sharp Edge Test</li>
-          <li>Structural durability under repeated cycles</li>
+          <li>Luminous intensity test</li>
+          <li>Light output stability test</li>
+          <li>Battery endurance test</li>
+          <li>Switch operation test</li>
+          <li>Mechanical strength (drop test)</li>
+          <li>Insulation resistance test</li>
+          <li>Temperature rise test</li>
+          <li>Electrical safety test</li>
+          <li>Marking and labeling verification</li>
         </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          Test results must show full compliance with IS 17632:2022.
+          Test reports are directly submitted to BIS by the laboratory.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 5 – Factory Inspection by BIS
+          Step 5 – Factory Inspection
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS officer visits the factory to evaluate:
+          A BIS officer conducts an on-site inspection to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process</li>
-          <li>Raw material inspection</li>
-          <li>Quality control procedures</li>
-          <li>Testing capability</li>
-          <li>Calibration of equipment</li>
-          <li>Production volume</li>
-          <li>Compliance with BIS Scheme of Testing & Inspection (STI)</li>
+          <li>Manufacturing setup</li>
+          <li>Quality control system</li>
+          <li>Incoming material inspection</li>
+          <li>In-process checks</li>
+          <li>Finished product testing</li>
+          <li>Calibration of test instruments</li>
         </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Compliance with the Scheme of Testing and Inspection (STI) is
+          mandatory.
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Step 6 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          If testing and inspection are successful, BIS issues:
+          After successful testing and inspection, BIS issues:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS Certificate (ISI Mark License)</li>
-          <li>CML Number</li>
-          <li>Approval to affix the ISI Mark on chairs and stools</li>
+          <li>BIS Certificate</li>
+          <li>ISI Mark approval</li>
+          <li>CML (Certificate of Manufacturing Licence) number</li>
         </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The manufacturer can now legally manufacture and sell flashlights in
+          India.
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 7 – Post-License Obligations
+          Step 7 – Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must:
+          After certification, manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Use the ISI Mark as per BIS labeling requirements</li>
-          <li>Maintain quality control records</li>
-          <li>Undergo regular BIS surveillance inspections</li>
-          <li>Renew license every 1–2 years</li>
+          <li>Use ISI Mark correctly on product and packaging</li>
+          <li>Maintain batch-wise quality records</li>
+          <li>Allow BIS surveillance inspections</li>
+          <li>Renew the license periodically</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of BIS License for Chairs & Stools
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard covers the requirements for general purpose chairs and
-          stools. This standard applies to completely manufactured/fabricated
-          general purpose chairs and stools. It also applies to
-          ready-to-assemble units; in that case the requirements of this
-          standard shall apply to the assembled units.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification of Chairs & Stools
+          Documents Required for BIS Certification of Flashlights
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manufacturer Documents
+          Manufacturing Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license/registration</li>
-          <li>Manufacturing process flowchart</li>
-          <li>Machinery list</li>
+          <li>Factory registration/license</li>
+          <li>Manufacturing process flow chart</li>
+          <li>List of machinery</li>
           <li>In-house testing equipment list</li>
           <li>Calibration certificates</li>
-          <li>Factory layout & floor plan</li>
+          <li>Factory layout</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chair/stool drawings</li>
-          <li>Dimensions & specifications</li>
+          <li>Product specification sheet</li>
+          <li>Circuit diagrams</li>
+          <li>Battery specifications</li>
           <li>Bill of materials</li>
-          <li>Safety features description</li>
-          <li>Internal quality test reports</li>
+          <li>Internal test reports</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identity & address proof</li>
+          <li>Identity proof of authorized signatory</li>
+          <li>Address proof</li>
           <li>Brand authorization letter</li>
-          <li>Trademark certificate (optional)</li>
+          <li>Trademark certificate (if applicable)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Application Documents
+          BIS-Specific Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application form</li>
-          <li>Test request form</li>
-          <li>Declaration forms</li>
-          <li>Authorization letter</li>
+          <li>BIS application form</li>
+          <li>Undertakings and declarations</li>
+          <li>Test request letter</li>
+          <li>Label artwork (ISI marking format)</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testing Requirements for Chairs & Stools (IS 17632:2022)
+          Testing Requirements under IS 2083:2024 (Detailed)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 includes extensive mechanical, structural, and safety
-          testing.
+          Flashlights must undergo rigorous testing to ensure safety and
+          performance.
         </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Mandatory Tests
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Only products passing all mandatory tests qualify for BIS approval.
+        </p>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
@@ -596,163 +543,147 @@ const MainContentLeft = () => {
             <TableBody>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
+                  5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design and workmanship
+                  Test for Finish
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
+                  6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Forwards Overbalancing and Sideways Overbalancing for Chairs
-                  without Arms
+                  Checking of dimensions
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
+                  7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rearwards Overbalancing
+                  Checking of markings
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
+                  13.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sideways Overbalancing for Chairs with Arms
+                  Functional test for switch
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
+                  14
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stools/ Poufs (All Directions)
+                  Insulation resistance test
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
+                  16
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Strength Test
+                  Light distribution test
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  18
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Circuit current of LED flashlight
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  19
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Test for charging current in built-in rechargeable
+                  battery-operated flashlights
                 </TableCell>
               </TableRow>
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          These tests ensure safe daily use under real-world conditions.
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Common Challenges in BIS Certification for Flashlights
+        </h2>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Failure in temperature rise test</li>
+          <li>Inconsistent luminous output</li>
+          <li>Poor switch durability</li>
+          <li>Battery compatibility issues</li>
+          <li>Incorrect ISI label format</li>
+          <li>Incomplete documentation</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Pre-testing and expert guidance significantly reduce rejection risks.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Common Challenges & How to Avoid Them
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Chair failing stability tests</strong>
-            <br />
-            Occurs due to improper weight distribution.
-            <br />
-            Fix: Improve leg design, widen base area.
-          </li>
-          <li>
-            <strong>Weak joints causing test failures</strong>
-            <br />
-            Fix: Use reinforced materials & better connectors.
-          </li>
-          <li>
-            <strong>Inadequate in-house testing equipment</strong>
-            <br />
-            Fix: Install required BIS-compliant instruments.
-          </li>
-          <li>
-            <strong>Documentation inconsistencies</strong>
-            <br />
-            Fix: Prepare documents systematically before applying.
-          </li>
-          <li>
-            <strong>Product variants not mapped properly</strong>
-            <br />
-            Fix: Group products based on structure & test parameters.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Chairs & Stools
+          Benefits of BIS Certification for Flashlight Manufacturers
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Legal permission to sell in India</li>
-          <li>Improved product safety</li>
-          <li>Enhanced customer trust</li>
-          <li>Lower product liability risk</li>
-          <li>Required for e-commerce listings</li>
-          <li>Essential for government tenders</li>
-          <li>Higher brand credibility</li>
-          <li>Competitive advantage</li>
+          <li>Enhanced consumer trust</li>
+          <li>Improved product reliability</li>
+          <li>Acceptance on e-commerce platforms</li>
+          <li>Eligibility for government procurement</li>
+          <li>Reduced liability and recalls</li>
+          <li>Strong brand credibility</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
+          Penalties for Selling Flashlights Without BIS Certification
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling chairs or stools without BIS certification may lead to:
+          Non-compliance may result in:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary fines</li>
-          <li>Product recall/seizure</li>
-          <li>Cancellation of factory licenses</li>
-          <li>Criminal prosecution</li>
-          <li>Import restrictions</li>
-          <li>Market blacklisting</li>
+          <li>Product seizure</li>
+          <li>Heavy monetary penalties</li>
+          <li>Import bans</li>
+          <li>Manufacturing shutdowns</li>
+          <li>Criminal prosecution under BIS Act</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Penalties are enforced under the BIS Act, 2016.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Chairs & Stools?
+          Who Needs BIS Certification for Flashlights?
         </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory for:
-        </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
           <li>Foreign manufacturers exporting to India</li>
           <li>Importers</li>
-          <li>Brand owners/traders</li>
+          <li>Brand owners</li>
           <li>OEM/ODM suppliers</li>
-          <li>Retail chains</li>
-          <li>Online sellers</li>
+          <li>Online sellers and distributors</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each factory requires a separate BIS License.
+          Each manufacturing unit requires a separate BIS license.
         </p>
 
         {/* Separator Line */}
@@ -763,112 +694,98 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for General Purpose Chairs and Stools under IS
-          17632:2022 is mandatory for ensuring product safety, structural
-          stability, and durability. BIS certification not only helps
-          manufacturers maintain high-quality standards but also enables legal
-          market access and increases consumer confidence.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          With professional assistance, the certification process—from testing
-          to inspection and approval—becomes smooth, predictable, and fully
-          compliant.
+          The BIS Certificate for Flashlight under IS 2083:2024 is a mandatory
+          regulatory requirement that ensures safety, performance, and
+          reliability of portable lighting products in India. Compliance not
+          only protects consumers but also strengthens brand credibility and
+          market access. With professional guidance, manufacturers and importers
+          can achieve BIS certification smoothly and efficiently.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS Certificate for Chairs and Stools
+          FAQs – BIS Certificate for Flashlight (IS 2083:2024)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                1. Is BIS Certification mandatory for chairs and stools?
+                1. Is BIS Certification mandatory for flashlights in India?
               </strong>
               <br />
-              Yes, as per IS 17632:2022, all general-purpose chairs and stools
-              must be BIS certified before being sold in India.
+              Yes. Flashlights covered under IS 2083:2024 must be BIS certified.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required?</strong>
+              <strong>2. Which standard applies to flashlights?</strong>
               <br />
-              Stability, strength, durability, impact, fatigue, and material
-              safety tests.
+              IS 2083:2024 – Flashlight: Specification.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. How long does BIS certification take?</strong>
+              <strong>3. How long does the BIS process take?</strong>
               <br />
-              Typically 30–45 days.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. What is the certification cost?</strong>
-              <br />
-              Around ₹60,000–₹1,30,000 depending on testing and inspection.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Can foreign manufacturers apply?</strong>
-              <br />
-              Yes, under the FMCS scheme.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Is ISI marking mandatory?</strong>
-              <br />
-              Yes, after BIS license is granted.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Why do chairs fail BIS testing?</strong>
-              <br />
-              Common causes include weak legs, poor joint strength, and
-              instability.
+              Approximately 30–45 working days for Indian Manufacturers and
+              around 120 days for Foreign Manufacturers.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. Can multiple models be covered under one license?
+                4. Can foreign manufacturers apply for BIS certification?
               </strong>
               <br />
-              Only if they meet similarity and standard compliance criteria.
+              Yes, through the FMCS scheme.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is a factory inspection required?</strong>
+              <strong>5. Is ISI marking mandatory?</strong>
               <br />
-              Yes, it is compulsory for ISI mark certification.
+              Yes, ISI Mark must be displayed on certified flashlights.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. What documents are needed?</strong>
+              <strong>6. What happens if a flashlight fails testing?</strong>
               <br />
-              Factory license, technical specs, machinery list, QC plan, product
-              drawings, etc.
+              The product must be corrected and retested.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>7. Are rechargeable flashlights also covered?</strong>
+              <br />
+              Yes, if they fall within the scope of IS 2083:2024.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. How long is the BIS license valid?</strong>
+              <br />
+              1–2 years, renewable.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. Can multiple models be covered under one license?
+              </strong>
+              <br />
+              Yes, if they meet similarity criteria.
             </p>
           </div>
         </div>
@@ -876,8 +793,8 @@ const MainContentLeft = () => {
         {/* PDF Viewer Section */}
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
-            src="/BIS-Product-Pdf/IS-17632-2022-Sun-Certifications-India.pdf"
-            title="BIS Certificate for Chair & Stools - IS 17632:2022 PDF"
+            src="/BIS-Product-Pdf/IS-2083-2024-Sun-Certifications-India.pdf"
+            title="BIS Certificate for Flashlight - IS 2083:2024 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -887,8 +804,7 @@ const MainContentLeft = () => {
         </div>
 
         <ManyUsersAlsoRead />
-
-        <FaqAuthorEng questionNumber={1} />
+        <FaqAuthorEng questionNumber={4} />
       </div>
     </div>
   );

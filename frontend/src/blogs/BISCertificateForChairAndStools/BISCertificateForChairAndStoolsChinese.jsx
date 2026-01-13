@@ -76,6 +76,77 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+      {/* Hreflang Tags */}
+      <link
+        rel="alternate"
+        hrefLang="x-default"
+        href="https://bis-certifications.com/bis-certification-for-chair-&-stools-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="en"
+        href="https://bis-certifications.com/bis-certification-for-chair-&-stools-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ar"
+        href="https://bis-certifications.com/blogs/isi-products/karasi-wa-masaaid-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="zh"
+        href="https://bis-certifications.com/blogs/isi-products/yizi-he-dengzi-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="nl"
+        href="https://bis-certifications.com/blogs/isi-products/stoelen-en-krukken-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="fr"
+        href="https://bis-certifications.com/blogs/isi-products/chaises-et-tabourets-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="de"
+        href="https://bis-certifications.com/blogs/isi-products/stuhle-und-hocker-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="id"
+        href="https://bis-certifications.com/blogs/isi-products/kursi-dan-bangku-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="it"
+        href="https://bis-certifications.com/blogs/isi-products/sedie-e-sgabelli-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ja"
+        href="https://bis-certifications.com/blogs/isi-products/isu-to-suturu-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ko"
+        href="https://bis-certifications.com/blogs/isi-products/uija-mich-seutul-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="es"
+        href="https://bis-certifications.com/blogs/isi-products/sillas-y-taburetes-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="th"
+        href="https://bis-certifications.com/blogs/isi-products/ghao-lae-mang-is-17632"
+      />
+      <link
+        rel="alternate"
+        hrefLang="vi"
+        href="https://bis-certifications.com/blogs/isi-products/ghe-va-ghe-dau-is-17632"
+      />
     </Helmet>
   );
 };

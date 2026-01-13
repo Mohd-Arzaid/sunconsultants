@@ -196,9 +196,7 @@ const BISCertificateForWorkChairsSpanish = lazy(() =>
   )
 );
 const BISCertificateForWorkChairsThai = lazy(() =>
-  import(
-    "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsThai"
-  )
+  import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsThai")
 );
 const BISCertificateForWorkChairsVietnamese = lazy(() =>
   import(
@@ -206,7 +204,9 @@ const BISCertificateForWorkChairsVietnamese = lazy(() =>
   )
 );
 const BISCertificateForChairAndStools = lazy(() =>
-  import("@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStools")
+  import(
+    "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStools"
+  )
 );
 const BISCertificateForChairAndStoolsArabic = lazy(() =>
   import(
@@ -275,7 +275,20 @@ const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import("@/blogs/BISCertificateForSeamlessPipesAndTubes")
 );
 const BISCertificateForFlashlight = lazy(() =>
-  import("@/blogs/BISCertificateForFlashlight")
+  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlight")
+);
+const BISCertificateForFlashlightArabic = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightArabic"
+  )
+);
+const BISCertificateForFlashlightChinese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightChinese"
+  )
+);
+const BISCertificateForFlashlightDutch = lazy(() =>
+  import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlightDutch")
 );
 const BISCertificationSolarFlatPlate = lazy(() =>
   import("@/blogs/BISCertificationSolarFlatPlate")
@@ -1121,6 +1134,30 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForFlashlight />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/masbah-yadawi-is-2083"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFlashlightArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/shoudiantong-is-2083"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFlashlightChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/zaklamp-is-2083"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFlashlightDutch />
           </Suspense>
         }
       />

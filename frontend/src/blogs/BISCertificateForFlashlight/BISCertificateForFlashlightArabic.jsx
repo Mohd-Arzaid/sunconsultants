@@ -1,6 +1,6 @@
-import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
-import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
-import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
+import FaqAuthorArabic from "@/components/common/FaqAuthor/FaqAuthorArabic";
+import ManyUsersAlsoReadArabic from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadArabic";
+import ServicesRightSideContentArabic from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentArabic";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterEng from "@/components/manual/Footer/FooterEng";
+import FooterArabic from "@/components/manual/Footer/FooterArabic";
 import {
   Table,
   TableBody,
@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForChairAndStools = () => {
+const BISCertificateForFlashlightArabic = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -33,27 +33,27 @@ const BISCertificateForChairAndStools = () => {
       <MainContent />
       <Services />
       <VideoSection />
-      <FooterEng />
+      <FooterArabic />
     </div>
   );
 };
 
-export default BISCertificateForChairAndStools;
+export default BISCertificateForFlashlightArabic;
 
 const MetaTags = () => {
-  const title = "BIS Certificate for Chair & Stool | IS 17632:2022 BIS License";
-  const ogTitle = "BIS Certification for Chair & Stool – IS 17632:2022 Guide";
-  const twitterTitle = "BIS License for Chair & Stool | IS 17632:2022";
+  const title = "شهادة BIS للمصباح اليدوي | ترخيص BIS IS 2083:2024";
+  const ogTitle = "شهادة BIS للمصباح اليدوي – دليل IS 2083:2024";
+  const twitterTitle = "ترخيص BIS للمصباح اليدوي | IS 2083:2024";
   const metaDescription =
-    "Get BIS Certificate for Chair & Stool under IS 17632:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "احصل على شهادة BIS للمصباح اليدوي بموجب IS 2083:2024. العملية والمستندات والاختبار والتكلفة والجدول الزمني لشهادة BIS في الهند.";
   const ogDescription =
-    "Complete guide to BIS Certification for Chair & Stool as per IS 17632:2022. Know process, cost, documents, testing & BIS license benefits.";
+    "دليل شامل لشهادة BIS للمصباح اليدوي وفقًا لـ IS 2083:2024. تعرف على العملية والتكلفة والمستندات والاختبار وفوائد ترخيص BIS.";
   const twitterDescription =
-    "Apply for BIS Certificate for Chair & Stool under IS 17632:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "تقدم بطلب للحصول على شهادة BIS للمصباح اليدوي بموجب IS 2083:2024. تعلم عملية BIS والمستندات والاختبار والرسوم والجدول الزمني في الهند.";
   const metaKeywords =
-    "BIS Certificate for Chair & Stool, BIS License for Chair & Stool, IS 17632:2022, BIS Certification for Chair & Stool";
+    "شهادة BIS للمصباح اليدوي، ترخيص BIS للمصباح اليدوي، IS 2083:2024، شهادة BIS للمصباح اليدوي";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/chairs-and-stools-is-17632";
+    "https://bis-certifications.com/blogs/isi-products/masbah-yadawi-is-2083";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -76,77 +76,6 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
-      {/* Hreflang Tags */}
-      <link
-        rel="alternate"
-        hrefLang="x-default"
-        href="https://bis-certifications.com/bis-certification-for-chair-&-stools-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="en"
-        href="https://bis-certifications.com/bis-certification-for-chair-&-stools-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ar"
-        href="https://bis-certifications.com/blogs/isi-products/karasi-wa-masaaid-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="zh"
-        href="https://bis-certifications.com/blogs/isi-products/yizi-he-dengzi-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="nl"
-        href="https://bis-certifications.com/blogs/isi-products/stoelen-en-krukken-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="fr"
-        href="https://bis-certifications.com/blogs/isi-products/chaises-et-tabourets-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="de"
-        href="https://bis-certifications.com/blogs/isi-products/stuhle-und-hocker-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="id"
-        href="https://bis-certifications.com/blogs/isi-products/kursi-dan-bangku-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="it"
-        href="https://bis-certifications.com/blogs/isi-products/sedie-e-sgabelli-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ja"
-        href="https://bis-certifications.com/blogs/isi-products/isu-to-suturu-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ko"
-        href="https://bis-certifications.com/blogs/isi-products/uija-mich-seutul-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="es"
-        href="https://bis-certifications.com/blogs/isi-products/sillas-y-taburetes-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="th"
-        href="https://bis-certifications.com/blogs/isi-products/ghao-lae-mang-is-17632"
-      />
-      <link
-        rel="alternate"
-        hrefLang="vi"
-        href="https://bis-certifications.com/blogs/isi-products/ghe-va-ghe-dau-is-17632"
-      />
     </Helmet>
   );
 };
@@ -161,7 +90,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
+                    <Link to="/">الرئيسية</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -170,7 +99,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">Latest Blogs</Link>
+                    <Link to="/Blogs">أحدث المدونات</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -179,7 +108,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Chair & Stools – IS 17632:2022
+                    شهادة BIS للمصباح اليدوي – IS 2083:2024
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -199,7 +128,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentEng />
+        <ServicesRightSideContentArabic />
       </div>
     </div>
   );
@@ -211,664 +140,635 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for General Purpose Chairs and Stools – Complete Guide
-          to IS 17632:2022
+          شهادة BIS للمصباح اليدوي بموجب IS 2083:2024 – دليل الامتثال الكامل
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="BIS License for Chair & Stools"
-            alt="BIS Certificate for Chair & Stools - IS 17632:2022 BIS Certification"
+            src="/BISCertificationProductsImages/BISLicenseforFlashlight.png"
+            title="ترخيص BIS للمصباح اليدوي"
+            alt="شهادة BIS للمصباح اليدوي - شهادة BIS IS 2083:2024"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for General Purpose Chairs and Stools is a
-          mandatory requirement under Indian Standard IS 17632:2022. This
-          standard specifies the safety, durability, and performance
-          requirements for chairs and stools used in homes, offices, commercial
-          areas, educational institutions, cafeterias, restaurants, hotels, and
-          public spaces.
+          المصابيح اليدوية (التي يشار إليها عادة باسم الكشافات) هي أجهزة إضاءة
+          محمولة أساسية تستخدم في المنازل والصناعات وخدمات الطوارئ والعمليات
+          الأمنية والأنشطة الخارجية وإدارة الكوارث. نظرًا لأن المصابيح اليدوية
+          هي منتجات كهربائية تتضمن بطاريات ودوائر كهربائية ومصادر إضاءة وأغلفة،
+          فإن الامتثال للجودة والسلامة أمر بالغ الأهمية.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chairs and stools are among the most used furniture items and are
-          constantly subjected to load, movement, and repetitive stress. A
-          structurally weak chair or stool can collapse suddenly, leading to
-          injuries. To prevent such hazards and ensure consumer safety, the
-          Bureau of Indian Standards (BIS) requires every manufacturer and
-          importer to obtain BIS Certification for Chairs and Stools before
-          selling them in India.
+          لتنظيم جودة المنتج والأداء وسلامة المستهلك، أعلن مكتب المعايير الهندية
+          (BIS) عن IS 2083:2024 – المصباح اليدوي: المواصفات، مما يجعل شهادة BIS
+          إلزامية للمصابيح اليدوية المباعة أو المصنعة أو المستوردة إلى الهند.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This page provides a complete guide to BIS Certification for chairs
-          and stools under IS 17632:2022, including the certification process,
-          required documents, testing requirements, fees, challenges, penalties,
-          and benefits.
+          توفر هذه الصفحة شرحًا شاملاً وأصليًا لشهادة BIS للمصابيح اليدوية،
+          والتي تغطي المعيار المطبق وعملية الشهادة ومتطلبات الاختبار والوثائق
+          والرسوم والجداول الزمنية والعقوبات ومسؤوليات الامتثال.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          ما هي شهادة BIS ولماذا تنطبق على المصابيح اليدوية
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product compliance system governed by the
-          Bureau of Indian Standards, the national standards authority of India.
+          مكتب المعايير الهندية (BIS) هو السلطة الوطنية للمعايير في الهند
+          المسؤولة عن ضمان أن المنتجات المباعة في السوق الهندية تلبي معايير
+          السلامة والجودة والأداء المنصوص عليها.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
+          معنى شهادة BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS Certificate ensures that a product:
+          شهادة BIS تؤكد أن المصباح اليدوي:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Meets Indian safety and quality standards</li>
-          <li>Has passed BIS-approved lab testing</li>
-          <li>Has undergone factory inspection</li>
-          <li>Saves consumers from unsafe or substandard products</li>
+          <li>يتوافق مع المعيار الهندي IS 2083:2024</li>
+          <li>نجح في جميع الاختبارات المعملية الإلزامية</li>
+          <li>يلبي المتطلبات الكهربائية والميكانيكية والأداء</li>
+          <li>آمن لاستخدام المستهلك</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Certified products display the ISI Mark, demonstrating compliance with
-          Indian Standards.
+          بمجرد الموافقة، يُسمح للمصنع بوضع علامة ISI، والتي تدل على الامتثال
+          للمعايير الهندية.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable Standard – IS 17632:2022 for Chairs & Stools
+          المعيار الهندي المطبق – IS 2083:2024 (المصباح اليدوي: المواصفات)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Standard for chairs and stools is:
+          🔹 <strong>IS 2083:2024</strong> – المصباح اليدوي: المواصفات
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – General Purpose Chairs and Stools:
-          Safety Requirements
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This standard covers all non-specialized chairs and stools used for
-          seating purposes in homes, offices, commercial environments, public
-          places, and institutional settings.
+          يحدد IS 2083:2024 متطلبات البناء والأداء والسلامة والاختبار للمصابيح
+          اليدوية المحمولة المستخدمة للإضاءة العامة.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Products Covered Under IS 17632:2022
+          نطاق IS 2083:2024
         </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">يغطي المعيار:</p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>General-purpose chairs</li>
-          <li>Dining chairs</li>
-          <li>Office visitor chairs</li>
-          <li>Study chairs</li>
-          <li>Cafeteria chairs</li>
-          <li>Restaurant chairs</li>
-          <li>Meeting room chairs</li>
-          <li>Waiting area chairs</li>
-          <li>Wooden chairs</li>
-          <li>Metal chairs</li>
-          <li>Plastic chairs (non-specialized)</li>
-          <li>General-purpose stools</li>
-          <li>Bar stools</li>
-          <li>Dining stools</li>
-          <li>Step stools (within defined criteria)</li>
+          <li>المصابيح اليدوية المحمولة (الكشافات)</li>
+          <li>المصابيح اليدوية التي تعمل بالبطارية</li>
+          <li>المصابيح اليدوية القابلة لإعادة الشحن</li>
+          <li>المصابيح اليدوية LED</li>
+          <li>المصابيح اليدوية للطوارئ والاستخدام العام</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Key Safety & Performance Parameters
+          المجالات الرئيسية التي يغطيها المعيار
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 evaluates:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural strength</li>
-          <li>Stability</li>
-          <li>Durability under repeated use</li>
-          <li>Seat strength</li>
-          <li>Backrest performance</li>
-          <li>Leg impact resistance</li>
-          <li>Joint strength</li>
-          <li>Surface finish quality</li>
-          <li>Edge and corner safety</li>
-          <li>Material quality</li>
+          <li>السلامة الكهربائية</li>
+          <li>أداء الإضاءة</li>
+          <li>القوة الميكانيكية</li>
+          <li>توافق البطارية</li>
+          <li>متانة المفتاح</li>
+          <li>الحماية من السخونة الزائدة</li>
+          <li>المقاومة للتآكل العادي</li>
+          <li>متطلبات وضع العلامات والتصنيف</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          All chairs and stools sold in India must comply with these parameters
-          and obtain a BIS License for Chairs and Stools.
+          يجب على أي مصباح يدوي يقع ضمن هذا النطاق الحصول على ترخيص BIS للمصباح
+          اليدوي قبل دخول السوق الهندية.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Chairs & Stools
+          لماذا شهادة BIS إلزامية للمصابيح اليدوية
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chairs and stools bear human weight and are used frequently across all
-          environments. Structural failure can lead to:
+          تستخدم المصابيح اليدوية على نطاق واسع من قبل المستهلكين من جميع الفئات
+          العمرية وفي المواقف الحرجة مثل حالات الطوارئ وانقطاع التيار الكهربائي
+          والعمليات الصناعية. يمكن أن تسبب المصابيح اليدوية دون المستوى:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Collapsing chairs</li>
-          <li>Breakage of legs</li>
-          <li>Seat cracking</li>
-          <li>Backrest failure</li>
-          <li>Injury due to sharp edges</li>
-          <li>Instability leading to falls</li>
+          <li>دوائر كهربائية قصيرة</li>
+          <li>تسرب البطارية أو الانفجار</li>
+          <li>السخونة الزائدة</li>
+          <li>مخاطر الحريق</li>
+          <li>أداء إضاءة ضعيف</li>
+          <li>فشل مبكر</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Benefits of BIS Certification
+          شهادة BIS تضمن
         </h3>
-
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ensures safe seating products</li>
-          <li>Prevents accidents and injuries</li>
-          <li>Improves product durability</li>
-          <li>Prevents substandard imports</li>
-          <li>Establishes uniform market quality</li>
-          <li>Enhances customer confidence</li>
-          <li>Mandatory by Indian law (BIS QCOs)</li>
+          <li>السلامة الكهربائية وسلامة المستخدم</li>
+          <li>إخراج ضوء متسق</li>
+          <li>بناء متين</li>
+          <li>تشغيل آمن للبطارية</li>
+          <li>الامتثال للمتطلبات التنظيمية الهندية</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Without BIS Certification, manufacturers cannot legally sell chairs or
-          stools in India.
+          بيع المصابيح اليدوية غير المعتمدة هو انتهاك قانوني بموجب قانون BIS،
+          2016.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Process for Chairs and Stools (IS 17632:2022)
+          نطاق ترخيص BIS للمصباح اليدوي
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS process follows the ISI Mark Certification Scheme, involving
-          testing, inspection, and application verification.
+          <strong>1.1</strong> يحدد هذا المعيار المتطلبات والاختبارات للمصابيح
+          اليدوية التي تعمل ببطاريات أولية قابلة للاستبدال وبطاريات ثانوية قابلة
+          للاستبدال/مدمجة بجهد أقصى يبلغ 48 فولت تيار مستمر.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>1.2</strong> ينطبق هذا المعيار على المصابيح اليدوية من النوع
+          المركز مسبقًا وكذلك نوع التركيز مع مصباح متوهج ووحدة LED كمصدر للضوء.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          <strong>1.3</strong> لا يشمل نطاق هذا المعيار ما يلي:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            المصابيح اليدوية المتصلة بالسلك والمقبس التي تقع ضمن نطاق IS 10322
+            (الجزء 5/القسم 6)؛
+          </li>
+          <li>إضاءة الطوارئ التي تقع ضمن نطاق IS 10322 (الجزء 5/القسم 8)؛ و</li>
+          <li>المصابيح اليدوية المخصصة للأماكن الخطرة.</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          عملية شهادة BIS للمصابيح اليدوية (IS 2083:2024)
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تتم عملية شهادة BIS للمصابيح اليدوية بموجب نظام شهادة علامة ISI
+          (المخطط الأول) وتتضمن مراحل متعددة.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 1 – Identify Product Type & Standard
+          الخطوة 1 – تحديد المنتج ورسم خريطة المعيار
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يجب على المصنع تأكيد أن المنتج مؤهل كمصباح يدوي بموجب IS 2083:2024
+          وتحديد:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>نوع المصباح اليدوي</li>
+          <li>مصدر الطاقة (بطارية/قابل لإعادة الشحن)</li>
+          <li>مصدر الضوء (LED، مصباح، إلخ.)</li>
+          <li>المتغيرات والموديلات</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          الخطوة 2 – طلب BIS عبر الإنترنت
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يتم تقديم الطلب من خلال بوابة BIS Manak عبر الإنترنت، بالإضافة إلى:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>تفاصيل المصنع</li>
+          <li>عنوان المصنع</li>
+          <li>وصف المنتج</li>
+          <li>تفاصيل العلامة التجارية/العلامة التجارية</li>
+          <li>معلومات عملية التصنيع</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          الخطوة 3 – دفع رسوم BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تشمل الرسوم المطبقة:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>رسوم الطلب</li>
+          <li>رسوم المعالجة</li>
+          <li>رسوم اختبار المنتج</li>
+          <li>رسوم فحص المصنع</li>
+          <li>رسم العلامة</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          الخطوة 4 – اختبار المنتج وفقًا لـ IS 2083:2024
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Confirm that the chair/stool falls under IS 17632:2022. Identify
-          design variants and materials used.
+          يتم اختبار العينات في مختبر معترف به من قبل BIS.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 2 – Submit BIS Application Online
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Application is filed through the BIS Manak Online Portal, requiring:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturer details</li>
-          <li>Factory information</li>
-          <li>Product specifications</li>
-          <li>Brand/trademark details</li>
-          <li>Manufacturing process workflow</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 3 – Pay BIS Certification Fees
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Fees include:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Processing fee</li>
-          <li>Sample testing charges</li>
-          <li>Factory inspection fees</li>
-          <li>Marking fees</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 4 – Product Testing as per IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory testing is performed in a BIS-recognized laboratory.
-        </p>
         <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tests Include:
+          الاختبارات الإلزامية للمصابيح اليدوية
         </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stability Test</li>
-          <li>Strength Test for Seat</li>
-          <li>Backrest Durability Test</li>
-          <li>Leg Forward/Side/Rearward Loading Test</li>
-          <li>Seat Impact Test</li>
-          <li>Drop Test</li>
-          <li>Fatigue Test</li>
-          <li>Surface Finish Test</li>
-          <li>Sharp Edge Test</li>
-          <li>Structural durability under repeated cycles</li>
+          <li>اختبار شدة الإضاءة</li>
+          <li>اختبار استقرار إخراج الضوء</li>
+          <li>اختبار تحمل البطارية</li>
+          <li>اختبار تشغيل المفتاح</li>
+          <li>القوة الميكانيكية (اختبار السقوط)</li>
+          <li>اختبار مقاومة العزل</li>
+          <li>اختبار ارتفاع درجة الحرارة</li>
+          <li>اختبار السلامة الكهربائية</li>
+          <li>التحقق من وضع العلامات والتصنيف</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يتم تقديم تقارير الاختبار مباشرة إلى BIS من قبل المختبر.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          الخطوة 5 – فحص المصنع
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يقوم مسؤول BIS بإجراء فحص في الموقع للتحقق من:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>إعداد التصنيع</li>
+          <li>نظام مراقبة الجودة</li>
+          <li>فحص المواد الواردة</li>
+          <li>الفحوصات أثناء العملية</li>
+          <li>اختبار المنتج النهائي</li>
+          <li>معايرة أدوات الاختبار</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Test results must show full compliance with IS 17632:2022.
+          الامتثال لنظام الاختبار والفحص (STI) إلزامي.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 5 – Factory Inspection by BIS
+          الخطوة 6 – منح ترخيص BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS officer visits the factory to evaluate:
+          بعد الاختبار والفحص الناجحين، تصدر BIS:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process</li>
-          <li>Raw material inspection</li>
-          <li>Quality control procedures</li>
-          <li>Testing capability</li>
-          <li>Calibration of equipment</li>
-          <li>Production volume</li>
-          <li>Compliance with BIS Scheme of Testing & Inspection (STI)</li>
+          <li>شهادة BIS</li>
+          <li>موافقة علامة ISI</li>
+          <li>رقم CML (شهادة ترخيص التصنيع)</li>
         </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يمكن للمصنع الآن تصنيع وبيع المصابيح اليدوية بشكل قانوني في الهند.
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 6 – Grant of BIS License
+          الخطوة 7 – الامتثال بعد الشهادة
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          If testing and inspection are successful, BIS issues:
+          بعد الشهادة، يجب على المصنعين:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS Certificate (ISI Mark License)</li>
-          <li>CML Number</li>
-          <li>Approval to affix the ISI Mark on chairs and stools</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 7 – Post-License Obligations
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Use the ISI Mark as per BIS labeling requirements</li>
-          <li>Maintain quality control records</li>
-          <li>Undergo regular BIS surveillance inspections</li>
-          <li>Renew license every 1–2 years</li>
+          <li>استخدام علامة ISI بشكل صحيح على المنتج والتغليف</li>
+          <li>الاحتفاظ بسجلات الجودة حسب الدفعة</li>
+          <li>السماح بعمليات تفتيش مراقبة BIS</li>
+          <li>تجديد الترخيص بشكل دوري</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of BIS License for Chairs & Stools
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard covers the requirements for general purpose chairs and
-          stools. This standard applies to completely manufactured/fabricated
-          general purpose chairs and stools. It also applies to
-          ready-to-assemble units; in that case the requirements of this
-          standard shall apply to the assembled units.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification of Chairs & Stools
+          المستندات المطلوبة لشهادة BIS للمصابيح اليدوية
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manufacturer Documents
+          مستندات التصنيع
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license/registration</li>
-          <li>Manufacturing process flowchart</li>
-          <li>Machinery list</li>
-          <li>In-house testing equipment list</li>
-          <li>Calibration certificates</li>
-          <li>Factory layout & floor plan</li>
+          <li>تسجيل/ترخيص المصنع</li>
+          <li>مخطط تدفق عملية التصنيع</li>
+          <li>قائمة الآلات</li>
+          <li>قائمة معدات الاختبار الداخلية</li>
+          <li>شهادات المعايرة</li>
+          <li>مخطط المصنع</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technical Documents
+          المستندات الفنية
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chair/stool drawings</li>
-          <li>Dimensions & specifications</li>
-          <li>Bill of materials</li>
-          <li>Safety features description</li>
-          <li>Internal quality test reports</li>
+          <li>ورقة مواصفات المنتج</li>
+          <li>الرسوم البيانية للدوائر</li>
+          <li>مواصفات البطارية</li>
+          <li>فاتورة المواد</li>
+          <li>تقارير الاختبار الداخلية</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Legal Documents
+          المستندات القانونية
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identity & address proof</li>
-          <li>Brand authorization letter</li>
-          <li>Trademark certificate (optional)</li>
+          <li>إثبات هوية الموقع المفوض</li>
+          <li>إثبات العنوان</li>
+          <li>خطاب تفويض العلامة التجارية</li>
+          <li>شهادة العلامة التجارية (إن وجدت)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Application Documents
+          مستندات BIS المحددة
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application form</li>
-          <li>Test request form</li>
-          <li>Declaration forms</li>
-          <li>Authorization letter</li>
+          <li>نموذج طلب BIS</li>
+          <li>التعهدات والإقرارات</li>
+          <li>خطاب طلب الاختبار</li>
+          <li>تصميم الملصق (تنسيق علامة ISI)</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testing Requirements for Chairs & Stools (IS 17632:2022)
+          متطلبات الاختبار بموجب IS 2083:2024 (تفصيلي)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 includes extensive mechanical, structural, and safety
-          testing.
+          يجب أن تخضع المصابيح اليدوية لاختبارات صارمة لضمان السلامة والأداء.
         </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Mandatory Tests
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          فقط المنتجات التي تجتاز جميع الاختبارات الإلزامية مؤهلة للحصول على
+          موافقة BIS.
+        </p>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clause
+                  البند
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirement
+                  المتطلب
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
+                  5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design and workmanship
+                  اختبار الإنهاء
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
+                  6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Forwards Overbalancing and Sideways Overbalancing for Chairs
-                  without Arms
+                  فحص الأبعاد
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
+                  7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rearwards Overbalancing
+                  فحص العلامات
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
+                  13.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sideways Overbalancing for Chairs with Arms
+                  اختبار وظيفي للمفتاح
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
+                  14
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stools/ Poufs (All Directions)
+                  اختبار مقاومة العزل
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
+                  16
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Strength Test
+                  اختبار توزيع الضوء
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  18
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  تيار الدائرة للمصباح اليدوي LED
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  19
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  اختبار تيار الشحن في المصابيح اليدوية التي تعمل ببطارية قابلة
+                  لإعادة الشحن المدمجة
                 </TableCell>
               </TableRow>
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          These tests ensure safe daily use under real-world conditions.
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          التحديات الشائعة في شهادة BIS للمصابيح اليدوية
+        </h2>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>الفشل في اختبار ارتفاع درجة الحرارة</li>
+          <li>إخراج ضوئي غير متسق</li>
+          <li>متانة المفتاح الضعيفة</li>
+          <li>مشاكل توافق البطارية</li>
+          <li>تنسيق ملصق ISI غير صحيح</li>
+          <li>وثائق غير كاملة</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          الاختبار المسبق والتوجيه الخبير يقلل بشكل كبير من مخاطر الرفض.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Common Challenges & How to Avoid Them
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Chair failing stability tests</strong>
-            <br />
-            Occurs due to improper weight distribution.
-            <br />
-            Fix: Improve leg design, widen base area.
-          </li>
-          <li>
-            <strong>Weak joints causing test failures</strong>
-            <br />
-            Fix: Use reinforced materials & better connectors.
-          </li>
-          <li>
-            <strong>Inadequate in-house testing equipment</strong>
-            <br />
-            Fix: Install required BIS-compliant instruments.
-          </li>
-          <li>
-            <strong>Documentation inconsistencies</strong>
-            <br />
-            Fix: Prepare documents systematically before applying.
-          </li>
-          <li>
-            <strong>Product variants not mapped properly</strong>
-            <br />
-            Fix: Group products based on structure & test parameters.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Chairs & Stools
+          فوائد شهادة BIS لمصنعي المصابيح اليدوية
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal permission to sell in India</li>
-          <li>Improved product safety</li>
-          <li>Enhanced customer trust</li>
-          <li>Lower product liability risk</li>
-          <li>Required for e-commerce listings</li>
-          <li>Essential for government tenders</li>
-          <li>Higher brand credibility</li>
-          <li>Competitive advantage</li>
+          <li>إذن قانوني للبيع في الهند</li>
+          <li>تعزيز ثقة المستهلك</li>
+          <li>تحسين موثوقية المنتج</li>
+          <li>القبول على منصات التجارة الإلكترونية</li>
+          <li>الأهلية للمشتريات الحكومية</li>
+          <li>تقليل المسؤولية والاستدعاء</li>
+          <li>مصداقية علامة تجارية قوية</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
+          عقوبات بيع المصابيح اليدوية بدون شهادة BIS
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling chairs or stools without BIS certification may lead to:
+          قد يؤدي عدم الامتثال إلى:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary fines</li>
-          <li>Product recall/seizure</li>
-          <li>Cancellation of factory licenses</li>
-          <li>Criminal prosecution</li>
-          <li>Import restrictions</li>
-          <li>Market blacklisting</li>
+          <li>مصادرة المنتج</li>
+          <li>عقوبات مالية ثقيلة</li>
+          <li>حظر الاستيراد</li>
+          <li>إغلاق التصنيع</li>
+          <li>الملاحقة الجنائية بموجب قانون BIS</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Penalties are enforced under the BIS Act, 2016.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Chairs & Stools?
+          من يحتاج إلى شهادة BIS للمصابيح اليدوية؟
         </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory for:
-        </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Foreign manufacturers exporting to India</li>
-          <li>Importers</li>
-          <li>Brand owners/traders</li>
-          <li>OEM/ODM suppliers</li>
-          <li>Retail chains</li>
-          <li>Online sellers</li>
+          <li>المصنعون الهنود</li>
+          <li>المصنعون الأجانب الذين يصدرون إلى الهند</li>
+          <li>المستوردون</li>
+          <li>أصحاب العلامات التجارية</li>
+          <li>موردو OEM/ODM</li>
+          <li>البائعون والموزعون عبر الإنترنت</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each factory requires a separate BIS License.
+          تتطلب كل وحدة تصنيع ترخيص BIS منفصل.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Conclusion
+          الخلاصة
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for General Purpose Chairs and Stools under IS
-          17632:2022 is mandatory for ensuring product safety, structural
-          stability, and durability. BIS certification not only helps
-          manufacturers maintain high-quality standards but also enables legal
-          market access and increases consumer confidence.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          With professional assistance, the certification process—from testing
-          to inspection and approval—becomes smooth, predictable, and fully
-          compliant.
+          شهادة BIS للمصباح اليدوي بموجب IS 2083:2024 هي متطلب تنظيمي إلزامي
+          يضمن السلامة والأداء والموثوقية لمنتجات الإضاءة المحمولة في الهند. لا
+          يحمي الامتثال المستهلكين فحسب، بل يعزز أيضًا مصداقية العلامة التجارية
+          والوصول إلى السوق. مع التوجيه المهني، يمكن للمصنعين والمستوردين تحقيق
+          شهادة BIS بسلاسة وكفاءة.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS Certificate for Chairs and Stools
+          الأسئلة الشائعة – شهادة BIS للمصباح اليدوي (IS 2083:2024)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                1. Is BIS Certification mandatory for chairs and stools?
+                1. هل شهادة BIS إلزامية للمصابيح اليدوية في الهند؟
               </strong>
               <br />
-              Yes, as per IS 17632:2022, all general-purpose chairs and stools
-              must be BIS certified before being sold in India.
+              نعم. يجب أن تكون المصابيح اليدوية المشمولة بموجب IS 2083:2024
+              معتمدة من BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required?</strong>
+              <strong>2. ما هو المعيار الذي ينطبق على المصابيح اليدوية؟</strong>
               <br />
-              Stability, strength, durability, impact, fatigue, and material
-              safety tests.
+              IS 2083:2024 – المصباح اليدوي: المواصفات.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. How long does BIS certification take?</strong>
+              <strong>3. كم من الوقت تستغرق عملية BIS؟</strong>
               <br />
-              Typically 30–45 days.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. What is the certification cost?</strong>
-              <br />
-              Around ₹60,000–₹1,30,000 depending on testing and inspection.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Can foreign manufacturers apply?</strong>
-              <br />
-              Yes, under the FMCS scheme.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Is ISI marking mandatory?</strong>
-              <br />
-              Yes, after BIS license is granted.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Why do chairs fail BIS testing?</strong>
-              <br />
-              Common causes include weak legs, poor joint strength, and
-              instability.
+              حوالي 30-45 يوم عمل للمصنعين الهنود وحوالي 120 يومًا للمصنعين
+              الأجانب.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. Can multiple models be covered under one license?
+                4. هل يمكن للمصنعين الأجانب التقدم بطلب للحصول على شهادة BIS؟
               </strong>
               <br />
-              Only if they meet similarity and standard compliance criteria.
+              نعم، من خلال نظام FMCS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is a factory inspection required?</strong>
+              <strong>5. هل وضع علامة ISI إلزامي؟</strong>
               <br />
-              Yes, it is compulsory for ISI mark certification.
+              نعم، يجب عرض علامة ISI على المصابيح اليدوية المعتمدة.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. What documents are needed?</strong>
+              <strong>6. ماذا يحدث إذا فشل المصباح اليدوي في الاختبار؟</strong>
               <br />
-              Factory license, technical specs, machinery list, QC plan, product
-              drawings, etc.
+              يجب تصحيح المنتج وإعادة اختباره.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                7. هل المصابيح اليدوية القابلة لإعادة الشحن مشمولة أيضًا؟
+              </strong>
+              <br />
+              نعم، إذا كانت تقع ضمن نطاق IS 2083:2024.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. كم من الوقت يكون ترخيص BIS صالحًا؟</strong>
+              <br />
+              1-2 سنة، قابلة للتجديد.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>9. هل يمكن تغطية عدة موديلات بموجب ترخيص واحد؟</strong>
+              <br />
+              نعم، إذا كانت تستوفي معايير التشابه.
             </p>
           </div>
         </div>
@@ -876,8 +776,8 @@ const MainContentLeft = () => {
         {/* PDF Viewer Section */}
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
-            src="/BIS-Product-Pdf/IS-17632-2022-Sun-Certifications-India.pdf"
-            title="BIS Certificate for Chair & Stools - IS 17632:2022 PDF"
+            src="/BIS-Product-Pdf/IS-2083-2024-Sun-Certifications-India.pdf"
+            title="BIS Certificate for Flashlight - IS 2083:2024 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -886,9 +786,8 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoRead />
-
-        <FaqAuthorEng questionNumber={1} />
+        <ManyUsersAlsoReadArabic />
+        <FaqAuthorArabic questionNumber={4} />
       </div>
     </div>
   );
@@ -901,7 +800,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
-              Our Services
+              خدماتنا
             </h2>
           </BoxReveal>
 
@@ -909,7 +808,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India&apos;s Best Certificate Consultant
+                أفضل مستشار شهادات في الهند
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -930,7 +829,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Mark (ISI License) for Foreign Manufacture
+              علامة BIS (ترخيص ISI) للمصنع الأجنبي
             </p>
           </Link>
 
@@ -947,7 +846,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO Registration Certification
+              شهادة تسجيل CDSCO
             </p>
           </Link>
 
@@ -964,7 +863,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registration
+              تسجيل BIS (CRS)
             </p>
           </Link>
 
@@ -981,7 +880,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Plastic Waste Management
+              إدارة النفايات البلاستيكية
             </p>
           </Link>
 
@@ -998,7 +897,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR Certificate certifications
+              شهادات شهادة EPR
             </p>
           </Link>
 
@@ -1015,7 +914,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC Certificate certifications
+              شهادات شهادة LMPC
             </p>
           </Link>
 
@@ -1032,7 +931,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Registration Certificate
+              شهادة تسجيل BIS
             </p>
           </Link>
 
@@ -1049,7 +948,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI MARK (BIS) for Indian Manufactures
+              علامة ISI (BIS) للمصنعين الهنود
             </p>
           </Link>
         </div>

@@ -77,6 +77,77 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+      {/* Hreflang Tags */}
+      <link
+        rel="alternate"
+        hrefLang="x-default"
+        href="https://bis-certifications.com/blogs/isi-products/bunk-beds-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="en"
+        href="https://bis-certifications.com/blogs/isi-products/bunk-beds-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ar"
+        href="https://bis-certifications.com/blogs/isi-products/asrat-muzdawijat-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="zh"
+        href="https://bis-certifications.com/blogs/isi-products/shuang-ceng-chuang-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="nl"
+        href="https://bis-certifications.com/blogs/isi-products/stapelbedden-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="fr"
+        href="https://bis-certifications.com/blogs/isi-products/lits-superposes-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="de"
+        href="https://bis-certifications.com/blogs/isi-products/etagenbetten-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="id"
+        href="https://bis-certifications.com/blogs/isi-products/ranjang-susun-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="it"
+        href="https://bis-certifications.com/blogs/isi-products/letti-a-castello-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ja"
+        href="https://bis-certifications.com/blogs/isi-products/nidan-beddo-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ko"
+        href="https://bis-certifications.com/blogs/isi-products/icheung-chimdae-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="es"
+        href="https://bis-certifications.com/blogs/isi-products/literas-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="th"
+        href="https://bis-certifications.com/blogs/isi-products/teng-song-chan-is-17636"
+      />
+      <link
+        rel="alternate"
+        hrefLang="vi"
+        href="https://bis-certifications.com/blogs/isi-products/giuong-tang-is-17636"
+      />
     </Helmet>
   );
 };
