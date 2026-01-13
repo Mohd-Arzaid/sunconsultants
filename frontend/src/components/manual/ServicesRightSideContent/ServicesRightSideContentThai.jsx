@@ -87,6 +87,8 @@ const ServicesRightSideContentThai = () => {
     "/blogs/isi-products/ghao-ngan-is-17631",
     // BIS Certificate for Chair And Stools Thai Page Url
     "/blogs/isi-products/ghao-lae-mang-is-17632",
+    // BIS Certificate for Flashlight Thai Page Url
+    "/blogs/isi-products/flashlight-thai-is-2083",
   ];
 
   // Check if current path should show these components
@@ -717,6 +719,10 @@ const ContactFormServicesRightSideContentThai = () => {
     // BIS Certificate for Chair And Stools Thai
     if (path.includes("/blogs/isi-products/ghao-lae-mang-is-17632"))
       return "BIS Certificate for Chair And Stools (Thai)";
+    // BIS Certificate for Flashlight Thai
+    if (path.includes("/blogs/isi-products/flashlight-thai-is-2083"))
+      return "BIS Certificate for Flashlight (Thai)";
+    return "";
   };
 
   const [formData, setFormData] = useState({

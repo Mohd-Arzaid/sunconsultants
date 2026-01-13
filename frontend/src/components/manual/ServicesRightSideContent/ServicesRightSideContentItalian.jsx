@@ -86,6 +86,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/sedie-da-lavoro-is-17631",
     // BIS Certificate for Chair And Stools Italian Page Url
     "/blogs/isi-products/sedie-e-sgabelli-is-17632",
+    // Flashlight Italian Page Url
+    "/blogs/isi-products/torcia-is-2083",
   ];
 
   // Check if current path should show these components
@@ -777,6 +779,9 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS Certificate for Chair And Stools Italian
     if (path.includes("/blogs/isi-products/sedie-e-sgabelli-is-17632"))
       return "BIS Certificate for Chair And Stools (Italian)";
+    // BIS Certificate for Flashlight Italian
+    if (path.includes("/blogs/isi-products/torcia-is-2083"))
+      return "BIS Certificate for Flashlight (Italian)";
   };
 
   const [formData, setFormData] = useState({

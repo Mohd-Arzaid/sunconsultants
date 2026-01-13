@@ -48,6 +48,8 @@ const ServicesRightSideContentFrench = () => {
     "/blogs/isi-products/chaises-de-travail-is-17631",
     // Chair And Stools French Page Url
     "/blogs/isi-products/chaises-et-tabourets-is-17632",
+    // Flashlight French Page Url
+    "/blogs/isi-products/lampe-de-poche-is-2083",
   ];
 
   // Check if current path should show these components
@@ -610,6 +612,8 @@ const ContactFormServicesRightSideContentFrench = () => {
       return "BIS Certificate for Work Chairs (French)";
     if (path.includes("/blogs/isi-products/chaises-et-tabourets-is-17632"))
       return "BIS Certificate for Chair And Stools (French)";
+    if (path.includes("/blogs/isi-products/lampe-de-poche-is-2083"))
+      return "BIS Certificate for Flashlight (French)";
     return "";
   };
 
