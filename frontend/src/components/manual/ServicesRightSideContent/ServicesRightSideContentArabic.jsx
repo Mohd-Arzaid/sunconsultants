@@ -72,6 +72,8 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/karasi-wa-masaaid-is-17632",
     // BIS Certificate for Flashlight Arabic Page Url
     "/blogs/isi-products/masbah-yadawi-is-2083",
+    // BIS Certificate for Furniture Arabic Page Url
+    "/blogs/isi-products/athath",
   ];
 
   // Check if current path should show these components
@@ -707,6 +709,9 @@ const ContactFormServicesRightSideContentArabic = () => {
     // BIS Certificate for Flashlight Arabic
     if (path.includes("/blogs/isi-products/masbah-yadawi-is-2083"))
       return "BIS Certificate for Flashlight (Arabic)";
+    // BIS Certificate for Furniture Arabic
+    if (path.includes("/blogs/isi-products/athath"))
+      return "BIS Certificate for Furniture (Arabic)";
     return "";
   };
 

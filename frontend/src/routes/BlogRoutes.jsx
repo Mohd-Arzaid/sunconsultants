@@ -142,7 +142,19 @@ const BISCertificateForTablesAndDesksUnit = lazy(() =>
   import("@/blogs/BISCertificateForTablesAndDesksUnit")
 );
 const BISCertificateForFurniture = lazy(() =>
-  import("@/blogs/BISCertificateforFurniture")
+  import("@/blogs/BISCertificateForFurniture/BISCertificateforFurniture")
+);
+const BISCertificateForFurnitureArabic = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureArabic")
+);
+const BISCertificateForFurnitureChinese = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureChinese")
+);
+const BISCertificateForFurnitureDutch = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureDutch")
+);
+const BISCertificateForFurnitureFrench = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureFrench")
 );
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
@@ -926,6 +938,38 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForFurniture />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/athath"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/jiaju"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/meubels"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/meubles"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureFrench />
           </Suspense>
         }
       />

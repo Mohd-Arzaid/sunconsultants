@@ -3642,13 +3642,6 @@
 
 
 
-  
-
-
-
-
-
-
      <!-- {/* ==================================================================== */}
       {/* ==================================================================== */}
       {/* ==================================================================== */}
@@ -3670,6 +3663,19 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+
+
+  
+     <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
+
+
+
   <!-- BIS Certificate for Furniture - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/furniture</loc>
@@ -3677,6 +3683,80 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+ 
+
+
+
+   <!-- BIS Certificate for Furniture - Arabic -->
+   <url>
+     <loc>https://bis-certifications.com/blogs/isi-products/athath</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+     <lastmod>2025-01-16</lastmod>
+   </url>
+
+   <!-- BIS Certificate for Furniture - Chinese -->
+   <url>
+     <loc>https://bis-certifications.com/blogs/isi-products/jiaju</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+     <lastmod>2025-01-16</lastmod>
+   </url>
+
+   <!-- BIS Certificate for Furniture - Dutch -->
+   <url>
+     <loc>https://bis-certifications.com/blogs/isi-products/meubels</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+     <lastmod>2025-01-16</lastmod>
+   </url>
+
+   <!-- BIS Certificate for Furniture - French -->
+   <url>
+     <loc>https://bis-certifications.com/blogs/isi-products/meubles</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+     <lastmod>2025-01-16</lastmod>
+   </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
+
+
+
+
+
   <!-- BIS Certificate for Welded Pipes & Tubes - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/ISI-products/welded-pipes-&amp;-tubes-IS-17876:2024</loc>
