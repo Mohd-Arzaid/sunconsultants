@@ -1,4 +1,4 @@
-import FaqAuthorEngGerman from "@/components/common/FaqAuthor/FaqAuthorEngGerman";
+import FaqAuthorGerman from "@/components/common/FaqAuthor/FaqAuthorGerman";
 import ManyUsersAlsoReadGerman from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadGerman";
 import ServicesRightSideContentGerman from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentGerman";
 import {
@@ -823,7 +823,7 @@ const MainContentLeft = () => {
         </div>
 
         <ManyUsersAlsoReadGerman />
-        <FaqAuthorEngGerman questionNumber={4} />
+        <FaqAuthorGerman questionNumber={4} />
       </div>
     </div>
   );
