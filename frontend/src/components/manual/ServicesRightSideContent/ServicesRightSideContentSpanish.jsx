@@ -53,6 +53,8 @@ const ServicesRightSideContentSpanish = () => {
     "/blogs/isi-products/sillas-y-taburetes-is-17632",
     // BIS Certificate for Flashlight Spanish Page Url
     "/blogs/isi-products/linterna-is-2083",
+    // BIS Certificate for Furniture Spanish Page Url
+    "/blogs/isi-products/muebles",
   ];
 
   // Check if current path should show these components
@@ -625,6 +627,9 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Flashlight Spanish
     if (path.includes("/blogs/isi-products/linterna-is-2083"))
       return "BIS Certificate for Flashlight (Spanish)";
+    // BIS Certificate for Furniture Spanish
+    if (path.includes("/blogs/isi-products/muebles"))
+      return "BIS Certificate for Furniture (Spanish)";
     return "";
   };
 

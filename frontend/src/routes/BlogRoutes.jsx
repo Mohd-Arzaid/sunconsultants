@@ -156,6 +156,30 @@ const BISCertificateForFurnitureDutch = lazy(() =>
 const BISCertificateForFurnitureFrench = lazy(() =>
   import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureFrench")
 );
+const BISCertificateForFurnitureGerman = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureGerman")
+);
+const BISCertificateForFurnitureIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureIndonesian")
+);
+const BISCertificateForFurnitureItalian = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureItalian")
+);
+const BISCertificateForFurnitureJapanese = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureJapanese")
+);
+const BISCertificateForFurnitureKorean = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureKorean")
+);
+const BISCertificateForFurnitureSpanish = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureSpanish")
+);
+const BISCertificateForFurnitureThai = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureThai")
+);
+const BISCertificateForFurnitureVietnamese = lazy(() =>
+  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureVietnamese")
+);
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
 );
@@ -278,6 +302,11 @@ const BISCertificateForChairAndStoolsThai = lazy(() =>
 const BISCertificateForChairAndStoolsVietnamese = lazy(() =>
   import(
     "@/blogs/BISCertificateForChairAndStools/BISCertificateForChairAndStoolsVietnamese"
+  )
+);
+const BISCertificateforGeneralPurposeChairsandStoolsArabic = lazy(() =>
+  import(
+    "@/blogs/BISCertificateforGeneralPurposeChairsandStools/BISCertificateforGeneralPurposeChairsandStoolsArabic"
   )
 );
 const BISCertificateForWeldedPipesAndTubes = lazy(() =>
@@ -993,6 +1022,70 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/mobel"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/perabotan"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/mobili"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/kagu"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/gagu"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/muebles"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/furniture-thai"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/noi-that"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/work-chairs-is-17631"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -1197,6 +1290,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForChairAndStoolsVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/karasi-wa-masaaid-ammat-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforGeneralPurposeChairsandStoolsArabic />
           </Suspense>
         }
       />

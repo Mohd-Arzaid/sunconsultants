@@ -88,6 +88,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/kursi-dan-bangku-is-17632",
     // Flashlight Indonesian Page Url
     "/blogs/isi-products/senter-is-2083",
+    // Furniture Indonesian Page Url
+    "/blogs/isi-products/perabotan",
   ];
 
   // Check if current path should show these components
@@ -759,6 +761,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Flashlight Indonesian
     if (path.includes("/blogs/isi-products/senter-is-2083"))
       return "BIS Certificate for Flashlight (Indonesian)";
+    // BIS Certificate for Furniture Indonesian
+    if (path.includes("/blogs/isi-products/perabotan"))
+      return "BIS Certificate for Furniture (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

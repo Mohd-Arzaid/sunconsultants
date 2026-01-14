@@ -70,6 +70,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/uija-mich-seutul-is-17632",
     // BIS Certificate for Flashlight Korean Page Url
     "/blogs/isi-products/sonjeondeung-is-2083",
+    // BIS Certificate for Furniture Korean Page Url
+    "/blogs/isi-products/gagu",
   ];
 
   // Check if current path should show these components
@@ -667,6 +669,9 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Flashlight Korean
     if (path.includes("/blogs/isi-products/sonjeondeung-is-2083"))
       return "BIS Certificate for Flashlight (Korean)";
+    // BIS Certificate for Furniture Korean
+    if (path.includes("/blogs/isi-products/gagu"))
+      return "BIS Certificate for Furniture (Korean)";
     return "";
   };
 

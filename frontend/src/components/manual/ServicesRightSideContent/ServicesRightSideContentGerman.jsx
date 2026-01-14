@@ -54,6 +54,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/stuhle-und-hocker-is-17632",
     // Flashlight German Page Url
     "/blogs/isi-products/taschenlampe-is-2083",
+    // Furniture German Page Url
+    "/blogs/isi-products/mobel",
   ];
 
   // Check if current path should show these components
@@ -620,6 +622,8 @@ const ContactFormServicesRightSideContentGerman = () => {
       return "BIS Certificate for Chair And Stools (German)";
     if (path.includes("/blogs/isi-products/taschenlampe-is-2083"))
       return "BIS Certificate for Flashlight (German)";
+    if (path.includes("/blogs/isi-products/mobel"))
+      return "BIS Certificate for Furniture (German)";
     return "";
   };
 

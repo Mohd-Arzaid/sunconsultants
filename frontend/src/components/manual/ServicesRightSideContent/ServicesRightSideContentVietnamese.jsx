@@ -51,6 +51,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/blogs/isi-products/ghe-va-ghe-dau-is-17632",
     // BIS Certificate for Flashlight Vietnamese Page Url
     "/blogs/isi-products/den-pin-is-2083",
+    // BIS Certificate for Furniture Vietnamese Page Url
+    "/blogs/isi-products/noi-that",
   ];
 
   // Check if current path should show these components
@@ -621,6 +623,9 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     // BIS Certificate for Flashlight Vietnamese
     if (path.includes("/blogs/isi-products/den-pin-is-2083"))
       return "BIS Certificate for Flashlight (Vietnamese)";
+    // BIS Certificate for Furniture Vietnamese
+    if (path.includes("/blogs/isi-products/noi-that"))
+      return "BIS Certificate for Furniture (Vietnamese)";
     return "";
   };
 

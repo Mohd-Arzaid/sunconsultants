@@ -3556,6 +3556,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for General Purpose Chairs and Stools - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/karasi-wa-masaaid-ammat-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 
 
  <!-- BIS Certificate for Chair & Stools - Chinese Start -->
@@ -3718,6 +3725,66 @@
      <priority>0.8</priority>
      <lastmod>2025-01-16</lastmod>
    </url>
+
+   <!-- BIS Certificate for Furniture - German -->
+   <url>
+     <loc>https://bis-certifications.com/blogs/isi-products/mobel</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
+     <lastmod>2025-01-16</lastmod>
+   </url>
+
+  <!-- BIS Certificate for Furniture - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/perabotan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+ 
+  <!-- BIS Certificate for Furniture - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/mobili</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+ 
+  <!-- BIS Certificate for Furniture - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/kagu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Furniture - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/gagu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Furniture - Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/muebles</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Furniture - Thai -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/furniture-thai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Furniture - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/noi-that</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 
 
 

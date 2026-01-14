@@ -89,6 +89,8 @@ const ServicesRightSideContentThai = () => {
     "/blogs/isi-products/ghao-lae-mang-is-17632",
     // BIS Certificate for Flashlight Thai Page Url
     "/blogs/isi-products/flashlight-thai-is-2083",
+    // BIS Certificate for Furniture Thai Page Url
+    "/blogs/isi-products/furniture-thai",
   ];
 
   // Check if current path should show these components
@@ -722,6 +724,9 @@ const ContactFormServicesRightSideContentThai = () => {
     // BIS Certificate for Flashlight Thai
     if (path.includes("/blogs/isi-products/flashlight-thai-is-2083"))
       return "BIS Certificate for Flashlight (Thai)";
+    // BIS Certificate for Furniture Thai
+    if (path.includes("/blogs/isi-products/furniture-thai"))
+      return "BIS Certificate for Furniture (Thai)";
     return "";
   };
 
