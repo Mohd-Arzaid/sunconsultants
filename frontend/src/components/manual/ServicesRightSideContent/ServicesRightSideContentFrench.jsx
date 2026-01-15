@@ -52,6 +52,8 @@ const ServicesRightSideContentFrench = () => {
     "/blogs/isi-products/lampe-de-poche-is-2083",
     // Furniture French Page Url
     "/blogs/isi-products/meubles",
+    // BIS Certificate for Seamless Pipes and Tubes French Page Url
+    "/blogs/isi-products/tubes-et-tuyaux-sans-soudure-is-17875",
   ];
 
   // Check if current path should show these components
@@ -618,6 +620,8 @@ const ContactFormServicesRightSideContentFrench = () => {
       return "BIS Certificate for Flashlight (French)";
     if (path.includes("/blogs/isi-products/meubles"))
       return "BIS Certificate for Furniture (French)";
+    if (path.includes("/blogs/isi-products/tubes-et-tuyaux-sans-soudure-is-17875"))
+      return "BIS Certificate for Seamless Pipes and Tubes (French)";
     return "";
   };
 

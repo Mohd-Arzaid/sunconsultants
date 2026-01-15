@@ -90,6 +90,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/senter-is-2083",
     // Furniture Indonesian Page Url
     "/blogs/isi-products/perabotan",
+    // BIS Certificate for Seamless Pipes and Tubes Indonesian Page Url
+    "/blogs/isi-products/pipa-dan-tabung-tanpa-sambungan-is-17875",
   ];
 
   // Check if current path should show these components
@@ -764,6 +766,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Furniture Indonesian
     if (path.includes("/blogs/isi-products/perabotan"))
       return "BIS Certificate for Furniture (Indonesian)";
+    // BIS Certificate for Seamless Pipes and Tubes Indonesian
+    if (path.includes("/blogs/isi-products/pipa-dan-tabung-tanpa-sambungan-is-17875"))
+      return "BIS Certificate for Seamless Pipes and Tubes (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

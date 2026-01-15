@@ -56,6 +56,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/taschenlampe-is-2083",
     // Furniture German Page Url
     "/blogs/isi-products/mobel",
+    // BIS Certificate for Seamless Pipes and Tubes German Page Url
+    "/blogs/isi-products/nahtlose-rohre-und-rohre-is-17875",
   ];
 
   // Check if current path should show these components
@@ -624,6 +626,8 @@ const ContactFormServicesRightSideContentGerman = () => {
       return "BIS Certificate for Flashlight (German)";
     if (path.includes("/blogs/isi-products/mobel"))
       return "BIS Certificate for Furniture (German)";
+    if (path.includes("/blogs/isi-products/nahtlose-rohre-und-rohre-is-17875"))
+      return "BIS Certificate for Seamless Pipes and Tubes (German)";
     return "";
   };
 

@@ -76,6 +76,8 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/masbah-yadawi-is-2083",
     // BIS Certificate for Furniture Arabic Page Url
     "/blogs/isi-products/athath",
+    // BIS Certificate for Seamless Pipes and Tubes Arabic Page Url
+    "/blogs/isi-products/anabib-wa-anabib-bila-daraz-is-17875",
   ];
 
   // Check if current path should show these components
@@ -717,6 +719,9 @@ const ContactFormServicesRightSideContentArabic = () => {
     // BIS Certificate for Furniture Arabic
     if (path.includes("/blogs/isi-products/athath"))
       return "BIS Certificate for Furniture (Arabic)";
+    // BIS Certificate for Seamless Pipes and Tubes Arabic
+    if (path.includes("/blogs/isi-products/anabib-wa-anabib-bila-daraz-is-17875"))
+      return "BIS Certificate for Seamless Pipes and Tubes (Arabic)";
     return "";
   };
 

@@ -309,11 +309,40 @@ const BISCertificateforGeneralPurposeChairsandStoolsArabic = lazy(() =>
     "@/blogs/BISCertificateforGeneralPurposeChairsandStools/BISCertificateforGeneralPurposeChairsandStoolsArabic"
   )
 );
+const BISCertificateforGeneralPurposeChairsandStoolsChinese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateforGeneralPurposeChairsandStools/BISCertificateforGeneralPurposeChairsandStoolsChinese"
+  )
+);
 const BISCertificateForWeldedPipesAndTubes = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes")
 );
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import("@/blogs/BISCertificateForSeamlessPipesAndTubes")
+);
+const BISCertificateForSeamlessPipesAndTubesChinese = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesChinese")
+);
+const BISCertificateForSeamlessPipesAndTubesArabic = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesArabic")
+);
+const BISCertificateForSeamlessPipesAndTubesDutch = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesDutch")
+);
+const BISCertificateForSeamlessPipesAndTubesFrench = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesFrench")
+);
+const BISCertificateForSeamlessPipesAndTubesGerman = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesGerman")
+);
+const BISCertificateForSeamlessPipesAndTubesIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesIndonesian")
+);
+const BISCertificateForSeamlessPipesAndTubesItalian = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesItalian")
+);
+const BISCertificateForSeamlessPipesAndTubesJapanese = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesJapanese")
 );
 const BISCertificateForFlashlight = lazy(() =>
   import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlight")
@@ -1302,6 +1331,14 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/tong-yong-yizi-he-dengzi-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforGeneralPurposeChairsandStoolsChinese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/welded-pipes-&-tubes-is-17876"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -1314,6 +1351,62 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSeamlessPipesAndTubes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/wufeng-guan-he-guan-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/anabib-wa-anabib-bila-daraz-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/naadloze-buizen-en-buizen-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tubes-et-tuyaux-sans-soudure-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/nahtlose-rohre-und-rohre-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/pipa-dan-tabung-tanpa-sambungan-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tubi-e-tubi-senza-saldatura-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesItalian />
           </Suspense>
         }
       />

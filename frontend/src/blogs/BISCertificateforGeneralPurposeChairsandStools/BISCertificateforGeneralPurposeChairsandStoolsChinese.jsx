@@ -1,6 +1,6 @@
-import FaqAuthorArabic from "@/components/common/FaqAuthor/FaqAuthorArabic";
-import ManyUsersAlsoReadArabic from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadArabic";
-import ServicesRightSideContentArabic from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentArabic";
+import FaqAuthorChinese from "@/components/common/FaqAuthor/FaqAuthorChinese";
+import ManyUsersAlsoReadChinese from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadChinese";
+import ServicesRightSideContentChinese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentChinese";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterArabic from "@/components/manual/Footer/FooterArabic";
+import FooterChinese from "@/components/manual/Footer/FooterChinese";
 import {
   Table,
   TableBody,
@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateforGeneralPurposeChairsandStoolsArabic = () => {
+const BISCertificateforGeneralPurposeChairsandStoolsChinese = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -33,33 +33,31 @@ const BISCertificateforGeneralPurposeChairsandStoolsArabic = () => {
       <MainContent />
       <Services />
       <VideoSection />
-      <FooterArabic />
+      <FooterChinese />
     </div>
   );
 };
 
-export default BISCertificateforGeneralPurposeChairsandStoolsArabic;
+export default BISCertificateforGeneralPurposeChairsandStoolsChinese;
 
 const MetaTags = () => {
-  const title =
-    "شهادة BIS للكراسي والمقاعد للأغراض العامة | رخصة BIS IS 17632:2022";
-  const ogTitle =
-    "شهادة BIS للكراسي والمقاعد للأغراض العامة – دليل IS 17632:2022";
-  const twitterTitle =
-    "رخصة BIS للكراسي والمقاعد للأغراض العامة | IS 17632:2022";
+  const title = "通用椅子和凳子BIS证书 | IS 17632:2022 BIS许可证";
+  const ogTitle = "椅子和凳子BIS认证 – IS 17632:2022指南";
+  const twitterTitle = "椅子和凳子BIS许可证 | IS 17632:2022";
   const metaDescription =
-    "احصل على شهادة BIS للكراسي والمقاعد للأغراض العامة بموجب IS 17632:2022. العملية، المستندات، الاختبارات، التكلفة والجدول الزمني لشهادة BIS في الهند.";
+    "获取IS 17632:2022下的椅子和凳子BIS证书。了解印度BIS认证的流程、文件、测试、成本和时间表。";
   const ogDescription =
-    "دليل كامل لشهادة BIS للكراسي والمقاعد للأغراض العامة وفقًا لـ IS 17632:2022. تعرف على العملية، التكلفة، المستندات، الاختبارات وفوائد رخصة BIS.";
+    "IS 17632:2022椅子和凳子BIS认证完整指南。了解流程、成本、文件、测试和BIS许可证优势。";
   const twitterDescription =
-    "تقدم بطلب للحصول على شهادة BIS للكراسي والمقاعد للأغراض العامة بموجب IS 17632:2022. تعرف على عملية BIS، المستندات، الاختبارات، الرسوم والجدول الزمني في الهند.";
+    "申请IS 17632:2022下的椅子和凳子BIS证书。了解印度的BIS流程、文件、测试、费用和时间表。";
   const metaKeywords =
-    "شهادة BIS للكراسي والمقاعد للأغراض العامة، رخصة BIS للكراسي والمقاعد للأغراض العامة، IS 17632:2022، شهادة BIS للكراسي والمقاعد للأغراض العامة";
+    "椅子和凳子BIS证书, 椅子和凳子BIS许可证, IS 17632:2022, 椅子和凳子BIS认证";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/karasi-wa-masaaid-ammat-is-17632";
+    "https://bis-certifications.com/blogs/isi-products/tong-yong-yizi-he-dengzi-is-17632";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
-  const publisher = "Dhruv Aggarwal, رئيس العمليات في Sun Certification India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   return (
     <Helmet>
@@ -92,7 +90,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">الرئيسية</Link>
+                    <Link to="/">首页</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -101,7 +99,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">أحدث المدونات</Link>
+                    <Link to="/Blogs">最新博客</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -110,7 +108,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    شهادة BIS للكراسي والمقاعد للأغراض العامة – IS 17632:2022
+                    通用椅子和凳子BIS证书 – IS 17632:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -130,7 +128,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentArabic />
+        <ServicesRightSideContentChinese />
       </div>
     </div>
   );
@@ -142,368 +140,345 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          شهادة BIS للكراسي والمقاعد للأغراض العامة – دليل كامل لـ IS 17632:2022
+          通用椅子和凳子BIS证书 – IS 17632:2022完整指南
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforchairsandstools.webp"
-            title="رخصة BIS للكراسي والمقاعد للأغراض العامة"
-            alt="شهادة BIS للكراسي والمقاعد للأغراض العامة - شهادة BIS IS 17632:2022"
+            title="通用椅子和凳子BIS许可证"
+            alt="通用椅子和凳子BIS证书 - IS 17632:2022 BIS认证"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للكراسي والمقاعد للأغراض العامة هي متطلب إلزامي بموجب
-          المعيار الهندي IS 17632:2022. يحدد هذا المعيار متطلبات السلامة
-          والمتانة والأداء للكراسي والمقاعد المستخدمة في المنازل والمكاتب
-          والمناطق التجارية والمؤسسات التعليمية والمقاصف والمطاعم والفنادق
-          والأماكن العامة.
+          通用椅子和凳子BIS证书是根据印度标准IS
+          17632:2022的强制性要求。该标准规定了用于家庭、办公室、商业区域、教育机构、自助餐厅、餐厅、酒店和公共场所的椅子和凳子的安全性、耐用性和性能要求。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          الكراسي والمقاعد من بين أكثر قطع الأثاث استخدامًا وتتعرض باستمرار
-          للحمل والحركة والإجهاد المتكرر. قد ينهار الكرسي أو المقعد الضعيف
-          هيكليًا فجأة، مما يؤدي إلى إصابات. لمنع مثل هذه المخاطر وضمان سلامة
-          المستهلك، يتطلب مكتب المعايير الهندية (BIS) من كل مصنع ومستورد الحصول
-          على شهادة BIS للكراسي والمقاعد قبل بيعها في الهند.
+          椅子和凳子是最常用的家具物品之一，经常承受负载、移动和重复应力。结构薄弱的椅子或凳子可能突然倒塌，导致伤害。为了防止此类危险并确保消费者安全，印度标准局（BIS）要求每个制造商和进口商在印度销售椅子和凳子之前获得BIS认证。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          توفر هذه الصفحة دليلاً كاملاً لشهادة BIS للكراسي والمقاعد بموجب IS
-          17632:2022، بما في ذلك عملية الشهادة والمستندات المطلوبة ومتطلبات
-          الاختبار والرسوم والتحديات والعقوبات والفوائد.
+          本页提供IS
+          17632:2022下椅子和凳子BIS认证的完整指南，包括认证流程、所需文件、测试要求、费用、挑战、处罚和优势。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ما هي شهادة BIS؟
+          什么是BIS认证？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS هي نظام امتثال للمنتجات يحكمه مكتب المعايير الهندية، السلطة
-          الوطنية للمعايير في الهند.
+          BIS认证是由印度标准局（印度国家标准机构）管理的产品合规系统。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معنى شهادة BIS
+          BIS证书含义
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          تضمن شهادة BIS أن المنتج:
+          BIS证书确保产品：
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>يلبي معايير السلامة والجودة الهندية</li>
-          <li>اجتاز اختبارات المختبر المعتمدة من BIS</li>
-          <li>خضع لفحص المصنع</li>
-          <li>يحمي المستهلكين من المنتجات غير الآمنة أو دون المستوى</li>
+          <li>符合印度安全和质量标准</li>
+          <li>已通过BIS认可的实验室测试</li>
+          <li>已接受工厂检查</li>
+          <li>保护消费者免受不安全或不合格产品的侵害</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          تعرض المنتجات المعتمدة علامة ISI، مما يثبت الامتثال للمعايير الهندية.
+          认证产品显示ISI标志，证明符合印度标准。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          المعيار المعمول به – IS 17632:2022 للكراسي والمقاعد
+          适用标准 – 椅子和凳子IS 17632:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          المعيار BIS للكراسي والمقاعد هو:
+          椅子和凳子的BIS标准是：
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> — الكراسي والمقاعد للأغراض العامة:
-          متطلبات السلامة
+          🔹 <strong>IS 17632:2022</strong> — 通用椅子和凳子：安全要求
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يغطي هذا المعيار جميع الكراسي والمقاعد غير المتخصصة المستخدمة لأغراض
-          الجلوس في المنازل والمكاتب والبيئات التجارية والأماكن العامة
-          والإعدادات المؤسسية.
+          该标准涵盖所有用于家庭、办公室、商业环境、公共场所和机构环境的非专业椅子和凳子。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المنتجات المشمولة بموجب IS 17632:2022
+          IS 17632:2022涵盖的产品
         </h3>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>كراسي للأغراض العامة</li>
-          <li>كراسي الطعام</li>
-          <li>كراسي زوار المكتب</li>
-          <li>كراسي الدراسة</li>
-          <li>كراسي المقصف</li>
-          <li>كراسي المطاعم</li>
-          <li>كراسي غرف الاجتماعات</li>
-          <li>كراسي منطقة الانتظار</li>
-          <li>كراسي خشبية</li>
-          <li>كراسي معدنية</li>
-          <li>كراسي بلاستيكية (غير متخصصة)</li>
-          <li>مقاعد للأغراض العامة</li>
-          <li>مقاعد البار</li>
-          <li>مقاعد الطعام</li>
-          <li>مقاعد الخطوة (ضمن المعايير المحددة)</li>
+          <li>通用椅子</li>
+          <li>餐椅</li>
+          <li>办公室访客椅</li>
+          <li>学习椅</li>
+          <li>自助餐厅椅子</li>
+          <li>餐厅椅子</li>
+          <li>会议室椅子</li>
+          <li>等候区椅子</li>
+          <li>木制椅子</li>
+          <li>金属椅子</li>
+          <li>塑料椅子（非专业）</li>
+          <li>通用凳子</li>
+          <li>吧台凳</li>
+          <li>餐凳</li>
+          <li>踏脚凳（在定义标准内）</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معايير السلامة والأداء الرئيسية
+          关键安全和性能参数
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          يقيم IS 17632:2022:
+          IS 17632:2022评估：
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>القوة الهيكلية</li>
-          <li>الاستقرار</li>
-          <li>المتانة تحت الاستخدام المتكرر</li>
-          <li>قوة المقعد</li>
-          <li>أداء مسند الظهر</li>
-          <li>مقاومة تأثير الأرجل</li>
-          <li>قوة المفاصل</li>
-          <li>جودة التشطيب السطحي</li>
-          <li>سلامة الحواف والزوايا</li>
-          <li>جودة المواد</li>
+          <li>结构强度</li>
+          <li>稳定性</li>
+          <li>重复使用下的耐用性</li>
+          <li>座椅强度</li>
+          <li>靠背性能</li>
+          <li>腿部抗冲击性</li>
+          <li>接头强度</li>
+          <li>表面处理质量</li>
+          <li>边缘和角落安全性</li>
+          <li>材料质量</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يجب أن تمتثل جميع الكراسي والمقاعد المباعة في الهند لهذه المعايير
-          والحصول على رخصة BIS للكراسي والمقاعد.
+          在印度销售的所有椅子和凳子必须符合这些参数并获得椅子和凳子BIS许可证。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          لماذا شهادة BIS إلزامية للكراسي والمقاعد
+          为什么椅子和凳子必须进行BIS认证
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          تحمل الكراسي والمقاعد وزن الإنسان وتستخدم بشكل متكرر في جميع البيئات.
-          يمكن أن يؤدي الفشل الهيكلي إلى:
+          椅子和凳子承受人体重量，在所有环境中频繁使用。结构故障可能导致：
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>انهيار الكراسي</li>
-          <li>كسر الأرجل</li>
-          <li>تصدع المقعد</li>
-          <li>فشل مسند الظهر</li>
-          <li>إصابة بسبب الحواف الحادة</li>
-          <li>عدم الاستقرار المؤدي إلى السقوط</li>
+          <li>椅子倒塌</li>
+          <li>腿部断裂</li>
+          <li>座椅开裂</li>
+          <li>靠背故障</li>
+          <li>尖锐边缘造成的伤害</li>
+          <li>不稳定导致跌倒</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          فوائد شهادة BIS
+          BIS认证的优势
         </h3>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>يضمن منتجات جلوس آمنة</li>
-          <li>يمنع الحوادث والإصابات</li>
-          <li>يحسن متانة المنتج</li>
-          <li>يمنع الواردات دون المستوى</li>
-          <li>يؤسس جودة سوق موحدة</li>
-          <li>يعزز ثقة العملاء</li>
-          <li>إلزامي بموجب القانون الهندي (BIS QCOs)</li>
+          <li>确保安全的座椅产品</li>
+          <li>防止事故和伤害</li>
+          <li>提高产品耐用性</li>
+          <li>防止不合格进口</li>
+          <li>建立统一的市场质量</li>
+          <li>增强客户信心</li>
+          <li>印度法律强制性要求（BIS QCOs）</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          بدون شهادة BIS، لا يمكن للمصنعين بيع الكراسي أو المقاعد بشكل قانوني في
-          الهند.
+          没有BIS认证，制造商不能在印度合法销售椅子或凳子。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          عملية شهادة BIS للكراسي والمقاعد (IS 17632:2022)
+          椅子和凳子BIS认证流程（IS 17632:2022）
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          تتبع عملية BIS مخطط شهادة علامة ISI، بما في ذلك الاختبار والفحص
-          والتحقق من الطلب.
+          BIS流程遵循ISI标志认证计划，包括测试、检查和申请验证。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 1 – تحديد نوع المنتج والمعيار
+          步骤1 – 识别产品类型和标准
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تأكد من أن الكرسي/المقعد يندرج تحت IS 17632:2022.</li>
-          <li>حدد المتغيرات التصميمية والمواد المستخدمة.</li>
+          <li>确认椅子/凳子属于IS 17632:2022。</li>
+          <li>识别设计变体和使用的材料。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 2 – تقديم طلب BIS عبر الإنترنت
+          步骤2 – 在线提交BIS申请
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          يتم تقديم الطلب من خلال بوابة BIS Manak الإلكترونية، ويتطلب:
+          申请通过BIS Manak在线门户提交，需要：
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تفاصيل المصنع</li>
-          <li>معلومات المصنع</li>
-          <li>مواصفات المنتج</li>
-          <li>تفاصيل العلامة التجارية/العلامة التجارية</li>
-          <li>سير عمل عملية التصنيع</li>
+          <li>制造商详细信息</li>
+          <li>工厂信息</li>
+          <li>产品规格</li>
+          <li>品牌/商标详情</li>
+          <li>制造工艺流程</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 3 – دفع رسوم شهادة BIS
+          步骤3 – 支付BIS认证费用
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">تشمل الرسوم:</p>
+        <p className="text-gray-600 text-base font-geist mb-3">费用包括：</p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رسوم الطلب</li>
-          <li>رسوم المعالجة</li>
-          <li>رسوم اختبار العينات</li>
-          <li>رسوم فحص المصنع</li>
-          <li>رسوم العلامة</li>
+          <li>申请费</li>
+          <li>处理费</li>
+          <li>样品测试费</li>
+          <li>工厂检查费</li>
+          <li>标志费</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 4 – اختبار المنتج وفقًا لـ IS 17632:2022
+          步骤4 – 根据IS 17632:2022进行产品测试
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          يتم إجراء الاختبار الإلزامي في مختبر معترف به من BIS.
+          强制性测试在BIS认可的实验室进行。
         </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          تشمل الاختبارات:
-        </p>
+        <p className="text-gray-600 text-base font-geist mb-3">测试包括：</p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اختبار الاستقرار</li>
-          <li>اختبار القوة للمقعد</li>
-          <li>اختبار متانة مسند الظهر</li>
-          <li>اختبار تحميل الأرجل للأمام/الجانب/الخلف</li>
-          <li>اختبار تأثير المقعد</li>
-          <li>اختبار السقوط</li>
-          <li>اختبار التعب</li>
-          <li>اختبار التشطيب السطحي</li>
-          <li>اختبار الحافة الحادة</li>
-          <li>المتانة الهيكلية تحت الدورات المتكررة</li>
+          <li>稳定性测试</li>
+          <li>座椅强度测试</li>
+          <li>靠背耐用性测试</li>
+          <li>腿部前/侧/后加载测试</li>
+          <li>座椅冲击测试</li>
+          <li>跌落测试</li>
+          <li>疲劳测试</li>
+          <li>表面处理测试</li>
+          <li>尖锐边缘测试</li>
+          <li>重复循环下的结构耐用性</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          يجب أن تظهر نتائج الاختبار الامتثال الكامل لـ IS 17632:2022.
+          测试结果必须完全符合IS 17632:2022。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 5 – فحص المصنع من قبل BIS
+          步骤5 – BIS工厂检查
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          يزور ضابط BIS المصنع لتقييم:
+          BIS官员访问工厂以评估：
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>عملية التصنيع</li>
-          <li>فحص المواد الخام</li>
-          <li>إجراءات مراقبة الجودة</li>
-          <li>قدرة الاختبار</li>
-          <li>معايرة المعدات</li>
-          <li>حجم الإنتاج</li>
-          <li>الامتثال لمخطط BIS للاختبار والفحص (STI)</li>
+          <li>制造流程</li>
+          <li>原材料检查</li>
+          <li>质量控制程序</li>
+          <li>测试能力</li>
+          <li>设备校准</li>
+          <li>生产量</li>
+          <li>符合BIS测试和检查计划（STI）</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 6 – منح رخصة BIS
+          步骤6 – 授予BIS许可证
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          إذا نجحت الاختبارات والفحص، يصدر BIS:
+          如果测试和检查成功，BIS颁发：
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>شهادة BIS (رخصة علامة ISI)</li>
-          <li>رقم CML</li>
-          <li>الموافقة على وضع علامة ISI على الكراسي والمقاعد</li>
+          <li>BIS证书（ISI标志许可证）</li>
+          <li>CML编号</li>
+          <li>在椅子和凳子上粘贴ISI标志的批准</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 7 – الالتزامات بعد الترخيص
+          步骤7 – 许可证后义务
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يجب على المصنعين:
-        </p>
+        <p className="text-gray-600 text-base font-geist mb-3">制造商必须：</p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>استخدام علامة ISI وفقًا لمتطلبات وضع العلامات من BIS</li>
-          <li>الحفاظ على سجلات مراقبة الجودة</li>
-          <li>الخضوع لفحوصات مراقبة BIS المنتظمة</li>
-          <li>تجديد الترخيص كل 1-2 سنوات</li>
+          <li>根据BIS标签要求使用ISI标志</li>
+          <li>维护质量控制记录</li>
+          <li>接受定期BIS监督检查</li>
+          <li>每1-2年更新许可证</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          نطاق رخصة BIS للكراسي والمقاعد
+          椅子和凳子BIS许可证范围
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يغطي هذا المعيار متطلبات الكراسي والمقاعد للأغراض العامة. ينطبق هذا
-          المعيار على الكراسي والمقاعد للأغراض العامة المصنعة/المصنعة بالكامل.
-          كما ينطبق على الوحدات الجاهزة للتجميع؛ في هذه الحالة تنطبق متطلبات هذا
-          المعيار على الوحدات المجمعة.
+          该标准涵盖通用椅子和凳子的要求。该标准适用于完全制造/制造的通用椅子和凳子。它也适用于即装即用单元；在这种情况下，该标准的要求应适用于组装单元。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          المستندات المطلوبة لشهادة BIS للكراسي والمقاعد
+          椅子和凳子BIS认证所需文件
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          مستندات المصنع
+          制造商文件
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رخصة/تسجيل المصنع</li>
-          <li>مخطط سير عملية التصنيع</li>
-          <li>قائمة الآلات</li>
-          <li>قائمة معدات الاختبار الداخلية</li>
-          <li>شهادات المعايرة</li>
-          <li>تخطيط المصنع ومخطط الأرضية</li>
+          <li>工厂许可证/注册</li>
+          <li>制造工艺流程图</li>
+          <li>机械清单</li>
+          <li>内部测试设备清单</li>
+          <li>校准证书</li>
+          <li>工厂布局和平面图</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المستندات الفنية
+          技术文件
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رسومات الكرسي/المقعد</li>
-          <li>الأبعاد والمواصفات</li>
-          <li>قائمة المواد</li>
-          <li>وصف ميزات السلامة</li>
-          <li>تقارير اختبار الجودة الداخلية</li>
+          <li>椅子/凳子图纸</li>
+          <li>尺寸和规格</li>
+          <li>材料清单</li>
+          <li>安全特性描述</li>
+          <li>内部质量测试报告</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المستندات القانونية
+          法律文件
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>إثبات الهوية والعنوان</li>
-          <li>خطاب تفويض العلامة التجارية</li>
-          <li>شهادة العلامة التجارية (اختياري)</li>
+          <li>身份和地址证明</li>
+          <li>品牌授权书</li>
+          <li>商标证书（可选）</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          مستندات طلب BIS
+          BIS申请文件
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>نموذج الطلب</li>
-          <li>نموذج طلب الاختبار</li>
-          <li>نماذج الإقرار</li>
-          <li>خطاب التفويض</li>
+          <li>申请表</li>
+          <li>测试申请表</li>
+          <li>声明表</li>
+          <li>授权书</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          متطلبات الاختبار للكراسي والمقاعد (IS 17632:2022)
+          椅子和凳子测试要求（IS 17632:2022）
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يتضمن IS 17632:2022 اختبارات ميكانيكية وهيكلية واختبارات سلامة شاملة.
+          IS 17632:2022包括广泛的机械、结构和安全测试。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          الاختبارات الإلزامية
+          强制性测试
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -511,10 +486,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  البند
+                  条款
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  المتطلب
+                  要求
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -524,7 +499,7 @@ const MainContentLeft = () => {
                   4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  التصميم والإتقان
+                  设计和工艺
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -532,7 +507,7 @@ const MainContentLeft = () => {
                   7.2.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  عدم التوازن للأمام والجانب للكراسي بدون مساند
+                  无扶手椅子的前向和侧向失衡
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -540,7 +515,7 @@ const MainContentLeft = () => {
                   7.2.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  عدم التوازن للخلف
+                  后向失衡
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -548,7 +523,7 @@ const MainContentLeft = () => {
                   7.2.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  عدم التوازن الجانبي للكراسي ذات المساند
+                  有扶手椅子的侧向失衡
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -556,7 +531,7 @@ const MainContentLeft = () => {
                   7.2.4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  المقاعد/المقاعد المنخفضة (جميع الاتجاهات)
+                  凳子/蒲团（所有方向）
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors">
@@ -564,7 +539,7 @@ const MainContentLeft = () => {
                   7.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار القوة
+                  强度测试
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -572,43 +547,43 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          تضمن هذه الاختبارات الاستخدام اليومي الآمن في ظل الظروف الواقعية.
+          这些测试确保在真实条件下的安全日常使用。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          التحديات الشائعة وكيفية تجنبها
+          常见挑战及如何避免
         </h2>
 
         <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
           <li>
-            <strong>فشل الكرسي في اختبارات الاستقرار</strong>
+            <strong>椅子稳定性测试失败</strong>
             <br />
-            يحدث بسبب توزيع الوزن غير الصحيح.
+            由于重量分布不当而发生。
             <br />
-            الحل: تحسين تصميم الأرجل، توسيع منطقة القاعدة.
+            修复：改进腿部设计，扩大底座面积。
           </li>
           <li>
-            <strong>المفاصل الضعيفة تسبب فشل الاختبارات</strong>
+            <strong>薄弱接头导致测试失败</strong>
             <br />
-            الحل: استخدام مواد معززة وموصلات أفضل.
+            修复：使用加固材料和更好的连接器。
           </li>
           <li>
-            <strong>معدات الاختبار الداخلية غير كافية</strong>
+            <strong>内部测试设备不足</strong>
             <br />
-            الحل: تثبيت الأدوات المطلوبة المتوافقة مع BIS.
+            修复：安装所需的BIS合规仪器。
           </li>
           <li>
-            <strong>عدم اتساق الوثائق</strong>
+            <strong>文件不一致</strong>
             <br />
-            الحل: إعداد المستندات بشكل منهجي قبل التقديم.
+            修复：在申请前系统地准备文件。
           </li>
           <li>
-            <strong>متغيرات المنتج غير معينة بشكل صحيح</strong>
+            <strong>产品变体未正确映射</strong>
             <br />
-            الحل: تجميع المنتجات بناءً على الهيكل ومعاملات الاختبار.
+            修复：根据结构和测试参数对产品进行分组。
           </li>
         </ol>
 
@@ -616,181 +591,178 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          فوائد شهادة BIS للكراسي والمقاعد
+          椅子和凳子BIS认证的优势
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الإذن القانوني للبيع في الهند</li>
-          <li>تحسين سلامة المنتج</li>
-          <li>تعزيز ثقة العملاء</li>
-          <li>تقليل مخاطر مسؤولية المنتج</li>
-          <li>مطلوب لقوائم التجارة الإلكترونية</li>
-          <li>ضروري لمناقصات الحكومة</li>
-          <li>مصداقية أعلى للعلامة التجارية</li>
-          <li>ميزة تنافسية</li>
+          <li>在印度销售的合法许可</li>
+          <li>提高产品安全性</li>
+          <li>增强客户信任</li>
+          <li>降低产品责任风险</li>
+          <li>电子商务列表所需</li>
+          <li>政府招标必需</li>
+          <li>更高的品牌可信度</li>
+          <li>竞争优势</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          العقوبات لعدم الامتثال
+          不合规处罚
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          بيع الكراسي أو المقاعد بدون شهادة BIS قد يؤدي إلى:
+          在没有BIS认证的情况下销售椅子或凳子可能导致：
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>غرامات مالية ثقيلة</li>
-          <li>استدعاء/مصادرة المنتج</li>
-          <li>إلغاء تراخيص المصنع</li>
-          <li>الملاحقة الجنائية</li>
-          <li>قيود الاستيراد</li>
-          <li>القائمة السوداء في السوق</li>
+          <li>巨额罚款</li>
+          <li>产品召回/没收</li>
+          <li>工厂许可证取消</li>
+          <li>刑事起诉</li>
+          <li>进口限制</li>
+          <li>市场黑名单</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يتم فرض العقوبات بموجب قانون BIS لعام 2016.
+          处罚根据2016年BIS法案执行。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          من يحتاج إلى شهادة BIS للكراسي والمقاعد؟
+          谁需要椅子和凳子BIS认证？
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">إلزامي لـ:</p>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          强制性适用于：
+        </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>المصنعين الهنود</li>
-          <li>المصنعين الأجانب المصدرين إلى الهند</li>
-          <li>المستوردين</li>
-          <li>أصحاب العلامات التجارية/التجار</li>
-          <li>موردي OEM/ODM</li>
-          <li>سلاسل البيع بالتجزئة</li>
-          <li>البائعون عبر الإنترنت</li>
+          <li>印度制造商</li>
+          <li>向印度出口的外国制造商</li>
+          <li>进口商</li>
+          <li>品牌所有者/贸易商</li>
+          <li>OEM/ODM供应商</li>
+          <li>零售连锁店</li>
+          <li>在线卖家</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يتطلب كل مصنع رخصة BIS منفصلة.
+          每个工厂需要单独的BIS许可证。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          الخلاصة
+          结论
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للكراسي والمقاعد للأغراض العامة بموجب IS 17632:2022 إلزامية
-          لضمان سلامة المنتج والاستقرار الهيكلي والمتانة. لا تساعد شهادة BIS
-          المصنعين فقط في الحفاظ على معايير الجودة العالية ولكنها تمكن أيضًا من
-          الوصول القانوني إلى السوق وتزيد من ثقة المستهلك.
+          根据IS
+          17632:2022，通用椅子和凳子BIS证书对于确保产品安全性、结构稳定性和耐用性是强制性的。BIS认证不仅帮助制造商保持高质量标准，还使合法市场准入并增加消费者信心。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          مع المساعدة المهنية، تصبح عملية الشهادة—من الاختبار إلى الفحص
-          والموافقة—سلسة وقابلة للتنبؤ ومتوافقة بالكامل.
+          通过专业协助，从测试到检查和批准的认证过程变得顺畅、可预测且完全合规。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          الأسئلة الشائعة – شهادة BIS للكراسي والمقاعد
+          常见问题 – 椅子和凳子BIS证书
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. هل شهادة BIS إلزامية للكراسي والمقاعد؟</strong>
+              <strong>1. 椅子和凳子是否必须进行BIS认证？</strong>
               <br />
-              نعم، وفقًا لـ IS 17632:2022، يجب أن تكون جميع الكراسي والمقاعد
-              للأغراض العامة معتمدة من BIS قبل بيعها في الهند.
+              是的，根据IS
+              17632:2022，所有通用椅子和凳子在印度销售前必须获得BIS认证。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. ما هي الاختبارات المطلوبة؟</strong>
+              <strong>2. 需要哪些测试？</strong>
               <br />
-              اختبارات الاستقرار والقوة والمتانة والتأثير والتعب وسلامة المواد.
+              稳定性、强度、耐用性、冲击、疲劳和材料安全测试。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. كم تستغرق شهادة BIS؟</strong>
+              <strong>3. BIS认证需要多长时间？</strong>
               <br />
-              عادة 30-45 يومًا.
+              通常30-45天。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. ما هي تكلفة الشهادة؟</strong>
+              <strong>4. 认证费用是多少？</strong>
               <br />
-              حوالي ₹60,000–₹1,30,000 حسب الاختبار والفحص.
+              根据测试和检查，大约₹60,000–₹1,30,000。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. هل يمكن للمصنعين الأجانب التقديم؟</strong>
+              <strong>5. 外国制造商可以申请吗？</strong>
               <br />
-              نعم، بموجب نظام FMCS.
+              可以，根据FMCS计划。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. هل وضع علامة ISI إلزامي؟</strong>
+              <strong>6. ISI标志是否必须？</strong>
               <br />
-              نعم، بعد منح رخصة BIS.
+              是的，在授予BIS许可证后。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. لماذا تفشل الكراسي في اختبار BIS؟</strong>
+              <strong>7. 为什么椅子BIS测试失败？</strong>
               <br />
-              تشمل الأسباب الشائعة الأرجل الضعيفة وقوة المفاصل الضعيفة وعدم
-              الاستقرار.
+              常见原因包括腿部薄弱、接头强度差和不稳定。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. هل يمكن تغطية نماذج متعددة تحت رخصة واحدة؟</strong>
+              <strong>8. 多个型号可以在一个许可证下涵盖吗？</strong>
               <br />
-              فقط إذا استوفت معايير التشابه والامتثال للمعايير.
+              只有在满足相似性和标准合规性标准的情况下。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. هل فحص المصنع مطلوب؟</strong>
+              <strong>9. 是否需要工厂检查？</strong>
               <br />
-              نعم، إلزامي لشهادة علامة ISI.
+              是的，ISI标志认证是强制性的。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. ما هي المستندات المطلوبة؟</strong>
+              <strong>10. 需要哪些文件？</strong>
               <br />
-              رخصة المصنع والمواصفات الفنية وقائمة الآلات وخطة مراقبة الجودة
-              ورسومات المنتج، إلخ.
+              工厂许可证、技术规格、机械清单、质量控制计划、产品图纸等。
             </p>
           </div>
         </div>
 
-        <ManyUsersAlsoReadArabic />
+        <ManyUsersAlsoReadChinese />
 
-        <FaqAuthorArabic questionNumber={5} />
+        <FaqAuthorChinese questionNumber={5} />
       </div>
     </div>
   );
@@ -803,7 +775,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              خدماتنا
+              我们的服务
             </h2>
           </BoxReveal>
 
@@ -811,7 +783,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                أفضل مستشار شهادات في الهند
+                印度最佳证书顾问
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -826,13 +798,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="شعار BIS"
-                title="شعار BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              علامة BIS (ترخيص ISI) للمصنعين الأجانب
+              外国制造商BIS标志（ISI许可证）
             </p>
           </Link>
 
@@ -843,13 +815,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="شعار CDSCO"
-                title="شعار CDSCO"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              شهادة تسجيل CDSCO
+              CDSCO注册认证
             </p>
           </Link>
 
@@ -860,13 +832,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="شعار BISCRS"
-                title="شعار BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              تسجيل BIS (CRS)
+              BIS（CRS）注册
             </p>
           </Link>
 
@@ -877,13 +849,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
-                alt="إدارة النفايات البلاستيكية"
-                title="إدارة النفايات البلاستيكية"
+                alt="PlasticWasteManagement"
+                title="PlasticWasteManagement"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              إدارة النفايات البلاستيكية
+              塑料废物管理
             </p>
           </Link>
 
@@ -894,13 +866,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="شعار شهادة EPR"
-                title="شعار شهادة EPR"
+                alt="EPRCertificate logo"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              شهادات شهادة EPR
+              EPR证书认证
             </p>
           </Link>
 
@@ -911,13 +883,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="شعار LMPC"
-                title="شعار LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              شهادات شهادة LMPC
+              LMPC证书认证
             </p>
           </Link>
 
@@ -928,13 +900,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="شعار BIS"
-                title="شعار BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              شهادة تسجيل BIS
+              BIS注册证书
             </p>
           </Link>
 
@@ -945,13 +917,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="شعار علامة ISI"
-                title="شعار علامة ISI"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              علامة ISI (BIS) للمصنعين الهنود
+              印度制造商ISI标志（BIS）
             </p>
           </Link>
         </div>

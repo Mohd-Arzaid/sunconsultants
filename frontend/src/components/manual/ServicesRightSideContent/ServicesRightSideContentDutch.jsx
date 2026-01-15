@@ -91,6 +91,8 @@ const ServicesRightSideContentDutch = () => {
     "/blogs/isi-products/zaklamp-is-2083",
     // BIS Certificate for Furniture Dutch Page Url
     "/blogs/isi-products/meubels",
+    // BIS Certificate for Seamless Pipes and Tubes Dutch Page Url
+    "/blogs/isi-products/naadloze-buizen-en-buizen-is-17875",
   ];
 
   // Check if current path should show these components
@@ -725,6 +727,9 @@ const ContactFormServicesRightSideContentDutch = () => {
     // BIS Certificate for Furniture Dutch
     if (path.includes("/blogs/isi-products/meubels"))
       return "BIS Certificate for Furniture (Dutch)";
+    // BIS Certificate for Seamless Pipes and Tubes Dutch
+    if (path.includes("/blogs/isi-products/naadloze-buizen-en-buizen-is-17875"))
+      return "BIS Certificate for Seamless Pipes and Tubes (Dutch)";
     return "";
   };
 

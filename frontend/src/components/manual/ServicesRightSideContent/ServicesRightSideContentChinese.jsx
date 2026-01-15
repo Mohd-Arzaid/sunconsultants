@@ -39,8 +39,10 @@ const ServicesRightSideContentChinese = () => {
     "/blogs/isi-products/chuangju-is-17635",
     "/blogs/isi-products/gong-zuo-yi-is-17631",
     "/blogs/isi-products/yizi-he-dengzi-is-17632",
+    "/blogs/isi-products/tong-yong-yizi-he-dengzi-is-17632",
     "/blogs/isi-products/shoudiantong-is-2083",
     "/blogs/isi-products/jiaju",
+    "/blogs/isi-products/wufeng-guan-he-guan-is-17875",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
     "/bis-fang-an-x-ya-suo-ji-ren-zheng",
     "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
@@ -713,12 +715,18 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certificate for Chair And Stools Chinese
     if (path.includes("/blogs/isi-products/yizi-he-dengzi-is-17632"))
       return "BIS Certificate for Chair And Stools (Chinese)";
+    // BIS Certificate for General Purpose Chairs and Stools Chinese
+    if (path.includes("/blogs/isi-products/tong-yong-yizi-he-dengzi-is-17632"))
+      return "BIS Certificate for General Purpose Chairs and Stools (Chinese)";
     // BIS Certificate for Flashlight Chinese
     if (path.includes("/blogs/isi-products/shoudiantong-is-2083"))
       return "BIS Certificate for Flashlight (Chinese)";
     // BIS Certificate for Furniture Chinese
     if (path.includes("/blogs/isi-products/jiaju"))
       return "BIS Certificate for Furniture (Chinese)";
+    // BIS Certificate for Seamless Pipes and Tubes Chinese
+    if (path.includes("/blogs/isi-products/wufeng-guan-he-guan-is-17875"))
+      return "BIS Certificate for Seamless Pipes and Tubes (Chinese)";
     return "";
   };
 
