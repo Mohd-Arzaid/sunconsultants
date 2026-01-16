@@ -136,7 +136,27 @@ const BISCertificateForBedsVietnamese = lazy(() =>
   import("@/blogs/BISCertificateForBeds/BISCertificateForBedsVietnamese")
 );
 const BISCertificateForStorageUnit = lazy(() =>
-  import("@/blogs/BISCertificateForStorageUnit")
+  import("@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnit")
+);
+const BISCertificateForStorageUnitVietnamese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitVietnamese"
+  )
+);
+const BISCertificateForStorageUnitArabic = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitArabic"
+  )
+);
+const BISCertificateForStorageUnitChinese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitChinese"
+  )
+);
+const BISCertificateForStorageUnitDutch = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitDutch"
+  )
 );
 const BISCertificateForTablesAndDesksUnit = lazy(() =>
   import("@/blogs/BISCertificateForTablesAndDesksUnit")
@@ -160,13 +180,17 @@ const BISCertificateForFurnitureGerman = lazy(() =>
   import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureGerman")
 );
 const BISCertificateForFurnitureIndonesian = lazy(() =>
-  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureIndonesian")
+  import(
+    "@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureIndonesian"
+  )
 );
 const BISCertificateForFurnitureItalian = lazy(() =>
   import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureItalian")
 );
 const BISCertificateForFurnitureJapanese = lazy(() =>
-  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureJapanese")
+  import(
+    "@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureJapanese"
+  )
 );
 const BISCertificateForFurnitureKorean = lazy(() =>
   import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureKorean")
@@ -178,7 +202,9 @@ const BISCertificateForFurnitureThai = lazy(() =>
   import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureThai")
 );
 const BISCertificateForFurnitureVietnamese = lazy(() =>
-  import("@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureVietnamese")
+  import(
+    "@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureVietnamese"
+  )
 );
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
@@ -318,31 +344,69 @@ const BISCertificateForWeldedPipesAndTubes = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes")
 );
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubes"
+  )
 );
 const BISCertificateForSeamlessPipesAndTubesChinese = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesChinese")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesChinese"
+  )
 );
 const BISCertificateForSeamlessPipesAndTubesArabic = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesArabic")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesArabic"
+  )
 );
 const BISCertificateForSeamlessPipesAndTubesDutch = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesDutch")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesDutch"
+  )
 );
 const BISCertificateForSeamlessPipesAndTubesFrench = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesFrench")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesFrench"
+  )
 );
 const BISCertificateForSeamlessPipesAndTubesGerman = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesGerman")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesGerman"
+  )
 );
 const BISCertificateForSeamlessPipesAndTubesIndonesian = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesIndonesian")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesIndonesian"
+  )
 );
 const BISCertificateForSeamlessPipesAndTubesItalian = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesItalian")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesItalian"
+  )
 );
 const BISCertificateForSeamlessPipesAndTubesJapanese = lazy(() =>
-  import("@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesJapanese")
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesJapanese"
+  )
+);
+const BISCertificateForSeamlessPipesAndTubesKorean = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesKorean"
+  )
+);
+const BISCertificateForSeamlessPipesAndTubesSpanish = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesSpanish"
+  )
+);
+const BISCertificateForSeamlessPipesAndTubesThai = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesThai"
+  )
+);
+const BISCertificateForSeamlessPipesAndTubesVietnamese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubesVietnamese"
+  )
 );
 const BISCertificateForFlashlight = lazy(() =>
   import("@/blogs/BISCertificateForFlashlight/BISCertificateForFlashlight")
@@ -1003,6 +1067,38 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/don-vi-luu-tru-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/wahdat-al-takhzin-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cunchu-danwei-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/opslageenheden-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitDutch />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/tables-&-desks-is-17633"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -1407,6 +1503,46 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSeamlessPipesAndTubesItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/muketsugou-kan-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/mubonghab-gwan-mich-tyubeu-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tubos-y-tuberias-sin-costura-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tho-lae-tho-rai-roi-tor-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ong-va-ong-khong-moi-noi-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubesVietnamese />
           </Suspense>
         }
       />

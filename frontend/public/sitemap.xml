@@ -3670,6 +3670,73 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Storage Unit - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/don-vi-luu-tru-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/wahdat-al-takhzin-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/cunchu-danwei-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/opslageenheden-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+     <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
   <!-- BIS Certificate for Tables & Desks - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/ISI-products/tables-&amp;-desks-IS-17633:2022</loc>
@@ -3890,6 +3957,34 @@
   <!-- BIS Certificate for Seamless Pipes & Tubes - Italian -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/tubi-e-tubi-senza-saldatura-is-17875</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Seamless Pipes & Tubes - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/mubonghab-gwan-mich-tyubeu-is-17875</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Seamless Pipes & Tubes - Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tubos-y-tuberias-sin-costura-is-17875</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Seamless Pipes & Tubes - Thai -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tho-lae-tho-rai-roi-tor-is-17875</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Seamless Pipes & Tubes - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/ong-va-ong-khong-moi-noi-is-17875</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

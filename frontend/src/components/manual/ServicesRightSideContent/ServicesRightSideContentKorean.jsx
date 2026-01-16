@@ -72,6 +72,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/sonjeondeung-is-2083",
     // BIS Certificate for Furniture Korean Page Url
     "/blogs/isi-products/gagu",
+    // BIS Certificate for Seamless Pipes and Tubes Korean Page Url
+    "/blogs/isi-products/mubonghab-gwan-mich-tyubeu-is-17875",
   ];
 
   // Check if current path should show these components
@@ -672,6 +674,9 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Furniture Korean
     if (path.includes("/blogs/isi-products/gagu"))
       return "BIS Certificate for Furniture (Korean)";
+    // BIS Certificate for Seamless Pipes and Tubes Korean
+    if (path.includes("/blogs/isi-products/mubonghab-gwan-mich-tyubeu-is-17875"))
+      return "BIS Certificate for Seamless Pipes and Tubes (Korean)";
     return "";
   };
 
