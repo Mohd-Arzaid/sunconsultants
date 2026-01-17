@@ -9,18 +9,45 @@ const MessageFromManagementDesk = () => {
       <SEOBreadcrumbs customTitle="Message from Management Desk | Sun Certifications India" />
 
       <Helmet>
-        <title>Message from Management Desk - Sun Certifications India</title>
+        <title>Message from Management Desk | Sun Certifications India</title>
         <meta
           name="description"
-          content="Read the message from Sun Certifications India's management desk. Learn about our vision, values, commitment to quality, and our mission to simplify product certification."
+          content="Read the Message from the Management Desk at Sun Certifications India. Learn about our mission, values, and commitment to trust, quality, innovation, and customer satisfaction in product certification services."
         />
-        <link
-          rel="canonical"
-          href="https://bis-certifications.com/message-from-management-desk"
+        <meta
+          name="keywords"
+          content="Message from Management Desk, Sun Certification India, ISI certification services, BIS certification consultants, product certification vision"
         />
+
+        {/* Open Graph Tags */}
+        <meta
+          property="og:title"
+          content="Message from Management Desk – Trusted Product Certification Consultants"
+        />
+        <meta
+          property="og:description"
+          content="Explore the Message from the Management Desk of Sun Certifications India, highlighting our vision, values, customer commitment, and long-term approach to product certification and compliance services."
+        />
+        <meta property="og:type" content="article" />
         <meta
           property="og:url"
           content="https://bis-certifications.com/message-from-management-desk"
+        />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Message from Management Desk | Sun Certifications India"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore the Message from the Management Desk of Sun Certifications India, highlighting our vision, values, customer commitment, and long-term approach to product certification and compliance services."
+        />
+
+        <link
+          rel="canonical"
+          href="https://bis-certifications.com/message-from-management-desk"
         />
       </Helmet>
 
