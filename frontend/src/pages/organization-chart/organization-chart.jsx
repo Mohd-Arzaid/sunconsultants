@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import {
   Crown,
   Briefcase,
@@ -46,6 +47,7 @@ const OrganizationChart = () => {
 
   return (
     <div className="relative">
+      <MetaTags />
       <BreadcrumbContent />
     <div className="max-w-full mx-auto px-4 sm:px-6 md:px-12 pt-12 pb-2 md:pb-5">
       {/* Heading */}
@@ -415,6 +417,48 @@ const OrganizationChart = () => {
 };
 
 export default OrganizationChart;
+
+const MetaTags = () => {
+  const title =
+    "Organization Chart of Sun Certifications India | BIS Certification Experts";
+  const description =
+    "Explore the organizational structure of Sun Certifications India, a leading BIS certification and product compliance consultancy in India. Our expert teams across BIS, FMCS, EPR, LMPC, PESO, R&D, IT, and business development ensure reliable, transparent, and efficient certification services for manufacturers and importers.";
+  const ogTitle = "Our Organization Structure | Sun Certifications India";
+  const twitterTitle = "Organizational Structure | Sun Certifications India";
+  const ogDescription =
+    "Discover how Sun Certifications India is structured to deliver expert BIS certification and regulatory compliance services. Our dedicated leadership, operations, technical, and compliance teams work together to ensure quality, trust, and timely approvals.";
+  const twitterDescription =
+    "View the organizational chart of Sun Certifications India and understand how our expert teams support BIS certification, FMCS, EPR, LMPC, PESO, and product compliance services across India.";
+  const keywords =
+    "organizational structure, BIS compliance experts, BIS certification organization, Sun Certifications India";
+
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
+
+      {/* Open Graph Tags */}
+      <meta property="og:title" content={ogTitle} />
+      <meta property="og:description" content={ogDescription} />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:url"
+        content="https://bis-certifications.com/organization-chart"
+      />
+
+      {/* Twitter Card Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={twitterTitle} />
+      <meta name="twitter:description" content={twitterDescription} />
+
+      <link
+        rel="canonical"
+        href="https://bis-certifications.com/organization-chart"
+      />
+    </Helmet>
+  );
+};
 
 const BreadcrumbContent = () => {
   return (
