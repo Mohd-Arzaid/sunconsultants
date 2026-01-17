@@ -88,6 +88,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
     "/ministry-updates/ethylene-dichloride-qco-withdraw-order",
     "/ministry-updates/p-xylene-qco-withdraw-order",
+    "/ministry-updates/bis-in-house-lab-requirement",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -891,6 +892,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // P-Xylene QCO Withdrawal Order
     if (path.includes("/ministry-updates/p-xylene-qco-withdraw-order"))
       return "P-Xylene QCO Withdrawal Order - Ministry Updates (English)";
+
+    // BIS Removes Mandatory In-House Laboratory Requirement
+    if (path.includes("/ministry-updates/bis-in-house-lab-requirement"))
+      return "BIS Removes Mandatory In-House Laboratory Requirement - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

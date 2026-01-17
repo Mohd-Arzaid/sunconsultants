@@ -158,6 +158,36 @@ const BISCertificateForStorageUnitDutch = lazy(() =>
     "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitDutch"
   )
 );
+const BISCertificateForStorageUnitFrench = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitFrench"
+  )
+);
+const BISCertificateForStorageUnitGerman = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitGerman"
+  )
+);
+const BISCertificateForStorageUnitIndonesian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitIndonesian"
+  )
+);
+const BISCertificateForStorageUnitItalian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitItalian"
+  )
+);
+const BISCertificateForStorageUnitJapanese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitJapanese"
+  )
+);
+const BISCertificateForStorageUnitKorean = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitKorean"
+  )
+);
 const BISCertificateForTablesAndDesksUnit = lazy(() =>
   import("@/blogs/BISCertificateForTablesAndDesksUnit")
 );
@@ -1095,6 +1125,54 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForStorageUnitDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/unites-de-stockage-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/lagereinheiten-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/unit-penyimpanan-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/unita-di-stoccaggio-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chouzo-unit-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/sunap-yunit-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitKorean />
           </Suspense>
         }
       />

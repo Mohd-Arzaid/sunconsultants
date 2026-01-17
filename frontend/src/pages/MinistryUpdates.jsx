@@ -219,6 +219,17 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
     {
       id: 1,
       color: "#1A8781",
+      tagType: "BIS Update",
+      date: "December 16, 2025",
+      displayDate: "16 Dec 2025",
+      title: "BIS Removes Mandatory In-House Laboratory Requirement for Manufacturers",
+      description:
+        "BIS has officially removed the mandatory in-house laboratory requirement for most products under BIS certification. Manufacturers can now use external BIS-recognised or ISO 17025 accredited labs.",
+      link: "/ministry-updates/bis-in-house-lab-requirement",
+    },
+    {
+      id: 2,
+      color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "November 15, 2024",
       displayDate: "12 Nov 2025",
@@ -305,7 +316,7 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       link: "/ministry-updates/scheme-x-qco-withdraw-order",
     },
     {
-      id: 9,
+      id: 10,
       color: "#5B63E6",
       tagType: "QCO Amendment",
       date: "January 15, 2025",
@@ -316,7 +327,7 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       link: "/ministry-updates/steel-products-amendment-2025",
     },
     {
-      id: 10,
+      id: 11,
       color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "December 24, 2021",
@@ -327,7 +338,7 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       link: "/ministry-updates/toluene-qco-withdraw-order",
     },
     {
-      id: 11,
+      id: 12,
       color: "#C86A31",
       tagType: "QCO Withdraw",
       date: "December 24, 2021",
@@ -338,7 +349,7 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       link: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
     },
     {
-      id: 12,
+      id: 13,
       color: "#5B63E6",
       tagType: "QCO Withdraw",
       date: "December 24, 2021",
@@ -559,6 +570,17 @@ const Pagination = ({
     {
       id: 1,
       color: "#1A8781",
+      tagType: "BIS Update",
+      date: "December 16, 2025",
+      displayDate: "16 Dec 2025",
+      title: "BIS Removes Mandatory In-House Laboratory Requirement for Manufacturers",
+      description:
+        "BIS has officially removed the mandatory in-house laboratory requirement for most products under BIS certification. Manufacturers can now use external BIS-recognised or ISO 17025 accredited labs.",
+      link: "/ministry-updates/bis-in-house-lab-requirement",
+    },
+    {
+      id: 2,
+      color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "November 15, 2024",
       displayDate: "12 Nov 2025",
@@ -646,7 +668,7 @@ const Pagination = ({
     },
     {
       id: 9,
-      color: "#5B63E6",
+      color: "#1A8781",
       tagType: "QCO Amendment",
       date: "January 15, 2025",
       displayDate: "19 Nov 2025",
@@ -678,7 +700,7 @@ const Pagination = ({
       link: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
     },
     {
-      id: 12,
+      id: 13,
       color: "#5B63E6",
       tagType: "QCO Withdraw",
       date: "December 24, 2021",
@@ -689,7 +711,7 @@ const Pagination = ({
       link: "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
     },
     {
-      id: 13,
+      id: 14,
       color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "September 13, 2021",
@@ -700,7 +722,7 @@ const Pagination = ({
       link: "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
     },
     {
-      id: 14,
+      id: 15,
       color: "#C86A31",
       tagType: "QCO Withdraw",
       date: "September 13, 2021",

@@ -68,6 +68,11 @@ const EthyleneDichlorideQCOWithdrawOrderEng = lazy(() =>
 const PXyleneQCOWithdrawOrderEng = lazy(() =>
   import("@/pages/MinistryUpdatesPages/PXyleneEng")
 );
+const BISRemovesMandatoryInHouseLaboratoryEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/BISRemovesMandatoryInHouseLaboratoryEng/BISRemovesMandatoryInHouseLaboratoryEng"
+  )
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -190,6 +195,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <PXyleneQCOWithdrawOrderEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-in-house-lab-requirement"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <BISRemovesMandatoryInHouseLaboratoryEng />
           </Suspense>
         }
       />

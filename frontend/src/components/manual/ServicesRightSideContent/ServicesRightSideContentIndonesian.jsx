@@ -92,6 +92,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/perabotan",
     // BIS Certificate for Seamless Pipes and Tubes Indonesian Page Url
     "/blogs/isi-products/pipa-dan-tabung-tanpa-sambungan-is-17875",
+    // Storage Unit Indonesian Page Url
+    "/blogs/isi-products/unit-penyimpanan-is-17634",
   ];
 
   // Check if current path should show these components
@@ -769,6 +771,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Seamless Pipes and Tubes Indonesian
     if (path.includes("/blogs/isi-products/pipa-dan-tabung-tanpa-sambungan-is-17875"))
       return "BIS Certificate for Seamless Pipes and Tubes (Indonesian)";
+    // BIS Certificate for Storage Unit Indonesian
+    if (path.includes("/blogs/isi-products/unit-penyimpanan-is-17634"))
+      return "BIS Certificate for Storage Unit (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

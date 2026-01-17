@@ -3698,6 +3698,48 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Storage Unit - French -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/unites-de-stockage-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/lagereinheiten-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/unit-penyimpanan-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/unita-di-stoccaggio-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/chouzo-unit-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/sunap-yunit-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 
 
 
@@ -4913,6 +4955,13 @@
   <!-- P-Xylene QCO Withdraw Order - English -->
   <url>
     <loc>https://bis-certifications.com/ministry-updates/p-xylene-qco-withdraw-order</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Removes Mandatory In-House Laboratory Requirement - English -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/bis-in-house-lab-requirement</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
