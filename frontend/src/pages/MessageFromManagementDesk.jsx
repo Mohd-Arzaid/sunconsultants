@@ -2,11 +2,21 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Footer from "@/common/Footer";
 import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { SlashIcon } from "lucide-react";
 
 const MessageFromManagementDesk = () => {
   return (
-    <>
+    <div className="relative">
       <SEOBreadcrumbs customTitle="Message from Management Desk | Sun Certifications India" />
+      <BreadcrumbContent />
 
       <Helmet>
         <title>Message from Management Desk | Sun Certifications India</title>
@@ -53,7 +63,7 @@ const MessageFromManagementDesk = () => {
 
       <div className="bg-white">
         {/* Hero Section */}
-        <div className="bg-white pt-10">
+        <div className="bg-white pt-12 md:pt-20">
           <div className="max-w-[88rem] mx-auto px-4 md:px-12">
             <h1 className="text-4xl md:text-5xl font-geist font-semibold text-neutral-800 text-center tracking-tight">
               Message from the Management Desk
@@ -204,8 +214,36 @@ const MessageFromManagementDesk = () => {
 
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
 export default MessageFromManagementDesk;
+
+const BreadcrumbContent = () => {
+  return (
+    <div className="absolute top-3 md:top-5 left-0 w-full z-30">
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-12">
+        <div className="w-full overflow-x-auto scrollbar-hide">
+          <Breadcrumb>
+            <BreadcrumbList className="flex-nowrap font-geist">
+              <BreadcrumbItem className="flex-shrink-0">
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="flex-shrink-0">
+                <SlashIcon />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem className="flex-shrink-0">
+                <BreadcrumbPage className="whitespace-nowrap">
+                  Message from Management Desk
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+      </div>
+    </div>
+  );
+};

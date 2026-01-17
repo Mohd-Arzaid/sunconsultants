@@ -18,8 +18,18 @@ import {
   TrendingUp,
   Globe,
   Server,
+  SlashIcon,
 } from "lucide-react";
 import Footer from "../../common/Footer";
+import { Link } from "react-router-dom";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const OrganizationChart = () => {
   const scrollContainerRef = useRef(null);
@@ -35,7 +45,8 @@ const OrganizationChart = () => {
   }, []);
 
   return (
-    <>
+    <div className="relative">
+      <BreadcrumbContent />
     <div className="max-w-full mx-auto px-4 sm:px-6 md:px-12 pt-12 pb-2 md:pb-5">
       {/* Heading */}
       <div className="text-center mb-6 sm:mb-8">
@@ -399,8 +410,36 @@ const OrganizationChart = () => {
 
       </div>
           <Footer />
-    </>
+    </div>
   );
 };
 
 export default OrganizationChart;
+
+const BreadcrumbContent = () => {
+  return (
+    <div className="absolute top-3 md:top-5 left-0 w-full z-30">
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-12">
+        <div className="w-full overflow-x-auto scrollbar-hide">
+          <Breadcrumb>
+            <BreadcrumbList className="flex-nowrap font-geist">
+              <BreadcrumbItem className="flex-shrink-0">
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="flex-shrink-0">
+                <SlashIcon />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem className="flex-shrink-0">
+                <BreadcrumbPage className="whitespace-nowrap">
+                  Organization Chart
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+      </div>
+    </div>
+  );
+};

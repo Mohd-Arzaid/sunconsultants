@@ -393,19 +393,19 @@ const Navbar = () => {
               </Button>
             </Link>
 
-            {/* Services, About, Updates, Gallery */}
+            {/* About, Services, Updates, Gallery */}
             {[
-              {
-                title: "Services",
-                items: navContent.categoriesMobile,
-                isOpen: servicesOpen,
-                setOpen: setServicesOpen,
-              },
               {
                 title: "About",
                 items: navContent.aboutMobile,
                 isOpen: aboutOpen,
                 setOpen: setAboutOpen,
+              },
+              {
+                title: "Services",
+                items: navContent.categoriesMobile,
+                isOpen: servicesOpen,
+                setOpen: setServicesOpen,
               },
               {
                 title: "Updates",
