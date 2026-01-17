@@ -300,7 +300,7 @@ const Navbar = () => {
                   About
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="p-4 w-[250px]">{navContent.about}</div>
+                  <div className="p-4 w-[340px]">{navContent.about}</div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 

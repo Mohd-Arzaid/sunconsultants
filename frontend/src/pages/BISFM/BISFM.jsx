@@ -763,9 +763,9 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Obtaining a BIS certificate is more than a legal requirement—it's a
-        gateway to India's vast consumer market. Here are a few key reasons why
-        it's essential:
+          Obtaining a BIS certificate is more than a legal requirement—it's a
+          gateway to India's vast consumer market. Here are a few key reasons why
+          it's essential:
       </p>
 
       <PointsListWithoutHeading

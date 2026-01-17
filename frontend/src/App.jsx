@@ -70,7 +70,9 @@ import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
 import FaqsPageRoutes from "./routes/FaqsPageRoutes";
 
 import MessageFromManagementDesk from "./pages/MessageFromManagementDesk";
-
+import OrganizationChart from "./pages/organization-chart/organization-chart";
+import AdvisoryNetworkPage from "./pages/advisory-network-page/advisory-network-page";
+  
 // ============================================
 // Admin Routes (Commented out)
 // ============================================
@@ -104,6 +106,16 @@ function App() {
 
       {/* Main Routes */}
       <Routes>
+
+        
+        {/* Organization Chart Route */}
+        <Route path="/organization-chart" element={<OrganizationChart />} />
+       <Route
+          path="/expert-bis-certification-panel-sun-certifications-india"
+          element={<AdvisoryNetworkPage />}
+        />
+
+
         {/* Home Route */}
         <Route
           index

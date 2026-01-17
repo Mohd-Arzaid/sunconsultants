@@ -251,12 +251,30 @@ export const NAVIGATION_DATA = {
     },
     {
       id: 2,
+      name: "Message From Management",
+      link: "/message-from-management-desk",
+      icon: Presentation,
+    },
+    {
+      id: 3,
+      name: "Organization Chart",
+      link: "/organization-chart",
+      icon: Building,
+    },
+    {
+      id: 4,
+      name: "Expert BIS Panel",
+      link: "/expert-bis-certification-panel-sun-certifications-india",
+      icon: Award,
+    },
+    {
+      id: 5,
       name: "Grant Letter",
       link: "/BIS-certification-grant-letter",
       icon: Award,
     },
     {
-      id: 3,
+      id: 6,
       name: "Awards",
       link: "/awards-and-recognition",
       icon: Award,

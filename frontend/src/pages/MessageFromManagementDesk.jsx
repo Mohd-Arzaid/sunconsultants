@@ -31,20 +31,13 @@ const MessageFromManagementDesk = () => {
             <h1 className="text-4xl md:text-5xl font-geist font-semibold text-neutral-800 text-center tracking-tight">
               Message from the Management Desk
             </h1>
-            <p className="mt-3 max-w-3xl mx-auto text-lg text-center md:text-xl text-neutral-500 font-geist leading-relaxed">
-              A message from our leadership team about our vision, values, and
-              commitment to excellence in product certification services.
-            </p>
-            <div className="mt-6 text-center">
-              <span className="inline-block px-4 py-2 bg-neutral-100 text-neutral-700 rounded-full text-sm md:text-base font-geist font-medium">
-                Updated: January 2025
-              </span>
-            </div>
+
+           
           </div>
         </div>
 
         {/* Main Content */}
-        <div className="max-w-[88rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-12">
+        <div className="max-w-[88rem] mx-auto px-4 md:px-12 pt-6 md:pt-8 pb-12">
           <div className="max-w-4xl mx-auto">
             {/* Welcome Message */}
             <div className="mb-10 md:mb-12">
