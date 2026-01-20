@@ -39,6 +39,8 @@ const ServicesRightSideContentJapanese = () => {
     "/blogs/isi-products/beddo-is-17635",
     // BIS Certificate for Storage Unit Japanese Page Url
     "/blogs/isi-products/chouzo-unit-is-17634",
+    // Tables & Desks Japanese Page Url
+    "/blogs/isi-products/teburu-to-tsukue-is-17633",
     // BIS Certificate for Work Chairs Japanese Page Url
     "/blogs/isi-products/sagyou-you-isu-is-17631",
     // BIS Certificate for Chair And Stools Japanese Page Url
@@ -740,6 +742,9 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS Certificate for Storage Unit Japanese
     if (path.includes("/blogs/isi-products/chouzo-unit-is-17634"))
       return "BIS Certificate for Storage Unit (Japanese)";
+    // BIS Certificate for Tables & Desks Japanese
+    if (path.includes("/blogs/isi-products/teburu-to-tsukue-is-17633"))
+      return "BIS Certificate for Tables & Desks (Japanese)";
     // BIS Certificate for Work Chairs Japanese
     if (path.includes("/blogs/isi-products/sagyou-you-isu-is-17631"))
       return "BIS Certificate for Work Chairs (Japanese)";

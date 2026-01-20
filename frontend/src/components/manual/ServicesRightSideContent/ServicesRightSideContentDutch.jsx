@@ -95,6 +95,8 @@ const ServicesRightSideContentDutch = () => {
     "/blogs/isi-products/naadloze-buizen-en-buizen-is-17875",
     // BIS Certificate for Storage Unit Dutch Page Url
     "/blogs/isi-products/opslageenheden-is-17634",
+    // BIS Certificate for Tables & Desks Dutch Page Url
+    "/blogs/isi-products/tafels-en-bureaus-is-17633",
   ];
 
   // Check if current path should show these components
@@ -735,6 +737,9 @@ const ContactFormServicesRightSideContentDutch = () => {
     // BIS Certificate for Storage Unit Dutch
     if (path.includes("/blogs/isi-products/opslageenheden-is-17634"))
       return "BIS Certificate for Storage Unit (Dutch)";
+    // BIS Certificate for Tables & Desks Dutch
+    if (path.includes("/blogs/isi-products/tafels-en-bureaus-is-17633"))
+      return "BIS Certificate for Tables & Desks (Dutch)";
     return "";
   };
 

@@ -3740,6 +3740,20 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Storage Unit - Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/unidades-de-almacenamiento-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - Thai -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tu-keeb-khong-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod> 
+  </url>
 
 
 
@@ -3782,6 +3796,94 @@
   <!-- BIS Certificate for Tables & Desks - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/ISI-products/tables-&amp;-desks-IS-17633:2022</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tawilat-wa-makatib-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/zhuozi-he-bangongzhuo-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+  <!-- BIS Certificate for Tables & Desks - Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tafels-en-bureaus-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+  <!-- BIS Certificate for Tables & Desks - French -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tables-et-bureaux-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+  <!-- BIS Certificate for Tables & Desks - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tische-und-schreibtische-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+  <!-- BIS Certificate for Tables & Desks - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/meja-dan-meja-tulis-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tavoli-e-scrivanie-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/teburu-to-tsukue-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/teibeul-mich-chaegsang-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/mesas-y-escritorios-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - Thai -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/to-lae-to-ngan-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/ban-va-ban-lam-viec-is-17633</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -3943,6 +4045,13 @@
   <!-- BIS Certificate for Welded Pipes & Tubes - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/ISI-products/welded-pipes-&amp;-tubes-IS-17876:2024</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/anabib-wa-anabib-malwama-is-17876</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

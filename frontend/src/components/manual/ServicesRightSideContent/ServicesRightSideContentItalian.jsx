@@ -94,6 +94,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/tubi-e-tubi-senza-saldatura-is-17875",
     // Storage Unit Italian Page Url
     "/blogs/isi-products/unita-di-stoccaggio-is-17634",
+    // Tables & Desks Italian Page Url
+    "/blogs/isi-products/tavoli-e-scrivanie-is-17633",
   ];
 
   // Check if current path should show these components
@@ -797,6 +799,9 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS Certificate for Storage Unit Italian
     if (path.includes("/blogs/isi-products/unita-di-stoccaggio-is-17634"))
       return "BIS Certificate for Storage Unit (Italian)";
+    // BIS Certificate for Tables & Desks Italian
+    if (path.includes("/blogs/isi-products/tavoli-e-scrivanie-is-17633"))
+      return "BIS Certificate for Tables & Desks (Italian)";
   };
 
   const [formData, setFormData] = useState({

@@ -94,6 +94,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/pipa-dan-tabung-tanpa-sambungan-is-17875",
     // Storage Unit Indonesian Page Url
     "/blogs/isi-products/unit-penyimpanan-is-17634",
+    // BIS Certificate for Tables & Desks Indonesian Page Url
+    "/blogs/isi-products/meja-dan-meja-tulis-is-17633",
   ];
 
   // Check if current path should show these components
@@ -774,6 +776,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Storage Unit Indonesian
     if (path.includes("/blogs/isi-products/unit-penyimpanan-is-17634"))
       return "BIS Certificate for Storage Unit (Indonesian)";
+    // BIS Certificate for Tables & Desks Indonesian
+    if (path.includes("/blogs/isi-products/meja-dan-meja-tulis-is-17633"))
+      return "BIS Certificate for Tables & Desks (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

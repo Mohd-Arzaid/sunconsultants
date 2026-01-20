@@ -57,6 +57,10 @@ const ServicesRightSideContentSpanish = () => {
     "/blogs/isi-products/muebles",
     // BIS Certificate for Seamless Pipes & Tubes Spanish Page Url
     "/blogs/isi-products/tubos-y-tuberias-sin-costura-is-17875",
+    // BIS Certificate for Storage Unit Spanish Page Url
+    "/blogs/isi-products/unidades-de-almacenamiento-is-17634",
+    // BIS Certificate for Tables & Desks Spanish Page Url
+    "/blogs/isi-products/mesas-y-escritorios-is-17633",
   ];
 
   // Check if current path should show these components
@@ -635,6 +639,12 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Seamless Pipes & Tubes Spanish
     if (path.includes("/blogs/isi-products/tubos-y-tuberias-sin-costura-is-17875"))
       return "BIS Certificate for Seamless Pipes & Tubes (Spanish)";
+    // BIS Certificate for Storage Unit Spanish
+    if (path.includes("/blogs/isi-products/unidades-de-almacenamiento-is-17634"))
+      return "BIS Certificate for Storage Unit (Spanish)";
+    // BIS Certificate for Tables & Desks Spanish
+    if (path.includes("/blogs/isi-products/mesas-y-escritorios-is-17633"))
+      return "BIS Certificate for Tables & Desks (Spanish)";
     return "";
   };
 

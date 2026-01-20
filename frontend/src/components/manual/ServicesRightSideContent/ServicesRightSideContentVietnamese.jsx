@@ -57,6 +57,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/blogs/isi-products/ong-va-ong-khong-moi-noi-is-17875",
     // BIS Certificate for Storage Unit Vietnamese Page Url
     "/blogs/isi-products/don-vi-luu-tru-is-17634",
+    // BIS Certificate for Tables & Desks Vietnamese Page Url
+    "/blogs/isi-products/ban-va-ban-lam-viec-is-17633",
   ];
 
   // Check if current path should show these components
@@ -636,6 +638,9 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     // BIS Certificate for Storage Unit Vietnamese
     if (path.includes("/blogs/isi-products/don-vi-luu-tru-is-17634"))
       return "BIS Certificate for Storage Unit (Vietnamese)";
+    // BIS Certificate for Tables & Desks Vietnamese
+    if (path.includes("/blogs/isi-products/ban-va-ban-lam-viec-is-17633"))
+      return "BIS Certificate for Tables & Desks (Vietnamese)";
     return "";
   };
 

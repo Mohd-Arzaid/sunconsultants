@@ -80,6 +80,10 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/anabib-wa-anabib-bila-daraz-is-17875",
     // BIS Certificate for Storage Unit Arabic Page Url
     "/blogs/isi-products/wahdat-al-takhzin-is-17634",
+    // BIS Certificate for Tables & Desks Arabic Page Url
+    "/blogs/isi-products/tawilat-wa-makatib-is-17633",
+    // BIS Certificate for Welded Pipes & Tubes Arabic Page Url
+    "/blogs/isi-products/anabib-wa-anabib-malwama-is-17876",
   ];
 
   // Check if current path should show these components
@@ -727,6 +731,12 @@ const ContactFormServicesRightSideContentArabic = () => {
     // BIS Certificate for Storage Unit Arabic
     if (path.includes("/blogs/isi-products/wahdat-al-takhzin-is-17634"))
       return "BIS Certificate for Storage Unit (Arabic)";
+    // BIS Certificate for Tables & Desks Arabic
+    if (path.includes("/blogs/isi-products/tawilat-wa-makatib-is-17633"))
+      return "BIS Certificate for Tables & Desks (Arabic)";
+    // BIS Certificate for Welded Pipes & Tubes Arabic
+    if (path.includes("/blogs/isi-products/anabib-wa-anabib-malwama-is-17876"))
+      return "BIS Certificate for Welded Pipes & Tubes (Arabic)";
     return "";
   };
 

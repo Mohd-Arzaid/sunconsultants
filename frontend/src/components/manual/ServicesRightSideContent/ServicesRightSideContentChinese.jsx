@@ -44,6 +44,7 @@ const ServicesRightSideContentChinese = () => {
     "/blogs/isi-products/jiaju",
     "/blogs/isi-products/wufeng-guan-he-guan-is-17875",
     "/blogs/isi-products/cunchu-danwei-is-17634",
+    "/blogs/isi-products/zhuozi-he-bangongzhuo-is-17633",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
     "/bis-fang-an-x-ya-suo-ji-ren-zheng",
     "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
@@ -731,6 +732,9 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certificate for Storage Unit Chinese
     if (path.includes("/blogs/isi-products/cunchu-danwei-is-17634"))
       return "BIS Certificate for Storage Unit (Chinese)";
+    // BIS Certificate for Tables & Desks Chinese
+    if (path.includes("/blogs/isi-products/zhuozi-he-bangongzhuo-is-17633"))
+      return "BIS Certificate for Tables & Desks (Chinese)";
     return "";
   };
 

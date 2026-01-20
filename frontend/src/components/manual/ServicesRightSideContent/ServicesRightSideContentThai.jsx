@@ -93,6 +93,10 @@ const ServicesRightSideContentThai = () => {
     "/blogs/isi-products/furniture-thai",
     // BIS Certificate for Seamless Pipes & Tubes Thai Page Url
     "/blogs/isi-products/tho-lae-tho-rai-roi-tor-is-17875",
+    // BIS Certificate for Storage Unit Thai Page Url
+    "/blogs/isi-products/tu-keeb-khong-is-17634",
+    // BIS Certificate for Tables & Desks Thai Page Url
+    "/blogs/isi-products/to-lae-to-ngan-is-17633",
   ];
 
   // Check if current path should show these components
@@ -732,6 +736,12 @@ const ContactFormServicesRightSideContentThai = () => {
     // BIS Certificate for Seamless Pipes & Tubes Thai
     if (path.includes("/blogs/isi-products/tho-lae-tho-rai-roi-tor-is-17875"))
       return "BIS Certificate for Seamless Pipes & Tubes (Thai)";
+    // BIS Certificate for Storage Unit Thai
+    if (path.includes("/blogs/isi-products/tu-keeb-khong-is-17634"))
+      return "BIS Certificate for Storage Unit (Thai)";
+    // BIS Certificate for Tables & Desks Thai
+    if (path.includes("/blogs/isi-products/to-lae-to-ngan-is-17633"))
+      return "BIS Certificate for Tables & Desks (Thai)";
     return "";
   };
 

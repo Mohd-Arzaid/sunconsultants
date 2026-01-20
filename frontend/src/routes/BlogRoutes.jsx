@@ -188,8 +188,78 @@ const BISCertificateForStorageUnitKorean = lazy(() =>
     "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitKorean"
   )
 );
+const BISCertificateForStorageUnitSpanish = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitSpanish"
+  )
+);
+const BISCertificateForStorageUnitThai = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForStorageUnit/BISCertificateForStorageUnitThai"
+  )
+);
 const BISCertificateForTablesAndDesksUnit = lazy(() =>
-  import("@/blogs/BISCertificateForTablesAndDesksUnit")
+  import("@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnit")
+);
+const BISCertificateForTablesAndDesksUnitArabic = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitArabic"
+  )
+);
+const BISCertificateForTablesAndDesksUnitChinese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitChinese"
+  )
+);
+const BISCertificateForTablesAndDesksUnitDutch = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitDutch"
+  )
+);
+const BISCertificateForTablesAndDesksUnitFrench = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitFrench"
+  )
+);
+const BISCertificateForTablesAndDesksUnitGerman = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitGerman"
+  )
+);
+const BISCertificateForTablesAndDesksUnitIndonesian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitIndonesian"
+  )
+);
+const BISCertificateForTablesAndDesksUnitItalian = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitItalian"
+  )
+);
+const BISCertificateForTablesAndDesksUnitJapanese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitJapanese"
+  )
+);
+const BISCertificateForTablesAndDesksUnitKorean = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitKorean"
+  )
+);
+const BISCertificateForTablesAndDesksUnitSpanish = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitSpanish"
+  )
+);
+const BISCertificateForTablesAndDesksUnitThai = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitThai"
+  )
+);
+const BISCertificateForTablesAndDesksUnitVietnamese = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForTablesAndDesksUnit/BISCertificateForTablesAndDesksUnitVietnamese"
+  )
 );
 const BISCertificateForFurniture = lazy(() =>
   import("@/blogs/BISCertificateForFurniture/BISCertificateforFurniture")
@@ -372,6 +442,9 @@ const BISCertificateforGeneralPurposeChairsandStoolsChinese = lazy(() =>
 );
 const BISCertificateForWeldedPipesAndTubes = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes")
+);
+const BISCertificateForWeldedPipesAndTubesArabic = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesArabic")
 );
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import(
@@ -1177,10 +1250,114 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/tu-keeb-khong-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitThai />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/tables-&-desks-is-17633"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForTablesAndDesksUnit />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tawilat-wa-makatib-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/zhuozi-he-bangongzhuo-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tafels-en-bureaus-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tables-et-bureaux-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tische-und-schreibtische-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/meja-dan-meja-tulis-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tavoli-e-scrivanie-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/teburu-to-tsukue-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/teibeul-mich-chaegsang-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/mesas-y-escritorios-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/to-lae-to-ngan-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ban-va-ban-lam-viec-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnitVietnamese />
           </Suspense>
         }
       />
@@ -1517,6 +1694,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWeldedPipesAndTubes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/anabib-wa-anabib-malwama-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesArabic />
           </Suspense>
         }
       />

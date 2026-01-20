@@ -76,6 +76,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/mubonghab-gwan-mich-tyubeu-is-17875",
     // BIS Certificate for Storage Unit Korean Page Url
     "/blogs/isi-products/sunap-yunit-is-17634",
+    // Tables & Desks Korean Page Url
+    "/blogs/isi-products/teibeul-mich-chaegsang-is-17633",
   ];
 
   // Check if current path should show these components
@@ -682,6 +684,9 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Storage Unit Korean
     if (path.includes("/blogs/isi-products/sunap-yunit-is-17634"))
       return "Storage Unit - Korean Page";
+    // BIS Certificate for Tables & Desks Korean
+    if (path.includes("/blogs/isi-products/teibeul-mich-chaegsang-is-17633"))
+      return "BIS Certificate for Tables & Desks (Korean)";
     return "";
   };
 
