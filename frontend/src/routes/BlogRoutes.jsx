@@ -446,6 +446,12 @@ const BISCertificateForWeldedPipesAndTubes = lazy(() =>
 const BISCertificateForWeldedPipesAndTubesArabic = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesArabic")
 );
+const BISCertificateForWeldedPipesAndTubesChinese = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesChinese")
+);
+const BISCertificateForWeldedPipesAndTubesDutch = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesDutch")
+);
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import(
     "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubes"
@@ -1258,6 +1264,14 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/unidades-de-almacenamiento-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnitSpanish />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/tables-&-desks-is-17633"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -1702,6 +1716,22 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWeldedPipesAndTubesArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/hanjie-guan-he-guan-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/gelaste-buizen-en-buizen-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesDutch />
           </Suspense>
         }
       />

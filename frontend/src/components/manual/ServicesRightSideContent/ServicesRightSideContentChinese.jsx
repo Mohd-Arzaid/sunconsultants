@@ -43,6 +43,7 @@ const ServicesRightSideContentChinese = () => {
     "/blogs/isi-products/shoudiantong-is-2083",
     "/blogs/isi-products/jiaju",
     "/blogs/isi-products/wufeng-guan-he-guan-is-17875",
+    "/blogs/isi-products/hanjie-guan-he-guan-is-17876",
     "/blogs/isi-products/cunchu-danwei-is-17634",
     "/blogs/isi-products/zhuozi-he-bangongzhuo-is-17633",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
@@ -729,6 +730,9 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certificate for Seamless Pipes and Tubes Chinese
     if (path.includes("/blogs/isi-products/wufeng-guan-he-guan-is-17875"))
       return "BIS Certificate for Seamless Pipes and Tubes (Chinese)";
+    // BIS Certificate for Welded Pipes and Tubes Chinese
+    if (path.includes("/blogs/isi-products/hanjie-guan-he-guan-is-17876"))
+      return "BIS Certificate for Welded Pipes and Tubes (Chinese)";
     // BIS Certificate for Storage Unit Chinese
     if (path.includes("/blogs/isi-products/cunchu-danwei-is-17634"))
       return "BIS Certificate for Storage Unit (Chinese)";

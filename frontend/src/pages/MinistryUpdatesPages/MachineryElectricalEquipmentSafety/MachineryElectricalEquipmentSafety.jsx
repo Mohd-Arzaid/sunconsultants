@@ -16,7 +16,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const AluminiumAndAluminiumAlloysQCOWithdrawOrderEng = () => {
+const MachineryElectricalEquipmentSafety = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -29,25 +29,25 @@ const AluminiumAndAluminiumAlloysQCOWithdrawOrderEng = () => {
   );
 };
 
-export default AluminiumAndAluminiumAlloysQCOWithdrawOrderEng;
+export default MachineryElectricalEquipmentSafety;
 
 const MetaTags = () => {
   const title =
-    "Aluminium and Aluminium Alloys (Quality Control) Order 2023 Withdrawn";
+    "Scheme X Latest Notification 2026 | OTR Order Withdrawn | BIS Certification";
   const ogTitle =
-    "Government Cancels Aluminium and Aluminium Alloys BIS Certification Order";
+    "BIS Scheme X Update 2026 – Omnibus Technical Regulation Order Withdrawn";
   const twitterTitle =
-    "Government Cancels Aluminium and Aluminium Alloys BIS Certification Order";
+    "BIS Scheme X Update 2026 – Omnibus Technical Regulation Order Withdrawn";
   const metaDescription =
-    "The Government of India has withdrawn the Aluminium and Aluminium Alloys (Quality Control) Order, 2023, removing the BIS certification requirement. Know the reasons and industry impact.";
+    "Latest BIS Scheme X update 2026. The Government has withdrawn the Omnibus Technical Regulation Order, 2024.";
   const ogDescription =
-    "India has officially rescinded the Aluminium and Aluminium Alloys QCO 2023, eliminating the mandatory BIS certification. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
+    "Latest Gazette notification withdraws the Machinery & Electrical Equipment Safety (OTR) Order, 2024. Scheme X continues to exist, while mandatory enforcement is currently suspended.";
   const twitterDescription =
-    "India has officially rescinded the Aluminium and Aluminium Alloys QCO 2023, eliminating the mandatory BIS certification. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
+    "Latest Gazette notification withdraws the Machinery & Electrical Equipment Safety (OTR) Order, 2024. Scheme X continues to exist, while mandatory enforcement is currently suspended.";
   const metaKeywords =
-    "Aluminium and Aluminium Alloys, Cast aluminium and its alloys, High purity primary aluminum ingot, Primary aluminium ingots";
+    "Scheme X withdrawn, BIS Scheme X update, Scheme X compliance update, BIS Scheme X Certification";
   const websiteUrl =
-    "https://bis-certifications.com/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order";
+    "https://bis-certifications.com/ministry-updates/scheme-x-qco-withdraw-order";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -102,8 +102,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Aluminium and Aluminium Alloys (Quality Control) Order 2025
-                    Withdrawn
+                    Machinery & Electrical Equipment Safety (OTR) Order Withdrawn
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -135,167 +134,319 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4 text-left">
-          Withdrawn QCO for Aluminium and Aluminium Alloys
+          Machinery & Electrical Equipment Safety (OTR) Order Withdrawn –
+          Impact on BIS Scheme X Certification
         </h1>
 
-        <div className="mb-6">
-          <img
-            src="/ministryUpdatesBlogsImages/AluminiumandAluminiumAlloysQCOwithdraw.webp"
-            title="Withdraw QCO for Aluminium and Aluminium Alloys"
-            alt="Govt. Withdraw QCO for Aluminium and Aluminium Alloys"
-            className="w-full h-auto rounded-lg shadow-md"
-          />
-        </div>
+       
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Introduction
+        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Government of India has officially withdrawn the &quot;Aluminium
-          and Aluminium Alloys (Quality Control) Order, 2023&quot;. Through
-          notification S.O. 5173(E), the Ministry has rescinded the earlier
-          order S.O. 3846(E) dated 31st August 2023, which had mandated
-          compulsory BIS certification for Aluminium and Aluminium Alloys.
+          The Ministry of Heavy Industries, Government of India, has issued a
+          significant Gazette notification in January 2026 withdrawing the
+          Machinery and Electrical Equipment Safety (Omnibus Technical
+          Regulation) Order, 2024. This notification has created widespread
+          discussion among manufacturers, importers, and compliance
+          professionals, particularly regarding the status of BIS Scheme X
+          certification.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This decision, taken under the powers granted by the BIS Act, 2016,
-          comes after consultation with the Bureau of Indian Standards and has
-          been made in the public interest. For industries relying heavily on
-          aluminium, this withdrawal brings relief, clarity, and stability.
+          In this article we explain the exact legal meaning of the Scheme X -
+          OTR notification, its impact on Scheme X, and what manufacturers
+          should do next—based strictly on the official Gazette of India.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why Was the QCO Withdrawn?
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Official Gazette Notification – BIS Scheme X Certification 2026
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The notification does not specify a detailed reason, but the language
-          clearly states that the withdrawal is considered &quot;necessary or
-          expedient in the public interest.&quot;
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          What This Means for Industry
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          With the withdrawal of the Aluminium and Aluminium Alloys, the
-          immediate effects are:
+          As per the Gazette of India, Extraordinary, published by the Ministry
+          of Heavy Industries:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS certification is no longer mandatory.</li>
+          <li>Notification Number: S.O. 239(E)</li>
+          <li>Order Date: 14 January 2026</li>
+          <li>Gazette Publication Date: 16 January 2026</li>
           <li>
-            Manufacturers can continue regular production without the new
-            compliance requirement.
-          </li>
-          <li>Importers can source globally without BIS approval.</li>
-          <li>No penalties or restrictions apply under the withdrawn QCO.</li>
-          <li>
-            Supply chains will continue without disruption or added regulatory
-            pressure.
+            Issued Under: Section 16 of the Bureau of Indian Standards Act, 2016
           </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For many businesses, especially importers and small-medium
-          manufacturers, this offers breathing space and reduces operational
-          overhead.
+          The Central Government has rescinded (withdrawn) the earlier
+          notification S.O. 3649(E) dated 28 August 2024, which had introduced
+          the Machinery and Electrical Equipment Safety (Omnibus Technical
+          Regulation) Order, 2024, with immediate effect.
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            The Machinery and Electrical Equipment Safety (Omnibus Technical
+            Regulation) Order, 2024
+          </li>
+          <li>
+            The legal enforcement mechanism that made Scheme X certification
+            mandatory for machinery and electrical equipment
+          </li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          What Exactly Has Been Withdrawn Under the Latest Scheme X
+          notification?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          It is extremely important to understand the scope of this withdrawal.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3 font-semibold">
+          Withdrawn:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            The Machinery and Electrical Equipment Safety (Omnibus Technical
+            Regulation) Order, 2024
+          </li>
+          <li>
+            The legal enforcement mechanism that made Scheme X certification
+            mandatory for machinery and electrical equipment
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3 font-semibold">
+          NOT Withdrawn:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>BIS Scheme X</li>
+          <li>BIS Act, 2016</li>
+          <li>Product standards or Indian Standards (IS)</li>
+          <li>BIS&apos;s authority to operate Scheme X</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The Gazette notification does not mention the withdrawal of Scheme X
+          anywhere in the document
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Why the Government Withdrew the OTR Order?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          While the Gazette does not provide detailed reasoning, it clearly
+          states that the action was taken &quot;in the public interest&quot;
+          under the powers conferred by Section 16 of the BIS Act, 2016. This
+          indicates a policy-level decision, not a rejection of product safety
+          or certification systems.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Common Misconception: &quot;Scheme X Has Been Withdrawn&quot;
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Many online sources and industry discussions incorrectly claim: that
+          &quot;Scheme X has been permanently withdrawn in 2026&quot;.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This statement is legally incorrect.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The official Gazette:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Withdraws the Omnibus Technical Regulation Order</li>
+          <li>Does NOT withdraw Scheme X</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Using incorrect wording can lead to misguidance, compliance errors,
+          and legal exposure for manufacturers.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          What Should Manufacturers Do Now?
+        </h2>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          For Indian Manufacturers
+        </h3>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>No immediate mandatory Scheme X certification requirement</li>
+          <li>Continue monitoring Government and BIS notifications</li>
+          <li>
+            Voluntary certification may still be considered for market
+            credibility
+          </li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          For Foreign Manufacturers & Importers
+        </h3>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Mandatory Scheme X compliance is currently not enforceable</li>
+          <li>
+            However, product-specific QCOs or future re-notifications may apply
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4 font-semibold">
+          Strategic Recommendation
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers should stay prepared for re-introduction of technical
+          regulations under a revised framework.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Will Scheme X Become Mandatory Again?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The withdrawal of the OTR Order does not prevent the Government from:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Issuing a new technical regulation</li>
+          <li>Re-notifying enforcement dates</li>
+          <li>
+            Introducing product-specific Quality Control Orders (QCOs)
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hence, Scheme X may still become mandatory in the future through a new
+          Gazette notification.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The withdrawal of the Aluminium and Aluminium Alloys (Quality Control)
-          Order, 2025 reflects the government&apos;s practical and flexible
-          approach toward industry needs. Although quality improvement remains
-          an important national priority, regulatory measures must balance
-          compliance with market realities.
+          The Gazette notification issued by the Ministry of Heavy Industries
+          marks an important regulatory development for manufacturers dealing in
+          machinery and electrical equipment. As per S.O. 239(E) dated 14
+          January 2026, the Government has rescinded the Machinery and
+          Electrical Equipment Safety (Omnibus Technical Regulation) Order, 2024
+          with immediate effect. This action has led to widespread confusion in
+          the industry, particularly around the status of BIS Scheme X.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For now, industry can operate without the pressure of mandatory BIS
-          Certification. However, businesses should continue to monitor future
-          notifications, as the government may revisit the QCO at a later stage
-          with revised timelines or updated standards.
+          It is crucial to clearly understand that Scheme X itself has not been
+          withdrawn, cancelled, or abolished. The Gazette notification does
+          not mention Scheme X withdrawal anywhere. What has been withdrawn is
+          only the Omnibus Technical Regulation Order, 2024, which earlier acted
+          as the legal instrument to make Scheme X compliance mandatory for
+          certain categories of machinery and electrical equipment. As a result,
+          the mandatory enforcement of Scheme X currently stands suspended.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Scheme X continues to exist as a valid BIS conformity assessment
+          scheme under the Bureau of Indian Standards Act, 2016, and the
+          Government retains full authority to reintroduce mandatory requirements
+          through a fresh notification or a new regulatory framework in the
+          future. Manufacturers, importers, and foreign manufacturers are
+          therefore advised to stay updated with official BIS and Gazette
+          notifications and avoid relying on unverified claims. Strategic
+          compliance preparedness remains essential despite the temporary
+          regulatory relief.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Products for which QCO have been rescinded:
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Frequently Asked Questions
         </h2>
 
-        <div className="overflow-x-auto mb-4">
-          <table className="min-w-full border-collapse border border-gray-300 text-gray-600 text-base font-geist">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">
-                  Indian Standard (IS)
-                </th>
-                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">
-                  Title / Description
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">
-                  IS 617:1994
-                </td>
-                <td className="border border-gray-300 px-4 py-2">
-                  Cast aluminium and its alloys – Ingots and castings for
-                  general engineering purposes
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">
-                  IS 11890:1987
-                </td>
-                <td className="border border-gray-300 px-4 py-2">
-                  High purity primary aluminum ingot for remelting for special
-                  applications
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">
-                  IS 6754:1972
-                </td>
-                <td className="border border-gray-300 px-4 py-2">
-                  Aluminum alloy ingots for remelting for general engineering
-                  purpose
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">
-                  IS 2590:1987
-                </td>
-                <td className="border border-gray-300 px-4 py-2">
-                  Primary aluminium ingots for remelting for general engineering
-                  purpose
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">
-                  IS 4026:2023
-                </td>
-                <td className="border border-gray-300 px-4 py-2">
-                  Aluminum ingots, billets and wire bars (EC Grade)
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          1. Is BIS Scheme X withdrawn in 2026?
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          No, BIS Scheme X has not been withdrawn in 2026. The Gazette
+          notification withdraws only the Machinery and Electrical Equipment
+          Safety (Omnibus Technical Regulation) Order, 2024. Scheme X continues
+          to exist as a BIS conformity assessment scheme.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          2. What exactly does the notification say?
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The notification rescinds S.O. 3649(E) dated 28 August 2024, which
+          introduced the Omnibus Technical Regulation Order, 2024. The
+          withdrawal is effective immediately and is issued under Section 16 of
+          the BIS Act, 2016.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          3. Is Scheme X mandatory after the notification?
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          No. Since the Omnibus Technical Regulation Order has been withdrawn,
+          mandatory enforcement of Scheme X is currently on hold until further
+          notification by the Government.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          4. Does this affect Indian and foreign manufacturers equally?
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Yes. The withdrawal of the Omnibus Technical Regulation Order applies
+          to all manufacturers and importers, including foreign manufacturers,
+          as far as mandatory Scheme X enforcement is concerned.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          5. Where can the official notification be verified?
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The notification is published in the Gazette of India, Extraordinary,
+          dated 16 January 2026, issued by the Ministry of Heavy Industries.
+        </p>
 
         <ServiceAuthorEng />
       </div>
@@ -303,8 +454,8 @@ const MainContentLeft = () => {
       {/* PDF Viewer Section */}
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
-          src="/pdf/sun-certification-aluminium-and-aluminium-alloys.pdf"
-          title="Refined Zinc QCO Withdrawal Order PDF"
+          src="/pdf/withdrawal_of_the_machinery_and_electrical_equipment_safety_omnibus_technical_regulation_order_2024.pdf"
+          title="Machinery & Electrical Equipment Safety (OTR) Order Withdrawal PDF"
           className="w-full h-[800px] bg-white"
           style={{
             boxShadow:

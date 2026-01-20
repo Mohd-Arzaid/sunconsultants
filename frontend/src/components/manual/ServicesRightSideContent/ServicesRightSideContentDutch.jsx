@@ -93,6 +93,8 @@ const ServicesRightSideContentDutch = () => {
     "/blogs/isi-products/meubels",
     // BIS Certificate for Seamless Pipes and Tubes Dutch Page Url
     "/blogs/isi-products/naadloze-buizen-en-buizen-is-17875",
+    // BIS Certificate for Welded Pipes and Tubes Dutch Page Url
+    "/blogs/isi-products/gelaste-buizen-en-buizen-is-17876",
     // BIS Certificate for Storage Unit Dutch Page Url
     "/blogs/isi-products/opslageenheden-is-17634",
     // BIS Certificate for Tables & Desks Dutch Page Url
@@ -734,6 +736,9 @@ const ContactFormServicesRightSideContentDutch = () => {
     // BIS Certificate for Seamless Pipes and Tubes Dutch
     if (path.includes("/blogs/isi-products/naadloze-buizen-en-buizen-is-17875"))
       return "BIS Certificate for Seamless Pipes and Tubes (Dutch)";
+    // BIS Certificate for Welded Pipes and Tubes Dutch
+    if (path.includes("/blogs/isi-products/gelaste-buizen-en-buizen-is-17876"))
+      return "BIS Certificate for Welded Pipes and Tubes (Dutch)";
     // BIS Certificate for Storage Unit Dutch
     if (path.includes("/blogs/isi-products/opslageenheden-is-17634"))
       return "BIS Certificate for Storage Unit (Dutch)";

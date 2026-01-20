@@ -39,9 +39,9 @@ const PetrochemicalAndPolymerProductsQCOWithdrawOrderEng = lazy(() =>
     "@/pages/MinistryUpdatesPages/PetrochemicalAndPolymerProductsQCOWithdrawOrder/PetrochemicalAndPolymerProductsQCOWithdrawOrderEng"
   )
 );
-const SchemeXQCOWithdrawOrderEng = lazy(() =>
+const MachineryElectricalEquipmentSafety = lazy(() =>
   import(
-    "@/pages/MinistryUpdatesPages/SchemeXQCOWithdrawOrder/SchemeXQCOWithdrawOrderEng"
+    "@/pages/MinistryUpdatesPages/MachineryElectricalEquipmentSafety/MachineryElectricalEquipmentSafety"
   )
 );
 
@@ -138,7 +138,7 @@ export const MinistryUpdatesRoutes = () => {
         path="/ministry-updates/scheme-x-qco-withdraw-order"
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
-            <SchemeXQCOWithdrawOrderEng />
+            <MachineryElectricalEquipmentSafety />
           </Suspense>
         }
       />

@@ -847,9 +847,9 @@ const ContactFormServicesRightSideContentEng = () => {
     )
       return "Petrochemical & Polymer Products QCO Withdrawal Order - Ministry Updates (English)";
 
-    // Scheme X QCO Withdrawal Order
+    // Scheme X QCO Withdrawal Order (Machinery & Electrical Equipment Safety)
     if (path.includes("/ministry-updates/scheme-x-qco-withdraw-order"))
-      return "Scheme X QCO Withdrawal Order - Ministry Updates (English)";
+      return "Machinery & Electrical Equipment Safety (OTR) Order Withdrawn - Ministry Updates (English)";
 
     // Steel Products Amendment Order 2025
     if (path.includes("/ministry-updates/steel-products-amendment-2025"))

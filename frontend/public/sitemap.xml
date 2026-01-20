@@ -4056,6 +4056,37 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/hanjie-guan-he-guan-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/gelaste-buizen-en-buizen-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+
+
+
+
+
+
+
+
+  
+ <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
   <!-- BIS Certificate for Seamless Pipes & Tubes - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/ISI-products/seamless-pipes-&amp;-tubes-IS-17875:2022</loc>
@@ -5012,9 +5043,9 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
-  <!-- Scheme X QCO Withdraw Order - English -->
+  <!-- Machinery & Electrical Equipment Safety (OTR) Order Withdrawn - English -->
   <url>
-    <loc>https://bis-certifications.com//ministry-updates/scheme-x-qco-withdraw-order</loc>
+    <loc>https://bis-certifications.com/ministry-updates/scheme-x-qco-withdraw-order</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
