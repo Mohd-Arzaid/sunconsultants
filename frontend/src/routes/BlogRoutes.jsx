@@ -441,7 +441,7 @@ const BISCertificateforGeneralPurposeChairsandStoolsChinese = lazy(() =>
   )
 );
 const BISCertificateForWeldedPipesAndTubes = lazy(() =>
-  import("@/blogs/BISCertificateForWeldedPipesAndTubes")
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubes")
 );
 const BISCertificateForWeldedPipesAndTubesArabic = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesArabic")
