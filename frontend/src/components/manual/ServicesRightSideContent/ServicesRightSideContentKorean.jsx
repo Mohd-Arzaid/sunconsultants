@@ -74,6 +74,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/gagu",
     // BIS Certificate for Seamless Pipes and Tubes Korean Page Url
     "/blogs/isi-products/mubonghab-gwan-mich-tyubeu-is-17875",
+    // BIS Certificate for Welded Pipes and Tubes Korean Page Url
+    "/blogs/isi-products/yongjeob-paipeu-mich-tyubeu-is-17876",
     // BIS Certificate for Storage Unit Korean Page Url
     "/blogs/isi-products/sunap-yunit-is-17634",
     // Tables & Desks Korean Page Url
@@ -681,6 +683,9 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Seamless Pipes and Tubes Korean
     if (path.includes("/blogs/isi-products/mubonghab-gwan-mich-tyubeu-is-17875"))
       return "BIS Certificate for Seamless Pipes and Tubes (Korean)";
+    // BIS Certificate for Welded Pipes and Tubes Korean
+    if (path.includes("/blogs/isi-products/yongjeob-paipeu-mich-tyubeu-is-17876"))
+      return "BIS Certificate for Welded Pipes and Tubes (Korean)";
     // BIS Certificate for Storage Unit Korean
     if (path.includes("/blogs/isi-products/sunap-yunit-is-17634"))
       return "Storage Unit - Korean Page";

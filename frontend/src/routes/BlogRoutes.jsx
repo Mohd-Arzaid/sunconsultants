@@ -452,6 +452,27 @@ const BISCertificateForWeldedPipesAndTubesChinese = lazy(() =>
 const BISCertificateForWeldedPipesAndTubesDutch = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesDutch")
 );
+const BISCertificateForWeldedPipesAndTubesFrench = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesFrench")
+);
+const BISCertificateForWeldedPipesAndTubesGerman = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesGerman")
+);
+const BISCertificateForWeldedPipesAndTubesIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesIndonesian")
+);
+const BISCertificateForWeldedPipesAndTubesItalian = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesItalian")
+);
+const BISCertificateForWeldedPipesAndTubesJapanese = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesJapanese")
+);
+const BISCertificateForWeldedPipesAndTubesKorean = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesKorean")
+);
+const BISCertificateForWeldedPipesAndTubesSpanish = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesSpanish")
+);
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import(
     "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubes"
@@ -1732,6 +1753,62 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWeldedPipesAndTubesDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tubes-et-tuyaux-soudes-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/geschweißte-rohre-und-rohre-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/pipa-dan-tabung-las-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tubi-e-tubi-saldati-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/yousetsu-kan-chuubu-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/yongjeob-paipeu-mich-tyubeu-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tubos-y-tuberias-soldadas-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesSpanish />
           </Suspense>
         }
       />

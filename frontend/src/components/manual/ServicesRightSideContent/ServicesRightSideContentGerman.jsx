@@ -58,6 +58,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/mobel",
     // BIS Certificate for Seamless Pipes and Tubes German Page Url
     "/blogs/isi-products/nahtlose-rohre-und-rohre-is-17875",
+    // BIS Certificate for Welded Pipes and Tubes German Page Url
+    "/blogs/isi-products/geschweißte-rohre-und-rohre-is-17876",
     // Storage Unit German Page Url
     "/blogs/isi-products/lagereinheiten-is-17634",
     // BIS Certificate for Tables & Desks German Page Url
@@ -632,6 +634,8 @@ const ContactFormServicesRightSideContentGerman = () => {
       return "BIS Certificate for Furniture (German)";
     if (path.includes("/blogs/isi-products/nahtlose-rohre-und-rohre-is-17875"))
       return "BIS Certificate for Seamless Pipes and Tubes (German)";
+    if (path.includes("/blogs/isi-products/geschweißte-rohre-und-rohre-is-17876"))
+      return "BIS Certificate for Welded Pipes and Tubes (German)";
     if (path.includes("/blogs/isi-products/lagereinheiten-is-17634"))
       return "BIS Certificate for Storage Unit (German)";
     // BIS Certificate for Tables & Desks German
