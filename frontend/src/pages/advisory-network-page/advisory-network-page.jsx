@@ -137,60 +137,60 @@ const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-4 border bg-neutral-50 border-neutral-200">
-          <div className="px-6 py-8 border-b border-neutral-200 md:border-b-0 md:border-r">
-            <div class="flex items-center justify-center gap-3">
-              <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-100 border border-neutral-200 p-1">
-                <div class="flex h-full w-full items-center justify-center rounded-lg shadow-input bg-neutral-50">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 border bg-neutral-50 border-neutral-200">
+          <div className="px-4 sm:px-6 py-8 border-b sm:border-r border-neutral-200 md:border-b-0">
+            <div className="flex items-center justify-center gap-3">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-100 border border-neutral-200 p-1">
+                <div className="flex h-full w-full items-center justify-center rounded-lg shadow-input bg-neutral-50">
                   <Users className="text-black" size={24} />
                 </div>
               </div>
-              <p class="text-3xl font-geist font-bold text-neutral-800">25+</p>
+              <p className="text-3xl font-geist font-bold text-neutral-800">25+</p>
             </div>
 
-            <p class="font-geist mt-4 text-base text-neutral-600">
+            <p className="font-geist mt-4 text-base text-neutral-600">
               Independent former BIS advisors
             </p>
           </div>
-          <div className="px-6 py-8 border-b border-neutral-200 md:border-b-0 md:border-r">
-            <div class="flex items-center justify-center gap-3">
-              <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-100 border border-neutral-200 p-1">
-                <div class="flex h-full w-full items-center justify-center rounded-lg shadow-input bg-neutral-50">
+          <div className="px-4 sm:px-6 py-8 border-b md:border-b-0 md:border-r border-neutral-200">
+            <div className="flex items-center justify-center gap-3">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-100 border border-neutral-200 p-1">
+                <div className="flex h-full w-full items-center justify-center rounded-lg shadow-input bg-neutral-50">
                   <FileCheck className="text-black" size={24} />
                 </div>
               </div>
-              <p class="text-3xl font-geist font-bold text-neutral-800">300+</p>
+              <p className="text-3xl font-geist font-bold text-neutral-800">300+</p>
             </div>
 
-            <p class="font-geist mt-4 text-base text-neutral-600">
+            <p className="font-geist mt-4 text-base text-neutral-600">
               Audits supported across Industries
             </p>
           </div>
-          <div className="px-6 py-8 border-b border-neutral-200 md:border-b-0 md:border-r">
-            <div class="flex items-center justify-center gap-3">
-              <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-100 border border-neutral-200 p-1">
-                <div class="flex h-full w-full items-center justify-center rounded-lg shadow-input bg-neutral-50">
+          <div className="px-4 sm:px-6 py-8 border-b sm:border-r sm:border-b-0 md:border-b-0 md:border-r border-neutral-200">
+            <div className="flex items-center justify-center gap-3">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-100 border border-neutral-200 p-1">
+                <div className="flex h-full w-full items-center justify-center rounded-lg shadow-input bg-neutral-50">
                   <Package className="text-black" size={24} />
                 </div>
               </div>
-              <p class="text-3xl font-geist font-bold text-neutral-800">100+</p>
+              <p className="text-3xl font-geist font-bold text-neutral-800">100+</p>
             </div>
 
-            <p class="font-geist mt-4 text-base text-neutral-600">
+            <p className="font-geist mt-4 text-base text-neutral-600">
               Product Categories Covered
             </p>
           </div>
-          <div className="px-6 py-8 border-b border-neutral-200 md:border-b-0">
-            <div class="flex items-center justify-center gap-3">
-              <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-100 border border-neutral-200 p-1">
-                <div class="flex h-full w-full items-center justify-center rounded-lg shadow-input bg-neutral-50">
+          <div className="px-4 sm:px-6 py-8 border-neutral-200">
+            <div className="flex items-center justify-center gap-3">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-100 border border-neutral-200 p-1">
+                <div className="flex h-full w-full items-center justify-center rounded-lg shadow-input bg-neutral-50">
                   <Globe className="text-black" size={24} />
                 </div>
               </div>
-              <p class="text-3xl font-geist font-bold text-neutral-800">20+</p>
+              <p className="text-3xl font-geist font-bold text-neutral-800">20+</p>
             </div>
 
-            <p class="font-geist mt-4 text-base text-neutral-600">
+            <p className="font-geist mt-4 text-base text-neutral-600">
               Countries Served (Global Support)
             </p>
           </div>
@@ -287,13 +287,13 @@ const AdvisoryCardsSection = () => {
           to engagement.
         </p>
 
-        <div className="grid grid-cols-3 gap-5 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
           {advisorsData.map((advisor) => (
             <div
               key={advisor.id}
               className="rounded-3xl border border-neutral-200 bg-neutral-50 p-2"
             >
-              <div className="rounded-2xl py-8 shadow-input bg-white px-8 h-full">
+              <div className="rounded-2xl py-6 px-6 md:py-8 md:px-8 shadow-input bg-white h-full">
                 <div className="flex items-center gap-2">
                   <Briefcase className="text-neutral-800" size={18} />
                   <h3 className="font-geist text-lg font-semibold text-neutral-800">
