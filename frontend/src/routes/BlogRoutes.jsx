@@ -473,6 +473,9 @@ const BISCertificateForWeldedPipesAndTubesKorean = lazy(() =>
 const BISCertificateForWeldedPipesAndTubesSpanish = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesSpanish")
 );
+const BISCertificateForWeldedPipesAndTubesVietnamese = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesVietnamese")
+);
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import(
     "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubes"
@@ -649,7 +652,13 @@ const BISCertificationChainPipeWrenches = lazy(() =>
   import("@/blogs/BISCertificationChainPipeWrenches")
 );
 const BISCertificateBatteryOperatedAirPurifier = lazy(() =>
-  import("@/blogs/BISCertificationBatteryOperatedAirPurifier")
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificationBatteryOperatedAirPurifier")
+);
+const BISCertificateBatteryOperatedAirPurifierArabic = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierArabic")
+);
+const BISCertificateBatteryOperatedAirPurifierChinese = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierChinese")
 );
 const BISCertificateForFootWarmerandHeatingMats = lazy(() =>
   import("@/blogs/BISCertificationFootWarmerandHeatingMats")
@@ -1813,6 +1822,14 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/ong-va-ong-han-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/seamless-pipes-&-tubes-is-17875"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2161,6 +2178,22 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateBatteryOperatedAirPurifier />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/munazzif-hawa-bi-batariya-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/dianchi-kongqi-jinghuaqi-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierChinese />
           </Suspense>
         }
       />

@@ -1,6 +1,6 @@
-import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
-import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
-import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
+import FaqAuthorVietnamese from "@/components/common/FaqAuthor/FaqAuthorVietnamese";
+import ManyUsersAlsoReadVietnamese from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadVietnamese";
+import ServicesRightSideContentVietnamese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentVietnamese";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterEng from "@/components/manual/Footer/FooterEng";
+import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
 import {
   Table,
   TableBody,
@@ -42,24 +42,24 @@ export default BISCertificateForWeldedPipesAndTubesVietnamese;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Welded Pipes & Tubes | IS 17876:2022 BIS License";
+    "Chứng nhận BIS cho ống và ống hàn | Giấy phép BIS IS 17876:2022";
   const ogTitle =
-    "BIS Certification for Welded Pipes & Tubes – IS 17876:2022 Guide";
-  const twitterTitle = "BIS License for Welded Pipes & Tubes | IS 17876:2022";
+    "Chứng nhận BIS cho ống và ống hàn – Hướng dẫn IS 17876:2022";
+  const twitterTitle = "Giấy phép BIS cho ống và ống hàn | IS 17876:2022";
   const metaDescription =
-    "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Nhận chứng nhận BIS cho ống và ống hàn theo IS 17876:2022. Quy trình, tài liệu, thử nghiệm, chi phí & thời gian cho Chứng nhận BIS tại Ấn Độ.";
   const ogDescription =
-    "Complete guide to BIS Certification for Welded Pipes & Tubes as per IS 17876:2022. Know process, cost, documents, testing & BIS license benefits.";
+    "Hướng dẫn đầy đủ về Chứng nhận BIS cho ống và ống hàn theo IS 17876:2022. Biết quy trình, chi phí, tài liệu, thử nghiệm & lợi ích giấy phép BIS.";
   const twitterDescription =
-    "Apply for BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Đăng ký chứng nhận BIS cho ống và ống hàn theo IS 17876:2022. Tìm hiểu quy trình BIS, tài liệu, thử nghiệm, phí & thời gian tại Ấn Độ.";
   const metaKeywords =
-    "BIS Certificate for Welded Pipes & Tubes, BIS License for Welded Pipes & Tubes, IS 17876:2022, BIS Certification for Welded Pipes & Tubes";
+    "Chứng nhận BIS cho ống và ống hàn, Giấy phép BIS cho ống và ống hàn, IS 17876:2022, Chứng nhận BIS cho ống và ống hàn";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/welded-pipes-&-tubes-is-17876";
+    "https://bis-certifications.com/blogs/isi-products/ong-va-ong-han-is-17876";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
-    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+    "Dhruv Aggarwal, Trưởng phòng Vận hành tại Sun Certification India";
 
   return (
     <Helmet>
@@ -92,7 +92,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
+                    <Link to="/">Trang chủ</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -101,7 +101,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">Latest Blogs</Link>
+                    <Link to="/Blogs">Blog mới nhất</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -110,7 +110,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Welded Pipes & Tubes – IS 17876:2022
+                    Chứng nhận BIS cho ống và ống hàn – IS 17876:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -130,7 +130,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentEng />
+        <ServicesRightSideContentVietnamese />
       </div>
     </div>
   );
@@ -142,319 +142,316 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for Stainless Steel Welded Pipes and Tubes under IS
-          17876:2022
+          Chứng nhận BIS cho ống và ống thép không gỉ hàn theo IS 17876:2022
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforWeldedPipes&Tubes.png"
-            title="BIS License for Welded Pipes & Tubes"
-            alt="BIS Certificate for Welded Pipes & Tubes - IS 17876:2022 BIS Certification"
+            title="Giấy phép BIS cho ống và ống hàn"
+            alt="Chứng nhận BIS cho ống và ống hàn - Chứng nhận BIS IS 17876:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Stainless steel welded pipes and tubes are extensively used across
-          industries such as construction, chemical processing, food & beverage,
-          water distribution, structural applications, and general engineering.
-          As these pipes carry fluids, gases, and in some cases corrosive
-          chemicals, their strength, corrosion resistance, and manufacturing
-          integrity must be verified before they enter the market.
+          Ống và ống thép không gỉ hàn được sử dụng rộng rãi trong các ngành công nghiệp
+          như xây dựng, chế biến hóa chất, thực phẩm & đồ uống, phân phối nước,
+          ứng dụng kết cấu và kỹ thuật chung. Vì các ống này vận chuyển chất lỏng,
+          khí và trong một số trường hợp là hóa chất ăn mòn, nên độ bền, khả năng
+          chống ăn mòn và tính toàn vẹn sản xuất của chúng phải được xác minh trước
+          khi đưa ra thị trường.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To regulate quality and ensure public and industrial safety, the
-          Government of India has made BIS Certification mandatory for stainless
-          steel welded pipes and tubes under IS 17876:2022.
+          Để điều chỉnh chất lượng và đảm bảo an toàn công cộng và công nghiệp,
+          Chính phủ Ấn Độ đã làm cho Chứng nhận BIS trở thành bắt buộc đối với ống
+          và ống thép không gỉ hàn theo IS 17876:2022.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide explains the complete BIS approval process,
-          documentation, testing requirements, cost, timeline, manufacturer
-          obligations, benefits, and compliance rules — written in a fresh and
-          unique format, ensuring zero duplication with previous content.
+          Hướng dẫn toàn diện này giải thích quy trình phê duyệt BIS đầy đủ, tài liệu,
+          yêu cầu thử nghiệm, chi phí, thời gian, nghĩa vụ của nhà sản xuất, lợi ích
+          và quy tắc tuân thủ — được viết theo định dạng mới và độc đáo, đảm bảo không
+          trùng lặp với nội dung trước đó.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification for Stainless Steel Welded Pipes & Tubes?
+          Chứng nhận BIS cho ống và ống thép không gỉ hàn là gì?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Bureau of Indian Standards (BIS) regulates product quality in
-          India through various certification schemes. A product that falls
-          under a mandatory Quality Control Order (QCO) must obtain a BIS
-          License before it is manufactured, imported, stocked, sold, or
-          distributed.
+          Cục Tiêu chuẩn Ấn Độ (BIS) điều chỉnh chất lượng sản phẩm tại Ấn Độ
+          thông qua các chương trình chứng nhận khác nhau. Một sản phẩm thuộc
+          Lệnh Kiểm soát Chất lượng bắt buộc (QCO) phải có Giấy phép BIS trước
+          khi được sản xuất, nhập khẩu, tồn kho, bán hoặc phân phối.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          What BIS Certification Ensures
+          Chứng nhận BIS đảm bảo điều gì
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS certificate confirms that stainless steel welded pipes/tubes:
+          Chứng nhận BIS xác nhận rằng ống/ống thép không gỉ hàn:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Meet dimensional accuracy</li>
-          <li>Possess required mechanical strength</li>
-          <li>Display corrosion resistance</li>
-          <li>Are manufactured using approved grades of stainless steel</li>
-          <li>Comply with Indian testing conditions</li>
+          <li>Đáp ứng độ chính xác kích thước</li>
+          <li>Có độ bền cơ học theo yêu cầu</li>
+          <li>Thể hiện khả năng chống ăn mòn</li>
+          <li>Được sản xuất bằng các cấp thép không gỉ đã được phê duyệt</li>
+          <li>Tuân thủ các điều kiện thử nghiệm của Ấn Độ</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Once certified, products must bear the ISI Mark along with the license
-          (CML) number.
+          Sau khi được chứng nhận, sản phẩm phải mang Dấu ISI cùng với số
+          giấy phép (CML).
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Standard for Stainless Steel Welded Pipes & Tubes – IS 17876:2022
+          Tiêu chuẩn BIS cho ống và ống thép không gỉ hàn – IS 17876:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable standard is:
+          Tiêu chuẩn áp dụng là:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17876:2022</strong> – Stainless Steel Welded Pipes and
-          Tubes for General Service
+          🔹 <strong>IS 17876:2022</strong> – Ống và ống thép không gỉ hàn cho
+          dịch vụ chung
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          This standard outlines:
+          Tiêu chuẩn này nêu rõ:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chemical composition</li>
-          <li>Mechanical property requirements</li>
-          <li>Manufacturing tolerances</li>
-          <li>Dimensional specifications</li>
-          <li>Surface and finish guidelines</li>
-          <li>Hydrostatic and non-destructive testing</li>
-          <li>Safety performance criteria</li>
+          <li>Thành phần hóa học</li>
+          <li>Yêu cầu tính chất cơ học</li>
+          <li>Dung sai sản xuất</li>
+          <li>Thông số kỹ thuật kích thước</li>
+          <li>Hướng dẫn bề mặt và hoàn thiện</li>
+          <li>Thử nghiệm thủy tĩnh và không phá hủy</li>
+          <li>Tiêu chí hiệu suất an toàn</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          These pipes are used for general service applications, meaning they
-          must meet a broad range of operational environments.
+          Các ống này được sử dụng cho các ứng dụng dịch vụ chung, có nghĩa là
+          chúng phải đáp ứng một loạt các môi trường vận hành.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for IS 17876:2022 Products
+          Tại sao Chứng nhận BIS là bắt buộc đối với Sản phẩm IS 17876:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Stainless steel welded pipes are widely used in:
+          Ống thép không gỉ hàn được sử dụng rộng rãi trong:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Water pipelines</li>
-          <li>Chemical transport</li>
-          <li>Food & pharmaceutical plants</li>
-          <li>Structural engineering</li>
-          <li>Exhaust and ventilation systems</li>
+          <li>Đường ống nước</li>
+          <li>Vận chuyển hóa chất</li>
+          <li>Nhà máy thực phẩm & dược phẩm</li>
+          <li>Kỹ thuật kết cấu</li>
+          <li>Hệ thống xả và thông gió</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          If not manufactured properly, these pipes can lead to:
+          Nếu không được sản xuất đúng cách, các ống này có thể dẫn đến:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Leakage failures</li>
-          <li>Burst under pressure</li>
-          <li>Corrosion and contamination</li>
-          <li>Structural instability</li>
+          <li>Hỏng hóc do rò rỉ</li>
+          <li>Nổ dưới áp suất</li>
+          <li>Ăn mòn và nhiễm bẩn</li>
+          <li>Mất ổn định kết cấu</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To prevent substandard materials from entering the supply chain, BIS
-          requires every manufacturer — domestic or foreign — to secure the BIS
-          License for Stainless Steel Welded Pipes and Tubes.
+          Để ngăn chặn vật liệu kém chất lượng xâm nhập vào chuỗi cung ứng, BIS
+          yêu cầu mọi nhà sản xuất — trong nước hoặc nước ngoài — phải có Giấy phép
+          BIS cho Ống và ống thép không gỉ hàn.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Process for IS 17876:2022
+          Quy trình Chứng nhận BIS cho IS 17876:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The certification procedure involves rigorous laboratory testing and
-          inspection.
+          Quy trình chứng nhận bao gồm thử nghiệm trong phòng thí nghiệm và
+          kiểm tra nghiêm ngặt.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 1 – Identify Product Category & Grade
+          Bước 1 – Xác định Danh mục Sản phẩm & Cấp
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Evaluate the specific grade(s) of stainless steel being manufactured
-          and confirm they fall under IS 17876:2022.
+          Đánh giá cấp cụ thể của thép không gỉ đang được sản xuất và xác nhận
+          chúng thuộc IS 17876:2022.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 2 – Submit Online Application
+          Bước 2 – Gửi Đơn đăng ký Trực tuyến
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must apply through the Manak Online BIS Portal,
-          submitting:
+          Nhà sản xuất phải đăng ký qua Cổng BIS Trực tuyến Manak, gửi:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory details</li>
-          <li>Production capacity</li>
-          <li>Process flow diagram</li>
-          <li>Raw material sources</li>
-          <li>Quality assurance documentation</li>
-          <li>Brand & trademark details</li>
+          <li>Chi tiết nhà máy</li>
+          <li>Năng lực sản xuất</li>
+          <li>Sơ đồ quy trình</li>
+          <li>Nguồn nguyên liệu thô</li>
+          <li>Tài liệu đảm bảo chất lượng</li>
+          <li>Chi tiết thương hiệu & nhãn hiệu</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 3 – Pay BIS Fees
+          Bước 3 – Thanh toán Phí BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Payments include:
+          Thanh toán bao gồm:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application charges</li>
-          <li>Processing fees</li>
-          <li>Testing fees</li>
-          <li>Factory inspection charges</li>
-          <li>Marking fees</li>
+          <li>Phí đăng ký</li>
+          <li>Phí xử lý</li>
+          <li>Phí thử nghiệm</li>
+          <li>Phí kiểm tra nhà máy</li>
+          <li>Phí đánh dấu</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 4 – Factory Inspection
+          Bước 4 – Kiểm tra Nhà máy
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials inspect:
+          Cán bộ BIS kiểm tra:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Production sequence</li>
-          <li>Raw material storage</li>
-          <li>Welding machinery</li>
-          <li>Annealing/heat treatment processes</li>
-          <li>Quality documentation</li>
-          <li>Testing infrastructure</li>
-          <li>Calibration records</li>
+          <li>Trình tự sản xuất</li>
+          <li>Kho chứa nguyên liệu thô</li>
+          <li>Máy hàn</li>
+          <li>Quy trình ủ/xử lý nhiệt</li>
+          <li>Tài liệu chất lượng</li>
+          <li>Cơ sở hạ tầng thử nghiệm</li>
+          <li>Hồ sơ hiệu chuẩn</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          They verify compliance with the Scheme of Testing & Inspection (STI).
+          Họ xác minh sự tuân thủ với Chương trình Thử nghiệm & Kiểm tra (STI).
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 5 – Grant of BIS License
+          Bước 5 – Cấp Giấy phép BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          If all parameters meet BIS requirements, the manufacturer receives:
+          Nếu tất cả các thông số đáp ứng yêu cầu BIS, nhà sản xuất sẽ nhận được:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS Certificate</li>
-          <li>ISI Mark authorization</li>
-          <li>A unique CML license number</li>
+          <li>Chứng nhận BIS</li>
+          <li>Ủy quyền Dấu ISI</li>
+          <li>Số giấy phép CML duy nhất</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 6 – Post-License Obligations
+          Bước 6 – Nghĩa vụ Sau Giấy phép
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          License holders must:
+          Người giữ giấy phép phải:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain ongoing internal quality testing</li>
-          <li>Use the ISI Mark correctly</li>
-          <li>Cooperate during periodic BIS surveillance inspections</li>
-          <li>Renew the license on time</li>
+          <li>Duy trì thử nghiệm chất lượng nội bộ liên tục</li>
+          <li>Sử dụng Dấu ISI đúng cách</li>
+          <li>Hợp tác trong các cuộc kiểm tra giám sát BIS định kỳ</li>
+          <li>Gia hạn giấy phép đúng hạn</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of BIS License for Stainless Steel Welded Pipes & Tubes
+          Phạm vi Giấy phép BIS cho ống và ống thép không gỉ hàn
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> This standard covers the requirements for welded
-          stainless steel pipes and tubes for general services.
+          <strong>1.1</strong> Tiêu chuẩn này bao gồm các yêu cầu cho ống và ống
+          thép không gỉ hàn cho dịch vụ chung.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> This standard does not specify requirements of
-          welded stainless steel pipes and tubes intended for distinct purposes,
-          which are covered by separate Indian Standards.
+          <strong>1.2</strong> Tiêu chuẩn này không quy định các yêu cầu của ống
+          và ống thép không gỉ hàn dành cho mục đích riêng biệt, được bao phủ bởi
+          các Tiêu chuẩn Ấn Độ riêng biệt.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification (IS 17876:2022)
+          Tài liệu Cần thiết cho Chứng nhận BIS (IS 17876:2022)
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. Manufacturing Documents
+          1. Tài liệu Sản xuất
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license/registration</li>
-          <li>Layout diagram</li>
-          <li>Process flow chart</li>
-          <li>Machinery list (welding, forming, annealing, testing)</li>
-          <li>In-house test equipment list</li>
+          <li>Giấy phép/đăng ký nhà máy</li>
+          <li>Sơ đồ bố trí</li>
+          <li>Sơ đồ quy trình</li>
+          <li>Danh sách máy móc (hàn, tạo hình, ủ, thử nghiệm)</li>
+          <li>Danh sách thiết bị thử nghiệm nội bộ</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. Technical Documents
+          2. Tài liệu Kỹ thuật
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Grade specifications</li>
-          <li>Chemical & mechanical test data</li>
-          <li>Welding procedure specifications</li>
-          <li>Heat treatment records</li>
-          <li>Dimensional tolerance charts</li>
+          <li>Thông số kỹ thuật cấp</li>
+          <li>Dữ liệu thử nghiệm hóa học & cơ học</li>
+          <li>Thông số kỹ thuật quy trình hàn</li>
+          <li>Hồ sơ xử lý nhiệt</li>
+          <li>Biểu đồ dung sai kích thước</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. Legal Documents
+          3. Tài liệu Pháp lý
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identity proof</li>
-          <li>Address proof</li>
-          <li>Brand ownership documents</li>
-          <li>Authorized signatory letter</li>
+          <li>Giấy tờ tùy thân</li>
+          <li>Giấy tờ địa chỉ</li>
+          <li>Tài liệu sở hữu thương hiệu</li>
+          <li>Thư người ký được ủy quyền</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. BIS Application Documents
+          4. Tài liệu Đơn đăng ký BIS
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Filled application form</li>
-          <li>Undertakings & declarations</li>
-          <li>Test request documents</li>
-          <li>Label artwork for ISI marking</li>
+          <li>Mẫu đơn đã điền</li>
+          <li>Cam kết & tuyên bố</li>
+          <li>Tài liệu yêu cầu thử nghiệm</li>
+          <li>Thiết kế nhãn cho đánh dấu ISI</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testing Requirements Under IS 17876:2022
+          Yêu cầu Thử nghiệm Theo IS 17876:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Testing is the core of BIS approval and ensures that every batch meets
-          strict quality standards.
+          Thử nghiệm là cốt lõi của việc phê duyệt BIS và đảm bảo rằng mỗi lô
+          đáp ứng các tiêu chuẩn chất lượng nghiêm ngặt.
         </p>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -462,10 +459,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clause
+                  Điều khoản
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirement
+                  Yêu cầu
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -475,7 +472,7 @@ const MainContentLeft = () => {
                   8.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Ladle Analysis
+                  Phân tích từ muôi
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -483,7 +480,7 @@ const MainContentLeft = () => {
                   8.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Product Analysis
+                  Phân tích Sản phẩm
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -491,7 +488,7 @@ const MainContentLeft = () => {
                   10.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Tensile Requirements
+                  Yêu cầu Kéo
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -499,7 +496,7 @@ const MainContentLeft = () => {
                   12.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Pipes
+                  Ống
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -507,7 +504,7 @@ const MainContentLeft = () => {
                   12.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Tubes
+                  Ống
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -515,7 +512,7 @@ const MainContentLeft = () => {
                   13.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Flanging Test
+                  Thử nghiệm Gờ
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -523,7 +520,7 @@ const MainContentLeft = () => {
                   14
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Reverse Flattening Test
+                  Thử nghiệm Làm phẳng Ngược
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -531,7 +528,7 @@ const MainContentLeft = () => {
                   15
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Flattening Test
+                  Thử nghiệm Làm phẳng
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -539,7 +536,7 @@ const MainContentLeft = () => {
                   16
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Grain Size
+                  Kích thước Hạt
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -547,7 +544,7 @@ const MainContentLeft = () => {
                   17
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leak Tightness Test
+                  Thử nghiệm Độ kín Rò rỉ
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -555,7 +552,7 @@ const MainContentLeft = () => {
                   22
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Workmanship, Finish, Appearance
+                  Tay nghề, Hoàn thiện, Ngoại hình
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -563,7 +560,7 @@ const MainContentLeft = () => {
                   23
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Dimensions and Tolerances
+                  Kích thước và Dung sai
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -574,40 +571,40 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Challenges Faced During BIS Certification
+          Thách thức Gặp phải Trong Quá trình Chứng nhận BIS
         </h2>
 
         <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
           <li>
-            <strong>Failing Chemical Composition Tests</strong>
+            <strong>Thất bại trong Thử nghiệm Thành phần Hóa học</strong>
             <br />
-            Non-standard alloying elements or impurities cause rejection.
+            Các nguyên tố hợp kim hoặc tạp chất không chuẩn gây ra sự từ chối.
           </li>
           <li>
-            <strong>Weld Defects During NDT</strong>
+            <strong>Khuyết tật Hàn Trong NDT</strong>
             <br />
-            Poor welding processes or inconsistent heat treatment can create
-            flaws.
+            Quy trình hàn kém hoặc xử lý nhiệt không nhất quán có thể tạo ra
+            khuyết tật.
           </li>
           <li>
-            <strong>Dimensional Non-Conformance</strong>
+            <strong>Không Tuân thủ Kích thước</strong>
             <br />
-            Wall thickness variations commonly lead to failures.
+            Sự thay đổi độ dày thành ống thường dẫn đến thất bại.
           </li>
           <li>
-            <strong>Incomplete Documentation</strong>
+            <strong>Tài liệu Không đầy đủ</strong>
             <br />
-            Missing or unclear records delay license approval.
+            Hồ sơ thiếu hoặc không rõ ràng làm chậm việc phê duyệt giấy phép.
           </li>
           <li>
-            <strong>Calibration Issues</strong>
+            <strong>Vấn đề Hiệu chuẩn</strong>
             <br />
-            Uncalibrated equipment results in unreliable test results.
+            Thiết bị không được hiệu chuẩn dẫn đến kết quả thử nghiệm không đáng tin cậy.
           </li>
           <li>
-            <strong>Incorrect branding/label submission</strong>
+            <strong>Gửi thương hiệu/nhãn không đúng</strong>
             <br />
-            ISI mark artwork must match BIS specifications.
+            Thiết kế dấu ISI phải khớp với thông số kỹ thuật BIS.
           </li>
         </ol>
 
@@ -615,174 +612,171 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Stainless Steel Pipes & Tubes
+          Lợi ích của Chứng nhận BIS cho ống và ống Thép không gỉ
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal approval to manufacture/sell in India</li>
-          <li>Assurance of quality and safety</li>
-          <li>Improved reputation and market credibility</li>
-          <li>Acceptability by government and PSU tenders</li>
-          <li>Increased export potential</li>
-          <li>Reduced product failure risks</li>
-          <li>Protection against counterfeit or substandard competitors</li>
+          <li>Phê duyệt pháp lý để sản xuất/bán tại Ấn Độ</li>
+          <li>Đảm bảo chất lượng và an toàn</li>
+          <li>Cải thiện danh tiếng và uy tín thị trường</li>
+          <li>Được chấp nhận bởi các đấu thầu chính phủ và PSU</li>
+          <li>Tăng tiềm năng xuất khẩu</li>
+          <li>Giảm rủi ro hỏng hóc sản phẩm</li>
+          <li>Bảo vệ chống lại đối thủ giả mạo hoặc kém chất lượng</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
+          Hình phạt cho Vi phạm
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers/importers selling non-certified products face:
+          Nhà sản xuất/người nhập khẩu bán sản phẩm không được chứng nhận phải đối mặt:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product seizure</li>
-          <li>Heavy penalties under the BIS Act</li>
-          <li>Closure of manufacturing operations</li>
-          <li>Import restrictions</li>
-          <li>Legal prosecution</li>
-          <li>Cancellation of existing licenses</li>
+          <li>Tịch thu sản phẩm</li>
+          <li>Hình phạt nặng theo Đạo luật BIS</li>
+          <li>Đóng cửa hoạt động sản xuất</li>
+          <li>Hạn chế nhập khẩu</li>
+          <li>Khởi tố pháp lý</li>
+          <li>Hủy bỏ giấy phép hiện có</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Compliance is mandatory and strictly enforced.
+          Tuân thủ là bắt buộc và được thực thi nghiêm ngặt.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Must Obtain BIS License for SS Welded Pipes and Tubes?
+          Ai Phải Có Giấy phép BIS cho ống và ống Thép không gỉ Hàn?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Overseas manufacturers exporting to India</li>
-          <li>Importers of stainless steel pipes</li>
-          <li>OEM suppliers</li>
-          <li>Industrial distributors</li>
-          <li>Private label brands</li>
+          <li>Nhà sản xuất Ấn Độ</li>
+          <li>Nhà sản xuất nước ngoài xuất khẩu sang Ấn Độ</li>
+          <li>Người nhập khẩu ống thép không gỉ</li>
+          <li>Nhà cung cấp OEM</li>
+          <li>Nhà phân phối công nghiệp</li>
+          <li>Thương hiệu nhãn riêng</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each manufacturing location must obtain its own license.
+          Mỗi địa điểm sản xuất phải có giấy phép riêng.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Conclusion
+          Kết luận
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for Stainless Steel Welded Pipes and Tubes under
-          IS 17876:2022 ensures the reliability, durability, and performance of
-          critical piping products used across multiple industries. With
-          mandatory certification now enforced, manufacturers and importers must
-          align their processes, testing, and documentation with BIS
-          requirements to legally supply their products in the Indian market.
+          Chứng nhận BIS cho ống và ống thép không gỉ hàn theo IS 17876:2022
+          đảm bảo độ tin cậy, độ bền và hiệu suất của các sản phẩm ống quan trọng
+          được sử dụng trong nhiều ngành công nghiệp. Với việc chứng nhận bắt buộc
+          hiện được thực thi, nhà sản xuất và người nhập khẩu phải điều chỉnh quy
+          trình, thử nghiệm và tài liệu của họ theo yêu cầu BIS để cung cấp sản
+          phẩm hợp pháp tại thị trường Ấn Độ.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          With expert guidance, the BIS licensing process becomes faster,
-          smoother, and fully compliant.
+          Với hướng dẫn chuyên gia, quy trình cấp phép BIS trở nên nhanh hơn,
+          mượt mà hơn và tuân thủ đầy đủ.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs — BIS Certification for Stainless Steel Welded Pipes & Tubes
+          Câu hỏi Thường gặp — Chứng nhận BIS cho ống và ống Thép không gỉ Hàn
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                1. Is BIS Certification mandatory for stainless steel welded
-                pipes?
+                1. Chứng nhận BIS có bắt buộc đối với ống thép không gỉ hàn không?
               </strong>
               <br />
-              Yes. Under IS 17876:2022, BIS certification is compulsory for all
-              manufacturers and importers.
+              Có. Theo IS 17876:2022, chứng nhận BIS là bắt buộc đối với tất cả
+              nhà sản xuất và người nhập khẩu.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required?</strong>
+              <strong>2. Cần thử nghiệm gì?</strong>
               <br />
-              Chemical analysis, tensile test, hardness test, hydrostatic
-              testing, NDT, flattening, and dimensional checks.
+              Phân tích hóa học, thử nghiệm kéo, thử nghiệm độ cứng, thử nghiệm
+              thủy tĩnh, NDT, làm phẳng và kiểm tra kích thước.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. How long does BIS certification take?</strong>
+              <strong>3. Chứng nhận BIS mất bao lâu?</strong>
               <br />
-              Typically 35–50 days for Indian Manufacturer and around 120 days
-              for foreign manufacturer, depending on testing and inspection
-              readiness.
+              Thường là 35–50 ngày cho Nhà sản xuất Ấn Độ và khoảng 120 ngày
+              cho nhà sản xuất nước ngoài, tùy thuộc vào sự sẵn sàng thử nghiệm
+              và kiểm tra.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                4. Can foreign manufacturers obtain BIS certification?
+                4. Nhà sản xuất nước ngoài có thể có chứng nhận BIS không?
               </strong>
               <br />
-              Yes, through the FMCS (Foreign Manufacturers Certification
-              Scheme).
+              Có, thông qua FMCS (Chương trình Chứng nhận Nhà sản xuất Nước ngoài).
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. What documents are required?</strong>
+              <strong>5. Cần tài liệu gì?</strong>
               <br />
-              Factory license, test equipment list, BOM, process flow, drawings,
-              QC plan, brand documents, etc.
+              Giấy phép nhà máy, danh sách thiết bị thử nghiệm, BOM, quy trình,
+              bản vẽ, kế hoạch QC, tài liệu thương hiệu, v.v.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. What if a sample fails testing?</strong>
+              <strong>6. Nếu mẫu thử nghiệm thất bại thì sao?</strong>
               <br />
-              The manufacturer must correct the issue, rework the product, and
-              resubmit for testing.
+              Nhà sản xuất phải sửa lỗi, làm lại sản phẩm và gửi lại để thử nghiệm.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Is ISI marking mandatory after approval?</strong>
+              <strong>7. Đánh dấu ISI có bắt buộc sau khi phê duyệt không?</strong>
               <br />
-              Yes. Products must display ISI Mark + CML number.
+              Có. Sản phẩm phải hiển thị Dấu ISI + số CML.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Are all grades covered under IS 17876?</strong>
+              <strong>8. Tất cả các cấp có được bao phủ theo IS 17876 không?</strong>
               <br />
-              Only specific grades defined under the standard qualify.
+              Chỉ các cấp cụ thể được định nghĩa theo tiêu chuẩn mới đủ điều kiện.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. How often does BIS conduct surveillance?</strong>
+              <strong>9. BIS tiến hành giám sát thường xuyên như thế nào?</strong>
               <br />
-              Periodic audits and random sample testing are performed during the
-              license validity.
+              Kiểm toán định kỳ và thử nghiệm mẫu ngẫu nhiên được thực hiện trong
+              thời gian hiệu lực giấy phép.
             </p>
           </div>
         </div>
@@ -791,7 +785,7 @@ const MainContentLeft = () => {
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
             src="/BIS-Product-Pdf/IS-17876-2022-Sun-Certifications-India.pdf"
-            title="BIS Certificate for Welded Pipes & Tubes - IS 17876:2022 PDF"
+            title="Chứng nhận BIS cho ống và ống Hàn - IS 17876:2022 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -800,9 +794,9 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoRead />
+        <ManyUsersAlsoReadVietnamese />
 
-        <FaqAuthorEng questionNumber={3} />
+        <FaqAuthorVietnamese questionNumber={3} />
       </div>
     </div>
   );
@@ -815,7 +809,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
-              Our Services
+              Dịch vụ của Chúng tôi
             </h2>
           </BoxReveal>
 
@@ -823,7 +817,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India&apos;s Best Certificate Consultant
+                Tư vấn Chứng nhận Tốt nhất Ấn Độ
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -844,7 +838,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Mark (ISI License) for Foreign Manufacture
+              Dấu BIS (Giấy phép ISI) cho Nhà sản xuất Nước ngoài
             </p>
           </Link>
 
@@ -861,7 +855,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO Registration Certification
+              Chứng nhận Đăng ký CDSCO
             </p>
           </Link>
 
@@ -878,7 +872,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registration
+              Đăng ký BIS (CRS)
             </p>
           </Link>
 
@@ -895,7 +889,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Plastic Waste Management
+              Quản lý Rác thải Nhựa
             </p>
           </Link>
 
@@ -912,7 +906,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR Certificate certifications
+              Chứng nhận Chứng chỉ EPR
             </p>
           </Link>
 
@@ -929,7 +923,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC Certificate certifications
+              Chứng nhận Chứng chỉ LMPC
             </p>
           </Link>
 
@@ -946,7 +940,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Registration Certificate
+              Chứng chỉ Đăng ký BIS
             </p>
           </Link>
 
@@ -963,7 +957,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI MARK (BIS) for Indian Manufactures
+              DẤU ISI (BIS) cho Nhà sản xuất Ấn Độ
             </p>
           </Link>
         </div>

@@ -623,157 +623,151 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
+          โทษสำหรับการไม่ปฏิบัติตาม
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers/importers selling non-certified products face:
+          ผู้ผลิต/ผู้นำเข้าที่ขายผลิตภัณฑ์ที่ไม่ได้รับการรับรองต้องเผชิญ:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product seizure</li>
-          <li>Heavy penalties under the BIS Act</li>
-          <li>Closure of manufacturing operations</li>
-          <li>Import restrictions</li>
-          <li>Legal prosecution</li>
-          <li>Cancellation of existing licenses</li>
+          <li>การยึดผลิตภัณฑ์</li>
+          <li>โทษหนักภายใต้พระราชบัญญัติ BIS</li>
+          <li>การปิดการดำเนินงานการผลิต</li>
+          <li>ข้อจำกัดการนำเข้า</li>
+          <li>การดำเนินคดีทางกฎหมาย</li>
+          <li>การยกเลิกใบอนุญาตที่มีอยู่</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Compliance is mandatory and strictly enforced.
+          การปฏิบัติตามเป็นข้อบังคับและบังคับใช้อย่างเข้มงวด
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Must Obtain BIS License for SS Welded Pipes and Tubes?
+          ใครต้องได้รับใบอนุญาต BIS สำหรับท่อและท่อสแตนเลสเชื่อม?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Overseas manufacturers exporting to India</li>
-          <li>Importers of stainless steel pipes</li>
-          <li>OEM suppliers</li>
-          <li>Industrial distributors</li>
-          <li>Private label brands</li>
+          <li>ผู้ผลิตอินเดีย</li>
+          <li>ผู้ผลิตต่างประเทศที่ส่งออกไปยังอินเดีย</li>
+          <li>ผู้นำเข้าท่อสแตนเลส</li>
+          <li>ผู้จัดหา OEM</li>
+          <li>ผู้จัดจำหน่ายอุตสาหกรรม</li>
+          <li>แบรนด์ป้ายส่วนตัว</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each manufacturing location must obtain its own license.
+          สถานที่ผลิตแต่ละแห่งต้องได้รับใบอนุญาตของตนเอง
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Conclusion
+          สรุป
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for Stainless Steel Welded Pipes and Tubes under
-          IS 17876:2022 ensures the reliability, durability, and performance of
-          critical piping products used across multiple industries. With
-          mandatory certification now enforced, manufacturers and importers must
-          align their processes, testing, and documentation with BIS
-          requirements to legally supply their products in the Indian market.
+          ใบรับรอง BIS สำหรับท่อและท่อสแตนเลสเชื่อมภายใต้ IS 17876:2022
+          รับประกันความน่าเชื่อถือ ความทนทาน และประสิทธิภาพของผลิตภัณฑ์ท่อที่สำคัญ
+          ที่ใช้ในอุตสาหกรรมต่างๆ ด้วยการรับรองที่บังคับใช้ในขณะนี้
+          ผู้ผลิตและผู้นำเข้าต้องปรับกระบวนการ การทดสอบ
+          และเอกสารให้สอดคล้องกับข้อกำหนด BIS
+          เพื่อจัดหาผลิตภัณฑ์ของตนในตลาดอินเดียอย่างถูกกฎหมาย
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          With expert guidance, the BIS licensing process becomes faster,
-          smoother, and fully compliant.
+          ด้วยคำแนะนำจากผู้เชี่ยวชาญ กระบวนการออกใบอนุญาต BIS
+          จะเร็วขึ้น ราบรื่นขึ้น และปฏิบัติตามกฎระเบียบอย่างเต็มที่
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs — BIS Certification for Stainless Steel Welded Pipes & Tubes
+          คำถามที่พบบ่อย — การรับรอง BIS สำหรับท่อและท่อสแตนเลสเชื่อม
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                1. Is BIS Certification mandatory for stainless steel welded
-                pipes?
+                1. การรับรอง BIS เป็นข้อบังคับสำหรับท่อสแตนเลสเชื่อมหรือไม่?
               </strong>
               <br />
-              Yes. Under IS 17876:2022, BIS certification is compulsory for all
-              manufacturers and importers.
+              ใช่ ภายใต้ IS 17876:2022 การรับรอง BIS เป็นข้อบังคับสำหรับผู้ผลิตและผู้นำเข้าทุกคน
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required?</strong>
+              <strong>2. ต้องทดสอบอะไรบ้าง?</strong>
               <br />
-              Chemical analysis, tensile test, hardness test, hydrostatic
-              testing, NDT, flattening, and dimensional checks.
+              การวิเคราะห์ทางเคมี การทดสอบแรงดึง การทดสอบความแข็ง การทดสอบความดันไฮโดรสแตติก
+              การทดสอบแบบไม่ทำลาย การกดแบน และการตรวจสอบมิติ
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. How long does BIS certification take?</strong>
+              <strong>3. การรับรอง BIS ใช้เวลานานแค่ไหน?</strong>
               <br />
-              Typically 35–50 days for Indian Manufacturer and around 120 days
-              for foreign manufacturer, depending on testing and inspection
-              readiness.
+              โดยทั่วไป 35–50 วันสำหรับผู้ผลิตอินเดีย และประมาณ 120 วันสำหรับผู้ผลิตต่างประเทศ
+              ขึ้นอยู่กับความพร้อมในการทดสอบและการตรวจสอบ
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                4. Can foreign manufacturers obtain BIS certification?
+                4. ผู้ผลิตต่างประเทศสามารถรับการรับรอง BIS ได้หรือไม่?
               </strong>
               <br />
-              Yes, through the FMCS (Foreign Manufacturers Certification
-              Scheme).
+              ใช่ ผ่านโครงการ FMCS (Foreign Manufacturers Certification Scheme)
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. What documents are required?</strong>
+              <strong>5. ต้องใช้เอกสารอะไรบ้าง?</strong>
               <br />
-              Factory license, test equipment list, BOM, process flow, drawings,
-              QC plan, brand documents, etc.
+              ใบอนุญาตโรงงาน รายการอุปกรณ์ทดสอบ BOM แผนผังกระบวนการ ภาพวาด
+              แผน QC เอกสารแบรนด์ ฯลฯ
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. What if a sample fails testing?</strong>
+              <strong>6. จะเกิดอะไรขึ้นหากตัวอย่างล้มเหลวในการทดสอบ?</strong>
               <br />
-              The manufacturer must correct the issue, rework the product, and
-              resubmit for testing.
+              ผู้ผลิตต้องแก้ไขปัญหา ปรับปรุงผลิตภัณฑ์ และส่งใหม่เพื่อการทดสอบ
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Is ISI marking mandatory after approval?</strong>
+              <strong>7. การทำเครื่องหมาย ISI เป็นข้อบังคับหลังการอนุมัติหรือไม่?</strong>
               <br />
-              Yes. Products must display ISI Mark + CML number.
+              ใช่ ผลิตภัณฑ์ต้องแสดงเครื่องหมาย ISI + หมายเลข CML
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Are all grades covered under IS 17876?</strong>
+              <strong>8. เกรดทั้งหมดครอบคลุมภายใต้ IS 17876 หรือไม่?</strong>
               <br />
-              Only specific grades defined under the standard qualify.
+              เฉพาะเกรดเฉพาะที่กำหนดไว้ภายใต้มาตรฐานเท่านั้นที่มีคุณสมบัติ
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. How often does BIS conduct surveillance?</strong>
+              <strong>9. BIS ดำเนินการเฝ้าระวังบ่อยแค่ไหน?</strong>
               <br />
-              Periodic audits and random sample testing are performed during the
-              license validity.
+              การตรวจสอบเป็นระยะและการทดสอบตัวอย่างแบบสุ่มจะดำเนินการระหว่างอายุใบอนุญาต
             </p>
           </div>
         </div>
@@ -782,7 +776,7 @@ const MainContentLeft = () => {
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
             src="/BIS-Product-Pdf/IS-17876-2022-Sun-Certifications-India.pdf"
-            title="BIS Certificate for Welded Pipes & Tubes - IS 17876:2022 PDF"
+            title="ใบรับรอง BIS สำหรับท่อและท่อเชื่อม - IS 17876:2022 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -791,9 +785,9 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoRead />
+        <ManyUsersAlsoReadThai />
 
-        <FaqAuthorEng questionNumber={3} />
+        <FaqAuthorThai questionNumber={3} />
       </div>
     </div>
   );
@@ -806,7 +800,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
-              Our Services
+              บริการของเรา
             </h2>
           </BoxReveal>
 
@@ -814,7 +808,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India&apos;s Best Certificate Consultant
+                ที่ปรึกษาใบรับรองที่ดีที่สุดในอินเดีย
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -835,7 +829,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Mark (ISI License) for Foreign Manufacture
+              เครื่องหมาย BIS (ใบอนุญาต ISI) สำหรับผู้ผลิตต่างประเทศ
             </p>
           </Link>
 
@@ -852,7 +846,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO Registration Certification
+              การรับรองการลงทะเบียน CDSCO
             </p>
           </Link>
 
@@ -869,7 +863,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registration
+              การลงทะเบียน BIS (CRS)
             </p>
           </Link>
 
@@ -886,7 +880,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Plastic Waste Management
+              การจัดการขยะพลาสติก
             </p>
           </Link>
 
@@ -903,7 +897,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR Certificate certifications
+              การรับรองใบรับรอง EPR
             </p>
           </Link>
 
@@ -920,7 +914,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC Certificate certifications
+              การรับรองใบรับรอง LMPC
             </p>
           </Link>
 
@@ -937,7 +931,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Registration Certificate
+              ใบรับรองการลงทะเบียน BIS
             </p>
           </Link>
 
@@ -954,7 +948,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI MARK (BIS) for Indian Manufactures
+              เครื่องหมาย ISI (BIS) สำหรับผู้ผลิตอินเดีย
             </p>
           </Link>
         </div>
