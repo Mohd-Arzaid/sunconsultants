@@ -92,6 +92,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/mobili",
     // BIS Certificate for Seamless Pipes and Tubes Italian Page Url
     "/blogs/isi-products/tubi-e-tubi-senza-saldatura-is-17875",
+    // BIS Certificate for Welded Pipes and Tubes Italian Page Url
+    "/blogs/isi-products/tubi-e-tubi-saldati-is-17876",
     // Storage Unit Italian Page Url
     "/blogs/isi-products/unita-di-stoccaggio-is-17634",
     // Tables & Desks Italian Page Url
@@ -796,6 +798,9 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS Certificate for Seamless Pipes and Tubes Italian
     if (path.includes("/blogs/isi-products/tubi-e-tubi-senza-saldatura-is-17875"))
       return "BIS Certificate for Seamless Pipes and Tubes (Italian)";
+    // BIS Certificate for Welded Pipes and Tubes Italian
+    if (path.includes("/blogs/isi-products/tubi-e-tubi-saldati-is-17876"))
+      return "BIS Certificate for Welded Pipes and Tubes (Italian)";
     // BIS Certificate for Storage Unit Italian
     if (path.includes("/blogs/isi-products/unita-di-stoccaggio-is-17634"))
       return "BIS Certificate for Storage Unit (Italian)";

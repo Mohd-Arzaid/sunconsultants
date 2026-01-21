@@ -4070,9 +4070,73 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - French -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tubes-et-tuyaux-soudes-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/geschweißte-rohre-und-rohre-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/pipa-dan-tabung-las-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tubi-e-tubi-saldati-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+   
+
+  <!-- BIS Certificate for Welded Pipes & Tubes - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/yousetsu-kan-chuubu-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/yongjeob-paipeu-mich-tyubeu-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tubos-y-tuberias-soldadas-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/ong-va-ong-han-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+
+  
 
 
 
+   
+
+            
 
 
 
@@ -4519,6 +4583,18 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+
+       <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
+
+
+
+
   <!-- BIS Certificate for Battery Operated Air Purifier - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/battery-operated-air-purifier-is-302</loc>
@@ -4526,6 +4602,56 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/munazzif-hawa-bi-batariya-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+  <!-- BIS Certificate for Battery Operated Air Purifier - Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/dianchi-kongqi-jinghuaqi-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
   <!-- BIS Certificate for Foot Warmer & Heating Mats - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/foot-warmer-&amp;-heating-mats-is-302</loc>

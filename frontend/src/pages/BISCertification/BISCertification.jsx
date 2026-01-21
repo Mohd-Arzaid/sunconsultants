@@ -698,8 +698,25 @@ const OverviewSection = () => {
         />
       </div>
 
+
+    
       <h2 className="service-left-content-heading-three">
-        Introduction: Why BIS Certification Matters
+      What is BIS Certification? 
+      </h2>
+
+
+      <p className="service-left-content-paragraph">
+      BIS certification is the process of securing a license from the Bureau of Indian Standards (National Certification Body of India) for manufacturing or importing goods that complies with the Indian standards. BIS offers various certification schemes through which the manufacturers can secure a BIS license to use the standard quality mark on their products. This standard mark showcases that their products comply with the required quality, safety and reliability standards as set by BIS. 
+      </p>
+      <p className="service-left-content-paragraph">
+      BIS certification is voluntary in nature but Bureau of Indian Standards made it mandatory for various products critical for consumers health and safety. BIS issues Quality Control Orders (QCO) to list the products that require a mandatory BIS license for manufacturing or importing in India.
+      </p>
+      <p className="service-left-content-paragraph">
+      For many Indian manufacturers and importers securing BIS certification is a must. It covers a wide range of products including electrical appliances, cement and steel products, package drinking water, electronics like mobile phones, LED lights, power banks, precious metal jewelry (through hallmarking) and many more. The manufacturers and importers of these mandatory products cannot legally sell or distribute goods in India without BIS recognition.
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+       Why BIS Certification Matters
       </h2>
 
       <p className="service-left-content-paragraph">
@@ -726,35 +743,21 @@ const OverviewSection = () => {
         navigation available to both foreign and domestic manufacturers.
       </p>
 
-      <h2 className="service-left-content-heading-three">
-        What is BIS Certification for Manufacturers and Importers?
-      </h2>
+     
 
-      <p className="service-left-content-paragraph">
-        BIS certification is India&apos;s national quality mark issued by the
-        Bureau of Indian Standards, the national certification body of India
-        under the Ministry of Consumer Affairs. BIS certification ensures that a
-        product conforms to the Indian Standards (IS) in regard to performance,
-        safety, and quality, allowing manufacturers (Indian or foreign) to use
-        the standard mark for market access, involving testing and audits.
-      </p>
 
-      <p className="service-left-content-paragraph">
-        When a product fulfills these quality standards requirements, the Bureau
-        of Indian Standards issues a BIS license or BIS certificate, signifying
-        the product is eligible to bear the ISI mark (for domestic schemes) or a
-        CRS mark with a unique registration number (under BIS Compulsory
-        Registration Scheme).
-      </p>
-      <p className="service-left-content-paragraph">
-        For many Indian manufacturers and importers securing BIS certification
-        is a must. It covers a wide range of products including electrical
-        appliances, cement and steel products, package drinking water,
-        electronics like mobile phones, LED lights, power banks, precious metal
-        jewelry (through hallmarking) and many more. The manufacturers and
-        importers of these mandatory products cannot legally sell or distribute
-        goods in India without BIS recognition.
-      </p>
+
+
+
+
+
+
+
+
+
+
+
+
 
       <h2 className="service-left-content-heading-three">
         A Brief History of BIS in India

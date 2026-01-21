@@ -452,6 +452,30 @@ const BISCertificateForWeldedPipesAndTubesChinese = lazy(() =>
 const BISCertificateForWeldedPipesAndTubesDutch = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesDutch")
 );
+const BISCertificateForWeldedPipesAndTubesFrench = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesFrench")
+);
+const BISCertificateForWeldedPipesAndTubesGerman = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesGerman")
+);
+const BISCertificateForWeldedPipesAndTubesIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesIndonesian")
+);
+const BISCertificateForWeldedPipesAndTubesItalian = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesItalian")
+);
+const BISCertificateForWeldedPipesAndTubesJapanese = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesJapanese")
+);
+const BISCertificateForWeldedPipesAndTubesKorean = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesKorean")
+);
+const BISCertificateForWeldedPipesAndTubesSpanish = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesSpanish")
+);
+const BISCertificateForWeldedPipesAndTubesVietnamese = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesVietnamese")
+);
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import(
     "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubes"
@@ -628,7 +652,13 @@ const BISCertificationChainPipeWrenches = lazy(() =>
   import("@/blogs/BISCertificationChainPipeWrenches")
 );
 const BISCertificateBatteryOperatedAirPurifier = lazy(() =>
-  import("@/blogs/BISCertificationBatteryOperatedAirPurifier")
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificationBatteryOperatedAirPurifier")
+);
+const BISCertificateBatteryOperatedAirPurifierArabic = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierArabic")
+);
+const BISCertificateBatteryOperatedAirPurifierChinese = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierChinese")
 );
 const BISCertificateForFootWarmerandHeatingMats = lazy(() =>
   import("@/blogs/BISCertificationFootWarmerandHeatingMats")
@@ -1736,6 +1766,70 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/tubes-et-tuyaux-soudes-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/geschweißte-rohre-und-rohre-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/pipa-dan-tabung-las-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tubi-e-tubi-saldati-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/yousetsu-kan-chuubu-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/yongjeob-paipeu-mich-tyubeu-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tubos-y-tuberias-soldadas-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ong-va-ong-han-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/seamless-pipes-&-tubes-is-17875"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2084,6 +2178,22 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateBatteryOperatedAirPurifier />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/munazzif-hawa-bi-batariya-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/dianchi-kongqi-jinghuaqi-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierChinese />
           </Suspense>
         }
       />

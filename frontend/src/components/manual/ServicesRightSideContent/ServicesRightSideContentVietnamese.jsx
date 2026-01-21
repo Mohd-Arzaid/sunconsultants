@@ -55,6 +55,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/blogs/isi-products/noi-that",
     // BIS Certificate for Seamless Pipes and Tubes Vietnamese Page Url
     "/blogs/isi-products/ong-va-ong-khong-moi-noi-is-17875",
+    // BIS Certificate for Welded Pipes and Tubes Vietnamese Page Url
+    "/blogs/isi-products/ong-va-ong-han-is-17876",
     // BIS Certificate for Storage Unit Vietnamese Page Url
     "/blogs/isi-products/don-vi-luu-tru-is-17634",
     // BIS Certificate for Tables & Desks Vietnamese Page Url
@@ -635,6 +637,9 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     // BIS Certificate for Seamless Pipes and Tubes Vietnamese
     if (path.includes("/blogs/isi-products/ong-va-ong-khong-moi-noi-is-17875"))
       return "BIS Certificate for Seamless Pipes & Tubes (Vietnamese)";
+    // BIS Certificate for Welded Pipes and Tubes Vietnamese
+    if (path.includes("/blogs/isi-products/ong-va-ong-han-is-17876"))
+      return "BIS Certificate for Welded Pipes & Tubes (Vietnamese)";
     // BIS Certificate for Storage Unit Vietnamese
     if (path.includes("/blogs/isi-products/don-vi-luu-tru-is-17634"))
       return "BIS Certificate for Storage Unit (Vietnamese)";

@@ -54,6 +54,8 @@ const ServicesRightSideContentFrench = () => {
     "/blogs/isi-products/meubles",
     // BIS Certificate for Seamless Pipes and Tubes French Page Url
     "/blogs/isi-products/tubes-et-tuyaux-sans-soudure-is-17875",
+    // BIS Certificate for Welded Pipes and Tubes French Page Url
+    "/blogs/isi-products/tubes-et-tuyaux-soudes-is-17876",
     // Storage Unit French Page Url
     "/blogs/isi-products/unites-de-stockage-is-17634",
     // BIS Certificate for Tables & Desks French Page Url
@@ -626,6 +628,8 @@ const ContactFormServicesRightSideContentFrench = () => {
       return "BIS Certificate for Furniture (French)";
     if (path.includes("/blogs/isi-products/tubes-et-tuyaux-sans-soudure-is-17875"))
       return "BIS Certificate for Seamless Pipes and Tubes (French)";
+    if (path.includes("/blogs/isi-products/tubes-et-tuyaux-soudes-is-17876"))
+      return "BIS Certificate for Welded Pipes and Tubes (French)";
     if (path.includes("/blogs/isi-products/unites-de-stockage-is-17634"))
       return "BIS Certificate for Storage Unit (French)";
     // BIS Certificate for Tables & Desks French

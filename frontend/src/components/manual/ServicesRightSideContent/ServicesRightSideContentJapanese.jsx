@@ -49,6 +49,8 @@ const ServicesRightSideContentJapanese = () => {
     "/blogs/isi-products/kaichu-dento-is-2083",
     // Furniture Japanese Page Url
     "/blogs/isi-products/kagu",
+    // BIS Certificate for Welded Pipes and Tubes Japanese Page Url
+    "/blogs/isi-products/yousetsu-kan-chuubu-is-17876",
     // ISIMark Japanese Page Url
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
@@ -757,6 +759,9 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS Certificate for Furniture Japanese
     if (path.includes("/blogs/isi-products/kagu"))
       return "BIS Certificate for Furniture (Japanese)";
+    // BIS Certificate for Welded Pipes and Tubes Japanese
+    if (path.includes("/blogs/isi-products/yousetsu-kan-chuubu-is-17876"))
+      return "BIS Certificate for Welded Pipes and Tubes (Japanese)";
     return "";
   };
 
