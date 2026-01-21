@@ -159,7 +159,7 @@ const HeroSection = () => {
                   <FileCheck className="text-black" size={24} />
                 </div>
               </div>
-              <p className="text-3xl font-geist font-bold text-neutral-800">300+</p>
+              <p className="text-3xl font-geist font-bold text-neutral-800">1000+</p>
             </div>
 
             <p className="font-geist mt-4 text-base text-neutral-600">
@@ -278,9 +278,9 @@ const AdvisoryCardsSection = () => {
   return (
     <div className="pt-8 pb-12 sm:pt-10 sm:pb-14 md:pt-12 md:pb-16">
       <Container>
-        <h1 className="font-playfair mb-4 md:mb-6 text-center text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-800 drop-shadow-lg">
+        <h2 className="font-playfair mb-4 md:mb-6 text-center text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-800 drop-shadow-lg">
           Our Advisor Micro-Profiles
-        </h1>
+        </h2>
         <p className="font-geist text-sm sm:text-base md:text-lg max-w-xl sm:max-w-2xl md:max-w-3xl text-center mx-auto text-neutral-600">
           Below are representative examples of the types of specialists in our
           network. Actual advisors are engaged per assignment and verified prior
@@ -380,9 +380,9 @@ const FaqsSection = () => {
   return (
     <div className="pt-8 pb-12 sm:pt-10 sm:pb-14 md:pt-12 border border-neutral-200">
       <Container>
-        <h1 className="font-playfair mb-4 md:mb-3 text-center text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-800 drop-shadow-lg">
+        <h3 className="font-playfair mb-4 md:mb-3 text-center text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-800 drop-shadow-lg">
           Frequently Asked Questions
-        </h1>
+        </h3>
         <p className="font-geist text-sm sm:text-base md:text-xl max-w-xl sm:max-w-2xl md:max-w-3xl text-center mx-auto text-neutral-600">
           Can&apos;t find the answer you are looking for?{" "}
           <a
