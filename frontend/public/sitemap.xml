@@ -5234,6 +5234,19 @@
   </url>
   <!-- Ministry Updates Pages - End -->
 
+  <!-- Latest Notification Pages -->
+  <url>
+    <loc>https://bis-certifications.com/latest-notification/bis-certificate-for-sanitary-napkins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/latest-notification/bis-certificate-for-cross-recessed-tapping-screw-part-3-raised-countersunk-oval-head</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Latest Notification Pages - End -->
+
   <!-- PDF Certification Files -->
   <url>
     <loc>https://bis-certifications.com/pdf/sun-certification-plywood-for-concrete-shuttering-works.pdf</loc>
@@ -5482,6 +5495,116 @@
   </url>
   <url>
     <loc>https://bis-certifications.com/pdf/sun-certification-work-chairs.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-electric-cable-for-photovoltaic.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-asbestos-or-fibre-cement-based-products.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-rubber-gaskets-for-pressure-cookers.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-gypsum-plaster-boards.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-telescopic-ball-bearing-drawer-slides.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-wrought-aluminium-and-aluminium-alloy-for-electrical-applications.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-steel-wires-or-strands-nylon-or-wire-ropes-and-wire-mesh.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-self-contained-drinking-water-cooler.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-raised-countersunk-head-screws-common-head-style-with-type-h-or-type-z-cross-recess-product-grade-a.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-pipe-wrenches-general-purpose.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-corrugated-aluminium-sheet.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-polypropylene-pp-woven-laminated-block-bottom-valve-sacks-for-packaging-of-50-kg-cement.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-electrical-appliance-for-commercial-dispensing-and-vending.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-pipe-wrenches-heavy-duty.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-cycle-and-rickshaw-tyres-tubes.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-reinforced-gypsum-plaster-boards-and-ceiling-tiles.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-textiles-manila-ropes.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-wrought-aluminium-and-aluminium-alloys-for-manufacture-of-utensils.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-v-belts.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-h-acid.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-glass-fibre-reinforced-gypsum-panels.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/pdf/sun-certification-stainless-steel-tubes-for-the-food-and-beverage-industry.pdf</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
