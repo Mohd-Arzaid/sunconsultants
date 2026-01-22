@@ -73,6 +73,9 @@ const BISRemovesMandatoryInHouseLaboratoryEng = lazy(() =>
     "@/pages/MinistryUpdatesPages/BISRemovesMandatoryInHouseLaboratoryEng/BISRemovesMandatoryInHouseLaboratoryEng"
   )
 );
+const RestrictionsLiftedforASEAN = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/RestrictionsLiftedforASEAN")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -203,6 +206,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <BISRemovesMandatoryInHouseLaboratoryEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-certification-update-asean-manufacturers"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <RestrictionsLiftedforASEAN />
           </Suspense>
         }
       />

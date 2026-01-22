@@ -60,6 +60,8 @@ const ServicesRightSideContentFrench = () => {
     "/blogs/isi-products/unites-de-stockage-is-17634",
     // BIS Certificate for Tables & Desks French Page Url
     "/blogs/isi-products/tables-et-bureaux-is-17633",
+    // BIS Certificate for Battery Operated Air Purifier French Page Url
+    "/blogs/isi-products/purificateur-dair-alimente-par-batterie-is-302",
   ];
 
   // Check if current path should show these components
@@ -635,6 +637,9 @@ const ContactFormServicesRightSideContentFrench = () => {
     // BIS Certificate for Tables & Desks French
     if (path.includes("/blogs/isi-products/tables-et-bureaux-is-17633"))
       return "BIS Certificate for Tables & Desks (French)";
+    // BIS Certificate for Battery Operated Air Purifier French
+    if (path.includes("/blogs/isi-products/purificateur-dair-alimente-par-batterie-is-302"))
+      return "BIS Certificate for Battery Operated Air Purifier (French)";
     return "";
   };
 

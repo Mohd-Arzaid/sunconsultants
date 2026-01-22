@@ -59,6 +59,8 @@ const ServicesRightSideContentSpanish = () => {
     "/blogs/isi-products/tubos-y-tuberias-sin-costura-is-17875",
     // BIS Certificate for Welded Pipes and Tubes Spanish Page Url
     "/blogs/isi-products/tubos-y-tuberias-soldadas-is-17876",
+    // BIS Certificate for Battery Operated Air Purifier Spanish Page Url
+    "/blogs/isi-products/purificador-de-aire-funcionado-por-bateria-is-302",
     // BIS Certificate for Storage Unit Spanish Page Url
     "/blogs/isi-products/unidades-de-almacenamiento-is-17634",
     // BIS Certificate for Tables & Desks Spanish Page Url
@@ -644,6 +646,13 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Welded Pipes and Tubes Spanish
     if (path.includes("/blogs/isi-products/tubos-y-tuberias-soldadas-is-17876"))
       return "BIS Certificate for Welded Pipes and Tubes (Spanish)";
+    // BIS Certificate for Battery Operated Air Purifier Spanish
+    if (
+      path.includes(
+        "/blogs/isi-products/purificador-de-aire-funcionado-por-bateria-is-302"
+      )
+    )
+      return "BIS Certificate for Battery Operated Air Purifier (Spanish)";
     // BIS Certificate for Storage Unit Spanish
     if (path.includes("/blogs/isi-products/unidades-de-almacenamiento-is-17634"))
       return "BIS Certificate for Storage Unit (Spanish)";

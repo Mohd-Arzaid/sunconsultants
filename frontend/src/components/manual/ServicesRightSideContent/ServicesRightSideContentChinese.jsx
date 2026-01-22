@@ -47,6 +47,7 @@ const ServicesRightSideContentChinese = () => {
     "/blogs/isi-products/cunchu-danwei-is-17634",
     "/blogs/isi-products/zhuozi-he-bangongzhuo-is-17633",
     "/blogs/isi-products/dianchi-kongqi-jinghuaqi-is-302",
+    "/blogs/isi-products/dianchi-yashua-is-302",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
     "/bis-fang-an-x-ya-suo-ji-ren-zheng",
     "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
@@ -743,6 +744,9 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certificate for Battery Operated Air Purifier Chinese
     if (path.includes("/blogs/isi-products/dianchi-kongqi-jinghuaqi-is-302"))
       return "BIS Certificate for Battery Operated Air Purifier (Chinese)";
+    // BIS Certificate for Battery Operated Toothbrush Chinese
+    if (path.includes("/blogs/isi-products/dianchi-yashua-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush (Chinese)";
     return "";
   };
 

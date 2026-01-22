@@ -51,6 +51,8 @@ const ServicesRightSideContentJapanese = () => {
     "/blogs/isi-products/kagu",
     // BIS Certificate for Welded Pipes and Tubes Japanese Page Url
     "/blogs/isi-products/yousetsu-kan-chuubu-is-17876",
+    // BIS Certificate for Battery Operated Air Purifier Japanese Page Url
+    "/blogs/isi-products/denchi-kudou-kuuki-jouka-ki-is-302",
     // ISIMark Japanese Page Url
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
@@ -762,6 +764,13 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS Certificate for Welded Pipes and Tubes Japanese
     if (path.includes("/blogs/isi-products/yousetsu-kan-chuubu-is-17876"))
       return "BIS Certificate for Welded Pipes and Tubes (Japanese)";
+    // BIS Certificate for Battery Operated Air Purifier Japanese
+    if (
+      path.includes(
+        "/blogs/isi-products/denchi-kudou-kuuki-jouka-ki-is-302"
+      )
+    )
+      return "BIS Certificate for Battery Operated Air Purifier (Japanese)";
     return "";
   };
 

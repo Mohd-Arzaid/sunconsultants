@@ -89,6 +89,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/ethylene-dichloride-qco-withdraw-order",
     "/ministry-updates/p-xylene-qco-withdraw-order",
     "/ministry-updates/bis-in-house-lab-requirement",
+    "/ministry-updates/bis-certification-update-asean-manufacturers",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -896,6 +897,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // BIS Removes Mandatory In-House Laboratory Requirement
     if (path.includes("/ministry-updates/bis-in-house-lab-requirement"))
       return "BIS Removes Mandatory In-House Laboratory Requirement - Ministry Updates (English)";
+
+    // BIS Certification Update for ASEAN Manufacturers
+    if (path.includes("/ministry-updates/bis-certification-update-asean-manufacturers"))
+      return "BIS Certification Update: Restrictions Lifted for ASEAN & Overseas Manufacturers - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

@@ -97,6 +97,8 @@ const ServicesRightSideContentThai = () => {
     "/blogs/isi-products/tu-keeb-khong-is-17634",
     // BIS Certificate for Tables & Desks Thai Page Url
     "/blogs/isi-products/to-lae-to-ngan-is-17633",
+    // BIS Certificate for Battery Operated Air Purifier Thai Page Url
+    "/blogs/isi-products/khrueang-fok-lom-batari-is-302",
   ];
 
   // Check if current path should show these components
@@ -742,6 +744,13 @@ const ContactFormServicesRightSideContentThai = () => {
     // BIS Certificate for Tables & Desks Thai
     if (path.includes("/blogs/isi-products/to-lae-to-ngan-is-17633"))
       return "BIS Certificate for Tables & Desks (Thai)";
+    // BIS Certificate for Battery Operated Air Purifier Thai
+    if (
+      path.includes(
+        "/blogs/isi-products/khrueang-fok-lom-batari-is-302"
+      )
+    )
+      return "BIS Certificate for Battery Operated Air Purifier (Thai)";
     return "";
   };
 

@@ -86,6 +86,8 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/anabib-wa-anabib-malwama-is-17876",
     // BIS Certificate for Battery Operated Air Purifier Arabic Page Url
     "/blogs/isi-products/munazzif-hawa-bi-batariya-is-302",
+    // BIS Certificate for Battery Operated Toothbrush Arabic Page Url
+    "/blogs/isi-products/firsha-asnan-bi-batariya-is-302",
   ];
 
   // Check if current path should show these components
@@ -742,6 +744,9 @@ const ContactFormServicesRightSideContentArabic = () => {
     // BIS Certificate for Battery Operated Air Purifier Arabic
     if (path.includes("/blogs/isi-products/munazzif-hawa-bi-batariya-is-302"))
       return "BIS Certificate for Battery Operated Air Purifier (Arabic)";
+    // BIS Certificate for Battery Operated Toothbrush Arabic
+    if (path.includes("/blogs/isi-products/firsha-asnan-bi-batariya-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush (Arabic)";
     return "";
   };
 

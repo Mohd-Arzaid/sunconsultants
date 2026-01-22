@@ -660,11 +660,47 @@ const BISCertificateBatteryOperatedAirPurifierArabic = lazy(() =>
 const BISCertificateBatteryOperatedAirPurifierChinese = lazy(() =>
   import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierChinese")
 );
+const BISCertificateBatteryOperatedAirPurifierDutch = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierDutch")
+);
+const BISCertificateBatteryOperatedAirPurifierFrench = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierFrench")
+);
+const BISCertificateBatteryOperatedAirPurifierGerman = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierGerman")
+);
+const BISCertificateBatteryOperatedAirPurifierIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierIndonesian")
+);
+const BISCertificateBatteryOperatedAirPurifierItalian = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierItalian")
+);
+const BISCertificateBatteryOperatedAirPurifierJapanese = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierJapanese")
+);
+const BISCertificateBatteryOperatedAirPurifierKorean = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierKorean")
+);
+const BISCertificateBatteryOperatedAirPurifierSpanish = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierSpanish")
+);
+const BISCertificateBatteryOperatedAirPurifierThai = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierThai")
+);
+const BISCertificateBatteryOperatedAirPurifierVietnamese = lazy(() =>
+  import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificateBatteryOperatedAirPurifierVietnamese")
+);
 const BISCertificateForFootWarmerandHeatingMats = lazy(() =>
   import("@/blogs/BISCertificationFootWarmerandHeatingMats")
 );
 const BISCertificateForBatteryOperatedToothbrush = lazy(() =>
-  import("@/blogs/BISCertificationBatteryOperatedToothbrush")
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificationBatteryOperatedToothbrush")
+);
+const BISCertificateForBatteryOperatedToothbrushArabic = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushArabic")
+);
+const BISCertificateForBatteryOperatedToothbrushChinese = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushChinese")
 );
 
 export const BlogRoutes = () => {
@@ -2198,6 +2234,86 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/batterij-aangedreven-luchtzuiveraar-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/purificateur-dair-alimente-par-batterie-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/batteriebetriebener-luftreiniger-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/pembersih-udara-berbaterai-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/purificatore-daria-alimentato-a-batteria-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/denchi-kudou-kuuki-jouka-ki-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/jeonji-gudong-gonggi-jeonghwagi-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/purificador-de-aire-funcionado-por-bateria-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/khrueang-fok-lom-batari-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/may-loc-khong-khi-chay-bang-pin-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifierVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/foot-warmer-&-heating-mats-is-302"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2210,6 +2326,22 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBatteryOperatedToothbrush />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/firsha-asnan-bi-batariya-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/dianchi-yashua-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushChinese />
           </Suspense>
         }
       />

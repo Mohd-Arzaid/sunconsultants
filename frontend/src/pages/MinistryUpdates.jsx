@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import AboutContact from "@/components/manual/about/AboutContact";
+import PropTypes from "prop-types";
 
 const MinistryUpdates = () => {
   const baseUrl = "https://bis-certifications.com";
@@ -226,6 +227,17 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       description:
         "BIS has officially removed the mandatory in-house laboratory requirement for most products under BIS certification. Manufacturers can now use external BIS-recognised or ISO 17025 accredited labs.",
       link: "/ministry-updates/bis-in-house-lab-requirement",
+    },
+    {
+      id: 0,
+      color: "#5B63E6",
+      tagType: "BIS Update",
+      date: "January 20, 2025",
+      displayDate: "20 Jan 2025",
+      title: "BIS Lifts Restrictions for ASEAN & Overseas Manufacturers",
+      description:
+        "BIS has removed country-specific restrictions on ASEAN and overseas manufacturers, enabling faster BIS certification and smoother entry into India. Pending applications are now being cleared.",
+      link: "/ministry-updates/bis-certification-update-asean-manufacturers",
     },
     {
       id: 2,
@@ -491,6 +503,12 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   );
 };
 
+NotificationCard.propTypes = {
+  searchQuery: PropTypes.string.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  itemsPerPage: PropTypes.number.isRequired,
+};
+
 const NotificationCardItem = ({
   color,
   tagType,
@@ -561,6 +579,15 @@ const NotificationCardItem = ({
   );
 };
 
+NotificationCardItem.propTypes = {
+  color: PropTypes.string.isRequired,
+  tagType: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  displayDate: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};
+
 const Pagination = ({
   currentPage,
   setCurrentPage,
@@ -578,6 +605,17 @@ const Pagination = ({
       description:
         "BIS has officially removed the mandatory in-house laboratory requirement for most products under BIS certification. Manufacturers can now use external BIS-recognised or ISO 17025 accredited labs.",
       link: "/ministry-updates/bis-in-house-lab-requirement",
+    },
+    {
+      id: 0,
+      color: "#5B63E6",
+      tagType: "BIS Update",
+      date: "January 20, 2025",
+      displayDate: "20 Jan 2025",
+      title: "BIS Lifts Restrictions for ASEAN & Overseas Manufacturers",
+      description:
+        "BIS has removed country-specific restrictions on ASEAN and overseas manufacturers, enabling faster BIS certification and smoother entry into India. Pending applications are now being cleared.",
+      link: "/ministry-updates/bis-certification-update-asean-manufacturers",
     },
     {
       id: 2,
@@ -911,4 +949,11 @@ const Pagination = ({
       </div>
     </div>
   );
+};
+
+Pagination.propTypes = {
+  currentPage: PropTypes.number.isRequired,
+  setCurrentPage: PropTypes.func.isRequired,
+  itemsPerPage: PropTypes.number.isRequired,
+  searchQuery: PropTypes.string.isRequired,
 };

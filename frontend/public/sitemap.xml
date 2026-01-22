@@ -4617,6 +4617,77 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/batterij-aangedreven-luchtzuiveraar-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - French -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/purificateur-dair-alimente-par-batterie-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/batteriebetriebener-luftreiniger-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+  <!-- BIS Certificate for Battery Operated Air Purifier - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/pembersih-udara-berbaterai-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/purificatore-daria-alimentato-a-batteria-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/denchi-kudou-kuuki-jouka-ki-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/jeonji-gudong-gonggi-jeonghwagi-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/purificador-de-aire-funcionado-por-bateria-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - Thai -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/khrueang-fok-lom-batari-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/may-loc-khong-khi-chay-bang-pin-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 
 
 
@@ -4659,6 +4730,15 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+
+
+        <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
   <!-- BIS Certificate for Battery Operated Toothbrush - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/battery-operated-tootbrush-is-302</loc>
@@ -4666,6 +4746,67 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Battery Operated Toothbrush - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/firsha-asnan-bi-batariya-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Toothbrush - Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/dianchi-yashua-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
 
   <url>
     <loc>https://bis-certifications.com/bis-certification-in-indonesia</loc>
@@ -5228,6 +5369,13 @@
   <!-- BIS Removes Mandatory In-House Laboratory Requirement - English -->
   <url>
     <loc>https://bis-certifications.com/ministry-updates/bis-in-house-lab-requirement</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certification Update: Restrictions Lifted for ASEAN & Overseas Manufacturers - English -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/bis-certification-update-asean-manufacturers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

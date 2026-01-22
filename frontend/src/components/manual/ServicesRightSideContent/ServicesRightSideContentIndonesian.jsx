@@ -98,6 +98,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/unit-penyimpanan-is-17634",
     // BIS Certificate for Tables & Desks Indonesian Page Url
     "/blogs/isi-products/meja-dan-meja-tulis-is-17633",
+    // BIS Certificate for Battery Operated Air Purifier Indonesian Page Url
+    "/blogs/isi-products/pembersih-udara-berbaterai-is-302",
   ];
 
   // Check if current path should show these components
@@ -784,6 +786,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Tables & Desks Indonesian
     if (path.includes("/blogs/isi-products/meja-dan-meja-tulis-is-17633"))
       return "BIS Certificate for Tables & Desks (Indonesian)";
+    // BIS Certificate for Battery Operated Air Purifier Indonesian
+    if (path.includes("/blogs/isi-products/pembersih-udara-berbaterai-is-302"))
+      return "BIS Certificate for Battery Operated Air Purifier (Indonesian)";
   };
 
   const [formData, setFormData] = useState({
