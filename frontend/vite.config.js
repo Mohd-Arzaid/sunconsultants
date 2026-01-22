@@ -10,8 +10,8 @@ function asyncCssPlugin() {
   return {
     name: "async-css",
     transformIndexHtml: {
-      enforce: "post",
-      transform(html, ctx) {
+      order: "post",
+      handler(html, ctx) {
         // Replace render-blocking CSS links with async loading
         return html.replace(
           /<link([^>]*rel=["']stylesheet["'][^>]*)>/gi,
