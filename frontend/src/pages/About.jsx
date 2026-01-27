@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
       {/* Heading */}
       <div className="text-center mb-8 md:mb-10">
         <h1 className="font-playfair text-4xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
-          Why Choose Us? bro
+          Why Choose Us?
         </h1>
         <p className="text-base md:text-lg font-geist text-neutral-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
           We simplify certification by managing compliance, saving you time and
