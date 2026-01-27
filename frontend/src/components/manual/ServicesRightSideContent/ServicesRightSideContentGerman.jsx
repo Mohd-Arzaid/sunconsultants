@@ -66,6 +66,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/tische-und-schreibtische-is-17633",
     // BIS Certificate for Battery Operated Air Purifier German Page Url
     "/blogs/isi-products/batteriebetriebener-luftreiniger-is-302",
+    // BIS Certificate for Battery Operated Toothbrush German Page Url
+    "/blogs/isi-products/batteriebetriebene-zahnbuerste-is-302",
   ];
 
   // Check if current path should show these components
@@ -646,6 +648,9 @@ const ContactFormServicesRightSideContentGerman = () => {
     // BIS Certificate for Battery Operated Air Purifier German
     if (path.includes("/blogs/isi-products/batteriebetriebener-luftreiniger-is-302"))
       return "BIS Certificate for Battery Operated Air Purifier (German)";
+    // BIS Certificate for Battery Operated Toothbrush German
+    if (path.includes("/blogs/isi-products/batteriebetriebene-zahnbuerste-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush (German)";
     return "";
   };
 

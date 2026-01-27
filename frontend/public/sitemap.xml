@@ -4760,6 +4760,27 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Battery Operated Toothbrush - Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/batterij-aangedreven-tandenborstel-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Toothbrush - French -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/brosse-a-dents-electrique-a-piles-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Toothbrush - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/batteriebetriebene-zahnbuerste-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
 
 
 

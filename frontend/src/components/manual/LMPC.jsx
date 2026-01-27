@@ -522,141 +522,150 @@ const ServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What services do you offer for CDSCO compliance?
+                What is LMPC Certification?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                We offer comprehensive CDSCO regulatory compliance services
-                including product registration, license applications, regulatory
-                strategy, documentation preparation, and post-approval
-                compliance monitoring for pharmaceuticals, medical devices, and
-                cosmetics in India.
+                LMPC Certification implies the acceptance of Legal Metrology
+                Packaged Commodities Rules, 2011 in India. It is applicable to
+                companies that manufacture, pack, or import commodities that are
+                pre-packed for sale and/or distribution. This certifies that a
+                commodity meets the legal requirements in terms of its labeling,
+                the accompanying declarations, and the measurement of the
+                quantity of the commodity.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does the CDSCO approval process typically take?
+                Why is LMPC Certification Necessary?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO approval timelines vary based on product category and
-                application type. Typically, drug approvals take 6-12 months,
-                medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our Certifications work to expedite
-                these timelines through proper documentation and regulatory
-                strategy.
+                LMPC Certification is a necessity for the following reasons:
+                <br />
+                <br />
+                <strong>Legal Compliance:</strong> It constitutes a legal
+                requirement of the Legal Metrology Act, 2009 for any business
+                that deals in pre-packed commodities.
+                <br />
+                <br />
+                <strong>Consumer Protection:</strong> Guarantees the customer
+                the right to obtain the full and comprehensive information
+                concerning a commodity and eliminates the risks of less than
+                full disclosure.
+                <br />
+                <br />
+                <strong>Fair Competitive Environment:</strong> Equalizes the
+                playing field for all businesses by harmonizing the standards
+                for labeling and measurement.
+                <br />
+                <br />
+                <strong>Uncomplicated Trade and/or Commerce:</strong> When LMPC
+                rules are adhered to, trade is easily carried out and the LMPC
+                rules are valuable in the reduction of time spent in customs
+                control.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are required for CDSCO registration?
+                Who requires LMPC Certification?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Required documents include product dossiers, manufacturing
-                information, stability data, clinical trial results (if
-                applicable), Good Manufacturing Practice (GMP) certificates,
-                Certificate of Pharmaceutical Product (CoPP), and various
-                application forms specific to your product category. Our team
-                assists in preparing all necessary documentation.
+                LMPC Certification is applicable to:
+                <br />
+                <br />• Manufacturers of completely pre-packed commodities
+                <br />• Packers who pack products for sale or distribution
+                <br />• Importers who bring into India pre-packed products
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you assist with clinical trial approvals in India?
+                What Legislation Applies to LMPC Import License Certification?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide end-to-end support for clinical trial
-                applications in India, including protocol development, ethics
-                committee submissions, CDSCO applications, site selection
-                assistance, and regulatory compliance throughout the trial
-                process. We also help navigate the New Drugs and Clinical Trials
-                Rules, 2019.
+                LMPC Certification is regulated by the Legal Metrology Act of
+                2009, and the Legal Metrology (packaged commodities) Rule, 2011.
+                A few states may have slight deviations in terms of the
+                enactment of laws.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the costs associated with CDSCO registrations?
+                At what time should I submit an LMPC Certificate application for
+                imports?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, Certifications fees, and
-                potential inspection costs. We provide transparent quotations
-                based on your specific product and requirements, with options
-                for different service levels to fit various budgets.
+                You should submit an LMPC Import License application a minimum
+                of 90 days before you plan to begin imports of pre-packaged
+                products to India.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do you handle post-approval regulatory requirements?
+                What documents must be submitted to obtain an LMPC Certificate?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our post-approval services include pharmacovigilance support,
-                periodic safety update reports, variation applications, renewal
-                submissions, compliance with labeling requirements, adverse
-                event reporting, and ongoing regulatory intelligence to keep you
-                informed of regulatory changes affecting your products.
+                Document requirements depend on a case's specifics, however,
+                the most common include the following:
+                <br />
+                <br />• Business incorporation documents
+                <br />• GST registration
+                <br />• Import/Export Code (IEC) for the importing party
+                <br />• Firm and promoter PAN cards
+                <br />• Business location address proof
+                <br />• Samples of product packaging or labels
+                <br />• Any other documents required by the certifying authority
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can you help with import licenses for pharmaceuticals and
-                medical devices?
+                How long does an LMPC Import License remain valid?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we specialize in obtaining Import Licenses (Form 10) for
-                drugs and Registration Certificates for medical devices. Our
-                services include preparing all necessary documentation,
-                coordinating with Indian authorized agents, liaising with CDSCO,
-                and handling post-approval compliance requirements for imported
-                products.
+                An LMPC Import License is valid for a time period ranging from 1
+                to 5 years, based on what you select during the application
+                process.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-8">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What experience does your consulting team have with CDSCO
-                regulations?
+                What is a pre-packaged commodity?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our consulting team consists of regulatory experts with 10+
-                years of experience in Indian pharmaceutical regulations. Team
-                members include former regulatory professionals, pharmacists,
-                and industry specialists who maintain close relationships with
-                regulatory authorities and stay updated on the latest regulatory
-                developments.
+                A pre-packaged commodity is a product, regardless of whether it
+                is sealed or unsealed, which is packaged without the buyer being
+                present and includes a specific quantity of the commodity.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-9">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do recent regulatory changes affect pharmaceutical
-                registrations in India?
+                Can unstamped weights or measuring instruments be used?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Recent regulatory changes include the New Drugs and Clinical
-                Trials Rules (2019), Medical Device Rules (2017), and ongoing
-                updates to the Drugs and Cosmetics Act. These changes have
-                streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our Certifications keep
-                abreast of all changes and adjust strategies accordingly.
+                No. It is illegal to possess, sell, or use measuring devices and
+                tools to which a Legal Metrology Officer hasn't attached a stamp
+                and provided approval. These tools cannot be utilized for
+                commercial purposes.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-10">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you offer support for manufacturing facility inspections?
+                What penalties might be incurred if I fail to comply with LMPC
+                rules?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide comprehensive support for CDSCO manufacturing
-                facility inspections, including pre-inspection readiness
-                assessments, gap analysis, preparation of required
-                documentation, mock inspections, training of personnel, and
-                assistance during actual inspections to ensure a successful
-                outcome.
+                Non-compliance with LMPC rules and regulations can result in:
+                <br />
+                <br />• Fines and other penalties
+                <br />• Confiscation of merchandise
+                <br />• Possible court actions and prosecution
               </AccordionContent>
             </AccordionItem>
           </Accordion>

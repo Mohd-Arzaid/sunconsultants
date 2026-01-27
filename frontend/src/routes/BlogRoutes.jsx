@@ -702,6 +702,15 @@ const BISCertificateForBatteryOperatedToothbrushArabic = lazy(() =>
 const BISCertificateForBatteryOperatedToothbrushChinese = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushChinese")
 );
+const BISCertificateForBatteryOperatedToothbrushDutch = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushDutch")
+);
+const BISCertificateForBatteryOperatedToothbrushFrench = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushFrench")
+);
+const BISCertificateForBatteryOperatedToothbrushGerman = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushGerman")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -2342,6 +2351,30 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBatteryOperatedToothbrushChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/batterij-aangedreven-tandenborstel-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/brosse-a-dents-electrique-a-piles-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/batteriebetriebene-zahnbuerste-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushGerman />
           </Suspense>
         }
       />
