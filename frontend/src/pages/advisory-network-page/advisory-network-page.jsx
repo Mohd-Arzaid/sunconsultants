@@ -249,30 +249,81 @@ const AdvisoryCardsSection = () => {
       clientSupport:
         "Factory audit preparation, documentation verification, NC closure guidance",
     },
-    // {
-    //   id: 7,
-    //   formerRole: "Former BIS Scientist C (2009–2017)",
-    //   specialties: "Toys, Furniture, Consumer Products",
-    //   region: "North & Central India",
-    //   clientSupport:
-    //     "Product standard interpretation, compliance gap identification, audit preparation",
-    // },
-    // {
-    //   id: 8,
-    //   formerRole: "Former BIS FMCS Auditor (2013–2021)",
-    //   specialties: "Foreign Manufacturers Certification Scheme (FMCS)",
-    //   region: "Global / Export Markets",
-    //   clientSupport:
-    //     "FMCS documentation support, audit simulation, inspection preparedness",
-    // },
-    // {
-    //   id: 9,
-    //   formerRole: "Former BIS Lab & Inspection Officer (2011–2019)",
-    //   specialties: "Steel Products, Pipes & Tubes, Industrial Materials",
-    //   region: "East & North India",
-    //   clientSupport:
-    //     "Sampling methodology, test coordination, specification clarification",
-    // },
+    {
+      id: 7,
+      formerRole: "Former BIS Scientist C (2009–2017)",
+      specialties: "Toys, Furniture, Consumer Products",
+      region: "North & Central India",
+      clientSupport:
+        "Product standard interpretation, compliance gap identification, audit preparation",
+    },
+    {
+      id: 8,
+      formerRole: "Former BIS FMCS Auditor (2013–2021)",
+      specialties: "Foreign Manufacturers Certification Scheme (FMCS)",
+      region: "Global / Export Markets",
+      clientSupport:
+        "FMCS documentation support, audit simulation, inspection preparedness",
+    },
+    {
+      id: 9,
+      formerRole: "Former BIS Lab & Inspection Officer (2011–2019)",
+      specialties: "Steel Products, Pipes & Tubes, Industrial Materials",
+      region: "East & North India",
+      clientSupport:
+        "Sampling methodology, test coordination, specification clarification",
+    },
+    {
+      id: 10,
+      formerRole: "Former BIS Surveillance & Enforcement Officer (2012–2020)",
+      specialties:
+        "Post-certification surveillance, licence compliance, marking requirements",
+      region: "PAN-India",
+      clientSupport:
+        "Surveillance audit readiness, licence maintenance guidance, compliance gap correction.",
+    },
+    {
+      id: 11,
+      formerRole: "Former BIS Scientist B (2010–2018)",
+      specialties: "Electrical Accessories, Switchgear, Low Voltage Equipment",
+      region: "North & West India",
+      clientSupport:
+        "Clause-wise standard mapping, audit checklist preparation, NC prevention planning.",
+    },
+    {
+      id: 12,
+      formerRole: "Former BIS Product Certification Specialist (2011–2019)",
+      specialties: "Consumer Products, Household Goods, Safety Standards",
+      region: "PAN-India",
+      clientSupport:
+        "Product scope finalisation, standard applicability review, documentation alignment.",
+    },
+    {
+      id: 13,
+      formerRole: "Former BIS Lab Testing & Evaluation Officer (2009–2017)",
+      specialties:
+        "Mechanical Testing, Chemical Testing, Product Performance Evaluation",
+      region: "Central & North India",
+      clientSupport:
+        "Test parameter alignment, lab coordination, result interpretation support.",
+    },
+    {
+      id: 14,
+      formerRole: "Former BIS Factory Inspection Lead (2013–2021)",
+      specialties:
+        "Factory audits, production control assessment, process compliance",
+      region: "PAN-India + Export Units",
+      clientSupport:
+        "Factory inspection readiness, internal process review, audit-day coordination.",
+    },
+    {
+      id: 15,
+      formerRole: "Former BIS Scientist C (2008–2016)",
+      specialties: "Furniture Products, Wooden Articles, Material Standards",
+      region: "North & East India",
+      clientSupport:
+        "Standard interpretation, material compliance checks, audit preparation guidance.",
+    },
   ];
 
   return (
