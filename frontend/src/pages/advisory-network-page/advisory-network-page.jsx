@@ -60,7 +60,7 @@ const MetaTags = () => {
   const title =
     "Advisory Network | Independent Former BIS Experts | Sun Certifications India";
   const description =
-    "Meet our vetted network of independent former BIS specialists who guide BIS audits, documentation, inspections, and corrective action support — no government affiliation, no employees.";
+    "Meet our vetted network of independent former BIS specialists who guide BIS audits, documentation, inspections, and corrective action support.";
   const ogTitle =
     "Advisory Network of Independent Former BIS Experts | Sun Certifications India";
   const twitterTitle =
@@ -249,30 +249,30 @@ const AdvisoryCardsSection = () => {
       clientSupport:
         "Factory audit preparation, documentation verification, NC closure guidance",
     },
-    {
-      id: 7,
-      formerRole: "Former BIS Scientist C (2009–2017)",
-      specialties: "Toys, Furniture, Consumer Products",
-      region: "North & Central India",
-      clientSupport:
-        "Product standard interpretation, compliance gap identification, audit preparation",
-    },
-    {
-      id: 8,
-      formerRole: "Former BIS FMCS Auditor (2013–2021)",
-      specialties: "Foreign Manufacturers Certification Scheme (FMCS)",
-      region: "Global / Export Markets",
-      clientSupport:
-        "FMCS documentation support, audit simulation, inspection preparedness",
-    },
-    {
-      id: 9,
-      formerRole: "Former BIS Lab & Inspection Officer (2011–2019)",
-      specialties: "Steel Products, Pipes & Tubes, Industrial Materials",
-      region: "East & North India",
-      clientSupport:
-        "Sampling methodology, test coordination, specification clarification",
-    },
+    // {
+    //   id: 7,
+    //   formerRole: "Former BIS Scientist C (2009–2017)",
+    //   specialties: "Toys, Furniture, Consumer Products",
+    //   region: "North & Central India",
+    //   clientSupport:
+    //     "Product standard interpretation, compliance gap identification, audit preparation",
+    // },
+    // {
+    //   id: 8,
+    //   formerRole: "Former BIS FMCS Auditor (2013–2021)",
+    //   specialties: "Foreign Manufacturers Certification Scheme (FMCS)",
+    //   region: "Global / Export Markets",
+    //   clientSupport:
+    //     "FMCS documentation support, audit simulation, inspection preparedness",
+    // },
+    // {
+    //   id: 9,
+    //   formerRole: "Former BIS Lab & Inspection Officer (2011–2019)",
+    //   specialties: "Steel Products, Pipes & Tubes, Industrial Materials",
+    //   region: "East & North India",
+    //   clientSupport:
+    //     "Sampling methodology, test coordination, specification clarification",
+    // },
   ];
 
   return (
@@ -350,11 +350,11 @@ const AdvisoryCardsSection = () => {
 
 const FaqsSection = () => {
   const faqs = [
-    {
-      question: "Are these BIS officers employees of Sun Consultants?",
-      answer:
-        "No. They are independent consultants engaged on an assignment basis. They are not our employees and do not represent BIS.",
-    },
+    // {
+    //   question: "Are these BIS officers employees of Sun Consultants?",
+    //   answer:
+    //     "No. They are independent consultants engaged on an assignment basis. They are not our employees and do not represent BIS.",
+    // },
     {
       question: "How are advisors verified?",
       answer:
