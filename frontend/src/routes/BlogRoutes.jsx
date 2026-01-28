@@ -711,6 +711,12 @@ const BISCertificateForBatteryOperatedToothbrushFrench = lazy(() =>
 const BISCertificateForBatteryOperatedToothbrushGerman = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushGerman")
 );
+const BISCertificateForBatteryOperatedToothbrushIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushIndonesian")
+);
+const BISCertificateForBatteryOperatedToothbrushItalian = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushItalian")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -2375,6 +2381,22 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBatteryOperatedToothbrushGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/sikat-gigi-bertenaga-baterai-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/spazzolino-da-denti-a-batteria-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushItalian />
           </Suspense>
         }
       />

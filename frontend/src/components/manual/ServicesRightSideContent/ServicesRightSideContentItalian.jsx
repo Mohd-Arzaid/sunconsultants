@@ -100,6 +100,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/tavoli-e-scrivanie-is-17633",
     // BIS Certificate for Battery Operated Air Purifier Italian Page Url
     "/blogs/isi-products/purificatore-daria-alimentato-a-batteria-is-302",
+    // BIS Certificate for Battery Operated Toothbrush Italian Page Url
+    "/blogs/isi-products/spazzolino-da-denti-a-batteria-is-302",
   ];
 
   // Check if current path should show these components
@@ -816,6 +818,13 @@ const ContactFormServicesRightSideContentItalian = () => {
       )
     )
       return "BIS Certificate for Battery Operated Air Purifier (Italian)";
+    // BIS Certificate for Battery Operated Toothbrush Italian
+    if (
+      path.includes(
+        "/blogs/isi-products/spazzolino-da-denti-a-batteria-is-302"
+      )
+    )
+      return "BIS Certificate for Battery Operated Toothbrush (Italian)";
   };
 
   const [formData, setFormData] = useState({

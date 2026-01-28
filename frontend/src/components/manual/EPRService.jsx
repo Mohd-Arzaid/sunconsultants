@@ -30,9 +30,9 @@ export const EPRService = () => {
   return (
     <article className="epr-service-page relative">
       <Helmet>
-        <title>EPR Certificate for E-Waste Management | Sun Certifications</title>
-        <meta name="description" content="Get EPR certification for e-waste management. Ensure CPCB compliance with proper recycling & disposal plans. Expert guidance since 2013." />
-        <meta name="keywords" content="EPR Certificate, E-Waste Management, CPCB Compliance, Recycling Plans" />
+        <title>EPR Registration for Plastic Packaging Waste in India | Sun Certifications</title>
+        <meta name="description" content="Get EPR registration for plastic packaging waste management. Ensure CPCB compliance with proper recycling & disposal plans under Plastic Waste Management Rules, 2016." />
+        <meta name="keywords" content="EPR Registration, Plastic Packaging Waste, CPCB Compliance, Plastic Waste Management Rules, Extended Producer Responsibility" />
         <meta name="author" content="Sun Certifications India" />
         <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,8 +52,8 @@ export const EPRService = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "A Guide on how to obtain Epr Certificate",
-                item: "https://bis-certifications.com/a-guide-on-how-to-obtain-epr-certificate",
+                name: "EPR Registration for Plastic Packaging Waste",
+                item: "https://bis-certifications.com/epr-registration-for-plastic-packaging-waste",
               },
             ],
           })}
@@ -75,7 +75,7 @@ export const EPRService = () => {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
                   <BreadcrumbPage>
-                    A Guide on how to obtain Epr Certificate
+                    EPR Registration for Plastic Packaging Waste
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -130,12 +130,12 @@ const EPRHero = () => {
                 aria-hidden="true"
               ></span>
             </span>{" "}
-            E-Waste
+            Plastic Packaging Waste
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Get EPR certification for e-waste management. Ensure CPCB compliance
-            with proper recycling & disposal plans
+            Get EPR registration for plastic packaging waste management. Ensure CPCB compliance
+            under Plastic Waste Management Rules, 2016
           </p>
 
           <div className="flex items-center -mt-2">
@@ -179,9 +179,9 @@ const EPRIndex = () => {
   const SECTIONS = [
     "Overview",
     "Eligibility",
-    "E-Waste",
+    "Plastic-types",
     "Documents",
-    "Synopsis",
+    "Obligations",
     "Process",
     "Consultancy",
     "FAQs",
@@ -618,13 +618,13 @@ const EPRContentLeft = () => {
         <EligibilitySection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-        <EWasteSection />
+        <CategoriesSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
         <DocumentsSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-        <SynopsisSection />
+        <TargetsSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
         <ProcessSection />
@@ -655,47 +655,30 @@ const OverviewSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        E-Waste Management & EPR Certification
+        EPR Registration for Plastic Packaging Waste in India
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        E-Waste Management & EPR Certification for CPCB compliance.
+        What is EPR Registration?
       </p>
 
       {/* Overview Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        E-waste" is a popular, informal name for electronic products nearing the
-        end of their "useful life. "E-wastes are considered dangerous, as
-        certain components of some electronic products contain materials that
-        are hazardous, depending on their condition and density. The hazardous
-        content of these materials pose a threat to human health and
-        environment. <br></br>
-        <br></br>
-        Discarded computers, televisions, VCRs, stereos, copiers, fax machines,
-        electric lamps, cell phones, audio equipment and batteries if improperly
-        disposed can leach lead and other substances into soil and groundwater.
-        Many of these products can be reused, refurbished, or recycled in an
-        environmentally sound manner so that they are less harmful to the
-        ecosystem. This article highlights the hazards of e-wastes, the need for
-        its appropriate management and options that can be implemented.
+        EPR stands for Extended Producers Responsibility. Extended Producer Responsibility (EPR) is a significant environmental policy introduced under the Plastic Waste Management Rules, 2016, by the Ministry of Environment, Forest and Climate Change (MoEFCC). It aims to make manufacturers, importers, and brand owners accountable for the management of plastic waste, especially from packaging materials.
+        <br /><br />
+        The entities who introduce plastic waste in India have to apply for EPR registration. These entities have to register themselves with the Central Pollution Control Board (CPCB) and provide accurate information about the generation and consumption of plastic packaging. Additionally the registered entities will be given targets for recycling of plastic packaging introduced and also ensuring its safe disposal.
       </div>
 
-      {/* Important Points And Image */}
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsListTwo
-            points={[
-              "Mandatory by CPCB for e-waste management in India.",
-              "Applies to manufacturers & importers of electronic products.",
-              "Requires a future disposal plan for e-waste submission to CPCB.",
-              "Tie-up with authorized recyclers for proper disposal.",
-              "Submit estimated e-waste quantity & disposal methods for EPR approval.",
-            ]}
-            heading="Eligibility Criteria for AIR in BIS Certification"
-          />
-        </div>
+      {/* Why is EPR Crucial Section */}
+      <h4 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+        Why is EPR Crucial for India?
+      </h4>
+
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The mass production of plastic that began six decades ago has created a plastic generation of around 8.3 billion metric tons and most of it ends up as plastic waste. Around 79% of the plastic waste that is generated settles in the land fills of our planet which eventually ends up in the ocean. If this situation is not handled responsibly then by 2050 there will be more plastic in the ocean than fishes. Plastic packaging is a significant chunk of the plastic waste generated because it is often designed for single use and then discarded. Once plastic packaging is discarded it takes around 400 years to degrade. Most of the plastic packaging generated decades ago still exists on our planet and has now become a global priority to drastically minimize the use of it.
+        <br /><br />
+        Considering the facts discussed, it is very important for each country to make laws towards limiting the use of plastic, recycling the plastic waste and ensuring its safe disposal. Therefore the government introduced Extended Producers Responsibility (EPR) as a part of Plastic Waste Management Rules, 2016.
       </div>
     </section>
   );
@@ -714,37 +697,48 @@ const EligibilitySection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Who can Apply
+        Who Needs EPR Registration?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        EPR certification is required for electronics makers & importers via
-        CPCB.
+        As per the EPR guidelines, it is necessary for all Producers, Importers and Brand Owners (PIBOs) to get EPR Registration.
       </p>
 
       {/* Eligibility Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        All manufacturers, whether of Indian or foreign origin, as well as
-        importers of electronics, are required to apply for an EPR certificate
-        under the E-waste Management Rules. This application must be submitted
-        through the CPCB portal to comply with regulations
+        Additionally Plastic Waste Processors (PWPs) are also required to get EPR registration.
+      </div>
+
+      {/* Important Points */}
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <div className="w-full md:w-auto">
+          <PointsListTwo
+            points={[
+              "Producers (P): An entity that is involved in manufacturing of plastic packaging only.",
+              "Importers (I): An entity that imports either plastic packaging or any product that is wrapped in plastic packaging.",
+              "Brand Owners (BO): An entity who sells any commodity wrapped in plastic packaging under any registered brand label or trademark.",
+              "Plastic Waste Processors (PWPs): An entity that recycles plastic waste and is engaged in safe disposal of plastic waste.",
+            ]}
+            heading="Entities Required to Register"
+          />
+        </div>
       </div>
     </section>
   );
 };
 
-const EWasteSection = () => {
+const CategoriesSection = () => {
   return (
     <section
-      id="e-waste"
+      id="plastic-types"
       className="flex flex-col scroll-mt-20"
-      aria-labelledby="e-waste-title"
+      aria-labelledby="plastic-types-title"
     >
-      {/* E-Waste */}
+      {/* Plastic Types */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          E-Waste
+          Plastic Types
         </span>
         <Separator
           className="w-[94.46px] h-[1.5px] bg-gray-700"
@@ -754,70 +748,116 @@ const EWasteSection = () => {
 
       {/* Title */}
       <h2
-        id="e-waste-title"
+        id="plastic-types-title"
         className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
       >
-        E-waste Item List
+        Types of Plastic Packaging Under EPR
       </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        E-Waste Management & EPR Certification for CPCB compliance.
+        CPCB classifies plastic packaging into four categories for EPR compliance.
       </p>
 
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsList
-            points={[
-              "LCD and LED Television Sets; ",
-              "Refrigerators;",
-              "Washing Machines;",
-              " Air-Conditioners excluding Centralized Air conditioning plants;",
-              "Fluorescent and other Mercury containig lamps;",
-            ]}
-            heading="Consumer Electrical & Electronics"
-          />
-        </div>
-
-        <figure className="w-full md:w-auto">
-          <img
-            src={BISSRimg}
-            alt="Electronic waste management equipment and recycling facilities"
-            title="Electronic waste management equipment and recycling facilities"
-            className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
-            ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
-            hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
-            "
-          />
-          <figcaption className="sr-only">
-            Electronic waste management and recycling equipment
-          </figcaption>
-        </figure>
+      {/* Table for Plastic Categories */}
+      <div className="mt-[16px] md:mt-[24px] overflow-x-auto">
+        <table className="w-full border-collapse font-geist text-sm md:text-base">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Category</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Type</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Description</th>
+            </tr>
+          </thead>
+          <tbody className="text-[#42434d]">
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">Category I</td>
+              <td className="border border-gray-300 px-4 py-3">Rigid Plastic Packaging</td>
+              <td className="border border-gray-300 px-4 py-3">Used for food, beverages, pharmaceuticals, cosmetics, etc.</td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 px-4 py-3">Category II</td>
+              <td className="border border-gray-300 px-4 py-3">Flexible Plastic Packaging</td>
+              <td className="border border-gray-300 px-4 py-3">Includes carry bags, wraps, pouches; made of high-grade polymers</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">Category III</td>
+              <td className="border border-gray-300 px-4 py-3">Multi-layered Plastic (MLP)</td>
+              <td className="border border-gray-300 px-4 py-3">Combines multiple materials like PET, PE, foil, paper</td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 px-4 py-3">Category IV</td>
+              <td className="border border-gray-300 px-4 py-3">Plastic Sheets & Films</td>
+              <td className="border border-gray-300 px-4 py-3">Used in bags, sashes, and customized plastic films</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      {/* Important Points  */}
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsListTwo
-            points={[
-              "Centralized Data Processing: Mainframe , Mini-Computer, Personal Computer, Laptop, Notebook Computer and accessories, Notepad; ",
-              "Printers including components;",
-              " Copying Equipment;",
-              "Electrical and Electronic Typewriters;",
-              "User terminal and systems;",
-              "Facsimile;",
-              "Telex;",
-              "Telephones;",
-              "Pay Telephones;",
-              "Cordless Telephones;",
-              "Cellular Telephones;",
-              "Answering Systems;",
-            ]}
-            heading="Information Technology & Telecommunication Equipment"
-          />
-        </div>
+      {/* EPR Targets Section */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+        What Are EPR Targets?
+      </h3>
+
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        EPR targets are specific goals set by CPCB to ensure that producers, importers, and Brand Owners who manufacture, import or sell plastic packaging or products wrapped in plastic packaging take responsibility for recycling or its eco-friendly disposal. It basically gives an exact amount of plastic that an entity should recycle or dispose of in a particular financial year.
+      </div>
+
+      {/* EPR Target for Producers and Importers */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 mb-3">
+        EPR Target for Producer and Importers
+      </h4>
+
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        A producer is someone who manufactures plastic packaging and an importer is someone who imports plastic packaging or products that are wrapped in plastic packaging. EPR target is majorly dependent on Gross plastic waste generated by a producer or an importer.
+        <br /><br />
+        <strong>Gross Plastic Waste Generated =</strong><br />
+        (Avg. weight of plastic packaging manufactured/imported in the last 2 FYs) +
+        (Avg. pre-consumer plastic waste generated) -
+        (Plastic packaging sold to other EPR-registered entities)
+      </div>
+
+      {/* EPR Targets Table */}
+      <div className="mt-[16px] md:mt-[24px] overflow-x-auto">
+        <table className="w-full border-collapse font-geist text-sm md:text-base">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Financial Year</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">EPR Targets for Producers and Importers</th>
+            </tr>
+          </thead>
+          <tbody className="text-[#42434d]">
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">FY 2021-22</td>
+              <td className="border border-gray-300 px-4 py-3">25% of Gross Plastic Waste Generated</td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 px-4 py-3">FY 2022-23</td>
+              <td className="border border-gray-300 px-4 py-3">70% of Gross Plastic Waste Generated</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">FY 2023-24</td>
+              <td className="border border-gray-300 px-4 py-3">100% of Gross Plastic Waste Generated</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        In the event that a Producer sells their manufactured plastic packaging materials to an EPR registered Brand Owner, the corresponding quantity of plastic packaging material sold will be reduced from the producer's target and transferred to the same EPR registered brand owner's target. This logic also holds true for Importers. If an importer sells plastic packaging or products that are wrapped in plastic packaging to an EPR registered brand owner, the equivalent target will likewise be transferred to the same brand owner and reduced from the target of the importer. But this logic does not apply to a brand owner. Brand owners can not pass on their target to any other registered entity.
+      </div>
+
+      {/* EPR Target for Brand Owners */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 mb-3">
+        EPR Target for Brand Owners
+      </h4>
+
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        A brand owner is someone who buys plastic wrap products or plastic packaging locally and sells it domestically or exports it under a registered brand name. EPR target for a brand owner is majorly dependent on the Gross Plastic Waste Generated.
+        <br /><br />
+        <strong>Gross Plastic Waste Generated =</strong><br />
+        (Avg. weight of plastic packaging manufactured/imported in the last 2 FYs) +
+        (Avg. pre-consumer plastic waste generated)
       </div>
     </section>
   );
@@ -836,37 +876,36 @@ const DocumentsSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Vital Documents Required for :
+        Documents Required for EPR Registration
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        E-Waste Management & EPR Certification for CPCB compliance.
+        Essential documents needed for EPR registration on CPCB portal.
       </p>
 
-      {/* Documents Content */}
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        We require duly signed and stamped document in hard copies so that we
-        can submit in E-waste Management-Office for the further process.
-        importe's Name , Product Name, Model Number and Docments should be
-        accurate to avoid any sort of query from E-waste Officials.
-      </div>
-
-      {/* Important Points And Image */}
+      {/* Important Points */}
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         {/* Points */}
         <div className="w-full md:w-auto">
           <PointsListTwo
             points={[
-              "23 Letter Heads of the company",
-              "GSTIN",
-              "PAN Details",
-              "Incorporation Certificate",
-              "Copy IEC in case of importers",
-              "Copy of Aadhar Card",
-              "Product Details",
+              "Company PAN Card",
+              "Company CIN",
+              "Company GST Certificate",
+              "Company IEC",
+              "Authorized Person's PAN Card",
+              "Authorized Person's Aadhaar",
+              "Details (Type & Quantity) of products Imported",
+              "Picture of packaged covering",
+              "Industrial Registration Certificate i.e. (IEM) or MSME Certificate",
+              "Total Capital Invested Amount in Crores (Format will be shared)",
+              "Total Quantity of Plastic Packaging Imported in the preceding two financial years",
+              "Thickness (in microns) of the plastic packaging imported",
+              "Invoice details of the Imported products for the preceding two financial years",
+              "Invoice details of local sales of the preceding two financial years",
             ]}
-            heading="Eligibility Criteria for AIR in BIS Certification"
+            heading="Documents Required for EPR Registration"
           />
         </div>
       </div>
@@ -874,49 +913,189 @@ const DocumentsSection = () => {
   );
 };
 
-const SynopsisSection = () => {
+const TargetsSection = () => {
   return (
-    <section id="synopsis" className="flex flex-col scroll-mt-20">
-      {/* Synopsis */}
+    <section id="obligations" className="flex flex-col scroll-mt-20">
+      {/* Obligations */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Synopsis
+          Obligations
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Synopsis for control of E-waste
+        EPR Obligations Explained
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Control materials & track inventory to reduce waste in manufacturing.
-        CPCB.
+        EPR obligations represent distinct sub-targets within the broader framework of EPR targets.
       </p>
 
-      {/* Synopsis Content */}
+      {/* Obligations Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Proper control over the materials used in the manufacturing process is
-        an important way to reduce waste generation (Freeman, 1989). By reducing
-        both the quantity of hazardous materials used in the process and the
-        amount of excess raw materials in stock, the quantity of waste generated
-        can be reduced. This can be done in two ways i.e. establishing
-        material-purchase review and control procedures and inventory tracking
-        system.Developing review procedures for all material purchased is the
-        first step in establishing an inventory management program. <br />{" "}
-        <br />
-        Procedures should require that all materials be approved prior to
-        purchase. In the approval process all production materials are evaluated
-        to examine if they contain hazardous constituents and whether
-        alternative non-hazardous materials are available.Another inventory
-        management procedure for waste reduction is to ensure that only the
-        needed quantity of a material is ordered. This will require the
-        establishment of a strict inventory tracking system. Purchase procedures
-        must be implemented which ensure that materials are ordered only on an
-        as-needed basis and that only the amount needed for a specific period of
-        time is ordered.
+        To simplify, they can be seen as specific responsibilities that must be addressed while fulfilling EPR Targets. There are four primary categories of EPR Obligations, each allocated to Producers, Importers, and Brand Owners following EPR Registration:
+      </div>
+
+      {/* Obligation Points */}
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <div className="w-full md:w-auto">
+          <PointsListTwo
+            points={[
+              "End of Life Disposal",
+              "Obligation for Minimum level of Recycling",
+              "Obligation for use of recycling content in the plastic packaging",
+              "Obligation to reuse which only applies to brand owners",
+            ]}
+            heading="Four Primary EPR Obligations"
+          />
+        </div>
+      </div>
+
+      {/* 1. End-of-Life Disposal */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+        1. End-of-Life Disposal
+      </h4>
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The plastic that cannot be recycled should be sent for end of life disposal. Currently the end of life of disposal of plastics can happen in the following ways: Usage in road construction, Waste to energy and Waste to oil as per relevant guidelines issued by CPCB from time to time.
+      </div>
+
+      {/* 2. Minimum Level of Recycling Target */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 mb-3">
+        2. Minimum Level of Recycling Target
+      </h4>
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        This target will be applicable to importers from financial year 2024-2025. The importer shall ensure minimum level of recycling excluding end of life disposal of plastic packaging waste collected under EPR target.
+      </div>
+
+      {/* Minimum Recycling Table */}
+      <div className="mt-[16px] md:mt-[24px] overflow-x-auto">
+        <table className="w-full border-collapse font-geist text-sm md:text-base">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Plastic Packaging Category</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">2024-25</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">2025-26</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">2026-27</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">2027-28 & onwards</th>
+            </tr>
+          </thead>
+          <tbody className="text-[#42434d]">
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">Category I</td>
+              <td className="border border-gray-300 px-4 py-3">50%</td>
+              <td className="border border-gray-300 px-4 py-3">60%</td>
+              <td className="border border-gray-300 px-4 py-3">70%</td>
+              <td className="border border-gray-300 px-4 py-3">80%</td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 px-4 py-3">Category II</td>
+              <td className="border border-gray-300 px-4 py-3">30%</td>
+              <td className="border border-gray-300 px-4 py-3">40%</td>
+              <td className="border border-gray-300 px-4 py-3">50%</td>
+              <td className="border border-gray-300 px-4 py-3">60%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">Category III</td>
+              <td className="border border-gray-300 px-4 py-3">30%</td>
+              <td className="border border-gray-300 px-4 py-3">40%</td>
+              <td className="border border-gray-300 px-4 py-3">50%</td>
+              <td className="border border-gray-300 px-4 py-3">60%</td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 px-4 py-3">Category IV</td>
+              <td className="border border-gray-300 px-4 py-3">50%</td>
+              <td className="border border-gray-300 px-4 py-3">60%</td>
+              <td className="border border-gray-300 px-4 py-3">70%</td>
+              <td className="border border-gray-300 px-4 py-3">80%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* 3. Obligation for use of Recycled Content */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 mb-3">
+        3. Obligation for use of Recycled Content
+      </h4>
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        This target will be applicable to importers from the financial year 2025-26. The importer shall ensure use of recycled plastic in the imported plastic packaging categorywise as shown in the table.
+      </div>
+
+      {/* Recycled Content Table */}
+      <div className="mt-[16px] md:mt-[24px] overflow-x-auto">
+        <table className="w-full border-collapse font-geist text-sm md:text-base">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Plastic Packaging Category</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">2021-25</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">2025-26</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">2026-27</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">2027-28 & onwards</th>
+            </tr>
+          </thead>
+          <tbody className="text-[#42434d]">
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">Category I</td>
+              <td className="border border-gray-300 px-4 py-3">30%</td>
+              <td className="border border-gray-300 px-4 py-3">40%</td>
+              <td className="border border-gray-300 px-4 py-3">50%</td>
+              <td className="border border-gray-300 px-4 py-3">60%</td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 px-4 py-3">Category II</td>
+              <td className="border border-gray-300 px-4 py-3">10%</td>
+              <td className="border border-gray-300 px-4 py-3">10%</td>
+              <td className="border border-gray-300 px-4 py-3">20%</td>
+              <td className="border border-gray-300 px-4 py-3">20%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">Category III</td>
+              <td className="border border-gray-300 px-4 py-3">5%</td>
+              <td className="border border-gray-300 px-4 py-3">5%</td>
+              <td className="border border-gray-300 px-4 py-3">10%</td>
+              <td className="border border-gray-300 px-4 py-3">10%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* Environmental Compensation */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+        Environmental Compensation for Non-Compliance
+      </h4>
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        If an importer exceeds his target and recycles more than the given target then in this case the importer will get a surplus EPR certificate which he can transfer or sell it to another entity who has not met the target at the end of the financial year. Another way to meet the target is buying an EPR certificate of the value equivalent to the target from any other entity who has surplus.
+        <br /><br />
+        If an importer does not meet the target an environmental compensation (EC) will be imposed on the importer. Once the importer pays the EC, the unfulfilled target for that year will be carried forward to the next year for a period of three years. A certain amount of EC shall be returned or refunded depending on how early the pending target is met.
+      </div>
+
+      {/* EC Return Schedule Table */}
+      <div className="mt-[16px] md:mt-[24px] overflow-x-auto">
+        <p className="font-semibold font-geist text-[18px] text-[#131316] mb-3">Environmental Compensation Return Schedule</p>
+        <table className="w-full border-collapse font-geist text-sm md:text-base">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Time of Compliance</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">EC Refund</th>
+            </tr>
+          </thead>
+          <tbody className="text-[#42434d]">
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">Within 1 year</td>
+              <td className="border border-gray-300 px-4 py-3">75%</td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 px-4 py-3">Within 2 years</td>
+              <td className="border border-gray-300 px-4 py-3">60%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">Within 3 years</td>
+              <td className="border border-gray-300 px-4 py-3">40%</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   );
@@ -935,13 +1114,12 @@ const ProcessSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Process for EPR license and post compliances :
+        EPR Registration Process
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        EPR registration involves CPCB application, certification, recycling,
-        and yearly renewal.
+        Step-by-Step Procedure for EPR Registration
       </p>
 
       {/* Process Content */}
@@ -950,32 +1128,71 @@ const ProcessSection = () => {
         <div className="w-full md:w-auto">
           <PointsListTwo
             points={[
-              "Identifying if the product falls under EPR E-waste guidelines.",
-              "Creating data as to how much E-waste is generated by the firm",
-              "Filing online application on the CPCB portal",
-              "Payment of requisite fees to the govt.",
-              "Final submission of application",
-              "Generation of EPR certificate",
-              "Getting the products re-cycled as per the plan",
-              "Submission of re-cycling certificate on yearly/quarterly basis.",
+              "Prepare Documents",
+              "Submit Initial Application & KYC on EPR Portal",
+              "Pay Application Fee",
+              "Address Deficiencies (within 15 days)",
+              "Receive Approval & Assigned Targets",
+              "Start Complying & Receive EPR Certificate",
             ]}
-            heading="EPR Registration Process for E-Waste Compliance"
+            heading="EPR Registration Steps"
           />
         </div>
       </div>
 
-      <div className="mt-[30px] md:mt-[46px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          Timeline
-        </span>
-        Approx 1-2 weeks after submission of application
+      {/* Fee Structure */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+        Fee Structure
+      </h4>
+
+      <div className="mt-[16px] overflow-x-auto">
+        <table className="w-full border-collapse font-geist text-sm md:text-base">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Sr. No.</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Plastic Waste Generation in Tonnes per annum</th>
+              <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#131316]">Application Fees (INR)</th>
+            </tr>
+          </thead>
+          <tbody className="text-[#42434d]">
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">1</td>
+              <td className="border border-gray-300 px-4 py-3">Less than 1,000</td>
+              <td className="border border-gray-300 px-4 py-3">10,000</td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 px-4 py-3">2</td>
+              <td className="border border-gray-300 px-4 py-3">Between 1,000 - 10,000</td>
+              <td className="border border-gray-300 px-4 py-3">20,000</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-3">3</td>
+              <td className="border border-gray-300 px-4 py-3">Greater than 10,000</td>
+              <td className="border border-gray-300 px-4 py-3">50,000</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div className="mt-[16px] md:mt-[20px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          Validity
-        </span>
-        It is granted for 1 year initially and has to be renewed after that by
-        paying the government fees.
+
+      {/* Submitting Annual Returns */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+        Submitting Annual Returns
+      </h4>
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Submitting Annual Returns plays a major part in EPR Compliance and basically involves three activities:
+      </div>
+
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <div className="w-full md:w-auto">
+          <PointsListTwo
+            points={[
+              "Fulfilling the EPR Target: Recycling the plastic waste equivalent to the target OR Buy the certificates or credit points equivalent to the target",
+              "Updating Procurement and Sales Data",
+              "Payment of Annual Processing Fee which is 25% of the application fees paid during EPR registration",
+            ]}
+            heading="Annual Returns Activities"
+          />
+        </div>
       </div>
     </section>
   );
@@ -994,27 +1211,25 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Role of Sun Certifications India?
+        Conclusion
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Sun Certifications India ensure hassle-free EPR licensing
+        EPR - A Key Step Towards Circular Economy
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As EPR registration Certifications, our job is to ensure that the tiring
-        procedures that we have listed above become a cake-walk for you. Right
-        from the beginning i.e. from the stage of collection of documents from
-        the foreign manufacturers or preparation of documents for the Indian
-        manufacturer and following up with the department for grant of license
-        is under our scope.
+        One of the key aspects of plastic waste management in India is incorporating the Extended Producer Responsibility (EPR) System into the plastic waste management framework. EPR covers a wide range of mechanisms that integrate the 'polluter pays' principle and business liability in the management of plastic waste produced by their products. This is a key step in transitioning to a circular economy. In the CPCB EPR Portal, the CPCB has designed an EPR framework that assists in the identification of various stakeholders and offers modules for enhancing transparency, accountability, and compliance for each of the waste management stakeholders. India is still in the early phases of implementing the EPR framework; still, it has the ability to greatly improve the sustainability of India's plastic waste management in the coming years.
       </div>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        We are one of the most experienced EPR Certifications in the field of
-        E-waste management,we provide apex quality of services possible to all
-        our national and international clients.
+      {/* Sun Certifications Role */}
+      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+        Why Choose Sun Certifications?
+      </h4>
+
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Sun Certifications is a pioneer in the Indian market for assisting businesses in obtaining Extended Producer Responsibility (EPR) registration and for guiding businesses in meeting the various legal requirements associated with the management of plastic waste in India. As one of the industry leaders in assisting with the management of EPR compliance, Sun Certifications aids producers, importers, and brand owners (PIBOs) in obtaining EPR registration in compliance with the Indian country's Plastic Waste Management Rules. In addition, Sun Certifications offers entities assistance with registration, compliance management, and responsible waste management to help improve the environment.
       </div>
     </section>
   );
