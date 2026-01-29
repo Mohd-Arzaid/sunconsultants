@@ -25,7 +25,7 @@ const BISCertificateForBatteryOperatedToothbrushArabic = () => {
       <MainContent />
       <Services />
       <VideoSection />
-      <FooterArabic />
+      <FooterArabic /> 
     </div>
   );
 };

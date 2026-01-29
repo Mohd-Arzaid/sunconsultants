@@ -38,6 +38,9 @@ const BISCertificationCombinationSideCuttingPliers = () => {
   );
 };
 
+
+
+
 export default BISCertificationCombinationSideCuttingPliers;
 
 const MetaTags = () => {

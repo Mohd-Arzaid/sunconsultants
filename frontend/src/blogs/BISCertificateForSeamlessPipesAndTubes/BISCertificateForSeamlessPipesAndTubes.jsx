@@ -22,7 +22,7 @@ import {
   TableCell,
   TableHeader,
   TableRow,
-  TableHead,
+  TableHead, 
 } from "@/components/ui/table";
 
 const BISCertificateForSeamlessPipesAndTubes = () => {
