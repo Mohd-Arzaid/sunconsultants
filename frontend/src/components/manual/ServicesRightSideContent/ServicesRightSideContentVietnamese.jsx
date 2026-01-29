@@ -63,6 +63,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/blogs/isi-products/ban-va-ban-lam-viec-is-17633",
     // BIS Certificate for Battery Operated Air Purifier Vietnamese Page Url
     "/blogs/isi-products/may-loc-khong-khi-chay-bang-pin-is-302",
+    // BIS Certificate for Battery Operated Toothbrush Vietnamese Page Url
+    "/blogs/isi-products/ban-chai-danh-rang-chay-bang-pin-is-302",
   ];
 
   // Check if current path should show these components
@@ -655,6 +657,9 @@ const ContactFormServicesRightSideContentVietnamese = () => {
       )
     )
       return "BIS Certificate for Battery Operated Air Purifier (Vietnamese)";
+    // BIS Certificate for Battery Operated Toothbrush Vietnamese
+    if (path.includes("/blogs/isi-products/ban-chai-danh-rang-chay-bang-pin-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush (Vietnamese)";
     return "";
   };
 

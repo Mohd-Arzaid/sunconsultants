@@ -53,6 +53,10 @@ const ServicesRightSideContentJapanese = () => {
     "/blogs/isi-products/yousetsu-kan-chuubu-is-17876",
     // BIS Certificate for Battery Operated Air Purifier Japanese Page Url
     "/blogs/isi-products/denchi-kudou-kuuki-jouka-ki-is-302",
+    // BIS Certificate for Battery Operated Toothbrush Japanese Page Url
+    "/blogs/isi-products/denchi-kudou-haburashi-is-302",
+    // BIS Certificate for Chain Pipe Wrenches Japanese Page Url
+    "/blogs/isi-products/chein-paipu-renchi-is-4123",
     // ISIMark Japanese Page Url
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
@@ -771,6 +775,12 @@ const ContactFormServicesRightSideContentJapanese = () => {
       )
     )
       return "BIS Certificate for Battery Operated Air Purifier (Japanese)";
+    // BIS Certificate for Battery Operated Toothbrush Japanese
+    if (path.includes("/blogs/isi-products/denchi-kudou-haburashi-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush (Japanese)";
+    // BIS Certificate for Chain Pipe Wrenches Japanese
+    if (path.includes("/blogs/isi-products/chein-paipu-renchi-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches (Japanese)";
     return "";
   };
 

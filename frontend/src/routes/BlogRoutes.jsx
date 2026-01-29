@@ -649,7 +649,31 @@ const BISCertificationSingleendedOpenjawAdjustableWrenches = lazy(() =>
   import("@/blogs/BISCertificationSingleendedOpenjawAdjustableWrenches")
 );
 const BISCertificationChainPipeWrenches = lazy(() =>
-  import("@/blogs/BISCertificationChainPipeWrenches")
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenches")
+);
+const BISCertificationChainPipeWrenchesArabic = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesArabic")
+);
+const BISCertificationChainPipeWrenchesChinese = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesChinese")
+);
+const BISCertificationChainPipeWrenchesDutch = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesDutch")
+);
+const BISCertificationChainPipeWrenchesFrench = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesFrench")
+);
+const BISCertificationChainPipeWrenchesGerman = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesGerman")
+);
+const BISCertificationChainPipeWrenchesIndonesian = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesIndonesian")
+);
+const BISCertificationChainPipeWrenchesItalian = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesItalian")
+);
+const BISCertificationChainPipeWrenchesJapanese = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesJapanese")
 );
 const BISCertificateBatteryOperatedAirPurifier = lazy(() =>
   import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificationBatteryOperatedAirPurifier")
@@ -716,6 +740,21 @@ const BISCertificateForBatteryOperatedToothbrushIndonesian = lazy(() =>
 );
 const BISCertificateForBatteryOperatedToothbrushItalian = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushItalian")
+);
+const BISCertificateForBatteryOperatedToothbrushJapanese = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushJapanese")
+);
+const BISCertificateForBatteryOperatedToothbrushKorean = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushKorean")
+);
+const BISCertificateForBatteryOperatedToothbrushSpanish = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushSpanish")
+);
+const BISCertificateForBatteryOperatedToothbrushThai = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushThai")
+);
+const BISCertificateForBatteryOperatedToothbrushVietnamese = lazy(() =>
+  import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushVietnamese")
 );
 
 export const BlogRoutes = () => {
@@ -2225,6 +2264,70 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/mafatih-anabib-silsila-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/lian-guan-ban-shou-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ketting-pijpsleutels-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cles-a-chaine-pour-tuyaux-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/kettenrohrschluessel-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/kunci-pipa-rantai-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chiavi-a-catena-per-tubi-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chein-paipu-renchi-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesJapanese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/battery-operated-air-purifier-is-302"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2397,6 +2500,46 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBatteryOperatedToothbrushItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/denchi-kudou-haburashi-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/jeonji-gudong-chitsol-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cepillo-de-dientes-funcionado-por-bateria-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/praeng-si-fan-batari-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ban-chai-danh-rang-chay-bang-pin-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrushVietnamese />
           </Suspense>
         }
       />

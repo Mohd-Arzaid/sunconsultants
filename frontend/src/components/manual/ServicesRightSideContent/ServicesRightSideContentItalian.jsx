@@ -102,6 +102,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/purificatore-daria-alimentato-a-batteria-is-302",
     // BIS Certificate for Battery Operated Toothbrush Italian Page Url
     "/blogs/isi-products/spazzolino-da-denti-a-batteria-is-302",
+    // BIS Certificate for Chain Pipe Wrenches Italian Page Url
+    "/blogs/isi-products/chiavi-a-catena-per-tubi-is-4123",
   ];
 
   // Check if current path should show these components
@@ -825,6 +827,9 @@ const ContactFormServicesRightSideContentItalian = () => {
       )
     )
       return "BIS Certificate for Battery Operated Toothbrush (Italian)";
+    // BIS Certificate for Chain Pipe Wrenches Italian
+    if (path.includes("/blogs/isi-products/chiavi-a-catena-per-tubi-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches (Italian)";
   };
 
   const [formData, setFormData] = useState({

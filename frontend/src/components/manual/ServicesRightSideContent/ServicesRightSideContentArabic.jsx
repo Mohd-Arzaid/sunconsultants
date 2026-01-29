@@ -88,6 +88,8 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/munazzif-hawa-bi-batariya-is-302",
     // BIS Certificate for Battery Operated Toothbrush Arabic Page Url
     "/blogs/isi-products/firsha-asnan-bi-batariya-is-302",
+    // BIS Certificate for Chain Pipe Wrenches Arabic Page Url
+    "/blogs/isi-products/mafatih-anabib-silsila-is-4123",
   ];
 
   // Check if current path should show these components
@@ -747,6 +749,9 @@ const ContactFormServicesRightSideContentArabic = () => {
     // BIS Certificate for Battery Operated Toothbrush Arabic
     if (path.includes("/blogs/isi-products/firsha-asnan-bi-batariya-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush (Arabic)";
+    // BIS Certificate for Chain Pipe Wrenches Arabic
+    if (path.includes("/blogs/isi-products/mafatih-anabib-silsila-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches (Arabic)";
     return "";
   };
 

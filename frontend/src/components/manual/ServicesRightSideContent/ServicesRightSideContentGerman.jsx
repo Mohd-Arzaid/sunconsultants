@@ -68,6 +68,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/batteriebetriebener-luftreiniger-is-302",
     // BIS Certificate for Battery Operated Toothbrush German Page Url
     "/blogs/isi-products/batteriebetriebene-zahnbuerste-is-302",
+    // BIS Certificate for Chain Pipe Wrenches German Page Url
+    "/blogs/isi-products/kettenrohrschluessel-is-4123",
   ];
 
   // Check if current path should show these components
@@ -651,6 +653,9 @@ const ContactFormServicesRightSideContentGerman = () => {
     // BIS Certificate for Battery Operated Toothbrush German
     if (path.includes("/blogs/isi-products/batteriebetriebene-zahnbuerste-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush (German)";
+    // BIS Certificate for Chain Pipe Wrenches German
+    if (path.includes("/blogs/isi-products/kettenrohrschluessel-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches (German)";
     return "";
   };
 

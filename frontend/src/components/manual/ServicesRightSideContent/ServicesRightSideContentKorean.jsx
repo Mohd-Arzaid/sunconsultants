@@ -82,6 +82,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/sunap-yunit-is-17634",
     // Tables & Desks Korean Page Url
     "/blogs/isi-products/teibeul-mich-chaegsang-is-17633",
+    // BIS Certificate for Battery Operated Toothbrush Korean Page Url
+    "/blogs/isi-products/jeonji-gudong-chitsol-is-302",
   ];
 
   // Check if current path should show these components
@@ -701,6 +703,9 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Tables & Desks Korean
     if (path.includes("/blogs/isi-products/teibeul-mich-chaegsang-is-17633"))
       return "BIS Certificate for Tables & Desks (Korean)";
+    // BIS Certificate for Battery Operated Toothbrush Korean
+    if (path.includes("/blogs/isi-products/jeonji-gudong-chitsol-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush (Korean)";
     return "";
   };
 

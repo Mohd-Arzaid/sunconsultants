@@ -99,6 +99,8 @@ const ServicesRightSideContentThai = () => {
     "/blogs/isi-products/to-lae-to-ngan-is-17633",
     // BIS Certificate for Battery Operated Air Purifier Thai Page Url
     "/blogs/isi-products/khrueang-fok-lom-batari-is-302",
+    // BIS Certificate for Battery Operated Toothbrush Thai Page Url
+    "/blogs/isi-products/praeng-si-fan-batari-is-302",
   ];
 
   // Check if current path should show these components
@@ -751,6 +753,9 @@ const ContactFormServicesRightSideContentThai = () => {
       )
     )
       return "BIS Certificate for Battery Operated Air Purifier (Thai)";
+    // BIS Certificate for Battery Operated Toothbrush Thai
+    if (path.includes("/blogs/isi-products/praeng-si-fan-batari-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush (Thai)";
     return "";
   };
 

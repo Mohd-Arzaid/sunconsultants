@@ -65,6 +65,8 @@ const ServicesRightSideContentSpanish = () => {
     "/blogs/isi-products/unidades-de-almacenamiento-is-17634",
     // BIS Certificate for Tables & Desks Spanish Page Url
     "/blogs/isi-products/mesas-y-escritorios-is-17633",
+    // BIS Certificate for Battery Operated Toothbrush Spanish Page Url
+    "/blogs/isi-products/cepillo-de-dientes-funcionado-por-bateria-is-302",
   ];
 
   // Check if current path should show these components
@@ -659,6 +661,9 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Tables & Desks Spanish
     if (path.includes("/blogs/isi-products/mesas-y-escritorios-is-17633"))
       return "BIS Certificate for Tables & Desks (Spanish)";
+    // BIS Certificate for Battery Operated Toothbrush Spanish
+    if (path.includes("/blogs/isi-products/cepillo-de-dientes-funcionado-por-bateria-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush (Spanish)";
     return "";
   };
 
