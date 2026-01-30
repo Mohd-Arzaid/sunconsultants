@@ -627,6 +627,9 @@ const BISCertificationMixedPolyolefinFibreRopes = lazy(() =>
 const BISCertificationCompsitSyntheticFibre = lazy(() =>
   import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificationCompsitSyntheticFibre")
 );
+const BISCertificateCompsitSyntheticFibreArabic = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreArabic")
+);
 const BISCertificateCompsitSyntheticFibreChinese = lazy(() =>
   import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreChinese")
 );
