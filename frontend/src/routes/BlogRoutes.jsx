@@ -627,6 +627,9 @@ const BISCertificationMixedPolyolefinFibreRopes = lazy(() =>
 const BISCertificationCompsitSyntheticFibre = lazy(() =>
   import("@/blogs/BISCertificationCompsitSyntheticFibre")
 );
+const BISCertificateCompsitSyntheticFibreChinese = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreChinese")
+);
 const BISCertificationManilaRope = lazy(() =>
   import("@/blogs/BISCertificationManilaRope")
 );
@@ -634,7 +637,40 @@ const BISCertificationforFlatWovenWebbing = lazy(() =>
   import("@/blogs/BISCertificationforFlatWovenWebbing")
 );
 const BISCertificationCombinationSideCuttingPliers = lazy(() =>
-  import("@/blogs/BISCertificationCombinationSideCuttingPliers")
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliers")
+);
+const BISCertificationCombinationSideCuttingPliersArabic = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersArabic")
+);
+const BISCertificationCombinationSideCuttingPliersChinese = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersChinese")
+);
+const BISCertificationCombinationSideCuttingPliersDutch = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersDutch")
+);
+const BISCertificationCombinationSideCuttingPliersFrench = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersFrench")
+);
+const BISCertificationCombinationSideCuttingPliersGerman = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersGerman")
+);
+const BISCertificationCombinationSideCuttingPliersIndonesian = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersIndonesian")
+);
+const BISCertificationCombinationSideCuttingPliersItalian = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersItalian")
+);
+const BISCertificationCombinationSideCuttingPliersJapanese = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersJapanese")
+);
+const BISCertificationCombinationSideCuttingPliersSpanish = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersSpanish")
+);
+const BISCertificationCombinationSideCuttingPliersThai = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersThai")
+);
+const BISCertificationCombinationSideCuttingPliersVietnamese = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliersVietnamese")
 );
 const BISCertificationPipeWrenches = lazy(() =>
   import("@/blogs/BISCertificationPipeWrenches")
@@ -674,6 +710,18 @@ const BISCertificationChainPipeWrenchesItalian = lazy(() =>
 );
 const BISCertificationChainPipeWrenchesJapanese = lazy(() =>
   import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesJapanese")
+);
+const BISCertificationChainPipeWrenchesKorean = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesKorean")
+);
+const BISCertificationChainPipeWrenchesSpanish = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesSpanish")
+);
+const BISCertificationChainPipeWrenchesThai = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesThai")
+);
+const BISCertificationChainPipeWrenchesVietnamese = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches/BISCertificationChainPipeWrenchesVietnamese")
 );
 const BISCertificateBatteryOperatedAirPurifier = lazy(() =>
   import("@/blogs/BISCertificateBatteryOperatedAirPurifier/BISCertificationBatteryOperatedAirPurifier")
@@ -2200,6 +2248,22 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/hibal-alyaf-sinaiya-murakkaba-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/fuhe-hecheng-xianwei-sheng-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreChinese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/manila-ropes-is-1084"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2220,6 +2284,94 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationCombinationSideCuttingPliers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/qalb-janubiya-mujammaa-lilqata-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/zuhe-ce-qie-qian-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/combinatie-zijsnij-tangen-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/pinces-combinees-coupe-laterale-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/kombinationszangen-seitenschneide-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tang-kombinasi-pemotong-samping-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/pinze-combinate-taglio-laterale-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/kumiawase-yokogiri-puraiya-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/alicates-combinados-corte-lateral-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/khim-tat-khang-baep-som-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/kiem-cat-ben-ket-hop-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliersVietnamese />
           </Suspense>
         }
       />
@@ -2324,6 +2476,38 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationChainPipeWrenchesJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chein-paipeu-renchi-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/llaves-de-cadena-para-tuberias-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/prae-thoo-so-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/co-le-ong-xich-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenchesVietnamese />
           </Suspense>
         }
       />

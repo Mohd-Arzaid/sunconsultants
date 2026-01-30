@@ -65,6 +65,10 @@ const ServicesRightSideContentVietnamese = () => {
     "/blogs/isi-products/may-loc-khong-khi-chay-bang-pin-is-302",
     // BIS Certificate for Battery Operated Toothbrush Vietnamese Page Url
     "/blogs/isi-products/ban-chai-danh-rang-chay-bang-pin-is-302",
+    // BIS Certificate for Chain Pipe Wrenches Vietnamese Page Url
+    "/blogs/isi-products/co-le-ong-xich-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers Vietnamese Page Url
+    "/blogs/isi-products/kiem-cat-ben-ket-hop-is-3650",
   ];
 
   // Check if current path should show these components
@@ -660,6 +664,12 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     // BIS Certificate for Battery Operated Toothbrush Vietnamese
     if (path.includes("/blogs/isi-products/ban-chai-danh-rang-chay-bang-pin-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush (Vietnamese)";
+    // BIS Certificate for Chain Pipe Wrenches Vietnamese
+    if (path.includes("/blogs/isi-products/co-le-ong-xich-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches (Vietnamese)";
+    // BIS Certificate for Combination Side Cutting Pliers Vietnamese
+    if (path.includes("/blogs/isi-products/kiem-cat-ben-ket-hop-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (Vietnamese)";
     return "";
   };
 

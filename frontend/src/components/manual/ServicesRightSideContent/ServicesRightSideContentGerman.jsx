@@ -70,6 +70,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/batteriebetriebene-zahnbuerste-is-302",
     // BIS Certificate for Chain Pipe Wrenches German Page Url
     "/blogs/isi-products/kettenrohrschluessel-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers German Page Url
+    "/blogs/isi-products/kombinationszangen-seitenschneide-is-3650",
   ];
 
   // Check if current path should show these components
@@ -656,6 +658,9 @@ const ContactFormServicesRightSideContentGerman = () => {
     // BIS Certificate for Chain Pipe Wrenches German
     if (path.includes("/blogs/isi-products/kettenrohrschluessel-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (German)";
+    // BIS Certificate for Combination Side Cutting Pliers German
+    if (path.includes("/blogs/isi-products/kombinationszangen-seitenschneide-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (German)";
     return "";
   };
 

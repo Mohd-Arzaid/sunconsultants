@@ -104,6 +104,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/sikat-gigi-bertenaga-baterai-is-302",
     // BIS Certificate for Chain Pipe Wrenches Indonesian Page Url
     "/blogs/isi-products/kunci-pipa-rantai-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers Indonesian Page Url
+    "/blogs/isi-products/tang-kombinasi-pemotong-samping-is-3650",
   ];
 
   // Check if current path should show these components
@@ -799,6 +801,10 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Chain Pipe Wrenches Indonesian
     if (path.includes("/blogs/isi-products/kunci-pipa-rantai-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (Indonesian)";
+
+    // BIS Certificate for Combination Side Cutting Pliers Indonesian
+    if (path.includes("/blogs/isi-products/tang-kombinasi-pemotong-samping-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

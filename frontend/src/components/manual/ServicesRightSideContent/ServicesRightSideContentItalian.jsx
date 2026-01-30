@@ -104,6 +104,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/spazzolino-da-denti-a-batteria-is-302",
     // BIS Certificate for Chain Pipe Wrenches Italian Page Url
     "/blogs/isi-products/chiavi-a-catena-per-tubi-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers Italian Page Url
+    "/blogs/isi-products/pinze-combinate-taglio-laterale-is-3650",
   ];
 
   // Check if current path should show these components
@@ -830,6 +832,10 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS Certificate for Chain Pipe Wrenches Italian
     if (path.includes("/blogs/isi-products/chiavi-a-catena-per-tubi-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (Italian)";
+
+    // BIS Certificate for Combination Side Cutting Pliers Italian
+    if (path.includes("/blogs/isi-products/pinze-combinate-taglio-laterale-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (Italian)";
   };
 
   const [formData, setFormData] = useState({

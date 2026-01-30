@@ -84,6 +84,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/teibeul-mich-chaegsang-is-17633",
     // BIS Certificate for Battery Operated Toothbrush Korean Page Url
     "/blogs/isi-products/jeonji-gudong-chitsol-is-302",
+    // BIS Certificate for Chain Pipe Wrenches Korean Page Url
+    "/blogs/isi-products/chein-paipeu-renchi-is-4123",
   ];
 
   // Check if current path should show these components
@@ -706,6 +708,9 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Battery Operated Toothbrush Korean
     if (path.includes("/blogs/isi-products/jeonji-gudong-chitsol-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush (Korean)";
+    // BIS Certificate for Chain Pipe Wrenches Korean
+    if (path.includes("/blogs/isi-products/chein-paipeu-renchi-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches (Korean)";
     return "";
   };
 

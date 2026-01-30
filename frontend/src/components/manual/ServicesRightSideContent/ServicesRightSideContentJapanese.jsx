@@ -57,6 +57,8 @@ const ServicesRightSideContentJapanese = () => {
     "/blogs/isi-products/denchi-kudou-haburashi-is-302",
     // BIS Certificate for Chain Pipe Wrenches Japanese Page Url
     "/blogs/isi-products/chein-paipu-renchi-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers Japanese Page Url
+    "/blogs/isi-products/kumiawase-yokogiri-puraiya-is-3650",
     // ISIMark Japanese Page Url
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
@@ -781,6 +783,9 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS Certificate for Chain Pipe Wrenches Japanese
     if (path.includes("/blogs/isi-products/chein-paipu-renchi-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (Japanese)";
+    // BIS Certificate for Combination Side Cutting Pliers Japanese Page Url
+    if (path.includes("/blogs/isi-products/kumiawase-yokogiri-puraiya-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (Japanese)";
     return "";
   };
 

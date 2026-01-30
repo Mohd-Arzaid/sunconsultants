@@ -66,6 +66,8 @@ const ServicesRightSideContentFrench = () => {
     "/blogs/isi-products/brosse-a-dents-electrique-a-piles-is-302",
     // BIS Certificate for Chain Pipe Wrenches French Page Url
     "/blogs/isi-products/cles-a-chaine-pour-tuyaux-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers French Page Url
+    "/blogs/isi-products/pinces-combinees-coupe-laterale-is-3650",
   ];
 
   // Check if current path should show these components
@@ -650,6 +652,9 @@ const ContactFormServicesRightSideContentFrench = () => {
     // BIS Certificate for Chain Pipe Wrenches French
     if (path.includes("/blogs/isi-products/cles-a-chaine-pour-tuyaux-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (French)";
+    // BIS Certificate for Combination Side Cutting Pliers French
+    if (path.includes("/blogs/isi-products/pinces-combinees-coupe-laterale-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (French)";
     return "";
   };
 

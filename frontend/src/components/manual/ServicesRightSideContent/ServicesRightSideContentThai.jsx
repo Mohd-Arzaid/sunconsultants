@@ -101,6 +101,10 @@ const ServicesRightSideContentThai = () => {
     "/blogs/isi-products/khrueang-fok-lom-batari-is-302",
     // BIS Certificate for Battery Operated Toothbrush Thai Page Url
     "/blogs/isi-products/praeng-si-fan-batari-is-302",
+    // BIS Certificate for Chain Pipe Wrenches Thai Page Url
+    "/blogs/isi-products/prae-thoo-so-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers Thai Page Url
+    "/blogs/isi-products/khim-tat-khang-baep-som-is-3650",
   ];
 
   // Check if current path should show these components
@@ -756,6 +760,12 @@ const ContactFormServicesRightSideContentThai = () => {
     // BIS Certificate for Battery Operated Toothbrush Thai
     if (path.includes("/blogs/isi-products/praeng-si-fan-batari-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush (Thai)";
+    // BIS Certificate for Chain Pipe Wrenches Thai
+    if (path.includes("/blogs/isi-products/prae-thoo-so-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches (Thai)";
+    // BIS Certificate for Combination Side Cutting Pliers Thai
+    if (path.includes("/blogs/isi-products/khim-tat-khang-baep-som-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (Thai)";
     return "";
   };
 

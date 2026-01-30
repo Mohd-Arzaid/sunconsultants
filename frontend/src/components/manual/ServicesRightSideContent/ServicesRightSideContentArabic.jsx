@@ -90,6 +90,10 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/firsha-asnan-bi-batariya-is-302",
     // BIS Certificate for Chain Pipe Wrenches Arabic Page Url
     "/blogs/isi-products/mafatih-anabib-silsila-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers Arabic Page Url
+    "/blogs/isi-products/qalb-janubiya-mujammaa-lilqata-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Ropes Arabic Page Url
+    "/blogs/isi-products/hibal-alyaf-sinaiya-murakkaba-is-14928",
   ];
 
   // Check if current path should show these components
@@ -752,6 +756,12 @@ const ContactFormServicesRightSideContentArabic = () => {
     // BIS Certificate for Chain Pipe Wrenches Arabic
     if (path.includes("/blogs/isi-products/mafatih-anabib-silsila-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (Arabic)";
+    // BIS Certificate for Combination Side Cutting Pliers Arabic
+    if (path.includes("/blogs/isi-products/qalb-janubiya-mujammaa-lilqata-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (Arabic)";
+    // BIS Certificate for Composite Synthetic Fibre Ropes Arabic
+    if (path.includes("/blogs/isi-products/hibal-alyaf-sinaiya-murakkaba-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes (Arabic)";
     return "";
   };
 

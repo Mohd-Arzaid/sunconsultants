@@ -67,6 +67,10 @@ const ServicesRightSideContentSpanish = () => {
     "/blogs/isi-products/mesas-y-escritorios-is-17633",
     // BIS Certificate for Battery Operated Toothbrush Spanish Page Url
     "/blogs/isi-products/cepillo-de-dientes-funcionado-por-bateria-is-302",
+    // BIS Certificate for Chain Pipe Wrenches Spanish Page Url
+    "/blogs/isi-products/llaves-de-cadena-para-tuberias-is-4123",
+    // BIS Certificate for Combination Side Cutting Pliers Spanish Page Url
+    "/blogs/isi-products/alicates-combinados-corte-lateral-is-3650",
   ];
 
   // Check if current path should show these components
@@ -664,6 +668,12 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Battery Operated Toothbrush Spanish
     if (path.includes("/blogs/isi-products/cepillo-de-dientes-funcionado-por-bateria-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush (Spanish)";
+    // BIS Certificate for Chain Pipe Wrenches Spanish
+    if (path.includes("/blogs/isi-products/llaves-de-cadena-para-tuberias-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches (Spanish)";
+    // BIS Certificate for Combination Side Cutting Pliers Spanish
+    if (path.includes("/blogs/isi-products/alicates-combinados-corte-lateral-is-3650"))
+      return "BIS Certificate for Combination Side Cutting Pliers (Spanish)";
     return "";
   };
 
