@@ -239,7 +239,6 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
-
 const Footer = () => {
   return (
     <footer>
@@ -604,3 +603,4 @@ const Footer = () => {
     </footer>
   );
 };
+

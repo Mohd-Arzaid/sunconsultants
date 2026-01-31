@@ -170,41 +170,34 @@ const FooterEng = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/information-about-tec-certificate-mtcte"
+                    to="/what-is-bis-certificate-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    TEC
+                    BIS Certification
                   </Link>
                   <Link
                     to="/a-guide-to-bis-certification-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    ISI MARK
+                    ISI Mark (Indian)
                   </Link>
                   <Link
-                    to="/ce-certification"
+                    to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    CE CERTIFICATION
+                    BIS Mark (Foreign)
                   </Link>
                   <Link
-                    to="/a-guide-on-how-to-obtain-epr-certificate"
+                    to="/what-is-crs-bis-or-crs-registration"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    EPR
+                    CRS Registration
                   </Link>
                   <Link
-                    to="/restriction-of-hazardous-substance-rohs-certificate"
+                    to="/indian-bis-certification-under-scheme-x"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    ROHS
-                  </Link>
-
-                  <Link
-                    to="/information-about-wpc-certificate-eta-approval"
-                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
-                  >
-                    WPC
+                    Scheme X
                   </Link>
                 </div>
               </div>
@@ -218,7 +211,7 @@ const FooterEng = () => {
                     to="/about"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    About
+                    About Us
                   </Link>
                   <Link
                     to="/contact"
@@ -226,10 +219,12 @@ const FooterEng = () => {
                   >
                     Contact Us
                   </Link>
-
-                  <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/faqs"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     FAQ's
-                  </span>
+                  </Link>
                   <Link
                     to="/sitemap"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
@@ -251,16 +246,16 @@ const FooterEng = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/bis-qco-updates"
+                    to="/Blogs"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Blogs
+                    Latest Blogs
                   </Link>
                   <Link
                     to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Latest Updates
+                    BIS QCO UPDATES
                   </Link>
                   <Link
                     to="/ministry-updates"
@@ -272,13 +267,13 @@ const FooterEng = () => {
                     to="/webinar"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Webinar Updates
+                    Upcoming Webinars
                   </Link>
                   <Link
-                    to="/international-audits"
+                    to="/SchemeX-products"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Gallery
+                    Scheme X Products
                   </Link>
                 </div>
               </div>

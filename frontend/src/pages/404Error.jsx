@@ -157,7 +157,6 @@ const Error404 = () => {
 };
 
 export default Error404;
-
 const Footer = () => {
   return (
     <footer>
@@ -520,3 +519,4 @@ const Footer = () => {
     </footer>
   );
 };
+

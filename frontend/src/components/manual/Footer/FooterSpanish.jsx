@@ -170,7 +170,7 @@ const FooterSpanish = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/information-about-tec-certificate-mtcte"
+                    to="/what-is-bis-certificate-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     CERTIFICADO TEC
@@ -182,13 +182,13 @@ const FooterSpanish = () => {
                     CERTIFICACIÓN BIS
                   </Link>
                   <Link
-                    to="/ce-certification"
+                    to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     MARCADO CE
                   </Link>
                   <Link
-                    to="/a-guide-on-how-to-obtain-epr-certificate"
+                    to="/what-is-crs-bis-or-crs-registration"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     CERTIFICADO EPR

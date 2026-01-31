@@ -607,7 +607,6 @@ const FaqsMetaTags = () => {
     </Helmet>
   );
 };
-
 const Footer = () => {
   return (
     <footer>
@@ -975,3 +974,4 @@ const Footer = () => {
     </footer>
   );
 };
+

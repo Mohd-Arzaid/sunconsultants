@@ -299,7 +299,6 @@ const TermsAndConditions = () => {
 };
 
 export default TermsAndConditions;
-
 const Footer = () => {
   return (
     <footer>
@@ -664,3 +663,4 @@ const Footer = () => {
     </footer>
   );
 };
+

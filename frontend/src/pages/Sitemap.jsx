@@ -720,7 +720,6 @@ const Sitemap = () => {
 };
 
 export default Sitemap;
-
 const Footer = () => {
   return (
     <footer>
@@ -1071,3 +1070,4 @@ const Footer = () => {
     </footer>
   );
 };
+
