@@ -422,7 +422,7 @@ const MetaTags = () => {
   const title =
     "Organization Chart of Sun Certifications India | BIS Certification Experts";
   const description =
-    "Explore the organizational structure of Sun Certifications India, a leading BIS certification and product compliance consultancy in India. Our expert teams across BIS, FMCS, EPR, LMPC, PESO, R&D, IT, and business development ensure reliable, transparent, and efficient certification services for manufacturers and importers.";
+    "Sun Certifications India has a very structure and proffesional approach with specialized department for various services like BIS, CDSCO, LMPC, EPR etc.";
   const ogTitle = "Our Organization Structure | Sun Certifications India";
   const twitterTitle = "Organizational Structure | Sun Certifications India";
   const ogDescription =
