@@ -52,9 +52,9 @@ const OrganizationChart = () => {
     <div className="max-w-full mx-auto px-4 sm:px-6 md:px-12 pt-12 pb-2 md:pb-5">
       {/* Heading */}
       <div className="text-center mb-6 sm:mb-8">
-        <h2 className="font-playfair tracking-tight text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-800 drop-shadow-lg mb-2 sm:mb-3">
+        <h1 className="font-playfair tracking-tight text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-800 drop-shadow-lg mb-2 sm:mb-3">
           Organization Chart
-        </h2>
+        </h1>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl font-geist text-neutral-600 max-w-xs sm:max-w-md md:max-w-xl mx-auto px-4 sm:px-2 md:px-0">
           Our organizational structure showing hierarchy and team distribution
           across departments.
