@@ -107,6 +107,8 @@ const ServicesRightSideContentDutch = () => {
     "/blogs/isi-products/ketting-pijpsleutels-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Dutch Page Url
     "/blogs/isi-products/combinatie-zijsnij-tangen-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Ropes Dutch Page Url
+    "/blogs/isi-products/samengestelde-synthetische-vezeltouwen-is-14928",
   ];
 
   // Check if current path should show these components
@@ -765,6 +767,9 @@ const ContactFormServicesRightSideContentDutch = () => {
     // BIS Certificate for Combination Side Cutting Pliers Dutch
     if (path.includes("/blogs/isi-products/combinatie-zijsnij-tangen-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (Dutch)";
+    // BIS Certificate for Composite Synthetic Fibre Ropes Dutch
+    if (path.includes("/blogs/isi-products/samengestelde-synthetische-vezeltouwen-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes (Dutch)";
     return "";
   };
 

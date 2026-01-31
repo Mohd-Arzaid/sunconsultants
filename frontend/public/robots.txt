@@ -13,11 +13,6 @@ Sitemap: https://bis-certifications.com/backlinks-sitemap.xml
 Disallow: /cdsco-registration-certification
 Disallow: /epr-certificate-for-plastic-waste-management-pwm
 Disallow: /epr-certificate-for-battery-waste-management-bwm
-Disallow: /a-guide-on-how-to-obtain-lmpc-certificate
-
-Allow: /a-guide-on-how-to-obtain-epr-certificate
-Allow: /what-is-legal-metrology-or-lmpc-certificate 
-
 Disallow: /information-about-peso-certification-peso-license-india
 Disallow: /information-about-tec-certificate-mtcte
 Disallow: /information-about-wpc-certificate-eta-approval

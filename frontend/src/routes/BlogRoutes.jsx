@@ -633,6 +633,15 @@ const BISCertificateCompsitSyntheticFibreArabic = lazy(() =>
 const BISCertificateCompsitSyntheticFibreChinese = lazy(() =>
   import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreChinese")
 );
+const BISCertificateCompsitSyntheticFibreDutch = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreDutch")
+);
+const BISCertificateCompsitSyntheticFibreFrench = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreFrench")
+);
+const BISCertificateCompsitSyntheticFibreGerman = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreGerman")
+);
 const BISCertificationManilaRope = lazy(() =>
   import("@/blogs/BISCertificationManilaRope")
 );
@@ -2263,6 +2272,30 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateCompsitSyntheticFibreChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/samengestelde-synthetische-vezeltouwen-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cordes-en-fibres-synthetiques-composites-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/verbund-synthetikfaserseile-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreGerman />
           </Suspense>
         }
       />

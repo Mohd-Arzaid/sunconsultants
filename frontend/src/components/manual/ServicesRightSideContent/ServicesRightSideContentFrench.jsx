@@ -68,6 +68,8 @@ const ServicesRightSideContentFrench = () => {
     "/blogs/isi-products/cles-a-chaine-pour-tuyaux-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers French Page Url
     "/blogs/isi-products/pinces-combinees-coupe-laterale-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Ropes French Page Url
+    "/blogs/isi-products/cordes-en-fibres-synthetiques-composites-is-14928",
   ];
 
   // Check if current path should show these components
@@ -655,6 +657,9 @@ const ContactFormServicesRightSideContentFrench = () => {
     // BIS Certificate for Combination Side Cutting Pliers French
     if (path.includes("/blogs/isi-products/pinces-combinees-coupe-laterale-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (French)";
+    // BIS Certificate for Composite Synthetic Fibre Ropes French
+    if (path.includes("/blogs/isi-products/cordes-en-fibres-synthetiques-composites-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes (French)";
     return "";
   };
 

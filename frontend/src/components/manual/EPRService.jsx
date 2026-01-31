@@ -418,141 +418,149 @@ const ServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What services do you offer for CDSCO compliance?
+                What is Extended Producer Responsibility (EPR)?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                We offer comprehensive CDSCO regulatory compliance services
-                including product registration, license applications, regulatory
-                strategy, documentation preparation, and post-approval
-                compliance monitoring for pharmaceuticals, medical devices, and
-                cosmetics in India.
+                Extended Producer Responsibility (EPR) is a type of policy in which producers take on the responsibility of managing the environmental impact of their products, including disposal and management of the product after the consumer is done using it.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does the CDSCO approval process typically take?
+                Which entities are required to register on the CPCB EPR Portal?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO approval timelines vary based on product category and
-                application type. Typically, drug approvals take 6-12 months,
-                medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our Certifications work to expedite
-                these timelines through proper documentation and regulatory
-                strategy.
+                The following entities must register on the CPCB EPR portal and obtain EPR certificates:
+                <br /><br />
+                1. Producers
+                <br />
+                2. Importers
+                <br />
+                3. Brand Owners
+                <br />
+                4. Plastic Waste Processors involved in:
+                <br />
+                ● Recycling
+                <br />
+                ● Waste to Energy
+                <br />
+                ● Waste to Oil
+                <br />
+                ● Industrial Composting
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are required for CDSCO registration?
+                Who is required to register with CPCB / SPCB / PCC?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Required documents include product dossiers, manufacturing
-                information, stability data, clinical trial results (if
-                applicable), Good Manufacturing Practice (GMP) certificates,
-                Certificate of Pharmaceutical Product (CoPP), and various
-                application forms specific to your product category. Our team
-                assists in preparing all necessary documentation.
+                ● PIBOs operating in one or two States/UTs are required to register with the State Pollution Control Board (SPCB) or Pollution Control Committee (PCC).
+                <br /><br />
+                ● PIBOs in more than two States/UTs are required to register with the Central Pollution Control Board (CPCB).
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you assist with clinical trial approvals in India?
+                What are the documents required for KYC for registration of PIBOs?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide end-to-end support for clinical trial
-                applications in India, including protocol development, ethics
-                committee submissions, CDSCO applications, site selection
-                assistance, and regulatory compliance throughout the trial
-                process. We also help navigate the New Drugs and Clinical Trials
-                Rules, 2019.
+                The following documentation is necessary for KYC while registering:
+                <br /><br />
+                1. PDF versions of the company's PAN, CIN, and GST certificates
+                <br />
+                ● GST invoices covering all States/UTs that the PIBO service are to be added.
+                <br /><br />
+                2. A PDF version of the Authorized Person's PAN and Aadhaar.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the costs associated with CDSCO registrations?
+                Which are the plastic packaging categories covered under EPR?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, Certifications fees, and
-                potential inspection costs. We provide transparent quotations
-                based on your specific product and requirements, with options
-                for different service levels to fit various budgets.
+                The following plastic packaging categories fall under EPR:
+                <br /><br />
+                1. Category I: Rigid plastic packaging.
+                <br /><br />
+                2. Category II: Flexible plastic packaging, including:
+                <br />
+                ● Individual or composite multi-layer plastics (of varying plastic types)
+                <br />
+                ● Plastic sheets, covers, carry bags, sachets, and pouches
+                <br /><br />
+                3. Category III: Multilayer plastic packaging that contains:
+                <br />
+                ● At least one layer of plastic, and
+                <br />
+                ● At least one layer of material that is not plastic
+                <br /><br />
+                4. Category IV: Compostable plastic packaging that includes:
+                <br />
+                ● Compostable plastic sheets, and carry bags.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do you handle post-approval regulatory requirements?
+                What is Pre-consumer Plastic Packaging Waste?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our post-approval services include pharmacovigilance support,
-                periodic safety update reports, variation applications, renewal
-                submissions, compliance with labeling requirements, adverse
-                event reporting, and ongoing regulatory intelligence to keep you
-                informed of regulatory changes affecting your products.
+                Pre-consumer plastic packaging waste is defined as the plastic waste that occurs before reaching the end-use consumer. This includes:
+                <br /><br />
+                ● Rejected or discarded plastic packaging materials made during manufacturing.
+                <br />
+                ● Lost or discarded packaging materials created during the packaging of products.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can you help with import licenses for pharmaceuticals and
-                medical devices?
+                What is the Meaning of Post-consumer Plastic Packaging Waste?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we specialize in obtaining Import Licenses (Form 10) for
-                drugs and Registration Certificates for medical devices. Our
-                services include preparing all necessary documentation,
-                coordinating with Indian authorized agents, liaising with CDSCO,
-                and handling post-approval compliance requirements for imported
-                products.
+                Post-consumer plastic packaging waste is the waste created after a customer has used the packaging for its intended use and does not have any further need for the packaging.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-8">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What experience does your consulting team have with CDSCO
-                regulations?
+                What are EPR Targets for Producers and Importers?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our consulting team consists of regulatory experts with 10+
-                years of experience in Indian pharmaceutical regulations. Team
-                members include former regulatory professionals, pharmacists,
-                and industry specialists who maintain close relationships with
-                regulatory authorities and stay updated on the latest regulatory
-                developments.
+                The EPR target relates to the volume of plastic packaging placed onto the market by the PIBO. Targets and obligations are detailed in Section 7 of the EPR Guidelines.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-9">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do recent regulatory changes affect pharmaceutical
-                registrations in India?
+                What if a PIBO has an in-house recycling unit?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Recent regulatory changes include the New Drugs and Clinical
-                Trials Rules (2019), Medical Device Rules (2017), and ongoing
-                updates to the Drugs and Cosmetics Act. These changes have
-                streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our Certifications keep
-                abreast of all changes and adjust strategies accordingly.
+                If a PIBO has its own recycling unit:
+                <br /><br />
+                * The entity will have to register separately as a PIBO and as a Recycler
+                <br />
+                * Both registrations will require relevant supporting documents
+                <br />
+                * EPR credits are only able to be given to recyclers
+                <br />
+                * There has to be a record of the credit transfer from the recycler to the PIBO
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-10">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you offer support for manufacturing facility inspections?
+                What documents are needed if an entity falls under multiple categories?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide comprehensive support for CDSCO manufacturing
-                facility inspections, including pre-inspection readiness
-                assessments, gap analysis, preparation of required
-                documentation, mock inspections, training of personnel, and
-                assistance during actual inspections to ensure a successful
-                outcome.
+                If an entity falls under multiple sub-categories:
+                <br /><br />
+                * It will be necessary to have a separate email ID for each category during registration
+                <br />
+                * The same Company KYC documents (PAN, GST, CIN) will apply to all categories
               </AccordionContent>
             </AccordionItem>
           </Accordion>

@@ -72,6 +72,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/kettenrohrschluessel-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers German Page Url
     "/blogs/isi-products/kombinationszangen-seitenschneide-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Ropes German Page Url
+    "/blogs/isi-products/verbund-synthetikfaserseile-is-14928",
   ];
 
   // Check if current path should show these components
@@ -661,6 +663,9 @@ const ContactFormServicesRightSideContentGerman = () => {
     // BIS Certificate for Combination Side Cutting Pliers German
     if (path.includes("/blogs/isi-products/kombinationszangen-seitenschneide-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (German)";
+    // BIS Certificate for Composite Synthetic Fibre Ropes German
+    if (path.includes("/blogs/isi-products/verbund-synthetikfaserseile-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes (German)";
     return "";
   };
 
