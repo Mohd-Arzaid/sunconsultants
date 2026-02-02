@@ -106,6 +106,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/kunci-pipa-rantai-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Indonesian Page Url
     "/blogs/isi-products/tang-kombinasi-pemotong-samping-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Ropes Indonesian Page Url
+    "/blogs/isi-products/tali-serat-sintetik-komposit-is-14928",
   ];
 
   // Check if current path should show these components
@@ -805,6 +807,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Combination Side Cutting Pliers Indonesian
     if (path.includes("/blogs/isi-products/tang-kombinasi-pemotong-samping-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (Indonesian)";
+    // BIS Certificate for Composite Synthetic Fibre Ropes Indonesian
+    if (path.includes("/blogs/isi-products/tali-serat-sintetik-komposit-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

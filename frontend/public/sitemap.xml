@@ -4540,7 +4540,13 @@
 
 
 
-
+   <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
 
 
 
@@ -4554,6 +4560,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Composite Synthetic Fibre Ropes - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/corde-in-fibra-sintetica-composita-is-14928</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <!-- BIS Certificate for Composite Synthetic Fibre Ropes - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/fukugo-gosei-sen-i-ro-pu-is-14928</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <!-- BIS Certificate for Composite Synthetic Fibre Ropes - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/bokhap-hapseong-seomyu-ropeu-is-14928</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <!-- BIS Certificate for Composite Synthetic Fibre Ropes - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tali-serat-sintetik-komposit-is-14928</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-01-30</lastmod>
   </url>
   <!-- BIS Certificate for Composite Synthetic Fibre Ropes - Arabic -->
   <url>
@@ -4591,10 +4625,13 @@
     <lastmod>2026-01-31</lastmod>
   </url>
 
-
-
-
-
+  <!-- BIS Certificate for Composite Synthetic Fibre Ropes - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tali-serat-sintetik-komposit-is-14928</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-01-30</lastmod>
+  </url>
 
 
 

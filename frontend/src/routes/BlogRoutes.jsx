@@ -642,6 +642,18 @@ const BISCertificateCompsitSyntheticFibreFrench = lazy(() =>
 const BISCertificateCompsitSyntheticFibreGerman = lazy(() =>
   import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreGerman")
 );
+const BISCertificateCompsitSyntheticFibreIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreIndonesian")
+);
+const BISCertificateCompsitSyntheticFibreItalian = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreItalian")
+);
+const BISCertificateCompsitSyntheticFibreJapanese = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreJapanese")
+);
+const BISCertificateCompsitSyntheticFibreKorean = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreKorean")
+);
 const BISCertificationManilaRope = lazy(() =>
   import("@/blogs/BISCertificationManilaRope")
 );
@@ -2260,6 +2272,38 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/corde-in-fibra-sintetica-composita-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/fukugo-gosei-sen-i-ro-pu-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/bokhap-hapseong-seomyu-ropeu-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tali-serat-sintetik-komposit-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/hibal-alyaf-sinaiya-murakkaba-is-14928"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2296,6 +2340,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateCompsitSyntheticFibreGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tali-serat-sintetik-komposit-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreIndonesian />
           </Suspense>
         }
       />

@@ -104,7 +104,9 @@ const ServicesRightSideContentJapanese = () => {
     // Transformers Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-hensatsuki",
     // Weaving Machines Scheme X Product (Japanese) Page Url
-    "/bis-sukiimu-x-ninshoo-orimonoiki-ruumu",
+    "/bis-sukiimu-x-ninshoo/orimonoiki-ruumu",
+    // BIS Certificate for Composite Synthetic Fibre Ropes Japanese Page Url
+    "/blogs/isi-products/fukugo-gosei-sen-i-ro-pu-is-14928",
   ];
 
   // Check if current path should show these components
@@ -786,6 +788,10 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS Certificate for Combination Side Cutting Pliers Japanese Page Url
     if (path.includes("/blogs/isi-products/kumiawase-yokogiri-puraiya-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (Japanese)";
+
+    // BIS Certificate for Composite Synthetic Fibre Ropes Japanese Page Url
+    if (path.includes("/blogs/isi-products/fukugo-gosei-sen-i-ro-pu-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes (Japanese)";
     return "";
   };
 

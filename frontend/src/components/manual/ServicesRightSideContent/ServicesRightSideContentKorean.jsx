@@ -86,6 +86,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/jeonji-gudong-chitsol-is-302",
     // BIS Certificate for Chain Pipe Wrenches Korean Page Url
     "/blogs/isi-products/chein-paipeu-renchi-is-4123",
+    // BIS Certificate for Composite Synthetic Fibre Ropes Korean Page Url
+    "/blogs/isi-products/bokhap-hapseong-seomyu-ropeu-is-14928",
   ];
 
   // Check if current path should show these components
@@ -711,6 +713,10 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Chain Pipe Wrenches Korean
     if (path.includes("/blogs/isi-products/chein-paipeu-renchi-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (Korean)";
+
+    // BIS Certificate for Composite Synthetic Fibre Ropes Korean Page Url
+    if (path.includes("/blogs/isi-products/bokhap-hapseong-seomyu-ropeu-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes (Korean)";
     return "";
   };
 

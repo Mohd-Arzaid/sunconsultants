@@ -106,6 +106,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/chiavi-a-catena-per-tubi-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Italian Page Url
     "/blogs/isi-products/pinze-combinate-taglio-laterale-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Ropes Italian Page Url
+    "/blogs/isi-products/corde-in-fibra-sintetica-composita-is-14928",
   ];
 
   // Check if current path should show these components
@@ -836,6 +838,10 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS Certificate for Combination Side Cutting Pliers Italian
     if (path.includes("/blogs/isi-products/pinze-combinate-taglio-laterale-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (Italian)";
+
+    // BIS Certificate for Composite Synthetic Fibre Ropes Italian
+    if (path.includes("/blogs/isi-products/corde-in-fibra-sintetica-composita-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes (Italian)";
   };
 
   const [formData, setFormData] = useState({

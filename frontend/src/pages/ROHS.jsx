@@ -115,8 +115,7 @@ const ROHSHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            RoHS Compliance Testing ensures safe electronic products by limiting
-            hazardous substances.
+            Comprehensive RoHS Certification services for electronic products to ensure global market access and environmental compliance.
           </p>
 
           <div className="flex items-center -mt-2">
@@ -157,6 +156,9 @@ const ROHSIndex = () => {
     "authority",
     "registration",
     "verification",
+    "process",
+    "testing",
+    "costs",
     "faqs",
   ];
 
@@ -168,7 +170,22 @@ const ROHSIndex = () => {
   const toggleButtonRef = useRef(null)
 
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase());
+    let targetId = item.toLowerCase();
+    
+    // Map display names to actual section IDs
+    const idMapping = {
+      "rohs meaning": "standardization",
+      "necessity": "authority",
+      "applicability": "registration",
+      "restricted substances": "verification",
+      "costs & benefits": "costs"
+    };
+    
+    if (idMapping[targetId]) {
+      targetId = idMapping[targetId];
+    }
+    
+    const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -226,6 +243,20 @@ const ROHSIndex = () => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
             if (entry.target.id === "faqs") {
               setActiveSection("FAQs");
+            } else if (entry.target.id === "costs") {
+              setActiveSection("Costs & Benefits");
+            } else if (entry.target.id === "testing") {
+              setActiveSection("Testing");
+            } else if (entry.target.id === "standardization") {
+              setActiveSection("RoHS Meaning");
+            } else if (entry.target.id === "authority") {
+              setActiveSection("Necessity");
+            } else if (entry.target.id === "registration") {
+              setActiveSection("Applicability");
+            } else if (entry.target.id === "verification") {
+              setActiveSection("Restricted Substances");
+            } else if (entry.target.id === "process") {
+              setActiveSection("Process");
             } else {
               const sectionName =
                 entry.target.id.charAt(0).toUpperCase() +
@@ -291,10 +322,13 @@ const ROHSIndex = () => {
           <div className="flex flex-col py-2">
             {[
               "Overview",
-              "Standardization",
-              "Authority",
-              "Registration",
-              "Verification",
+              "RoHS Meaning",
+              "Necessity",
+              "Applicability",
+              "Restricted Substances",
+              "Process",
+              "Testing",
+              "Costs & Benefits",
               "FAQs",
             ].map((item) => (
               <div
@@ -318,10 +352,13 @@ const ROHSIndex = () => {
       <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto overflow-x-auto">
         {[
           "Overview",
-          "Standardization",
-          "Authority",
-          "Registration",
-          "Verification",
+          "RoHS Meaning",
+          "Necessity",
+          "Applicability",
+          "Restricted Substances",
+          "Process",
+          "Testing",
+          "Costs & Benefits",
           "FAQs",
         ].map((item) => (
           <div
@@ -389,140 +426,92 @@ const ServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What services do you offer for CDSCO compliance?
+                What is RoHS?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                We offer comprehensive CDSCO regulatory compliance services
-                including product registration, license applications, regulatory
-                strategy, documentation preparation, and post-approval
-                compliance monitoring for pharmaceuticals, medical devices, and
-                cosmetics in India.
+                RoHS stands for Restriction of Hazardous Substances. RoHS, also known as Directive 2002/95/EC, originated in the European Union and restricts the use of specific hazardous materials found in electrical and electronic products (known as EEE). All applicable products in the EU market after July 1, 2006 must pass RoHS compliance.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does the CDSCO approval process typically take?
+                Is RoHS mandatory in India?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO approval timelines vary based on product category and
-                application type. Typically, drug approvals take 6-12 months,
-                medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our certifications work to expedite these
-                timelines through proper documentation and regulatory strategy.
+                Yes, RoHS compliance (Restriction of Hazardous Substances) is mandatory in India for many electronic and electrical equipment (EEE) manufacturers and importers primarily through the E-Waste (Management) Rules, which mirror the EU directive and require reducing hazardous substances like lead, mercury, and cadmium in products sold in India.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are required for CDSCO registration?
+                What are the restricted materials mandated under RoHS?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Required documents include product dossiers, manufacturing
-                information, stability data, clinical trial results (if
-                applicable), Good Manufacturing Practice (GMP) certificates,
-                Certificate of Pharmaceutical Product (CoPP), and various
-                application forms specific to your product category. Our team
-                assists in preparing all necessary documentation.
+                The substances banned under RoHS are lead (Pb), mercury (Hg), cadmium (Cd), hexavalent chromium (CrVI), polybrominated biphenyls (PBB), polybrominated diphenyl ethers (PBDE), and four different phthalates (DEHP, BBP, BBP, DIBP).
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you assist with clinical trial approvals in India?
+                Why is RoHS compliance important?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide end-to-end support for clinical trial
-                applications in India, including protocol development, ethics
-                committee submissions, CDSCO applications, site selection
-                assistance, and regulatory compliance throughout the trial
-                process. We also help navigate the New Drugs and Clinical Trials
-                Rules, 2019.
+                The restricted materials are hazardous to the environment and pollute landfills, and are dangerous in terms of occupational exposure during manufacturing and recycling.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the costs associated with CDSCO registrations?
+                Who issues the RoHS certificate?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, consultant fees, and
-                potential inspection costs. We provide transparent quotations
-                based on your specific product and requirements, with options
-                for different service levels to fit various budgets.
+                Central Pollution Control Board (CPCB) shall conduct random sampling of electrical and electronic equipment placed on the market to monitor and verify the compliance of Reduction of Hazardous Substances provisions and the cost for sample and testing shall be borne by the Producer.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do you handle post-approval regulatory requirements?
+                How are products tested for RoHS compliance?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Our post-approval services include pharmacovigilance support,
-                periodic safety update reports, variation applications, renewal
-                submissions, compliance with labeling requirements, adverse
-                event reporting, and ongoing regulatory intelligence to keep you
-                informed of regulatory changes affecting your products.
+                Portable RoHS analyzers, also known as X-ray fluorescence or XRF metal analyzers, are used for screening and verification of the restricted metals. With the advent of RoHS 3 and the four added phthalates, different testing is needed to ascertain levels of these compounds, which are extracted with a solvent. For more information, see RoHS Testing.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can you help with import licenses for pharmaceuticals and
-                medical devices?
+                Which companies are affected by the RoHS Directive?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we specialize in obtaining Import Licenses (Form 10) for
-                drugs and Registration Certificates for medical devices. Our
-                services include preparing all necessary documentation,
-                coordinating with Indian authorized agents, liaising with CDSCO,
-                and handling post-approval compliance requirements for imported
-                products.
+                Any business that sells or distributes applicable EEE products, sub-assemblies, components, or cables directly to EU countries, or sells to resellers, distributors or integrators that in turn sell products to EU countries, is impacted if they utilize any of the restricted materials. Since RoHS-like regulations have spread to a number of other countries, this just doen't apply to EU countries anymore.
+                RoHS also applies to the metal industry for any application of metal plating, anodizing, chromating or other finishes on EEE components, heatsinks, or connectors.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-8">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What experience does your consulting team have with CDSCO
-                regulations?
+                What happens if a product is not RoHS compliant?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Our consulting team consists of regulatory experts with 10+
-                years of experience in Indian pharmaceutical regulations. Team
-                members include former regulatory professionals, pharmacists,
-                and industry specialists who maintain close relationships with
-                regulatory authorities and stay updated on the latest regulatory
-                developments.
+                Suppose a product is not compliant with RoHS and placed on the European Union (EU) market. In that case, there can be legal and financial consequences for the manufacturer, importer, distributor, or any party responsible for the non-compliant product.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-9">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do recent regulatory changes affect pharmaceutical
-                registrations in India?
+                What is the cost of RoHS certification in India?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Recent regulatory changes include the New Drugs and Clinical
-                Trials Rules (2019), Medical Device Rules (2017), and ongoing
-                updates to the Drugs and Cosmetics Act. These changes have
-                streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our certifications keep
-                abreast of all changes and adjust strategies accordingly.
+                The cost of RoHS certification varies across India, and the price range is between Rs. 25,000 and Rs. 1,50,000 or more, and this varies because of the scope and testing required. Considerations include product types, complexity, number of parts, testing methodologies, laboratory fees, inspections, and documentation costs.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-10">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you offer support for manufacturing facility inspections?
+                How long does RoHS certification take?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide comprehensive support for CDSCO manufacturing
-                facility inspections, including pre-inspection readiness
-                assessments, gap analysis, preparation of required
-                documentation, mock inspections, training of personnel, and
-                assistance during actual inspections to ensure a successful
-                outcome.
+                The duration for RoHS certification is approximately 2 weeks, however, this highly depends on the complexity of the product. The certification is valid for 5 years from the date of issue.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -597,6 +586,15 @@ const ROHSContentLeft = () => {
         <VerificationSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
+        <ProcessSection />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        <TestingMethodsSection />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        <CostsBenefitsSection />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
         <ReviewSection />
 
         <AboutAuthor />
@@ -618,29 +616,25 @@ const OverviewSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        RoHS Testing for Hazardous Substances
+        RoHS Certification in India
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        RoHS Compliance Testing ensures electronic products are free from hazardous substances.
+        Essential compliance for electronic products in the global market
       </p>
 
       {/* Overview Content */}
-      <div className="mt-[16px] md:mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
-        RoHS Compliance Testing
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Rapid growth in the electronics and electrical equipment industry, coupled with an increasing concern for the environment and the impact on human health, can be seen on a global scale. Hazardous materials in electronic products can adversely affect ecosystems and human life at all stages of a product's lifecycle from the manufacturing of the product, to its disposal, and everything in between. This and other similar global concerns have prompted the introduction of regulatory frameworks across the world, with one of the most noteworthy being the introduction of the RoHS Certification.
       </div>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        RoHS Compliance Testing has become standard procedure for most manufacturers, sellers, distributors, and recyclers of electrical and electronic components or equipment sold or used in the European Union. The need for RoHS testing is a result of the Restriction of Hazardous Substances Directive or RoHS Directive, which became effective on July 1, 2006. The Directive was drawn up in the European Union to protect human health and the environment from hazardous substances by restricting the use of six hazardous chemicals in electrical and electronic products.
-      </div>
-
-      <div className="mt-[16px] md:mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
-        Different divisions of the ROHS are as below
+        In India, the surge in electronic consumption, the resultant increase in e-waste, and the regulation of the environment in India for the purpose of protecting it has made RoHS compliance essential. As a manufacturer, importer, distributor, or exporter of electrical and electronic equipment, gaining an understanding of RoHS certification is essential in order to be legally compliant and gain access to the European Union (EU) and other markets.
       </div>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        State-of-the-art Chemistry and Metallurgy Lab equipped with ultra-modern technology and sophisticated instruments like LC-ICPMS, GC-MSMS, spectroscopy, etc. can determine the level of the following first four substances restricted by RoHS in a component. State of art chemistry Lab and Metallurgy Lab equipped with ultra-modern technology and sophisticated instruments like LC-ICPMS, GC-MSMS, spectroscopy, etc can determine the level of the following first four substances restricted by RoHS in component material.
+        This guide examines RoHS Certification in India in an all inclusive manner, explaining its meaning and scope, benefits, process, methods, costs, duration, and outlining steps that can be taken to obtain RoHS certification in India in the most streamlined manner.
       </div>
     </section>
   );
@@ -652,24 +646,32 @@ const StandardizationSection = () => {
       {/* Standardization */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Standardization
+          RoHS Meaning
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Ensuring Standard Weight and Measurement
+        RoHS Certification Meaning and Full Form
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Weighing instruments must meet standards and be sealed for accuracy.
+        Understanding the Restriction of Hazardous Substances Directive
       </p>
 
       {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Every instrument that weighs & measures must be manufactured as per the specification and model laid down by the Government of India. Weight & measures used by the traders are verified & stamped by the Inspector of the Legal Metrology Department, after due verification, with a seal for ensuring the integrity of the stamp of Inspector and quarter in which it is verified.
+        RoHS stands for 'Restriction of Hazardous Substances'. In order to obtain the certification, it is necessary to comply with the RoHS Enforcement Regulation that requires the restriction of certain hazardous substances in electrical and electronic equipment (EEE).
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        As part of the European Union's effort to address issues of health and environmental dangers of pollution stemming from the disposal of electronic equipment, the Restriction of Hazardous Substances (RoHS) Directive 2002/95/EC, was introduced. This directive came into effect on July 1, 2006, and all products that fall under its regulations and are sold in the EU must comply with its guidelines.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Additionally, the directive has evolved through the years expanding its scope and imposition of additional restricted materials, including the RoHS 2 (2011/65/EU) and RoHS 3 (EU 2015/863) directives.
       </div>
     </section>
   );
@@ -681,24 +683,41 @@ const AuthoritySection = () => {
       {/* Authority */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Authority
+          Necessity
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Authority Responsible for Granting License
+        Why RoHS Certification in India is Necessary
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        The Controller of Legal Metrology grants licenses after inspection by the Inspector.
+        Environmental protection and legal compliance requirements
       </p>
 
       {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Controller of Legal Metrology Department is the competent authority to grant the license. Application for license should be submitted to the Inspector of Legal metrology who will inspect the firm and forward the same to Controller of Legal Metrology with recommendation for consideration for grant of license.
+        Rapid technological advancements, coupled with shorter life cycles of electronic products, are significantly increasing the volume of electronic waste in India. The Ministry of Environment, Forest and Climate Change (MoEFCC) enacted the E-Waste (Management) Rules which now also require RoHS compliance for electrical and electronic equipment to be sold, manufactured, or imported into India.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        RoHS and E-Waste Rules in India
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Enforcement of RoHS compliance in India is done through the:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● E-Waste (Management) Rules, 2016<br />
+        ● Amended E-Waste Rules (2018 & 2022)
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        These regulations require producers to guarantee that the restricted materials are in compliance with the prescribed limits and to keep technical documentation for compliance verification.
       </div>
     </section>
   );
@@ -710,24 +729,517 @@ const RegistrationSection = () => {
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Registration
+          Applicability
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Authority for Weights & Measures Registration
+        Who Needs to Obtain RoHS Certification?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Register with Legal Metrology for import/export.
+        Companies requiring RoHS compliance certification
       </p>
 
       {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Any person who intends to import/export any weight & measure needs to register himself with Department of Legal Metrology, Government of India as importer, packer pr manufacturer. If You are Looking for top Legal Metrology certifications in India then Sun Certifications India is your ultimate destination to resolve all your queries pertaining to legal metrology compliances. We are a team of dedicated professionals offering premium Legal Metrology consultancy services in India. As a team we are well-versed with the procedures laid down by the Government and help your business through the entire registration process and knowledge support wherever required. We assure you of complete satisfaction for Legal Metrology Consultancy in India because of the reason that we have extensive experience of working with Legal Metrology Department of Consumer Affairs and Legal Metrology Food & Supplies Department.
+        Any company that engages with the production, import, sale, or distribution of electrical and electronic equipment must ensure RoHS compliance, including:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        - Manufacturers of electronic products<br />
+        - Importers of electrical and electronic products<br />
+        - Exporters to the European Union<br />
+        - Component and OEM manufacturers<br />
+        - Distributors, traders, and resellers<br />
+        - Assemblers and contract manufacturers
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Even if you don't sell directly to the European Union, you may need RoHS compliant certification if your customers or integrators sell to RoHS regulated countries.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Products Covered Under RoHS
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        RoHS covers a variety of electrical and electronic products such as:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        - Consumer electronics<br />
+        - Telecommunications and IT equipment<br />
+        - Electrical equipment used in industry<br />
+        - Medical equipment<br />
+        - Control and monitoring instruments<br />
+        - Equipment used in lighting<br />
+        - Electrical and electronic appliances<br />
+        - Electrical tools and machines<br />
+        - Power adapters and supplies<br />
+        - PCBs<br />
+        - Connectors, cables, and other components
+      </div>
+    </section>
+  );
+};
+
+const CostsBenefitsSection = () => {
+  return (
+    <section id="costs" className="flex flex-col scroll-mt-20">
+      {/* Costs */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Costs & Benefits
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Cost, Timeline and Benefits of RoHS Certification
+      </h3>
+
+      {/* Description */}
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Understanding investment requirements and returns for RoHS compliance
+      </p>
+
+      {/* Content */}
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Cost of RoHS Certification in India
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The first question businesses have is pertaining to the cost of the RoHS certification. Considerations for RoHS Certification Cost in India:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Product types or their variants<br />
+        ● Product intricacy<br />
+        ● Amount of parts<br />
+        ● Required testing methodologies<br />
+        ● Fees for laboratory services<br />
+        ● Inspections and audits<br />
+        ● Costs for documentation
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The cost of RoHS certification varies across India, and the price range is between Rs. 25,000 and Rs. 1,50,000 or more, and this varies because of the scope and testing required.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Best practice is to work with a certification body that has enough experience in the industry, as they will reduce costs for you by avoiding documentation mistakes that lead to re-testing.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Timeline and Duration of RoHS Certifications
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>Duration:</strong> Approximately 2 weeks (however, this highly depends on the complexity of the product)
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>Duration of Validity:</strong> 5 years
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        What Are the RoHS Certification Benefits?
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>Legal & Market Benefits</strong>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        - Compulsory for EU exports<br />
+        - Stops product recalls and penalties<br />
+        - Prevents €1 million fines and 2% of annual company revenue fines
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>Business & Competition</strong>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        - Heightens the reputation of the brand<br />
+        - Increases the trust of customers<br />
+        - Opens the door to more global sales
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>Social Responsibility</strong>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        - Decreases manufacturing waste<br />
+        - Encourages responsible and sustainable manufacturing processes
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Conclusion
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Obtaining RoHS certificates is a requirement that businesses operating in the spheres of electrical and electronic equipment must meet. The advantages that RoHS compliance has, including market growth and environmental sustainability, far exceed the effort and expense for compliance.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        To obtain RoHS certification, proper documentation must be completed, and working with a certification body with experience is a good strategy for businesses to optimize compliance, minimize risk, and achieve sustainability.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        As the global market continues to experience tighter regulations, obtaining RoHS compliant certification is an investment in the future of your business.
+      </div>
+    </section>
+  );
+};
+
+const TestingMethodsSection = () => {
+  return (
+    <section id="testing" className="flex flex-col scroll-mt-20">
+      {/* Testing */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Testing
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Technologies and Methods for Testing Compliance with ROHS
+      </h3>
+
+      {/* Description */}
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Testing methods and technologies for RoHS compliance verification
+      </p>
+
+      {/* Content */}
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Testing is the foundation of compliance verification ROHS certification check.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Common Testing Methods
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>1. X-Ray Fluorescence (XRF)</strong>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Can be done without damaging product<br />
+        ● Quick screening technique<br />
+        ● Best suited for metals, connectors, pins, and terminals
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>2. Destructive Testing</strong>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Used for PCBs, relays, and switches.<br />
+        ● Components get destroyed during analysis.<br />
+        ● Results are very accurate.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>3. Eddy Current Testing</strong>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Used for coils, transformers, and inductors.<br />
+        ● Can be done with or without damaging the parts.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>4. Mechanical Sorting</strong>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Used for differentiating plastic and metal components.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>5. Metal Detection</strong>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Used for ensuring critical metals don't get into production lines.<br />
+        ● On-site screening makes use of Portable RoHS analyzers and XRF metal analyzers.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Technical File Requirements for RoHS Certification
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        To be compliant with RoHS, a complete technical file is necessary. Important technical documents are the following:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Description and specs of product<br />
+        ● Drawings of design and structure<br />
+        ● Risk assessment of materials, parts, and subassemblies<br />
+        ● Conformity declarations of the suppliers<br />
+        ● Records of manufacturing processes<br />
+        ● Reports of tests and evidence of compliance<br />
+        ● Standards and specifications that are applicable
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        These documents should be kept and made available to the authorities when they ask for them.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        RoHS Certification logo and the CE Mark
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The logo for RoHS certifies that the product has complied with the restriction of hazardous substances, and it can be used once the product has been certified.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        In addition to meeting the RoHS requirements, for products that are to be sold in the EU, the products must also be CE marked, which shows compliance with the safety, health, and environmental protection requirements of the EU.
+      </div>
+    </section>
+  );
+};
+
+const ProcessSection = () => {
+  return (
+    <section id="process" className="flex flex-col scroll-mt-20">
+      {/* Process */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Process
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Procedure to Obtain RoHS Certification in India
+      </h3>
+
+      {/* Description */}
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Step-by-step certification process for RoHS compliance
+      </p>
+
+      {/* Content */}
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        For businesses that wish to achieve compliance and expand their market, knowing the procedure to obtain RoHS certification in India is essential.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Step-by-Step Certification Process for RoHS
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>1. Product Finalization:</strong> Specify and finalize the product(s) that needs to be certified. This may include:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        i. Single products<br />
+        ii. Product lines<br />
+        iii. Multiple variants that share the same design and materials
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>2. Submission of Application:</strong> Fill out the application form and send it to a certifying body like Sun Certifications to begin the process along with a few basic details about the product and the company.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>3. Review of Documents:</strong> The initial documents are scanned to evaluate the readiness of the applicant for compliance. These include:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Bills of materials<br />
+        ● Supplier declarations<br />
+        ● Material safety data sheets<br />
+        ● Prior test reports (if any)
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>4. Testing and Verification for ROHS:</strong> Testing is done per the given guidelines to check the level of restricted substances.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>5. Product Audit and Evaluation:</strong> The audit of the manufacturing company and the processes is done to check for the evidence of continuing compliance.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>6. Final Submission of Documentation:</strong> All the extra explanation and corrective action documents are submitted.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>7. Review and Evaluation:</strong> The certifying body reviews the documentation with respect to the tests and audit results.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>8. Distribution of ROHS Certificate:</strong> The Document of Compliance and covering certificate is provided to the applicant after successful evaluations.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Technologies and Methods for Testing Compliance with ROHS
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Testing is the foundation of compliance verification ROHS certification check.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Common Testing Methods
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>1. X-Ray Fluorescence (XRF)</strong><br />
+        ● Can be done without damaging product<br />
+        ● Quick screening technique<br />
+        ● Best suited for metals, connectors, pins, and terminals
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>2. Destructive Testing</strong><br />
+        ● Used for PCBs, relays, and switches<br />
+        ● Components get destroyed during analysis<br />
+        ● Results are very accurate
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>3. Eddy Current Testing</strong><br />
+        ● Used for coils, transformers, and inductors<br />
+        ● Can be done with or without damaging the parts
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>4. Mechanical Sorting</strong><br />
+        ● Used for differentiating plastic and metal components
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>5. Metal Detection</strong><br />
+        ● Used for ensuring critical metals don't get into production lines<br />
+        ● On-site screening makes use of Portable RoHS analyzers and XRF metal analyzers
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Technical File Requirements for RoHS Certification
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        To be compliant with RoHS, a complete technical file is necessary. Important technical documents are the following:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Description and specs of product<br />
+        ● Drawings of design and structure<br />
+        ● Risk assessment of materials, parts, and subassemblies<br />
+        ● Conformity declarations of the suppliers<br />
+        ● Records of manufacturing processes<br />
+        ● Reports of tests and evidence of compliance<br />
+        ● Standards and specifications that are applicable
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        These documents should be kept and made available to the authorities when they ask for them.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        RoHS Certification logo and the CE Mark
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The logo for RoHS certifies that the product has complied with the restriction of hazardous substances, and it can be used once the product has been certified.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        In addition to meeting the RoHS requirements, for products that are to be sold in the EU, the products must also be CE marked, which shows compliance with the safety, health, and environmental protection requirements of the EU.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Cost of RoHS Certification in India
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The first question businesses have is pertaining to the cost of the RoHS certification. Considerations for RoHS Certification Cost in India:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Product types or their variants<br />
+        ● Product intricacy<br />
+        ● Amount of parts<br />
+        ● Required testing methodologies<br />
+        ● Fees for laboratory services<br />
+        ● Inspections and audits<br />
+        ● Costs for documentation
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The cost of RoHS certification varies across India, and the price range is between Rs. 25,000 and Rs. 1,50,000 or more, and this varies because of the scope and testing required.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Best practice is to work with a certification body that has enough experience in the industry, as they will reduce costs for you by avoiding documentation mistakes that lead to re-testing.
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Timeline and Duration of RoHS Certifications
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Duration: Approximately 2 weeks (however, this highly depends on the complexity of the product)
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Duration of Validity: 5 years
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        What Are the RoHS Certification Benefits?
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>Legal & Market Benefits</strong><br />
+        - Compulsory for EU exports<br />
+        - Stops product recalls and penalties<br />
+        - Prevents €1 million fines and 2% of annual company revenue fines
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>Business & Competition</strong><br />
+        - Heightens the reputation of the brand<br />
+        - Increases the trust of customers<br />
+        - Opens the door to more global sales
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>Social Responsibility</strong><br />
+        - Decreases manufacturing waste<br />
+        - Encourages responsible and sustainable manufacturing processes
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Conclusion
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Obtaining RoHS certificates is a requirement that businesses operating in the spheres of electrical and electronic equipment must meet. The advantages that RoHS compliance has, including market growth and environmental sustainability, far exceed the effort and expense for compliance.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        To obtain RoHS certification, proper documentation must be completed, and working with a certification body with experience is a good strategy for businesses to optimize compliance, minimize risk, and achieve sustainability.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        As the global market continues to experience tighter regulations, obtaining RoHS compliant certification is an investment in the future of your business.
       </div>
     </section>
   );
@@ -739,24 +1251,66 @@ const VerificationSection = () => {
       {/* Verification */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Verification
+          Restricted Substances
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Certificate Display Requirement
+        Substances Restricted Under RoHS Certification
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Display the verification certificate at the usage site.
+        Hazardous materials limited by RoHS compliance
       </p>
 
       {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        It is necessary to display every certificate of verification granted under the Act at a conspicuous place in the premises where such weights or measures are being, or intended or likely to be used in any transaction or for protection.
+        RoHS has set certain limits that regulate the use of hazardous substances. The substances that are presently restricted under the RoHS directive include:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Lead (Pb)<br />
+        ● Mercury (Hg)<br />
+        ● Cadmium (Cd)<br />
+        ● Hexavalent Chromium (Cr⁶⁺)<br />
+        ● Polybrominated Biphenyls (PBB)<br />
+        ● Polybrominated Diphenyl Ethers (PBDE)
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Environmental and Health Impact
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        These substances are known to:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Leach contaminants into landfill sites<br />
+        ● Pollute the groundwater with toxic contaminants<br />
+        ● Cause neurological disorders, respiratory disorders, and reproductive disorders<br />
+        ● Create an occupational hazard during the manufacturing and recycling process
+      </div>
+
+      <div className="mt-[24px] font-bold font-geist text-sm md:text-lg text-black tracking-wide text-left max-w-full leading-loose">
+        Products Exempted from RoHS Certification
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The following product categories are exempt from RoHS compliance:
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ● Military and national defense products<br />
+        ● Products that do not use electricity<br />
+        ● Equipment that does not use electricity to accomplish its primary purpose<br />
+        ● Sub-assemblies or components of exempt products<br />
+        ● Products that assist Micro, Small, and Medium Enterprises (MSMEs) under the MSME Development Act, 2006<br />
+        ● Batteries<br />
+        ● Equipment that contains radioactive waste
       </div>
     </section>
   );
