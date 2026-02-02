@@ -16,7 +16,7 @@ Disallow: /epr-certificate-for-battery-waste-management-bwm
 Disallow: /information-about-peso-certification-peso-license-india
 Disallow: /information-about-tec-certificate-mtcte
 Disallow: /information-about-wpc-certificate-eta-approval
-Disallow: /restriction-of-hazardous-substance-rohs-certificate
+
 Disallow: /bee-certification
 Disallow: /ce-certification
 Disallow: /emi-emc-certification
