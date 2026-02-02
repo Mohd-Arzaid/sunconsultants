@@ -25,6 +25,30 @@ const ROHS = () => {
     <>
       <main className="relative w-full">
         <Helmet>
+          <title>RoHS Certification (Restriction of Hazardous Substance)</title>
+          <meta name="description" content="RoHS certification (Restriction of Hazardous Substances) confirms that electronic and electrical products do not exceed maximum permitted levels of 10 restricted hazardous substances" />
+          <meta name="keywords" content="RoHS Certification, RoHS Certificate, RoHS Compliance, RoHS Compliant, RoHS Certification online, RoHS Certification cost, RoHS Certification fee, RoHS Certification requirement" />
+          
+          {/* Open Graph Tags */}
+          <meta property="og:title" content="RoHS Certification (Restriction of Hazardous Substance)" />
+          <meta property="og:description" content="RoHS certification (Restriction of Hazardous Substances) confirms that electronic and electrical products do not exceed maximum permitted levels of 10 restricted hazardous substances" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://bis-certifications.com/restriction-of-hazardous-substance-rohs-certificate" />
+         
+          <meta property="og:site_name" content="Sun Certifications India" />
+          
+          {/* Twitter Card Tags */}
+       
+          <meta name="twitter:title" content="RoHS Certification (Restriction of Hazardous Substance)" />
+          <meta name="twitter:description" content="RoHS certification (Restriction of Hazardous Substances) confirms that electronic and electrical products do not exceed maximum permitted levels of 10 restricted hazardous substances" />
+
+          
+          {/* Additional Meta Tags */}
+          <meta name="author" content="Sun Certifications India" />
+          <meta name="robots" content="index, follow" />
+          <meta name="language" content="English" />
+          <link rel="canonical" href="https://bis-certifications.com/restriction-of-hazardous-substance-rohs-certificate" />
+          
           {/* JSON-LD Breadcrumb structured data for SEO */}
           <script type="application/ld+json">
             {JSON.stringify({

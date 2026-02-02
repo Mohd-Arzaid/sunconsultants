@@ -654,6 +654,9 @@ const BISCertificateCompsitSyntheticFibreJapanese = lazy(() =>
 const BISCertificateCompsitSyntheticFibreKorean = lazy(() =>
   import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreKorean")
 );
+const BISCertificateCompsitSyntheticFibreSpanish = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreSpanish")
+);
 const BISCertificationManilaRope = lazy(() =>
   import("@/blogs/BISCertificationManilaRope")
 );
@@ -2292,6 +2295,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateCompsitSyntheticFibreKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cuerdas-de-fibra-sintetica-compuesta-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreSpanish />
           </Suspense>
         }
       />

@@ -30,12 +30,27 @@ export const EPRService = () => {
   return (
     <article className="epr-service-page relative">
       <Helmet>
-        <title>EPR Registration for Plastic Packaging Waste in India | Sun Certifications</title>
-        <meta name="description" content="Get EPR registration for plastic packaging waste management. Ensure CPCB compliance with proper recycling & disposal plans under Plastic Waste Management Rules, 2016." />
-        <meta name="keywords" content="EPR Registration, Plastic Packaging Waste, CPCB Compliance, Plastic Waste Management Rules, Extended Producer Responsibility" />
+        <title>EPR Registration for Plastic Waste Management</title>
+        <meta name="description" content="EPR (Extended Producers Responsibility) enforces plastic packaging waste producers to take responsibility for their plastic output until the end of its life." />
+        <meta name="keywords" content="EPR Registration, EPR Registration for Plastic Waste, Plastic Waste EPR, EPR for Plastic Waste, Plastic EPR, EPR Authorization, EPR Consultant" />
         <meta name="author" content="Sun Certifications India" />
         <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="EPR Registration for Plastic Waste Management" />
+        <meta property="og:description" content="EPR (Extended Producers Responsibility) enforces plastic packaging waste producers to take responsibility for their plastic output until the end of its life." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bis-certifications.com/epr-registration-for-plastic-packaging-waste" />
+        <meta property="og:site_name" content="Sun Certifications India" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:title" content="EPR Registration for Plastic Waste Management" />
+        <meta name="twitter:description" content="EPR (Extended Producers Responsibility) enforces plastic packaging waste producers to take responsibility for their plastic output until the end of its life." />
+        
+        {/* Additional Meta Tags */}
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bis-certifications.com/epr-registration-for-plastic-packaging-waste" />
 
         {/* JSON-LD Breadcrumb structured data for SEO */}
         <script type="application/ld+json">
@@ -52,7 +67,7 @@ export const EPRService = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "EPR Registration for Plastic Packaging Waste",
+                name: "EPR Registration for Plastic Waste Management",
                 item: "https://bis-certifications.com/epr-registration-for-plastic-packaging-waste",
               },
             ],

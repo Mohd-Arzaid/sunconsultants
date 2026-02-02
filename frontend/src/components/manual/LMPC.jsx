@@ -33,17 +33,14 @@ export const LMPC = () => {
   return (
     <div className="relative">
       <Helmet>
-        <title>
-          LMPC Certificate Guide | Legal Metrology Packaged Commodities | Sun
-          Certifications
-        </title>
+        <title>LMPC Certificate For Importers ,Manufacturers and Packers</title>
         <meta
           name="description"
-          content="Complete guide to LMPC certification for importers, manufacturers & packers. Get expert assistance with Legal Metrology Packaged Commodities registration in India."
+          content="LMPC Registration is a critical step for manufacturers, packers & importers to ensure compliance with Legal Metrology (Packaged Commodities) Rules, 2011."
         />
         <meta
           name="keywords"
-          content="LMPC certificate, Legal Metrology, packaged commodities, importers registration, manufacturers registration, packers registration"
+          content="LMPC Registration, LMPC Certificate, LMPC Certificate Online, LMPC Certificate for Import, LMPC Certificate Apply Online, LMPC Certificate Registration"
         />
         <meta name="author" content="Sun Certifications India" />
         <meta
@@ -55,27 +52,27 @@ export const LMPC = () => {
         {/* Open Graph Tags */}
         <meta
           property="og:title"
-          content="LMPC Certificate Guide | Legal Metrology Packaged Commodities"
+          content="LMPC Certificate For Importers ,Manufacturers and Packers"
         />
         <meta
           property="og:description"
-          content="Complete guide to LMPC certification for importers, manufacturers & packers. Get expert assistance with Legal Metrology Packaged Commodities registration."
+          content="LMPC Registration is a critical step for manufacturers, packers & importers to ensure compliance with Legal Metrology (Packaged Commodities) Rules, 2011."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
         <meta property="og:site_name" content="Sun Certifications India" />
-        <meta property="og:locale" content="en_IN" />
+    
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@CertificationsSun" />
         <meta
           name="twitter:title"
-          content="LMPC Certificate Guide | Legal Metrology Packaged Commodities"
+          content="LMPC Certificate For Importers ,Manufacturers and Packers"
         />
         <meta
           name="twitter:description"
-          content="Complete guide to LMPC certification for importers, manufacturers & packers."
+          content="LMPC Registration is a critical step for manufacturers, packers & importers to ensure compliance with Legal Metrology (Packaged Commodities) Rules, 2011."
         />
 
         {/* Canonical URL */}
@@ -98,6 +95,8 @@ export const LMPC = () => {
               "@type": "Country",
               name: "India",
             },
+            description:
+              "LMPC Registration is a critical step for manufacturers, packers & importers to ensure compliance with Legal Metrology (Packaged Commodities) Rules, 2011.",
             hasOfferCatalog: {
               "@type": "OfferCatalog",
               name: "LMPC Services",

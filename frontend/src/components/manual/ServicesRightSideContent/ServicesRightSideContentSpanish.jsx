@@ -71,6 +71,8 @@ const ServicesRightSideContentSpanish = () => {
     "/blogs/isi-products/llaves-de-cadena-para-tuberias-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Spanish Page Url
     "/blogs/isi-products/alicates-combinados-corte-lateral-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Spanish Page Url
+    "/blogs/isi-products/cuerdas-de-fibra-sintetica-compuesta-is-14928",
   ];
 
   // Check if current path should show these components
@@ -674,6 +676,9 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Combination Side Cutting Pliers Spanish
     if (path.includes("/blogs/isi-products/alicates-combinados-corte-lateral-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (Spanish)";
+    // BIS Certificate for Composite Synthetic Fibre Spanish
+    if (path.includes("/blogs/isi-products/cuerdas-de-fibra-sintetica-compuesta-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre (Spanish)";
     return "";
   };
 
