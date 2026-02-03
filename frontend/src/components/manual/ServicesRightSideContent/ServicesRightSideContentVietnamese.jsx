@@ -69,6 +69,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/blogs/isi-products/co-le-ong-xich-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Vietnamese Page Url
     "/blogs/isi-products/kiem-cat-ben-ket-hop-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Vietnamese Page Url
+    "/vi/blogs/isi-products/day-soi-tong-hop-phoi-hop-is-14928",
   ];
 
   // Check if current path should show these components
@@ -670,6 +672,9 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     // BIS Certificate for Combination Side Cutting Pliers Vietnamese
     if (path.includes("/blogs/isi-products/kiem-cat-ben-ket-hop-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (Vietnamese)";
+    // BIS Certificate for Composite Synthetic Fibre Vietnamese
+    if (path.includes("/vi/blogs/isi-products/day-soi-tong-hop-phoi-hop-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre (Vietnamese)";
     return "";
   };
 

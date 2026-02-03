@@ -183,6 +183,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/battery-operated-air-purifier-is-302",
     "/blogs/isi-products/foot-warmer-&-heating-mats-is-302",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
+    "/blogs/isi-products/battery-operated-massage-appliances",
   ];
 
   // Check if current path should show these components
@@ -1096,6 +1097,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Foot Warmer & Heating Mats - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-tootbrush-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush - English Page";
+    if (path.includes("/blogs/isi-products/battery-operated-massage-appliances"))
+      return "BIS Certificate for Massage Appliances - English Page";
   };
 
   const [formData, setFormData] = useState({

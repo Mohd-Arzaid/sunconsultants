@@ -147,6 +147,15 @@ const blogs = [
     slug: "bis-certification-in-usa",
   },
   {
+    id: 14,
+    color: "#F97316", // Orange
+    title: "BIS Certification for Massage Appliances – IS 302 (Part 1):2024",
+    description:
+      "Complete guide to BIS certification for battery operated massage appliances under IS 302 (Part 1):2024. Learn about safety requirements, testing, documentation, costs, and compliance for massage devices in India.",
+    slug: "blogs/isi-products/battery-operated-massage-appliances",
+    date: "03 February 2026",
+  },
+  {
     id: 15,
     color: "#eb15ce",
     title: "BIS Certification in Vietnam",

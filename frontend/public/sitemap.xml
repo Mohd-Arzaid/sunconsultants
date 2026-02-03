@@ -4459,6 +4459,47 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Electric Fence Energizers - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/ar/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
   <!-- BIS Certificate for Solar Water Heating Systems - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/solar-water-heating-systems-is-16542</loc>
@@ -4571,6 +4612,13 @@
   <!-- BIS Certificate for Composite Synthetic Fibre Ropes - Thai -->
   <url>
     <loc>https://bis-certifications.com/th/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Composite Synthetic Fibre Ropes - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/vi/blogs/isi-products/day-soi-tong-hop-phoi-hop-is-14928</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -5179,6 +5227,7 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+
   <!-- BIS Certificate for Battery Operated Toothbrush - Arabic -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/firsha-asnan-bi-batariya-is-302</loc>
@@ -5264,6 +5313,7 @@
     <lastmod>2025-01-28</lastmod>
   </url>
 
+  
 
 
 
@@ -5303,6 +5353,39 @@
 
 
 
+
+        <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- BIS Certificate for Massage Appliances - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/battery-operated-massage-appliances</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+
+
+
+
+  
         <!-- {/* ==================================================================== */}
       {/* ==================================================================== */}
       {/* ==================================================================== */}
@@ -5437,6 +5520,16 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+
+
+
+
+
+
+
+
+
+
   
   <!-- Multilingual Blog Pages -->
   <url>

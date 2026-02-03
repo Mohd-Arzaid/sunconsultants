@@ -604,7 +604,10 @@ const BISCertificationSolarFlatPlate = lazy(() =>
   import("@/blogs/BISCertificationSolarFlatPlate")
 );
 const BISCertificateElectricFenceEnergizers = lazy(() =>
-  import("@/blogs/BISCertificationElectricFenceEnergizers")
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificationElectricFenceEnergizers")
+);
+const BISCertificateElectricFenceEnergizersArabic = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersArabic")
 );
 const BISCertificateForStorageWaterTank = lazy(() =>
   import("@/blogs/BISCertificationForStorageWaterTank")
@@ -659,6 +662,9 @@ const BISCertificateCompsitSyntheticFibreSpanish = lazy(() =>
 );
 const BISCertificateCompsitSyntheticFibreThai = lazy(() =>
   import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreThai")
+);
+const BISCertificateCompsitSyntheticFibreVietnamese = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreVietnamese")
 );
 const BISCertificationManilaRope = lazy(() =>
   import("@/blogs/BISCertificationManilaRope")
@@ -800,6 +806,9 @@ const BISCertificateForBatteryOperatedToothbrush = lazy(() =>
 );
 const BISCertificateForBatteryOperatedToothbrushArabic = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushArabic")
+);
+const BISCertificationforMassageAppliances = lazy(() =>
+  import("@/blogs/BISCertificationforMassageAppliances")
 );
 const BISCertificateForBatteryOperatedToothbrushChinese = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushChinese")
@@ -2222,6 +2231,14 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/ar/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersArabic />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/solar-water-heating-systems-is-16542"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2314,6 +2331,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateCompsitSyntheticFibreThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/vi/blogs/isi-products/day-soi-tong-hop-phoi-hop-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreVietnamese />
           </Suspense>
         }
       />
@@ -2738,6 +2763,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBatteryOperatedToothbrush />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/battery-operated-massage-appliances"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforMassageAppliances />
           </Suspense>
         }
       />
