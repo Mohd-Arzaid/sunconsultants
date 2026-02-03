@@ -105,6 +105,8 @@ const ServicesRightSideContentThai = () => {
     "/blogs/isi-products/prae-thoo-so-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Thai Page Url
     "/blogs/isi-products/khim-tat-khang-baep-som-is-3650",
+    // BIS Certificate for Composite Synthetic Fibre Thai Page Url
+    "/th/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928",
   ];
 
   // Check if current path should show these components
@@ -766,6 +768,9 @@ const ContactFormServicesRightSideContentThai = () => {
     // BIS Certificate for Combination Side Cutting Pliers Thai
     if (path.includes("/blogs/isi-products/khim-tat-khang-baep-som-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (Thai)";
+    // BIS Certificate for Composite Synthetic Fibre Thai
+    if (path.includes("/th/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928"))
+      return "BIS Certificate for Composite Synthetic Fibre (Thai)";
     return "";
   };
 

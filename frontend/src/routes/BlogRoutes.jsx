@@ -657,6 +657,9 @@ const BISCertificateCompsitSyntheticFibreKorean = lazy(() =>
 const BISCertificateCompsitSyntheticFibreSpanish = lazy(() =>
   import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreSpanish")
 );
+const BISCertificateCompsitSyntheticFibreThai = lazy(() =>
+  import("@/blogs/BISCertificateCompsitSyntheticFibre/BISCertificateCompsitSyntheticFibreThai")
+);
 const BISCertificationManilaRope = lazy(() =>
   import("@/blogs/BISCertificationManilaRope")
 );
@@ -2303,6 +2306,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateCompsitSyntheticFibreSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/th/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateCompsitSyntheticFibreThai />
           </Suspense>
         }
       />
