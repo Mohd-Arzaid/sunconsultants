@@ -422,7 +422,7 @@ const MetaTags = () => {
   const title =
     "Organization Chart of Sun Certifications India | BIS Certification Experts";
   const description =
-    "Sun Certifications India has a very structure and proffesional approach with specialized department for various services like BIS, CDSCO, LMPC, EPR etc.";
+    "Sun Certifications India has a very structure and professional approach with specialized department for various services like BIS, CDSCO, LMPC, EPR etc.";
   const ogTitle = "Our Organization Structure | Sun Certifications India";
   const twitterTitle = "Organizational Structure | Sun Certifications India";
   const ogDescription =

@@ -89,7 +89,7 @@ const ServicesRightSideContentArabic = () => {
     // BIS Certificate for Battery Operated Toothbrush Arabic Page Url
     "/blogs/isi-products/firsha-asnan-bi-batariya-is-302",
     // BIS Certificate for Electric Fence Energizers Arabic Page Url
-    "/ar/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76",
+    "/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76",
     // BIS Certificate for Chain Pipe Wrenches Arabic Page Url
     "/blogs/isi-products/mafatih-anabib-silsila-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Arabic Page Url
@@ -756,7 +756,7 @@ const ContactFormServicesRightSideContentArabic = () => {
     if (path.includes("/blogs/isi-products/firsha-asnan-bi-batariya-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush (Arabic)";
     // BIS Certificate for Electric Fence Energizers Arabic
-    if (path.includes("/ar/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76"))
+    if (path.includes("/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76"))
       return "BIS Certificate for Electric Fence Energizers (Arabic)";
     // BIS Certificate for Chain Pipe Wrenches Arabic
     if (path.includes("/blogs/isi-products/mafatih-anabib-silsila-is-4123"))

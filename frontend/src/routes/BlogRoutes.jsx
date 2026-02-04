@@ -609,6 +609,9 @@ const BISCertificateElectricFenceEnergizers = lazy(() =>
 const BISCertificateElectricFenceEnergizersArabic = lazy(() =>
   import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersArabic")
 );
+const BISCertificateElectricFenceEnergizersChinese = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersChinese")
+);
 const BISCertificateForStorageWaterTank = lazy(() =>
   import("@/blogs/BISCertificationForStorageWaterTank")
 );
@@ -2231,10 +2234,18 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/ar/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76"
+        path="/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateElectricFenceEnergizersArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/dian-li-wei-lan-ji-li-qi-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersChinese />
           </Suspense>
         }
       />

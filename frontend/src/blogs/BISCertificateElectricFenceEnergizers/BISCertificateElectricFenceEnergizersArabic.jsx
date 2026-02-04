@@ -56,7 +56,7 @@ const MetaTags = () => {
   const metaKeywords =
     "شهادة BIS لمولدات السياج الكهربائي، ترخيص BIS لمولدات السياج الكهربائي، IS 302-2-76:1999، شهادة BIS لمولدات السياج الكهربائي";
   const websiteUrl =
-    "https://bis-certifications.com/ar/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76";
+    "https://bis-certifications.com/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

@@ -48,6 +48,8 @@ const ServicesRightSideContentChinese = () => {
     "/blogs/isi-products/zhuozi-he-bangongzhuo-is-17633",
     "/blogs/isi-products/dianchi-kongqi-jinghuaqi-is-302",
     "/blogs/isi-products/dianchi-yashua-is-302",
+    // BIS Certificate for Electric Fence Energizers Chinese Page Url
+    "/blogs/isi-products/dian-li-wei-lan-ji-li-qi-is-302-2-76",
     // BIS Certificate for Chain Pipe Wrenches Chinese Page Url
     "/blogs/isi-products/lian-guan-ban-shou-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Chinese Page Url
@@ -751,6 +753,9 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certificate for Battery Operated Toothbrush Chinese
     if (path.includes("/blogs/isi-products/dianchi-yashua-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush (Chinese)";
+    // BIS Certificate for Electric Fence Energizers Chinese
+    if (path.includes("/blogs/isi-products/dian-li-wei-lan-ji-li-qi-is-302-2-76"))
+      return "BIS Certificate for Electric Fence Energizers (Chinese)";
     // BIS Certificate for Chain Pipe Wrenches Chinese
     if (path.includes("/blogs/isi-products/lian-guan-ban-shou-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (Chinese)";
