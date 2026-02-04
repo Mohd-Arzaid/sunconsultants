@@ -70,6 +70,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/batteriebetriebene-zahnbuerste-is-302",
     // BIS Certificate for Chain Pipe Wrenches German Page Url
     "/blogs/isi-products/kettenrohrschluessel-is-4123",
+    // BIS Certificate for Electric Fence Energizers German Page Url
+    "/blogs/isi-products/elektrische-zaun-energisatoren-is-302-2-76",
     // BIS Certificate for Combination Side Cutting Pliers German Page Url
     "/blogs/isi-products/kombinationszangen-seitenschneide-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Ropes German Page Url
@@ -660,6 +662,9 @@ const ContactFormServicesRightSideContentGerman = () => {
     // BIS Certificate for Chain Pipe Wrenches German
     if (path.includes("/blogs/isi-products/kettenrohrschluessel-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (German)";
+    // BIS Certificate for Electric Fence Energizers German
+    if (path.includes("/blogs/isi-products/elektrische-zaun-energisatoren-is-302-2-76"))
+      return "BIS Certificate for Electric Fence Energizers (German)";
     // BIS Certificate for Combination Side Cutting Pliers German
     if (path.includes("/blogs/isi-products/kombinationszangen-seitenschneide-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (German)";

@@ -105,6 +105,8 @@ const ServicesRightSideContentDutch = () => {
     "/blogs/isi-products/batterij-aangedreven-tandenborstel-is-302",
     // BIS Certificate for Chain Pipe Wrenches Dutch Page Url
     "/blogs/isi-products/ketting-pijpsleutels-is-4123",
+    // BIS Certificate for Electric Fence Energizers Dutch Page Url
+    "/blogs/isi-products/elektrische-schrikdraadapparaten-is-302-2-76",
     // BIS Certificate for Combination Side Cutting Pliers Dutch Page Url
     "/blogs/isi-products/combinatie-zijsnij-tangen-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Ropes Dutch Page Url
@@ -764,6 +766,9 @@ const ContactFormServicesRightSideContentDutch = () => {
     // BIS Certificate for Chain Pipe Wrenches Dutch
     if (path.includes("/blogs/isi-products/ketting-pijpsleutels-is-4123"))
       return "BIS Certificate for Chain Pipe Wrenches (Dutch)";
+    // BIS Certificate for Electric Fence Energizers Dutch
+    if (path.includes("/blogs/isi-products/elektrische-schrikdraadapparaten-is-302-2-76"))
+      return "BIS Certificate for Electric Fence Energizers (Dutch)";
     // BIS Certificate for Combination Side Cutting Pliers Dutch
     if (path.includes("/blogs/isi-products/combinatie-zijsnij-tangen-is-3650"))
       return "BIS Certificate for Combination Side Cutting Pliers (Dutch)";

@@ -2234,6 +2234,30 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/elektrische-schrikdraadapparaten-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/energiseurs-de-cloture-electrique-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/dian-li-wei-lan-ji-li-qi-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersChinese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2246,6 +2270,46 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateElectricFenceEnergizersChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/elektrische-zaun-energisatoren-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersGerman />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/energizer-pagar-listrik-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/energizzatori-recinzione-elettrica-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/denki-fensu-enajiza-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/jeongi-ul-tali-eneojaijeo-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersKorean />
           </Suspense>
         }
       />

@@ -107,6 +107,8 @@ const ServicesRightSideContentJapanese = () => {
     "/bis-sukiimu-x-ninshoo/orimonoiki-ruumu",
     // BIS Certificate for Composite Synthetic Fibre Ropes Japanese Page Url
     "/blogs/isi-products/fukugo-gosei-sen-i-ro-pu-is-14928",
+    // BIS Certificate for Electric Fence Energizers Japanese Page Url
+    "/blogs/isi-products/denki-fensu-enajiza-is-302-2-76",
   ];
 
   // Check if current path should show these components
@@ -792,6 +794,9 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS Certificate for Composite Synthetic Fibre Ropes Japanese Page Url
     if (path.includes("/blogs/isi-products/fukugo-gosei-sen-i-ro-pu-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre Ropes (Japanese)";
+    // BIS Certificate for Electric Fence Energizers Japanese
+    if (path.includes("/blogs/isi-products/denki-fensu-enajiza-is-302-2-76"))
+      return "BIS Certificate for Electric Fence Energizers (Japanese)";
     return "";
   };
 
