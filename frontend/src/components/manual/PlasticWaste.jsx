@@ -394,141 +394,144 @@ const ServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What services do you offer for CDSCO compliance?
+                What is Extended Producer Responsibility (EPR)?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                We offer comprehensive CDSCO regulatory compliance services
-                including product registration, license applications, regulatory
-                strategy, documentation preparation, and post-approval
-                compliance monitoring for pharmaceuticals, medical devices, and
-                cosmetics in India.
+                Extended Producer Responsibility (EPR) is a type of policy in which producers take on responsibility of managing environmental impact of their products, including disposal and management of product after the consumer is done using it.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does the CDSCO approval process typically take?
+                Which entities are required to register on CPCB EPR Portal?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO approval timelines vary based on product category and
-                application type. Typically, drug approvals take 6-12 months,
-                medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our Certifications work to expedite
-                these timelines through proper documentation and regulatory
-                strategy.
+                The following entities must register on the CPCB EPR portal and obtain EPR certificates:
+                <br /><br />
+                <strong>1. Producers</strong><br />
+                <strong>2. Importers</strong><br />
+                <strong>3. Brand Owners</strong><br />
+                <strong>4. Plastic Waste Processors</strong> involved in:
+                <ul className="ml-4 mt-2 space-y-1">
+                  <li>• Recycling</li>
+                  <li>• Waste to Energy</li>
+                  <li>• Waste to Oil</li>
+                  <li>• Industrial Composting</li>
+                </ul>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are required for CDSCO registration?
+                Who is required to register with CPCB / SPCB / PCC?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Required documents include product dossiers, manufacturing
-                information, stability data, clinical trial results (if
-                applicable), Good Manufacturing Practice (GMP) certificates,
-                Certificate of Pharmaceutical Product (CoPP), and various
-                application forms specific to your product category. Our team
-                assists in preparing all necessary documentation.
+                <strong>• PIBOs operating in one or two States/UTs</strong> are required to register with State Pollution Control Board (SPCB) or Pollution Control Committee (PCC).
+                <br /><br />
+                <strong>• PIBOs in more than two States/UTs</strong> are required to register with the Central Pollution Control Board (CPCB).
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you assist with clinical trial approvals in India?
+                What are documents required for KYC for registration of PIBOs?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide end-to-end support for clinical trial
-                applications in India, including protocol development, ethics
-                committee submissions, CDSCO applications, site selection
-                assistance, and regulatory compliance throughout the trial
-                process. We also help navigate the New Drugs and Clinical Trials
-                Rules, 2019.
+                The following documentation is necessary for KYC while registering:
+                <br /><br />
+                <strong>1. PDF versions of company's PAN, CIN, and GST certificates</strong>
+                <ul className="ml-4 mt-2 space-y-1">
+                  <li>• GST invoices covering all States/UTs that PIBO service are to be added.</li>
+                </ul>
+                <br />
+                <strong>2. A PDF version of Authorized Person's PAN and Aadhaar.</strong>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the costs associated with CDSCO registrations?
+                Which are plastic packaging categories covered under EPR?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, Certifications fees, and
-                potential inspection costs. We provide transparent quotations
-                based on your specific product and requirements, with options
-                for different service levels to fit various budgets.
+                The following plastic packaging categories fall under EPR:
+                <br /><br />
+                <strong>1. Category I:</strong> Rigid plastic packaging.
+                <br /><br />
+                <strong>2. Category II:</strong> Flexible plastic packaging, including:
+                <ul className="ml-4 mt-2 space-y-1">
+                  <li>• Individual or composite multi-layer plastics (of varying plastic types)</li>
+                  <li>• Plastic sheets, covers, carry bags, sachets, and pouches</li>
+                </ul>
+                <br />
+                <strong>3. Category III:</strong> Multilayer plastic packaging that contains:
+                <ul className="ml-4 mt-2 space-y-1">
+                  <li>• At least one layer of plastic, and</li>
+                  <li>• At least one layer of material that is not plastic</li>
+                </ul>
+                <br />
+                <strong>4. Category IV:</strong> Compostable plastic packaging that includes:
+                <ul className="ml-4 mt-2 space-y-1">
+                  <li>• Compostable plastic sheets, and carry bags.</li>
+                </ul>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do you handle post-approval regulatory requirements?
+                What is Pre-consumer Plastic Packaging Waste?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our post-approval services include pharmacovigilance support,
-                periodic safety update reports, variation applications, renewal
-                submissions, compliance with labeling requirements, adverse
-                event reporting, and ongoing regulatory intelligence to keep you
-                informed of regulatory changes affecting your products.
+                Pre-consumer plastic packaging waste is defined as plastic waste that occurs before reaching the end-use consumer. This includes:
+                <ul className="ml-4 mt-2 space-y-1">
+                  <li>• Rejected or discarded plastic packaging materials made during manufacturing.</li>
+                  <li>• Lost or discarded packaging materials created during the packaging of products.</li>
+                </ul>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can you help with import licenses for pharmaceuticals and
-                medical devices?
+                What is Meaning of Post-consumer Plastic Packaging Waste?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we specialize in obtaining Import Licenses (Form 10) for
-                drugs and Registration Certificates for medical devices. Our
-                services include preparing all necessary documentation,
-                coordinating with Indian authorized agents, liaising with CDSCO,
-                and handling post-approval compliance requirements for imported
-                products.
+                Post-consumer plastic packaging waste is waste created after a customer has used packaging for its intended use and does not have any further need for the packaging.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-8">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What experience does your consulting team have with CDSCO
-                regulations?
+                What are EPR Targets for Producers and Importers?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our consulting team consists of regulatory experts with 10+
-                years of experience in Indian pharmaceutical regulations. Team
-                members include former regulatory professionals, pharmacists,
-                and industry specialists who maintain close relationships with
-                regulatory authorities and stay updated on the latest regulatory
-                developments.
+                The EPR target relates to the volume of plastic packaging placed onto the market by PIBO. Targets and obligations are detailed in Section 7 of the EPR Guidelines.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-9">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do recent regulatory changes affect pharmaceutical
-                registrations in India?
+                What if a PIBO has an in-house recycling unit?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Recent regulatory changes include the New Drugs and Clinical
-                Trials Rules (2019), Medical Device Rules (2017), and ongoing
-                updates to the Drugs and Cosmetics Act. These changes have
-                streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our certifications keep
-                abreast of all changes and adjust strategies accordingly.
+                If a PIBO has its own recycling unit:
+                <ul className="ml-4 mt-2 space-y-1">
+                  <li>• The entity will have to register separately as a PIBO and as a Recycler</li>
+                  <li>• Both registrations will require relevant supporting documents</li>
+                  <li>• EPR credits are only able to be given to recyclers</li>
+                  <li>• There has to be a record of credit transfer from recycler to PIBO</li>
+                </ul>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-10">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you offer support for manufacturing facility inspections?
+                What documents are needed if an entity falls under multiple categories?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide comprehensive support for CDSCO manufacturing
-                facility inspections, including pre-inspection readiness
-                assessments, gap analysis, preparation of required
-                documentation, mock inspections, training of personnel, and
-                assistance during actual inspections to ensure a successful
-                outcome.
+                If an entity falls under multiple sub-categories:
+                <ul className="ml-4 mt-2 space-y-1">
+                  <li>• It will be necessary to have a separate email ID for each category during registration</li>
+                  <li>• The same Company KYC documents (PAN, GST, CIN) will apply to all categories</li>
+                </ul>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -628,23 +631,25 @@ const OverviewSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Plastic Waste Management & Recycling
+        EPR Registration for Plastic Packaging Waste in India
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Promotes eco-friendly disposal, reduces pollution & boosts recycling.
+        Extended Producer Responsibility for sustainable plastic waste management.
       </p>
 
       {/* Nomination Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The initiative aims to establish environment-friendly plastic waste
-        disposal solutions. In the process it seeks to ban the use of plastic
-        bags and plastic products, and reduce plastic littering across the
-        state. It has been observed that disposal of plastic waste is a serious
-        concern due to improper collection and segregation system. Only 60% of
-        the plastic produced is recycled, balance 9400 Tones of plastic is left
-        unattended in environment causing land, air and water pollution
+        <p className="mb-4">
+          <strong>What is EPR Registration?</strong>
+        </p>
+        <p className="mb-4">
+          EPR stands for Extended Producers Responsibility. Extended Producer Responsibility (EPR) is a significant environmental policy introduced under the Plastic Waste Management Rules, 2016, by the Ministry of Environment, Forest and Climate Change (MoEFCC). It aims to make manufacturers, importers, and brand owners accountable for the management of plastic waste, especially from packaging materials.
+        </p>
+        <p>
+          The entities who introduce plastic waste in India have to apply for EPR registration. These entities have to register themselves with the Central Pollution Control Board (CPCB) and provide accurate information about the generation and consumption of plastic packaging. Additionally the registered entities will be given targets for recycling of plastic packaging introduced and also ensuring its safe disposal.
+        </p>
       </div>
     </section>
   );
@@ -663,24 +668,22 @@ const EligibilitySection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Plastic License Eligibility
+        Why is EPR Crucial for India?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Required for manufacturers; foreign applicants need an Indian
-        representative.
+        Addressing plastic pollution through producer accountability.
       </p>
 
       {/* Nomination Content */}
-      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        All manufacturers, either of Indian or foreign origin can apply for the
-        Plastic licence.In case of foreign manufacturer license will be granted
-        to the manufacturer and the Indian counterpart of the manufacturer will
-        act as it's Indian Representative. The Indian representative of the
-        manufacturer must have a valid state drugs license under Form 20-B/21-B
-        or Form 42 ( applied under Form 41 ) as per the latest guidelines
-        released by CDSCO.
+      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <p className="mb-4">
+          The mass production of plastic that began six decades ago has created a plastic generation of around 8.3 billion metric tons and most of it ends up as plastic waste. Around 79% of the plastic waste that is generated settles in the land fills of our planet which eventually ends up in the ocean. If this situation is not handled responsibly then by 2050 there will be more plastic in the ocean than fishes. Plastic packaging is a significant chunk of the plastic waste generated because it is often designed for single use and then discarded. Once plastic packaging is discarded it takes around 400 years to degrade. Most of the plastic packaging generated decades ago still exists on our planet and has now become a global priority to drastically minimize the use of it.
+        </p>
+        <p>
+          Considering the facts discussed, it is very important for each country to make laws towards limiting the use of plastic, recycling the plastic waste and ensuring its safe disposal. Therefore the government introduced Extended Producers Responsibility (EPR) as a part of Plastic Waste Management Rules, 2016.
+        </p>
       </div>
     </section>
   );
@@ -699,38 +702,32 @@ const ComplianceSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Businesses That Need Plastic Waste Certification
+        Who Needs EPR Registration?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Required for recyclers, producers & raw material manufacturers.
+        Required for Producers, Importers, Brand Owners, and Plastic Waste Processors.
       </p>
 
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsList
-            points={[
-              "Units engaged in processing or recycling of plastic waste",
-              "Producers or brand owners of plastic products",
-              "Manufacturers of plastic raw materials",
-            ]}
-            heading="Consumer Electrical & Electronics"
-          />
-        </div>
-
-        {/* Image */}
-        <div className="w-full md:w-auto">
-          <img
-            src={PWMRimg}
-            alt="Medical laboratory equipment"
-            title="Medical laboratory equipment"
-            className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
-            ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
-            hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
-            "
-          />
+      {/* Nomination Content */}
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <p className="mb-4">
+          As per the EPR guidelines, it is necessary for all Producers, Importers and Brand Owners (PIBOs) to get EPR Registration. Additionally Plastic Waste Processors (PWPs) are also required to get EPR registration.
+        </p>
+        <div className="space-y-4">
+          <div>
+            <strong>Producers (P):</strong> As defined in the EPR guidelines, a producer is an entity that is involved in manufacturing of plastic packaging only.
+          </div>
+          <div>
+            <strong>Importers (I):</strong> Importer is an entity that imports either plastic packaging or any product that is wrapped in plastic packaging.
+          </div>
+          <div>
+            <strong>Brand Owners (BO):</strong> Brand Owner is an entity who sells any commodity wrapped in plastic packaging under any registered brand label or trademark.
+          </div>
+          <div>
+            <strong>Plastic Waste Processors (PWPs):</strong> Plastic waste processor is an entity that recycles plastic waste and is engaged in safe disposal of plastic waste.
+          </div>
         </div>
       </div>
     </section>
@@ -750,38 +747,147 @@ const ProcessSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Plastic Waste Management Rules 2016
+        Types of Plastic Packaging Under EPR
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Regulates plastic collection, EPR, reuse, and awareness to reduce
-        environmental impact.
+        CPCB classifies plastic packaging into four categories for EPR compliance.
       </p>
 
       {/* Nomination Content */}
-      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        The Plastic Waste Management Rules, 2016 make an arrangement to reduce
-        the negative impact on the environment-related to plastic waste, if we
-        talk about these days scenario plastic is a vital material and almost
-        impossible to ban. Under the PWM rules, authorities such Urban Local
-        Bodies should provide separate collection, storage, and processing of
-        plastic waste in respected areas.
+      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <div className="overflow-x-auto">
+          <table className="min-w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left">Category</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Type</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Category I</td>
+                <td className="border border-gray-300 px-4 py-2">Rigid Plastic Packaging</td>
+                <td className="border border-gray-300 px-4 py-2">Used for food, beverages, pharmaceuticals, cosmetics, etc.</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Category II</td>
+                <td className="border border-gray-300 px-4 py-2">Flexible Plastic Packaging</td>
+                <td className="border border-gray-300 px-4 py-2">Includes carry bags, wraps, pouches; made of high-grade polymers</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Category III</td>
+                <td className="border border-gray-300 px-4 py-2">Multi-layered Plastic (MLP)</td>
+                <td className="border border-gray-300 px-4 py-2">Combines multiple materials like PET, PE, foil, paper</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Category IV</td>
+                <td className="border border-gray-300 px-4 py-2">Plastic Sheets & Films</td>
+                <td className="border border-gray-300 px-4 py-2">Used in bags, sashes, and customized plastic films</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      {/* Important Points And Image */}
-      <div className="flex mt-[24px] gap-10">
-        {/* Points */}
-        <PointsListTwo
-          points={[
-            "Plastic waste has spread to rural areas, expanding its applicability beyond municipal regions.",
-            "Establishes producer and generator responsibility for plastic waste under Extended Producer Responsibility (EPR).",
-            "Promotes plastic waste usage in road construction, energy recovery, and waste-to-oil as per Indian Road Congress guidelines.",
-            "Monitors and facilitates the use of plastic carry bags above 50 microns.",
-            "Encourages awareness in civil society to reduce plastic usage.",
-          ]}
-          heading="Key Provisions of Plastic Waste Management Rules "
-        />
+      {/* EPR Targets Section */}
+      <div className="mt-[24px]">
+        {/* Main Heading */}
+        <div className="flex w-full items-center gap-3">
+          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+            What Are EPR Targets?
+          </span>
+          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        </div>
+
+        {/* Introduction */}
+        <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          <p>
+            EPR targets are specific goals set by CPCB to ensure that producers, importers, and Brand Owners who manufacture, import or sell plastic packaging or products wrapped in plastic packaging take responsibility for recycling or its eco-friendly disposal. It basically gives an exact amount of plastic that an entity should recycle or dispose of in a particular financial year.
+          </p>
+        </div>
+
+        {/* EPR Target for Producer and Importers */}
+        <div className="mt-[24px]">
+          <h3 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-4">
+            EPR Target for Producer and Importers
+          </h3>
+          <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-6">
+            <p>
+              A producer is someone who manufactures plastic packaging and an importer is someone who imports plastic packaging or products that are wrapped in plastic packaging. EPR target is majorly dependent on Gross plastic waste generated by a producer or an importer.
+            </p>
+          </div>
+          
+          {/* Formula Box */}
+          <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 mb-6">
+            <p className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose font-mono mb-2">
+              <strong>Gross Plastic Waste Generated =</strong>
+            </p>
+            <div className="ml-4 space-y-1 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+              <p>(Avg. weight of plastic packaging manufactured/imported in the last 2 FYs) +</p>
+              <p>(Avg. pre-consumer plastic waste generated) -</p>
+              <p>(Plastic packaging sold to other EPR-registered entities)</p>
+            </div>
+          </div>
+
+          {/* Financial Year Targets Table */}
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full border-collapse border border-gray-300">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Financial Year</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">EPR Targets for Producers and Importers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">FY 2021-22</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">25% of Gross Plastic Waste Generated</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">FY 2022-23</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">70% of Gross Plastic Waste Generated</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">FY 2023-24</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">100% of Gross Plastic Waste Generated</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Transfer Logic */}
+          <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            <p>
+              In the event that a Producer sells their manufactured plastic packaging materials to an EPR registered Brand Owner, the corresponding quantity of plastic packaging material sold will be reduced from the producer's target and transferred to the same EPR registered brand owner's target. This logic also holds true for Importers. If an importer sells plastic packaging or products that are wrapped in plastic packaging to an EPR registered brand owner, the equivalent target will likewise be transferred to the same brand owner and reduced from the target of the importer. But this logic does not apply to a brand owner. Brand owners can not pass on their target to any other registered entity.
+            </p>
+          </div>
+        </div>
+
+        {/* EPR Target for Brand Owners */}
+        <div className="mt-[24px]">
+          <h3 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-4">
+            EPR Target for Brand Owners
+          </h3>
+          <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-6">
+            <p>
+              A brand owner is someone who buys plastic wrap products or plastic packaging locally and sells it domestically or exports it under a registered brand name. EPR target for a brand owner is majorly dependent on the Gross Plastic Waste Generated.
+            </p>
+          </div>
+          
+          {/* Brand Owner Formula Box */}
+          <div className="bg-gray-50 border border-gray-300 rounded-lg p-4">
+            <p className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose font-mono mb-2">
+              <strong>Gross Plastic Waste Generated =</strong>
+            </p>
+            <div className="ml-4 space-y-1 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+              <p>(Avg. weight of plastic packaging manufactured/imported in the last 2 FYs) +</p>
+              <p>(Avg. pre-consumer plastic waste generated)</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -800,44 +906,189 @@ const DocumentsSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Process for EPR license and post compliances :
+        EPR Obligations Explained
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        EPR registration involves CPCB application, certification, recycling,
-        and yearly renewal.
+        EPR obligations represent distinct sub-targets within the broader framework of EPR targets.
       </p>
 
-      {/* Nomination Content */}
-      <div className="flex mt-[24px] gap-10">
-        {/* Points */}
-        <PointsListTwo
-          points={[
-            "Authorization Letter (except Proprietorship)",
-            "Layout Plan",
-            "Agreement with Authorized Recycler",
-            "Rent Agreement/Proof of Location",
-            "PAN Card and Aadhaar Card of Authorized Person",
-            "Consent to Operate (CTO) from State Pollution Control Authority",
-            "Cost of Project",
-          ]}
-          heading="Required Documents for Plastic Waste Certification "
-        />
+      {/* EPR Obligations Content */}
+      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <p className="mb-6">
+          There are four primary categories of EPR Obligations, each allocated to Producers, Importers, and Brand Owners following EPR Registration:
+        </p>
+        
+        {/* 1. End of Life Disposal */}
+        <div className="mb-6">
+          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+            1. End of Life Disposal
+          </h4>
+          <p>
+            The plastic that cannot be recycled should be sent for end of life disposal. Currently the end of life of disposal of plastics can happen in the following ways: Usage in road construction, Waste to energy and Waste to oil as per relevant guidelines issued by CPCB from time to time.
+          </p>
+        </div>
+
+        {/* 2. Minimum Level of Recycling Target */}
+        <div className="mb-6">
+          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+            2. Minimum Level of Recycling Target
+          </h4>
+          <p className="mb-4">
+            This target will be applicable to importers from financial year 2024-2025. The importer shall ensure minimum level of recycling excluding end of life disposal of plastic packaging waste collected under EPR target.
+          </p>
+          
+          {/* Minimum Recycling Table */}
+          <div className="overflow-x-auto">
+            <table className="min-w-full border-collapse border border-gray-300">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Plastic Packaging Category</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">2024-25</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">2025-26</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">2026-27</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">2027-28 and onwards</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Category I</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">50%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">60%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">70%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">80%</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Category II</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">30%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">40%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">50%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">60%</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Category III</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">30%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">40%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">50%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">60%</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Category IV</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">50%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">60%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">70%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">80%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* 3. Obligation for use of Recycled Content */}
+        <div className="mb-6">
+          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+            3. Obligation for use of Recycled Content
+          </h4>
+          <p className="mb-4">
+            This target will be applicable to importers from the financial year 2025-26. The importer shall ensure use of recycled plastic in the imported plastic packaging categorywise as shown in the table.
+          </p>
+          
+          {/* Recycled Content Table */}
+          <div className="overflow-x-auto">
+            <table className="min-w-full border-collapse border border-gray-300">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Plastic Packaging Category</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">2021-25</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">2025-26</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">2026-27</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">2027-28 and onwards</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Category I</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">30%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">40%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">50%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">60%</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Category II</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">10%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">10%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">20%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">20%</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Category III</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">5%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">5%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">10%</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">10%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* 4. Obligation to reuse */}
+        <div className="mb-6">
+          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+            4. Obligation to reuse which only applies to brand owners
+          </h4>
+        </div>
       </div>
 
-      <div className="mt-[46px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 ">
-          Timeline
-        </span>
-        Approx 6-8 weeks after submission of application.
-      </div>
-      <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 ">
-          Validity
-        </span>
-        It is granted for 5 years initially and has to be renewed after that by
-        paying the government fees.
+      {/* Environmental Compensation */}
+      <div className="mt-[24px]">
+        <h3 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-4">
+          Environmental Compensation for Non-Compliance
+        </h3>
+        <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          <p className="mb-4">
+            If an importer exceeds his target and recycles more than the given target then in this case the importer will get a surplus EPR certificate which he can transfer or sell it to another entity who has not met the target at the end of the financial year. Another way to meet the target is buying an EPR certificate of the value equivalent to the target from any other entity who has surplus.
+          </p>
+          <p className="mb-4">
+            If an importer does not meet the target an environmental compensation (EC) will be imposed on the importer. Once the importer pays the EC, the unfulfilled target for that year will be carried forward to the next year for a period of three years. A certain amount of EC shall be returned or refunded depending on how early the pending target is met.
+          </p>
+        </div>
+
+        {/* EC Refund Table */}
+        <div className="mt-6">
+          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+            Environmental Compensation Return Schedule
+          </h4>
+          <p className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+            Partial refunds of EC are available if targets are later fulfilled:
+          </p>
+          
+          <div className="overflow-x-auto">
+            <table className="min-w-full border-collapse border border-gray-300">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Time of Compliance</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">EC Refund</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Within 1 year</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">75%</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Within 2 years</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">60%</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">Within 3 years</td>
+                  <td className="border border-gray-300 px-4 py-2 font-geist text-sm sm:text-lg text-[#42434d] tracking-wide">40%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -856,24 +1107,92 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Sun Certifications: Plastic Waste License Experts
+        EPR Registration Process
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        We make Plastic Waste Management registration easy and compliant.
+        Step-by-step procedure for EPR registration and compliance.
       </p>
 
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        As Plastic Waste Management registration Certifications, our job is to
-        ensure that the tiring procedures that we have listed above become a
-        cake-walk for you. Right from the beginning, i.e. from the stage of
-        collection of documents from the foreign manufacturers or preparation of
-        documents for the Indian manufacturer and following up with the
-        department for grant of license is under our scope. Additionally, we
-        provide expert guidance throughout the process, ensuring compliance with
-        all regulations, addressing any concerns, and facilitating smooth
-        communication with the concerned authorities.
+      {/* Registration Process */}
+      <div className="mt-[24px]">
+        <PointsListTwo
+          points={[
+            "Prepare Documents",
+            "Submit Initial Application & KYC on EPR Portal",
+            "Pay Application Fee",
+            "Address Deficiencies (within 15 days)",
+            "Receive Approval & Assigned Targets",
+            "Start Complying & Receive EPR Certificate",
+          ]}
+          heading="Step-by-Step Procedure"
+        />
+      </div>
+
+      {/* Fee Structure */}
+      <div className="mt-[24px]">
+        <p className="font-semibold font-geist text-[20px] text-[#131316] mb-4">
+          Fee Structure
+        </p>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left">Sr. No.</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Plastic Waste Generation in Tonnes per annum</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Application Fees (INR)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">1</td>
+                <td className="border border-gray-300 px-4 py-2">Less than 1,000</td>
+                <td className="border border-gray-300 px-4 py-2">10,000</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">2</td>
+                <td className="border border-gray-300 px-4 py-2">Between 1,000 - 10,000</td>
+                <td className="border border-gray-300 px-4 py-2">20,000</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">3</td>
+                <td className="border border-gray-300 px-4 py-2">Greater than 10,000</td>
+                <td className="border border-gray-300 px-4 py-2">50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Required Documents */}
+      <div className="mt-[24px]">
+        <PointsListTwo
+          points={[
+            "Company PAN Card",
+            "Company CIN",
+            "Company GST Certificate",
+            "Company IEC",
+            "Authorized Person's PAN Card",
+            "Authorized Person's Aadhaar",
+            "Details (Type & Quantity) of products Imported",
+            "Picture of packaged covering",
+            "Industrial Registration Certificate i.e. (IEM) or MSME Certificate",
+            "Total Capital Invested Amount in Crores (Format will be shared)",
+            "Total Quantity of Plastic Packaging Imported in the preceding two financial years",
+            "Thickness (in microns) of the plastic packaging imported",
+            "Invoice details of the Imported products for the preceding two financial years",
+            "Invoice details of local sales of the preceding two financial years",
+          ]}
+          heading="Documents Required for EPR Registration"
+        />
+      </div>
+
+      <div className="mt-[46px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+          Submitting Annual Returns
+        </span>
+        Submitting Annual Returns plays a major part in EPR Compliance and basically involves three activities: 1. Fulfilling the EPR Target: Recycling the plastic waste equivalent to the target or Buy the certificates or credit points equivalent to the target, 2. Updating Procurement and Sales Data, 3. Payment of Annual Processing Fee which is 25% of the application fees paid during EPR registration.
       </div>
     </section>
   );
@@ -882,6 +1201,21 @@ const ConsultingSection = () => {
 const ReviewSection = () => {
   return (
     <section>
+      {/* Conclusion Content */}
+      <div className="mb-8">
+        <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+          Conclusion
+        </h3>
+        <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          <p className="mb-4">
+            One of the key aspects of plastic waste management in India is incorporating the Extended Producer Responsibility (EPR) System into the plastic waste management framework. EPR covers a wide range of mechanisms that integrate the 'polluter pays' principle and business liability in the management of plastic waste produced by their products. This is a key step in transitioning to a circular economy. In the CPCB EPR Portal, the CPCB has designed an EPR framework that assists in the identification of various stakeholders and offers modules for enhancing transparency, accountability, and compliance for each of the waste management stakeholders. India is still in the early phases of implementing the EPR framework; still, it has the ability to greatly improve the sustainability of India's plastic waste management in the coming years.
+          </p>
+          <p>
+            Sun Certifications is a pioneer in the Indian market for assisting businesses in obtaining Extended Producer Responsibility (EPR) registration and for guiding businesses in meeting the various legal requirements associated with the management of plastic waste in India. As one of the industry leaders in assisting with the management of EPR compliance, Sun Certifications aids producers, importers, and brand owners (PIBOs) in obtaining EPR registration in compliance with the Indian country's Plastic Waste Management Rules. In addition, Sun Certifications offers entities assistance with registration, compliance management, and responsible waste management to help improve the environment.
+          </p>
+        </div>
+      </div>
+
       <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
         What did you think of this content?
       </span>
