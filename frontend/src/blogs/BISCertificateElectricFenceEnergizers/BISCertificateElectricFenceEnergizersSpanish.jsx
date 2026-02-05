@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterSpanish from "@/components/manual/FooterSpanish";
+import FooterSpanish from "@/components/manual/Footer/FooterSpanish";
 import {
   Table,
   TableBody,
