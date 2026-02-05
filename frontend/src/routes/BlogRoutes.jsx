@@ -633,6 +633,9 @@ const BISCertificateElectricFenceEnergizersJapanese = lazy(() =>
 const BISCertificateElectricFenceEnergizersKorean = lazy(() =>
   import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersKorean")
 );
+const BISCertificateElectricFenceEnergizersSpanish = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersSpanish")
+);
 const BISCertificateForStorageWaterTank = lazy(() =>
   import("@/blogs/BISCertificationForStorageWaterTank")
 );
@@ -2331,6 +2334,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateElectricFenceEnergizersKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/productos-isi/electrizadores-de-cercas-electricas-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersSpanish />
           </Suspense>
         }
       />

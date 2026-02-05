@@ -3524,34 +3524,7 @@
         <lastmod>2025-01-16</lastmod>
       
 </url>
-  <!-- BIS Certificate for Electric Fence Energizers - Italian -->
-  <url>
-    <loc>https://bis-certifications.com/blogs/isi-products/energizzatori-recinzione-elettrica-is-302-2-76</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Electric Fence Energizers - Japanese -->
-  <url>
-    <loc>https://bis-certifications.com/blogs/isi-products/denki-fensu-enajiza-is-302-2-76</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Electric Fence Energizers - Indonesian -->
-  <url>
-    <loc>https://bis-certifications.com/blogs/isi-products/energizer-pagar-listrik-is-302-2-76</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Electric Fence Energizers - Korean -->
-  <url>
-    <loc>https://bis-certifications.com/blogs/isi-products/jeongi-ul-tali-eneojaijeo-is-302-2-76</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
+ 
 
 
 
@@ -4484,6 +4457,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Electric Fence Energizers - Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/productos-isi/electrizadores-de-cercas-electricas-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-01-29</lastmod>
+  </url>
   <!-- BIS Certificate for Electric Fence Energizers - Dutch -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/elektrische-schrikdraadapparaten-is-302-2-76</loc>
@@ -4508,7 +4488,34 @@
 
 
 
-
+ <!-- BIS Certificate for Electric Fence Energizers - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/energizzatori-recinzione-elettrica-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Electric Fence Energizers - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/denki-fensu-enajiza-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Electric Fence Energizers - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/energizer-pagar-listrik-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Electric Fence Energizers - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/jeongi-ul-tali-eneojaijeo-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 
 
 

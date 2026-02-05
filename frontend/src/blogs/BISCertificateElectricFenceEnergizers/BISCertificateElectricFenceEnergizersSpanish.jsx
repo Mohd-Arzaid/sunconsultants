@@ -1,6 +1,6 @@
-import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
-import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
-import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
+import FaqAuthorSpanish from "@/components/common/FaqAuthor/FaqAuthorSpanish";
+import ManyUsersAlsoReadSpanish from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadSpanish";
+import ServicesRightSideContentSpanish from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentSpanish";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterEng from "@/components/manual/Footer/FooterEng";
+import FooterSpanish from "@/components/manual/FooterSpanish";
 import {
   Table,
   TableBody,
@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateElectricFenceEnergizers = () => {
+const BISCertificateElectricFenceEnergizersSpanish = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -33,30 +33,30 @@ const BISCertificateElectricFenceEnergizers = () => {
       <MainContent />
       <Services />
       <VideoSection />
-      <FooterEng />
+      <FooterSpanish />
     </div>
   );
 };
 
-export default BISCertificateElectricFenceEnergizers;
+export default BISCertificateElectricFenceEnergizersSpanish;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Electric Fence Energizers | IS 302-2-76:1999 BIS License";
+    "Certificado BIS para Electrizadores de Cercas Eléctricas | IS 302-2-76:1999 Licencia BIS";
   const ogTitle =
-    "BIS Certification for Electric Fence Energizers – IS 302-2-76:1999 Guide";
+    "Certificación BIS para Electrizadores de Cercas Eléctricas – Guía IS 302-2-76:1999";
   const twitterTitle =
-    "BIS License for Electric Fence Energizers | IS 302-2-76:1999";
+    "Licencia BIS para Electrizadores de Cercas Eléctricas | IS 302-2-76:1999";
   const metaDescription =
-    "Get BIS Certificate for Electric Fence Energizers under IS 302-2-76:1999. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Obtenga Certificado BIS para Electrizadores de Cercas Eléctricas bajo IS 302-2-76:1999. Proceso, documentos, pruebas, costo y cronograma para Certificación BIS en India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Electric Fence Energizers as per IS 302-2-76:1999. Know process, cost, documents, testing & BIS license benefits.";
+    "Guía completa para Certificación BIS de Electrizadores de Cercas Eléctricas según IS 302-2-76:1999. Conozca proceso, costo, documentos, pruebas y beneficios de licencia BIS.";
   const twitterDescription =
-    "Apply for BIS Certificate for Electric Fence Energizers under IS 302-2-76:1999. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Solicite Certificado BIS para Electrizadores de Cercas Eléctricas bajo IS 302-2-76:1999. Aprenda proceso BIS, documentos, pruebas, tarifas y cronograma en India.";
   const metaKeywords =
-    "BIS Certificate for Electric Fence Energizers , BIS License for Electric Fence Energizers , IS 302-2-76:1999 , BIS Certification for Electric Fence Energizers";
+    "Certificado BIS para Electrizadores de Cercas Eléctricas, Licencia BIS para Electrizadores de Cercas Eléctricas, IS 302-2-76:1999, Certificación BIS para Electrizadores de Cercas Eléctricas";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/electric-fence-energizers-is-302-2-76";
+    "https://bis-certifications.com/blogs/productos-isi/electrizadores-de-cercas-electricas-is-302-2-76";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -93,7 +93,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
+                    <Link to="/">Inicio</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -102,7 +102,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">Latest Blogs</Link>
+                    <Link to="/Blogs">Últimos Blogs</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -111,7 +111,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Electric Fence Energizers – IS
+                    Certificado BIS para Electrizadores de Cercas Eléctricas – IS
                     302-2-76:1999
                   </BreadcrumbPage>
                 </BreadcrumbItem>
@@ -132,7 +132,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentEng />
+        <ServicesRightSideContentSpanish />
       </div>
     </div>
   );
@@ -144,7 +144,7 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Electric Fence Energizers – Complete Guide to IS
+          Certificación BIS Electrizadores de Cercas Eléctricas – Guía Completa de IS
           302-2-76:1999
         </h1>
 
@@ -152,345 +152,344 @@ const MainContentLeft = () => {
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforElectricFenceEnergizers.png"
-            title="BIS License for Electric Fence Energizers"
-            alt="BIS Certificate for Electric Fence Energizers - IS 302-2-76:1999 BIS Certification"
+            title="Licencia BIS para Electrizadores de Cercas Eléctricas"
+            alt="Certificado BIS para Electrizadores de Cercas Eléctricas - IS 302-2-76:1999 Certificación BIS"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The demand for electric fence energizers has grown rapidly across
-          India due to increased focus on farm protection, livestock management,
-          perimeter security, and wildlife control. These devices play a
-          critical role in safeguarding crops, animals, and property by
-          delivering controlled electric pulses through fencing systems.
-          However, because electric fence energizers directly involve electrical
-          output, human contact risk, and fire hazards, safety and regulatory
-          compliance become non-negotiable.
+          La demanda de electrizadores de cercas eléctricas ha crecido rápidamente en
+          India debido al mayor enfoque en la protección agrícola, manejo de ganado,
+          seguridad perimetral y control de vida silvestre. Estos dispositivos juegan un
+          papel crítico en la protección de cultivos, animales y propiedades al
+          entregar pulsos eléctricos controlados a través de sistemas de cercado.
+          Sin embargo, debido a que los electrizadores de cercas eléctricas involucran directamente salida
+          eléctrica, riesgo de contacto humano y peligros de incendio, la seguridad y el cumplimiento
+          regulatorio se vuelven innegociables.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          In India, electric fence energizers fall under the scope of mandatory
-          BIS certification as per IS 302-2-76:1999. Any manufacturer or
-          importer intending to sell electric fence energizers in the Indian
-          market must obtain a BIS Certificate for Electric Fence Energizers
-          before commercialization. Without this approval, products are
-          considered non-compliant and illegal for sale.
+          En India, los electrizadores de cercas eléctricas están dentro del alcance de la
+          certificación BIS obligatoria según IS 302-2-76:1999. Cualquier fabricante o
+          importador que pretenda vender electrizadores de cercas eléctricas en el mercado
+          indio debe obtener un Certificado BIS para Electrizadores de Cercas Eléctricas
+          antes de la comercialización. Sin esta aprobación, los productos son
+          considerados no conformes e ilegales para la venta.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide is designed for manufacturers, importers,
-          foreign brands, startups, distributors, and e-commerce sellers who
-          want clarity on BIS Certification Electric Fence Energizers, including
-          legal requirements, testing, documentation, cost, timelines, and
-          compliance obligations. If you are planning to apply for a BIS License
-          / BIS Licence for Electric Fence Energizers, this page will walk you
-          through every step in a clear, practical, and compliance-focused
-          manner.
+          Esta guía completa está diseñada para fabricantes, importadores,
+          marcas extranjeras, startups, distribuidores y vendedores de comercio electrónico que
+          desean claridad sobre la Certificación BIS de Electrizadores de Cercas Eléctricas, incluyendo
+          requisitos legales, pruebas, documentación, costos, cronogramas y
+          obligaciones de cumplimiento. Si está planeando solicitar una Licencia BIS
+          / Licencia BIS para Electrizadores de Cercas Eléctricas, esta página lo guiará
+          paso a paso de manera clara, práctica y enfocada en el cumplimiento.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          ¿Qué es la Certificación BIS?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a conformity assessment system operated by the
-          Bureau of Indian Standards (BIS), the national standards body of
-          India. The BIS full form is Bureau of Indian Standards, established
-          under the BIS Act, 2016 to ensure quality, safety, reliability, and
-          consistency of products sold in India.
+          La Certificación BIS es un sistema de evaluación de conformidad operado por el
+          Bureau of Indian Standards (BIS), organismo nacional de normalización de
+          India. La forma completa de BIS es Bureau of Indian Standards, establecido
+          bajo la Ley BIS, 2016 para asegurar calidad, seguridad, confiabilidad y
+          consistencia de productos vendidos en India.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
+          Significado del Certificado BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS Certificate signifies that a product conforms to the applicable
-          Indian Standard (IS) and meets prescribed safety, performance, and
-          quality benchmarks. It provides assurance to consumers and regulators
-          that the product has been tested and verified by BIS-recognized
-          systems.
+          Un Certificado BIS significa que un producto cumple con la Norma India
+          (IS) aplicable y cumple con los puntos de referencia de seguridad, rendimiento y
+          calidad prescritos. Proporciona garantía a consumidores y reguladores
+          de que el producto ha sido probado y verificado por sistemas
+          reconocidos por BIS.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ISI Mark and BIS Mark
+          Marca ISI y Marca BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          For electrical products like electric fence energizers, BIS
-          certification is granted under the ISI Mark Scheme. The BIS
-          certification mark (ISI mark) displayed on the product indicates
-          compliance with relevant BIS standards. Selling an ISI-marked product
-          without a valid BIS license is a punishable offense.
+          Para productos eléctricos como electrizadores de cercas eléctricas, la
+          certificación BIS se otorga bajo el Esquema de Marca ISI. La marca de
+          certificación BIS (marca ISI) que se muestra en el producto indica
+          cumplimiento con las normas BIS relevantes. Vender un producto marcado
+          con ISI sin una licencia BIS válida es un delito punible.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Why BIS Exists
+          Por Qué Existe BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The core objective of BIS is to:
+          El objetivo principal de BIS es:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect consumer safety</li>
-          <li>Prevent substandard and unsafe products</li>
-          <li>Harmonize Indian manufacturing with global benchmarks</li>
-          <li>Enforce mandatory compliance through BIS notifications</li>
+          <li>Proteger la seguridad del consumidor</li>
+          <li>Prevenir productos subestándar e inseguros</li>
+          <li>Armonizar la fabricación india con estándares globales</li>
+          <li>Hacer cumplir el cumplimiento obligatorio a través de notificaciones BIS</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of IS 302-2-76:1999
+          Alcance de IS 302-2-76:1999
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This standard specifies particular safety requirements for electric
-          fence energizers intended to be used with electric fence systems for:
+          Esta norma especifica requisitos de seguridad particulares para electrizadores
+          de cercas eléctricas destinados a ser utilizados con sistemas de cercas
+          eléctricas para:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Agricultural fencing</li>
-          <li>Livestock control</li>
-          <li>Wildlife deterrence</li>
-          <li>Perimeter security</li>
+          <li>Cercado agrícola</li>
+          <li>Control de ganado</li>
+          <li>Disuasión de vida silvestre</li>
+          <li>Seguridad perimetral</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          It covers energizers powered by:
+          Cubre electrizadores alimentados por:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mains electricity</li>
-          <li>Battery-operated systems</li>
-          <li>Combined mains and battery sources</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Safety and Testing Intent
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The standard is designed to address:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protection against electric shock</li>
-          <li>Output energy limitations</li>
-          <li>Pulse duration and repetition control</li>
-          <li>Insulation and creepage distances</li>
-          <li>Fire and overheating risks</li>
-          <li>Mechanical strength and enclosure safety</li>
+          <li>Electricidad de red</li>
+          <li>Sistemas operados por batería</li>
+          <li>Fuentes combinadas de red y batería</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Who Must Comply
+          Intención de Seguridad y Pruebas
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance with IS 302-2-76:1999 is mandatory for:
+          La norma está diseñada para abordar:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Importers of foreign-manufactured energizers</li>
-          <li>Foreign manufacturers selling in India</li>
+          <li>Protección contra choque eléctrico</li>
+          <li>Limitaciones de energía de salida</li>
+          <li>Control de duración y repetición de pulso</li>
+          <li>Distancias de aislamiento y fuga</li>
+          <li>Riesgos de incendio y sobrecalentamiento</li>
+          <li>Resistencia mecánica y seguridad de la envoltura</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Quién Debe Cumplir
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          El cumplimiento con IS 302-2-76:1999 es obligatorio para:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Fabricantes indios</li>
+          <li>Importadores de electrizadores fabricados en el extranjero</li>
+          <li>Fabricantes extranjeros que venden en India</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Electric Fence Energizers
+          Por Qué la Certificación BIS es Obligatoria para Electrizadores de Cercas Eléctricas
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. Consumer and Animal Safety
+          1. Seguridad del Consumidor y Animal
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Electric fence energizers generate high-voltage pulses. Improper
-          design or excessive output can cause serious injury, fire hazards, or
-          fatal accidents. BIS certification ensures output energy remains
-          within safe limits.
+          Los electrizadores de cercas eléctricas generan pulsos de alto voltaje. El diseño
+          incorrecto o una salida excesiva pueden causar lesiones graves, riesgos de
+          incendio o accidentes fatales. La certificación BIS asegura que la energía
+          de salida permanezca dentro de límites seguros.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. Legal Requirement in India
+          2. Requisito Legal en India
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and the BIS Act, selling uncertified
-          electrical appliances is illegal. Products without BIS certification
-          may be seized, banned, or recalled.
+          Bajo las notificaciones BIS y la Ley BIS, vender aparatos eléctricos no
+          certificados es ilegal. Los productos sin certificación BIS pueden ser
+          confiscados, prohibidos o retirados.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. Regulatory Compliance
+          3. Cumplimiento Regulatorio
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Authorities such as customs, market surveillance teams, and e-commerce
-          platforms demand valid BIS licenses for listing and clearance.
+          Autoridades como aduanas, equipos de vigilancia del mercado y plataformas
+          de comercio electrónico exigen licencias BIS válidas para listado y despacho.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. Market and Brand Benefits
+          4. Beneficios de Mercado y Marca
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate India builds trust, improves brand credibility, and
-          allows smooth entry into organized retail and institutional markets.
+          Un Certificado BIS India genera confianza, mejora la credibilidad de la marca y
+          permite una entrada fluida en mercados minoristas organizados e institucionales.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Electric Fence Energizers
+          Proceso de Certificación BIS Paso a Paso para Electrizadores de Cercas Eléctricas
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Applicability & Standard Identification
+          Aplicabilidad e Identificación de Norma
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The first step is to confirm product classification and identify IS
-          302-2-76:1999 as the applicable BIS standard. Product design, power
-          source, and application must align with the scope of the standard.
+          El primer paso es confirmar la clasificación del producto e identificar IS
+          302-2-76:1999 como la norma BIS aplicable. El diseño del producto, la fuente
+          de energía y la aplicación deben alinearse con el alcance de la norma.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Online Application Process
+          Proceso de Solicitud BIS en Línea
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit the BIS application online through the Manak
-          Online portal. The application includes:
+          Los fabricantes deben enviar la solicitud BIS en línea a través del portal
+          Manak Online. La solicitud incluye:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product details</li>
-          <li>Factory information</li>
-          <li>Applicable standard selection</li>
-          <li>Test report commitment</li>
+          <li>Detalles del producto</li>
+          <li>Información de la fábrica</li>
+          <li>Selección de norma aplicable</li>
+          <li>Compromiso de informe de prueba</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This step officially initiates the BIS registration / BIS certificate
-          registration process.
+          Este paso inicia oficialmente el proceso de registro BIS / registro de certificado BIS.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
+          Tarifas y Estructura de Costos
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certification cost typically includes:
+          El costo de certificación BIS típicamente incluye:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Testing charges (lab-dependent)</li>
-          <li>Factory inspection fee</li>
-          <li>License fee</li>
-          <li>Annual marking fee</li>
+          <li>Tarifa de solicitud</li>
+          <li>Cargos de prueba (dependientes del laboratorio)</li>
+          <li>Tarifa de inspección de fábrica</li>
+          <li>Tarifa de licencia</li>
+          <li>Tarifa de marcado anual</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The overall cost of BIS certification depends on product complexity,
-          number of models, and testing requirements.
+          El costo general de la certificación BIS depende de la complejidad del producto,
+          número de modelos y requisitos de prueba.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Product Sample Testing
+          Pruebas de Muestras de Producto
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Product samples are tested in BIS-recognized laboratories as per IS
-          302-2-76:1999. Testing ensures compliance with all safety and
-          performance parameters.
+          Las muestras de producto se prueban en laboratorios reconocidos por BIS según IS
+          302-2-76:1999. Las pruebas aseguran el cumplimiento con todos los parámetros de
+          seguridad y rendimiento.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Factory Inspection & Audit
+          Inspección y Auditoría de Fábrica
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials conduct a factory audit to verify:
+          Los funcionarios de BIS realizan una auditoría de fábrica para verificar:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process</li>
-          <li>Quality control systems</li>
-          <li>In-house testing facilities</li>
-          <li>Consistency with submitted documents</li>
+          <li>Proceso de fabricación</li>
+          <li>Sistemas de control de calidad</li>
+          <li>Instalaciones de prueba internas</li>
+          <li>Consistencia con documentos presentados</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Grant of BIS License & ISI Mark
+          Otorgamiento de Licencia BIS y Marca ISI
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Upon successful testing and inspection, BIS grants a BIS License for
-          Electric Fence Energizers, allowing use of the ISI mark with a unique
-          CM/L number.
+          Tras pruebas e inspección exitosas, BIS otorga una Licencia BIS para
+          Electrizadores de Cercas Eléctricas, permitiendo el uso de la marca ISI con un
+          número CM/L único.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Post-Certification Compliance
+          Cumplimiento Post-Certificación
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          License holders must:
+          Los titulares de licencia deben:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Conduct routine testing</li>
-          <li>Maintain production records</li>
-          <li>Allow surveillance audits</li>
-          <li>Renew the license on time</li>
+          <li>Realizar pruebas de rutina</li>
+          <li>Mantener registros de producción</li>
+          <li>Permitir auditorías de vigilancia</li>
+          <li>Renovar la licencia a tiempo</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification
+          Documentos Requeridos para Certificación BIS
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manufacturer Documents
+          Documentos del Fabricante
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration proof</li>
-          <li>Manufacturing process flow chart</li>
-          <li>List of machinery</li>
-          <li>Quality control plan</li>
+          <li>Prueba de registro de fábrica</li>
+          <li>Diagrama de flujo del proceso de fabricación</li>
+          <li>Lista de maquinaria</li>
+          <li>Plan de control de calidad</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Legal Documents
+          Documentos Legales
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Company incorporation certificate</li>
-          <li>GST registration</li>
-          <li>Trademark authorization (if applicable)</li>
+          <li>Certificado de constitución de la empresa</li>
+          <li>Registro GST</li>
+          <li>Autorización de marca registrada (si aplica)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technical Documents
+          Documentos Técnicos
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product specification sheet</li>
-          <li>Circuit diagrams</li>
-          <li>User manual and safety instructions</li>
+          <li>Hoja de especificaciones del producto</li>
+          <li>Diagramas de circuito</li>
+          <li>Manual de usuario e instrucciones de seguridad</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Application Documents
+          Documentos de Solicitud BIS
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS application form</li>
-          <li>Test report from BIS-recognized lab</li>
-          <li>Authorization letter</li>
-          <li>Undertakings and declarations</li>
+          <li>Formulario de solicitud BIS</li>
+          <li>Informe de prueba de laboratorio reconocido por BIS</li>
+          <li>Carta de autorización</li>
+          <li>Compromisos y declaraciones</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          These form the complete set of BIS CERTIFICATION DOCUMENTS.
+          Estos forman el conjunto completo de DOCUMENTOS DE CERTIFICACIÓN BIS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 302-2-76:1999
+          Requisitos de Prueba según IS 302-2-76:1999
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mandatory tests include:
+          Las pruebas obligatorias incluyen:
         </p>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -498,10 +497,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clause
+                  Cláusula
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirements
+                  Requisitos
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -511,7 +510,7 @@ const MainContentLeft = () => {
                   8
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Protection Against Electric Shock
+                  Protección contra Choque Eléctrico
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -519,7 +518,7 @@ const MainContentLeft = () => {
                   13.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leakage current and electric strength at operating temperature
+                  Corriente de fuga y resistencia eléctrica a temperatura de operación
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -527,7 +526,7 @@ const MainContentLeft = () => {
                   5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rating
+                  Clasificación
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -535,7 +534,7 @@ const MainContentLeft = () => {
                   10
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Power Input and Current
+                  Entrada de Energía y Corriente
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -543,7 +542,7 @@ const MainContentLeft = () => {
                   11
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Heating
+                  Calentamiento
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -551,7 +550,7 @@ const MainContentLeft = () => {
                   13
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leakage current and Electric strength at operating Temperature
+                  Corriente de fuga y resistencia eléctrica a temperatura de operación
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -559,7 +558,7 @@ const MainContentLeft = () => {
                   16
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leakage current and Electric strength
+                  Corriente de fuga y resistencia eléctrica
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -567,286 +566,283 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          All tests must be conducted only in BIS-recognized laboratories.
+          Todas las pruebas deben realizarse solo en laboratorios reconocidos por BIS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Common Challenges & How to Avoid Them
+          Desafíos Comunes y Cómo Evitarlos
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. Test Failure
+          1. Fallo en Pruebas
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          <strong>Cause:</strong> Non-compliant design or output parameters
+          <strong>Causa:</strong> Diseño no conforme o parámetros de salida
           <br />
-          <strong>Solution:</strong> Pre-compliance testing and design review
+          <strong>Solución:</strong> Pruebas de pre-cumplimiento y revisión de diseño
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. Documentation Errors
+          2. Errores de Documentación
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          <strong>Cause:</strong> Incomplete or inconsistent submissions
+          <strong>Causa:</strong> Envíos incompletos o inconsistentes
           <br />
-          <strong>Solution:</strong> Expert-led document verification
+          <strong>Solución:</strong> Verificación de documentos liderada por expertos
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. Factory Audit Delays
+          3. Retrasos en Auditoría de Fábrica
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>Cause:</strong> Unprepared quality systems
+          <strong>Causa:</strong> Sistemas de calidad no preparados
           <br />
-          <strong>Solution:</strong> Audit readiness and mock inspections
+          <strong>Solución:</strong> Preparación para auditoría e inspecciones simuladas
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Manufacturers & Importers
+          Beneficios de la Certificación BIS para Fabricantes e Importadores
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal authorization to sell in India</li>
-          <li>Access to government and institutional buyers</li>
-          <li>Enhanced consumer trust</li>
-          <li>Reduced product liability risks</li>
-          <li>Expansion into e-commerce and retail chains</li>
+          <li>Autorización legal para vender en India</li>
+          <li>Acceso a compradores gubernamentales e institucionales</li>
+          <li>Confianza mejorada del consumidor</li>
+          <li>Riesgos reducidos de responsabilidad del producto</li>
+          <li>Expansión en comercio electrónico y cadenas minoristas</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
+          Sanciones por No Cumplimiento
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling electric fence energizers without BIS certification can result
-          in:
+          Vender electrizadores de cercas eléctricas sin certificación BIS puede resultar
+          en:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary penalties</li>
-          <li>Seizure of goods</li>
-          <li>Cancellation of import clearance</li>
-          <li>Criminal prosecution under BIS Act</li>
-          <li>Permanent market ban</li>
+          <li>Sanciones monetarias pesadas</li>
+          <li>Decomiso de bienes</li>
+          <li>Cancelación de despacho de importación</li>
+          <li>Procesamiento penal bajo la Ley BIS</li>
+          <li>Prohibición permanente del mercado</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Electric Fence Energizers?
+          Quién Necesita Certificación BIS para Electrizadores de Cercas Eléctricas?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Importers</li>
-          <li>Foreign manufacturers</li>
-          <li>Traders and distributors</li>
-          <li>Online marketplace sellers</li>
+          <li>Fabricantes indios</li>
+          <li>Importadores</li>
+          <li>Fabricantes extranjeros</li>
+          <li>Comerciantes y distribuidores</li>
+          <li>Vendedores de mercados en línea</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Anyone involved in placing the product on the Indian market must
-          ensure compliance.
+          Cualquiera involucrado en colocar el producto en el mercado indio debe
+          asegurar el cumplimiento.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Choose Us for BIS Certification Consulting?
+          Por Qué Elegirnos para Consultoría de Certificación BIS?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          We provide end-to-end BIS certification consulting, including:
+          Proporcionamos consultoría de certificación BIS de extremo a extremo, incluyendo:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standard identification and applicability check</li>
-          <li>BIS application filing</li>
-          <li>Lab coordination and testing support</li>
-          <li>Factory audit preparation</li>
-          <li>Post-certification compliance management</li>
+          <li>Identificación de norma y verificación de aplicabilidad</li>
+          <li>Presentación de solicitud BIS</li>
+          <li>Coordinación de laboratorio y soporte de pruebas</li>
+          <li>Preparación de auditoría de fábrica</li>
+          <li>Gestión de cumplimiento post-certificación</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Our expertise ensures faster approvals, zero rejections, and complete
-          regulatory peace of mind.
+          Nuestra experiencia asegura aprobaciones más rápidas, cero rechazos y completa
+          tranquilidad regulatoria.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Conclusion
+          Conclusión
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Electric Fence Energizers under IS
-          302-2-76:1999 is not just a regulatory formality—it is a critical step
-          toward ensuring safety, legal compliance, and long-term market
-          success. With strict enforcement of BIS notifications and increasing
-          scrutiny on electrical products, manufacturers and importers must
-          prioritize BIS Certification Electric Fence Energizers to avoid
-          penalties and build consumer trust.
+          Obtener un Certificado BIS para Electrizadores de Cercas Eléctricas bajo IS
+          302-2-76:1999 no es solo una formalidad regulatoria—es un paso crítico
+          hacia asegurar seguridad, cumplimiento legal y éxito a largo plazo del
+          mercado. Con el cumplimiento estricto de las notificaciones BIS y el aumento
+          del escrutinio sobre productos eléctricos, los fabricantes e importadores deben
+          priorizar la Certificación BIS de Electrizadores de Cercas Eléctricas para evitar
+          sanciones y construir confianza del consumidor.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          If you are planning to apply for a BIS License / BIS Licence for
-          Electric Fence Energizers, professional guidance can significantly
-          reduce timelines, costs, and compliance risks. Stay compliant, stay
-          competitive, and ensure your products meet India&apos;s highest safety
-          standards.
+          Si está planeando solicitar una Licencia BIS / Licencia BIS para
+          Electrizadores de Cercas Eléctricas, la guía profesional puede reducir
+          significativamente los plazos, costos y riesgos de cumplimiento. Manténgase
+          cumpliendo, manténgase competitivo y asegure que sus productos cumplan con los
+          más altos estándares de seguridad de la India.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Electric Fence Energizers
+          Preguntas Frecuentes – Certificación BIS para Electrizadores de Cercas Eléctricas
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q1. Is BIS certification mandatory for electric fence energizers
-                in India?
+                P1. ¿Es obligatoria la certificación BIS para electrizadores de cercas eléctricas
+                en India?
               </strong>
               <br />
-              Yes, BIS certification under IS 302-2-76:1999 is mandatory.
+              Sí, la certificación BIS bajo IS 302-2-76:1999 es obligatoria.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q2. What is the BIS certificate full form?</strong>
+              <strong>P2. ¿Cuál es la forma completa del certificado BIS?</strong>
               <br />
-              Bureau of Indian Standards Certificate.
+              Certificado del Bureau of Indian Standards.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q3. Can I import electric fence energizers without BIS license?
+                P3. ¿Puedo importar electrizadores de cercas eléctricas sin licencia BIS?
               </strong>
               <br />
-              No, imports without BIS certification are prohibited.
+              No, las importaciones sin certificación BIS están prohibidas.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q4. What is the BIS license cost?</strong>
+              <strong>P4. ¿Cuál es el costo de la licencia BIS?</strong>
               <br />
-              Cost varies based on testing, factory size, and number of models.
+              El costo varía según las pruebas, tamaño de fábrica y número de modelos.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>P5. ¿Cuánto tiempo toma el proceso de certificación BIS?</strong>
+              <br />
+              Típicamente 6-10 semanas si la documentación y pruebas están completas.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>P6. ¿Es obligatoria la marca ISI?</strong>
+              <br />
+              Sí, el marcado ISI es obligatorio después de la certificación.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>P7. ¿Pueden las startups solicitar certificación BIS?</strong>
+              <br />
+              Sí, las startups pueden solicitar si la configuración de fabricación es conforme.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q5. How long does the BIS certification process take?
+                P8. ¿Se requiere certificación BIS para electrizadores operados por batería?
               </strong>
               <br />
-              Typically 6–10 weeks if documentation and testing are complete.
+              Sí, la fuente de energía no exime la certificación.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q6. Is the ISI mark mandatory?</strong>
+              <strong>P9. ¿Puede una licencia cubrir múltiples modelos?</strong>
               <br />
-              Yes, ISI marking is compulsory after certification.
+              Sí, si los modelos son técnicamente similares.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q7. Can startups apply for BIS certification?</strong>
+              <strong>P10. ¿Qué sucede si mi producto falla las pruebas?</strong>
               <br />
-              Yes, startups can apply if manufacturing setup is compliant.
+              Se requieren modificación del diseño y nuevas pruebas.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>P11. ¿La certificación BIS es válida para siempre?</strong>
+              <br />
+              No, debe renovarse periódicamente.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q8. Is BIS certification required for battery-operated
-                energizers?
+                P12. ¿Son obligatorias las auditorías BIS después de la certificación?
               </strong>
               <br />
-              Yes, power source does not exempt certification.
+              Sí, se realizan auditorías de vigilancia.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q9. Can one license cover multiple models?</strong>
+              <strong>P13. ¿Pueden los fabricantes extranjeros solicitar directamente?</strong>
               <br />
-              Yes, if models are technically similar.
+              Sí, a través de un Representante Indio Autorizado (AIR).
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q10. What happens if my product fails testing?</strong>
+              <strong>P14. ¿Está disponible el proceso de solicitud BIS en línea?</strong>
               <br />
-              Design modification and retesting are required.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q11. Is BIS certification valid forever?</strong>
-              <br />
-              No, it must be renewed periodically.
+              Sí, las solicitudes BIS se envían en línea.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q12. Are BIS audits mandatory after certification?
+                P15. ¿Qué significa el certificado BIS para los consumidores?
               </strong>
               <br />
-              Yes, surveillance audits are conducted.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q13. Can foreign manufacturers apply directly?</strong>
-              <br />
-              Yes, through an Authorized Indian Representative (AIR).
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q14. Is online BIS apply process available?</strong>
-              <br />
-              Yes, BIS applications are submitted online.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q15. What is BIS certificate meaning for consumers?
-              </strong>
-              <br />
-              It assures safety, quality, and regulatory compliance.
+              Asegura seguridad, calidad y cumplimiento regulatorio.
             </p>
           </div>
         </div>
@@ -864,9 +860,9 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoRead />
+        <ManyUsersAlsoReadSpanish />
 
-        <FaqAuthorEng questionNumber={1} />
+        <FaqAuthorSpanish questionNumber={1} />
       </div>
     </div>
   );
@@ -879,7 +875,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
-              Our Services
+              Nuestros Servicios
             </h2>
           </BoxReveal>
 
@@ -887,7 +883,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India&apos;s Best Certificate Consultant
+                Mejor Consultor de Certificados de la India
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -908,7 +904,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Mark (ISI License) for Foreign Manufacture
+              Marca BIS (Licencia ISI) para Fabricante Extranjero
             </p>
           </Link>
 
@@ -925,7 +921,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO Registration Certification
+              Certificación de Registro CDSCO
             </p>
           </Link>
 
@@ -942,7 +938,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registration
+              Registro BIS (CRS)
             </p>
           </Link>
 
@@ -959,7 +955,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Plastic Waste Management
+              Gestión de Residuos Plásticos
             </p>
           </Link>
 
@@ -976,7 +972,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR Certificate certifications
+              Certificados de Certificado EPR
             </p>
           </Link>
 
@@ -993,7 +989,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC Certificate certifications
+              Certificados de Certificado LMPC
             </p>
           </Link>
 
@@ -1010,7 +1006,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Registration Certificate
+              Certificado de Registro BIS
             </p>
           </Link>
 
@@ -1027,7 +1023,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI MARK (BIS) for Indian Manufactures
+              MARCA ISI (BIS) para Fabricantes Indios
             </p>
           </Link>
         </div>

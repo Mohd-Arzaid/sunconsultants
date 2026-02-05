@@ -73,6 +73,8 @@ const ServicesRightSideContentSpanish = () => {
     "/blogs/isi-products/alicates-combinados-corte-lateral-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Spanish Page Url
     "/blogs/isi-products/cuerdas-de-fibra-sintetica-compuesta-is-14928",
+    // BIS Certificate for Electric Fence Energizers Spanish Page Url
+    "/blogs/productos-isi/electrizadores-de-cercas-electricas-is-302-2-76",
   ];
 
   // Check if current path should show these components
@@ -679,6 +681,9 @@ const ContactFormServicesRightSideContentSpanish = () => {
     // BIS Certificate for Composite Synthetic Fibre Spanish
     if (path.includes("/blogs/isi-products/cuerdas-de-fibra-sintetica-compuesta-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre (Spanish)";
+    // BIS Certificate for Electric Fence Energizers Spanish
+    if (path.includes("/blogs/productos-isi/electrizadores-de-cercas-electricas-is-302-2-76"))
+      return "BIS Certificate for Electric Fence Energizers (Spanish)";
     return "";
   };
 
