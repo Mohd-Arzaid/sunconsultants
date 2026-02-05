@@ -612,6 +612,27 @@ const BISCertificateElectricFenceEnergizersArabic = lazy(() =>
 const BISCertificateElectricFenceEnergizersChinese = lazy(() =>
   import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersChinese")
 );
+const BISCertificateElectricFenceEnergizersDutch = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersDutch")
+);
+const BISCertificateElectricFenceEnergizersFrench = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersFrench")
+);
+const BISCertificateElectricFenceEnergizersGerman = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersGerman")
+);
+const BISCertificateElectricFenceEnergizersIndonesian = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersIndonesian")
+);
+const BISCertificateElectricFenceEnergizersItalian = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersItalian")
+);
+const BISCertificateElectricFenceEnergizersJapanese = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersJapanese")
+);
+const BISCertificateElectricFenceEnergizersKorean = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersKorean")
+);
 const BISCertificateForStorageWaterTank = lazy(() =>
   import("@/blogs/BISCertificationForStorageWaterTank")
 );
