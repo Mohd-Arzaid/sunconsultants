@@ -14,11 +14,11 @@ const TopBar = () => {
     <div className="bg-[#0A4394] text-white py-2.5 sticky top-0 z-50 hidden md:block">
       <Container className="relative flex items-center justify-center gap-8">
         <a
-          href="mailto:admin@bis-certifications.com"
+          href="mailto:info@sunconsultants.co.in"
           className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
         >
           <Mail className="w-4 h-4 mr-2" />
-          admin@bis-certifications.com
+          info@sunconsultants.co.in
         </a>
 
         <div className="w-px h-5 bg-white/30" role="separator" />

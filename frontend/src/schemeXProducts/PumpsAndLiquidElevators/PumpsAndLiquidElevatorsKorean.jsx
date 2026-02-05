@@ -182,10 +182,10 @@ export const FooterKorean = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             {" "}
             <a
-              href="mailto:admin@bis-certifications.com"
+              href="mailto:info@sunconsultants.co.in"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              admin@bis-certifications.com
+              info@sunconsultants.co.in
             </a>{" "}
             으로 이메일을 보내시거나 아래 옵션 중 하나를 사용하세요. 보통 24시간
             이내에 답변드립니다.
@@ -468,7 +468,7 @@ export const FooterKorean = () => {
               </a>
 
               <a
-                href="mailto:admin@bis-certifications.com?body=Hello"
+                href="mailto:info@sunconsultants.co.in?body=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Send us an email"
@@ -775,13 +775,13 @@ export const AboutAuthorKorean = () => {
                 </a>
 
                 <a
-                  href="mailto:admin@bis-certifications.com"
+                  href="mailto:info@sunconsultants.co.in"
                   className="flex items-center gap-2 p-3 bg-gradient-to-r from-[#1A8781]/5 to-[#125E5A]/10 hover:from-[#1A8781]/10 hover:to-[#125E5A]/15 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-all duration-200"
                 >
                   <Mail className="w-4 h-4 text-[#1A8781]" />
                   <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
                     <span className="font-medium">연락처:</span>{" "}
-                    admin@bis-certifications.com
+                    info@sunconsultants.co.in
                   </span>
                 </a>
               </div>

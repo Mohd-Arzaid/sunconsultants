@@ -184,10 +184,10 @@ export const FooterVietnamese = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Gửi email cho chúng tôi tại{" "}
             <a
-              href="mailto:admin@bis-certifications.com"
+              href="mailto:info@sunconsultants.co.in"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              admin@bis-certifications.com
+              info@sunconsultants.co.in
             </a>{" "}
             hoặc sử dụng một trong các tùy chọn bên dưới. Chúng tôi thường phản
             hồi trong vòng 24 giờ.
@@ -470,7 +470,7 @@ export const FooterVietnamese = () => {
               </a>
 
               <a
-                href="mailto:admin@bis-certifications.com?body=Hello"
+                href="mailto:info@sunconsultants.co.in?body=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Send us an email"
@@ -778,13 +778,13 @@ export const AboutAuthorVietnamese = () => {
                 </a>
 
                 <a
-                  href="mailto:admin@bis-certifications.com"
+                  href="mailto:info@sunconsultants.co.in"
                   className="flex items-center gap-2 p-3 bg-gradient-to-r from-[#1A8781]/5 to-[#125E5A]/10 hover:from-[#1A8781]/10 hover:to-[#125E5A]/15 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-all duration-200"
                 >
                   <Mail className="w-4 h-4 text-[#1A8781]" />
                   <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
                     <span className="font-medium">Liên hệ:</span>{" "}
-                    admin@bis-certifications.com
+                    info@sunconsultants.co.in
                   </span>
                 </a>
               </div>

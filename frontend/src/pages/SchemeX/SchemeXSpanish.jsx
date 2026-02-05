@@ -1769,7 +1769,7 @@ const SchemeXServiceFaq = () => {
     {
       question: "4. ¿Cuál es el costo de la certificación BIS Scheme X?",
       answer:
-        "El costo de Scheme X incluye tarifas de solicitud, tarifas de certificación, cargos por revisión de archivo técnico, costos de inspección de fábrica y cargos por pruebas de productos. En promedio, comienza en ₹2,000 para la solicitud y puede aumentar dependiendo de la complejidad del producto. Para más detalles, contáctenos en admin@bis-certifications.com.",
+        "El costo de Scheme X incluye tarifas de solicitud, tarifas de certificación, cargos por revisión de archivo técnico, costos de inspección de fábrica y cargos por pruebas de productos. En promedio, comienza en ₹2,000 para la solicitud y puede aumentar dependiendo de la complejidad del producto. Para más detalles, contáctenos en info@sunconsultants.co.in.",
     },
     {
       question:

@@ -1760,7 +1760,7 @@ const SchemeXServiceFaq = () => {
     {
       question: "4. What is the cost of BIS Scheme X certification?",
       answer:
-        "The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at admin@bis-certifications.com.",
+        "The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at info@sunconsultants.co.in.",
     },
     {
       question: "5. How long does it take to get a BIS licence under Scheme X?",

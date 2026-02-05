@@ -1759,7 +1759,7 @@ const SchemeXServiceFaq = () => {
     {
       question: "4. Berapa biaya sertifikasi BIS Skema X?",
       answer:
-        "Biaya Skema X mencakup biaya aplikasi, biaya sertifikasi, biaya tinjauan file teknis, biaya inspeksi pabrik, dan biaya pengujian produk. Rata-rata, dimulai dari ₹2.000 untuk aplikasi dan bisa naik tergantung pada kompleksitas produk. Untuk detail lebih lanjut hubungi kami di admin@bis-certifications.com.",
+        "Biaya Skema X mencakup biaya aplikasi, biaya sertifikasi, biaya tinjauan file teknis, biaya inspeksi pabrik, dan biaya pengujian produk. Rata-rata, dimulai dari ₹2.000 untuk aplikasi dan bisa naik tergantung pada kompleksitas produk. Untuk detail lebih lanjut hubungi kami di info@sunconsultants.co.in.",
     },
     {
       question:

@@ -1759,7 +1759,7 @@ const SchemeXServiceFaq = () => {
     {
       question: "4. Chi phí chứng nhận BIS Scheme X là bao nhiêu?",
       answer:
-        "Chi phí của Scheme X bao gồm phí nộp đơn, phí chứng nhận, phí xem xét hồ sơ kỹ thuật, chi phí kiểm tra nhà máy và phí kiểm tra sản phẩm. Trung bình, nó bắt đầu từ ₹2,000 cho nộp đơn và có thể tăng tùy theo độ phức tạp của sản phẩm. Để biết thêm chi tiết, liên hệ với chúng tôi tại admin@bis-certifications.com.",
+        "Chi phí của Scheme X bao gồm phí nộp đơn, phí chứng nhận, phí xem xét hồ sơ kỹ thuật, chi phí kiểm tra nhà máy và phí kiểm tra sản phẩm. Trung bình, nó bắt đầu từ ₹2,000 cho nộp đơn và có thể tăng tùy theo độ phức tạp của sản phẩm. Để biết thêm chi tiết, liên hệ với chúng tôi tại info@sunconsultants.co.in.",
     },
     {
       question: "5. Mất bao lâu để nhận giấy phép BIS theo Scheme X?",

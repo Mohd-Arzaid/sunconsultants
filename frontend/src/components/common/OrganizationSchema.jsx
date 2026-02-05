@@ -25,7 +25,7 @@ const OrganizationSchema = () => {
       "@type": "ContactPoint",
       telephone: "+91-8010505057",
       contactType: "customer service",
-      email: "admin@bis-certifications.com",
+      email: "info@sunconsultants.co.in",
     },
     aggregateRating: {
       "@type": "AggregateRating",
