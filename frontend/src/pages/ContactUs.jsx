@@ -207,7 +207,7 @@ const ContactInfoSection = () => (
           Email
         </h4>
         <p className="font-geist text-[#3C3C48] text-[16px] md:text-[20px] font-medium text-center">
-          admin@bis-certifications.com
+          info@sunconsultants.co.in
         </p>
       </div>
 

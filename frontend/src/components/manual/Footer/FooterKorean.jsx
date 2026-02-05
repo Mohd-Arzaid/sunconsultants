@@ -14,10 +14,10 @@ const FooterKorean = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             이메일을 보내주세요{" "}
             <a
-              href="mailto:admin@bis-certifications.com"
+              href="mailto:info@sunconsultants.co.in"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              admin@bis-certifications.com
+              info@sunconsultants.co.in
             </a>{" "}
             으로 또는 아래 옵션 중 하나를 사용해 주세요. 보통 24시간 이내에
             답변드립니다.
@@ -300,7 +300,7 @@ const FooterKorean = () => {
               </a>
 
               <a
-                href="mailto:admin@bis-certifications.com?body=안녕하세요"
+                href="mailto:info@sunconsultants.co.in?body=안녕하세요"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="이메일 보내기"

@@ -1764,7 +1764,7 @@ const SchemeXServiceFaq = () => {
     {
       question: "4. Wat is de kosten van BIS Scheme X-certificering?",
       answer:
-        "De kosten van Scheme X omvatten aanvraagkosten, certificeringskosten, technische bestandsbeoordelingskosten, fabrieksinspectiekosten en producttestkosten. Gemiddeld begint het bij ₹2.000 voor de aanvraag en kan het hoger zijn afhankelijk van de productcomplexiteit. Voor meer details neem contact op via admin@bis-certifications.com.",
+        "De kosten van Scheme X omvatten aanvraagkosten, certificeringskosten, technische bestandsbeoordelingskosten, fabrieksinspectiekosten en producttestkosten. Gemiddeld begint het bij ₹2.000 voor de aanvraag en kan het hoger zijn afhankelijk van de productcomplexiteit. Voor meer details neem contact op via info@sunconsultants.co.in.",
     },
     {
       question:

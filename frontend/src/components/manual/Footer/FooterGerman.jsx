@@ -14,10 +14,10 @@ const FooterGerman = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Schreiben Sie uns eine E-Mail an{" "}
             <a
-              href="mailto:admin@bis-certifications.com"
+              href="mailto:info@sunconsultants.co.in"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              admin@bis-certifications.com
+              info@sunconsultants.co.in
             </a>{" "}
             oder nutzen Sie eine der unten stehenden Optionen. Wir antworten
             normalerweise innerhalb von 24 Stunden.
@@ -300,7 +300,7 @@ const FooterGerman = () => {
               </a>
 
               <a
-                href="mailto:admin@bis-certifications.com?body=Hallo"
+                href="mailto:info@sunconsultants.co.in?body=Hallo"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Senden Sie uns eine E-Mail"

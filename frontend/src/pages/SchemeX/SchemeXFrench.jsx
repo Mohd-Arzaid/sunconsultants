@@ -1769,7 +1769,7 @@ const SchemeXFrenchServiceFaq = () => {
     {
       question: "4. Quel est le coût de la certification BIS Schéma X ?",
       answer:
-        "Le coût du Schéma X inclut les frais de demande, les frais de certification, les frais de révision du dossier technique, les coûts d&apos;inspection d&apos;usine, et les frais de test de produits. En moyenne, cela commence à ₹2,000 pour la demande et peut augmenter selon la complexité du produit. Pour plus de détails, contactez-nous à admin@bis-certifications.com.",
+        "Le coût du Schéma X inclut les frais de demande, les frais de certification, les frais de révision du dossier technique, les coûts d&apos;inspection d&apos;usine, et les frais de test de produits. En moyenne, cela commence à ₹2,000 pour la demande et peut augmenter selon la complexité du produit. Pour plus de détails, contactez-nous à info@sunconsultants.co.in.",
     },
     {
       question:

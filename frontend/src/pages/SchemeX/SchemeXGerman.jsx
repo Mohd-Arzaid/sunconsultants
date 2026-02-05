@@ -1902,7 +1902,7 @@ const SchemeXGermanServiceFaq = () => {
       question:
         "4. Wie hoch sind die Kosten für die BIS Schema X Zertifizierung?",
       answer:
-        "Die Kosten für Schema X umfassen Antragsgebühren, Zertifizierungsgebühren, Gebühren für die Überprüfung der technischen Akte, Kosten für Werksinspektionen und Produktprüfgebühren. Im Durchschnitt beginnt es bei ₹2.000 für den Antrag und kann je nach Produktkomplexität steigen. Für weitere Details kontaktieren Sie uns unter admin@bis-certifications.com.",
+        "Die Kosten für Schema X umfassen Antragsgebühren, Zertifizierungsgebühren, Gebühren für die Überprüfung der technischen Akte, Kosten für Werksinspektionen und Produktprüfgebühren. Im Durchschnitt beginnt es bei ₹2.000 für den Antrag und kann je nach Produktkomplexität steigen. Für weitere Details kontaktieren Sie uns unter info@sunconsultants.co.in.",
     },
     {
       question:

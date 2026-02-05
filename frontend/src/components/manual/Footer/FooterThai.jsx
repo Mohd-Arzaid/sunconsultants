@@ -14,10 +14,10 @@ const FooterThai = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             ส่งอีเมลถึงเราที่{" "}
             <a
-              href="mailto:admin@bis-certifications.com"
+              href="mailto:info@sunconsultants.co.in"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              admin@bis-certifications.com
+              info@sunconsultants.co.in
             </a>{" "}
             หรือใช้หนึ่งในตัวเลือกด้านล่าง เรามักจะตอบกลับภายใน 24 ชั่วโมง
           </div>
@@ -298,7 +298,7 @@ const FooterThai = () => {
               </a>
 
               <a
-                href="mailto:admin@bis-certifications.com?body=สวัสดี"
+                href="mailto:info@sunconsultants.co.in?body=สวัสดี"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="ส่งอีเมลถึงเรา"

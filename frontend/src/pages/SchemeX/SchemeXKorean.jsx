@@ -1721,7 +1721,7 @@ const SchemeXServiceFaq = () => {
     {
       question: "4. BIS Scheme X 인증 비용은 얼마인가요?",
       answer:
-        "Scheme X 비용에는 신청 수수료, 인증 수수료, 기술 파일 검토 비용, 공장 검사 비용, 제품 테스트 비용이 포함됩니다. 평균적으로 신청은 ₹2,000부터 시작하며 제품 복잡성에 따라 증가할 수 있습니다. 자세한 내용은 admin@bis-certifications.com으로 문의하세요.",
+        "Scheme X 비용에는 신청 수수료, 인증 수수료, 기술 파일 검토 비용, 공장 검사 비용, 제품 테스트 비용이 포함됩니다. 평균적으로 신청은 ₹2,000부터 시작하며 제품 복잡성에 따라 증가할 수 있습니다. 자세한 내용은 info@sunconsultants.co.in으로 문의하세요.",
     },
     {
       question: "5. Scheme X 하의 BIS 라이선스를 받는 데 얼마나 걸리나요?",
