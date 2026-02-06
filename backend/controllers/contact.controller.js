@@ -43,7 +43,7 @@ const processInBackground = async (contactData) => {
   if (emailResult.status === "fulfilled") {
     if (emailResult.value?.success) {
       console.log(
-        "✅ Background: Contact email sent successfully to admin@bis-certifications.com"
+        "✅ Background: Contact email sent successfully to info@sunconsultants.co.in"
       );
     } else {
       console.log(

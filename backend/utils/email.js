@@ -21,7 +21,7 @@ export const sendContactEmail = async (contactData) => {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "admin@bis-certifications.com",
+      to: "info@sunconsultants.co.in",
       subject: `🚨 New Contact Form Submission - ${contactData.pageName}`,
       replyTo: contactData.email,
       html: `
@@ -104,7 +104,7 @@ export const sendContactEmail = async (contactData) => {
 
     const result = await transporter.sendMail(mailOptions);
     console.log(
-      "✅ Contact email sent successfully to admin@bis-certifications.com"
+      "✅ Contact email sent successfully to info@sunconsultants.co.in"
     );
     return { success: true, messageId: result.messageId };
   } catch (error) {
@@ -120,8 +120,8 @@ export const sendAppointmentEmail = async (appointmentData) => {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "admin@bis-certifications.com",
-      subject: `🗓️ New Appointment Request - ${appointmentData.pageName}`,  
+      to: "info@sunconsultants.co.in",
+      subject: `🗓️ New Appointment Request - ${appointmentData.pageName}`,
       replyTo: appointmentData.email,
       html: `
         <!DOCTYPE html>
@@ -211,7 +211,7 @@ export const sendAppointmentEmail = async (appointmentData) => {
 
     const result = await transporter.sendMail(mailOptions);
     console.log(
-      "✅ Appointment email sent successfully to admin@bis-certifications.com"
+      "✅ Appointment email sent successfully to info@sunconsultants.co.in"
     );
     return { success: true, messageId: result.messageId };
   } catch (error) {
