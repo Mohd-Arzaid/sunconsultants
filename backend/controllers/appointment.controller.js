@@ -43,7 +43,7 @@ const processInBackground = async (appointmentData) => {
   if (emailResult.status === "fulfilled") {
     if (emailResult.value?.success) {
       console.log(
-        "✅ Background: Appointment email sent successfully to admin@bis-certifications.com"
+        "✅ Background: Appointment email sent successfully to info@sunconsultants.co.in"
       );
     } else {
       console.log(
