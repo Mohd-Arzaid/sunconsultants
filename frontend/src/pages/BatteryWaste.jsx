@@ -32,25 +32,61 @@ const BatteryWaste = () => {
   return (
     <div className="relative">
       <Helmet>
+        <title>EPR Registration for Battery Waste Management</title>
+        <meta name="description" content="EPR Registration for battery waste is a regulatory authorization that holds producers responsible for sustainable collection, recycling and disposal of used batteries." />
+        <meta name="keywords" content="epr portal for battery waste management, epr authorization for battery waste management, battery waste epr, epr for battery waste, epr registration for battery waste management, battery epr, battery waste epr certificate, CPCB battery waste registration, battery waste management rules 2022, extended producer responsibility battery" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bis-certifications.com/epr-certificate-for-battery-waste-management-bwm" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="EPR Registration for Battery Waste Management " />
+        <meta property="og:description" content="EPR Registration for battery waste is a regulatory authorization that holds producers responsible for sustainable collection, recycling and disposal of used batteries." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bis-certifications.com/epr-certificate-for-battery-waste-management-bwm" />
+        <meta property="og:site_name" content="BIS Certifications" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="EPR Registration for Battery Waste Management " />
+        <meta name="twitter:description" content="EPR Registration for battery waste is a regulatory authorization that holds producers responsible for sustainable collection, recycling and disposal of used batteries." />
+        
         {/* JSON-LD Breadcrumb structured data for SEO */}
-        <script type="application/ld+json">
+        <script type="application/ld+json"> 
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
-            itemListElement: [
+            "itemListElement": [
               {
                 "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com",
+                "position": 1,
+                "name": "Home",
+                "item": "https://bis-certifications.com",
               },
               {
                 "@type": "ListItem",
-                position: 2,
-                name: "EPR Registration for Battery Waste Management",
-                item: "https://bis-certifications.com/epr-certificate-for-battery-waste-management-bwm",
+                "position": 2,
+                "name": "EPR Registration for Battery Waste Management",
+                "item": "https://bis-certifications.com/epr-certificate-for-battery-waste-management-bwm",
               },
             ],
+          })}
+        </script>
+        
+        {/* JSON-LD Service structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "EPR Registration for Battery Waste Management",
+            "description": "EPR Registration for battery waste is a regulatory authorization that holds producers responsible for sustainable collection, recycling and disposal of used batteries. Complete assistance for EPR authorization for battery waste management compliance.",
+            "provider": {
+              "@type": "Organization",
+              "name": "BIS Certifications",
+              "url": "https://bis-certifications.com"
+            },
+            "serviceType": "Regulatory Compliance Service",
+            "areaServed": "India",
+            "keywords": "epr portal for battery waste management, epr authorization for battery waste management, battery waste epr, epr for battery waste, epr registration for battery waste management, battery epr, battery waste epr"
           })}
         </script>
       </Helmet>
@@ -116,12 +152,11 @@ const EPRHero = () => {
               EPR Registration for
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
-            Battery Waste
+            Battery Waste Management
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Get EPR certification for battery waste management. Ensure CPCB compliance
-            with proper recycling & disposal plans for all battery types
+            Get EPR registration for battery waste management. Expert assistance for EPR authorization for battery waste, battery waste EPR compliance, and CPCB portal registration for all battery types
           </p>
 
           <div className="flex items-center -mt-2">
@@ -658,12 +693,12 @@ const OverviewSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        EPR Registration for Battery Waste Management in India
+        EPR Registration for Battery Waste Management in India | Battery Waste EPR Certificate
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        A Complete Guide to Battery Waste EPR under Battery Waste Management Rules, 2022
+        A Complete Guide to Battery Waste EPR under Battery Waste Management Rules, 2022 - EPR Portal for Battery Waste Management
       </p>
 
       {/* Overview Content */}

@@ -1,6 +1,6 @@
-import FaqAuthorKorean from "@/components/common/FaqAuthor/FaqAuthorKorean";
-import ManyUsersAlsoReadKorean from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadKorean";
-import ServicesRightSideContentKorean from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentKorean";
+import FaqAuthorVietnamese from "@/components/common/FaqAuthor/FaqAuthorVietnamese";
+import ManyUsersAlsoReadVietnamese from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadVietnamese";
+import ServicesRightSideContentVietnamese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentVietnamese";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterKorean from "@/components/manual/Footer/FooterKorean";
+import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
 import {
   Table,
   TableBody,
@@ -25,44 +25,44 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateElectricFenceEnergizersKorean = () => {
+const BISCertificateElectricFenceEnergizersVietnamese = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
       <BreadcrumbContent />
-      <MainContent />
+      <MainContent /> 
       <Services />
       <VideoSection />
-      <FooterKorean />
+      <FooterVietnamese />
     </div>
   );
 };
 
-export default BISCertificateElectricFenceEnergizersKorean;
+export default BISCertificateElectricFenceEnergizersVietnamese;
 
 const MetaTags = () => {
   const title =
-    "전기 울타리 에너자이저용 BIS 인증서 | IS 302-2-76:1999 BIS 라이선스";
+    "Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào | IS 302-2-76:1999 Giấy phép BIS";
   const ogTitle =
-    "전기 울타리 에너자이저용 BIS 인증 – IS 302-2-76:1999 가이드";
+    "Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào – Hướng dẫn IS 302-2-76:1999";
   const twitterTitle =
-    "전기 울타리 에너자이저용 BIS 라이선스 | IS 302-2-76:1999";
+    "Giấy phép BIS cho Thiết bị tạo xung điện hàng rào | IS 302-2-76:1999";
   const metaDescription =
-    "IS 302-2-76:1999에 따른 전기 울타리 에너자이저용 BIS 인증서를 받으세요. 인도에서 BIS 인증을 위한 프로세스, 서류, 테스트, 비용 및 타임라인.";
+    "Nhận Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào theo IS 302-2-76:1999. Quy trình, tài liệu, kiểm tra, chi phí & thời gian cho Chứng nhận BIS tại Ấn Độ.";
   const ogDescription =
-    "IS 302-2-76:1999에 따른 전기 울타리 에너자이저용 BIS 인증에 대한 완전한 가이드. 프로세스, 비용, 서류, 테스트 및 BIS 라이선스 혜택을 알아보세요.";
+    "Hướng dẫn hoàn chỉnh cho Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào theo IS 302-2-76:1999. Biết quy trình, chi phí, tài liệu, kiểm tra & lợi ích của giấy phép BIS.";
   const twitterDescription =
-    "IS 302-2-76:1999에 따른 전기 울타리 에너자이저용 BIS 인증서를 신청하세요. 인도에서 BIS 프로세스, 서류, 테스트, 수수료 및 타임라인을 알아보세요.";
+    "Ứng dụng Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào theo IS 302-2-76:1999. Tìm hiểu quy trình BIS, tài liệu, kiểm tra, phí & thời gian tại Ấn Độ.";
   const metaKeywords =
-    "전기 울타리 에너자이저용 BIS 인증서, 전기 울타리 에너자이저용 BIS 라이선스, IS 302-2-76:1999, 전기 울타리 에너자이저용 BIS 인증";
+    "Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào, Giấy phép BIS cho Thiết bị tạo xung điện hàng rào, IS 302-2-76:1999, Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/jeongi-ul-tali-eneojaijeo-is-302-2-76";
+    "https://bis-certifications.com/blogs/isi-products/electric-fence-energizers-is-302-2-76";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
-    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+    "Dhruv Aggarwal, Trưởng phòng Vận hành tại Sun Certification India";
 
-  return (
+  return (  
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={metaDescription} />
@@ -93,7 +93,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">홈</Link>
+                    <Link to="/">Trang chủ</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -102,7 +102,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/Blogs">최신 블로그</Link>
+                    <Link to="/Blogs">Blog mới nhất</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -111,7 +111,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    전기 울타리 에너자이저용 BIS 인증서 – IS
+                    Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào – IS
                     302-2-76:1999
                   </BreadcrumbPage>
                 </BreadcrumbItem>
@@ -119,8 +119,8 @@ const BreadcrumbContent = () => {
             </Breadcrumb>
           </div>
         </div>
+      </div>    
       </div>
-    </div>
   );
 };
 
@@ -132,7 +132,7 @@ const MainContent = () => {
         <MainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentEng />
+        <ServicesRightSideContentVietnamese />
       </div>
     </div>
   );
@@ -144,321 +144,350 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          전기 울타리 에너자이저 BIS 인증 – IS 302-2-76:1999 완전 가이드
+          Chứng nhận BIS Thiết bị tạo xung điện hàng rào – Hướng dẫn hoàn chỉnh IS
+          302-2-76:1999
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforElectricFenceEnergizers.png"
-            title="전기 울타리 에너자이저용 BIS 라이선스"
-            alt="전기 울타리 에너자이저용 BIS 인증서 - IS 302-2-76:1999 BIS 인증"
+            title="Giấy phép BIS cho Thiết bị tạo xung điện hàng rào"
+            alt="Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào - IS 302-2-76:1999 Chứng nhận BIS"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          농장 보호, 가축 관리, 경계 보안 및 야생동물 제어에 대한 관심 증가로 인해 인도 전역에서 전기 울타리 에너자이저의 수요가 빠르게 증가했습니다. 이 장치들은 울타리 시스템을 통해 제어된 전기 펄스를 전달하여 작물, 동물 및 재산을 보호하는 데 중요한 역할을 합니다.
+          Nhu cầu về thiết bị tạo xung điện hàng rào đã tăng nhanh trên khắp
+          Ấn Độ do tập trung ngày càng tăng vào việc bảo vệ nông trại, quản lý
+          gia súc, an ninh chu vi, và kiểm soát động vật hoang dã. Các thiết bị này đóng
+          vai trò quan trọng trong việc bảo vệ cây trồng, động vật và tài sản bằng
+          cách cung cấp các xung điện được kiểm soát thông qua hệ thống hàng rào.
+          Tuy nhiên, vì thiết bị tạo xung điện hàng rào liên quan trực tiếp đến điện
+          áp suất, nguy cơ tiếp xúc của con người, và nguy cơ cháy, an toàn và tuân thủ
+          quy định trở thành không thể thương lượng.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          그러나 전기 울타리 에너자이저는 직접적으로 전기 출력, 인간 접촉 위험 및 화재 위험을 포함하므로 안전 및 규제 준수가 필수적입니다.
+          Tại Ấn Độ, thiết bị tạo xung điện hàng rào nằm trong phạm vi chứng nhận
+          BIS bắt buộc theo IS 302-2-76:1999. Bất kỳ nhà sản xuất hoặc
+          nhà nhập khẩu có ý định bán thiết bị tạo xung điện hàng rào tại thị trường
+          Ấn Độ phải nhận Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào
+          trước khi thương mại hóa. Nếu không có sự chấp thuận này, sản phẩm bị coi là
+          không tuân thủ và bất hợp pháp để bán.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          인도에서는 전기 울타리 에너자이저가 IS 302-2-76:1999에 따라 필수 BIS 인증 범위에 속합니다. 인도 시장에서 전기 울타리 에너자이저를 판매하려는 모든 제조업체나 수입업체는 상업화 전에 전기 울타리 에너자이저용 BIS 인증서를 받아야 합니다. 이 승인 없이 제품은 비준수 및 판매 불법으로 간주됩니다.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          이 포괄적인 가이드는 법적 요구사항, 테스트, 문서화, 비용, 타임라인 및 준수 의무를 포함하여 전기 울타리 에너자이저용 BIS 인증에 대한 명확성을 원하는 제조업체, 수입업체, 외국 브랜드, 스타트업, 유통업체 및 전자상거래 판매자를 위해 설계되었습니다. 전기 울타리 에너자이저용 BIS 라이선스를 신청할 계획인 경우 이 페이지는 명확하고 실용적이며 준수 중심의 방식으로 모든 단계를 안내해 드립니다.
+          Hướng dẫn toàn diện này được thiết kế cho các nhà sản xuất, nhà nhập khẩu,
+          thương hiệu nước ngoài, công ty khởi nghiệp, nhà phân phối và người bán hàng trên
+          nền tảng thương mại điện tử muốn làm rõ về Chứng nhận BIS Thiết bị tạo xung điện hàng rào, bao gồm
+          yêu cầu pháp lý, kiểm tra, tài liệu, chi phí, thời gian và
+          nghĩa vụ tuân thủ. Nếu bạn đang lên kế hoạch ứng dụng Giấy phép BIS
+          / Giấy phép BIS cho Thiết bị tạo xung điện hàng rào, trang này sẽ hướng dẫn
+          bạn qua từng bước một cách rõ ràng, thực tế và tập trung vào tuân thủ.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS 인증이란 무엇인가요?
+          Chứng nhận BIS là gì?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS 인증은 인도의 국가 표준 기구인 인도 표준국(BIS)이 운영하는 적합성 평가 시스템입니다. BIS의 전체 형태는 인도 표준국이며, 2016년 BIS법에 따라 설립되어 인도에서 판매되는 제품의 품질, 안전, 신뢰성 및 일관성을 보장합니다.
+          Chứng nhận BIS là hệ thống đánh giá sự phù hợp được vận hành bởi
+          Cục Tiêu chuẩn Ấn Độ (BIS), cơ quan tiêu chuẩn quốc gia của
+          Ấn Độ. Tên đầy đủ của BIS là Cục Tiêu chuẩn Ấn Độ, được thành lập
+          theo Đạo luật BIS, 2016 để đảm bảo chất lượng, an toàn, độ tin cậy, và
+          sự nhất quán của sản phẩm được bán tại Ấn Độ.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 인증서 의미
+          Ý nghĩa Chứng nhận BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS 인증서는 제품이 적용되는 인도 표준(IS)을 준수하고 규정된 안전, 성능 및 품질 기준을 충족함을 나타냅니다. 제품이 BIS 인식 시스템에 의해 테스트되고 검증되었음을 소비자와 규제 기관에 보장합니다.
+          Chứng nhận BIS cho thấy một sản phẩm phù hợp với Tiêu chuẩn Ấn Độ (IS) áp dụng
+          và đáp ứng các tiêu chuẩn an toàn, hiệu suất và
+          chất lượng quy định. Nó cung cấp sự đảm bảo cho người tiêu dùng và cơ quan quản lý
+          rằng sản phẩm đã được kiểm tra và xác minh bởi các hệ thống được BIS công nhận.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ISI 마크와 BIS 마크
+          Dấu ISI và Dấu BIS
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          전기 울타리 에너자이저와 같은 전기 제품의 경우, BIS 인증은 ISI 마크 체계에 따라 부여됩니다. 제품에 표시된 BIS 인증 마크(ISI 마크)는 관련 BIS 표준을 준수함을 나타냅니다. 유효한 BIS 라이선스 없이 ISI 마크가 표시된 제품을 판매하는 것은 처벌 가능한 범죄입니다.
+          Đối với các sản phẩm điện như thiết bị tạo xung điện hàng rào, chứng nhận
+          BIS được cấp theo Chương trình Dấu ISI. Dấu chứng nhận BIS (dấu ISI) được hiển thị trên sản phẩm cho thấy
+          sự tuân thủ với các tiêu chuẩn BIS liên quan. Bán sản phẩm có dấu ISI
+          mà không có giấy phép BIS hợp lệ là một hành vi bị trừng phạt.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS가 존재하는 이유
+          Tại sao BIS tồn tại
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS의 핵심 목표는 다음과 같습니다:
+          Mục tiêu cốt lõi của BIS là:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>소비자 안전 보호</li>
-          <li>비표준 및 불안전한 제품 방지</li>
-          <li>인도 제조업을 글로벌 기준과 조화</li>
-          <li>BIS 통지를 통한 필수 준수 시행</li>
+          <li>Bảo vệ an toàn người tiêu dùng</li>
+          <li>Ngăn chặn các sản phẩm không đạt tiêu chuẩn và không an toàn</li>
+          <li>Hài hòa sản xuất Ấn Độ với các tiêu chuẩn toàn cầu</li>
+          <li>Thực thi tuân thủ bắt buộc thông qua các thông báo BIS</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          IS 302-2-76:1999의 적용 범위
+          Phạm vi của IS 302-2-76:1999
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          이 표준은 전기 울타리 시스템과 함께 사용되도록 의도된 전기 울타리 에너자이저에 대한 특정 안전 요구사항을 명시합니다:
+          Tiêu chuẩn này quy định các yêu cầu an toàn cụ thể cho thiết bị
+          tạo xung điện hàng rào dự định sử dụng với hệ thống hàng rào điện cho:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>농업 울타리</li>
-          <li>가축 관리</li>
-          <li>야생동물 제어</li>
-          <li>경계 보안</li>
+          <li>Hàng rào nông nghiệp</li>
+          <li>Kiểm soát gia súc</li>
+          <li>Ngăn chặn động vật hoang dã</li>
+          <li>An ninh chu vi</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          다음 전원으로 작동되는 에너자이저를 포함합니다:
+          Nó bao gồm các thiết bị tạo xung được cung cấp bởi:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>상용 전력</li>
-          <li>배터리 작동 시스템</li>
-          <li>상용 전력과 배터리 결합 전원</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          안전 및 테스트 목적
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          이 표준은 다음을 해결하기 위해 설계되었습니다:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>감전 방지</li>
-          <li>출력 에너지 제한</li>
-          <li>펄스 지속시간 및 반복 제어</li>
-          <li>절연 및 크리피지 거리</li>
-          <li>화재 및 과열 위험</li>
-          <li>기계적 강도 및 케이스 안전</li>
+          <li>Điện lưới</li>
+          <li>Hệ thống hoạt động bằng pin</li>
+          <li>Kết hợp nguồn lưới và pin</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          준수 대상
+          Mục đích An toàn và Kiểm tra
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          IS 302-2-76:1999 준수는 다음에 대해 필수입니다:
+          Tiêu chuẩn được thiết kế để giải quyết:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>인도 제조업체</li>
-          <li>외국 제조 에너자이저 수입업체</li>
-          <li>인도에서 판매하는 외국 제조업체</li>
+          <li>Bảo vệ chống sốc điện</li>
+          <li>Giới hạn năng lượng đầu ra</li>
+          <li>Kiểm soát thời lượng và tần sốc xung</li>
+          <li>Khoảng cách điện và khoảng cách rò rỉ</li>
+          <li>Rủi ro và nguy cơ quá nhiệt</li>
+          <li>Độ bền cơ học và an toàn vỏ bao</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Ai Phải Tuân Thủ
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tuân thủ với IS 302-2-76:1999 là bắt buộc cho:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Nhà sản xuất Ấn Độ</li>
+          <li>Nhà nhập khẩu các thiết bị tạo xung sản xuất nước ngoài</li>
+          <li>Nhà sản xuất nước ngoài bán tại Ấn Độ</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          전기 울타리 에너자이저에 BIS 인증이 필수적인 이유
+          Tại sao Chứng nhận BIS là Bắt buộc cho Thiết bị tạo xung điện hàng rào
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. 소비자 및 동물 안전
+          1. An toàn Người tiêu dùng và Động vật
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          전기 울타리 에너자이저는 고전압 펄스를 생성합니다. 부적절한
-          설계나 과도한 출력은 심각한 부상, 화재 위험 또는
-          치명적인 사고를 일으킬 수 있습니다. BIS 인증은 출력 에너지가
-          안전한 한도 내에 유지되도록 보장합니다.
+          Thiết bị tạo xung điện hàng rào tạo ra các xung điện áp cao. Thiết kế
+          không phù hợp hoặc đầu ra quá mức có thể gây ra thương tích nghiêm trọng,
+          nguy cơ cháy, hoặc tai nạn chết người. Chứng nhận BIS đảm bảo năng lượng
+          đầu ra vẫn nằm trong giới hạn an toàn.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. 인도의 법적 요구사항
+          2. Yêu cầu Pháp lý tại Ấn Độ
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS 통지 및 BIS법에 따라, 인증되지 않은 전기 기기를 판매하는 것은 불법입니다.
-          BIS 인증이 없는 제품은 압수, 금지 또는 리콜될 수 있습니다.
+          Theo các thông báo BIS và Đạo luật BIS, bán thiết bị điện không được chứng nhận
+          là bất hợp pháp. Sản phẩm không có chứng nhận BIS có thể bị tịch thu,
+          cấm, hoặc thu hồi.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. 규제 준수
+          3. Tuân thủ Quy định
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          세관, 시장 감시팀 및 전자상거래 플랫폼과 같은 당국은
-          목록화 및 통관을 위해 유효한 BIS 라이선스를 요구합니다.
+          Các cơ quan như hải quan, đội giám sát thị trường, và các nền tảng
+          thương mại điện tử yêu cầu giấy phép BIS hợp lệ để đăng ký và thông quan.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. 시장 및 브랜드 혜택
+          4. Lợi ích Thị trường và Thương hiệu
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          인도 BIS 인증서는 신뢰를 구축하고, 브랜드 신뢰성을 향상시키며,
-          조직 소매 및 기관 시장으로의 원활한 진입을 허용합니다.
+          Chứng nhận BIS Ấn Độ xây dựng lòng tin, cải thiện uy tín thương hiệu,
+          và cho phép thâm nhập thuận lợi vào thị trường bán lẻ có tổ chức và thị trường
+          tổ chức.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          전기 울타리 에너자이저를 위한 단계별 BIS 인증 프로세스
+          Quy trình Chứng nhận BIS Từng bước cho Thiết bị tạo xung điện hàng rào
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          적용성 및 표준 식별
+          Phạm vi Áp dụng & Xác định Tiêu chuẩn
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          첫 번째 단계는 제품 분류를 확인하고 IS
-          302-2-76:1999를 적용 가능한 BIS 표준으로 식별하는 것입니다. 제품 설계, 전원
-          및 응용은 표준의 범위와 일치해야 합니다.
+          Bước đầu tiên là xác nhận phân loại sản phẩm và xác định IS
+          302-2-76:1999 là tiêu chuẩn BIS áp dụng. Thiết kế sản phẩm, nguồn
+          điện và ứng dụng phải phù hợp với phạm vi của tiêu chuẩn.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 온라인 신청 프로세스
+          Quy trình Ứng dụng BIS Trực tuyến
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          제조업체는 Manak 온라인 포털을 통해 BIS 신청서를 온라인으로 제출해야 합니다. 신청서에는 다음이 포함됩니다:
+          Nhà sản xuất phải nộp đơn đăng ký BIS trực tuyến qua cổng thông tin
+          Manak Online. Đơn đăng ký bao gồm:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>제품 상세 정보</li>
-          <li>공장 정보</li>
-          <li>적용 가능한 표준 선택</li>
-          <li>시험 보고서 약정</li>
+          <li>Chi tiết sản phẩm</li>
+          <li>Thông tin nhà máy</li>
+          <li>Lựa chọn tiêu chuẩn áp dụng</li>
+          <li>Cam kết báo cáo kiểm tra</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          이 단계는 공식적으로 BIS 등록 / BIS 인증서
-          등록 프로세스를 시작합니다.
+          Bước này chính thức khởi động quy trình đăng ký BIS / đăng ký chứng nhận BIS.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          수수료 및 비용 구조
+          Phí & Cấu trúc Chi phí
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS 인증 비용에는 일반적으로 다음이 포함됩니다:
+          Chi phí chứng nhận BIS thường bao gồm:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>신청 수수료</li>
-          <li>테스트 비용 (실험실 종속)</li>
-          <li>공장 검사 수수료</li>
-          <li>라이선스 수수료</li>
-          <li>연간 마킹 수수료</li>
+          <li>Phí đăng ký</li>
+          <li>Phí kiểm tra (phụ thuộc vào phòng thí nghiệm)</li>
+          <li>Phí kiểm tra nhà máy</li>
+          <li>Phí giấy phép</li>
+          <li>Phí đánh dấu hàng năm</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS 인증의 전체 비용은 제품 복잡성,
-          모델 수 및 테스트 요구사항에 따라 달라집니다.
+          Tổng chi phí chứng nhận BIS phụ thuộc vào độ phức tạp của sản phẩm,
+          số lượng mẫu mã và yêu cầu kiểm tra.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          제품 샘플 테스트
+          Kiểm tra Mẫu sản phẩm
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          제품 샘플은 IS
-          302-2-76:1999에 따라 BIS 인식 실험실에서 테스트됩니다. 테스트는 모든 안전 및
-          성능 매개변수에 대한 준수를 보장합니다.
+          Mẫu sản phẩm được kiểm tra tại các phòng thí nghiệm được BIS công nhận
+          theo IS 302-2-76:1999. Kiểm tra đảm bảo tuân thủ tất cả các tham số
+          an toàn và hiệu suất.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          공장 검사 및 감사
+          Kiểm tra Nhà máy & Kiểm toán
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS 관계자는 다음을 확인하기 위해 공장 감사를 수행합니다:
+          Cán bộ BIS tiến hành kiểm toán nhà máy để xác minh:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>제조 프로세스</li>
-          <li>품질 관리 시스템</li>
-          <li>내부 테스트 시설</li>
-          <li>제출된 문서와의 일관성</li>
+          <li>Quy trình sản xuất</li>
+          <li>Hệ thống kiểm soát chất lượng</li>
+          <li>Cơ sở kiểm tra nội bộ</li>
+          <li>Sự nhất quán với tài liệu đã nộp</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 라이선스 및 ISI 마크 부여
+          Cấp Giấy phép BIS & Dấu ISI
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          성공적인 테스트 및 검사 후, BIS는 전기 울타리 에너자이저에 대한 BIS 라이선스를 부여하여,
-          고유한 CM/L 번호로 ISI 마크 사용을 허용합니다.
+          Sau khi kiểm tra và thanh tra thành công, BIS cấp Giấy phép BIS cho
+          Thiết bị tạo xung điện hàng rào, cho phép sử dụng dấu ISI với số
+          CM/L duy nhất.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          인증 후 준수
+          Tuân thủ Sau Chứng nhận
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          라이선스 보유자는 다음을 수행해야 합니다:
+          Người giữ giấy phép phải:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>정기 테스트 수행</li>
-          <li>생산 기록 유지</li>
-          <li>감사 감독 허용</li>
-          <li>시기적절한 라이선스 갱신</li>
+          <li>Thực hiện kiểm tra định kỳ</li>
+          <li>Duy trì hồ sơ sản xuất</li>
+          <li>Cho phép kiểm toán giám sát</li>
+          <li>Gia hạn giấy phép đúng hạn</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS 인증에 필요한 서류
+          Tài liệu Yêu cầu cho Chứng nhận BIS
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          제조업체 서류
+          Tài liệu Nhà sản xuất
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>공장 등록 증명</li>
-          <li>제조 프로세스 흐름 차트</li>
-          <li>기계 목록</li>
-          <li>품질 관리 계획</li>
+          <li>Bằng chứng đăng ký nhà máy</li>
+          <li>Sơ đồ quy trình sản xuất</li>
+          <li>Danh sách máy móc</li>
+          <li>Kế hoạch kiểm soát chất lượng</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          법적 서류
+          Tài liệu Pháp lý
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>회사 설립 증명서</li>
-          <li>GST 등록</li>
-          <li>상표권 승인 (해당하는 경우)</li>
+          <li>Giấy chứng nhận đăng ký công ty</li>
+          <li>Đăng ký GST</li>
+          <li>Ủy quyền thương hiệu (nếu có)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          기술 서류
+          Tài liệu Kỹ thuật
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>제품 사양 시트</li>
-          <li>회로도</li>
-          <li>사용자 매뉴얼 및 안전 지침</li>
+          <li>Bảng thông số kỹ thuật sản phẩm</li>
+          <li>Sơ đồ mạch điện</li>
+          <li>Sổ tay hướng dẫn sử dụng và an toàn</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 신청 서류
+          Tài liệu Ứng dụng BIS
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS 신청서</li>
-          <li>BIS 인식 실험실의 시험 보고서</li>
-          <li>위임장</li>
-          <li>약속 및 선언서</li>
+          <li>Biểu mẫu ứng dụng BIS</li>
+          <li>Báo cáo kiểm tra từ phòng thí nghiệm được BIS công nhận</li>
+          <li>Thư ủy quyền</li>
+          <li>Cam kết và tuyên bố</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          이것이 완전한 BIS 인증 서류 세트를 형성합니다.
+          Đây là bộ tài liệu hoàn chỉnh cho CHỨNG NHẬN BIS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          IS 302-2-76:1999에 따른 테스트 요구사항
+          Yêu cầu Kiểm tra theo IS 302-2-76:1999
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          필수 테스트에는 다음이 포함됩니다:
+          Các kiểm tra bắt buộc bao gồm:
         </p>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -466,10 +495,10 @@ const MainContentLeft = () => {
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  조항
+                  Điều khoản
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  요구사항
+                  Yêu cầu
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -479,7 +508,7 @@ const MainContentLeft = () => {
                   8
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  감전 방지
+                  Bảo vệ chống Sốc điện
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -487,7 +516,7 @@ const MainContentLeft = () => {
                   13.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  작동 온도에서의 누설 전류 및 전기 강도
+                  Dòng rò rỉ và cường độ điện ở nhiệt độ hoạt động
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -495,7 +524,7 @@ const MainContentLeft = () => {
                   5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  정격
+                  Đánh giá
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -503,7 +532,7 @@ const MainContentLeft = () => {
                   10
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  전력 입력 및 전류
+                  Đầu vào Nguồn điện và Dòng điện
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -511,7 +540,7 @@ const MainContentLeft = () => {
                   11
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  가열
+                  Sưởi ấm
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -519,7 +548,7 @@ const MainContentLeft = () => {
                   13
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  작동 온도에서의 누설 전류 및 전기 강도
+                  Dòng rò rỉ và Cường độ điện ở Nhiệt độ hoạt động
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -527,7 +556,7 @@ const MainContentLeft = () => {
                   16
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  누설 전류 및 전기 강도
+                  Dòng rò rỉ và Cường độ điện
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -535,280 +564,282 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          모든 테스트는 BIS 인식 실험실에서만 수행되어야 합니다.
+          Tất cả các kiểm tra phải được thực hiện chỉ tại các phòng thí nghiệm được BIS công nhận.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          일반적인 문제점 및 피하는 방법
+          Thách thức Phổ biến & Cách Tránh chúng
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. 테스트 실패
+          1. Kiểm tra Thất bại
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          <strong>원인:</strong> 비준수 설계 또는 출력 매개변수
+          <strong>Nguyên nhân:</strong> Thiết kế hoặc tham số đầu ra không tuân thủ
           <br />
-          <strong>해결책:</strong> 사전 준수 테스트 및 설계 검토
+          <strong>Giải pháp:</strong> Kiểm tra tuân thủ trước và xem xét thiết kế
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. 서류 오류
+          2. Lỗi Tài liệu
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          <strong>원인:</strong> 불완전하거나 일관성 없는 제출
+          <strong>Nguyên nhân:</strong> Bài nộp không đầy đủ hoặc không nhất quán
           <br />
-          <strong>해결책:</strong> 전문가 주도 서류 검증
+          <strong>Giải pháp:</strong> Xác minh tài liệu do chuyên gia dẫn dắt
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. 공장 감사 지연
+          3. Chậm trễ Kiểm toán Nhà máy
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>원인:</strong> 준비되지 않은 품질 시스템
+          <strong>Nguyên nhân:</strong> Hệ thống chất lượng chưa sẵn sàng
           <br />
-          <strong>해결책:</strong> 감사 준비 및 모의 검사
+          <strong>Giải pháp:</strong> Sẵn sàng kiểm toán và kiểm toán giả
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          제조업체 및 수입업체를 위한 BIS 인증의 혜택
+          Lợi ích của Chứng nhận BIS cho Nhà sản xuất & Nhà nhập khẩu
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>인도에서 판매할 수 있는 법적 권한</li>
-          <li>정부 및 기관 구매자에 대한 접근</li>
-          <li>향상된 소비자 신뢰</li>
-          <li>감소된 제품 책임 위험</li>
-          <li>전자상거래 및 소매 체인으로의 확장</li>
+          <li>Ủy quyền pháp lý để bán tại Ấn Độ</li>
+          <li>Tiếp cận người mua chính phủ và tổ chức</li>
+          <li>Tăng cường lòng tin người tiêu dùng</li>
+          <li>Giảm thiểu rủi ro trách nhiệm sản phẩm</li>
+          <li>Mở rộng vào thương mại điện tử và chuỗi bán lẻ</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          비준수에 대한 처벌
+          Hình phạt cho Vi phạm
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS 인증 없이 전기 울타리 에너자이저를 판매하면 다음이 발생할 수 있습니다:
+          Bán thiết bị tạo xung điện hàng rào không có chứng nhận BIS có thể dẫn đến:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>과도한 금전적 처벌</li>
-          <li>상품 압수</li>
-          <li>수입 통관 취소</li>
-          <li>BIS법에 따른 형사 기소</li>
-          <li>영구적인 시장 금지</li>
+          <li>Phạt tiền nặng</li>
+          <li>Tịch thu hàng hóa</li>
+          <li>Hủy bỏ thông quan nhập khẩu</li>
+          <li>Truy tố hình sự theo Đạo luật BIS</li>
+          <li>Cấm thị trường vĩnh viễn</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          전기 울타리 에너자이저에 BIS 인증이 필요한 사람은 누구인가요?
+          Ai Cần Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>인도 제조업체</li>
-          <li>수입업체</li>
-          <li>외국 제조업체</li>
-          <li>거래자 및 유통업체</li>
-          <li>온라인 마켓플레이스 판매자</li>
+          <li>Nhà sản xuất Ấn Độ</li>
+          <li>Nhà nhập khẩu</li>
+          <li>Nhà sản xuất nước ngoài</li>
+          <li>Nhà thương mại và nhà phân phối</li>
+          <li>Người bán trên sàn thương mại điện tử</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          인도 시장에 제품을 출시하는 모든 사람은 준수를 보장해야 합니다.
+          Bất kỳ ai tham gia đưa sản phẩm ra thị trường Ấn Độ phải đảm bảo tuân thủ.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS 인증 컨설팅을 위해 우리를 선택해야 하는 이유
+          Tại sao Chọn chúng tôi cho Tư vấn Chứng nhận BIS?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          우리는 다음을 포함하여 종단 간 BIS 인증 컨설팅을 제공합니다:
+          Chúng tôi cung cấp tư vấn chứng nhận BIS từ đầu đến cuối, bao gồm:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>표준 식별 및 적용성 확인</li>
-          <li>BIS 신청서 제출</li>
-          <li>실험실 조정 및 테스트 지원</li>
-          <li>공장 감사 준비</li>
-          <li>인증 후 준수 관리</li>
+          <li>Xác định tiêu chuẩn và kiểm tra tính áp dụng</li>
+          <li>Nộp đơn BIS</li>
+          <li>Phối hợp phòng thí nghiệm và hỗ trợ kiểm tra</li>
+          <li>Chuẩn bị kiểm toán nhà máy</li>
+          <li>Quản lý tuân thủ sau chứng nhận</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          우리의 전문성은 더 빠른 승인, 제로 거절 및 완전한
-          규제적 안심을 보장합니다.
+          Chuyên môn của chúng tôi đảm bảo phê duyệt nhanh hơn, không bị từ chối,
+          và hoàn toàn yên tâm về quy định.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          결론
+          Kết luận
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS
-          302-2-76:1999에 따른 전기 울타리 에너자이저용 BIS 인증서를 취득하는 것은 단순히 규제 형식이 아니라—안전, 법적 준수 및 장기적인 시장
-          성공을 향한 중요한 단계입니다. BIS 통지의 엄격한 시행 및 전기 제품에 대한 증가하는
-          검토로 인해 제조업체와 수입업체는
-          처벌을 피하고 소비자 신뢰를 구축하기 위해 전기 울타리 에너자이저 BIS 인증을 우선시해야 합니다.
+          Nhận Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào theo IS
+          302-2-76:1999 không chỉ là một thủ tục quy định—đây là một bước quan trọng
+          hướng tới đảm bảo an toàn, tuân thủ pháp lý, và thành công thị trường
+          dài hạn. Với việc thực thi nghiêm ngặt các thông báo BIS và sự giám sát
+          ngày càng tăng đối với sản phẩm điện, nhà sản xuất và nhà nhập khẩu phải
+          ưu tiên Chứng nhận BIS Thiết bị tạo xung điện hàng rào để tránh
+          hình phạt và xây dựng lòng tin người tiêu dùng.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          전기 울타리 에너자이저용 BIS 라이선스 / BIS 라이선스를
-          신청할 계획이라면 전문적인 지도는 상당히
-          타임라인, 비용 및 준수 위험을 줄일 수 있습니다. 준수를 유지하고,
-          경쟁력을 유지하며, 제품이 인도의 최고 안전
-          표준을 충족하도록 보장하십시오.
+          Nếu bạn đang lên kế hoạch ứng dụng Giấy phép BIS / Giấy phép BIS cho
+          Thiết bị tạo xung điện hàng rào, hướng dẫn chuyên nghiệp có thể giảm đáng kể
+          thời gian, chi phí và rủi ro tuân thủ. Hãy tuân thủ, cạnh tranh, và đảm bảo
+          sản phẩm của bạn đáp ứng các tiêu chuẩn an toàn cao nhất của Ấn Độ.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          자주 묻는 질문 – 전기 울타리 에너자이저용 BIS 인증
+          Câu hỏi thường gặp – Chứng nhận BIS cho Thiết bị tạo xung điện hàng rào
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q1. 인도에서 전기 울타리 에너자이저에 BIS 인증이 필수인가요?
+                C1. Chứng nhận BIS có bắt buộc cho thiết bị tạo xung điện hàng rào
+                tại Ấn Độ không?
               </strong>
               <br />
-              네, IS 302-2-76:1999에 따른 BIS 인증은 필수입니다.
+              Có, chứng nhận BIS theo IS 302-2-76:1999 là bắt buộc.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q2. BIS 인증서 전체 형태는 무엇인가요?</strong>
+              <strong>C2. Chứng nhận BIS viết đầy đủ là gì?</strong>
               <br />
-              인도 표준국 인증서입니다.
+              Chứng nhận Cục Tiêu chuẩn Ấn Độ.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q3. BIS 라이선스 없이 전기 울타리 에너자이저를 수입할 수 있나요?
+                C3. Tôi có thể nhập khẩu thiết bị tạo xung điện hàng rào không có giấy phép BIS không?
               </strong>
               <br />
-              아니요, BIS 인증 없는 수입은 금지됩니다.
+              Không, nhập khẩu không có chứng nhận BIS bị cấm.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q4. BIS 라이선스 비용은 얼마인가요?</strong>
+              <strong>C4. Chi phí giấy phép BIS là bao nhiêu?</strong>
               <br />
-              비용은 테스트, 공장 규모 및 모델 수에 따라 다릅니다.
+              Chi phí thay đổi tùy thuộc vào kiểm tra, quy mô nhà máy và số lượng mẫu mã.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q5. BIS 인증 프로세스는 얼마나 걸리나요?
+                C5. Quy trình chứng nhận BIS mất bao lâu?
               </strong>
               <br />
-              서류 및 테스트가 완료되면 일반적으로 6-10주가 소요됩니다.
+              Thường là 6–10 tuần nếu tài liệu và kiểm tra hoàn chỉnh.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q6. ISI 마크가 필수인가요?</strong>
+              <strong>C6. Dấu ISI có bắt buộc không?</strong>
               <br />
-              네, 인증 후 ISI 마킹은 의무입니다.
+              Có, đánh dấu ISI là bắt buộc sau chứng nhận.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q7. 스타트업이 BIS 인증을 신청할 수 있나요?</strong>
+              <strong>C7. Công ty khởi nghiệp có thể nộp đơn chứng nhận BIS không?</strong>
               <br />
-              네, 제조 설정이 준수하는 경우 스타트업이 신청할 수 있습니다.
+              Có, công ty khởi nghiệp có thể nộp đơn nếu thiết lập sản xuất tuân thủ.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q8. 배터리 작동 에너자이저에 BIS 인증이 필요한가요?
+                C8. Chứng nhận BIS có yêu cầu cho thiết bị tạo xung hoạt động bằng pin không?
               </strong>
               <br />
-              네, 전원은 인증을 면제하지 않습니다.
+              Có, nguồn điện không miễn chứng nhận.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q9. 하나의 라이선스로 여러 모델을 포함할 수 있나요?</strong>
+              <strong>C9. Một giấy phép có thể bao gồm nhiều mẫu mã không?</strong>
               <br />
-              네, 모델이 기술적으로 유사한 경우 가능합니다.
+              Có, nếu các mẫu mã tương tự về kỹ thuật.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q10. 제품 테스트에 실패하면 어떻게 되나요?</strong>
+              <strong>C10. Điều gì xảy ra nếu sản phẩm của tôi không đạt kiểm tra?</strong>
               <br />
-              설계 수정 및 재테스트가 필요합니다.
+              Cần sửa đổi thiết kế và kiểm tra lại.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q11. BIS 인증은 영구적으로 유효한가요?</strong>
+              <strong>C11. Chứng nhận BIS có hiệu lực vĩnh viễn không?</strong>
               <br />
-              아니요, 주기적으로 갱신해야 합니다.
+              Không, nó phải được gia hạn định kỳ.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q12. 인증 후 BIS 감사가 필수인가요?
+                C12. Kiểm toán BIS có bắt buộc sau chứng nhận không?
               </strong>
               <br />
-              네, 감사 감독이 수행됩니다.
+              Có, các kiểm toán giám sát được tiến hành.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q13. 외국 제조업체가 직접 신청할 수 있나요?</strong>
+              <strong>C13. Nhà sản xuất nước ngoài có thể nộp đơn trực tiếp không?</strong>
               <br />
-              네, 인도 대리인(AIR)을 통해 가능합니다.
+              Có, thông qua Đại diện Ấn Độ được ủy quyền (AIR).
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q14. 온라인 BIS 신청 프로세스가 있나요?</strong>
+              <strong>C14. Có quy trình ứng dụng BIS trực tuyến không?</strong>
               <br />
-              네, BIS 신청서는 온라인으로 제출됩니다.
+              Có, các đơn BIS được nộp trực tuyến.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                Q15. 소비자에게 BIS 인증서 의미는 무엇인가요?
+                C15. Chứng nhận BIS có ý nghĩa gì đối với người tiêu dùng?
               </strong>
               <br />
-              안전, 품질 및 규제 준수를 보장합니다.
+              Nó đảm bảo an toàn, chất lượng và tuân thủ quy định.
             </p>
           </div>
         </div>
@@ -826,9 +857,9 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoReadKorean />
+        <ManyUsersAlsoReadVietnamese />
 
-        <FaqAuthorKorean questionNumber={1} />
+        <FaqAuthorVietnamese questionNumber={1} />
       </div>
     </div>
   );
@@ -841,7 +872,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
-              우리의 서비스
+              Dịch vụ của chúng tôi
             </h2>
           </BoxReveal>
 
@@ -849,7 +880,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                인도 최고의 인증 컨설턴트
+                Nhà tư vấn Chứng nhận Tốt nhất Ấn Độ
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -870,7 +901,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              외국 제조업체용 BIS 마크 (ISI 라이선스)
+              Dấu BIS (Giấy phép ISI) cho Nhà sản xuất Nước ngoài
             </p>
           </Link>
 
@@ -887,7 +918,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO 등록 인증
+              Chứng nhận Đăng ký CDSCO
             </p>
           </Link>
 
@@ -904,7 +935,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) 등록
+              Đăng ký BIS (CRS)
             </p>
           </Link>
 
@@ -921,7 +952,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              플라스틱 폐기물 관리
+              Quản lý Rác thải Nhựa
             </p>
           </Link>
 
@@ -938,7 +969,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR 인증서
+              Chứng nhận Chứng chỉ EPR
             </p>
           </Link>
 
@@ -955,7 +986,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC 인증서
+              Chứng nhận Chứng chỉ LMPC
             </p>
           </Link>
 
@@ -972,7 +1003,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS 등록 인증서
+              Chứng nhận Đăng ký BIS
             </p>
           </Link>
 
@@ -989,7 +1020,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              인도 제조업체용 ISI 마크 (BIS)
+              DẤU ISI (BIS) cho Nhà sản xuất Ấn Độ
             </p>
           </Link>
         </div>

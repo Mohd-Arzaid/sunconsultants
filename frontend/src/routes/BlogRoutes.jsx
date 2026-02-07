@@ -636,6 +636,12 @@ const BISCertificateElectricFenceEnergizersKorean = lazy(() =>
 const BISCertificateElectricFenceEnergizersSpanish = lazy(() =>
   import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersSpanish")
 );
+const BISCertificateElectricFenceEnergizersThai = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersThai")
+);
+const BISCertificateElectricFenceEnergizersVietnamese = lazy(() =>
+  import("@/blogs/BISCertificateElectricFenceEnergizers/BISCertificateElectricFenceEnergizersVietnamese")
+);
 const BISCertificateForStorageWaterTank = lazy(() =>
   import("@/blogs/BISCertificationForStorageWaterTank")
 );
@@ -643,7 +649,13 @@ const BISCertificationforFibreRopesOfPolyester = lazy(() =>
   import("@/blogs/BISCertificationforFibreRopesOfPolyester")
 );
 const BISCertificationFibreRopes = lazy(() =>
-  import("@/blogs/BISCertificationFibreRopes")
+  import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopes")
+);
+const BISCertificationFibreRopesArabic = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopesArabic")
+);
+const BISCertificationFibreRopesChinese = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopesChinese")
 );
 const BISCertificationFibreRopesPolyamide = lazy(() =>
   import("@/blogs/BISCertificationFibreRopesPolyamide")
@@ -2338,10 +2350,26 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/thiet-bi-tao-xung-dien-hang-rao-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/productos-isi/electrizadores-de-cercas-electricas-is-302-2-76"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateElectricFenceEnergizersSpanish />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ke-krmong-fai-rue-is-302-2-76"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizersThai />
           </Suspense>
         }
       />
@@ -2366,6 +2394,22 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationFibreRopes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/fibre-ropes-polyethylene-8674-arabic"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ju-yi-xi-xian-wei-sheng-8674"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesChinese />
           </Suspense>
         }
       />

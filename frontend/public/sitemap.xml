@@ -4516,6 +4516,20 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Electric Fence Energizers - Thai -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/ke-krmong-fai-rue-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-06</lastmod>
+  </url>
+  <!-- BIS Certificate for Electric Fence Energizers - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/thiet-bi-tao-xung-dien-hang-rao-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-06</lastmod>
+  </url>
 
 
 
@@ -4572,6 +4586,24 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+    <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
+
+
+
+
+
+
+
+
+
+
+  
   <!-- BIS Certificate for Fibre Ropes - Polyethylene - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyethylene-8674</loc>
@@ -4579,6 +4611,63 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyethylene-8674-arabic</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-02-06</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/ju-yi-xi-xian-wei-sheng-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-02-06</lastmod>
+  </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <!-- BIS Certificate for Fibre Ropes - Polyamide - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyamide-is-4572</loc>

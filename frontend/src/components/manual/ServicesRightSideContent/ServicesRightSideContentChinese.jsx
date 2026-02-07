@@ -54,6 +54,8 @@ const ServicesRightSideContentChinese = () => {
     "/blogs/isi-products/lian-guan-ban-shou-is-4123",
     // BIS Certificate for Combination Side Cutting Pliers Chinese Page Url
     "/blogs/isi-products/zuhe-ce-qie-qian-is-3650",
+    // BIS Certificate for Fibre Ropes Chinese Page Url
+    "/blogs/isi-products/ju-yi-xi-xian-wei-sheng-8674",
     "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
     "/bis-fang-an-x-ya-suo-ji-ren-zheng",
     "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
@@ -765,6 +767,9 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certificate for Composite Synthetic Fibre Ropes Chinese
     if (path.includes("/blogs/isi-products/fuhe-hecheng-xianwei-sheng-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre Ropes (Chinese)";
+    // BIS Certificate for Fibre Ropes Chinese
+    if (path.includes("/blogs/isi-products/ju-yi-xi-xian-wei-sheng-8674"))
+      return "BIS Certificate for Fibre Ropes (Chinese)";
     return "";
   };
 
