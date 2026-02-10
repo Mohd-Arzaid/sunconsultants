@@ -157,15 +157,8 @@ const EPRHero = () => {
             Battery Waste Management
           </h1>
 
-<<<<<<< HEAD
-          <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Get EPR registration for battery waste management. Expert assistance for EPR authorization for battery waste, battery waste EPR compliance, and CPCB portal registration for all battery types
-=======
           <p className="z-[10] -mt-2 max-w-[490px] font-poppins text-[18px] leading-[1.6] text-[#332156] md:text-[20px] md:leading-[40px]">
-            Get EPR certification for battery waste management. Ensure CPCB
-            compliance with proper recycling & disposal plans for all battery
-            types
->>>>>>> 2fb125bd51c05199b5cfbd413a324c7f5f2b7736
+            Get EPR registration for battery waste management. Expert assistance for EPR authorization for battery waste, battery waste EPR compliance, and CPCB portal registration for all battery types
           </p>
 
           <div className="-mt-2 flex items-center">
@@ -725,24 +718,13 @@ const OverviewSection = () => {
       </div>
 
       {/* Title */}
-<<<<<<< HEAD
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h3 className="my-3 font-roboto text-[28px] font-bold leading-none text-[#131316] md:my-0 md:text-[40px] md:leading-normal">
         EPR Registration for Battery Waste Management in India | Battery Waste EPR Certificate
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        A Complete Guide to Battery Waste EPR under Battery Waste Management Rules, 2022 - EPR Portal for Battery Waste Management
-=======
-      <h3 className="my-3 font-roboto text-[28px] font-bold leading-none text-[#131316] md:my-0 md:text-[40px] md:leading-normal">
-        EPR Registration for Battery Waste Management in India
-      </h3>
-
-      {/* Description */}
       <p className="font-geist text-[16px] font-semibold text-[#131316] md:text-[20px]">
-        A Complete Guide to Battery Waste EPR under Battery Waste Management
-        Rules, 2022
->>>>>>> 2fb125bd51c05199b5cfbd413a324c7f5f2b7736
+        A Complete Guide to Battery Waste EPR under Battery Waste Management Rules, 2022 - EPR Portal for Battery Waste Management
       </p>
 
       {/* Overview Content */}
