@@ -99,7 +99,7 @@ const BISCertificationMetaTags = () => {
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "FAQPage",
+          "@type": "FAQ",
           "mainEntity": [
             {
               "@type": "Question",

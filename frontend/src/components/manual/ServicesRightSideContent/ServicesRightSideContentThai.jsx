@@ -107,6 +107,8 @@ const ServicesRightSideContentThai = () => {
     "/blogs/isi-products/khim-tat-khang-baep-som-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Thai Page Url
     "/th/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928",
+    // BIS Certificate for Fibre Ropes Polyethylene Thai Page Url
+    "/th/blogs/isi-products/chueak-sen-yai-polie-thilene-8674",
     // BIS Certificate for Electric Fence Energizers Thai Page Url
     "/blogs/isi-products/ke-krmong-fai-rue-is-302-2-76",
   ];
@@ -773,6 +775,9 @@ const ContactFormServicesRightSideContentThai = () => {
     // BIS Certificate for Composite Synthetic Fibre Thai
     if (path.includes("/th/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre (Thai)";
+    // BIS Certificate for Fibre Ropes Polyethylene Thai
+    if (path.includes("/th/blogs/isi-products/chueak-sen-yai-polie-thilene-8674"))
+      return "BIS Certificate for Fibre Ropes Polyethylene (Thai)";
     // BIS Certificate for Electric Fence Energizers Thai
     if (path.includes("/blogs/isi-products/ke-krmong-fai-rue-is-302-2-76"))
       return "BIS Certificate for Electric Fence Energizers (Thai)";

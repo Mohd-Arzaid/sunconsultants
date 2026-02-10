@@ -71,6 +71,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/blogs/isi-products/kiem-cat-ben-ket-hop-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Vietnamese Page Url
     "/vi/blogs/isi-products/day-soi-tong-hop-phoi-hop-is-14928",
+    // BIS Certificate for Fibre Ropes Polyethylene Vietnamese Page Url
+    "/vi/blogs/isi-products/day-thung-soi-polyethylene-8674",
     // BIS Certificate for Electric Fence Energizers Vietnamese Page Url
     "/blogs/isi-products/thiet-bi-tao-xung-dien-hang-rao-is-302-2-76",
   ];
@@ -677,6 +679,9 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     // BIS Certificate for Composite Synthetic Fibre Vietnamese
     if (path.includes("/vi/blogs/isi-products/day-soi-tong-hop-phoi-hop-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre (Vietnamese)";
+    // BIS Certificate for Fibre Ropes Polyethylene Vietnamese
+    if (path.includes("/vi/blogs/isi-products/day-thung-soi-polyethylene-8674"))
+      return "BIS Certificate for Fibre Ropes Polyethylene (Vietnamese)";
     // BIS Certificate for Electric Fence Energizers Vietnamese
     if (path.includes("/blogs/isi-products/thiet-bi-tao-xung-dien-hang-rao-is-302-2-76"))
       return "BIS Certificate for Electric Fence Energizers (Vietnamese)";

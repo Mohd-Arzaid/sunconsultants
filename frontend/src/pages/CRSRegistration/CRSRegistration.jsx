@@ -100,6 +100,133 @@ const MetaTags = () => {
     ],
   };
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQ",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is BIS registration?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certification is a compliance process governed by the Bureau of Indian Standards, which verifies that a product meets the applicable Indian Standards (IS) for quality, safety, and reliability.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is CRS registration under BIS?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "CRS stands for Compulsory Registration Scheme. It is a mandatory registration process for specific product categories such as electronics, electricals, batteries, and solar items. Products under CRS must be tested and registered with BIS before they can be sold in India.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is BIS certification mandatory in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. For all products listed under the CRS product list (currently 80+ items), BIS registration is mandatory for manufacturing, importing, or selling in India.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the difference between BIS CRS and ISI mark?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS CRS: For electronics and IT goods, only for mandatory products notified under QCO. ISI mark: Used for a broader range of products, may be voluntary or mandatory depending on the product category.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who can apply for BIS CRS registration?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only manufacturers can apply. This includes both Indian and foreign manufacturers. Foreign brands must appoint an Authorized Indian Representative (AIR).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the role of an AIR?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "An Authorized Indian Representative (AIR) is legally responsible for filing the BIS application on behalf of a foreign manufacturer. They act as the official liaison between BIS and the overseas applicant.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does BIS CRS registration take?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The process typically takes 3–4 weeks, assuming all documents and test reports are submitted correctly and no objections are raised by BIS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does BIS CRS certificate cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Costs include: Testing Charges: ₹10,000–₹20,000 + GST. Government Fee: ₹53,000 + GST per test report. Additional Charges: Affidavit, courier, AIR documentation, etc. Discount applicable for Indian MSME registered manufacturers",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the validity of BIS CRS certificates?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The initial BIS license is valid for 2 years. It can be renewed for up to 5 years if the product and manufacturing details remain unchanged.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can BIS certification be obtained voluntarily?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Under CRS, you cannot apply voluntarily for products that are not listed under QCOs. Voluntary certification is only applicable for non-CRS products via the ISI scheme.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where can I find the BIS CRS product list?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can visit the official BIS website https://www.crsbis.in/BIS/publicdashAction.do and navigate to the \"Products under CRS\" section to view the complete list of covered products.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can the BIS mark be displayed electronically?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, through e-labelling, but it must meet strict BIS rules: Label info must be embedded in firmware. Easy access within 4 steps in device menu. Physical packaging must still carry regulatory info.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happens if I don't get BIS registration for a mandatory product?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Severe penalties, including: Product seizure, Customs rejections, Legal fines, Delisting from e-commerce portals, Permanent ban from Indian market",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can one BIS certificate cover multiple models or brands?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Each brand, and factory location must be certified separately. Multiple models may be added using additional reports, but only under the same application and brand.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can Sun Certifications India help me?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We offer: Full documentation support, Lab coordination, BIS portal application handling, Query resolution and BIS follow-ups, Renewal and labeling guidance, Compliance assurance for foreign brands via AIR services",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -121,6 +248,12 @@ const MetaTags = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbStructuredData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
         }}
       />
     </Helmet>

@@ -98,6 +98,8 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/hibal-alyaf-sinaiya-murakkaba-is-14928",
     // BIS Certificate for Fibre Ropes - Polyethylene Arabic Page Url
     "/blogs/isi-products/fibre-ropes-polyethylene-8674-arabic",
+    // BIS Certificate for Fibre Ropes - Polyamide Arabic Page Url
+    "/blogs/isi-products/fibre-ropes-polyamide-is-4572-arabic",
   ];
 
   // Check if current path should show these components
@@ -772,6 +774,9 @@ const ContactFormServicesRightSideContentArabic = () => {
     // BIS Certificate for Fibre Ropes - Polyethylene Arabic
     if (path.includes("/blogs/isi-products/fibre-ropes-polyethylene-8674-arabic"))
       return "BIS Certificate for Fibre Ropes - Polyethylene (Arabic)";
+    // BIS Certificate for Fibre Ropes - Polyamide Arabic
+    if (path.includes("/blogs/isi-products/fibre-ropes-polyamide-is-4572-arabic"))
+      return "BIS Certificate for Fibre Ropes Polyamide (Arabic)";
     return "";
   };
 

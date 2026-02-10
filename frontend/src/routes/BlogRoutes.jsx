@@ -669,8 +669,26 @@ const BISCertificationFibreRopesGerman = lazy(() =>
 const BISCertificationFibreRopesIndonesian = lazy(() =>
   import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopesIndonesian")
 );
+const BISCertificationFibreRopesItalian = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopesItalian")
+);
+const BISCertificationFibreRopesJapanese = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopesJapanese")
+);
+const BISCertificationFibreRopesKorean = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopesKorean")
+);
+const BISCertificationFibreRopesThai = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopesThai")
+);
+const BISCertificationFibreRopesVietnamese = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopes/BISCertificationFibreRopesVietnamese")
+);
 const BISCertificationFibreRopesPolyamide = lazy(() =>
-  import("@/blogs/BISCertificationFibreRopesPolyamide")
+  import("@/blogs/BISCertificateForFootWarmerandHeatingMats/BISCertificationFibreRopesPolyamide")
+);
+const BISCertificationFibreRopesPolyamideArabic = lazy(() =>
+  import("@/blogs/BISCertificateForFootWarmerandHeatingMats/BISCertificationFibreRopesPolyamideArabic")
 );
 const BISCertificateForSteelWireRopes = lazy(() =>
   import("@/blogs/BISCertificationforSteelWireRopes")
@@ -2458,10 +2476,58 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/corde-in-fibra-polietilene-8674"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/sen-i-ro-pu-pori-etiren-8674"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesJapanese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/seomyu-ropeu-pollyetillen-8674"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesKorean />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/th/blogs/isi-products/chueak-sen-yai-polie-thilene-8674"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/vi/blogs/isi-products/day-thung-soi-polyethylene-8674"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesVietnamese />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/fibre-ropes-polyamide-is-4572"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationFibreRopesPolyamide />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/fibre-ropes-polyamide-is-4572-arabic"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesPolyamideArabic />
           </Suspense>
         }
       />
