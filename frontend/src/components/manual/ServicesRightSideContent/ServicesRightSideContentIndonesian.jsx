@@ -110,6 +110,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/blogs/isi-products/tang-kombinasi-pemotong-samping-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Ropes Indonesian Page Url
     "/blogs/isi-products/tali-serat-sintetik-komposit-is-14928",
+    // BIS Certificate for Fibre Ropes – Polyethylene Indonesian Page Url
+    "/blogs/isi-products/tali-serat-polietilen-8674",
   ];
 
   // Check if current path should show these components
@@ -815,6 +817,10 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // BIS Certificate for Composite Synthetic Fibre Ropes Indonesian
     if (path.includes("/blogs/isi-products/tali-serat-sintetik-komposit-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre Ropes (Indonesian)";
+    // BIS Certificate for Fibre Ropes – Polyethylene Indonesian
+    if (path.includes("/blogs/isi-products/tali-serat-polietilen-8674"))
+      return "BIS Certificate for Fibre Ropes – Polyethylene (Indonesian)";
+    return "";
   };
 
   const [formData, setFormData] = useState({

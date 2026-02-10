@@ -72,6 +72,8 @@ const ServicesRightSideContentFrench = () => {
     "/blogs/isi-products/pinces-combinees-coupe-laterale-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Ropes French Page Url
     "/blogs/isi-products/cordes-en-fibres-synthetiques-composites-is-14928",
+    // BIS Certificate for Fibre Ropes – Polyethylene French Page Url
+    "/blogs/isi-products/cordes-en-fibres-polyethylene-8674",
   ];
 
   // Check if current path should show these components
@@ -665,6 +667,9 @@ const ContactFormServicesRightSideContentFrench = () => {
     // BIS Certificate for Composite Synthetic Fibre Ropes French
     if (path.includes("/blogs/isi-products/cordes-en-fibres-synthetiques-composites-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre Ropes (French)";
+    // BIS Certificate for Fibre Ropes – Polyethylene French
+    if (path.includes("/blogs/isi-products/cordes-en-fibres-polyethylene-8674"))
+      return "BIS Certificate for Fibre Ropes – Polyethylene (French)";
     return "";
   };
 
