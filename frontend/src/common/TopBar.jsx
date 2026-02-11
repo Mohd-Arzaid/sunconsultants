@@ -1,5 +1,13 @@
 import { cn } from "@/lib/utils";
-import { Mail, Phone, Accessibility, Underline, Check, RotateCcw } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  Accessibility,
+  Underline,
+  Check,
+  RotateCcw,
+  Contrast,
+} from "lucide-react";
 import { useState, useEffect } from "react";
 import {
   NavigationMenu,
@@ -10,6 +18,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const ACCESSIBILITY_STORAGE_KEY = "sunconsultants-accessibility-underline";
+const HIGH_CONTRAST_STORAGE_KEY = "sunconsultants-accessibility-high-contrast";
 
 const Container = ({ children, className }) => {
   return (
@@ -28,6 +37,14 @@ const TopBar = () => {
     }
   });
 
+  const [highContrastEnabled, setHighContrastEnabled] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem(HIGH_CONTRAST_STORAGE_KEY) ?? "false");
+    } catch {
+      return false;
+    }
+  });
+
   useEffect(() => {
     if (underlineEnabled) {
       document.body.classList.add("accessibility-underline");
@@ -37,8 +54,18 @@ const TopBar = () => {
     localStorage.setItem(ACCESSIBILITY_STORAGE_KEY, JSON.stringify(underlineEnabled));
   }, [underlineEnabled]);
 
+  useEffect(() => {
+    if (highContrastEnabled) {
+      document.body.classList.add("accessibility-high-contrast");
+    } else {
+      document.body.classList.remove("accessibility-high-contrast");
+    }
+    localStorage.setItem(HIGH_CONTRAST_STORAGE_KEY, JSON.stringify(highContrastEnabled));
+  }, [highContrastEnabled]);
+
   const handleReset = () => {
     setUnderlineEnabled(false);
+    setHighContrastEnabled(false);
   };
 
   return (
@@ -77,6 +104,23 @@ const TopBar = () => {
                         Underline
                       </span>
                       {underlineEnabled && (
+                        <Check className="w-4 h-4 shrink-0 text-emerald-600" aria-hidden />
+                      )}
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setHighContrastEnabled((v) => !v)}
+                      className={cn(
+                        "text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors",
+                        "hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center justify-between font-roboto"
+                      )}
+                    >
+                      <span className="flex items-center">
+                        <Contrast className="w-4 h-4 mr-2 shrink-0" aria-hidden />
+                        High Contrast
+                      </span>
+                      {highContrastEnabled && (
                         <Check className="w-4 h-4 shrink-0 text-emerald-600" aria-hidden />
                       )}
                     </button>
