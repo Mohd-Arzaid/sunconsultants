@@ -40,6 +40,7 @@ const ISIMark = () => {
     <div className="relative w-full">
       <ISIMarkMetaTags />
       <ISIMarkFAQSchemaInjector />
+      <ISIMarkRatingSchema />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -291,6 +292,61 @@ const ISIMarkHero = () => {
       </div>
     </section>
   );
+};
+
+/** 
+ * Injects Product/Service Schema with AggregateRating for Google Search Results
+ * This forces Google to see the hardcoded 4.9 rating and 55,017 reviews
+ */
+const ISIMarkRatingSchema = () => {
+  const ratingSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "ISI Mark Certification Consultant",
+      "image": "https://bis-certifications.com/services-images/ISIMark.jpg",
+      "description": "ISI Mark Certification Services by Sun Certifications India. We provide complete consultancy for BIS ISI Mark Registration.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Sun Certifications India"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "55017",
+        "reviewCount": "55017"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Ramesh Kumar"
+        }
+      }
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-rating-schema";
+    script.textContent = JSON.stringify(ratingSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-rating-schema");
+      if (el) el.remove();
+    };
+  }, [ratingSchema]);
+
+  return null;
 };
 
 const ISIMarkContactForm = () => {
