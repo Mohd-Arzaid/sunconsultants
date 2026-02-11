@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Mail, Phone, Accessibility, Underline, Check } from "lucide-react";
+import { Mail, Phone, Accessibility, Underline, Check, RotateCcw } from "lucide-react";
 import { useState, useEffect } from "react";
 import {
   NavigationMenu,
@@ -36,6 +36,10 @@ const TopBar = () => {
     }
     localStorage.setItem(ACCESSIBILITY_STORAGE_KEY, JSON.stringify(underlineEnabled));
   }, [underlineEnabled]);
+
+  const handleReset = () => {
+    setUnderlineEnabled(false);
+  };
 
   return (
     <div className="bg-[#0A4394] text-white py-2.5 sticky top-0 z-[100] hidden md:block">
@@ -75,6 +79,22 @@ const TopBar = () => {
                       {underlineEnabled && (
                         <Check className="w-4 h-4 shrink-0 text-emerald-600" aria-hidden />
                       )}
+                    </button>
+
+                    <div className="h-px bg-border my-2" />
+
+                    <button
+                      type="button"
+                      onClick={handleReset}
+                      className={cn(
+                        "text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors",
+                        "hover:bg-destructive/10 hover:text-destructive hover:rounded-md w-full p-2 text-left flex items-center font-roboto"
+                      )}
+                    >
+                      <span className="flex items-center">
+                        <RotateCcw className="w-4 h-4 mr-2 shrink-0" aria-hidden />
+                        Reset
+                      </span>
                     </button>
                   </div>
                 </NavigationMenuContent>
