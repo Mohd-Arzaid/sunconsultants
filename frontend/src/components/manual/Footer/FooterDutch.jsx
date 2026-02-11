@@ -170,41 +170,34 @@ const FooterDutch = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/information-about-tec-certificate-mtcte"
+                    to="/what-is-bis-certificate-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    TEC-CERTIFICAAT
+                    BIS-certificering
                   </Link>
                   <Link
                     to="/a-guide-to-bis-certification-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    BIS-CERTIFICERING
+                    ISI-markering (India)
                   </Link>
                   <Link
-                    to="/ce-certification"
+                    to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    CE-MARKERING
+                    BIS-markering (Buitenlands)
                   </Link>
                   <Link
-                    to="/a-guide-on-how-to-obtain-epr-certificate"
+                    to="/what-is-crs-bis-or-crs-registration"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    EPR-CERTIFICAAT
+                    CRS-registratie
                   </Link>
                   <Link
-                    to="/restriction-of-hazardous-substance-rohs-certificate"
+                    to="/indian-bis-certification-under-scheme-x"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    ROHS-CONFORMITEIT
-                  </Link>
-
-                  <Link
-                    to="/information-about-wpc-certificate-eta-approval"
-                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
-                  >
-                    WPC-GOEDKEURING
+                    Scheme X
                   </Link>
                 </div>
               </div>
@@ -226,10 +219,12 @@ const FooterDutch = () => {
                   >
                     Neem Contact Op
                   </Link>
-
-                  <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    FAQ
-                  </span>
+                  <Link
+                    to="/faqs"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
+                    Veelgestelde vragen
+                  </Link>
                   <Link
                     to="/sitemap"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
@@ -251,34 +246,34 @@ const FooterDutch = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/bis-qco-updates"
+                    to="/Blogs"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Blogs
+                    Laatste blogs
                   </Link>
                   <Link
                     to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Laatste Updates
+                    BIS QCO-updates
                   </Link>
                   <Link
                     to="/ministry-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Ministerie-Updates
+                    Ministerie-updates
                   </Link>
                   <Link
                     to="/webinar"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Webinar-Updates
+                    Aankomende webinars
                   </Link>
                   <Link
-                    to="/international-audits"
+                    to="/SchemeX-products"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Galerij
+                    Scheme X-producten
                   </Link>
                 </div>
               </div>

@@ -170,41 +170,34 @@ const FooterGerman = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/information-about-tec-certificate-mtcte"
+                    to="/what-is-bis-certificate-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    TEC-ZERTIFIKAT
+                    BIS-Zertifizierung
                   </Link>
                   <Link
                     to="/a-guide-to-bis-certification-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    BIS-ZERTIFIZIERUNG
+                    ISI-Markierung (Indien)
                   </Link>
                   <Link
-                    to="/ce-certification"
+                    to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    CE-KENNZEICHNUNG
+                    BIS-Markierung (Ausland)
                   </Link>
                   <Link
-                    to="/a-guide-on-how-to-obtain-epr-certificate"
+                    to="/what-is-crs-bis-or-crs-registration"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    EPR-ZERTIFIKAT
+                    CRS-Registrierung
                   </Link>
                   <Link
-                    to="/restriction-of-hazardous-substance-rohs-certificate"
+                    to="/indian-bis-certification-under-scheme-x"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    ROHS-KONFORMITÄT
-                  </Link>
-
-                  <Link
-                    to="/information-about-wpc-certificate-eta-approval"
-                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
-                  >
-                    WPC-GENEHMIGUNG
+                    Scheme X
                   </Link>
                 </div>
               </div>
@@ -226,10 +219,12 @@ const FooterGerman = () => {
                   >
                     Kontaktieren Sie uns
                   </Link>
-
-                  <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/faqs"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     FAQ
-                  </span>
+                  </Link>
                   <Link
                     to="/sitemap"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
@@ -251,16 +246,16 @@ const FooterGerman = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/bis-qco-updates"
+                    to="/Blogs"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Blogs
+                    Neueste Blogs
                   </Link>
                   <Link
                     to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Neueste Updates
+                    BIS QCO-Updates
                   </Link>
                   <Link
                     to="/ministry-updates"
@@ -272,13 +267,13 @@ const FooterGerman = () => {
                     to="/webinar"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Webinar-Updates
+                    Kommende Webinare
                   </Link>
                   <Link
-                    to="/international-audits"
+                    to="/SchemeX-products"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Galerie
+                    Scheme X-Produkte
                   </Link>
                 </div>
               </div>
