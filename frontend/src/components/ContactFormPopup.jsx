@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import {
   Dialog,
   DialogContent,
@@ -216,11 +215,6 @@ const ContactFormPopup = ({ open, setOpen }) => {
       </DialogContent>
     </Dialog>
   );
-};
-
-ContactFormPopup.propTypes = {
-  open: PropTypes.bool.isRequired,
-  setOpen: PropTypes.func.isRequired,
 };
 
 export default ContactFormPopup;

@@ -1,5 +1,4 @@
 import { Mail, Linkedin } from "lucide-react";
-import PropTypes from "prop-types";
 
 const FaqAuthorEng = ({ questionNumber = 1 }) => {
   // Calculate which point to show based on rotation: (questionNumber - 1) % 5
@@ -96,10 +95,6 @@ const FaqAuthorEng = ({ questionNumber = 1 }) => {
       </div>
     </section>
   );
-};
-
-FaqAuthorEng.propTypes = {
-  questionNumber: PropTypes.number,
 };
 
 export default FaqAuthorEng;

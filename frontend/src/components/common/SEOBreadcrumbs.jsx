@@ -4,7 +4,6 @@ import {
   generateBreadcrumbStructuredData,
   shouldShowBreadcrumbs,
 } from "../../utils/breadcrumbUtils";
-import PropTypes from "prop-types";
 
 /**
  * SEO Breadcrumbs Component
@@ -72,11 +71,6 @@ const SEOBreadcrumbs = ({ customTitle = null, customPath = null }) => {
       </script>
     </Helmet>
   );
-};
-
-SEOBreadcrumbs.propTypes = {
-  customTitle: PropTypes.string,
-  customPath: PropTypes.string,
 };
 
 export default SEOBreadcrumbs;

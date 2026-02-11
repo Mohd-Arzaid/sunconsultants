@@ -20,7 +20,6 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import AboutContact from "@/components/manual/about/AboutContact";
-import PropTypes from "prop-types";
 
 const MinistryUpdates = () => {
   const baseUrl = "https://bis-certifications.com";
@@ -514,12 +513,6 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   );
 };
 
-NotificationCard.propTypes = {
-  searchQuery: PropTypes.string.isRequired,
-  currentPage: PropTypes.number.isRequired,
-  itemsPerPage: PropTypes.number.isRequired,
-};
-
 const NotificationCardItem = ({
   color,
   tagType,
@@ -588,15 +581,6 @@ const NotificationCardItem = ({
       </div>
     </div>
   );
-};
-
-NotificationCardItem.propTypes = {
-  color: PropTypes.string.isRequired,
-  tagType: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  displayDate: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
 };
 
 const Pagination = ({
@@ -971,11 +955,4 @@ const Pagination = ({
       </div>
     </div>
   );
-};
-
-Pagination.propTypes = {
-  currentPage: PropTypes.number.isRequired,
-  setCurrentPage: PropTypes.func.isRequired,
-  itemsPerPage: PropTypes.number.isRequired,
-  searchQuery: PropTypes.string.isRequired,
 };

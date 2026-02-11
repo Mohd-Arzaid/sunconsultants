@@ -1,6 +1,5 @@
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useLayoutEffect, useRef, useMemo } from "react";
-import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import {
   Accordion,
@@ -1976,9 +1975,4 @@ const PointsListWithoutHeading = ({ points = [], linkMap = {} }) => {
       </ul>
     </div>
   );
-};
-
-PointsListWithoutHeading.propTypes = {
-  points: PropTypes.arrayOf(PropTypes.string).isRequired,
-  linkMap: PropTypes.object,
 };
