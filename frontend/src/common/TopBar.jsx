@@ -1,5 +1,15 @@
 import { cn } from "@/lib/utils";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Accessibility, Underline, Check } from "lucide-react";
+import { useState, useEffect } from "react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+
+const ACCESSIBILITY_STORAGE_KEY = "sunconsultants-accessibility-underline";
 
 const Container = ({ children, className }) => {
   return (
@@ -10,9 +20,69 @@ const Container = ({ children, className }) => {
 };
 
 const TopBar = () => {
+  const [underlineEnabled, setUnderlineEnabled] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem(ACCESSIBILITY_STORAGE_KEY) ?? "false");
+    } catch {
+      return false;
+    }
+  });
+
+  useEffect(() => {
+    if (underlineEnabled) {
+      document.body.classList.add("accessibility-underline");
+    } else {
+      document.body.classList.remove("accessibility-underline");
+    }
+    localStorage.setItem(ACCESSIBILITY_STORAGE_KEY, JSON.stringify(underlineEnabled));
+  }, [underlineEnabled]);
+
   return (
-    <div className="bg-[#0A4394] text-white py-2.5 sticky top-0 z-50 hidden md:block">
+    <div className="bg-[#0A4394] text-white py-2.5 sticky top-0 z-[100] hidden md:block">
       <Container className="relative flex items-center justify-center gap-8">
+        {/* Accessibility tool - left side, same alignment style as right-side icons */}
+        <div className="absolute left-12 top-1/2 -translate-y-1/2 flex items-center gap-4">
+          <NavigationMenu className="">
+            <NavigationMenuList className="gap-0">
+              <NavigationMenuItem>
+                <NavigationMenuTrigger
+                  className={cn(
+                    "flex items-center text-white hover:text-emerald-100 transition-colors duration-200",
+                    "focus:!text-white data-[state=open]:!text-white [&_svg]:!text-inherit",
+                    "min-h-0 p-0 h-auto rounded-none",
+                    "bg-transparent hover:bg-transparent focus:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0",
+                    "data-[state=open]:bg-transparent data-[active]:bg-transparent",
+                    "scale-100 hover:scale-100 border-0 shadow-none"
+                  )}
+                  aria-label="Accessibility options"
+                >
+                  <Accessibility className="w-7 h-7" />
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="z-[100]">
+                  <div className="p-4 w-[200px] font-roboto">
+                    <button
+                      type="button"
+                      onClick={() => setUnderlineEnabled((v) => !v)}
+                      className={cn(
+                        "text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors",
+                        "hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center justify-between font-roboto"
+                      )}
+                    >
+                      <span className="flex items-center">
+                        <Underline className="w-4 h-4 mr-2 shrink-0" aria-hidden />
+                        Underline
+                      </span>
+                      {underlineEnabled && (
+                        <Check className="w-4 h-4 shrink-0 text-emerald-600" aria-hidden />
+                      )}
+                    </button>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+
         <a
           href="mailto:info@sunconsultants.co.in"
           className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"

@@ -284,89 +284,89 @@ const Navbar = () => {
         <div className="hidden md:flex items-center justify-end">
           {/* Home, About & Services */}
           <NavigationMenu>
-            <NavigationMenuList>
-              {/* Home */}
-              <NavigationMenuItem>
-                <Link to="/">
-                  <Button variant="link" className={STYLES.button}>
-                    Home
-                  </Button>
-                </Link>
-              </NavigationMenuItem>
+              <NavigationMenuList>
+                {/* Home */}
+                <NavigationMenuItem>
+                  <Link to="/">
+                    <Button variant="link" className={STYLES.button}>
+                      Home
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
 
-              {/* About */}
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className={STYLES.button}>
-                  About
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="p-4 w-[340px]">{navContent.about}</div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
+                {/* About */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={STYLES.button}>
+                    About
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="p-4 w-[340px]">{navContent.about}</div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
 
-              {/* Services */}
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className={STYLES.button}>
-                  Services
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="grid grid-cols-3 gap-2 w-[700px] p-6">
-                    {navContent.categories}
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+                {/* Services */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={STYLES.button}>
+                    Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid grid-cols-3 gap-2 w-[700px] p-6">
+                      {navContent.categories}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
 
-          {/* Updates */}
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className={STYLES.button}>
-                  Updates
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="p-4 w-[300px]">{navContent.updates}</div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+            {/* Updates */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={STYLES.button}>
+                    Updates
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="p-4 w-[300px]">{navContent.updates}</div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
 
-          {/* Gallery */}
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className={STYLES.button}>
-                  Gallery
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="p-4 w-60">{navContent.gallery}</div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+            {/* Gallery */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={STYLES.button}>
+                    Gallery
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="p-4 w-60">{navContent.gallery}</div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
 
-          {/* FAQs */}
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <Link to="/faqs">
-                  <Button variant="link" className={STYLES.button}>
-                    FAQ&apos;S
-                  </Button>
-                </Link>
-              </NavigationMenuItem>
+            {/* FAQs */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <Link to="/faqs">
+                    <Button variant="link" className={STYLES.button}>
+                      FAQ&apos;S
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
 
-              {/* Contact Us */}
-              <NavigationMenuItem>
-                <Link to="/contact">
-                  <Button variant="link" className={STYLES.button}>
-                    Contact Us
-                  </Button>
-                </Link>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+                {/* Contact Us */}
+                <NavigationMenuItem>
+                  <Link to="/contact">
+                    <Button variant="link" className={STYLES.button}>
+                      Contact Us
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
         </div>
 
         {/* Mobile Menu Button */}

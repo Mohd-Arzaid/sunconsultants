@@ -349,3 +349,9 @@ input:-webkit-autofill:active {
     transform: translate3d(-50%, 0, 0);
   }
 }
+
+/* ===== Accessibility: Underline all text ===== */
+body.accessibility-underline,
+body.accessibility-underline * {
+  text-decoration: underline;
+}
