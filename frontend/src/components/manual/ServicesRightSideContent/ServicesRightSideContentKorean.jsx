@@ -90,6 +90,8 @@ const ServicesRightSideContentKorean = () => {
     "/blogs/isi-products/bokhap-hapseong-seomyu-ropeu-is-14928",
     // BIS Certificate for Electric Fence Energizers Korean Page Url
     "/blogs/isi-products/jeongi-ul-tali-eneojaijeo-is-302-2-76",
+    // BIS Certificate for Fibre Ropes Polyethylene Korean Page Url
+    "/blogs/isi-products/seomyu-ropeu-pollyetillen-8674",
   ];
 
   // Check if current path should show these components
@@ -722,6 +724,10 @@ const ContactFormServicesRightSideContentKorean = () => {
     // BIS Certificate for Electric Fence Energizers Korean
     if (path.includes("/blogs/isi-products/jeongi-ul-tali-eneojaijeo-is-302-2-76"))
       return "BIS Certificate for Electric Fence Energizers (Korean)";
+
+    // BIS Certificate for Fibre Ropes Polyethylene Korean
+    if (path.includes("/blogs/isi-products/seomyu-ropeu-pollyetillen-8674"))
+      return "BIS Certificate for Fibre Ropes Polyethylene (Korean)";
     return "";
   };
 

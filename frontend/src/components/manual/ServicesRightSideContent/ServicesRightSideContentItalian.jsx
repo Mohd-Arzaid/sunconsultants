@@ -110,6 +110,8 @@ const ServicesRightSideContentItalian = () => {
     "/blogs/isi-products/pinze-combinate-taglio-laterale-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Ropes Italian Page Url
     "/blogs/isi-products/corde-in-fibra-sintetica-composita-is-14928",
+    // BIS Certificate for Fibre Ropes Polyethylene Italian Page Url
+    "/blogs/isi-products/corde-in-fibra-polietilene-8674",
   ];
 
   // Check if current path should show these components
@@ -847,6 +849,10 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS Certificate for Composite Synthetic Fibre Ropes Italian
     if (path.includes("/blogs/isi-products/corde-in-fibra-sintetica-composita-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre Ropes (Italian)";
+
+    // BIS Certificate for Fibre Ropes Polyethylene Italian
+    if (path.includes("/blogs/isi-products/corde-in-fibra-polietilene-8674"))
+      return "BIS Certificate for Fibre Ropes Polyethylene (Italian)";
   };
 
   const [formData, setFormData] = useState({

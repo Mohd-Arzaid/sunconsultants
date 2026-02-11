@@ -76,6 +76,8 @@ const ServicesRightSideContentGerman = () => {
     "/blogs/isi-products/kombinationszangen-seitenschneide-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Ropes German Page Url
     "/blogs/isi-products/verbund-synthetikfaserseile-is-14928",
+    // BIS Certificate for Fibre Ropes – Polyethylene German Page Url
+    "/blogs/isi-products/faserseile-polyethylen-8674",
   ];
 
   // Check if current path should show these components
@@ -671,6 +673,9 @@ const ContactFormServicesRightSideContentGerman = () => {
     // BIS Certificate for Composite Synthetic Fibre Ropes German
     if (path.includes("/blogs/isi-products/verbund-synthetikfaserseile-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre Ropes (German)";
+    // BIS Certificate for Fibre Ropes – Polyethylene German
+    if (path.includes("/blogs/isi-products/faserseile-polyethylen-8674"))
+      return "BIS Certificate for Fibre Ropes – Polyethylene (German)";
     return "";
   };
 

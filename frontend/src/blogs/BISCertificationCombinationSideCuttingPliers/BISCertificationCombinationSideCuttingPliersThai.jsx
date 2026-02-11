@@ -555,7 +555,7 @@ const MainContentLeft = () => {
                   9.1.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  การทดสอบตัด
+                  การทดสอบตัด 
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">

@@ -76,6 +76,9 @@ const BISRemovesMandatoryInHouseLaboratoryEng = lazy(() =>
 const RestrictionsLiftedforASEAN = lazy(() =>
   import("@/pages/MinistryUpdatesPages/RestrictionsLiftedforASEAN")
 );
+const LatestBISImplementationGuidelines = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/LatestBISImplementationGuidelines")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -214,6 +217,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <RestrictionsLiftedforASEAN />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-certification-update-is-9873-toy-safety"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <LatestBISImplementationGuidelines />
           </Suspense>
         }
       />

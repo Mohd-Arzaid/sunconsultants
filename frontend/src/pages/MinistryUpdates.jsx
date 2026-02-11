@@ -218,6 +218,17 @@ const MinistryUpdatesMainContent = () => {
 const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   const notifications = [
     {
+      id: 16,
+      color: "#1A8781",
+      tagType: "BIS Update",
+      date: "February 9, 2026",
+      displayDate: "09 Feb 2026",
+      title: "Latest BIS Implementation Guidelines for IS 9873 (Part 1):2025 – Toy Safety Standard Updated",
+      description:
+        "BIS releases implementation guidelines for IS 9873 (Part 1):2025 Toy Safety Standard replacing IS 9873:2019. Check transition rules, testing changes, deadlines & compliance requirements.",
+      link: "/ministry-updates/bis-certification-update-is-9873-toy-safety",
+    },
+    {
       id: 1,
       color: "#1A8781",
       tagType: "BIS Update",
@@ -595,6 +606,17 @@ const Pagination = ({
   searchQuery,
 }) => {
   const notifications = [
+    {
+      id: 17,
+      color: "#1A8781",
+      tagType: "BIS Update",
+      date: "February 9, 2026",
+      displayDate: "09 Feb 2026",
+      title: "Latest BIS Implementation Guidelines for IS 9873 (Part 1):2025 – Toy Safety Standard Updated",
+      description:
+        "BIS releases implementation guidelines for IS 9873 (Part 1):2025 Toy Safety Standard replacing IS 9873:2019. Check transition rules, testing changes, deadlines & compliance requirements.",
+      link: "/ministry-updates/bis-certification-update-is-9873-toy-safety",
+    },
     {
       id: 1,
       color: "#1A8781",

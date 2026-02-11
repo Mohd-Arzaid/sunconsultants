@@ -69,6 +69,93 @@ const ISIMarkMetaTags = () => {
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQ",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is BIS certification and why is it important?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certification is issued by the Bureau of Indian Standards to ensure products comply with Indian safety and quality standards. It's vital for legal compliance, consumer trust, and market acceptance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the difference between BIS license and ISI mark?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The BIS license is a legal document that authorizes a manufacturer to use the ISI mark. The ISI mark is the visible label on products indicating BIS certification.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take to get BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Typically, 6–10 weeks depending on product type, testing requirements, and audit outcomes",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the validity period of a BIS license?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually 1 to 2 years, after which it must be renewed. Renewal should be initiated at least 30 days before expiry.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the cost of BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Costs vary but can range from ₹25,000 to ₹100,000+, including testing, audit, and license fees.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is BIS certification mandatory for all products?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. It is mandatory only for products listed under the scheme 1 of BIS certification.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can I find the right IS standard for my product?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Visit the BIS website or consult with BIS-recognized testing labs and consultants to identify the applicable standard.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can foreign manufacturers apply for BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Through the Foreign Manufacturers Certification Scheme (FMCS), overseas entities can obtain BIS licenses for ISI mark usage.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happens if my product fails BIS testing?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You'll need to correct the issues and re-submit for testing. Applications may be paused until successful compliance is demonstrated.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is BIS certification needed for export?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "While not always mandatory for exports, BIS certification boosts credibility and can satisfy international buyers or regulatory bodies.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -84,6 +171,12 @@ const ISIMarkMetaTags = () => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };

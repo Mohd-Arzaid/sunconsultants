@@ -111,6 +111,8 @@ const ServicesRightSideContentDutch = () => {
     "/blogs/isi-products/combinatie-zijsnij-tangen-is-3650",
     // BIS Certificate for Composite Synthetic Fibre Ropes Dutch Page Url
     "/blogs/isi-products/samengestelde-synthetische-vezeltouwen-is-14928",
+    // BIS Certificate for Fibre Ropes – Polyethylene Dutch Page Url
+    "/blogs/isi-products/vezeltouwen-polyethyleen-8674",
   ];
 
   // Check if current path should show these components
@@ -775,6 +777,9 @@ const ContactFormServicesRightSideContentDutch = () => {
     // BIS Certificate for Composite Synthetic Fibre Ropes Dutch
     if (path.includes("/blogs/isi-products/samengestelde-synthetische-vezeltouwen-is-14928"))
       return "BIS Certificate for Composite Synthetic Fibre Ropes (Dutch)";
+    // BIS Certificate for Fibre Ropes – Polyethylene Dutch
+    if (path.includes("/blogs/isi-products/vezeltouwen-polyethyleen-8674"))
+      return "BIS Certificate for Fibre Ropes – Polyethylene (Dutch)";
     return "";
   };
 

@@ -90,6 +90,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/p-xylene-qco-withdraw-order",
     "/ministry-updates/bis-in-house-lab-requirement",
     "/ministry-updates/bis-certification-update-asean-manufacturers",
+    "/ministry-updates/bis-certification-update-is-9873-toy-safety",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -902,6 +903,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // BIS Certification Update for ASEAN Manufacturers
     if (path.includes("/ministry-updates/bis-certification-update-asean-manufacturers"))
       return "BIS Certification Update: Restrictions Lifted for ASEAN & Overseas Manufacturers - Ministry Updates (English)";
+
+    // Latest BIS Implementation Guidelines for IS 9873 Toy Safety
+    if (path.includes("/ministry-updates/bis-certification-update-is-9873-toy-safety"))
+      return "Latest BIS Implementation Guidelines for IS 9873 (Part 1):2025 – Toy Safety Standard - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

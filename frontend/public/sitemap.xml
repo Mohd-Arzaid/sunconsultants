@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
@@ -4530,6 +4530,20 @@
     <priority>0.8</priority>
     <lastmod>2026-02-06</lastmod>
   </url>
+  <!-- BIS Certificate for Electric Fence Energizers - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/elektrische-zaun-energisatoren-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-09</lastmod>
+  </url>
+  <!-- BIS Certificate for Electric Fence Energizers - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/munazzimat-siyaj-kahrabai-is-302-2-76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-09</lastmod>
+  </url>
 
 
 
@@ -4625,6 +4639,69 @@
     <priority>0.8</priority>
     <lastmod>2025-02-06</lastmod>
   </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/vezeltouwen-polyethyleen-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-02-09</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - French -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/cordes-en-fibres-polyethylene-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-02-09</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - German -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/faserseile-polyethylen-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-02-09</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/tali-serat-polietilen-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-02-09</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Italian -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/corde-in-fibra-polietilene-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/sen-i-ro-pu-pori-etiren-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Korean -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/seomyu-ropeu-pollyetillen-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Thai -->
+  <url>
+    <loc>https://bis-certifications.com/th/blogs/isi-products/chueak-sen-yai-polie-thilene-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/vi/blogs/isi-products/day-thung-soi-polyethylene-8674</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-10</lastmod>
+  </url>
 
 
 
@@ -4649,9 +4726,13 @@
 
 
 
-
-
-
+    <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
 
 
 
@@ -4675,6 +4756,37 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyamide - Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyamide-is-4572-arabic</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */} -->
   <!-- BIS Certificate for Steel Wire Ropes - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/steel-wire-ropes-is-1804</loc>
@@ -6111,6 +6223,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Latest BIS Implementation Guidelines for IS 9873 Toy Safety - English -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/bis-certification-update-is-9873-toy-safety</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-09</lastmod>
   </url>
   <!-- Ministry Updates Pages - End -->
 
