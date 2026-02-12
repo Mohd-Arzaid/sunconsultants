@@ -1,8 +1,10 @@
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import { Link } from "react-router-dom";
+import { getFooterPaths } from "@/lib/footerLinks";
 
 const FooterKorean = () => {
+  const paths = getFooterPaths("ko");
   return (
     <footer>
       <div className="relative ">
@@ -170,31 +172,31 @@ const FooterKorean = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/what-is-bis-certificate-indian-bis"
+                    to={paths.bisCertification}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     BIS 인증
                   </Link>
                   <Link
-                    to="/a-guide-to-bis-certification-indian-bis"
+                    to={paths.isiMark}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     ISI 마크 (인도)
                   </Link>
                   <Link
-                    to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                    to={paths.bisMarkForeign}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     BIS 마크 (외국)
                   </Link>
                   <Link
-                    to="/what-is-crs-bis-or-crs-registration"
+                    to={paths.crsRegistration}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     CRS 등록
                   </Link>
                   <Link
-                    to="/indian-bis-certification-under-scheme-x"
+                    to={paths.schemeX}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Scheme X
@@ -208,25 +210,25 @@ const FooterKorean = () => {
                 </span>
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/about"
+                    to={paths.about}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     회사 소개
                   </Link>
                   <Link
-                    to="/contact"
+                    to={paths.contact}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     문의하기
                   </Link>
                   <Link
-                    to="/faqs"
+                    to={paths.faqs}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     FAQ
                   </Link>
                   <Link
-                    to="/sitemap"
+                    to={paths.sitemap}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                     onClick={() => {
                       setTimeout(() => {
@@ -246,31 +248,31 @@ const FooterKorean = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/Blogs"
+                    to={paths.blogs}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     최신 블로그
                   </Link>
                   <Link
-                    to="/bis-qco-updates"
+                    to={paths.bisQcoUpdates}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     BIS QCO 업데이트
                   </Link>
                   <Link
-                    to="/ministry-updates"
+                    to={paths.ministryUpdates}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     부처 업데이트
                   </Link>
                   <Link
-                    to="/webinar"
+                    to={paths.webinar}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     예정된 웨비나
                   </Link>
                   <Link
-                    to="/SchemeX-products"
+                    to={paths.schemeXProducts}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Scheme X 제품
@@ -340,14 +342,14 @@ const FooterKorean = () => {
 
             <div className="md:hidden flex items-center gap-2">
               <Link
-                to="/privacy-policy"
+                to={paths.privacyPolicy}
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
                 개인정보 보호정책
               </Link>
               <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
               <Link
-                to="/terms-and-conditions"
+                to={paths.termsAndConditions}
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
                 이용약관
@@ -357,7 +359,7 @@ const FooterKorean = () => {
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
 
             <Link
-              to="/privacy-policy"
+              to={paths.privacyPolicy}
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
               개인정보 보호정책
@@ -366,7 +368,7 @@ const FooterKorean = () => {
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
 
             <Link
-              to="/terms-and-conditions"
+              to={paths.termsAndConditions}
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
               이용약관

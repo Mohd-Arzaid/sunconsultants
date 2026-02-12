@@ -1,8 +1,10 @@
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import { Link } from "react-router-dom";
+import { getFooterPaths } from "@/lib/footerLinks";
 
 const FooterIndonesian = () => {
+  const paths = getFooterPaths("id");
   return (
     <footer>
       <div className="relative ">
@@ -170,31 +172,31 @@ const FooterIndonesian = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/what-is-bis-certificate-indian-bis"
+                    to={paths.bisCertification}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Sertifikasi BIS
                   </Link>
                   <Link
-                    to="/a-guide-to-bis-certification-indian-bis"
+                    to={paths.isiMark}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Tanda ISI (India)
                   </Link>
                   <Link
-                    to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                    to={paths.bisMarkForeign}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Tanda BIS (Asing)
                   </Link>
                   <Link
-                    to="/what-is-crs-bis-or-crs-registration"
+                    to={paths.crsRegistration}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Registrasi CRS
                   </Link>
                   <Link
-                    to="/indian-bis-certification-under-scheme-x"
+                    to={paths.schemeX}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Scheme X
@@ -208,25 +210,25 @@ const FooterIndonesian = () => {
                 </span>
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/about"
+                    to={paths.about}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Tentang Kami
                   </Link>
                   <Link
-                    to="/contact"
+                    to={paths.contact}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Hubungi Kami
                   </Link>
                   <Link
-                    to="/faqs"
+                    to={paths.faqs}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     FAQ
                   </Link>
                   <Link
-                    to="/sitemap"
+                    to={paths.sitemap}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                     onClick={() => {
                       setTimeout(() => {
@@ -246,31 +248,31 @@ const FooterIndonesian = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/Blogs"
+                    to={paths.blogs}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Blog terbaru
                   </Link>
                   <Link
-                    to="/bis-qco-updates"
+                    to={paths.bisQcoUpdates}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Pembaruan BIS QCO
                   </Link>
                   <Link
-                    to="/ministry-updates"
+                    to={paths.ministryUpdates}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Pembaruan Kementerian
                   </Link>
                   <Link
-                    to="/webinar"
+                    to={paths.webinar}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Webinar mendatang
                   </Link>
                   <Link
-                    to="/SchemeX-products"
+                    to={paths.schemeXProducts}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Produk Scheme X
@@ -340,14 +342,14 @@ const FooterIndonesian = () => {
 
             <div className="md:hidden flex items-center gap-2">
               <Link
-                to="/privacy-policy"
+                to={paths.privacyPolicy}
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
                 Kebijakan Privasi
               </Link>
               <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
               <Link
-                to="/terms-and-conditions"
+                to={paths.termsAndConditions}
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
                 Syarat Layanan
@@ -357,7 +359,7 @@ const FooterIndonesian = () => {
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
 
             <Link
-              to="/privacy-policy"
+              to={paths.privacyPolicy}
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
               Kebijakan Privasi
@@ -366,7 +368,7 @@ const FooterIndonesian = () => {
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
 
             <Link
-              to="/terms-and-conditions"
+              to={paths.termsAndConditions}
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
               Syarat Layanan
