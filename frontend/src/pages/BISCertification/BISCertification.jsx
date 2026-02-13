@@ -758,7 +758,7 @@ const OverviewSection = () => {
 
 
       <p className="service-left-content-paragraph">
-      BIS certification is the process of securing a license from the Bureau of Indian Standards (National Certification Body of India) for manufacturing or importing goods that complies with the Indian standards. BIS offers various certification schemes through which the manufacturers can secure a BIS license to use the standard quality mark on their products. This standard mark showcases that their products comply with the required quality, safety and reliability standards as set by BIS. 
+      BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India. BIS offers various certification schemes through which the manufacturers can secure a BIS license to use the standard quality mark on their products. This standard mark showcases that their products comply with the required quality, safety and reliability standards as set by BIS. 
       </p>
       <p className="service-left-content-paragraph">
       BIS certification is voluntary in nature but Bureau of Indian Standards made it mandatory for various products critical for consumers health and safety. BIS issues Quality Control Orders (QCO) to list the products that require a mandatory BIS license for manufacturing or importing in India.
