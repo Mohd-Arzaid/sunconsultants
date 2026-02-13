@@ -71,6 +71,7 @@ const BISFMItalian = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -151,6 +152,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head so it always appears (Helmet can drop extra scripts) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Cos'è la certificazione BIS e perché è importante per i produttori stranieri ottenere il BIS indiano?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "La certificazione BIS è un processo normativo condotto dal Bureau of Indian Standards per garantire che i prodotti soddisfino gli standard indiani. È essenziale per i produttori stranieri per ottenere l'accesso al mercato, lo sdoganamento e la fiducia dei consumatori in India.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Cosa rappresenta il marchio ISI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Il marchio ISI indica la conformità a uno specifico standard indiano. È obbligatorio per i prodotti sotto la certificazione BIS e deve essere stampato sull'imballaggio e sui prodotti.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "La certificazione BIS è obbligatoria per tutte le importazioni in India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. La certificazione BIS è obbligatoria per i prodotti elencati nello schema di certificazione BIS indiano obbligatorio. Tuttavia, la certificazione volontaria è disponibile per altri prodotti.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Chi può richiedere la certificazione BIS nell'ambito dell'FMCS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Solo i produttori stranieri effettivi (non importatori o commercianti) possono fare domanda. Un Rappresentante Indiano Autorizzato (AIR) è obbligatorio per rappresentarli in India.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quanto tempo ci vuole per ottenere un certificato BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Il processo medio di certificazione BIS nell'ambito dell'FMCS richiede 120 giorni, a seconda della preparazione dei documenti, della programmazione degli audit e dei tempi di risposta dei test.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quali sono i principali costi coinvolti nella certificazione BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "I costi includono le tasse di domanda, le spese di audit, le tasse per i test di laboratorio, le tasse di licenza e marcatura e una Garanzia Bancaria di Performance (PBG) da una banca indiana approvata dalla RBI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "La licenza BIS può essere rinnovata?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sì. La licenza BIS è generalmente valida per 1-2 anni e può essere rinnovata soddisfacendo i requisiti di conformità e aggiornamento dei documenti.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Cosa succede se il prodotto fallisce durante i test di laboratorio BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Se un prodotto fallisce, il BIS può consentire azioni correttive e nuovi test. Il fallimento persistente può comportare il rifiuto della domanda.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "È necessario assumere un consulente per la certificazione BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Non è obbligatorio ma altamente raccomandato. Un consulente aiuta a ridurre i ritardi, gestire la conformità e migliorare le possibilità di approvazione garantendo il pieno allineamento con i protocolli BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Una licenza BIS può essere sospesa o annullata?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sì. Il BIS può sospendere o annullare una licenza per non conformità, fallimento del prodotto, uso improprio del logo ISI o discrepanze nell'audit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quali documenti sono necessari per il processo di certificazione BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "I documenti includono il modulo di domanda FMCS, rapporti di test, elenchi delle attrezzature, certificati di calibrazione, planimetria della fabbrica, lettera di nomina AIR e prova del pagamento delle tasse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Un AIR può rappresentare più domande BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sì, a condizione che siano autorizzati per ogni progetto e abbiano la capacità di gestire la documentazione, gli audit e la comunicazione per ogni certificazione.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Qual è il ruolo di una Garanzia Bancaria di Performance?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Una PBG assicura al BIS che il produttore rispetterà gli standard indiani. È rimborsabile alla cancellazione della licenza ed è obbligatoria per tutte le domande FMCS che ottengono il BIS indiano.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "La certificazione BIS è riconosciuta al di fuori dell'India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sebbene il certificato BIS sia uno standard indiano, è rispettato nei contesti commerciali in molte regioni che accettano la conformità indiana, specialmente in Asia e Africa.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Come faccio a sapere se il mio prodotto richiede la certificazione BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Controlla l'elenco aggiornato sul sito web ufficiale del BIS o consulta un consulente BIS per verificare se il tuo prodotto rientra nella certificazione obbligatoria.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bisfm-faq-schema-it";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bisfm-faq-schema-it");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {

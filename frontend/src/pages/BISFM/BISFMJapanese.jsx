@@ -46,6 +46,7 @@ const BISFMJapanese = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -123,6 +124,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head so it always appears (Helmet can drop extra scripts) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "BIS認証とは何か、外国製造業者がインドBISを取得することがなぜ重要なのですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS認証は、製品がインド標準を満たしていることを確保するためにインド標準局が実施する規制プロセスです。外国製造業者がインドで市場アクセス、通関、消費者の信頼を得るために不可欠です。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ISIマークは何を表していますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ISIマークは、特定のインド標準への適合を示します。BIS認証の下にある製品には必須であり、包装と製品に印刷する必要があります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "インドへのすべての輸入にBIS認証は必須ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "いいえ。BIS認証は、必須のインドBIS認証スキームにリストされている製品に必須です。ただし、他の製品には任意の認証が利用可能です。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "FMCSの下でBIS認証を申請できるのは誰ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "実際の外国製造業者（輸入業者や貿易業者ではない）のみが申請できます。認可インド代表者（AIR）は、インドで彼らを代表するために必須です。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS証明書を取得するのにどのくらいかかりますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FMCSの下での平均的なBIS認証プロセスは120日かかります。これは、書類の準備状況、監査スケジューリング、テストのターンアラウンド時間によって異なります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS認証に関連する主要な費用は何ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "費用には、申請料、監査料、ラボテスト料、ライセンス料およびマーキング料、RBI承認のインド銀行からのパフォーマンス銀行保証（PBG）が含まれます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BISライセンスは更新できますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "はい。BISライセンスは通常1〜2年間有効で、コンプライアンスと書類更新要件を満たすことで更新できます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BISラボテスト中に製品が不合格になった場合はどうなりますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "製品が不合格になった場合、BISは是正措置と再テストを許可する場合があります。継続的な不合格は、申請の拒否につながる可能性があります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS認証コンサルタントを雇う必要がありますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "必須ではありませんが、強く推奨されます。コンサルタントは、BISプロトコルとの完全な整合を確保することで、遅延を減らし、コンプライアンスを管理し、承認の可能性を向上させます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BISライセンスは停止または取り消されることがありますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "はい。BISは、非準拠、製品の不合格、ISIロゴの誤用、または監査の不一致により、ライセンスを停止または取り消す場合があります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS認証プロセスに必要な書類は何ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "書類には、FMCS申請フォーム、テストレポート、設備リスト、校正証明書、工場レイアウト、AIR任命書、手数料支払い証明が含まれます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "1つのAIRが複数のBIS申請を代表できますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "はい、各プロジェクトに対して認可されており、各認証の書類、監査、コミュニケーションを処理する能力がある場合に可能です。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "パフォーマンス銀行保証の役割は何ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "PBGは、製造業者がインド標準に準拠することをBISに保証します。ライセンス取り消し時に返金可能であり、インドBISを取得するすべてのFMCS申請に必須です。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS認証はインド以外で認められていますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS証明書はインド標準ですが、インドのコンプライアンスを受け入れる多くの地域、特にアジアとアフリカの貿易文脈で尊重されています。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "製品にBIS認証が必要かどうかを確認する方法は？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "公式BISウェブサイトの更新されたリストを確認するか、BISコンサルタントに相談して、製品が必須認証に該当するかどうかを確認してください。",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bisfm-faq-schema-ja";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bisfm-faq-schema-ja");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {

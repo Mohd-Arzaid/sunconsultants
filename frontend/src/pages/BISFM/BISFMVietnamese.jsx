@@ -48,6 +48,7 @@ const BISFMVietnamese = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -128,6 +129,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head so it always appears (Helmet can drop extra scripts) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Chứng nhận BIS là gì và tại sao việc các nhà sản xuất nước ngoài đạt được BIS Ấn Độ lại quan trọng?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chứng nhận BIS là quy trình quản lý do Cục Tiêu chuẩn Ấn Độ thực hiện nhằm đảm bảo các sản phẩm đáp ứng tiêu chuẩn Ấn Độ. Đây là điều cần thiết để các nhà sản xuất nước ngoài tiếp cận thị trường, thông quan hải quan và có được sự tin tưởng của người tiêu dùng tại Ấn Độ.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Dấu hiệu ISI đại diện cho điều gì?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Dấu hiệu ISI cho biết sự phù hợp với một tiêu chuẩn Ấn Độ cụ thể. Đây là yêu cầu bắt buộc đối với các sản phẩm thuộc chứng nhận BIS và phải được in trên bao bì và sản phẩm.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Chứng nhận BIS có bắt buộc đối với tất cả hàng nhập khẩu vào Ấn Độ không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Không. Chứng nhận BIS chỉ bắt buộc đối với các sản phẩm được liệt kê trong chương trình chứng nhận BIS bắt buộc của Ấn Độ. Tuy nhiên, chứng nhận tự nguyện có sẵn cho các sản phẩm khác.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ai có thể nộp đơn xin chứng nhận BIS theo FMCS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chỉ các nhà sản xuất nước ngoài thực tế (không phải nhà nhập khẩu hoặc thương nhân) mới có thể nộp đơn. Đại diện Ấn Độ được ủy quyền (AIR) là bắt buộc để đại diện cho họ tại Ấn Độ.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Mất bao lâu để có được chứng nhận BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Quy trình chứng nhận BIS theo FMCS trung bình mất 120 ngày, tùy thuộc vào sự sẵn sàng của tài liệu, lịch kiểm toán và thời gian quay vòng thử nghiệm.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Các chi phí chính liên quan đến chứng nhận BIS là gì?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chi phí bao gồm phí nộp đơn, phí kiểm toán, phí thử nghiệm phòng thí nghiệm, phí giấy phép và đánh dấu, và Bảo lãnh Ngân hàng Thực hiện (PBG) từ một ngân hàng Ấn Độ được RBI phê duyệt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Giấy phép BIS có thể gia hạn được không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Có. Giấy phép BIS thường có hiệu lực từ 1-2 năm và có thể được gia hạn khi đáp ứng các yêu cầu tuân thủ và cập nhật tài liệu.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Điều gì xảy ra nếu sản phẩm không đạt trong quá trình thử nghiệm tại phòng thí nghiệm BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nếu sản phẩm không đạt, BIS có thể cho phép hành động khắc phục và thử nghiệm lại. Việc không đạt liên tục có thể dẫn đến việc từ chối đơn đăng ký.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Có cần thiết phải thuê tư vấn chứng nhận BIS không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Không bắt buộc nhưng rất được khuyến nghị. Tư vấn viên giúp giảm chậm trễ, quản lý việc tuân thủ và cải thiện cơ hội phê duyệt bằng cách đảm bảo tuân thủ đầy đủ các quy trình của BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Giấy phép BIS có thể bị đình chỉ hoặc hủy bỏ không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Có. BIS có thể đình chỉ hoặc hủy bỏ giấy phép do không tuân thủ, sản phẩm không đạt, lạm dụng logo ISI hoặc sai lệch trong kiểm toán.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Những tài liệu nào cần thiết cho quy trình chứng nhận BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tài liệu bao gồm mẫu đơn đăng ký FMCS, báo cáo thử nghiệm, danh sách thiết bị, chứng chỉ hiệu chuẩn, sơ đồ nhà máy, thư bổ nhiệm AIR và bằng chứng thanh toán phí.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Một AIR có thể đại diện cho nhiều đơn đăng ký BIS không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Có, miễn là họ được ủy quyền cho từng dự án và có đủ năng lực để xử lý tài liệu, kiểm toán và liên lạc cho từng chứng nhận.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Vai trò của Bảo lãnh Ngân hàng Thực hiện là gì?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "PBG đảm bảo với BIS rằng nhà sản xuất sẽ tuân thủ các tiêu chuẩn Ấn Độ. Nó có thể được hoàn trả khi hủy giấy phép và là bắt buộc cho tất cả các đơn đăng ký FMCS để có được BIS Ấn Độ.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Chứng nhận BIS có được công nhận ngoài Ấn Độ không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Mặc dù chứng nhận BIS là tiêu chuẩn của Ấn Độ, nhưng nó được tôn trọng trong bối cảnh thương mại ở nhiều khu vực chấp nhận sự tuân thủ của Ấn Độ, đặc biệt là ở châu Á và châu Phi.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Làm thế nào để biết sản phẩm của tôi có yêu cầu chứng nhận BIS không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Kiểm tra danh sách cập nhật trên trang web chính thức của BIS hoặc tham khảo ý kiến tư vấn viên BIS để xác minh xem sản phẩm của bạn có thuộc chứng nhận bắt buộc hay không.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bisfm-faq-schema-vi";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bisfm-faq-schema-vi");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {

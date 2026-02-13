@@ -48,6 +48,7 @@ const BISFMGerman = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -128,6 +129,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head so it always appears (Helmet can drop extra scripts) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Was ist die BIS-Zertifizierung und warum ist es für ausländische Hersteller wichtig, die indische BIS-Zertifizierung zu erhalten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die BIS-Zertifizierung ist ein regulatorisches Verfahren des Bureau of Indian Standards, das sicherstellt, dass Produkte den indischen Normen entsprechen. Sie ist für ausländische Hersteller unerlässlich, um Marktzugang, Zollabfertigung und Verbrauchervertrauen in Indien zu erlangen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was bedeutet das ISI-Zeichen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Das ISI-Zeichen bestätigt die Konformität mit einer bestimmten indischen Norm. Es ist für Produkte im Rahmen der BIS-Zertifizierung obligatorisch und muss auf Verpackungen und Produkten angebracht werden.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist die BIS-Zertifizierung für alle Importe nach Indien obligatorisch?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nein. Die BIS-Zertifizierung ist nur für Produkte obligatorisch, die unter das obligatorische indische BIS-Zertifizierungssystem fallen. Für andere Produkte steht eine freiwillige Zertifizierung zur Verfügung.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wer kann im Rahmen des FMCS eine BIS-Zertifizierung beantragen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nur tatsächliche ausländische Hersteller (keine Importeure oder Händler) können einen Antrag stellen. Ein autorisierter indischer Vertreter (AIR) ist zur Vertretung in Indien vorgeschrieben.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie lange dauert es, ein BIS-Zertifikat zu erhalten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Der durchschnittliche BIS-Zertifizierungsprozess im Rahmen des FMCS dauert 120 Tage, abhängig von der Dokumentenbereitschaft, der Auditplanung und den Testdurchlaufzeiten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Welche Hauptkosten fallen bei der BIS-Zertifizierung an?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Kosten umfassen Antragsgebühren, Auditgebühren, Labortestgebühren, Lizenz- und Kennzeichnungsgebühren sowie eine Performance Bank Guarantee (PBG) einer von der RBI zugelassenen indischen Bank.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kann die BIS-Lizenz verlängert werden?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja. Die BIS-Lizenz ist in der Regel 1–2 Jahre gültig und kann bei Erfüllung der Konformitäts- und Dokumentenaktualisierungsanforderungen verlängert werden.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was passiert, wenn das Produkt bei der BIS-Laborprüfung durchfällt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Wenn ein Produkt durchfällt, kann BIS Korrekturmaßnahmen und erneute Tests gestatten. Anhaltende Nichtbestehen können zur Ablehnung des Antrags führen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist es notwendig, einen BIS-Zertifizierungsberater zu beauftragen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Es ist nicht verpflichtend, aber sehr empfehlenswert. Ein Berater hilft, Verzögerungen zu reduzieren, die Konformität zu verwalten und die Genehmigungschancen zu verbessern, indem er die vollständige Einhaltung der BIS-Protokolle sicherstellt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kann eine BIS-Lizenz ausgesetzt oder widerrufen werden?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja. BIS kann eine Lizenz bei Nichteinhaltung, Produktversagen, Missbrauch des ISI-Logos oder Auditabweichungen aussetzen oder widerrufen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Welche Dokumente werden für den BIS-Zertifizierungsprozess benötigt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Zu den Dokumenten gehören das FMCS-Antragsformular, Prüfberichte, Gerätelisten, Kalibrierungszertifikate, Fabrikgrundriss, AIR-Ernennungsschreiben und Zahlungsnachweise.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kann ein AIR mehrere BIS-Anträge vertreten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja, sofern er für jedes Projekt autorisiert ist und die Kapazität hat, Dokumentation, Audits und Kommunikation für jede Zertifizierung zu bewältigen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Welche Rolle spielt eine Performance Bank Guarantee?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Eine PBG sichert BIS zu, dass der Hersteller die indischen Normen einhält. Sie ist bei Lizenzstornierung erstattungsfähig und für alle FMCS-Anträge zur Erlangung der indischen BIS-Zertifizierung obligatorisch.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wird die BIS-Zertifizierung außerhalb Indiens anerkannt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Obwohl das BIS-Zertifikat eine indische Norm ist, wird es in Handelskontexten vieler Regionen respektiert, die die indische Konformität akzeptieren, insbesondere in Asien und Afrika.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie erfahre ich, ob mein Produkt eine BIS-Zertifizierung benötigt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Überprüfen Sie die aktualisierte Liste auf der offiziellen BIS-Website oder konsultieren Sie einen BIS-Berater, um festzustellen, ob Ihr Produkt unter die obligatorische Zertifizierung fällt.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bisfm-faq-schema-de";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bisfm-faq-schema-de");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {

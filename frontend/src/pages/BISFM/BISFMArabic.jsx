@@ -69,6 +69,7 @@ const BISFMArabic = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -148,6 +149,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head so it always appears (Helmet can drop extra scripts) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "ما هي شهادة BIS ولماذا من المهم للمصنعين الأجانب الحصول على BIS الهندي؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "شهادة BIS هي عملية تنظيمية يجريها مكتب المواصفات الهندي لضمان توافق المنتجات مع المعايير الهندية. وهي ضرورية للمصنعين الأجانب للحصول على الوصول إلى السوق والتخليص الجمركي وثقة المستهلك في الهند.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ماذا تمثل علامة ISI؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "تشير علامة ISI إلى المطابقة لمعيار هندي محدد. وهي إلزامية للمنتجات الخاضعة لشهادة BIS ويجب طباعتها على العبوات والمنتجات.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل شهادة BIS إلزامية لجميع الواردات إلى الهند؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "لا. شهادة BIS إلزامية فقط للمنتجات المدرجة ضمن مخطط شهادة BIS الهندي الإلزامي. ومع ذلك، تتوفر الشهادة الطوعية للمنتجات الأخرى.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "من يمكنه التقدم للحصول على شهادة BIS بموجب FMCS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "يمكن فقط للمصنعين الأجانب الفعليين (وليس المستوردين أو التجار) التقدم بطلب. ويعد الممثل الهندي المعتمد (AIR) إلزاميًا لتمثيلهم في الهند.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "كم من الوقت يستغرق الحصول على شهادة BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "تستغرق عملية شهادة BIS بموجب FMCS في المتوسط 120 يومًا، وذلك حسب جاهزية المستندات وجدولة التدقيق وأوقات الاختبار.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما هي التكاليف الرئيسية المتضمنة في شهادة BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "تشمل التكاليف رسوم التقديم ورسوم التدقيق ورسوم الاختبار المعملي ورسوم الترخيص والعلامات، بالإضافة إلى ضمان الأداء المصرفي (PBG) من بنك هندي معتمد من RBI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل يمكن تجديد ترخيص BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "نعم. يكون ترخيص BIS صالحًا عادةً لمدة 1-2 سنة ويمكن تجديده عند استيفاء متطلبات الامتثال وتحديث المستندات.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ماذا يحدث إذا فشل المنتج أثناء اختبار مختبر BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "إذا فشل المنتج، قد يسمح BIS باتخاذ إجراء تصحيحي وإعادة الاختبار. قد يؤدي الفشل المستمر إلى رفض الطلب.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل من الضروري توظيف مستشار شهادة BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ليس إلزاميًا ولكن يوصى به بشدة. يساعد المستشار في تقليل التأخيرات وإدارة الامتثال وتحسين فرص الموافقة من خلال ضمان التوافق الكامل مع بروتوكولات BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل يمكن تعليق أو إلغاء ترخيص BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "نعم. قد يقوم BIS بتعليق أو إلغاء الترخيص بسبب عدم الامتثال أو فشل المنتج أو إساءة استخدام شعار ISI أو تناقضات التدقيق.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما هي المستندات المطلوبة لعملية شهادة BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "تشمل المستندات نموذج طلب FMCS وتقارير الاختبار وقوائم المعدات وشهادات المعايرة ومخطط المصنع وخطاب تعيين AIR وإثبات دفع الرسوم.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل يمكن لممثل AIR واحد تمثيل طلبات BIS متعددة؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "نعم، بشرط أن يكونوا مفوضين لكل مشروع ولديهم القدرة على التعامل مع الوثائق والتدقيق والتواصل لكل شهادة.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما هو دور ضمان الأداء المصرفي؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "يضمن PBG لـ BIS أن المصنع سيمتثل للمعايير الهندية. وهو قابل للاسترداد عند إلغاء الترخيص وإلزامي لجميع طلبات FMCS للحصول على BIS الهندي.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل شهادة BIS معترف بها خارج الهند؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "بينما شهادة BIS هي معيار هندي، إلا أنها محترمة في سياقات التجارة في العديد من المناطق التي تقبل الامتثال الهندي، خاصة في آسيا وأفريقيا.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "كيف أعرف ما إذا كان منتجي يتطلب شهادة BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "تحقق من القائمة المحدثة على موقع BIS الرسمي أو استشر مستشار BIS للتحقق مما إذا كان منتجك يندرج ضمن الشهادة الإلزامية.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bisfm-faq-schema-ar";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bisfm-faq-schema-ar");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {

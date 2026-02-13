@@ -46,6 +46,7 @@ const BISFMKorean = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -123,6 +124,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head so it always appears (Helmet can drop extra scripts) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "BIS 인증이란 무엇이며, 외국 제조업체가 인도 BIS를 취득하는 것이 왜 중요한가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS 인증은 제품이 인도 표준을 충족하는지 확인하기 위해 인도표준청에서 수행하는 규제 프로세스입니다. 외국 제조업체가 인도에서 시장 접근, 세관 통관 및 소비자 신뢰를 얻는 데 필수적입니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ISI 마크는 무엇을 나타내나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ISI 마크는 특정 인도 표준에 대한 적합성을 나타냅니다. BIS 인증 하의 제품에 필수이며 포장 및 제품에 인쇄되어야 합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "인도로의 모든 수입품에 BIS 인증이 필수인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "아닙니다. BIS 인증은 필수 인도 BIS 인증 제도에 나열된 제품에만 필수입니다. 그러나 다른 제품에 대해서는 자발적 인증이 가능합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "FMCS 하에서 누가 BIS 인증을 신청할 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "실제 외국 제조업체(수입업체나 무역업체가 아님)만 신청할 수 있습니다. 인도 공인 대리인(AIR)은 인도에서 그들을 대표하기 위해 필수입니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증서를 받는 데 얼마나 걸리나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FMCS 하의 평균 BIS 인증 프로세스는 문서 준비 상태, 감사 일정 및 테스트 처리 시간에 따라 120일이 소요됩니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증에 관련된 주요 비용은 무엇인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "비용에는 신청 수수료, 감사 수수료, 실험실 테스트 수수료, 라이선스 및 마킹 수수료, RBI 승인 인도 은행의 성과 은행 보증(PBG)이 포함됩니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 라이선스를 갱신할 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "예. BIS 라이선스는 일반적으로 1-2년 동안 유효하며, 준수 및 문서 업데이트 요구사항을 충족하면 갱신할 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 실험실 테스트 중 제품이 실패하면 어떻게 되나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "제품이 실패하면 BIS는 시정 조치 및 재테스트를 허용할 수 있습니다. 지속적인 실패는 신청 거부로 이어질 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증 컨설턴트를 고용하는 것이 필요한가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "필수는 아니지만 강력히 권장됩니다. 컨설턴트는 BIS 프로토콜과의 완전한 정렬을 보장하여 지연을 줄이고, 준수를 관리하며, 승인 가능성을 향상시키는 데 도움이 됩니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 라이선스가 정지되거나 취소될 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "예. BIS는 비준수, 제품 실패, ISI 로고 오용 또는 감사 불일치로 인해 라이선스를 정지하거나 취소할 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증 프로세스에 필요한 문서는 무엇인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "문서에는 FMCS 신청서, 테스트 보고서, 장비 목록, 교정 인증서, 공장 배치, AIR 임명 서한 및 수수료 지불 증명이 포함됩니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "한 AIR이 여러 BIS 신청을 대표할 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "예, 각 프로젝트에 대해 승인을 받고 각 인증에 대한 문서화, 감사 및 소통을 처리할 수 있는 역량이 있는 경우 가능합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "성과 은행 보증의 역할은 무엇인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "PBG는 제조업체가 인도 표준을 준수할 것임을 BIS에 보장합니다. 라이선스 취소 시 환불 가능하며 인도 BIS를 취득하는 모든 FMCS 신청에 필수입니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증이 인도 외부에서 인정되나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS 인증서는 인도 표준이지만, 특히 아시아와 아프리카에서 인도 준수를 수용하는 많은 지역의 무역 맥락에서 존중받습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "제품에 BIS 인증이 필요한지 어떻게 알 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "공식 BIS 웹사이트의 업데이트된 목록을 확인하거나 BIS 컨설턴트와 상담하여 제품이 필수 인증에 해당하는지 확인하세요.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bisfm-faq-schema-ko";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bisfm-faq-schema-ko");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {

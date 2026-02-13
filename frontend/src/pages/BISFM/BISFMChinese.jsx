@@ -48,6 +48,7 @@ const BISFMChinese = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -125,6 +126,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head so it always appears (Helmet can drop extra scripts) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "什么是BIS认证，为什么外国制造商获得印度BIS认证很重要？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS认证是由印度标准局进行的监管流程，以确保产品符合印度标准。对于外国制造商来说，获得市场准入、清关和印度消费者信任至关重要。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ISI标志代表什么？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ISI标志表示符合特定的印度标准。对于BIS认证下的产品是强制性的，必须印在包装和产品上。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "所有进口到印度的产品都必须进行BIS认证吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "不是。BIS认证仅对强制性印度BIS认证计划下列出的产品是强制性的。但是，其他产品可以进行自愿认证。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "谁可以在FMCS下申请BIS认证？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "只有实际的外国制造商（不是进口商或贸易商）可以申请。授权印度代表（AIR）是强制性的，在印度代表他们。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "获得BIS证书需要多长时间？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FMCS下的平均BIS认证流程需要120天，具体取决于文件准备情况、审核安排和测试周转时间。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS认证涉及哪些主要成本？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "成本包括申请费、审核费、实验室测试费、许可证和标志使用费，以及来自RBI批准的印度银行的履约银行保函（PBG）。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS许可证可以续期吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "可以。BIS许可证通常有效期为1-2年，在满足合规和文件更新要求后可以续期。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "如果产品在BIS实验室测试中失败会怎样？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "如果产品失败，BIS可能允许采取纠正措施并重新测试。持续失败可能导致申请被拒绝。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "是否有必要聘请BIS认证顾问？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "这不是强制性的，但强烈推荐。顾问通过确保完全符合BIS协议，帮助减少延误、管理合规性并提高批准机会。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS许可证可以被暂停或取消吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "可以。BIS可能因不合规、产品失败、滥用ISI标志或审核差异而暂停或取消许可证。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS认证流程需要哪些文件？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "文件包括FMCS申请表、测试报告、设备清单、校准证书、工厂布局、AIR任命函和费用支付证明。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "一个AIR可以代表多个BIS申请吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "可以，前提是他们被授权处理每个项目，并有能力处理每个认证的文件、审核和沟通。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "履约银行保函的作用是什么？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "PBG向BIS保证制造商将遵守印度标准。在许可证取消时可退还，对于所有获得印度BIS的FMCS申请都是强制性的。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS认证在印度以外得到认可吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "虽然BIS证书是印度标准，但在许多接受印度合规性的地区（特别是在亚洲和非洲）的贸易环境中受到尊重。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "我如何知道我的产品是否需要BIS认证？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "查看BIS官方网站上的更新列表，或咨询BIS顾问以验证您的产品是否属于强制性认证。",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bisfm-faq-schema-zh";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bisfm-faq-schema-zh");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {

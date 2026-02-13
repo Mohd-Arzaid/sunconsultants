@@ -49,6 +49,7 @@ const BISFMDutch = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -129,6 +130,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head so it always appears (Helmet can drop extra scripts) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wat is BIS-certificering en waarom is het belangrijk voor buitenlandse fabrikanten om Indiase BIS te verkrijgen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS-certificering is een regelgevend proces dat wordt uitgevoerd door het Bureau of Indian Standards om ervoor te zorgen dat producten voldoen aan Indiase normen. Het is essentieel voor buitenlandse fabrikanten om markttoegang, douane-inklaring en consumentenvertrouwen in India te verkrijgen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat vertegenwoordigt het ISI-merk?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Het ISI-merk geeft aan dat een product voldoet aan een specifieke Indiase norm. Het is verplicht voor producten onder de BIS-certificering en moet op verpakkingen en producten worden afgedrukt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is BIS-certificering verplicht voor alle import naar India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nee. BIS-certificering is verplicht voor producten die zijn opgenomen in het verplichte Indiase BIS-certificeringsschema. Voor andere producten is echter vrijwillige certificering beschikbaar.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie kan een aanvraag indienen voor BIS-certificering onder FMCS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Alleen daadwerkelijke buitenlandse fabrikanten (geen importeurs of handelaren) kunnen een aanvraag indienen. Een geautoriseerde Indiase vertegenwoordiger (AIR) is verplicht om hen in India te vertegenwoordigen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hoe lang duurt het om een BIS-certificaat te krijgen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Het gemiddelde BIS-certificeringsproces onder FMCS duurt 120 dagen, afhankelijk van de gereedheid van documenten, auditplanning en doorlooptijden van tests.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat zijn de belangrijkste kosten van BIS-certificering?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "De kosten omvatten aanvraagkosten, auditkosten, laboratoriumtestkosten, licentie- en merkkosten, en een Performance Bank Guarantee (PBG) van een door RBI goedgekeurde Indiase bank.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kan de BIS-licentie worden verlengd?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja. De BIS-licentie is doorgaans 1-2 jaar geldig en kan worden verlengd na het voldoen aan nalevings- en documentupdatevereisten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat gebeurt er als het product zakt voor de BIS-laboratoriumtest?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Als een product zakt, kan BIS corrigerende maatregelen en hertesting toestaan. Aanhoudend falen kan leiden tot afwijzing van de aanvraag.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is het noodzakelijk om een BIS-certificeringsconsultant in te huren?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Het is niet verplicht maar wordt sterk aanbevolen. Een consultant helpt vertragingen te verminderen, naleving te beheren en de goedkeuringskansen te verbeteren door volledige afstemming met BIS-protocollen te waarborgen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kan een BIS-licentie worden geschorst of ingetrokken?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja. BIS kan een licentie schorsen of intrekken wegens niet-naleving, productfalen, misbruik van het ISI-logo of auditverschillen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Welke documenten zijn nodig voor het BIS-certificeringsproces?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Documenten omvatten het FMCS-aanvraagformulier, testrapporten, apparatuurlijsten, kalibratiecertificaten, fabriekslay-out, AIR-benoemingsbrief en bewijs van betaling van kosten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kan één AIR meerdere BIS-aanvragen vertegenwoordigen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja, mits zij geautoriseerd zijn voor elk project en de capaciteit hebben om documentatie, audits en communicatie voor elke certificering te verwerken.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat is de rol van een Performance Bank Guarantee?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Een PBG verzekert BIS dat de fabrikant zal voldoen aan Indiase normen. Het is restitueerbaar bij intrekking van de licentie en verplicht voor alle FMCS-aanvragen voor het verkrijgen van Indiase BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wordt BIS-certificering buiten India erkend?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Hoewel het BIS-certificaat een Indiase norm is, wordt het gerespecteerd in handelscontexten in veel regio's die Indiase naleving accepteren, vooral in Azië en Afrika.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hoe weet ik of mijn product BIS-certificering vereist?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Controleer de bijgewerkte lijst op de officiële BIS-website of raadpleeg een BIS-consultant om te verifiëren of uw product onder de verplichte certificering valt.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bisfm-faq-schema-nl";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bisfm-faq-schema-nl");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {
