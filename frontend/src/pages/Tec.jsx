@@ -40,6 +40,13 @@ const Tec = () => {
           content="TEC MTCTE certification, TEC Registration, TEC Certificate, TEC Certification, MTCTE Registration, TEC Registration free, MTCTE Portal"
         />
 
+        <meta name="author" content="Dhruv Aggarwal" />
+        <meta name="publisher" content="Sun Certifications India" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href={window.location.href} />
+
         {/* Open Graph */}
         <meta
           property="og:title"
@@ -49,6 +56,8 @@ const Tec = () => {
           property="og:description"
           content="TEC Certification is Important to Manufacture, Import or Sell Telecommunication Equipment in India under MTCTE Scheme of the Government of India."
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
 
         {/* Twitter */}
         <meta
@@ -59,6 +68,7 @@ const Tec = () => {
           name="twitter:description"
           content="TEC Certification is Important to Manufacture, Import or Sell Telecommunication Equipment in India under MTCTE Scheme of the Government of India."
         />
+        <meta name="twitter:card" content="summary_large_image" />
 
         {/* JSON-LD Breadcrumb structured data for SEO */}
         <script type="application/ld+json">
