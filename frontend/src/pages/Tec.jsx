@@ -30,6 +30,36 @@ const Tec = () => {
   return (
     <div className="relative">
       <Helmet>
+        <title>TEC Registration for Telecom Equipment | MTCTE Scheme</title>
+        <meta
+          name="description"
+          content="TEC Certification is Important to Manufacture, Import or Sell Telecommunication Equipment in India under MTCTE Scheme of the Government of India."
+        />
+        <meta
+          name="keywords"
+          content="TEC MTCTE certification, TEC Registration, TEC Certificate, TEC Certification, MTCTE Registration, TEC Registration free, MTCTE Portal"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="TEC Registration for Telecom Equipment | MTCTE Scheme"
+        />
+        <meta
+          property="og:description"
+          content="TEC Certification is Important to Manufacture, Import or Sell Telecommunication Equipment in India under MTCTE Scheme of the Government of India."
+        />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:title"
+          content="TEC Registration for Telecom Equipment | MTCTE Scheme"
+        />
+        <meta
+          name="twitter:description"
+          content="TEC Certification is Important to Manufacture, Import or Sell Telecommunication Equipment in India under MTCTE Scheme of the Government of India."
+        />
+
         {/* JSON-LD Breadcrumb structured data for SEO */}
         <script type="application/ld+json">
           {JSON.stringify({
