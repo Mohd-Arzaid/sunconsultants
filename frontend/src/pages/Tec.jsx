@@ -9,6 +9,14 @@ import {
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
 import { Check, SlashIcon } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
@@ -37,8 +45,97 @@ const Tec = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "TEC Certification",
+                name: "TEC Registration",
                 item: "https://bis-certifications.com/information-about-tec-certificate-mtcte",
+              },
+            ],
+          })}
+        </script>
+        {/* FAQ Schema for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is TEC?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "TEC is short for Telecommunication Engineering Center, a section of the Department of Telecommunications (DoT), Government of India. It focuses on the creation of technical standards and specifications for telecom equipment to help ensure the protection, quality, and reliability of the equipment for end users.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is TEC Certification?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "TEC Certification is an approval that is necessary and mandatory for telecom equipment that is sold, manufactured, or imported into India, and is given by TEC. Under the MTCTE scheme, a valid TEC Certificate is necessary for any manufacturer or importer to market telecom products in India.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Are consumer products required to be certified under MTCTE?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Currently, consumer products that are not primary telecom products, such as TVs or refrigerators, are excluded from MTCTE Registration, even if they have telecom functionalities such as Wi-Fi or Bluetooth. However, manufacturers are advised to monitor the MTCTE Portal for any updates in scope.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Who can be considered an applicant for MTCTE Registration?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The applicant is the company's authorized executive as stated in the authorization letter. In the MTCTE Portal registration, their name and title are to be stated accurately in the profile section.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is your TEC Certification advantage?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "TEC MTCTE certification is proof that the telecom equipment has satisfied the requirements set by the government. The advantages are: Legally authorized manufacturing and importing, Enhanced credibility for the product, Improved confidence for the customer, Assurance of safety and performance, Uncut market access into India.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What should an AIR do in case there are several foreign OEMs?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "If there is one Authorized Indian Representative (AIR) for several foreign OEMs, different MoUs or authorization letters should be given for each OEM. Furthermore, distinct MTCTE Registration accounts should be created for each foreign manufacturer on the MTCTE Portal.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What types of business entities can act as an AIR?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "An AIR can be a registered business entity in India as a: Proprietorship Firm – Establishment License needed, Partnership Firm – Notarized Partnership Deed needed, Private or Public Limited Company – Required is a Certificate of Incorporation from the ROC. Registration documents should be complete when submitting the TEC Registration.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How can an applicant make offline payment on the MTCTE Portal?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "While submitting an application for TEC Certification, an applicant can decide on an online payment method or an offline payment method. The MTCTE applicant user instructions on the portal details the steps for offline payment.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is multiple simultaneous login allowed on the same MTCTE account?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No. Multiple users cannot log into the same account simultaneously on the MTCTE Portal. Each account can only have one active session.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the TEC Registration fee?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "TEC Registration fee consists of: Government charges, Testing fees, Evaluation of Test Report fees, Professional or consultancy fees, if any. Depending on the type of equipment and the Essential Requirements that need to be met for TEC MTCTE certification, the fees can vary.",
+                },
               },
             ],
           })}
@@ -59,7 +156,7 @@ const Tec = () => {
                   <SlashIcon />
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
-                  <BreadcrumbPage>TEC Certification</BreadcrumbPage>
+                  <BreadcrumbPage>TEC Registration</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
@@ -102,14 +199,16 @@ const TECHero = () => {
 
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              TEC Certification
+              TEC Registration in India
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
+            <br />
+            <span className="text-[#1A8781]">MTCTE Scheme</span>
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            MTCTE Certification ensures telecom equipment compliance with Indian
-            standards.
+            TEC Registration is an important means of regulating telecom
+            equipment in India under the MTCTE Scheme.
           </p>
 
           <div className="flex items-center -mt-2">
@@ -379,141 +478,131 @@ const ServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What services do you offer for CDSCO compliance?
+                What is TEC?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                We offer comprehensive CDSCO regulatory compliance services
-                including product registration, license applications, regulatory
-                strategy, documentation preparation, and post-approval
-                compliance monitoring for pharmaceuticals, medical devices, and
-                cosmetics in India.
+                TEC is short for Telecommunication Engineering Center, a
+                section of the Department of Telecommunications (DoT),
+                Government of India. It focuses on the creation of technical
+                standards and specifications for telecom equipment to help
+                ensure the protection, quality, and reliability of the equipment
+                for end users.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does the CDSCO approval process typically take?
+                What is TEC Certification?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO approval timelines vary based on product category and
-                application type. Typically, drug approvals take 6-12 months,
-                medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our certifications work to expedite
-                these timelines through proper documentation and regulatory
-                strategy.
+                TEC Certification is an approval that is necessary and mandatory
+                for telecom equipment that is sold, manufactured, or imported
+                into India, and is given by TEC. Under the MTCTE scheme, a
+                valid TEC Certificate is necessary for any manufacturer or
+                importer to market telecom products in India.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are required for CDSCO registration?
+                Are consumer products required to be certified under MTCTE?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Required documents include product dossiers, manufacturing
-                information, stability data, clinical trial results (if
-                applicable), Good Manufacturing Practice (GMP) certificates,
-                Certificate of Pharmaceutical Product (CoPP), and various
-                application forms specific to your product category. Our team
-                assists in preparing all necessary documentation.
+                Currently, consumer products that are not primary telecom
+                products, such as TVs or refrigerators, are excluded from MTCTE
+                Registration, even if they have telecom functionalities such as
+                Wi-Fi or Bluetooth. However, manufacturers are advised to
+                monitor the MTCTE Portal for any updates in scope.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you assist with clinical trial approvals in India?
+                Who can be considered an applicant for MTCTE Registration?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide end-to-end support for clinical trial
-                applications in India, including protocol development, ethics
-                committee submissions, CDSCO applications, site selection
-                assistance, and regulatory compliance throughout the trial
-                process. We also help navigate the New Drugs and Clinical Trials
-                Rules, 2019.
+                The applicant is the company's authorized executive as stated in
+                the authorization letter. In the MTCTE Portal registration,
+                their name and title are to be stated accurately in the profile
+                section.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the costs associated with CDSCO registrations?
+                What is your TEC Certification advantage?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, consultant fees, and
-                potential inspection costs. We provide transparent quotations
-                based on your specific product and requirements, with options
-                for different service levels to fit various budgets.
+                TEC MTCTE certification is proof that the telecom equipment has
+                satisfied the requirements set by the government. The advantages
+                are: Legally authorized manufacturing and importing, Enhanced
+                credibility for the product, Improved confidence for the
+                customer, Assurance of safety and performance, and Uncut market
+                access into India.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do you handle post-approval regulatory requirements?
+                What should an AIR do in case there are several foreign OEMs?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our post-approval services include pharmacovigilance support,
-                periodic safety update reports, variation applications, renewal
-                submissions, compliance with labeling requirements, adverse
-                event reporting, and ongoing regulatory intelligence to keep you
-                informed of regulatory changes affecting your products.
+                If there is one Authorized Indian Representative (AIR) for
+                several foreign OEMs, different MoUs or authorization letters
+                should be given for each OEM. Furthermore, distinct MTCTE
+                Registration accounts should be created for each foreign
+                manufacturer on the MTCTE Portal.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can you help with import licenses for pharmaceuticals and
-                medical devices?
+                What types of business entities can act as an AIR?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we specialize in obtaining Import Licenses (Form 10) for
-                drugs and Registration Certificates for medical devices. Our
-                services include preparing all necessary documentation,
-                coordinating with Indian authorized agents, liaising with CDSCO,
-                and handling post-approval compliance requirements for imported
-                products.
+                An AIR can be a registered business entity in India as a:
+                Proprietorship Firm – Establishment License needed, Partnership
+                Firm – Notarized Partnership Deed needed, Private or Public
+                Limited Company – Required is a Certificate of Incorporation
+                from the ROC. Registration documents should be complete when
+                submitting the TEC Registration.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-8">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What experience does your consulting team have with CDSCO
-                regulations?
+                How can an applicant make offline payment on the MTCTE Portal?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our consulting team consists of regulatory experts with 10+
-                years of experience in Indian pharmaceutical regulations. Team
-                members include former regulatory professionals, pharmacists,
-                and industry specialists who maintain close relationships with
-                regulatory authorities and stay updated on the latest regulatory
-                developments.
+                While submitting an application for TEC Certification, an
+                applicant can decide on an online payment method or an offline
+                payment method. The MTCTE applicant user instructions on the
+                portal details the steps for offline payment.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-9">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do recent regulatory changes affect pharmaceutical
-                registrations in India?
+                Is multiple simultaneous login allowed on the same MTCTE
+                account?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Recent regulatory changes include the New Drugs and Clinical
-                Trials Rules (2019), Medical Device Rules (2017), and ongoing
-                updates to the Drugs and Cosmetics Act. These changes have
-                streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our certifications keep
-                abreast of all changes and adjust strategies accordingly.
+                No. Multiple users cannot log into the same account
+                simultaneously on the MTCTE Portal. Each account can only have
+                one active session.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-10">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you offer support for manufacturing facility inspections?
+                What is the TEC Registration fee?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide comprehensive support for CDSCO manufacturing
-                facility inspections, including pre-inspection readiness
-                assessments, gap analysis, preparation of required
-                documentation, mock inspections, training of personnel, and
-                assistance during actual inspections to ensure a successful
-                outcome.
+                TEC Registration fee consists of: Government charges, Testing
+                fees, Evaluation of Test Report fees, Professional or
+                consultancy fees, if any. Depending on the type of equipment and
+                the Essential Requirements that need to be met for TEC MTCTE
+                certification, the fees can vary.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -617,41 +706,61 @@ const OverviewSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        MTCTE Certification for Telecom Equipment
-      </h3>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        What is TEC?
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        MTCTE ensures telecom equipment safety compliance in India.
+        Full form of TEC: Telecommunication Engineering Centre
       </p>
 
       {/* Overview Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Indian Telegraph (Amendment) Rules, 2017, provides that every
-        telecom equipment must undergo mandatory testing and certification prior
-        to sale, import of use in India. The final detailed procedure for
-        Mandatory Testing and Certification of Telecom Equipments (MTCTE) under
-        these rules has been notified separately. The testing is to be carried
-        out for conformance to Essential Requirements for the equipment, by
-        Indian Accredited Labs designated by TEC and based upon their test
-        reports, certificate shall be issued by TEC.
+        The evolution of the telecommunication industry has been implemented in
+        various ways across the globe. From the first telegram service in the
+        1830s to the advanced communication satellites and wireless networking
+        systems of today. The Indian telecom industry started to evolve in the
+        90's with industry liberalization and the subsequent rise of innovation
+        and global participation and the fast pace growth of infrastructure in
+        India.
+        <br />
+        <br />
+        With the growth of telecom infrastructure, there became a greater need
+        for a framework of standards and practices for the functional and formal
+        regulation of the telecom ecosystem. To ensure secure communication,
+        privacy of data, stability of the network, and interoperability among
+        devices, systems and networks, the Minister of Communications of the
+        Government of India set up the Telecommunication Engineering Centre
+        (TEC) of the Department of Telecommunications (DoT) to provide for the
+        secure and reliable ecosystem of telecommunications.
+        <br />
+        <br />
+        TEC Registration is an important means of regulating telecom equipment
+        in India. No manufacturer or importer can sell telecom products in the
+        Indian marketplace unless a TEC Certificate is obtained under the
+        Mandatory Testing and Certification of Telecom Equipment (MTCTE Scheme)
+        of the Government of India.
+        <br />
+        <br />
+        This comprehensive guide elaborates and simplifies TEC Certification,
+        MTCTE Registration, its eligibility, products, application procedure,
+        cost, time, exemptions, compliance, and other constraints.
       </div>
 
-      {/* Important Points And Image */}
+      {/* TEC Safeguards and Specifications */}
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         {/* Points */}
         <div className="w-full md:w-auto">
           <PointsListTwo
             points={[
-              "It is clarified that COTS servers are presently not covered by MTCTE. Application Server and Media Server, for which ERs are put on hold are also not covered by MTCTE. However, as and when notification related to Security Requirements for any equipment is issued, the equipment will come (with proper notification) within purview of MTCTE irrespective of it being dedicated hardware based or server based.",
-              "It is also clarified that Mobile Handsets including Tablets (with or without SIM) are within the purview of MTCTE. Any change in this status like de-notification from CRS list and related detailed modalities shall be notified after these are settled between DoT and MEITY.",
-              "The MTCTE portal is available for trial. Formal notification of dates from which applications shall be accepted on portal shall be notified separately. For trial, user may change the fee amount from indicated value to ₹ 1 and proceed.",
-              "Clinical Trial on medical devices division.",
-              "If a user completes his application and report upload in full on the trial portal, he may inform at help.mtcte.tec@gov.in. A trial certificate will be issued for the product.",
-              "The updated TEC Logo has been uploaded on https://www.mtcte.tec.gov.in/downloads. Please refer to the logo for labeling requirements of equipments under MTCTE.",
+              "Safe and secure telecom networks",
+              "Telecom equipment quality control",
+              "Adherence to the Essential Requirements (ERs)",
+              "Global standards",
+              "The interests of consumers",
             ]}
-            heading="MTCTE related updates/ clarifications:"
+            heading="TEC safeguards the following:"
           />
         </div>
 
@@ -659,14 +768,62 @@ const OverviewSection = () => {
         <div className="w-full md:w-auto">
           <img
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-            alt="TEC Certification "
-            title="TEC Certification "
+            alt="TEC Registration in India"
+            title="TEC Registration in India - MTCTE Scheme"
             className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
               ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
               hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
               "
           />
         </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Generic Requirements (GR)",
+            "Interface Requirements (IR)",
+            "Service Requirements (SR)",
+          ]}
+          heading="Examples of specifications published by TEC:"
+        />
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        These technical standards govern the performance, safety,
+        electro-magnetic compatibility, and environmental concerns regarding
+        telecom equipment.
+      </div>
+
+      {/* What is a TEC Certificate? */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        What is a TEC Certificate?
+      </h3>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        A TEC Certificate is an approval/authorization given by the
+        Telecommunication Engineering Centre for telecom equipment. A TEC
+        certificate ensures the conformity of telecom devices with the essential
+        requirements required by MTCTE.
+      </div>
+
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Manufacture telecom equipment in India",
+            "Import telecom equipment to India",
+            "Trade telecom equipment in the Indian market",
+          ]}
+          heading="The TEC certificate is compulsory to:"
+        />
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Telecom products that do not possess a valid TEC Certification cannot
+        legally be marketed or used in India. After the TEC Registration process
+        is completed successfully, a unique registration number is generated.
+        This number acts as an identifier for the product and can be affixed on
+        the apparatus as proof of compliance with regulations.
       </div>
     </section>
   );
@@ -684,46 +841,84 @@ const ProductsSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        About Us: Compliance Experts
-      </h3>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        What is MTCTE Certification
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Leading TEC certifications in India, ensuring seamless telecom
-        certification.
+        MTCTE refers to Mandatory Testing and Certification of Telecom
+        Equipment.
       </p>
 
-      {/* Nomination Content */}
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        As per the Indian Telegraph (Amendment) Rules, 2017, telecom equipment
+        has to go through mandatory testing and certification before it can be
+        sold, imported, or used in India.
+        <br />
+        <br />
+        This certification scheme framework is aimed at assuring compliance of
+        telecom equipment against the following Essential Requirements:
+      </div>
+
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <PointsList
+        <PointsListTwo
           points={[
-            "HF Radio",
-            "Conferencing and Presentation Equipment",
-            "Conferencing Equipment",
-            "VHF UHF Radio System Equipments",
-            "Equipments Operating in 2.4 GHz and 5 GHz Band",
-            "IP Terminal",
-            "Point of Sale Devices",
-            "Media Gateway",
-            "DSL Equipments",
-            "Signalling Gateway",
-            "Session Border Controller",
-            "Softswitch",
-            "Repeater for Cellular Network",
-            "etc",
+            "Safety",
+            "Electromagnetic compatibility (EMC)",
+            "Technical performance",
+            "Environmental",
+            "Security of the networks",
           ]}
-          heading="MTCTE related updates/ clarifications:"
+          heading="Essential Requirements under MTCTE:"
         />
       </div>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Department of Telecom has made mandatory Telecom products
-        certification in India, for which we are one of the most prominent TEC
-        certifications in India. As one of the Telecom product certification
-        certifications we assist all the telecom manufacturers to adhere to
-        their licence requirements in india.
+        The process of becoming compliant to these rules is commonly known as
+        MTCTE certification.
+      </div>
+
+      {/* Importance of MTCTE */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        What is the importance of MTCTE Registration?
+      </h3>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The telecommunications space comprises very sensitive infrastructure,
+        including mobile networks, the internet, satellites, and enterprise
+        communication systems. Non-compliant or faulty equipment can result in
+        the following situations:
+      </div>
+
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Disrupt Network Services",
+            "Cause Interference",
+            "Endanger National Security",
+            "Cause Safety Risks",
+          ]}
+          heading="Risks of non-compliant equipment:"
+        />
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        To mitigate these risks, MTCTE Registration ensures all telecom
+        equipment within the borders of the Indian subcontinent is compliant
+        with the standards set forth by the Indian Member of Parliament.
+      </div>
+
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Telecom service providers",
+            "Consumers",
+            "Network operators",
+            "National infrastructure",
+          ]}
+          heading="The Regulatory framework outlines the benefits for:"
+        />
       </div>
     </section>
   );
@@ -741,34 +936,77 @@ const ApplicantsSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Who can apply for MTCTE certificate ?
-      </h3>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Types of TEC Certifications
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Indian manufacturers or OEM reps can apply for MTCTE.
+        In addition to the compulsory MTCTE Registration, TEC provides optional
+        certification, which varies according to the nature of the product and
+        the technical regulations.
       </p>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Any Indian Company which is the manufacturer/importer/major distributor
-        or company authorised by foreign OEM will be ultimate applicant for the
-        MTCTE application.
+      {/* 1. Type Approval */}
+      <h3 className="text-[20px] md:text-[26px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-2 md:mb-0">
+        1. Type Approval
+      </h3>
+      <div className="mt-[8px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Type approval consists of the testing and certification of
+        telecommunications equipment, according to TEC's Test Schedule & Test
+        Procedure (TSTP), to evaluate compliance with the Generic Requirement
+        (GR). It verifies safety, reliability, and functionality for public
+        network use.
       </div>
-
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
         <PointsListTwo
           points={[
-            "Authorised Signatory from Authorised Indian Company",
-            "In case of Foreign OEM: Foreign OEM needs to appoint an Indian Company to act as a Representative for the MTCTE certification procedure.",
-            "In case of Indian Manufacturer: Manufacturer based in India needs to provide their legal documents for registration on the portal.",
-            "Product with a Valid Test report from Indian labs designated by TEC.",
-            "Brand / Trademark Details",
-            "How to get TEC – MTCTE Certificate?",
+            "At the original equipment manufacturer (OEM) location",
+            "In specific laboratories",
+            "At laboratories that are recognized by the International Laboratory Accreditation Cooperation (ILAC) for testing on electromagnetic compatibility (EMC) and for safety and environmental testing.",
           ]}
-          heading="What are the basic requirements for the MTCTE Certificate?"
+          heading="Testing could be done:"
         />
+      </div>
+
+      {/* 2. Interface Approval */}
+      <h3 className="text-[20px] md:text-[26px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-2 md:mb-0">
+        2. Interface Approval
+      </h3>
+      <div className="mt-[8px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Interface Approval determines that the equipment meets the Interface
+        Requirements (IR). This is usually demanded by Services Providers,
+        Government agencies, and Authorities in charge of licensing.
+        <br />
+        <br />
+        Testing is done according to TEC's Test Schedule & Test Procedure (TSTP)
+        and is mandatory in certain situations. It ensures that equipment
+        connects correctly with existing public networks, focusing on interface
+        compatibility.
+      </div>
+
+      {/* 3. Certificate of Approval (CoA) */}
+      <h3 className="text-[20px] md:text-[26px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-2 md:mb-0">
+        3. Certificate of Approval (CoA)
+      </h3>
+      <div className="mt-[8px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        A Certificate of Approval (CoA) is a type of certification issued for
+        products—particularly in the telecommunications sector—when no standard
+        Generic Requirements (GR) or Interface Requirements (IR) exist. This
+        type of approval bases the certification on the manufacturer's own
+        technical specifications rather than established industry standards.
+      </div>
+
+      {/* 4. Technology Approval */}
+      <h3 className="text-[20px] md:text-[26px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-2 md:mb-0">
+        4. Technology Approval
+      </h3>
+      <div className="mt-[8px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Technology Approval is granted for prototype telecommunications products
+        approved by C-DoT or other Research and Development Organizations. This
+        Approval validates new or emerging technologies developed by
+        organizations like C-DoT to ensure they meet standards for
+        implementation in networks.
       </div>
     </section>
   );
@@ -786,30 +1024,142 @@ const ScopeSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Scope of TEC Certification
-      </h3>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Products Covered under MTCTE Scheme
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        TEC Certification covers telecom devices like phones, routers, and PABX.
+        A wide range of telecom equipment falls under the MTCTE certification
+        scheme.
       </p>
 
-      {/* Nomination Content */}
+      {/* PRODUCTS COVERED UNDER Phase I of MTCTE Table */}
+      <div className="mt-[16px] md:mt-[24px]">
+        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+          <TableHeader className="bg-[#F9F7F2]">
+            <TableRow className="bg-[#1A8781]/10">
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg w-[60px]">
+                S. No.
+              </TableHead>
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
+                Product Name
+              </TableHead>
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
+                Product Variant Name
+              </TableHead>
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                Category of Product (GCS/SCS)
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody className="bg-white divide-y divide-gray-200">
+            {[
+              { sno: 1, product: "2-Wire Telephone Equipment", variant: "2-Line Feature Phone", category: "SCS" },
+              { sno: 2, product: "2-Wire Telephone Equipment", variant: "CLIP Phone", category: "SCS" },
+              { sno: 3, product: "2-Wire Telephone Equipment", variant: "Coin Box Telephone", category: "SCS" },
+              { sno: 4, product: "2-Wire Telephone Equipment", variant: "Coin Box Telephone - Table Top Interface", category: "SCS" },
+              { sno: 5, product: "2-Wire Telephone Equipment", variant: "Electronic Telephone Instrument", category: "SCS" },
+              { sno: 6, product: "2-Wire Telephone Equipment", variant: "Executive Telephone Systems", category: "SCS" },
+              { sno: 7, product: "2-Wire Telephone Equipment", variant: "Key Telephone System", category: "SCS" },
+              { sno: 8, product: "2-Wire Telephone Equipment", variant: "Key Telephone Systems with proprietary interface", category: "SCS" },
+              { sno: 9, product: "2-Wire Telephone Equipment", variant: "NSD or ISD Payphone", category: "SCS" },
+              { sno: 10, product: "2-Wire Telephone Equipment", variant: "Terminals for connecting to PSTN", category: "SCS" },
+              { sno: 11, product: "G3 Fax Machine", variant: "FAX machine with handset", category: "SCS" },
+              { sno: 12, product: "G3 Fax Machine", variant: "FAX machine without handset", category: "SCS" },
+              { sno: 13, product: "Modem", variant: "V.90 or V.92 or V.21 to V.34 Modem", category: "SCS" },
+              { sno: 14, product: "Cordless Telephone", variant: "Cordless Telephone", category: "SCS" },
+              { sno: 15, product: "ISDN Customer Premises Equipment", variant: "ISDN Gateway", category: "SCS" },
+              { sno: 16, product: "ISDN Customer Premises Equipment", variant: "ISDN NT-1 Network Termination", category: "SCS" },
+              { sno: 17, product: "ISDN Customer Premises Equipment", variant: "ISDN Terminal", category: "SCS" },
+              { sno: 18, product: "ISDN Customer Premises Equipment", variant: "ISDN Terminal Adapter", category: "SCS" },
+              { sno: 19, product: "ISDN Customer Premises Equipment", variant: "Multipoint Conferencing Server", category: "SCS" },
+              { sno: 20, product: "ISDN Customer Premises Equipment", variant: "PC card based ISDN Terminal", category: "SCS" },
+              { sno: 21, product: "Private Automatic Branch Exchange", variant: "Private Automatic Branch Exchange", category: "SCS" },
+            ].map((item) => (
+              <TableRow key={item.sno} className="hover:bg-gray-50">
+                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
+                  {item.sno}.
+                </TableCell>
+                <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
+                  {item.product}
+                </TableCell>
+                <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                  {item.variant}
+                </TableCell>
+                <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                  {item.category}
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+
+      {/* MTCTE Exempted Products */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        MTCTE Exempted Products
+      </h3>
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-          {/* Points */}
-          <PointsListTwo
-            points={[
-              "All types of Cordless Telephones are covered under the mandatory certification scheme of TEC Phase-1 products.",
-              "Modems and routers are covered under the mandatory certification scheme of TEC Phase-1 products.",
-              "ISDN CPE machines are covered under the mandatory certification scheme of TEC Phase-1 products.",
-              "G3 Fax machines are covered under the mandatory certification scheme of TEC Phase-1 products.",
-              "PABX machines are covered under the mandatory certification scheme of TEC Phase-1 products.",
-            ]}
-            heading="TEC Certification for Cordless Phones, Routers, ISDN, Fax, PABX"
-          />
-        </div>
+        On January 8, 2024 the Telecommunication Engineering Centre (TEC) under
+        the Department of Telecommunication published a Notification regarding
+        certain products being exempted from the compulsory TEC Certification. A
+        wide array of exemption from the submission of test reports for specific
+        test parameters/interfaces pertaining to various Essential Requirements
+        (ERs) under MTCTE has been granted an extension till 30th June 2024, or
+        further notice.
+      </div>
+
+      {/* Who is Required */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        Who is Required to Get MTCTE/TEC Registration?
+      </h3>
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Under the Telecommunication Engineering Centre (TEC), Telecommunication
+        Equipment (MTCTE) testing and certification are prerequisites for
+        Original Equipment Manufacturers (OEMs), importers, and Indian
+        authorized representatives for the sale, import, or use of certain
+        telecom equipment in India. Mobile handsets, routers, and switches, and
+        modems are included, and they must comply with Indian safety and
+        performance standards.
+      </div>
+
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "OEMs: Includes all telecom equipment manufacturers in India.",
+            "Foreign Manufacturers: Foreign OEMs must get their equipment certified, usually through an Authorized Indian Representative (AIR).",
+            "Importers & Dealers: Any person importing or selling telecom equipment listed in the notification.",
+          ]}
+          heading="Who needs to register:"
+        />
+      </div>
+
+      {/* Basic Requirements */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        Basic Requirements for TEC Certification
+      </h3>
+      <div className="mt-[8px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The following must be in order to obtain a TEC Certificate:
+      </div>
+
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Authorized signatory of an Indian company",
+            "Company registration certificate",
+            "MoU between foreign OEM and Indian representative (if applicable)",
+            "TEC-designated laboratory test report",
+            "Brand and trademark registration",
+            "Manufacturing address",
+          ]}
+          heading="Required for TEC Certificate:"
+        />
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        For the TEC certification, proper and complete documentation is required
+        for a successful approval.
       </div>
     </section>
   );
@@ -827,70 +1177,94 @@ const ProcessSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        TEC Certification: Meaning & Importance
-      </h3>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        TEC Registration Process on MTCTE Portal
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        TEC: Ensuring Explosives & Petroleum Safety
+        Step-by-step guide to completing your TEC Registration.
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Chief Controller of Explosives (CCOE) is another name for the
-        Petroleum and Explosive Safety Organization (TEC). The safety
-        requirements for the manufacture, importers, exporters, sellers,
-        storage, transit, and handling of explosives, combustible materials,
-        pressure vessels, petroleum, and compressed gases are managed,
-        controlled, and looked after by this organization. Additionally, it
-        controls and manages Indian petrol stations. The Department for
-        Promotion of Industry and Internal Trade and the Ministry of Commerce
-        and Industry is in charge of TEC, an independent regulatory authority.{" "}
-        <br /> <br />
-        The oil and gas industry's mandatory approval mechanism for products
-        that deal with gases, are used in the oil industry, or must withstand
-        severely corrosive environments is described in TEC Certification.
-        Nagpur, Maharashtra, is home to TEC's headquarters.
+        To initiate the MTCTE registration process, one must create an account
+        on an official TEC portal. Next, they must enter company and product
+        details, upload the Bill of Materials (BoM), and pay registration fees.
+        Products undergo testing at TEC's approved laboratories, known as CABs,
+        and reports on EMI/EMC, safety, and performance are evaluated to
+        determine eligibility for certification.
       </div>
 
+      {/* Steps */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        Steps to MTCTE Registration and Certification
+      </h3>
+
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
         <PointsListTwo
           points={[
-            "The Chief Controller must approve all 1981 drawings, designs, specifications, and codes. They are responsible for tests, examinations, inspections, and certifications of installations and transport vehicles.",
-            "District authorities must issue no-objection certificates or notify applicants of refusal within two months, stating reasons as per Rule 47(7).",
-            "General Exemptions - Vessels in processing facilities are exempt from regulations if they perform unit operations and contain compressed gas used within the same plant.",
-            "Children aged under 18 and intoxicated persons is prohibited",
-            "Fires, lights, and smoking, etc., at any time in proximity to the places are prohibited where any compressed gas is stored, transported or handled in a vessel.",
-            "Person in charge of supervision and operation on the licensed property must be knowledgeable about the machinery and should be trained enough in handling hazardous materials.",
-            "Vessels except when they are opened for the purposes of filling, cleaning, or making them gas-free, all empty vessels carrying combustible or toxic gases must be kept securely closed until they have been cleaned or released of the gas, as the case may be.",
-            "Any alterations to machines or pressure vessels must be inspected before reuse.",
+            "Step 1. Portal Registration: Register on the MTCTE portal using a company email ID to create a user account. You may be asked to provide a company and manufacturing location.",
+            "Step 2. Approval of Product & BoM: You may be required to choose the product category, product type, and product variants. Submit the Bill of Materials and product specifications for initial review.",
+            "Step 3. Payment of Application & Fees: Complete the application, and pay the administrative and evaluation fees on the Bharat Kosh portal.",
+            "Step 4. Testing of Products: Send product samples to a Designated Conformity Assessment Body (CAB) for ER testing.",
+            "Step 5. Submission of Test Report: Upload to the Portal the user's test report, and other technical documentation.",
+            "Step 6. TEC Certification and Evaluation: After review of the test reports and other documentation, if TEC finds the documentation to be compliant, a certificate that is valid for 10 years is issued to the user.",
           ]}
-          heading="Key SMPV (U) Rules, 1981 for TEC Certification"
+          heading="MTCTE Registration Steps:"
         />
       </div>
 
+      {/* Required Documents */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        Required Documents for TEC Registration
+      </h3>
+
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
         <PointsListTwo
           points={[
-            "No one is allowed to transport or fill a vessel with compressed gas unless it complies with the types, standards, or codes listed in Rule 12.",
-            "No vessel permitted under sub-rule (1) may be produced without prior approval from the Chief Controller.",
-            "No one may import a vessel without prior consent from the Chief Controller.",
+            "Company registration certificate",
+            "Authorization letter",
+            "Memorandum of Association (MoA)",
+            "Articles of Association (AoA)",
+            "Shareholding pattern",
+            "MOU between foreign OEM and AIR",
+            "Test reports",
+            "Product data sheet",
           ]}
-          heading="Limitation on Manufacturer, Filling and Import"
+          heading="The following are required of the applicants:"
         />
       </div>
 
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Delays in the MTCTE Registration process will be caused by incomplete
+        documentation.
+      </div>
+
+      {/* Timeline */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        TEC Certification Timeline
+      </h3>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The certification process can take a maximum of 60 days which is
+        determined by:
+      </div>
+
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
         <PointsListTwo
           points={[
-            "Compressed gas loaded into a vessel may only be sent to the owner of a valid storage permit, a port administration, or a railroad administration.",
-            "The quantity of compressed gas delivered must not exceed the amount allowed by the recipient's license.",
+            "Complexity of the product",
+            "Number of parameters to be tested",
+            "Time available at the laboratory",
+            "Completeness of documents",
           ]}
-          heading="Restraint on Delivery & Dispatch"
+          heading="Factors affecting timeline:"
         />
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Most delays are attributed to insufficient documents or tests that do
+        not meet the required standard.
       </div>
     </section>
   );
@@ -908,27 +1282,64 @@ const ConsultancySection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        TEC Consultancy by Sun certifications
-      </h3>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        TEC MTCTE Certification Benefits for Enterprises
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Hassle-free TEC certification with expert support.
+        Key advantages of obtaining TEC MTCTE Certification.
       </p>
 
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Accessing Markets: Certifications legally permit firms to sell, import, and distribute telecom products within Indian borders.",
+            "Compliance with Laws and Mitigating Risks: Certifications mean compliance with Indian Laws (EMI/EMC, safety) and mitigates the risk of bans, monetary fines, and customs hold.",
+            "Company Image and Reputation: Certification of a Company's product will portray the product as safe and reliable which will help in building a Company's Image and Reputation.",
+            "Edge Over Competitors: The product certification will help the company gain preference in government, B2B and operator tenders.",
+            "Hardware Quality: Quality of the hardware will be better as the testing helps in recognizing all shortfalls.",
+            "Modernized Networks: The public network performance will be at its peak as the equipment will not compromise its performance.",
+          ]}
+          heading="Benefits of TEC MTCTE Certification:"
+        />
+      </div>
+
+      {/* Conclusion */}
+      <h3 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-6 md:mt-8 mb-3 md:mb-0">
+        Conclusion
+      </h3>
+
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As TEC registration certifications, our job is to ensure that the tiring
-        procedures that we have listed above become a cake-walk for you. Right
-        from the beginning i.e. from the stage of collection of documents from
-        the foreign manufacturers or preparation of documents for the Indian
-        manufacturer and following up with the department for grant of license
-        is under our scope.
+        The telecommunications sector is the most crucial for the functioning of
+        the entire communication system, the entire business system, and the
+        system for protecting the nation. In order to protect the quality,
+        safety and integrity of the networks, the Indian government strictly
+        enforces compliance with the TEC MTCTE certification.
         <br />
         <br />
-        We are one of the most experienced TEC certifications in the field of
-        medical products,we provide apex quality of services possible to all our
-        national and international clients.
+        Based on the telecom regulations, obtaining a TEC Certificate by a TEC
+        Registration and MTCTE Registration is not just fulfilling a compliance
+        requirement, but also an entry strategy for businesses who want to be
+        competitive in the telecom sector in India.
+        <br />
+        <br />
+        The process of documentation, testing and evaluation provides assurance
+        that the telecom equipment is compliant with the prescribed technical
+        standards. Thus, it applies to telecom equipment and compliance to the
+        TEC Certification standards applies to both domestic manufacturers and
+        foreign OEMs.
+        <br />
+        <br />
+        For businesses to retain their TEC Registration, compliance to the
+        requirements for testing, documentation, and evaluation is essential.
+        Businesses must also monitor the updates on the MTCTE Portal to
+        facilitate this.
+        <br />
+        <br />
+        As India's telecom landscape is rapidly evolving, TEC Certification,
+        along with regulatory compliance, will continue to contribute to a safe
+        and effective communication ecosystem.
       </div>
     </section>
   );
@@ -998,7 +1409,7 @@ const ReviewSection = () => {
         </div>
 
         <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
-          Last updated on Mar 19, 2025
+          Last updated on Feb 12, 2026
         </p>
       </div>
     </section>

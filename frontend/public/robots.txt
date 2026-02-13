@@ -13,7 +13,7 @@ Sitemap: https://bis-certifications.com/backlinks-sitemap.xml
 Disallow: /cdsco-registration-certification
 
 Disallow: /information-about-peso-certification-peso-license-india
-Disallow: /information-about-tec-certificate-mtcte
+
 Disallow: /information-about-wpc-certificate-eta-approval
 
 Disallow: /bee-certification

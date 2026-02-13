@@ -690,6 +690,9 @@ const BISCertificationFibreRopesPolyamide = lazy(() =>
 const BISCertificationFibreRopesPolyamideArabic = lazy(() =>
   import("@/blogs/BISCertificateForFootWarmerandHeatingMats/BISCertificationFibreRopesPolyamideArabic")
 );
+const BISCertificationFibreRopesPolyamideChinese = lazy(() =>
+  import("@/blogs/BISCertificateForFootWarmerandHeatingMats/BISCertificationFibreRopesPolyamideChinese")
+);
 const BISCertificateForSteelWireRopes = lazy(() =>
   import("@/blogs/BISCertificationforSteelWireRopes")
 );
@@ -2524,10 +2527,18 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/isi-products/fibre-ropes-polyamide-is-4572-arabic"
+        path="/blogs/isi-products/fibre-ropes-polyamide-is-4572"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationFibreRopesPolyamideArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ju-xian-an-xian-wei-sheng-is-4572"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesPolyamideChinese />
           </Suspense>
         }
       />

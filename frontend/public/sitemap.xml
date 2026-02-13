@@ -4758,10 +4758,17 @@
   </url>
   <!-- BIS Certificate for Fibre Ropes - Polyamide - Arabic -->
   <url>
-    <loc>https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyamide-is-4572-arabic</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/munazzamat-siyaj-kahrabai-is-4572</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-02-10</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyamide - Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/ju-xian-an-xian-wei-sheng-is-4572</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-11</lastmod>
   </url>
 
 

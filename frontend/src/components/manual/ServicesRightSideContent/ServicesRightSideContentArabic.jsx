@@ -99,7 +99,7 @@ const ServicesRightSideContentArabic = () => {
     // BIS Certificate for Fibre Ropes - Polyethylene Arabic Page Url
     "/blogs/isi-products/fibre-ropes-polyethylene-8674-arabic",
     // BIS Certificate for Fibre Ropes - Polyamide Arabic Page Url
-    "/blogs/isi-products/fibre-ropes-polyamide-is-4572-arabic",
+    "/blogs/isi-products/fibre-ropes-polyamide-is-4572",
   ];
 
   // Check if current path should show these components
@@ -775,7 +775,7 @@ const ContactFormServicesRightSideContentArabic = () => {
     if (path.includes("/blogs/isi-products/fibre-ropes-polyethylene-8674-arabic"))
       return "BIS Certificate for Fibre Ropes - Polyethylene (Arabic)";
     // BIS Certificate for Fibre Ropes - Polyamide Arabic
-    if (path.includes("/blogs/isi-products/fibre-ropes-polyamide-is-4572-arabic"))
+    if (path.includes("/blogs/isi-products/fibre-ropes-polyamide-is-4572"))
       return "BIS Certificate for Fibre Ropes Polyamide (Arabic)";
     return "";
   };
