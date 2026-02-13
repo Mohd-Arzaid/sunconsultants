@@ -1,8 +1,10 @@
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import { Link } from "react-router-dom";
+import { getFooterPaths } from "@/lib/footerLinks";
 
 const FooterThai = () => {
+  const paths = getFooterPaths("th");
   return (
     <footer>
       <div className="relative ">
@@ -168,31 +170,31 @@ const FooterThai = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/what-is-bis-certificate-indian-bis"
+                    to={paths.bisCertification}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     การรับรอง BIS
                   </Link>
                   <Link
-                    to="/a-guide-to-bis-certification-indian-bis"
+                    to={paths.isiMark}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     เครื่องหมาย ISI (อินเดีย)
                   </Link>
                   <Link
-                    to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                    to={paths.bisMarkForeign}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     เครื่องหมาย BIS (ต่างประเทศ)
                   </Link>
                   <Link
-                    to="/what-is-crs-bis-or-crs-registration"
+                    to={paths.crsRegistration}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     การลงทะเบียน CRS
                   </Link>
                   <Link
-                    to="/indian-bis-certification-under-scheme-x"
+                    to={paths.schemeX}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     Scheme X
@@ -206,25 +208,25 @@ const FooterThai = () => {
                 </span>
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/about"
+                    to={paths.about}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     เกี่ยวกับเรา
                   </Link>
                   <Link
-                    to="/contact"
+                    to={paths.contact}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     ติดต่อเรา
                   </Link>
                   <Link
-                    to="/faqs"
+                    to={paths.faqs}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     คำถามที่พบบ่อย
                   </Link>
                   <Link
-                    to="/sitemap"
+                    to={paths.sitemap}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                     onClick={() => {
                       setTimeout(() => {
@@ -244,31 +246,31 @@ const FooterThai = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/Blogs"
+                    to={paths.blogs}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     บล็อกล่าสุด
                   </Link>
                   <Link
-                    to="/bis-qco-updates"
+                    to={paths.bisQcoUpdates}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     อัปเดต BIS QCO
                   </Link>
                   <Link
-                    to="/ministry-updates"
+                    to={paths.ministryUpdates}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     อัปเดตจากกระทรวง
                   </Link>
                   <Link
-                    to="/webinar"
+                    to={paths.webinar}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     เว็บินาร์ที่กำลังจะมาถึง
                   </Link>
                   <Link
-                    to="/SchemeX-products"
+                    to={paths.schemeXProducts}
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     ผลิตภัณฑ์ Scheme X
@@ -338,14 +340,14 @@ const FooterThai = () => {
 
             <div className="md:hidden flex items-center gap-2">
               <Link
-                to="/privacy-policy"
+                to={paths.privacyPolicy}
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
                 นโยบายความเป็นส่วนตัว
               </Link>
               <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
               <Link
-                to="/terms-and-conditions"
+                to={paths.termsAndConditions}
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
                 เงื่อนไขการให้บริการ
@@ -355,7 +357,7 @@ const FooterThai = () => {
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
 
             <Link
-              to="/privacy-policy"
+              to={paths.privacyPolicy}
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
               นโยบายความเป็นส่วนตัว
@@ -364,7 +366,7 @@ const FooterThai = () => {
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
 
             <Link
-              to="/terms-and-conditions"
+              to={paths.termsAndConditions}
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
               เงื่อนไขการให้บริการ

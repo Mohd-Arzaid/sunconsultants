@@ -355,3 +355,288 @@ body.accessibility-underline,
 body.accessibility-underline * {
   text-decoration: underline;
 }
+
+/* ===== Accessibility: High Contrast Mode ===== */
+
+/*
+ * Strategy: Override CSS variables first, then aggressively catch ALL
+ * background colors via attribute selectors ([class*="bg-..."]), inline
+ * style selectors ([style*="background"]), and element selectors.
+ * Layered dark surfaces: body #0d0d0d → surfaces #161616 → elevated #1e1e1e
+ */
+
+/* 1 ── CSS Custom Properties Override ────────────────────────────────── */
+body.accessibility-high-contrast {
+  --background: 0 0% 5%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 9%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 9%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 210 100% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 14%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 80%;
+  --accent: 0 0% 14%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 30%;
+  --input: 0 0% 18%;
+  --ring: 210 100% 55%;
+
+  background-color: #0d0d0d !important;
+  color: #ffffff !important;
+}
+
+/* 2 ── Nuke ALL light/colored backgrounds ────────────────────────────── */
+
+/* Tailwind named color utilities — every palette */
+body.accessibility-high-contrast [class*="bg-white"],
+body.accessibility-high-contrast [class*="bg-black"],
+body.accessibility-high-contrast [class*="bg-gray-"],
+body.accessibility-high-contrast [class*="bg-slate-"],
+body.accessibility-high-contrast [class*="bg-zinc-"],
+body.accessibility-high-contrast [class*="bg-neutral-"],
+body.accessibility-high-contrast [class*="bg-stone-"],
+body.accessibility-high-contrast [class*="bg-red-"],
+body.accessibility-high-contrast [class*="bg-orange-"],
+body.accessibility-high-contrast [class*="bg-amber-"],
+body.accessibility-high-contrast [class*="bg-yellow-"],
+body.accessibility-high-contrast [class*="bg-lime-"],
+body.accessibility-high-contrast [class*="bg-green-"],
+body.accessibility-high-contrast [class*="bg-emerald-"],
+body.accessibility-high-contrast [class*="bg-teal-"],
+body.accessibility-high-contrast [class*="bg-cyan-"],
+body.accessibility-high-contrast [class*="bg-sky-"],
+body.accessibility-high-contrast [class*="bg-blue-"],
+body.accessibility-high-contrast [class*="bg-indigo-"],
+body.accessibility-high-contrast [class*="bg-violet-"],
+body.accessibility-high-contrast [class*="bg-purple-"],
+body.accessibility-high-contrast [class*="bg-fuchsia-"],
+body.accessibility-high-contrast [class*="bg-pink-"],
+body.accessibility-high-contrast [class*="bg-rose-"] {
+  background-color: #161616 !important;
+  background-image: none !important;
+}
+
+/* Arbitrary hex backgrounds — catches bg-[#F9F7F2], bg-[#B9DEEB], etc. */
+body.accessibility-high-contrast [class*="bg-\[#"] {
+  background-color: #161616 !important;
+  background-image: none !important;
+}
+
+/* Tailwind gradient utilities */
+body.accessibility-high-contrast [class*="bg-gradient"] {
+  background-image: none !important;
+  background-color: #161616 !important;
+}
+
+/* Inline style backgrounds (Hero radial-gradient, dynamic colors, etc.) */
+body.accessibility-high-contrast [style*="background"]:not(img):not(video):not(picture):not(iframe) {
+  background: #0d0d0d !important;
+}
+
+/* Custom CSS gradient classes */
+body.accessibility-high-contrast .custom-radial-gradient,
+body.accessibility-high-contrast .custom-radial-gradient-cdsco {
+  background: #0d0d0d !important;
+}
+
+/* Structural elements — dark base */
+body.accessibility-high-contrast section,
+body.accessibility-high-contrast footer,
+body.accessibility-high-contrast header,
+body.accessibility-high-contrast nav,
+body.accessibility-high-contrast main,
+body.accessibility-high-contrast article,
+body.accessibility-high-contrast aside {
+  background-color: #0d0d0d !important;
+  background-image: none !important;
+}
+
+/* 3 ── Restore surfaces that need visible backgrounds ────────────────── */
+
+/* TopBar — branded but darker */
+body.accessibility-high-contrast .bg-\[\#0A4394\] {
+  background-color: #06285a !important;
+  background-image: none !important;
+}
+
+/* Dropdowns, popovers, dialogs, toasts — elevated surface */
+body.accessibility-high-contrast [data-radix-popper-content-wrapper],
+body.accessibility-high-contrast [data-radix-popper-content-wrapper] > *,
+body.accessibility-high-contrast [role="dialog"],
+body.accessibility-high-contrast [role="menu"],
+body.accessibility-high-contrast [role="listbox"],
+body.accessibility-high-contrast [data-sonner-toast] {
+  background-color: #1e1e1e !important;
+}
+
+/* Buttons — slightly elevated so they're tappable-looking */
+body.accessibility-high-contrast button,
+body.accessibility-high-contrast [role="button"] {
+  background-color: #1f1f1f !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+body.accessibility-high-contrast button:hover,
+body.accessibility-high-contrast [role="button"]:hover {
+  background-color: #2a2a2a !important;
+}
+
+/* Inputs & form elements */
+body.accessibility-high-contrast input,
+body.accessibility-high-contrast textarea,
+body.accessibility-high-contrast select {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+body.accessibility-high-contrast input::placeholder,
+body.accessibility-high-contrast textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Table headers */
+body.accessibility-high-contrast th {
+  background-color: #1a1a1a !important;
+}
+
+/* 4 ── Text Colors ──────────────────────────────────────────────────── */
+
+/* Headings — pure white */
+body.accessibility-high-contrast h1,
+body.accessibility-high-contrast h2,
+body.accessibility-high-contrast h3,
+body.accessibility-high-contrast h4,
+body.accessibility-high-contrast h5,
+body.accessibility-high-contrast h6 {
+  color: #ffffff !important;
+}
+
+/* Body text — slightly off-white for comfortable reading */
+body.accessibility-high-contrast p,
+body.accessibility-high-contrast span,
+body.accessibility-high-contrast li,
+body.accessibility-high-contrast td,
+body.accessibility-high-contrast th,
+body.accessibility-high-contrast label,
+body.accessibility-high-contrast div {
+  color: #f0f0f0 !important;
+}
+
+/* Links — bright cyan for instant visibility */
+body.accessibility-high-contrast a {
+  color: #5cc8ff !important;
+}
+
+body.accessibility-high-contrast a:hover {
+  color: #90dbff !important;
+}
+
+/* 5 ── Borders ──────────────────────────────────────────────────────── */
+body.accessibility-high-contrast [class*="border"],
+body.accessibility-high-contrast hr {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+body.accessibility-high-contrast .h-px,
+body.accessibility-high-contrast .w-px,
+body.accessibility-high-contrast [class*="divide-"] > * + * {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* 6 ── Images & Media — untouched, sharp, clearly visible ───────────── */
+body.accessibility-high-contrast img,
+body.accessibility-high-contrast picture,
+body.accessibility-high-contrast video {
+  filter: contrast(1.05) brightness(1.02) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* SVG icons inherit parent text color */
+body.accessibility-high-contrast svg {
+  color: inherit !important;
+}
+
+/* 7 ── Focus Outlines — highly visible for keyboard nav ─────────────── */
+body.accessibility-high-contrast *:focus-visible {
+  outline: 2px solid #5cc8ff !important;
+  outline-offset: 2px !important;
+}
+
+/* 8 ── Scrollbar ────────────────────────────────────────────────────── */
+body.accessibility-high-contrast *::-webkit-scrollbar-track {
+  background: #0d0d0d !important;
+}
+
+body.accessibility-high-contrast *::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* 9 ── Box-shadow Buttons ───────────────────────────────────────────── */
+body.accessibility-high-contrast .boxshadowbtn {
+  box-shadow: 10px 10px rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+body.accessibility-high-contrast .boxshadowbtn:hover {
+  box-shadow: none !important;
+}
+
+/* 10 ── Client Logo Container ───────────────────────────────────────── */
+body.accessibility-high-contrast .client-logo-container {
+  --c: rgba(255, 255, 255, 0.25);
+  outline-color: rgba(255, 255, 255, 0.25) !important;
+  background: #161616 !important;
+}
+
+body.accessibility-high-contrast .client-logo-container:hover {
+  outline-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 11 ── Separators & Dividers ───────────────────────────────────────── */
+body.accessibility-high-contrast .service-left-content-divider {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  ) !important;
+}
+
+body.accessibility-high-contrast .service-left-content-separator {
+  background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* 12 ── Autofill ────────────────────────────────────────────────────── */
+body.accessibility-high-contrast input:-webkit-autofill,
+body.accessibility-high-contrast input:-webkit-autofill:focus,
+body.accessibility-high-contrast input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0 1000px #1a1a1a inset !important;
+  box-shadow: 0 0 0 1000px #1a1a1a inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* 13 ── Phone Input (react-tel-input) ───────────────────────────────── */
+body.accessibility-high-contrast .react-tel-input .form-control {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+body.accessibility-high-contrast .react-tel-input .flag-dropdown {
+  background-color: #1f1f1f !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+body.accessibility-high-contrast .react-tel-input .selected-flag:hover,
+body.accessibility-high-contrast .react-tel-input .selected-flag:focus {
+  background-color: #2a2a2a !important;
+}

@@ -1,66 +1,37 @@
 import { lazy, Suspense } from "react";
-import PropTypes from "prop-types";
 import HomeSEO from "@/components/manual/home-page-sections/HomeSEO";
 import Hero from "@/components/manual/home-page-sections/Hero";
 import LogoTicker from "@/components/manual/home-page-sections/LogoTicker";
-import AuditsMarqueeSkeleton from "@/components/ui/audits-marquee-skeleton";
-import WebinarSeminarMarqueeSkeleton from "@/components/ui/webinar-seminar-marquee-skeleton";
-import ContactHomeSkeleton from "@/components/ui/contact-home-skeleton";
+import OurServices from "@/components/manual/home-page-sections/OurServices";
+import AuditsMarquee from "@/components/manual/home-page-sections/AuditsMarquee";
+import WebinarSeminarMarquee from "@/components/manual/home-page-sections/WebinarSeminarMarquee";
+import Contact from "@/components/manual/home-page-sections/Contact";
 import LatestNewsSkeleton from "@/components/ui/latest-news-skeleton";
 import CountriesSkeleton from "@/components/ui/countries-skeleton";
 import CertificationAndAchievementsSkeleton from "@/components/ui/certification-and-achievements-skeleton";
 import WhatsOurCustomersSaySkeleton from "@/components/ui/whats-our-customers-say-skeleton";
 import VideoSectionSkeleton from "@/components/ui/video-section-skeleton";
-import OurServicesSkeleton from "@/components/ui/our-services-skeleton";
-import LogoTickerSkeleton from "@/components/ui/logo-ticker-skeleton";
 import FooterSkeleton from "@/components/ui/footer-skeleton";
 
-// Lazy load OurServices component
-const OurServices = lazy(() =>
-  import("@/components/manual/home-page-sections/OurServices")
-);
+// Above-the-fold sections (LogoTicker, OurServices, AuditsMarquee, Contact, WebinarSeminarMarquee)
+// are imported directly to avoid CLS (Cumulative Layout Shift) — no skeleton swap, no icon jump.
 
-// Lazy load AuditsMarquee component
-const AuditsMarquee = lazy(() => 
-  import("@/components/manual/home-page-sections/AuditsMarquee")
-);
-
-// Lazy load WebinarSeminarMarquee component
-const WebinarSeminarMarquee = lazy(() =>
-  import("@/components/manual/home-page-sections/WebinarSeminarMarquee")
-);
-
-// Lazy load Contact component
-const Contact = lazy(() =>
-  import("@/components/manual/home-page-sections/Contact")
-);
-
-// Lazy load LatestNews component
+// Lazy load below-the-fold sections only
 const LatestNews = lazy(() =>
   import("@/components/manual/home-page-sections/LatestNews")
 );
-
-// Lazy load Countries component
 const Countries = lazy(() =>
   import("@/components/manual/home-page-sections/Countries")
 );
-
-// Lazy load CertificationAndAchievements component
 const CertificationAndAchievements = lazy(() =>
   import("@/components/manual/home-page-sections/CertificationAndAchievements")
 );
-
-// Lazy load WhatsOurCustomersSaySection component
 const WhatsOurCustomersSaySection = lazy(() =>
   import("@/components/manual/home-page-sections/WhatsOurCustomersSaySection")
 );
-
-// Lazy load VideoSection component
 const VideoSection = lazy(() =>
   import("@/components/manual/home-page-sections/VideoSection")
 );
-
-// Lazy load Footer component
 const Footer = lazy(() => import("@/common/Footer"));
 
 const Home = ({ onVideoPopupChange }) => {
@@ -72,82 +43,67 @@ const Home = ({ onVideoPopupChange }) => {
       </section>
 
       <section aria-label="Partner Logos -Top" className="w-full">
-        <Suspense fallback={<LogoTickerSkeleton />}>
-          <LogoTicker />
-        </Suspense>
+        <LogoTicker />
       </section>
 
       <section aria-label="Our Services" className="w-full">
-        <Suspense fallback={<OurServicesSkeleton />}>
-          <OurServices />
-        </Suspense>
+        <OurServices />
       </section>
 
       <section aria-label="International Audits Showcase" className="w-full">
-        <Suspense fallback={<AuditsMarqueeSkeleton />}>
-          <AuditsMarquee />
-        </Suspense>
+        <AuditsMarquee />
       </section>
 
       <section aria-label="Contact Form" className="w-full">
-        <Suspense fallback={<ContactHomeSkeleton />}>
-          <Contact />
-        </Suspense>
+        <Contact />
       </section>
 
       <section aria-label="Webinars and Seminars Showcase" className="w-full">
-        <Suspense fallback={<WebinarSeminarMarqueeSkeleton />}>
-          <WebinarSeminarMarquee />
-        </Suspense>
+        <WebinarSeminarMarquee />
       </section>
 
-      <section aria-label="Latest News" className="w-full">
+      {/* Below-the-fold: lazy with reserved min-height to avoid CLS when content loads */}
+      <section aria-label="Latest News" className="w-full min-h-20 md:min-h-28">
         <Suspense fallback={<LatestNewsSkeleton />}>
           <LatestNews />
         </Suspense>
       </section>
 
-      <section aria-label="Countries We Serve" className="w-full">
+      <section aria-label="Countries We Serve" className="w-full min-h-[280px] md:min-h-[420px]">
         <Suspense fallback={<CountriesSkeleton />}>
           <Countries />
         </Suspense>
       </section>
 
-      <section aria-label="Certification and Achievements" className="w-full">
+      <section aria-label="Certification and Achievements" className="w-full min-h-[320px] md:min-h-[360px]">
         <Suspense fallback={<CertificationAndAchievementsSkeleton />}>
           <CertificationAndAchievements />
         </Suspense>
       </section>
 
-      <section aria-label="What Our Customers Say" className="w-full">
+      <section aria-label="What Our Customers Say" className="w-full min-h-[380px] md:min-h-[420px]">
         <Suspense fallback={<WhatsOurCustomersSaySkeleton />}>
           <WhatsOurCustomersSaySection />
         </Suspense>
       </section>
 
       <section aria-label="Partner Logos - Bottom" className="w-full">
-        <Suspense fallback={<LogoTickerSkeleton />}>
-          <LogoTicker />
-        </Suspense>
+        <LogoTicker />
       </section>
 
-      <section aria-label="Video Showcase" className="w-full">
+      <section aria-label="Video Showcase" className="w-full min-h-[320px] md:min-h-[380px]">
         <Suspense fallback={<VideoSectionSkeleton />}>
           <VideoSection onVideoPopupChange={onVideoPopupChange} />
         </Suspense>
       </section>
 
-      <section aria-label="Footer" className="w-full">
+      <section aria-label="Footer" className="w-full min-h-[400px]">
         <Suspense fallback={<FooterSkeleton />}>
           <Footer />
         </Suspense>
       </section>
     </main>
   );
-};
-
-Home.propTypes = {
-  onVideoPopupChange: PropTypes.func,
 };
 
 export default Home;
