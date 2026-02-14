@@ -47,6 +47,7 @@ const BISCertificationChinese = () => {
   return (
     <div className="relative w-full">
       <BISCertificationMetaTags />
+      <BISCertificationFAQSchemaInjector />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -92,6 +93,58 @@ const BISCertificationMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (BISCertification page - Chinese) */
+const BISCertificationFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "印度的BIS认证是什么？", acceptedAnswer: { "@type": "Answer", text: "BIS认证是印度标准局(BIS)颁发的质量保证认证，确保产品符合印度在安全、性能和质量方面的标准。对多种产品类别是强制性的，有助于消费者保护和法规合规。" } },
+        { "@type": "Question", name: "为什么需要BIS证书？", acceptedAnswer: { "@type": "Answer", text: "BIS证书是在印度合法制造、进口、分销或销售某些产品所必需的。它向消费者保证产品符合印度标准的安全和质量准则。" } },
+        { "@type": "Question", name: "BIS认证下的ISI标志是什么？", acceptedAnswer: { "@type": "Answer", text: "ISI标志是BIS认证计划下提供的认证符号。它表示产品符合印度标准，并已通过印度BIS的适当测试和注册获得认证。" } },
+        { "@type": "Question", name: "印度谁颁发BIS许可证？", acceptedAnswer: { "@type": "Answer", text: "BIS许可证由印度标准局(印度BIS)颁发，该机构是消费者事务、食品和公共分配部下属的国家标准机构。" } },
+        { "@type": "Question", name: "BIS认证计划有哪些不同类型？", acceptedAnswer: { "@type": "Answer", text: "主要BIS认证计划包括ISI标志计划、强制注册计划(CRS)、外国制造商认证计划(FMCS)、珠宝 hallmarking、Eco Mark认证以及工业机械的Scheme X。" } },
+        { "@type": "Question", name: "BIS认证下的Scheme X是什么？", acceptedAnswer: { "@type": "Answer", text: "Scheme X是适用于泵、变压器、机床和起重机等工业产品的简化BIS认证流程。它在不影响符合印度标准的情况下确保更快批准。" } },
+        { "@type": "Question", name: "印度哪些产品需要BIS认证？", acceptedAnswer: { "@type": "Answer", text: "根据印度BIS规定，电器、电子产品、厨具、水泥、钢铁、黄金首饰、手机和变压器等产品需要BIS认证。" } },
+        { "@type": "Question", name: "BIS注册对所有产品都是强制性的吗？", acceptedAnswer: { "@type": "Answer", text: "不是，BIS注册仅对列入强制认证计划的产品是强制性的。但也可自愿申请BIS认证以提高产品信誉。" } },
+        { "@type": "Question", name: "BIS许可证有效期多长？", acceptedAnswer: { "@type": "Answer", text: "BIS许可证通常有效期为一年至两年，必须在到期前续期才能继续使用ISI标志或保持BIS注册状态。" } },
+        { "@type": "Question", name: "在印度获得BIS认证的步骤是什么？", acceptedAnswer: { "@type": "Answer", text: "BIS认证流程包括确定适用的印度标准、提交申请、产品测试、工厂检查以及批准后颁发BIS证书。" } },
+        { "@type": "Question", name: "外国制造商可以申请BIS许可证吗？", acceptedAnswer: { "@type": "Answer", text: "可以。根据外国制造商认证计划(FMCS)，外国公司可以申请BIS许可证在印度销售产品。他们必须指定授权印度代表(AIR)。" } },
+        { "@type": "Question", name: "AIR在BIS认证中的作用是什么？", acceptedAnswer: { "@type": "Answer", text: "AIR(授权印度代表)充当外国制造商与印度BIS之间的联络人。他们负责文件、沟通以及遵守BIS认证要求。" } },
+        { "@type": "Question", name: "如何在线申请BIS注册？", acceptedAnswer: { "@type": "Answer", text: "您可以通过官方BIS门户网站在线申请BIS注册。流程包括提交表格、上传文件、测试报告和支付费用。" } },
+        { "@type": "Question", name: "BIS证书需要哪些文件？", acceptedAnswer: { "@type": "Answer", text: "所需文件包括营业执照、产品规格、制造流程、实验室测试报告、工厂布局、质量手册和授权表(针对外国制造商)。" } },
+        { "@type": "Question", name: "印度BIS认证费用多少？", acceptedAnswer: { "@type": "Answer", text: "BIS认证费用取决于产品类型、测试要求、计划类型(ISI、CRS、FMCS)以及申请人是国内还是国外。费用包括申请费、测试费和检查费。" } },
+        { "@type": "Question", name: "ISI标志对所有BIS认证产品都是强制性的吗？", acceptedAnswer: { "@type": "Answer", text: "不是，仅ISI计划下的产品需要携带ISI标志。CRS或Hallmarking计划下的产品根据BIS注册规范遵循不同的标签协议。" } },
+        { "@type": "Question", name: "环保产品可以获得BIS认证吗？", acceptedAnswer: { "@type": "Answer", text: "可以，符合环境标准的产品可根据Eco Mark计划获得BIS认证，该计划确保符合印度环境安全标准。" } },
+        { "@type": "Question", name: "BIS认证与BIS注册有什么区别？", acceptedAnswer: { "@type": "Answer", text: "BIS认证通常指ISI、FMCS或Hallmarking计划下的批准，而BIS注册通常与电子产品的CRS计划相关。" } },
+        { "@type": "Question", name: "强制注册计划(CRS)是什么？", acceptedAnswer: { "@type": "Answer", text: "CRS是面向LED灯、手机和充电宝等IT和电子产品的BIS注册计划。它确保产品符合印度安全相关标准。" } },
+        { "@type": "Question", name: "ISI标志和BIS证书是同一个意思吗？", acceptedAnswer: { "@type": "Answer", text: "不完全是。ISI标志是BIS认证计划下授予认证产品的符号。BIS证书是颁发给制造商的法律文件。" } },
+        { "@type": "Question", name: "一个BIS许可证可以涵盖多种产品吗？", acceptedAnswer: { "@type": "Answer", text: "不可以，每种产品类型和每个制造地点都需要单独的BIS许可证，即使产品相似。" } },
+        { "@type": "Question", name: "在没有BIS认证的情况下销售产品会怎样？", acceptedAnswer: { "@type": "Answer", text: "在印度销售需要BIS认证但没有有效BIS许可证的产品是违法的，可能导致罚款、产品召回或禁令。" } },
+        { "@type": "Question", name: "获得BIS认证需要多长时间？", acceptedAnswer: { "@type": "Answer", text: "BIS认证流程通常需要30至90天，具体取决于产品类型、测试要求以及申请人是国内还是国外。" } },
+        { "@type": "Question", name: "BIS认证在全球被接受吗？", acceptedAnswer: { "@type": "Answer", text: "虽然BIS认证是印度特有的，但它通过展示符合严格的印度标准来增强全球信誉。一些BIS认证产品也在互认协议下被接受。" } },
+        { "@type": "Question", name: "BIS许可证需要多久续期一次？", acceptedAnswer: { "@type": "Answer", text: "BIS许可证必须每年或每两年续期。制造商必须保持符合印度标准并通过监督审核才能续期BIS证书。" } },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "biscertification-faq-schema-zh";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("biscertification-faq-schema-zh");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BISCertificationBreadcrumb = () => {

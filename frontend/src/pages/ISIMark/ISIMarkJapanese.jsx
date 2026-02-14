@@ -42,6 +42,7 @@ const ISIMarkJapanese = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -89,6 +90,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - Japanese) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "BIS認証とは何ですか？なぜ重要ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS認証はインド標準協会が発行し、製品がインドの安全・品質基準に適合することを保証します。法的コンプライアンス、消費者の信頼、市場での受入れに不可欠です。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BISライセンスとISIマークの違いは何ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BISライセンスは製造者がISIマークを使用することを許可する法的文書です。ISIマークはBIS認証を示す製品上の表示ラベルです。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS認証を取得するにはどのくらいかかりますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "製品タイプ、試験要件、監査結果により、通常6〜10週間です。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BISライセンスの有効期間はどのくらいですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "通常1〜2年で、その後更新が必要です。有効期限の少なくとも30日前に更新手続きを開始してください。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS認証の費用はいくらですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "費用は異なりますが、試験、監査、ライセンス料を含め₹25,000〜₹100,000以上になる場合があります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS認証はすべての製品に義務付けられていますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "いいえ。BIS認証のスキーム1に掲載されている製品にのみ義務付けられています。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "自社製品に適したIS規格はどうやって見つけますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BISのウェブサイトを訪問するか、BIS認定の試験所やコンサルタントに相談して適用規格を特定してください。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "外国の製造業者はBIS認証を申請できますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "はい。外国製造業者認証制度（FMCS）により、海外の事業者はISIマーク使用のためのBISライセンスを取得できます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "製品がBIS試験に不合格になったらどうなりますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "問題を修正し、再提出して試験を受ける必要があります。適合が証明されるまで申請は保留される場合があります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "輸出にBIS認証は必要ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "輸出に常に必須ではありませんが、BIS認証は信頼性を高め、国際的な買い手や規制機関の要件を満たすことができます。",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-ja";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-ja");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

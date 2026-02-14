@@ -52,6 +52,7 @@ const CRSRegistrationArabic = () => {
     <div className="relative" dir="rtl">
       {/* CRS Registration Meta Tags */}
       <CRSRegistrationMetaTagsArabic />
+      <FAQSchemaInjector />
       {/* CRS Registration Breadcrumb */}
       <CRSRegistrationBreadcrumbArabic />
       {/* CRS Registration Hero Section */}
@@ -138,6 +139,153 @@ const CRSRegistrationMetaTagsArabic = () => {
       </script>
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Arabic) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "ما هو تسجيل BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "شهادة BIS هي عملية امتثال يحكمها مكتب المعايير الهندية، والتي تحقق من أن المنتج يلائم المعايير الهندية (IS) المعمول بها من حيث الجودة والسلامة والموثوقية.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما هو تسجيل CRS بموجب BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRS تعني مخطط التسجيل الإلزامي. وهي عملية تسجيل إلزامية لفئات منتجات محددة مثل الإلكترونيات والكهربائيات والبطاريات والمنتجات الشمسية. يجب اختبار المنتجات الخاضعة لـ CRS وتسجيلها مع BIS قبل بيعها في الهند.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل شهادة BIS إلزامية في الهند؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "نعم. لجميع المنتجات المدرجة في قائمة منتجات CRS (أكثر من 80 منتجاً حالياً)، تسجيل BIS إلزامي للتصنيع أو الاستيراد أو البيع في الهند.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما الفرق بين BIS CRS وعلامة ISI؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS: للإلكترونيات والسلع التقنية، فقط للمنتجات الإلزامية المبلغ عنها بموجب QCO. علامة ISI: تُستخدم لمجموعة أوسع من المنتجات، وقد تكون طوعية أو إلزامية حسب فئة المنتج.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "من يمكنه التقدم لتسجيل BIS CRS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "المصنعون فقط يمكنهم التقديم. يشمل ذلك المصنعين الهنود والأجانب. يجب على العلامات التجارية الأجنبية تعيين ممثل هندي معتمد (AIR).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما دور AIR؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "الممثل الهندي المعتمد (AIR) مسؤول قانونياً عن تقديم طلب BIS نيابة عن المصنع الأجنبي. يعمل كصلة الوصل الرسمية بين BIS ومقدم الطلب في الخارج.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "كم تستغرق عملية تسجيل BIS CRS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "تستغرق العملية عادة 3-4 أسابيع، بافتراض تقديم جميع المستندات وتقارير الاختبار بشكل صحيح وعدم وجود اعتراضات من BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "كم تبلغ تكلفة شهادة BIS CRS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "تشمل التكاليف: رسوم الاختبار: ₹10,000–₹20,000 + ضريبة السلع والخدمات. الرسوم الحكومية: ₹53,000 + ضريبة السلع والخدمات لكل تقرير اختبار. رسوم إضافية: إفادة، بريد، وثائق AIR، إلخ. خصم للمصنعين الهنود المسجلين في MSME.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما صلاحية شهادات BIS CRS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ترخيص BIS الأولي صالح لمدة سنتين. يمكن تجديده حتى 5 سنوات إذا ظلت تفاصيل المنتج والتصنيع دون تغيير.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل يمكن الحصول على شهادة BIS طوعياً؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "لا. بموجب CRS، لا يمكنك التقديم طوعياً للمنتجات غير المدرجة في QCOs. الشهادة الطوعية تنطبق فقط على منتجات غير CRS عبر مخطط ISI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "أين أجد قائمة منتجات BIS CRS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "يمكنك زيارة الموقع الرسمي لـ BIS https://www.crsbis.in/BIS/publicdashAction.do والانتقال إلى قسم \"المنتجات الخاضعة لـ CRS\" لعرض القائمة الكاملة للمنتجات المشمولة.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل يمكن عرض علامة BIS إلكترونياً؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "نعم، عبر الوسم الإلكتروني، لكن يجب أن تستوفي قواعد BIS الصارمة: معلومات الملصق يجب أن تكون مضمنة في البرامج الثابتة. وصول سهل خلال 4 خطوات في قائمة الجهاز. التغليف الفعلي يجب أن يحمل المعلومات التنظيمية.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ماذا يحدث إذا لم أحصل على تسجيل BIS لمنتج إلزامي؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "عقوبات شديدة، تشمل: مصادرة المنتج، رفض الجمارك، غرامات قانونية، الشطب من منصات التجارة الإلكترونية، حظر دائم من السوق الهندي.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل يمكن لشهادة BIS واحدة تغطية نماذج أو علامات متعددة؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "لا. كل علامة تجارية وموقع مصنع يجب أن يكون معتمداً بشكل منفصل. يمكن إضافة نماذج متعددة باستخدام تقارير إضافية، ولكن فقط ضمن نفس الطلب والعلامة التجارية.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "كيف يمكن لـ Sun Certifications India مساعدتي؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "نقدم: دعم التوثيق الكامل، تنسيق المختبر، معالجة طلبات بوابة BIS، حل الاستفسارات ومتابعات BIS، إرشادات التجديد والوسم، ضمان الامتثال للعلامات الأجنبية عبر خدمات AIR.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-ar";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-ar");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const CRSRegistrationBreadcrumbArabic = () => {

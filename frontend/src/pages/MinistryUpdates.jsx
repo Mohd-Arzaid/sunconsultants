@@ -217,6 +217,17 @@ const MinistryUpdatesMainContent = () => {
 const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   const notifications = [
     {
+      id: 17,
+      color: "#5B63E6",
+      tagType: "QCO Amendment",
+      date: "February 14, 2026",
+      displayDate: "14 Feb 2026",
+      title: "Furniture QCO Amendment Order 2026",
+      description:
+        "The Ministry has issued the Furniture (Quality Control) Amendment Order, 2026. Stay updated on BIS certification requirements and compliance for furniture manufacturers and importers.",
+      link: "/ministry-updates/furniture-qco-2026",
+    },
+    {
       id: 16,
       color: "#1A8781",
       tagType: "BIS Update",
@@ -590,6 +601,17 @@ const Pagination = ({
   searchQuery,
 }) => {
   const notifications = [
+    {
+      id: 18,
+      color: "#5B63E6",
+      tagType: "QCO Amendment",
+      date: "February 14, 2026",
+      displayDate: "14 Feb 2026",
+      title: "Furniture QCO Amendment Order 2026",
+      description:
+        "The Ministry has issued the Furniture (Quality Control) Amendment Order, 2026. Stay updated on BIS certification requirements and compliance for furniture manufacturers and importers.",
+      link: "/ministry-updates/furniture-qco-2026",
+    },
     {
       id: 17,
       color: "#1A8781",

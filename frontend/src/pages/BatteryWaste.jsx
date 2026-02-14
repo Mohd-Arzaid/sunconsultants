@@ -35,6 +35,8 @@ const BatteryWaste = () => {
         <title>EPR Registration for Battery Waste Management</title>
         <meta name="description" content="EPR Registration for battery waste is a regulatory authorization that holds producers responsible for sustainable collection, recycling and disposal of used batteries." />
         <meta name="keywords" content="epr portal for battery waste management, epr authorization for battery waste management, battery waste epr, epr for battery waste, epr registration for battery waste management, battery epr, battery waste epr certificate, CPCB battery waste registration, battery waste management rules 2022, extended producer responsibility battery" />
+        <meta name="author" content="Dhruv Aggarwal" />
+        <meta name="publisher" content="Sun Certifications India" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://bis-certifications.com/epr-certificate-for-battery-waste-management-bwm" />
         
@@ -199,7 +201,7 @@ const EPRIndex = () => {
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
-  const SECTIONS = ["Overview", "FAQs"];
+  const SECTIONS = ["Overview", "Scope", "Process", "FAQs"];
 
   const handleItemClick = (item) => {
     const element = document.getElementById(
@@ -697,6 +699,12 @@ const EPRContentLeft = () => {
         {/* Overview Section */}
         <OverviewSection />
 
+        {/* Scope Section */}
+        <ScopeSection />
+
+        {/* Process Section */}
+        <ProcessSection />
+
         {/* Review Section */}
         <ReviewSection />
 
@@ -718,14 +726,9 @@ const OverviewSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="my-3 font-roboto text-[28px] font-bold leading-none text-[#131316] md:my-0 md:text-[40px] md:leading-normal">
-        EPR Registration for Battery Waste Management in India | Battery Waste EPR Certificate
-      </h3>
-
-      {/* Description */}
-      <p className="font-geist text-[16px] font-semibold text-[#131316] md:text-[20px]">
-        A Complete Guide to Battery Waste EPR under Battery Waste Management Rules, 2022 - EPR Portal for Battery Waste Management
-      </p>
+      <h1 className="my-3 font-roboto text-[28px] font-bold leading-none text-[#131316] md:my-0 md:text-[40px] md:leading-normal">
+        EPR Registration for Battery Waste Management in India
+      </h1>
 
       {/* Overview Content */}
       <div className="mt-[16px] max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:mt-[24px] md:text-lg">
@@ -766,9 +769,9 @@ const OverviewSection = () => {
 
       {/* What is Battery Waste Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           What is Battery Waste and Why is it Harmful?
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           Battery waste is a term that describes used, discarded, or abandoned
@@ -778,11 +781,9 @@ const OverviewSection = () => {
           can cause environmental problems that can last for generations.
         </div>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">
-            Major Environmental Concerns Related to Battery Waste
-          </span>
-        </div>
+        <h2 className="mb-4 mt-6 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
+          Major Environmental Concerns Related to Battery Waste
+        </h2>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -807,9 +808,9 @@ const OverviewSection = () => {
 
       {/* Battery Waste Management Rules Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           What are the Battery Waste Management Rules, 2022?
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           The rules in the Battery Waste Management Rules 2022 were published by
@@ -820,11 +821,9 @@ const OverviewSection = () => {
           circular economy.
         </div>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">
-            Goals of the Rules
-          </span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Goals of the Rules
+        </h3>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -847,9 +846,9 @@ const OverviewSection = () => {
 
       {/* Types of Batteries Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Types of Batteries Covered Under the Rules
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           The Battery Waste Management Rules, 2022 cover all types of batteries,
@@ -869,9 +868,9 @@ const OverviewSection = () => {
         </div>
 
         <div className="mt-6">
-          <h5 className="mb-3 font-roboto text-[18px] font-bold text-[#131316] md:text-[20px]">
+          <h3 className="mb-3 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
             Exempted Batteries
-          </h5>
+          </h3>
           <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
             The rules do not apply to batteries used in:
           </div>
@@ -892,10 +891,10 @@ const OverviewSection = () => {
 
       {/* EPR Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           What is Extended Producer Responsibility (EPR) with regard to Battery
           Waste?
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           With Extended Producer Responsibility (EPR), producers are assigned
@@ -920,9 +919,9 @@ const OverviewSection = () => {
 
       {/* Producer Definition Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Who is Considered a Producer in the Battery Waste EPR?
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           According to the law, a producer can mean any entity that:
@@ -948,20 +947,18 @@ const OverviewSection = () => {
 
       {/* Significance Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Significance of EPR Registration on Battery Waste Management
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           EPR registration for battery waste management is a necessity, and
           legally so. It is a necessity for producers based in India.
         </div>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">
-            Why Is EPR Registration So Important?
-          </span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Why Is EPR Registration So Important?
+        </h3>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -985,9 +982,9 @@ const OverviewSection = () => {
 
       {/* EPR Framework Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Battery Waste EPR Explained
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           EPR on battery waste consists of a more or less structured
@@ -995,11 +992,9 @@ const OverviewSection = () => {
           regulators.
         </div>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">
-            Important Features of the EPR Framework
-          </span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Important Features of the EPR Framework
+        </h3>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -1017,13 +1012,11 @@ const OverviewSection = () => {
         <div className="mt-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           This framework achieves transparency, accountability, and tracking.
         </div>
-      </div>
 
-      {/* EPR Portal Section */}
-      <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        {/* EPR Portal subsection */}
+        <h3 className="mb-4 mt-6 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
           EPR Portal for Battery Waste Management
-        </h4>
+        </h3>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           The EPR portal for battery waste management is a simplified system
@@ -1032,11 +1025,9 @@ const OverviewSection = () => {
           compliance can be tracked for each participant.
         </div>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">
-            EPR Portal Features
-          </span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          EPR Portal Features
+        </h3>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -1056,27 +1047,38 @@ const OverviewSection = () => {
           bring complete digital transparency to battery waste EPR compliance.
         </div>
       </div>
+    </section>
+  );
+};
+
+const ScopeSection = () => {
+  return (
+    <section id="scope" className="flex scroll-mt-20 flex-col">
+      <div className="flex w-full items-center gap-3">
+        <span className="font-geist text-[16px] font-semibold uppercase text-gray-700 md:text-[20px]">
+          Scope
+        </span>
+        <Separator className="h-[1.5px] w-[94.46px] bg-gray-700" />
+      </div>
 
       {/* Registration Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Registration of Producers Under Battery Waste Management Rules
-        </h4>
+        </h2>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">
-            Who Needs to Register?
-          </span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Who Needs to Register?
+        </h3>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           Any producer engaged in the manufacture, sale, or import of batteries
           must obtain EPR registration for battery waste management from CPCB.
         </div>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">Legal Basis</span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Legal Basis
+        </h3>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           Registration via the CPCB-managed centralized system is compulsory per
@@ -1084,36 +1086,11 @@ const OverviewSection = () => {
         </div>
       </div>
 
-      {/* Application Process Section */}
-      <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
-          EPR Registration for Battery Waste Management: Application Process
-        </h4>
-
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          Prior to the complete functionality of the centralized portal, the
-          CPCB accepted offline registrations. The procedure is typically as
-          follows:
-        </div>
-
-        <div className="w-full md:w-auto">
-          <PointsListTwo
-            points={[
-              "Step 1: Preparation of Documents - All business details and documents are prepared as directed by the CPCB.",
-              "Step 2: Submission of Application - The application is sent to CPCB by email and in a hard copy. The application form is Form1(A).",
-              "Step 3: Review of Application - CPCB will assess the application and may reach out for some questions or to obtain further documents.",
-              "Step 4: Registration Approval - Registration is approved for the first time for a period of 6 months, and this is extendable via the online portal.",
-            ]}
-            heading=""
-          />
-        </div>
-      </div>
-
       {/* Documents Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Documents for EPR Battery Waste Registration:
-        </h4>
+        </h2>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -1133,18 +1110,18 @@ const OverviewSection = () => {
 
       {/* Recyclers Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Recyclers and Refurbishers Registration
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           Battery recyclers and refurbishers, in particular, must register with
           the SPCB (State Pollution Control Board) via the centralized portal.
         </div>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">Main Points</span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Main Points
+        </h3>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -1172,23 +1149,75 @@ const OverviewSection = () => {
           />
         </div>
       </div>
+    </section>
+  );
+};
+
+const ProcessSection = () => {
+  return (
+    <section id="process" className="flex scroll-mt-20 flex-col">
+      <div className="flex w-full items-center gap-3">
+        <span className="font-geist text-[16px] font-semibold uppercase text-gray-700 md:text-[20px]">
+          Process
+        </span>
+        <Separator className="h-[1.5px] w-[94.46px] bg-gray-700" />
+      </div>
+
+      {/* Application Process Section */}
+      <div className="mt-[32px] md:mt-[48px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
+          EPR Registration for Battery Waste Management: Application Process
+        </h2>
+
+        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
+          Prior to the complete functionality of the centralized portal, the
+          CPCB accepted offline registrations. The procedure is typically as
+          follows:
+        </div>
+
+        <h3 className="mb-2 mt-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Step 1: Preparation of Documents
+        </h3>
+        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
+          All business details and documents are prepared as directed by the CPCB.
+        </div>
+
+        <h3 className="mb-2 mt-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Step 2: Submission of Application
+        </h3>
+        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
+          The application is sent to CPCB by email and in a hard copy. The application form is Form1(A).
+        </div>
+
+        <h3 className="mb-2 mt-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Step 3: Review of Application
+        </h3>
+        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
+          CPCB will assess the application and may reach out for some questions or to obtain further documents.
+        </div>
+
+        <h3 className="mb-2 mt-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Step 4: Registration Approval
+        </h3>
+        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
+          Registration is approved for the first time for a period of 6 months, and this is extendable via the online portal.
+        </div>
+      </div>
 
       {/* Compliance Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           EPR Compliance Obligations and Targets
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           Based on the number of batteries placed in the market, producers must
           comply with specific EPR targets.
         </div>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">
-            Compliance includes
-          </span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Compliance includes
+        </h3>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -1210,9 +1239,9 @@ const OverviewSection = () => {
 
       {/* Penalties Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Penalties for Non-Compliance
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           If you do not follow the battery waste EPR regulations, you might face
@@ -1234,15 +1263,13 @@ const OverviewSection = () => {
 
       {/* Benefits Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Benefits of Battery Waste EPR Registration
-        </h4>
+        </h2>
 
-        <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">
-            Environmental gains
-          </span>
-        </div>
+        <h3 className="mb-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Environmental gains
+        </h3>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -1255,9 +1282,9 @@ const OverviewSection = () => {
           />
         </div>
 
-        <div className="mb-4 mt-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
-          <span className="font-semibold text-gray-950">Business gains</span>
-        </div>
+        <h3 className="mb-4 mt-4 font-roboto text-[20px] font-bold text-[#131316] md:text-[24px]">
+          Business gains
+        </h3>
 
         <div className="w-full md:w-auto">
           <PointsListTwo
@@ -1273,9 +1300,9 @@ const OverviewSection = () => {
 
       {/* Professional Consultants Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Role of Professional Consultants in Battery EPR Compliance
-        </h4>
+        </h2>
 
         <div className="mb-4 max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           The process of EPR registration for Waste Management Business
@@ -1299,9 +1326,9 @@ const OverviewSection = () => {
 
       {/* Conclusion Section */}
       <div className="mt-[32px] md:mt-[48px]">
-        <h4 className="mb-4 font-roboto text-[22px] font-bold text-[#131316] md:text-[26px]">
+        <h2 className="mb-4 font-roboto text-[24px] font-bold text-[#131316] md:text-[32px]">
           Conclusion
-        </h4>
+        </h2>
 
         <div className="max-w-full text-left font-geist text-sm leading-loose tracking-wide text-[#42434d] md:text-lg">
           The use of batteries in India is currently skyrocketing, and that
@@ -1328,6 +1355,7 @@ const OverviewSection = () => {
     </section>
   );
 };
+
 
 const ReviewSection = () => {
   return (

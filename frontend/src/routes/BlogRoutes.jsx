@@ -882,6 +882,9 @@ const BISCertificateForBatteryOperatedToothbrushArabic = lazy(() =>
 const BISCertificationforMassageAppliances = lazy(() =>
   import("@/blogs/BISCertificationforMassageAppliances")
 );
+const BISCertificateforShavers = lazy(() =>
+  import("@/blogs/BISCertificationforShavers")
+);
 const BISCertificateForBatteryOperatedToothbrushChinese = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushChinese")
 );
@@ -3043,6 +3046,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforMassageAppliances />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforShavers />
           </Suspense>
         }
       />

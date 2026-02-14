@@ -52,6 +52,7 @@ const CRSRegistrationKorean = () => {
     <div className="relative">
       {/* CRS Registration Meta Tags */}
       <CRSRegistrationMetaTags />
+      <FAQSchemaInjector />
       {/* CRS Registration Breadcrumb */}
       <CRSRegistrationBreadcrumb />
       {/* CRS Registration Hero Section */}
@@ -132,6 +133,153 @@ const CRSRegistrationMetaTags = () => {
       </script>
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Korean) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "BIS 등록이란 무엇인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS 인증은 인도표준청이 관리하는 적합성 프로세스로, 제품이 품질, 안전 및 신뢰성에 대한 적용 가능한 인도 표준(IS)을 충족하는지 검증합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 하의 CRS 등록이란 무엇인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRS는 강제 등록 제도를 의미합니다. 전자 제품, 전기 제품, 배터리, 태양광 제품 등 특정 제품 카테고리에 대한 의무 등록 절차입니다. CRS 대상 제품은 인도에서 판매하기 전에 BIS에서 테스트 및 등록을 받아야 합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "인도에서 BIS 인증이 필수인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "네. CRS 제품 목록(현재 80개 이상 품목)에 포함된 모든 제품에 대해 인도에서 제조, 수입 또는 판매 시 BIS 등록이 필수입니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS와 ISI 마크의 차이점은 무엇인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS: 전자 및 IT 제품용, QCO 하에 통지된 필수 제품만 해당. ISI 마크: 더 넓은 범위의 제품에 사용되며, 제품 카테고리에 따라 자발적이거나 필수일 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS 등록을 누가 신청할 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "제조업체만 신청할 수 있습니다. 인도 및 외국 제조업체가 포함됩니다. 외국 브랜드는 Authorized Indian Representative(AIR)를 지정해야 합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "AIR의 역할은 무엇인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Authorized Indian Representative(AIR)는 외국 제조업체를 대신하여 BIS 신청을 제출할 법적 책임이 있습니다. BIS와 해외 신청자 간의 공식 연락 창구 역할을 합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS 등록에는 얼마나 걸리나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "모든 서류와 시험 보고서가 올바르게 제출되고 BIS에서 이의를 제기하지 않으면 프로세스는 일반적으로 3-4주가 소요됩니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS 인증서 비용은 얼마인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "비용에는 다음이 포함됩니다: 시험 비용: ₹10,000–₹20,000 + GST. 정부 수수료: 시험 보고서당 ₹53,000 + GST. 추가 비용: 선서서, 택배, AIR 서류 등. 인도 MSME 등록 제조업체 할인 적용.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS 인증서의 유효 기간은 얼마인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "최초 BIS 라이선스는 2년간 유효합니다. 제품 및 제조 세부 정보가 변경되지 않으면 최대 5년까지 갱신할 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증을 자발적으로 받을 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "아니요. CRS에서는 QCO에 등록되지 않은 제품에 대해 자발적으로 신청할 수 없습니다. 자발적 인증은 ISI 제도를 통한 비 CRS 제품에만 적용됩니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS 제품 목록은 어디서 찾을 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "공식 BIS 웹사이트 https://www.crsbis.in/BIS/publicdashAction.do 를 방문하여 \"CRS 대상 제품\" 섹션으로 이동하면 적용 제품의 전체 목록을 볼 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 마크를 전자적으로 표시할 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "예, 전자 라벨링을 통해 가능하지만 엄격한 BIS 규칙을 충족해야 합니다: 라벨 정보는 펌웨어에 내장되어야 합니다. 기기 메뉴에서 4단계 이내로 쉽게 접근 가능해야 합니다. 물리적 패키지에는 여전히 규제 정보가 있어야 합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "필수 제품에 BIS 등록을 받지 않으면 어떻게 되나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "제품 압수, 세관 거부, 법적 벌금, 이커머스 포털 제거, 인도 시장 영구 금지 등 심각한 처벌이 부과됩니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "하나의 BIS 인증서로 여러 모델 또는 브랜드를 포함할 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "아니요. 각 브랜드와 공장 위치는 별도로 인증받아야 합니다. 추가 보고서를 사용하여 여러 모델을 추가할 수 있지만 동일한 신청 및 브랜드 하에서만 가능합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sun Certifications India는 어떻게 도움을 줄 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "저희는 다음을 제공합니다: 전체 문서 지원, 실험실 조정, BIS 포털 신청 처리, 문의 해결 및 BIS 후속 조치, 갱신 및 라벨링 안내, AIR 서비스를 통한 외국 브랜드 규정 준수 보장.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-ko";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-ko");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const CRSRegistrationBreadcrumb = () => {

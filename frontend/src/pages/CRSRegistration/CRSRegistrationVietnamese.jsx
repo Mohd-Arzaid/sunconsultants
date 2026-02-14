@@ -52,6 +52,7 @@ const CRSRegistrationVietnamese = () => {
     <div className="relative">
       {/* CRS Registration Meta Tags */}
       <CRSRegistrationMetaTags />
+      <FAQSchemaInjector />
       {/* CRS Registration Breadcrumb */}
       <CRSRegistrationBreadcrumb />
       {/* CRS Registration Hero Section */}
@@ -138,6 +139,153 @@ const CRSRegistrationMetaTags = () => {
       </script>
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Vietnamese) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Đăng ký BIS là gì?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chứng nhận BIS là quy trình tuân thủ do Cục Tiêu chuẩn Ấn Độ quản lý, xác minh rằng sản phẩm đáp ứng các Tiêu chuẩn Ấn Độ (IS) áp dụng về chất lượng, an toàn và độ tin cậy.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Đăng ký CRS theo BIS là gì?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRS là Chương trình Đăng ký Bắt buộc. Đây là quy trình đăng ký bắt buộc cho các danh mục sản phẩm cụ thể như điện tử, thiết bị điện, pin và sản phẩm năng lượng mặt trời. Sản phẩm thuộc CRS phải được thử nghiệm và đăng ký với BIS trước khi bán tại Ấn Độ.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Chứng nhận BIS có bắt buộc tại Ấn Độ không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Có. Đối với tất cả sản phẩm trong danh sách sản phẩm CRS (hiện hơn 80 mặt hàng), đăng ký BIS là bắt buộc để sản xuất, nhập khẩu hoặc bán tại Ấn Độ.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sự khác biệt giữa BIS CRS và dấu ISI là gì?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS: Cho hàng điện tử và IT, chỉ cho sản phẩm bắt buộc được thông báo theo QCO. Dấu ISI: Dùng cho nhiều loại sản phẩm hơn, có thể tự nguyện hoặc bắt buộc tùy danh mục sản phẩm.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ai có thể đăng ký BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chỉ nhà sản xuất mới có thể đăng ký. Bao gồm nhà sản xuất Ấn Độ và nước ngoài. Thương hiệu nước ngoài phải chỉ định Đại diện Ấn Độ được Ủy quyền (AIR).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Vai trò của AIR là gì?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Đại diện Ấn Độ được Ủy quyền (AIR) chịu trách nhiệm pháp lý về việc nộp đơn BIS thay mặt nhà sản xuất nước ngoài. Họ là đầu mối chính thức giữa BIS và người nộp đơn ở nước ngoài.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Đăng ký BIS CRS mất bao lâu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Quy trình thường mất 3–4 tuần, với điều kiện mọi tài liệu và báo cáo thử nghiệm được nộp đúng và BIS không có ý kiến phản đối.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Chi phí chứng nhận BIS CRS là bao nhiêu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chi phí gồm: Phí thử nghiệm: ₹10.000–₹20.000 + GST. Phí chính phủ: ₹53.000 + GST mỗi báo cáo thử nghiệm. Chi phí bổ sung: Affidavit, chuyển phát, tài liệu AIR, v.v. Giảm giá cho nhà sản xuất Ấn Độ đăng ký MSME.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Chứng nhận BIS CRS có hiệu lực bao lâu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Giấy phép BIS ban đầu có hiệu lực 2 năm. Có thể gia hạn đến 5 năm nếu chi tiết sản phẩm và sản xuất không thay đổi.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Có thể chứng nhận BIS tự nguyện không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Không. Theo CRS, bạn không thể đăng ký tự nguyện cho sản phẩm không nằm trong QCOs. Chứng nhận tự nguyện chỉ áp dụng cho sản phẩm không thuộc CRS qua chương trình ISI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Tìm danh sách sản phẩm BIS CRS ở đâu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bạn có thể truy cập trang web chính thức của BIS https://www.crsbis.in/BIS/publicdashAction.do và chuyển đến mục \"Sản phẩm thuộc CRS\" để xem danh sách đầy đủ sản phẩm được áp dụng.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Có thể hiển thị dấu BIS bằng điện tử không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Có, qua e-labelling, nhưng phải đáp ứng quy định nghiêm ngặt của BIS: Thông tin nhãn phải được nhúng trong firmware. Truy cập dễ dàng trong 4 bước trong menu thiết bị. Bao bì vật lý vẫn phải có thông tin quy định.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Nếu không đăng ký BIS cho sản phẩm bắt buộc thì sao?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Hình phạt nặng, gồm: Tịch thu sản phẩm, Từ chối hải quan, Phạt pháp lý, Gỡ khỏi sàn thương mại điện tử, Cấm vĩnh viễn khỏi thị trường Ấn Độ.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Một chứng nhận BIS có thể gồm nhiều mẫu hoặc thương hiệu không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Không. Mỗi thương hiệu và địa điểm nhà máy phải được chứng nhận riêng. Có thể thêm nhiều mẫu bằng báo cáo bổ sung, nhưng chỉ trong cùng đơn và cùng thương hiệu.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sun Certifications India giúp tôi như thế nào?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chúng tôi cung cấp: Hỗ trợ tài liệu đầy đủ, Điều phối phòng thí nghiệm, Xử lý đơn trên cổng BIS, Giải quyết truy vấn và theo dõi BIS, Hướng dẫn gia hạn và dán nhãn, Đảm bảo tuân thủ cho thương hiệu nước ngoài qua dịch vụ AIR.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-vi";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-vi");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const CRSRegistrationBreadcrumb = () => {

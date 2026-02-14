@@ -47,6 +47,7 @@ const BISCertificationKorean = () => {
   return (
     <div className="relative w-full">
       <BISCertificationMetaTags />
+      <BISCertificationFAQSchemaInjector />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -91,6 +92,58 @@ const BISCertificationMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (BISCertification page - Korean) */
+const BISCertificationFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "인도의 BIS 인증이란?", acceptedAnswer: { "@type": "Answer", text: "BIS 인증은 인도표준청(BIS)이 발급하는 품질 보증 인증으로, 제품이 안전, 성능, 품질에 대한 인도 표준을 준수하도록 보장합니다. 다양한 제품 카테고리에 필수이며 소비자 보호 및 규제 준수에 도움이 됩니다." } },
+        { "@type": "Question", name: "BIS 인증서가 왜 필요한가요?", acceptedAnswer: { "@type": "Answer", text: "BIS 인증서는 인도에서 특정 제품을 합법적으로 제조, 수입, 유통 또는 판매하는 데 필수입니다. 제품이 인도 표준의 안전 및 품질 가이드라인을 충족함을 소비자에게 보장합니다." } },
+        { "@type": "Question", name: "BIS 인증에서 ISI 마크란?", acceptedAnswer: { "@type": "Answer", text: "ISI 마크는 BIS 인증 제도에서 제공하는 인증 심볼입니다. 제품이 인도 표준을 준수하며 적절한 시험 및 등록을 통해 인도 BIS로부터 인증받았음을 나타냅니다." } },
+        { "@type": "Question", name: "인도에서 BIS 라이선스를 발급하는 주체는?", acceptedAnswer: { "@type": "Answer", text: "BIS 라이선스는 소비자 문제·식품·공공배급부 산하 국가 표준 기관인 인도표준청(인도 BIS)이 발급합니다." } },
+        { "@type": "Question", name: "BIS 인증 제도에는 어떤 종류가 있나요?", acceptedAnswer: { "@type": "Answer", text: "주요 BIS 인증 제도에는 ISI 마크 제도, 강제 등록 제도(CRS), 외국 제조업체 인증 제도(FMCS), 보석 hallmarking, Eco Mark 인증, 산업용 기계에 대한 Scheme X가 있습니다." } },
+        { "@type": "Question", name: "BIS 인증에서 Scheme X란?", acceptedAnswer: { "@type": "Answer", text: "Scheme X는 펌프, 변압기, 공작 기계, 크레인 등 산업 제품에 적용되는 간소화된 BIS 인증 절차입니다. 인도 표준 준수를 저해하지 않으면서 더 빠른 승인을 보장합니다." } },
+        { "@type": "Question", name: "인도에서 BIS 인증이 필요한 제품은?", acceptedAnswer: { "@type": "Answer", text: "전기 제품, 전자 제품, 주방용품, 시멘트, 강철, 금 보석, 휴대폰, 변압기 등은 인도 BIS 규정에 따라 BIS 인증이 필요합니다." } },
+        { "@type": "Question", name: "BIS 등록이 모든 제품에 필수인가요?", acceptedAnswer: { "@type": "Answer", text: "아니요, BIS 등록은 강제 인증 제도에 등록된 제품에만 필수입니다. 다만 제품 신뢰도를 높이기 위한 자발적 BIS 인증도 가능합니다." } },
+        { "@type": "Question", name: "BIS 라이선스 유효 기간은?", acceptedAnswer: { "@type": "Answer", text: "BIS 라이선스는 일반적으로 1~2년 유효하며, ISI 마크를 계속 사용하거나 BIS 등록 상태를 유지하려면 만료 전에 갱신해야 합니다." } },
+        { "@type": "Question", name: "인도에서 BIS 인증을 받는 단계는?", acceptedAnswer: { "@type": "Answer", text: "BIS 인증 절차에는 적용 인도 표준 확인, 신청서 제출, 제품 시험, 공장 검사, 승인 시 BIS 인증서 발급이 포함됩니다." } },
+        { "@type": "Question", name: "외국 제조업체도 BIS 라이선스를 신청할 수 있나요?", acceptedAnswer: { "@type": "Answer", text: "네. 외국 제조업체 인증 제도(FMCS)에 따라 외국 기업은 인도에서 제품을 판매하기 위한 BIS 라이선스를 신청할 수 있습니다. 인도 대리인(AIR)을 지정해야 합니다." } },
+        { "@type": "Question", name: "BIS 인증에서 AIR의 역할은?", acceptedAnswer: { "@type": "Answer", text: "AIR(인도 대리인)는 외국 제조업체와 인도 BIS 간의 연락 역할을 합니다. 서류, 소통, BIS 인증 요건 준수를 담당합니다." } },
+        { "@type": "Question", name: "BIS 등록을 온라인으로 신청하려면?", acceptedAnswer: { "@type": "Answer", text: "공식 BIS 포털을 통해 온라인으로 BIS 등록을 신청할 수 있습니다. 절차에는 양식 제출, 서류·시험 보고서 업로드, 수수료 납부가 포함됩니다." } },
+        { "@type": "Question", name: "BIS 인증서에 필요한 서류는?", acceptedAnswer: { "@type": "Answer", text: "사업자 등록증, 제품 사양, 제조 공정, 실험실 시험 보고서, 공장 배치도, 품질 매뉴얼, 위임장(외국 제조업체용) 등이 필요합니다." } },
+        { "@type": "Question", name: "인도에서 BIS 인증 비용은 얼마인가요?", acceptedAnswer: { "@type": "Answer", text: "BIS 인증 비용은 제품 유형, 시험 요건, 제도 유형(ISI, CRS, FMCS), 신청자가 국내인지 외국인인지에 따라 다릅니다. 신청료, 시험비, 검사비가 포함됩니다." } },
+        { "@type": "Question", name: "ISI 마크가 모든 BIS 인증 제품에 필수인가요?", acceptedAnswer: { "@type": "Answer", text: "아니요. ISI 제도 하 제품만 ISI 마크 부착이 필수입니다. CRS 또는 Hallmarking 제도 제품은 BIS 등록 규정에 따라 다른 표시 프로토콜을 따릅니다." } },
+        { "@type": "Question", name: "친환경 제품에 BIS 인증을 받을 수 있나요?", acceptedAnswer: { "@type": "Answer", text: "네. 환경 기준을 충족하는 제품은 환경 안전에 대한 인도 표준 준수를 보장하는 Eco Mark 제도 하에 BIS 인증을 받을 수 있습니다." } },
+        { "@type": "Question", name: "BIS 인증과 BIS 등록의 차이는?", acceptedAnswer: { "@type": "Answer", text: "BIS 인증은 일반적으로 ISI, FMCS 또는 Hallmarking 제도에 따른 승인을 말하고, BIS 등록은 전자 제품의 CRS 제도와 연관됩니다." } },
+        { "@type": "Question", name: "강제 등록 제도(CRS)란?", acceptedAnswer: { "@type": "Answer", text: "CRS는 LED 조명, 휴대폰, 보조 배터리 등 IT·전자 제품을 위한 BIS 등록 프로그램입니다. 제품이 안전 관련 인도 표준을 준수하도록 합니다." } },
+        { "@type": "Question", name: "ISI 마크와 BIS 인증서는 같은 의미인가요?", acceptedAnswer: { "@type": "Answer", text: "정확히는 아닙니다. ISI 마크는 BIS 인증 제도 하 인증 제품에 부여되는 심볼이고, BIS 인증서는 제조업체에 발급되는 법적 문서입니다." } },
+        { "@type": "Question", name: "BIS 라이선스 하나로 여러 제품을 커버할 수 있나요?", acceptedAnswer: { "@type": "Answer", text: "아니요. 제품 유형 및 제조 장소마다 별도의 BIS 라이선스가 필요하며, 제품이 유사해도 마찬가지입니다." } },
+        { "@type": "Question", name: "BIS 인증 없이 제품을 판매하면 어떻게 되나요?", acceptedAnswer: { "@type": "Answer", text: "BIS 인증이 필요한 제품을 유효한 BIS 라이선스 없이 판매하는 것은 인도에서 불법이며, 벌금, 제품 리콜 또는 판매 금지로 이어질 수 있습니다." } },
+        { "@type": "Question", name: "BIS 인증을 받는 데 얼마나 걸리나요?", acceptedAnswer: { "@type": "Answer", text: "BIS 인증 절차는 일반적으로 30~90일이 걸리며, 제품 유형, 시험 요건, 신청자가 국내인지 외국인인지에 따라 다릅니다." } },
+        { "@type": "Question", name: "BIS 인증은 전 세계에서 인정되나요?", acceptedAnswer: { "@type": "Answer", text: "BIS 인증은 인도 전용이지만, 엄격한 인도 표준 준수를 보여줌으로써 글로벌 신뢰도를 높입니다. 일부 BIS 인증 제품은 상호 인정 협정에 따라 인정되기도 합니다." } },
+        { "@type": "Question", name: "BIS 라이선스는 얼마나 자주 갱신해야 하나요?", acceptedAnswer: { "@type": "Answer", text: "BIS 라이선스는 매년 또는 2년마다 갱신해야 합니다. 제조업체는 인도 표준 준수를 유지하고 감시 심사를 통과해야 BIS 인증서를 갱신할 수 있습니다." } },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "biscertification-faq-schema-ko";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("biscertification-faq-schema-ko");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BISCertificationBreadcrumb = () => {

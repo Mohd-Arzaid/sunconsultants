@@ -47,6 +47,7 @@ const BISCertificationJapanese = () => {
   return (
     <div className="relative w-full">
       <BISCertificationMetaTags />
+      <BISCertificationFAQSchemaInjector />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -92,6 +93,58 @@ const BISCertificationMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (BISCertification page - Japanese) */
+const BISCertificationFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "インドにおけるBIS認証とは？", acceptedAnswer: { "@type": "Answer", text: "BIS認証は、製品が安全、性能、品質に関するインド規格に適合することを保証するためにインド標準協会(BIS)が発行する品質保証認証です。様々な製品カテゴリで義務付けられ、消費者保護と規制遵守に役立ちます。" } },
+        { "@type": "Question", name: "BIS証明書はなぜ必要ですか？", acceptedAnswer: { "@type": "Answer", text: "BIS証明書は、インドで特定の製品を合法的に製造、輸入、流通、販売するために不可欠です。製品がインド規格の安全・品質ガイドラインを満たしていることを消費者に保証します。" } },
+        { "@type": "Question", name: "BIS認証におけるISIマークとは？", acceptedAnswer: { "@type": "Answer", text: "ISIマークはBIS認証制度で提供される認証シンボルです。製品がインド規格に適合し、適切な試験と登録を経てインドBISにより認証されたことを示します。" } },
+        { "@type": "Question", name: "インドでBISライセンスを発行するのは誰ですか？", acceptedAnswer: { "@type": "Answer", text: "BISライセンスは、消費者問題・食品・公共配給省の下にある国家標準機関であるインド標準協会(インドBIS)が発行します。" } },
+        { "@type": "Question", name: "BIS認証制度にはどのような種類がありますか？", acceptedAnswer: { "@type": "Answer", text: "主なBIS認証制度には、ISIマーク制度、強制登録制度(CRS)、外国製造業者認証制度(FMCS)、宝飾品の hallmarking、Eco Mark認証、産業機械向けScheme Xがあります。" } },
+        { "@type": "Question", name: "BIS認証におけるScheme Xとは？", acceptedAnswer: { "@type": "Answer", text: "Scheme Xは、ポンプ、変圧器、工作機械、クレーンなどの工業製品に適用される簡略化されたBIS認証プロセスです。インド規格への適合を損なうことなく迅速な承認を実現します。" } },
+        { "@type": "Question", name: "インドでBIS認証が必要な製品は？", acceptedAnswer: { "@type": "Answer", text: "電気機器、電子機器、台所用品、セメント、鋼鉄、金の宝飾品、携帯電話、変圧器などの製品は、インドBISの規定に従いBIS認証が必要です。" } },
+        { "@type": "Question", name: "BIS登録はすべての製品に義務ですか？", acceptedAnswer: { "@type": "Answer", text: "いいえ、BIS登録は強制認証制度にリストされた製品にのみ義務付けられています。ただし、製品の信頼性を高めるための自発的なBIS認証も利用できます。" } },
+        { "@type": "Question", name: "BISライセンスの有効期間は？", acceptedAnswer: { "@type": "Answer", text: "BISライセンスは通常1〜2年有効で、ISIマークの継続使用またはBIS登録ステータス維持のためには有効期限前に更新する必要があります。" } },
+        { "@type": "Question", name: "インドでBIS認証を取得する手順は？", acceptedAnswer: { "@type": "Answer", text: "BIS認証プロセスには、適用されるインド規格の特定、申請の提出、製品試験、工場検査、承認後のBIS証明書の発行が含まれます。" } },
+        { "@type": "Question", name: "外国の製造業者はBISライセンスを申請できますか？", acceptedAnswer: { "@type": "Answer", text: "はい、外国製造業者認証制度(FMCS)に基づき、外国企業はインドで製品を販売するためのBISライセンスを申請できます。認可インド代表(AIR)を指定する必要があります。" } },
+        { "@type": "Question", name: "BIS認証におけるAIRの役割は？", acceptedAnswer: { "@type": "Answer", text: "AIR(認可インド代表)は、外国製造業者とインドBISの間の連絡役を務めます。書類、通信、BIS認証要件の遵守を担当します。" } },
+        { "@type": "Question", name: "BIS登録はオンラインで申請できますか？", acceptedAnswer: { "@type": "Answer", text: "公式BISポータルからオンラインでBIS登録を申請できます。プロセスには、フォーム提出、書類・試験報告書のアップロード、手数料の支払いが含まれます。" } },
+        { "@type": "Question", name: "BIS証明書に必要な書類は？", acceptedAnswer: { "@type": "Answer", text: "必要な書類には、事業許可、製品仕様、製造プロセス、試験所報告書、工場レイアウト、品質マニュアル、授権書(外国製造業者用)が含まれます。" } },
+        { "@type": "Question", name: "インドでのBIS認証の費用は？", acceptedAnswer: { "@type": "Answer", text: "BIS認証の費用は、製品タイプ、試験要件、制度タイプ(ISI、CRS、FMCS)、申請者が国内か国外かによって異なります。申請料、試験料、検査費が含まれます。" } },
+        { "@type": "Question", name: "ISIマークはすべてのBIS認証製品に義務ですか？", acceptedAnswer: { "@type": "Answer", text: "いいえ、ISI制度の製品のみがISIマークの表示が義務付けられています。CRSまたはHallmarking制度の製品は、BIS登録規範に従い異なる表示プロトコルに従います。" } },
+        { "@type": "Question", name: "エコフレンドリー製品にBIS認証は取得できますか？", acceptedAnswer: { "@type": "Answer", text: "はい、環境基準を満たす製品は、インドの環境安全基準への適合を確保するEco Mark制度の下でBIS認証を取得できます。" } },
+        { "@type": "Question", name: "BIS認証とBIS登録の違いは？", acceptedAnswer: { "@type": "Answer", text: "BIS認証は一般的にISI、FMCS、Hallmarking制度での承認を指し、BIS登録は電子製品のCRS制度と関連付けられることが多いです。" } },
+        { "@type": "Question", name: "強制登録制度(CRS)とは？", acceptedAnswer: { "@type": "Answer", text: "CRSは、LED照明、携帯電話、モバイルバッテリーなどのIT・電子製品向けのBIS登録プログラムです。製品が安全関連のインド規格に適合することを確保します。" } },
+        { "@type": "Question", name: "ISIマークとBIS証明書は同じ意味ですか？", acceptedAnswer: { "@type": "Answer", text: "厳密には違います。ISIマークはBIS認証制度の下で認証製品に付与されるシンボルです。BIS証明書は製造業者に発行される法的文書です。" } },
+        { "@type": "Question", name: "1つのBISライセンスで複数製品をカバーできますか？", acceptedAnswer: { "@type": "Answer", text: "いいえ、製品タイプおよび製造拠点ごとに別のBISライセンスが必要で、製品が類似していても同様です。" } },
+        { "@type": "Question", name: "BIS認証なしで製品を販売するとどうなりますか？", acceptedAnswer: { "@type": "Answer", text: "BIS認証が必要な製品を有効なBISライセンスなしで販売することはインドでは違法で、罰金、製品回収、禁止につながる可能性があります。" } },
+        { "@type": "Question", name: "BIS認証の取得にはどのくらいかかりますか？", acceptedAnswer: { "@type": "Answer", text: "BIS認証プロセスは通常30〜90日かかり、製品タイプ、試験要件、申請者が国内か国外かによって異なります。" } },
+        { "@type": "Question", name: "BIS認証は世界的に受け入れられていますか？", acceptedAnswer: { "@type": "Answer", text: "BIS認証はインド固有ですが、厳格なインド規格への適合を示すことで世界的な信頼性を高めます。一部のBIS認証製品は相互認証協定の下でも受け入れられています。" } },
+        { "@type": "Question", name: "BISライセンスはどのくらいの頻度で更新が必要ですか？", acceptedAnswer: { "@type": "Answer", text: "BISライセンスは毎年または2年ごとに更新する必要があります。製造業者はインド規格の適合を維持し、監査を通過してBIS証明書を更新する必要があります。" } },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "biscertification-faq-schema-ja";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("biscertification-faq-schema-ja");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BISCertificationBreadcrumb = () => {

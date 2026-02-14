@@ -91,6 +91,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-in-house-lab-requirement",
     "/ministry-updates/bis-certification-update-asean-manufacturers",
     "/ministry-updates/bis-certification-update-is-9873-toy-safety",
+    "/ministry-updates/furniture-qco-2026",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -185,6 +186,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/foot-warmer-&-heating-mats-is-302",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
     "/blogs/isi-products/battery-operated-massage-appliances",
+    "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances",
   ];
 
   // Check if current path should show these components
@@ -908,6 +910,10 @@ const ContactFormServicesRightSideContentEng = () => {
     if (path.includes("/ministry-updates/bis-certification-update-is-9873-toy-safety"))
       return "Latest BIS Implementation Guidelines for IS 9873 (Part 1):2025 – Toy Safety Standard - Ministry Updates (English)";
 
+    // Furniture QCO Amendment Order 2026
+    if (path.includes("/ministry-updates/furniture-qco-2026"))
+      return "Furniture QCO Amendment Order 2026 - Ministry Updates (English)";
+
     // BIS CERTIFICATION FAQ PATHS
     // Q1
     if (path.includes("/check-bis-certification"))
@@ -1104,6 +1110,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Battery Operated Toothbrush - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-massage-appliances"))
       return "BIS Certificate for Massage Appliances - English Page";
+    if (path.includes("/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances"))
+      return "BIS Certificate for Shavers, Trimmers & Clippers - English Page";
   };
 
   const [formData, setFormData] = useState({

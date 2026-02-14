@@ -39,6 +39,7 @@ const ISIMarkKorean = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -86,6 +87,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - Korean) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "BIS 인증이란 무엇이며 왜 중요한가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS 인증은 인도표준청이 발급하며, 제품이 인도의 안전 및 품질 표준을 준수하도록 보장합니다. 법적 준수, 소비자 신뢰, 시장 수용에 필수적입니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 라이선스와 ISI 마크의 차이점은 무엇인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS 라이선스는 제조업체가 ISI 마크를 사용할 수 있도록 허용하는 법적 문서입니다. ISI 마크는 BIS 인증을 나타내는 제품의 가시적 라벨입니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증을 받는 데 얼마나 걸리나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "제품 유형, 시험 요건 및 심사 결과에 따라 일반적으로 6–10주가 소요됩니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 라이선스의 유효 기간은 얼마인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "보통 1~2년이며, 이후 갱신해야 합니다. 만료 최소 30일 전에 갱신을 시작해야 합니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증 비용은 얼마인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "비용은 다르지만 시험, 심사 및 라이선스 수수료를 포함해 ₹25,000~₹100,000+ 범위일 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS 인증이 모든 제품에 필수인가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "아니요. BIS 인증 스키ーム 1에 등록된 제품에만 필수입니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "제품에 맞는 IS 표준은 어떻게 찾나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS 웹사이트를 방문하거나 BIS 인정 시험소 및 컨설턴트와 상담하여 적용 표준을 확인하세요.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "외국 제조업체도 BIS 인증을 신청할 수 있나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "네. 외국 제조업체 인증 제도(FMCS)를 통해 해외 기업이 ISI 마크 사용을 위한 BIS 라이선스를 취득할 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "제품이 BIS 시험에 실패하면 어떻게 되나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "문제를 수정하고 시험을 위해 다시 제출해야 합니다. 적합성이 입증될 때까지 신청이 보류될 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "수출에 BIS 인증이 필요한가요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "수출에 항상 필수는 아니지만, BIS 인증은 신뢰도를 높이고 국제 구매자 또는 규제 기관의 요구를 충족할 수 있습니다.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-ko";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-ko");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

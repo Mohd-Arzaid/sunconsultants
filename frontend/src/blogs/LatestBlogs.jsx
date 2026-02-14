@@ -46,6 +46,7 @@ const blogs = [
       "Everything manufacturers need to know about the mandatory BIS certification for tin ingots from 17th October 2025. Learn about the application process, required documents, costs, and compliance requirements.",
     slug: "bis-certificate-for-tin-ingots",
     date: "14 September 2025",
+    image: "/blogImages/BISCertificationforTinIngots.png",
   },
   {
     id: 2,
@@ -427,6 +428,16 @@ const blogs = [
       "The Indian oral-care market has witnessed rapid growth in recent years, with Battery-Operated Toothbrushes becoming a preferred choice among consumers seeking better hygiene, convenience, and effective plaque removal. These toothbrushes are widely used in homes, hotels, hospitals, travel kits, and personal care routines, especially by children, elderly users, and people with limited hand mobility.",
     slug: "blogs/isi-products/battery-operated-tootbrush-is-302",
     date: "25 December 2025",
+  },
+  {
+    id: 45,
+    color: "#10B981", // Green
+    title: "BIS Certificate for Shavers, Trimmers & Clippers – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for battery-operated shavers, trimmers, clippers and similar appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide for manufacturers and importers.",
+    slug: "blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances",
+    date: "14 February 2026",
+    image: "/blogImages/BISLicenseforShaversTrimmers.png",
   },
 ];
 

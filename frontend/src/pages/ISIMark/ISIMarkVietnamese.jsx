@@ -40,6 +40,7 @@ const ISIMarkVietnamese = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -87,6 +88,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - Vietnamese) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Chứng nhận BIS là gì và tại sao quan trọng?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chứng nhận BIS do Cục Tiêu chuẩn Ấn Độ cấp để đảm bảo sản phẩm tuân thủ tiêu chuẩn an toàn và chất lượng Ấn Độ. Rất quan trọng cho tuân thủ pháp luật, niềm tin người tiêu dùng và chấp nhận thị trường.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sự khác biệt giữa giấy phép BIS và dấu ISI là gì?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Giấy phép BIS là văn bản pháp lý cho phép nhà sản xuất sử dụng dấu ISI. Dấu ISI là nhãn hiển thị trên sản phẩm cho biết chứng nhận BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Mất bao lâu để có chứng nhận BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Thường 6–10 tuần tùy loại sản phẩm, yêu cầu thử nghiệm và kết quả kiểm toán.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Giấy phép BIS có hiệu lực bao lâu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Thường 1 đến 2 năm, sau đó phải gia hạn. Nên bắt đầu gia hạn ít nhất 30 ngày trước khi hết hạn.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Chi phí chứng nhận BIS là bao nhiêu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chi phí thay đổi nhưng có thể từ ₹25.000 đến ₹100.000+, bao gồm phí thử nghiệm, kiểm toán và giấy phép.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Chứng nhận BIS có bắt buộc cho mọi sản phẩm không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Không. Chỉ bắt buộc cho sản phẩm nằm trong scheme 1 của chứng nhận BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Làm sao tìm đúng tiêu chuẩn IS cho sản phẩm của tôi?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Truy cập website BIS hoặc tư vấn với phòng thử nghiệm và chuyên gia được BIS công nhận để xác định tiêu chuẩn áp dụng.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Nhà sản xuất nước ngoài có thể đăng ký chứng nhận BIS không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Có. Qua Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS), đơn vị nước ngoài có thể có giấy phép BIS để sử dụng dấu ISI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Nếu sản phẩm của tôi không đạt thử nghiệm BIS thì sao?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bạn cần sửa lỗi và nộp lại để thử nghiệm. Đơn có thể bị tạm dừng cho đến khi chứng minh tuân thủ thành công.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Xuất khẩu có cần chứng nhận BIS không?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Dù không phải lúc nào cũng bắt buộc cho xuất khẩu, chứng nhận BIS tăng uy tín và có thể đáp ứng bên mua quốc tế hoặc cơ quan quản lý.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-vi";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-vi");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

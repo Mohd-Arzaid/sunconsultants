@@ -79,6 +79,11 @@ const RestrictionsLiftedforASEAN = lazy(() =>
 const LatestBISImplementationGuidelines = lazy(() =>
   import("@/pages/MinistryUpdatesPages/LatestBISImplementationGuidelines")
 );
+const FurnitureQCOAmendmentOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/FurnitureQCOAmendmentOrder/FurnitureQCOAmendmentOrder"
+  )
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -225,6 +230,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <LatestBISImplementationGuidelines />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/furniture-qco-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <FurnitureQCOAmendmentOrderEng />
           </Suspense>
         }
       />

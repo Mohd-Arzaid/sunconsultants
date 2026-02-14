@@ -25,9 +25,15 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "../ui/breadcrumb";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const PlasticWaste = () => {
+  const { pathname } = useLocation();
+  const canonicalUrl =
+    typeof window !== "undefined"
+      ? `${window.location.origin}${pathname}`
+      : "";
+
   return (
     <div className="relative">
       <Helmet>
@@ -37,6 +43,8 @@ export const PlasticWaste = () => {
         <meta name="author" content="Sun Certifications India" />
         <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 
         {/* JSON-LD Breadcrumb structured data for SEO */}
         <script type="application/ld+json">
@@ -116,13 +124,13 @@ const PWMRHero = () => {
             </span>
           </div>
 
-          <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
+          <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
               Plastic Waste
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             Certification and Compliance
-          </h1>
+          </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
             Required for plastic producers, recyclers & raw material
@@ -630,20 +638,15 @@ const OverviewSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         EPR Registration for Plastic Packaging Waste in India
-      </h3>
+      </h1>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Extended Producer Responsibility for sustainable plastic waste management.
-      </p>
-
-      {/* Nomination Content */}
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <p className="mb-4">
-          <strong>What is EPR Registration?</strong>
-        </p>
+      {/* What is EPR Registration? */}
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+        What is EPR Registration?
+      </h2>
+      <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         <p className="mb-4">
           EPR stands for Extended Producers Responsibility. Extended Producer Responsibility (EPR) is a significant environmental policy introduced under the Plastic Waste Management Rules, 2016, by the Ministry of Environment, Forest and Climate Change (MoEFCC). It aims to make manufacturers, importers, and brand owners accountable for the management of plastic waste, especially from packaging materials.
         </p>
@@ -667,9 +670,9 @@ const EligibilitySection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Why is EPR Crucial for India?
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -701,9 +704,9 @@ const ComplianceSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <div className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Who Needs EPR Registration?
-      </h3>
+      </div>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -717,16 +720,20 @@ const ComplianceSection = () => {
         </p>
         <div className="space-y-4">
           <div>
-            <strong>Producers (P):</strong> As defined in the EPR guidelines, a producer is an entity that is involved in manufacturing of plastic packaging only.
+            <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">Producers (P):</h3>
+            <p>As defined in the EPR guidelines, a producer is an entity that is involved in manufacturing of plastic packaging only.</p>
           </div>
           <div>
-            <strong>Importers (I):</strong> Importer is an entity that imports either plastic packaging or any product that is wrapped in plastic packaging.
+            <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">Importers (I):</h3>
+            <p>Importer is an entity that imports either plastic packaging or any product that is wrapped in plastic packaging.</p>
           </div>
           <div>
-            <strong>Brand Owners (BO):</strong> Brand Owner is an entity who sells any commodity wrapped in plastic packaging under any registered brand label or trademark.
+            <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">Brand Owners (BO):</h3>
+            <p>Brand Owner is an entity who sells any commodity wrapped in plastic packaging under any registered brand label or trademark.</p>
           </div>
           <div>
-            <strong>Plastic Waste Processors (PWPs):</strong> Plastic waste processor is an entity that recycles plastic waste and is engaged in safe disposal of plastic waste.
+            <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">Plastic Waste Processors (PWPs):</h3>
+            <p>Plastic waste processor is an entity that recycles plastic waste and is engaged in safe disposal of plastic waste.</p>
           </div>
         </div>
       </div>
@@ -746,9 +753,9 @@ const ProcessSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Types of Plastic Packaging Under EPR
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -794,16 +801,10 @@ const ProcessSection = () => {
 
       {/* EPR Targets Section */}
       <div className="mt-[24px]">
-        {/* Main Heading */}
-        <div className="flex w-full items-center gap-3">
-          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-            What Are EPR Targets?
-          </span>
-          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-        </div>
-
-        {/* Introduction */}
-        <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+          What Are EPR Targets?
+        </h2>
+        <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
           <p>
             EPR targets are specific goals set by CPCB to ensure that producers, importers, and Brand Owners who manufacture, import or sell plastic packaging or products wrapped in plastic packaging take responsibility for recycling or its eco-friendly disposal. It basically gives an exact amount of plastic that an entity should recycle or dispose of in a particular financial year.
           </p>
@@ -811,9 +812,9 @@ const ProcessSection = () => {
 
         {/* EPR Target for Producer and Importers */}
         <div className="mt-[24px]">
-          <h3 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-4">
+          <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
             EPR Target for Producer and Importers
-          </h3>
+          </h2>
           <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-6">
             <p>
               A producer is someone who manufactures plastic packaging and an importer is someone who imports plastic packaging or products that are wrapped in plastic packaging. EPR target is majorly dependent on Gross plastic waste generated by a producer or an importer.
@@ -868,9 +869,9 @@ const ProcessSection = () => {
 
         {/* EPR Target for Brand Owners */}
         <div className="mt-[24px]">
-          <h3 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-4">
+          <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
             EPR Target for Brand Owners
-          </h3>
+          </h2>
           <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-6">
             <p>
               A brand owner is someone who buys plastic wrap products or plastic packaging locally and sells it domestically or exports it under a registered brand name. EPR target for a brand owner is majorly dependent on the Gross Plastic Waste Generated.
@@ -905,9 +906,9 @@ const DocumentsSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         EPR Obligations Explained
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -922,9 +923,9 @@ const DocumentsSection = () => {
         
         {/* 1. End of Life Disposal */}
         <div className="mb-6">
-          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-3">
             1. End of Life Disposal
-          </h4>
+          </h3>
           <p>
             The plastic that cannot be recycled should be sent for end of life disposal. Currently the end of life of disposal of plastics can happen in the following ways: Usage in road construction, Waste to energy and Waste to oil as per relevant guidelines issued by CPCB from time to time.
           </p>
@@ -932,9 +933,9 @@ const DocumentsSection = () => {
 
         {/* 2. Minimum Level of Recycling Target */}
         <div className="mb-6">
-          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-3">
             2. Minimum Level of Recycling Target
-          </h4>
+          </h3>
           <p className="mb-4">
             This target will be applicable to importers from financial year 2024-2025. The importer shall ensure minimum level of recycling excluding end of life disposal of plastic packaging waste collected under EPR target.
           </p>
@@ -987,9 +988,9 @@ const DocumentsSection = () => {
 
         {/* 3. Obligation for use of Recycled Content */}
         <div className="mb-6">
-          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-3">
             3. Obligation for use of Recycled Content
-          </h4>
+          </h3>
           <p className="mb-4">
             This target will be applicable to importers from the financial year 2025-26. The importer shall ensure use of recycled plastic in the imported plastic packaging categorywise as shown in the table.
           </p>
@@ -1035,17 +1036,17 @@ const DocumentsSection = () => {
 
         {/* 4. Obligation to reuse */}
         <div className="mb-6">
-          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-3">
             4. Obligation to reuse which only applies to brand owners
-          </h4>
+          </h3>
         </div>
       </div>
 
       {/* Environmental Compensation */}
       <div className="mt-[24px]">
-        <h3 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-4">
+        <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
           Environmental Compensation for Non-Compliance
-        </h3>
+        </h2>
         <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
           <p className="mb-4">
             If an importer exceeds his target and recycles more than the given target then in this case the importer will get a surplus EPR certificate which he can transfer or sell it to another entity who has not met the target at the end of the financial year. Another way to meet the target is buying an EPR certificate of the value equivalent to the target from any other entity who has surplus.
@@ -1057,9 +1058,9 @@ const DocumentsSection = () => {
 
         {/* EC Refund Table */}
         <div className="mt-6">
-          <h4 className="font-geist text-lg md:text-xl font-semibold text-[#181818] mb-3">
+          <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
             Environmental Compensation Return Schedule
-          </h4>
+          </h2>
           <p className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
             Partial refunds of EC are available if targets are later fulfilled:
           </p>
@@ -1106,9 +1107,9 @@ const ConsultingSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         EPR Registration Process
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -1132,9 +1133,9 @@ const ConsultingSection = () => {
 
       {/* Fee Structure */}
       <div className="mt-[24px]">
-        <p className="font-semibold font-geist text-[20px] text-[#131316] mb-4">
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-4">
           Fee Structure
-        </p>
+        </h3>
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse border border-gray-300">
             <thead>
@@ -1165,8 +1166,11 @@ const ConsultingSection = () => {
         </div>
       </div>
 
-      {/* Required Documents */}
+      {/* Documents Required for EPR Registration */}
       <div className="mt-[24px]">
+        <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mb-4">
+          Documents Required for EPR Registration
+        </h2>
         <PointsListTwo
           points={[
             "Company PAN Card",
@@ -1184,14 +1188,14 @@ const ConsultingSection = () => {
             "Invoice details of the Imported products for the preceding two financial years",
             "Invoice details of local sales of the preceding two financial years",
           ]}
-          heading="Documents Required for EPR Registration"
+          heading=""
         />
       </div>
 
-      <div className="mt-[46px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          Submitting Annual Returns
-        </span>
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-10 mb-3">
+        Submitting Annual Returns
+      </h2>
+      <div className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         Submitting Annual Returns plays a major part in EPR Compliance and basically involves three activities: 1. Fulfilling the EPR Target: Recycling the plastic waste equivalent to the target or Buy the certificates or credit points equivalent to the target, 2. Updating Procurement and Sales Data, 3. Payment of Annual Processing Fee which is 25% of the application fees paid during EPR registration.
       </div>
     </section>
@@ -1201,12 +1205,11 @@ const ConsultingSection = () => {
 const ReviewSection = () => {
   return (
     <section>
-      {/* Conclusion Content */}
-      <div className="mb-8">
-        <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-          Conclusion
-        </h3>
-        <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      {/* Conclusion */}
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Conclusion
+      </h2>
+      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
           <p className="mb-4">
             One of the key aspects of plastic waste management in India is incorporating the Extended Producer Responsibility (EPR) System into the plastic waste management framework. EPR covers a wide range of mechanisms that integrate the 'polluter pays' principle and business liability in the management of plastic waste produced by their products. This is a key step in transitioning to a circular economy. In the CPCB EPR Portal, the CPCB has designed an EPR framework that assists in the identification of various stakeholders and offers modules for enhancing transparency, accountability, and compliance for each of the waste management stakeholders. India is still in the early phases of implementing the EPR framework; still, it has the ability to greatly improve the sustainability of India's plastic waste management in the coming years.
           </p>
@@ -1214,7 +1217,6 @@ const ReviewSection = () => {
             Sun Certifications is a pioneer in the Indian market for assisting businesses in obtaining Extended Producer Responsibility (EPR) registration and for guiding businesses in meeting the various legal requirements associated with the management of plastic waste in India. As one of the industry leaders in assisting with the management of EPR compliance, Sun Certifications aids producers, importers, and brand owners (PIBOs) in obtaining EPR registration in compliance with the Indian country's Plastic Waste Management Rules. In addition, Sun Certifications offers entities assistance with registration, compliance management, and responsible waste management to help improve the environment.
           </p>
         </div>
-      </div>
 
       <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
         What did you think of this content?

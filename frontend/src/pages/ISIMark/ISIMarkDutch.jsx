@@ -39,6 +39,7 @@ const ISIMarkDutch = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -86,6 +87,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - Dutch) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wat is BIS-certificering en waarom is het belangrijk?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS-certificering wordt afgegeven door het Bureau of Indian Standards om ervoor te zorgen dat producten voldoen aan Indiase veiligheids- en kwaliteitsnormen. Het is essentieel voor wettelijke naleving, consumentenvertrouwen en marktacceptatie.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat is het verschil tussen BIS-licentie en ISI-keurmerk?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "De BIS-licentie is een juridisch document dat een fabrikant machtigt het ISI-keurmerk te gebruiken. Het ISI-keurmerk is het zichtbare label op producten dat BIS-certificering aangeeft.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hoe lang duurt het om BIS-certificering te krijgen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Doorgaans 6–10 weken, afhankelijk van producttype, testvereisten en auditresultaten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat is de geldigheidsduur van een BIS-licentie?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Meestal 1 tot 2 jaar, waarna deze moet worden vernieuwd. Vernieuwing moet minstens 30 dagen vóór afloop worden gestart.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat zijn de kosten van BIS-certificering?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Kosten variëren maar kunnen ₹25.000 tot ₹100.000+ bedragen, inclusief test-, audit- en licentiekosten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is BIS-certificering verplicht voor alle producten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nee. Het is alleen verplicht voor producten die onder schema 1 van BIS-certificering vallen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hoe vind ik de juiste IS-norm voor mijn product?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bezoek de BIS-website of raadpleeg door BIS erkende testlaboratoria en adviseurs om de toepasselijke norm te identificeren.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kunnen buitenlandse fabrikanten BIS-certificering aanvragen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja. Via het Foreign Manufacturers Certification Scheme (FMCS) kunnen buitenlandse entiteiten BIS-licenties verkrijgen voor het gebruik van het ISI-keurmerk.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat gebeurt er als mijn product faalt voor BIS-testing?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "U moet de problemen corrigeren en opnieuw indienen voor testing. Aanvragen kunnen worden gepauzeerd totdat succesvolle naleving is aangetoond.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is BIS-certificering nodig voor export?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Hoewel niet altijd verplicht voor export, verhoogt BIS-certificering de geloofwaardigheid en kan het internationale kopers of toezichthouders tevredenstellen.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-nl";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-nl");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

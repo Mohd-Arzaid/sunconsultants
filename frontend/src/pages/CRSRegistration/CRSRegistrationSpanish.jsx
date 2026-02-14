@@ -52,6 +52,7 @@ const CRSRegistrationSpanish = () => {
     <div className="relative">
       {/* CRS Registration Meta Tags */}
       <CRSRegistrationMetaTags />
+      <FAQSchemaInjector />
       {/* CRS Registration Breadcrumb */}
       <CRSRegistrationBreadcrumb />
       {/* CRS Registration Hero Section */}
@@ -138,6 +139,153 @@ const CRSRegistrationMetaTags = () => {
       </script>
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Spanish) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "¿Qué es el registro BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "La certificación BIS es un proceso de conformidad regido por la Oficina de Normas de la India, que verifica que un producto cumple las Normas Indias (IS) aplicables en calidad, seguridad y fiabilidad.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué es el registro CRS bajo BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRS significa Esquema de Registro Obligatorio. Es un proceso de registro obligatorio para categorías de productos específicas como electrónica, productos eléctricos, baterías y artículos solares. Los productos bajo CRS deben ser probados y registrados en BIS antes de venderse en India.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Es obligatoria la certificación BIS en India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. Para todos los productos incluidos en la lista de productos CRS (actualmente más de 80 artículos), el registro BIS es obligatorio para fabricar, importar o vender en India.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuál es la diferencia entre BIS CRS y la marca ISI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS: Para electrónica y productos IT, solo para productos obligatorios notificados bajo QCO. Marca ISI: Se utiliza para una gama más amplia de productos, puede ser voluntaria u obligatoria según la categoría del producto.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Quién puede solicitar el registro BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Solo los fabricantes pueden solicitar. Esto incluye fabricantes indios y extranjeros. Las marcas extranjeras deben designar un Representante Indio Autorizado (AIR).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuál es el papel de un AIR?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Un Representante Indio Autorizado (AIR) es legalmente responsable de presentar la solicitud BIS en nombre de un fabricante extranjero. Actúa como enlace oficial entre BIS y el solicitante en el extranjero.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuánto tarda el registro BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "El proceso suele tardar 3-4 semanas, siempre que todos los documentos e informes de prueba se presenten correctamente y BIS no plantee objeciones.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuánto cuesta el certificado BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Los costes incluyen: Gastos de prueba: ₹10.000–₹20.000 + GST. Tasa gubernamental: ₹53.000 + GST por informe de prueba. Gastos adicionales: Declaración jurada, mensajería, documentación AIR, etc. Descuento para fabricantes indios registrados en MSME.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuál es la validez de los certificados BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "La licencia BIS inicial es válida por 2 años. Puede renovarse hasta 5 años si los detalles del producto y de fabricación permanecen sin cambios.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Se puede obtener la certificación BIS voluntariamente?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Bajo CRS no puede solicitar voluntariamente productos no incluidos en los QCO. La certificación voluntaria solo aplica a productos no CRS a través del esquema ISI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Dónde puedo encontrar la lista de productos BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Puede visitar el sitio web oficial de BIS https://www.crsbis.in/BIS/publicdashAction.do y navegar a la sección \"Productos bajo CRS\" para ver la lista completa de productos cubiertos.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Se puede mostrar la marca BIS electrónicamente?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí, mediante el etiquetado electrónico, pero debe cumplir estrictas normas BIS: la información de la etiqueta debe estar integrada en el firmware. Acceso fácil en 4 pasos en el menú del dispositivo. El embalaje físico debe seguir llevando la información regulatoria.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué pasa si no obtengo el registro BIS para un producto obligatorio?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sanciones graves, como: incautación del producto, rechazos aduaneros, multas legales, exclusión de portales de comercio electrónico, prohibición permanente del mercado indio.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Un certificado BIS puede cubrir varios modelos o marcas?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Cada marca y cada ubicación de fábrica debe certificarse por separado. Se pueden añadir varios modelos con informes adicionales, pero solo bajo la misma solicitud y marca.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cómo puede Sun Certifications India ayudarme?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ofrecemos: Soporte completo de documentación, Coordinación de laboratorio, Gestión de solicitudes en el portal BIS, Resolución de consultas y seguimiento BIS, Orientación sobre renovación y etiquetado, Garantía de cumplimiento para marcas extranjeras mediante servicios AIR.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-es";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-es");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const CRSRegistrationBreadcrumb = () => {

@@ -39,6 +39,7 @@ const ISIMarkThai = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -86,6 +87,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - Thai) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "การรับรอง BIS คืออะไรและทำไมจึงสำคัญ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "การรับรอง BIS ออกโดยสำนักงานมาตรฐานอินเดียเพื่อให้มั่นใจว่าผลิตภัณฑ์เป็นไปตามมาตรฐานความปลอดภัยและคุณภาพของอินเดีย สำคัญสำหรับการปฏิบัติตามกฎหมาย ความไว้วางใจของผู้บริโภค และการยอมรับในตลาด",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ความแตกต่างระหว่างใบอนุญาต BIS กับเครื่องหมาย ISI คืออะไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ใบอนุญาต BIS เป็นเอกสารทางกฎหมายที่อนุญาตให้ผู้ผลิตใช้เครื่องหมาย ISI เครื่องหมาย ISI คือฉลากที่มองเห็นได้บนผลิตภัณฑ์ที่แสดงการรับรอง BIS",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ใช้เวลานานแค่ไหนในการรับการรับรอง BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "โดยทั่วไป 6–10 สัปดาห์ ขึ้นอยู่กับประเภทผลิตภัณฑ์ ข้อกำหนดการทดสอบ และผลการตรวจสอบ",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ใบอนุญาต BIS มีอายุเท่าไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "โดยปกติ 1 ถึง 2 ปี หลังจากนั้นต้องต่ออายุ ควรเริ่มต่ออายุอย่างน้อย 30 วันก่อนหมดอายุ",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ค่าใช้จ่ายการรับรอง BIS เป็นอย่างไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ค่าใช้จ่ายแตกต่างกัน แต่สามารถอยู่ที่ ₹25,000 ถึง ₹100,000+ รวมค่าทดสอบ การตรวจสอบ และค่าธรรมเนียมใบอนุญาต",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "การรับรอง BIS บังคับสำหรับทุกผลิตภัณฑ์หรือไม่?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ไม่ บังคับเฉพาะผลิตภัณฑ์ที่อยู่ในโครงการ 1 ของการรับรอง BIS เท่านั้น",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "จะหามาตรฐาน IS ที่เหมาะสมสำหรับผลิตภัณฑ์ของฉันได้อย่างไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "เยี่ยมชมเว็บไซต์ BIS หรือปรึกษาห้องปฏิบัติการทดสอบและที่ปรึกษาที่รับรองโดย BIS เพื่อระบุมาตรฐานที่ใช้บังคับ",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ผู้ผลิตต่างประเทศสามารถสมัครรับรอง BIS ได้หรือไม่?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ได้ ผ่านโครงการรับรองผู้ผลิตต่างประเทศ (FMCS) หน่วยงานต่างประเทศสามารถรับใบอนุญาต BIS สำหรับการใช้เครื่องหมาย ISI",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "จะเกิดอะไรขึ้นหากผลิตภัณฑ์ของฉันไม่ผ่านการทดสอบ BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "คุณต้องแก้ไขปัญหาและส่งใหม่เพื่อการทดสอบ แอปพลิเคชันอาจถูกระงับจนกว่าจะแสดงการปฏิบัติตามที่สำเร็จ",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "การรับรอง BIS จำเป็นสำหรับการส่งออกหรือไม่?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "แม้ว่าจะไม่บังคับเสมอไปสำหรับการส่งออก แต่การรับรอง BIS เพิ่มความน่าเชื่อถือและสามารถตอบสนองผู้ซื้อระหว่างประเทศหรือหน่วยงานกำกับดูแล",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-th";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-th");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

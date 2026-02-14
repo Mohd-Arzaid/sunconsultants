@@ -40,6 +40,7 @@ const ISIMarkArabic = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -86,6 +87,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - Arabic) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "ما هي شهادة BIS ولماذا هي مهمة؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "شهادة BIS تصدرها مكتب المعايير الهندية لضمان امتثال المنتجات لمعايير السلامة والجودة الهندية. وهي حيوية للامتثال القانوني وثقة المستهلك وقبول السوق.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما الفرق بين ترخيص BIS وعلامة ISI؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ترخيص BIS هو وثيقة قانونية تسمح للمصنع باستخدام علامة ISI. علامة ISI هي الملصق الظاهر على المنتجات الذي يشير إلى شهادة BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "كم يستغرق الحصول على شهادة BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "عادةً 6–10 أسابيع حسب نوع المنتج ومتطلبات الاختبار ونتائج التدقيق.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما فترة صلاحية ترخيص BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "عادة من سنة إلى سنتين، وبعدها يجب تجديده. يُنصح ببدء التجديد قبل 30 يوماً على الأقل من انتهاء الصلاحية.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ما تكلفة شهادة BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "تختلف التكاليف ولكنها قد تتراوح من ₹25,000 إلى ₹100,000+، بما في ذلك رسوم الاختبار والتدقيق والترخيص.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل شهادة BIS إلزامية لجميع المنتجات؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "لا. إنها إلزامية فقط للمنتجات المدرجة ضمن المخطط 1 من شهادة BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "كيف أجد المعيار IS المناسب لمنتجي؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "قم بزيارة موقع BIS أو استشر مختبرات الاختبار والاستشاريين المعتمدين من BIS لتحديد المعيار المعمول به.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل يمكن للمصنعين الأجانب التقدم لشهادة BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "نعم. من خلال مخطط شهادة المصنعين الأجانب (FMCS)، يمكن للكيانات الخارجية الحصول على تراخيص BIS لاستخدام علامة ISI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ماذا يحدث إذا فشل منتجي في اختبار BIS؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ستحتاج إلى تصحيح المشكلات وإعادة التقديم للاختبار. قد يتم إيقاف الطلبات حتى يثبت الامتثال بنجاح.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "هل شهادة BIS مطلوبة للتصدير؟",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "على الرغم من أنها ليست دائماً إلزامية للتصدير، فإن شهادة BIS تعزز المصداقية ويمكن أن تلبي المشترين الدوليين أو الهيئات التنظيمية.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-ar";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-ar");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

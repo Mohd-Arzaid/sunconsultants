@@ -47,6 +47,7 @@ const BISCertificationIndonesian = () => {
   return (
     <div className="relative w-full">
       <BISCertificationMetaTags />
+      <BISCertificationFAQSchemaInjector />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -91,6 +92,58 @@ const BISCertificationMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (BISCertification page - Indonesian) */
+const BISCertificationFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "Apa itu sertifikasi BIS di India?", acceptedAnswer: { "@type": "Answer", text: "Sertifikasi BIS adalah sertifikasi jaminan kualitas yang dikeluarkan oleh Bureau of Indian Standards (BIS) untuk memastikan produk mematuhi standar India untuk keamanan, kinerja, dan kualitas. Wajib untuk berbagai kategori produk dan membantu perlindungan konsumen serta kepatuhan regulasi." } },
+        { "@type": "Question", name: "Mengapa saya perlu sertifikat BIS?", acceptedAnswer: { "@type": "Answer", text: "Sertifikat BIS penting untuk secara legal memproduksi, mengimpor, mendistribusikan, atau menjual produk tertentu di India. Ini meyakinkan konsumen bahwa produk memenuhi pedoman keamanan dan kualitas standar India." } },
+        { "@type": "Question", name: "Apa itu tanda ISI di bawah sertifikasi BIS?", acceptedAnswer: { "@type": "Answer", text: "Tanda ISI adalah simbol sertifikasi yang diberikan di bawah skema sertifikasi BIS. Ini menunjukkan bahwa produk mematuhi standar India dan telah disertifikasi oleh BIS India melalui pengujian dan pendaftaran yang tepat." } },
+        { "@type": "Question", name: "Siapa yang mengeluarkan lisensi BIS di India?", acceptedAnswer: { "@type": "Answer", text: "Lisensi BIS dikeluarkan oleh Bureau of Indian Standards (BIS India), badan standar nasional di bawah Kementerian Urusan Konsumen, Pangan dan Distribusi Publik." } },
+        { "@type": "Question", name: "Apa saja jenis skema sertifikasi BIS?", acceptedAnswer: { "@type": "Answer", text: "Skema sertifikasi BIS utama meliputi skema tanda ISI, Compulsory Registration Scheme (CRS), Foreign Manufacturers Certification Scheme (FMCS), Hallmarking untuk perhiasan, sertifikasi Eco Mark, dan Scheme X untuk mesin industri." } },
+        { "@type": "Question", name: "Apa itu Scheme X di bawah sertifikasi BIS?", acceptedAnswer: { "@type": "Answer", text: "Scheme X adalah proses sertifikasi BIS yang disederhanakan untuk produk industri seperti pompa, transformator, mesin perkakas, dan derek. Ini memastikan persetujuan lebih cepat tanpa mengorbankan kepatuhan terhadap standar India." } },
+        { "@type": "Question", name: "Produk mana yang memerlukan sertifikasi BIS di India?", acceptedAnswer: { "@type": "Answer", text: "Produk seperti peralatan listrik, elektronik, peralatan dapur, semen, baja, perhiasan emas, ponsel, dan transformator memerlukan sertifikasi BIS sesuai mandat BIS India." } },
+        { "@type": "Question", name: "Apakah pendaftaran BIS wajib untuk semua produk?", acceptedAnswer: { "@type": "Answer", text: "Tidak, pendaftaran BIS wajib hanya untuk produk yang tercantum dalam skema sertifikasi wajib. Namun, sertifikasi BIS sukarela juga tersedia untuk meningkatkan kredibilitas produk." } },
+        { "@type": "Question", name: "Berapa lama lisensi BIS berlaku?", acceptedAnswer: { "@type": "Answer", text: "Lisensi BIS biasanya berlaku satu hingga dua tahun dan harus diperpanjang sebelum kedaluwarsa untuk terus menggunakan tanda ISI atau mempertahankan status pendaftaran BIS." } },
+        { "@type": "Question", name: "Apa langkah-langkah mendapatkan sertifikasi BIS di India?", acceptedAnswer: { "@type": "Answer", text: "Proses sertifikasi BIS meliputi mengidentifikasi standar India yang berlaku, mengajukan aplikasi, pengujian produk, inspeksi pabrik, dan penerbitan sertifikat BIS setelah persetujuan." } },
+        { "@type": "Question", name: "Bisakah pabrikan asing mengajukan lisensi BIS?", acceptedAnswer: { "@type": "Answer", text: "Ya, di bawah Foreign Manufacturers Certification Scheme (FMCS), perusahaan asing dapat mengajukan lisensi BIS untuk menjual produk di India. Mereka harus menunjuk Authorized Indian Representative (AIR)." } },
+        { "@type": "Question", name: "Apa peran AIR dalam sertifikasi BIS?", acceptedAnswer: { "@type": "Answer", text: "AIR (Authorized Indian Representative) bertindak sebagai penghubung antara pabrikan asing dan BIS India. Mereka bertanggung jawab atas dokumentasi, komunikasi, dan kepatuhan terhadap persyaratan sertifikasi BIS." } },
+        { "@type": "Question", name: "Bagaimana cara mendaftar BIS secara online?", acceptedAnswer: { "@type": "Answer", text: "Anda dapat mendaftar BIS secara online melalui portal resmi BIS. Prosesnya meliputi pengajuan formulir, unggah dokumen, laporan uji, dan pembayaran biaya." } },
+        { "@type": "Question", name: "Dokumen apa yang diperlukan untuk sertifikat BIS?", acceptedAnswer: { "@type": "Answer", text: "Dokumen yang dibutuhkan meliputi lisensi bisnis, spesifikasi produk, proses manufaktur, laporan uji lab, tata letak pabrik, manual kualitas, dan formulir otorisasi (untuk pabrikan asing)." } },
+        { "@type": "Question", name: "Berapa biaya sertifikasi BIS di India?", acceptedAnswer: { "@type": "Answer", text: "Biaya sertifikasi BIS tergantung pada jenis produk, persyaratan pengujian, jenis skema (ISI, CRS, FMCS), dan apakah pemohon domestik atau asing. Biaya meliputi biaya aplikasi, biaya pengujian, dan biaya inspeksi." } },
+        { "@type": "Question", name: "Apakah tanda ISI wajib untuk semua produk bersertifikat BIS?", acceptedAnswer: { "@type": "Answer", text: "Tidak, hanya produk di bawah skema ISI yang diwajibkan membawa tanda ISI. Produk di bawah skema CRS atau Hallmarking mengikuti protokol pelabelan berbeda sesuai norma pendaftaran BIS." } },
+        { "@type": "Question", name: "Bisakah saya mendapat sertifikasi BIS untuk produk ramah lingkungan?", acceptedAnswer: { "@type": "Answer", text: "Ya, produk yang memenuhi standar lingkungan dapat memperoleh sertifikasi BIS di bawah skema Eco Mark, yang memastikan kepatuhan terhadap standar India untuk keamanan lingkungan." } },
+        { "@type": "Question", name: "Apa perbedaan antara sertifikasi BIS dan pendaftaran BIS?", acceptedAnswer: { "@type": "Answer", text: "Sertifikasi BIS umumnya mengacu pada persetujuan di bawah skema ISI, FMCS, atau Hallmarking, sementara pendaftaran BIS umumnya dikaitkan dengan skema CRS untuk produk elektronik." } },
+        { "@type": "Question", name: "Apa itu Compulsory Registration Scheme (CRS)?", acceptedAnswer: { "@type": "Answer", text: "CRS adalah program pendaftaran BIS untuk barang IT dan elektronik seperti lampu LED, ponsel, dan power bank. Ini memastikan kepatuhan produk terhadap standar India terkait keamanan." } },
+        { "@type": "Question", name: "Apakah tanda ISI dan sertifikat BIS berarti sama?", acceptedAnswer: { "@type": "Answer", text: "Tidak persis. Tanda ISI adalah simbol yang diberikan kepada produk bersertifikat di bawah skema sertifikasi BIS. Sertifikat BIS adalah dokumen hukum yang dikeluarkan untuk pabrikan." } },
+        { "@type": "Question", name: "Bisakah satu lisensi BIS mencakup banyak produk?", acceptedAnswer: { "@type": "Answer", text: "Tidak, lisensi BIS terpisah diperlukan untuk setiap jenis produk dan setiap lokasi manufaktur, bahkan jika produknya mirip." } },
+        { "@type": "Question", name: "Apa yang terjadi jika saya menjual produk tanpa sertifikasi BIS?", acceptedAnswer: { "@type": "Answer", text: "Menjual produk yang memerlukan sertifikasi BIS tanpa lisensi BIS yang valid adalah ilegal di India dan dapat mengakibatkan denda, penarikan produk, atau larangan." } },
+        { "@type": "Question", name: "Berapa lama untuk mendapatkan sertifikasi BIS?", acceptedAnswer: { "@type": "Answer", text: "Proses sertifikasi BIS umumnya memakan waktu 30 hingga 90 hari, tergantung jenis produk, persyaratan pengujian, dan apakah pemohon domestik atau asing." } },
+        { "@type": "Question", name: "Apakah sertifikasi BIS diterima secara global?", acceptedAnswer: { "@type": "Answer", text: "Meskipun sertifikasi BIS spesifik untuk India, ini meningkatkan kredibilitas global dengan menunjukkan kepatuhan terhadap standar India yang ketat. Beberapa produk bersertifikat BIS juga diterima di bawah perjanjian pengakuan bersama." } },
+        { "@type": "Question", name: "Seberapa sering saya harus memperpanjang lisensi BIS?", acceptedAnswer: { "@type": "Answer", text: "Lisensi BIS harus diperpanjang setiap tahun atau dua tahun. Pabrikan harus mempertahankan kepatuhan terhadap standar India dan lulus audit pengawasan untuk memperpanjang sertifikat BIS mereka." } },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "biscertification-faq-schema-id";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("biscertification-faq-schema-id");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BISCertificationBreadcrumb = () => {

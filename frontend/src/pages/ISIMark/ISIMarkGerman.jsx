@@ -39,6 +39,7 @@ const ISIMarkGerman = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -86,6 +87,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - German) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Was ist die BIS-Zertifizierung und warum ist sie wichtig?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die BIS-Zertifizierung wird vom Bureau of Indian Standards ausgestellt, um sicherzustellen, dass Produkte indische Sicherheits- und Qualitätsnormen erfüllen. Sie ist wichtig für gesetzliche Konformität, Verbrauchervertrauen und Marktakzeptanz.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was ist der Unterschied zwischen BIS-Lizenz und ISI-Zeichen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die BIS-Lizenz ist ein Rechtsdokument, das einen Hersteller zur Nutzung des ISI-Zeichens berechtigt. Das ISI-Zeichen ist das sichtbare Etikett auf Produkten, das die BIS-Zertifizierung anzeigt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie lange dauert es, die BIS-Zertifizierung zu erhalten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In der Regel 6–10 Wochen, abhängig von Produkttyp, Prüfanforderungen und Audit-Ergebnissen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie lange ist eine BIS-Lizenz gültig?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Üblicherweise 1 bis 2 Jahre, danach muss sie erneuert werden. Die Verlängerung sollte mindestens 30 Tage vor Ablauf beantragt werden.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was kostet die BIS-Zertifizierung?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Kosten variieren, können aber ₹25.000 bis ₹100.000+ betragen, einschließlich Prüf-, Audit- und Lizenzgebühren.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist die BIS-Zertifizierung für alle Produkte Pflicht?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nein. Sie ist nur für Produkte verpflichtend, die unter Schema 1 der BIS-Zertifizierung fallen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie finde ich die richtige IS-Norm für mein Produkt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Besuchen Sie die BIS-Website oder konsultieren Sie von BIS anerkannte Prüflabore und Berater, um die anwendbare Norm zu ermitteln.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Können ausländische Hersteller die BIS-Zertifizierung beantragen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja. Über das Foreign Manufacturers Certification Scheme (FMCS) können ausländische Unternehmen BIS-Lizenzen für die Nutzung des ISI-Zeichens erhalten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was passiert, wenn mein Produkt die BIS-Prüfung nicht besteht?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sie müssen die Mängel beheben und erneut zur Prüfung einreichen. Anträge können ausgesetzt werden, bis die Konformität nachgewiesen ist.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist die BIS-Zertifizierung für den Export erforderlich?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Obwohl für den Export nicht immer verpflichtend, erhöht die BIS-Zertifizierung die Glaubwürdigkeit und kann internationale Käufer oder Aufsichtsbehörden zufriedenstellen.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-de";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-de");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

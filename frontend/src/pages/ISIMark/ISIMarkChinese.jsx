@@ -39,6 +39,7 @@ const ISIMarkChinese = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -87,6 +88,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - Chinese) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "什么是BIS认证？为什么重要？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS认证由印度标准局颁发，确保产品符合印度安全和质量标准。对法律合规、消费者信任和市场认可至关重要。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS许可证与ISI标志有什么区别？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS许可证是授权制造商使用ISI标志的法律文件。ISI标志是产品上表示BIS认证的可见标签。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "获得BIS认证需要多长时间？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "通常需要6–10周，具体取决于产品类型、测试要求和审核结果。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS许可证的有效期是多久？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "通常为1至2年，之后必须续期。应在到期前至少30天启动续期。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS认证费用是多少？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "费用因情况而异，约₹25,000至₹100,000+，包括测试、审核和许可证费用。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS认证对所有产品都是强制性的吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "不是。仅对列入BIS认证方案1的产品是强制性的。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "如何找到适合我产品的IS标准？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "访问BIS网站或咨询BIS认可的检测实验室和顾问以确定适用标准。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "外国制造商可以申请BIS认证吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "可以。通过外国制造商认证计划(FMCS)，海外实体可获得BIS许可证以使用ISI标志。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "如果我的产品未通过BIS测试会怎样？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "您需要纠正问题并重新提交测试。在证明符合要求之前，申请可能会暂停。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "出口需要BIS认证吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "出口虽不总是强制要求BIS认证，但BIS认证可提升信誉并满足国际买家或监管机构的要求。",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-zh";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-zh");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

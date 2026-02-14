@@ -47,6 +47,7 @@ const BISCertificationArabic = () => {
   return (
     <div className="relative w-full">
       <BISCertificationMetaTags />
+      <BISCertificationFAQSchemaInjector />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -91,6 +92,58 @@ const BISCertificationMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (BISCertification page - Arabic) */
+const BISCertificationFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "ما هي شهادة BIS في الهند؟", acceptedAnswer: { "@type": "Answer", text: "شهادة BIS هي شهادة ضمان جودة تصدرها مكتب المعايير الهندية (BIS) لضمان امتثال المنتجات للمعايير الهندية في السلامة والأداء والجودة. وهي إلزامية لفئات منتجات متعددة وتساعد في حماية المستهلك والامتثال التنظيمي." } },
+        { "@type": "Question", name: "لماذا أحتاج إلى شهادة BIS؟", acceptedAnswer: { "@type": "Answer", text: "شهادة BIS ضرورية لتصنيع أو استيراد أو توزيع أو بيع منتجات معينة بشكل قانوني في الهند. وهي تطمئن المستهلكين بأن المنتج يلبي إرشادات السلامة والجودة للمعايير الهندية." } },
+        { "@type": "Question", name: "ما هي علامة ISI بموجب شهادة BIS؟", acceptedAnswer: { "@type": "Answer", text: "علامة ISI هي رمز شهادة توفره مخطط شهادة BIS. تشير إلى أن المنتج يتوافق مع المعايير الهندية وتم اعتماده من قبل BIS الهندي من خلال الاختبار والتسجيل المناسبين." } },
+        { "@type": "Question", name: "من يصدر تراخيص BIS في الهند؟", acceptedAnswer: { "@type": "Answer", text: "تراخيص BIS تصدرها مكتب المعايير الهندية (BIS الهندي)، الهيئة الوطنية للمعايير التابعة لوزارة شؤون المستهلك والأغذية والتوزيع العام." } },
+        { "@type": "Question", name: "ما هي أنواع مخططات شهادة BIS المختلفة؟", acceptedAnswer: { "@type": "Answer", text: "تشمل مخططات شهادة BIS الرئيسية مخطط علامة ISI، ومخطط التسجيل الإلزامي (CRS)، ومخطط شهادة المصنعين الأجانب (FMCS)، ووضع العلامات للمجوهرات، وشهادة Eco Mark، وما هو Scheme X للآلات الصناعية." } },
+        { "@type": "Question", name: "ما هو Scheme X بموجب شهادة BIS؟", acceptedAnswer: { "@type": "Answer", text: "Scheme X هو عملية شهادة BIS مبسطة تنطبق على المنتجات الصناعية مثل المضخات والمحولات وآلات الأدوات والرافعات. يضمن الموافقة الأسرع دون المساس بالامتثال للمعايير الهندية." } },
+        { "@type": "Question", name: "أي المنتجات تتطلب شهادة BIS في الهند؟", acceptedAnswer: { "@type": "Answer", text: "منتجات مثل الأجهزة الكهربائية والإلكترونيات وأدوات المطبخ والأسمنت والصلب ومجوهرات الذهب والهواتف المحمولة والمحولات تتطلب شهادة BIS وفقاً لتفويض BIS الهندي." } },
+        { "@type": "Question", name: "هل تسجيل BIS إلزامي لجميع المنتجات؟", acceptedAnswer: { "@type": "Answer", text: "لا، تسجيل BIS إلزامي فقط للمنتجات المدرجة في مخطط الشهادة الإلزامية. ومع ذلك، تتوفر أيضاً شهادة BIS الطوعية لتعزيز مصداقية المنتج." } },
+        { "@type": "Question", name: "ما مدة صلاحية ترخيص BIS؟", acceptedAnswer: { "@type": "Answer", text: "ترخيص BIS صالح عادةً لمدة سنة إلى سنتين ويجب تجديده قبل انتهاء صلاحيته لمواصلة استخدام علامة ISI أو الحفاظ على حالة تسجيل BIS." } },
+        { "@type": "Question", name: "ما خطوات الحصول على شهادة BIS في الهند؟", acceptedAnswer: { "@type": "Answer", text: "تتضمن عملية شهادة BIS تحديد المعايير الهندية المعمول بها، وتقديم الطلب، واختبار المنتج، وفحص المصنع، وإصدار شهادة BIS عند الموافقة." } },
+        { "@type": "Question", name: "هل يمكن للمصنعين الأجانب التقدم للحصول على ترخيص BIS؟", acceptedAnswer: { "@type": "Answer", text: "نعم، بموجب مخطط شهادة المصنعين الأجانب (FMCS)، يمكن للشركات الأجنبية التقدم للحصول على ترخيص BIS لبيع المنتجات في الهند. يجب عليهم تعيين ممثل هندي معتمد (AIR)." } },
+        { "@type": "Question", name: "ما دور AIR في شهادة BIS؟", acceptedAnswer: { "@type": "Answer", text: "يعمل AIR (الممثل الهندي المعتمد) كحلقة وصل بين المصنع الأجنبي وBIS الهندي. وهو مسؤول عن الوثائق والتواصل والامتثال لمتطلبات شهادة BIS." } },
+        { "@type": "Question", name: "كيف أتقدم لتسجيل BIS عبر الإنترنت؟", acceptedAnswer: { "@type": "Answer", text: "يمكنك التقدم لتسجيل BIS عبر الإنترنت من خلال البوابة الرسمية لـ BIS. تتضمن العملية تقديم النموذج وتحميل المستندات وتقارير الاختبار ودفع الرسوم." } },
+        { "@type": "Question", name: "ما المستندات المطلوبة لشهادة BIS؟", acceptedAnswer: { "@type": "Answer", text: "تشمل المستندات المطلوبة ترخيص الأعمال ومواصفات المنتج وعملية التصنيع وتقارير اختبار المختبر وتخطيط المصنع ودليل الجودة ونماذج التفويض (للمصنعين الأجانب)." } },
+        { "@type": "Question", name: "كم تبلغ تكلفة شهادة BIS في الهند؟", acceptedAnswer: { "@type": "Answer", text: "تعتمد تكلفة شهادة BIS على نوع المنتج ومتطلبات الاختبار ونوع المخطط (ISI، CRS، FMCS)، وما إذا كان مقدم الطلب محلياً أو أجنبياً. تشمل التكاليف رسوم الطلب ورسوم الاختبار ومصاريف التفتيش." } },
+        { "@type": "Question", name: "هل علامة ISI إلزامية لجميع المنتجات المعتمدة من BIS؟", acceptedAnswer: { "@type": "Answer", text: "لا، يُطلب فقط من المنتجات الخاضعة لمخطط ISI حمل علامة ISI. تتبع المنتجات الخاضعة لمخططات CRS أو Hallmarking بروتوكولات وضع علامات مختلفة وفقاً لقواعد تسجيل BIS." } },
+        { "@type": "Question", name: "هل يمكنني الحصول على شهادة BIS للمنتجات الصديقة للبيئة؟", acceptedAnswer: { "@type": "Answer", text: "نعم، يمكن للمنتجات التي تلبي المعايير البيئية الحصول على شهادة BIS بموجب مخطط Eco Mark، الذي يضمن الامتثال للمعايير الهندية للسلامة البيئية." } },
+        { "@type": "Question", name: "ما الفرق بين شهادة BIS وتسجيل BIS؟", acceptedAnswer: { "@type": "Answer", text: "تشير شهادة BIS بشكل عام إلى الموافقة بموجب مخططات ISI أو FMCS أو Hallmarking، بينما يرتبط تسجيل BIS عادةً بمخطط CRS للمنتجات الإلكترونية." } },
+        { "@type": "Question", name: "ما هو مخطط التسجيل الإلزامي (CRS)؟", acceptedAnswer: { "@type": "Answer", text: "CRS هو برنامج تسجيل BIS للسلع الإلكترونية وتقنية المعلومات مثل مصابيح LED والهواتف المحمولة والبطاريات المحمولة. يضمن امتثال المنتج للمعايير الهندية المتعلقة بالسلامة." } },
+        { "@type": "Question", name: "هل تعني علامة ISI وشهادة BIS نفس الشيء؟", acceptedAnswer: { "@type": "Answer", text: "ليس بالضبط. علامة ISI هي الرمز الممنوح للمنتجات المعتمدة بموجب مخطط شهادة BIS. شهادة BIS هي الوثيقة القانونية الصادرة للمصنع." } },
+        { "@type": "Question", name: "هل يمكن لترخيص BIS واحد تغطية منتجات متعددة؟", acceptedAnswer: { "@type": "Answer", text: "لا، مطلوب ترخيص BIS منفصل لكل نوع منتج وكل موقع تصنيع، حتى لو كانت المنتجات متشابهة." } },
+        { "@type": "Question", name: "ماذا يحدث إذا بعت منتجات بدون شهادة BIS؟", acceptedAnswer: { "@type": "Answer", text: "بيع المنتجات التي تتطلب شهادة BIS بدون ترخيص BIS ساري هو غير قانوني في الهند ويمكن أن يؤدي إلى غرامات أو استدعاء المنتجات أو حظر." } },
+        { "@type": "Question", name: "كم يستغرق الحصول على شهادة BIS؟", acceptedAnswer: { "@type": "Answer", text: "تستغرق عملية شهادة BIS بشكل عام من 30 إلى 90 يوماً، حسب نوع المنتج ومتطلبات الاختبار وما إذا كان مقدم الطلب محلياً أو أجنبياً." } },
+        { "@type": "Question", name: "هل شهادة BIS مقبولة عالمياً؟", acceptedAnswer: { "@type": "Answer", text: "بينما شهادة BIS خاصة بالهند، فإنها تعزز المصداقية العالمية من خلال إظهار الامتثال للمعايير الهندية الصارمة. يتم قبول بعض المنتجات المعتمدة من BIS أيضاً بموجب اتفاقيات الاعتراف المتبادل." } },
+        { "@type": "Question", name: "كم مرة أحتاج لتجديد ترخيص BIS؟", acceptedAnswer: { "@type": "Answer", text: "يجب تجديد تراخيص BIS سنوياً أو كل سنتين. يجب على المصنعين الحفاظ على الامتثال للمعايير الهندية واجتياز عمليات التدقيق الرقابية لتجديد شهادة BIS." } },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "biscertification-faq-schema-ar";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("biscertification-faq-schema-ar");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BISCertificationBreadcrumb = () => {

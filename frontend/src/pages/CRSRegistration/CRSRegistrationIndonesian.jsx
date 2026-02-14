@@ -52,6 +52,7 @@ const CRSRegistrationIndonesian = () => {
     <div className="relative">
       {/* CRS Registration Meta Tags */}
       <CRSRegistrationMetaTags />
+      <FAQSchemaInjector />
       {/* CRS Registration Breadcrumb */}
       <CRSRegistrationBreadcrumb />
       {/* CRS Registration Hero Section */}
@@ -138,6 +139,153 @@ const CRSRegistrationMetaTags = () => {
       </script>
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Indonesian) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Apa itu pendaftaran BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sertifikasi BIS adalah proses kepatuhan yang diatur oleh Bureau of Indian Standards, yang memverifikasi bahwa suatu produk memenuhi Standar India (IS) yang berlaku untuk kualitas, keamanan, dan keandalan.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apa itu pendaftaran CRS di bawah BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRS adalah Skema Registrasi Wajib. Ini adalah proses pendaftaran wajib untuk kategori produk tertentu seperti elektronik, listrik, baterai, dan barang surya. Produk di bawah CRS harus diuji dan didaftarkan ke BIS sebelum dapat dijual di India.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apakah sertifikasi BIS wajib di India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ya. Untuk semua produk yang tercantum dalam daftar produk CRS (saat ini 80+ item), pendaftaran BIS wajib untuk manufaktur, impor, atau penjualan di India.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apa perbedaan antara BIS CRS dan tanda ISI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS: Untuk barang elektronik dan IT, hanya untuk produk wajib yang diumumkan di bawah QCO. Tanda ISI: Digunakan untuk berbagai produk yang lebih luas, dapat bersifat sukarela atau wajib tergantung kategori produk.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Siapa yang dapat mendaftar untuk pendaftaran BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Hanya pabrikan yang dapat mendaftar. Ini mencakup pabrikan India dan asing. Merek asing harus menunjuk Authorized Indian Representative (AIR).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apa peran AIR?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Authorized Indian Representative (AIR) bertanggung jawab secara hukum untuk mengajukan aplikasi BIS atas nama pabrikan asing. Mereka bertindak sebagai penghubung resmi antara BIS dan pemohon luar negeri.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Berapa lama pendaftaran BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Proses biasanya memakan waktu 3–4 minggu, asalkan semua dokumen dan laporan uji dikirimkan dengan benar dan tidak ada keberatan dari BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Berapa biaya sertifikat BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Biaya meliputi: Biaya Pengujian: ₹10.000–₹20.000 + PPN. Biaya Pemerintah: ₹53.000 + PPN per laporan uji. Biaya Tambahan: Afidavit, kurir, dokumentasi AIR, dll. Diskon untuk pabrikan India terdaftar MSME.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Berapa validitas sertifikat BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Lisensi BIS awal berlaku 2 tahun. Dapat diperpanjang hingga 5 tahun jika detail produk dan manufaktur tetap tidak berubah.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apakah sertifikasi BIS dapat diperoleh secara sukarela?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tidak. Di bawah CRS, Anda tidak dapat mendaftar secara sukarela untuk produk yang tidak tercantum di bawah QCOs. Sertifikasi sukarela hanya berlaku untuk produk non-CRS melalui skema ISI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Di mana saya dapat menemukan daftar produk BIS CRS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Anda dapat mengunjungi situs web resmi BIS https://www.crsbis.in/BIS/publicdashAction.do dan menuju ke bagian \"Produk di bawah CRS\" untuk melihat daftar lengkap produk yang tercakup.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apakah tanda BIS dapat ditampilkan secara elektronik?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ya, melalui e-labelling, tetapi harus memenuhi aturan ketat BIS: Info label harus tertanam dalam firmware. Akses mudah dalam 4 langkah di menu perangkat. Kemasan fisik tetap harus memuat info regulasi.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apa yang terjadi jika saya tidak mendapat pendaftaran BIS untuk produk wajib?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sanksi berat, termasuk: Penyitaan produk, Penolakan bea cukai, Denda hukum, Penghapusan dari portal e-commerce, Larangan permanen dari pasar India.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apakah satu sertifikat BIS dapat mencakup beberapa model atau merek?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tidak. Setiap merek dan lokasi pabrik harus disertifikasi secara terpisah. Beberapa model dapat ditambahkan menggunakan laporan tambahan, tetapi hanya di bawah aplikasi dan merek yang sama.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Bagaimana Sun Certifications India dapat membantu saya?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Kami menawarkan: Dukungan dokumentasi lengkap, Koordinasi lab, Penanganan aplikasi portal BIS, Penyelesaian pertanyaan dan tindak lanjut BIS, Panduan perpanjangan dan pelabelan, Jaminan kepatuhan untuk merek asing melalui layanan AIR.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-id";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-id");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const CRSRegistrationBreadcrumb = () => {

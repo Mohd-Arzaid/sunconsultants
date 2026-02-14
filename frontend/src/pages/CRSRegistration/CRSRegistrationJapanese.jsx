@@ -51,6 +51,7 @@ const CRSRegistrationJapanese = () => {
     <div className="relative">
       {/* CRS Registration Meta Tags */}
       <CRSRegistrationJapaneseMetaTags />
+      <FAQSchemaInjector />
       {/* CRS Registration Breadcrumb */}
       <CRSRegistrationJapaneseBreadcrumb />
       {/* CRS Registration Hero Section */}
@@ -2437,6 +2438,153 @@ const CRSRegistrationJapaneseMetaTags = () => {
       </script>
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Japanese) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "BIS登録とは何ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS認証はインド標準協会が管理する適合性プロセスであり、製品が品質、安全性、信頼性に関する適用可能なインド規格（IS）を満たしていることを検証します。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BISにおけるCRS登録とは何ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRSは強制登録制度を意味します。電子機器、電気機器、電池、太陽光製品などの特定の製品カテゴリに対する義務的な登録プロセスです。CRS対象製品はインドで販売する前にBISで試験・登録を受ける必要があります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "インドではBIS認証は義務ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "はい。CRS製品リスト（現在80品目以上）に掲載されているすべての製品について、インドでの製造、輸入、販売にはBIS登録が義務付けられています。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRSとISIマークの違いは何ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS：電子・IT製品向け、QCOで通知された義務製品のみ。ISIマーク：より広範囲の製品に使用され、製品カテゴリに応じて任意または義務となります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS登録は誰が申請できますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "製造者のみが申請できます。インドおよび外国の製造者が含まれます。外国ブランドは認可インド代表（AIR）を指定する必要があります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "AIRの役割は何ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "認可インド代表（AIR）は、外国製造者に代わってBIS申請を提出する法的責任を負います。BISと海外申請者との公式連絡窓口として機能します。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS登録にはどのくらい時間がかかりますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "すべての書類と試験報告書が正しく提出され、BISから異議が提起されない場合、プロセスは通常3〜4週間かかります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS証明書の費用はいくらですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "費用には以下が含まれます：試験料：₹10,000–₹20,000 + GST。政府料金：試験報告書1件あたり₹53,000 + GST。追加費用：宣誓供述書、宅配、AIR書類など。インドMSME登録製造者には割引が適用されます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS証明書の有効期限はどのくらいですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "初回のBISライセンスは2年間有効です。製品および製造の詳細が変更されない場合、最大5年まで更新できます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS認証は任意で取得できますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "いいえ。CRSでは、QCOに掲載されていない製品について任意で申請することはできません。任意認証はISI制度による非CRS製品にのみ適用されます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS製品リストはどこで見つけられますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "公式BISウェブサイト https://www.crsbis.in/BIS/publicdashAction.do にアクセスし、「CRS対象製品」セクションに移動すると、対象製品の完全なリストを確認できます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BISマークは電子表示できますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "はい、電子ラベリングを通じて可能ですが、厳格なBISルールを満たす必要があります：ラベル情報はファームウェアに組み込む必要があります。デバイスメニューで4ステップ以内に簡単にアクセスできること。物理パッケージには規制情報を引き続き記載する必要があります。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "義務製品のBIS登録を取得しないとどうなりますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "製品押収、税関差し止め、法的罰金、ECサイトからの削除、インド市場からの永久禁止などの重い罰則が科されます。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "1つのBIS証明書で複数のモデルやブランドをカバーできますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "いいえ。各ブランドおよび工場所在地は別々に認証する必要があります。追加報告書を使用して複数モデルを追加できますが、同一申請および同一ブランド内のみです。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sun Certifications Indiaはどのようにサポートしてくれますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "当社では以下を提供しています：完全な書類サポート、試験所調整、BISポータル申請対応、お問い合わせ解決およびBISフォローアップ、更新およびラベリング指導、AIRサービスによる外国ブランドのコンプライアンス保証。",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-ja";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-ja");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const CRSRegistrationJapaneseHero = () => {

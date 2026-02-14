@@ -137,7 +137,7 @@ const EPRHero = () => {
             </span>
           </div>
 
-          <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
+          <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
               EPR Registration for
               <span
@@ -146,7 +146,7 @@ const EPRHero = () => {
               ></span>
             </span>{" "}
             E-Waste Management in India
-          </h1>
+          </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
             Get EPR registration for e-waste management. Ensure CPCB compliance
@@ -665,9 +665,9 @@ const OverviewSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         EPR Registration for E-Waste Management in India
-      </h3>
+      </h1>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -686,9 +686,9 @@ const OverviewSection = () => {
       </div>
 
       {/* What is E-Waste Section */}
-      <h4 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         What is E-Waste?
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         E-waste refers to the discarded end user electronic equipment, samples rejected from manufacturing, refurbishment, and repair activities. It includes:
@@ -707,9 +707,9 @@ const OverviewSection = () => {
       </div>
 
       {/* Understanding EPR Section */}
-      <h4 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         Understanding Extended Producer Responsibility (EPR) for E-Waste
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         Extended Producer Responsibility EPR e-waste is an eco-political approach assigning the responsibility of e-waste management to the manufacturers of electronic and electrical equipment. Therefore, these manufacturers take care of the collection, storage, transport, recycling, and safe disposal of the e-waste from their products.
@@ -720,9 +720,9 @@ const OverviewSection = () => {
       </div>
 
       {/* EPR Registration Meaning Section */}
-      <h4 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         What does it mean to have EPR Registration for E-Waste Management?
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         EPR registration for e-waste means that an entity gets permission from the Central Pollution Control Board (CPCB) to work with the electrical and electronic devices and obtain an e-waste registration and is legally operating in India only if they have a valid registration.
@@ -745,9 +745,9 @@ const OverviewSection = () => {
       </div>
 
       {/* E-Waste EPR Portal Section */}
-      <h4 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         What is the use of the E-Waste EPR Portal?
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         The Central Pollution Control Board (CPCB) has created the e-waste EPR Portal to enhance compliance and transparency. For streamlined oversight, the e-waste EPR Portal serves the following purposes:
@@ -764,9 +764,9 @@ const OverviewSection = () => {
       </div>
 
       {/* Why EPR Essential Section */}
-      <h4 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         Why EPR is Essential for Managing E-Waste
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         EPR encourages responsible product design to counteract waste before it becomes harmful. Rather than dealing with the negative outcomes of pollution, EPR focuses on stopping the problem before it starts.
@@ -785,33 +785,38 @@ const OverviewSection = () => {
       </div>
 
       {/* Benefits Section */}
-      <h4 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         Benefits of EPR Registration for E-Waste
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <strong>1. Legal Compliance and Business Continuity</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          1. Legal Compliance and Business Continuity
+        </h3>
         An EPR certificate for e-waste protects businesses from the consequences of non-compliance with India's environmental laws. Businesses can be fined, their operations can be suspended, and criminal and civil actions can be taken against them under the Environment (Protection) Act of 1986 if adequate EPR authorization is not present.
         <br /><br />
         
-        <strong>2. Waste Management Costs</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          2. Waste Management Costs
+        </h3>
         EPR registration for e-waste, while it may appear to be a traditional compliance cost, is a counter to waste practices that result in over expenditure. Keeping costs down over the long run is achieved with guided collection, transport, and recycling.
         <br /><br />
         
-        <strong>3. Protection of Ecosystem</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          3. Protection of Ecosystem
+        </h3>
         EPR is a great help in controlling the circulation of dangerous materials that may produce pollution and threaten the ecosystem. This also allows the systemic diversion of waste from informal waste management to formal recycling.
         <br /><br />
         
-        <strong>4. Improved Brand Image</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          4. Improved Brand Image
+        </h3>
         Branding also has its positive aspects. The presence of an EPR e-waste certificate endorses a brand as environmentally responsible and thus attracts and retains the trade of customers.
         <br /><br />
         
-        <strong>5. Support to Circular Economy</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          5. Support to Circular Economy
+        </h3>
         EPR focuses on recycling and recovery of materials that can be reused and is useful in conserving and lessening the need to extract more from the earth.
       </div>
     </section>
@@ -830,9 +835,9 @@ const EligibilitySection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         The E-Waste Management Rules, 2022, Obligations
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -841,8 +846,9 @@ const EligibilitySection = () => {
 
       {/* Responsibilities Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <strong>Responsibilities of Manufacturers</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Responsibilities of Manufacturers
+        </h3>
         ● Ensuring proper collection and recycling or disposal of e-waste created while manufacturing.
         <br />
         ● Registering on the e-waste EPR portal.
@@ -850,8 +856,9 @@ const EligibilitySection = () => {
         ● Filing annual and quarterly returns within the set deadlines.
         <br /><br />
         
-        <strong>Responsibilities of Producers</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Responsibilities of Producers
+        </h3>
         Producers listed in Schedule I should:
         <br />
         ● Get EPR authorization for e-waste.
@@ -863,8 +870,9 @@ const EligibilitySection = () => {
         ● Submit return statements periodically on the portal.
         <br /><br />
         
-        <strong>Responsibilities of Refurbishers</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Responsibilities of Refurbishers
+        </h3>
         ● Collect e-waste that occurs during the refurbishment process.
         <br />
         ● Only give the waste to registered recyclers.
@@ -874,8 +882,9 @@ const EligibilitySection = () => {
         ● Ensure that the refurbished items are safe and of good quality.
         <br /><br />
         
-        <strong>Responsibilities of Bulk Consumers</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Responsibilities of Bulk Consumers
+        </h3>
         Bulk consumers like government entities, public sector undertakings, healthcare systems, and big companies are required to:
         <br />
         ● Only give e-waste to authorized producers, refurbishers, or recyclers.
@@ -883,8 +892,9 @@ const EligibilitySection = () => {
         ● Keep e-waste disposal records.
         <br /><br />
         
-        <strong>Responsibilities of Recyclers</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Responsibilities of Recyclers
+        </h3>
         ● Keep and maintain recycling centers based on the CPCB guidance.
         <br />
         ● Dispose of leftover waste in authorized TSDFs.
@@ -897,9 +907,9 @@ const EligibilitySection = () => {
       </div>
 
       {/* Storage Section */}
-      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         Storage of E-Waste Under EPR Regulations
-      </h4>
+      </h3>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         The E-Waste Management Rules, 2022 have brought up specific regulations that impose a maximum on the length of time that waste may be kept.
@@ -930,9 +940,9 @@ const DocumentsSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         E-Waste EPR Registration Documents
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -958,48 +968,54 @@ const DocumentsSection = () => {
       </div>
 
       {/* Registration Steps */}
-      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         Steps to Register E-Waste EPR
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         EPR e-waste registration steps are entirely online through CPCB.
         <br /><br />
         
-        <strong>Step 1: Go to the CPCB Website</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Step 1: Go to the CPCB Website
+        </h3>
         Go to the Central Pollution Control Board's e-waste EPR portal.
         <br /><br />
         
-        <strong>Step 2: Complete Form-1</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Step 2: Complete Form-1
+        </h3>
         Enter your business information, the types of products you offer, and how much e-waste you produce.
         <br /><br />
         
-        <strong>Step 3: Set EPR Objectives</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Step 3: Set EPR Objectives
+        </h3>
         Provide the expected collection targets for the upcoming year, broken down by item, and for each collection.
         <br /><br />
         
-        <strong>Step 4: Upload Documents</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Step 4: Upload Documents
+        </h3>
         Please attach necessary documents and declarations.
         <br /><br />
         
-        <strong>Step 5: CPCB Verification</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Step 5: CPCB Verification
+        </h3>
         CPCB is responsible for reviewing the application and confirming the details.
         <br /><br />
         
-        <strong>Step 6: Grant of EPR Certificate</strong>
-        <br />
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-6 mb-2">
+          Step 6: Grant of EPR Certificate
+        </h3>
         Once the verification has been completed successfully, the CPCB will issue the EPR e-waste certificate.
       </div>
 
       {/* Cancellation Section */}
-      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         Cancellation or Suspension of EPR Authorization
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         In the case that an entity violates environmental law or misses an obligation under EPR, CPCB has the power to suspend or cancel an EPR certificate for e-waste.
@@ -1012,9 +1028,9 @@ const DocumentsSection = () => {
       </div>
 
       {/* Future Section */}
-      <h4 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
+      <h2 className="text-[24px] md:text-[32px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mt-8 mb-3">
         Future of EPR E-Waste Management in India
-      </h4>
+      </h2>
 
       <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         Projected growth in the generation of e-waste in India will give cause to strengthen EPR e-waste management. The introduction of digital tracking via the EPR portal, along with tighter policies and increased involvement of the industry will improve the sustainable management of e-waste in India.
@@ -1038,9 +1054,9 @@ const ConsultingSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Conclusion
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">

@@ -52,6 +52,7 @@ const CRSRegistration = () => {
   return (
     <div className="relative">
       <MetaTags />
+      <FAQSchemaInjector />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -128,6 +129,153 @@ const MetaTags = () => {
       />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Chinese) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "什么是BIS注册？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS认证是由印度标准局管理的合规流程，用于验证产品是否符合适用的印度标准(IS)在质量、安全和可靠性方面的要求。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "什么是BIS下的CRS注册？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRS代表强制注册计划。它是针对电子产品、电气产品、电池和太阳能产品等特定产品类别的强制性注册流程。CRS下的产品在印度销售前必须经过BIS测试和注册。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS认证在印度是强制性的吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "是的。对于CRS产品清单（目前80多种产品）中列出的所有产品，在印度制造、进口或销售都必须进行BIS注册。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS与ISI标志有什么区别？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS：针对电子和IT产品，仅适用于QCO下通知的强制性产品。ISI标志：用于更广泛的产品范围，根据产品类别可能是自愿或强制性的。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "谁可以申请BIS CRS注册？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "只有制造商可以申请。这包括印度和外国制造商。外国品牌必须指定授权印度代表(AIR)。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "AIR的作用是什么？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "授权印度代表(AIR)代表外国制造商提交BIS申请负有法律责任。他们是BIS与海外申请人之间的正式联络人。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS注册需要多长时间？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "该流程通常需要3-4周，前提是所有文件和测试报告正确提交且BIS没有提出异议。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS证书费用是多少？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "费用包括：测试费：₹10,000–₹20,000 + 消费税。政府费用：每份测试报告₹53,000 + 消费税。额外费用：宣誓书、快递、AIR文件等。印度MSME注册制造商可享折扣。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS CRS证书的有效期是多久？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "初始BIS许可证有效期为2年。如果产品和制造细节保持不变，可续期至5年。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "可以自愿获得BIS认证吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "不可以。在CRS下，您不能为未列入QCOs的产品自愿申请。自愿认证仅适用于通过ISI计划的非CRS产品。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "在哪里可以找到BIS CRS产品清单？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "您可以访问BIS官方网站 https://www.crsbis.in/BIS/publicdashAction.do 并导航至「CRS下的产品」部分查看所涵盖产品的完整清单。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "BIS标志可以电子显示吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "可以，通过电子标签，但必须符合严格的BIS规定：标签信息必须嵌入固件。设备菜单中4步内即可轻松访问。物理包装仍必须携带监管信息。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "如果强制性产品没有获得BIS注册会怎样？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "将面临严厉处罚，包括：产品没收、海关拒收、法律罚款、从电商平台下架、永久禁止进入印度市场。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "一张BIS证书可以涵盖多个型号或品牌吗？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "不可以。每个品牌和工厂地点必须单独认证。可以使用额外报告添加多个型号，但仅限同一申请和品牌下。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sun Certifications India如何帮助我？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "我们提供：完整文件支持、实验室协调、BIS门户申请处理、查询解决和BIS跟进、续期和标签指导、通过AIR服务为外国品牌提供合规保障。",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-zh";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-zh");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BreadcrumbContent = () => {

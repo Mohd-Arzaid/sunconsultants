@@ -39,6 +39,7 @@ const ISIMarkIndonesian = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -85,6 +86,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - Indonesian) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Apa itu sertifikasi BIS dan mengapa penting?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sertifikasi BIS dikeluarkan oleh Bureau of Indian Standards untuk memastikan produk mematuhi standar keamanan dan kualitas India. Penting untuk kepatuhan hukum, kepercayaan konsumen, dan penerimaan pasar.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apa perbedaan antara lisensi BIS dan tanda ISI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Lisensi BIS adalah dokumen hukum yang mengizinkan pabrikan menggunakan tanda ISI. Tanda ISI adalah label yang terlihat pada produk yang menunjukkan sertifikasi BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Berapa lama untuk mendapatkan sertifikasi BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Biasanya 6–10 minggu tergantung jenis produk, persyaratan pengujian, dan hasil audit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Berapa periode validitas lisensi BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Biasanya 1 hingga 2 tahun, setelah itu harus diperpanjang. Perpanjangan harus dimulai setidaknya 30 hari sebelum kedaluwarsa.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Berapa biaya sertifikasi BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Biaya bervariasi tetapi dapat berkisar dari ₹25.000 hingga ₹100.000+, termasuk biaya pengujian, audit, dan lisensi.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apakah sertifikasi BIS wajib untuk semua produk?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tidak. Hanya wajib untuk produk yang tercantum dalam skema 1 sertifikasi BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Bagaimana cara menemukan standar IS yang tepat untuk produk saya?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Kunjungi situs web BIS atau konsultasikan dengan laboratorium pengujian dan konsultan yang diakui BIS untuk mengidentifikasi standar yang berlaku.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Bisakah pabrikan asing mendaftar sertifikasi BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ya. Melalui Skema Sertifikasi Pabrikan Asing (FMCS), entitas luar negeri dapat memperoleh lisensi BIS untuk penggunaan tanda ISI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apa yang terjadi jika produk saya gagal pengujian BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Anda perlu memperbaiki masalah dan mengajukan kembali untuk pengujian. Aplikasi dapat dijeda sampai kepatuhan berhasil ditunjukkan.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Apakah sertifikasi BIS diperlukan untuk ekspor?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Meskipun tidak selalu wajib untuk ekspor, sertifikasi BIS meningkatkan kredibilitas dan dapat memuaskan pembeli internasional atau badan pengawas.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-id";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-id");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

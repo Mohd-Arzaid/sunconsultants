@@ -47,6 +47,7 @@ const BISCertificationDutch = () => {
   return (
     <div className="relative w-full">
       <BISCertificationMetaTags />
+      <BISCertificationFAQSchemaInjector />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -92,6 +93,58 @@ const BISCertificationMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (BISCertification page - Dutch) */
+const BISCertificationFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "Wat is BIS-certificering in India?", acceptedAnswer: { "@type": "Answer", text: "BIS-certificering is een kwaliteitsverzekeringscertificaat afgegeven door het Bureau of Indian Standards (BIS) om ervoor te zorgen dat producten voldoen aan Indiase normen voor veiligheid, prestaties en kwaliteit. Het is verplicht voor verschillende productcategorieën en helpt bij consumentenbescherming en regelgevende naleving." } },
+        { "@type": "Question", name: "Waarom heb ik een BIS-certificaat nodig?", acceptedAnswer: { "@type": "Answer", text: "Een BIS-certificaat is essentieel om bepaalde producten legaal te fabriceren, importeren, distribueren of verkopen in India. Het verzekert consumenten dat het product voldoet aan de veiligheids- en kwaliteitsrichtlijnen van Indiase normen." } },
+        { "@type": "Question", name: "Wat is het ISI-keurmerk onder BIS-certificering?", acceptedAnswer: { "@type": "Answer", text: "Het ISI-keurmerk is een certificeringssymbool dat onder het BIS-certificeringsregime wordt verstrekt. Het geeft aan dat een product voldoet aan Indiase normen en is gecertificeerd door de Indiase BIS via correcte tests en registratie." } },
+        { "@type": "Question", name: "Wie geeft BIS-licenties uit in India?", acceptedAnswer: { "@type": "Answer", text: "BIS-licenties worden afgegeven door het Bureau of Indian Standards (Indiase BIS), de nationale normeninstantie onder het ministerie van Consumentenzaken, Voedsel en Openbare Distributie." } },
+        { "@type": "Question", name: "Wat zijn de verschillende soorten BIS-certificeringsregimes?", acceptedAnswer: { "@type": "Answer", text: "De belangrijkste BIS-certificeringsregimes zijn onder meer het ISI-keurmerkregime, het Compulsory Registration Scheme (CRS), het Foreign Manufacturers Certification Scheme (FMCS), hallmarking voor sieraden, Eco Mark-certificering en Scheme X voor industriële machines." } },
+        { "@type": "Question", name: "Wat is Scheme X onder BIS-certificering?", acceptedAnswer: { "@type": "Answer", text: "Scheme X is een vereenvoudigd BIS-certificeringsproces voor industriële producten zoals pompen, transformatoren, werktuigmachines en kranen. Het zorgt voor snellere goedkeuring zonder in te boeten aan naleving van Indiase normen." } },
+        { "@type": "Question", name: "Welke producten vereisen BIS-certificering in India?", acceptedAnswer: { "@type": "Answer", text: "Producten zoals elektrische apparaten, elektronica, keukengerei, cement, staal, gouden sieraden, mobiele telefoons en transformatoren vereisen BIS-certificering volgens het Indiase BIS-mandaat." } },
+        { "@type": "Question", name: "Is BIS-registratie verplicht voor alle producten?", acceptedAnswer: { "@type": "Answer", text: "Nee, BIS-registratie is alleen verplicht voor producten die in het verplichte certificeringsregime staan. Er is echter ook vrijwillige BIS-certificering beschikbaar om de productgeloofwaardigheid te vergroten." } },
+        { "@type": "Question", name: "Hoe lang is een BIS-licentie geldig?", acceptedAnswer: { "@type": "Answer", text: "Een BIS-licentie is doorgaans één tot twee jaar geldig en moet vóór het verstrijken worden vernieuwd om het ISI-keurmerk te blijven gebruiken of de BIS-registratiestatus te behouden." } },
+        { "@type": "Question", name: "Wat zijn de stappen om BIS-certificering in India te krijgen?", acceptedAnswer: { "@type": "Answer", text: "Het BIS-certificeringsproces omvat het identificeren van toepasselijke Indiase normen, het indienen van een aanvraag, producttests, fabrieksinspectie en afgifte van een BIS-certificaat na goedkeuring." } },
+        { "@type": "Question", name: "Kunnen buitenlandse fabrikanten een BIS-licentie aanvragen?", acceptedAnswer: { "@type": "Answer", text: "Ja, onder het Foreign Manufacturers Certification Scheme (FMCS) kunnen buitenlandse bedrijven een BIS-licentie aanvragen om producten in India te verkopen. Zij moeten een Authorized Indian Representative (AIR) aanstellen." } },
+        { "@type": "Question", name: "Wat is de rol van de AIR in BIS-certificering?", acceptedAnswer: { "@type": "Answer", text: "Een AIR (Authorized Indian Representative) fungeert als liaison tussen de buitenlandse fabrikant en de Indiase BIS. Zij zijn verantwoordelijk voor documentatie, communicatie en naleving van BIS-certificeringsvereisten." } },
+        { "@type": "Question", name: "Hoe kan ik online solliciteren voor BIS-registratie?", acceptedAnswer: { "@type": "Answer", text: "U kunt online solliciteren voor BIS-registratie via de officiële BIS-portal. Het proces omvat het indienen van formulieren, het uploaden van documenten, testrapporten en betaling van vergoedingen." } },
+        { "@type": "Question", name: "Welke documenten zijn vereist voor een BIS-certificaat?", acceptedAnswer: { "@type": "Answer", text: "Benodigde documenten zijn onder meer bedrijfsvergunning, productspecificaties, productieproces, labtestrapporten, fabrieksindeling, kwaliteitshandboek en autorisatieformulieren (voor buitenlandse fabrikanten)." } },
+        { "@type": "Question", name: "Hoeveel kost BIS-certificering in India?", acceptedAnswer: { "@type": "Answer", text: "De kosten van BIS-certificering hangen af van het producttype, testvereisten, regimetype (ISI, CRS, FMCS) en of de aanvrager nationaal of buitenlands is. De kosten omvatten aanvraagkosten, testkosten en inspectiekosten." } },
+        { "@type": "Question", name: "Is het ISI-keurmerk verplicht voor alle BIS-gecertificeerde producten?", acceptedAnswer: { "@type": "Answer", text: "Nee, alleen producten onder het ISI-regime moeten het ISI-keurmerk dragen. Producten onder CRS- of Hallmarking-regimes volgen verschillende etiketteringsprotocollen volgens BIS-registratienormen." } },
+        { "@type": "Question", name: "Kan ik BIS-certificering krijgen voor milieuvriendelijke producten?", acceptedAnswer: { "@type": "Answer", text: "Ja, producten die voldoen aan milieunormen kunnen BIS-certificering krijgen onder het Eco Mark-regime, dat naleving van Indiase normen voor milieubeveiliging waarborgt." } },
+        { "@type": "Question", name: "Wat is het verschil tussen BIS-certificering en BIS-registratie?", acceptedAnswer: { "@type": "Answer", text: "BIS-certificering verwijst over het algemeen naar goedkeuring onder ISI-, FMCS- of Hallmarking-regimes, terwijl BIS-registratie gewoonlijk wordt geassocieerd met het CRS-regime voor elektronische producten." } },
+        { "@type": "Question", name: "Wat is het Compulsory Registration Scheme (CRS)?", acceptedAnswer: { "@type": "Answer", text: "CRS is een BIS-registratieprogramma voor IT- en elektronische goederen zoals LED-verlichting, mobiele telefoons en powerbanks. Het zorgt voor productnaleving van Indiase normen met betrekking tot veiligheid." } },
+        { "@type": "Question", name: "Betekenen ISI-keurmerk en BIS-certificaat hetzelfde?", acceptedAnswer: { "@type": "Answer", text: "Niet precies. Het ISI-keurmerk is het symbool dat aan gecertificeerde producten wordt verleend onder het BIS-certificeringsregime. Een BIS-certificaat is het juridische document dat aan de fabrikant wordt uitgereikt." } },
+        { "@type": "Question", name: "Kan één BIS-licentie meerdere producten dekken?", acceptedAnswer: { "@type": "Answer", text: "Nee, voor elk producttype en elke productielocatie is een aparte BIS-licentie vereist, ook als de producten vergelijkbaar zijn." } },
+        { "@type": "Question", name: "Wat gebeurt er als ik producten verkoop zonder BIS-certificering?", acceptedAnswer: { "@type": "Answer", text: "Het verkopen van producten die BIS-certificering vereisen zonder een geldige BIS-licentie is illegaal in India en kan leiden tot boetes, productterugroepingen of verboden." } },
+        { "@type": "Question", name: "Hoe lang duurt het om BIS-certificering te krijgen?", acceptedAnswer: { "@type": "Answer", text: "Het BIS-certificeringsproces duurt over het algemeen 30 tot 90 dagen, afhankelijk van het producttype, testvereisten en of de aanvrager nationaal of buitenlands is." } },
+        { "@type": "Question", name: "Wordt BIS-certificering wereldwijd geaccepteerd?", acceptedAnswer: { "@type": "Answer", text: "Hoewel BIS-certificering specifiek is voor India, verhoogt het de mondiale geloofwaardigheid door naleving van strikte Indiase normen te tonen. Sommige BIS-gecertificeerde producten worden ook geaccepteerd onder wederzijdse erkenningsovereenkomsten." } },
+        { "@type": "Question", name: "Hoe vaak moet ik mijn BIS-licentie vernieuwen?", acceptedAnswer: { "@type": "Answer", text: "BIS-licenties moeten jaarlijks of tweejaarlijks worden vernieuwd. Fabrikanten moeten de naleving van Indiase normen handhaven en toezichtaudits doorstaan om hun BIS-certificaat te vernieuwen." } },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "biscertification-faq-schema-nl";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("biscertification-faq-schema-nl");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BISCertificationBreadcrumb = () => {

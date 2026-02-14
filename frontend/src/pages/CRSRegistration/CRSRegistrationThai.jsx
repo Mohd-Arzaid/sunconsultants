@@ -52,6 +52,7 @@ const CRSRegistration = () => {
     <div className="relative">
       {/* CRS Registration Meta Tags */}
       <CRSRegistrationMetaTags />
+      <FAQSchemaInjector />
       {/* CRS Registration Breadcrumb */}
       <CRSRegistrationBreadcrumb />
       {/* CRS Registration Hero Section */}
@@ -138,6 +139,153 @@ const CRSRegistrationMetaTags = () => {
       </script>
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Thai) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "การลงทะเบียน BIS คืออะไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "การรับรอง BIS เป็นกระบวนการปฏิบัติตามที่กำกับโดยสำนักงานมาตรฐานอินเดีย ซึ่งตรวจสอบว่าผลิตภัณฑ์เป็นไปตามมาตรฐานอินเดีย (IS) ที่ใช้บังคับในด้านคุณภาพ ความปลอดภัย และความน่าเชื่อถือ",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "การลงทะเบียน CRS ภายใต้ BIS คืออะไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRS หมายถึงโครงการลงทะเบียนบังคับ เป็นกระบวนการลงทะเบียนบังคับสำหรับหมวดหมู่ผลิตภัณฑ์เฉพาะ เช่น อิเล็กทรอนิกส์ ไฟฟ้า แบตเตอรี่ และสินค้าพลังงานแสงอาทิตย์ ผลิตภัณฑ์ภายใต้ CRS ต้องได้รับการทดสอบและลงทะเบียนกับ BIS ก่อนจำหน่ายในอินเดีย",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "การรับรอง BIS บังคับในอินเดียหรือไม่?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ใช่ สำหรับผลิตภัณฑ์ทั้งหมดในรายการผลิตภัณฑ์ CRS (ปัจจุบัน 80 รายการขึ้นไป) การลงทะเบียน BIS บังคับสำหรับการผลิต นำเข้า หรือจำหน่ายในอินเดีย",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ความแตกต่างระหว่าง BIS CRS กับเครื่องหมาย ISI คืออะไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS: สำหรับอิเล็กทรอนิกส์และสินค้าไอที เฉพาะผลิตภัณฑ์บังคับที่แจ้งภายใต้ QCO เครื่องหมาย ISI: ใช้กับผลิตภัณฑ์ที่หลากหลายกว่า อาจเป็น voluntary หรือบังคับขึ้นอยู่กับหมวดหมู่ผลิตภัณฑ์",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ใครสามารถสมัครลงทะเบียน BIS CRS ได้?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "เฉพาะผู้ผลิตเท่านั้นที่สามารถสมัครได้ รวมถึงผู้ผลิตในอินเดียและต่างประเทศ แบรนด์ต่างประเทศต้องแต่งตั้ง Authorized Indian Representative (AIR)",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "บทบาทของ AIR คืออะไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Authorized Indian Representative (AIR) มีความรับผิดชอบตามกฎหมายในการยื่นคำขอ BIS ในนามของผู้ผลิตต่างประเทศ ทำหน้าที่เป็นผู้ประสานงานอย่างเป็นทางการระหว่าง BIS กับผู้สมัครต่างประเทศ",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "การลงทะเบียน BIS CRS ใช้เวลานานแค่ไหน?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "กระบวนการโดยทั่วไปใช้เวลา 3-4 สัปดาห์ หากส่งเอกสารและรายงานการทดสอบทั้งหมดถูกต้องและ BIS ไม่มีข้อโต้แย้ง",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ใบรับรอง BIS CRS มีค่าใช้จ่ายเท่าไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ค่าใช้จ่ายรวม: ค่าทดสอบ: ₹10,000–₹20,000 + GST ค่าธรรมเนียมรัฐบาล: ₹53,000 + GST ต่อรายงานการทดสอบ ค่าใช้จ่ายเพิ่ม: หนังสือรับรอง คูเรีย เอกสาร AIR ฯลฯ ส่วนลดสำหรับผู้ผลิตอินเดียที่ขึ้นทะเบียน MSME",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ใบรับรอง BIS CRS มีอายุเท่าไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ใบอนุญาต BIS เริ่มแรกมีอายุ 2 ปี สามารถต่ออายุได้ถึง 5 ปี หากรายละเอียดผลิตภัณฑ์และการผลิตไม่เปลี่ยนแปลง",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "สามารถรับการรับรอง BIS แบบสมัครใจได้หรือไม่?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ไม่ได้ ภายใต้ CRS คุณไม่สามารถสมัคร voluntarily สำหรับผลิตภัณฑ์ที่ไม่อยู่ใน QCOs การรับรองแบบสมัครใจใช้ได้เฉพาะผลิตภัณฑ์ที่ไม่ใช่ CRS ผ่านโครงการ ISI เท่านั้น",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "จะหารายการผลิตภัณฑ์ BIS CRS ได้ที่ไหน?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "คุณสามารถเยี่ยมชมเว็บไซต์ BIS อย่างเป็นทางการ https://www.crsbis.in/BIS/publicdashAction.do และไปที่ส่วน \"ผลิตภัณฑ์ภายใต้ CRS\" เพื่อดูรายการผลิตภัณฑ์ที่ครอบคลุมทั้งหมด",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "สามารถแสดงเครื่องหมาย BIS แบบอิเล็กทรอนิกส์ได้หรือไม่?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ได้ ผ่าน e-labelling แต่ต้องเป็นไปตามกฎ BIS ที่เข้มงวด: ข้อมูลฉลากต้องฝังในเฟิร์มแวร์ เข้าถึงง่ายภายใน 4 ขั้นตอนในเมนูอุปกรณ์ บรรจุภัณฑ์ทางกายภาพยังต้องมีข้อมูลกฎระเบียบ",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "จะเกิดอะไรขึ้นหากไม่ได้รับลงทะเบียน BIS สำหรับผลิตภัณฑ์บังคับ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "บทลงโทษรุนแรง รวมถึง: การยึดผลิตภัณฑ์ การปฏิเสธศุลกากร ค่าปรับทางกฎหมาย การถอดออกจากพอร์ทัลอีคอมเมิร์ซ แบนถาวรจากตลาดอินเดีย",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ใบรับรอง BIS เดียวครอบคลุมหลายรุ่นหรือแบรนด์ได้หรือไม่?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ไม่ได้ แต่ละแบรนด์และสถานที่โรงงานต้องรับรองแยกกัน สามารถเพิ่มหลายรุ่นโดยใช้รายงานเพิ่มเติม แต่เฉพาะภายใต้คำขอและแบรนด์เดียวกันเท่านั้น",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sun Certifications India ช่วยฉันได้อย่างไร?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "เรานำเสนอ: การสนับสนุนเอกสารครบถ้วน การประสานงานห้องปฏิบัติการ การจัดการคำขอพอร์ทัล BIS การแก้ไขข้อสงสัยและการติดตาม BIS คำแนะนำการต่ออายุและการติดฉลาก การรับประกันการปฏิบัติตามสำหรับแบรนด์ต่างประเทศผ่านบริการ AIR",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-th";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-th");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const CRSRegistrationBreadcrumb = () => {

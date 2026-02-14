@@ -52,6 +52,7 @@ const CRSRegistrationDutch = () => {
     <div className="relative">
       {/* CRS Registration Meta Tags */}
       <CRSRegistrationMetaTags />
+      <FAQSchemaInjector />
       {/* CRS Registration Breadcrumb */}
       <CRSRegistrationBreadcrumb />
       {/* CRS Registration Hero Section */}
@@ -136,6 +137,153 @@ const CRSRegistrationMetaTags = () => {
       </script>
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (CRS page - Dutch) */
+const FAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wat is BIS-registratie?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS-certificering is een conformiteitsproces dat wordt beheerd door het Bureau of Indian Standards, dat verifieert dat een product voldoet aan de toepasselijke Indiase normen (IS) voor kwaliteit, veiligheid en betrouwbaarheid.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat is CRS-registratie onder BIS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CRS staat voor Compulsory Registration Scheme. Het is een verplicht registratieproces voor specifieke productcategorieën zoals elektronica, elektrische producten, batterijen en zonne-items. Producten onder CRS moeten worden getest en geregistreerd bij BIS voordat ze in India verkocht kunnen worden.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is BIS-certificering verplicht in India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja. Voor alle producten op de CRS-productlijst (momenteel 80+ items) is BIS-registratie verplicht voor fabricage, import of verkoop in India.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat is het verschil tussen BIS CRS en ISI-keurmerk?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BIS CRS: Voor elektronica en IT-goederen, alleen voor verplichte producten die onder QCO zijn gemeld. ISI-keurmerk: Gebruikt voor een breder scala aan producten, kan vrijwillig of verplicht zijn afhankelijk van de productcategorie.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie kan zich aanmelden voor BIS CRS-registratie?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Alleen fabrikanten kunnen zich aanmelden. Dit omvat zowel Indiase als buitenlandse fabrikanten. Buitenlandse merken moeten een Authorized Indian Representative (AIR) aanstellen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat is de rol van een AIR?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Een Authorized Indian Representative (AIR) is juridisch verantwoordelijk voor het indienen van de BIS-aanvraag namens een buitenlandse fabrikant. Zij fungeren als officieel liaison tussen BIS en de buitenlandse aanvrager.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hoe lang duurt BIS CRS-registratie?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Het proces duurt doorgaans 3-4 weken, ervan uitgaande dat alle documenten en testrapporten correct worden ingediend en BIS geen bezwaren heeft.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hoeveel kost een BIS CRS-certificaat?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Kosten omvatten: Testkosten: ₹10.000–₹20.000 + GST. Overheidskosten: ₹53.000 + GST per testrapport. Extra kosten: Verklaring, koerier, AIR-documentatie, enz. Korting voor Indiase MSME-geregistreerde fabrikanten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat is de geldigheidsduur van BIS CRS-certificaten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "De initiële BIS-licentie is 2 jaar geldig. Deze kan worden verlengd tot 5 jaar als de product- en fabricagegegevens ongewijzigd blijven.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kan BIS-certificering vrijwillig worden verkregen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nee. Onder CRS kunt u niet vrijwillig aanvragen voor producten die niet onder QCO's vallen. Vrijwillige certificering is alleen van toepassing op niet-CRS-producten via het ISI-schema.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Waar vind ik de BIS CRS-productlijst?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "U kunt de officiële BIS-website https://www.crsbis.in/BIS/publicdashAction.do bezoeken en naar de sectie \"Producten onder CRS\" gaan om de volledige lijst van gedekte producten te bekijken.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kan het BIS-keurmerk elektronisch worden weergegeven?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja, via e-labelling, maar het moet voldoen aan strikte BIS-regels: Labelinformatie moet in de firmware zijn ingebed. Gemakkelijke toegang binnen 4 stappen in het apparaatmenu. Fysieke verpakking moet nog steeds regelgevende informatie bevatten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wat gebeurt er als ik geen BIS-registratie krijg voor een verplicht product?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ernstige sancties, waaronder: Product inbeslagname, Douane-afwijzingen, Juridische boetes, Verwijdering van e-commerceportals, Permanent verbod op de Indiase markt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kan één BIS-certificaat meerdere modellen of merken dekken?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nee. Elk merk en elke fabriekslocatie moet afzonderlijk worden gecertificeerd. Meerdere modellen kunnen worden toegevoegd met extra rapporten, maar alleen onder dezelfde aanvraag en hetzelfde merk.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hoe kan Sun Certifications India mij helpen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Wij bieden: Volledige documentatie-ondersteuning, Lab-coördinatie, BIS-portaal aanvraagafhandeling, Query-oplossing en BIS-opvolging, Verlengings- en etiketteringsbegeleiding, Conformiteitszekerheid voor buitenlandse merken via AIR-diensten.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "crs-faq-schema-nl";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("crs-faq-schema-nl");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const CRSRegistrationBreadcrumb = () => {

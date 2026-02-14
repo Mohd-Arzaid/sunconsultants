@@ -39,6 +39,7 @@ const ISIMarkFrench = () => {
   return (
     <div className="relative w-full">
       <ISIMarkMetaTags />
+      <ISIMarkFAQSchemaInjector />
       <ISIMarkBreadcrumb />
       <ISIMarkHero />
       <ISIMarkIndex />
@@ -87,6 +88,113 @@ const ISIMarkMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (ISIMark page - French) */
+const ISIMarkFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Qu'est-ce que la certification BIS et pourquoi est-elle importante ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "La certification BIS est délivrée par le Bureau of Indian Standards pour garantir que les produits respectent les normes indiennes de sécurité et de qualité. Elle est essentielle pour la conformité légale, la confiance des consommateurs et l'acceptation sur le marché.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quelle est la différence entre la licence BIS et la marque ISI ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "La licence BIS est un document juridique qui autorise un fabricant à utiliser la marque ISI. La marque ISI est l'étiquette visible sur les produits indiquant la certification BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Combien de temps faut-il pour obtenir la certification BIS ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "En général 6 à 10 semaines selon le type de produit, les exigences de test et les résultats d'audit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quelle est la durée de validité d'une licence BIS ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Généralement 1 à 2 ans, après quoi elle doit être renouvelée. Le renouvellement doit être initié au moins 30 jours avant l'expiration.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Quel est le coût de la certification BIS ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Les coûts varient mais peuvent aller de ₹25 000 à ₹100 000+, incluant les frais de test, d'audit et de licence.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "La certification BIS est-elle obligatoire pour tous les produits ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Non. Elle n'est obligatoire que pour les produits listés dans le schéma 1 de la certification BIS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Comment trouver la norme IS adaptée à mon produit ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Visitez le site BIS ou consultez les laboratoires d'essai et conseillers reconnus par BIS pour identifier la norme applicable.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Les fabricants étrangers peuvent-ils demander la certification BIS ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Oui. Via le Foreign Manufacturers Certification Scheme (FMCS), les entités à l'étranger peuvent obtenir des licences BIS pour l'utilisation de la marque ISI.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Que se passe-t-il si mon produit échoue aux tests BIS ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Vous devrez corriger les problèmes et resoumettre pour les tests. Les demandes peuvent être suspendues jusqu'à démonstration d'une conformité réussie.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "La certification BIS est-elle nécessaire à l'exportation ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bien que pas toujours obligatoire pour l'export, la certification BIS renforce la crédibilité et peut satisfaire les acheteurs internationaux ou les autorités de régulation.",
+          },
+        },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "isimark-faq-schema-fr";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("isimark-faq-schema-fr");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const ISIMarkBreadcrumb = () => {

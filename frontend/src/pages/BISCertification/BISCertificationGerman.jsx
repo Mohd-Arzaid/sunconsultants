@@ -48,6 +48,7 @@ const BISCertificationGerman = () => {
   return (
     <div className="relative w-full">
       <BISCertificationMetaTags />
+      <BISCertificationFAQSchemaInjector />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -93,6 +94,58 @@ const BISCertificationMetaTags = () => {
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
+};
+
+/** Injects FAQ JSON-LD into document.head (BISCertification page - German) */
+const BISCertificationFAQSchemaInjector = () => {
+  const faqSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "Was ist BIS-Zertifizierung in Indien?", acceptedAnswer: { "@type": "Answer", text: "BIS-Zertifizierung ist ein Qualitätssicherungszertifikat, das vom Bureau of Indian Standards (BIS) ausgestellt wird, um sicherzustellen, dass Produkte indische Standards für Sicherheit, Leistung und Qualität erfüllen. Sie ist für verschiedene Produktkategorien verpflichtend und dient dem Verbraucherschutz und der regulatorischen Konformität." } },
+        { "@type": "Question", name: "Warum brauche ich ein BIS-Zertifikat?", acceptedAnswer: { "@type": "Answer", text: "Ein BIS-Zertifikat ist erforderlich, um bestimmte Produkte in Indien legal herzustellen, zu importieren, zu vertreiben oder zu verkaufen. Es versichert Verbrauchern, dass das Produkt die Sicherheits- und Qualitätsrichtlinien indischer Standards erfüllt." } },
+        { "@type": "Question", name: "Was ist das ISI-Zeichen unter BIS-Zertifizierung?", acceptedAnswer: { "@type": "Answer", text: "Das ISI-Zeichen ist ein Zertifizierungssymbol im BIS-Zertifizierungsschema. Es zeigt an, dass ein Produkt indischen Standards entspricht und von der indischen BIS durch ordnungsgemäße Prüfung und Registrierung zertifiziert wurde." } },
+        { "@type": "Question", name: "Wer erteilt BIS-Lizenzen in Indien?", acceptedAnswer: { "@type": "Answer", text: "BIS-Lizenzen werden vom Bureau of Indian Standards (indische BIS), der nationalen Normungsorganisation unter dem Ministerium für Verbraucherangelegenheiten, Ernährung und öffentliche Verteilung, erteilt." } },
+        { "@type": "Question", name: "Welche Arten von BIS-Zertifizierungsschemata gibt es?", acceptedAnswer: { "@type": "Answer", text: "Die wichtigsten BIS-Zertifizierungsschemata umfassen das ISI-Zeichen-Schema, das Compulsory Registration Scheme (CRS), das Foreign Manufacturers Certification Scheme (FMCS), Hallmarking für Schmuck, Eco Mark-Zertifizierung und Scheme X für Industrieanlagen." } },
+        { "@type": "Question", name: "Was ist Scheme X unter BIS-Zertifizierung?", acceptedAnswer: { "@type": "Answer", text: "Scheme X ist ein vereinfachtes BIS-Zertifizierungsverfahren für Industrieerzeugnisse wie Pumpen, Transformatoren, Werkzeugmaschinen und Krane. Es ermöglicht eine schnellere Genehmigung ohne Kompromisse bei der Einhaltung indischer Standards." } },
+        { "@type": "Question", name: "Welche Produkte benötigen in Indien eine BIS-Zertifizierung?", acceptedAnswer: { "@type": "Answer", text: "Produkte wie Elektrogeräte, Elektronik, Küchenwaren, Zement, Stahl, Goldschmuck, Mobiltelefone und Transformatoren benötigen gemäß dem indischen BIS-Mandat eine BIS-Zertifizierung." } },
+        { "@type": "Question", name: "Ist die BIS-Registrierung für alle Produkte verpflichtend?", acceptedAnswer: { "@type": "Answer", text: "Nein, die BIS-Registrierung ist nur für im Pflichtzertifizierungsschema gelistete Produkte verpflichtend. Freiwillige BIS-Zertifizierung ist jedoch ebenfalls verfügbar, um die Produktglaubwürdigkeit zu erhöhen." } },
+        { "@type": "Question", name: "Wie lange ist eine BIS-Lizenz gültig?", acceptedAnswer: { "@type": "Answer", text: "Eine BIS-Lizenz ist in der Regel ein bis zwei Jahre gültig und muss vor Ablauf verlängert werden, um das ISI-Zeichen weiter zu nutzen oder den BIS-Registrierungsstatus zu behalten." } },
+        { "@type": "Question", name: "Welche Schritte sind für die BIS-Zertifizierung in Indien nötig?", acceptedAnswer: { "@type": "Answer", text: "Das BIS-Zertifizierungsverfahren umfasst die Ermittlung anwendbarer indischer Standards, die Antragstellung, Produktprüfung, Werksinspektion und die Ausstellung eines BIS-Zertifikats nach Genehmigung." } },
+        { "@type": "Question", name: "Können ausländische Hersteller eine BIS-Lizenz beantragen?", acceptedAnswer: { "@type": "Answer", text: "Ja, unter dem Foreign Manufacturers Certification Scheme (FMCS) können ausländische Unternehmen eine BIS-Lizenz beantragen, um Produkte in Indien zu verkaufen. Sie müssen einen Authorized Indian Representative (AIR) benennen." } },
+        { "@type": "Question", name: "Welche Rolle hat der AIR bei der BIS-Zertifizierung?", acceptedAnswer: { "@type": "Answer", text: "Ein AIR (Authorized Indian Representative) fungiert als Verbindung zwischen dem ausländischen Hersteller und der indischen BIS. Er ist verantwortlich für Dokumentation, Kommunikation und die Einhaltung der BIS-Zertifizierungsanforderungen." } },
+        { "@type": "Question", name: "Wie beantrage ich die BIS-Registrierung online?", acceptedAnswer: { "@type": "Answer", text: "Die BIS-Registrierung kann online über das offizielle BIS-Portal beantragt werden. Das Verfahren umfasst Formulareinreichung, Dokumenten-Upload, Prüfberichte und Gebührenzahlung." } },
+        { "@type": "Question", name: "Welche Unterlagen sind für ein BIS-Zertifikat erforderlich?", acceptedAnswer: { "@type": "Answer", text: "Erforderlich sind u. a. Gewerbeerlaubnis, Produktspezifikationen, Herstellungsverfahren, Laborprüfberichte, Werkslayout, Qualitätshandbuch und Vollmachten (für ausländische Hersteller)." } },
+        { "@type": "Question", name: "Was kostet die BIS-Zertifizierung in Indien?", acceptedAnswer: { "@type": "Answer", text: "Die Kosten der BIS-Zertifizierung hängen von Produkttyp, Prüfanforderungen, Schema (ISI, CRS, FMCS) und ob der Antragsteller inländisch oder ausländisch ist ab. Dazu zählen Antragsgebühren, Prüfkosten und Inspektionskosten." } },
+        { "@type": "Question", name: "Ist das ISI-Zeichen für alle BIS-zertifizierten Produkte Pflicht?", acceptedAnswer: { "@type": "Answer", text: "Nein, nur Produkte unter dem ISI-Schema müssen das ISI-Zeichen tragen. Produkte unter CRS- oder Hallmarking-Schemata folgen anderen Kennzeichnungsprotokollen gemäß BIS-Registrierungsnormen." } },
+        { "@type": "Question", name: "Kann ich für umweltfreundliche Produkte eine BIS-Zertifizierung erhalten?", acceptedAnswer: { "@type": "Answer", text: "Ja, Produkte, die Umweltstandards erfüllen, können unter dem Eco Mark-Schema eine BIS-Zertifizierung erhalten, die die Einhaltung indischer Standards für Umweltsicherheit gewährleistet." } },
+        { "@type": "Question", name: "Was ist der Unterschied zwischen BIS-Zertifizierung und BIS-Registrierung?", acceptedAnswer: { "@type": "Answer", text: "BIS-Zertifizierung bezieht sich in der Regel auf die Genehmigung unter ISI-, FMCS- oder Hallmarking-Schemata, während BIS-Registrierung üblicherweise mit dem CRS-Schema für Elektronikprodukte verbunden ist." } },
+        { "@type": "Question", name: "Was ist das Compulsory Registration Scheme (CRS)?", acceptedAnswer: { "@type": "Answer", text: "CRS ist ein BIS-Registrierungsprogramm für IT- und Elektronikwaren wie LED-Leuchten, Mobiltelefone und Powerbanks. Es gewährleistet die Einhaltung indischer Sicherheitsstandards durch das Produkt." } },
+        { "@type": "Question", name: "Bedeuten ISI-Zeichen und BIS-Zertifikat dasselbe?", acceptedAnswer: { "@type": "Answer", text: "Nicht genau. Das ISI-Zeichen ist das unter dem BIS-Zertifizierungsschema an zertifizierte Produkte vergebene Symbol. Ein BIS-Zertifikat ist die dem Hersteller ausgestellte Rechtsurkunde." } },
+        { "@type": "Question", name: "Kann eine BIS-Lizenz mehrere Produkte abdecken?", acceptedAnswer: { "@type": "Answer", text: "Nein, für jeden Produkttyp und jeden Herstellungsstandort ist eine separate BIS-Lizenz erforderlich, auch bei ähnlichen Produkten." } },
+        { "@type": "Question", name: "Was passiert, wenn ich Produkte ohne BIS-Zertifizierung verkaufe?", acceptedAnswer: { "@type": "Answer", text: "Der Verkauf von Produkten, die eine BIS-Zertifizierung erfordern, ohne gültige BIS-Lizenz ist in Indien illegal und kann zu Strafen, Produktrückrufen oder Verboten führen." } },
+        { "@type": "Question", name: "Wie lange dauert die BIS-Zertifizierung?", acceptedAnswer: { "@type": "Answer", text: "Das BIS-Zertifizierungsverfahren dauert in der Regel 30 bis 90 Tage, abhängig von Produkttyp, Prüfanforderungen und ob der Antragsteller inländisch oder ausländisch ist." } },
+        { "@type": "Question", name: "Wird die BIS-Zertifizierung weltweit anerkannt?", acceptedAnswer: { "@type": "Answer", text: "Obwohl die BIS-Zertifizierung indienspezifisch ist, erhöht sie die globale Glaubwürdigkeit durch die Einhaltung strenger indischer Standards. Einige BIS-zertifizierte Produkte werden auch unter Gegenseitigkeitsabkommen anerkannt." } },
+        { "@type": "Question", name: "Wie oft muss ich meine BIS-Lizenz erneuern?", acceptedAnswer: { "@type": "Answer", text: "BIS-Lizenzen müssen jährlich oder alle zwei Jahre erneuert werden. Hersteller müssen die Einhaltung indischer Standards wahren und Überwachungsaudits bestehen, um ihr BIS-Zertifikat zu erneuern." } },
+      ],
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "biscertification-faq-schema-de";
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("biscertification-faq-schema-de");
+      if (el) el.remove();
+    };
+  }, [faqSchema]);
+
+  return null;
 };
 
 const BISCertificationBreadcrumb = () => {
