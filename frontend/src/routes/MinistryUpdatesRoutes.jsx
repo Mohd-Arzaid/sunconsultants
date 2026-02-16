@@ -84,6 +84,9 @@ const FurnitureQCOAmendmentOrderEng = lazy(() =>
     "@/pages/MinistryUpdatesPages/FurnitureQCOAmendmentOrder/FurnitureQCOAmendmentOrder"
   )
 );
+const FurnitureQCOAmendmentOrderlatest = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/FurnitureQCOAmendmentOrderlatest")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -238,6 +241,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <FurnitureQCOAmendmentOrderEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/latest-furniture-qco-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <FurnitureQCOAmendmentOrderlatest />
           </Suspense>
         }
       />

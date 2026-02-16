@@ -21,6 +21,232 @@ import {
 import { Link } from "react-router-dom";
 import AboutContact from "@/components/manual/about/AboutContact";
 
+// Single source of truth for ministry updates – used by NotificationCard and Pagination
+const MINISTRY_UPDATES_LIST = [
+  {
+    id: 0,
+    color: "#5B63E6",
+    tagType: "QCO Amendment",
+    date: "February 14, 2026",
+    displayDate: "14 Feb 2026",
+    title: "Furniture QCO Amendment Order 2026 – Complete Guide",
+    description:
+      "Understand Furniture QCO 2026 and mandatory BIS certification for furniture in India. Learn ISI mark requirements, exemptions, R&D imports, old stock clearance and export rules.",
+    link: "/ministry-updates/latest-furniture-qco-2026",
+    pdfLink: "/pdf/FurnitureQCORevised.pdf",
+  },
+  {
+    id: 1,
+    color: "#5B63E6",
+    tagType: "QCO Amendment",
+    date: "February 14, 2026",
+    displayDate: "14 Feb 2026",
+    title: "Furniture QCO Amendment Order 2026",
+    description:
+      "The Ministry has issued the Furniture (Quality Control) Amendment Order, 2026. Stay updated on BIS certification requirements and compliance for furniture manufacturers and importers.",
+    link: "/ministry-updates/furniture-qco-2026",
+  },
+  {
+    id: 2,
+    color: "#1A8781",
+    tagType: "BIS Update",
+    date: "February 9, 2026",
+    displayDate: "09 Feb 2026",
+    title: "Latest BIS Implementation Guidelines for IS 9873 (Part 1):2025 – Toy Safety Standard Updated",
+    description:
+      "BIS releases implementation guidelines for IS 9873 (Part 1):2025 Toy Safety Standard replacing IS 9873:2019. Check transition rules, testing changes, deadlines & compliance requirements.",
+    link: "/ministry-updates/bis-certification-update-is-9873-toy-safety",
+  },
+  {
+    id: 3,
+    color: "#1A8781",
+    tagType: "BIS Update",
+    date: "December 16, 2025",
+    displayDate: "16 Dec 2025",
+    title: "BIS Removes Mandatory In-House Laboratory Requirement for Manufacturers",
+    description:
+      "BIS has officially removed the mandatory in-house laboratory requirement for most products under BIS certification. Manufacturers can now use external BIS-recognised or ISO 17025 accredited labs.",
+    link: "/ministry-updates/bis-in-house-lab-requirement",
+  },
+  {
+    id: 4,
+    color: "#5B63E6",
+    tagType: "BIS Update",
+    date: "January 20, 2025",
+    displayDate: "20 Jan 2025",
+    title: "BIS Lifts Restrictions for ASEAN & Overseas Manufacturers",
+    description:
+      "BIS has removed country-specific restrictions on ASEAN and overseas manufacturers, enabling faster BIS certification and smoother entry into India. Pending applications are now being cleared.",
+    link: "/ministry-updates/bis-certification-update-asean-manufacturers",
+  },
+  {
+    id: 5,
+    color: "#1A8781",
+    tagType: "QCO Withdraw",
+    date: "November 15, 2024",
+    displayDate: "12 Nov 2025",
+    title: "Refined Zinc QCO Withdraw Order",
+    description:
+      "Quality Control Order for Refined Zinc has been withdrawn. Learn about the implications and requirements for manufacturers and importers.",
+    link: "/ministry-updates/refined-zinc-qco-withdraw-order",
+  },
+  {
+    id: 6,
+    color: "#C86A31",
+    tagType: "QCO Withdraw",
+    date: "November 10, 2024",
+    displayDate: "12 Nov 2025",
+    title: "Aluminium and Aluminium Alloys QCO Withdraw Order",
+    description:
+      "The Quality Control Order for Aluminium and Aluminium Alloys has been officially withdrawn. Get complete details about the order withdrawal.",
+    link: "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
+  },
+  {
+    id: 7,
+    color: "#5B63E6",
+    tagType: "QCO Withdraw",
+    date: "November 8, 2024",
+    displayDate: "12 Nov 2025",
+    title: "Copper QCO Withdraw Order",
+    description:
+      "Ministry of Consumer Affairs has withdrawn the Quality Control Order for Copper products. Read the complete notification and its impact.",
+    link: "/ministry-updates/copper-qco-withdraw-order",
+  },
+  {
+    id: 8,
+    color: "#1A8781",
+    tagType: "QCO Withdraw",
+    date: "November 5, 2024",
+    displayDate: "12 Nov 2025",
+    title: "Tin Ingot QCO Withdraw Order",
+    description:
+      "The Quality Control Order for Tin Ingots has been withdrawn. Check out the detailed order notification and compliance requirements.",
+    link: "/ministry-updates/tin-ingot-qco-withdraw-order",
+  },
+  {
+    id: 9,
+    color: "#C86A31",
+    tagType: "QCO Withdraw",
+    date: "November 1, 2024",
+    displayDate: "12 Nov 2025",
+    title: "Refined Nickel QCO Withdraw Order",
+    description:
+      "Quality Control Order for Refined Nickel products has been officially withdrawn. Stay informed about the regulatory changes.",
+    link: "/ministry-updates/refined-nickel-qco-withdraw-order",
+  },
+  {
+    id: 10,
+    color: "#5B63E6",
+    tagType: "QCO Withdraw",
+    date: "October 28, 2024",
+    displayDate: "12 Nov 2025",
+    title: "Nickel Powder QCO Withdraw Order",
+    description:
+      "The QCO for Nickel Powder has been withdrawn by the Ministry. Access complete details and documentation regarding this order.",
+    link: "/ministry-updates/nickel-qco-withdraw-order",
+  },
+  {
+    id: 11,
+    color: "#1A8781",
+    tagType: "QCO Withdraw",
+    date: "October 25, 2024",
+    displayDate: "12 Nov 2025",
+    title: "Petrochemical and Polymer Products QCO Withdraw Order",
+    description:
+      "Quality Control Order for Petrochemical and Polymer Products has been withdrawn. Read the comprehensive notification and guidelines.",
+    link: "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
+  },
+  {
+    id: 12,
+    color: "#C86A31",
+    tagType: "QCO Withdraw",
+    date: "January 16, 2026",
+    displayDate: "16 Jan 2026",
+    title: "Machinery & Electrical Equipment Safety (OTR) Order Withdrawn",
+    description:
+      "The Ministry of Heavy Industries has withdrawn the Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order, 2024. Learn about the impact on BIS Scheme X certification.",
+    link: "/ministry-updates/scheme-x-qco-withdraw-order",
+    pdfLink: "/pdf/withdrawal_of_the_machinery_and_electrical_equipment_safety_omnibus_technical_regulation_order_2024.pdf",
+  },
+  {
+    id: 13,
+    color: "#5B63E6",
+    tagType: "QCO Amendment",
+    date: "January 15, 2025",
+    displayDate: "19 Nov 2025",
+    title: "Steel Products Amendment 2025",
+    description:
+      "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
+    link: "/ministry-updates/steel-products-amendment-2025",
+  },
+  {
+    id: 14,
+    color: "#1A8781",
+    tagType: "QCO Withdraw",
+    date: "December 24, 2021",
+    displayDate: "30 Nov 2025",
+    title: "Toluene QCO Withdraw Order",
+    description:
+      "The Government of India has withdrawn the Toluene (Quality Control) Order, 2021, removing the BIS certification requirement under IS 537:2011. Know the reasons and industry impact.",
+    link: "/ministry-updates/toluene-qco-withdraw-order",
+  },
+  {
+    id: 15,
+    color: "#C86A31",
+    tagType: "QCO Withdraw",
+    date: "December 24, 2021",
+    displayDate: "30 Nov 2025",
+    title: "Methyl Acrylate, Ethyl Acrylate QCO Withdraw Order",
+    description:
+      "The Government of India has withdrawn the Methyl Acrylate, Ethyl Acrylate (Quality Control) Order, 2021, removing the BIS certification requirement under IS 14707:1999 & IS 14708:1999. Learn about the implications for manufacturers and importers.",
+    link: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
+  },
+  {
+    id: 16,
+    color: "#5B63E6",
+    tagType: "QCO Withdraw",
+    date: "December 24, 2021",
+    displayDate: "30 Nov 2025",
+    title: "Vinyl Acetate Monomer QCO Withdraw Order",
+    description:
+      "The Government of India has withdrawn the Vinyl Acetate Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 12345:1988. Know the reasons and industry impact.",
+    link: "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
+  },
+  {
+    id: 17,
+    color: "#1A8781",
+    tagType: "QCO Withdraw",
+    date: "September 13, 2021",
+    displayDate: "13 Sep 2021",
+    title: "Vinyl Chloride Monomer QCO Withdraw Order",
+    description:
+      "The Government of India has withdrawn the Vinyl Chloride Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 17442:2020. Know the reasons and industry impact.",
+    link: "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
+  },
+  {
+    id: 18,
+    color: "#C86A31",
+    tagType: "QCO Withdraw",
+    date: "September 13, 2021",
+    displayDate: "13 Sep 2021",
+    title: "Ethylene Dichloride QCO Withdraw Order",
+    description:
+      "The Government of India has withdrawn the Ethylene Dichloride (Quality Control) Order, 2021, removing the BIS certification requirement under IS 869:2020. Know the reasons and industry impact.",
+    link: "/ministry-updates/ethylene-dichloride-qco-withdraw-order",
+  },
+  {
+    id: 19,
+    color: "#5B63E6",
+    tagType: "QCO Withdraw",
+    date: "September 13, 2021",
+    displayDate: "13 Sep 2021",
+    title: "P-Xylene QCO Withdraw Order",
+    description:
+      "The Government of India has withdrawn the P-Xylene (Quality Control) Order, 2021, removing the BIS certification requirement under IS 17370:2020. Know the reasons and industry impact.",
+    link: "/ministry-updates/p-xylene-qco-withdraw-order",
+  },
+];
+
 const MinistryUpdates = () => {
   const baseUrl = "https://bis-certifications.com";
   const currentUrl = `${baseUrl}/ministry-updates`;
@@ -215,196 +441,7 @@ const MinistryUpdatesMainContent = () => {
 };
 
 const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
-  const notifications = [
-    {
-      id: 17,
-      color: "#5B63E6",
-      tagType: "QCO Amendment",
-      date: "February 14, 2026",
-      displayDate: "14 Feb 2026",
-      title: "Furniture QCO Amendment Order 2026",
-      description:
-        "The Ministry has issued the Furniture (Quality Control) Amendment Order, 2026. Stay updated on BIS certification requirements and compliance for furniture manufacturers and importers.",
-      link: "/ministry-updates/furniture-qco-2026",
-    },
-    {
-      id: 16,
-      color: "#1A8781",
-      tagType: "BIS Update",
-      date: "February 9, 2026",
-      displayDate: "09 Feb 2026",
-      title: "Latest BIS Implementation Guidelines for IS 9873 (Part 1):2025 – Toy Safety Standard Updated",
-      description:
-        "BIS releases implementation guidelines for IS 9873 (Part 1):2025 Toy Safety Standard replacing IS 9873:2019. Check transition rules, testing changes, deadlines & compliance requirements.",
-      link: "/ministry-updates/bis-certification-update-is-9873-toy-safety",
-    },
-    {
-      id: 1,
-      color: "#1A8781",
-      tagType: "BIS Update",
-      date: "December 16, 2025",
-      displayDate: "16 Dec 2025",
-      title: "BIS Removes Mandatory In-House Laboratory Requirement for Manufacturers",
-      description:
-        "BIS has officially removed the mandatory in-house laboratory requirement for most products under BIS certification. Manufacturers can now use external BIS-recognised or ISO 17025 accredited labs.",
-      link: "/ministry-updates/bis-in-house-lab-requirement",
-    },
-    {
-      id: 0,
-      color: "#5B63E6",
-      tagType: "BIS Update",
-      date: "January 20, 2025",
-      displayDate: "20 Jan 2025",
-      title: "BIS Lifts Restrictions for ASEAN & Overseas Manufacturers",
-      description:
-        "BIS has removed country-specific restrictions on ASEAN and overseas manufacturers, enabling faster BIS certification and smoother entry into India. Pending applications are now being cleared.",
-      link: "/ministry-updates/bis-certification-update-asean-manufacturers",
-    },
-    {
-      id: 2,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "November 15, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Refined Zinc QCO Withdraw Order",
-      description:
-        "Quality Control Order for Refined Zinc has been withdrawn. Learn about the implications and requirements for manufacturers and importers.",
-      link: "/ministry-updates/refined-zinc-qco-withdraw-order",
-    },
-    {
-      id: 2,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "November 10, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Aluminium and Aluminium Alloys QCO Withdraw Order",
-      description:
-        "The Quality Control Order for Aluminium and Aluminium Alloys has been officially withdrawn. Get complete details about the order withdrawal.",
-      link: "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
-    },
-    {
-      id: 3,
-      color: "#5B63E6",
-      tagType: "QCO Withdraw",
-      date: "November 8, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Copper QCO Withdraw Order",
-      description:
-        "Ministry of Consumer Affairs has withdrawn the Quality Control Order for Copper products. Read the complete notification and its impact.",
-      link: "/ministry-updates/copper-qco-withdraw-order",
-    },
-    {
-      id: 4,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "November 5, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Tin Ingot QCO Withdraw Order",
-      description:
-        "The Quality Control Order for Tin Ingots has been withdrawn. Check out the detailed order notification and compliance requirements.",
-      link: "/ministry-updates/tin-ingot-qco-withdraw-order",
-    },
-    {
-      id: 5,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "November 1, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Refined Nickel QCO Withdraw Order",
-      description:
-        "Quality Control Order for Refined Nickel products has been officially withdrawn. Stay informed about the regulatory changes.",
-      link: "/ministry-updates/refined-nickel-qco-withdraw-order",
-    },
-    {
-      id: 6,
-      color: "#5B63E6",
-      tagType: "QCO Withdraw",
-      date: "October 28, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Nickel Powder QCO Withdraw Order",
-      description:
-        "The QCO for Nickel Powder has been withdrawn by the Ministry. Access complete details and documentation regarding this order.",
-      link: "/ministry-updates/nickel-qco-withdraw-order",
-    },
-    {
-      id: 7,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "October 25, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Petrochemical and Polymer Products QCO Withdraw Order",
-      description:
-        "Quality Control Order for Petrochemical and Polymer Products has been withdrawn. Read the comprehensive notification and guidelines.",
-      link: "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
-    },
-    {
-      id: 8,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "January 16, 2026",
-      displayDate: "16 Jan 2026",
-      title: "Machinery & Electrical Equipment Safety (OTR) Order Withdrawn",
-      description:
-        "The Ministry of Heavy Industries has withdrawn the Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order, 2024. Learn about the impact on BIS Scheme X certification.",
-      link: "/ministry-updates/scheme-x-qco-withdraw-order",
-      pdfLink: "/pdf/withdrawal_of_the_machinery_and_electrical_equipment_safety_omnibus_technical_regulation_order_2024.pdf",
-    },
-    {
-      id: 10,
-      color: "#5B63E6",
-      tagType: "QCO Amendment",
-      date: "January 15, 2025",
-      displayDate: "19 Nov 2025",
-      title: "Steel Products Amendment 2025",
-      description:
-        "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
-      link: "/ministry-updates/steel-products-amendment-2025",
-    },
-    {
-      id: 11,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "December 24, 2021",
-      displayDate: "24 Dec 2021",
-      title: "Toluene QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Toluene (Quality Control) Order, 2021, removing the BIS certification requirement under IS 537:2011. Know the reasons and industry impact.",
-      link: "/ministry-updates/toluene-qco-withdraw-order",
-    },
-    {
-      id: 12,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "December 24, 2021",
-      displayDate: "24 Dec 2021",
-      title: "Methyl Acrylate, Ethyl Acrylate QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Methyl Acrylate, Ethyl Acrylate (Quality Control) Order, 2021, removing the BIS certification requirement under IS 14707:1999 & IS 14708:1999. Learn about the implications for manufacturers and importers.",
-      link: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
-    },
-    {
-      id: 13,
-      color: "#5B63E6",
-      tagType: "QCO Withdraw",
-      date: "December 24, 2021",
-      displayDate: "30 Nov 2025",
-      title: "Vinyl Acetate Monomer QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Vinyl Acetate Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 12345:1988. Know the reasons and industry impact.",
-      link: "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
-    },
-    {
-      id: 13,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "September 13, 2021",
-      displayDate: "13 Sep 2021",
-      title: "Vinyl Chloride Monomer QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Vinyl Chloride Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 17442:2020. Know the reasons and industry impact.",
-      link: "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
-    },
-  ];
+  const notifications = MINISTRY_UPDATES_LIST;
 
   // Function to parse date string into Date object
   const parseDate = (dateString) => {
@@ -600,218 +637,7 @@ const Pagination = ({
   itemsPerPage,
   searchQuery,
 }) => {
-  const notifications = [
-    {
-      id: 18,
-      color: "#5B63E6",
-      tagType: "QCO Amendment",
-      date: "February 14, 2026",
-      displayDate: "14 Feb 2026",
-      title: "Furniture QCO Amendment Order 2026",
-      description:
-        "The Ministry has issued the Furniture (Quality Control) Amendment Order, 2026. Stay updated on BIS certification requirements and compliance for furniture manufacturers and importers.",
-      link: "/ministry-updates/furniture-qco-2026",
-    },
-    {
-      id: 17,
-      color: "#1A8781",
-      tagType: "BIS Update",
-      date: "February 9, 2026",
-      displayDate: "09 Feb 2026",
-      title: "Latest BIS Implementation Guidelines for IS 9873 (Part 1):2025 – Toy Safety Standard Updated",
-      description:
-        "BIS releases implementation guidelines for IS 9873 (Part 1):2025 Toy Safety Standard replacing IS 9873:2019. Check transition rules, testing changes, deadlines & compliance requirements.",
-      link: "/ministry-updates/bis-certification-update-is-9873-toy-safety",
-    },
-    {
-      id: 1,
-      color: "#1A8781",
-      tagType: "BIS Update",
-      date: "December 16, 2025",
-      displayDate: "16 Dec 2025",
-      title: "BIS Removes Mandatory In-House Laboratory Requirement for Manufacturers",
-      description:
-        "BIS has officially removed the mandatory in-house laboratory requirement for most products under BIS certification. Manufacturers can now use external BIS-recognised or ISO 17025 accredited labs.",
-      link: "/ministry-updates/bis-in-house-lab-requirement",
-    },
-    {
-      id: 0,
-      color: "#5B63E6",
-      tagType: "BIS Update",
-      date: "January 20, 2025",
-      displayDate: "20 Jan 2025",
-      title: "BIS Lifts Restrictions for ASEAN & Overseas Manufacturers",
-      description:
-        "BIS has removed country-specific restrictions on ASEAN and overseas manufacturers, enabling faster BIS certification and smoother entry into India. Pending applications are now being cleared.",
-      link: "/ministry-updates/bis-certification-update-asean-manufacturers",
-    },
-    {
-      id: 2,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "November 15, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Refined Zinc QCO Withdraw Order",
-      description:
-        "Quality Control Order for Refined Zinc has been withdrawn. Learn about the implications and requirements for manufacturers and importers.",
-      link: "/ministry-updates/refined-zinc-qco-withdraw-order",
-    },
-    {
-      id: 2,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "November 10, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Aluminium and Aluminium Alloys QCO Withdraw Order",
-      description:
-        "The Quality Control Order for Aluminium and Aluminium Alloys has been officially withdrawn. Get complete details about the order withdrawal.",
-      link: "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
-    },
-    {
-      id: 3,
-      color: "#5B63E6",
-      tagType: "QCO Withdraw",
-      date: "November 8, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Copper QCO Withdraw Order",
-      description:
-        "Ministry of Consumer Affairs has withdrawn the Quality Control Order for Copper products. Read the complete notification and its impact.",
-      link: "/ministry-updates/copper-qco-withdraw-order",
-    },
-    {
-      id: 4,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "November 5, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Tin Ingot QCO Withdraw Order",
-      description:
-        "The Quality Control Order for Tin Ingots has been withdrawn. Check out the detailed order notification and compliance requirements.",
-      link: "/ministry-updates/tin-ingot-qco-withdraw-order",
-    },
-    {
-      id: 5,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "November 1, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Refined Nickel QCO Withdraw Order",
-      description:
-        "Quality Control Order for Refined Nickel products has been officially withdrawn. Stay informed about the regulatory changes.",
-      link: "/ministry-updates/refined-nickel-qco-withdraw-order",
-    },
-    {
-      id: 6,
-      color: "#5B63E6",
-      tagType: "QCO Withdraw",
-      date: "October 28, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Nickel Powder QCO Withdraw Order",
-      description:
-        "The QCO for Nickel Powder has been withdrawn by the Ministry. Access complete details and documentation regarding this order.",
-      link: "/ministry-updates/nickel-qco-withdraw-order",
-    },
-    {
-      id: 7,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "October 25, 2024",
-      displayDate: "12 Nov 2025",
-      title: "Petrochemical and Polymer Products QCO Withdraw Order",
-      description:
-        "Quality Control Order for Petrochemical and Polymer Products has been withdrawn. Read the comprehensive notification and guidelines.",
-      link: "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
-    },
-    {
-      id: 8,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "January 16, 2026",
-      displayDate: "16 Jan 2026",
-      title: "Machinery & Electrical Equipment Safety (OTR) Order Withdrawn",
-      description:
-        "The Ministry of Heavy Industries has withdrawn the Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order, 2024. Learn about the impact on BIS Scheme X certification.",
-      link: "/ministry-updates/scheme-x-qco-withdraw-order",
-      pdfLink: "/pdf/withdrawal_of_the_machinery_and_electrical_equipment_safety_omnibus_technical_regulation_order_2024.pdf",
-    },
-    {
-      id: 9,
-      color: "#1A8781",
-      tagType: "QCO Amendment",
-      date: "January 15, 2025",
-      displayDate: "19 Nov 2025",
-      title: "Steel Products Amendment 2025",
-      description:
-        "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
-      link: "/ministry-updates/steel-products-amendment-2025",
-    },
-    {
-      id: 10,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "December 24, 2021",
-      displayDate: "30 Nov 2025",
-      title: "Toluene QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Toluene (Quality Control) Order, 2021, removing the BIS certification requirement under IS 537:2011. Know the reasons and industry impact.",
-      link: "/ministry-updates/toluene-qco-withdraw-order",
-    },
-    {
-      id: 11,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "December 24, 2021",
-      displayDate: "30 Nov 2025",
-      title: "Methyl Acrylate, Ethyl Acrylate QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Methyl Acrylate, Ethyl Acrylate (Quality Control) Order, 2021, removing the BIS certification requirement under IS 14707:1999 & IS 14708:1999. Learn about the implications for manufacturers and importers.",
-      link: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
-    },
-    {
-      id: 13,
-      color: "#5B63E6",
-      tagType: "QCO Withdraw",
-      date: "December 24, 2021",
-      displayDate: "30 Nov 2025",
-      title: "Vinyl Acetate Monomer QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Vinyl Acetate Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 12345:1988. Know the reasons and industry impact.",
-      link: "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
-    },
-    {
-      id: 14,
-      color: "#1A8781",
-      tagType: "QCO Withdraw",
-      date: "September 13, 2021",
-      displayDate: "13 Sep 2021",
-      title: "Vinyl Chloride Monomer QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Vinyl Chloride Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 17442:2020. Know the reasons and industry impact.",
-      link: "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
-    },
-    {
-      id: 15,
-      color: "#C86A31",
-      tagType: "QCO Withdraw",
-      date: "September 13, 2021",
-      displayDate: "13 Sep 2021",
-      title: "Ethylene Dichloride QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the Ethylene Dichloride (Quality Control) Order, 2021, removing the BIS certification requirement under IS 869:2020. Know the reasons and industry impact.",
-      link: "/ministry-updates/ethylene-dichloride-qco-withdraw-order",
-    },
-    {
-      id: 15,
-      color: "#5B63E6",
-      tagType: "QCO Withdraw",
-      date: "September 13, 2021",
-      displayDate: "13 Sep 2021",
-      title: "P-Xylene QCO Withdraw Order",
-      description:
-        "The Government of India has withdrawn the P-Xylene (Quality Control) Order, 2021, removing the BIS certification requirement under IS 17370:2020. Know the reasons and industry impact.",
-      link: "/ministry-updates/p-xylene-qco-withdraw-order",
-    },
-  ];
+  const notifications = MINISTRY_UPDATES_LIST;
 
   // Function to parse date string into Date object (same as above)
   const parseDate = (dateString) => {

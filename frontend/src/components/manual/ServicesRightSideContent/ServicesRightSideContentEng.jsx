@@ -92,6 +92,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-certification-update-asean-manufacturers",
     "/ministry-updates/bis-certification-update-is-9873-toy-safety",
     "/ministry-updates/furniture-qco-2026",
+    "/ministry-updates/latest-furniture-qco-2026",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -913,6 +914,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // Furniture QCO Amendment Order 2026
     if (path.includes("/ministry-updates/furniture-qco-2026"))
       return "Furniture QCO Amendment Order 2026 - Ministry Updates (English)";
+
+    // Furniture QCO Amendment Order latest (Complete Guide)
+    if (path.includes("/ministry-updates/latest-furniture-qco-2026"))
+      return "Furniture QCO Amendment Order 2026 – Complete Guide - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

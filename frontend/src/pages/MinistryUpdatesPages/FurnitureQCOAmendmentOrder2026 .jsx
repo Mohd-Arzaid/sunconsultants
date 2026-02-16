@@ -506,7 +506,6 @@ const MainContentLeft = () => {
           Yes, but only until 21 March 2027. After 22 March 2027, BIS will accept applications only under IS 9873 (Part 1):2025.
         </p>
 
-
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3 mt-4">
           7. What happens if manufacturers do not update before the deadline?
         </h3>
