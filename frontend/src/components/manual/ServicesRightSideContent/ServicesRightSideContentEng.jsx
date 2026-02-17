@@ -93,6 +93,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-certification-update-is-9873-toy-safety",
     "/ministry-updates/furniture-qco-2026",
     "/ministry-updates/latest-furniture-qco-2026",
+    "/ministry-updates/dpiit-bis-qco-exemption-2026-notification",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -918,6 +919,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // Furniture QCO Amendment Order latest (Complete Guide)
     if (path.includes("/ministry-updates/latest-furniture-qco-2026"))
       return "Furniture QCO Amendment Order 2026 – Complete Guide - Ministry Updates (English)";
+
+    // DPIIT Notification 2026 – BIS QCO Exemption for Transitional Imports
+    if (path.includes("/ministry-updates/dpiit-bis-qco-exemption-2026-notification"))
+      return "DPIIT Notification 2026: Major Relief on BIS QCO Compliance for Transitional Imports - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

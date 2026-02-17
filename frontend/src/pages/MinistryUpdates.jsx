@@ -25,6 +25,17 @@ import AboutContact from "@/components/manual/about/AboutContact";
 const MINISTRY_UPDATES_LIST = [
   {
     id: 0,
+    color: "#1A8781",
+    tagType: "BIS Update",
+    date: "February 17, 2026",
+    displayDate: "17 Feb 2026",
+    title: "DPIIT Notification 2026: Major Relief on BIS QCO Compliance for Transitional Imports",
+    description:
+      "DPIIT issues Notification S.O. 776(E) dated 12 February 2026, granting exemption from BIS QCO compliance for imports where the purchase order was placed before implementation and shipping documents are filed within 180 days.",
+    link: "/ministry-updates/dpiit-bis-qco-exemption-2026-notification",
+  },
+  {
+    id: 1,
     color: "#5B63E6",
     tagType: "QCO Amendment",
     date: "February 14, 2026",
@@ -36,8 +47,8 @@ const MINISTRY_UPDATES_LIST = [
     pdfLink: "/pdf/FurnitureQCORevised.pdf",
   },
   {
-    id: 1,
-    color: "#5B63E6",
+    id: 2,
+    color: "#5B6376",
     tagType: "QCO Amendment",
     date: "February 14, 2026",
     displayDate: "14 Feb 2026",
@@ -47,7 +58,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/furniture-qco-2026",
   },
   {
-    id: 2,
+    id: 3,
     color: "#1A8781",
     tagType: "BIS Update",
     date: "February 9, 2026",
@@ -58,7 +69,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/bis-certification-update-is-9873-toy-safety",
   },
   {
-    id: 3,
+    id: 4,
     color: "#1A8781",
     tagType: "BIS Update",
     date: "December 16, 2025",
@@ -69,7 +80,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/bis-in-house-lab-requirement",
   },
   {
-    id: 4,
+    id: 5,
     color: "#5B63E6",
     tagType: "BIS Update",
     date: "January 20, 2025",
@@ -80,7 +91,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/bis-certification-update-asean-manufacturers",
   },
   {
-    id: 5,
+    id: 6,
     color: "#1A8781",
     tagType: "QCO Withdraw",
     date: "November 15, 2024",
@@ -91,7 +102,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/refined-zinc-qco-withdraw-order",
   },
   {
-    id: 6,
+    id: 7,
     color: "#C86A31",
     tagType: "QCO Withdraw",
     date: "November 10, 2024",
@@ -102,7 +113,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
   },
   {
-    id: 7,
+    id: 8,
     color: "#5B63E6",
     tagType: "QCO Withdraw",
     date: "November 8, 2024",
@@ -113,7 +124,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/copper-qco-withdraw-order",
   },
   {
-    id: 8,
+    id: 9,
     color: "#1A8781",
     tagType: "QCO Withdraw",
     date: "November 5, 2024",
@@ -124,7 +135,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/tin-ingot-qco-withdraw-order",
   },
   {
-    id: 9,
+    id: 10,
     color: "#C86A31",
     tagType: "QCO Withdraw",
     date: "November 1, 2024",
@@ -135,7 +146,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/refined-nickel-qco-withdraw-order",
   },
   {
-    id: 10,
+    id: 11,
     color: "#5B63E6",
     tagType: "QCO Withdraw",
     date: "October 28, 2024",
@@ -146,7 +157,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/nickel-qco-withdraw-order",
   },
   {
-    id: 11,
+    id: 12,
     color: "#1A8781",
     tagType: "QCO Withdraw",
     date: "October 25, 2024",
@@ -157,7 +168,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
   },
   {
-    id: 12,
+    id: 13,
     color: "#C86A31",
     tagType: "QCO Withdraw",
     date: "January 16, 2026",
@@ -169,7 +180,7 @@ const MINISTRY_UPDATES_LIST = [
     pdfLink: "/pdf/withdrawal_of_the_machinery_and_electrical_equipment_safety_omnibus_technical_regulation_order_2024.pdf",
   },
   {
-    id: 13,
+    id: 14,
     color: "#5B63E6",
     tagType: "QCO Amendment",
     date: "January 15, 2025",
@@ -180,7 +191,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/steel-products-amendment-2025",
   },
   {
-    id: 14,
+    id: 15,
     color: "#1A8781",
     tagType: "QCO Withdraw",
     date: "December 24, 2021",
@@ -191,7 +202,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/toluene-qco-withdraw-order",
   },
   {
-    id: 15,
+    id: 16,
     color: "#C86A31",
     tagType: "QCO Withdraw",
     date: "December 24, 2021",
@@ -202,7 +213,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
   },
   {
-    id: 16,
+    id: 17,
     color: "#5B63E6",
     tagType: "QCO Withdraw",
     date: "December 24, 2021",
@@ -213,7 +224,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
   },
   {
-    id: 17,
+    id: 18,
     color: "#1A8781",
     tagType: "QCO Withdraw",
     date: "September 13, 2021",
@@ -224,7 +235,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
   },
   {
-    id: 18,
+    id: 19,
     color: "#C86A31",
     tagType: "QCO Withdraw",
     date: "September 13, 2021",
@@ -235,7 +246,7 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/ethylene-dichloride-qco-withdraw-order",
   },
   {
-    id: 19,
+    id: 20,
     color: "#5B63E6",
     tagType: "QCO Withdraw",
     date: "September 13, 2021",

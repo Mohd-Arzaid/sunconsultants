@@ -16,6 +16,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterKorean from "@/components/manual/Footer/FooterKorean";
+import LanguageSelectorBatteryAirPurifier from "./LanguageSelectorBatteryAirPurifier";
 
 const BISCertificateBatteryOperatedAirPurifierKorean = () => {
   return (
@@ -23,6 +24,7 @@ const BISCertificateBatteryOperatedAirPurifierKorean = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
+      <LanguageSelectorBatteryAirPurifier />
       <Services />
       <VideoSection />
       <FooterKorean />

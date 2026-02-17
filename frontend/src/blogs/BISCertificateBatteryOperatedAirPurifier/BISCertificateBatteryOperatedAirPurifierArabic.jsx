@@ -16,6 +16,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterArabic from "@/components/manual/Footer/FooterArabic";
+import LanguageSelectorBatteryAirPurifier from "./LanguageSelectorBatteryAirPurifier";
 
 const BISCertificateBatteryOperatedAirPurifierArabic = () => {
   return (
@@ -23,6 +24,7 @@ const BISCertificateBatteryOperatedAirPurifierArabic = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
+      <LanguageSelectorBatteryAirPurifier />
       <Services />
       <VideoSection />
       <FooterArabic /> 
@@ -71,6 +73,21 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+      {/* Hreflang: default English, alternate language versions */}
+      <link rel="alternate" hrefLang="x-default" href="https://bis-certifications.com/blogs/isi-products/battery-operated-air-purifier-is-302" />
+      <link rel="alternate" hrefLang="en" href="https://bis-certifications.com/blogs/isi-products/battery-operated-air-purifier-is-302" />
+      <link rel="alternate" hrefLang="de" href="https://bis-certifications.com/blogs/isi-products/batteriebetriebener-luftreiniger-is-302" />
+      <link rel="alternate" hrefLang="es" href="https://bis-certifications.com/blogs/isi-products/purificador-de-aire-funcionado-por-bateria-is-302" />
+      <link rel="alternate" hrefLang="fr" href="https://bis-certifications.com/blogs/isi-products/purificateur-dair-alimente-par-batterie-is-302" />
+      <link rel="alternate" hrefLang="id" href="https://bis-certifications.com/blogs/isi-products/pembersih-udara-berbaterai-is-302" />
+      <link rel="alternate" hrefLang="it" href="https://bis-certifications.com/blogs/isi-products/purificatore-daria-alimentato-a-batteria-is-302" />
+      <link rel="alternate" hrefLang="ja" href="https://bis-certifications.com/blogs/isi-products/denchi-kudou-kuuki-jouka-ki-is-302" />
+      <link rel="alternate" hrefLang="ko" href="https://bis-certifications.com/blogs/isi-products/jeonji-gudong-gonggi-jeonghwagi-is-302" />
+      <link rel="alternate" hrefLang="nl" href="https://bis-certifications.com/blogs/isi-products/batterij-aangedreven-luchtzuiveraar-is-302" />
+      <link rel="alternate" hrefLang="th" href="https://bis-certifications.com/blogs/isi-products/khrueang-fok-lom-batari-is-302" />
+      <link rel="alternate" hrefLang="vi" href="https://bis-certifications.com/blogs/isi-products/may-loc-khong-khi-chay-bang-pin-is-302" />
+      <link rel="alternate" hrefLang="ar" href="https://bis-certifications.com/blogs/isi-products/munazzif-hawa-bi-batariya-is-302" />
+      <link rel="alternate" hrefLang="zh" href="https://bis-certifications.com/blogs/isi-products/dianchi-kongqi-jinghuaqi-is-302" />
     </Helmet>
   );
 };

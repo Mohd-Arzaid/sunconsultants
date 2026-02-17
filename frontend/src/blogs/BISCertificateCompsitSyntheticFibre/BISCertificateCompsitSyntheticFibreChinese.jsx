@@ -16,6 +16,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterChinese from "@/components/manual/Footer/FooterChinese";
+import LanguageSelectorCompsitSyntheticFibre from "./LanguageSelectorCompsitSyntheticFibre";
 import {
   Table,
   TableBody,
@@ -31,6 +32,7 @@ const BISCertificateCompsitSyntheticFibreChinese = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
+      <LanguageSelectorCompsitSyntheticFibre />
       <Services />
       <VideoSection />
       <FooterChinese />
@@ -79,6 +81,21 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+      {/* Hreflang: default English, alternate language versions */}
+      <link rel="alternate" hrefLang="x-default" href="https://bis-certifications.com/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928" />
+      <link rel="alternate" hrefLang="en" href="https://bis-certifications.com/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928" />
+      <link rel="alternate" hrefLang="de" href="https://bis-certifications.com/blogs/isi-products/verbund-synthetikfaserseile-is-14928" />
+      <link rel="alternate" hrefLang="es" href="https://bis-certifications.com/blogs/isi-products/cuerdas-de-fibra-sintetica-compuesta-is-14928" />
+      <link rel="alternate" hrefLang="fr" href="https://bis-certifications.com/blogs/isi-products/cordes-en-fibres-synthetiques-composites-is-14928" />
+      <link rel="alternate" hrefLang="id" href="https://bis-certifications.com/blogs/isi-products/tali-serat-sintetik-komposit-is-14928" />
+      <link rel="alternate" hrefLang="it" href="https://bis-certifications.com/blogs/isi-products/corde-in-fibra-sintetica-composita-is-14928" />
+      <link rel="alternate" hrefLang="ja" href="https://bis-certifications.com/blogs/isi-products/fukugo-gosei-sen-i-ro-pu-is-14928" />
+      <link rel="alternate" hrefLang="ko" href="https://bis-certifications.com/blogs/isi-products/bokhap-hapseong-seomyu-ropeu-is-14928" />
+      <link rel="alternate" hrefLang="nl" href="https://bis-certifications.com/blogs/isi-products/samengestelde-synthetische-vezeltouwen-is-14928" />
+      <link rel="alternate" hrefLang="th" href="https://bis-certifications.com/th/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928" />
+      <link rel="alternate" hrefLang="vi" href="https://bis-certifications.com/vi/blogs/isi-products/day-soi-tong-hop-phoi-hop-is-14928" />
+      <link rel="alternate" hrefLang="ar" href="https://bis-certifications.com/blogs/isi-products/hibal-alyaf-sinaiya-murakkaba-is-14928" />
+      <link rel="alternate" hrefLang="zh" href="https://bis-certifications.com/blogs/isi-products/fuhe-hecheng-xianwei-sheng-is-14928" />
     </Helmet>
   );
 };
