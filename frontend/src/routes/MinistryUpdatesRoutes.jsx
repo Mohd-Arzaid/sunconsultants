@@ -256,7 +256,7 @@ export const MinistryUpdatesRoutes = () => {
         }
       />
       <Route
-        path="/ministry-updates/dpiit-bis-qco-exemption-2026-notification"
+        path="/ministry-updates/latest-bis-qco-update-for-import-products"
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <DPIITNotification2026 />

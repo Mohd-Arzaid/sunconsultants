@@ -32,7 +32,7 @@ const MINISTRY_UPDATES_LIST = [
     title: "DPIIT Notification 2026: Major Relief on BIS QCO Compliance for Transitional Imports",
     description:
       "DPIIT issues Notification S.O. 776(E) dated 12 February 2026, granting exemption from BIS QCO compliance for imports where the purchase order was placed before implementation and shipping documents are filed within 180 days.",
-    link: "/ministry-updates/dpiit-bis-qco-exemption-2026-notification",
+    link: "/ministry-updates/latest-bis-qco-update-for-import-products",
   },
   {
     id: 1,

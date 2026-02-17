@@ -48,7 +48,7 @@ const MetaTags = () => {
   const metaKeywords =
     "DPIIT Notification 2026, BIS QCO exemption, S.O. 776(E), transitional imports, BIS compliance, Quality Control Order, DPIIT, Ministry of Commerce";
   const websiteUrl =
-    "https://bis-certifications.com/ministry-updates/dpiit-bis-qco-exemption-2026-notification";
+    "https://bis-certifications.com/ministry-updates/latest-bis-qco-update-for-import-products";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
