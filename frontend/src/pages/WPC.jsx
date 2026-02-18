@@ -38,18 +38,26 @@ const WPC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "WPC Registration Certification",
-                item: "https://bis-certifications.com/information-about-wpc-certificate-eta-approval",
-              },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://bis-certifications.com" },
+              { "@type": "ListItem", position: 2, name: "WPC Approval | WPC ETA Certification", item: "https://bis-certifications.com/information-about-wpc-certificate-eta-approval" },
+            ],
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              { "@type": "Question", name: "What are the radio frequency bands?", acceptedAnswer: { "@type": "Answer", text: "A radio frequency band is a part of the radio frequency spectrum that is allocated for a specific type of wireless communication. There are several different communications that use different bands for wireless communication including mobile communications, Wi-Fi, Bluetooth, satellite communication, broadcasting, etc. Each band is allocated limits technically, to eliminate interference and to allow for proper functioning of different devices and services." } },
+              { "@type": "Question", name: "What is a WPC certificate?", acceptedAnswer: { "@type": "Answer", text: "A WPC certificate is a type of compliance certificate that is required for the import, sale, and usage of wireless products within the geographical boundary of India. This includes all devices that are radio frequency signal emitters such as Bluetooth devices, wi-fi devices, wi-fi routers, and other such devices like smart speakers. A WPC certified device cannot be marketed or operated in India." } },
+              { "@type": "Question", name: "What is WPC Certification in India?", acceptedAnswer: { "@type": "Answer", text: "WPC certification is to ensure that a wireless device is operating according to the compliance of India's spectrum control and wireless devices regulations. It is an approval that is given to a product for operating within the limits of frequency bands that are assigned for a particular domain of usage to ensure that there is no jamming of other communication systems. Any wireless device manufacturer in India is required to have an approval from the Wireless Planning and Coordination Wing before entering the Indian market." } },
+              { "@type": "Question", name: "Who is the issuer of WPC certificates in India?", acceptedAnswer: { "@type": "Answer", text: "The WPC certificate is provided by the Wireless Planning and Coordination Wing, which is a part of the Department of Telecommunications. This body oversees the management of radio frequencies and provides Equipment Type Approval for wireless devices." } },
+              { "@type": "Question", name: "What is WPC ETA approval?", acceptedAnswer: { "@type": "Answer", text: "WPC ETA refers to Equipment Type Approval. This is mandatory for wireless devices that function in the de-licensed frequency ranges, i.e. the ranges which include Bluetooth and Wi-Fi. Thus, for the import of these devices into India, ETA approval is necessary. Also, in many instances, even wireless devices manufactured in India using wireless modules might require ETA certification, depending upon the configurations." } },
+              { "@type": "Question", name: "Can WPC ETA certification be obtained by a foreign manufacturer?", acceptedAnswer: { "@type": "Answer", text: "Yes, WPC ETA Certification can be obtained by a foreign manufacturer. An Authorized Indian Representative has to be appointed for the application. The representative is in charge of submitting the documentation, liaising with the concerned authorities, and completing the approval process on behalf of the foreign entity." } },
+              { "@type": "Question", name: "What is the period of validity of a WPC License?", acceptedAnswer: { "@type": "Answer", text: "A WPC License is valid for the lifetime of the approved model of the product. However, if the wireless specifications of the product change, e.g. frequency range or transmission power, etc., new approval will be required." } },
+              { "@type": "Question", name: "Who needs WPC certification in India?", acceptedAnswer: { "@type": "Answer", text: "WPC certification is a must for all persons or companies in the business of manufacturing, importing, distributing, or selling wireless devices in India. This also includes businesses in the trade of Bluetooth, Wi-Fi, RFID, or any other products using radio frequency." } },
+              { "@type": "Question", name: "How much are the government charges for WPC ETA approval?", acceptedAnswer: { "@type": "Answer", text: "The government charges for WPC ETA approval are around ₹10,000 for each product. This is for each finished product or each separate RF module, and payment of this fee is mandatory for submission of the application." } },
+              { "@type": "Question", name: "Is the application fee refunded if the application is withdrawn?", acceptedAnswer: { "@type": "Answer", text: "No, in case of application withdrawal or rejection, the application fee is forfeited. It is advisable for applicants to cross-check all technical and application information to eliminate any mistakes." } },
             ],
           })}
         </script>
@@ -70,7 +78,7 @@ const WPC = () => {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
                   <BreadcrumbPage>
-                    WPC Registration Certification
+                    WPC Approval | WPC ETA Certification
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -115,14 +123,13 @@ const WPCHero = () => {
 
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              WPC Registration Certification
+              WPC Approval | WPC ETA Certification
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Get hassle-free WPC certification with Sun certifications – your
-            trusted compliance partner!
+            Process, Cost, and Requirements for WPC ETA Certification in India – your trusted compliance partner!
           </p>
 
           <div className="flex items-center -mt-2">
@@ -165,17 +172,18 @@ const WPCIndex = () => {
 
   const SECTIONS = [
     "Overview",
-    "Product",
-    "Approval",
-    "Registration",
-    "Role",
+    "WPC Approval",
+    "ETA",
+    "Categories",
+    "Eligibility",
     "Process",
-    "certifications",
-    "Regulations",
+    "FAQs",
   ];
+  const getSectionId = (name) => name.toLowerCase().replace(/\s+/g, "-");
 
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase());
+    const id = item === "FAQs" ? "faqs" : getSectionId(item);
+    const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -231,14 +239,9 @@ const WPCIndex = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            if (entry.target.id === "faqs") {
-              setActiveSection("FAQs");
-            } else {
-              const sectionName =
-                entry.target.id.charAt(0).toUpperCase() +
-                entry.target.id.slice(1);
-              setActiveSection(sectionName);
-            }
+            const id = entry.target.id;
+            const match = SECTIONS.find((s) => (s === "FAQs" ? "faqs" : getSectionId(s)) === id);
+            setActiveSection(match || id);
           }
         });
       },
@@ -246,7 +249,8 @@ const WPCIndex = () => {
     );
 
     SECTIONS.forEach((section) => {
-      const element = document.getElementById(section.toLowerCase());
+      const id = section === "FAQs" ? "faqs" : getSectionId(section);
+      const element = document.getElementById(id);
       if (element) {
         sectionObserver.observe(element);
       }
@@ -380,7 +384,7 @@ const ServiceFaq = () => {
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Can't find the answer you are looking for?{" "}
+          Can&apos;t find the answer you are looking for?{" "}
           <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
             Reach out to us!
           </span>
@@ -389,143 +393,44 @@ const ServiceFaq = () => {
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                What services do you offer for CDSCO compliance?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                We offer comprehensive CDSCO regulatory compliance services
-                including product registration, license applications, regulatory
-                strategy, documentation preparation, and post-approval
-                compliance monitoring for pharmaceuticals, medical devices, and
-                cosmetics in India.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">What are the radio frequency bands?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">A radio frequency band is a part of the radio frequency spectrum that is allocated for a specific type of wireless communication. There are several different communications that use different bands for wireless communication including mobile communications, WiFi, Bluetooth, satellite communication, broadcasting, etc. Each band is allocated limits technically, to eliminate interference and to allow for proper functioning of different devices and services.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-2">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                How long does the CDSCO approval process typically take?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                CDSCO approval timelines vary based on product category and
-                application type. Typically, drug approvals take 6-12 months,
-                medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our certifications work to expedite
-                these timelines through proper documentation and regulatory
-                strategy.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">What is a WPC certificate?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">A WPC certificate is a type of compliance certificate that is required for the import, sale, and usage of wireless products within the geographical boundary of India. This includes all devices that are radio frequency signal emitters such as bluetooth devices, wi fi devices, wi fi routers, and other such devices like smart speakers. A WPC certified device cannot be marketed or operated in India.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-3">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                What documents are required for CDSCO registration?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                Required documents include product dossiers, manufacturing
-                information, stability data, clinical trial results (if
-                applicable), Good Manufacturing Practice (GMP) certificates,
-                Certificate of Pharmaceutical Product (CoPP), and various
-                application forms specific to your product category. Our team
-                assists in preparing all necessary documentation.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">What is WPC Certification in India?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">WPC certification is to ensure that a wireless device is operating according to the compliance of India&apos;s spectrum control and wireless devices regulations. It is an approval that is given to a product for operating within the limits of frequency bands that are assigned for a particular domain of usage to ensure that there is no jamming of other communication systems. Any wireless device manufacturer in India is required to have an approval from the Wireless Planning and Coordination Wing before entering the Indian market.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-4">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                Do you assist with clinical trial approvals in India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                Yes, we provide end-to-end support for clinical trial
-                applications in India, including protocol development, ethics
-                committee submissions, CDSCO applications, site selection
-                assistance, and regulatory compliance throughout the trial
-                process. We also help navigate the New Drugs and Clinical Trials
-                Rules, 2019.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">Who is the issuer of WPC certificates in India?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">The WPC certificate is provided by the Wireless Planning and Coordination Wing, which is a part of the Department of Telecommunications. This body oversees the management of radio frequencies and provides Equipment Type Approval for wireless devices.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-5">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                What are the costs associated with CDSCO registrations?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, consultant fees, and
-                potential inspection costs. We provide transparent quotations
-                based on your specific product and requirements, with options
-                for different service levels to fit various budgets.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">What is WPC ETA approval?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">WPC ETA refers to Equipment Type Approval. This is mandatory for wireless devices that function in the de-licensed frequency ranges, i.e. the ranges which include Bluetooth and Wi-Fi. Thus, for the import of these devices into India, ETA approval is necessary. Also, in many instances, even wireless devices manufactured in India using wireless modules might require ETA certification, depending upon the configurations.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-6">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                How do you handle post-approval regulatory requirements?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                Our post-approval services include pharmacovigilance support,
-                periodic safety update reports, variation applications, renewal
-                submissions, compliance with labeling requirements, adverse
-                event reporting, and ongoing regulatory intelligence to keep you
-                informed of regulatory changes affecting your products.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">Can WPC ETA certification be obtained by a foreign manufacturer?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">Yes, WPC ETA Certification can be obtained by a foreign manufacturer. An Authorized Indian Representative has to be appointed for the application. The representative is in charge of submitting the documentation, liaising with the concerned authorities, and completing the approval process on behalf of the foreign entity.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-7">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                Can you help with import licenses for pharmaceuticals and
-                medical devices?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                Yes, we specialize in obtaining Import Licenses (Form 10) for
-                drugs and Registration Certificates for medical devices. Our
-                services include preparing all necessary documentation,
-                coordinating with Indian authorized agents, liaising with CDSCO,
-                and handling post-approval compliance requirements for imported
-                products.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">What is the period of validity of a WPC License?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">A WPC License is valid for the lifetime of the approved model of the product. However, if the wireless specifications of the product change, e.g. frequency range or transmission power, etc., new approval will be required.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-8">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                What experience does your consulting team have with CDSCO
-                regulations?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                Our consulting team consists of regulatory experts with 10+
-                years of experience in Indian pharmaceutical regulations. Team
-                members include former regulatory professionals, pharmacists,
-                and industry specialists who maintain close relationships with
-                regulatory authorities and stay updated on the latest regulatory
-                developments.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">Who needs WPC certification in India?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">WPC certification is a must for all persons or companies in the business of manufacturing, importing, distributing, or selling wireless devices in India. This also includes businesses in the trade of Bluetooth, Wi-Fi, RFID, or any other products using radio frequency.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-9">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px]  text-[#3f3f46] font-medium">
-                How do recent regulatory changes affect pharmaceutical
-                registrations in India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                Recent regulatory changes include the New Drugs and Clinical
-                Trials Rules (2019), Medical Device Rules (2017), and ongoing
-                updates to the Drugs and Cosmetics Act. These changes have
-                streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our certifications keep
-                abreast of all changes and adjust strategies accordingly.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">How much are the government charges for WPC ETA approval?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">The government charges for WPC ETA approval are around ₹10,000 for each product. This is for each finished product or each separate RF module, and payment of this fee is mandatory for submission of the application.</AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="item-10">
-              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">
-                Do you offer support for manufacturing facility inspections?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">
-                Yes, we provide comprehensive support for CDSCO manufacturing
-                facility inspections, including pre-inspection readiness
-                assessments, gap analysis, preparation of required
-                documentation, mock inspections, training of personnel, and
-                assistance during actual inspections to ensure a successful
-                outcome.
-              </AccordionContent>
+              <AccordionTrigger className="font-geist text-[18px] md:text-[20px] text-[#3f3f46] font-medium">Is the application fee refunded if the application is withdrawn?</AccordionTrigger>
+              <AccordionContent className="font-geist text-[18px] md:text-[20px] text-[#5e5f6e]">No, in case of application withdrawal or rejection, the application fee is forfeited. It is advisable for applicants to cross-check all technical and application information to eliminate any mistakes.</AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>
@@ -559,10 +464,8 @@ const PointsList = ({ points, heading }) => {
 const PointsListTwo = ({ points, heading }) => {
   return (
     <div className="flex flex-col w-full">
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
+      {heading ? <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">{heading}</p> : null}
+      <div className={`flex flex-col gap-2 ${heading ? "mt-[16px] md:mt-[20px]" : "mt-2"}`}>
         {points.map((point, index) => (
           <li key={index} className="flex items-start gap-2">
             <div className="bg-green-500/10 p-2 rounded-full">
@@ -582,34 +485,18 @@ const WPCContentLeft = () => {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-        {/* Overview Section */}
         <OverviewSection />
-        {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <ProductsSection />
+        <WPCApprovalSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <ApprovalSection />
+        <ETASection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <RegistrationSection />
+        <CategoriesSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <RoleSection />
+        <EligibilitySection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
         <ProcessSection />
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <certificationsSection />
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <RegulationsSection />
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
         <ReviewSection />
-
         <AboutAuthor />
       </div>
     </div>
@@ -619,327 +506,434 @@ const WPCContentLeft = () => {
 const OverviewSection = () => {
   return (
     <section id="overview" className="flex flex-col scroll-mt-20">
-      {/* Overview */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Overview
-        </span>
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Overview</span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Wireless Planning and Coordination (WPC)
-      </h3>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Wireless devices in India need an ETA certificate from WPC.
-      </p>
-
-      {/* Overview Content */}
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Products with radio and/or wireless functionalities which are imported
-        or manufactured and marketed in India must have an equipment type
-        approval (ETA) certificate from the Wireless Planning and Coordination
-        (WPC) wing of the Ministry of Communications of the government of
-        India.This includes products with Bluetooth, wireless local area network
-        access technology (Wi Fi), small digital radios (Zigbee), and radio
-        frequency identification (RFID) among others.
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        WPC Approval | WPC ETA Certification, Process, Cost, and Requirements
+      </h2>
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-4">
+        <p>Modern communication has widely relied on wireless technologies. Many electronics such as mobile phones, Bluetooth headsets, Wi-Fi routers, smartwatches, IoT devices, RFID tags, and even wireless medical devices rely on radio frequency (RF) communication. The Government of India has made WPC approval devices mandatory to ensure the safe and interference-free use of the radio spectrum.</p>
+        <p>As a manufacturer, importer, trader, or startup, knowledge over WPC Approval and WPC ETA Certification is vital in order to be compliant to the Indian wireless market regulations.</p>
+        <p>The following guide covers WPC ETA Certification thoroughly including its definition, importance, types, eligibility, steps, documents, costs, benefits, and the entire process to obtaining WPC ETA Certification in India.</p>
       </div>
-
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsList
-            points={[
-              "Mandatory for all radio/wireless products in India",
-              "Bluetooth, Wi-Fi, Zigbee, RFID.",
-              "Needed for most wireless devices under DoT guidelines.",
-            ]}
-            heading="Key Points on WPC License and ETA Certification"
-          />
+        
+      
+      </div>
+    </section>
+  );
+};
+
+const WPCApprovalSection = () => {
+  return (
+    <section id="wpc-approval" className="flex flex-col scroll-mt-20">
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">WPC Approval</span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">What is WPC Approval in India?</h2>
+      <p className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        WPC Approval in India is defined as the approval given by the Wireless Planning and Coordination (WPC) Wing of the Department of Telecommunications (DoT), Government of India. WPC approval is a requisite approval for every device that operates on Bluetooth, WiFi, RFID, Zigbee, NFC or any other wireless technology spectrum.
+      </p>
+      <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] font-semibold">The WPC Wing is tasked with the following responsibilities:</p>
+      <PointsListTwo points={["Management of radio frequency spectrum in India", "Licensing of wireless and issuing ETA certificates", "Certification of devices to ensure operations within allocated frequency bands", "Mitigation of radio interference", "Safeguarding the interests of national security", "No wireless product can be imported, sold, or used in India without the approval of WPC"]} heading="" />
+    </section>
+  );
+};
+
+const ETASection = () => {
+  return (
+    <section id="eta" className="flex flex-col scroll-mt-20">
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">ETA & Necessity</span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">What is WPC ETA Certification?</h2>
+      <p className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        ETA certification (Equipment Type Approval certification) is a WPC approval needed for wireless equipment that operates within de-licensed frequency bands.
+      </p>
+      <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] font-semibold">The de-licensed frequency bands are:</p>
+      <ul className="list-disc pl-6 mt-2 font-geist text-sm md:text-lg text-[#42434d] space-y-1">
+        <li>2.4 GHz (Bluetooth, Wi-Fi)</li>
+        <li>5 GHz (Wi-Fi)</li>
+        <li>865-867 MHz (RFID)</li>
+        <li>NFC</li>
+        <li>Zigbee</li>
+      </ul>
+      <p className="mt-4 font-geist text-sm md:text-lg text-[#42434d]">ETA certification is a mandatory certification for all wireless devices sold in India, and certifies that the device is compliant with India&apos;s RF standards and operates within the allowed frequency bands.</p>
+      <h3 className="text-[22px] md:text-[28px] font-roboto font-bold text-[#131316] mt-6 mb-2">What is the necessity of WPC Approval in India?</h3>
+      <p className="font-geist text-sm md:text-lg text-[#42434d] font-semibold mb-2">The following are the reasons for WPC approval:</p>
+      <ol className="list-decimal pl-6 font-geist text-sm md:text-lg text-[#42434d] space-y-2">
+        <li><strong>Legal Requirement:</strong> WPC approval is a legal requirement under Indian telecom laws to import or sell wireless devices.</li>
+        <li><strong>Spectrum Management:</strong> The radio frequency spectrum is finite; WPC approval ensures optimal utilization.</li>
+        <li><strong>Interference Mitigation:</strong> Unauthorized wireless devices can cause interference to aviation, defense, and emergency services.</li>
+        <li><strong>National Security:</strong> Unregulated wireless devices can pose security threats.</li>
+        <li><strong>Market Access:</strong> Customs clearance will be denied in the absence of WPC ETA certification.</li>
+      </ol>
+    </section>
+  );
+};
+
+const CategoriesSection = () => {
+  return (
+    <section id="categories" className="flex flex-col scroll-mt-20">
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Categories</span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Various Categories of WPC Certification in India
+      </h2>
+      <p className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        WPC Certification in India is not a singular certification. It is divided into different categories according to the kind of device and its purpose. It is important to understand each of them in depth.
+      </p>
+
+      {/* 1. WPC ETA Certificate */}
+      <div className="mt-8">
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316]">
+          1. WPC ETA Certificate (Equipment Type Approval)
+        </h3>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          For the largest portion of consumer and wireless products, WPC ETA certification is required. ETA stands for Equipment Type Approval and is to be obtained by any device that works within the so-called &apos;de-licensed&apos; frequency bands or ranges.
+        </p>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          De-licensed frequency bands are ranges that do not require individual users to hold a spectrum license, prejudicing the equipment&apos;s approval. Examples of such technologies are Bluetooth, Wi-Fi, RFID, and other similar technologies.
+        </p>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] font-semibold">The ETA certificate signifies that the device:</p>
+        <ul className="mt-2 space-y-2 font-geist text-sm md:text-lg text-[#42434d] pl-6 list-none">
+          <li className="flex items-start gap-2">
+            <span className="text-[#1A8781] mt-1">●</span>
+            <span>Functions within the permissible frequency within the Indian Territory</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-[#1A8781] mt-1">●</span>
+            <span>Power transmission is within the approved limits</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-[#1A8781] mt-1">●</span>
+            <span>Does not cause harmful interference</span>
+          </li>
+        </ul>
+        <p className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          Therefore, WPC ETA approval is required for the importation of Bluetooth speakers and Wi-Fi routers.
+        </p>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          Approval for ETA is usually given based on RF test reports from accredited laboratories. There is no need for spectrum auctions or individual frequency assignments as the product is operating in de-licensed bands. Products using a pre-approved RF module, manufactured in India, may not need separate ETA approvals; however, fully imported finished products usually require approvals.
+        </p>
+      </div>
+
+      {/* 2. Non-Network WPC License */}
+      <div className="mt-10">
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316]">
+          2. Non-Network WPC License
+        </h3>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          The Non-Network WPC License is for a business that works in wireless equipment but does not provide telecom or communication services to the public. This license category fits companies that import, trade, distribute, or own wireless devices.
+        </p>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          In contrast to ETA, which is product-specific, a Non-Network License may cover wider business activities with respect to the controlled wireless devices.
+        </p>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] font-semibold">This category consists of three sub-types:</p>
+        <div className="mt-4 space-y-4">
+          <div>
+            <h4 className="text-[17px] md:text-[20px] font-roboto font-semibold text-[#131316]">Import License</h4>
+            <p className="mt-1 font-geist text-sm md:text-lg text-[#42434d] leading-loose">This is needed for businesses that import wireless equipment that is outside the scope of ETA or is subject to regulation. It allows the import of certain equipment to India.</p>
+          </div>
+          <div>
+            <h4 className="text-[17px] md:text-[20px] font-roboto font-semibold text-[#131316]">Dealer Possession License</h4>
+            <p className="mt-1 font-geist text-sm md:text-lg text-[#42434d] leading-loose">This license is necessary for businesses that deal in the sale of wireless devices. It allows the possession and sale of licensed wireless devices.</p>
+          </div>
+          <div>
+            <h4 className="text-[17px] md:text-[20px] font-roboto font-semibold text-[#131316]">Non-Dealer Possession License</h4>
+            <p className="mt-1 font-geist text-sm md:text-lg text-[#42434d] leading-loose">This applies to certain businesses that need to use wireless devices internally but do not sell them. Institutions that use certain types of special communication devices may need to obtain this type of license.</p>
+          </div>
         </div>
+        <p className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          In order to qualify for a Non-Network License, the applicant must be a company that has been incorporated legally, and may be required to have personnel with technical qualifications.
+        </p>
+      </div>
 
-        {/* Image */}
-        <div className="w-full md:w-auto">
-          <img
-            src={WPCimg}
-            alt="Medical laboratory equipment"
-            title="Medical laboratory equipment"
-            className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
-                    ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
-                    hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
-                    "
-          />
+      {/* 3. Network License */}
+      <div className="mt-10">
+        <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316]">
+          3. Network License
+        </h3>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          Network Licenses are for businesses offering communication services using a part of the radio frequency spectrum that has been licensed for that purpose. Network licenses are for the use of the licensed spectrum, unlike ETA approvals that are for the use of consumer devices in de-licensed bands.
+        </p>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          This type of license applies to telecom service providers, internet service providers, and broadcasting service providers.
+        </p>
+        <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] font-semibold">A couple of examples are as follows:</p>
+        <div className="mt-4 space-y-4">
+          <div>
+            <h4 className="text-[17px] md:text-[20px] font-roboto font-semibold text-[#131316]">Internet Service Provider (ISP) License</h4>
+            <p className="mt-1 font-geist text-sm md:text-lg text-[#42434d] leading-loose">An Internet Service Provider license authorizes a company to provide internet services in India. The ISP license is issued by the Department of Telecommunications, and WPC governs the spectrum usage.</p>
+          </div>
+          <div>
+            <h4 className="text-[17px] md:text-[20px] font-roboto font-semibold text-[#131316]">Experimental License</h4>
+            <p className="mt-1 font-geist text-sm md:text-lg text-[#42434d] leading-loose">An Experimental License authorizes temporary use of a portion of the spectrum for research, testing, or demonstration. This license is often used for technology trials or pilot wireless systems.</p>
+          </div>
         </div>
+        <p className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+          Network Licenses have more compliance obligations because they are for the use of regulated and licensed frequency bands.
+        </p>
       </div>
     </section>
   );
 };
 
-const ProductsSection = () => {
-  return (
-    <section id="product" className="flex flex-col scroll-mt-20">
-      {/* Product */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Product
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Products Covered Under WPC Certification
-      </h3>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        WPC certification is mandatory for all wireless products in India.
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Mandatory requirements for all wireless products (transceivers,
-        transmitters and receivers) entering the Indian market. Note: only
-        receivers do not need approval, for example GPS products.
-      </div>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Product examples: Wireless Bluetooth-Watches, Wireless Water Heaters,
-        Wireless Home Appliances, Wireless Car Radio, Radio Frequency
-        Identification (RFID) tags and readers, Wireless Medical products used
-        for patient profiling, Laptops, Mobile Phones, Wireless Mouse and
-        Keyboard, Remote Key for entry, Wireless Headphones and/or Earplugs,
-        Wireless Music Players, and any other Radio Frequency Modules
-      </div>
-    </section>
+const EligibilitySection = () => {
+  const bullet = (text) => (
+    <li className="flex items-start gap-2">
+      <span className="text-[#1A8781] mt-1 shrink-0">●</span>
+      <span>{text}</span>
+    </li>
   );
-};
-
-const ApprovalSection = () => {
   return (
-    <section id="approval" className="flex flex-col scroll-mt-20">
-      {/* Approval */}
+    <section id="eligibility" className="flex flex-col scroll-mt-20">
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Approval
-        </span>
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Eligibility</span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Guide to Equipment Type Approval (ETA)
-      </h3>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        ETA approval is required to import wireless devices in India.
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Eligibility for WPC Approvals
+      </h2>
+      <p className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+        When applying for WPC ETA certification, applicants must meet the following criteria:
       </p>
+      <ul className="mt-4 space-y-2 font-geist text-sm md:text-lg text-[#42434d] pl-0 list-none">
+        {bullet("Legally registered company")}
+        {bullet("Product must function within non-licensed frequency bands")}
+        {bullet("RF test report from a recognized accredited laboratory")}
+        {bullet("Technical specifications must be submitted by the applicant")}
+        {bullet("For importers, the Import Export Code (IEC) is necessary")}
+        {bullet("Foreign manufacturers must have an Indian representative")}
+      </ul>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Equipment Type Approval (ETA) is an approval that has to be obtained
-        from WPC before importing any wireless device in India which functions
-        in the de-licensed frequency band. Such equipment include products like
-        Bluetooth devices, mobile phones, Wi-Fi technology, RFID and others.{" "}
-        <br /> <br />
-        To obtain an ETA for de-licensed frequency band devices, a detailed test
-        report of the equipment obtained from a well-recognized laboratory has
-        to be submitted to WPC for evaluation. We help our clients with testing
-        of their equipment and obtaining the test report in proper format for
-        submission to WPC.
-      </div>
-    </section>
-  );
-};
-
-const RegistrationSection = () => {
-  return (
-    <section id="registration" className="flex flex-col scroll-mt-20">
-      {/* Registration*/}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Registration
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        How to Register for WPC License in India
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-8 mb-3">
+        WPC ETA Certification Requirements
       </h3>
+      <p className="font-geist text-sm md:text-lg text-[#42434d] font-semibold mb-2">The following documentation is necessary:</p>
+      <ul className="space-y-2 font-geist text-sm md:text-lg text-[#42434d] pl-0 list-none">
+        {bullet("Company Documentation")}
+        <li className="pl-6 mt-1 space-y-1">
+          <ul className="list-none space-y-1">
+            {bullet("Company Incorporation Certificate")}
+            {bullet("GST Certificate")}
+            {bullet("Import Export Code (IEC) + PAN Card")}
+          </ul>
+        </li>
+        {bullet("Documentation for the Product")}
+        <li className="pl-6 mt-1 space-y-1">
+          <ul className="list-none space-y-1">
+            {bullet("Technical specifications")}
+            {bullet("RF test report")}
+            {bullet("Product data sheet")}
+            {bullet("Product label + user manual")}
+          </ul>
+        </li>
+        {bullet("Authorization Documentation")}
+        <li className="pl-6 mt-1">
+          <ul className="list-none space-y-1">
+            {bullet("Authorization Letter + Letter from the Authorized Indian Representative (for foreign firms)")}
+          </ul>
+        </li>
+        {bullet("Additional Documentation")}
+        <li className="pl-6 mt-1">
+          <ul className="list-none space-y-1">
+            {bullet("ID proof of the authorized individual + Address proof + Fee payment receipt")}
+          </ul>
+        </li>
+      </ul>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Complete WPC license assistance, from paperwork to approval.
-      </p>
-
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <PointsListTwo
-          points={[
-            "Liaison with WPC which includes detailed application preparation, submission, replying to queries, and providing clarifications.",
-            "Sending pre-registration request and documentation.",
-            "Online submission of fee.",
-            "Hardcopy submission of all documents to WPC.",
-            "Multiple visits to the WPC office and agreement document signing.",
-            "Time-to-time miscellaneous/incidental works throughout the license granting process.",
-            "Complete solution for WPC-related queries with the help of a highly experienced professional team.",
-          ]}
-          heading="WPC License Assistance Steps"
-        />
-      </div>
-    </section>
-  );
-};
-
-const RoleSection = () => {
-  return (
-    <section id="role" className="flex flex-col scroll-mt-20">
-      {/*Role */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Role
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        WPC license and ETA certification assistance.
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-8 mb-3">
+        RF Test Report Prerequisite
       </h3>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        We assist with WPC license and ETA certification as per ETSI and FCC
-        standards.
+      <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+        The WPC approval requirement is strongly dominated by the RF test report.
       </p>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        We assist in testing such products as per the European
-        Telecommunications Standards Institute (ETSI, Europe) and Federal
-        Communications Commission (FCC, US) standards. Our authorized agents
-        connect applicants with local representative support and assist them in
-        obtaining ETA certification. We support you in completing the required
-        documentation for filling an application at the WPC.
-      </div>
+      <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] font-semibold">The RF report must contain data regarding:</p>
+      <ul className="mt-2 space-y-1 font-geist text-sm md:text-lg text-[#42434d] pl-6 list-disc">
+        <li>Frequency range</li>
+        <li>Bandwidth</li>
+        <li>Power output</li>
+        <li>Modulation type</li>
+        <li>RF exposure</li>
+      </ul>
+      <p className="mt-3 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+        The laboratory that performs the testing must be certified.
+      </p>
     </section>
   );
 };
 
 const ProcessSection = () => {
-  const tableData = [
-    {
-      step: "Determine the Requirement",
-      description:
-        "Identify whether your product requires an ETA (Equipment Type Approval) or a WPC Import License based on its usage and frequency range. Products operating on unlicensed ISM (Industrial, Scientific, and Medical) bands typically need an ETA certificate.",
-    },
-    {
-      step: "Document Preparation",
-      description:
-        "Prepare the required documents, which may include:\n• Product specifications (datasheet).\n• Manufacturer's authorization letter.\n• Test reports (e.g., RF Test Report) from an authorized laboratory.\n• Import-Export Code (IEC) for import licenses.",
-    },
-    {
-      step: "Application Submission",
-      description:
-        "Submit the application to the Wireless Planning and Coordination (WPC) Wing, a division of the Department of Telecommunications (DoT). Upload required documents through the SACFA (Standing Advisory Committee on Radio Frequency Allocation) portal.",
-    },
-    {
-      step: "Testing and Validation",
-      description:
-        "Products must undergo RF testing to ensure compliance with technical and frequency standards. Use NABL-accredited labs in India or internationally recognized labs.",
-    },
-    {
-      step: "Fee Payment",
-      description:
-        "Pay the prescribed application and license fees based on the product category and approval type.",
-    },
-    {
-      step: "Approval and Issuance",
-      description:
-        "Upon successful evaluation, the WPC will grant the required license or ETA certificate. This certificate confirms that your product is approved for sale and use in India.",
-    },
-    {
-      step: "Timeline",
-      description:
-        "The process generally takes 2–4 weeks, depending on document accuracy and application completeness.",
-    },
-    {
-      step: "Why Professional Guidance",
-      description:
-        "Navigating the WPC process can be complex due to technical and regulatory requirements.",
-    },
+  const bullet = (text) => (
+    <li className="flex items-start gap-2">
+      <span className="text-[#1A8781] mt-1 shrink-0">●</span>
+      <span>{text}</span>
+    </li>
+  );
+  const timelineData = [
+    { process: "RF testing", duration: "5-10 days" },
+    { process: "Application submission", duration: "1-2 days" },
+    { process: "WPC review", duration: "10-20 days" },
+    { process: "ETA certificate issuance", duration: "15-30 days" },
   ];
-
   return (
     <section id="process" className="flex flex-col scroll-mt-20">
-      {/* Process header */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Process
-        </span>
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Process</span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
-
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Process for WPC License Approval
-      </h3>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        We assist with WPC license and ETA certification as per ETSI and FCC
-        standards.
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Process of WPC ETA Certification
+      </h2>
+      <p className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
+        Here is the procedure.
       </p>
 
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <PointsListTwo
-          points={[
-            "RF-Test Report Verification and Frequency Check",
-            "Document Preparation for WPC License Application",
-            "Online Government Fee Payment",
-            "Online Submission of Documents to WPC Authority",
-            "Offline (Hardcopy) Submission to WPC Office",
-            "Document Scrutiny and Review by WPC",
-            "Document Verification and Compliance Check",
-            "Grant of ETA Certificate for Wireless Devices",
-          ]}
-          heading="WPC License and ETA Certification Process"
-        />
+      {/* Step 1 */}
+      <div className="mt-6">
+        <h4 className="font-geist text-base md:text-lg font-semibold text-[#131316]">Step 1. Create an account on the Saral Sanchar portal.</h4>
+        <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+          All applicants must register on the Saral Sanchar portal of the Department of Telecommunications. After registration, an Import ID is created.
+        </p>
       </div>
 
-      <div className="mt-[16px] md:mt-[24px] w-full overflow-x-auto">
-        <div className="overflow-hidden border border-gray-200 rounded-lg min-w-[300px]">
-          <table className="w-full border-collapse bg-white text-left">
-            <thead>
-              <tr className="bg-[#1A8781]">
-                <th className="w-1/4 px-4 md:px-6 py-3 md:py-4 text-white text-sm md:text-base font-medium">
-                  Step
-                </th>
-                <th className="px-4 md:px-6 py-3 md:py-4 text-white text-sm md:text-base font-medium">
-                  Description
-                </th>
+      {/* Step 2 */}
+      <div className="mt-6">
+        <h4 className="font-geist text-base md:text-lg font-semibold text-[#131316]">Step 2: Determine Exemption Status</h4>
+        <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+          Applicants need to determine whether the product is exempt or requires the ETA.
+        </p>
+      </div>
+
+      {/* Step 3 */}
+      <div className="mt-6">
+        <h4 className="font-geist text-base md:text-lg font-semibold text-[#131316]">Step 3: Acquire RF Test Report</h4>
+        <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+          An accredited lab must demonstrate that the product complies with:
+        </p>
+        <ul className="mt-2 space-y-1 font-geist text-sm md:text-lg text-[#42434d] pl-0 list-none">
+          {bullet("Indian frequency bands")}
+          {bullet("Allowed power levels")}
+        </ul>
+      </div>
+
+      {/* Step 4 */}
+      <div className="mt-6">
+        <h4 className="font-geist text-base md:text-lg font-semibold text-[#131316]">Step 4: Submit New ETA Application</h4>
+        <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+          The New ETA Application must be completed online with the following:
+        </p>
+        <ul className="mt-2 space-y-1 font-geist text-sm md:text-lg text-[#42434d] pl-0 list-none">
+          {bullet("Technical Papers")}
+          {bullet("RF test report")}
+          {bullet("Company documents")}
+        </ul>
+      </div>
+
+      {/* Step 5 */}
+      <div className="mt-6">
+        <h4 className="font-geist text-base md:text-lg font-semibold text-[#131316]">Step 5: Government Fees Payment</h4>
+        <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+          Applicable government fees must be paid online.
+        </p>
+      </div>
+
+      {/* Step 6 */}
+      <div className="mt-6">
+        <h4 className="font-geist text-base md:text-lg font-semibold text-[#131316]">Step 6: Documents Review</h4>
+        <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+          WPC Reviewers will examine the:
+        </p>
+        <ul className="mt-2 space-y-1 font-geist text-sm md:text-lg text-[#42434d] pl-0 list-none">
+          {bullet("RF parameters")}
+          {bullet("Technical compliance")}
+          {bullet("Frequency band compliance")}
+        </ul>
+        <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+          If further explanation is needed, they may request more documents.
+        </p>
+      </div>
+
+      {/* Step 7 */}
+      <div className="mt-6">
+        <h4 className="font-geist text-base md:text-lg font-semibold text-[#131316]">Step 7: Receiving WPC ETA Certificate</h4>
+        <p className="mt-2 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+          WPC will issue an ETA certificate after successful review. The product becomes eligible for importation and sale in India once the certificate is issued.
+        </p>
+      </div>
+
+      {/* Timeline */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-10 mb-3">
+        Timeline to Get WPC ETA Certification
+      </h3>
+      <p className="font-geist text-sm md:text-lg text-[#42434d] leading-loose mb-3">
+        Typical time to complete each step is shown below:
+      </p>
+      <div className="overflow-x-auto border border-gray-200 rounded-lg">
+        <table className="w-full border-collapse bg-white text-left">
+          <thead>
+            <tr className="bg-[#1A8781]">
+              <th className="px-4 md:px-6 py-3 text-white text-sm md:text-base font-medium">Process Step</th>
+              <th className="px-4 md:px-6 py-3 text-white text-sm md:text-base font-medium">Duration</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            {timelineData.map((row, i) => (
+              <tr key={i} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+                <td className="px-4 md:px-6 py-3 text-sm md:text-[15px] text-gray-900">{row.process}</td>
+                <td className="px-4 md:px-6 py-3 text-sm md:text-[15px] text-gray-700">{row.duration}</td>
               </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              {tableData.map((row, index) => (
-                <tr
-                  key={index}
-                  className={`hover:bg-gray-50 ${index % 2 === 0 ? "bg-gray-50" : "bg-white"
-                    }`}
-                >
-                  <td className="px-4 md:px-6 py-3 md:py-4 text-sm md:text-[15px] font-medium text-gray-900">
-                    {row.step}
-                  </td>
-                  <td className="px-4 md:px-6 py-3 md:py-4 text-sm md:text-[15px] text-gray-700">
-                    {row.description}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="font-geist text-sm md:text-lg text-[#42434d] mt-3 font-semibold">Total time: 2 to 4 weeks</p>
+
+      {/* Costs */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-8 mb-3">
+        Costs of WPC ETA Certification in India
+      </h3>
+      <p className="font-geist text-sm md:text-lg text-[#42434d] leading-loose">Costs can vary based on:</p>
+      <ul className="mt-2 space-y-1 font-geist text-sm md:text-lg text-[#42434d] pl-0 list-none">
+        {bullet("Product type")}
+        {bullet("Testing needed")}
+        {bullet("Consultant costs")}
+      </ul>
+
+      {/* Validity */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-8 mb-3">
+        Validity of WPC ETA Certificate
+      </h3>
+      <p className="font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+        ETA certificate has lifetime validity. No renewal required unless:
+      </p>
+      <ul className="mt-2 space-y-1 font-geist text-sm md:text-lg text-[#42434d] pl-0 list-none">
+        {bullet("Product design changes")}
+        {bullet("RF module changes")}
+        {bullet("Frequency changes")}
+      </ul>
+
+      {/* Conclusion */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mt-8 mb-3">
+        Conclusion
+      </h3>
+      <div className="space-y-3 font-geist text-sm md:text-lg text-[#42434d] leading-loose">
+        <p>
+          WPC Approval is a regulatory necessity for all wireless products in India. This includes products such as Bluetooth speakers, IoT devices, Wi-Fi-enabled devices, and other devices. WPC ETA Compliance is important for regulatory requirements.
+        </p>
+        <p>
+          The Wireless Planning and Coordination (WPC) keeps an eye on the use of the Indian radio frequency spectrum and manages interference. As technology advances and the use of wireless technology in devices, WPC compliance is critical for businesses that want to conduct wireless operations in India.
+        </p>
+        <p>
+          Manufacturers and importers of wireless devices should begin the WPC ETA certification process as soon as possible to ensure compliance. This includes document preparation, RF testing, and other regulatory compliance to ensure a smooth market entry. WPC Compliance is the ticket to responsible and hassle-free use of wireless technology in India.
+        </p>
       </div>
     </section>
   );
@@ -1009,130 +1003,10 @@ const ReviewSection = () => {
         </div>
 
         <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
-          Last updated on Mar 19, 2025
+          Last updated on Feb 18, 2025
         </p>
       </div>
     </section>
   );
 };
 
-const certificationsSection = () => {
-  return (
-    <section id="certifications" className="flex flex-col scroll-mt-20">
-      {/* certifications */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          certifications
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        WPC License Consulting Services
-      </h3>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Expert guidance for WPC license and ETA certification process.
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Our team of experienced WPC certifications provides comprehensive
-        support throughout the entire certification process. We understand the
-        complexities of wireless device regulations and help you navigate the
-        WPC approval process efficiently.
-      </div>
-
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <PointsListTwo
-          points={[
-            "Expert consultation on WPC license requirements",
-            "Document preparation and verification",
-            "Liaison with WPC authorities",
-            "Test report coordination and validation",
-            "Application submission and follow-up",
-            "Query resolution and compliance support",
-            "Post-approval assistance and renewal support",
-          ]}
-          heading="Our Consulting Services Include"
-        />
-      </div>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        With years of experience in wireless device certification, our
-        certifications ensure that your products meet all regulatory
-        requirements while minimizing time-to-market. We maintain strong
-        relationships with WPC authorities and testing laboratories, enabling us
-        to provide efficient and reliable services.
-      </div>
-    </section>
-  );
-};
-
-const RegulationsSection = () => {
-  return (
-    <section id="regulations" className="flex flex-col scroll-mt-20">
-      {/* Regulations */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Regulations
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        WPC Regulatory Framework
-      </h3>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Understanding the regulatory requirements for wireless devices in India.
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Wireless Planning and Coordination (WPC) wing operates under the
-        Ministry of Communications and regulates the use of radio frequency
-        spectrum in India. The regulatory framework ensures that wireless
-        devices comply with technical standards and do not cause harmful
-        interference.
-      </div>
-
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <PointsListTwo
-          points={[
-            "Indian Wireless Telegraphy Act, 1933",
-            "Indian Telegraph Act, 1885",
-            "WPC Guidelines for Equipment Type Approval",
-            "Frequency Allocation and Usage Rules",
-            "Technical Standards for Wireless Equipment",
-            "Import and Manufacturing Regulations",
-            "Spectrum Management Guidelines",
-          ]}
-          heading="Key Regulatory Documents"
-        />
-      </div>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The WPC regulatory framework is designed to ensure the efficient use of
-        radio frequency spectrum while protecting against interference. All
-        wireless devices must comply with these regulations to be legally
-        imported, manufactured, or sold in India. Our certifications help you
-        understand and comply with these requirements.
-      </div>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          IMPORTANT
-        </span>
-        Non-compliance with WPC regulations can result in penalties,
-        confiscation of equipment, and legal consequences. It's crucial to
-        ensure your wireless devices meet all regulatory requirements before
-        entering the Indian market.
-      </div>
-    </section>
-  );
-};

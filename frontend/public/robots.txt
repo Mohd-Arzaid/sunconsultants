@@ -14,7 +14,6 @@ Disallow: /cdsco-registration-certification
 
 Disallow: /information-about-peso-certification-peso-license-india
 
-Disallow: /information-about-wpc-certificate-eta-approval
 
 Disallow: /bee-certification
 Disallow: /ce-certification
