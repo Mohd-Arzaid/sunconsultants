@@ -1,5 +1,5 @@
-import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
-import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
+import FaqAuthorSpanish from "@/components/common/FaqAuthor/FaqAuthorSpanish";
+import ManyUsersAlsoReadSpanish from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadSpanish";
 import ServicesRightSideContentSpanish from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentSpanish";
 import {
   Breadcrumb,

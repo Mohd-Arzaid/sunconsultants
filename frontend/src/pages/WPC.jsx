@@ -30,6 +30,9 @@ import { Link } from "react-router-dom";
 
 const WPC_PRODUCTS_BASE = "https://alephindia.in/product";
 
+// Product images from Unsplash (free to use, one image per product)
+const UNSPLASH_IMG = (id) => `https://images.unsplash.com/photo-${id}?w=200&h=200&fit=crop`;
+
 const WPC_PRODUCTS = [
   { name: "Wireless Hotspot Device", img: "hotspot-device.webp", slug: "wireless-hotspot.php" },
   { name: "Laptop", img: "laptop.webp", slug: "notebook-tablet-pc.php" },
@@ -744,9 +747,9 @@ const CategoriesSection = () => {
                   rel="noopener noreferrer"
                   className="group flex flex-col shrink-0 w-[200px] md:w-[220px] rounded-xl bg-white border border-[#e8e6e1] shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-[#1A8781]/30 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A8781] focus-visible:ring-offset-2"
                 >
-                  <div className="aspect-square bg-[#F9F7F2] flex items-center justify-center p-4">
+                  <div className="aspect-square bg-[#F9F7F2] flex items-center justify-center p-4 overflow-hidden">
                     <img
-                      src={`/images/wpc-products/${product.img}`}
+                      src={product.img}
                       alt={product.name}
                       loading="lazy"
                       className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
@@ -756,7 +759,7 @@ const CategoriesSection = () => {
                       }}
                     />
                     <span
-                      className="hidden text-[#42434d] text-sm font-geist text-center"
+                      className="hidden text-[#42434d] text-sm font-geist text-center px-2"
                       aria-hidden
                     >
                       {product.name}
