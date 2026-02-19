@@ -28,10 +28,52 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
+const WPC_PRODUCTS_BASE = "https://alephindia.in/product";
+
+const WPC_PRODUCTS = [
+  { name: "Wireless Hotspot Device", img: "hotspot-device.webp", slug: "wireless-hotspot.php" },
+  { name: "Laptop", img: "laptop.webp", slug: "notebook-tablet-pc.php" },
+  { name: "Wireless Microphone", img: "wireless-microphone.webp", slug: "wireless-microphone.php" },
+  { name: "RFID Reader", img: "radio-frequency-identification-tags-and-readers.webp", slug: "passport-reader.php" },
+  { name: "Wireless Mouse", img: "wireless-mouse.webp", slug: "wireless-mouse.php" },
+  { name: "WiFi Router", img: "wifi-router.webp", slug: "wifi-router.php" },
+  { name: "Wireless Keyboard", img: "wireless-keyboard.webp", slug: "wireless-keyboard.php" },
+  { name: "Wireless Music Player", img: "wireless-music-players.webp", slug: "wireless-music-players.php" },
+  { name: "Wireless POS Terminal", img: "wireless-pos-terminal.webp", slug: "wireless-pos-terminal.php" },
+  { name: "Wireless Speaker", img: "wireless-speaker.webp", slug: "bluetooth-speakers.php" },
+  { name: "Wireless Terminal", img: "wireless-terminals.webp", slug: "wireless-terminals.php" },
+  { name: "Wireless Transmitters", img: "wireless-transmitters.webp", slug: "wireless-transmitters.php" },
+  { name: "Gigabit Dual Band Wireless Router", img: "gigabit-dual-band-wireless-router.webp", slug: "gigabit-dual-band-wireless-router.php" },
+  { name: "Bluetooth Speaker", img: "bluetooth-speaker.webp", slug: "bluetooth-speaker.php" },
+  { name: "Bluetooth Headphone", img: "bluetooth-headphones.webp", slug: "bluetooth-headphone.php" },
+  { name: "Bluetooth Earphone", img: "bluetooth-earphone.webp", slug: "bluetooth-earphone.php" },
+  { name: "Tablet", img: "tablet.webp", slug: "tablet.php" },
+  { name: "RFID Reader", img: "rfid-reader.webp", slug: "rfid-reader.php" },
+  { name: "RFID Antenna", img: "rfid-antenna.webp", slug: "rfid-antenna.php" },
+  { name: "Wireless Transmitter And Receiver", img: "wireless-transmitter-and-receiver.webp", slug: "wireless-transmitter-and-receiver.php" },
+  { name: "Smart Meter", img: "smart-meter.webp", slug: "smart-meter.php" },
+  { name: "Smartwatch", img: "smartwatch.webp", slug: "smartwatch.php" },
+  { name: "Digital Lock", img: "digital-lock.webp", slug: "digital-lock.php" },
+  { name: "Water Meter", img: "water-meter.webp", slug: "water-meter.php" },
+  { name: "True Wireless Earphones (TWS)", img: "true-wireless-earphones.webp", slug: "true-wireless-earphones.php" },
+  { name: "Wireless Barcode Scanner", img: "wireless-barcode-scanner.webp", slug: "wireless-barcode-scanner.php" },
+  { name: "Wireless Access Point", img: "wireless-access-point.webp", slug: "wireless-access-point.php" },
+  { name: "LoRaWAN Gateway", img: "lorawan-gateway.webp", slug: "lorawan-gateway.php" },
+];
+
 const WPC = () => {
   return (
     <div className="relative">
       <Helmet>
+        <title>WPC Approval | WPC ETA Certification, Process, Cost, and Requirements</title>
+        <meta
+          name="description"
+          content="WPC Equipment Type Approval (ETA) is a certification issued by the Wireless Planning & Coordination (WPC) Wing of the Department of Telecommunications (DoT) mandatory for all wireless devices."
+        />
+        <meta
+          name="keywords"
+          content="WPC license requirement, WPC india approval, WPC Certification india, WPC, WPC ETA product approval certificate, WPC certificate and rf testing consultants in india, Radiofrequency Testing Lab, RF Test Report for WPC, Equipment type Approval, WPC Licence for Import, 2.4 Ghz WPC ETA, Bluetooth WPC, RFID WPC ETA, RF test facility in INDIA, Eta certificate india, WPC services, WPC license india, WPC certification services, WPC consultant, WPC approval india, WPC consultancy, WPC approval consultant, WPC certificate consultant, WPC certificate for bluetooth, procedure for WPC certificate"
+        />
         {/* JSON-LD Breadcrumb structured data for SEO */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -483,7 +525,7 @@ const PointsListTwo = ({ points, heading }) => {
 
 const WPCContentLeft = () => {
   return (
-    <div className="flex-1">
+    <div className="flex-1 min-w-0">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <OverviewSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
@@ -511,11 +553,11 @@ const OverviewSection = () => {
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        WPC Approval | WPC ETA Certification, Process, Cost, and Requirements
+        WPC Approval | WPC ETA Certification
       </h2>
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-4">
         <p>Modern communication has widely relied on wireless technologies. Many electronics such as mobile phones, Bluetooth headsets, Wi-Fi routers, smartwatches, IoT devices, RFID tags, and even wireless medical devices rely on radio frequency (RF) communication. The Government of India has made WPC approval devices mandatory to ensure the safe and interference-free use of the radio spectrum.</p>
-        <p>As a manufacturer, importer, trader, or startup, knowledge over WPC Approval and WPC ETA Certification is vital in order to be compliant to the Indian wireless market regulations.</p>
+        <p>As a manufacturer, importer, trader, or startup, knowledge over WPC Approval or WPC ETA Certification is vital in order to be compliant to the Indian wireless market regulations.</p>
         <p>The following guide covers WPC ETA Certification thoroughly including its definition, importance, types, eligibility, steps, documents, costs, benefits, and the entire process to obtaining WPC ETA Certification in India.</p>
       </div>
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
@@ -680,6 +722,56 @@ const CategoriesSection = () => {
         <p className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide leading-loose">
           Network Licenses have more compliance obligations because they are for the use of regulated and licensed frequency bands.
         </p>
+
+        {/* PRODUCTS UNDER WPC */}
+        <div className="mt-12 md:mt-16 w-full max-w-full min-w-0 overflow-x-hidden">
+          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-6">
+            Products under WPC
+          </h3>
+          <p className="font-geist text-sm md:text-base text-[#42434d] mb-6 max-w-3xl">
+            Wireless devices that typically require WPC ETA certification include the following:
+          </p>
+          <div
+            className="marquee-container overflow-hidden w-full min-w-0 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] relative py-4 pb-8"
+            aria-label="Products under WPC certification"
+          >
+            <div className="marquee-track flex flex-nowrap items-center gap-6">
+              {[...WPC_PRODUCTS, ...WPC_PRODUCTS].map((product, i) => (
+                <a
+                  key={`wpc-product-${product.slug}-copy-${Math.floor(i / WPC_PRODUCTS.length)}`}
+                  href={`${WPC_PRODUCTS_BASE}/${product.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col shrink-0 w-[200px] md:w-[220px] rounded-xl bg-white border border-[#e8e6e1] shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-[#1A8781]/30 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A8781] focus-visible:ring-offset-2"
+                >
+                  <div className="aspect-square bg-[#F9F7F2] flex items-center justify-center p-4">
+                    <img
+                      src={`/images/wpc-products/${product.img}`}
+                      alt={product.name}
+                      loading="lazy"
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                      onError={(e) => {
+                        e.target.style.display = "none";
+                        e.target.nextElementSibling?.classList.remove("hidden");
+                      }}
+                    />
+                    <span
+                      className="hidden text-[#42434d] text-sm font-geist text-center"
+                      aria-hidden
+                    >
+                      {product.name}
+                    </span>
+                  </div>
+                  <div className="py-3 px-3 text-center border-t border-[#e8e6e1] bg-white">
+                    <p className="font-geist text-sm font-medium text-[#131316] line-clamp-2 group-hover:text-[#1A8781] transition-colors">
+                      {product.name}
+                    </p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
