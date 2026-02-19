@@ -186,6 +186,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/chain-pipe-wrenches-is-4123",
     "/blogs/isi-products/battery-operated-air-purifier-is-302",
     "/blogs/isi-products/foot-warmer-&-heating-mats-is-302",
+    "/blogs/isi-products/battery-operated-vaccum-cleaners",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
     "/blogs/isi-products/battery-operated-massage-appliances",
     "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances",
@@ -1116,6 +1117,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Battery Operated Air Purifier - English Page";
     if (path.includes("/blogs/isi-products/foot-warmer-&-heating-mats-is-302"))
       return "BIS Certificate for Foot Warmer & Heating Mats - English Page";
+    if (path.includes("/blogs/isi-products/battery-operated-vaccum-cleaners"))
+      return "BIS Certificate for Vaccum Cleaners - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-tootbrush-is-302"))
       return "BIS Certificate for Battery Operated Toothbrush - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-massage-appliances"))

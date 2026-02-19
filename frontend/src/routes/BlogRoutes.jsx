@@ -873,6 +873,9 @@ const BISCertificateBatteryOperatedAirPurifierVietnamese = lazy(() =>
 const BISCertificateForFootWarmerandHeatingMats = lazy(() =>
   import("@/blogs/BISCertificationFootWarmerandHeatingMats")
 );
+const BISCertificationforVaccumCleaners = lazy(() =>
+  import("@/blogs/BISCertificationforVaccumCleaners")
+);
 const BISCertificateForBatteryOperatedToothbrush = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificationBatteryOperatedToothbrush")
 );
@@ -3030,6 +3033,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForFootWarmerandHeatingMats />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/battery-operated-vaccum-cleaners"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforVaccumCleaners />
           </Suspense>
         }
       />

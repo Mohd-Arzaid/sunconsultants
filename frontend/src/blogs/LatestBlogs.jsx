@@ -76,6 +76,16 @@ const blogs = [
     date: "02 October 2025",
   },
   {
+    id: 41,
+    color: "#2D7DD2",
+    title: "BIS Certification for Vaccum Cleaners – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Vaccum Cleaners under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for battery-operated and cordless vacuum cleaners.",
+    slug: "blogs/isi-products/battery-operated-vaccum-cleaners",
+    date: "19 February 2026",
+    image: "/blogImages/BISLicenseforVaccumCleaners.png",
+  },
+  {
     id: 5,
     color: "#f7b186",
     title: "BIS Certification in Indonesia",
