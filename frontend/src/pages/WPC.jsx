@@ -28,8 +28,6 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-const WPC_PRODUCTS_BASE = "https://alephindia.in/product";
-
 const WPC_PRODUCTS = [
   { name: "Wireless Hotspot Device", img: "https://img.freepik.com/free-vector/wireless-router-green-wi-fi-symbol-3d-illustration-cartoon-drawing-equipment-internet-access-3d-style-white-background-internet-network-communication-connection-concept_778687-695.jpg?semt=ais_user_personalization&w=740&q=80", slug: "wireless-hotspot.php" },
   { name: "Laptop", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGsMz9g3T9PfjNeDzAEoCqWCfjp53afA-f8Q&s", slug: "notebook-tablet-pc.php" },
@@ -725,7 +723,7 @@ const CategoriesSection = () => {
 
         {/* PRODUCTS UNDER WPC */}
         <div className="mt-12 md:mt-16 w-full max-w-full min-w-0 overflow-x-hidden">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-6">
+          <h3 className="text-[20px] md:text-[29px] font-roboto font-bold text-[#131316] mb-6">
             Products under WPC
           </h3>
           <p className="font-geist text-sm md:text-base text-[#42434d] mb-6 max-w-3xl">
@@ -737,12 +735,9 @@ const CategoriesSection = () => {
           >
             <div className="marquee-track flex flex-nowrap items-center gap-6">
               {[...WPC_PRODUCTS, ...WPC_PRODUCTS].map((product, i) => (
-                <a
+                <div
                   key={`wpc-product-${product.slug}-copy-${Math.floor(i / WPC_PRODUCTS.length)}`}
-                  href={`${WPC_PRODUCTS_BASE}/${product.slug}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex flex-col shrink-0 w-[200px] md:w-[220px] rounded-xl bg-white border border-[#e8e6e1] shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-[#1A8781]/30 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A8781] focus-visible:ring-offset-2"
+                  className="group flex flex-col shrink-0 w-[200px] md:w-[220px] rounded-xl bg-white border border-[#e8e6e1] shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-[#1A8781]/30 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A8781] focus-visible:ring-offset-2 cursor-default"
                 >
                   <div className="aspect-square bg-[#F9F7F2] flex items-center justify-center p-4 overflow-hidden">
                     <img
@@ -767,7 +762,7 @@ const CategoriesSection = () => {
                       {product.name}
                     </p>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>

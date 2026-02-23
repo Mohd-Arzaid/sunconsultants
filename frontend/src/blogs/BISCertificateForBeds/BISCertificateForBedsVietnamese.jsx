@@ -16,6 +16,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
+import LanguageSelector from "./LanguageSelector";
 import {
   Table,
   TableBody,
@@ -31,6 +32,7 @@ const BISCertificateForBedsVietnamese = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
+      <LanguageSelector />
       <Services />
       <VideoSection />
       <FooterVietnamese />

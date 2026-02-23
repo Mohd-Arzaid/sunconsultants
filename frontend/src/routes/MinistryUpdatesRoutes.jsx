@@ -263,6 +263,14 @@ export const MinistryUpdatesRoutes = () => {
           </Suspense>
         }
       />
+      <Route
+        path="/ministry-updates/dpiit-bis-qco-exemption-2026-notification"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <DPIITNotification2026 />
+          </Suspense>
+        }
+      />
     </>
   );
 };

@@ -16,6 +16,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
+import LanguageSelector from "./LanguageSelector";
 import {
   Table,
   TableBody,
@@ -31,6 +32,7 @@ const BISCertificateForBedsJapanese = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
+      <LanguageSelector />
       <Services />
       <VideoSection />
       <FooterJapanese />

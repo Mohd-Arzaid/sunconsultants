@@ -189,6 +189,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/battery-operated-vaccum-cleaners",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
     "/blogs/isi-products/battery-operated-massage-appliances",
+    "/blogs/isi-products/hand-held-electric-engraving-tools",
     "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances",
   ];
 
@@ -1123,6 +1124,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Battery Operated Toothbrush - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-massage-appliances"))
       return "BIS Certificate for Massage Appliances - English Page";
+    if (path.includes("/blogs/isi-products/hand-held-electric-engraving-tools"))
+      return "BIS Certificate for Hand Held Electric Engraving Tools - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances"))
       return "BIS Certificate for Shavers, Trimmers & Clippers - English Page";
   };

@@ -16,6 +16,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterChinese from "@/components/manual/Footer/FooterChinese";
+import LanguageSelectorBattery from "./LanguageSelectorBattery";
 
 const BISCertificateForBatteryOperatedToothbrushChinese = () => {
   return (
@@ -23,6 +24,7 @@ const BISCertificateForBatteryOperatedToothbrushChinese = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
+      <LanguageSelectorBattery />
       <Services />
       <VideoSection />
       <FooterChinese />
@@ -773,9 +775,9 @@ const MainContentLeft = () => {
           </div>
         </div>
 
-        <ManyUsersAlsoRead />
+        <ManyUsersAlsoReadChinese />
 
-        <FaqAuthorEng questionNumber={1} />
+        <FaqAuthorChinese questionNumber={1} />
       </div>
     </div>
   );
@@ -796,7 +798,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India&apos;s Best Certificate Consultant
+                印度最佳证书顾问
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -811,132 +813,132 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="BIS标志"
+                title="BIS标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Mark (ISI License) for Foreign Manufacture
+              外国制造商BIS标志（ISI许可证）
             </p>
           </Link>
 
           <Link
             to="/cdsco-registration-certification"
-            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="CDSCO Logo"
-                title="CDSCO Logo"
+                alt="CDSCO标志"
+                title="CDSCO标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO Registration Certification
+              CDSCO注册认证
             </p>
           </Link>
 
           <Link
             to="/what-is-crs-bis-or-crs-registration"
-            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS logo"
-                title="BISCRS logo"
+                alt="BIS CRS标志"
+                title="BIS CRS标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registration
+              BIS (CRS) 注册
             </p>
           </Link>
 
           <Link
             to="/epr-certificate-for-plastic-waste-management-pwm"
-            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
-                alt="PlasticWasteManagement"
-                title="PlasticWasteManagement"
+                alt="塑料废物管理"
+                title="塑料废物管理"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Plastic Waste Management
+              塑料废物管理
             </p>
           </Link>
 
           <Link
             to="/a-guide-on-how-to-obtain-epr-certificate"
-            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate logo"
-                title="EPRCertificate logo"
+                alt="EPR证书标志"
+                title="EPR证书标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR Certificate certifications
+              EPR证书认证
             </p>
           </Link>
 
           <Link
             to="/a-guide-on-how-to-obtain-lmpc-certificate"
-            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC logo"
-                title="LMPC logo"
+                alt="LMPC标志"
+                title="LMPC标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC Certificate certifications
+              LMPC证书认证
             </p>
           </Link>
 
           <Link
             to="/what-is-bis-certificate-indian-bis"
-            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="BIS标志"
+                title="BIS标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Registration Certificate
+              BIS注册证书
             </p>
           </Link>
 
           <Link
             to="/a-guide-to-bis-certification-indian-bis"
-            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark logo"
-                title="ISIMark logo"
+                alt="ISI标志"
+                title="ISI标志"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI MARK (BIS) for Indian Manufactures
+              印度制造商ISI标志（BIS）
             </p>
           </Link>
         </div>

@@ -16,6 +16,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterGerman from "@/components/manual/Footer/FooterGerman";
+import LanguageSelectorBattery from "./LanguageSelectorBattery";
 
 const BISCertificateForBatteryOperatedToothbrushGerman = () => {
   return (
@@ -23,6 +24,7 @@ const BISCertificateForBatteryOperatedToothbrushGerman = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
+      <LanguageSelectorBattery />
       <Services />
       <VideoSection />
       <FooterGerman />

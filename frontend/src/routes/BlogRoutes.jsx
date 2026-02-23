@@ -476,6 +476,9 @@ const BISCertificateForWeldedPipesAndTubesSpanish = lazy(() =>
 const BISCertificateForWeldedPipesAndTubesVietnamese = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesVietnamese")
 );
+const BISCertificateForWeldedPipesAndTubesThai = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes/BISCertificateForWeldedPipesAndTubesThai")
+);
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import(
     "@/blogs/BISCertificateForSeamlessPipesAndTubes/BISCertificateForSeamlessPipesAndTubes"
@@ -885,6 +888,9 @@ const BISCertificateForBatteryOperatedToothbrushArabic = lazy(() =>
 const BISCertificationforMassageAppliances = lazy(() =>
   import("@/blogs/BISCertificationforMassageAppliances")
 );
+const BISCertificationHandheldElectricEngraving = lazy(() =>
+  import("@/blogs/BISCertificationHandheldElectricEngraving")
+);
 const BISCertificateforShavers = lazy(() =>
   import("@/blogs/BISCertificationforShavers")
 );
@@ -1232,6 +1238,15 @@ export const BlogRoutes = () => {
       {/* ==================================================================== */}
       {/* ==================================================================== */}
 
+x      {/* Hand-held electric engraving tools - early route for reliable match */}
+      <Route
+        path="/blogs/isi-products/hand-held-electric-engraving-tools"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationHandheldElectricEngraving />
+          </Suspense>
+        }
+      />
       {/* Bunk beds page start */}
       <Route
         path="/blogs/isi-products/bunk-beds-is-17636"
@@ -2085,6 +2100,14 @@ export const BlogRoutes = () => {
         }
       />
       <Route
+        path="/blogs/isi-products/tho-lae-tho-cheum-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubesThai />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/seamless-pipes-&-tubes-is-17875"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2149,7 +2172,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/isi-products/muketsugou-kan-is-17875"
+        path="/blogs/isi-products/muketsu-kan-kan-is-17875"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSeamlessPipesAndTubesJapanese />
@@ -2545,6 +2568,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationFibreRopesPolyamideChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/munazzamat-siyaj-kahrabai-is-4572"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesPolyamideArabic />
           </Suspense>
         }
       />

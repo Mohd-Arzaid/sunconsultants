@@ -449,6 +449,16 @@ const blogs = [
     date: "14 February 2026",
     image: "/blogImages/BISLicenseforShaversTrimmers.png",
   },
+  {
+    id: 46,
+    color: "#2D7DD2",
+    title: "BIS Certification for Hand held Electric Engraving Tools – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Hand held Electric Engraving Tools under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for corded and battery-operated engraving tools.",
+    slug: "blogs/isi-products/hand-held-electric-engraving-tools",
+    date: "21 February 2026",
+    image: "/blogImages/BISLicenseforHandHeldElectricEngravingTools.png",
+  },
 ];
 
 // =============================

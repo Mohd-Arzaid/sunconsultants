@@ -158,7 +158,7 @@ const MainContentLeft = () => {
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforBatteryOperatedAirPurifier.png"
+            src="/blogImages/BISLicenseforBatteryOperatedAirPurifier.png"  
             title="ترخيص BIS لمنظف الهواء بالبطارية"
             alt="شهادة BIS لمنظف الهواء بالبطارية - IS 302 (الجزء 1):2024 شهادة BIS"
             className="w-full h-auto rounded-lg shadow-md"

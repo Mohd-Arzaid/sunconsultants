@@ -11,11 +11,18 @@ Sitemap: https://bis-certifications.com/backlinks-sitemap.xml
 
 # Disallow specific service pages
 Disallow: /cdsco-registration-certification
-
 Disallow: /information-about-peso-certification-peso-license-india
-
-
 Disallow: /bee-certification
 Disallow: /ce-certification
 Disallow: /emi-emc-certification
 Disallow: /cb-certification
+
+# EPR & other certification pages (disallowed)
+Disallow: /a-guide-on-how-to-obtain-epr-certificate
+Disallow: /epr-certificate-for-plastic-waste-management-pwm
+Disallow: /epr-certificate-for-battery-waste-management-bwm
+Disallow: /information-about-wpc-certificate-eta-approval
+Disallow: /what-is-legal-metrology-or-lmpc-certificate
+Disallow: /a-guide-on-how-to-obtain-lmpc-certificate
+Disallow: /information-about-tec-certificate-mtcte
+Disallow: /restriction-of-hazardous-substance-rohs-certificate
