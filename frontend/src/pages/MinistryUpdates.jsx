@@ -24,6 +24,18 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 21,
+    color: "#5B63E6",
+    tagType: "QCO Amendment",
+    date: "February 18, 2026",
+    displayDate: "18 Feb 2026",
+    title:
+      "MSME Exemption Under QCO 2026 – New Quality Control Order Amendment Explained",
+    description:
+      "Government of India grants exemption to eligible Udyam-registered MSMEs from mandatory BIS compliance under multiple QCOs, based on clear investment and turnover limits.",
+    link: "/ministry-updates/msme-exemption-qco-2026",
+  },
+  {
     id: 0,
     color: "#1A8781",
     tagType: "BIS Update",

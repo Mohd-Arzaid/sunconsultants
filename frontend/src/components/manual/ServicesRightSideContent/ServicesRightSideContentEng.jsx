@@ -94,6 +94,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/furniture-qco-2026",
     "/ministry-updates/latest-furniture-qco-2026",
     "/ministry-updates/latest-bis-qco-update-for-import-products",
+    "/ministry-updates/msme-exemption-qco-2026",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -924,6 +925,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // DPIIT Notification 2026 – BIS QCO Exemption for Transitional Imports
     if (path.includes("/ministry-updates/latest-bis-qco-update-for-import-products"))
       return "DPIIT Notification 2026: Major Relief on BIS QCO Compliance for Transitional Imports - Ministry Updates (English)";
+
+    // MSME Exemption Under QCO 2026
+    if (path.includes("/ministry-updates/msme-exemption-qco-2026"))
+      return "MSME Exemption Under QCO 2026 – New Quality Control Order Amendment Explained - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
