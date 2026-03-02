@@ -545,7 +545,7 @@ const sitemapSections = [
   {
     title: "Latest Blogs",
     pages: [
-      { name: "All Blogs", path: "/blogs" },
+      { name: "All Blogs", path: "/Blogs" },
       {
         name: "BIS Certificate for Tin Ingots under IS 26:2024",
         path: "/bis-certificate-for-tin-ingots",
