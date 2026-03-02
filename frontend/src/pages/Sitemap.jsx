@@ -567,6 +567,10 @@ const sitemapSections = [
         path: "/blogs/isi-products/furniture-with-electrically-motorized-parts",
       },
       {
+        name: "BIS Certificate for Skin Beauty Care Appliances",
+        path: "/blogs/isi-products/skin-beauty-care-appliances",
+      },
+      {
         name: "BIS Certification in Indonesia",
         path: "/bis-certification-in-indonesia",
       },

@@ -165,6 +165,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/tables-&-desks-is-17633",
     "/blogs/isi-products/furniture",
     "/blogs/isi-products/furniture-with-electrically-motorized-parts",
+    "/blogs/isi-products/skin-beauty-care-appliances",
     "/blogs/isi-products/welded-pipes-&-tubes-is-17876",
     "/blogs/isi-products/seamless-pipes-&-tubes-is-17875",
     "/blogs/isi-products/flashlight-is-2083",
@@ -1057,6 +1058,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Tables & Desks - English Page";
     if (path.includes("/blogs/isi-products/furniture-with-electrically-motorized-parts"))
       return "BIS Certificate for Furniture with Electrically Motorized Parts - English Page";
+    if (path.includes("/blogs/isi-products/skin-beauty-care-appliances"))
+      return "BIS Certificate for Skin Beauty Care Appliances - English Page";
     if (path.includes("/blogs/isi-products/furniture"))
       return "BIS Certificate for Furniture - English Page";
     if (path.includes("/blogs/isi-products/welded-pipes-&-tubes-is-17876"))

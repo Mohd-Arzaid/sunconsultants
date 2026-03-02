@@ -96,6 +96,16 @@ const blogs = [
     image: "/blogImages/BISLicenseforFurniturewithElectricallyMotorizedParts.png",
   },
   {
+    id: 47,
+    color: "#EC4899",
+    title: "BIS Certificate for Skin Beauty Care Appliances – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Skin Beauty Care Appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Covers facial cleansing devices, LED therapy, microcurrent tools & beauty appliances.",
+    slug: "blogs/isi-products/skin-beauty-care-appliances",
+    date: "02 March 2026",
+    image: "/blogImages/BISLicenseforSkinBeautyCareAppliances.png",
+  },
+  {
     id: 5,
     color: "#f7b186",
     title: "BIS Certification in Indonesia",

@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const BISCertificateForFurnitureWithElectricallyMotorizedParts = () => {
+const BISCertificateForSkinBeautyCareAppliances = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +30,25 @@ const BISCertificateForFurnitureWithElectricallyMotorizedParts = () => {
   );
 };
 
-export default BISCertificateForFurnitureWithElectricallyMotorizedParts;
+export default BISCertificateForSkinBeautyCareAppliances;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Furniture with Electrically Motorized Parts";
+    "BIS Certificate for Skin Beauty Care Appliances - Complete Guide";
   const ogTitle =
-    "BIS Certificate for Furniture with Electrically Motorized Parts";
+    "BIS Certificate for Skin Beauty Care Appliances - Complete Guide";
   const twitterTitle =
-    "BIS Certificate for Furniture with Electrically Motorized Parts";
+    "BIS Certificate for Skin Beauty Care Appliances - Complete Guide";
   const metaDescription =
-    "Get BIS Certificate for Furniture with Electrically Motorized Parts under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Skin Beauty Care Appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Furniture with Electrically Motorized Parts as per IS 302 (Part 1):2024. Process, Cost, Documents, Testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Skin Beauty Care Appliances as per IS 302 (Part 1):2024. Process, Cost, Documents, Testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Furniture with Electrically Motorized Parts under IS 302 (Part 1):2024. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Skin Beauty Care Appliances under IS 302 (Part 1):2024. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Furniture with Electrically Motorized Parts, BIS License for Furniture with Electrically Motorized Parts, IS 302 (Part 1):2024, BIS Certification for Furniture with Electrically Motorized Parts";
+    "BIS Certificate for Skin Beauty Care Appliances, BIS License for Skin Beauty Care Appliances, IS 302 (Part 1):2024, BIS Certification for Skin Beauty Care Appliances";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/furniture-with-electrically-motorized-parts";
+    "https://bis-certifications.com/blogs/isi-products/skin-beauty-care-appliances";
   const websiteName = "Sun Certifications India";
 
   return (
@@ -94,8 +94,7 @@ const BreadcrumbContent = () => {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Furniture with Electrically Motorized
-                    Parts
+                    BIS Certificate for Skin Beauty Care Appliances
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -123,170 +122,151 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Furniture with Electrically Motorized Parts –
-          Complete Guide to IS 302 (Part 1):2024
+          BIS Certificate for Skin Beauty Care Appliances – Complete Guide to
+          IS 302 (Part 1):2024
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforFurniturewithElectricallyMotorizedParts.png"
-            title="BIS Certification for Furniture with Electrically Motorized Parts"
-            alt="BIS Certificate for Furniture with Electrically Motorized Parts - IS 302 (Part 1):2024"
+            src="/blogImages/BISLicenseforSkinBeautyCareAppliances.png"
+            title="BIS Certification for Skin Beauty Care Appliances"
+            alt="BIS Certificate for Skin Beauty Care Appliances - IS 302 (Part 1):2024"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Furniture with electrically motorized parts—such as adjustable beds,
-          motorized recliner sofas, and height-adjustable desks—must comply with
-          IS 302 (Part 1):2024 before being sold in India. A valid BIS
-          Certificate for Furniture with Electrically Motorized Parts confirms
-          electrical safety, insulation reliability, motor protection, and user
-          safety under Indian electrical appliance regulations.
+          Skin beauty care appliances sold in India must comply with IS 302
+          (Part 1):2024 and obtain regulatory approval before entering the
+          market. A valid BIS Certificate for Skin Beauty Care Appliances
+          confirms electrical safety, insulation protection, temperature
+          control, and user safety. Without BIS certification, manufacturing,
+          importing, or selling these electrical beauty devices in India is not
+          legally permitted.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Furniture technology has evolved rapidly in recent years. Modern
-          furniture products are no longer static; they increasingly include
-          electric motors, control circuits, sensors, actuators, and
-          remote-control mechanisms. Examples include motorized recliner
-          chairs, electric adjustable beds, hospital beds, height-adjustable
-          desks, massage sofas, and smart ergonomic furniture.
+          Skin beauty care appliances have become one of the fastest-growing
+          categories in the global personal care and wellness market. Devices
+          such as facial cleansing brushes, skin rejuvenation tools, electric
+          facial massagers, pore suction devices, LED facial therapy tools,
+          microcurrent beauty devices, and home-use skin treatment systems are
+          increasingly used by consumers for skincare routines.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
-          These products combine mechanical structures with electrical
-          components, which introduces potential safety risks. Faulty wiring,
-          insulation breakdown, overheating motors, or controller malfunction can
-          expose users to electric shock, fire hazards, mechanical injury, or
-          device failure. Since such furniture is used in homes, hospitals,
-          offices, and commercial facilities, ensuring electrical safety is
-          essential.
+          These products combine electrical circuitry, heating elements,
+          vibration motors, LED systems, batteries, and user-contact surfaces
+          that directly interact with human skin. Because of this direct
+          contact, any malfunction — such as overheating, electrical leakage,
+          insulation failure, or battery malfunction — could pose serious safety
+          risks.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
-          To address these safety concerns, India requires such appliances to
-          comply with national electrical safety regulations. Manufacturers
-          and importers must obtain a BIS Certificate for Furniture with
-          Electrically Motorized Parts under IS 302 (Part 1):2024 before these
-          products can legally be manufactured, imported, or sold in the Indian
-          market.
+          To ensure consumer safety and standardize electrical product quality,
+          India requires these appliances to comply with national safety
+          regulations. Therefore, manufacturers and importers must obtain a BIS
+          Certificate for Skin Beauty Care Appliances under IS 302 (Part
+          1):2024 before selling them in the Indian market.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          A valid BIS Certification for Skin Beauty Care Appliances verifies
+          that the product has undergone rigorous electrical safety testing and
+          manufacturing quality evaluation. This guide provides a complete
+          understanding of the BIS License for Skin Beauty Care Appliances,
+          including regulatory scope, application process, documentation
+          requirements, testing procedures, costs, compliance responsibilities,
+          and penalties.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This information is useful for manufacturers, importers, brand
+          owners, startups, cosmetic device companies, and e-commerce sellers
+          seeking to legally sell electrical skincare devices in India.
         </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
           What is BIS Certification?
         </h2>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is India&apos;s official conformity assessment
-          program administered by the Bureau of Indian Standards. The system
-          ensures electrical, electronic, and consumer products comply with
-          defined safety and quality benchmarks before they enter the market.
+          BIS Certification is India&apos;s official product safety conformity
+          system regulated by the Bureau of Indian Standards. The certification
+          framework ensures that electrical appliances meet defined Indian
+          safety standards before they reach consumers.
+        </p>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          BIS Certificate Meaning
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          A BIS certificate is a government authorization confirming that a
+          product complies with a specified Indian Standard (IS). After
+          certification, manufacturers are permitted to affix the ISI mark on
+          their products.
         </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
-          Applicable BIS Standard for Furniture with Electrically Motorized
-          Parts
+          Applicable BIS Standard for Skin Beauty Care Appliances
         </h2>
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           IS 302 (Part 1):2024 — Safety of Household and Similar Electrical
           Appliances
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This standard specifies safety requirements for electrical appliances
-          used in homes and similar environments. It also applies to furniture
-          products that incorporate electrical motors or electronic control
-          systems.
+          The relevant Indian Standard for skin beauty devices is IS 302 (Part
+          1):2024, which specifies general safety requirements for electrical
+          appliances used in homes and similar environments.
         </p>
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Scope of the Standard
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          IS 302 (Part 1):2024 covers:
+          The standard applies to various electrical beauty devices including:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Electric adjustable beds</li>
-          <li>Motorized recliner chairs</li>
-          <li>Electric hospital beds</li>
-          <li>Height-adjustable desks</li>
-          <li>Motorized sofas and massage furniture</li>
-          <li>Smart ergonomic furniture</li>
+          <li>Facial cleansing devices</li>
+          <li>Skin massage tools</li>
+          <li>LED facial therapy devices</li>
+          <li>Microcurrent facial devices</li>
+          <li>Pore vacuum suction devices</li>
+          <li>Electric beauty rollers</li>
+          <li>Home skin rejuvenation equipment</li>
         </ul>
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Safety Intent
+          Safety and Performance Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          The standard aims to ensure:
+          The purpose of the standard is to ensure:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
           <li>Protection against electric shock</li>
-          <li>Motor overheating protection</li>
+          <li>Temperature control during use</li>
           <li>Electrical insulation integrity</li>
-          <li>Mechanical safety during movement</li>
-          <li>Fire hazard prevention</li>
-        </ul>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Who Must Comply
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Domestic manufacturers</li>
-          <li>Importers and distributors</li>
-          <li>Foreign manufacturers exporting to India</li>
-          <li>Private-label brands</li>
+          <li>Safe battery operation</li>
+          <li>Mechanical durability</li>
         </ul>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
-          Why BIS Certification is Mandatory for Furniture with Electrically
-          Motorized Parts
+          Why BIS Certification is Mandatory for Skin Beauty Care Appliances
         </h2>
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Consumer Safety Risks
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          Electrically motorized furniture may expose users to risks such as:
+          Skin beauty care appliances interact directly with human skin.
+          Potential risks from poorly designed devices include:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Electric shock from wiring faults</li>
-          <li>Fire hazards from motor overheating</li>
-          <li>Mechanical injury due to sudden movement</li>
-          <li>Controller malfunction</li>
+          <li>Electric shock</li>
+          <li>Skin burns due to overheating</li>
+          <li>Battery leakage or explosion</li>
+          <li>Electrical short circuits</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Since these products combine electrical and mechanical systems,
-          safety certification is essential.
+          Because of these risks, certification ensures that the device operates
+          safely under both normal and abnormal conditions.
         </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Government Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Indian BIS for Furniture with Electrically Motorized Parts mandates
-          certification before commercial sale.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Legal Implications
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-2">
-          Failure to obtain certification can lead to:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Product seizure</li>
-          <li>Heavy financial penalties</li>
-          <li>Customs rejection of imports</li>
-          <li>Legal prosecution</li>
-        </ul>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Market and Business Benefits
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-2">
-          Certification improves:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Product credibility</li>
-          <li>Retail acceptance</li>
-          <li>Institutional procurement eligibility</li>
-          <li>Consumer trust</li>
-        </ul>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
-          Step-by-Step BIS Certification Process for Furniture with
-          Electrically Motorized Parts
+          Step-by-Step BIS Certification Process for Skin Beauty Care
+          Appliances
         </h2>
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
@@ -295,46 +275,49 @@ const MainContentLeft = () => {
           Manufacturers must identify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Product category</li>
-          <li>Motor rating</li>
-          <li>Voltage specifications</li>
-          <li>Electrical components used</li>
+          <li>Product type</li>
+          <li>Electrical ratings</li>
+          <li>Battery specifications</li>
+          <li>Design variants</li>
         </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This step confirms that the appliance falls under IS 302 (Part
+          1):2024.
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          The BIS application process for Furniture with Electrically
-          Motorized Parts includes:
+          The BIS application process for Skin Beauty Care Appliances typically
+          includes:
         </p>
         <ol className="list-decimal ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Registration on the BIS portal</li>
-          <li>Submission of the BIS application</li>
-          <li>Upload of technical and legal documents</li>
-          <li>Payment of applicable fees</li>
+          <li>Registration on the BIS online portal</li>
+          <li>Submission of the BIS application form</li>
+          <li>Upload of technical documentation</li>
+          <li>Payment of certification fees</li>
         </ol>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Fees & Cost Structure
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          The bis certificate cost for Furniture with Electrically Motorized
-          Parts depends on several factors:
+          The bis certificate cost for Skin Beauty Care Appliances varies
+          depending on:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Number of product models</li>
-          <li>Complexity of electrical components</li>
-          <li>Testing requirements</li>
-          <li>Manufacturing location</li>
+          <li>Number of models</li>
+          <li>Testing complexity</li>
+          <li>Factory inspection requirements</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-2">
-          Typical cost components include:
+          Typical costs include:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
           <li>Application fee</li>
-          <li>Product testing charges</li>
-          <li>Factory inspection fee</li>
+          <li>Product testing fee</li>
+          <li>Inspection charges</li>
           <li>License fee</li>
         </ul>
 
@@ -342,27 +325,27 @@ const MainContentLeft = () => {
           Product Sample Testing
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          Product samples are tested at BIS-recognized laboratories for:
+          Samples are tested in BIS-recognized laboratories for:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
           <li>Insulation resistance</li>
+          <li>Leakage current</li>
           <li>Dielectric strength</li>
           <li>Temperature rise</li>
-          <li>Mechanical safety</li>
           <li>Abnormal operation</li>
-          <li>Electrical leakage</li>
+          <li>Mechanical safety</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          BIS inspectors verify:
+          BIS officials inspect the manufacturing facility to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Manufacturing processes</li>
+          <li>Production processes</li>
           <li>Quality control procedures</li>
-          <li>Electrical safety testing facilities</li>
+          <li>Testing equipment</li>
           <li>Component traceability</li>
         </ul>
 
@@ -370,23 +353,44 @@ const MainContentLeft = () => {
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          Once compliance is confirmed:
+          After successful testing and inspection:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>BIS issues the license</li>
-          <li>Manufacturer is authorized to use the ISI mark</li>
+          <li>BIS issues the certification license</li>
+          <li>Manufacturer can affix the ISI mark</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
-          After certification:
+          Compliance continues after approval through:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Periodic surveillance audits may occur</li>
-          <li>Market samples may be tested</li>
-          <li>License renewal is required</li>
+          <li>Surveillance audits</li>
+          <li>Sample testing</li>
+          <li>Periodic license renewal</li>
+        </ul>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
+          Scope of BIS License as per IS 302 (Part 1):2024
+        </h2>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          The BIS license defines:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
+          <li>Approved product models</li>
+          <li>Manufacturing location</li>
+          <li>Electrical ratings</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          Appliances may be used in:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
+          <li>Homes</li>
+          <li>Beauty salons</li>
+          <li>Dermatology clinics</li>
+          <li>Wellness centers</li>
         </ul>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
@@ -397,7 +401,7 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
           <li>Factory registration certificate</li>
-          <li>Manufacturing process flow chart</li>
+          <li>Manufacturing process details</li>
           <li>Machinery list</li>
         </ul>
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
@@ -412,21 +416,21 @@ const MainContentLeft = () => {
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Electrical circuit diagrams</li>
-          <li>Motor specifications</li>
-          <li>Controller details</li>
-          <li>User manual</li>
+          <li>Electrical schematics</li>
+          <li>Component specifications</li>
+          <li>User manuals</li>
+          <li>Safety instructions</li>
         </ul>
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>Application forms</li>
+          <li>BIS application form</li>
           <li>Declarations and undertakings</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          These collectively form bis certification documents for Furniture
-          with Electrically Motorized Parts.
+          These collectively form bis certification documents for Skin Beauty
+          Care Appliances.
         </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
@@ -440,37 +444,15 @@ const MainContentLeft = () => {
           <li>Leakage current test</li>
           <li>Temperature rise test</li>
           <li>Abnormal operation test</li>
-          <li>Mechanical movement safety test</li>
           <li>Insulation resistance test</li>
+          <li>Mechanical safety evaluation</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Testing must be conducted only at BIS-recognized laboratories.
+          Testing must be performed in BIS-recognized laboratories.
         </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
-          Benefits of BIS Certification for Manufacturers & Importers
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Legal Benefits:</strong> Compliance with national
-            regulations
-          </li>
-          <li>
-            <strong>Commercial Benefits:</strong> Access to organized retail and
-            institutional markets
-          </li>
-          <li>
-            <strong>Branding Benefits:</strong> Consumer trust and credibility
-          </li>
-          <li>
-            <strong>Market Expansion:</strong> Better acceptance in
-            international trade
-          </li>
-        </ul>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
-          Who Needs BIS Certification for Furniture with Electrically
-          Motorized Parts?
+          Who Needs BIS Certification for Skin Beauty Care Appliances?
         </h2>
         <p className="text-gray-600 text-base font-geist mb-2">
           Certification is required for:
@@ -487,156 +469,142 @@ const MainContentLeft = () => {
           Conclusion
         </h2>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Furniture with Electrically
-          Motorized Parts under IS 302 (Part 1):2024 is essential for legally
-          manufacturing, importing, and selling electrically powered furniture
-          in India. A valid BIS Certification for Furniture with Electrically
-          Motorized Parts ensures electrical safety, motor protection, and
-          regulatory compliance, while the BIS License for Furniture with
-          Electrically Motorized Parts strengthens product credibility and
-          market acceptance.
+          Obtaining a BIS Certificate for Skin Beauty Care Appliances under IS
+          302 (Part 1):2024 is essential for legally manufacturing, importing,
+          and selling electrical skincare devices in India. A valid BIS
+          Certification for Skin Beauty Care Appliances ensures electrical
+          safety, consumer protection, and regulatory compliance, while the BIS
+          License for Skin Beauty Care Appliances enhances product credibility
+          and market acceptance.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers and importers who secure certification early can
-          reduce regulatory risk and position their products confidently in
-          India&apos;s rapidly growing smart furniture market.
+          Manufacturers and importers who secure certification early can reduce
+          regulatory risks and successfully compete in India&apos;s rapidly
+          expanding beauty and personal care device market.
         </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
-          FAQs – BIS Certification for Furniture with Electrically Motorized
-          Parts
+          FAQs – BIS Certification for Skin Beauty Care Appliances
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. Why does electrically motorized furniture require BIS
+          1. Why are skin beauty care appliances regulated under BIS
           certification?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Motorized furniture contains electrical motors, wiring, power
-          adapters, and control systems. These components operate under load
-          and may generate heat during operation. If the electrical system is
-          poorly designed or insulated, it can lead to electric shock or fire
-          hazards. BIS certification ensures that the product has been tested
-          for electrical safety, insulation reliability, mechanical
-          stability, and overheating protection before it reaches consumers.
+          Skin beauty care appliances interact directly with human skin and
+          often use electrical components such as motors, LEDs, heaters, or
+          batteries. If these systems malfunction, they may cause burns,
+          electric shock, or skin irritation. BIS certification ensures the
+          device has been tested for electrical insulation, temperature
+          control, mechanical durability, and safe operation before being sold
+          to consumers.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. Which types of furniture fall under this certification category?
+          2. Which beauty devices require BIS certification?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The regulation typically applies to furniture that contains
-          electrical motors or automated movement mechanisms. Examples include
-          electric adjustable beds, motorized recliner chairs,
-          height-adjustable office desks, hospital beds, massage chairs, and
-          smart furniture with automated positioning systems. Any furniture
-          product that includes powered movement or electrical components may
-          fall within this category and require compliance.
+          Electrical beauty devices including facial cleansing brushes, LED
+          therapy masks, skin rejuvenation devices, pore vacuum suction
+          devices, microcurrent beauty tools, and facial massagers generally
+          fall under this category. Any beauty appliance that operates using
+          electricity or batteries may require certification under IS 302 (Part
+          1):2024.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. Can imported motorized furniture be sold in India without BIS
-          approval?
+          3. Can imported beauty appliances be sold without BIS certification?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          No. Imported furniture that contains electrical motors or control
-          systems must comply with Indian electrical safety standards before it
-          can be sold in the country. Customs authorities may block or
-          confiscate shipments that do not carry valid BIS certification
-          documentation.
+          No. Imported electrical beauty devices must comply with Indian
+          standards before entering the market. Customs authorities may stop
+          shipments without valid BIS certification documentation.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. How long does it take to obtain BIS certification?
+          4. How long does the BIS certification process take?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The certification process generally takes around four to eight weeks
-          if the product and documentation are prepared properly. However, the
-          timeline may extend if testing failures occur, additional documents
-          are required, or factory inspection scheduling delays arise.
+          when documentation and product testing proceed smoothly. However,
+          delays may occur if additional testing or product modifications are
+          required.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. What happens if the product fails laboratory testing?
+          5. What happens if a product fails testing?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          If the product fails safety testing, the manufacturer receives a
-          detailed test report explaining the failure. The product must then
-          be redesigned or improved to meet safety requirements and
-          resubmitted for testing before certification can proceed.
+          If the device fails laboratory testing, the manufacturer must redesign
+          or modify the product to meet safety requirements. After improvements
+          are made, the product can be resubmitted for testing.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          6. Is factory inspection mandatory during the certification process?
+          6. Is factory inspection mandatory?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Yes. BIS officers must verify the manufacturing facility to ensure
-          the factory has the capability to consistently produce products that
-          meet the required safety standard. They review quality control
-          procedures, equipment, and testing practices.
+          Yes. BIS officials must inspect the manufacturing facility to ensure
+          the factory has proper production capability, quality control systems,
+          and safety testing procedures.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          7. Can multiple furniture models be covered under a single BIS
-          license?
+          7. Can multiple product variants be included in one certification?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Yes, similar models that share the same electrical design and safety
-          features may be grouped under one license. However, major
-          differences in motor specifications, electrical circuits, or
-          structural design may require separate evaluation.
+          Yes, similar models with the same electrical design and safety
+          features may be included under one certification. However, major
+          design differences may require separate evaluation.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          8. What safety tests are performed during certification?
+          8. What safety tests are performed on beauty appliances?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The testing process usually includes insulation resistance testing,
-          electric strength testing, leakage current measurement, temperature
-          rise evaluation, abnormal operation testing, and mechanical safety
-          evaluation.
+          Typical tests include insulation resistance testing, leakage current
+          measurement, electric strength testing, temperature rise evaluation,
+          abnormal operation testing, and mechanical safety evaluation.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          9. Is BIS certification required for both residential and commercial
-          furniture?
+          9. Does BIS certification guarantee product quality?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS certification primarily ensures safety compliance. However, the
+          rigorous testing process also helps maintain consistent product
+          performance and reliability.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          10. Is BIS certification required for both home-use and salon-use
+          devices?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Yes. The certification requirement applies regardless of whether the
-          furniture is used in homes, offices, hospitals, hotels, or other
-          commercial facilities.
+          product is used in homes, salons, or wellness centers.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          10. Does certification cover electronic accessories such as remote
-          controls?
+          11. Can startups apply for BIS certification?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Yes. Remote controllers, adapters, and electrical control units that
-          form part of the product are evaluated during safety testing to
-          ensure safe operation.
+          Yes. Any manufacturer or importer meeting the regulatory requirements
+          can apply for certification.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          11. How long is a BIS license valid?
+          12. How long does a BIS license remain valid?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The license remains valid as long as the manufacturer maintains
-          compliance with BIS regulations and completes periodic renewals and
-          surveillance requirements.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          12. Can startups or small manufacturers apply for BIS certification?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Yes. BIS certification is available to manufacturers of all sizes as
-          long as they meet the technical, documentation, and testing
-          requirements.
+          The license remains valid as long as the manufacturer continues to
+          comply with BIS regulations and completes required renewals and
+          surveillance inspections.
         </p>
 
         <ManyUsersAlsoRead />
-        <FaqAuthorEng questionNumber={3} />
+        <FaqAuthorEng questionNumber={4} />
       </div>
     </div>
   );
