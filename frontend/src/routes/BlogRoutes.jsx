@@ -306,6 +306,11 @@ const BISCertificateForFurnitureVietnamese = lazy(() =>
     "@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureVietnamese"
   )
 );
+const BISCertificateForFurnitureWithElectricallyMotorizedParts = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForFurnitureWithElectricallyMotorizedParts/BISCertificateForFurnitureWithElectricallyMotorizedParts"
+  )
+);
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
 );
@@ -1665,6 +1670,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForFurniture />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/furniture-with-electrically-motorized-parts"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureWithElectricallyMotorizedParts />
           </Suspense>
         }
       />

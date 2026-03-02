@@ -563,6 +563,10 @@ const sitemapSections = [
         path: "/bis-license-for-storage-units-Indian-bis",
       },
       {
+        name: "BIS Certificate for Furniture with Electrically Motorized Parts",
+        path: "/blogs/isi-products/furniture-with-electrically-motorized-parts",
+      },
+      {
         name: "BIS Certification in Indonesia",
         path: "/bis-certification-in-indonesia",
       },
