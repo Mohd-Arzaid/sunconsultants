@@ -86,6 +86,26 @@ const blogs = [
     image: "/blogImages/BISLicenseforVaccumCleaners.png",
   },
   {
+    id: 46,
+    color: "#1A8781",
+    title: "BIS Certificate for Furniture with Electrically Motorized Parts – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Furniture with Electrically Motorized Parts under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Covers electric beds, motorized recliners, height-adjustable desks & smart furniture.",
+    slug: "blogs/isi-products/furniture-with-electrically-motorized-parts",
+    date: "28 February 2026",
+    image: "/blogImages/BISLicenseforFurniturewithElectricallyMotorizedParts.png",
+  },
+  {
+    id: 47,
+    color: "#EC4899",
+    title: "BIS Certificate for Skin Beauty Care Appliances – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Skin Beauty Care Appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Covers facial cleansing devices, LED therapy, microcurrent tools & beauty appliances.",
+    slug: "blogs/isi-products/skin-beauty-care-appliances",
+    date: "02 March 2026",
+    image: "/blogImages/BISLicenseforSkinBeautyCareAppliances.png",
+  },
+  {
     id: 5,
     color: "#f7b186",
     title: "BIS Certification in Indonesia",

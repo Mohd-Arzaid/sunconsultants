@@ -3907,9 +3907,18 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
- 
-
-
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/furniture-with-electrically-motorized-parts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/skin-beauty-care-appliances</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-03-02</lastmod>
+  </url>
 
    <!-- BIS Certificate for Furniture - Arabic -->
    <url>
@@ -6275,6 +6284,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-02-14</lastmod>
+  </url>
+  <!-- MSME Exemption Under QCO 2026 - English -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/msme-exemption-qco-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-02-18</lastmod>
   </url>
   <!-- DPIIT Notification 2026 – BIS QCO Exemption for Transitional Imports -->
   <url>

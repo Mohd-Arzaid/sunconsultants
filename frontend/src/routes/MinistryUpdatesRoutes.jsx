@@ -90,6 +90,9 @@ const FurnitureQCOAmendmentOrderlatest = lazy(() =>
 const DPIITNotification2026 = lazy(() =>
   import("@/pages/MinistryUpdatesPages/DPIITNotification2026")
 );
+const MSMEExemptionQCO2026 = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/MSMEExemptionQCO2026")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -257,14 +260,6 @@ export const MinistryUpdatesRoutes = () => {
       />
       <Route
         path="/ministry-updates/latest-bis-qco-update-for-import-products"
-        element={
-          <Suspense fallback={<MinistryUpdatesSkeleton />}>
-            <DPIITNotification2026 />
-          </Suspense>
-        }
-      />
-      <Route
-        path="/ministry-updates/dpiit-bis-qco-exemption-2026-notification"
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <DPIITNotification2026 />

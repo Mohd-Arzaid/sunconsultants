@@ -108,6 +108,101 @@ const sitemapSections = [
   },
 
   {
+    title: "Ministry Updates",
+    pages: [
+      { name: "Ministry Updates (All)", path: "/ministry-updates" },
+      {
+        name: "MSME Exemption Under QCO 2026 – New Quality Control Order Amendment Explained",
+        path: "/ministry-updates/msme-exemption-qco-2026",
+      },
+      {
+        name: "DPIIT Notification 2026: Major Relief on BIS QCO Compliance for Transitional Imports",
+        path: "/ministry-updates/latest-bis-qco-update-for-import-products",
+      },
+      {
+        name: "Furniture QCO Amendment Order 2026 – Complete Guide",
+        path: "/ministry-updates/latest-furniture-qco-2026",
+      },
+      {
+        name: "Furniture QCO Amendment Order 2026",
+        path: "/ministry-updates/furniture-qco-2026",
+      },
+      {
+        name: "Latest BIS Implementation Guidelines for IS 9873 (Part 1):2025 – Toy Safety Standard Updated",
+        path: "/ministry-updates/bis-certification-update-is-9873-toy-safety",
+      },
+      {
+        name: "BIS Removes Mandatory In-House Laboratory Requirement for Manufacturers",
+        path: "/ministry-updates/bis-in-house-lab-requirement",
+      },
+      {
+        name: "BIS Lifts Restrictions for ASEAN & Overseas Manufacturers",
+        path: "/ministry-updates/bis-certification-update-asean-manufacturers",
+      },
+      {
+        name: "Refined Zinc QCO Withdraw Order",
+        path: "/ministry-updates/refined-zinc-qco-withdraw-order",
+      },
+      {
+        name: "Aluminium and Aluminium Alloys QCO Withdraw Order",
+        path: "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
+      },
+      {
+        name: "Copper QCO Withdraw Order",
+        path: "/ministry-updates/copper-qco-withdraw-order",
+      },
+      {
+        name: "Tin Ingot QCO Withdraw Order",
+        path: "/ministry-updates/tin-ingot-qco-withdraw-order",
+      },
+      {
+        name: "Refined Nickel QCO Withdraw Order",
+        path: "/ministry-updates/refined-nickel-qco-withdraw-order",
+      },
+      {
+        name: "Nickel Powder QCO Withdraw Order",
+        path: "/ministry-updates/nickel-qco-withdraw-order",
+      },
+      {
+        name: "Petrochemical and Polymer Products QCO Withdraw Order",
+        path: "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
+      },
+      {
+        name: "Machinery & Electrical Equipment Safety (OTR) Order Withdrawn",
+        path: "/ministry-updates/scheme-x-qco-withdraw-order",
+      },
+      {
+        name: "Steel Products Amendment 2025",
+        path: "/ministry-updates/steel-products-amendment-2025",
+      },
+      {
+        name: "Toluene QCO Withdraw Order",
+        path: "/ministry-updates/toluene-qco-withdraw-order",
+      },
+      {
+        name: "Methyl Acrylate, Ethyl Acrylate QCO Withdraw Order",
+        path: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
+      },
+      {
+        name: "Vinyl Acetate Monomer QCO Withdraw Order",
+        path: "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
+      },
+      {
+        name: "Vinyl Chloride Monomer QCO Withdraw Order",
+        path: "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
+      },
+      {
+        name: "Ethylene Dichloride QCO Withdraw Order",
+        path: "/ministry-updates/ethylene-dichloride-qco-withdraw-order",
+      },
+      {
+        name: "P-Xylene QCO Withdraw Order",
+        path: "/ministry-updates/p-xylene-qco-withdraw-order",
+      },
+    ],
+  },
+
+  {
     title: "SchemeX Products",
     pages: [
       { name: "All SchemeX Products", path: "/SchemeX-products" },
@@ -450,7 +545,7 @@ const sitemapSections = [
   {
     title: "Latest Blogs",
     pages: [
-      { name: "All Blogs", path: "/blogs" },
+      { name: "All Blogs", path: "/Blogs" },
       {
         name: "BIS Certificate for Tin Ingots under IS 26:2024",
         path: "/bis-certificate-for-tin-ingots",
@@ -466,6 +561,14 @@ const sitemapSections = [
       {
         name: "BIS License for Storage Units under IS 17633:2022",
         path: "/bis-license-for-storage-units-Indian-bis",
+      },
+      {
+        name: "BIS Certificate for Furniture with Electrically Motorized Parts",
+        path: "/blogs/isi-products/furniture-with-electrically-motorized-parts",
+      },
+      {
+        name: "BIS Certificate for Skin Beauty Care Appliances",
+        path: "/blogs/isi-products/skin-beauty-care-appliances",
       },
       {
         name: "BIS Certification in Indonesia",

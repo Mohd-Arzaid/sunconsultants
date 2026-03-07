@@ -94,6 +94,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/furniture-qco-2026",
     "/ministry-updates/latest-furniture-qco-2026",
     "/ministry-updates/latest-bis-qco-update-for-import-products",
+    "/ministry-updates/msme-exemption-qco-2026",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -163,6 +164,8 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/storage-unit-is-17634",
     "/blogs/isi-products/tables-&-desks-is-17633",
     "/blogs/isi-products/furniture",
+    "/blogs/isi-products/furniture-with-electrically-motorized-parts",
+    "/blogs/isi-products/skin-beauty-care-appliances",
     "/blogs/isi-products/welded-pipes-&-tubes-is-17876",
     "/blogs/isi-products/seamless-pipes-&-tubes-is-17875",
     "/blogs/isi-products/flashlight-is-2083",
@@ -926,6 +929,10 @@ const ContactFormServicesRightSideContentEng = () => {
     if (path.includes("/ministry-updates/latest-bis-qco-update-for-import-products"))
       return "DPIIT Notification 2026: Major Relief on BIS QCO Compliance for Transitional Imports - Ministry Updates (English)";
 
+    // MSME Exemption Under QCO 2026
+    if (path.includes("/ministry-updates/msme-exemption-qco-2026"))
+      return "MSME Exemption Under QCO 2026 – New Quality Control Order Amendment Explained - Ministry Updates (English)";
+
     // BIS CERTIFICATION FAQ PATHS
     // Q1
     if (path.includes("/check-bis-certification"))
@@ -1050,6 +1057,10 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Storage Unit - English Page";
     if (path.includes("/blogs/isi-products/tables-&-desks-is-17633"))
       return "BIS Certificate for Tables & Desks - English Page";
+    if (path.includes("/blogs/isi-products/furniture-with-electrically-motorized-parts"))
+      return "BIS Certificate for Furniture with Electrically Motorized Parts - English Page";
+    if (path.includes("/blogs/isi-products/skin-beauty-care-appliances"))
+      return "BIS Certificate for Skin Beauty Care Appliances - English Page";
     if (path.includes("/blogs/isi-products/furniture"))
       return "BIS Certificate for Furniture - English Page";
     if (path.includes("/blogs/isi-products/welded-pipes-&-tubes-is-17876"))

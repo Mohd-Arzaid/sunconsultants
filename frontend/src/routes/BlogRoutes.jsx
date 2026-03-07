@@ -306,6 +306,16 @@ const BISCertificateForFurnitureVietnamese = lazy(() =>
     "@/blogs/BISCertificateForFurniture/BISCertificateForFurnitureVietnamese"
   )
 );
+const BISCertificateForFurnitureWithElectricallyMotorizedParts = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForFurnitureWithElectricallyMotorizedParts/BISCertificateForFurnitureWithElectricallyMotorizedParts"
+  )
+);
+const BISCertificateForSkinBeautyCareAppliances = lazy(() =>
+  import(
+    "@/blogs/BISCertificateForSkinBeautyCareAppliances/BISCertificateForSkinBeautyCareAppliances"
+  )
+);
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
 );
@@ -1680,6 +1690,22 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForFurniture />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/furniture-with-electrically-motorized-parts"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFurnitureWithElectricallyMotorizedParts />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/skin-beauty-care-appliances"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSkinBeautyCareAppliances />
           </Suspense>
         }
       />
