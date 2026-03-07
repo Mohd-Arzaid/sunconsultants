@@ -106,6 +106,56 @@ const blogs = [
     image: "/blogImages/BISLicenseforSkinBeautyCareAppliances.png",
   },
   {
+    id: 48,
+    color: "#0EA5E9",
+    title: "BIS Certification for Personal-eTransporters – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Personal-eTransporters under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Covers hoverboards, self-balancing scooters & electric mobility devices.",
+    slug: "blogs/isi-products/personal-etransporters",
+    date: "28 Feb 2026",
+    image: "/blogImages/BISLicenseforPersonaleTransporters .png",
+  },
+  {
+    id: 49,
+    color: "#059669",
+    title: "BIS Certificate for Electrolysers – IS 302 (Part 1):2024 Complete Guide",
+    description:
+      "Get BIS Certificate for Electrolysers under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Covers hydrogen generation & electrolyser systems.",
+    slug: "blogs/isi-products/electrolysers",
+    date: "02 March 2026",
+    image: "/blogImages/BISLicenseforElectrolysers.png",
+  },
+  {
+    id: 50,
+    color: "#7C3AED",
+    title: "BIS Certification for Vaporizers – IS 302 (Part 1):2024 Complete Guide",
+    description:
+      "Get BIS Certificate for Vaporizers under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Covers steam & vapor appliances.",
+    slug: "blogs/isi-products/vaporizers",
+    date: "02 March 2026",
+    image: "/blogImages/BISLicenseforVaporizers.png",
+  },
+  {
+    id: 51,
+    color: "#DC2626",
+    title: "BIS Certification for Commercial Electric Hoods – IS 302 (Part 1):2024 Complete Guide",
+    description:
+      "Get BIS Certificate for Commercial Electric Hoods under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Covers kitchen ventilation systems.",
+    slug: "blogs/isi-products/commercial-electric-hoods",
+    date: "03 March 2026",
+    image: "/blogImages/BISLicenseforCommercialElectricHoods.png",
+  },
+  {
+    id: 52,
+    color: "#0ea5e9",
+    title: "BIS Certification for Humidifiers – Complete Guide to IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Humidifiers under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/humidifiers",
+    date: "03 March 2026",
+    image: "/blogImages/BISLicenseforHumidifiers.png",
+  },
+  {
     id: 5,
     color: "#f7b186",
     title: "BIS Certification in Indonesia",

@@ -316,6 +316,21 @@ const BISCertificateForSkinBeautyCareAppliances = lazy(() =>
     "@/blogs/BISCertificateForSkinBeautyCareAppliances/BISCertificateForSkinBeautyCareAppliances"
   )
 );
+const BISCertificateForPersonaleTransporters = lazy(() =>
+  import("@/blogs/BISCertificationforPersonaleTransporters")
+);
+const BISCertificateforElectrolysers = lazy(() =>
+  import("@/blogs/BISCertificateforElectrolysers")
+);
+const BISCertificateforVaporizers = lazy(() =>
+  import("@/blogs/BISCertificationforVaporizers")
+);
+const BISCertificateforCommercialElectricHoods = lazy(() =>
+  import("@/blogs/BISCertificationforCommercialElectricHoods")
+);
+const BISCertificateforHumidifiers = lazy(() =>
+  import("@/blogs/BISCertificationforHumidifiers")
+);
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
 );
@@ -1706,6 +1721,46 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSkinBeautyCareAppliances />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/personal-etransporters"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForPersonaleTransporters />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/electrolysers"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforElectrolysers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/vaporizers"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforVaporizers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/commercial-electric-hoods"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforCommercialElectricHoods />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/humidifiers"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforHumidifiers />
           </Suspense>
         }
       />
