@@ -16,10 +16,10 @@ const FooterGerman = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Schreiben Sie uns eine E-Mail an{" "}
             <a
-              href="mailto:info@sunconsultants.co.in"
+              href="mailto:suncertificationsindia@gmail.com"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              info@sunconsultants.co.in
+              suncertificationsindia@gmail.com
             </a>{" "}
             oder nutzen Sie eine der unten stehenden Optionen. Wir antworten
             normalerweise innerhalb von 24 Stunden.
@@ -77,7 +77,7 @@ const FooterGerman = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/company/sun-consultants-engineers/"
+                href="https://www.linkedin.com/company/sun-certifications-india/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Besuchen Sie unsere LinkedIn-Seite"
@@ -297,7 +297,7 @@ const FooterGerman = () => {
               </a>
 
               <a
-                href="mailto:info@sunconsultants.co.in?body=Hallo"
+                href="mailto:suncertificationsindia@gmail.com?body=Hallo"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Senden Sie uns eine E-Mail"

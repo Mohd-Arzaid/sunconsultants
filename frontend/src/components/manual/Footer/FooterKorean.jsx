@@ -16,10 +16,10 @@ const FooterKorean = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             이메일을 보내주세요{" "}
             <a
-              href="mailto:info@sunconsultants.co.in"
+              href="mailto:suncertificationsindia@gmail.com"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              info@sunconsultants.co.in
+              suncertificationsindia@gmail.com
             </a>{" "}
             으로 또는 아래 옵션 중 하나를 사용해 주세요. 보통 24시간 이내에
             답변드립니다.
@@ -77,7 +77,7 @@ const FooterKorean = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/company/sun-consultants-engineers/"
+                href="https://www.linkedin.com/company/sun-certifications-india/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn 페이지 방문하기"
@@ -297,7 +297,7 @@ const FooterKorean = () => {
               </a>
 
               <a
-                href="mailto:info@sunconsultants.co.in?body=안녕하세요"
+                href="mailto:suncertificationsindia@gmail.com?body=안녕하세요"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="이메일 보내기"

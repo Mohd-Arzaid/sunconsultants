@@ -16,10 +16,10 @@ const FooterIndonesian = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Kirim email kepada kami di{" "}
             <a
-              href="mailto:info@sunconsultants.co.in"
+              href="mailto:suncertificationsindia@gmail.com"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              info@sunconsultants.co.in
+              suncertificationsindia@gmail.com
             </a>{" "}
             atau gunakan salah satu opsi di bawah ini. Kami biasanya membalas
             dalam 24 jam.
@@ -77,7 +77,7 @@ const FooterIndonesian = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/company/sun-consultants-engineers/"
+                href="https://www.linkedin.com/company/sun-certifications-india/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Kunjungi halaman LinkedIn kami"
@@ -297,7 +297,7 @@ const FooterIndonesian = () => {
               </a>
 
               <a
-                href="mailto:info@sunconsultants.co.in?body=Halo"
+                href="mailto:suncertificationsindia@gmail.com?body=Halo"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Kirim email kepada kami"

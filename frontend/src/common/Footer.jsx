@@ -75,7 +75,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/company/sun-consultants-engineers/"
+                href="https://www.linkedin.com/company/sun-certifications-india/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit our LinkedIn page"

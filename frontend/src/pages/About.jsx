@@ -786,11 +786,9 @@ const AboutUsHero = () => {
           About Us
         </h1>
         <p className="text-lg md:text-xl font-geist text-neutral-600 max-w-4xl mx-auto px-4 md:px-0 leading-relaxed">
-          Sun Certifications was founded in 2013 with a view to simplify the
-          complex regulatory compliance framework in India. For more than 10
-          years, we&apos;ve been empowering local and international businesses
-          to satisfy their Indian certification and license obligations with
-          ease – resulting in smoother market access and long-term success.
+        Founded in 2016, Sun Certifications India provides end-to-end compliance and certification support for manufacturers and importers operating in the Indian market. The company specializes in guiding businesses through India’s complex regulatory framework, helping them obtain the necessary certifications and licenses requirements.
+
+With over a decade of industry experience, Sun Certifications India has built a strong reputation as a reliable compliance partner. The team focuses on simplifying regulatory procedures, reducing delays, and ensuring that clients meet all applicable standards and approvals. By offering practical guidance and dedicated support throughout the certification process, the company helps businesses achieve smoother market entry and maintain long-term operational success in India.
         </p>
       </div>
 

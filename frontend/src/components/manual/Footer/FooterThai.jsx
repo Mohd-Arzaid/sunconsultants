@@ -16,10 +16,10 @@ const FooterThai = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             ส่งอีเมลถึงเราที่{" "}
             <a
-              href="mailto:info@sunconsultants.co.in"
+              href="mailto:suncertificationsindia@gmail.com"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              info@sunconsultants.co.in
+              suncertificationsindia@gmail.com
             </a>{" "}
             หรือใช้หนึ่งในตัวเลือกด้านล่าง เรามักจะตอบกลับภายใน 24 ชั่วโมง
           </div>
@@ -76,7 +76,7 @@ const FooterThai = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/company/sun-consultants-engineers/"
+                href="https://www.linkedin.com/company/sun-certifications-india/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="เยี่ยมชมหน้า LinkedIn ของเรา"
@@ -295,7 +295,7 @@ const FooterThai = () => {
               </a>
 
               <a
-                href="mailto:info@sunconsultants.co.in?body=สวัสดี"
+                href="mailto:suncertificationsindia@gmail.com?body=สวัสดี"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="ส่งอีเมลถึงเรา"
