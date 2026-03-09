@@ -90,9 +90,16 @@ const ContactFormPopup = ({ open, setOpen }) => {
     }
 
     try {
+      // Ensure backend gets all required fields on every submit
+      const payload = {
+        ...formData,
+        pageUrl: window.location?.href || formData.pageUrl || "",
+        pageName: document?.title || formData.pageName || "Popup Contact Form",
+      };
+
       const response = await axios.post(
         `${BASE_URL}/contact/submit-contact`,
-        formData
+        payload
       );
 
       if (!response.data.success) {
