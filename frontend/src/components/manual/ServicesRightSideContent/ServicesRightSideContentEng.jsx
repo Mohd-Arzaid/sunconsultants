@@ -171,6 +171,8 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/vaporizers",
     "/blogs/isi-products/commercial-electric-hoods",
     "/blogs/isi-products/humidifiers",
+    "/blogs/isi-products/fabric-streamers",
+    "/blogs/isi-products/toilet-appliances",
     "/blogs/isi-products/welded-pipes-&-tubes-is-17876",
     "/blogs/isi-products/seamless-pipes-&-tubes-is-17875",
     "/blogs/isi-products/flashlight-is-2083",
@@ -1076,6 +1078,10 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Commercial Electric Hoods - English Page";
     if (path.includes("/blogs/isi-products/humidifiers"))
       return "BIS Certificate for Humidifiers - English Page";
+    if (path.includes("/blogs/isi-products/fabric-streamers"))
+      return "BIS Certificate for Fabric Steamers - English Page";
+    if (path.includes("/blogs/isi-products/toilet-appliances"))
+      return "BIS Certificate for Toilet Appliances - English Page";
     if (path.includes("/blogs/isi-products/furniture"))
       return "BIS Certificate for Furniture - English Page";
     if (path.includes("/blogs/isi-products/welded-pipes-&-tubes-is-17876"))

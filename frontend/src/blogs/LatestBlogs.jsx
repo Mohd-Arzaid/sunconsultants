@@ -156,6 +156,27 @@ const blogs = [
     image: "/blogImages/BISLicenseforHumidifiers.png",
   },
   {
+    id: 53,
+    color: "#2563EB",
+    title: "BIS Certificate for Fabric Streamers - Complete Guide",
+    description:
+      "Get BIS Certificate for Fabric Streamers under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/fabric-streamers",
+    date: "05 March 2026",
+    image: "/blogImages/BISLicenseforFabricStreamers.png",
+  },
+  {
+    id: 54,
+    color: "#22C55E",
+    title:
+      "BIS Certification for Toilet Appliances – Complete Guide to IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Toilet Appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/toilet-appliances",
+    date: "05 March 2026",
+    image: "/blogImages/BISLicenseforToiletAppliances.png",
+  },
+  {
     id: 5,
     color: "#f7b186",
     title: "BIS Certification in Indonesia",

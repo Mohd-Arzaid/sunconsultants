@@ -266,6 +266,14 @@ export const MinistryUpdatesRoutes = () => {
           </Suspense>
         }
       />
+      <Route
+        path="/ministry-updates/msme-exemption-qco-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <MSMEExemptionQCO2026 />
+          </Suspense>
+        }
+      />
     </>
   );
 };

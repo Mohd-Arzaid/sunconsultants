@@ -331,6 +331,12 @@ const BISCertificateforCommercialElectricHoods = lazy(() =>
 const BISCertificateforHumidifiers = lazy(() =>
   import("@/blogs/BISCertificationforHumidifiers")
 );
+const BISCertificateforFabricSteamers = lazy(() =>
+  import("@/blogs/BISCertificationforFabricSteamers")
+);
+const BISCertificateforToiletAppliances = lazy(() =>
+  import("@/blogs/BISCertificationforToiletAppliances")
+);
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
 );
@@ -1761,6 +1767,22 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateforHumidifiers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/toilet-appliances"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforToiletAppliances />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/fabric-streamers"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforFabricSteamers />
           </Suspense>
         }
       />
