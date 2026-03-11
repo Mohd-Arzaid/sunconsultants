@@ -8,6 +8,10 @@ Sitemap: https://bis-certifications.com/video-sitemap.xml
 Sitemap: https://bis-certifications.com/backlinks-sitemap.xml
 
 
+# Disallow backlinks page
+Disallow: /backlinks
+
+
 
 # Disallow specific service pages
 Disallow: /cdsco-registration-certification
