@@ -334,6 +334,15 @@ const BISCertificateforHumidifiers = lazy(() =>
 const BISCertificateforFabricSteamers = lazy(() =>
   import("@/blogs/BISCertificationforFabricSteamers")
 );
+const BISCertificationforAirCleaningAppliances = lazy(() =>
+  import("@/blogs/BISCertificationforAirCleaningAppliances")
+);
+const BISCertificationforFixedImmersionHeaters = lazy(() =>
+  import("@/blogs/BISCertificationforFixedImmersionHeaters")
+);
+const BISCertificationforOutdoorBarbecues = lazy(() =>
+  import("@/blogs/BISCertificationforOutdoorBarbecues")
+);
 const BISCertificateforToiletAppliances = lazy(() =>
   import("@/blogs/BISCertificationforToiletAppliances")
 );
@@ -1790,6 +1799,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         }
       />
       <Route
+        path="/blogs/isi-products/air-cleaning-appliances"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforAirCleaningAppliances />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/athath"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2830,10 +2847,26 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         }
       />
       <Route
+        path="/blogs/isi-products/outdoor-barbecues"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforOutdoorBarbecues />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/foot-warmers-and-heating-mats"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforFootWarmers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/fixed-immersion-heaters"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforFixedImmersionHeaters />
           </Suspense>
         }
       />

@@ -95,6 +95,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/latest-furniture-qco-2026",
     "/ministry-updates/latest-bis-qco-update-for-import-products",
     "/ministry-updates/msme-exemption-qco-2026",
+    "/ministry-updates/bis-crs-migration-is-iec-62368-1-2023",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -189,6 +190,9 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/manila-ropes-is-1084",
     "/blogs/isi-products/flat-woven-webbing-slings-is-15041",
     "/blogs/isi-products/foot-warmers-and-heating-mats",
+    "/blogs/isi-products/outdoor-barbecues",
+    "/blogs/isi-products/fixed-immersion-heaters",
+    "/blogs/isi-products/air-cleaning-appliances",
     "/blogs/isi-products/combination-side-cutting-pliers-is-3650",
     "/blogs/isi-products/pipe-wrenches-is-4003",
     "/blogs/isi-products/ring-wrenches-is-2029",
@@ -941,6 +945,14 @@ const ContactFormServicesRightSideContentEng = () => {
     if (path.includes("/ministry-updates/msme-exemption-qco-2026"))
       return "MSME Exemption Under QCO 2026 – New Quality Control Order Amendment Explained - Ministry Updates (English)";
 
+    // BIS CRS Migration to IS/IEC 62368-1:2023
+    if (
+      path.includes(
+        "/ministry-updates/bis-crs-migration-is-iec-62368-1-2023"
+      )
+    )
+      return "BIS CRS Migration to IS/IEC 62368-1:2023 – Latest BIS Notification - Ministry Updates (English)";
+
     // BIS CERTIFICATION FAQ PATHS
     // Q1
     if (path.includes("/check-bis-certification"))
@@ -1131,6 +1143,10 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Flat Woven Webbing Slings - English Page";
     if (path.includes("/blogs/isi-products/foot-warmers-and-heating-mats"))
       return "BIS Certificate for Foot Warmers & Heating Mats - English Page";
+    if (path.includes("/blogs/isi-products/outdoor-barbecues"))
+      return "BIS Certificate for Outdoor Barbecues - English Page";
+    if (path.includes("/blogs/isi-products/fixed-immersion-heaters"))
+      return "BIS Certificate for Fixed Immersion Heaters - English Page";
     if (
       path.includes(
         "/blogs/isi-products/combination-side-cutting-pliers-is-3650"
@@ -1151,6 +1167,8 @@ const ContactFormServicesRightSideContentEng = () => {
       path.includes("/blogs/isi-products/battery-operated-air-purifier-is-302")
     )
       return "BIS Certificate for Battery Operated Air Purifier - English Page";
+    if (path.includes("/blogs/isi-products/air-cleaning-appliances"))
+      return "BIS Certification for Air-Cleaning Appliances - English Page";
     if (path.includes("/blogs/isi-products/foot-warmer-&-heating-mats-is-302"))
       return "BIS Certificate for Foot Warmer & Heating Mats - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-vaccum-cleaners"))

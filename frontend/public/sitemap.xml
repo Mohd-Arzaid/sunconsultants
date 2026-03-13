@@ -5077,6 +5077,22 @@
     <lastmod>2026-03-13</lastmod>
   </url>
 
+  <!-- BIS Certificate for Outdoor Barbecues - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/outdoor-barbecues</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-03-13</lastmod>
+  </url>
+
+  <!-- BIS Certificate for Fixed Immersion Heaters - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/fixed-immersion-heaters</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-03-13</lastmod>
+  </url>
+
 
 
 
@@ -5397,6 +5413,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certification for Air-Cleaning Appliances - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/air-cleaning-appliances</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-03-13</lastmod>
   </url>
   <!-- BIS Certificate for Battery Operated Air Purifier - Arabic -->
   <url>
@@ -6341,6 +6364,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-02-18</lastmod>
+  </url>
+  <!-- IS/IEC 62368-1:2023 BIS CRS Migration – Latest Notification -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/bis-crs-migration-is-iec-62368-1-2023</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-03-13</lastmod>
   </url>
   <!-- DPIIT Notification 2026 – BIS QCO Exemption for Transitional Imports -->
   <url>

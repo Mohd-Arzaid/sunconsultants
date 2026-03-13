@@ -36,6 +36,19 @@ const MINISTRY_UPDATES_LIST = [
     link: "/ministry-updates/msme-exemption-qco-2026",
   },
   {
+    id: 22,
+    color: "#1A8781",
+    tagType: "BIS Update",
+    date: "March 13, 2026",
+    displayDate: "13 Mar 2026",
+    title:
+      "IS/IEC 62368-1:2023 BIS CRS Migration – Latest Notification",
+    description:
+      "BIS introduces IS/IEC 62368-1:2023 replacing IS 13252 (Part 1):2010 and IS 616:2017 under the CRS scheme. Learn affected products, migration process, and the BIS compliance deadline of 01 November 2028.",
+    link: "/ministry-updates/bis-crs-migration-is-iec-62368-1-2023",
+    pdfLink: "/pdf/1773317652459.pdf",
+  },
+  {
     id: 0,
     color: "#1A8781",
     tagType: "BIS Update",

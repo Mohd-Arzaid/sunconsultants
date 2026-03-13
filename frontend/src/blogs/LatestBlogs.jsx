@@ -557,8 +557,38 @@ const blogs = [
     description:
       "Get BIS Certificate for Foot Warmers & Heating Mats under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for electrically heated foot warmers and heating mats.",
     slug: "blogs/isi-products/foot-warmers-and-heating-mats",
-    date: "13 March 2026",
+    date: "06 March 2026",
     image: "/blogImages/BIS LicenseforFootWarmers&HeatingMats.png",
+  },
+  {
+    id: 56,
+    color: "#EF4444",
+    title: "BIS Certification for Outdoor Barbecues – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Outdoor Barbecues under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for electrically operated barbecue grills and outdoor cooking appliances.",
+    slug: "blogs/isi-products/outdoor-barbecues",
+    date: "06 March 2026",
+    image: "/blogImages/BISLicenseforOutdoorBarbecues.png",
+  },
+  {
+    id: 57,
+    color: "#10B981",
+    title: "BIS Certification for Fixed Immersion Heaters – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Fixed Immersion Heaters under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for permanently installed electric immersion heaters used in water tanks and geysers.",
+    slug: "blogs/isi-products/fixed-immersion-heaters",
+    date: "07 March 2026",
+    image: "/blogImages/BISLicenseforFixedImmersionHeaters.png",
+  },
+  {
+    id: 58,
+    color: "#0EA5E9",
+    title: "BIS Certification for Air-Cleaning Appliances – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Air-Cleaning Appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for electrically operated air purifiers and indoor air-cleaning devices.",
+    slug: "blogs/isi-products/air-cleaning-appliances",
+    date: "09 March 2026",
+    image: "/blogImages/BISLicenseforFixedImmersionHeaters.png",
   },
 ];
 

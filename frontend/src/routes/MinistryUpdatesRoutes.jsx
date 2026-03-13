@@ -93,6 +93,9 @@ const DPIITNotification2026 = lazy(() =>
 const MSMEExemptionQCO2026 = lazy(() =>
   import("@/pages/MinistryUpdatesPages/MSMEExemptionQCO2026")
 );
+const BISCRSMigrationto2023 = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/BISCRSMigrationto2023")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -255,6 +258,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <FurnitureQCOAmendmentOrderlatest />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-crs-migration-is-iec-62368-1-2023"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <BISCRSMigrationto2023 />
           </Suspense>
         }
       />
