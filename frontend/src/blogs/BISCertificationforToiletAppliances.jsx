@@ -317,7 +317,7 @@ const MainContentLeft = () => {
           <li>electric pumps or motors</li>
           <li>integrated electrical circuits</li>
         </ul>
-
+   
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Safety and Performance Objectives
         </h3>

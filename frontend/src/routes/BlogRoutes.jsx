@@ -778,6 +778,9 @@ const BISCertificationManilaRope = lazy(() =>
 const BISCertificationforFlatWovenWebbing = lazy(() =>
   import("@/blogs/BISCertificationforFlatWovenWebbing")
 );
+const BISCertificationforFootWarmers = lazy(() =>
+  import("@/blogs/BISCertificationforFootWarmers")
+);
 const BISCertificationCombinationSideCuttingPliers = lazy(() =>
   import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliers")
 );
@@ -2823,6 +2826,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforFlatWovenWebbing />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/foot-warmers-and-heating-mats"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforFootWarmers />
           </Suspense>
         }
       />

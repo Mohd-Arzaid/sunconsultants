@@ -550,6 +550,16 @@ const blogs = [
     date: "21 February 2026",
     image: "/blogImages/BISLicenseforHandHeldElectricEngravingTools.png",
   },
+  {
+    id: 55,
+    color: "#F97316",
+    title: "BIS Certification for Foot Warmers & Heating Mats – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Foot Warmers & Heating Mats under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for electrically heated foot warmers and heating mats.",
+    slug: "blogs/isi-products/foot-warmers-and-heating-mats",
+    date: "13 March 2026",
+    image: "/blogImages/BIS LicenseforFootWarmers&HeatingMats.png",
+  },
 ];
 
 // =============================

@@ -188,6 +188,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928",
     "/blogs/isi-products/manila-ropes-is-1084",
     "/blogs/isi-products/flat-woven-webbing-slings-is-15041",
+    "/blogs/isi-products/foot-warmers-and-heating-mats",
     "/blogs/isi-products/combination-side-cutting-pliers-is-3650",
     "/blogs/isi-products/pipe-wrenches-is-4003",
     "/blogs/isi-products/ring-wrenches-is-2029",
@@ -1128,6 +1129,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Manila Ropes - English Page";
     if (path.includes("/blogs/isi-products/flat-woven-webbing-slings-is-15041"))
       return "BIS Certificate for Flat Woven Webbing Slings - English Page";
+    if (path.includes("/blogs/isi-products/foot-warmers-and-heating-mats"))
+      return "BIS Certificate for Foot Warmers & Heating Mats - English Page";
     if (
       path.includes(
         "/blogs/isi-products/combination-side-cutting-pliers-is-3650"
