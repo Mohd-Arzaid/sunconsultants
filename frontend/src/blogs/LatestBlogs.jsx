@@ -590,6 +590,46 @@ const blogs = [
     date: "09 March 2026",
     image: "/blogImages/BISLicenseforFixedImmersionHeaters.png",
   },
+  {
+    id: 59,
+    color: "#F59E0B",
+    title: "BIS Certification for Commercial Electric Kitchen Machines – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Commercial Electric Kitchen Machines under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for electrically operated food preparation equipment used in commercial kitchens.",
+    slug: "blogs/isi-products/commercial-electric-kitchen-machines",
+    date: "09 March 2026",
+    image: "/blogImages/BISLicenseforCommercialElectricKitchenMachines.png",
+  },
+  {
+    id: 60,
+    color: "#06B6D4",
+    title: "BIS Certification for Commercial Electric Rinsing Sinks – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Commercial Electric Rinsing Sinks under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for electrically powered rinsing and sanitation units used in commercial kitchens.",
+    slug: "blogs/isi-products/commercial-electric-rinsing-sinks",
+    date: "10 March 2026",
+    image: "/blogImages/BISLicenseforCommercialElectricRinsingSinks.png",
+  },
+  {
+    id: 61,
+    color: "#EF4444",
+    title: "BIS Certification for Thermal Storage Room Heaters – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Thermal Storage Room Heaters under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for electric heating systems that store and gradually release thermal energy.",
+    slug: "blogs/isi-products/thermal-storage-room-heaters",
+    date: "10 March 2026",
+    image: "/blogImages/BISLicenseforThermalStorageRoomHeaters.png",
+  },
+  {
+    id: 62,
+    color: "#8B5CF6",
+    title: "BIS Certification for Electric Dishwashing Machines – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Electric Dishwashing Machines under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Mandatory for household and commercial dishwashers sold in India.",
+    slug: "blogs/isi-products/electric-dishwashing-machines",
+    date: "11 March 2026",
+    image: "/blogImages/BISLicenseforElectricDishwashingMachines .png",
+  },
 ];
 
 // =============================

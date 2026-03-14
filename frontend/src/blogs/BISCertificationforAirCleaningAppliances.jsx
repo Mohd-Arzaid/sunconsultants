@@ -21,7 +21,7 @@ const BISCertificationforAirCleaningAppliances = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
-      <VideoSection />
+      <VideoSection />   
       <FooterEng />
     </div>
   );

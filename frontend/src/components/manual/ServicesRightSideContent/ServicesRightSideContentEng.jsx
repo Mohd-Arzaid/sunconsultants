@@ -206,6 +206,10 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/battery-operated-massage-appliances",
     "/blogs/isi-products/hand-held-electric-engraving-tools",
     "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances",
+    "/blogs/isi-products/commercial-electric-kitchen-machines",
+    "/blogs/isi-products/commercial-electric-rinsing-sinks",
+    "/blogs/isi-products/thermal-storage-room-heaters",
+    "/blogs/isi-products/electric-dishwashing-machines",
   ];
 
   // Check if current path should show these components
@@ -1181,6 +1185,14 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Hand Held Electric Engraving Tools - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances"))
       return "BIS Certificate for Shavers, Trimmers & Clippers - English Page";
+    if (path.includes("/blogs/isi-products/commercial-electric-kitchen-machines"))
+      return "BIS Certificate for Commercial Electric Kitchen Machines - English Page";
+    if (path.includes("/blogs/isi-products/commercial-electric-rinsing-sinks"))
+      return "BIS Certificate for Commercial Electric Rinsing Sinks - English Page";
+    if (path.includes("/blogs/isi-products/thermal-storage-room-heaters"))
+      return "BIS Certificate for Thermal Storage Room Heaters - English Page";
+    if (path.includes("/blogs/isi-products/electric-dishwashing-machines"))
+      return "BIS Certificate for Electric Dishwashing Machines - English Page";
   };
 
   const [formData, setFormData] = useState({

@@ -340,6 +340,18 @@ const BISCertificationforAirCleaningAppliances = lazy(() =>
 const BISCertificationforFixedImmersionHeaters = lazy(() =>
   import("@/blogs/BISCertificationforFixedImmersionHeaters")
 );
+const BISCertificationforCommercialElectricKitchenMachines = lazy(() =>
+  import("@/blogs/BISCertificationforCommercialElectricKitchenMachines")
+);
+const BISCertificationforCommercialElectricRinsingSinks = lazy(() =>
+  import("@/blogs/BISCertificationforCommercialElectricRinsingSinks")
+);
+const BISCertificationforThermalStorageRoomHeaters = lazy(() =>
+  import("@/blogs/BISCertificationforThermalStorageRoomHeaters")
+);
+const BISCertificationforElectricDishwashingMachines = lazy(() =>
+  import("@/blogs/BISCertificationforElectricDishwashingMachines")
+);
 const BISCertificationforOutdoorBarbecues = lazy(() =>
   import("@/blogs/BISCertificationforOutdoorBarbecues")
 );
@@ -2867,6 +2879,38 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforFixedImmersionHeaters />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/commercial-electric-kitchen-machines"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCommercialElectricKitchenMachines />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/commercial-electric-rinsing-sinks"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCommercialElectricRinsingSinks />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/thermal-storage-room-heaters"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforThermalStorageRoomHeaters />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/electric-dishwashing-machines"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforElectricDishwashingMachines />
           </Suspense>
         }
       />
