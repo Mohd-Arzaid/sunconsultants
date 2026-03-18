@@ -872,23 +872,74 @@ const ProcessSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Proses Sertifikasi BIS
+        Prosedur untuk Mendapatkan Sertifikasi BIS
       </h2>
 
       <p className="service-left-content-paragraph">
-        Proses sertifikasi BIS mengikuti alur terstruktur:
+        Proses untuk memperoleh sertifikat BIS bagi produsen India maupun asing
+        umumnya mengikuti langkah-langkah kunci berikut:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Identifikasi Standar yang Relevan: Pilih Standar India (IS) yang berlaku.",
-          "Pengajuan Aplikasi: File ke BIS dan sertakan dokumen terkait.",
-          "Pengujian Produk: Pengujian dilakukan di laboratorium BIS yang disetujui.",
-          "Inspeksi Pabrik: Fasilitas diinspeksi oleh petugas BIS.",
-          "Lisensi BIS: sertifikat diberikan untuk evaluasi penilaian yang berhasil.",
-          "Pengawasan: kepatuhan berkelanjutan bersama dengan perubahan lisensi adalah norma baru.",
+          "Identifikasi standar yang berlaku: Tentukan Standar India (IS) yang relevan untuk produk.",
+          "Mendirikan fasilitas pengujian: Siapkan laboratorium internal yang memenuhi persyaratan standar yang berlaku.",
+          "Membuat akun portal BIS: Produsen India harus mendaftar di portal online BIS untuk memulai aplikasi.",
+          "Pengujian produk: Uji produk sesuai Spesifikasi Standar India (ISS) yang berlaku.",
+          "Pengajuan aplikasi: Ajukan aplikasi BIS beserta laporan uji dan dokumen yang diperlukan.",
+          "Penyelesaian pertanyaan: Tanggapi klarifikasi atau pertanyaan yang diajukan oleh pejabat BIS.",
+          "Inspeksi pabrik: Pejabat BIS mengunjungi fasilitas manufaktur untuk memverifikasi kepatuhan dan memeriksa proses produksi.",
+          "Verifikasi sampel: Selama inspeksi, sampel diuji di lab internal dan disegel untuk verifikasi ulang oleh pejabat BIS.",
+          "Penyelesaian audit: Setelah inspeksi dan verifikasi selesai, audit difinalisasi.",
+          "Pemberian lisensi: Jika semua persyaratan terpenuhi, BIS memberikan lisensi sertifikasi kepada produsen.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Biaya Sertifikasi BIS dan Biaya Lisensi
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        Biaya untuk memperoleh sertifikasi BIS bervariasi tergantung beberapa
+        faktor, termasuk kategori produk, Standar India (IS) yang berlaku, dan
+        apakah produsen berbasis di India atau di luar negeri.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Struktur Biaya untuk Registrasi BIS (CRS)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Biaya Pemerintah: ₹53.000 + 18% GST per laporan uji. Tambahan ₹20.000 dikenakan untuk setiap laporan uji tambahan yang diajukan dalam aplikasi yang sama.",
+          "Biaya Pengujian: Sesuai tarif laboratorium, yang bervariasi tergantung produk dan fasilitas pengujian.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Catatan: Perusahaan yang terdaftar di bawah Undang-Undang MSME mungkin
+        memenuhi syarat untuk beberapa keringanan biaya pemerintah.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Struktur Biaya untuk Lisensi BIS (Sertifikasi ISI)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Biaya Aplikasi: ₹1.000",
+          "Biaya Lisensi: ₹1.000",
+          "Biaya Audit: ₹7.000 per man-day untuk inspeksi pabrik",
+          "Biaya Pengujian: Berdasarkan produk dan laboratorium pengujian",
+          "Biaya Penandaan Minimum: Bervariasi sesuai kategori produk.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Untuk produsen asing, biaya tambahan berlaku di bawah Foreign
+        Manufacturers Certification Scheme (FMCS). Struktur biaya yang tepat
+        bergantung pada kasus spesifik dan persyaratan yang berlaku.
+      </p>
     </div>
   );
 };

@@ -71,19 +71,18 @@ const BISFMThai = () => {
 export default BISFMThai;
 
 const MetaTags = () => {
-  const title =
-    "การรับรอง BIS FMCS | โครงการรับรองผู้ผลิตต่างประเทศ | Sun Certifications";
+  const title = "BIS FMCS | การรับรอง BIS สำหรับผู้ผลิตต่างประเทศ";
   const description =
-    "บริการรับรอง BIS FMCS สำหรับผู้ผลิตต่างประเทศ เชี่ยวชาญ รับใบรับรอง ISI Mark สำหรับการส่งออกไปยังอินเดีย รับรอง BIS ที่เชื่อถือได้ตั้งแต่ปี 2013 ✓ ประมวลผลเร็ว ✓ คำแนะนำจากผู้เชี่ยวชาญ";
+    "Bureau of Indian Standards (BIS) มีโครงการ Foreign Manufacturers Certification Scheme (FMCS) สำหรับผู้ผลิตต่างประเทศเพื่อขอรับการรับรอง BIS สำหรับการจำหน่ายสินค้าในอินเดีย";
   const keywords =
-    "ใบรับรอง BIS สำหรับผู้ผลิตต่างประเทศ, ใบอนุญาต BIS, เครื่องหมาย ISI";
+    "BIS FMCS, การรับรอง BIS สำหรับผู้ผลิตต่างประเทศ, ใบอนุญาต BIS สำหรับผู้ผลิตต่างประเทศ, เครื่องหมาย ISI สำหรับผู้ผลิตต่างประเทศ, การรับรอง BIS FMCS";
   const canonicalUrl =
     "https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle = "การรับรอง BIS FMCS | โครงการรับรองผู้ผลิตต่างประเทศ";
+  const ogTitle = "BIS FMCS | การรับรอง BIS สำหรับผู้ผลิตต่างประเทศ";
   const ogDescription =
-    "บริการรับรอง BIS FMCS สำหรับผู้ผลิตต่างประเทศ เชี่ยวชาญ รับใบรับรอง ISI Mark สำหรับการส่งออกไปยังอินเดีย ✓ ประมวลผลเร็ว ✓ คำแนะนำจากผู้เชี่ยวชาญ";
+    "Bureau of Indian Standards (BIS) มีโครงการ Foreign Manufacturers Certification Scheme (FMCS) สำหรับผู้ผลิตต่างประเทศเพื่อขอรับการรับรอง BIS สำหรับการจำหน่ายสินค้าในอินเดีย";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -332,7 +331,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              การรับรอง BIS อินเดีย
+              การรับรอง BIS
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             สำหรับผู้ผลิตต่างประเทศ
@@ -839,7 +838,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            ข้อมูลครบถ้วนเกี่ยวกับการรับรอง BIS India ภายใต้โครงการ FMCS
+            การรับรอง BIS ภายใต้โครงการ FMCS
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -857,11 +856,11 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS ดำเนินงานผ่านโครงการต่างๆ ที่รวมถึงการรับรองผลิตภัณฑ์
-            การทำเครื่องหมายสำหรับเครื่องประดับ บริการทดสอบ และโปรแกรมการฝึกอบรม
-            อย่างไรก็ตาม
-            กรอบงานที่สำคัญที่สุดในระดับสากลอย่างหนึ่งคือโครงการรับรองสำหรับผู้ผลิตต่างประเทศ
-            (FMCS)
+            ใบอนุญาต BIS เป็นข้อบังคับสำหรับทั้งผู้ผลิตในอินเดียและต่างประเทศในการผลิต นำเข้า หรือจำหน่ายสินค้าหลายประเภทในอินเดียที่อยู่ภายใต้หมวดการรับรองภาคบังคับของ BIS เพื่อออกใบอนุญาต BIS ดำเนินโครงการรับรองหลายรูปแบบ เช่น โครงการรับรองผลิตภัณฑ์ (โครงการ ISI Mark สำหรับผู้ผลิตในอินเดีย), โครงการ Hallmarking, โครงการ BIS FMCS และอื่นๆ
+          </p>
+
+          <p className="service-left-content-paragraph">
+            โครงการรับรองผู้ผลิตต่างประเทศ (BIS FMCS) ช่วยให้ผู้ผลิตต่างประเทศสามารถยื่นขอการรับรอง BIS เพื่อใช้เครื่องหมาย ISI มาตรฐานบนผลิตภัณฑ์ของตนได้ ผู้ผลิตต่างประเทศสามารถยื่นขอการรับรอง BIS โดยแต่งตั้งตัวแทนอินเดียที่ได้รับอนุญาต (AIR) เพื่อดูแลการปฏิบัติตามข้อกำหนด เอกสาร และการติดต่อสื่อสารกับ Bureau of Indian Standards
           </p>
         </div>
 

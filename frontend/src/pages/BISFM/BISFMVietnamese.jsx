@@ -70,20 +70,18 @@ const BISFMVietnamese = () => {
 export default BISFMVietnamese;
 
 const MetaTags = () => {
-  const title =
-    "Chứng nhận BIS FMCS | Chương trình Chứng nhận Nhà sản xuất Nước ngoài | Sun Certifications";
+  const title = "BIS FMCS | Chứng nhận BIS cho nhà sản xuất nước ngoài";
   const description =
-    "Dịch vụ chứng nhận BIS FMCS chuyên nghiệp cho nhà sản xuất nước ngoài. Nhận chứng nhận Dấu ISI để xuất khẩu sang Ấn Độ. Chứng nhận BIS đáng tin cậy từ năm 2013. ✓ Xử lý nhanh ✓ Hướng dẫn chuyên gia";
+    "Bureau of Indian Standards (BIS) cung cấp Foreign Manufacturers Certification Scheme (FMCS) để các nhà sản xuất nước ngoài có thể nhận chứng nhận BIS nhằm bán sản phẩm tại Ấn Độ.";
   const keywords =
-    "Chứng chỉ BIS cho nhà sản xuất nước ngoài, Giấy phép BIS, Dấu ISI";
+    "BIS FMCS, Chứng nhận BIS cho nhà sản xuất nước ngoài, Giấy phép BIS cho nhà sản xuất nước ngoài, Dấu ISI cho nhà sản xuất nước ngoài, Chứng nhận BIS FMCS";
   const canonicalUrl =
     "https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle =
-    "Chứng nhận BIS FMCS | Chương trình Chứng nhận Nhà sản xuất Nước ngoài";
+  const ogTitle = "BIS FMCS | Chứng nhận BIS cho nhà sản xuất nước ngoài";
   const ogDescription =
-    "Dịch vụ chứng nhận BIS FMCS chuyên nghiệp cho nhà sản xuất nước ngoài. Nhận chứng nhận Dấu ISI để xuất khẩu sang Ấn Độ. ✓ Xử lý nhanh ✓ Hướng dẫn chuyên gia";
+    "Bureau of Indian Standards (BIS) cung cấp Foreign Manufacturers Certification Scheme (FMCS) để các nhà sản xuất nước ngoài có thể nhận chứng nhận BIS nhằm bán sản phẩm tại Ấn Độ.";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -332,7 +330,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              Chứng nhận BIS Ấn Độ
+              Chứng nhận BIS
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             cho nhà sản xuất nước ngoài
@@ -836,7 +834,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            Thông tin đầy đủ về chứng nhận BIS Ấn Độ theo Chương trình FMCS
+            Chứng nhận BIS theo Chương trình FMCS
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -853,11 +851,21 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS hoạt động thông qua các chương trình khác nhau bao gồm chứng
-            nhận sản phẩm, đánh dấu cho đồ trang sức, dịch vụ kiểm tra và chương
-            trình đào tạo. Tuy nhiên, một trong những khuôn khổ có ý nghĩa quốc
-            tế nhất của nó là Chương trình Chứng nhận Nhà sản xuất Nước ngoài
-            (FMCS).
+            Giấy phép BIS là bắt buộc đối với cả nhà sản xuất Ấn Độ và nước ngoài
+            để sản xuất, nhập khẩu hoặc bán nhiều sản phẩm tại Ấn Độ thuộc danh
+            mục chứng nhận bắt buộc của BIS. Để cấp giấy phép, BIS vận hành nhiều
+            chương trình chứng nhận như Product Certification Scheme (ISI Mark
+            Scheme cho nhà sản xuất Ấn Độ), Hallmarking Scheme, BIS FMCS Scheme
+            và nhiều chương trình khác.
+          </p>
+
+          <p className="service-left-content-paragraph">
+            Foreign Manufacturers Certification Scheme (BIS FMCS) cho phép các
+            nhà sản xuất ở nước ngoài nộp đơn xin chứng nhận BIS để sử dụng dấu
+            ISI tiêu chuẩn trên sản phẩm của họ. Nhà sản xuất nước ngoài có thể
+            xin chứng nhận BIS bằng cách bổ nhiệm Authorized Indian
+            Representative (AIR) để xử lý tuân thủ, tài liệu và liên lạc với
+            Bureau of Indian Standards.
           </p>
         </div>
 

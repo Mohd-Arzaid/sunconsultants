@@ -24,6 +24,19 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 23,
+    color: "#1A8781",
+    tagType: "BIS Update",
+    date: "March 16, 2026",
+    displayDate: "16 Mar 2026",
+    title:
+      "BIS Certification for Aluminium and Aluminium Alloy Products | QCO Compliance 2026",
+    description:
+      "BIS Certificate for Aluminium and Aluminium Alloy Products under the Quality Control Order 2026. Check covered products, IS standards, implementation dates, and compliance requirements.",
+    link: "/ministry-updates/aluminium-and-aluminium-alloy-products-bis-certification-latest-qco-2026",
+    pdfLink: "/pdf/1773716773074.pdf",
+  },
+  {
     id: 21,
     color: "#5B63E6",
     tagType: "QCO Amendment",

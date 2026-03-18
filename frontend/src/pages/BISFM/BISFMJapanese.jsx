@@ -68,17 +68,18 @@ const BISFMJapanese = () => {
 export default BISFMJapanese;
 
 const MetaTags = () => {
-  const title = "BIS FMCS認証 | 外国製造業者認証スキーム | Sun Certifications";
+  const title = "BIS FMCS | 海外メーカー向けBIS認証";
   const description =
-    "外国製造業者向けの専門BIS FMCS認証サービス。インドへの輸出用ISIマーク認証を取得。2013年から信頼されるBIS認証。✓ 迅速な処理 ✓ 専門的なガイダンス";
-  const keywords = "外国製造業者向けBIS証明書、BISライセンス、ISIマーク";
+    "Bureau of Indian Standards（BIS）は、海外メーカーがインドで製品を販売するために必要なBIS認証を取得できるよう、Foreign Manufacturers Certification Scheme（FMCS）を提供しています。";
+  const keywords =
+    "BIS FMCS, 海外メーカー向けBIS認証, 海外メーカー向けBISライセンス, 海外メーカー向けISIマーク, BIS FMCS認証";
   const canonicalUrl =
     "https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle = "BIS FMCS認証 | 外国製造業者認証スキーム";
+  const ogTitle = "BIS FMCS | 海外メーカー向けBIS認証";
   const ogDescription =
-    "外国製造業者向けの専門BIS FMCS認証サービス。インドへの輸出用ISIマーク認証を取得。2013年から信頼されるBIS認証。✓ 迅速な処理 ✓ 専門的なガイダンス";
+    "Bureau of Indian Standards（BIS）は、海外メーカーがインドで製品を販売するために必要なBIS認証を取得できるよう、Foreign Manufacturers Certification Scheme（FMCS）を提供しています。";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -327,7 +328,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              インドBIS認証
+              BIS認証
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             外国製造業者向け
@@ -829,7 +830,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            FMCSスキーム下のインドBIS認証に関する完全な情報
+            FMCSスキーム下のBIS認証
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -841,7 +842,11 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            BISは、製品認証、宝飾品のホールマーキング、テストサービス、トレーニングプログラムを含むさまざまなスキームを通じて運営されています。しかし、その中でも国際的に最も重要なフレームワークの1つが、外国製造業者認証スキーム（FMCS）です。
+            BISライセンスは、BISの強制認証カテゴリーに含まれる各種製品をインドで製造・輸入・販売するために、インド国内および海外のメーカー双方に必須です。ライセンス付与のため、BISは製品認証スキーム（インド国内メーカー向けのISIマーク・スキーム）、ホールマーキング・スキーム、BIS FMCSスキームなど、複数の認証スキームを運用しています。
+          </p>
+
+          <p className="service-left-content-paragraph">
+            外国製造業者認証スキーム（BIS FMCS）は、海外メーカーがBIS認証を申請し、製品に標準のISIマークを表示できるようにする制度です。海外メーカーは、認定インド代理人（AIR）を任命し、適合対応・書類準備・BIS（インド標準局）との連絡をAIRが担う形で申請できます。
           </p>
         </div>
 

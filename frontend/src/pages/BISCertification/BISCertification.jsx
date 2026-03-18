@@ -886,23 +886,74 @@ const ProcessSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        BIS Certification Process
+        Procedure for Obtaining BIS Certification
       </h2>
 
       <p className="service-left-content-paragraph">
-        The BIS certification process follows a structured flow:
+        The process for securing a BIS certificate for both Indian and foreign
+        manufacturers generally follows these key steps:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Identify Relevant Standard: Select applicable Indian Standard (IS).",
-          "Application Submission: File with BIS and enclose any pertinent documents.",
-          "Product Testing: Testing done in approved BIS labs.",
-          "Factory Inspection: Facilities are inspected by BIS officers.",
-          "BIS License: certificate is awarded for successful assessment evaluation.",
-          "Surveillance: sustained compliance along with license changes is the new norm.",
+          "Identify the Applicable Standard: Determine the relevant Indian Standard (IS) that applies to the product.",
+          "Establish Testing Facilities: Set up an in-house laboratory that meets the requirements of the applicable standard.",
+          "Create a BIS Portal Account: Indian manufacturers must register on the BIS online portal to initiate the application.",
+          "Product Testing: Get the product tested according to the applicable Indian Standard Specifications (ISS).",
+          "Application Submission: File the BIS application along with the test report and required documents.",
+          "Query Resolution: Respond to any clarification or queries raised by BIS officials.",
+          "Factory Inspection: A BIS officer visits the manufacturing facility to verify compliance and inspect the production process.",
+          "Sample Verification: During the inspection, samples are tested in the in-house lab and sealed for re-verification by the BIS officer.",
+          "Audit Completion: Once the inspection and verification activities are completed, the audit is finalized.",
+          "Grant of Licence: If all requirements are met, BIS grants the certification licence to the manufacturer.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS Certification Cost and Licence Fees
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        The cost of obtaining BIS certification varies depending on several
+        factors, including the product category, the applicable Indian Standard
+        (IS), and whether the manufacturer is based in India or overseas.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Fee Structure for BIS Registration (CRS)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Government Fee: ₹53,000 + 18% GST per test report. An additional ₹20,000 is charged for each extra test report submitted within the same application.",
+          "Testing Charges: Applicable as per laboratory rates, which vary depending on the product and testing facility.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Note: Companies registered under the MSME Act may be eligible for
+        certain concessions on government fees.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Fee Structure for BIS Licence (ISI Certification)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Application Fee: ₹1,000",
+          "Licence Fee: ₹1,000",
+          "Audit Charges: ₹7,000 per man-day for factory inspection",
+          "Testing Charges: Based on the product and testing laboratory",
+          "Minimum Marking Fee: Varies according to the product category.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        For foreign manufacturers, additional charges apply under the Foreign
+        Manufacturers Certification Scheme (FMCS). The exact cost structure
+        depends on the specific case and applicable requirements.
+      </p>
     </div>
   );
 };

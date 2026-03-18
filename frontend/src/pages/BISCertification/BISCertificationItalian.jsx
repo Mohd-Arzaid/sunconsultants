@@ -878,23 +878,74 @@ const ProcessSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Processo di Certificazione BIS
+        Procedura per ottenere la certificazione BIS
       </h2>
 
       <p className="service-left-content-paragraph">
-        Il processo di certificazione BIS segue un flusso strutturato:
+        Il processo per ottenere un certificato BIS, per produttori indiani e
+        stranieri, generalmente segue questi passaggi chiave:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Identificare lo Standard Rilevante: Selezionare lo Standard Indiano (IS) applicabile.",
-          "Invio dell'Applicazione: Presentare al BIS e allegare eventuali documenti pertinenti.",
-          "Test del Prodotto: I test vengono effettuati in laboratori BIS approvati.",
-          "Ispezione della Fabbrica: Le strutture vengono ispezionate dagli ufficiali BIS.",
-          "Licenza BIS: il certificato viene assegnato per una valutazione di valutazione riuscita.",
-          "Sorveglianza: la conformità sostenuta insieme ai cambiamenti di licenza è la nuova norma.",
+          "Identificare lo standard applicabile: Determinare lo Standard Indiano (IS) pertinente per il prodotto.",
+          "Stabilire strutture di prova: Allestire un laboratorio interno conforme ai requisiti dello standard applicabile.",
+          "Creare un account sul portale BIS: I produttori indiani devono registrarsi sul portale online BIS per avviare la domanda.",
+          "Test del prodotto: Far testare il prodotto secondo le Specifiche dello Standard Indiano applicabile (ISS).",
+          "Invio della domanda: Presentare la domanda BIS con il rapporto di prova e i documenti richiesti.",
+          "Risoluzione delle richieste: Rispondere a eventuali chiarimenti o quesiti sollevati dai funzionari BIS.",
+          "Ispezione dello stabilimento: Un funzionario BIS visita l’impianto per verificare la conformità e ispezionare il processo produttivo.",
+          "Verifica dei campioni: Durante l’ispezione i campioni vengono testati nel laboratorio interno e sigillati per la ri‑verifica da parte del funzionario BIS.",
+          "Completamento dell’audit: Una volta concluse ispezione e verifiche, l’audit viene finalizzato.",
+          "Rilascio della licenza: Se tutti i requisiti sono soddisfatti, BIS rilascia la licenza di certificazione al produttore.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Costo della certificazione BIS e tariffe di licenza
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        Il costo per ottenere la certificazione BIS varia in base a diversi
+        fattori, tra cui la categoria del prodotto, lo Standard Indiano (IS)
+        applicabile e se il produttore ha sede in India o all’estero.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Struttura delle tariffe per la registrazione BIS (CRS)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Tariffa governativa: ₹53.000 + 18% GST per rapporto di prova. Un ulteriore ₹20.000 viene addebitato per ogni rapporto di prova aggiuntivo presentato nella stessa domanda.",
+          "Costi di prova: In base alle tariffe del laboratorio, che variano a seconda del prodotto e della struttura di prova.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Nota: Le aziende registrate ai sensi della legge MSME potrebbero essere
+        idonee a determinate agevolazioni sulle tariffe governative.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Struttura delle tariffe per la licenza BIS (certificazione ISI)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Tassa di domanda: ₹1.000",
+          "Tassa di licenza: ₹1.000",
+          "Costi di audit: ₹7.000 per uomo‑giorno (man-day) per l’ispezione dello stabilimento",
+          "Costi di prova: In base al prodotto e al laboratorio di prova",
+          "Tariffa minima di marcatura: Varia in base alla categoria del prodotto.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Per i produttori esteri, si applicano costi aggiuntivi nell’ambito del
+        Foreign Manufacturers Certification Scheme (FMCS). La struttura dei
+        costi esatta dipende dal caso specifico e dai requisiti applicabili.
+      </p>
     </div>
   );
 };

@@ -878,23 +878,76 @@ const ProcessSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        BIS Certificeringsproces
+        Procedure voor het verkrijgen van BIS-certificering
       </h2>
 
       <p className="service-left-content-paragraph">
-        Het BIS certificeringsproces volgt een gestructureerde flow:
+        Het proces om een BIS-certificaat te verkrijgen voor zowel Indiase als
+        buitenlandse fabrikanten volgt doorgaans deze belangrijke stappen:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Relevante Standaard Identificeren: Selecteer toepasselijke Indiase Standaard (IS).",
-          "Aanvraag Indienen: Dien in bij BIS en voeg relevante documenten bij.",
-          "Producttesten: Testen uitgevoerd in goedgekeurde BIS-laboratoria.",
-          "Fabrieksinspectie: Faciliteiten worden geïnspecteerd door BIS-functionarissen.",
-          "BIS Licentie: certificaat wordt toegekend na succesvolle beoordelingsevaluatie.",
-          "Toezicht: aanhoudende naleving samen met licentiewijzigingen is de nieuwe norm.",
+          "Toepasselijke norm identificeren: Bepaal de relevante Indiase Standaard (IS) die op het product van toepassing is.",
+          "Testfaciliteiten opzetten: Richt een intern laboratorium in dat voldoet aan de eisen van de toepasselijke norm.",
+          "Een BIS-portalaccount aanmaken: Indiase fabrikanten moeten zich registreren op het BIS-onlineportaal om de aanvraag te starten.",
+          "Producttesten: Laat het product testen volgens de toepasselijke Indian Standard Specifications (ISS).",
+          "Aanvraag indienen: Dien de BIS-aanvraag in met het testrapport en de vereiste documenten.",
+          "Vragen afhandelen: Reageer op eventuele verduidelijkingen of vragen van BIS-functionarissen.",
+          "Fabrieksinspectie: Een BIS-functionaris bezoekt de productielocatie om conformiteit te verifiëren en het productieproces te inspecteren.",
+          "Monsterverificatie: Tijdens de inspectie worden monsters in het interne lab getest en verzegeld voor herverificatie door de BIS-functionaris.",
+          "Audit afronden: Zodra inspectie en verificatie zijn afgerond, wordt de audit afgesloten.",
+          "Licentie verlenen: Als aan alle eisen is voldaan, verleent BIS de certificeringslicentie aan de fabrikant.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Kosten van BIS-certificering en licentiekosten
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        De kosten voor het verkrijgen van BIS-certificering variëren afhankelijk
+        van meerdere factoren, waaronder productcategorie, de toepasselijke
+        Indiase Standaard (IS) en of de fabrikant in India of in het buitenland
+        gevestigd is.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Tariefstructuur voor BIS-registratie (CRS)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Overheidsvergoeding: ₹53.000 + 18% GST per testrapport. Voor elk extra testrapport binnen dezelfde aanvraag wordt ₹20.000 extra in rekening gebracht.",
+          "Testkosten: Volgens de laboratoriumtarieven, die variëren per product en testfaciliteit.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Let op: Bedrijven die onder de MSME-wet zijn geregistreerd, kunnen
+        mogelijk in aanmerking komen voor bepaalde concessies op de
+        overheidskosten.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Tariefstructuur voor BIS-licentie (ISI-certificering)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Aanvraagkosten: ₹1.000",
+          "Licentiekosten: ₹1.000",
+          "Auditkosten: ₹7.000 per man-day voor fabrieksinspectie",
+          "Testkosten: Afhankelijk van het product en het testlaboratorium",
+          "Minimale markeervergoeding: Varieert per productcategorie.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Voor buitenlandse fabrikanten gelden extra kosten onder het Foreign
+        Manufacturers Certification Scheme (FMCS). De exacte kostenstructuur is
+        afhankelijk van het specifieke geval en de toepasselijke vereisten.
+      </p>
     </div>
   );
 };

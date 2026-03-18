@@ -70,17 +70,18 @@ const BISFMChinese = () => {
 export default BISFMChinese;
 
 const MetaTags = () => {
-  const title = "BIS FMCS认证 | 外国制造商认证计划 | Sun Certifications";
+  const title = "BIS FMCS | 外国制造商BIS认证";
   const description =
-    "为外国制造商提供专业的BIS FMCS认证服务。获得出口到印度的ISI标志认证。自2013年以来值得信赖的BIS认证。✓ 快速处理 ✓ 专家指导";
-  const keywords = "外国制造商BIS证书, BIS许可证, ISI标志";
+    "印度标准局（BIS）通过外国制造商认证计划（FMCS），为海外制造商提供在印度销售产品所需的BIS认证途径。";
+  const keywords =
+    "BIS FMCS, 外国制造商BIS认证, 外国制造商BIS许可证, 外国制造商ISI标志, BIS FMCS认证";
   const canonicalUrl =
     "https://bis-certifications.com/zh/wai-guo-sheng-chan-shang-yin-du-bis-ren-zheng-zhi-nan";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle = "BIS FMCS认证 | 外国制造商认证计划";
+  const ogTitle = "BIS FMCS | 外国制造商BIS认证";
   const ogDescription =
-    "为外国制造商提供专业的BIS FMCS认证服务。获得出口到印度的ISI标志认证。✓ 快速处理 ✓ 专家指导";
+    "印度标准局（BIS）通过外国制造商认证计划（FMCS），为海外制造商提供在印度销售产品所需的BIS认证途径。";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -329,7 +330,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              印度BIS认证
+              BIS认证
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             适用于外国制造商
@@ -830,7 +831,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            FMCS计划下印度BIS认证的完整信息
+            FMCS计划下的BIS认证
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -842,7 +843,11 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS通过各种计划运作，包括产品认证、珠宝标志、测试服务和培训计划。然而，其最重要的国际框架之一是外国制造商认证计划（FMCS）。
+            BIS许可证对印度及海外制造商均为强制要求，用于在印度生产、进口或销售BIS强制认证目录中的相关产品。为授予许可证，BIS实施多种认证计划，例如产品认证计划（面向印度制造商的ISI标志计划）、珠宝贵金属印记计划（Hallmarking）、BIS FMCS计划等。
+          </p>
+
+          <p className="service-left-content-paragraph">
+            外国制造商认证计划（BIS FMCS）使海外制造商能够申请BIS认证，在产品上使用标准的ISI标志。外国制造商可通过指定授权印度代表（AIR）来申请BIS认证，由AIR负责合规、文件准备以及与印度标准局（BIS）的沟通。
           </p>
         </div>
 

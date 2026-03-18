@@ -93,20 +93,18 @@ const BISFMIndonesian = () => {
 export default BISFMIndonesian;
 
 const MetaTags = () => {
-  const title =
-    "Sertifikasi BIS FMCS | Skema Sertifikasi Pabrikan Asing | Sun Certifications";
+  const title = "BIS FMCS | Sertifikasi BIS untuk produsen luar negeri";
   const description =
-    "Layanan sertifikasi BIS FMCS ahli untuk pabrikan asing. Dapatkan sertifikasi ISI Mark untuk ekspor ke India. Sertifikasi BIS Terpercaya sejak 2013. ✓ Pemrosesan Cepat ✓ Panduan Ahli";
+    "Bureau of Indian Standards (BIS) menawarkan Foreign Manufacturers Certification Scheme (FMCS) bagi produsen luar negeri untuk memperoleh sertifikasi BIS agar dapat menjual produk di India.";
   const keywords =
-    "Sertifikat BIS untuk pabrikan asing, Lisensi BIS, Tanda ISI";
+    "BIS FMCS, Sertifikasi BIS untuk produsen luar negeri, Lisensi BIS untuk produsen luar negeri, Tanda ISI untuk produsen luar negeri, Sertifikasi BIS FMCS";
   const canonicalUrl =
     "https://bis-certifications.com/id/panduan-sertifikasi-bis-untuk-pabrikan-asing-bis-india";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle =
-    "BIS FMCS Certification | Foreign Manufacturer Certification Scheme";
+  const ogTitle = "BIS FMCS | Sertifikasi BIS untuk produsen luar negeri";
   const ogDescription =
-    "Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance";
+    "Bureau of Indian Standards (BIS) menawarkan Foreign Manufacturers Certification Scheme (FMCS) bagi produsen luar negeri untuk memperoleh sertifikasi BIS agar dapat menjual produk di India.";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -355,7 +353,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              Sertifikasi BIS India
+              Sertifikasi BIS
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             untuk pabrikan asing
@@ -858,7 +856,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            Informasi lengkap tentang sertifikasi BIS India di bawah Skema FMCS
+            Sertifikasi BIS di bawah Skema FMCS
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -876,10 +874,21 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS beroperasi melalui berbagai skema yang mencakup sertifikasi
-            produk, penandaan untuk perhiasan, layanan pengujian, dan program
-            pelatihan. Namun, salah satu kerangka kerja yang paling signifikan
-            secara internasional adalah Skema Sertifikasi Pabrikan Asing (FMCS).
+            Lisensi BIS wajib bagi produsen India maupun luar negeri untuk
+            memproduksi, mengimpor, atau menjual berbagai produk di India yang
+            termasuk dalam kategori sertifikasi wajib BIS. Untuk memberikan
+            lisensi, BIS mengoperasikan berbagai skema sertifikasi seperti
+            Product Certification Scheme (Skema ISI Mark untuk produsen India),
+            Hallmarking Scheme, Skema BIS FMCS, dan lainnya.
+          </p>
+
+          <p className="service-left-content-paragraph">
+            Foreign Manufacturers Certification Scheme (BIS FMCS) memungkinkan
+            produsen luar negeri mengajukan sertifikasi BIS untuk menggunakan
+            tanda ISI standar pada produk mereka. Produsen luar negeri dapat
+            mengajukan sertifikasi BIS dengan menunjuk Authorized Indian
+            Representative (AIR) untuk menangani kepatuhan, dokumentasi, dan
+            komunikasi dengan Bureau of Indian Standards.
           </p>
         </div>
 

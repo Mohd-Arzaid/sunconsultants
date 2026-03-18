@@ -846,23 +846,75 @@ const ProcessSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Ablauf der BIS-Zertifizierung
+        Verfahren zur Erlangung der BIS-Zertifizierung
       </h2>
 
       <p className="service-left-content-paragraph">
-        Der Prozess der BIS-Zertifizierung folgt einem strukturierten Ablauf:
+        Der Prozess zur Erlangung eines BIS-Zertifikats für indische und
+        ausländische Hersteller umfasst in der Regel die folgenden Schritte:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Relevante Norm identifizieren: Auswahl der anwendbaren IS (Indian Standard).",
-          "Antragstellung: Einreichung bei BIS inkl. erforderlicher Unterlagen.",
-          "Produktprüfung: Tests in BIS-anerkannten Laboren.",
-          "Werksinspektion: Prüfung der Fertigungsstätte durch BIS-Beamte.",
-          "BIS-Lizenz: Erteilung nach erfolgreicher Bewertung.",
-          "Überwachung: Laufende Konformität und Lizenzpflege.",
+          "Anwendbare Norm identifizieren: Ermitteln des relevanten Indian Standard (IS) für das Produkt.",
+          "Prüfmöglichkeiten aufbauen: Einrichtung eines internen Labors gemäß den Anforderungen der anwendbaren Norm.",
+          "BIS-Portal-Konto anlegen: Indische Hersteller müssen sich im BIS-Onlineportal registrieren, um den Antrag zu starten.",
+          "Produktprüfung: Prüfung des Produkts gemäß den Spezifikationen der anwendbaren Indian Standard Specifications (ISS).",
+          "Antrag einreichen: Einreichung des BIS-Antrags zusammen mit Prüfbericht und erforderlichen Unterlagen.",
+          "Rückfragen klären: Beantwortung von Klarstellungen oder Rückfragen durch BIS-Beamte.",
+          "Werksinspektion: Ein BIS-Beamter besucht die Produktionsstätte, prüft die Konformität und inspiziert den Herstellprozess.",
+          "Musterverifikation: Während der Inspektion werden Proben im internen Labor geprüft und versiegelt, damit der BIS-Beamte sie erneut verifizieren kann.",
+          "Audit abschließen: Nach Abschluss von Inspektion und Verifikation wird das Audit finalisiert.",
+          "Lizenz erteilen: Wenn alle Anforderungen erfüllt sind, erteilt BIS dem Hersteller die Zertifizierungslizenz.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Kosten der BIS-Zertifizierung und Lizenzgebühren
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        Die Kosten für die BIS-Zertifizierung variieren je nach Produktkategorie,
+        anwendbarem Indian Standard (IS) sowie danach, ob der Hersteller in
+        Indien oder im Ausland ansässig ist.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Gebührenstruktur für BIS-Registrierung (CRS)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Staatliche Gebühr: ₹53.000 + 18% GST pro Prüfbericht. Für jeden zusätzlichen Prüfbericht innerhalb derselben Anwendung fallen zusätzliche ₹20.000 an.",
+          "Prüfgebühren: Gemäß Labortarifen; diese variieren je nach Produkt und Prüfeinrichtung.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Hinweis: Unternehmen, die nach dem MSME Act registriert sind, können ggf.
+        bestimmte Ermäßigungen auf staatliche Gebühren erhalten.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Gebührenstruktur für BIS-Lizenz (ISI-Zertifizierung)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Antragsgebühr: ₹1.000",
+          "Lizenzgebühr: ₹1.000",
+          "Auditgebühren: ₹7.000 pro Man‑Day für die Werksinspektion",
+          "Prüfgebühren: Abhängig vom Produkt und Prüflabor",
+          "Mindest-Markierungsgebühr: Variiert je nach Produktkategorie.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Für ausländische Hersteller fallen zusätzliche Gebühren im Rahmen des
+        Foreign Manufacturers Certification Scheme (FMCS) an. Die genaue
+        Kostenstruktur hängt vom konkreten Fall und den anwendbaren
+        Anforderungen ab.
+      </p>
     </div>
   );
 };

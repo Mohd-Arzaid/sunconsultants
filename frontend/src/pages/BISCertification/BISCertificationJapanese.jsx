@@ -829,22 +829,69 @@ const ProcessSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">BIS認証プロセス</h2>
+      <h2 className="service-left-content-heading-two">
+        BIS認証の取得手順
+      </h2>
 
       <p className="service-left-content-paragraph">
-        BIS認証プロセスは構造化された流れに従います：
+        インド国内・海外メーカーがBIS証明書を取得するための一般的な流れは、次の主要ステップです：
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "関連標準の特定：適用可能なインド標準（IS）を選択します。",
-          "申請書の提出：BISに申請し、関連文書を添付します。",
-          "製品テスト：承認されたBISラボでテストを実施します。",
-          "工場検査：施設はBIS職員によって検査されます。",
-          "BISライセンス：評価評価が成功した場合に証明書が授与されます。",
-          "監視：ライセンス変更とともに継続的な準拠が新たな規範です。",
+          "適用規格の特定：製品に適用される関連インド規格（IS）を特定します。",
+          "試験設備の整備：適用規格の要求を満たす社内試験室（インハウスラボ）を整備します。",
+          "BISポータルアカウント作成：インド国内メーカーは、申請開始のためBISオンラインポータルに登録します。",
+          "製品試験：適用されるインド規格仕様（ISS）に従って製品試験を実施します。",
+          "申請提出：試験報告書および必要書類を添えてBIS申請を提出します。",
+          "照会対応：BIS担当官からの確認・照会事項に回答します。",
+          "工場検査：BIS担当官が製造施設を訪問し、適合性確認と製造工程の検査を行います。",
+          "サンプル検証：検査時に社内ラボでサンプル試験を行い、BIS担当官の再確認のため封印します。",
+          "監査完了：検査と検証が完了すると、監査が確定（クローズ）されます。",
+          "ライセンス付与：要件を満たした場合、BISがメーカーに認証ライセンスを付与します。",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS認証コストおよびライセンス費用
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        BIS認証の取得費用は、製品カテゴリ、適用されるインド規格（IS）、およびメーカーがインド国内か海外かなど、複数の要因により異なります。
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS登録（CRS）の料金体系
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "政府手数料：試験報告書1件あたり₹53,000 + 18% GST。同一申請内で追加の試験報告書を提出する場合、1件ごとに₹20,000が追加で課されます。",
+          "試験料金：ラボの料金体系に基づきます（製品および試験施設により異なります）。",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        注：MSME法に基づき登録された企業は、政府手数料について一定の優遇措置を受けられる場合があります。
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BISライセンス（ISI認証）の料金体系
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "申請料：₹1,000",
+          "ライセンス料：₹1,000",
+          "監査費用：工場検査は1人日（man-day）あたり₹7,000",
+          "試験料金：製品および試験ラボにより異なります",
+          "最低表示料：製品カテゴリにより異なります。",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        海外メーカーの場合、外国メーカー認証スキーム（FMCS）に基づき追加費用が発生します。正確な費用体系は個別ケースおよび適用要件により異なります。
+      </p>
     </div>
   );
 };

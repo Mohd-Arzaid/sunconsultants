@@ -858,22 +858,69 @@ const ProcessSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">BIS 인증 절차</h2>
+      <h2 className="service-left-content-heading-two">
+        BIS 인증 취득 절차
+      </h2>
 
       <p className="service-left-content-paragraph">
-        BIS 인증 절차는 구조화된 흐름을 따릅니다:
+        인도 및 해외 제조업체가 BIS 인증서를 취득하는 과정은 일반적으로 다음 핵심 단계로 진행됩니다:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "관련 표준 식별: 적용 가능한 인도 표준(IS)을 선택합니다.",
-          "신청서 제출: BIS에 파일을 제출하고 관련 문서를 첨부합니다.",
-          "제품 테스트: 승인된 BIS 실험실에서 테스트를 수행합니다.",
-          "공장 검사: 시설이 BIS 관리자에 의해 검사됩니다.",
-          "BIS 라이센스: 성공적인 평가 평가에 대해 인증서가 수여됩니다.",
-          "감시: 라이센스 변경과 함께 지속적인 준수는 새로운 표준입니다.",
+          "적용 표준 확인: 제품에 적용되는 관련 인도 표준(IS)을 확인합니다.",
+          "시험 시설 구축: 적용 표준 요구사항을 충족하는 사내 시험실(인하우스 랩)을 구축합니다.",
+          "BIS 포털 계정 생성: 인도 내 제조업체는 신청을 시작하기 위해 BIS 온라인 포털에 등록해야 합니다.",
+          "제품 시험: 적용되는 인도 표준 규격(ISS)에 따라 제품 시험을 수행합니다.",
+          "신청서 제출: 시험 성적서와 필요 서류를 첨부하여 BIS 신청서를 제출합니다.",
+          "질의 대응: BIS 담당자가 요청하는 추가 설명/질의에 응답합니다.",
+          "공장 심사: BIS 담당자가 제조 시설을 방문해 적합성을 확인하고 생산 공정을 점검합니다.",
+          "시료 검증: 심사 중 사내 시험실에서 시료를 시험하고, BIS 담당자의 재검증을 위해 봉인합니다.",
+          "심사 완료: 점검 및 검증 활동이 완료되면 심사가 최종 마무리됩니다.",
+          "라이선스 발급: 모든 요구사항을 충족하면 BIS가 제조업체에 인증 라이선스를 부여합니다.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS 인증 비용 및 라이선스 수수료
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        BIS 인증 비용은 제품 카테고리, 적용 인도 표준(IS), 그리고 제조업체가 인도 내에 있는지 해외에 있는지 등 여러 요인에 따라 달라집니다.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS 등록(CRS) 수수료 구조
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "정부 수수료: 시험 성적서 1건당 ₹53,000 + 18% GST. 동일 신청 내 추가 시험 성적서 제출 시, 1건당 ₹20,000이 추가로 부과됩니다.",
+          "시험 비용: 실험실 요율에 따라 적용되며, 제품 및 시험 시설에 따라 달라집니다.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        참고: MSME 법에 따라 등록된 기업은 정부 수수료에 대해 일부 감면 혜택을 받을 수 있습니다.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS 라이선스(ISI 인증) 수수료 구조
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "신청 수수료: ₹1,000",
+          "라이선스 수수료: ₹1,000",
+          "심사 비용: 공장 심사 인당 1일(man-day) 기준 ₹7,000",
+          "시험 비용: 제품 및 시험 실험실에 따라 결정",
+          "최소 마킹 수수료: 제품 카테고리에 따라 상이합니다.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        해외 제조업체의 경우, 외국 제조업체 인증 제도(FMCS) 하에서 추가 비용이 발생합니다. 정확한 비용 구조는 개별 사례 및 적용 요건에 따라 달라집니다.
+      </p>
     </div>
   );
 };

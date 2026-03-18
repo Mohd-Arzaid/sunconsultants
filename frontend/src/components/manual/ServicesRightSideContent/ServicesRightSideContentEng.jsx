@@ -96,6 +96,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/latest-bis-qco-update-for-import-products",
     "/ministry-updates/msme-exemption-qco-2026",
     "/ministry-updates/bis-crs-migration-is-iec-62368-1-2023",
+    "/ministry-updates/aluminium-and-aluminium-alloy-products-bis-certification-latest-qco-2026",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -956,6 +957,14 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS CRS Migration to IS/IEC 62368-1:2023 – Latest BIS Notification - Ministry Updates (English)";
+
+    // Aluminium and Aluminium Alloy Products (Quality Control) Order, 2026
+    if (
+      path.includes(
+        "/ministry-updates/aluminium-and-aluminium-alloy-products-bis-certification-latest-qco-2026"
+      )
+    )
+      return "BIS Certification for Aluminium and Aluminium Alloy Products | QCO Compliance 2026 - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

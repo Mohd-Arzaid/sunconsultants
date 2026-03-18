@@ -96,6 +96,9 @@ const MSMEExemptionQCO2026 = lazy(() =>
 const BISCRSMigrationto2023 = lazy(() =>
   import("@/pages/MinistryUpdatesPages/BISCRSMigrationto2023")
 );
+const WhatisAluminiumandAluminiumAlloyProductsQuality = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/WhatisAluminiumandAluminiumAlloyProductsQuality")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -282,6 +285,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <MSMEExemptionQCO2026 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/aluminium-and-aluminium-alloy-products-bis-certification-latest-qco-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <WhatisAluminiumandAluminiumAlloyProductsQuality />
           </Suspense>
         }
       />

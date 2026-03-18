@@ -91,19 +91,18 @@ const BISFMArabic = () => {
 export default BISFMArabic;
 
 const MetaTags = () => {
-  const title =
-    "شهادة BIS FMCS | مخطط شهادة المصنعين الأجانب | Sun Certifications";
+  const title = "BIS FMCS | شهادة BIS للمصنعين الأجانب";
   const description =
-    "خدمات شهادة BIS FMCS الخبيرة للمصنعين الأجانب. احصل على شهادة علامة ISI للتصدير إلى الهند. شهادات BIS الموثوقة منذ 2013. ✓ معالجة سريعة ✓ إرشاد خبير";
-  const keywords = "شهادة BIS للمصنعين الأجانب، ترخيص BIS، علامة ISI";
+    "يقدّم مكتب المعايير الهندية (BIS) مخطط شهادة المصنعين الأجانب (FMCS) لتمكين المصنعين خارج الهند من الحصول على شهادة BIS لبيع منتجاتهم في الهند.";
+  const keywords =
+    "BIS FMCS, شهادة BIS للمصنعين الأجانب, ترخيص BIS للمصنعين الأجانب, علامة ISI للمصنعين الأجانب, شهادة BIS FMCS";
   const canonicalUrl =
     "https://bis-certifications.com/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle =
-    "BIS FMCS Certification | Foreign Manufacturer Certification Scheme";
+  const ogTitle = "BIS FMCS | شهادة BIS للمصنعين الأجانب";
   const ogDescription =
-    "Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance";
+    "يقدّم مكتب المعايير الهندية (BIS) مخطط شهادة المصنعين الأجانب (FMCS) لتمكين المصنعين خارج الهند من الحصول على شهادة BIS لبيع منتجاتهم في الهند.";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -352,7 +351,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              شهادة BIS الهندية
+              شهادة BIS
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             للمصنعين الأجانب
@@ -853,7 +852,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            معلومات كاملة عن شهادة BIS الهندية تحت مخطط FMCS
+            شهادة BIS تحت مخطط FMCS
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -869,9 +868,18 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            يعمل BIS من خلال مخططات مختلفة تشمل شهادة المنتجات، وسم المجوهرات،
-            وخدمات الاختبار، و برامج التدريب. ومع ذلك، فإن أحد أكثر أطرها أهمية
-            دولياً هو مخطط شهادة المصنعين الأجانب (FMCS).
+            ترخيص BIS إلزامي لكل من المصنعين في الهند وخارجها لتصنيع أو استيراد أو
+            بيع منتجات متعددة في الهند ضمن فئة الشهادات الإلزامية لدى BIS. ولمنح
+            التراخيص، يدير BIS عدة مخططات مثل مخطط شهادة المنتجات (مخطط علامة ISI
+            للمصنعين في الهند)، ومخطط وسم المعادن الثمينة (Hallmarking)، ومخطط BIS
+            FMCS وغيرها.
+          </p>
+
+          <p className="service-left-content-paragraph">
+            يتيح مخطط شهادة المصنعين الأجانب (BIS FMCS) للمصنعين في الخارج التقدم
+            للحصول على شهادة BIS لاستخدام علامة ISI القياسية على منتجاتهم. ويمكن
+            للمصنعين الأجانب التقدم عبر تعيين ممثل هندي معتمد (AIR) لتولي
+            الامتثال والوثائق والتواصل مع مكتب المعايير الهندية.
           </p>
         </div>
 

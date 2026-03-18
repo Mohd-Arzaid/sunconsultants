@@ -874,23 +874,74 @@ const ProcessSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Quy trình Chứng nhận BIS
+        Thủ tục để nhận Chứng nhận BIS
       </h2>
 
       <p className="service-left-content-paragraph">
-        Quy trình chứng nhận BIS tuân theo một luồng có cấu trúc:
+        Quy trình để nhận chứng chỉ BIS cho cả nhà sản xuất Ấn Độ và nước ngoài
+        thường bao gồm các bước chính sau:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Xác định Tiêu chuẩn Liên quan: Chọn Tiêu chuẩn Ấn Độ (IS) áp dụng.",
-          "Nộp Đơn: Gửi cho BIS và đính kèm bất kỳ tài liệu liên quan nào.",
-          "Kiểm tra Sản phẩm: Kiểm tra được thực hiện tại các phòng thí nghiệm BIS được phê duyệt.",
-          "Thanh tra Nhà máy: Cơ sở được thanh tra bởi các nhân viên BIS.",
-          "Giấy phép BIS: giấy chứng nhận được trao cho đánh giá đánh giá thành công.",
-          "Giám sát: tuân thủ liên tục cùng với thay đổi giấy phép là tiêu chuẩn mới.",
+          "Xác định tiêu chuẩn áp dụng: Xác định Tiêu chuẩn Ấn Độ (IS) phù hợp cho sản phẩm.",
+          "Thiết lập cơ sở thử nghiệm: Thiết lập phòng thí nghiệm nội bộ đáp ứng yêu cầu của tiêu chuẩn áp dụng.",
+          "Tạo tài khoản cổng BIS: Nhà sản xuất Ấn Độ phải đăng ký trên cổng trực tuyến BIS để bắt đầu nộp hồ sơ.",
+          "Thử nghiệm sản phẩm: Thử nghiệm sản phẩm theo các Thông số Tiêu chuẩn Ấn Độ (ISS) áp dụng.",
+          "Nộp hồ sơ: Nộp đơn BIS kèm báo cáo thử nghiệm và các tài liệu bắt buộc.",
+          "Giải đáp thắc mắc: Phản hồi các yêu cầu làm rõ/câu hỏi do cán bộ BIS đưa ra.",
+          "Thanh tra nhà máy: Cán bộ BIS đến cơ sở sản xuất để xác minh tuân thủ và kiểm tra quy trình sản xuất.",
+          "Xác minh mẫu: Trong quá trình thanh tra, mẫu được thử nghiệm tại phòng lab nội bộ và niêm phong để cán bộ BIS tái xác minh.",
+          "Hoàn tất đánh giá: Khi các hoạt động thanh tra và xác minh hoàn tất, cuộc đánh giá được chốt.",
+          "Cấp giấy phép: Nếu đáp ứng đầy đủ yêu cầu, BIS cấp giấy phép chứng nhận cho nhà sản xuất.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Chi phí chứng nhận BIS và phí cấp phép
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        Chi phí để đạt được chứng nhận BIS thay đổi tùy theo nhiều yếu tố, bao
+        gồm nhóm sản phẩm, Tiêu chuẩn Ấn Độ (IS) áp dụng và việc nhà sản xuất ở
+        Ấn Độ hay ở nước ngoài.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Cơ cấu phí cho đăng ký BIS (CRS)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Phí nhà nước: ₹53.000 + 18% GST cho mỗi báo cáo thử nghiệm. Thu thêm ₹20.000 cho mỗi báo cáo thử nghiệm bổ sung nộp trong cùng một hồ sơ.",
+          "Phí thử nghiệm: Áp dụng theo biểu phí của phòng thí nghiệm, thay đổi tùy sản phẩm và cơ sở thử nghiệm.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Lưu ý: Doanh nghiệp đăng ký theo Đạo luật MSME có thể đủ điều kiện nhận
+        một số ưu đãi/giảm trừ đối với phí nhà nước.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Cơ cấu phí cho giấy phép BIS (Chứng nhận ISI)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Phí nộp đơn: ₹1.000",
+          "Phí giấy phép: ₹1.000",
+          "Phí đánh giá: ₹7.000 mỗi người-ngày (man-day) cho thanh tra nhà máy",
+          "Phí thử nghiệm: Tùy theo sản phẩm và phòng thí nghiệm thử nghiệm",
+          "Phí đánh dấu tối thiểu: Thay đổi theo nhóm sản phẩm.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Đối với nhà sản xuất nước ngoài, áp dụng thêm chi phí theo Chương trình
+        Chứng nhận Nhà sản xuất Nước ngoài (FMCS). Cơ cấu chi phí chính xác phụ
+        thuộc vào từng trường hợp cụ thể và các yêu cầu áp dụng.
+      </p>
     </div>
   );
 };

@@ -71,20 +71,18 @@ const BISFMDutch = () => {
 export default BISFMDutch;
 
 const MetaTags = () => {
-  const title =
-    "BIS FMCS Certificering | Certificeringsregeling voor Buitenlandse Fabrikanten | Sun Certifications";
+  const title = "BIS FMCS | BIS-certificering voor buitenlandse fabrikanten";
   const description =
-    "Expert BIS FMCS certificeringsdiensten voor buitenlandse fabrikanten. Krijg ISI Mark certificering voor export naar India. Betrouwbare BIS Certificeringen sinds 2013. ✓ Snelle Verwerking ✓ Expert Begeleiding";
+    "Het Bureau of Indian Standards (BIS) biedt het Foreign Manufacturers Certification Scheme (FMCS) aan, zodat buitenlandse fabrikanten de BIS-certificering kunnen verkrijgen om producten in India te verkopen.";
   const keywords =
-    "BIS Certificaat voor buitenlandse fabrikanten, BIS Licentie, ISI Mark";
+    "BIS FMCS, BIS-certificering voor buitenlandse fabrikanten, BIS-licentie voor buitenlandse fabrikanten, ISI-mark voor buitenlandse fabrikanten, BIS FMCS certificering";
   const canonicalUrl =
     "https://bis-certifications.com/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle =
-    "BIS FMCS Certificering | Certificeringsregeling voor Buitenlandse Fabrikanten";
+  const ogTitle = "BIS FMCS | BIS-certificering voor buitenlandse fabrikanten";
   const ogDescription =
-    "Expert BIS FMCS certificeringsdiensten voor buitenlandse fabrikanten. Krijg ISI Mark certificering voor export naar India. ✓ Snelle Verwerking ✓ Expert Begeleiding";
+    "Het Bureau of Indian Standards (BIS) biedt het Foreign Manufacturers Certification Scheme (FMCS) aan, zodat buitenlandse fabrikanten de BIS-certificering kunnen verkrijgen om producten in India te verkopen.";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -333,7 +331,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              Indiaas BIS Certificering
+              BIS Certificering
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             voor buitenlandse fabrikanten
@@ -839,8 +837,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            Volledige informatie over Indiaas BIS certificering onder FMCS
-            Regeling
+            BIS-certificering onder de FMCS-regeling
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -858,10 +855,23 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS opereert via verschillende regelingen die productcertificering,
-            keurmerken voor sieraden, testdiensten en trainingsprogramma's
-            omvatten. Een van de meest internationaal significante kaders is
-            echter het Foreign Manufacturers Certification Scheme (FMCS).
+            Een BIS-licentie is verplicht voor zowel Indiase als buitenlandse
+            fabrikanten om verschillende producten in India te produceren, te
+            importeren of te verkopen die vallen onder de verplichte BIS-
+            certificeringscategorie. Voor het verlenen van licenties hanteert
+            BIS verschillende certificeringsregelingen zoals de Product
+            Certification Scheme (ISI Mark-regeling voor Indiase fabrikanten),
+            de Hallmarking Scheme, de BIS FMCS-regeling en meer.
+          </p>
+
+          <p className="service-left-content-paragraph">
+            De Foreign Manufacturers Certification Scheme (BIS FMCS) stelt
+            buitenlandse fabrikanten in staat om BIS-certificering aan te vragen
+            om het standaard ISI-mark op hun producten te gebruiken. Buitenlandse
+            fabrikanten kunnen BIS-certificering aanvragen door een Authorized
+            Indian Representative (AIR) aan te stellen die de compliance,
+            documentatie en communicatie met het Bureau of Indian Standards
+            afhandelt.
           </p>
         </div>
 

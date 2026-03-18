@@ -68,20 +68,18 @@ const BISFM = () => {
 export default BISFM;
 
 const MetaTags = () => {
-  const title =
-    "BIS FMCS Certification | Foreign Manufacturer Certification Scheme | Sun Certifications";
+  const title = "BIS FMCS | BIS Certification for Foreign Manufacturers";
   const description =
-    "Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. Trusted BIS Certifications since 2013. ✓ Fast Processing ✓ Expert Guidance";
+    "The Bureau of Indian Standards offers the Foreign Manufacturers Certification Scheme (FMCS) for foreign manufacturers to get BIS certification for selling products in India.";
   const keywords =
-    "BIS Certificate for foreign manufactures, BIS License, ISI Mark";
+    "BIS FMCS, BIS Certification for Foreign Manufacturers, BIS License for Foreign Manufacturers, ISI Mark for Foreign Manufacturers, BIS FMCS Certification";
   const canonicalUrl =
     "https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle =
-    "BIS FMCS Certification | Foreign Manufacturer Certification Scheme";
+  const ogTitle = "BIS FMCS | BIS Certification for Foreign Manufacturers";
   const ogDescription =
-    "Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance";
+    "The Bureau of Indian Standards offers the Foreign Manufacturers Certification Scheme (FMCS) for foreign manufacturers to get BIS certification for selling products in India.";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -457,7 +455,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              Indian BIS Certification
+            BIS Certification 
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             for foreign manufactures
@@ -961,7 +959,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            Complete information on Indian BIS certification under FMCS Scheme
+          BIS Certification under FMCS Scheme
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -978,11 +976,11 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS operates through various schemes that include product
-            certification, hallmarking for jewelry, testing services, and
-            training programs. However, one of its most internationally
-            significant frameworks is the Foreign Manufacturers Certification
-            Scheme (FMCS).
+          A BIS License is mandatory for both Indian and foreign manufacturers to manufacture, import or sell various products in India, listed in the BIS mandatory certification category. To grant licenses BIS operates various certification schemes like Product Certification Scheme (ISI Mark Scheme for Indian Manufacturers), Hallmarking Scheme, BIS FMCS Scheme and many more. 
+
+          </p>
+          <p className="service-left-content-paragraph">
+          Foreign Manufacturers Certification Scheme (BIS FMCS) enables the overseas manufacturers to apply for BIS certification to use the standard ISI mark on their products. Foreign manufacturers can apply for BIS certification by appointing an Authorized Indian Representative (AIR) to handle compliance, documentation and communication with the Bureau of Indian Standards.
           </p>
         </div>
 

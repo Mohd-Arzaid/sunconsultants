@@ -822,22 +822,69 @@ const ProcessSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">BIS认证流程</h2>
+      <h2 className="service-left-content-heading-two">
+        获取BIS认证的流程
+      </h2>
 
       <p className="service-left-content-paragraph">
-        BIS认证流程遵循结构化流程：
+        针对印度及海外制造商，获取BIS证书通常遵循以下关键步骤：
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "确定相关标准：选择适用的印度标准（IS）。",
-          "提交申请：向BIS提交文件并附上任何相关文件。",
-          "产品测试：在BIS认可的实验室进行测试。",
-          "工厂检查：BIS官员检查设施。",
-          "BIS许可证：成功评估后颁发证书。",
-          "监督：持续合规以及许可证变更成为新常态。",
+          "确定适用标准：确定适用于产品的相关印度标准（IS）。",
+          "建立测试设施：建立符合适用标准要求的厂内实验室。",
+          "创建BIS门户账户：印度制造商需在BIS在线门户注册以启动申请。",
+          "产品测试：按照适用的印度标准规范（ISS）对产品进行测试。",
+          "提交申请：提交BIS申请，并附上测试报告及所需文件。",
+          "答复质询：回应BIS官员提出的澄清或问题。",
+          "工厂检查：BIS官员到工厂核验合规性并检查生产流程。",
+          "样品核验：检查期间在厂内实验室进行样品测试，并封样供BIS官员复核。",
+          "完成审核：检查与核验工作完成后，审核结案。",
+          "签发许可证：满足全部要求后，BIS向制造商授予认证许可证。",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS认证费用与许可证费用
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        获取BIS认证的成本因多种因素而异，包括产品类别、适用的印度标准（IS），以及制造商位于印度境内还是海外。
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS注册（CRS）费用结构
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "政府费用：每份测试报告₹53,000 + 18% GST。同一申请中每增加一份额外测试报告，另收₹20,000。",
+          "测试费用：按实验室收费标准收取，具体取决于产品及测试机构。",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        备注：依据MSME法注册的企业可能可享受政府费用的部分减免。
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        BIS许可证（ISI认证）费用结构
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "申请费：₹1,000",
+          "许可证费：₹1,000",
+          "审核费用：工厂检查每人天（man-day）₹7,000",
+          "测试费用：取决于产品及测试实验室",
+          "最低标志使用费：按产品类别而定。",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        对于海外制造商，外国制造商认证计划（FMCS）将产生额外费用。具体成本结构取决于个案及适用要求。
+      </p>
     </div>
   );
 };

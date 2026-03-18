@@ -843,23 +843,75 @@ const ProcessSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Proceso de Certificación BIS
+        Procedimiento para obtener la certificación BIS
       </h2>
 
       <p className="service-left-content-paragraph">
-        El proceso de certificación BIS sigue un flujo estructurado:
+        El proceso para obtener un certificado BIS, tanto para fabricantes
+        indios como extranjeros, generalmente sigue estos pasos clave:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Identificar la Norma Relevante: seleccionar la norma india (IS) aplicable.",
-          "Presentación de la Solicitud: envío al BIS con documentos requeridos.",
-          "Pruebas del Producto: realizadas en laboratorios reconocidos por BIS.",
-          "Inspección de Fábrica: realizada por funcionarios del BIS.",
-          "Licencia BIS: emitida tras evaluación satisfactoria.",
-          "Vigilancia: cumplimiento continuo y mantenimiento de la licencia.",
+          "Identificar la norma aplicable: Determinar la norma india (IS) relevante que aplica al producto.",
+          "Establecer instalaciones de ensayo: Configurar un laboratorio interno que cumpla los requisitos de la norma aplicable.",
+          "Crear una cuenta en el portal BIS: Los fabricantes indios deben registrarse en el portal en línea de BIS para iniciar la solicitud.",
+          "Ensayo del producto: Probar el producto según las Especificaciones del Estándar Indio aplicable (ISS).",
+          "Presentación de la solicitud: Presentar la solicitud BIS junto con el informe de ensayo y los documentos requeridos.",
+          "Respuesta a consultas: Responder a cualquier aclaración o consulta planteada por los funcionarios de BIS.",
+          "Inspección de fábrica: Un funcionario de BIS visita la planta para verificar el cumplimiento e inspeccionar el proceso de producción.",
+          "Verificación de muestras: Durante la inspección, se prueban muestras en el laboratorio interno y se sellan para su re-verificación por BIS.",
+          "Cierre de auditoría: Una vez completadas la inspección y la verificación, se finaliza la auditoría.",
+          "Otorgamiento de la licencia: Si se cumplen todos los requisitos, BIS otorga la licencia de certificación al fabricante.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Coste de la certificación BIS y tasas de licencia
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        El coste de obtener la certificación BIS varía según varios factores,
+        incluyendo la categoría del producto, la norma india (IS) aplicable y
+        si el fabricante está basado en India o en el extranjero.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Estructura de tarifas para el registro BIS (CRS)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Tarifa gubernamental: ₹53.000 + 18% GST por informe de ensayo. Se cobran ₹20.000 adicionales por cada informe extra presentado dentro de la misma solicitud.",
+          "Cargos de ensayo: Según las tarifas del laboratorio, que varían según el producto y la instalación de ensayo.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Nota: Las empresas registradas bajo la Ley MSME pueden ser elegibles
+        para ciertas concesiones en las tarifas gubernamentales.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Estructura de tarifas para la licencia BIS (certificación ISI)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Tarifa de solicitud: ₹1.000",
+          "Tarifa de licencia: ₹1.000",
+          "Cargos de auditoría: ₹7.000 por hombre-día para la inspección de fábrica",
+          "Cargos de ensayo: Según el producto y el laboratorio de ensayo",
+          "Tarifa mínima de marcado: Varía según la categoría del producto.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Para fabricantes extranjeros, se aplican cargos adicionales bajo el
+        Esquema de Certificación de Fabricantes Extranjeros (FMCS). La
+        estructura exacta de costes depende del caso específico y de los
+        requisitos aplicables.
+      </p>
     </div>
   );
 };

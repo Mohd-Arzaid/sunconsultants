@@ -71,20 +71,18 @@ const BISFMFrench = () => {
 export default BISFMFrench;
 
 const MetaTags = () => {
-  const title =
-    "Certification BIS FMCS | Schéma de Certification des Fabricants Étrangers | Sun Certifications";
+  const title = "BIS FMCS | Certification BIS pour fabricants étrangers";
   const description =
-    "Services experts de certification BIS FMCS pour les fabricants étrangers. Obtenez la certification ISI Mark pour les exportations vers l'Inde. Certifications BIS de confiance depuis 2013. ✓ Traitement Rapide ✓ Conseil Expert";
+    "Le Bureau of Indian Standards (BIS) propose le Foreign Manufacturers Certification Scheme (FMCS) afin de permettre aux fabricants étrangers d’obtenir la certification BIS pour vendre des produits en Inde.";
   const keywords =
-    "Certificat BIS pour fabricants étrangers, Licence BIS, Marque ISI";
+    "BIS FMCS, Certification BIS pour fabricants étrangers, Licence BIS pour fabricants étrangers, Marque ISI pour fabricants étrangers, Certification BIS FMCS";
   const canonicalUrl =
     "https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis";
   const author = "Dhruv Aggarwal";
   const publisher = "Sun Certifications India";
-  const ogTitle =
-    "Certification BIS FMCS | Schéma de Certification des Fabricants Étrangers";
+  const ogTitle = "BIS FMCS | Certification BIS pour fabricants étrangers";
   const ogDescription =
-    "Services experts de certification BIS FMCS pour les fabricants étrangers. Obtenez la certification ISI Mark pour les exportations vers l'Inde. ✓ Traitement Rapide ✓ Conseil Expert";
+    "Le Bureau of Indian Standards (BIS) propose le Foreign Manufacturers Certification Scheme (FMCS) afin de permettre aux fabricants étrangers d’obtenir la certification BIS pour vendre des produits en Inde.";
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
@@ -333,7 +331,7 @@ const HeroSection = () => {
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              Certification BIS Indienne
+              Certification BIS
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             pour les fabricants étrangers
@@ -839,8 +837,7 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            Informations complètes sur la certification BIS indienne sous le
-            Schéma FMCS
+            Certification BIS dans le cadre du schéma FMCS
           </h1>
 
           <h2 className="service-left-content-heading-three">
@@ -858,11 +855,22 @@ const MainContentLeft = () => {
           </p>
 
           <p className="service-left-content-paragraph">
-            Le BIS opère à travers divers schémas qui incluent la certification
-            de produits, le poinçonnage pour les bijoux, les services de test et
-            les programmes de formation. Cependant, l'un de ses cadres les plus
-            significatifs au niveau international est le Schéma de Certification
-            des Fabricants Étrangers (FMCS).
+            Une licence BIS est obligatoire pour les fabricants indiens comme
+            étrangers afin de fabriquer, importer ou vendre en Inde divers
+            produits relevant des catégories de certification obligatoire du
+            BIS. Pour délivrer des licences, le BIS opère plusieurs schémas de
+            certification tels que le Product Certification Scheme (schéma ISI
+            Mark pour les fabricants indiens), le Hallmarking Scheme, le schéma
+            BIS FMCS, et d’autres.
+          </p>
+
+          <p className="service-left-content-paragraph">
+            Le Foreign Manufacturers Certification Scheme (BIS FMCS) permet aux
+            fabricants étrangers de demander la certification BIS afin d’apposer
+            la marque ISI standard sur leurs produits. Les fabricants étrangers
+            peuvent déposer une demande en nommant un Authorized Indian
+            Representative (AIR) chargé de la conformité, des documents et des
+            échanges avec le Bureau of Indian Standards.
           </p>
         </div>
 

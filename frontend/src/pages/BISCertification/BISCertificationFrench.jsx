@@ -844,23 +844,75 @@ const ProcessSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Processus de certification BIS
+        Procédure d’obtention de la certification BIS
       </h2>
 
       <p className="service-left-content-paragraph">
-        Le processus suit un déroulé structuré :
+        Le processus d’obtention d’un certificat BIS, pour les fabricants
+        indiens comme étrangers, suit généralement les étapes clés suivantes :
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Identifier la norme applicable (IS).",
-          "Déposer la demande auprès du BIS avec les documents requis.",
-          "Essais produits dans des laboratoires reconnus BIS.",
-          "Inspection d’usine par des agents du BIS.",
-          "Licence BIS après évaluation concluante.",
-          "Surveillance et maintien de la conformité.",
+          "Identifier la norme applicable : Déterminer la norme indienne (IS) pertinente pour le produit.",
+          "Mettre en place des moyens d’essai : Installer un laboratoire interne conforme aux exigences de la norme applicable.",
+          "Créer un compte sur le portail BIS : Les fabricants indiens doivent s’inscrire sur le portail en ligne du BIS pour initier la demande.",
+          "Essais du produit : Faire tester le produit selon les spécifications de la norme indienne applicable (ISS).",
+          "Dépôt de la demande : Déposer la demande BIS avec le rapport d’essai et les documents requis.",
+          "Traitement des questions : Répondre aux demandes de clarification ou aux questions des agents du BIS.",
+          "Inspection d’usine : Un agent du BIS se rend sur le site de production pour vérifier la conformité et inspecter le procédé.",
+          "Vérification des échantillons : Lors de l’inspection, des échantillons sont testés au laboratoire interne puis scellés pour une re‑vérification par le BIS.",
+          "Clôture de l’audit : Une fois l’inspection et les vérifications terminées, l’audit est finalisé.",
+          "Délivrance de la licence : Si toutes les exigences sont remplies, le BIS accorde la licence de certification au fabricant.",
         ]}
       />
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Coût de la certification BIS et frais de licence
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        Le coût d’obtention de la certification BIS varie selon plusieurs
+        facteurs, notamment la catégorie du produit, la norme indienne (IS)
+        applicable et le fait que le fabricant soit basé en Inde ou à
+        l’étranger.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Structure des frais pour l’enregistrement BIS (CRS)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Frais gouvernementaux : ₹53 000 + 18% GST par rapport d’essai. ₹20 000 supplémentaires sont facturés pour chaque rapport d’essai additionnel soumis dans la même demande.",
+          "Frais d’essais : Selon les tarifs du laboratoire, variables selon le produit et l’installation d’essai.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Note : Les entreprises enregistrées au titre de la loi MSME peuvent
+        bénéficier de certaines concessions sur les frais gouvernementaux.
+      </p>
+
+      <h3 className="service-left-content-heading-three mt-5">
+        Structure des frais pour la licence BIS (certification ISI)
+      </h3>
+
+      <PointsListWithoutHeading
+        points={[
+          "Frais de demande : ₹1 000",
+          "Frais de licence : ₹1 000",
+          "Frais d’audit : ₹7 000 par homme‑jour pour l’inspection d’usine",
+          "Frais d’essais : Selon le produit et le laboratoire d’essai",
+          "Frais minimum de marquage : Variables selon la catégorie de produit.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Pour les fabricants étrangers, des frais supplémentaires s’appliquent
+        dans le cadre du Foreign Manufacturers Certification Scheme (FMCS). La
+        structure de coût exacte dépend du cas et des exigences applicables.
+      </p>
     </div>
   );
 };
