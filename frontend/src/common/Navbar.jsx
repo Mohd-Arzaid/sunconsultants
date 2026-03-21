@@ -11,7 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { NAVIGATION_DATA } from "@/data/navbar-data/navbar-data";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronUp, LogIn, ShieldCheck, User, Briefcase } from "lucide-react";
 
 const STYLES = {
   button:
@@ -31,7 +31,9 @@ const Navbar = () => {
   const [updatesOpen, setUpdatesOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
   const mobileMenuRef = useRef(null);
+  const loginDropdownRef = useRef(null);
   const faqIntervalRef = useRef(null);
 
   // Handle FAQ navigation with smooth scrolling
@@ -116,6 +118,7 @@ const Navbar = () => {
     setUpdatesOpen(false);
     setGalleryOpen(false);
     setAboutOpen(false);
+    setLoginOpen(false);
   }, []);
 
   // Close mobile menu function
@@ -204,6 +207,46 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [isOpen, closeMobileMenu]);
+
+  // Close login dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        loginDropdownRef.current &&
+        !loginDropdownRef.current.contains(event.target)
+      ) {
+        setLoginOpen(false);
+      }
+    };
+
+    if (loginOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [loginOpen]);
+
+  const LOGIN_OPTIONS = [
+    {
+      label: "Admin Login",
+      icon: ShieldCheck,
+      href: "https://crm.bis-certifications.com/admin",
+      external: true,
+    },
+    {
+      label: "Client Login",
+      icon: User,
+      href: "https://crm.bis-certifications.com/",
+      external: true,
+    },
+    {
+      label: "User Login",
+      icon: Briefcase,
+      href: "/employee-login",
+      external: false,
+    },
+  ];
 
   // Render Navigation Menu Content Items
   const createNavContent = (items) =>
@@ -367,6 +410,53 @@ const Navbar = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
+
+            {/* Login Dropdown */}
+            <div className="relative ml-3" ref={loginDropdownRef}>
+              <Button
+                variant="outline"
+                className="flex items-center gap-2 text-sm font-roboto font-medium uppercase tracking-wide border-neutral-300 hover:bg-neutral-100 transition-colors px-4 py-2"
+                onClick={() => setLoginOpen(!loginOpen)}
+              >
+                <LogIn className="w-4 h-4" />
+                Login
+                <ChevronDown
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                    loginOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </Button>
+
+              {loginOpen && (
+                <div className="absolute right-0 mt-2 w-52 bg-white rounded-lg border border-neutral-200 shadow-lg py-1.5 z-50 animate-in fade-in-0 zoom-in-95 duration-150">
+                  {LOGIN_OPTIONS.map((option) =>
+                    option.external ? (
+                      <a
+                        key={option.label}
+                        href={option.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2.5 px-4 py-2.5 text-sm font-roboto text-foreground/70 hover:text-foreground hover:bg-neutral-100 transition-colors"
+                        onClick={() => setLoginOpen(false)}
+                      >
+                        <option.icon className="w-4 h-4" />
+                        {option.label}
+                      </a>
+                    ) : (
+                      <Link
+                        key={option.label}
+                        to={option.href}
+                        className="flex items-center gap-2.5 px-4 py-2.5 text-sm font-roboto text-foreground/70 hover:text-foreground hover:bg-neutral-100 transition-colors"
+                        onClick={() => setLoginOpen(false)}
+                      >
+                        <option.icon className="w-4 h-4" />
+                        {option.label}
+                      </Link>
+                    )
+                  )}
+                </div>
+              )}
+            </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -496,6 +586,69 @@ const Navbar = () => {
                 Contact Us
               </Button>
             </Link>
+
+            {/* Login Section */}
+            <div className="border-t border-neutral-200 pt-3 mt-2">
+              <div className="w-full">
+                <Button
+                  variant="ghost"
+                  className={`${STYLES.mobileButton} justify-between`}
+                  onClick={() =>
+                    handleDropdownToggle("Login", loginOpen, setLoginOpen)
+                  }
+                >
+                  <span className="flex items-center gap-2">
+                    <LogIn className="w-4 h-4" />
+                    Login
+                  </span>
+                  {loginOpen ? (
+                    <ChevronUp className="w-4 h-4" />
+                  ) : (
+                    <ChevronDown className="w-4 h-4" />
+                  )}
+                </Button>
+
+                {loginOpen && (
+                  <div className="ml-4 mt-2 space-y-1">
+                    {LOGIN_OPTIONS.map((option) =>
+                      option.external ? (
+                        <a
+                          key={option.label}
+                          href={option.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block w-full"
+                          onClick={closeMobileMenu}
+                        >
+                          <Button
+                            variant="ghost"
+                            className={STYLES.mobileNavContentItem}
+                          >
+                            <option.icon className="w-4 h-4 mr-2" />
+                            {option.label}
+                          </Button>
+                        </a>
+                      ) : (
+                        <Link
+                          key={option.label}
+                          to={option.href}
+                          className="block w-full"
+                          onClick={closeMobileMenu}
+                        >
+                          <Button
+                            variant="ghost"
+                            className={STYLES.mobileNavContentItem}
+                          >
+                            <option.icon className="w-4 h-4 mr-2" />
+                            {option.label}
+                          </Button>
+                        </Link>
+                      )
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       )}

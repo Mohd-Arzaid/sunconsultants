@@ -45,6 +45,7 @@ const Webinar = lazy(() => import("./pages/Webinar"));
 import VideosSkeleton from "./components/ui/videos-skeleton";
 const Videos = lazy(() => import("./pages/Videos"));
 import TermsAndConditions from "./pages/TermsAndConditions";
+import EmployeeLogin from "./pages/EmployeeLogin";
 import Error404 from "./pages/404Error";
 import BacklinksPage from "./pages/BacklinksPage";
 
@@ -242,6 +243,7 @@ function App() {
         />
 
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="employee-login" element={<EmployeeLogin />} />
 
         {/* Error Pages */}
         <Route path="404" element={<Error404 />} />
