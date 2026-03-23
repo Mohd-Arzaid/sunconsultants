@@ -1825,7 +1825,7 @@ const ProcessSection = () => {
       </div>
 
       <img
-        src={bBISCertificateImage}
+        src={BISCertificateImage}
         alt="BIS证书流程"
         className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
       />
