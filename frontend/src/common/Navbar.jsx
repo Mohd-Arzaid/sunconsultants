@@ -303,7 +303,7 @@ const Navbar = () => {
         {/* Company Logo & Name */}
         <Link
           to="/"
-          className="selection:bg-emerald-600 flex items-center justify-center space-x-2.5 text-2xl font-bold py-6 text-center text-neutral-600 md:mr-10"
+          className="selection:bg-emerald-600 flex items-center justify-center space-x-1.5 text-2xl font-bold py-6 text-center text-neutral-600 md:mr-10"
         >
           <img
             src="/company-logo/company-logo.webp"

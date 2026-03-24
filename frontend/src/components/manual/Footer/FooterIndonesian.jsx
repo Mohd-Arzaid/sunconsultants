@@ -108,7 +108,7 @@ const FooterIndonesian = () => {
             {/* Company Logo */}
             <div className="flex flex-col gap-[20px] md:gap-[25px]">
               <div
-                className=" selection:bg-emerald-600 flex md:space-x-2.5 
+                className=" selection:bg-emerald-600 flex md:space-x-1.5 
                    text-2xl font-bold text-center text-neutral-600"
               >
                 <img
