@@ -89,7 +89,7 @@ const SitemapSkeleton = () => {
             <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-0 md:h-[360px]">
               {/* Company Logo Section */}
               <div className="flex flex-col gap-[20px] md:gap-[25px]">
-                <div className="flex md:space-x-2.5">
+                <div className="flex md:space-x-1.5">
                   <Skeleton className="hidden md:block w-12 h-12 rounded" />
                   <div className="space-y-2">
                     <Skeleton className="h-6 w-48" />

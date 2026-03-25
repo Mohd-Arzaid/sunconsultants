@@ -41,7 +41,7 @@ const FooterSkeleton = () => {
             {/* Company Logo & Newsletter Section Skeleton */}
             <div className="flex flex-col gap-[20px] md:gap-[25px]">
               {/* Logo Skeleton */}
-              <div className="flex md:space-x-2.5 items-center">
+              <div className="flex md:space-x-1.5 items-center">
                 <Skeleton className="hidden md:block w-12 h-12 rounded" />
                 <div className="flex flex-col gap-2">
                   <Skeleton className="h-5 w-48 md:w-56" />
