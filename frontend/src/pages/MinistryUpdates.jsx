@@ -24,6 +24,19 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 24,
+    color: "#5B63E6",
+    tagType: "BIS Update",
+    date: "March 22, 2026",
+    displayDate: "22 Mar 2026",
+    title:
+      "BIS Notification on Revised Standards for LED Luminaires - IS 10322:2026",
+    description:
+      "BIS has revised LED luminaire standards to IS 10322:2026 under CRS. Check covered products, compliance deadline, and certification guidelines for manufacturers and importers.",
+    link: "/ministry-updates/bis-for-led-luminaires-2026",
+    pdfLink: "/pdf/BISNotificationRevisedStandards.pdf",
+  },
+  {
     id: 23,
     color: "#1A8781",
     tagType: "BIS Update",

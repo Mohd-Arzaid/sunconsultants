@@ -99,6 +99,9 @@ const BISCRSMigrationto2023 = lazy(() =>
 const WhatisAluminiumandAluminiumAlloyProductsQuality = lazy(() =>
   import("@/pages/MinistryUpdatesPages/WhatisAluminiumandAluminiumAlloyProductsQuality")
 );
+const BISNotificationonRevisedStandards = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/BISNotificationonRevisedStandards")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -293,6 +296,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <WhatisAluminiumandAluminiumAlloyProductsQuality />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-for-led-luminaires-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <BISNotificationonRevisedStandards />
           </Suspense>
         }
       />

@@ -97,6 +97,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/msme-exemption-qco-2026",
     "/ministry-updates/bis-crs-migration-is-iec-62368-1-2023",
     "/ministry-updates/aluminium-and-aluminium-alloy-products-bis-certification-latest-qco-2026",
+    "/ministry-updates/bis-for-led-luminaires-2026",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -965,6 +966,8 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS Certification for Aluminium and Aluminium Alloy Products | QCO Compliance 2026 - Ministry Updates (English)";
+    if (path.includes("/ministry-updates/bis-for-led-luminaires-2026"))
+      return "BIS Notification on Revised Standards for LED Luminaires - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
