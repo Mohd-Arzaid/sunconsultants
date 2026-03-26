@@ -630,6 +630,16 @@ const blogs = [
     date: "11 March 2026",
     image: "/blogImages/BISLicenseforElectricDishwashingMachines .png",
   },
+  {
+    id: 63,
+    color: "#2563EB",
+    title: "BIS Certificate for Whirlpool Baths & Whirlpool Spas – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Whirlpool Baths & Whirlpool Spas under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Covers electrically powered hydrotherapy bathing systems used in hotels, wellness centers and homes.",
+    slug: "blogs/isi-products/whirlpool-baths-and-whirlpool-spas",
+    date: "11 March 2026",
+    image: "/blogImages/BISLicenseforWhirlpoolBaths&WhirlpoolSpas.png",
+  },
 ];
 
 // =============================

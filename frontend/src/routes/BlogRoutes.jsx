@@ -346,6 +346,9 @@ const BISCertificationforCommercialElectricKitchenMachines = lazy(() =>
 const BISCertificationforCommercialElectricRinsingSinks = lazy(() =>
   import("@/blogs/BISCertificationforCommercialElectricRinsingSinks")
 );
+const BISCertificationforWhirlpoolBaths = lazy(() =>
+  import("@/blogs/BISCertificationforWhirlpoolBaths")
+);
 const BISCertificationforThermalStorageRoomHeaters = lazy(() =>
   import("@/blogs/BISCertificationforThermalStorageRoomHeaters")
 );
@@ -2895,6 +2898,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforCommercialElectricRinsingSinks />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/whirlpool-baths-and-whirlpool-spas"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforWhirlpoolBaths />
           </Suspense>
         }
       />

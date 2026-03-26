@@ -2217,6 +2217,16 @@ const SchemeXMainContentLeftOverviewSection = () => {
         Introduction to BIS Scheme X Certification
       </h2>
 
+      
+      <div className="flex justify-center mt-[20px] md:mt-[26px]">
+        <img
+          src="/services-main-images/scheme-x-certification.webp"
+          alt="Scheme X Certification"
+          title="Scheme X Certification"
+          className="max-w-full h-auto rounded-lg shadow-md"
+        />
+      </div>
+
       <p className="service-left-content-paragraph">
         The Bureau of Indian Standards, or BIS for short, rolled out
         &ldquo;Scheme X&rdquo; on March 16, 2022, aimed at improving compliance
@@ -2399,7 +2409,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         <img
           src="/services-images/scheme-x-logo.png"
           alt="BIS Scheme X logo"
-          title="BIS Scheme X Certification"
+          title="BIS Scheme X logo"
           className="max-w-full h-auto rounded-lg shadow-md"
         />
       </div>

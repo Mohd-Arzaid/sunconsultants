@@ -748,7 +748,7 @@ const OverviewSection = () => {
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
-          src="/services-main-images/IndianBisCertification.png"
+          src="/services-main-images/indian-bis-certification.webp"
           alt="Indian BIS Certification"
           title="BIS Certificate for Indian manufactures"
           className="max-w-full h-auto rounded-lg shadow-md"
@@ -909,51 +909,7 @@ const ProcessSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three mt-5">
-        BIS Certification Cost and Licence Fees
-      </h3>
-
-      <p className="service-left-content-paragraph">
-        The cost of obtaining BIS certification varies depending on several
-        factors, including the product category, the applicable Indian Standard
-        (IS), and whether the manufacturer is based in India or overseas.
-      </p>
-
-      <h3 className="service-left-content-heading-three mt-5">
-        Fee Structure for BIS Registration (CRS)
-      </h3>
-
-      <PointsListWithoutHeading
-        points={[
-          "Government Fee: ₹53,000 + 18% GST per test report. An additional ₹20,000 is charged for each extra test report submitted within the same application.",
-          "Testing Charges: Applicable as per laboratory rates, which vary depending on the product and testing facility.",
-        ]}
-      />
-
-      <p className="service-left-content-paragraph">
-        Note: Companies registered under the MSME Act may be eligible for
-        certain concessions on government fees.
-      </p>
-
-      <h3 className="service-left-content-heading-three mt-5">
-        Fee Structure for BIS Licence (ISI Certification)
-      </h3>
-
-      <PointsListWithoutHeading
-        points={[
-          "Application Fee: ₹1,000",
-          "Licence Fee: ₹1,000",
-          "Audit Charges: ₹7,000 per man-day for factory inspection",
-          "Testing Charges: Based on the product and testing laboratory",
-          "Minimum Marking Fee: Varies according to the product category.",
-        ]}
-      />
-
-      <p className="service-left-content-paragraph">
-        For foreign manufacturers, additional charges apply under the Foreign
-        Manufacturers Certification Scheme (FMCS). The exact cost structure
-        depends on the specific case and applicable requirements.
-      </p>
+      
     </div>
   );
 };
@@ -1071,6 +1027,53 @@ const CostSection = () => {
             </TableRow>
           </TableBody>
         </Table>
+
+        <h3 className="service-left-content-heading-three mt-5">
+          BIS Certification Cost and Licence Fees
+        </h3>
+
+        <p className="service-left-content-paragraph">
+          The cost of obtaining BIS certification varies depending on several
+          factors, including the product category, the applicable Indian
+          Standard (IS), and whether the manufacturer is based in India or
+          overseas.
+        </p>
+
+        <h3 className="service-left-content-heading-three mt-5">
+          Fee Structure for BIS Registration (CRS)
+        </h3>
+
+        <PointsListWithoutHeading
+          points={[
+            "Government Fee: ₹53,000 + 18% GST per test report. An additional ₹20,000 is charged for each extra test report submitted within the same application.",
+            "Testing Charges: Applicable as per laboratory rates, which vary depending on the product and testing facility.",
+          ]}
+        />
+
+        <p className="service-left-content-paragraph">
+          Note: Companies registered under the MSME Act may be eligible for
+          certain concessions on government fees.
+        </p>
+
+        <h3 className="service-left-content-heading-three mt-5">
+          Fee Structure for BIS Licence (ISI Certification)
+        </h3>
+
+        <PointsListWithoutHeading
+          points={[
+            "Application Fee: ₹1,000",
+            "Licence Fee: ₹1,000",
+            "Audit Charges: ₹7,000 per man-day for factory inspection",
+            "Testing Charges: Based on the product and testing laboratory",
+            "Minimum Marking Fee: Varies according to the product category.",
+          ]}
+        />
+
+        <p className="service-left-content-paragraph">
+          For foreign manufacturers, additional charges apply under the Foreign
+          Manufacturers Certification Scheme (FMCS). The exact cost structure
+          depends on the specific case and applicable requirements.
+        </p>
       </div>
     </div>
   );
@@ -1224,6 +1227,22 @@ const SchemesSection = () => {
         drinking water and more, without the ISI mark.
       </p>
 
+    {/* box  */}
+    <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+        <p className="font-geist text-sm md:text-base text-[#1f2937]">
+          Get complete details about BIS certification for Indian manufacturers,
+          <br />
+          Click:  <Link
+            to="/a-guide-to-bis-certification-indian-bis"
+            className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+          >
+           ISI Mark Certification Scheme
+          </Link>
+          <br />
+         
+        </p>
+      </div>
+
       <h3 className="service-left-content-heading-three">
         FMCS – Foreign Manufacturers Certification Scheme
       </h3>
@@ -1259,6 +1278,22 @@ const SchemesSection = () => {
         No foreign products which fall under the regulated categories are
         allowed to enter India without the FMCS certification.
       </p>
+
+       {/* box  */}
+    <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+        <p className="font-geist text-sm md:text-base text-[#1f2937]">
+          Get complete details about BIS certification for foreign manufacturers,
+          <br />
+          Click:  <Link
+               to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+          >
+              FMCS – Foreign Manufacturers Certification Scheme
+          </Link>
+          <br />
+         
+        </p>
+      </div>
 
       <h3 className="service-left-content-heading-three">
         Scheme X (Omnibus Technical Regulation)
@@ -1297,6 +1332,22 @@ const SchemesSection = () => {
         simplified yet robust structure.
       </p>
 
+      {/* box  */}
+      <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+        <p className="font-geist text-sm md:text-base text-[#1f2937]">
+          Get complete details about BIS  Scheme X Certification,
+          <br />
+          Click: <Link
+            to="/indian-bis-certification-under-scheme-x"
+            className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+          >
+            Scheme X (Omnibus Technical Regulation)
+          </Link>
+          <br />
+          
+        </p>
+      </div>
+
       <h3 className="service-left-content-heading-three">
         Compulsory Registration Scheme (CRS)
       </h3>
@@ -1328,6 +1379,22 @@ const SchemesSection = () => {
         customer&apos;s trust, company&apos;s reputation, and market access in
         the electronics industry in India.
       </p>
+
+      {/* box  */}
+      <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+        <p className="font-geist text-sm md:text-base text-[#1f2937]">
+          Get complete details about BIS CRS Certification,
+          <br />
+          Click: <Link
+            to="/what-is-crs-bis-or-crs-registration"
+            className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+          >
+            Compulsory Registration Scheme (CRS)
+          </Link>
+          <br />
+      
+        </p>
+      </div>
 
       <h3 className="service-left-content-heading-three">Hallmarking Scheme</h3>
 

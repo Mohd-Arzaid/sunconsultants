@@ -822,9 +822,9 @@ const OverviewSection = () => {
       </h1>
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
-          src="/services-main-images/BIS-Certification-for-Indian-Manufacturers.png"
-          alt="Indian Bis Certification Schemes"
-          title="BIS License Scheme"
+          src="/services-main-images/bis-certification-for-indian-manufacturers.webp"
+          alt="ISI Mark Certification"
+          title="ISI Mark Certification "
           className="max-w-full h-auto rounded-lg shadow-md"
         />
       </div>
