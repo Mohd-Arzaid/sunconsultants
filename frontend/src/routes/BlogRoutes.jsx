@@ -754,6 +754,9 @@ const BISCertificationFibreRopesPolyamideChinese = lazy(() =>
 const BISCertificateForSteelWireRopes = lazy(() =>
   import("@/blogs/BISCertificationforSteelWireRopes")
 );
+const BISCertificateForOralHygiene = lazy(() =>
+  import("@/blogs/BISCertificationforOralHygiene")
+);
 const BISCertificationMixedPolyolefinFibreRopes = lazy(() =>
   import("@/blogs/BISCertificationMixedPolyolefinFibreRopes")
 );
@@ -2906,6 +2909,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforWhirlpoolBaths />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/oral-hygiene-appliances"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForOralHygiene />
           </Suspense>
         }
       />

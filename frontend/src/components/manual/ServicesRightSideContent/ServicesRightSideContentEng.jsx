@@ -212,6 +212,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/commercial-electric-rinsing-sinks",
     "/blogs/isi-products/thermal-storage-room-heaters",
     "/blogs/isi-products/whirlpool-baths-and-whirlpool-spas",
+    "/blogs/isi-products/oral-hygiene-appliances",
     "/blogs/isi-products/electric-dishwashing-machines",
   ];
 
@@ -1206,6 +1207,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Thermal Storage Room Heaters - English Page";
     if (path.includes("/blogs/isi-products/whirlpool-baths-and-whirlpool-spas"))
       return "BIS Certificate for Whirlpool Baths & Whirlpool Spas - English Page";
+    if (path.includes("/blogs/isi-products/oral-hygiene-appliances"))
+      return "BIS Certificate for Oral Hygiene Appliances - English Page";
     if (path.includes("/blogs/isi-products/electric-dishwashing-machines"))
       return "BIS Certificate for Electric Dishwashing Machines - English Page";
   };

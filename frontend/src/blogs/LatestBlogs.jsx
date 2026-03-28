@@ -640,6 +640,16 @@ const blogs = [
     date: "11 March 2026",
     image: "/blogImages/BISLicenseforWhirlpoolBaths&WhirlpoolSpas.png",
   },
+  {
+    id: 64,
+    color: "#0EA5E9",
+    title: "BIS Certificate for Oral Hygiene Appliances – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Oral Hygiene Appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/oral-hygiene-appliances",
+    date: "12 March 2026",
+    image: "/blogImages/BISLicenseforOralHygieneAppliances.png",
+  },
 ];
 
 // =============================
