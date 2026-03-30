@@ -177,6 +177,28 @@ const blogs = [
     image: "/blogImages/BISLicenseforToiletAppliances.png",
   },
   {
+    id: 55,
+    color: "#1D4ED8",
+    title:
+      "BIS Certification for Clothes Dryers – Complete Guide to IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Clothes Dryers under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/clothes-dryers",
+    date: "28 March 2026",
+    image: "/blogImages/BISLicensefor%20lothesDryers.png",
+  },
+  {
+    id: 56,
+    color: "#15803D",
+    title:
+      "BIS Certification for Food Waste Disposers – Complete Guide to IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Food Waste Disposers under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/food-waste-disposers",
+    date: "28 March 2026",
+    image: "/blogImages/BISLicenseforFoodWasteDisposers.png",
+  },
+  {
     id: 5,
     color: "#f7b186",
     title: "BIS Certification in Indonesia",

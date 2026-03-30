@@ -49,7 +49,7 @@ const DesktopHero = () => (
               </header>
 
               <p className="mt-5 text-sm sm:text-xl text-zinc-500 tracking-wide mb-7 text-left max-w-2xl">
-                Sun Certifications was founded in 2013, and for more than a
+                Sun Certifications was founded in 2016, and for more than a
                 decade, we have been assisting companies to comply with various
                 kinds of Indian certifications like BIS certificate for Indian
                 manufacturers, BIS certification for foreign/global
@@ -91,7 +91,7 @@ const MobileHero = () => {
             </header>
             <article className="max-w-2xl">
               <FadeText
-                text="Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc."
+                text="Sun Certifications was founded in 2016, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc."
                 className="font-geist text-gray-600"
                 direction="left"
               />
