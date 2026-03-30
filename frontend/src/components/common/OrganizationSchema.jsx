@@ -15,10 +15,10 @@ const OrganizationSchema = () => {
       "Sun Certifications was founded in 2016, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "ITL Twin Tower, Netaji Subhash Place",
-      addressLocality: "Pitampura",
+      streetAddress: "M-15, Phase 1, Badli Industrial Estate",
+      addressLocality: "Delhi",
       addressRegion: "Delhi",
-      postalCode: "110034",
+      postalCode: "110042",
       addressCountry: "IN",
     },
     contactPoint: {
