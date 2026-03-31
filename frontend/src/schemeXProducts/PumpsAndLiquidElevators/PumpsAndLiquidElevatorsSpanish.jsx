@@ -327,8 +327,7 @@ export const FooterSpanish = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    ITL Twin Tower, Netaji Subhash Place , Pitampura Delhi -
-                    110034
+                  M-15, Phase 1, Badli Industrial Estate, Delhi - 110034
                   </span>
                 </div>
               </div>
@@ -510,7 +509,7 @@ export const FooterSpanish = () => {
             </button>
 
             <span className="text-[#2a5075] font-geist text-[13px] md:text-base text-center">
-              Copyright © 2025 Sun Certifications India. All Rights Reserved.
+              Copyright © 2026 Sun Certifications India. All Rights Reserved.
             </span>
 
             <div className="md:hidden flex items-center gap-2">

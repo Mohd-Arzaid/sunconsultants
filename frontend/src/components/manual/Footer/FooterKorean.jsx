@@ -159,7 +159,7 @@ const FooterKorean = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    ITL 트윈 타워, 네타지 수바시 플레이스, 피탐푸라 델리 -
+                    M-15, 1단계, 바들리 산업 단지, 델리 -
                     110034
                   </span>
                 </div>

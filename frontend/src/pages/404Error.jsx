@@ -477,7 +477,7 @@ const Footer = () => {
             </button>
 
             <span className="text-[#2a5075] font-geist text-[13px] md:text-base text-center">
-              Copyright © 2025 Sun Certifications India. All Rights Reserved.
+              Copyright © 2026 Sun Certifications India. All Rights Reserved.
             </span>
 
             <div className="md:hidden flex items-center gap-2">

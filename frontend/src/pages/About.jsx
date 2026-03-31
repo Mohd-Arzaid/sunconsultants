@@ -128,7 +128,7 @@ const Stats = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8">
         <div className="text-center">
           <div className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
-            1500+
+            1599+
           </div>
           <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Our Clients
@@ -137,7 +137,7 @@ const Stats = () => {
 
         <div className="text-center">
           <div className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
-            4,999+
+            4,499+
           </div>
           <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Projects Completed

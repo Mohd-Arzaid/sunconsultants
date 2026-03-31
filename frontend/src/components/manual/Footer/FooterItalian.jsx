@@ -159,7 +159,7 @@ const FooterItalian = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    Torre Gemella ITL, Netaji Subhash Place, Pitampura Delhi -
+                    M-15, Fase 1, Parco industriale di Badli, Delhi -
                     110034
                   </span>
                 </div>
