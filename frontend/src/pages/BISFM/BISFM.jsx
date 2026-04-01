@@ -1064,7 +1064,7 @@ const OverviewSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      {/* <h2 className="service-left-content-heading-three">
         Objectives or benefits of BIS Certification for Foreign Manufacturers
         under FMCS
       </h2>
@@ -1081,7 +1081,7 @@ const OverviewSection = () => {
           "Build trust between consumers and imported brands.",
           "Facilitate fair trade and a level playing field.",
         ]}
-      />
+      /> */}
 
       <h2 className="service-left-content-heading-three">
         Key Features of BIS certificate for foreign manufacturers
@@ -1943,7 +1943,7 @@ const ProcessSection = () => {
       </div>
 
       <h3 className="service-left-content-heading-three">
-        Simple copy of BIS FMCS certificate.
+        Sample copy of BIS FMCS certificate.
       </h3>
 
       <img
