@@ -1015,21 +1015,13 @@ const OverviewSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        What is BIS certificate under FMCS?
+      What is Foreign Manufacturers Certification Scheme (BIS FMCS)
       </h2>
 
       <p className="service-left-content-paragraph">
-        Introduced in the year 2000, FMCS is a mechanism by which foreign
-        manufacturers can be granted a BIS license to use the ISI mark on their
-        products, indicating conformity with Indian standards. The certification
-        process FMCS enables overseas entities to legally sell their products in
-        India without establishing a local manufacturing unit.
+      Foreign manufacturers certification scheme (FMCS) was introduced by the Bureau of Indian Standards in 2000 that allows the overseas manufacturers to use the standard mark (ISI Mark) on their products exported to India. Just like the Product Certification Scheme for Indian manufacturers, BIS FMCS scheme ensures that the products manufactured outside India must meet the same safety and quality standards benchmarks before being exported and sold in the Indian market.
       </p>
 
-      <p className="service-left-content-paragraph">
-        As of now, more than 1,650 foreign manufacturers are operating in India
-        under the BIS certification system through FMCS.{" "}
-      </p>
 
       <h2 className="service-left-content-heading-three">
         Why BIS Certification is Crucial ?
@@ -1052,28 +1044,22 @@ const OverviewSection = () => {
       />
 
       <h2 className="service-left-content-heading-three">
-        Scope of Products Covered in BIS
+        Key Features and Scopes
       </h2>
-
-      <p className="service-left-content-paragraph">
-        BIS has listed over 600 products under mandatory certification, and over
-        20,000 items are eligible for voluntary BIS certificate. These span a
-        wide range of industries:
-      </p>
 
       <PointsListWithoutHeading
         points={[
-          "Electronics & IT hardware",
-          "Automotive parts",
-          "Household appliances",
-          "Steel products",
-          "Cement and construction materials etc.",
+          "Target: BIS FMCS covers manufacturing units located outside India. The scheme is available to manufacturers only; importers and traders cannot obtain a BIS licence under FMCS.",
+          "Testing facilities: The manufacturing unit must have adequate in-house testing facilities and technically qualified quality control personnel to test products as per Indian Standards.",
+          "Authorized Indian Representative (AIR): The foreign manufacturer must appoint an Indian resident as AIR to act as the local point of contact with BIS for compliance management.",
+          "Products coverage: A wide range of products notified under Quality Control Orders (QCOs) issued by the Indian government—such as steel, cement, electrical appliances, chemicals, automotive parts, toys, and more.",
+          "Exclusions: Electronics and IT products are excluded from this scheme; they are covered under the Bureau of Indian Standards Compulsory Registration Scheme (CRS).",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        The growing list indicates the increasing scope and relevance of BIS
-        certificate in global trade.
+        BIS has listed over 600 products under mandatory certification, and over
+        20,000 items are eligible for a voluntary BIS certificate.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -1195,31 +1181,18 @@ const StandardizationSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        What Is Indian BIS and Why It Matters ?
+      BIS Mark: Compliance Requirements, Usage Rules, and Legal Guidelines
       </h2>
 
       <p className="service-left-content-paragraph">
-        The Indian BIS is the hallmark of quality and safety issued by the
-        Bureau of Indian Standards (BIS). Today, the ISI mark is used
-        exclusively to designate products that conform to Indian standards under
-        the official BIS certification scheme.
+      The BIS FMCS logo is issued by the Bureau of Indian Standards (BIS). It signifies that products manufactured outside India comply with relevant Indian Standards (IS) and are authorized for import and sale. The mark includes a unique license number (e.g., CM/L-XXXXXXXXXX) and the IS number. The logo must be accompanied by a unique 7 to 10-digit number (CM/L-XXXXXXX) that identifies the specific foreign manufacturing unit.
       </p>
 
       <p className="service-left-content-paragraph">
-        For a product to bear the Indian BIS or ISI mark, it must pass through a
-        rigorous BIS certification process, including lab testing, factory
-        inspection, documentation audits, and compliance checks with Indian BIS
-        guidelines.
+      For a product to bear the Indian BIS or ISI mark, it must pass through a rigorous BIS certification process, including lab testing, factory inspection, documentation audits, and compliance checks with Indian BIS guidelines.
       </p>
 
-      <p className="service-left-content-paragraph">
-        Legal Standing of the BIS certification in India
-      </p>
-
-      <p className="service-left-content-paragraph">
-        BIS license is not merely a marketing tool—it is a statutory requirement
-        for all products falling under the mandatory BIS certification scheme.{" "}
-      </p>
+   
 
       <h3 className="service-left-content-heading-three">
         According to the BIS Act, 2016 :
