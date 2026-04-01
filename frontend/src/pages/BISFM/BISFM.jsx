@@ -1023,25 +1023,7 @@ const OverviewSection = () => {
       </p>
 
 
-      <h2 className="service-left-content-heading-three">
-        Why BIS Certification is Crucial ?
-      </h2>
-
-      <p className="service-left-content-paragraph">
-          Obtaining a BIS certificate is more than a legal requirement—it's a
-          gateway to India's vast consumer market. Here are a few key reasons why
-          it's essential:
-      </p>
-
-      <PointsListWithoutHeading
-        points={[
-          "Legal Compliance: Products must comply with relevant Indian standards.",
-          "Brand Credibility: The ISI mark serves as proof of quality and boosts consumer trust.",
-          "Customs Clearance: Without a valid BIS licence, products may be rejected at customs.",
-          "Market Access: Helps foreign brands gain seamless entry and widespread acceptance in India.",
-          "Risk Mitigation: Ensures that products are safe, thus avoiding potential recalls and liability issues.",
-        ]}
-      />
+     
 
       <h2 className="service-left-content-heading-three">
         Key Features and Scopes
@@ -1061,6 +1043,26 @@ const OverviewSection = () => {
         BIS has listed over 600 products under mandatory certification, and over
         20,000 items are eligible for a voluntary BIS certificate.
       </p>
+
+      <h2 className="service-left-content-heading-three">
+        Why BIS Certification is Crucial ?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+          Obtaining a BIS certificate is more than a legal requirement—it's a
+          gateway to India's vast consumer market. Here are a few key reasons why
+          it's essential:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Legal Compliance: Products must comply with relevant Indian standards.",
+          "Brand Credibility: The ISI mark serves as proof of quality and boosts consumer trust.",
+          "Customs Clearance: Without a valid BIS licence, products may be rejected at customs.",
+          "Market Access: Helps foreign brands gain seamless entry and widespread acceptance in India.",
+          "Risk Mitigation: Ensures that products are safe, thus avoiding potential recalls and liability issues.",
+        ]}
+      />
 
       <h2 className="service-left-content-heading-three">
         Objectives or benefits of BIS Certification for Foreign Manufacturers
@@ -1235,110 +1237,7 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
-        Product Categories Requiring BIS Certificate
-      </h2>
-
-      <p className="service-left-content-paragraph">
-        More than 600 products require the ISI mark under the mandatory
-        registration scheme in India. Examples include:
-      </p>
-
-      {/* Table for Product Categories Requiring BIS Certificate */}
-      <div className="mt-6 md:mt-8 overflow-x-auto">
-        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
-          <TableHeader>
-            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
-              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                PRODUCT CATEGORY
-              </TableHead>
-              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                IS CODE
-              </TableHead>
-              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                STATUS
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow className="hover:bg-gray-50 transition-colors">
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Electrical Appliances
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                IS 302
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Mandatory
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50 transition-colors">
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Steel & Iron
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                IS 2062
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Mandatory
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50 transition-colors">
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Food Containers
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                IS 10146
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Mandatory
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50 transition-colors">
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Helmets
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                IS 4151
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Mandatory
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50 transition-colors">
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Cement
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                IS 1489
-              </TableCell>
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Mandatory
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </div>
-
-      <p className="service-left-content-paragraph">
-        Each category requires adherence to its corresponding Indian standard,
-        which is tested during the BIS certification process, complete list of
-        the products can be reached by{" "}
-        <span
-          className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
-          onClick={() => {
-            const productTable = document.getElementById("product-table");
-            if (productTable) {
-              productTable.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-          }}
-        >
-          Clicking Here
-        </span>
-      </p>
+   
 
       <h2 className="service-left-content-heading-three">
         Indian BIS vs. Other Global Certifications
@@ -1432,7 +1331,7 @@ const StandardizationSection = () => {
         BIS registration scheme is both compulsory and locally enforced.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      {/* <h2 className="service-left-content-heading-three">
         Is BIS Certification or BIS License Mandatory for Import to India?
       </h2>
 
@@ -1529,7 +1428,7 @@ const StandardizationSection = () => {
         </span>
         Click here to check if your product covered under mandatory Indian BIS
         certification scheme.
-      </p>
+      </p> */}
     </div>
   );
 };
@@ -2042,6 +1941,10 @@ const ProcessSection = () => {
           </TableBody>
         </Table>
       </div>
+
+      <h3 className="service-left-content-heading-three">
+        Simple copy of BIS FMCS certificate.
+      </h3>
 
       <img
         src={BISCertificateImage}
