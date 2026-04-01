@@ -403,7 +403,7 @@ const ServiCBFaq = () => {
                 application type. Typically, drug approvals take 6-12 months,
                 medical deviCB registrations 3-6 months, and cosmetic
                 registrations 2-4 months. Our certifications work to expedite
-                these timelines through proper documentation and regulatory
+                these timelines through proper documentation and regulatory 
                 strategy.
               </AccordionContent>
             </AccordionItem>

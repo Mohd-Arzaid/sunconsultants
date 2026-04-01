@@ -299,7 +299,14 @@ const BISFMProductTable = () => {
                 </TableCell>
               </TableRow>
             ) : (
-              currentData.map((item) => (
+              currentData.map((item) => {
+                const sectionHeadingIs =
+                  item.isSectionHeader &&
+                  (item.isNumber ?? item.sectionTitle ?? "");
+                const sectionHeadingProduct =
+                  item.isSectionHeader &&
+                  (item.product ?? item.sectionTitle ?? "");
+                return (
                 <TableRow
                   key={item.id}
                   className={
@@ -307,18 +314,18 @@ const BISFMProductTable = () => {
                   }
                 >
                   <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                    {item.sno}
+                    {item.sno ?? (item.isSectionHeader ? "\u00A0" : "")}
                   </TableCell>
                   <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
                     {item.isSectionHeader ? (
-                      <span className="font-bold">{item.isNumber}</span>
+                      <span className="font-bold">{sectionHeadingIs}</span>
                     ) : (
                       item.isNumber
                     )}
                   </TableCell>
                   <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
                     {item.isSectionHeader ? (
-                      <span className="font-bold">{item.product}</span>
+                      <span className="font-bold">{sectionHeadingProduct}</span>
                     ) : (
                       <>
                         {item.product}
@@ -429,7 +436,8 @@ const BISFMProductTable = () => {
                     )}
                   </TableCell>
                 </TableRow>
-              ))
+                );
+              })
             )}
           </TableBody>
         </Table>

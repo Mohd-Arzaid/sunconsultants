@@ -824,6 +824,13 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certification - English Page";
 
     // BISFM (FMCS - Foreign Manufacturers) - Multi-language paths
+    // BISFM PATH - English
+    if (
+      path.includes(
+        "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS FMCS Certification - English Page";
     // BISFM PATH - Indonesian
     if (
       path.includes(
@@ -1217,6 +1224,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Food Waste Disposers - English Page";
     if (path.includes("/blogs/isi-products/electric-dishwashing-machines"))
       return "BIS Certificate for Electric Dishwashing Machines - English Page";
+
+    return "Website Contact Form";
   };
 
   const [formData, setFormData] = useState({
