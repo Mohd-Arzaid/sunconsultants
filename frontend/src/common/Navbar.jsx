@@ -241,9 +241,9 @@ const Navbar = () => {
       external: true,
     },
     {
-      label: "User Login",
+      label: "Employee Login",
       icon: Briefcase,
-      href: "/employee-login",
+      href: "https://crm.bis-certifications.com/coordinator-login",
       external: false,
     },
   ];
