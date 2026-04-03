@@ -1,6 +1,7 @@
 // =============================================================================
 // BIS compulsory products — parsed from pasted HTML (desktop table only).
 // To re-parse: save raw HTML as this file, run: node scripts/parse-bis-product-html.mjs
+// Optional per-row: blogPath (internal route) — BISFM product table renders it as a Link.
 // =============================================================================
 
 export const productTableData2 = [
@@ -31024,6 +31025,7 @@ export const productTableData2 = [
     "sno": 561,
     "isNumber": "IS 302 (Part 2/Sec 31): 2009",
     "product": "Safety of household and similar electrical appliances – particular requirements – range hoods",
+    "blogPath": "/blogs/isi-products/commercial-electric-hoods",
     "notification": {
       "title": "116. Electrical Appliances for Kitchen (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-Kitchen-QCO-2023.pdf",
@@ -32074,6 +32076,150 @@ export const productTableData2 = [
     "sno": 607,
     "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
     "product": "All Electrical Appliances Vacuum Cleaners and Water Suction Cleaning Appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-electrolysers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Electrolysers",
+    "blogPath": "/blogs/isi-products/electrolysers",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-foot-warmer-heating-mats",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Foot warmers and heating mats",
+    "blogPath": "/blogs/isi-products/foot-warmer-&-heating-mats-is-302",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-air-cleaning-appliances",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Air cleaning appliances",
+    "blogPath": "/blogs/isi-products/air-cleaning-appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-clothes-dryers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Clothes dryers",
+    "blogPath": "/blogs/isi-products/clothes-dryers",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-commercial-electric-kitchen-machines",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Commercial electric kitchen machines",
+    "blogPath": "/blogs/isi-products/commercial-electric-kitchen-machines",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-commercial-electric-rinsing-sinks",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Commercial electric rinsing sinks",
+    "blogPath": "/blogs/isi-products/commercial-electric-rinsing-sinks",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-electric-dishwashing-machines",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Electric dishwashing machines",
+    "blogPath": "/blogs/isi-products/electric-dishwashing-machines",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-fabric-steamers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Fabric steamers",
+    "blogPath": "/blogs/isi-products/fabric-streamers",
     "notification": {
       "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",

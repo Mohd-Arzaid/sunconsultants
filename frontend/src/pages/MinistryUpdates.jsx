@@ -24,6 +24,19 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 25,
+    color: "#1A8781",
+    tagType: "QCO Amendment",
+    date: "March 30, 2026",
+    displayDate: "30 Mar 2026",
+    title:
+      "Linear Alkyl Benzene (LAB) QCO 2022 & 2026 Suspension Update – Complete Guide",
+    description:
+      "LAB QCO 2022 mandates BIS certification for LAB in India. Learn about the temporary suspension from 1 April to 1 July 2026, notification dated 30 March 2026, and what it means for manufacturers and importers.",
+    link: "/ministry-updates/lab-qco-suspension-2026",
+    pdfLink: "/pdf/LABQCOSuspended.pdf",
+  },
+  {
     id: 24,
     color: "#5B63E6",
     tagType: "BIS Update",

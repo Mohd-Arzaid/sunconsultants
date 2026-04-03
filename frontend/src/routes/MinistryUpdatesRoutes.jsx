@@ -102,6 +102,9 @@ const WhatisAluminiumandAluminiumAlloyProductsQuality = lazy(() =>
 const BISNotificationonRevisedStandards = lazy(() =>
   import("@/pages/MinistryUpdatesPages/BISNotificationonRevisedStandards")
 );
+const LinearAlkylBenzeneLAB = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/LinearAlkylBenzeneLAB")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -304,6 +307,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <BISNotificationonRevisedStandards />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/lab-qco-suspension-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <LinearAlkylBenzeneLAB />
           </Suspense>
         }
       />

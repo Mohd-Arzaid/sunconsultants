@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/select";
 import { Search, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useState, useMemo, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { productTableData } from "@/data/productTableData/productTableData.js";
 
 const BISFMProductTable = () => {
@@ -328,7 +329,16 @@ const BISFMProductTable = () => {
                       <span className="font-bold">{sectionHeadingProduct}</span>
                     ) : (
                       <>
-                        {item.product}
+                        {item.blogPath ? (
+                          <Link
+                            to={item.blogPath}
+                            className="text-[#1A8781] hover:underline underline-offset-2"
+                          >
+                            {item.product}
+                          </Link>
+                        ) : (
+                          item.product
+                        )}
                         {item.isDeNotified && (
                           <span className="text-red-600 ml-2">
                             De-notified from compulsory BIS certification
