@@ -307,6 +307,10 @@ import {
                   const sectionHeadingProduct =
                     item.isSectionHeader &&
                     (item.product ?? item.sectionTitle ?? "");
+                  const productDisplayText =
+                    item.id === 671 && typeof item.product === "string"
+                      ? item.product.replaceAll(", ", ",\n")
+                      : item.product;
                   return (
                   <TableRow
                     key={item.id}
@@ -334,10 +338,14 @@ import {
                               to={item.blogPath}
                               className="text-[#1A8781] hover:underline underline-offset-2"
                             >
-                              {item.product}
+                              <span className="whitespace-pre-line">
+                                {productDisplayText}
+                              </span>
                             </Link>
                           ) : (
-                            item.product
+                            <span className="whitespace-pre-line">
+                              {productDisplayText}
+                            </span>
                           )}
                           {item.isDeNotified && (
                             <span className="text-red-600 ml-2">

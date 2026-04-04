@@ -22485,7 +22485,7 @@ export const productTableData2 = [
     },
     "isDeNotified": true
   },
-  {
+  {    
     "id": 292,
     "sno": " ",
     "isNumber": "IS 12069 : 1987",
@@ -32075,7 +32075,7 @@ export const productTableData2 = [
     "id": 671,
     "sno": 607,
     "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
-    "product": "All Electrical Appliances Vacuum Cleaners and Water Suction Cleaning Appliances",
+    "product": "All Electrical Appliances, Vacuum Cleaners and Water Suction Cleaning Appliances, Spin Extractors, Cooking Ranges, Hobs, Ovens and Similar Appliances, Electrical Shavers Hair, Clippers and Similar Appliances, Tumbler Dryers, Warming Plates and Similar Appliances, Frying Pans, Deep Fat Fryers and Similar Appliances, Appliances for Heating Liquids, Massage Appliances, Electric Forced Convection Ovens, Steam Cookers and Steam-Convection Ovens, Electric Heating Tools, Electric Steam Cookers, Insect Killers, Electric Call Bells and Buzzers for Indoor Use, Electric Water Boilers, Electric Coffee Makers, Electric Bean Slicers, Electric Berryjuice Extractors, Electric Can Openers, Electric Centrifugal Juicers, Electric Churn, Electric Citrusfruit Squeezers, Electric Coffee Mills not exceeding 500g hopper capacity, Electric Cream Whippers, Electric Egg Beaters, Electric Food Processors, Electric Grain Grinders not exceeding 3l hopper capacity, Electric Graters, Electric IceCream Machines, including those for use in refrigerators and freezers, Electric Knife Sharpeners, Electric Knives, Electric Noodle Makers, Electric Potato Peelers, Electric Shredders, Electric Sieving Machines, Slicing Machines, Electric Hot Plates, Single Walled Baking Ovens, Low Speed Food Grinding Machines, Dishwashers, Floor Treatment Machines and Wet Scrubbing Machines, Food Waste Disposers, Blankets, Pads, Clothing and Similar Flexible Heating Appliances, Appliances for Skin Exposure to Optical Radiation, Commercial Electric Cooking Ranges, Ovens, Hobs and Hob Elements, Commercial Electric Doughnut Fryers and Deep Fat Fryers, Commercial Electric Griddles and Griddle Grills, Commercial Electric Multi-purpose Cooking Pans, Commercial Electric Forced Convection Ovens, Steam Cookers and Steam-Convection Ovens, Clothes Dryers and Towel Rails, Commercial Electric Boiling Pans, Commercial Electric Grillers and Toasters, Commercial Electric Appliances for Keeping Food and Crockery Warm, Commercial Electric BainsMarie, Oral Hygiene Appliances, Sauna Heating Appliances and Infrared Cabins, Surface-Cleaning Appliances for Household Use Employing Liquids or Steam, Electrical Appliances for Use with Aquariums and Garden Ponds, Commercial Electric Dishwashing Machines, Whirlpool Baths and Whirlpool Spas, Thermal Storage Room Heaters, Commercial Electric Rinsing Sinks, Commercial Electric Kitchen Machines, Air-Cleaning Appliances, Water-Bed Heaters, Fixed Immersion Heaters, Outdoor Barbecues, Foot Warmers and Heating Mats, Amusement Machines and Personal Service Machines, Toilet Appliances, Fabric Steamers, Drives for Vertically Moving Garage Doors for Residential Use, Humidifiers, Commercial Electric Hoods, Vaporizers, Gas, Oil and Solid-Fuel Burning Appliances Having Electrical Connections, Electrolysers, Beauty Care Appliances Incorporating Lasers and Intense Light Sources, Personal-eTransporters, Skin Beauty Care Appliances, Furniture with Electrically Motorized Parts, Commercial Vacuum Packaging Appliances, Hand Held Electric Engraving Tools, DC Supplied/Battery-Operated Vacuum Cleaners, DC Supplied/Battery-Operated Shavers, Trimmers, Clippers and Similar Appliances, DC Supplied/Battery-Operated Massage Appliances, DC Supplied/Battery-Operated Blenders, Juicers, DC Supplied/Battery-Operated Toothbrush and Other Oral Hygiene Appliances, DC Supplied/Battery-Operated Foot Warmer and Heating Mats,DC Supplied/Battery-Operated Air Purifier ",
     "notification": {
       "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
@@ -32220,6 +32220,42 @@ export const productTableData2 = [
     "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
     "product": "Fabric steamers",
     "blogPath": "/blogs/isi-products/fabric-streamers",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-dc-supplied-battery-operated-air-purifier",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "DC Supplied/Battery-Operated Air Purifier",
+    "blogPath": "/blogs/isi-products/battery-operated-air-purifier-is-302",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-furniture-with-electrically-motorized-parts",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Furniture with Electrically Motorized Parts",
+    "blogPath": "/blogs/isi-products/furniture-with-electrically-motorized-parts",
     "notification": {
       "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
@@ -32483,6 +32519,7 @@ export const productTableData2 = [
     "sno": 620,
     "isNumber": "IS 14928:2001",
     "product": "Textiles — Composite Synthetic Fibre Ropes — Specification",
+    "blogPath": "/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928",
     "notification": {
       "title": "131. Ropes and Cordages (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Ropes-and-Cordages-QCO-2024-1.pdf",
@@ -32515,7 +32552,8 @@ export const productTableData2 = [
     "id": 687,
     "sno": 623,
     "isNumber": "IS 4572:2022",
-    "product": "Fibre Ropes — Polyamide — 3-, 4-, 8- and 12- Strand Ropes",
+    "product": "Fibre Ropes Polyamide",
+    "blogPath": "/blogs/isi-products/fibre-ropes-polyamide-is-4572",
     "notification": {
       "title": "131. Ropes and Cordages (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Ropes-and-Cordages-QCO-2024-1.pdf",
@@ -32691,6 +32729,7 @@ export const productTableData2 = [
     "sno": 630,
     "isNumber": "IS 302-2-76:1999",
     "product": "Safety of Household and similar electrical appliances – Part 2 particular requirement Sec 76 electric fence energizers",
+    "blogPath": "/blogs/isi-products/electric-fence-energizers-is-302-2-76",
     "notification": {
       "title": "133. Electric Fence Energizers (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/11/Electric-Fence-Energizer-QCO-2024.pdf",
@@ -32720,6 +32759,7 @@ export const productTableData2 = [
     "sno": 631,
     "isNumber": "IS 2083:2024",
     "product": "Flashlight – Specification",
+    "blogPath": "/blogs/isi-products/flashlight-is-2083",
     "notification": {
       "title": "134. Flashlight (Quality Control) Order, 2025",
       "link": "https://bis.gov.in/wp-content/uploads/2025/01/Flashlight-Quality-Control-Order-2025.pdf",
@@ -32803,7 +32843,8 @@ export const productTableData2 = [
     "id": 702,
     "sno": 635,
     "isNumber": "IS 17632: 2022",
-    "product": "General purpose chairs and stools",
+    "product": "Chair & Stool",
+    "blogPath": "/blogs/isi-products/chairs-and-stools-is-17632",
     "notification": {
       "title": "136. Furniture (Quality Control) Order, 2025",
       "link": "https://bis.gov.in/wp-content/uploads/2025/02/Furniture-QCO-17-02-2025.pdf",
@@ -32879,6 +32920,7 @@ export const productTableData2 = [
     "sno": 638,
     "isNumber": "IS 17635: 2022",
     "product": "Beds",
+    "blogPath": "/blogs/isi-products/beds-is-17635",
     "notification": {
       "title": "136. Furniture (Quality Control) Order, 2025",
       "link": "https://bis.gov.in/wp-content/uploads/2025/02/Furniture-QCO-17-02-2025.pdf",
@@ -32904,6 +32946,7 @@ export const productTableData2 = [
     "sno": 639,
     "isNumber": "IS 17636: 2022",
     "product": "Bunk beds",
+    "blogPath": "/blogs/isi-products/bunk-beds-is-17636",
     "notification": {
       "title": "136. Furniture (Quality Control) Order, 2025",
       "link": "https://bis.gov.in/wp-content/uploads/2025/02/Furniture-QCO-17-02-2025.pdf",
