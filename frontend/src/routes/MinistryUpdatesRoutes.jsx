@@ -105,6 +105,9 @@ const BISNotificationonRevisedStandards = lazy(() =>
 const LinearAlkylBenzeneLAB = lazy(() =>
   import("@/pages/MinistryUpdatesPages/LinearAlkylBenzeneLAB")
 );
+const CookwareUtensilsandCans = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/CookwareUtensilsandCans")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -315,6 +318,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <LinearAlkylBenzeneLAB />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/cookware-qco-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <CookwareUtensilsandCans />
           </Suspense>
         }
       />

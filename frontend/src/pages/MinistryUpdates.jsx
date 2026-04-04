@@ -24,11 +24,24 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 26,
+    color: "#5B63E6",
+    tagType: "QCO Amendment",
+    date: "April 02, 2026",
+    displayDate: "02 Apr 2026",
+    title:
+      "Cookware QCO 2026: BIS Certification for Utensils, Sinks & Cans | ISI Mark Guide",
+    description:
+      "Complete guide to Cookware, Utensils and Cans QCO 2026 issued by the Government of India. Learn BIS certification requirements, implementation dates, cost, exemptions, and compliance process for manufacturers.",
+    link: "/ministry-updates/cookware-qco-2026",
+    pdfLink: "/pdf/1775115401067.pdf",
+  },
+  {
     id: 25,
     color: "#1A8781",
     tagType: "QCO Amendment",
-    date: "March 30, 2026",
-    displayDate: "30 Mar 2026",
+    date: "April 02, 2026",
+    displayDate: "02 Apr 2026",
     title:
       "Linear Alkyl Benzene (LAB) QCO 2022 & 2026 Suspension Update – Complete Guide",
     description:
