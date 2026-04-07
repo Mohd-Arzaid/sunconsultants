@@ -100,6 +100,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-for-led-luminaires-2026",
     "/ministry-updates/cookware-qco-2026",
     "/ministry-updates/lab-qco-suspension-2026",
+    "/ministry-updates/bis-qco-2026-is-302-part-1-2024-electrical-appliances",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -987,6 +988,13 @@ const ContactFormServicesRightSideContentEng = () => {
 
     if (path.includes("/ministry-updates/lab-qco-suspension-2026"))
       return "Linear Alkyl Benzene (LAB) QCO 2022 & 2026 Suspension Update - Ministry Updates (English)";
+
+    if (
+      path.includes(
+        "/ministry-updates/bis-qco-2026-is-302-part-1-2024-electrical-appliances"
+      )
+    )
+      return "BIS QCO 2026 for Electrical Appliances - IS 302 (Part 1): 2024 - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

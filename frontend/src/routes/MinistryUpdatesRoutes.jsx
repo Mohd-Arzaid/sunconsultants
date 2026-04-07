@@ -108,6 +108,9 @@ const LinearAlkylBenzeneLAB = lazy(() =>
 const CookwareUtensilsandCans = lazy(() =>
   import("@/pages/MinistryUpdatesPages/CookwareUtensilsandCans")
 );
+const BISQCO2026forElectrical = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/BISQCO2026forElectrical")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -326,6 +329,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <CookwareUtensilsandCans />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-qco-2026-is-302-part-1-2024-electrical-appliances"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <BISQCO2026forElectrical />
           </Suspense>
         }
       />

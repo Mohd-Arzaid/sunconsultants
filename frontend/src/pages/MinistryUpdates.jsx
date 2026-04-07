@@ -24,6 +24,19 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 27,
+    color: "#1A8781",
+    tagType: "QCO Amendment",
+    date: "April 06, 2026",
+    displayDate: "06 Apr 2026",
+    title:
+      "BIS QCO 2026 for Electrical Appliances - IS 302 (Part 1): 2024 Extended | Complete Guide",
+    description:
+      "The Government of India has issued the Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2026. Learn applicability, implementation timeline, certification process, covered products, and exemptions.",
+    link: "/ministry-updates/bis-qco-2026-is-302-part-1-2024-electrical-appliances",
+    pdfLink: "/pdf/newbisextention2026.pdf",
+  },
+  {
     id: 26,
     color: "#5B63E6",
     tagType: "QCO Amendment",

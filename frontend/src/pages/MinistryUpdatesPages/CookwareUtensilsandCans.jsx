@@ -9,13 +9,16 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { SlashIcon } from "lucide-react";
-import React from "react";
+import React, { lazy, Suspense, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
-import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+
+const VideoSection = lazy(
+  () => import("@/components/manual/home-page-sections/VideoSection")
+);
 
 const CookwareUtensilsandCans = () => {
   return (
@@ -24,7 +27,15 @@ const CookwareUtensilsandCans = () => {
       <BreadcrumbContent />
       <MainContent />
       <Services />
-      <VideoSection />
+      <Suspense
+        fallback={
+          <div className="max-w-full mx-auto px-4 py-8 md:px-12 md:pt-16 md:pb-2 bg-white">
+            <div className="h-8 w-48 bg-gray-200 rounded mx-auto animate-pulse" />
+          </div>
+        }
+      >
+        <VideoSection />
+      </Suspense>
       <FooterEng />
     </div>
   );
@@ -125,11 +136,13 @@ const MainContent = () => {
 };
 
 const MainContentLeft = () => {
+  const [shouldLoadPdf, setShouldLoadPdf] = useState(false);
+
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       
-
+       
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4 text-left">
           Cookware, Utensils and Cans for Foods and Beverages (QCO) Quality
           Control Order, 2026
@@ -660,15 +673,32 @@ const MainContentLeft = () => {
       </div>
 
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        <iframe
-          src="/pdf/1775115401067.pdf"
-          title="Cookware, Utensils and Cans for Foods and Beverages (Quality Control) Order, 2026 PDF"
-          className="w-full h-[800px] bg-white"
-          style={{
-            boxShadow:
-              "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-          }}
-        />
+        {!shouldLoadPdf ? (
+          <div className="p-6 md:p-8 bg-white flex flex-col items-center gap-4">
+            <p className="text-sm md:text-base text-gray-700 text-center font-geist">
+              Load the official Gazette PDF on demand to improve mobile page
+              performance.
+            </p>
+            <button
+              type="button"
+              onClick={() => setShouldLoadPdf(true)}
+              className="px-5 py-2.5 rounded-md bg-[#1A8781] text-white font-medium hover:bg-[#156d68] transition-colors"
+            >
+              Load Official PDF
+            </button>
+          </div>
+        ) : (
+          <iframe
+            src="/pdf/1775115401067.pdf"
+            title="Cookware, Utensils and Cans for Foods and Beverages (Quality Control) Order, 2026 PDF"
+            loading="lazy"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        )}
       </div>
     </div>
   );
@@ -706,6 +736,10 @@ const Services = () => {
                 src="/services-images/BIS.jpg"
                 alt="BIS Logo"
                 title="BIS Logo"
+                width="130"
+                height="130"
+                loading="lazy"
+                decoding="async"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -723,6 +757,10 @@ const Services = () => {
                 src="/services-images/CDSCO.jpg"
                 alt="CDSCO Logo"
                 title="CDSCO Logo"
+                width="130"
+                height="130"
+                loading="lazy"
+                decoding="async"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -740,6 +778,10 @@ const Services = () => {
                 src="/services-images/BISCRS.jpg"
                 alt="BISCRS logo"
                 title="BISCRS logo"
+                width="130"
+                height="130"
+                loading="lazy"
+                decoding="async"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -757,6 +799,10 @@ const Services = () => {
                 src="/services-images/PlasticWasteManagement.jpg"
                 alt="PlasticWasteManagement"
                 title="PlasticWasteManagement"
+                width="130"
+                height="130"
+                loading="lazy"
+                decoding="async"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -774,6 +820,10 @@ const Services = () => {
                 src="/services-images/EPRCertificate.jpg"
                 alt="EPRCertificate logo"
                 title="EPRCertificate logo"
+                width="130"
+                height="130"
+                loading="lazy"
+                decoding="async"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -791,6 +841,10 @@ const Services = () => {
                 src="/services-images/LMPC.jpg"
                 alt="LMPC logo"
                 title="LMPC logo"
+                width="130"
+                height="130"
+                loading="lazy"
+                decoding="async"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -808,6 +862,10 @@ const Services = () => {
                 src="/services-images/BIS.jpg"
                 alt="BIS Logo"
                 title="BIS Logo"
+                width="130"
+                height="130"
+                loading="lazy"
+                decoding="async"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -825,6 +883,10 @@ const Services = () => {
                 src="/services-images/ISIMark.jpg"
                 alt="ISIMark logo"
                 title="ISIMark logo"
+                width="130"
+                height="130"
+                loading="lazy"
+                decoding="async"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
