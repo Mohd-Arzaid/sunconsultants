@@ -432,6 +432,61 @@ const MainContentLeft = () => {
           Each product category has its own applicable IS Number, notified
           separately by BIS.
         </p>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          You can also read:
+        </h3>
+        <div className="mb-4 ">
+          <ul className="list-disc ml-6 space-y-2 text-gray-600 text-base font-geist">
+            <li>
+              <Link
+                to="/blogs/isi-products/work-chairs-is-17631"
+                className="text-blue-700 hover:underline"
+              >
+                BIS Certificate for Work Chairs (IS 17631)
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blogs/isi-products/chairs-and-stools-is-17632"
+                className="text-blue-700 hover:underline"
+              >
+                BIS Certificate for Chairs and Stools (IS 17632)
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blogs/isi-products/tables-&-desks-is-17633"
+                className="text-blue-700 hover:underline"
+              >
+                BIS Certificate for Tables and Desks (IS 17633)
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blogs/isi-products/storage-unit-is-17634"
+                className="text-blue-700 hover:underline"
+              >
+                BIS Certificate for Storage Units (IS 17634)
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blogs/isi-products/beds-is-17635"
+                className="text-blue-700 hover:underline"
+              >
+                BIS Certificate for Beds (IS 17635)
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blogs/isi-products/bunk-beds-is-17636"
+                className="text-blue-700 hover:underline"
+              >
+                BIS Certificate for Bunk Beds (IS 17636)
+              </Link>
+            </li>
+          </ul>
+        </div>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
