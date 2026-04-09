@@ -2515,7 +2515,7 @@ export const notifications = [
     title: "BIS QCO Notification for “Primary Lead”",
     description:
       "BIS certification is now mandatory for Primary Lead (IS 27:2023) from 17th October 2025. All manufacturers and importers must get a BIS license and use the ISI mark to sell in India.",
-    pdfUrl: "/pdf/ sun-certification-primary-lead.pdf",
+    pdfUrl: "/pdf/sun-certification-primary-lead.pdf",
     location: "New Delhi",
     subHeading: `Primary Lead`,
     ISNumber: `IS No. – 27:2023`,
