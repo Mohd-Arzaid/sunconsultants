@@ -24,8 +24,8 @@ const MobileNav = () => {
     email: "",
     phoneNumber: "",
     message: "",
-    pageUrl: "Mobile Device Pop-up",
-    pageName: window.location.pathname === "/" ? "Home Page" : "Other Page",
+    pageUrl: window.location.href,
+    pageName: document.title || "Mobile Contact Form",
   });
 
   const { fullName, email, phoneNumber, message } = formData;
@@ -65,9 +65,15 @@ const MobileNav = () => {
     }
 
     try {
+      const payload = {
+        ...formData,
+        pageUrl: window.location.href,
+        pageName: document.title || "Mobile Contact Form",
+      };
+
       const response = await axios.post(
         `${BASE_URL}/contact/submit-contact`,
-        formData
+        payload
       );
 
       if (!response.data.success) {
@@ -80,8 +86,8 @@ const MobileNav = () => {
         email: "",
         phoneNumber: "",
         message: "",
-        pageUrl: "Mobile Device Pop-up",
-        pageName: window.location.pathname === "/" ? "Home Page" : "Other Page",
+        pageUrl: window.location.href,
+        pageName: document.title || "Mobile Contact Form",
       });
     } catch (error) {
       const errorMessage =

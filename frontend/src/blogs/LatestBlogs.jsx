@@ -672,6 +672,27 @@ const blogs = [
     date: "12 March 2026",
     image: "/blogImages/BISLicenseforOralHygieneAppliances.png",
   },
+  {
+    id: 65,
+    color: "#8B5CF6",
+    title: "BIS Certification for Dishwashers – Complete Guide",
+    description:
+      "Get BIS Certificate for Dishwashers under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/dishwashers",
+    date: "10 April 2026",
+    image: "/blogImages/BISLicenseforDishwashers.webp",
+  },
+  {
+    id: 66,
+    color: "#0ea5e9",
+    title:
+      "BIS Certification for Food Grinding Machines - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Food Grinding Machines under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/food-grinding-machines",
+    date: "28 March 2026",
+    image: "/blogImages/BISLicenseforFoodGrindingMachines.webp",
+  },
 ];
 
 // =============================

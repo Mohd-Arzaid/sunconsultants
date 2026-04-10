@@ -177,6 +177,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/vaporizers",
     "/blogs/isi-products/commercial-electric-hoods",
     "/blogs/isi-products/humidifiers",
+    "/blogs/isi-products/food-grinding-machines",
     "/blogs/isi-products/fabric-streamers",
     "/blogs/isi-products/toilet-appliances",
     "/blogs/isi-products/welded-pipes-&-tubes-is-17876",
@@ -219,6 +220,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/clothes-dryers",
     "/blogs/isi-products/food-waste-disposers",
     "/blogs/isi-products/electric-dishwashing-machines",
+    "/blogs/isi-products/dishwashers",
   ];
 
   // Check if current path should show these components
@@ -1134,6 +1136,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Commercial Electric Hoods - English Page";
     if (path.includes("/blogs/isi-products/humidifiers"))
       return "BIS Certificate for Humidifiers - English Page";
+    if (path.includes("/blogs/isi-products/food-grinding-machines"))
+      return "BIS Certificate for Food Grinding Machines - English Page";
     if (path.includes("/blogs/isi-products/fabric-streamers"))
       return "BIS Certificate for Fabric Steamers - English Page";
     if (path.includes("/blogs/isi-products/toilet-appliances"))
@@ -1240,6 +1244,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Food Waste Disposers - English Page";
     if (path.includes("/blogs/isi-products/electric-dishwashing-machines"))
       return "BIS Certificate for Electric Dishwashing Machines - English Page";
+    if (path.includes("/blogs/isi-products/dishwashers"))
+      return "BIS Certificate for Dishwashers - English Page";
 
     return "Website Contact Form";
   };

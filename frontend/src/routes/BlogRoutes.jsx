@@ -331,6 +331,9 @@ const BISCertificateforCommercialElectricHoods = lazy(() =>
 const BISCertificateforHumidifiers = lazy(() =>
   import("@/blogs/BISCertificationforHumidifiers")
 );
+const BISCertificateforFoodGrindingMachines = lazy(() =>
+  import("@/blogs/BISCertificationforFoodGrindingMachines")
+);
 const BISCertificateforFabricSteamers = lazy(() =>
   import("@/blogs/BISCertificationforFabricSteamers")
 );
@@ -354,6 +357,9 @@ const BISCertificationforThermalStorageRoomHeaters = lazy(() =>
 );
 const BISCertificationforElectricDishwashingMachines = lazy(() =>
   import("@/blogs/BISCertificationforElectricDishwashingMachines")
+);
+const BISCertificationforDishwashers = lazy(() =>
+  import("@/blogs/BISCertificationforDishwashers")
 );
 const BISCertificationforOutdoorBarbecues = lazy(() =>
   import("@/blogs/BISCertificationforOutdoorBarbecues")
@@ -1807,6 +1813,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         }
       />
       <Route
+        path="/blogs/isi-products/food-grinding-machines"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforFoodGrindingMachines />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/toilet-appliances"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -2955,6 +2969,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforElectricDishwashingMachines />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/dishwashers"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforDishwashers />
           </Suspense>
         }
       />
