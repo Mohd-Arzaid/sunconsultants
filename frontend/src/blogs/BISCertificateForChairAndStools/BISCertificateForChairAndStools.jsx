@@ -251,6 +251,16 @@ const MainContentLeft = () => {
           and benefits.
         </p>
 
+        <p className="text-gray-600 text-base font-geist mb-4">
+      
+          <Link
+            to="/bis-qco-updates/bis-certificate-for-chairs-and-stools"
+            className="text-blue-700 hover:underline"
+          >
+           Also read the QCO Notification for Chairs and Stools (IS 17632)
+          </Link>
+        </p>
+
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

@@ -251,6 +251,16 @@ const MainContentLeft = () => {
           under the Bureau of Indian Standards (BIS).
         </p>
 
+        <p className="text-gray-600 text-base font-geist mb-4">
+         
+          <Link
+            to="/bis-qco-updates/bis-certificate-for-bunk-beds"
+            className="text-blue-700 hover:underline"
+          >
+            Also read the QCO Notification for Bunk Beds (IS 17636)
+          </Link>
+        </p>
+
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

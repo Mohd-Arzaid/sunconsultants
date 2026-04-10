@@ -129,6 +129,72 @@ const NotificationContent = ({ notification }) => {
         Please review the attached document, If you have any questions or need
         assistance, Our Team is here to Help.
       </p>
+
+      {notification.subHeading === "Tables and desks" && (
+        <p className="text-gray-600 text-base font-geist mt-2">
+          <Link
+            to="/blogs/isi-products/tables-&-desks-is-17633"
+            className="text-blue-700 hover:underline"
+          >
+            BIS Certificate for Tables and Desks (IS 17633)
+          </Link>
+        </p>
+      )}
+
+      {notification.subHeading === "General purpose chairs and stools" && (
+        <p className="text-gray-600 text-base font-geist mt-2">
+          <Link
+            to="/blogs/isi-products/chairs-and-stools-is-17632"
+            className="text-blue-700 hover:underline"
+          >
+            BIS Certificate for Chairs and Stools (IS 17632)
+          </Link>
+        </p>
+      )}
+
+      {notification.subHeading === "Work Chairs" && (
+        <p className="text-gray-600 text-base font-geist mt-2">
+          <Link
+            to="/blogs/isi-products/work-chairs-is-17631"
+            className="text-blue-700 hover:underline"
+          >
+            BIS Certificate for Work Chairs (IS 17631)
+          </Link>
+        </p>
+      )}
+
+      {notification.subHeading === "Storage units" && (
+        <p className="text-gray-600 text-base font-geist mt-2">
+          <Link
+            to="/blogs/isi-products/storage-unit-is-17634"
+            className="text-blue-700 hover:underline"
+          >
+            BIS Certificate for Storage Unit (IS 17634)
+          </Link>
+        </p>
+      )}
+
+      {notification.subHeading === "Beds" && (
+        <p className="text-gray-600 text-base font-geist mt-2">
+          <Link
+            to="/blogs/isi-products/beds-is-17635"
+            className="text-blue-700 hover:underline"
+          >
+            BIS Certificate for Beds (IS 17635)
+          </Link>
+        </p>
+      )}
+
+      {notification.subHeading === "Bunk beds" && (
+        <p className="text-gray-600 text-base font-geist mt-2">
+          <Link
+            to="/blogs/isi-products/bunk-beds-is-17636"
+            className="text-blue-700 hover:underline"
+          >
+            BIS Certificate for Bunk Beds (IS 17636)
+          </Link>
+        </p>
+      )}
     </div>
   );
 };
@@ -253,67 +319,6 @@ const NotificationDetailLeft = ({ notification }) => {
 
         {/* Notification Content */}
         <NotificationContent notification={notification} />
-
-        {notification.subHeading === "Work Chairs" && (
-          <p className="text-gray-600 text-base font-geist mb-4">
-            <Link
-              to="/blogs/isi-products/work-chairs-is-17631"
-              className="text-blue-700 hover:underline"
-            >
-              BIS Certificate for Work Chairs (IS 17631)
-            </Link>
-          </p>
-        )}
-        {notification.subHeading === "General purpose chairs and stools" && (
-          <p className="text-gray-600 text-base font-geist mb-4">
-            <Link
-              to="/blogs/isi-products/chairs-and-stools-is-17632"
-              className="text-blue-700 hover:underline"
-            >
-              BIS Certificate for Chairs and Stools (IS 17632)
-            </Link>
-          </p>
-        )}
-        {notification.subHeading === "Tables and desks" && (
-          <p className="text-gray-600 text-base font-geist mb-4">
-            <Link
-              to="/blogs/isi-products/tables-&-desks-is-17633"
-              className="text-blue-700 hover:underline"
-            >
-              BIS Certificate for Tables and Desks (IS 17633)
-            </Link>
-          </p>
-        )}
-        {notification.subHeading === "Storage units" && (
-          <p className="text-gray-600 text-base font-geist mb-4">
-            <Link
-              to="/blogs/isi-products/storage-unit-is-17634"
-              className="text-blue-700 hover:underline"
-            >
-              BIS Certificate for Storage Unit (IS 17634)
-            </Link>
-          </p>
-        )}
-        {notification.subHeading === "Bunk beds" && (
-          <p className="text-gray-600 text-base font-geist mb-4">
-            <Link
-              to="/blogs/isi-products/bunk-beds-is-17636"
-              className="text-blue-700 hover:underline"
-            >
-              BIS Certificate for Bunk Beds (IS 17636)
-            </Link>
-          </p>
-        )}
-        {notification.subHeading === "Beds" && (
-          <p className="text-gray-600 text-base font-geist mb-4">
-            <Link
-              to="/blogs/isi-products/beds-is-17635"
-              className="text-blue-700 hover:underline"
-            >
-              BIS Certificate for Beds (IS 17635)
-            </Link>
-          </p>
-        )}
 
         {/* PDF Viewer */}
         <PDFViewer notification={notification} />
