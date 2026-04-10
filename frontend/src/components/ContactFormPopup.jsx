@@ -17,6 +17,8 @@ import { useLocation } from "react-router-dom";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
+const POPUP_FORM_NAME = "Popup Contact Form";
+
 const ContactFormPopup = ({ open, setOpen }) => {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -26,16 +28,20 @@ const ContactFormPopup = ({ open, setOpen }) => {
     phoneNumber: "",
     message: "",
     pageUrl: window.location.href,
-    pageName: document.title,
+    pageName: POPUP_FORM_NAME,
   });
 
   const { fullName, email, phoneNumber, message } = formData;
 
   useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      pageUrl: window.location.href,
+    }));
+
     if (location.pathname === "/contact") {
       return;
     }
-    // Set a timeout to open the popup after 5 seconds
     const timer = setTimeout(() => {
       setOpen(true);
     }, 5000);
@@ -90,11 +96,10 @@ const ContactFormPopup = ({ open, setOpen }) => {
     }
 
     try {
-      // Ensure backend gets all required fields on every submit
       const payload = {
         ...formData,
-        pageUrl: window.location?.href || formData.pageUrl || "",
-        pageName: document?.title || formData.pageName || "Popup Contact Form",
+        pageUrl: window.location.href,
+        pageName: POPUP_FORM_NAME,
       };
 
       const response = await axios.post(
@@ -118,7 +123,7 @@ const ContactFormPopup = ({ open, setOpen }) => {
         phoneNumber: "",
         message: "",
         pageUrl: window.location.href,
-        pageName: document.title,
+        pageName: POPUP_FORM_NAME,
       });
 
       // Close the dialog after successful submission
