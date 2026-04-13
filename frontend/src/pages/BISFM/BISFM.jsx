@@ -47,6 +47,7 @@ const BISFM = () => {
     <div className="relative">
       <MetaTags />
       <FAQSchemaInjector />
+      <BISFMCSRatingSchema />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -98,6 +99,47 @@ const MetaTags = () => {
         item: canonicalUrl,
       },
     ],
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Sun Certifications India",
+    url: "https://bis-certifications.com/",
+    logo: "https://bis-certifications.com/company-logo/company-logo.webp",
+    sameAs: [
+      "https://www.linkedin.com/company/sun-certifications-india/",
+      "https://www.instagram.com/suncertificationsindia",
+      "https://bis-certifications.com/",
+    ],
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    headline: "BIS Certification for foreign manufactures",
+    description: description,
+    image:
+      "https://bis-certifications.com/services-main-images/BISCertificationforForeignManufacaturers.webp",
+    author: {
+      "@type": "Person",
+      name: "Dhruv Aggarwal",
+      url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Sun Certifications India",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bis-certifications.com/company-logo/company-logo.webp",
+      },
+    },
+    datePublished: "2025-09-15",
+    dateModified: "2026-04-01",
   };
 
   const faqStructuredData = {
@@ -250,6 +292,18 @@ const MetaTags = () => {
           __html: JSON.stringify(breadcrumbStructuredData),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
     </Helmet>
   );
 };
@@ -397,6 +451,59 @@ const FAQSchemaInjector = () => {
       if (el) el.remove();
     };
   }, [faqSchema]);
+
+  return null;
+};
+
+const BISFMCSRatingSchema = () => {
+  const ratingSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      name: "BIS FMCS Certification Consultant",
+      image:
+        "https://bis-certifications.com/services-main-images/BISCertificationforForeignManufacaturers.webp",
+      description:
+        "The Bureau of Indian Standards offers the Foreign Manufacturers Certification Scheme (FMCS) for foreign manufacturers to get BIS certification for selling products in India.",
+      brand: {
+        "@type": "Brand",
+        name: "Sun Certifications India",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        bestRating: "5",
+        worstRating: "1",
+        ratingCount: "55017",
+        reviewCount: "55017",
+      },
+      review: {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: "Ramesh Kumar",
+        },
+      },
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bis-fmcs-rating-schema";
+    script.textContent = JSON.stringify(ratingSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bis-fmcs-rating-schema");
+      if (el) el.remove();
+    };
+  }, [ratingSchema]);
 
   return null;
 };
@@ -961,6 +1068,15 @@ const MainContentLeft = () => {
           <h1 className="service-left-content-heading-two">
           BIS Certification under FMCS Scheme
           </h1>
+
+          <div className="flex justify-center mt-[20px] md:mt-[26px]">
+            <img
+              src="/services-main-images/BISCertificationforForeignManufacaturers.webp"
+              alt="BIS Certification for Foreign Manufacturers"
+              title="BIS Certification for Foreign Manufacturers"
+              className="max-w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
 
           <h2 className="service-left-content-heading-three">
             What is Indian BIS?

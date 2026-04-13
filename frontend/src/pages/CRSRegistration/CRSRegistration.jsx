@@ -827,6 +827,15 @@ const MainContentLeft = () => {
             What is BIS Registration?
           </h2>
 
+          <div className="flex justify-center mt-[20px] md:mt-[26px]">
+            <img
+              src="/services-main-images/CRSRegistration.webp"
+              alt="CRS Registration"
+              title="CRS Registration"
+              className="max-w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+
           <p className="service-left-content-paragraph">
             The Bureau of Indian Standards (BIS) is the national standardization
             body in India and works under the Ministry of Consumer Affairs, Food

@@ -213,6 +213,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/hand-held-electric-engraving-tools",
     "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances",
     "/blogs/isi-products/commercial-electric-kitchen-machines",
+    "/blogs/isi-products/electric-hot-plates",
     "/blogs/isi-products/commercial-electric-rinsing-sinks",
     "/blogs/isi-products/thermal-storage-room-heaters",
     "/blogs/isi-products/whirlpool-baths-and-whirlpool-spas",
@@ -1230,6 +1231,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Shavers, Trimmers & Clippers - English Page";
     if (path.includes("/blogs/isi-products/commercial-electric-kitchen-machines"))
       return "BIS Certificate for Commercial Electric Kitchen Machines - English Page";
+    if (path.includes("/blogs/isi-products/electric-hot-plates"))
+      return "BIS Certificate for Electric Hot Plates - English Page";
     if (path.includes("/blogs/isi-products/commercial-electric-rinsing-sinks"))
       return "BIS Certificate for Commercial Electric Rinsing Sinks - English Page";
     if (path.includes("/blogs/isi-products/thermal-storage-room-heaters"))

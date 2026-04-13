@@ -693,6 +693,17 @@ const blogs = [
     date: "28 March 2026",
     image: "/blogImages/BISLicenseforFoodGrindingMachines.webp",
   },
+  {
+    id: 67,
+    color: "#EA580C",
+    title:
+      "BIS Certificate for Electric Hot Plates - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Electric Hot Plates under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/electric-hot-plates",
+    date: "11 April 2026",
+    image: "/blogImages/BISLicenseforElectricHotPlates.webp",
+  },
 ];
 
 // =============================

@@ -346,6 +346,9 @@ const BISCertificationforFixedImmersionHeaters = lazy(() =>
 const BISCertificationforCommercialElectricKitchenMachines = lazy(() =>
   import("@/blogs/BISCertificationforCommercialElectricKitchenMachines")
 );
+const BISCertificationforElectricHotPlates = lazy(() =>
+  import("@/blogs/BISCertificationforElectricHotPlates")
+);
 const BISCertificationforCommercialElectricRinsingSinks = lazy(() =>
   import("@/blogs/BISCertificationforCommercialElectricRinsingSinks")
 );
@@ -2913,6 +2916,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforCommercialElectricKitchenMachines />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/electric-hot-plates"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforElectricHotPlates />
           </Suspense>
         }
       />
