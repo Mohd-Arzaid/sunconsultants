@@ -51,6 +51,7 @@ const SchemeXEnglish = () => {
     <div className="relative">
       {/* Scheme X English Meta Tags */}
       <SchemeXEnglishMetaTags />
+      <BISSchemeXSchema />
       {/* Scheme X English Breadcrumb */}
       <SchemeXEnglishBreadcrumb />
       {/* Scheme X English Hero Section */}
@@ -70,6 +71,8 @@ const SchemeXEnglish = () => {
 export default SchemeXEnglish;
 
 const SchemeXEnglishMetaTags = () => {
+  const canonicalUrl =
+    "https://bis-certifications.com/indian-bis-certification-under-scheme-x";
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -85,6 +88,172 @@ const SchemeXEnglishMetaTags = () => {
         position: 2,
         name: "Indian Bis Certification Under Scheme-X",
         item: window.location.href,
+      },
+    ],
+  };
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Sun Certifications India",
+    url: "https://bis-certifications.com/",
+    logo: "https://bis-certifications.com/company-logo/company-logo.webp",
+    sameAs: [
+      "https://www.linkedin.com/company/sun-certifications-india/",
+      "https://www.instagram.com/suncertificationsindia",
+      "https://bis-certifications.com/",
+    ],
+  };
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    headline: "BIS Scheme X Certification",
+    description:
+      "BIS Scheme X Certification is required to ensure quality and safety of low voltage switchgear, control gear, machinery, and electrical equipment.",
+    image:
+      "https://bis-certifications.com/services-main-images/scheme-x-certification.webp",
+    author: {
+      "@type": "Person",
+      name: "Dhruv Aggarwal",
+      url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Sun Certifications India",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bis-certifications.com/company-logo/company-logo.webp",
+      },
+    },
+    datePublished: "2025-09-15",
+    dateModified: "2026-04-01",
+  };
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is Scheme X under BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Scheme X is a conformity assessment scheme introduced by the Indian BIS for machinery and electrical equipment. It ensures compliance with stringent safety and technical standards as specified in the Omnibus Technical Regulation.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Scheme X different from the ISI mark certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. The ISI mark is generally for consumer goods and basic product compliance, while Scheme X applies to complex and industrial-grade products that require advanced testing and certification through a BIS certificate or BIS license.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who needs to apply for Scheme X certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Manufacturers and importers of machinery and electrical equipment listed under the Omnibus Technical Regulation must apply for Scheme X and obtain a valid BIS certification to legally sell or distribute their products in India. Global manufacturers or foreign manufacturers intending to sell product in India must also comply with these regulations.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the cost of BIS Scheme X certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at suncertificationsindia@gmail.com.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take to get a BIS licence under Scheme X?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The timeline varies depending on documentation, testing requirements, and factory inspections. Typically, it takes 4-6 weeks from the date of successful BIS registration and application submission for Indian manufacturers and 60-90 days for foreign manufacturers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can MSMEs also apply for BIS certification under Scheme X?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Absolutely. In fact, the Indian BIS encourages MSMEs to apply for a BIS licence or certificate of conformity under Scheme X to boost quality, compliance, and competitiveness in the industrial sector.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is BIS certification under Scheme X mandatory for exports?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Products manufactured exclusively for export are exempt under the Omnibus Technical Regulation. However, products meant for Indian markets must be certified under Scheme X.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the validity of the BIS license under Scheme X?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A BIS licence under Scheme X is generally valid for 3-6 years and must be renewed accordingly. Renewal involves payment of the annual BIS certification fee and may require re-evaluation depending on changes in product scope or standards.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can foreign manufacturers apply for Scheme X certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, foreign manufacturers can apply for Scheme X certification through an authorized Indian representative. The Indian BIS requires a factory inspection, which may take 3 days for foreign applicants, along with standard BIS registration and testing processes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is a Technical File and why is it required?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A Technical File is a detailed compliance dossier required under Scheme X. It includes manufacturing processes, product details, test reports, and quality control documents. It supports the product's conformity to relevant Indian Standards during the BIS certification process.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How is Scheme X related to the Omnibus Technical Regulation?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Omnibus Technical Regulation mandates the use of Scheme X for specific categories of machinery and electrical equipment in India. Products listed under the regulation must be certified under Scheme X to obtain a valid BIS certificate or BIS licence.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a BIS certificate under Scheme X be revoked?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. The Indian BIS can suspend or cancel a BIS licence or certificate under Scheme X if non-compliance is found during surveillance or if the product fails to meet required Indian Standards.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the difference between BIS license and BIS certificate under Scheme X?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A BIS license is typically issued to Indian manufacturers, while a BIS certificate of conformity (CoC) is often issued to foreign manufacturers or for specific cases. Both serve the same purpose-ensuring product compliance under Scheme X.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is the ISI mark allowed for products certified under Scheme X?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Products under Scheme X do not carry the ISI mark. Instead, they display the BIS standard mark relevant to the certification scheme, as governed by the Indian BIS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I know if my machinery requires Scheme X certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Check the official list in the Omnibus Technical Regulation or consult with a BIS consultant to verify if your machinery falls under mandatory Scheme X certification requirements.",
+        },
       },
     ],
   };
@@ -138,8 +307,64 @@ const SchemeXEnglishMetaTags = () => {
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbStructuredData)}
       </script>
+      <script type="application/ld+json">
+        {JSON.stringify(organizationSchema)}
+      </script>
+      <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(faqStructuredData)}
+      </script>
     </Helmet>
   );
+};
+
+const BISSchemeXSchema = () => {
+  const ratingSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      name: "BIS Scheme X Certification Consultant",
+      image:
+        "https://bis-certifications.com/services-main-images/scheme-x-certification.webp",
+      description:
+        "BIS Scheme X Certification is required to ensure quality and safety of low voltage switchgear, control gear, machinery, and electrical equipment.",
+      brand: {
+        "@type": "Brand",
+        name: "Sun Certifications India",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        bestRating: "5",
+        worstRating: "1",
+        ratingCount: "55017",
+        reviewCount: "55017",
+      },
+      review: {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+      },
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bis-scheme-x-rating-schema";
+    script.textContent = JSON.stringify(ratingSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bis-scheme-x-rating-schema");
+      if (el) el.remove();
+    };
+  }, [ratingSchema]);
+
+  return null;
 };
 const SchemeXEnglishBreadcrumb = () => {
   return (

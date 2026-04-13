@@ -70,6 +70,46 @@ const ISIMarkMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Sun Certifications India",
+    url: "https://bis-certifications.com/",
+    logo: "https://bis-certifications.com/company-logo/company-logo.webp",
+    sameAs: [
+      "https://www.linkedin.com/company/sun-certifications-india/",
+      "https://www.instagram.com/suncertificationsindia",
+      "https://bis-certifications.com/",
+    ],
+  };
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://bis-certifications.com/a-guide-to-bis-certification-indian-bis",
+    },
+    headline: "BIS Certification for Indian manufactures",
+    description:
+      "ISI Mark Certification is mandatory to manufacture and sell products that are listed in the Product Certification Scheme of BIS.",
+    image:
+      "https://bis-certifications.com/services-main-images/bis-certification-for-indian-manufacturers.webp",
+    author: {
+      "@type": "Person",
+      name: "Dhruv Aggarwal",
+      url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Sun Certifications India",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bis-certifications.com/company-logo/company-logo.webp",
+      },
+    },
+    datePublished: "2025-09-15",
+    dateModified: "2026-04-01",
+  };
 
   return (
     <Helmet>
@@ -86,6 +126,18 @@ const ISIMarkMetaTags = () => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
     </Helmet>
   );
 };

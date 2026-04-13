@@ -50,6 +50,7 @@ const CRSRegistration = () => {
     <div className="relative">
       <MetaTags />
       <FAQSchemaInjector />
+      <BISCRSRatingSchema />
       <BreadcrumbContent />
       <HeroSection />
       <IndexSection />
@@ -100,6 +101,45 @@ const MetaTags = () => {
       },
     ],
   };
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Sun Certifications India",
+    url: "https://bis-certifications.com/",
+    logo: "https://bis-certifications.com/company-logo/company-logo.webp",
+    sameAs: [
+      "https://www.linkedin.com/company/sun-certifications-india/",
+      "https://www.instagram.com/suncertificationsindia",
+      "https://bis-certifications.com/",
+    ],
+  };
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    headline: "BIS CRS Registration",
+    description:
+      "BIS registration is getting a license from the BIS for Electronic and IT Products that conforms with the applicable Indian Standards under CRS scheme.",
+    image: "https://bis-certifications.com/services-main-images/CRSRegistration.webp",
+    author: {
+      "@type": "Person",
+      name: "Dhruv Aggarwal",
+      url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Sun Certifications India",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bis-certifications.com/company-logo/company-logo.webp",
+      },
+    },
+    datePublished: "2025-09-15",
+    dateModified: "2026-04-01",
+  };
 
   return (
     <Helmet>
@@ -122,6 +162,18 @@ const MetaTags = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbStructuredData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
         }}
       />
     </Helmet>
@@ -271,6 +323,58 @@ const FAQSchemaInjector = () => {
       if (el) el.remove();
     };
   }, [faqSchema]);
+
+  return null;
+};
+
+const BISCRSRatingSchema = () => {
+  const ratingSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      name: "BIS CRS Certification Consultant",
+      image: "https://bis-certifications.com/services-main-images/CRSRegistration.webp",
+      description:
+        "BIS registration is getting a license from the BIS for Electronic and IT Products that conforms with the applicable Indian Standards under CRS scheme.",
+      brand: {
+        "@type": "Brand",
+        name: "Sun Certifications India",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        bestRating: "5",
+        worstRating: "1",
+        ratingCount: "55017",
+        reviewCount: "55017",
+      },
+      review: {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: "Ramesh Kumar",
+        },
+      },
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bis-crs-rating-schema";
+    script.textContent = JSON.stringify(ratingSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bis-crs-rating-schema");
+      if (el) el.remove();
+    };
+  }, [ratingSchema]);
 
   return null;
 };

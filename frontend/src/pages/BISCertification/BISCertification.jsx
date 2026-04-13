@@ -48,6 +48,7 @@ const BISCertification = () => {
     <div className="relative w-full">
       <BISCertificationMetaTags />
       <BISCertificationFAQSchemaInjector />
+      <BISCertificationSchema />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -79,6 +80,46 @@ const BISCertificationMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Sun Certifications India",
+    url: "https://bis-certifications.com/",
+    logo: "https://bis-certifications.com/company-logo/company-logo.webp",
+    sameAs: [
+      "https://www.linkedin.com/company/sun-certifications-india/",
+      "https://www.instagram.com/suncertificationsindia",
+      "https://bis-certifications.com/",
+    ],
+  };
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://bis-certifications.com/what-is-bis-certificate-indian-bis",
+    },
+    headline: "BIS Certification in India for Importers and Manufacturers",
+    description:
+      "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.",
+    image:
+      "https://bis-certifications.com/services-main-images/indian-bis-certification.webp",
+    author: {
+      "@type": "Person",
+      name: "Dhruv Aggarwal",
+      url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Sun Certifications India",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bis-certifications.com/company-logo/company-logo.webp",
+      },
+    },
+    datePublished: "2025-09-15",
+    dateModified: "2026-04-01",
+  };
 
   // Set title immediately when component mounts (synchronously, before browser paints)
   useLayoutEffect(() => {
@@ -101,6 +142,18 @@ const BISCertificationMetaTags = () => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
     </Helmet>
   );
 };
@@ -153,6 +206,55 @@ const BISCertificationFAQSchemaInjector = () => {
       if (el) el.remove();
     };
   }, [faqSchema]);
+
+  return null;
+};
+
+const BISCertificationSchema = () => {
+  const ratingSchema = useMemo(
+    () => ({
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      name: "BIS Certification Consultant",
+      image:
+        "https://bis-certifications.com/services-main-images/indian-bis-certification.webp",
+      description:
+        "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.",
+      brand: {
+        "@type": "Brand",
+        name: "Sun Certifications India",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        bestRating: "5",
+        worstRating: "1",
+        ratingCount: "55017",
+        reviewCount: "55017",
+      },
+      review: {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+      },
+    }),
+    []
+  );
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "bis-certification-rating-schema";
+    script.textContent = JSON.stringify(ratingSchema);
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("bis-certification-rating-schema");
+      if (el) el.remove();
+    };
+  }, [ratingSchema]);
 
   return null;
 };
