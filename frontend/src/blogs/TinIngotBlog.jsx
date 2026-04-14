@@ -129,12 +129,12 @@ const TinIngotBlogMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    From 17th October 2025, the Bureau of Indian Standard (BIS) has made it mandatory for all manufacturers of Refined Zinc to obtain BIS Certification under IS 209:2024. This move is a part of the government&apos;s ongoing efforts to ensure product quality, safety, and compliance across industries. Whether you are a large-scale manufacturer or a small-scale producer, obtaining a BIS Certificate is now compulsory to continue manufacturing, selling, or distributing refined zinc in the Indian market.
+                    From 17th October 2025, the Bureau of Indian Standard (BIS) has made it mandatory for all manufacturers of Tin Ingot to obtain BIS Certification under IS 209:2024. This move is a part of the government&apos;s ongoing efforts to ensure product quality, safety, and compliance across industries. Whether you are a large-scale manufacturer or a small-scale producer, obtaining a BIS Certificate is now compulsory to continue manufacturing, selling, or distributing Tin Ingot in the Indian market.
                 </p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    In this blog, we&apos;ll cover everything you need to know about BIS Certification for Refined Zinc —from its meaning, application process, required documents, costs involved, and the role of BIS consultants in India.
+                    In this blog, we&apos;ll cover everything you need to know about BIS Certification for Tin Ingot —from its meaning, application process, required documents, costs involved, and the role of BIS consultants in India.
                 </p>
 
                 {/* What is BIS Certificate Section */}
@@ -155,12 +155,12 @@ const TinIngotBlogMainContentLeft = () => {
                         <span className="font-medium text-[#1e1e1e]">BIS Certificate Meaning:</span> It proves that a product meets the standards of safety, reliability, and quality as defined by the BIS.
                     </li>
                     <li>
-                        For refined zinc, this certification ensures that manufacturers adhere to the quality parameters defined under IS 209:2024.
+                        For Tin Ingot, this certification ensures that manufacturers adhere to the quality parameters defined under IS 209:2024.
                     </li>
                 </ul>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    Without this certification, selling or distributing refined zinc in India will not be permitted after the compliance deadline.
+                    Without this certification, selling or distributing Tin Ingot in India will not be permitted after the compliance deadline.
                 </p>
 
 

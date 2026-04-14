@@ -14,7 +14,7 @@ import {
   TableBody,
   TableCell,
   TableHead,
-  TableHeader,
+  TableHeader, 
   TableRow,
 } from "@/components/ui/table";
 import Footer from "@/common/Footer";
@@ -77,7 +77,7 @@ const Tec = () => {
             "@type": "BreadcrumbList",
             itemListElement: [
               {
-                "@type": "ListItem",
+                "@type": "ListItem", 
                 position: 1,
                 name: "Home",
                 item: "https://bis-certifications.com",
