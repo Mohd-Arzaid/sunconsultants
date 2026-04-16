@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const BISCertificationforVaccumCleaners = () => {
+const BISCertificationforSlicingMachines = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +30,25 @@ const BISCertificationforVaccumCleaners = () => {
   );
 };
 
-export default BISCertificationforVaccumCleaners;
+export default BISCertificationforSlicingMachines;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Vaccum Cleaners | Complete Guide";
+    "BIS Certificate for Slicing Machines - Process, Cost, Documentation";
   const ogTitle =
-    "BIS Certificate for Vaccum Cleaners | Complete Guide";
+    "BIS Certificate for Slicing Machines - Process, Cost, Documentation";
   const twitterTitle =
-    "BIS Certificate for Vaccum Cleaners | Complete Guide";
+    "BIS Certificate for Slicing Machines - Process, Cost, Documentation";
   const metaDescription =
-    "Get BIS Certificate for Vaccum Cleaners under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Slicing Machines under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Vaccum Cleaners as per IS 302 (Part 1):2024. Process, Cost, Documents, Testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Slicing Machines as per IS 302 (Part 1):2024. Process, Cost, Documents, Testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Vaccum Cleaners under IS 302 (Part 1):2024. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Slicing Machines under IS 302 (Part 1):2024. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Vaccum Cleaners, BIS License for Vaccum Cleaners, IS 302 (Part 1):2024, BIS Certification for Vaccum Cleaners";
+    "BIS Certificate for Slicing Machines, BIS License for Slicing Machines, IS 302 (Part 1):2024 , BIS Certification for Slicing Machines";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/battery-operated-vaccum-cleaners";
+    "https://bis-certifications.com/blogs/isi-products/slicing-machines";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -71,56 +71,6 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://bis-certifications.com/blogs/isi-products/battery-operated-vaccum-cleaners"
-          },
-          "headline": "BIS Certification for Vaccum Cleaners",
-          "description": "BIS Certification for Vacuum Cleaners and Water Suction Cleaning Appliances is mandatory under IS 302 (Part 1): 2024. ",
-          "image": "https://bis-certifications.com/blogImages/BISLicenseforVaccumCleaners.png",
-          "author": {
-            "@type": "Person",
-            "name": "Dhruv Aggarwal",
-            "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Sun Certifications India",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://bis-certifications.com/company-logo/company-logo.webp"
-            }
-          },
-          "datePublished": "2026-02-01",
-          "dateModified": "2026-04-14"
-        })}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "Product",
-          "name": "BIS Certification for Vacuum Cleaners",
-          "image": "https://bis-certifications.com/blogImages/BISLicenseforVaccumCleaners.png",
-          "description": "BIS Certification for Vacuum Cleaners and Water Suction Cleaning Appliances is mandatory under IS 302 (Part 1): 2024.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Sun Certifications India"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "bestRating": "5",
-            "worstRating": "1",
-            "ratingCount": "55017"
-          }
-        })}
-      </script>
     </Helmet>
   );
 };
@@ -153,7 +103,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Vaccum Cleaners – IS 302 (Part 1):2024
+                    BIS Certificate for Slicing Machines
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -185,263 +135,336 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Vaccum Cleaners – Complete Guide to IS 302 (Part 1):2024
+          BIS Certification for Slicing Machines – Complete Guide
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforVaccumCleaners.png"
-            title="BIS License for Vaccum Cleaners"
-            alt="BIS Certificate for Vaccum Cleaners - IS 302 (Part 1):2024 BIS Certification"
+            src="/blogImages/BISLicenseforSlicingMachines.webp"
+            title="BIS License for Slicing Machines"
+            alt="BIS Certificate for Slicing Machines - IS 302 (Part 1):2024 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Battery operated vacuum cleaners sold in India must comply with IS 302 (Part 1):2024 and obtain BIS approval before sale. A valid BIS Certificate for Vaccum Cleaners confirms electrical insulation safety, battery protection, overheating control, and mechanical safety. Without BIS certification, manufacturing, importing, or selling cordless vacuum cleaners in India is legally prohibited.
+          BIS certification for Slicing Machines confirms that electrically
+          operated cutting equipment complies with IS 302 (Part 1):2024 safety
+          requirements. It ensures protection against electrical hazards, blade
+          exposure risks, and overheating, making these machines safe for food
+          processing, commercial kitchens, and industrial usage in India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Cordless and battery operated vacuum cleaners are now among the fastest-growing home appliances in India. From compact handheld cleaners to stick-type cordless models and robotic cleaning devices, consumers increasingly prefer portable cleaning solutions for homes, offices, hotels, cars, and commercial spaces. These products rely on rechargeable batteries, high-speed motors, air-suction turbines, and electronic control circuits — all operating in close proximity to dust, moisture, and human contact.
+          Slicing machines are widely used across India in restaurants, food
+          processing units, butcher shops, bakeries, and even modern home
+          kitchens. These machines are designed to cut food items such as
+          vegetables, fruits, meat, cheese, and bread into uniform slices with
+          speed and precision. Their efficiency makes them essential in both
+          small-scale and large-scale food operations.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Because these appliances combine electricity, heat generation, mechanical motion, and battery chemistry, they pose potential safety risks if poorly designed. Overheating motors, insulation failure, charger faults, battery thermal runaway, or damaged wiring can lead to electric shock, burns, fire hazards, or property damage.
+          However, slicing machines are fundamentally different from many other
+          kitchen appliances. They combine electrical systems with sharp rotating
+          blades, which creates a dual-risk environment—electrical hazards and
+          mechanical injury risks. Unlike grinders or mixers, slicing machines
+          expose cutting edges that operate at high speeds, making user safety
+          critically dependent on design and build quality.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To minimize these risks and ensure consumer safety, the Government of India requires manufacturers and importers to obtain a BIS Certificate for Vaccum Cleaners under IS 302 (Part 1):2024 before selling in the Indian market. A valid BIS Certification for Vaccum Cleaners confirms that the appliance has undergone standardized safety testing and factory inspection as per national electrical safety regulations.
+          In real-world usage, these machines are often operated continuously,
+          especially in commercial environments. Improper insulation, faulty
+          wiring, or weak blade guards can result in electric shock, overheating,
+          or severe physical injuries. Additionally, exposure to moisture, food
+          residue, and cleaning processes further increases the complexity of
+          safe operation.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide explains the BIS License for Vaccum Cleaners in a practical, expert manner — covering certification process, required documents, testing requirements, cost considerations, compliance responsibilities, and regulatory consequences.
+          To address these risks, compliance with IS 302 (Part 1):2024 is
+          required for electrical safety. This standard ensures that slicing
+          machines are designed to withstand operational stress, maintain
+          insulation integrity, and provide adequate protection against
+          accidental contact with live parts.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Obtaining a BIS Certification for Slicing Machines demonstrates that
+          the product has undergone comprehensive safety evaluation. For
+          manufacturers and importers, securing a BIS License for Slicing
+          Machines is essential for entering the Indian market while ensuring
+          that the product is safe for end users.
+        </p>
+
+        <div className="mb-6 p-4 md:p-5 rounded-lg bg-white border border-teal-200/80 shadow-sm space-y-3 text-base font-geist">
+          <Link
+            to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            className="flex items-center gap-2 text-teal-700 font-medium hover:text-teal-900 transition-colors group"
+          >
+            <span className="shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-teal-100 text-teal-700 group-hover:bg-teal-200 transition-colors">
+              →
+            </span>
+            <span className="underline underline-offset-2">
+              Check complete details about documentation, cost, and process for foreign manufacturer
+            </span>
+          </Link>
+          <Link
+            to="/a-guide-to-bis-certification-indian-bis"
+            className="flex items-center gap-2 text-teal-700 font-medium hover:text-teal-900 transition-colors group"
+          >
+            <span className="shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-teal-100 text-teal-700 group-hover:bg-teal-200 transition-colors">
+              →
+            </span>
+            <span className="underline underline-offset-2">
+              Check complete details about documentation, cost, and process for Indian manufacturer
+            </span>
+          </Link>
+        </div>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Understanding BIS Certification for Slicing Machines
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Slicing machines operate through a combination of electric motors and
+          precision-engineered blades. The motor drives the blade at a controlled
+          speed, allowing uniform slicing of food materials. While this improves
+          efficiency, it introduces risks that require careful control.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS Certification for Slicing Machines focuses on evaluating
+          whether the appliance can perform its function safely under various
+          operating conditions.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          For example, in a commercial kitchen, a slicing machine may be used
+          continuously for cutting vegetables or meat. During this process, the
+          motor generates heat, and the blade operates at high speed. If
+          insulation is inadequate, electrical faults may occur. If blade guards
+          are poorly designed, users may accidentally come into contact with
+          moving parts.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Certification ensures that:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Electrical components are properly insulated</li>
+          <li>Motors operate within safe temperature limits</li>
+          <li>Blade assemblies are securely enclosed</li>
+          <li>
+            Safety interlocks prevent operation when improperly assembled
+          </li>
+          <li>The machine remains stable during operation</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          A BIS Certificate for Slicing Machines verifies that these aspects
+          have been tested and meet safety requirements.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Another critical aspect is hygiene and cleaning. Slicing machines are
+          frequently cleaned with water or cleaning agents. Certification
+          ensures that electrical components are protected against moisture
+          exposure during cleaning processes.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          Applicable BIS Standard for Slicing Machines
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is the official product safety approval framework administered by the Bureau of Indian Standards. It ensures regulated products meet Indian safety and quality requirements before entering the market.
+          The applicable standard is{" "}
+          <strong>IS 302 (Part 1):2024</strong>, which defines safety
+          requirements for electrical appliances used in domestic and similar
+          environments.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
+          Scope of the Standard
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          This standard applies to appliances powered by electricity and used
+          for tasks such as food preparation, cutting, and processing. Slicing
+          machines fall within this scope due to their electrical operation and
+          intended usage. It addresses safety concerns such as:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Protection against electric shock</li>
+          <li>Resistance to heat and mechanical stress</li>
+          <li>Safe operation during continuous use</li>
+          <li>Prevention of accidental contact with hazardous components</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Product Categories Covered
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Within the slicing machine category, the standard applies to:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Electric vegetable slicers</li>
+          <li>Meat slicing machines</li>
+          <li>Bread slicing machines</li>
+          <li>Commercial food slicers</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Safety and Performance Objectives
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard ensures that machines:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Operate safely under load conditions</li>
+          <li>Maintain insulation integrity</li>
+          <li>Prevent overheating</li>
+          <li>Provide reliable performance</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Design and Testing Principles
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS certificate is a government authorization confirming a product complies with an Indian Standard. After approval, manufacturers can affix the ISI mark on the product.
+          Manufacturers must incorporate protective enclosures, stable
+          structures, and durable materials. Testing verifies these features
+          under simulated usage conditions. Compliance is required to obtain a
+          BIS Licence for Slicing Machines.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Battery Operated Vaccum Cleaners
+          Why BIS Certification is Mandatory for Slicing Machines
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 302 (Part 1):2024 — Safety of Household and Similar Electrical Appliances
+          Safety Risks Related to the Product
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This standard defines safety requirements for electrical appliances including cordless vacuum cleaners.
+          Slicing machines involve rotating blades that can cause severe injuries
+          if not properly guarded. Combined with electrical components, the risk
+          increases significantly.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Scope
+          Consumer Protection
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Covers:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Users rely on these machines for daily operations in kitchens and food
+          businesses. Certification ensures safe and reliable performance.
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Rechargeable vacuum cleaners</li>
-          <li>Cordless handheld cleaners</li>
-          <li>Stick vacuum cleaners</li>
-          <li>Portable cleaning appliances</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Safety Intent
+          Regulatory Enforcement in India
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Ensures protection from:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Authorities regulate electrical appliances to prevent unsafe products
+          from entering the market.
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Electric shock</li>
-          <li>Fire hazards</li>
-          <li>Overheating motors</li>
-          <li>Mechanical injury</li>
-          <li>Battery failure</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Who Must Comply
+          Market Access Requirements
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturers in India</li>
-          <li>Importers</li>
-          <li>Foreign brands supplying India</li>
-          <li>Private label sellers</li>
-        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Certified products are preferred by distributors, retailers, and
+          commercial buyers.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Brand Credibility
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Certification enhances trust and positions the product as safe and
+          reliable.
+        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Vaccum Cleaners
+          Step-by-Step BIS Certification Process for Slicing Machines
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Consumer Safety Risks
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Uncertified cleaners may cause:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Electric shock during use</li>
-          <li>Battery explosion while charging</li>
-          <li>Motor overheating</li>
-          <li>Fire hazard from dust ignition</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Government Compliance
+          Applicability &amp; Standard Identification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Indian BIS for Vaccum Cleaners requires mandatory certification prior to sale.
+          Determine whether the slicing machine falls under IS 302 (Part
+          1):2024 based on its electrical and mechanical features.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Legal Implications
+          BIS Online Application Submission
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Non-compliance can result in:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Submit application with product specifications, technical details,
+          and manufacturing information.
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Seizure</li>
-          <li>Penalties</li>
-          <li>Import rejection</li>
-          <li>Legal prosecution</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Market Benefits
+          Product Sample Testing as per Slicing Machines
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Certification enables:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Samples are tested for electrical safety, mechanical stability, and
+          performance.
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Retail distribution</li>
-          <li>Marketplace listing</li>
-          <li>Consumer trust</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Vaccum Cleaners
-        </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Applicability & Standard Identification
+          Factory Inspection &amp; Quality Audit
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Confirm:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Inspectors verify manufacturing processes and quality control systems.
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Battery rating</li>
-          <li>Charger type</li>
-          <li>Motor power</li>
-          <li>Appliance category</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Online Application Process
+          Grant of BIS License and ISI Mark
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS application process for Vaccum Cleaners includes:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          After approval, the manufacturer receives the BIS License for Slicing
+          Machines.
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Online registration</li>
-          <li>Document upload</li>
-          <li>Fee payment</li>
-          <li>Test request submission</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The bis certificate cost for Vaccum Cleaners depends on:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Number of models</li>
-          <li>Testing complexity</li>
-          <li>Factory location</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Cost includes:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Testing fee</li>
-          <li>Inspection fee</li>
-          <li>License fee</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Product Sample Testing
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Testing includes:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Insulation resistance</li>
-          <li>Leakage current</li>
-          <li>Heating test</li>
-          <li>Abnormal operation</li>
-          <li>Battery safety</li>
-          <li>Mechanical stability</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Factory Inspection & Audit
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS verifies:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Production process</li>
-          <li>Quality control</li>
-          <li>Safety testing facilities</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Grant of BIS License & ISI Mark
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          After approval:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>License issued</li>
-          <li>ISI marking allowed</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers must maintain quality and comply with periodic audits.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certification Cost Structure
+        </h2>
+
         <p className="text-gray-600 text-base font-geist mb-3">
-          Includes:
+          The bis certification cost for Slicing Machines depends on:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Surveillance audit</li>
-          <li>Renewal</li>
-          <li>Market sampling</li>
+          <li>product complexity</li>
+          <li>number of models</li>
+          <li>testing requirements</li>
+          <li>inspection charges</li>
         </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The cost of bis certification for Slicing Machines varies accordingly.
+        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -453,56 +476,66 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Manufacturer Documents
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license</li>
-          <li>Manufacturing process</li>
-          <li>Machinery details</li>
-        </ul>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Company registration and manufacturing details
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Company registration</li>
-          <li>GST</li>
-          <li>Brand authorization</li>
-        </ul>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Authorization letters and compliance declarations
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Circuit diagrams</li>
-          <li>Battery specifications</li>
-          <li>User manual</li>
-        </ul>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Circuit diagrams, product specifications, blade design details
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           BIS Application Documents
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application forms</li>
-          <li>Undertakings</li>
-        </ul>
-
         <p className="text-gray-600 text-base font-geist mb-4">
-          These form bis certification documents for Vaccum Cleaners.
+          Forms and supporting documents
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Testing Requirements as per IS 302 (Part 1):2024
+        </h2>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Safety Tests
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Evaluate insulation and protection against electric shock
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Testing Requirements
+          Performance Tests
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory tests:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Assess slicing efficiency and motor performance
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Electric strength</li>
-          <li>Temperature rise</li>
-          <li>Mechanical strength</li>
-          <li>Battery charging safety</li>
-          <li>Abnormal operation</li>
-          <li>Dust ingress protection</li>
-        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Durability Tests
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ensure long-term operation without failure
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Quality Verification Tests
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Check consistency in manufacturing. Testing must be conducted in BIS
+          recognized laboratories.
+        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -512,115 +545,149 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Vaccum Cleaners under IS 302 (Part 1):2024 is essential for legally selling cordless cleaning appliances in India. BIS Certification for Vaccum Cleaners confirms electrical and mechanical safety, while the BIS License for Vaccum Cleaners ensures regulatory compliance and consumer trust.
+          Slicing machines are essential tools in food preparation, but their
+          combination of electrical operation and sharp cutting mechanisms makes
+          safety a critical concern.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For manufacturers and importers, early certification prevents regulatory risk and enables reliable market entry into India&apos;s rapidly expanding home appliance sector.
+          Obtaining a BIS Certification for Slicing Machines under IS 302 (Part
+          1):2024 ensures that these machines meet essential safety requirements.
+          A valid BIS License for Slicing Machines allows manufacturers and
+          importers to confidently introduce their products into the Indian
+          market.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          By following the correct bis certification process for Slicing
+          Machines, preparing proper documentation, and ensuring successful
+          testing, businesses can secure a BIS Certificate for Slicing Machines
+          and establish a strong, compliant presence in the industry.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Vaccum Cleaners
+          FAQs – BIS Certification for Slicing Machines
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              1. Is BIS certification mandatory for cordless vacuum cleaners?
+              1. Why is BIS Certification important for slicing machines with
+              exposed blades?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes. All battery-operated vacuum cleaners must comply with IS 302 (Part 1):2024 before sale in India.
+              Slicing machines use sharp rotating blades that can cause severe
+              injury if not properly enclosed. BIS certification ensures that
+              protective guards, interlocks, and safety mechanisms are in place.
+              It verifies that the machine does not operate unless all safety
+              components are correctly positioned. This is crucial in commercial
+              kitchens where operators handle machines frequently and quickly.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              2. How long does certification take?
+              2. How does BIS Certification ensure operator safety during
+              slicing operations?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Typically 4–8 weeks depending on testing and inspection readiness.
+              Certification evaluates safety features such as blade guards,
+              emergency stop mechanisms, and stable design. It ensures that
+              users cannot accidentally touch moving blades and that the machine
+              stops immediately if a fault occurs. This reduces the risk of
+              injuries during operation.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              3. Can importers apply?
+              3. Are meat slicing machines and vegetable slicers covered under
+              the same certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Foreign manufacturers apply through an authorized Indian representative.
+              Yes, both fall under electrical slicing machines and must comply
+              with IS 302 (Part 1):2024. However, testing may vary based on
+              usage conditions, such as load capacity and cleaning requirements.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              4. What if product fails testing?
+              4. What electrical risks are evaluated in slicing machines?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Design corrections and retesting are required.
+              Testing includes insulation, leakage current, and protection
+              against short circuits. It ensures that users are not exposed to
+              electrical hazards during operation or cleaning.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              5. Is factory inspection required?
+              5. How does BIS Certification address cleaning and hygiene safety?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS must verify manufacturing capability.
+              Slicing machines are frequently washed. Certification ensures that
+              electrical components are protected against moisture and cleaning
+              agents.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              6. Can multiple models be covered?
+              6. What happens if a slicing machine fails BIS testing?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Similar variants may be included after evaluation.
+              The manufacturer must modify the design, fix safety issues, and
+              resubmit the product for testing.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              7. What is validity of license?
+              7. Can multiple slicing machine models be certified together?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Valid with periodic renewal and surveillance.
+              Yes, if they share similar design and safety features.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              8. Is online application compulsory?
+              8. Is certification required for imported slicing machines?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS applications are digital.
+              Yes, imported machines must comply with Indian standards.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              9. Are battery tests included?
+              9. How long does the certification process take?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, mandatory.
+              It may take several weeks to months depending on testing and
+              documentation.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              10. Does certification improve sales?
+              10. What is the BIS certification cost for slicing machines?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, improves customer confidence and platform acceptance.
+              The cost depends on testing complexity, product type, and number
+              of models.
             </p>
           </div>
         </div>
 
         <ManyUsersAlsoRead />
 
-        <FaqAuthorEng questionNumber={1} />
+        <FaqAuthorEng questionNumber={4} />
       </div>
     </div>
   );

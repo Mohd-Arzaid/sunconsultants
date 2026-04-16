@@ -704,6 +704,17 @@ const blogs = [
     date: "11 April 2026",
     image: "/blogImages/BISLicenseforElectricHotPlates.webp",
   },
+  {
+    id: 68,
+    color: "#DC2626",
+    title:
+      "BIS Certificate for Slicing Machines - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Slicing Machines under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/slicing-machines",
+    date: "16 April 2026",
+    image: "/blogImages/BISLicenseforSlicingMachines.webp",
+  },
 ];
 
 // =============================

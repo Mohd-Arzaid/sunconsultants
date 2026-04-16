@@ -38,6 +38,56 @@ const TinIngotBlog = () => {
 
                 {/* Canonical URL */}
                 <link rel="canonical" href="https://bis-certifications.com/bis-certificate-for-tin-ingots" />
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BlogPosting",
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://bis-certifications.com/bis-certificate-for-tin-ingots"
+                        },
+                        "headline": "BIS Certification for Tin Ingot",
+                        "description": "BIS Certification is Mandatory for Tin Ingots as per IS 26:1992. This specification is to guarantee tin ingots used for soldering, electronics, electroplating, alloys and food as well meet quality and purity demands.",
+                        "image": "https://bis-certifications.com/blogImages/BISCertificationforTinIngots.png",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Dhruv Aggarwal",
+                            "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Sun Certifications India",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://bis-certifications.com/company-logo/company-logo.webp"
+                            }
+                        },
+                        "datePublished": "2026-02-01",
+                        "dateModified": "2026-04-14"
+                    })}
+                </script>
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "BIS Certification for Tin Ingot",
+                        "image": "https://bis-certifications.com/blogImages/BISCertificationforTinIngots.png",
+                        "description": "BIS Certification is Mandatory for Tin Ingots as per IS 26:1992. This specification is to guarantee tin ingots used for soldering, electronics, electroplating, alloys and food as well meet quality and purity demands.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Sun Certifications India"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "bestRating": "5",
+                            "worstRating": "1",
+                            "ratingCount": "55017"
+                        }
+                    })}
+                </script>
             </Helmet>
 
             <TinIngotBlogBreadcrumb />

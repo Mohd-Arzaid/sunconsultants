@@ -91,18 +91,6 @@ const SchemeXEnglishMetaTags = () => {
       },
     ],
   };
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Sun Certifications India",
-    url: "https://bis-certifications.com/",
-    logo: "https://bis-certifications.com/company-logo/company-logo.webp",
-    sameAs: [
-      "https://www.linkedin.com/company/sun-certifications-india/",
-      "https://www.instagram.com/suncertificationsindia",
-      "https://bis-certifications.com/",
-    ],
-  };
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -307,9 +295,6 @@ const SchemeXEnglishMetaTags = () => {
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbStructuredData)}
       </script>
-      <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
-      </script>
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       <script type="application/ld+json">
         {JSON.stringify(faqStructuredData)}
@@ -339,14 +324,6 @@ const BISSchemeXSchema = () => {
         worstRating: "1",
         ratingCount: "55017",
         reviewCount: "55017",
-      },
-      review: {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
       },
     }),
     []

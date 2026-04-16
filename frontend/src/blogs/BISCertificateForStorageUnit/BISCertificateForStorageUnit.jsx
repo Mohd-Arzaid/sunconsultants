@@ -76,6 +76,56 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/storage-unit-is-17634"
+          },
+          "headline": "BIS Certification for Storage Units",
+          "description": "BIS certification is mandatory for storage units in India under IS 17634:2022 to ensure quality, safety, and performance, with mandatory compliance. ",
+          "image": "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforStorageUnits.png",
+          "author": {
+            "@type": "Person",
+            "name": "Dhruv Aggarwal",
+            "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Sun Certifications India",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://bis-certifications.com/company-logo/company-logo.webp"
+            }
+          },
+          "datePublished": "2026-02-01",
+          "dateModified": "2026-04-14"
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "BIS Certification for Storage Units",
+          "image": "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBunkBeds.png",
+          "description": "BIS certification is mandatory for storage units in India under IS 17634:2022 to ensure quality, safety, and performance, with mandatory compliance.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Sun Certifications India"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "55017"
+          }
+        })}
+      </script>
     </Helmet>
   );
 };

@@ -101,18 +101,6 @@ const MetaTags = () => {
       },
     ],
   };
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Sun Certifications India",
-    url: "https://bis-certifications.com/",
-    logo: "https://bis-certifications.com/company-logo/company-logo.webp",
-    sameAs: [
-      "https://www.linkedin.com/company/sun-certifications-india/",
-      "https://www.instagram.com/suncertificationsindia",
-      "https://bis-certifications.com/",
-    ],
-  };
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -162,12 +150,6 @@ const MetaTags = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbStructuredData),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
         }}
       />
       <script
@@ -347,18 +329,6 @@ const BISCRSRatingSchema = () => {
         worstRating: "1",
         ratingCount: "55017",
         reviewCount: "55017",
-      },
-      review: {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
-        author: {
-          "@type": "Person",
-          name: "Ramesh Kumar",
-        },
       },
     }),
     []

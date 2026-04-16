@@ -222,6 +222,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/food-waste-disposers",
     "/blogs/isi-products/electric-dishwashing-machines",
     "/blogs/isi-products/dishwashers",
+    "/blogs/isi-products/slicing-machines",
   ];
 
   // Check if current path should show these components
@@ -1249,6 +1250,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Electric Dishwashing Machines - English Page";
     if (path.includes("/blogs/isi-products/dishwashers"))
       return "BIS Certificate for Dishwashers - English Page";
+    if (path.includes("/blogs/isi-products/slicing-machines"))
+      return "BIS Certificate for Slicing Machines - English Page";
 
     return "Website Contact Form";
   };

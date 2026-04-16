@@ -80,18 +80,6 @@ const BISCertificationMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Sun Certifications India",
-    url: "https://bis-certifications.com/",
-    logo: "https://bis-certifications.com/company-logo/company-logo.webp",
-    sameAs: [
-      "https://www.linkedin.com/company/sun-certifications-india/",
-      "https://www.instagram.com/suncertificationsindia",
-      "https://bis-certifications.com/",
-    ],
-  };
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -142,12 +130,6 @@ const BISCertificationMetaTags = () => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -231,14 +213,6 @@ const BISCertificationSchema = () => {
         worstRating: "1",
         ratingCount: "55017",
         reviewCount: "55017",
-      },
-      review: {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
       },
     }),
     []

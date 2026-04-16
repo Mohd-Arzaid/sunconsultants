@@ -147,6 +147,56 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-tang-is-17636"
       />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/bunk-beds-is-17636"
+          },
+          "headline": "BIS Certificate for Bunk Beds",
+          "description": "BIS certification for bunk beds in line with IS 17636:2022 to ensure structural stability, safety, and durability of the product. ",
+          "image": "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBunkBeds.png",
+          "author": {
+            "@type": "Person",
+            "name": "Dhruv Aggarwal",
+            "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Sun Certifications India",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://bis-certifications.com/company-logo/company-logo.webp"
+            }
+          },
+          "datePublished": "2026-02-01",
+          "dateModified": "2026-04-14"
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "BIS Certificate for Bunk Beds",
+          "image": "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBunkBeds.png",
+          "description": "BIS certification for bunk beds in line with IS 17636:2022 to ensure structural stability, safety, and durability of the product.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Sun Certifications India"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "55017"
+          }
+        })}
+      </script>
     </Helmet>
   );
 };

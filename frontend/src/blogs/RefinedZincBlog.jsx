@@ -38,6 +38,56 @@ const RefinedZincBlog = () => {
 
                 {/* Canonical URL */}
                 <link rel="canonical" href="https://bis-certifications.com/bis-certificate-for-refined-zinc" />
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BlogPosting",
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://bis-certifications.com/bis-certificate-for-refined-zinc"
+                        },
+                        "headline": "BIS Certification for Refined Zinc",
+                        "description": "Obtaining a BIS Certificate under IS 209 for refined zinc products is important for maintaining the quality and standardisation of refined zinc.",
+                        "image": "https://bis-certifications.com/blogImages/RefinedZinc.png",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Dhruv Aggarwal",
+                            "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Sun Certifications India",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://bis-certifications.com/company-logo/company-logo.webp"
+                            }
+                        },
+                        "datePublished": "2026-02-01",
+                        "dateModified": "2026-04-14"
+                    })}
+                </script>
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "BIS Certification for Refined Zinc",
+                        "image": "https://bis-certifications.com/blogImages/RefinedZinc.png",
+                        "description": "Obtaining a BIS Certificate under IS 209 for refined zinc products is important for maintaining the quality and standardisation of refined zinc.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Sun Certifications India"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "bestRating": "5",
+                            "worstRating": "1",
+                            "ratingCount": "55017"
+                        }
+                    })}
+                </script>
             </Helmet>
 
             <RefinedZincBlogBreadcrumb />
