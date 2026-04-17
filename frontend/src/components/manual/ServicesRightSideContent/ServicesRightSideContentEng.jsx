@@ -596,8 +596,8 @@ const ClientTestimonialServicesRightSideContentEng = () => {
 
 const WhyChooseUsServicesRightSideContentEng = () => {
   const stats = {
-    experience: { value: "12+", label: "Years Exp." },
-    clients: { value: "1500+", label: "Our Clients" },
+    experience: { value: "10+", label: "Years Exp." },
+    clients: { value: "1599+", label: "Our Clients" },
     successRate: { value: "100%", label: "Success Rate" },
     countries: { value: "20+", label: "Countries Served" },
   };
@@ -606,7 +606,7 @@ const WhyChooseUsServicesRightSideContentEng = () => {
     {
       title: "Expert Guidance",
       description:
-        "Our team brings 12+ years of experience in CDSCO and BIS compliance.",
+        "Our team brings 10e4+ years of experience in CDSCO and BIS compliance.",
     },
     {
       title: "Time Efficient",

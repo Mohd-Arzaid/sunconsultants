@@ -32,6 +32,8 @@ import {
 import Footer from "@/common/Footer";
 import Services from "@/components/manual/Services";
 import AboutContact from "@/components/manual/about/AboutContact";
+import LogoTicker from "@/components/manual/home-page-sections/LogoTicker";
+import CertificationAndAchievements from "@/components/manual/home-page-sections/CertificationAndAchievements";
 
 // Assets/Images
 import whychooseus from "../assets/images/whychooseus.jpg";
@@ -49,7 +51,7 @@ import ISIMark from "../assets/images/ISIMark.jpg";
 // Why Choose Us Section - Simple informational component
 const WhyChooseUs = () => {
   return (
-    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pt-0 pb-16 md:pb-24">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 py-12 md:py-16">
       {/* Heading */}
       <div className="text-center mb-8 md:mb-10">
         <h1 className="font-playfair text-4xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
@@ -124,7 +126,7 @@ const WhyChooseUs = () => {
 // Stats Section - Simple display component
 const Stats = () => {
   return (
-    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pb-8 md:pb-12">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 py-12 md:py-16">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8">
         <div className="text-center">
           <div className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
@@ -179,7 +181,7 @@ const VideoShowcase = () => {
   };
 
   return (
-    <div className="max-w-[84rem] mx-auto px-4 md:px-12">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 py-12 md:py-16">
       <div className="relative rounded-3xl shadow-xl md:shadow-2xl overflow-hidden group">
         {!isPlaying ? (
           <>
@@ -707,7 +709,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="pb-6 md:pt-1 md:pb-16 bg-gradient-to-b from-white to-[#F9F7F2]">
+    <div className="py-12 md:py-16 bg-gradient-to-b from-white to-[#F9F7F2]">
       <div className="max-w-[84rem] mx-auto px-4 md:px-12">
         {/* Heading */}
         <div className="text-center mb-2 md:mb-6">
@@ -779,7 +781,7 @@ const Testimonials = () => {
 
 const AboutUsHero = () => {
   return (
-    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-2 md:pb-3">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 py-12 md:py-16">
       {/* Heading */}
       <div className="text-center mb-12 md:mb-16">
         <h1 className="font-playfair drop-shadow-lg text-5xl md:text-6xl font-bold text-[#1e1e1e] mb-6 md:mb-8">
@@ -925,7 +927,7 @@ With over a decade of industry experience, Sun Certifications India has built a 
 // Our Vision Section - Standalone section component
 const OurVisionSection = () => {
   return (
-    <div className="pt-8 md:pt-12 pb-16 md:pb-20">
+    <div className="py-12 md:py-16">
       <div className="max-w-[84rem] mx-auto px-4 md:px-12">
         <div className="text-center p-8 md:p-12 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200">
           <div className="mb-6">
@@ -1024,6 +1026,12 @@ const About = () => {
 
       {/* Page Sections */}
       <AboutUsHero />
+      <section aria-label="Client Marquee" className="w-full py-10 md:py-14">
+        <LogoTicker />
+      </section>
+      <section aria-label="Certification and Achievements" className="w-full pb-8 md:pb-12">
+        <CertificationAndAchievements />
+      </section>
       <WhyChooseUs />
       <Stats />
       <OurVisionSection />
