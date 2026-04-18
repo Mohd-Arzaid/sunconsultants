@@ -64,6 +64,168 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/skin-beauty-care-appliances",
+          },
+          headline: "BIS Certificate for Skin Beauty Care Appliances",
+          description:
+            "BIS certification for skin beauty care appliances (skin massagers, facial steamers, hair styling tools) is mandatory in India under IS 302 (Part 1): 2024 to ensure consumer safety. ",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforSkinBeautyCareAppliances.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certificate for Skin Beauty Care Appliances",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforSkinBeautyCareAppliances.png",
+          description:
+            "BIS certification for skin beauty care appliances (skin massagers, facial steamers, hair styling tools) is mandatory in India under IS 302 (Part 1): 2024 to ensure consumer safety.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "55017",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Why are skin beauty care appliances regulated under BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Skin beauty care appliances interact directly with human skin and often use electrical components such as motors, LEDs, heaters, or batteries. If these systems malfunction, they may cause burns, electric shock, or skin irritation. BIS certification ensures the device has been tested for electrical insulation, temperature control, mechanical durability, and safe operation before being sold to consumers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Which beauty devices require BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Electrical beauty devices including facial cleansing brushes, LED therapy masks, skin rejuvenation devices, pore vacuum suction devices, microcurrent beauty tools, and facial massagers generally fall under this category. Any beauty appliance that operates using electricity or batteries may require certification under IS 302 (Part 1):2024.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can imported beauty appliances be sold without BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. Imported electrical beauty devices must comply with Indian standards before entering the market. Customs authorities may stop shipments without valid BIS certification documentation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the BIS certification process take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The certification process generally takes around four to eight weeks when documentation and product testing proceed smoothly. However, delays may occur if additional testing or product modifications are required.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if a product fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "If the device fails laboratory testing, the manufacturer must redesign or modify the product to meet safety requirements. After improvements are made, the product can be resubmitted for testing.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection mandatory?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. BIS officials must inspect the manufacturing facility to ensure the factory has proper production capability, quality control systems, and safety testing procedures.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can multiple product variants be included in one certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, similar models with the same electrical design and safety features may be included under one certification. However, major design differences may require separate evaluation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What safety tests are performed on beauty appliances?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Typical tests include insulation resistance testing, leakage current measurement, electric strength testing, temperature rise evaluation, abnormal operation testing, and mechanical safety evaluation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does BIS certification guarantee product quality?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "BIS certification primarily ensures safety compliance. However, the rigorous testing process also helps maintain consistent product performance and reliability.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification required for both home-use and salon-use devices?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. The certification requirement applies regardless of whether the product is used in homes, salons, or wellness centers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can startups apply for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Any manufacturer or importer meeting the regulatory requirements can apply for certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does a BIS license remain valid?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The license remains valid as long as the manufacturer continues to comply with BIS regulations and completes required renewals and surveillance inspections.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

@@ -64,6 +64,169 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/furniture-with-electrically-motorized-parts",
+          },
+          headline:
+            "BIS Certification for Furniture with Electrically Motorized Parts",
+          description:
+            "BIS certification for furniture with electrically motorized parts (e.g., recliners, adjustable beds) is mandatory under IS 302 (Part 1): 2024 to ensure safety against electric shock, fire, and mechanical hazards. ",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforFurniturewithElectricallyMotorizedParts.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Furniture with Electrically Motorized Parts",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforFurniturewithElectricallyMotorizedParts.png",
+          description:
+            "BIS certification for furniture with electrically motorized parts (e.g., recliners, adjustable beds) is mandatory under IS 302 (Part 1): 2024 to ensure safety against electric shock, fire, and mechanical hazards.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "55017",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Why does electrically motorized furniture require BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Motorized furniture contains electrical motors, wiring, power adapters, and control systems. These components operate under load and may generate heat during operation. If the electrical system is poorly designed or insulated, it can lead to electric shock or fire hazards. BIS certification ensures that the product has been tested for electrical safety, insulation reliability, mechanical stability, and overheating protection before it reaches consumers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Which types of furniture fall under this certification category?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The regulation typically applies to furniture that contains electrical motors or automated movement mechanisms. Examples include electric adjustable beds, motorized recliner chairs, height-adjustable office desks, hospital beds, massage chairs, and smart furniture with automated positioning systems. Any furniture product that includes powered movement or electrical components may fall within this category and require compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can imported motorized furniture be sold in India without BIS approval?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. Imported furniture that contains electrical motors or control systems must comply with Indian electrical safety standards before it can be sold in the country. Customs authorities may block or confiscate shipments that do not carry valid BIS certification documentation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does it take to obtain BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The certification process generally takes around four to eight weeks if the product and documentation are prepared properly. However, the timeline may extend if testing failures occur, additional documents are required, or factory inspection scheduling delays arise.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if the product fails laboratory testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "If the product fails safety testing, the manufacturer receives a detailed test report explaining the failure. The product must then be redesigned or improved to meet safety requirements and resubmitted for testing before certification can proceed.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection mandatory during the certification process?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. BIS officers must verify the manufacturing facility to ensure the factory has the capability to consistently produce products that meet the required safety standard. They review quality control procedures, equipment, and testing practices.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can multiple furniture models be covered under a single BIS license?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, similar models that share the same electrical design and safety features may be grouped under one license. However, major differences in motor specifications, electrical circuits, or structural design may require separate evaluation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What safety tests are performed during certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The testing process usually includes insulation resistance testing, electric strength testing, leakage current measurement, temperature rise evaluation, abnormal operation testing, and mechanical safety evaluation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification required for both residential and commercial furniture?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. The certification requirement applies regardless of whether the furniture is used in homes, offices, hospitals, hotels, or other commercial facilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does certification cover electronic accessories such as remote controls?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Remote controllers, adapters, and electrical control units that form part of the product are evaluated during safety testing to ensure safe operation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long is a BIS license valid?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The license remains valid as long as the manufacturer maintains compliance with BIS regulations and completes periodic renewals and surveillance requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can startups or small manufacturers apply for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. BIS certification is available to manufacturers of all sizes as long as they meet the technical, documentation, and testing requirements.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

@@ -71,6 +71,168 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/personal-etransporters",
+          },
+          headline: "BIS Certification for Personal-eTransporters",
+          description:
+            "BIS certification for personal-e-transporters (PeTs) is mandatory under IS 302 (Part 1):2024 to ensure safety, quality, and compliance in India, requiring the ISI mark.  ",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforPersonaleTransporters%20.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Personal-eTransporters",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforPersonaleTransporters%20.png",
+          description:
+            "BIS certification for personal-e-transporters (PeTs) is mandatory under IS 302 (Part 1):2024 to ensure safety, quality, and compliance in India, requiring the ISI mark. ",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "55017",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Why do personal eTransporters require BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Personal eTransporters contain electric motors, lithium batteries, and electronic control systems. If these components malfunction, they may cause battery overheating, electrical shock, or fire hazards. BIS certification ensures that the product has undergone rigorous electrical safety testing and complies with Indian safety standards before being sold to consumers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Which types of devices are classified as personal eTransporters?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Personal eTransporters include devices designed for short-distance individual mobility. Examples include hoverboards, self-balancing scooters, compact electric ride-on transporters, and small mobility devices used for indoor or recreational travel.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can imported personal eTransporters be sold without BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. Imported electrical mobility devices must comply with Indian safety standards before entering the market. Customs authorities may hold shipments that do not have valid BIS certification documentation",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the BIS certification process take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process generally takes four to eight weeks if documentation and testing proceed smoothly. Delays may occur if the product fails safety testing or additional documentation is required.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if a product fails laboratory testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "If the product fails testing, the manufacturer receives a detailed report explaining the issue. The product must then be modified to meet safety requirements and resubmitted for testing.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection mandatory during certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. BIS officials must verify the manufacturing facility to ensure that the factory has appropriate quality control procedures and the capability to produce products that consistently meet safety standards.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can multiple product variants be included under one certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, similar models with identical electrical design and safety features may be grouped under one license. However, major design differences may require separate certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What safety tests are typically performed?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Testing generally includes insulation resistance testing, leakage current measurement, electric strength testing, temperature rise evaluation, abnormal operation testing, and mechanical safety verification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does BIS certification ensure product reliability?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "While the primary purpose of certification is safety compliance, the rigorous testing process also helps ensure product durability and operational reliability.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is certification required for both recreational and commercial devices?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. BIS certification requirements apply regardless of whether the device is used for recreational mobility, personal transportation, or commercial facility use.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can startups apply for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. BIS certification is available to manufacturers and importers of any size, provided they meet the regulatory requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long is a BIS license valid?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The license remains valid as long as the manufacturer continues to comply with BIS regulations and completes periodic renewals and surveillance inspections.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

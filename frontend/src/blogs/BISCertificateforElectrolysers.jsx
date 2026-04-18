@@ -71,6 +71,168 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/electrolysers",
+          },
+          headline: "BIS Certificate for Electrolysers",
+          description:
+            "BIS certification for electrolysers in India is mandatory as per IS 302 (Part 1): 2024, requiring an ISI Mark to legally sell, import, or distribute products within India  ",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforElectrolysers.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certificate for Electrolysers",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforElectrolysers.png",
+          description:
+            "BIS certification for electrolysers in India is mandatory as per IS 302 (Part 1): 2024, requiring an ISI Mark to legally sell, import, or distribute products within India. ",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "55017",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is an electrolyser and why does it require BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "An electrolyser is an electrical device that splits water into hydrogen and oxygen through electrolysis. Because it operates using electricity and involves conductive electrolytes, there are risks related to electrical insulation, leakage current, and overheating. BIS certification ensures the system has been tested according to Indian safety standards and can operate safely in industrial or laboratory environments.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification mandatory for electrolysers in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, electrical equipment that falls under the scope of applicable BIS standards must obtain certification before being sold in the Indian market. Electrolysers that include electrical power systems, control circuits, or heating components must comply with BIS safety regulations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the BIS certification process take for electrolysers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The certification process generally takes 4–8 weeks, depending on product complexity and laboratory testing timelines. If the product fails initial testing, modifications may be required, which can extend the approval process.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the main tests performed during certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Testing focuses on electrical safety and operational stability. Common tests include insulation resistance testing, electric strength testing, leakage current measurement, temperature rise evaluation, and abnormal operation testing.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What documents are required for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Applicants must provide several documents, including company registration certificates, product technical specifications, electrical circuit diagrams, user manuals, manufacturing process details, and BIS application forms.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can imported electrolysers be sold without BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. Imported electrolysers must comply with Indian BIS standards before they can be sold or distributed. Customs authorities may refuse entry of products that lack valid certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if the electrolyser fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "If a product fails laboratory testing, the manufacturer receives a report detailing the issues. The product must be modified to meet safety requirements and resubmitted for testing before certification can be granted.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection mandatory?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. BIS conducts factory inspections to ensure that the manufacturer has appropriate production controls and testing facilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long is a BIS license valid?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The license typically remains valid as long as the manufacturer complies with BIS regulations and successfully completes surveillance inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can multiple electrolyser models be certified together?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, similar product variants with identical design characteristics may be grouped under a single license if they meet BIS grouping guidelines.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does BIS certification improve product credibility?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Certification enhances trust among customers, industrial buyers, and project developers by demonstrating compliance with recognized safety standards.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the cost of BIS certification for electrolysers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The cost of BIS certification for Electrolysers varies depending on testing requirements, number of models, and inspection scope. Manufacturers should consider application fees, laboratory testing charges, and license fees when estimating total costs.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

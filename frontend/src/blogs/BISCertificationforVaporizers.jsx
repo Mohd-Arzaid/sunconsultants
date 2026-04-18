@@ -71,6 +71,192 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/vaporizers",
+          },
+          headline: "BIS Certification for Vaporizers",
+          description:
+            "BIS certification is mandatory for electric vaporizers in India under IS 302 (Part 1): 2024 to ensure safety against electrical, thermal, and fire hazards. ",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforVaporizers.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Vaporizers",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforVaporizers.png",
+          description:
+            "BIS certification is mandatory for electric vaporizers in India under IS 302 (Part 1): 2024 to ensure safety against electrical, thermal, and fire hazards. ",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "55017",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is BIS Certification for Vaporizers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "It is a regulatory approval confirming that vaporizers meet safety requirements under IS 302 (Part 1):2024.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification mandatory for vaporizers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, electrical appliances such as vaporizers must comply with relevant BIS standards before being sold in India.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certification process for Vaporizers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process includes application submission, product testing, factory inspection, and grant of license.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certificate cost for Vaporizers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The cost depends on testing charges, application fees, inspection costs, and marking fees.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does BIS certification take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process typically takes several weeks to a few months depending on testing and documentation readiness.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What documents are required for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Documents include business registration, product specifications, manufacturing details, and test reports.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Where are vaporizers tested for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Testing is conducted in BIS recognized laboratories.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers apply for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, foreign manufacturers exporting vaporizers to India can apply through BIS certification schemes.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis license cost for Vaporizers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The cost varies depending on product testing requirements and certification fees.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection required for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, BIS may conduct factory audits to verify production quality systems",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if a product fails BIS testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The manufacturer must correct design or safety issues before reapplying for certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does BIS certification apply to all vaporizer models?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Each product model or variant must comply with applicable BIS standards.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can BIS certification be renewed?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, BIS licenses require periodic renewal and compliance maintenance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification required for online sales?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, vaporizers sold online must also comply with BIS certification requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can consultants help with BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, experienced consultants assist manufacturers with documentation, testing, and application procedures.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
