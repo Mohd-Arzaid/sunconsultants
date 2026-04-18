@@ -23,6 +23,8 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
 import AboutAuthor from "@/components/common/AboutAuthor";
 import { Helmet } from "react-helmet-async";
+import BISFMProductTable from "@/pages/BISFMProductTable/BISFMProductTable.jsx";
+import CostingSection from "@/components/CostingSection";
 
 const IndonesiaBlog = () => {
     return (
@@ -78,6 +80,8 @@ const IndonesiaBlog = () => {
             <IndonesiaBlogBreadcrumb />
 
             <IndonesiaBlogMainContent />
+
+            <BISFMProductTable />
 
             <Services />
             <VideoSection />
@@ -488,6 +492,8 @@ const IndonesiaBlogMainContentLeft = () => {
 
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                <CostingSection country="Indonesia" />
 
                 {/* Conclusion Section */}
                 <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">

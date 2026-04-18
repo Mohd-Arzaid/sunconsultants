@@ -14,6 +14,8 @@ import AboutAuthor from "@/components/common/AboutAuthor";
 import { Services } from "@/pages/SchemeX/SchemeX";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
+import BISFMProductTable from "@/pages/BISFMProductTable/BISFMProductTable.jsx";
+import CostingSection from "@/components/CostingSection";
 
 
 const JapanBlog = () => {
@@ -22,6 +24,7 @@ const JapanBlog = () => {
             <JapanBlogMetaData />
             <JapanBlogBreadcrumb />
             <JapanBlogMainContent />
+            <BISFMProductTable />
             <Services />
             <VideoSection />
             <Footer />
@@ -471,6 +474,8 @@ const JapanBlogMainContentLeft = () => {
 
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                <CostingSection country="Japan" />
 
                 <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     Conclusion

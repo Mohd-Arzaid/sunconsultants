@@ -347,6 +347,9 @@ const BunkBedsBlogMainContentLeft = () => {
           One of the most common questions manufacturers ask is: How much is the
           BIS Certification cost?
         </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
+        </p>
 
         <p className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
           The Cost of BIS Certification in India varies depending on:
@@ -435,6 +438,21 @@ const BunkBedsBlogMainContentLeft = () => {
             className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Related Resources
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">Get details about BIS certification for FMCS</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">Get details about BIS certification for ISI</a>
+          </li>
+        </ul>
 
         <AboutAuthor />
       </div>
