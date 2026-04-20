@@ -1,4 +1,5 @@
 import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
+import InterlinkSection from "@/components/common/InterlinkSection";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -185,6 +186,8 @@ const MainContentLeft = () => {
           for Fibre Ropes – Polyamide, this guide will help you make informed
           decisions and avoid compliance risks.
         </p>
+
+        <InterlinkSection type="blog" blogUrl="/blogs/isi-products/fibre-ropes-polyamide-is-4572" />
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -908,10 +911,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">Get details about BIS certification for FMCS</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">Get details about BIS certification for foreign manufacturers</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">Get details about BIS certification for ISI</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">Get details about BIS certification for Indian manufacturers</a>
           </li>
         </ul>
 
