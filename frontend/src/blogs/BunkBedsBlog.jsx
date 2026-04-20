@@ -347,9 +347,6 @@ const BunkBedsBlogMainContentLeft = () => {
           One of the most common questions manufacturers ask is: How much is the
           BIS Certification cost?
         </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
-        </p>
 
         <p className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
           The Cost of BIS Certification in India varies depending on:
@@ -362,6 +359,10 @@ const BunkBedsBlogMainContentLeft = () => {
           <li>Inspection fees</li>
           <li>Renewal charges</li>
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
+          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
           Typically, the BIS License cost includes application fees, testing
@@ -402,8 +403,6 @@ const BunkBedsBlogMainContentLeft = () => {
           Whether you are a local producer or an importer, hiring a professional BIS Agent or consultant ensures smooth and hassle-free certification.
         </p>
 
-
-
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
@@ -420,14 +419,9 @@ const BunkBedsBlogMainContentLeft = () => {
           If you’re wondering how to get BIS Certification in India, the answer is simple: follow the proper BIS Certification Process or hire experienced BIS Consultants in India to handle the work for you.
         </p>
 
-
-
         <p className="text-gray-600 text-base font-geist mb-6">
           Start your BIS Certificate Registration today and ensure your bunk beds proudly carry the BIS Certification Mark (BIS Logo), guaranteeing quality and safety for consumers across India..
         </p>
-
-
-
 
         {/* Featured Image */}
         <div className="mb-6 flex justify-center">

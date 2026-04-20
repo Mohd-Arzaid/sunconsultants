@@ -397,9 +397,6 @@ const BahrainBlogMainContentLeft = () => {
           A local representative in India is appointed to act on behalf of the
           manufacturer for all BIS-related correspondence.
         </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
-        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
           Step 3: Product Testing
@@ -486,6 +483,10 @@ const BahrainBlogMainContentLeft = () => {
             Proof of fee payment for BIS application and inspection charges.
           </li>
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
+          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
           These documents help BIS assess the technical and operational

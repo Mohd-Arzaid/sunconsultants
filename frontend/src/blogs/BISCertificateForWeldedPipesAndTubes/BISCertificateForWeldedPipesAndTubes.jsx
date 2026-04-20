@@ -326,9 +326,6 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Payments include:
         </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Application charges</li>
           <li>Processing fees</li>
@@ -380,6 +377,10 @@ const MainContentLeft = () => {
           <li>Cooperate during periodic BIS surveillance inspections</li>
           <li>Renew the license on time</li>
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
+          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
+        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>

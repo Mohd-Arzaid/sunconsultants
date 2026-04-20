@@ -286,8 +286,6 @@ const StorageUnitsBlogMainContentLeft = () => {
                     </li>
                 </ul>
 
-
-
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
@@ -295,8 +293,6 @@ const StorageUnitsBlogMainContentLeft = () => {
                 <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
                     End-Use Applications of BIS-Certified Storage Units
                 </h2>
-
-
 
                 <ul className="space-y-1 mb-1">
                     <li className="flex items-start">
@@ -344,10 +340,6 @@ const StorageUnitsBlogMainContentLeft = () => {
                     </li>
                 </ul>
 
-
-
-
-
                 {/* Step 3 */}
                 <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-3">
                     BIS Certification Process for Storage Units
@@ -374,7 +366,6 @@ const StorageUnitsBlogMainContentLeft = () => {
                 <p className="text-gray-600 text-base font-geist mb-4">
                     Manufacturers must prepare all BIS Certification Documents such as:
                 </p>
-
 
                 <ul className="space-y-1 mb-1">
                     <li className="flex items-start">
@@ -453,13 +444,6 @@ const StorageUnitsBlogMainContentLeft = () => {
                     This BIS Product Certification ensures only safe and reliable storage furniture reaches the Indian market.
                 </p>
 
-
-
-
-
-
-
-
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
@@ -470,9 +454,6 @@ const StorageUnitsBlogMainContentLeft = () => {
 
                 <p className="text-gray-600 text-base font-geist mb-4">
                     The BIS Certificate Cost varies depending on multiple factors such as product category, testing charges, and inspection fees. Typical expenses include:
-                </p>
-                <p className="text-gray-600 text-base font-geist mb-4">
-                  For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
                 </p>
 
                 <ul className="space-y-1 mb-1">
@@ -503,14 +484,15 @@ const StorageUnitsBlogMainContentLeft = () => {
                         </div>
                     </li>
 
-
-
                 </ul>
+
+                <p className="text-gray-600 text-base font-geist mt-4 mb-4">
+                  <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
+                </p>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
                     For small manufacturers, hiring a BIS Registration Consultant or a professional BIS Agent helps minimize unnecessary expenses and ensures smooth approval.
                 </p>
-
 
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -524,12 +506,9 @@ const StorageUnitsBlogMainContentLeft = () => {
                     The BIS Certification Process India can be complex for new manufacturers. This is why many businesses rely on BIS Certification Consultants.
                 </p>
 
-
-
                 <p className="text-gray-600 text-base font-geist mb-6">
                     A BIS Consultant in Delhi or other regions can help with:
                 </p>
-
 
                 <ul className="space-y-1 mb-1">
                     <li className="flex items-start">
@@ -581,12 +560,6 @@ const StorageUnitsBlogMainContentLeft = () => {
                     With professional guidance, manufacturers can avoid delays and reduce the overall Cost of BIS Certification.
                 </p>
 
-
-
-
-
-
-
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
@@ -606,7 +579,6 @@ const StorageUnitsBlogMainContentLeft = () => {
                     Don’t wait until the BIS Notification deadline—start your BIS Certificate Online application today and ensure your products proudly display the BIS Logo (BIS Mark), building trust and credibility in the competitive Indian market.
                 </p>
 
-
                 {/* Featured Image */}
                 <div className="mb-6 flex justify-center">
                     <img
@@ -616,11 +588,6 @@ const StorageUnitsBlogMainContentLeft = () => {
                         className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
                     />
                 </div>
-
-
-
-
-
 
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 

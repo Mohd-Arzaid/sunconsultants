@@ -662,6 +662,10 @@ const MainContentLeft = () => {
           <li>Edge Radius & Sharpness Test</li>
           <li>Mattress Support Test</li>
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
+          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
+        </p>
         <p className="text-gray-600 text-base font-geist mb-4">
           Tests must be performed at a BIS-recognized lab only.
         </p>
@@ -719,9 +723,6 @@ const MainContentLeft = () => {
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
           Note: Professional consultancy fees are separate from government fees.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
         </p>
 
         {/* Separator Line */}

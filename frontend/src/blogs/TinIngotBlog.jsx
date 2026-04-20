@@ -164,7 +164,6 @@ const TinIngotBlogMainContent = () => {
     )
 }
 
-
 const TinIngotBlogMainContentLeft = () => {
     return (
         <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
@@ -212,8 +211,6 @@ const TinIngotBlogMainContentLeft = () => {
                 <p className="text-gray-600 text-base font-geist mb-6">
                     Without this certification, selling or distributing Tin Ingot in India will not be permitted after the compliance deadline.
                 </p>
-
-
 
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -341,14 +338,15 @@ const TinIngotBlogMainContentLeft = () => {
                 <p className="text-gray-600 text-base font-geist mb-4">
                     One of the most common concerns for businesses is the Cost of BIS Certificate. While charges vary depending on the product, here are the typical expenses:
                 </p>
-                <p className="text-gray-600 text-base font-geist mb-4">
-                  For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
-                </p>
 
                 {/* Cost Details */}
                 <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
                     <li>BIS license cost: Includes application fees, audit charges, and registration fees, also covers product testing, consultant services, and government fees.</li>
                 </ul>
+
+                <p className="text-gray-600 text-base font-geist mt-4 mb-4">
+                  <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
+                </p>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
                     For small-scale manufacturers, hiring BIS Consultants in India can help minimize unnecessary expenses and ensure faster approval.

@@ -346,9 +346,6 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           The bis certification cost for Electric Hot Plates depends on:
         </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>number of models</li>
           <li>testing complexity</li>
@@ -388,6 +385,10 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Manufacturers must maintain consistent quality and undergo periodic
           audits.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
+          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />

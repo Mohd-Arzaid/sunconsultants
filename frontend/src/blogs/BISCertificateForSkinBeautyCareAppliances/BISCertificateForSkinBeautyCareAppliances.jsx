@@ -24,7 +24,7 @@ const BISCertificateForSkinBeautyCareAppliances = () => {
       <BreadcrumbContent />
       <MainContent />
       <Services />
-      <VideoSection />
+      <VideoSection /> 
       <FooterEng />
     </div>
   );
@@ -468,9 +468,6 @@ const MainContentLeft = () => {
           The bis certificate cost for Skin Beauty Care Appliances varies
           depending on:
         </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-1 text-gray-600 text-base font-geist">
           <li>Number of models</li>
           <li>Testing complexity</li>
@@ -536,6 +533,10 @@ const MainContentLeft = () => {
           <li>Sample testing</li>
           <li>Periodic license renewal</li>
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
+          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
+        </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
           Scope of BIS License as per IS 302 (Part 1):2024

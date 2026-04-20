@@ -327,7 +327,7 @@ const MainContentLeft = () => {
               requirements. Simpler products usually cost less to certify.
             </p>
             <p className="text-gray-600 text-base font-geist mb-4">
-              For a deeper understanding of the BIS framework, you can <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process</a> of BIS certification in India.
+              <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
             </p>
           </div>
 
