@@ -116,7 +116,7 @@ const MetaTags = () => {
             ratingValue: "4.9",
             bestRating: "5",
             worstRating: "1",
-            ratingCount: "55017",
+            ratingCount: "58042",
           },
         })}
       </script>
