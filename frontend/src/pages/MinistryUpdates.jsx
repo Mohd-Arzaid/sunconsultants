@@ -24,6 +24,31 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 29,
+    color: "#1A8781",
+    tagType: "BIS Update",
+    date: "April 22, 2026",
+    displayDate: "22 Apr 2026",
+    title: "BIS Fee Concessions for MSMEs, Startups & Women Entrepreneurs",
+    description:
+      "BIS introduces major concessions on minimum marking fee. Get full details on MSME benefits, startup discounts, eligibility, and BIS certification cost reduction till 2029.",
+    link: "/ministry-updates/bis-marking-fee-latest-qco-update",
+    pdfLink: "/pdf/MinimumMarkingfeeQCO.pdf",
+  },
+  {
+    id: 28,
+    color: "#C86A31",
+    tagType: "QCO Amendment",
+    date: "April 20, 2026",
+    displayDate: "20 Apr 2026",
+    title:
+      "n-Butyl Acrylate QCO 2026 Update: BIS Certification Postponed Till 10 July 2026",
+    description:
+      "The Government of India has temporarily suspended BIS compliance for n-Butyl Acrylate from 10 April 2026 to 10 July 2026. Check key dates, impact, and compliance planning for manufacturers and importers.",
+    link: "/ministry-updates/n-butyl-acrylate-qco-update",
+    pdfLink: "/pdf/n-Butyl-Acrylate-Quality-Control-Order-2021.pdf",
+  },
+  {
     id: 27,
     color: "#1A8781",
     tagType: "QCO Amendment",

@@ -69,6 +69,152 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/clothes-dryers",
+          },
+          headline: "BIS Certification for Clothes Dryers",
+          description:
+            "BIS certification for clothes dryers and towel rails is mandatory under IS 302 (Part 1): 2024 and display the ISI mark to ensure safety and quality standards.",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicensefor%20lothesDryers.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Clothes Dryers",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicensefor%20lothesDryers.png",
+          description:
+            "BIS certification for clothes dryers and towel rails is mandatory under IS 302 (Part 1): 2024 and display the ISI mark to ensure safety and quality standards. ",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Why are clothes dryers considered high-risk appliances under BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Clothes dryers combine heating elements, rotating drums, and airflow systems, which makes them more complex than standard appliances. During operation, they generate continuous heat and handle moisture simultaneously. If insulation fails or airflow is blocked (for example due to lint accumulation), it can lead to overheating or even fire. The BIS Certification for Clothes Dryers ensures that such risks are minimized by testing the appliance under extreme and abnormal conditions, not just normal usage.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does IS 302 (Part 1):2024 specifically apply to clothes dryers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "IS 302 (Part 1):2024 evaluates the electrical and thermal safety framework of appliances like clothes dryers. For this product, the standard checks: Whether heating elements maintain controlled temperatures, If the outer body remains safe to touch, Protection against electric shock in humid conditions, Stability during drum rotation. This ensures that even during long drying cycles, the appliance remains safe.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What types of clothes dryers require a BIS Certificate in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The requirement applies to: Domestic tumble dryers, Washer-dryer combo units (if drying function is included), Industrial or commercial dryers, Wall-mounted or portable dryers. Any electrically operated clothes drying equipment intended for Indian consumers must obtain a BIS Certificate for Clothes Dryers before sale.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does a washer-dryer combo need separate BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No separate certification is required if the product is a combined unit, but the drying function must be tested as per IS 302 (Part 1):2024. This means the product will be evaluated not only as a washing machine but also as a clothes dryer, especially for heating safety, moisture exposure, and electrical insulation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the most common failures during BIS testing for clothes dryers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Many manufacturers face failures due to: Excessive surface temperature, Poor insulation in moist environments, Overheating of internal wiring, Inefficient thermal cut-off systems. To avoid rejection, it is recommended to conduct pre-compliance testing before applying for BIS certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does BIS testing simulate real usage of clothes dryers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Testing is not limited to lab conditions—it replicates real-life usage such as: Continuous drying cycles, Overloading the drum, Blocked airflow scenarios, Voltage fluctuations. This ensures that the BIS Licence for Clothes Dryers is granted only to products that perform safely under actual Indian household conditions.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What safety features must be present in BIS-certified clothes dryers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "To meet BIS requirements, clothes dryers typically include: Thermal cut-off protection, Overload protection, Insulated wiring, Grounding (earthing) system, Fire-resistant materials. These features are evaluated during the BIS certification process for Clothes Dryers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification required for imported clothes dryers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, imported products must also comply. Foreign manufacturers must: Appoint an Authorized Indian Representative (AIR), Apply for BIS registration, Ensure product testing in BIS-recognized labs. Without a BIS License for Clothes Dryers, imported units cannot be legally sold in India.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does BIS certification impact product design for clothes dryers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Manufacturers often need to modify designs to meet BIS requirements, such as: Improving insulation materials, Adding safety cut-off devices, Redesigning airflow systems, Enhancing electrical protection. This makes the product safer and more reliable in long-term use.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the typical BIS certification cost for Clothes Dryers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The BIS certification cost for Clothes Dryers depends on: Product type and complexity, Number of models, Testing requirements, Factory inspection charges. On average, the cost of BIS certification for Clothes Dryers includes testing fees, application fees, and annual license charges.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

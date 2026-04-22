@@ -63,6 +63,192 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/fabric-streamers",
+          },
+          headline: "BIS Certification for Fabric Steamers",
+          description:
+            "BIS certification is mandatory for fabric steamers in India under IS 302 (Part 1): 2024, ensuring compliance with safety standards to prevent electrical, mechanical, and thermal hazards. ",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforFabricStreamers.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Fabric Steamers",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforFabricStreamers.png",
+          description:
+            "BIS certification is mandatory for fabric steamers in India under IS 302 (Part 1): 2024, ensuring compliance with safety standards to prevent electrical, mechanical, and thermal hazards. ",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is BIS Certification for Fabric Steamers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "It is a certification confirming that fabric steamers meet safety requirements defined under IS 302 (Part 1):2024.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification mandatory for fabric steamers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, electrically operated garment-care appliances must comply with applicable safety standards.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certification process for Fabric Steamers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process includes application submission, product testing, factory inspection, and license approval.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certificate cost for Fabric Steamers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Costs depend on testing charges, application fees, and inspection expenses.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does certification take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process may take several weeks to a few months depending on testing and documentation.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What documents are required?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Manufacturers must submit company documents, product specifications, and technical details.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Where are fabric steamers tested?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Testing is conducted in BIS recognized laboratories.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection required?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, BIS may inspect the manufacturing facility.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers apply?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, overseas manufacturers exporting to India must obtain certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis license cost for Fabric Steamers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Costs vary depending on the product model and testing requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if the product fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Manufacturers must correct design issues and resubmit the product.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does each model require certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Different models may require separate evaluation depending on design variations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can BIS certification be renewed?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, licenses require periodic renewal.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is certification required for online sales?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, products sold through online platforms must comply with BIS regulations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can consultants assist with certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, professional consultants can help manage documentation, testing coordination, and application procedures.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

@@ -6498,8 +6498,22 @@
     <priority>0.8</priority>
     <lastmod>2026-04-07</lastmod>
   </url>
+  <!-- n-Butyl Acrylate QCO 2026 Update -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/n-butyl-acrylate-qco-update</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <!-- BIS Fee Concessions for MSMEs, Startups & Women -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/bis-marking-fee-latest-qco-update</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-22</lastmod>
+  </url>
   <!-- Ministry Updates Pages - End -->
-
+  
   <!-- Latest Notification Pages -->
   <url>
     <loc>https://bis-certifications.com/latest-notification/bis-certificate-for-sanitary-napkins</loc>

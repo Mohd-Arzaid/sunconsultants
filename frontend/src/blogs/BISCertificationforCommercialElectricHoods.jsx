@@ -71,6 +71,192 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/commercial-electric-hoods",
+          },
+          headline: "BIS Certification for Commercial Electric Hoods",
+          description:
+            "BIS certification for commercial electric hoods is mandatory under the Safety of Household, Commercial, and Similar Electrical Appliances Quality Control Order, 2024, ensuring compliance with IS 302 (Part 1): 2024.",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforCommercialElectricHoods.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Commercial Electric Hoods",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforCommercialElectricHoods.png",
+          description:
+            "BIS certification for commercial electric hoods is mandatory under the Safety of Household, Commercial, and Similar Electrical Appliances Quality Control Order, 2024, ensuring compliance with IS 302 (Part 1): 2024. ",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is BIS Certification for Commercial Electric Hoods?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "It is a certification confirming that the hood meets electrical safety requirements under IS 302 (Part 1):2024.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification required for commercial kitchen hoods?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Electrical ventilation systems containing motors and wiring must comply with applicable BIS safety standards.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certification process for Commercial Electric Hoods?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process involves application submission, product testing, factory inspection, and license approval.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certificate cost for Commercial Electric Hoods?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The cost depends on testing fees, application charges, and inspection expenses.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does certification take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The timeline may range from several weeks to a few months depending on testing and documentation readiness.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What documents are required for certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Manufacturers must submit company documents, product specifications, electrical diagrams, and quality control plans.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Where are products tested?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Testing is conducted in laboratories recognized by BIS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection mandatory?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, BIS may inspect the manufacturing facility to verify production quality controls.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers apply for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, foreign manufacturers exporting products to India must obtain BIS certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis license cost for Commercial Electric Hoods?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Costs vary depending on product complexity and testing requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if the product fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The manufacturer must correct design issues and submit a new sample for testing.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does each model require certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Different models or variants may require evaluation depending on design differences.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can BIS certification be renewed?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, licenses require periodic renewal and compliance maintenance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is certification required for online sales?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, products sold online must also comply with BIS regulations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can consultants help with certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Professional consultants assist with documentation, testing coordination, and application management.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

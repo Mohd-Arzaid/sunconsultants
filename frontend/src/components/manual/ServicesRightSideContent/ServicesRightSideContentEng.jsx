@@ -101,6 +101,8 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/cookware-qco-2026",
     "/ministry-updates/lab-qco-suspension-2026",
     "/ministry-updates/bis-qco-2026-is-302-part-1-2024-electrical-appliances",
+    "/ministry-updates/n-butyl-acrylate-qco-update",
+    "/ministry-updates/bis-marking-fee-latest-qco-update",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -999,6 +1001,12 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS QCO 2026 for Electrical Appliances - IS 302 (Part 1): 2024 - Ministry Updates (English)";
+
+    if (path.includes("/ministry-updates/n-butyl-acrylate-qco-update"))
+      return "n-Butyl Acrylate QCO 2026 Update - Ministry Updates (English)";
+
+    if (path.includes("/ministry-updates/bis-marking-fee-latest-qco-update"))
+      return "BIS Fee Concessions for MSMEs, Startups & Women Entrepreneurs - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

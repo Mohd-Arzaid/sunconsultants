@@ -111,6 +111,14 @@ const CookwareUtensilsandCans = lazy(() =>
 const BISQCO2026forElectrical = lazy(() =>
   import("@/pages/MinistryUpdatesPages/BISQCO2026forElectrical")
 );
+const NButylAcrylateQCO2026Update = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/nButylAcrylateQCO2026Update")
+);
+const BISFeeConcessionsforMSMEsStartupsWomen = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/BISFeeConcessionsforMSMEsStartupsWomen"
+  )
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -337,6 +345,22 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <BISQCO2026forElectrical />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/n-butyl-acrylate-qco-update"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <NButylAcrylateQCO2026Update />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-marking-fee-latest-qco-update"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <BISFeeConcessionsforMSMEsStartupsWomen />
           </Suspense>
         }
       />

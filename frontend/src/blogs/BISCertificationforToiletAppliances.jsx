@@ -66,6 +66,168 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/toilet-appliances",
+          },
+          headline: "BIS Certification for Toilet Appliances",
+          description:
+            "BIS Certification (ISI Mark) is mandatory for toilet appliances in India, particularly those under IS 302-2-64 (safety of electrical toilet appliances) to ensure quality and safety.",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforToiletAppliances.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Toilet Appliances",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforToiletAppliances.png",
+          description:
+            "BIS Certification (ISI Mark) is mandatory for toilet appliances in India, particularly those under IS 302-2-64 (safety of electrical toilet appliances) to ensure quality and safety. ",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is BIS Certification for Toilet Appliances?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "It is a certification confirming that toilet appliances comply with safety requirements defined under IS 302 (Part 1):2024.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification mandatory for toilet appliances?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, electrical sanitation appliances must comply with applicable safety standards before being sold in India.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certification process for Toilet Appliances?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process includes application submission, product testing, factory inspection, and license approval.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certificate cost for Toilet Appliances?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The cost depends on testing charges, application fees, and inspection expenses.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the certification process take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process may take several weeks to a few months depending on testing and documentation readiness.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What documents are required?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Manufacturers must submit company documents, product specifications, and technical details.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Where are toilet appliances tested?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Testing is conducted in BIS recognized laboratories.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection required?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, BIS may inspect the manufacturing facility.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers apply?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, overseas manufacturers exporting to India must obtain certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis license cost for Toilet Appliances?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Costs vary depending on product models and testing requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if a product fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Manufacturers must correct design issues and resubmit the product for testing.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does certification apply to all models?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Each product model may require evaluation depending on design variations.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

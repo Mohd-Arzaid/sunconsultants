@@ -71,6 +71,192 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/humidifiers",
+          },
+          headline: "BIS Certification for Humidifiers",
+          description:
+            "BIS certification for humidifiers is mandatory in India to ensure safety, quality, and compliance with the IS 302 (Part 1): 2024 standard. ",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforHumidifiers.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Humidifiers",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforHumidifiers.png",
+          description:
+            "BIS certification for humidifiers is mandatory in India to ensure safety, quality, and compliance with the IS 302 (Part 1): 2024 standard. ",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is BIS Certification for Humidifiers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "It is a certification confirming that humidifiers meet safety requirements defined under IS 302 (Part 1):2024.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification required for humidifiers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, electrical appliances like humidifiers must comply with relevant safety standards before being sold in India.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certification process for Humidifiers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The process includes application submission, product testing, factory inspection, and license approval.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis certificate cost for Humidifiers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Costs vary depending on testing charges, application fees, and inspection expenses.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the certification process take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The timeline typically ranges from several weeks to a few months.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What documents are required?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Manufacturers must submit company documents, product specifications, and technical details.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Where are humidifiers tested?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Testing is conducted in laboratories recognized by BIS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection mandatory?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, BIS may inspect the manufacturing facility during certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers apply?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, foreign manufacturers exporting humidifiers to India must obtain certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the bis license cost for Humidifiers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The cost varies depending on the product model and testing requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if a product fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Manufacturers must correct design issues and resubmit the product for testing.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does certification apply to all models?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Each product model may require evaluation depending on design differences.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can BIS certification be renewed?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, licenses require periodic renewal.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is certification required for online sales?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, humidifiers sold online must also comply with BIS regulations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can consultants help with certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, professional consultants assist with documentation, testing coordination, and application submission.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
