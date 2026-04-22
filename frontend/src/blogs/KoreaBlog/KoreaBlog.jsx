@@ -44,6 +44,50 @@ const KoreaBlogMetaData = () => {
     const author = "Sun Certifications India";
     const publisher =
         "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/bis-certification-in-korea",
+        },
+        headline: "BIS Certification in Korea",
+        description:
+            "BIS Certification in South Korea is mandatory for manufacturers exporting electronics, IT, automotive, and industrial goods to India.",
+        author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+        },
+        publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+                "@type": "ImageObject",
+                url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+        },
+        datePublished: "2026-02-01",
+        dateModified: "2026-04-14",
+    };
+    const ratingSchema = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        name: "BIS Certification in Korea",
+        description:
+            "BIS Certification in South Korea is mandatory for manufacturers exporting electronics, IT, automotive, and industrial goods to India.",
+        brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+        },
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+        },
+    };
 
     return (
         <Helmet>
@@ -57,6 +101,12 @@ const KoreaBlogMetaData = () => {
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
             <link rel="canonical" href={canonicalUrl} />
+            <script type="application/ld+json">
+                {JSON.stringify(articleSchema)}
+            </script>
+            <script type="application/ld+json">
+                {JSON.stringify(ratingSchema)}
+            </script>
         </Helmet>
     );
 };
