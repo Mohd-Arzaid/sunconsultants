@@ -715,6 +715,17 @@ const blogs = [
     date: "16 April 2026",
     image: "/blogImages/BISLicenseforSlicingMachines.webp",
   },
+  {
+    id: 69,
+    color: "#7C3AED",
+    title:
+      "BIS Certificate for Cross-recessed Countersunk Head Wood Screws - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Cross-recessed Countersunk Head Wood Screws under IS 18509:2023. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cross-recessed-countersunk-head-wood-screws",
+    date: "24 April 2026",
+    image: "/blogImages/BISLicenseforHeadWoodScrews.png",
+  },
 ];
 
 // =============================

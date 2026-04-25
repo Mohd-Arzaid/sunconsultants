@@ -188,6 +188,14 @@ export const interlinkPairs = [
     qcoUrl: "/bis-qco-updates/bis-certificate-for-combination-side-cutting-pliers",
     qcoMatchKey: "Combination Side Cutting Pliers",
   },
+  {
+    productName: "Cross-recessed Countersunk Head Wood Screws",
+    isNumber: "IS 18509",
+    blogUrl: "/blogs/isi-products/cross-recessed-countersunk-head-wood-screws",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-cross-recessed-countersunk-head-wood-screws-specification",
+    qcoMatchKey: "Cross-recessed Countersunk Head Wood Screws – Specification",
+  },
 ];
 
 /**

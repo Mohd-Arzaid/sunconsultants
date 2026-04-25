@@ -967,6 +967,9 @@ const BISCertificateForBatteryOperatedToothbrushArabic = lazy(() =>
 const BISCertificationforMassageAppliances = lazy(() =>
   import("@/blogs/BISCertificationforMassageAppliances")
 );
+const BISCertificationforHeadWoodScrews = lazy(() =>
+  import("@/blogs/BISCertificationforHeadWoodScrews")
+);
 const BISCertificationHandheldElectricEngraving = lazy(() =>
   import("@/blogs/BISCertificationHandheldElectricEngraving")
 );
@@ -3367,6 +3370,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforMassageAppliances />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cross-recessed-countersunk-head-wood-screws"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforHeadWoodScrews />
           </Suspense>
         }
       />
