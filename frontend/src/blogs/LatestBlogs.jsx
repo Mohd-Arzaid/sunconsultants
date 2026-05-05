@@ -738,6 +738,17 @@ const blogs = [
     image: "/blogImages/BISCertificationforpanheadScrews.webp",
   },
   {
+    id: 75,
+    color: "#0EA5E9",
+    title:
+      "BIS Certificate for Tapping Screws Oval Head - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Tapping Screws Oval Head under IS 18480 (Part 3):2023. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/tapping-screws-oval-head-is-18480-part-3",
+    date: "05 April 2026",
+    image: "/blogImages/BISCertificationfortappingscrewsovalhead.webp",
+  },
+  {
     id: 69,
     color: "#7C3AED",
     title:

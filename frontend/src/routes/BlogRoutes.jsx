@@ -832,6 +832,9 @@ const BISCertificationforSlicingMachines = lazy(() =>
 const BISCertificationforPanHeadScrews = lazy(() =>
   import("@/blogs/BISCertificationforPanHeadScrews")
 );
+const BISCertificationforCrossRecessedTappingScrew = lazy(() =>
+  import("@/blogs/BISCertificationforCrossRecessedTappingScrew")
+);
 const BISCertificationCombinationSideCuttingPliers = lazy(() =>
   import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliers")
 );
@@ -2945,6 +2948,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforPanHeadScrews />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCrossRecessedTappingScrew />
           </Suspense>
         }
       />

@@ -231,6 +231,15 @@ export const interlinkPairs = [
     qcoMatchKey:
       "Pan Head Screws With Type H or Type Z Cross Recess – Product Grade A.",
   },
+  {
+    productName:
+      "Cross Recessed Tapping Screw Part 3 Raised Countersunk Oval Head",
+    isNumber: "IS 18480 (Part 3):2023",
+    blogUrl: "/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-cross-recessed-tapping-screw-part-3-raised-countersunk-oval-head",
+    qcoMatchKey: "Cross Recessed Tapping Screw Part 3 Raised Countersunk Oval Head",
+  },
 ];
 
 /**
