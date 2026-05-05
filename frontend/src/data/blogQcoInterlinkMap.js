@@ -221,6 +221,16 @@ export const interlinkPairs = [
     qcoMatchKey:
       "Raised countersunk head screws (Common Head Style) with type H or type Z cross recess – Product grade A.",
   },
+  {
+    productName:
+      "Pan Head Screws With Type H or Type Z Cross Recess – Product Grade A",
+    isNumber: "IS 7483:2018",
+    blogUrl: "/blogs/isi-products/pan-head-screws-is-7483",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-pan-head-screws-with-type-h-or-type-z-cross-recess-product-grade-a",
+    qcoMatchKey:
+      "Pan Head Screws With Type H or Type Z Cross Recess – Product Grade A.",
+  },
 ];
 
 /**

@@ -288,7 +288,15 @@ const MainContentLeft = () => {
           requirements for precise cross-recess design, torque transmission, and
           structural strength. Certification is required in India to guarantee
           consistent performance in applications where screw drive engagement and
-          fastening reliability are critical.
+          fastening reliability are critical. For the official regulatory
+          notification, refer to{" "}
+          <Link
+            to="/bis-qco-updates/bis-certificate-for-pan-head-screws-with-type-h-or-type-z-cross-recess-product-grade-a"
+            className="text-blue-600 hover:underline"
+          >
+           Also Read the QCO Notification for Pan Head Screws
+          </Link>
+          .
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
           Pan head screws with cross recess drives are among the most commonly
@@ -320,6 +328,14 @@ const MainContentLeft = () => {
           importers, obtaining a BIS License for Pan Head Screws With Type H or
           Type Z Cross Recess - Product Grade A ensures seamless market entry
           and operational reliability across industries.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+          >
+            Check complete details about documentation, cost, and process etc.
+          </a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -614,32 +630,18 @@ const MainContentLeft = () => {
           </div>
         </div>
 
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-        <p className="text-gray-600 text-base font-geist mb-2">
-          For Foreign Manufacturer:
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Check complete details about documentation, cost, and process:
-        </p>
-        <a
-          href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-          className="block text-blue-600 hover:underline font-geist mb-4"
-        >
-          https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis
-        </a>
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Related Resources
+        </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-2">
-          For Indian Manufacturer:
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Check complete details about documentation, cost, and process:
-        </p>
-        <a
-          href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
-          className="block text-blue-600 hover:underline font-geist mb-6"
-        >
-          https://bis-certifications.com/a-guide-to-bis-certification-indian-bis
-        </a>
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">Get details about BIS certification for foreign manufacturers</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">Get details about BIS certification for Indian manufacturers</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoRead />
         <FaqAuthorEng questionNumber={4} />
