@@ -328,6 +328,9 @@ const BISCertificateforVaporizers = lazy(() =>
 const BISCertificateforCommercialElectricHoods = lazy(() =>
   import("@/blogs/BISCertificationforCommercialElectricHoods")
 );
+const BISCertificateforChipboardScrews = lazy(() =>
+  import("@/blogs/BISCertificationforChipboardScrews")
+);
 const BISCertificateforHumidifiers = lazy(() =>
   import("@/blogs/BISCertificationforHumidifiers")
 );
@@ -969,6 +972,15 @@ const BISCertificationforMassageAppliances = lazy(() =>
 );
 const BISCertificationforHeadWoodScrews = lazy(() =>
   import("@/blogs/BISCertificationforHeadWoodScrews")
+);
+const BISCertificationforDrywallScrews = lazy(() =>
+  import("@/blogs/BISCertificationforDrywallScrews")
+);
+const BISCertificationforRaisedCountersunkHeadScrews = lazy(() =>
+  import("@/blogs/BISCertificationforRaisedCountersunkHeadScrews")
+);
+const BISCertificationforCountersunkFlatHeadScrews = lazy(() =>
+  import("@/blogs/BISCertificationforCountersunkFlatHeadScrews")
 );
 const BISCertificationHandheldElectricEngraving = lazy(() =>
   import("@/blogs/BISCertificationHandheldElectricEngraving")
@@ -1810,6 +1822,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateforCommercialElectricHoods />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chipboard-screws-is-18508"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforChipboardScrews />
           </Suspense>
         }
       />
@@ -3378,6 +3398,30 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforHeadWoodScrews />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/drywall-screws-is-18507"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforDrywallScrews />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/raised-countersunk-head-screws-is-7486"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforRaisedCountersunkHeadScrews />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/countersunk-flat-head-screws-is-7485"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCountersunkFlatHeadScrews />
           </Suspense>
         }
       />

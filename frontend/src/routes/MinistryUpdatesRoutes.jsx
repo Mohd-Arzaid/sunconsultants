@@ -119,6 +119,9 @@ const BISFeeConcessionsforMSMEsStartupsWomen = lazy(() =>
     "@/pages/MinistryUpdatesPages/BISFeeConcessionsforMSMEsStartupsWomen"
   )
 );
+const FMCSDigitalTransformation = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/FMCSDigitalTransformation")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -361,6 +364,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <BISFeeConcessionsforMSMEsStartupsWomen />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/fmcs-manak-online-bis-certification"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <FMCSDigitalTransformation />
           </Suspense>
         }
       />

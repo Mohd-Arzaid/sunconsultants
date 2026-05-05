@@ -76,6 +76,144 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/flashlight-is-2083",
+          },
+          headline: "BIS Certificate for Flashlight",
+          description:
+            "BIS certification (ISI mark) is mandatory for flashlights as per Indian Standard IS 2083:2024 under Flashlight (Quality Control) Order, 2025",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforFlashlight.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certificate for Flashlight",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforFlashlight.png",
+          description:
+            "BIS certification (ISI mark) is mandatory for flashlights as per Indian Standard IS 2083:2024 under Flashlight (Quality Control) Order, 2025.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is BIS Certification mandatory for flashlights in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Flashlights covered under IS 2083:2024 must be BIS certified.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Which standard applies to flashlights?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "IS 2083:2024 – Flashlight: Specification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the BIS process take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Approximately 30–45 working days for Indian Manufacturers and around 120 days for Foreign Manufacturers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers apply for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, through the FMCS scheme.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is ISI marking mandatory?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, ISI Mark must be displayed on certified flashlights.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if a flashlight fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The product must be corrected and retested.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are rechargeable flashlights also covered?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, if they fall within the scope of IS 2083:2024.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long is the BIS license valid?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 years, renewable.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can multiple models be covered under one license?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, if they meet similarity criteria.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

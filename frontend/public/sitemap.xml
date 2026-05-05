@@ -3944,6 +3944,12 @@
     <lastmod>2026-03-07</lastmod>
   </url>
   <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/chipboard-screws-is-18508</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-04</lastmod>
+  </url>
+  <url>
     <loc>https://bis-certifications.com/blogs/isi-products/humidifiers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5818,6 +5824,30 @@
     <lastmod>2026-04-24</lastmod>
   </url>
 
+  <!-- BIS Certification for Drywall Screws - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/drywall-screws-is-18507</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+
+  <!-- BIS Certification for Raised Countersunk Head Screws - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/raised-countersunk-head-screws-is-7486</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+
+  <!-- BIS Certification for Countersunk Flat Head Screws - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/countersunk-flat-head-screws-is-7485</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+
   <!-- BIS Certificate for Hand Held Electric Engraving Tools - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/hand-held-electric-engraving-tools</loc>
@@ -6519,6 +6549,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-04-22</lastmod>
+  </url>
+  <!-- FMCS Digital Transformation -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/fmcs-manak-online-bis-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-05</lastmod>
   </url>
   <!-- Ministry Updates Pages - End -->
   

@@ -149,6 +149,144 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/beds-is-17635",
+          },
+          headline: "BIS Certificate for Beds",
+          description:
+            "BIS certification for beds in India is a mandatory quality assurance, primarily under IS 17635:2022, ensuring safety, durability, and performance standards.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certificate for Beds",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "BIS certification for beds in India is a mandatory quality assurance, primarily under IS 17635:2022, ensuring safety, durability, and performance standards.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is BIS certification mandatory for beds in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, under IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the BIS Certificate validity?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 years, renewable.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers apply?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, under FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can BIS Certificate be applied online?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is ISI Mark mandatory on beds?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the process take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45 days.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are wooden and metal beds both covered?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, if compliant with IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is factory inspection mandatory?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can traders apply for BIS?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Only brand owners with manufacturing control.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

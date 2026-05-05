@@ -78,6 +78,152 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/seamless-pipes-&-tubes-is-17875",
+          },
+          headline: "BIS Certificate for Seamless Pipes and Tubes",
+          description:
+            "BIS certification mandatory for stainless steel seamless pipes and tubes under the Stainless Steel Pipes and Tubes (Quality Control) Order, 2025.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforSeamlessPipes&Tubes.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certificate for Seamless Pipes and Tubes",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforSeamlessPipes&Tubes.png",
+          description:
+            "BIS certification mandatory for stainless steel seamless pipes and tubes under the Stainless Steel Pipes and Tubes (Quality Control) Order, 2025.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Why is BIS Certification mandatory for seamless pipes?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Because seamless pipes are used in high-pressure and safety-critical applications. Government regulations ensure only high-quality pipes enter the Indian market.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Which standard applies to seamless pipes?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "IS 17875:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the certification process take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Typically 40–60 days for Indian Manufacturer and around 120 days for foreign manufacturer, depending on testing load and inspection scheduling.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What tests are needed?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Chemical analysis, tensile test, hardness, hydrostatic, NDT, flattening, flaring, and dimensional checks.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign companies apply for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, through the FMCS scheme.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What if the product fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "It must be corrected and retested; BIS will not issue the license until full compliance is achieved.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What documents are required?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Factory license, machinery list, test equipment, drawings, QC documents, raw material certificates, etc.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is ISI marking compulsory?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. It is illegal to sell seamless pipes without showing the ISI mark.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are multiple grades allowed in one license?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, if produced using the same facility and process (subject to BIS approval).",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long is the BIS license valid?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 years, renewable indefinitely.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

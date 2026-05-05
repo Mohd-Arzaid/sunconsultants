@@ -196,6 +196,31 @@ export const interlinkPairs = [
       "/bis-qco-updates/bis-certificate-for-cross-recessed-countersunk-head-wood-screws-specification",
     qcoMatchKey: "Cross-recessed Countersunk Head Wood Screws – Specification",
   },
+  {
+    productName: "Drywall Screws",
+    isNumber: "IS 18507:2024",
+    blogUrl: "/blogs/isi-products/drywall-screws-is-18507",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-drywall-screws-specification",
+    qcoMatchKey: "Drywall Screws – Specification",
+  },
+  {
+    productName: "Chipboard Screws – Specification",
+    isNumber: "IS 18508:2024",
+    blogUrl: "/blogs/isi-products/chipboard-screws-is-18508",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-chipboard-screws-specification",
+    qcoMatchKey: "Chipboard Screws – Specification",
+  },
+  {
+    productName: "Raised Countersunk Head Screws",
+    isNumber: "IS 7486:2018",
+    blogUrl: "/blogs/isi-products/raised-countersunk-head-screws-is-7486",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-raised-countersunk-head-screws-common-head-style-with-type-h-or-type-z-cross-recess-product-grade-a",
+    qcoMatchKey:
+      "Raised countersunk head screws (Common Head Style) with type H or type Z cross recess – Product grade A.",
+  },
 ];
 
 /**

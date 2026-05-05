@@ -80,6 +80,192 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/electric-fence-energizers-is-302-2-76",
+          },
+          headline: "BIS Certification for Electric Fence Energizers",
+          description:
+            "BIS certification for electric fence energizers is mandatory in India as per IS 302-2-76:1999 under the Electric Fence Energizers (Quality Control) Order (QCO), 2024.",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforElectricFenceEnergizers.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certification for Electric Fence Energizers",
+          image:
+            "https://bis-certifications.com/blogImages/BISLicenseforElectricFenceEnergizers.png",
+          description:
+            "BIS certification for electric fence energizers is mandatory in India as per IS 302-2-76:1999 under the Electric Fence Energizers (Quality Control) Order (QCO), 2024.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is BIS certification mandatory for electric fence energizers in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, BIS certification under IS 302-2-76:1999 is mandatory.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the BIS certificate full form?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Bureau of Indian Standards Certificate.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can I import electric fence energizers without BIS license?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No, imports without BIS certification are prohibited.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the BIS license cost?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Cost varies based on testing, factory size, and number of models.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does the BIS certification process take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Typically 6–10 weeks if documentation and testing are complete.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is the ISI mark mandatory?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, ISI marking is compulsory after certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can startups apply for BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, startups can apply if manufacturing setup is compliant.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification required for battery-operated energizers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, power source does not exempt certification.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can one license cover multiple models?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, if models are technically similar.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What happens if my product fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Design modification and retesting are required.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is BIS certification valid forever?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No, it must be renewed periodically.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are BIS audits mandatory after certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, surveillance audits are conducted.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers apply directly?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, through an Authorized Indian Representative (AIR).",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is online BIS apply process available?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, BIS applications are submitted online.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is BIS certificate meaning for consumers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "It assures safety, quality, and regulatory compliance.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

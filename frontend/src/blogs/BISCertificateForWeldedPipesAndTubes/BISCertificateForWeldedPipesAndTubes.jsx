@@ -78,6 +78,145 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://bis-certifications.com/blogs/isi-products/welded-pipes-&-tubes-is-17876",
+          },
+          headline:
+            "BIS Certificate for Stainless Steel Welded Pipes and Tubes",
+          description:
+            "BIS certification will be mandatory for manufacturers to use the ISI mark on the stainless steel tube and pipe under IS 17876:2022. The manufacturer will have to obtain a BIS license.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforWeldedPipes&Tubes.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certificate for Stainless Steel Welded Pipes and Tubes",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforWeldedPipes&Tubes.png",
+          description:
+            "BIS certification will be mandatory for manufacturers to use the ISI mark on the stainless steel tube and pipe under IS 17876:2022. The manufacturer will have to obtain a BIS license.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is BIS Certification mandatory for stainless steel welded pipes?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Under IS 17876:2022, BIS certification is compulsory for all manufacturers and importers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What tests are required?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Chemical analysis, tensile test, hardness test, hydrostatic testing, NDT, flattening, and dimensional checks.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does BIS certification take?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Typically 35–50 days for Indian Manufacturer and around 120 days for foreign manufacturer, depending on testing and inspection readiness.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can foreign manufacturers obtain BIS certification?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, through the FMCS (Foreign Manufacturers Certification Scheme).",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What documents are required?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Factory license, test equipment list, BOM, process flow, drawings, QC plan, brand documents, etc.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What if a sample fails testing?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The manufacturer must correct the issue, rework the product, and resubmit for testing.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is ISI marking mandatory after approval?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Products must display ISI Mark + CML number.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are all grades covered under IS 17876?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Only specific grades defined under the standard qualify.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How often does BIS conduct surveillance?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Periodic audits and random sample testing are performed during the license validity.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };

@@ -103,6 +103,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-qco-2026-is-302-part-1-2024-electrical-appliances",
     "/ministry-updates/n-butyl-acrylate-qco-update",
     "/ministry-updates/bis-marking-fee-latest-qco-update",
+    "/ministry-updates/fmcs-manak-online-bis-certification",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -178,6 +179,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/electrolysers",
     "/blogs/isi-products/vaporizers",
     "/blogs/isi-products/commercial-electric-hoods",
+    "/blogs/isi-products/chipboard-screws-is-18508",
     "/blogs/isi-products/humidifiers",
     "/blogs/isi-products/food-grinding-machines",
     "/blogs/isi-products/fabric-streamers",
@@ -213,6 +215,9 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
     "/blogs/isi-products/battery-operated-massage-appliances",
     "/blogs/isi-products/cross-recessed-countersunk-head-wood-screws",
+    "/blogs/isi-products/drywall-screws-is-18507",
+    "/blogs/isi-products/raised-countersunk-head-screws-is-7486",
+    "/blogs/isi-products/countersunk-flat-head-screws-is-7485",
     "/blogs/isi-products/hand-held-electric-engraving-tools",
     "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances",
     "/blogs/isi-products/commercial-electric-kitchen-machines",
@@ -1004,10 +1009,13 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS QCO 2026 for Electrical Appliances - IS 302 (Part 1): 2024 - Ministry Updates (English)";
 
     if (path.includes("/ministry-updates/n-butyl-acrylate-qco-update"))
-      return "n-Butyl Acrylate QCO 2026 Update - Ministry Updates (English)";
+      return "FMCS Digital Transformation: MANAK Online Portal - Ministry Updates (English)";
 
     if (path.includes("/ministry-updates/bis-marking-fee-latest-qco-update"))
       return "BIS Fee Concessions for MSMEs, Startups & Women Entrepreneurs - Ministry Updates (English)";
+
+    if (path.includes("/ministry-updates/fmcs-manak-online-bis-certification"))
+      return "FMCS Digital Transformation: MANAK Online Portal for BIS Certification - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -1145,6 +1153,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Vaporizers - English Page";
     if (path.includes("/blogs/isi-products/commercial-electric-hoods"))
       return "BIS Certificate for Commercial Electric Hoods - English Page";
+    if (path.includes("/blogs/isi-products/chipboard-screws-is-18508"))
+      return "BIS Certificate for Chipboard Screws - English Page";
     if (path.includes("/blogs/isi-products/humidifiers"))
       return "BIS Certificate for Humidifiers - English Page";
     if (path.includes("/blogs/isi-products/food-grinding-machines"))
@@ -1237,6 +1247,12 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Massage Appliances - English Page";
     if (path.includes("/blogs/isi-products/cross-recessed-countersunk-head-wood-screws"))
       return "BIS Certificate for Cross-recessed Countersunk Head Wood Screws - English Page";
+    if (path.includes("/blogs/isi-products/drywall-screws-is-18507"))
+      return "BIS Certificate for Drywall Screws - English Page";
+    if (path.includes("/blogs/isi-products/raised-countersunk-head-screws-is-7486"))
+      return "BIS Certificate for Raised countersunk head screws - English Page";
+    if (path.includes("/blogs/isi-products/countersunk-flat-head-screws-is-7485"))
+      return "BIS Certificate for Countersunk flat head screws - English Page";
     if (path.includes("/blogs/isi-products/hand-held-electric-engraving-tools"))
       return "BIS Certificate for Hand Held Electric Engraving Tools - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances"))

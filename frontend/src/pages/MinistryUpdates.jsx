@@ -24,6 +24,19 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 30,
+    color: "#5B63E6",
+    tagType: "BIS Update",
+    date: "May 05, 2026",
+    displayDate: "05 May 2026",
+    title:
+      "FMCS Digital Transformation: How MANAK Online Portal is Reshaping BIS Certification for Foreign Manufacturers",
+    description:
+      "Learn how the MANAK Online portal is transforming FMCS under BIS, what changes in digital compliance, and how foreign manufacturers can prepare for certification in India.",
+    link: "/ministry-updates/fmcs-manak-online-bis-certification",
+    pdfLink: "/pdf/18507_2024.pdf",
+  },
+  {
     id: 29,
     color: "#1A8781",
     tagType: "BIS Update",

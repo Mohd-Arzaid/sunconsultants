@@ -146,6 +146,17 @@ const blogs = [
     image: "/blogImages/BISLicenseforCommercialElectricHoods.png",
   },
   {
+    id: 73,
+    color: "#CA8A04",
+    title:
+      "BIS Certification for Chipboard Screws – Complete Guide to IS 18508:2024",
+    description:
+      "Get BIS Certificate for Chipboard Screws under IS 18508:2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/chipboard-screws-is-18508",
+    date: "19 April 2026",
+    image: "/blogImages/BISLicenseforChipboardScrews.png",
+  },
+  {
     id: 52,
     color: "#0ea5e9",
     title: "BIS Certification for Humidifiers – Complete Guide to IS 302 (Part 1):2024",
@@ -725,6 +736,39 @@ const blogs = [
     slug: "blogs/isi-products/cross-recessed-countersunk-head-wood-screws",
     date: "24 April 2026",
     image: "/blogImages/BISLicenseforHeadWoodScrews.png",
+  },
+  {
+    id: 70,
+    color: "#0369A1",
+    title:
+      "BIS Certificate for Drywall Screws - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Drywall Screws under IS 18507:2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/drywall-screws-is-18507",
+    date: "01 May 2026",
+    image: "/blogImages/BISCertificationforDrywallScrews.png",
+  },
+  {
+    id: 71,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Raised countersunk head screws - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Raised countersunk head screws under IS 7486:2018. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/raised-countersunk-head-screws-is-7486",
+    date: "02 May 2026",
+    image: "/blogImages/RaisedCountersunkHeadScrew.png",
+  },
+  {
+    id: 72,
+    color: "#0369A1",
+    title:
+      "BIS Certificate for Countersunk flat head screws - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Countersunk flat head screws under IS 7485 (Part 2):2018. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/countersunk-flat-head-screws-is-7485",
+    date: "02 May 2026",
+    image: "/blogImages/BISCertificationforCountersunkFlatHeadScrews.png",
   },
 ];
 

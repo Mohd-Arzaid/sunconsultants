@@ -12,21 +12,12 @@ import {
 import { SlashIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import InterlinkSection from "@/components/common/InterlinkSection";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHeader,
-  TableRow,
-  TableHead,
-} from "@/components/ui/table";
 
-const BISCertificationforHeadWoodScrews = () => {
+const BISCertificationforDrywallScrews = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -39,27 +30,25 @@ const BISCertificationforHeadWoodScrews = () => {
   );
 };
 
-
-
-export default BISCertificationforHeadWoodScrews;
+export default BISCertificationforDrywallScrews;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Cross-recessed Countersunk Head Wood Screws - Process, Cost, Documentation";
+    "BIS Certificate for Drywall Screws - Process, Cost, Documentation";
   const ogTitle =
-    "BIS Certificate for Cross-recessed Countersunk Head Wood Screws - Process, Cost, Documentation";
+    "BIS Certificate for Drywall Screws - Process, Cost, Documentation";
   const twitterTitle =
-    "BIS Certificate for Cross-recessed Countersunk Head Wood Screws - Process, Cost, Documentation";
+    "BIS Certificate for Drywall Screws - Process, Cost, Documentation";
   const metaDescription =
-    "Get BIS Certificate for Cross-recessed Countersunk Head Wood Screws under IS 18509:2023. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Drywall Screws under IS 18507:2024. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Cross-recessed Countersunk Head Wood Screws as per IS 18509:2023. Process, Cost, Documents, Testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Drywall Screws as per IS 18507:2024. Process, Cost, Documents, Testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Cross-recessed Countersunk Head Wood Screws under IS 18509:2023. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Drywall Screws under IS 18507:2024. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certification for Cross-recessed Countersunk Head Wood Screws, BIS License for Cross-recessed Countersunk Head Wood Screws, IS 18509:2023, BIS Certification for Cross-recessed Countersunk Head Wood Screws";
+    "BIS Certificate for Drywall Screws, BIS License for Drywall Screws, IS 18507:2024, BIS Certification for Drywall Screws";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/cross-recessed-countersunk-head-wood-screws";
+    "https://bis-certifications.com/blogs/isi-products/drywall-screws-is-18507";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -72,18 +61,15 @@ const MetaTags = () => {
       <meta name="keywords" content={metaKeywords} />
       <meta name="author" content={author} />
       <meta name="publisher" content={publisher} />
-      {/* Open Graph Tags */}
       <meta property="og:title" content={ogTitle} />
       <meta property="og:description" content={ogDescription} />
       <meta property="og:url" content={websiteUrl} />
       <meta property="og:site_name" content={websiteName} />
       <meta property="og:type" content="article" />
-      {/* Twitter Card Tags */}
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
 
-      {/* Article Schema */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -93,11 +79,11 @@ const MetaTags = () => {
             "@id": websiteUrl,
           },
           headline:
-            "BIS Certification for Head Wood Screws – Complete Guide to IS 18509:2023",
+            "BIS Certification for Drywall Screws – Complete Guide to IS 18507:2024",
           description:
-            "A comprehensive guide to BIS Certification for Cross recessed countersunk head wood screws under IS 18509:2023, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
+            "A comprehensive guide to BIS Certification for Drywall Screws under IS 18507:2024, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
           image:
-            "https://bis-certifications.com/blogImages/BISLicenseforheadwoodscrews.webp",
+            "https://bis-certifications.com/blogImages/BISCertificationforDrywallScrews.webp",
           author: {
             "@type": "Person",
             name: "Dhruv Aggarwal",
@@ -111,21 +97,20 @@ const MetaTags = () => {
               url: "https://bis-certifications.com/company-logo/company-logo.webp",
             },
           },
-          datePublished: "2026-04-29",
-          dateModified: "2026-04-29",
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
         })}
       </script>
 
-      {/* Rating Schema */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org/",
           "@type": "Product",
-          name: "BIS Certification for Head Wood Screws – Complete Guide to IS 18509:2023",
+          name: "BIS Certification for Drywall Screws",
           image:
-            "https://bis-certifications.com/blogImages/BISLicenseforheadwoodscrews.webp",
+            "https://bis-certifications.com/blogImages/BISCertificationforDrywallScrews.png",
           description:
-            "A comprehensive guide to BIS Certification for Cross recessed countersunk head wood screws under IS 18509:2023, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
+            "A comprehensive guide to BIS Certification for Drywall Screws under IS 18507:2024, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
           brand: {
             "@type": "Brand",
             name: "Sun Certifications India",
@@ -135,12 +120,11 @@ const MetaTags = () => {
             ratingValue: "4.9",
             bestRating: "5",
             worstRating: "1",
-            ratingCount: "58042",
+            ratingCount: "55017",
           },
         })}
       </script>
 
-      {/* FAQ Schema */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -148,82 +132,82 @@ const MetaTags = () => {
           mainEntity: [
             {
               "@type": "Question",
-              name: "Why is BIS Certification important for cross-recessed countersunk head wood screws?",
+              name: "What is the cost of BIS certification for Drywall Screws?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "These screws are used in load-bearing wooden assemblies where failure can weaken structures. BIS certification ensures proper thread design, head strength, and material quality so the screw holds firmly, resists stripping during installation, and performs reliably in furniture, doors, and structural wood applications.",
+                text: "The BIS certification cost for Drywall Screws depends on testing, inspection, and application fees. It varies based on product variants and manufacturing complexity.",
               },
             },
             {
               "@type": "Question",
-              name: "What does IS 18509:2023 specifically check in wood screws?",
+              name: "How long does the BIS certification process take?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "IS 18509:2023 evaluates dimensions, thread accuracy, head design, and material strength. It ensures screws fit correctly with tools, penetrate wood smoothly, and provide consistent holding power. It also checks surface finish and coatings to prevent rust, which is critical for long-term durability in wooden installations.",
+                text: "The BIS certification process for Drywall Screws typically takes 4–8 weeks, depending on testing timelines and documentation accuracy.",
               },
             },
             {
               "@type": "Question",
-              name: "How does BIS Certification ensure proper grip in wood?",
+              name: "Is BIS certification mandatory for all drywall screws?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "The certification verifies thread geometry and pitch, which directly affect how well the screw grips wood fibers. Proper testing ensures the screw neither loosens over time nor damages the wood during insertion, making it suitable for applications like cabinetry, flooring, and structural joinery.",
+                text: "Yes, if covered under IS 18507:2024, certification is required for legal sale in India.",
               },
             },
             {
               "@type": "Question",
-              name: "Are corrosion-resistant coatings tested under BIS certification?",
+              name: "What tests are conducted for drywall screws?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes, coatings such as zinc plating or other finishes are tested to ensure resistance against rust and environmental exposure. This is especially important for screws used in humid areas or outdoor wooden structures, where corrosion can weaken the screw and reduce its holding capacity.",
+                text: "Tests include tensile strength, torque resistance, pull-out strength, and corrosion resistance.",
               },
             },
             {
               "@type": "Question",
-              name: "Can different sizes of head wood screws be covered under one BIS License?",
+              name: "Can foreign manufacturers apply for BIS certification?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes, multiple sizes can be included under a single BIS License if they follow the same design, material specifications, and manufacturing process. However, all variants must meet the requirements of IS 18509:2023 to ensure consistent performance across sizes.",
+                text: "Yes, through the Foreign Manufacturers Certification Scheme (FMCS).",
               },
             },
             {
               "@type": "Question",
-              name: "What happens if wood screws fail torque or strength testing?",
+              name: "What documents are required for BIS certification?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "If screws fail torque or tensile strength tests, it indicates poor material quality or incorrect manufacturing. The manufacturer must improve material composition or production processes and resubmit samples. Certification is granted only after the screws meet required strength and performance standards.",
+                text: "Documents include factory registration, product specifications, test reports, and quality manuals.",
               },
             },
             {
               "@type": "Question",
-              name: "How does BIS Certification help in furniture manufacturing?",
+              name: "What happens if my product fails testing?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Certified screws ensure strong and reliable fastening in furniture assemblies. They reduce the risk of loosening, breakage, or stripping during installation. This improves the durability of products like wardrobes, beds, and cabinets, ensuring long-term structural stability and customer satisfaction.",
+                text: "You must improve the product quality and reapply for testing.",
               },
             },
             {
               "@type": "Question",
-              name: "Are imported wood screws required to have BIS Certification?",
+              name: "Is factory inspection mandatory?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes, imported cross-recessed countersunk head wood screws must comply with IS 18509:2023 before being sold in India. Importers must obtain a BIS Certificate for Head Wood Screws to ensure the product meets Indian quality and performance requirements.",
+                text: "Yes, BIS conducts inspections to verify manufacturing and quality control systems.",
               },
             },
             {
               "@type": "Question",
-              name: "How does BIS Certification ensure dimensional accuracy in screws?",
+              name: "Can one license cover multiple screw sizes?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Testing verifies critical dimensions such as length, diameter, thread pitch, and head angle. Accurate dimensions ensure compatibility with tools and proper fit in wooden materials, preventing installation issues like misalignment or improper seating of the screw head.",
+                text: "Yes, if they fall under the same product category and standard.",
               },
             },
             {
               "@type": "Question",
-              name: "Why do construction and carpentry professionals prefer BIS-certified screws?",
+              name: "What is the validity of the BIS license?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Professionals prefer certified screws because they offer consistent quality, reliable strength, and proper fit. This reduces installation errors and ensures long-lasting performance in wooden structures, making them a dependable choice for both small carpentry tasks and large construction projects.",
+                text: "Typically, it is granted for a specific period and requires renewal.",
               },
             },
           ],
@@ -261,7 +245,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certification for Head Wood Screws – IS 18509:2023
+                    BIS Certification for Drywall Screws – IS 18507:2024
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -277,10 +261,7 @@ const MainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-        {/* Left Side Content */}
         <MainContentLeft />
-
-        {/* Right Side Content */}
         <ServicesRightSideContentEng />
       </div>
     </div>
@@ -290,196 +271,81 @@ const MainContent = () => {
 const MainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
-      {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Head Wood Screws – Complete Guide to IS 18509:2023
+          BIS Certification for Drywall Screws – Complete Guide to IS 18507:2024
         </h1>
 
-
+        <div className="mb-6">
+          <img
+            src="/blogImages/BISCertificationforDrywallScrews.png"
+            title="BIS Certification for Drywall Screws"
+            alt="BIS Certification for Drywall Screws – Complete Guide to IS 18507:2024"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS certification for Cross-recessed Countersunk Head Wood Screws confirms that these fasteners comply with IS 18509:2023, ensuring dimensional accuracy, mechanical strength, and corrosion resistance. It is required in India to ensure reliable fastening performance in wood applications, prevent structural failures, and maintain consistency across manufacturing batches.
+          BIS certification for Drywall Screws ensures that fasteners used in gypsum board installations meet strength, corrosion resistance, and dimensional accuracy requirements as defined under IS 18507:2024. In India, this certification is essential to guarantee structural reliability, prevent installation failures, and enable legal sale in regulated markets.{" "}
+        
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Cross-recessed countersunk head wood screws are among the most widely used fastening components in construction, furniture manufacturing, carpentry, and interior applications. These screws are specifically designed to embed flush with wooden surfaces while providing strong holding power. Their cross-recessed head allows better torque transmission during installation, reducing slippage and improving efficiency.
+          Drywall screws may appear like small hardware components, but they play a critical role in modern construction systems. Whether it&apos;s residential interiors, commercial partitioning, or modular structures, drywall screws are responsible for holding gypsum boards securely onto metal or wooden frames. A slight compromise in their strength, threading, or coating can result in loose panels, cracks, or even structural instability over time.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          From assembling modular furniture and wooden frames to fixing panels and structural elements, these screws play a crucial role in ensuring durability and stability. A single defective screw can compromise the integrity of an entire assembly—whether it is a wardrobe, wooden door frame, or flooring structure.
+          In India&apos;s rapidly growing construction sector, the demand for drywall systems has increased significantly due to their speed, cost efficiency, and clean finish. However, this also raises concerns about the quality of fastening components used in these systems. Poor-quality screws can corrode quickly, strip during installation, or fail under load.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Unlike electrical appliances, the risks associated with these screws are mechanical and structural. Poor thread design, inadequate hardness, or substandard material can lead to issues such as stripping, breakage, or loosening over time. In critical applications like construction or heavy furniture, such failures can result in safety hazards, financial losses, and reputational damage.
+          To address these concerns, regulatory oversight has been introduced through BIS Certification for Drywall Screws under IS 18507:2024. This ensures that every screw used in drywall installations meets defined mechanical and chemical standards.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To prevent these issues, India has introduced specific requirements under IS 18509:2023, which defines technical specifications for cross-recessed countersunk head wood screws. This standard ensures uniformity in dimensions, mechanical strength, thread quality, and surface finish.
+          For manufacturers, importers, and distributors, obtaining a BIS Certificate for Drywall Screws is not just about compliance—it is about ensuring that their product performs reliably in real-world construction environments.
         </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certification for Head Wood Screws confirms that the product meets these stringent requirements. For manufacturers and importers, securing a BIS License for Head Wood Screws is essential to ensure compliance, product reliability, and acceptance in the Indian market.
-        </p>
-
-        {/* ============================================ */}
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <Link
-            to="/bis-qco-updates/bis-certificate-for-cross-recessed-countersunk-head-wood-screws-specification"
-            className="text-blue-700 hover:underline"
+        <a
+            href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-drywall-screws-specification"
+            className="text-blue-600 hover:underline"
           >
-            Also read the QCO Notification for Cross-recessed Countersunk Head
-            Wood Screws (IS 18509)
-          </Link>
-        </p>
+            Also read the QCO Notification for Drywall Screws – Specification
+          </a>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Understanding BIS Certification for Head Wood Screws – IS 18509:2023
+          Understanding BIS Certification for Drywall Screws
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Wood screws may appear simple, but their performance depends on precise engineering. Factors such as thread pitch, head geometry, material strength, and surface coating directly influence how well the screw performs in real-world applications.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certification for Head Wood Screws evaluates whether these parameters meet defined standards to ensure consistent performance.
+          When it comes to drywall screws, certification is not merely about labeling—it is about verifying that each screw can withstand installation stress, maintain grip strength, and resist environmental degradation over time.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          For example, when a carpenter uses a countersunk wood screw, it must:
+          Unlike general fasteners, drywall screws are specifically engineered for:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Penetrate wood smoothly without splitting it</li>
-          <li>Provide strong grip and resistance against pull-out forces</li>
-          <li>Sit flush with the surface for aesthetic and functional purposes</li>
-          <li>Resist corrosion when exposed to environmental conditions</li>
+          <li>Penetrating gypsum boards without cracking them</li>
+          <li>Anchoring firmly into metal or wooden studs</li>
+          <li>Maintaining hold without loosening due to vibration or load</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          If any of these characteristics are compromised, the screw may fail during installation or over time.
-        </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Certification ensures that:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS Certification for Drywall Screws evaluates these characteristics through standardized testing and inspection procedures. It ensures that the screws:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Threads are precisely formed for proper engagement with wood</li>
-          <li>The head design allows efficient torque transfer</li>
-          <li>Material hardness is balanced to prevent brittleness or deformation</li>
-          <li>Surface coatings provide adequate corrosion resistance</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate for Head Wood Screws confirms that these factors have been tested and verified.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Additionally, certification ensures uniformity across production batches. In large-scale projects, thousands of screws are used. Consistency in quality is critical to avoid failures in assembled structures.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Cross-recessed Countersunk Head Wood Screws
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable standard is <strong>IS 18509:2023</strong>, which specifies requirements for cross-recessed countersunk head wood screws.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Scope of the Standard
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard covers screws designed for fastening wood and wood-based materials. It defines requirements related to dimensions, mechanical properties, and surface finish.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Product Categories Covered
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The standard applies to:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Cross-recessed countersunk head wood screws</li>
-          <li>Screws used in furniture and carpentry</li>
-          <li>Fasteners used in wooden structures</li>
+          <li>Have consistent thread design for proper grip</li>
+          <li>Exhibit adequate tensile strength</li>
+          <li>Are coated properly to prevent rusting</li>
+          <li>Maintain dimensional precision</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Safety and Performance Objectives
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 18509:2023 ensures that screws:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Provide reliable fastening without failure</li>
-          <li>Maintain structural integrity under load</li>
-          <li>Resist corrosion and environmental degradation</li>
-          <li>Fit accurately with tools and mating materials</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Design and Testing Principles
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The standard defines parameters such as:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Thread geometry for optimal grip</li>
-          <li>Head dimensions for proper seating</li>
-          <li>Material composition for strength and durability</li>
-          <li>Coating requirements for corrosion resistance</li>
-        </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Compliance is required to obtain a BIS Licence for Head Wood Screws.
+          From a regulatory standpoint, BIS certification acts as a quality checkpoint before the product reaches construction sites. It ensures that builders, contractors, and end users are not exposed to substandard fastening materials that could compromise structural integrity.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Head Wood Screws – IS 18509:2023
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Safety Risks Related to the Product
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Although small in size, wood screws are critical load-bearing components. Failure can lead to collapse of furniture or structural elements.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Consumer Protection
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Consumers expect furniture and wooden installations to remain stable over time. Certification ensures reliability and long-term performance.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Regulatory Enforcement in India
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Authorities regulate fasteners to ensure quality and prevent substandard products from entering the market.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Market Access Requirements
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers and suppliers often require certified products for large projects and institutional supply.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Brand Credibility
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Certified screws are perceived as reliable, enhancing brand trust.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
           <a
             href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
             className="text-blue-600 hover:underline"
@@ -487,9 +353,77 @@ const MainContentLeft = () => {
             Check complete details about documentation, cost, and process etc.
           </a>
         </p>
-       
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Applicable BIS Standard for Drywall Screws
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4 font-semibold">
+          IS 18507:2024
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The Indian Standard IS 18507:2024 is specifically developed to regulate drywall screws used in construction and interior applications.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Scope of the Standard
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          This standard defines:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Mechanical properties of drywall screws</li>
+          <li>
+            Dimensional specifications such as length, diameter, and thread pitch
+          </li>
+          <li>Coating requirements for corrosion resistance</li>
+          <li>Performance benchmarks under load conditions</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Product Coverage
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 18507:2024 applies to:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Self-tapping drywall screws</li>
+          <li>Fine thread and coarse thread screws</li>
+          <li>Screws used for metal and wooden framing</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Performance Objectives
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard focuses on ensuring that drywall screws:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Do not break or deform during installation</li>
+          <li>Provide consistent holding strength</li>
+          <li>Resist corrosion in humid environments</li>
+          <li>Maintain thread integrity during usage</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Design and Testing Principles
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard incorporates testing methodologies that simulate real-life installation conditions, such as:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Torque resistance testing</li>
+          <li>Pull-out strength evaluation</li>
+          <li>Coating adhesion testing</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          By aligning with IS 18507:2024, manufacturers demonstrate that their product is suitable for India&apos;s construction requirements and environmental conditions.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -497,124 +431,112 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Cross-recessed countersunk head wood screws are critical components in construction, furniture, and carpentry applications. Their performance directly impacts the safety and durability of assembled structures.
+          Drywall screws are small components with a significant impact on construction safety and durability. Ensuring their quality is not optional—it is essential for reliable building performance. The BIS Certification for Drywall Screws under IS 18507:2024 provides a structured framework to verify that these fasteners meet required standards.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certification for Head Wood Screws under IS 18509:2023 ensures that these fasteners meet strict quality and performance requirements. A valid BIS License for Head Wood Screws enables manufacturers and importers to confidently supply their products in the Indian market.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          By following the correct bis certification process for Head Wood Screws, ensuring proper documentation, and meeting testing requirements, businesses can secure a BIS Certificate for Head Wood Screws and establish a strong, compliant presence in the industry.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Head Wood Screws – IS 18509:2023
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. Why is BIS Certification important for cross-recessed countersunk head wood screws?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          These screws are used in load-bearing wooden assemblies where failure can weaken structures. BIS certification ensures proper thread design, head strength, and material quality so the screw holds firmly, resists stripping during installation, and performs reliably in furniture, doors, and structural wood applications.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. What does IS 18509:2023 specifically check in wood screws?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 18509:2023 evaluates dimensions, thread accuracy, head design, and material strength. It ensures screws fit correctly with tools, penetrate wood smoothly, and provide consistent holding power. It also checks surface finish and coatings to prevent rust, which is critical for long-term durability in wooden installations.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. How does BIS Certification ensure proper grip in wood?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The certification verifies thread geometry and pitch, which directly affect how well the screw grips wood fibers. Proper testing ensures the screw neither loosens over time nor damages the wood during insertion, making it suitable for applications like cabinetry, flooring, and structural joinery.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. Are corrosion-resistant coatings tested under BIS certification?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Yes, coatings such as zinc plating or other finishes are tested to ensure resistance against rust and environmental exposure. This is especially important for screws used in humid areas or outdoor wooden structures, where corrosion can weaken the screw and reduce its holding capacity.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. Can different sizes of head wood screws be covered under one BIS License?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Yes, multiple sizes can be included under a single BIS License if they follow the same design, material specifications, and manufacturing process. However, all variants must meet the requirements of IS 18509:2023 to ensure consistent performance across sizes.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          6. What happens if wood screws fail torque or strength testing?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          If screws fail torque or tensile strength tests, it indicates poor material quality or incorrect manufacturing. The manufacturer must improve material composition or production processes and resubmit samples. Certification is granted only after the screws meet required strength and performance standards.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          7. How does BIS Certification help in furniture manufacturing?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Certified screws ensure strong and reliable fastening in furniture assemblies. They reduce the risk of loosening, breakage, or stripping during installation. This improves the durability of products like wardrobes, beds, and cabinets, ensuring long-term structural stability and customer satisfaction.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          8. Are imported wood screws required to have BIS Certification?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Yes, imported cross-recessed countersunk head wood screws must comply with IS 18509:2023 before being sold in India. Importers must obtain a BIS Certificate for Head Wood Screws to ensure the product meets Indian quality and performance requirements.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          9. How does BIS Certification ensure dimensional accuracy in screws?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Testing verifies critical dimensions such as length, diameter, thread pitch, and head angle. Accurate dimensions ensure compatibility with tools and proper fit in wooden materials, preventing installation issues like misalignment or improper seating of the screw head.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          10. Why do construction and carpentry professionals prefer BIS-certified screws?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Professionals prefer certified screws because they offer consistent quality, reliable strength, and proper fit. This reduces installation errors and ensures long-lasting performance in wooden structures, making them a dependable choice for both small carpentry tasks and large construction projects.
+          For manufacturers and importers, obtaining a BIS License for Drywall Screws is a strategic step toward regulatory compliance, market acceptance, and long-term business growth. By adhering to BIS requirements, businesses not only meet legal obligations but also contribute to safer and more dependable construction practices across India.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Related Resources
+          FAQs – BIS Certification for Drywall Screws
         </h2>
 
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            <a
-              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-              className="text-blue-600 hover:underline"
-            >
-              Get details about BIS certification for foreign manufacturers
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
-              className="text-blue-600 hover:underline"
-            >
-              Get details about BIS certification for Indian manufacturers
-            </a>
-          </li>
-        </ul>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          1. What is the cost of BIS certification for Drywall Screws?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS certification cost for Drywall Screws depends on testing, inspection, and application fees. It varies based on product variants and manufacturing complexity.
+        </p>
 
-        {/* PDF Viewer Section */}
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          2. How long does the BIS certification process take?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS certification process for Drywall Screws typically takes 4–8 weeks, depending on testing timelines and documentation accuracy.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          3. Is BIS certification mandatory for all drywall screws?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Yes, if covered under IS 18507:2024, certification is required for legal sale in India.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          4. What tests are conducted for drywall screws?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tests include tensile strength, torque resistance, pull-out strength, and corrosion resistance.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          5. Can foreign manufacturers apply for BIS certification?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Yes, through the Foreign Manufacturers Certification Scheme (FMCS).
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          6. What documents are required for BIS certification?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Documents include factory registration, product specifications, test reports, and quality manuals.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          7. What happens if my product fails testing?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          You must improve the product quality and reapply for testing.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          8. Is factory inspection mandatory?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Yes, BIS conducts inspections to verify manufacturing and quality control systems.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          9. Can one license cover multiple screw sizes?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Yes, if they fall under the same product category and standard.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          10. What is the validity of the BIS license?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Typically, it is granted for a specific period and requires renewal.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          <a
+            href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            className="text-blue-600 hover:underline"
+          >
+            Check complete details about documentation, cost, and process for foreign manufacturers
+          </a>
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          <a
+            href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+            className="text-blue-600 hover:underline"
+          >
+            Check complete details about documentation, cost, and process for Indian manufacturers
+          </a>
+        </p>
+
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
-            src="/pdf/18509_2024.pdf"
-            title="BIS Certification for Head Wood Screws - IS 18509:2024 PDF"
+            src="/pdf/18507_2024.pdf"
+            title="BIS Certification for Drywall Screws - IS 18507:2024 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
