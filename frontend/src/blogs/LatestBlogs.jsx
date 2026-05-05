@@ -727,6 +727,17 @@ const blogs = [
     image: "/blogImages/BISLicenseforSlicingMachines.webp",
   },
   {
+    id: 74,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Pan Head Screws - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Pan Head Screws under IS 7483:2018. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/pan-head-screws-is-7483",
+    date: "9 April 2026",
+    image: "/blogImages/BISCertificationforpanheadScrews.webp",
+  },
+  {
     id: 69,
     color: "#7C3AED",
     title:

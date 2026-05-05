@@ -829,6 +829,9 @@ const BISCertificationforFootWarmers = lazy(() =>
 const BISCertificationforSlicingMachines = lazy(() =>
   import("@/blogs/BISCertificationforSlicingMachines")
 );
+const BISCertificationforPanHeadScrews = lazy(() =>
+  import("@/blogs/BISCertificationforPanHeadScrews")
+);
 const BISCertificationCombinationSideCuttingPliers = lazy(() =>
   import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliers")
 );
@@ -2934,6 +2937,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforSlicingMachines />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/pan-head-screws-is-7483"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforPanHeadScrews />
           </Suspense>
         }
       />

@@ -231,6 +231,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/electric-dishwashing-machines",
     "/blogs/isi-products/dishwashers",
     "/blogs/isi-products/slicing-machines",
+    "/blogs/isi-products/pan-head-screws-is-7483",
   ];
 
   // Check if current path should show these components
@@ -1279,6 +1280,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Dishwashers - English Page";
     if (path.includes("/blogs/isi-products/slicing-machines"))
       return "BIS Certificate for Slicing Machines - English Page";
+    if (path.includes("/blogs/isi-products/pan-head-screws-is-7483"))
+      return "BIS Certificate for Pan Head Screws - English Page";
 
     return "Website Contact Form";
   };
