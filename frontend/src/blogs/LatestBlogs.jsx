@@ -761,6 +761,16 @@ const blogs = [
     image: "/blogImages/BISCertificationfortappingscrewsovalhead.webp",
   },
   {
+    id: 77,
+    color: "#1A8781",
+    title:
+      "BIS Certificate for Vaccum Packaging Appliances | Complete Information",
+    description:
+      "Get BIS Certificate for Vaccum Packaging Appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/vaccum-packaging-appliances",
+    date: "16 April 2026",
+  },
+  {
     id: 69,
     color: "#7C3AED",
     title:

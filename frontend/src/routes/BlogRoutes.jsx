@@ -970,6 +970,9 @@ const BISCertificateForFootWarmerandHeatingMats = lazy(() =>
 const BISCertificationforVaccumCleaners = lazy(() =>
   import("@/blogs/BISCertificationforVaccumCleaners")
 );
+const BISCertificationforVaccumPackagingAppliances = lazy(() =>
+  import("@/blogs/BISCertificationforVaccumPackagingAppliances")
+);
 const BISCertificateForBatteryOperatedToothbrush = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificationBatteryOperatedToothbrush")
 );
@@ -3463,6 +3466,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateforShavers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/vaccum-packaging-appliances"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforVaccumPackagingAppliances />
           </Suspense>
         }
       />

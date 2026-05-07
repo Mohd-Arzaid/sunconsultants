@@ -221,6 +221,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/countersunk-flat-head-screws-is-7485",
     "/blogs/isi-products/hand-held-electric-engraving-tools",
     "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-&similar-appliances",
+    "/blogs/isi-products/vaccum-packaging-appliances",
     "/blogs/isi-products/commercial-electric-kitchen-machines",
     "/blogs/isi-products/electric-hot-plates",
     "/blogs/isi-products/commercial-electric-rinsing-sinks",
@@ -1266,6 +1267,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Hand Held Electric Engraving Tools - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-shavers-trimmers-clippers-&similar-appliances"))
       return "BIS Certificate for Shavers, Trimmers & Clippers - English Page";
+    if (path.includes("/blogs/isi-products/vaccum-packaging-appliances"))
+      return "BIS Certificate for Vaccum Packaging Appliances - English Page";
     if (path.includes("/blogs/isi-products/commercial-electric-kitchen-machines"))
       return "BIS Certificate for Commercial Electric Kitchen Machines - English Page";
     if (path.includes("/blogs/isi-products/electric-hot-plates"))
