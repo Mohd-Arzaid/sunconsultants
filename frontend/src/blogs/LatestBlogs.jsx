@@ -761,6 +761,17 @@ const blogs = [
     image: "/blogImages/BISCertificationfortappingscrewsovalhead.webp",
   },
   {
+    id: 78,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Tapping Screws Flat Head - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Tapping Screws Flat Head under IS 18480 (Part 2):2023. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/tapping-screws-flat-head-is-18480-part-2",
+    date: "17 April 2026",
+    image: "/blogImages/BISCertificationfortappingscrewsflathead.webp",
+  },
+  {
     id: 77,
     color: "#1A8781",
     title:
