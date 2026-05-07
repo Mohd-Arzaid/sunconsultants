@@ -761,6 +761,17 @@ const blogs = [
     image: "/blogImages/BISCertificationfortappingscrewsovalhead.webp",
   },
   {
+    id: 79,
+    color: "#0EA5E9",
+    title:
+      "BIS Certificate for Tapping Screws Pan Head - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Tapping Screws Pan Head under IS 18480 (Part 1):2023. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/tapping-screws-pan-head-is-18480-part-1",
+    date: "13 April 2026",
+    image: "/blogImages/BISCertificationfortappingscrewspanhead.webp",
+  },
+  {
     id: 78,
     color: "#0F766E",
     title:

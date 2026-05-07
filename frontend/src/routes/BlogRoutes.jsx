@@ -838,6 +838,9 @@ const BISCertificationforPanHeadScrews = lazy(() =>
 const BISCertificationforCrossRecessedTappingScrew = lazy(() =>
   import("@/blogs/BISCertificationforCrossRecessedTappingScrew")
 );
+const BISCertificationforCrossRecessedTappingScrewPanHead = lazy(() =>
+  import("@/blogs/BISCertificationforCrossRecessedTappingScrewPanHead")
+);
 const BISCertificationforCrossRecessedTappingScrewFlatHead = lazy(() =>
   import("@/blogs/BISCertificationforCrossRecessedTappingScrewFlatHead")
 );
@@ -2965,6 +2968,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforPanHeadScrews />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/tapping-screws-pan-head-is-18480-part-1"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCrossRecessedTappingScrewPanHead />
           </Suspense>
         }
       />

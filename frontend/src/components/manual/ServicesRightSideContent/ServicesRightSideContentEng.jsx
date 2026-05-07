@@ -234,6 +234,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/dishwashers",
     "/blogs/isi-products/slicing-machines",
     "/blogs/isi-products/pan-head-screws-is-7483",
+    "/blogs/isi-products/tapping-screws-pan-head-is-18480-part-1",
     "/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3",
     "/blogs/isi-products/tapping-screws-flat-head-is-18480-part-2",
   ];
@@ -1294,6 +1295,10 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Slicing Machines - English Page";
     if (path.includes("/blogs/isi-products/pan-head-screws-is-7483"))
       return "BIS Certificate for Pan Head Screws - English Page";
+    if (
+      path.includes("/blogs/isi-products/tapping-screws-pan-head-is-18480-part-1")
+    )
+      return "BIS Certificate for Tapping Screws Pan Head - English Page";
     if (
       path.includes("/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3")
     )
