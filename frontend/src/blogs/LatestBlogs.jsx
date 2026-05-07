@@ -577,11 +577,12 @@ const blogs = [
   {
     id: 45,
     color: "#10B981", // Green
-    title: "BIS Certificate for Shavers, Trimmers & Clippers – IS 302 (Part 1):2024",
+    title:
+      "BIS Certification for Shavers, Trimmers, Clippers and Similar Appliances – IS 302 (Part 1):2024",
     description:
       "Get BIS Certificate for battery-operated shavers, trimmers, clippers and similar appliances under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide for manufacturers and importers.",
-    slug: "blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances",
-    date: "14 February 2026",
+    slug: "blogs/isi-products/battery-operated-shavers-trimmers-clippers-&similar-appliances",
+    date: "11 April 2026",
     image: "/blogImages/BISLicenseforShaversTrimmers.png",
   },
   {

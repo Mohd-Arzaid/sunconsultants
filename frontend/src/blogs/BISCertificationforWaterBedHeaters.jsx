@@ -48,7 +48,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Shavers, BIS License for Trimmers, BIS Certification for Clippers, battery operated shavers trimmers clippers, IS 302, BIS Certification for Shavers Trimmers";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances";
+    "https://bis-certifications.com/blogs/isi-products/battery-operated-shavers-trimmers-clippers-&similar-appliances";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

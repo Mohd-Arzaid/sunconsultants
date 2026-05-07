@@ -995,7 +995,7 @@ const BISCertificationHandheldElectricEngraving = lazy(() =>
   import("@/blogs/BISCertificationHandheldElectricEngraving")
 );
 const BISCertificateforShavers = lazy(() =>
-  import("@/blogs/BISCertificationforShavers")
+  import("@/blogs/BISCertificationforBatteryOperatedShaversTrimmersClippe")
 );
 const BISCertificateForBatteryOperatedToothbrushChinese = lazy(() =>
   import("@/blogs/BISCertificateForBatteryOperatedToothbrush/BISCertificateForBatteryOperatedToothbrushChinese")
@@ -3459,7 +3459,7 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         }
       />
       <Route
-        path="/blogs/isi-products/battery-operated-shavers-trimmers-clippers-and-similar-appliances"
+        path="/blogs/isi-products/battery-operated-shavers-trimmers-clippers-&similar-appliances"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateforShavers />
