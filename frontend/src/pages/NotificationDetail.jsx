@@ -78,6 +78,8 @@ const NotificationHeader = ({ notification }) => {
 
 // Notification Content Component
 const NotificationContent = ({ notification }) => {
+  const isAsbestosFibreCementPage = notification.id === 105;
+
   return (
     <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
@@ -130,6 +132,18 @@ const NotificationContent = ({ notification }) => {
         Please review the attached document, If you have any questions or need
         assistance, Our Team is here to Help.
       </p>
+
+      {isAsbestosFibreCementPage && (
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <a
+            href="/blogs/isi-products/asbestos-cement-cable-conduits-and-troughs-is-8870"
+            className="text-blue-600 hover:underline"
+          >
+            BIS Certification for Asbestos Cement Cable Conduits and Troughs -
+            IS 8870:1978
+          </a>
+        </p>
+      )}
 
       <InterlinkSection
         type="qco"

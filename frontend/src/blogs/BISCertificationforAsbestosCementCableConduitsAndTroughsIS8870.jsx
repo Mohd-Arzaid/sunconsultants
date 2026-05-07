@@ -81,7 +81,15 @@ const BISCertificationforAsbestosCementCableConduitsAndTroughsIS8870 = () => (
             BIS Certification for Asbestos Cement Cable Conduits and Troughs - IS 8870:1978
           </h1>
           <img src="/blogImages/BISLicenseforAsbestosCementCableConduitsandTroughs.webp" alt="BIS Certificate for Asbestos Cement Cable Conduits and Troughs - IS 8870:1978" className="w-full h-auto rounded-lg shadow-md mb-6" />
-          <p className="text-gray-600 text-base font-geist mb-4">BIS Certification for Asbestos Cement Cable Conduits and Troughs under IS 8870: 1978 confirms that these products meet defined standards for structural strength, insulation support, and durability. Certification is required in India to ensure safe cable protection, minimize infrastructure risks, and maintain consistent performance in electrical and utility installations.</p>
+          <p className="text-gray-600 text-base font-geist mb-4">BIS Certification for Asbestos Cement Cable Conduits and Troughs under IS 8870: 1978 confirms that these products meet defined standards for structural strength, insulation support, and durability. Certification is required in India to ensure safe cable protection, minimize infrastructure risks, and maintain consistent performance in electrical and utility installations. For official regulatory context, refer to{" "}
+            <Link
+              to="/bis-qco-updates/bis-certificate-for-asbestos-or-fibre-cement-based-products"
+              className="text-blue-600 hover:underline"
+            >
+              Also Read the QCO Notification for Asbestos or Fibre Cement based Products
+            </Link>
+            .
+          </p>
           <p className="text-gray-600 text-base font-geist mb-4">Asbestos Cement Cable Conduits and Troughs are widely used in infrastructure projects to protect and route electrical cables safely. These products are commonly installed in underground cable networks, industrial facilities, power distribution systems, and telecom infrastructure. Their primary function is to shield cables from mechanical damage, moisture, and environmental exposure while ensuring organized cable management.</p>
           <p className="text-gray-600 text-base font-geist mb-4">Unlike metallic conduits, asbestos cement conduits offer corrosion resistance and thermal stability. They are especially useful in outdoor and underground environments where exposure to soil moisture, chemicals, or varying temperatures can degrade conventional materials. However, the inclusion of asbestos fibres introduces both technical and safety considerations. If manufacturing processes are not properly controlled, the structural integrity of conduits may be compromised, and improper handling can create health hazards.</p>
           <p className="text-gray-600 text-base font-geist mb-4">In large-scale infrastructure projects, even minor defects in cable conduits can lead to serious issues. Cracks, breakage, or dimensional inconsistencies may expose cables to damage, causing electrical faults or service interruptions. This makes standardization and quality verification essential before these products are deployed in real-world applications.</p>
@@ -104,6 +112,9 @@ const BISCertificationforAsbestosCementCableConduitsAndTroughsIS8870 = () => (
           <p className="text-gray-600 text-base font-geist mb-4">Testing includes mechanical strength tests to ensure conduits can withstand external loads. Dimensional checks verify uniformity and compatibility during installation.</p>
           <p className="text-gray-600 text-base font-geist mb-4">Durability tests assess resistance to environmental factors such as moisture and temperature variations. Quality verification tests ensure consistency across production batches.</p>
           <p className="text-gray-600 text-base font-geist mb-4">All testing must be conducted in BIS-recognized laboratories.</p>
+          <p className="text-gray-600 text-base font-geist mb-4">
+            <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
+          </p>
           <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4 mt-8">Conclusion</h2>
           <p className="text-gray-600 text-base font-geist mb-4">The BIS Certification for Asbestos Cement Cable Conduits and Troughs under IS 8870:1978 plays a crucial role in ensuring that these products meet defined technical and safety requirements. From manufacturing control to performance testing, certification validates that conduits can protect cables effectively in real-world conditions.</p>
           <p className="text-gray-600 text-base font-geist mb-4">For businesses, obtaining a BIS Certificate for Asbestos Cement Cable Conduits and Troughs is a strategic step toward regulatory compliance, improved market access, and long-term credibility.</p>
