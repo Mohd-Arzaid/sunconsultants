@@ -14,6 +14,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import { Services } from "@/components/manual/Services"
 
 const BISCertificationforAirCleaningAppliances = () => {
   return (
@@ -21,6 +22,7 @@ const BISCertificationforAirCleaningAppliances = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
+      <Services />
       <VideoSection />   
       <FooterEng />
     </div>
