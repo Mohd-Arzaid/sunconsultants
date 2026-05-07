@@ -203,6 +203,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/outdoor-barbecues",
     "/blogs/isi-products/fixed-immersion-heaters",
     "/blogs/isi-products/air-cleaning-appliances",
+    "/blogs/isi-products/asbestos-cement-cable-conduits-and-troughs-is-8870",
     "/blogs/isi-products/combination-side-cutting-pliers-is-3650",
     "/blogs/isi-products/pipe-wrenches-is-4003",
     "/blogs/isi-products/ring-wrenches-is-2029",
@@ -1239,6 +1240,12 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Battery Operated Air Purifier - English Page";
     if (path.includes("/blogs/isi-products/air-cleaning-appliances"))
       return "BIS Certification for Air-Cleaning Appliances - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/asbestos-cement-cable-conduits-and-troughs-is-8870"
+      )
+    )
+      return "BIS Certification for Asbestos Cement Cable Conduits and Troughs - English Page";
     if (path.includes("/blogs/isi-products/foot-warmer-&-heating-mats-is-302"))
       return "BIS Certificate for Foot Warmer & Heating Mats - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-vaccum-cleaners"))

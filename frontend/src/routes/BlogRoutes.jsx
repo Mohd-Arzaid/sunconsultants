@@ -343,6 +343,9 @@ const BISCertificateforFabricSteamers = lazy(() =>
 const BISCertificationforAirCleaningAppliances = lazy(() =>
   import("@/blogs/BISCertificationforAirCleaningAppliances")
 );
+const BISCertificationforAsbestosCementCableConduitsAndTroughs = lazy(() =>
+  import("@/blogs/BISCertificationforAsbestosCementCableConduitsAndTroughsIS8870")
+);
 const BISCertificationforFixedImmersionHeaters = lazy(() =>
   import("@/blogs/BISCertificationforFixedImmersionHeaters")
 );
@@ -1876,6 +1879,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforAirCleaningAppliances />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/asbestos-cement-cable-conduits-and-troughs-is-8870"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforAsbestosCementCableConduitsAndTroughs />
           </Suspense>
         }
       />

@@ -157,6 +157,17 @@ const blogs = [
     image: "/blogImages/BISLicenseforChipboardScrews.png",
   },
   {
+    id: 76,
+    color: "#0EA5E9",
+    title:
+      "BIS Certificate for Asbestos Cement Cable Conduits and Troughs - IS 8870:1978",
+    description:
+      "Get BIS Certificate for Asbestos Cement Cable Conduits and Troughs under IS 8870:1978. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/asbestos-cement-cable-conduits-and-troughs-is-8870",
+    date: "12 April 2026",
+    image: "/blogImages/BISLicenseforAsbestosCementCableConduitsandTroughs.webp",
+  },
+  {
     id: 52,
     color: "#0ea5e9",
     title: "BIS Certification for Humidifiers – Complete Guide to IS 302 (Part 1):2024",
