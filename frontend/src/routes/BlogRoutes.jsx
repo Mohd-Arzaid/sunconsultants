@@ -847,6 +847,9 @@ const BISCertificationforCrossRecessedTappingScrewFlatHead = lazy(() =>
 const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
   import("@/blogs/BISCertificationforTransmissionDevicesVBelts")
 );
+const BISCertificationforMiniDomesticWaterHeaters = lazy(() =>
+  import("@/blogs/BISCertificationforMiniDomesticWaterHeaters")
+);
 const BISCertificationforTelescopicBallBearingDrawerSlide = lazy(() =>
   import("@/blogs/BISCertificationforTelescopicBallBearingDrawerSlide")
 );
@@ -3009,6 +3012,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforTransmissionDevicesVBelts />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/mini-domestic-water-heaters-is-17150"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforMiniDomesticWaterHeaters />
           </Suspense>
         }
       />

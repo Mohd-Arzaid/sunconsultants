@@ -238,6 +238,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3",
     "/blogs/isi-products/tapping-screws-flat-head-is-18480-part-2",
     "/blogs/isi-products/transmission-devices-v-belts-is-14261",
+    "/blogs/isi-products/mini-domestic-water-heaters-is-17150",
     "/blogs/isi-products/telescopic-ball-bearing-is-17954",
     "/blogs/isi-products/electric-immersion-water-heaters-368",
   ];
@@ -1316,6 +1317,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Tapping Screws Flat Head - English Page";
     if (path.includes("/blogs/isi-products/transmission-devices-v-belts-is-14261"))
       return "BIS Certificate for Transmission Devices V-Belts - English Page";
+    if (path.includes("/blogs/isi-products/mini-domestic-water-heaters-is-17150"))
+      return "BIS Certificate for Mini Domestic Water Heaters - English Page";
     if (path.includes("/blogs/isi-products/telescopic-ball-bearing-is-17954"))
       return "BIS Certificate for Telescopic Ball Bearing Drawer Slide - English Page";
 

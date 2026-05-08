@@ -4015,7 +4015,6 @@
     <priority>0.8</priority>
     <lastmod>2026-04-29</lastmod>
   </url>
-
    <!-- BIS Certificate for Furniture - Arabic -->
    <url>
      <loc>https://bis-certifications.com/blogs/isi-products/athath</loc>
@@ -5895,6 +5894,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-04-20</lastmod>
+  </url>
+  <!-- BIS Certification for Mini Domestic Water Heaters - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/mini-domestic-water-heaters-is-17150</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-29</lastmod>
   </url>
   <!-- BIS Certification for Telescopic Ball Bearing Drawer Slide - English -->
   <url>

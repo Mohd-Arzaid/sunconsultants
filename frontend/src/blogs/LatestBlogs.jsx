@@ -783,6 +783,17 @@ const blogs = [
     image: "/blogImages/BISLicenseforTransmissionDevicesVBelts.webp",
   },
   {
+    id: 83,
+    color: "#0284C7",
+    title:
+      "BIS Certificate for Mini Domestic Water Heaters - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Mini Domestic Water Heaters under IS 17150:2019. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/mini-domestic-water-heaters-is-17150",
+    date: "12 April 2026",
+    image: "/blogImages/BISLicenseforMiniDomesticWaterHeatersc.webp",
+  },
+  {
     id: 80,
     color: "#0284C7",
     title:
