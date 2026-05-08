@@ -68,7 +68,7 @@ export default BISCertification;
 
 const BISCertificationMetaTags = () => {
   const { pathname } = useLocation();
-  const title = "BIS Certification Types, Process, Documents, Fee";
+  const title = "BIS Certification in India | Types, Process, Documents & Fees";
   const description =
     "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.";
   const keywords =
@@ -87,7 +87,8 @@ const BISCertificationMetaTags = () => {
       "@type": "WebPage",
       "@id": "https://bis-certifications.com/what-is-bis-certificate-indian-bis",
     },
-    headline: "BIS Certification in India for Importers and Manufacturers",
+    headline: title,
+    name: title,
     description:
       "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.",
     image:
@@ -109,19 +110,63 @@ const BISCertificationMetaTags = () => {
     dateModified: "2026-04-01",
   };
 
-  // Set title immediately when component mounts (synchronously, before browser paints)
+  // Set critical SEO tags immediately on mount for stronger crawler signals.
   useLayoutEffect(() => {
+    const upsertMeta = (selector, attributes, content) => {
+      let element = document.head.querySelector(selector);
+      if (!element) {
+        element = document.createElement("meta");
+        Object.entries(attributes).forEach(([key, value]) => {
+          element.setAttribute(key, value);
+        });
+        document.head.appendChild(element);
+      }
+      element.setAttribute("content", content);
+    };
+
+    const upsertCanonical = (href) => {
+      let canonical = document.head.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.setAttribute("rel", "canonical");
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute("href", href);
+    };
+
     document.title = title;
-  }, [title]);
+    upsertMeta('meta[name="title"]', { name: "title" }, title);
+    upsertMeta('meta[name="description"]', { name: "description" }, description);
+    upsertMeta('meta[property="og:title"]', { property: "og:title" }, title);
+    upsertMeta(
+      'meta[property="og:description"]',
+      { property: "og:description" },
+      description
+    );
+    upsertMeta('meta[name="twitter:title"]', { name: "twitter:title" }, title);
+    upsertMeta(
+      'meta[name="twitter:description"]',
+      { name: "twitter:description" },
+      description
+    );
+    if (canonicalUrl) {
+      upsertCanonical(canonicalUrl);
+    }
+  }, [title, description, canonicalUrl]);
 
   return (
     <Helmet>
       <title>{title}</title>
+      <meta name="title" content={title} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content={author} />
       <meta name="publisher" content={publisher} />
       <meta name="robots" content="index, follow" />
+      <meta
+        name="googlebot"
+        content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
