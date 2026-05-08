@@ -850,6 +850,9 @@ const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
 const BISCertificationforMiniDomesticWaterHeaters = lazy(() =>
   import("@/blogs/BISCertificationforMiniDomesticWaterHeaters")
 );
+const BISCertificationforStationaryStorageWaterHeaters = lazy(() =>
+  import("@/blogs/BISCertificationforStationaryStorageWaterHeaters")
+);
 const BISCertificationforTelescopicBallBearingDrawerSlide = lazy(() =>
   import("@/blogs/BISCertificationforTelescopicBallBearingDrawerSlide")
 );
@@ -3020,6 +3023,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforMiniDomesticWaterHeaters />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/stationary-storage-water-heaters-is-2082"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforStationaryStorageWaterHeaters />
           </Suspense>
         }
       />

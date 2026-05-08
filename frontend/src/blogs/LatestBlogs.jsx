@@ -794,6 +794,17 @@ const blogs = [
     image: "/blogImages/BISLicenseforMiniDomesticWaterHeatersc.webp",
   },
   {
+    id: 84,
+    color: "#0EA5E9",
+    title:
+      "BIS Certificate for Stationary Storage type Electric Water Heaters - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Stationary Storage type Electric Water Heaters under IS 2082:2018. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/stationary-storage-water-heaters-is-2082",
+    date: "15 April 2026",
+    image: "/blogImages/BISLicenseforStationaryStorageWaterHeaters.webp",
+  },
+  {
     id: 80,
     color: "#0284C7",
     title:
