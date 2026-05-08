@@ -844,6 +844,9 @@ const BISCertificationforCrossRecessedTappingScrewPanHead = lazy(() =>
 const BISCertificationforCrossRecessedTappingScrewFlatHead = lazy(() =>
   import("@/blogs/BISCertificationforCrossRecessedTappingScrewFlatHead")
 );
+const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
+  import("@/blogs/BISCertificationforTransmissionDevicesVBelts")
+);
 const BISCertificationforTelescopicBallBearingDrawerSlide = lazy(() =>
   import("@/blogs/BISCertificationforTelescopicBallBearingDrawerSlide")
 );
@@ -2998,6 +3001,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforCrossRecessedTappingScrewFlatHead />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/transmission-devices-v-belts-is-14261"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforTransmissionDevicesVBelts />
           </Suspense>
         }
       />
