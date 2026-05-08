@@ -761,6 +761,17 @@ const blogs = [
     image: "/blogImages/BISCertificationfortappingscrewsovalhead.webp",
   },
   {
+    id: 80,
+    color: "#0284C7",
+    title:
+      "BIS Certificate for Electric Immersion Water Heaters - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Electric Immersion Water Heaters under IS 368:2014. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/electric-immersion-water-heaters-368",
+    date: "14 April 2026",
+    image: "/blogImages/BISLicenseforElectricImmersionWaterHeaters.webp",
+  },
+  {
     id: 79,
     color: "#0EA5E9",
     title:

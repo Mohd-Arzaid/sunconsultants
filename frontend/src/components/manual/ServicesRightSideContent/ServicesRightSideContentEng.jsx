@@ -237,6 +237,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/tapping-screws-pan-head-is-18480-part-1",
     "/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3",
     "/blogs/isi-products/tapping-screws-flat-head-is-18480-part-2",
+    "/blogs/isi-products/electric-immersion-water-heaters-368",
   ];
 
   // Check if current path should show these components
@@ -1219,6 +1220,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Foot Warmers & Heating Mats - English Page";
     if (path.includes("/blogs/isi-products/outdoor-barbecues"))
       return "BIS Certificate for Outdoor Barbecues - English Page";
+    if (path.includes("/blogs/isi-products/electric-immersion-water-heaters-368"))
+      return "BIS Certificate for Electric Immersion Water Heaters - English Page";
     if (path.includes("/blogs/isi-products/fixed-immersion-heaters"))
       return "BIS Certificate for Fixed Immersion Heaters - English Page";
     if (

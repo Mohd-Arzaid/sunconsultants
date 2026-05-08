@@ -844,6 +844,9 @@ const BISCertificationforCrossRecessedTappingScrewPanHead = lazy(() =>
 const BISCertificationforCrossRecessedTappingScrewFlatHead = lazy(() =>
   import("@/blogs/BISCertificationforCrossRecessedTappingScrewFlatHead")
 );
+const BISCertificationforElectricImmersionWaterHeaters = lazy(() =>
+  import("@/blogs/BISCertificationforElectricImmersionWaterHeaters")
+);
 const BISCertificationCombinationSideCuttingPliers = lazy(() =>
   import("@/blogs/BISCertificationCombinationSideCuttingPliers/BISCertificationCombinationSideCuttingPliers")
 );
@@ -2992,6 +2995,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforCrossRecessedTappingScrewFlatHead />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/electric-immersion-water-heaters-368"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforElectricImmersionWaterHeaters />
           </Suspense>
         }
       />
