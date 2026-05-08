@@ -23,14 +23,14 @@ const articleSchema = {
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://bis-certifications.com/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3",
+      "https://bis-certifications.com/blogs/isi-products/telescopic-ball-bearing-is-17954",
   },
   headline:
-    "BIS Certification for Cross Recessed Tapping Screw Part 3 Raised Countersunk Oval Head– IS 18480 (Part 3):2023",
+    "BIS Certification for Telescopic Ball Bearing Drawer Slide - IS 17954:2023",
   description:
-    "A comprehensive guide to BIS Certification for Cross Recessed Tapping Screw Part 3 Raised Countersunk Oval Head under IS 18480 (Part 3):2023, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
+    "A comprehensive guide to BIS Certification for Telescopic Ball Bearing Drawer Slide under IS 17954:2023, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
   image:
-    "https://bis-certifications.com/blogImages/BISCertificationfortappingscrewsovalhead.webp",
+    "https://bis-certifications.com/blogImages/BISCertificationfortelescopicballbearing.webp",
   author: {
     "@type": "Person",
     name: "Dhruv Aggarwal",
@@ -51,11 +51,11 @@ const articleSchema = {
 const ratingSchema = {
   "@context": "https://schema.org/",
   "@type": "Product",
-  name: "BIS Certification for Tapping Screws Oval Head",
+  name: "BIS Certification for Telescopic Ball Bearing Drawer Slide",
   image:
-    "https://bis-certifications.com/blogImages/BISCertificationfortappingscrewsovalhead.webp",
+    "https://bis-certifications.com/blogImages/BISCertificationfortelescopicballbearing.webp",
   description:
-    "A comprehensive guide to BIS Certification for Cross Recessed Tapping Screw Part 3 Raised Countersunk Oval Head under IS 18480 (Part 3):2023, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
+    "A comprehensive guide to BIS Certification for Telescopic Ball Bearing Drawer Slide under IS 17954:2023, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
   brand: {
     "@type": "Brand",
     name: "Sun Certifications India",
@@ -75,82 +75,82 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Why is thread forming capability a key factor in BIS Certification for these tapping screws?",
+      name: "Why is cycle testing essential in BIS License for telescopic drawer slides?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Thread forming is the primary function of these screws, as they create their own mating threads in materials like sheet metal or plastic. If the thread geometry is not precise, the screw may fail to cut properly or damage the material. BIS certification ensures optimal thread profile, pitch, and hardness so that the screw performs consistently without cracking or weakening the base material.",
+        text: "Cycle testing simulates repeated opening and closing of drawers over time. Telescopic ball bearing slides are used thousands of times during their lifespan, especially in kitchens and office furniture. BIS certification ensures that the slide maintains smooth motion, alignment, and structural integrity even after extensive usage cycles without failure or performance degradation.",
       },
     },
     {
       "@type": "Question",
-      name: "How does BIS certification ensure these screws do not damage plastic components?",
+      name: "How does BIS certificate ensure stability when drawers are fully extended?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "When used in plastic housings, excessive hardness or aggressive thread design can cause stress cracks or deformation. BIS testing evaluates the balance between hardness and flexibility, ensuring that the screw forms threads smoothly without damaging the surrounding material. This is particularly important in electronics and appliance assemblies where plastic integrity is critical.",
+        text: "When a drawer is fully extended, the entire load shifts outward, increasing stress on the slide. BIS certification evaluates the slide's ability to maintain stability in this position without tilting or collapsing. This is particularly important for heavy-duty applications like tool cabinets or storage units where load imbalance can occur.",
       },
     },
     {
       "@type": "Question",
-      name: "What role does the raised countersunk oval head play in performance compliance?",
+      name: "What role do ball bearings play in BIS compliance for drawer slides?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The raised countersunk oval head provides a combination of partial flush fitting and a smooth, rounded finish. BIS certification ensures that the head dimensions are precise so the screw seats properly without creating uneven pressure points. This helps maintain both structural strength and visual finish in applications like panels and enclosures.",
+        text: "Ball bearings are the core components that enable smooth and frictionless movement. Poor-quality bearings can lead to noise, uneven motion, or early wear. BIS certification ensures that the bearings are properly sized, positioned, and capable of handling repeated movement under load without deterioration.",
       },
     },
     {
       "@type": "Question",
-      name: "Why is cross recess accuracy important in tapping screws under BIS standards?",
+      name: "Why is alignment accuracy important for BIS-certified drawer slides?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The cross recess is responsible for transferring torque from the tool to the screw. If the recess is poorly formed, it can lead to cam-out, stripping, or inefficient driving. BIS certification verifies the depth, symmetry, and alignment of the recess to ensure reliable engagement with screwdrivers or automated tools.",
+        text: "Misalignment in telescopic channels can cause jerky movement, increased friction, or complete jamming. BIS certification checks dimensional precision and assembly accuracy to ensure that all channels move in sync. This guarantees smooth operation and prevents long-term damage to both the slide and the furniture structure.",
       },
     },
     {
       "@type": "Question",
-      name: "What common failures are identified during BIS testing of these screws?",
+      name: "What does IS 17954:2023 specify for telescopic ball bearing slides?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Typical failures include improper thread formation, excessive brittleness due to incorrect heat treatment, uneven recess geometry, and dimensional inconsistencies. These issues can lead to installation problems such as stripping, breakage, or weak fastening. BIS certification identifies and eliminates such defects before the product reaches the market.",
+        text: "IS 17954:2023 defines the performance and quality requirements for telescopic ball bearing slides used in drawers and furniture systems. It covers load-bearing capacity, extension smoothness, durability cycles, corrosion resistance, and dimensional accuracy to ensure reliable and long-lasting operation in residential and commercial applications.",
       },
     },
     {
       "@type": "Question",
-      name: "How does BIS certification support high-speed assembly operations?",
+      name: "What types of telescopic ball bearing slides are covered under IS 17954:2023?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "In automated assembly lines, screws must perform consistently under rapid installation conditions. BIS certification ensures uniform dimensions, proper recess engagement, and reliable thread forming. This reduces tool slippage, minimizes downtime, and ensures smooth operations in industries like electronics manufacturing and automotive assembly.",
+        text: "The standard includes different categories such as partial extension slides, full extension slides, and over-extension slides. It applies to slides used in furniture, cabinets, industrial storage units, and modular systems where smooth linear motion and load support are critical.",
       },
     },
     {
       "@type": "Question",
-      name: "Why is hardness control critical for BIS compliance in tapping screws?",
+      name: "What tests are conducted for telescopic ball bearing slides as per IS 17954:2023?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "If the screw is too hard, it may become brittle and break during installation. If it is too soft, it may fail to form threads effectively. BIS certification ensures the correct hardness range is maintained, allowing the screw to penetrate materials while maintaining structural integrity.",
+        text: "Testing includes load capacity testing, cycle durability testing (repeated opening and closing), corrosion resistance testing, and smoothness of operation checks. These tests ensure that the slides can withstand continuous use without deformation, jamming, or premature failure.",
       },
     },
     {
       "@type": "Question",
-      name: "How does BIS certification ensure repeatability in large-scale production?",
+      name: "Why is load capacity testing important for telescopic ball bearing slides?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Consistency is essential when producing large volumes of tapping screws. BIS certification requires manufacturers to maintain strict quality control processes, ensuring that every batch meets the same specifications. This repeatability is crucial for maintaining compatibility and performance across different assemblies.",
+        text: "Load capacity testing ensures that the slides can safely support the intended weight of drawers or storage units. If the load rating is not properly verified, the slides may bend, fail, or detach, leading to safety risks and reduced product lifespan.",
       },
     },
     {
       "@type": "Question",
-      name: "Are surface coatings evaluated in BIS Certification for these screws?",
+      name: "How does IS 17954:2023 ensure durability of telescopic ball bearing slides?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, surface coatings such as zinc plating are evaluated to ensure corrosion resistance and uniform application. This is important for screws used in environments exposed to moisture or chemicals. Proper coating extends the lifespan of the screw and maintains its performance over time.",
+        text: "The standard includes cycle testing where slides are repeatedly opened and closed thousands of times to simulate real usage conditions. It also evaluates material strength and coating quality to ensure resistance against wear, friction, and environmental factors like humidity and corrosion.",
       },
     },
     {
       "@type": "Question",
-      name: "How does BIS certification improve reliability in electrical and appliance assemblies?",
+      name: "What happens if telescopic drawer slides fail BIS compliance testing?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "In electrical and appliance applications, screws must maintain secure fastening without loosening over time. Poor-quality screws can lead to vibrations, loose connections, or component failure. BIS certification ensures that these tapping screws meet strict performance standards, providing stable and long-lasting fastening in such sensitive applications.",
+        text: "If a product fails BIS testing, it cannot be certified or legally marketed under the standard. Manufacturers must identify the root cause, such as poor material quality or design flaws, and make necessary improvements. Retesting is required to ensure full compliance before the product can be approved for sale.",
       },
     },
   ],
@@ -173,21 +173,23 @@ export default BISCertificationforTelescopicBallBearingDrawerSlide;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Tapping Screws Oval Head - Process, Cost, Documentation";
+    "BIS Certificate for Telescopic Ball Bearing Drawer Slide - Process, Cost, Documentation";
   const ogTitle =
-    "BIS Certificate for Tapping Screws Oval Head - Process, Cost, Documentation";
+    "BIS Certificate for Telescopic Ball Bearing Drawer Slide - Process, Cost, Documentation";
   const twitterTitle =
-    "BIS Certificate for Tapping Screws Oval Head - Process, Cost, Documentation";
+    "BIS Certificate for Telescopic Ball Bearing Drawer Slide - Process, Cost, Documentation";
   const metaDescription =
-    "Get BIS Certificate for Tapping Screws Oval Head under IS 18480 (Part 3):2023. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Telescopic Ball Bearing Drawer Slide under IS 17954:2023. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Tapping Screws Oval Head as per IS 18480 (Part 3):2023. Process, Cost, Documents, Testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Telescopic Ball Bearing Drawer Slide as per IS 17954:2023. Process, Cost, Documents, Testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Tapping Screws Oval Head under IS 18480 (Part 3):2023. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Telescopic Ball Bearing Drawer Slide under IS 17954:2023. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Tapping Screws Oval Head, BIS License for Tapping Screws Oval Head, IS 18480 (Part 3):2023, BIS Certification for Tapping Screws Oval Head";
+    "BIS Certificate for Telescopic Ball Bearing Drawer Slide, BIS License for Telescopic Ball Bearing Drawer Slide, IS 17954:2023, BIS Certification for Telescopic Ball Bearing Drawer Slide";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3";
+    "https://bis-certifications.com/blogs/isi-products/telescopic-ball-bearing-is-17954";
+  const websiteImage =
+    "https://bis-certifications.com/blogImages/BISCertificationfortelescopicballbearing.webp";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -205,8 +207,10 @@ const MetaTags = () => {
       <meta property="og:url" content={websiteUrl} />
       <meta property="og:site_name" content={websiteName} />
       <meta property="og:type" content="article" />
+      <meta property="og:image" content={websiteImage} />
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
+      <meta name="twitter:image" content={websiteImage} />
       <link rel="canonical" href={websiteUrl} />
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       <script type="application/ld+json">{JSON.stringify(ratingSchema)}</script>
@@ -243,7 +247,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Tapping Screws Oval Head
+                    BIS Certificate for Telescopic Ball Bearing Drawer Slide
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -271,151 +275,140 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Cross Recessed Tapping Screw Part 3 Raised
-          Countersunk Oval Head- IS 18480 (Part 3):2023
+          BIS Certification for Telescopic Ball Bearing Drawer Slide - IS
+          17954:2023
         </h1>
 
         <div className="mb-6">
           <img
-            src="/blogImages/BISCertificationfortappingscrewsovalhead.webp"
-            title="BIS Certification for Tapping Screws Oval Head"
-            alt="BIS Certificate for Tapping Screws Oval Head - IS 18480 (Part 3):2023 BIS Certification"
+            src="/blogImages/BISCertificationfortelescopicballbearing.webp"
+            title="BIS Certification for Telescopic Ball Bearing Drawer Slide"
+            alt="BIS Certificate for Telescopic Ball Bearing Drawer Slide - IS 17954:2023 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Cross recessed tapping screws with raised countersunk oval heads are
-          widely used in industries where self-threading capability and surface
-          finish are equally important. Unlike conventional screws, these
-          fasteners are designed to cut or form threads directly into materials
-          such as sheet metal, plastics, or thin sections without pre-tapping.
-          This makes them essential in applications like electrical panels,
-          appliance housings, automotive interiors, and modular assemblies. For
-          official regulatory context, refer to{" "}
-          <Link
-            to="/bis-qco-updates/bis-certificate-for-cross-recessed-tapping-screw-part-3-raised-countersunk-oval-head"
-            className="text-blue-600 hover:underline"
-          >
-            Also Read the QCO Notification for Cross Recessed Tapping Screws
-          </Link>
-          .
+          BIS Certification for Telescopic Ball Bearing Drawer Slide under IS
+          17954:2023 confirms that drawer slides meet performance standards for
+          load capacity, smooth movement, durability, and safety. It is required
+          in India to ensure reliable operation in furniture, modular kitchens,
+          and industrial storage systems without failure or jamming.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The raised countersunk oval head design provides a partially flush
-          finish while still maintaining a slight dome for improved grip and
-          aesthetic appeal. At the same time, the cross recess ensures
-          efficient torque transfer during installation. However, this
-          combination of features also increases the dependency on precise
-          manufacturing. If the thread profile is not correctly formed, the
-          screw may fail to create a proper mating thread. Similarly, an
-          improperly designed recess can result in tool slippage or head
-          damage.
+          Telescopic ball bearing drawer slides have become an essential
+          component in modern furniture design, especially in modular kitchens,
+          office workstations, wardrobes, and industrial storage units. These
+          slides enable drawers to extend fully while maintaining smooth and
+          controlled motion, even under significant load. Unlike traditional
+          runners, telescopic slides rely on ball bearings and multi-stage
+          channels to deliver stability, precision, and durability.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          In such scenarios, the importance of regulatory oversight becomes
-          clear. The BIS Certification for Cross Recessed Tapping Screw Part 3
-          Raised Countersunk Oval Head ensures that these fasteners are
-          manufactured to meet stringent performance and dimensional standards.
-          For manufacturers, importers, and sellers, this certification acts as
-          a structured pathway to ensure product reliability and compliance in
-          the Indian market.
+          Because these slides are directly responsible for supporting and
+          guiding drawer movement, any failure can lead to inconvenience or even
+          injury. For instance, a poorly manufactured slide may jam midway,
+          collapse under load, or detach from the cabinet. In kitchen
+          environments, this can result in heavy utensils falling. In industrial
+          setups, it can disrupt workflows or damage stored equipment.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <a
-            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-            className="text-blue-600 hover:underline"
-          >
-            Check complete details about documentation, cost, and process etc.
-          </a>
+          The complexity of these components also introduces manufacturing
+          challenges. Precise alignment of channels, proper ball bearing
+          placement, and consistent material strength are all critical factors.
+          Even slight variations can impact performance significantly.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This is why the BIS Certification for Telescopic Ball Bearing Drawer
+          Slide plays a crucial role. It ensures that manufacturers follow
+          standardized design and testing procedures as per IS 17954:2023,
+          allowing products to perform reliably under real-world conditions. For
+          manufacturers, importers, and sellers, this certification ensures
+          regulatory acceptance and market trust.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Understanding BIS Certification for Cross Recessed Tapping Screw Part
-          3 Raised Countersunk Oval Head - IS 18480 (Part 3):2023
+          Understanding BIS Certification for Telescopic Ball Bearing Drawer
+          Slide - IS 17954:2023
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tapping screws are unique because they do not just fasten
-          components-they actively create their own threads during
-          installation. This dual function introduces specific risks. If the
-          screw is too hard, it may crack the material. If it is too soft, it
-          may fail to form threads properly. The BIS Certification for Cross
-          Recessed Tapping Screw Part 3 Raised Countersunk Oval Head evaluates
-          these critical factors.
+          Unlike simple hardware components, telescopic drawer slides are
+          dynamic systems that operate under repeated mechanical stress. Every
+          time a drawer is opened or closed, the slide undergoes friction, load
+          transfer, and alignment shifts. Over time, these repeated cycles can
+          lead to wear, misalignment, or failure if the product is not
+          manufactured correctly.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The certification process examines how effectively the screw performs
-          in real-world conditions. For instance, in plastic enclosures, the
-          screw must form threads without causing stress cracks. In sheet metal,
-          it must penetrate and hold securely without stripping. These
-          performance requirements go beyond simple dimensional checks and
-          require comprehensive testing.
+          The BIS Certificate for Telescopic Ball Bearing evaluates how well
+          these components perform under such conditions. It ensures that the
+          slides maintain smooth motion without excessive noise, jerking, or
+          resistance. It also verifies that the slides can support specified
+          loads without bending or collapsing.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Another important aspect is the cross recess design. Since these
-          screws are often installed using power tools, the recess must maintain
-          its shape under repeated torque. A poorly formed recess can lead to
-          cam-out, damaging both the screw and the material.
+          Safety is another critical consideration. If a drawer slide fails
+          unexpectedly, it can cause the drawer to fall, posing a risk to users.
+          This is particularly important in households with children or in
+          workplaces where heavy tools are stored.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
-          By obtaining a BIS Licence for Cross Recessed Tapping Screw Part 3
-          Raised Countersunk Oval Head, manufacturers demonstrate that their
-          products are capable of performing these functions consistently. This
-          reduces the risk of assembly failures and ensures that end products
-          maintain their structural integrity.
+          The certification process also focuses on dimensional accuracy. Proper
+          alignment of telescopic channels is essential for smooth extension and
+          retraction. Any deviation can result in uneven movement or jamming.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          By obtaining a BIS Licence for Telescopic Ball Bearing, manufacturers
+          demonstrate that their products meet these functional, safety, and
+          durability requirements, ensuring consistent performance across
+          different applications.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Cross Recessed Tapping Screw Part 3 Raised
-          Countersunk Oval Head
+          Applicable BIS Standard for Telescopic Ball Bearing Drawer Slide
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable standard is <strong>IS 18480 (Part 3):2023</strong>,
-          which specifically addresses cross recessed tapping screws with raised
-          countersunk oval heads.
+          The applicable standard is <strong>IS 17954:2023</strong>, which
+          defines the requirements for telescopic ball bearing drawer slides.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Scope of the Standard
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            This standard covers self-tapping screws designed to create threads
-            in pre-drilled holes, with a raised countersunk oval head and cross
-            recess drive.
-          </li>
-          <li>
-            It applies to screws used in materials like metal sheets and
-            plastics.
-          </li>
-        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This standard covers drawer slides designed with telescopic channels
+          and ball bearing mechanisms, intended for use in furniture, cabinets,
+          and storage systems.
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Product Categories Covered
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Various sizes and thread types</li>
-          <li>Material grades for different applications</li>
-          <li>Light-duty to industrial fastening use cases</li>
+          <li>Full-extension slides</li>
+          <li>Partial-extension slides</li>
+          <li>Heavy-duty and light-duty variants</li>
+          <li>Slides used in residential and industrial furniture</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Safety and Performance Objectives
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Proper thread forming capability without material damage</li>
-          <li>Accurate cross recess geometry for efficient torque transfer</li>
-          <li>Adequate hardness balance to prevent breakage or deformation</li>
-          <li>Consistent head dimensions for proper seating</li>
+          <li>Smooth and consistent sliding motion</li>
+          <li>Adequate load-bearing capacity</li>
+          <li>Resistance to wear and deformation</li>
+          <li>Secure mounting and alignment</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
@@ -423,18 +416,31 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            Optimized thread geometry for self-tapping performance across
-            materials
+            The design focuses on achieving precise channel alignment and
+            efficient load distribution through ball bearings.
           </li>
           <li>
-            Head geometry that balances functional seating and surface finish
+            Testing evaluates load capacity, cycle durability, and resistance to
+            mechanical stress.
           </li>
-          <li>
-            Testing of thread forming efficiency under real-world installation
-            conditions
-          </li>
-          <li>Torque resistance and durability testing for repeated usage</li>
         </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6" />
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Testing Requirements as per IS 17954:2023
+        </h2>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Load capacity testing to evaluate strength</li>
+          <li>Cycle testing for durability</li>
+          <li>Smoothness testing for motion quality</li>
+          <li>Alignment checks for proper functioning</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          All tests must be conducted in BIS-recognized laboratories.
+        </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
@@ -443,173 +449,169 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certification for Cross Recessed Tapping Screw Part 3 Raised
-          Countersunk Oval Head under IS 18480 (Part 3):2023 ensures that these
-          specialized fasteners meet the demanding requirements of modern
-          manufacturing. From thread forming capability to torque efficiency,
-          every aspect is evaluated to ensure reliable performance.
+          The BIS Certification for Telescopic Ball Bearing Drawer Slide under
+          IS 17954:2023 ensures that these essential components deliver
+          consistent performance, safety, and durability. From load capacity to
+          smooth operation, every aspect is evaluated to meet industry
+          expectations.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS License for Cross Recessed Tapping Screw Part 3 Raised
-          Countersunk Oval Head not only ensures compliance but also enhances
+          Obtaining a BIS License for Telescopic Ball Bearing Drawer Slide not
+          only ensures compliance with Indian regulations but also enhances
           product credibility and market acceptance. For manufacturers and
-          importers, it is a crucial step toward delivering high-quality,
-          dependable fastening solutions in India.
+          importers, it is a crucial step toward delivering reliable and
+          high-quality furniture hardware solutions.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs - BIS Certification for Cross Recessed Tapping Screw Part 3
-          Raised Countersunk Oval Head
+          FAQs - BIS Certificate for Telescopic Ball Bearing Drawer Slide - IS
+          17954:2023
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              1. Why is thread forming capability a key factor in BIS
-              Certification for these tapping screws?
+              1. Why is cycle testing essential in BIS License for telescopic
+              drawer slides?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Thread forming is the primary function of these screws, as they
-              create their own mating threads in materials like sheet metal or
-              plastic. If the thread geometry is not precise, the screw may fail
-              to cut properly or damage the material. BIS certification ensures
-              optimal thread profile, pitch, and hardness so that the screw
-              performs consistently without cracking or weakening the base
-              material.
+              Cycle testing simulates repeated opening and closing of drawers
+              over time. Telescopic ball bearing slides are used thousands of
+              times during their lifespan, especially in kitchens and office
+              furniture. BIS certification ensures that the slide maintains
+              smooth motion, alignment, and structural integrity even after
+              extensive usage cycles without failure or performance degradation.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              2. How does BIS certification ensure these screws do not damage
-              plastic components?
+              2. How does BIS certificate ensure stability when drawers are fully
+              extended?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              When used in plastic housings, excessive hardness or aggressive
-              thread design can cause stress cracks or deformation. BIS testing
-              evaluates the balance between hardness and flexibility, ensuring
-              that the screw forms threads smoothly without damaging the
-              surrounding material. This is particularly important in electronics
-              and appliance assemblies where plastic integrity is critical.
+              When a drawer is fully extended, the entire load shifts outward,
+              increasing stress on the slide. BIS certification evaluates the
+              slide&apos;s ability to maintain stability in this position without
+              tilting or collapsing. This is particularly important for
+              heavy-duty applications like tool cabinets or storage units where
+              load imbalance can occur.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              3. What role does the raised countersunk oval head play in
-              performance compliance?
+              3. What role do ball bearings play in BIS compliance for drawer
+              slides?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The raised countersunk oval head provides a combination of partial
-              flush fitting and a smooth, rounded finish. BIS certification
-              ensures that the head dimensions are precise so the screw seats
-              properly without creating uneven pressure points. This helps
-              maintain both structural strength and visual finish in applications
-              like panels and enclosures.
+              Ball bearings are the core components that enable smooth and
+              frictionless movement. Poor-quality bearings can lead to noise,
+              uneven motion, or early wear. BIS certification ensures that the
+              bearings are properly sized, positioned, and capable of handling
+              repeated movement under load without deterioration.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              4. Why is cross recess accuracy important in tapping screws under
-              BIS standards?
+              4. Why is alignment accuracy important for BIS-certified drawer
+              slides?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The cross recess is responsible for transferring torque from the
-              tool to the screw. If the recess is poorly formed, it can lead to
-              cam-out, stripping, or inefficient driving. BIS certification
-              verifies the depth, symmetry, and alignment of the recess to
-              ensure reliable engagement with screwdrivers or automated tools.
+              Misalignment in telescopic channels can cause jerky movement,
+              increased friction, or complete jamming. BIS certification checks
+              dimensional precision and assembly accuracy to ensure that all
+              channels move in sync. This guarantees smooth operation and
+              prevents long-term damage to both the slide and the furniture
+              structure.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              5. What common failures are identified during BIS testing of these
-              screws?
+              5. What does IS 17954:2023 specify for telescopic ball bearing
+              slides?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Typical failures include improper thread formation, excessive
-              brittleness due to incorrect heat treatment, uneven recess
-              geometry, and dimensional inconsistencies. These issues can lead to
-              installation problems such as stripping, breakage, or weak
-              fastening. BIS certification identifies and eliminates such defects
-              before the product reaches the market.
+              IS 17954:2023 defines the performance and quality requirements for
+              telescopic ball bearing slides used in drawers and furniture
+              systems. It covers load-bearing capacity, extension smoothness,
+              durability cycles, corrosion resistance, and dimensional accuracy
+              to ensure reliable and long-lasting operation in residential and
+              commercial applications.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              6. How does BIS certification support high-speed assembly
-              operations?
+              6. What types of telescopic ball bearing slides are covered under
+              IS 17954:2023?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              In automated assembly lines, screws must perform consistently under
-              rapid installation conditions. BIS certification ensures uniform
-              dimensions, proper recess engagement, and reliable thread forming.
-              This reduces tool slippage, minimizes downtime, and ensures smooth
-              operations in industries like electronics manufacturing and
-              automotive assembly.
+              The standard includes different categories such as partial
+              extension slides, full extension slides, and over-extension
+              slides. It applies to slides used in furniture, cabinets,
+              industrial storage units, and modular systems where smooth linear
+              motion and load support are critical.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              7. Why is hardness control critical for BIS compliance in tapping
-              screws?
+              7. What tests are conducted for telescopic ball bearing slides as
+              per IS 17954:2023?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              If the screw is too hard, it may become brittle and break during
-              installation. If it is too soft, it may fail to form threads
-              effectively. BIS certification ensures the correct hardness range
-              is maintained, allowing the screw to penetrate materials while
-              maintaining structural integrity.
+              Testing includes load capacity testing, cycle durability testing
+              (repeated opening and closing), corrosion resistance testing, and
+              smoothness of operation checks. These tests ensure that the slides
+              can withstand continuous use without deformation, jamming, or
+              premature failure.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              8. How does BIS certification ensure repeatability in large-scale
-              production?
+              8. Why is load capacity testing important for telescopic ball
+              bearing slides?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Consistency is essential when producing large volumes of tapping
-              screws. BIS certification requires manufacturers to maintain strict
-              quality control processes, ensuring that every batch meets the same
-              specifications. This repeatability is crucial for maintaining
-              compatibility and performance across different assemblies.
+              Load capacity testing ensures that the slides can safely support
+              the intended weight of drawers or storage units. If the load
+              rating is not properly verified, the slides may bend, fail, or
+              detach, leading to safety risks and reduced product lifespan.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              9. Are surface coatings evaluated in BIS Certification for these
-              screws?
+              9. How does IS 17954:2023 ensure durability of telescopic ball
+              bearing slides?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, surface coatings such as zinc plating are evaluated to ensure
-              corrosion resistance and uniform application. This is important for
-              screws used in environments exposed to moisture or chemicals.
-              Proper coating extends the lifespan of the screw and maintains its
-              performance over time.
+              The standard includes cycle testing where slides are repeatedly
+              opened and closed thousands of times to simulate real usage
+              conditions. It also evaluates material strength and coating quality
+              to ensure resistance against wear, friction, and environmental
+              factors like humidity and corrosion.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              10. How does BIS certification improve reliability in electrical
-              and appliance assemblies?
+              10. What happens if telescopic drawer slides fail BIS compliance
+              testing?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              In electrical and appliance applications, screws must maintain
-              secure fastening without loosening over time. Poor-quality screws
-              can lead to vibrations, loose connections, or component failure.
-              BIS certification ensures that these tapping screws meet strict
-              performance standards, providing stable and long-lasting fastening
-              in such sensitive applications.
+              If a product fails BIS testing, it cannot be certified or legally
+              marketed under the standard. Manufacturers must identify the root
+              cause, such as poor material quality or design flaws, and make
+              necessary improvements. Retesting is required to ensure full
+              compliance before the product can be approved for sale.
             </p>
           </div>
         </div>

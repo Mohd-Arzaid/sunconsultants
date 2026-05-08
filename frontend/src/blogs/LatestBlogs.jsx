@@ -761,6 +761,17 @@ const blogs = [
     image: "/blogImages/BISCertificationfortappingscrewsovalhead.webp",
   },
   {
+    id: 81,
+    color: "#0284C7",
+    title:
+      "BIS Certificate for Telescopic Ball Bearing Drawer Slide - Process, Cost, Documentation",
+    description:
+      "Get BIS Certificate for Telescopic Ball Bearing Drawer Slide under IS 17954:2023. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/telescopic-ball-bearing-is-17954",
+    date: "17 April 2026",
+    image: "/blogImages/BISCertificationfortelescopicballbearing.webp",
+  },
+  {
     id: 80,
     color: "#0284C7",
     title:

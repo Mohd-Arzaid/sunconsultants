@@ -844,6 +844,9 @@ const BISCertificationforCrossRecessedTappingScrewPanHead = lazy(() =>
 const BISCertificationforCrossRecessedTappingScrewFlatHead = lazy(() =>
   import("@/blogs/BISCertificationforCrossRecessedTappingScrewFlatHead")
 );
+const BISCertificationforTelescopicBallBearingDrawerSlide = lazy(() =>
+  import("@/blogs/BISCertificationforTelescopicBallBearingDrawerSlide")
+);
 const BISCertificationforElectricImmersionWaterHeaters = lazy(() =>
   import("@/blogs/BISCertificationforElectricImmersionWaterHeaters")
 );
@@ -2995,6 +2998,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforCrossRecessedTappingScrewFlatHead />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/telescopic-ball-bearing-is-17954"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforTelescopicBallBearingDrawerSlide />
           </Suspense>
         }
       />
