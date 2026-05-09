@@ -1,8 +1,8 @@
-import { Mail, Linkedin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const AboutAuthor = () => {
   return (
-    <section className="">
+    <section>
       <div className="relative overflow-hidden bg-gradient-to-br from-[#F9F7F2] via-white to-[#F9F7F2] border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
         {/* Decorative background elements */}
         <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#1A8781]/5 to-transparent rounded-full -translate-y-4 translate-x-4"></div>
@@ -53,7 +53,22 @@ const AboutAuthor = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 p-3 bg-gradient-to-r from-[#0077B5]/5 to-[#0077B5]/10 hover:from-[#0077B5]/10 hover:to-[#0077B5]/15 rounded-lg border border-[#0077B5]/10 hover:border-[#0077B5]/20 transition-all duration-200"
                 >
-                  <Linkedin className="w-4 h-4 text-[#0077B5]" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-linkedin w-4 h-4 text-[#0077B5]"
+                  >
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
                   <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
                     <span className="font-medium">LinkedIn:</span> Connect with
                     me

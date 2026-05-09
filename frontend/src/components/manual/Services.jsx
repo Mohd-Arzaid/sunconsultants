@@ -1,11 +1,4 @@
 import { Separator } from "../ui/separator";
-import BISImage from "../../assets/images/BIS.jpg";
-import BISCRS from "../../assets/images/BISCRS.jpg";
-import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
-import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
-import LMPC from "../../assets/images/LMPC.jpg";
-import ISIMark from "../../assets/images/ISIMark.jpg";
-import { BoxReveal } from "../magicui/box-reveal";
 import { Link } from "react-router-dom";
 
 export const Services = () => {
@@ -13,21 +6,17 @@ export const Services = () => {
     <div className="pt-6 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Our Services
-            </div>
-          </BoxReveal>
+          <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            Our Services
+          </div>
 
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
-              </span>
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-            </div>
-          </BoxReveal>
+          <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+              India's Best Certificate Consultant
+            </span>
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+          </div>
         </div>
 
         <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-10 px-4 md:px-0 gap-y-12 md:gap-y-24">
@@ -37,7 +26,7 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={BISImage}
+                src="/services-images/BIS.jpg"
                 alt="BIS Mark Certificate - Bureau of Indian Standards for Foreign Manufacturers - Sun Certifications India"
                 title="BIS Mark Certificate - Bureau of Indian Standards for Foreign Manufacturers - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
@@ -71,7 +60,7 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={BISCRS}
+                src="/services-images/BISCRS.jpg"
                 alt="BIS CRS Registration Certificate - Compulsory Registration Scheme - Sun Certifications India"
                 title="BIS CRS Registration Certificate - Compulsory Registration Scheme - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
@@ -88,7 +77,7 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={PlasticWasteManagement}
+                src="/services-images/PlasticWasteManagement.jpg"
                 alt="Plastic Waste Management Certificate - Environmental Compliance - Sun Certifications India"
                 title="Plastic Waste Management Certificate - Environmental Compliance - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
@@ -105,7 +94,7 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={EPRCertificate}
+                src="/services-images/EPRCertificate.jpg"
                 alt="EPR Certificate - Extended Producer Responsibility - Sun Certifications India"
                 title="EPR Certificate - Extended Producer Responsibility - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
@@ -122,7 +111,7 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={LMPC}
+                src="/services-images/LMPC.jpg"
                 alt="LMPC Certificate - Legal Metrology Packaged Commodities - Sun Certifications India"
                 title="LMPC Certificate - Legal Metrology Packaged Commodities - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
@@ -139,7 +128,7 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={BISImage}
+                src="/services-images/BIS.jpg"
                 alt="BIS Registration Certificate - Bureau of Indian Standards - Sun Certifications India"
                 title="BIS Registration Certificate - Bureau of Indian Standards - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
@@ -156,7 +145,7 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={ISIMark}
+                src="/services-images/ISIMark.jpg"
                 alt="ISI Mark Certificate - Indian Standards Institute Certification - Sun Certifications India"
                 title="ISI Mark Certificate - Indian Standards Institute Certification - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
