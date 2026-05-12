@@ -1129,6 +1129,18 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
           "Earn the Indian customer&apos;s long-term brand trust.",
         ]}
       />
+
+      <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+        <p className="font-geist text-sm md:text-base text-[#1f2937]">
+          Get complete details about - {" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-medium text-blue-900 decoration-blue-900  transition-colors"
+          >
+            BIS Certifications
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };
