@@ -173,14 +173,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Yes. Foreign manufacturers can obtain BIS certification for eligible
           products. The key is to apply under the correct scheme—either the{" "}
-          <a
-            href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            ISI Scheme
-          </a>{" "}
+          ISI Scheme{" "}
           Scheme (certification with factory surveillance and ISI mark) or the
           Compulsory Registration Scheme (CRS) for electronics/IT products.
           Because the applicant is overseas, you must appoint an Authorized
@@ -230,26 +223,35 @@ const MainContentLeft = () => {
           to improve first‑time approval rates.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For more details on Licence for Indian manufacturers visit :{" "}
-          <Link
-            to="/a-guide-to-bis-certification-indian-bis"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            https://bis-certifications.com/a-guide-to-bis-certification-indian-bis
-          </Link>
-          .
-        </p>
+        <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+          <p className="font-geist text-sm md:text-base text-[#1f2937]">
+            Get complete details about BIS certification for Indian manufacturers,
+            <br />
+            Click:{" "}
+            <Link
+              to="/a-guide-to-bis-certification-indian-bis"
+              className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+            >
+              ISI Mark Certification Scheme
+            </Link>
+            <br />
+          </p>
+        </div>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For more details on license for Foreign manufacturers visit:{" "}
-          <Link
-            to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis
-          </Link>
-        </p>
+        <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+          <p className="font-geist text-sm md:text-base text-[#1f2937]">
+            Get complete details about BIS certification for foreign manufacturers,
+            <br />
+            Click:{" "}
+            <Link
+              to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+            >
+              FMCS – Foreign Manufacturers Certification Scheme
+            </Link>
+            <br />
+          </p>
+        </div>
 
         <FaqAuthorEng questionNumber={29} />
       </div>

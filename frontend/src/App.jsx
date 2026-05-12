@@ -258,9 +258,9 @@ function App() {
       {!isAdminRoute && (
         <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />
       )}
-      {!isAdminRoute && (
+      {/* {!isAdminRoute && (
         <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />
-      )}
+      )} */}
     </>
   );
 }

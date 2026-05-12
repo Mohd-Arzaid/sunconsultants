@@ -175,14 +175,7 @@ const MainContentLeft = () => {
           and manufacturers navigating Indian conformity routes. Begin by
           identifying the applicable Indian Standard (IS) and confirming whether
           your product falls under the{" "}
-          <a
-            href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            ISI Scheme
-          </a>{" "}
+          ISI Scheme{" "}
           (license with surveillance) or the Compulsory Registration Scheme
           (CRS) used for electronics/IT. Build a simple scope table with
           models/variants, ratings, and critical components—this improves test
@@ -273,30 +266,35 @@ const MainContentLeft = () => {
           to improve first‑time approval rates.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For more details on Licence for Indian manufacturers visit :{" "}
-          <a
-            href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            https://bis-certifications.com/a-guide-to-bis-certification-indian-bis
-          </a>
-          .
-        </p>
+        <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+          <p className="font-geist text-sm md:text-base text-[#1f2937]">
+            Get complete details about BIS certification for Indian manufacturers,
+            <br />
+            Click:{" "}
+            <Link
+              to="/a-guide-to-bis-certification-indian-bis"
+              className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+            >
+              ISI Mark Certification Scheme
+            </Link>
+            <br />
+          </p>
+        </div>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For more details on license for Foreign manufacturers visit:{" "}
-          <a
-            href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis
-          </a>
-        </p>
+        <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+          <p className="font-geist text-sm md:text-base text-[#1f2937]">
+            Get complete details about BIS certification for foreign manufacturers,
+            <br />
+            Click:{" "}
+            <Link
+              to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+            >
+              FMCS – Foreign Manufacturers Certification Scheme
+            </Link>
+            <br />
+          </p>
+        </div>
 
         <FaqAuthorEng questionNumber={14} />
       </div>

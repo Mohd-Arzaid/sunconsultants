@@ -170,35 +170,12 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           To verify a BIS approval, you&apos;ll need either the ISI license
-          number (CM/L) for products under the{" "}
-          <a
-            href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            ISI Scheme
-          </a>{" "}
-          or the Registration number (R‑number) for products under the
-
-
-          {" "}
-          <a
-            href="https://crsbis.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-             CRS Scheme
-          </a>{" "}
-          
-          
-          
-          
-           , together with the brand and the exact model/variant. Go to the
-          bis.gov.in, open the verification section, and search by CM/L or
-          R‑number. A valid listing shows the licensee/manufacturer, brand,
-          model, Indian Standard (IS), and the current status.
+          number (CM/L) for products under the ISI Scheme or the Registration
+          number (R‑number) for products under the CRS Scheme, together with the
+          brand and the exact model/variant. Go to the bis.gov.in, open the
+          verification section, and search by CM/L or R‑number. A valid listing
+          shows the licensee/manufacturer, brand, model, Indian Standard (IS),
+          and the current status.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -224,30 +201,35 @@ const MainContentLeft = () => {
           to improve first‑time approval rates.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For more details on Licence for Indian manufacturers visit :{" "}
-          <a
-            href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            https://bis-certifications.com/a-guide-to-bis-certification-indian-bis
-          </a>
-          .
-        </p>
+        <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+          <p className="font-geist text-sm md:text-base text-[#1f2937]">
+            Get complete details about BIS certification for Indian manufacturers,
+            <br />
+            Click:{" "}
+            <Link
+              to="/a-guide-to-bis-certification-indian-bis"
+              className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+            >
+              ISI Mark Certification Scheme
+            </Link>
+            <br />
+          </p>
+        </div>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For more details on license for Foreign manufacturers visit:{" "}
-          <a
-            href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis
-          </a>
-        </p>
+        <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
+          <p className="font-geist text-sm md:text-base text-[#1f2937]">
+            Get complete details about BIS certification for foreign manufacturers,
+            <br />
+            Click:{" "}
+            <Link
+              to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+            >
+              FMCS – Foreign Manufacturers Certification Scheme
+            </Link>
+            <br />
+          </p>
+        </div>
 
         <FaqAuthorEng questionNumber={1} />
       </div>
