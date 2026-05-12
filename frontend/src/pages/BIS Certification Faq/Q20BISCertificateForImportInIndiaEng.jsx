@@ -34,10 +34,10 @@ export default Q20BISCertificateForImportInIndiaEng;
 
 const Q20BISCertificateForImportInIndiaMetaData = () => {
   const title =
-    "How to get BIS certificate for import in india? – Clear & Simple Answer Guide";
+    "How to get BIS Certificate for import in India? – Clear & Simple Answer Guide";
 
   const description =
-    "How to get BIS certificate for import in india. This guide explains How to get BIS certificate for import in india?";
+    "How to get BIS Certificate for import in India. This guide explains How to get BIS Certificate for import in India?";
 
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
@@ -51,16 +51,16 @@ const Q20BISCertificateForImportInIndiaMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "How to get BIS certificate for import in india? | Complete Guide & Easy Explanation";
+    "How to get BIS Certificate for import in India? | Complete Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers How to get BIS certificate for import in india in simple steps. Understand about BIS Certificate, what details are required, and how to avoid errors or non-compliance.";
+    "This guide covers How to get BIS Certificate for import in India in simple steps. Understand about BIS Certificate, what details are required, and how to avoid errors or non-compliance.";
 
   const twitterTitle =
-    "How to get BIS certificate for import in india | Simple Guide";
+    "How to get BIS Certificate for import in India | Simple Guide";
 
   const twitterDescription =
-    "Quick guide on How to get BIS certificate for import in india.";
+    "Quick guide on How to get BIS Certificate for import in India.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -68,10 +68,10 @@ const Q20BISCertificateForImportInIndiaMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How to get BIS certificate for import in india?",
+        name: "How to get BIS Certificate for import in India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "To get BIS certificate for import in India, foreign manufacturers must identify the applicable Indian Standard (IS), appoint an Authorized Indian Representative (AIR), prepare documentation, conduct product testing at BIS-recognized labs, submit application through the BIS portal, complete factory inspection (for ISI Scheme), and obtain the certificate. The certificate is mandatory before importing covered products to India. Importers can act as AIR on behalf of foreign manufacturers to facilitate the certification process.",
+          text: "To get BIS Certificate for import in India, foreign manufacturers must identify the applicable Indian Standard (IS), appoint an Authorized Indian Representative (AIR), prepare documentation, conduct product testing at BIS-recognized labs, submit application through the BIS portal, complete factory inspection (for ISI Scheme), and obtain the certificate. The certificate is mandatory before importing covered products to India. Importers can act as AIR on behalf of foreign manufacturers to facilitate the certification process.",
         },
       },
     ],
@@ -213,7 +213,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -228,7 +228,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

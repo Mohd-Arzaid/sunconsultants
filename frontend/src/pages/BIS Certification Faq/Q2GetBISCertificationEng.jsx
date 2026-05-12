@@ -33,13 +33,13 @@ const Q2GetBISCertificationEng = () => {
 export default Q2GetBISCertificationEng;
 
 const Q2GetBISCertificationMetaData = () => {
-  const title = "How to get BIS certification? – Clear & Simple Answer Guide";
+  const title = "How to get BIS Certification? – Clear & Simple Answer Guide";
 
   const description =
-    "Learn about bis certification. This guide explains how to get bis certification, key requirements, steps, and tips to understand BIS Certification";
+    "Learn about BIS Certification. This guide explains how to get BIS Certification, key requirements, steps, and tips to understand BIS Certification";
 
   const keywords =
-    "get BIS certification, BIS certificate verification, verify ISI mark, bis certificate";
+    "get BIS Certification, BIS Certificate verification, verify ISI mark, BIS Certificate";
 
   const canonicalUrl = "https://bis-certifications.com/get-bis-certification";
 
@@ -48,14 +48,14 @@ const Q2GetBISCertificationMetaData = () => {
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
-  const ogTitle = "How to get BIS certificate | Quick Guide & Easy Explanation";
+  const ogTitle = "How to get BIS Certificate | Quick Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers how to get bis certification in simple steps. Understand how to get, what details are required, and how to avoid errors or non-compliance.";
+    "This guide covers how to get BIS Certification in simple steps. Understand how to get, what details are required, and how to avoid errors or non-compliance.";
 
-  const twitterTitle = "How to get BIS certificate | Simple Guide";
+  const twitterTitle = "How to get BIS Certificate | Simple Guide";
 
-  const twitterDescription = "Quick guide on how to get bis certification.";
+  const twitterDescription = "Quick guide on how to get BIS Certification.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -63,10 +63,10 @@ const Q2GetBISCertificationMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How to get BIS certification?",
+        name: "How to get BIS Certification?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Start by confirming whether your product falls under the ISI Scheme (license with surveillance and ISI mark) or the Compulsory Registration Scheme (CRS) for electronics/IT. Identify the applicable Indian Standard (IS) and read the scope notes. Create a compliance plan: list models/variants, map applicable clauses, and collect documents. Choose a BIS-recognized laboratory experienced in your category. For CRS, once tests pass you submit reports and documents online, pay fees, and receive a Registration (R-number) if approved. For ISI, prepare for a factory audit and ongoing surveillance.",
+          text: "The BIS Certification process starts by confirming whether your product falls under the ISI Scheme (license with surveillance and ISI mark) or the Compulsory Registration Scheme (CRS) for electronics/IT. Identify the applicable Indian Standard (IS) and read the scope notes. Create a compliance plan: list models/variants, map applicable clauses, and collect documents. Choose a BIS-recognized laboratory experienced in your category. For CRS, once tests pass you submit reports and documents online, pay fees, and receive a Registration (R-number) if approved. For ISI, prepare for a factory audit and ongoing surveillance.",
         },
       },
     ],
@@ -168,8 +168,15 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Start by confirming whether your product falls under the ISI Scheme
-          (license with surveillance and ISI mark) or the Compulsory
+          The{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+          >
+            BIS Certification
+          </Link>{" "}
+          process starts by confirming whether your product falls under the ISI
+          Scheme (license with surveillance and ISI mark) or the Compulsory
           Registration Scheme (CRS) for electronics/IT. Identify the applicable
           Indian Standard (IS) and read the scope notes—they define the exact
           tests, labeling, and any exclusions. Create a compliance plan: list
@@ -206,7 +213,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -221,7 +228,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

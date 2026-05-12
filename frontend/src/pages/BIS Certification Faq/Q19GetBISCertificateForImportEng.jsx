@@ -34,10 +34,10 @@ export default Q19GetBISCertificateForImportEng;
 
 const Q19GetBISCertificateForImportMetaData = () => {
   const title =
-    "how to get BIS Certificate for import? - Clear & Simple Answer Guide";
+    "How to get BIS Certificate for import? - Clear & Simple Answer Guide";
 
   const description =
-    "how to get BIS Certificate for import. This guide explains how to get BIS Certificate for import?";
+    "How to get BIS Certificate for import. This guide explains How to get BIS Certificate for import?";
 
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
@@ -50,7 +50,7 @@ const Q19GetBISCertificateForImportMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "how to get BIS Certificate for import? | Complete Guide & Easy Explanation";
+    "How to get BIS Certificate for import? | Complete Guide & Easy Explanation";
 
   const ogDescription =
     "This guide covers how to get BIS Certificate for import in simple steps. Understand about BIS Certificate, what details are required, and how to avoid errors or non-compliance.";
@@ -58,7 +58,7 @@ const Q19GetBISCertificateForImportMetaData = () => {
   const twitterTitle = "how to get BIS Certificate for import | Simple Guide";
 
   const twitterDescription =
-    "Quick guide on how to get BIS Certificate for import.";
+    "Quick guide on How to get BIS Certificate for import.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -66,7 +66,7 @@ const Q19GetBISCertificateForImportMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "how to get BIS Certificate for import?",
+        name: "How to get BIS Certificate for import?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "To get BIS Certificate for import, foreign manufacturers need to apply through the BIS portal, submit product samples for testing, complete factory inspection, and obtain the certificate before importing products to India. Importers can also apply on behalf of foreign manufacturers by acting as an Authorized Indian Representative (AIR). The certificate must be obtained before customs clearance. Identify the applicable Indian Standard (IS), appoint an AIR if you're a foreign manufacturer, conduct product testing at BIS-recognized labs, and complete the certification process.",
@@ -211,7 +211,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -226,7 +226,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

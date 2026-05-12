@@ -37,10 +37,10 @@ const Q3CheckBISCertificationOnlineMetaData = () => {
     "How to Check BIS Certification online? – Clear & Simple Answer Guide";
 
   const description =
-    "Learn about bis certificate. This guide explains how to Check BIS Certification online, key requirements, steps, and tips to understand BIS Certification";
+    "Learn about BIS Certificate. This guide explains how to Check BIS Certification online, key requirements, steps, and tips to understand BIS Certification";
 
   const keywords =
-    "get BIS certification, BIS certificate verification, verify ISI mark, bis certificate, Check BIS License Online";
+    "get BIS Certification, BIS Certificate verification, verify ISI mark, BIS Certificate, Check BIS License Online";
 
   const canonicalUrl =
     "https://bis-certifications.com/check-bis-certification-online";
@@ -209,7 +209,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -224,7 +224,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

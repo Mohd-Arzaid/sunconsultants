@@ -167,7 +167,7 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bis vs isi is a frequent question for brands and manufacturers
+          BIS vs ISI is a frequent question for brands and manufacturers
           navigating Indian conformity routes. Begin by identifying the
           applicable Indian Standard (IS) and confirming whether your product
           falls under the{" "}
@@ -212,7 +212,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -227,7 +227,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

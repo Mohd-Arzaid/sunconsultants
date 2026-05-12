@@ -34,10 +34,10 @@ export default Q5GetBISCertificationInIndiaEng;
 
 const Q5GetBISCertificationInIndiaMetaData = () => {
   const title =
-    "How to get BIS Certification in india? – Clear & Simple Answer Guide";
+    "How to get BIS Certification in India? – Clear & Simple Answer Guide";
 
   const description =
-    "Learn about BIS Certification in india. This guide explains How to get BIS Certification in India, key requirements, steps, and tips to understand BIS Certification";
+    "Learn about BIS Certification in India. This guide explains How to get BIS Certification in India, key requirements, steps, and tips to understand BIS Certification";
 
   const keywords = "BIS Certification, BIS license, BIS Certification in India";
 
@@ -50,12 +50,12 @@ const Q5GetBISCertificationInIndiaMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "How to get BIS Certification in india | Quick Guide & Easy Explanation";
+    "How to get BIS Certification in India | Quick Guide & Easy Explanation";
 
   const ogDescription =
     "This guide covers How to get BIS Certification in India in simple steps. Understand about BIS License, what details are required, and how to avoid errors or non-compliance.";
 
-  const twitterTitle = "How to get BIS Certification in india | Simple Guide";
+  const twitterTitle = "How to get BIS Certification in India | Simple Guide";
 
   const twitterDescription =
     "Quick guide on How to get BIS Certificate in India.";
@@ -66,7 +66,7 @@ const Q5GetBISCertificationInIndiaMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How to get BIS Certification in india?",
+        name: "How to get BIS Certification in India?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Start by confirming whether your product falls under the ISI Scheme (license with surveillance and ISI mark) or the Compulsory Registration Scheme (CRS) for electronics/IT. Identify the applicable Indian Standard (IS) and read the scope notes. Create a compliance plan: list models/variants, map applicable clauses, and collect documents. Choose a BIS-recognized laboratory experienced in your category. For CRS, once tests pass you submit reports and documents online, pay fees, and receive a Registration (R-number) if approved. For ISI, prepare for a factory audit and ongoing surveillance.",
@@ -209,7 +209,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -224,7 +224,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

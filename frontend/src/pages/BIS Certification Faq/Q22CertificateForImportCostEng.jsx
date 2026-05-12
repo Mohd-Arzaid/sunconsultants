@@ -33,10 +33,10 @@ const Q22CertificateForImportCostEng = () => {
 export default Q22CertificateForImportCostEng;
 
 const Q22CertificateForImportCostMetaData = () => {
-  const title = "BIS certificate for import cost – Clear & Simple Answer Guide";
+  const title = "BIS Certificate for import cost – Clear & Simple Answer Guide";
 
   const description =
-    "BIS certificate for import cost. This guide explains Cost of BIS License for Import?";
+    "BIS Certificate for import cost. This guide explains Cost of BIS License for Import?";
 
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, Cost of BIS License";
@@ -50,14 +50,14 @@ const Q22CertificateForImportCostMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "BIS certificate for import cost | Complete Guide & Easy Explanation";
+    "BIS Certificate for import cost | Complete Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers BIS certificate for import cost simple steps. Understand about BIS Certificate, what details are required, and how to avoid errors or non-compliance.";
+    "This guide covers BIS Certificate for import cost simple steps. Understand about BIS Certificate, what details are required, and how to avoid errors or non-compliance.";
 
-  const twitterTitle = "BIS certificate for import cost | Simple Guide";
+  const twitterTitle = "BIS Certificate for import cost | Simple Guide";
 
-  const twitterDescription = "Quick guide on BIS certificate for import cost.";
+  const twitterDescription = "Quick guide on BIS Certificate for import cost.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -65,10 +65,10 @@ const Q22CertificateForImportCostMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "BIS certificate for import cost?",
+        name: "BIS Certificate for import cost?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "BIS certificate for import cost includes laboratory testing fees, application/processing fees, marking or registration charges, factory audit fees (for ISI Scheme), sample logistics, and professional support fees. Costs vary based on product category, testing requirements, number of models/variants, and certification scheme. Foreign manufacturers should also account for AIR fees and additional documentation costs. Testing is usually the biggest cost driver, varying with safety and EMC scope, number of samples, and any re-tests.",
+          text: "BIS Certificate for import cost includes laboratory testing fees, application/processing fees, marking or registration charges, factory audit fees (for ISI Scheme), sample logistics, and professional support fees. Costs vary based on product category, testing requirements, number of models/variants, and certification scheme. Foreign manufacturers should also account for AIR fees and additional documentation costs. Testing is usually the biggest cost driver, varying with safety and EMC scope, number of samples, and any re-tests.",
         },
       },
     ],
@@ -205,7 +205,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -220,7 +220,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

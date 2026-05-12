@@ -34,10 +34,10 @@ export default Q17DownloadBISCertificateFromManakonlineEng;
 
 const Q17DownloadBISCertificateFromManakonlineMetaData = () => {
   const title =
-    "How to download BIS certificate from manakonline? - Clear & Simple Answer Guide";
+    "How to download BIS Certificate from Manakonline? - Clear & Simple Answer Guide";
 
   const description =
-    "How to download BIS certificate from manakonline. This guide explains How to download BIS certificate from manakonline ?";
+    "How to download BIS Certificate from Manakonline. This guide explains how to download BIS Certificate from Manakonline.";
 
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
@@ -51,16 +51,16 @@ const Q17DownloadBISCertificateFromManakonlineMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "How to download BIS certificate from manakonline? | Complete Guide & Easy Explanation";
+    "How to download BIS Certificate from Manakonline? | Complete Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers How to download BIS certificate from manakonline in simple steps. Understand about BIS Certificate, what details are required, and how to avoid errors or non-compliance.";
+    "This guide covers how to download BIS Certificate from Manakonline in simple steps. Understand BIS Certificate requirements, what details are required, and how to avoid errors or non-compliance.";
 
   const twitterTitle =
-    "How to download BIS certificate from manakonline | Simple Guide";
+    "How to download BIS Certificate from Manakonline | Simple Guide";
 
   const twitterDescription =
-    "Quick guide on How to download BIS certificate from manakonline.";
+    "Quick guide on how to download BIS Certificate from Manakonline.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -68,10 +68,10 @@ const Q17DownloadBISCertificateFromManakonlineMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How to download BIS certificate from manakonline?",
+        name: "How to download BIS Certificate from Manakonline?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "To download BIS certificate from manakonline, log in to your account on manakonline.bis.gov.in, navigate to your certificates section, select the certificate you want to download, and click the download button to get the PDF version. You need valid login credentials to access your certificate dashboard and download the official certificate document. The downloaded certificate is the official PDF version that can be used for official purposes.",
+          text: "To download BIS Certificate from Manakonline, log in to your account on manakonline.bis.gov.in, navigate to your certificates section, select the certificate you want to download, and click the download button to get the PDF version. You need valid login credentials to access your certificate dashboard and download the official certificate document. The downloaded certificate is the official PDF version that can be used for official purposes.",
         },
       },
     ],
@@ -173,7 +173,7 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          How to download bis certificate from manakonline is a frequent
+          How to download BIS Certificate from Manakonline is a frequent
           question for brands and manufacturers navigating Indian conformity
           routes. Begin by identifying the applicable Indian Standard (IS) and
           confirming whether your product falls under the{" "}
@@ -211,7 +211,7 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          How to download bis certificate is a frequent question for brands and
+          How to download BIS Certificate is a frequent question for brands and
           manufacturers navigating Indian conformity routes. Begin by
           identifying the applicable Indian Standard (IS) and confirming whether
           your product falls under the ISI Scheme (license with surveillance) or
@@ -255,7 +255,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -270,7 +270,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

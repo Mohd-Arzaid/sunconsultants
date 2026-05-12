@@ -33,13 +33,13 @@ const Q24BISHallmarkBeFakeEng = () => {
 export default Q24BISHallmarkBeFakeEng;
 
 const Q24BISHallmarkBeFakeMetaData = () => {
-  const title = "Can BIS hallmark be fake - Clear & Simple Answer Guide";
+  const title = "Can BIS Hallmark be fake - Clear & Simple Answer Guide";
 
   const description =
-    "This guide explains complete information about Can BIS hallmark be fake";
+    "This guide explains complete information about whether a BIS Hallmark can be fake";
 
   const keywords =
-    "BIS Certification, Import License, BIS Certification in India, BIS hallmark be fake, BIS Mark, Cost of BIS License, Foreign companies get BIS License";
+    "BIS Certification, BIS Hallmark, BIS Hallmark verification, BIS Mark, jewelry hallmark India";
 
   const canonicalUrl =
     "https://bis-certifications.com/can-bis-hallmark-be-fake/";
@@ -50,14 +50,15 @@ const Q24BISHallmarkBeFakeMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "Can BIS hallmark be fake | Complete Guide & Easy Explanation";
+    "Can BIS Hallmark be fake | Complete Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide explains complete information about Can BIS hallmark be fake";
+    "This guide explains how to tell if a BIS Hallmark may be fake and how to verify it through official channels.";
 
-  const twitterTitle = "Can BIS hallmark be fake | Simple Guide";
+  const twitterTitle = "Can BIS Hallmark be fake | Simple Guide";
 
-  const twitterDescription = "Can foreign companies get BIS Certification.";
+  const twitterDescription =
+    "Quick guide on whether a BIS Hallmark can be fake and how to verify it.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -170,7 +171,7 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Can bis hallmark be fake is a frequent question for brands and
+          Can BIS Hallmark be fake is a frequent question for brands and
           manufacturers navigating Indian conformity routes. Begin by
           identifying the applicable Indian Standard (IS) and confirming whether
           your product falls under the{" "}
@@ -215,7 +216,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -230,7 +231,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

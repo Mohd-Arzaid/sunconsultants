@@ -34,10 +34,10 @@ export default Q4DoesBIScertificationCostEng;
 
 const Q4DoesBIScertificationCostMetaData = () => {
   const title =
-    "How much does bis certification cost? – Clear & Simple Answer Guide";
+    "How much does BIS Certification cost? – Clear & Simple Answer Guide";
 
   const description =
-    "Learn about bis certification cost. This guide explains how much bis certificate cost, key requirements, steps, and tips to understand BIS Certification";
+    "Learn about BIS Certification cost. This guide explains how much BIS Certificate cost, key requirements, steps, and tips to understand BIS Certification";
 
   const keywords = "BIS Certification Cost, BIS license cost, Cost of BIS,";
 
@@ -49,15 +49,15 @@ const Q4DoesBIScertificationCostMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "How much does bis certification cost | Quick Guide & Easy Explanation";
+    "How much does BIS Certification cost | Quick Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers How much does bis certification cost in simple steps. Understand how to check, what details are required, and how to avoid errors or non-compliance.";
+    "This guide covers How much does BIS Certification cost in simple steps. Understand how to check, what details are required, and how to avoid errors or non-compliance.";
 
-  const twitterTitle = "How much does bis certification cost | Simple Guide";
+  const twitterTitle = "How much does BIS Certification cost | Simple Guide";
 
   const twitterDescription =
-    "Quick guide on How much does bis certification cost.";
+    "Quick guide on How much does BIS Certification cost.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -65,7 +65,7 @@ const Q4DoesBIScertificationCostMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How much does bis certification cost?",
+        name: "How much does BIS Certification cost?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "BIS costs depend on the scheme (ISI vs CRS), the product standard, and the number of models/variants. Plan across these heads: laboratory testing, application/processing fees, marking or registration charges, audits/surveillance (for ISI), sample logistics, and optional professional support. Testing is usually the biggest driver. Fees vary with safety and EMC scope, the number of samples, and any re-tests. For ISI, add factory audit/surveillance to your budget; for CRS, account for registration/renewal fees. Always obtain a written quotation aligned to your exact IS standard and model list.",
@@ -204,7 +204,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -219,7 +219,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

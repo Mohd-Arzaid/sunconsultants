@@ -34,10 +34,10 @@ export default Q16CheckBISCertificateOnlineEng;
 
 const Q16CheckBISCertificateOnlineMetaData = () => {
   const title =
-    "How to check BIS certificate online? - Clear & Simple Answer Guide";
+    "How to check BIS Certificate online? - Clear & Simple Answer Guide";
 
   const description =
-    "How to check BIS certificate online. This guide explains How to check BIS certificate online ?";
+    "How to check BIS Certificate online. This guide explains How to check BIS Certificate online?";
 
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
@@ -51,15 +51,15 @@ const Q16CheckBISCertificateOnlineMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "How to check BIS certificate online? | Complete Guide & Easy Explanation";
+    "How to check BIS Certificate online? | Complete Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers How to check BIS certificate online in simple steps. Understand about BIS Certificate, what details are required, and how to avoid errors or non-compliance.";
+    "This guide covers How to check BIS Certificate online in simple steps. Understand about BIS Certificate, what details are required, and how to avoid errors or non-compliance.";
 
   const twitterTitle = "How to check BIS certificate online | Simple Guide";
 
   const twitterDescription =
-    "Quick guide on How to check BIS certificate online.";
+    "Quick guide on How to check BIS Certificate online.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -67,10 +67,10 @@ const Q16CheckBISCertificateOnlineMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How to check BIS certificate online?",
+        name: "How to check BIS Certificate online?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "You can check BIS certificate online through the BIS portal (bis.gov.in or manakonline.bis.gov.in) using the certificate number, CM/L number, or R-number. Enter the details on the verification page to view the certificate status, licensee/manufacturer information, brand, model, Indian Standard (IS) reference, and current validity. The online verification helps confirm the authenticity of the certificate and shows whether it's active, suspended, or expired.",
+          text: "You can check BIS Certificate online through the BIS portal (bis.gov.in or manakonline.bis.gov.in) using the certificate number, CM/L number, or R-number. Enter the details on the verification page to view the certificate status, licensee/manufacturer information, brand, model, Indian Standard (IS) reference, and current validity. The online verification helps confirm the authenticity of the certificate and shows whether it's active, suspended, or expired.",
         },
       },
     ],
@@ -212,7 +212,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -227,7 +227,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

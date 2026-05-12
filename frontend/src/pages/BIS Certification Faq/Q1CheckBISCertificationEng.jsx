@@ -33,13 +33,13 @@ const Q1CheckBISCertificationEng = () => {
 export default Q1CheckBISCertificationEng;
 
 const CheckBISCertificationMetaData = () => {
-  const title = "How to check BIS certification? – Clear & Simple Answer Guide";
+  const title = "How to check BIS Certification? – Clear & Simple Answer Guide";
 
   const description =
-    "Learn about bis certification. This guide explains how to check bis certification, key requirements, steps, and tips to understand BIS Certification";
+    "Learn about BIS Certification. This guide explains how to check BIS Certification, key requirements, steps, and tips to understand BIS Certification";
 
   const keywords =
-    "check BIS certification online, BIS certificate verification, verify ISI mark, CM/L number check, R-number check";
+    "check BIS Certification online, BIS Certificate verification, verify ISI mark, CM/L number check, R-number check";
 
   const canonicalUrl = "https://bis-certifications.com/check-bis-certification";
 
@@ -49,14 +49,14 @@ const CheckBISCertificationMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "How to check BIS certification | Quick Guide & Easy Explanation";
+    "How to check BIS Certification | Quick Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers how to check bis certification in simple steps. Understand how to check, what details are required, and how to avoid errors or non-compliance.";
+    "This guide covers how to check BIS Certification in simple steps. Understand how to check, what details are required, and how to avoid errors or non-compliance.";
 
-  const twitterTitle = "How to check BIS certificate| Simple Guide";
+  const twitterTitle = "How to check BIS Certificate | Simple Guide";
 
-  const twitterDescription = "Quick guide on how to check bis certification.";
+  const twitterDescription = "Quick guide on how to check BIS Certification.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -64,10 +64,10 @@ const CheckBISCertificationMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How to check BIS certification?",
+        name: "How to check BIS Certification?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "To verify a BIS approval, you'll need either the ISI license number (CM/L) for products under the ISI Scheme or the Registration number (R-number) for products under the CRS scheme, together with the brand and the exact model/variant. Go to bis.gov.in, open the verification section, and search by CM/L or R-number. A valid listing shows the licensee/manufacturer, brand, model, Indian Standard (IS), and the current status. Cross-check packaging/labeling with the database entry: the model string, brand, and IS reference should match exactly.",
+          text: "To verify a BIS approval or BIS Certificate, you'll need either the ISI license number (CM/L) for products under the ISI Scheme or the Registration number (R-number) for products under the CRS scheme, together with the brand and the exact model/variant. Go to BIS.gov.in, open the verification section, and search by CM/L or R-number. A valid listing shows the licensee/manufacturer, brand, model, Indian Standard (IS), and the current status. Cross-check packaging/labeling with the database entry: the model string, brand, and IS reference should match exactly.",
         },
       },
     ],
@@ -169,13 +169,19 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To verify a BIS approval, you&apos;ll need either the ISI license
-          number (CM/L) for products under the ISI Scheme or the Registration
-          number (R‑number) for products under the CRS Scheme, together with the
-          brand and the exact model/variant. Go to the bis.gov.in, open the
-          verification section, and search by CM/L or R‑number. A valid listing
-          shows the licensee/manufacturer, brand, model, Indian Standard (IS),
-          and the current status.
+          To verify a BIS approval or a{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+          >
+            BIS Certificate
+          </Link>
+          , you&apos;ll need either the ISI license number (CM/L) for products
+          under the ISI Scheme or the Registration number (R‑number) for products
+          under the CRS Scheme, together with the brand and the exact model/variant.
+          Go to BIS.gov.in, open the verification section, and search by CM/L or
+          R‑number. A valid listing shows the licensee/manufacturer, brand, model,
+          Indian Standard (IS), and the current status.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -203,7 +209,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -218,7 +224,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link

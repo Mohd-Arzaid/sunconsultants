@@ -34,10 +34,10 @@ export default Q9ImportWithoutBISCertificateEng;
 
 const Q9ImportWithoutBISCertificateMetaData = () => {
   const title =
-    "How to Import without bis certificate? – Clear & Simple Answer Guide";
+    "How to Import without BIS Certificate? – Clear & Simple Answer Guide";
 
   const description =
-    "can i import without bis certificate. This guide explains How to import without bis certificate, key requirements, steps, and tips to understand BIS License";
+    "Can I import without BIS Certificate. This guide explains How to import without BIS Certificate, key requirements, steps, and tips to understand BIS License";
 
   const keywords =
     "BIS Certification, Import License, BIS Certification in India";
@@ -51,15 +51,15 @@ const Q9ImportWithoutBISCertificateMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "How to Import without bis certificate? | Complete Guide & Easy Explanation";
+    "How to Import without BIS Certificate? | Complete Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers How to verify BIS Certification in simple steps. Understand about BIS License, what details are required, and how to avoid errors or non-compliance.";
+    "This guide covers how to import without a BIS Certificate in simple steps. Understand BIS License requirements, what details matter, and how to avoid errors or non-compliance.";
 
-  const twitterTitle = "How to Import without bis certificate | Simple Guide";
+  const twitterTitle = "How to Import without BIS Certificate | Simple Guide";
 
   const twitterDescription =
-    "Quick guide on How to import without BIS certificate.";
+    "Quick guide on how to import without a BIS Certificate.";
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -67,10 +67,10 @@ const Q9ImportWithoutBISCertificateMetaData = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How to Import without bis certificate?",
+        name: "How to Import without BIS Certificate?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Importing products without BIS certificate is not allowed for products under mandatory BIS certification. Such imports may be rejected at customs, and penalties may apply. It's mandatory to obtain BIS certification before importing covered products to India. Products under the Compulsory Registration Scheme (CRS) or ISI Scheme require valid BIS certification for import clearance. Begin by identifying the applicable Indian Standard (IS) and confirming whether your product falls under the ISI Scheme or CRS, then complete the certification process before attempting to import.",
+          text: "Importing products without a BIS Certificate is not allowed for products under mandatory BIS Certification. Such imports may be rejected at customs, and penalties may apply. It's mandatory to obtain BIS Certification before importing covered products to India. Products under the Compulsory Registration Scheme (CRS) or ISI Scheme require valid BIS Certification for import clearance. Begin by identifying the applicable Indian Standard (IS) and confirming whether your product falls under the ISI Scheme or CRS, then complete the certification process before attempting to import.",
         },
       },
     ],
@@ -172,7 +172,7 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Can i import without bis certificate is a frequent question for brands
+          Can I import without BIS Certificate is a frequent question for brands
           and manufacturers navigating Indian conformity routes. Begin by
           identifying the applicable Indian Standard (IS) and confirming whether
           your product falls under the{" "}
@@ -217,7 +217,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for Indian manufacturers,
+            Get complete details about BIS Certification for Indian manufacturers,
             <br />
             Click:{" "}
             <Link
@@ -232,7 +232,7 @@ const MainContentLeft = () => {
 
         <div className="mt-5 mb-6 rounded-md bg-[#EAF3FF] px-4 py-3 border-l-4 border-[#1A8781]">
           <p className="font-geist text-sm md:text-base text-[#1f2937]">
-            Get complete details about BIS certification for foreign manufacturers,
+            Get complete details about BIS Certification for foreign manufacturers,
             <br />
             Click:{" "}
             <Link
