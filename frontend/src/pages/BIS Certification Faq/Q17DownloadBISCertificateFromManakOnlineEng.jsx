@@ -196,16 +196,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           While testing is underway, complete application forms, brand
           authorizations, and—if you are an overseas manufacturer—appoint an
-          Authorized Indian Representative (AIR).{" "}
-          <a
-            href="https://crsbis.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            For CRS
-          </a>{" "}
-          , you submit lab reports and documents through the portal to obtain a
+          Authorized Indian Representative (AIR). For CRS, you submit lab reports and documents through the portal to obtain a
           Registration (R‑number). For ISI, expect a factory audit, ongoing
           surveillance, and marking control procedures.
         </p>

@@ -174,14 +174,7 @@ const MainContentLeft = () => {
           the number of models/variants. Plan across these heads: laboratory
           testing, application/processing fees, marking or registration charges,
           audits/surveillance{" "}
-          <a
-            href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            (for ISI)
-          </a>{" "}
+          (for ISI){" "}
           , sample logistics, and optional professional support.
         </p>
 
@@ -196,15 +189,7 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           For ISI, add factory audit/surveillance to your budget;{" "}
-          <a
-            href="https://crsbis.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            For CRS
-          </a>{" "}
-          , account for registration/renewal fees. For multi‑SKU portfolios,
+          For CRS,  account for registration/renewal fees. For multi‑SKU portfolios,
           take a phased approach—approve high‑volume models first, then extend
           to siblings as allowed by the standard. Keep a 10–15% contingency for
           clarifications or re‑tests. Always obtain a written quotation aligned

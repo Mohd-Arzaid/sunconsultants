@@ -172,8 +172,7 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Yes. Foreign manufacturers can obtain BIS certification for eligible
-          products. The key is to apply under the correct scheme—either the{" "}
-          ISI Scheme{" "}
+          products. The key is to apply under the correct scheme—either the ISI
           Scheme (certification with factory surveillance and ISI mark) or the
           Compulsory Registration Scheme (CRS) for electronics/IT products.
           Because the applicant is overseas, you must appoint an Authorized
@@ -192,16 +191,7 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          {" "}
-          <a
-            href="https://crsbis.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            For CRS
-          </a>{" "}
-          , you typically submit test reports and documents through the BIS
+          For CRS, you typically submit test reports and documents through the BIS
           portal, then receive a Registration (R‑number) if approved. For ISI,
           expect a factory audit/surveillance, marking control procedures, and
           ongoing compliance obligations. After grant, follow marking/labeling

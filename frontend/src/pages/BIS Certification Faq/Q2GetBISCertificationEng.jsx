@@ -188,16 +188,7 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For{" "}
-          <a
-            href="https://crsbis.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            CRS
-          </a> {" "}
-          , once tests pass you submit reports and documents online, pay fees,
+          For CRS, once tests pass you submit reports and documents online, pay fees,
           and receive a Registration (R‑number) if approved. For ISI, prepare
           for a factory audit and ongoing surveillance; set up marking control
           procedures, test equipment lists, and production controls.
