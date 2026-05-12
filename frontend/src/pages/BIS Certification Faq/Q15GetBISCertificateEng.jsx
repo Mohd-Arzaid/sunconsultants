@@ -174,8 +174,14 @@ const MainContentLeft = () => {
           Start by confirming whether your product falls under the{" "}
           ISI Scheme{" "}
           (license with surveillance and ISI mark) or the Compulsory
-          Registration Scheme (CRS) for electronics/IT. Identify the applicable
-          Indian Standard (IS) and read the scope notes—they define the exact
+          Registration Scheme (CRS) for electronics/IT. Identify the applicable{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
+          >
+            Indian Standard
+          </Link>{" "}
+          (IS) and read the scope notes—they define the exact
           tests, labeling, and any exclusions. Create a compliance plan: list
           models/variants, map applicable clauses, and collect documents
           (drawings/specs, critical components list, safety declarations, QMS

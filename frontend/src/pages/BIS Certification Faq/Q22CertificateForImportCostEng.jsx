@@ -170,7 +170,13 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS costs depend on the scheme (ISI vs CRS), the product standard, and
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
+          >
+            BIS Certificate costs
+          </Link>{" "}
+          depend on the scheme (ISI vs CRS), the product standard, and
           the number of models/variants. Plan across these heads: laboratory
           testing, application/processing fees, marking or registration charges,
           audits/surveillance{" "}

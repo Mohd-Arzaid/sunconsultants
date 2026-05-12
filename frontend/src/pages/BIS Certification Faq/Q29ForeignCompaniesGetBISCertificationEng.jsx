@@ -171,7 +171,14 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Yes. Foreign manufacturers can obtain BIS Certification for eligible
+          Yes. Foreign manufacturers can obtain{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
+          >
+            BIS Certification
+          </Link>{" "}
+          for eligible
           products. The key is to apply under the correct scheme—either the ISI
           Scheme (certification with factory surveillance and ISI mark) or the
           Compulsory Registration Scheme (CRS) for electronics/IT products.

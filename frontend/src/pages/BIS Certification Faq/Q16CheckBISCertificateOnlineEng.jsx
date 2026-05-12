@@ -172,7 +172,14 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Checking a BIS approval online is straightforward if you have the
+          Checking a{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
+          >
+            BIS approval online
+          </Link>{" "}
+          is straightforward if you have the
           right identifiers. Gather either the{" "}
           ISI Scheme{" "}
           number (CM/L) for ISI‑marked products or the Registration number

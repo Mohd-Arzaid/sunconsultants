@@ -169,7 +169,14 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          How to apply BIS Certification is a frequent question for brands and
+          How to apply{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
+          >
+            BIS Certification
+          </Link>{" "}
+          is a frequent question for brands and
           manufacturers navigating Indian conformity routes. Begin by
           identifying the applicable Indian Standard (IS) and confirming whether
           your product falls under the ISI Scheme (license with surveillance) or

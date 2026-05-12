@@ -171,8 +171,14 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Start by confirming whether your product falls under the ISI Scheme
-          (license with surveillance and ISI mark) or the Compulsory
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
+          >
+            BIS Certification process
+          </Link>{" "}
+          in India starts by confirming whether your product falls under the
+          ISI Scheme (license with surveillance and ISI mark) or the Compulsory
           Registration Scheme (CRS) for electronics/IT. Identify the applicable
           Indian Standard (IS) and read the scope notes—they define the exact
           tests, labeling, and any exclusions. Create a compliance plan: list

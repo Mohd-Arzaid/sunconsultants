@@ -171,7 +171,14 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Can we download BIS Certificate online is a frequent question for
+          Can we download{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
+          >
+            BIS Certificate online
+          </Link>{" "}
+          is a frequent question for
           brands and manufacturers navigating Indian conformity routes. Begin by
           identifying the applicable Indian Standard (IS) and confirming whether
           your product falls under the ISI Scheme (license with surveillance) or
