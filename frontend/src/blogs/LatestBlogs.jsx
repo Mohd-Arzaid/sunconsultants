@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 85,
+    color: "#0D9488",
+    title:
+      "BIS Certification for Glass Fibre Reinforced Gypsum Panels – IS 17400:2021",
+    description:
+      "Get BIS Certificate for Glass Fibre Reinforced Gypsum Panels under IS 17400:2021. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/glass-fibre-reinforced-gypsum-panels-is-17400",
+    date: "12 April 2026",
+  },
+  {
     id: 1,
     color: "#8B5CF6",
     title: "BIS Certification for Tin Ingot under IS 26:2024",

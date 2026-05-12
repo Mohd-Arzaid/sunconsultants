@@ -844,6 +844,9 @@ const BISCertificationforCrossRecessedTappingScrewPanHead = lazy(() =>
 const BISCertificationforCrossRecessedTappingScrewFlatHead = lazy(() =>
   import("@/blogs/BISCertificationforCrossRecessedTappingScrewFlatHead")
 );
+const BISCertificationforGlassFibreReinforcedGypsumPanels = lazy(() =>
+  import("@/blogs/BISCertificationforGlassFibreReinforcedGypsumPanels")
+);
 const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
   import("@/blogs/BISCertificationforTransmissionDevicesVBelts")
 );
@@ -3007,6 +3010,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforCrossRecessedTappingScrewFlatHead />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/glass-fibre-reinforced-gypsum-panels-is-17400"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforGlassFibreReinforcedGypsumPanels />
           </Suspense>
         }
       />
