@@ -177,22 +177,11 @@ const MainContentLeft = () => {
             BIS Certification
           </Link>{" "}
           who can apply is a frequent question for brands and manufacturers
-          navigating Indian conformity routes.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <Link
-            to="/what-is-bis-certificate-indian-bis"
-            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
-          >
-            BIS Certification
-          </Link>{" "}
-          starts by confirming whether your product falls under the{" "}
-          ISI Scheme{" "}
-          (license with surveillance) or the Compulsory Registration Scheme
-          (CRS) used for electronics/IT. Build a simple scope table with
-          models/variants, ratings, and critical components—this improves test
-          planning and documentation accuracy.
+          navigating Indian conformity routes. Start by confirming whether your
+          product falls under the ISI Scheme (license with surveillance) or the
+          Compulsory Registration Scheme (CRS) used for electronics/IT. Build a
+          simple scope table with models/variants, ratings, and critical
+          components—this improves test planning and documentation accuracy.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
