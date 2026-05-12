@@ -172,10 +172,10 @@ const MainContentLeft = () => {
           To verify a BIS approval or a{" "}
           <Link
             to="/what-is-bis-certificate-indian-bis"
-            className="font-geist font-semibold underline text-[#125E5A] hover:text-[#1A8781] transition-colors"
+            className="font-geist font-medium text-blue-900 decoration-blue-900 underline underline-offset-[3px]  transition-colors"
           >
             BIS Certificate
-          </Link>
+          </Link> {" "}
           , you&apos;ll need either the ISI license number (CM/L) for products
           under the ISI Scheme or the Registration number (R‑number) for products
           under the CRS Scheme, together with the brand and the exact model/variant.
