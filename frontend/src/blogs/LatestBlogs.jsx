@@ -16,6 +16,15 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 86,
+    color: "#0284C7",
+    title: "BIS Certification for Ferrules for Water Services – IS 2692:1989",
+    description:
+      "Get BIS Certificate for Ferrules for Water Services under IS 2692:1989. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/ferrules-for-water-services-is-2692",
+    date: "10 April 2026",
+  },
+  {
     id: 85,
     color: "#0D9488",
     title:

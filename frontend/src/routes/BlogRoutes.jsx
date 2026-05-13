@@ -835,6 +835,9 @@ const BISCertificationforSlicingMachines = lazy(() =>
 const BISCertificationforPanHeadScrews = lazy(() =>
   import("@/blogs/BISCertificationforPanHeadScrews")
 );
+const BISCertificationforFerrulesForWaterServices = lazy(() =>
+  import("@/blogs/BISCertificationforFerrulesForWaterServices")
+);
 const BISCertificationforCrossRecessedTappingScrew = lazy(() =>
   import("@/blogs/BISCertificationforCrossRecessedTappingScrew")
 );
@@ -2986,6 +2989,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforPanHeadScrews />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ferrules-for-water-services-is-2692"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforFerrulesForWaterServices />
           </Suspense>
         }
       />
