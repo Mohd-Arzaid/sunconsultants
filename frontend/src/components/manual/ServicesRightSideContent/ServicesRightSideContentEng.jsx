@@ -239,6 +239,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/tapping-screws-flat-head-is-18480-part-2",
     "/blogs/isi-products/ferrules-for-water-services-is-2692",
     "/blogs/isi-products/glass-fibre-reinforced-gypsum-panels-is-17400",
+    "/blogs/isi-products/water-meter-domestic-type-is-779",
     "/blogs/isi-products/transmission-devices-v-belts-is-14261",
     "/blogs/isi-products/mini-domestic-water-heaters-is-17150",
     "/blogs/isi-products/stationary-storage-water-heaters-is-2082",
@@ -1314,6 +1315,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Tapping Screws Oval Head - English Page";
     if (path.includes("/blogs/isi-products/ferrules-for-water-services-is-2692"))
       return "BIS Certificate for Ferrules for Water Services - English Page";
+    if (path.includes("/blogs/isi-products/water-meter-domestic-type-is-779"))
+      return "BIS Certificate for Water Meter (Domestic Type) - English Page";
     if (
       path.includes(
         "/blogs/isi-products/tapping-screws-flat-head-is-18480-part-2"

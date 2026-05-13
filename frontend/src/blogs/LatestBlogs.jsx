@@ -16,6 +16,15 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 87,
+    color: "#0284C7",
+    title: "BIS Certification for Water meters (domestic type) – IS 779:1994",
+    description:
+      "Get BIS Certificate for Water Meter Domestic Type under IS 779:1994. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/water-meter-domestic-type-is-779",
+    date: "16 April 2026",
+  },
+  {
     id: 86,
     color: "#0284C7",
     title: "BIS Certification for Ferrules for Water Services – IS 2692:1989",

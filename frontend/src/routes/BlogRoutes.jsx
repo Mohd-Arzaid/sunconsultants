@@ -850,6 +850,9 @@ const BISCertificationforCrossRecessedTappingScrewFlatHead = lazy(() =>
 const BISCertificationforGlassFibreReinforcedGypsumPanels = lazy(() =>
   import("@/blogs/BISCertificationforGlassFibreReinforcedGypsumPanels")
 );
+const BISCertificationforWaterMeterDomesticType = lazy(() =>
+  import("@/blogs/BISCertificationforWaterMeterDomesticType")
+);
 const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
   import("@/blogs/BISCertificationforTransmissionDevicesVBelts")
 );
@@ -3029,6 +3032,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforGlassFibreReinforcedGypsumPanels />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/water-meter-domestic-type-is-779"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforWaterMeterDomesticType />
           </Suspense>
         }
       />
