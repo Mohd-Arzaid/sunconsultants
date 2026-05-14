@@ -151,7 +151,7 @@ const faqSchema = {
       "@type": "Question",
       name: "Is factory inspection necessary for certification?",
       acceptedAnswer: {
-        "@type": "Answer",
+        "@type": "Answer", 
         text: "Yes, inspectors verify production processes, raw material quality, and curing methods to ensure consistent product quality.",
       },
     },
