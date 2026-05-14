@@ -401,6 +401,7 @@ const BISCertificateForWorkChairsGerman = lazy(() =>
   import(
     "@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairsGerman"
   )
+  
 );
 const BISCertificateForWorkChairsIndonesian = lazy(() =>
   import(
@@ -852,6 +853,9 @@ const BISCertificationforGlassFibreReinforcedGypsumPanels = lazy(() =>
 );
 const BISCertificationforWaterMeterDomesticType = lazy(() =>
   import("@/blogs/BISCertificationforWaterMeterDomesticType")
+);
+const BISCertificationforWaterMeterBulkType = lazy(() =>
+  import("@/blogs/BISCertificationforWaterMeterBulkType")
 );
 const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
   import("@/blogs/BISCertificationforTransmissionDevicesVBelts")
@@ -3040,6 +3044,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforWaterMeterDomesticType />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/water-meter-bulk-type-is-2373"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforWaterMeterBulkType />
           </Suspense>
         }
       />

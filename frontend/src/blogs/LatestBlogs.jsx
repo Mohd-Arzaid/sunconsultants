@@ -16,6 +16,15 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 88,
+    color: "#0284C7",
+    title: "BIS Certification for Water Meters (Bulk Type) – IS 2373: 1981",
+    description:
+      "Get BIS Certificate for Water Meter Bulk Type under IS 2373:1981. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/water-meter-bulk-type-is-2373",
+    date: "11 April 2026",
+  },
+  {
     id: 87,
     color: "#0284C7",
     title: "BIS Certification for Water meters (domestic type) – IS 779:1994",
