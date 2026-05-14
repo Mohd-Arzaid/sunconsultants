@@ -863,6 +863,9 @@ const BISCertificationforFibreCementFlatSheets = lazy(() =>
 const BISCertificationforShallowCorrugatedAsbestosCementSheets = lazy(() =>
   import("@/blogs/BISCertificationforShallowCorrugatedAsbestosCementSheets")
 );
+const BISCertificationforSilicaAsbestosCementFlatSheets = lazy(() =>
+  import("@/blogs/BISCertificationforSilicaAsbestosCementFlatSheets")
+);
 const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
   import("@/blogs/BISCertificationforTransmissionDevicesVBelts")
 );
@@ -3074,6 +3077,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforShallowCorrugatedAsbestosCementSheets />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/silica-asbestos-cement-flat-sheets-is-13000"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforSilicaAsbestosCementFlatSheets />
           </Suspense>
         }
       />

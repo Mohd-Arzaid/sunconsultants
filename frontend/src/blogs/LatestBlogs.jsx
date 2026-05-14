@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 91,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Silica-Asbestos-Cement Flat Sheets – IS 13000:1990",
+    description:
+      "Get BIS Certificate for Silica Asbestos Cement Flat Sheets under IS 13000:1990. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/silica-asbestos-cement-flat-sheets-is-13000",
+    date: "12 April 2026",
+  },
+  {
     id: 90,
     color: "#0284C7",
     title:

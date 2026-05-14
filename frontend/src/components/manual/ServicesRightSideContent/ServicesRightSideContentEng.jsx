@@ -243,6 +243,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/water-meter-bulk-type-is-2373",
     "/blogs/isi-products/fibre-cement-flat-sheets-is-14862",
     "/blogs/isi-products/shallow-corrugated-asbestos-cement-sheets-is-13008",
+    "/blogs/isi-products/silica-asbestos-cement-flat-sheets-is-13000",
     "/blogs/isi-products/transmission-devices-v-belts-is-14261",
     "/blogs/isi-products/mini-domestic-water-heaters-is-17150",
     "/blogs/isi-products/stationary-storage-water-heaters-is-2082",
@@ -1330,6 +1331,12 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS Certificate for Shallow Corrugated Asbestos Cement Sheets - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/silica-asbestos-cement-flat-sheets-is-13000"
+      )
+    )
+      return "BIS Certificate for Silica Asbestos Cement Flat Sheets - English Page";
     if (
       path.includes(
         "/blogs/isi-products/tapping-screws-flat-head-is-18480-part-2"
