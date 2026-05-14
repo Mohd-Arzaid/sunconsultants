@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 90,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Shallow Corrugated Asbestos Cement Sheets – IS 13008:1990",
+    description:
+      "Get BIS Certificate for Shallow Corrugated Asbestos Cement Sheets under IS 13008:1990. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/shallow-corrugated-asbestos-cement-sheets-is-13008",
+    date: "17 April 2026",
+  },
+  {
     id: 89,
     color: "#0284C7",
     title: "BIS Certification for Fibre Cement Flat Sheets – IS 14862:2000",

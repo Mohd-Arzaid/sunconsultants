@@ -860,6 +860,9 @@ const BISCertificationforWaterMeterBulkType = lazy(() =>
 const BISCertificationforFibreCementFlatSheets = lazy(() =>
   import("@/blogs/BISCertificationforFibreCementFlatSheets")
 );
+const BISCertificationforShallowCorrugatedAsbestosCementSheets = lazy(() =>
+  import("@/blogs/BISCertificationforShallowCorrugatedAsbestosCementSheets")
+);
 const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
   import("@/blogs/BISCertificationforTransmissionDevicesVBelts")
 );
@@ -3063,6 +3066,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforFibreCementFlatSheets />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/shallow-corrugated-asbestos-cement-sheets-is-13008"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforShallowCorrugatedAsbestosCementSheets />
           </Suspense>
         }
       />
