@@ -857,6 +857,9 @@ const BISCertificationforWaterMeterDomesticType = lazy(() =>
 const BISCertificationforWaterMeterBulkType = lazy(() =>
   import("@/blogs/BISCertificationforWaterMeterBulkType")
 );
+const BISCertificationforFibreCementFlatSheets = lazy(() =>
+  import("@/blogs/BISCertificationforFibreCementFlatSheets")
+);
 const BISCertificationforTransmissionDevicesVBelts = lazy(() =>
   import("@/blogs/BISCertificationforTransmissionDevicesVBelts")
 );
@@ -3052,6 +3055,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforWaterMeterBulkType />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/fibre-cement-flat-sheets-is-14862"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforFibreCementFlatSheets />
           </Suspense>
         }
       />

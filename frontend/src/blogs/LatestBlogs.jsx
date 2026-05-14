@@ -16,6 +16,15 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 89,
+    color: "#0284C7",
+    title: "BIS Certification for Fibre Cement Flat Sheets – IS 14862:2000",
+    description:
+      "Get BIS Certificate for Fibre Cement Flat Sheets under IS 14862:2000. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/fibre-cement-flat-sheets-is-14862",
+    date: "14 April 2026",
+  },
+  {
     id: 88,
     color: "#0284C7",
     title: "BIS Certification for Water Meters (Bulk Type) – IS 2373: 1981",

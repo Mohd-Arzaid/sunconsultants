@@ -241,6 +241,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/glass-fibre-reinforced-gypsum-panels-is-17400",
     "/blogs/isi-products/water-meter-domestic-type-is-779",
     "/blogs/isi-products/water-meter-bulk-type-is-2373",
+    "/blogs/isi-products/fibre-cement-flat-sheets-is-14862",
     "/blogs/isi-products/transmission-devices-v-belts-is-14261",
     "/blogs/isi-products/mini-domestic-water-heaters-is-17150",
     "/blogs/isi-products/stationary-storage-water-heaters-is-2082",
@@ -1320,6 +1321,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Water Meter (Domestic Type) - English Page";
     if (path.includes("/blogs/isi-products/water-meter-bulk-type-is-2373"))
       return "BIS Certificate for Water Meter Bulk Type - English Page";
+    if (path.includes("/blogs/isi-products/fibre-cement-flat-sheets-is-14862"))
+      return "BIS Certificate for Fibre Cement Flat Sheets - English Page";
     if (
       path.includes(
         "/blogs/isi-products/tapping-screws-flat-head-is-18480-part-2"
