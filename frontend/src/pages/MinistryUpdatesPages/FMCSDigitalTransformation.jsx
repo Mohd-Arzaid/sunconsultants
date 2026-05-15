@@ -598,6 +598,6 @@ const Services = () => {
           </BoxReveal>
         </div>
       </div>
-    </div>
+    </div> 
   );
 };

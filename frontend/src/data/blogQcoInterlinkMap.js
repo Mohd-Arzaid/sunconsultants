@@ -240,6 +240,14 @@ export const interlinkPairs = [
       "/bis-qco-updates/bis-certificate-for-cross-recessed-tapping-screw-part-3-raised-countersunk-oval-head",
     qcoMatchKey: "Cross Recessed Tapping Screw Part 3 Raised Countersunk Oval Head",
   },
+  {
+    productName: "Telescopic Ball Bearing Drawer Slide",
+    isNumber: "IS 17954:2023",
+    blogUrl: "/blogs/isi-products/telescopic-ball-bearing-is-17954",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-telescopic-ball-bearing-drawer-slides",
+    qcoMatchKey: "Telescopic Ball Bearing Drawer Slide",
+  },
 ];
 
 /**

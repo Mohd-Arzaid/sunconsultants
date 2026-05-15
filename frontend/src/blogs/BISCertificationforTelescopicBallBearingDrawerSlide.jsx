@@ -293,7 +293,15 @@ const MainContentLeft = () => {
           17954:2023 confirms that drawer slides meet performance standards for
           load capacity, smooth movement, durability, and safety. It is required
           in India to ensure reliable operation in furniture, modular kitchens,
-          and industrial storage systems without failure or jamming.
+          and industrial storage systems without failure or jamming. For
+          mandatory dates and the underlying QCO notification, see{" "}
+          <Link
+            to="/bis-qco-updates/bis-certificate-for-telescopic-ball-bearing-drawer-slides"
+            className="text-blue-600 hover:underline"
+          >
+            Also read the QCO Notification for telescopic ball bearing drawer slides
+          </Link>
+          .
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -328,7 +336,15 @@ const MainContentLeft = () => {
           standardized design and testing procedures as per IS 17954:2023,
           allowing products to perform reliably under real-world conditions. For
           manufacturers, importers, and sellers, this certification ensures
-          regulatory acceptance and market trust.
+          regulatory acceptance and market trust. When you plan the licence
+          route itself, it helps to align product-specific work with how Indian
+          BIS operates overall —{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+          >
+            Check complete details about documentation, cost, and process etc.
+          </a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
