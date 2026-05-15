@@ -24,6 +24,19 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 31,
+    color: "#1A8781",
+    tagType: "BIS Update",
+    date: "May 15, 2026",
+    displayDate: "15 May 2026",
+    title:
+      "BIS FMCS Certification Goes Fully Digital: Offline Applications Accepted Only Till 31 May 2026",
+    description:
+      "BIS FMCS certification process is going fully digital. Offline applications will be accepted only till 31 May 2026. From 1 June 2026, all FMCS applications must be submitted through MANAK Online.",
+    link: "/ministry-updates/bis-fmcs-certification-process-digitalization",
+    pdfLink: "/pdf/18507_2024.pdf",
+  },
+  {
     id: 30,
     color: "#5B63E6",
     tagType: "BIS Update",

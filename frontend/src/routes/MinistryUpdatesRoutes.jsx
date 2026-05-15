@@ -122,6 +122,9 @@ const BISFeeConcessionsforMSMEsStartupsWomen = lazy(() =>
 const FMCSDigitalTransformation = lazy(() =>
   import("@/pages/MinistryUpdatesPages/FMCSDigitalTransformation")
 );
+const BISFMCSCertificationGoesFullyDigital = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/BISFMCSCertificationGoesFullyDigital")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -372,6 +375,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <FMCSDigitalTransformation />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-fmcs-certification-process-digitalization"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <BISFMCSCertificationGoesFullyDigital />
           </Suspense>
         }
       />

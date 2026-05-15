@@ -104,6 +104,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/n-butyl-acrylate-qco-update",
     "/ministry-updates/bis-marking-fee-latest-qco-update",
     "/ministry-updates/fmcs-manak-online-bis-certification",
+    "/ministry-updates/bis-fmcs-certification-process-digitalization",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -1034,6 +1035,13 @@ const ContactFormServicesRightSideContentEng = () => {
 
     if (path.includes("/ministry-updates/fmcs-manak-online-bis-certification"))
       return "FMCS Digital Transformation: MANAK Online Portal for BIS Certification - Ministry Updates (English)";
+
+    if (
+      path.includes(
+        "/ministry-updates/bis-fmcs-certification-process-digitalization"
+      )
+    )
+      return "BIS FMCS Certification Goes Fully Digital - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
