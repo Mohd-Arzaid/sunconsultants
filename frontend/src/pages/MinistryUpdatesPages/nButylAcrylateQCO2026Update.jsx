@@ -472,22 +472,22 @@ const MainContentLeft = () => {
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
             <a
-              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-              className="text-blue-700 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Get details about BIS certification for foreign manufacturers
-            </a>
-          </li>
-          <li>
-            <a
               href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
               className="text-blue-700 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Get details about BIS certification for Indian manufacturers
+              ISI Mark Certification Scheme
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-700 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              BIS FMCS (Foreign Manufacturers Certification Scheme)
             </a>
           </li>
         </ul>
