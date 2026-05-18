@@ -334,7 +334,16 @@ const MainContentLeft = () => {
           For manufacturers and importers, certification is not just a regulatory
           formality—it is a validation that their sheets can perform reliably
           under real-world roofing conditions. For buyers, it provides confidence
-          that the product will deliver long-term durability and safety.
+          that the product will deliver long-term durability and safety. When you
+          plan the licence route itself, it helps to align product-specific work
+          with how Indian BIS operates overall —{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Check complete details about documentation, cost, and process etc.
+          </a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />

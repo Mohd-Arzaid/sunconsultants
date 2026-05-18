@@ -293,8 +293,8 @@ const MainContentLeft = () => {
           17954:2023 confirms that drawer slides meet performance standards for
           load capacity, smooth movement, durability, and safety. It is required
           in India to ensure reliable operation in furniture, modular kitchens,
-          and industrial storage systems without failure or jamming. For
-          mandatory dates and the underlying QCO notification, see{" "}
+          and industrial storage systems without failure or jamming. <br />
+          <br />
           <Link
             to="/bis-qco-updates/bis-certificate-for-telescopic-ball-bearing-drawer-slides"
             className="text-blue-600 hover:underline"

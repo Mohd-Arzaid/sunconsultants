@@ -290,7 +290,16 @@ const MainContentLeft = () => {
           power transmission components meet required standards for strength,
           flexibility, and durability. Certification is essential in India to
           prevent belt failure, ensure safe machine operation, and maintain
-          consistent industrial performance.
+          consistent industrial performance. <br />
+          <br />
+          <Link
+            to="/bis-qco-updates/bis-certificate-for-v-belts"
+            className="text-blue-600 hover:underline"
+          >
+            Also read the QCO notification for V-Belts (including narrow
+            industrial belts under IS 14261:1995)
+          </Link>
+          .
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -328,7 +337,16 @@ const MainContentLeft = () => {
           flexibility, and dimensional accuracy as defined under IS 14261:1995.
           For manufacturers and importers, certification is not just a
           compliance requirement but a quality benchmark that assures industrial
-          buyers of reliable performance.
+          buyers of reliable performance. When you plan the overall BIS
+          licence route—not only product testing—it helps to see how
+          documentation, fees, and timelines fit together in India —{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Check complete details about documentation, cost, and process etc.
+          </a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />

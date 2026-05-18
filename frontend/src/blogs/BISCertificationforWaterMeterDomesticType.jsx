@@ -320,7 +320,16 @@ const MainContentLeft = () => {
           For manufacturers, importers, and suppliers, obtaining a BIS License
           for Water meters (domestic type) is essential for entering regulated
           markets, participating in government tenders, and building trust among
-          municipal bodies and consumers.
+          municipal bodies and consumers. When you plan the licence route
+          itself, it helps to align product-specific work with how Indian BIS
+          operates overall —{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Check complete details about documentation, cost, and process etc.
+          </a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />

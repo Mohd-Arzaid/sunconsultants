@@ -289,7 +289,7 @@ const MainContentLeft = () => {
           insulation, and performance requirements. In India, certification is
           essential to prevent electric shock, overheating, and short-circuit
           risks, especially since these heaters operate directly in water and are
-          widely used in households. For official regulatory context, refer to{" "}
+          widely used in households. <br /> <br />
           <Link
             to="/bis-qco-updates/bis-certificate-for-electric-water-heaters"
             className="text-blue-600 hover:underline"

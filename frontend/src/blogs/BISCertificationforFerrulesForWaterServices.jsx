@@ -315,7 +315,16 @@ const MainContentLeft = () => {
           importers, obtaining a BIS Certificate for Ferrules for Water Services
           is not just about compliance—it is about ensuring that their products
           can withstand real-world conditions such as pressure fluctuations,
-          corrosion, and long-term usage.
+          corrosion, and long-term usage. When you plan the licence route
+          itself, it helps to align product-specific work with how Indian BIS
+          operates overall —{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Check complete details about documentation, cost, and process etc.
+          </a>
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">

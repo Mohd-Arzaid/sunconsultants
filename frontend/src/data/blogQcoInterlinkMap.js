@@ -248,6 +248,15 @@ export const interlinkPairs = [
       "/bis-qco-updates/bis-certificate-for-telescopic-ball-bearing-drawer-slides",
     qcoMatchKey: "Telescopic Ball Bearing Drawer Slide",
   },
+  {
+    productName: "Transmission Devices V-Belts (Endless Narrow, Industrial Use)",
+    isNumber: "IS 14261:1995",
+    blogUrl: "/blogs/isi-products/transmission-devices-v-belts-is-14261",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-v-belts",
+    qcoMatchKey: `1.) V-Belts - Endless V-Belts for Industrial Purposes – General Purpose
+  2.) V-Belts - Endless V-Belts for Industrial Purposes – Fire Resistant and Antistatic V-Belts
+  3.) Transmission Devices – V-Belts Endless Narrow V-Belts for Industrial Use`,
+  },
 ];
 
 /**

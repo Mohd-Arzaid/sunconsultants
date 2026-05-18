@@ -329,7 +329,16 @@ const MainContentLeft = () => {
           importers and distributors, it ensures that products entering the
           Indian market align with regulatory expectations. For end users,
           particularly municipal bodies, it provides confidence in measurement
-          reliability and long-term performance.
+          reliability and long-term performance. When you plan the licence
+          route itself, it helps to align product-specific work with how Indian
+          BIS operates overall —{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Check complete details about documentation, cost, and process etc.
+          </a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />

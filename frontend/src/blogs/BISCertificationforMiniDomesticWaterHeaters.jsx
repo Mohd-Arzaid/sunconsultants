@@ -327,7 +327,16 @@ const MainContentLeft = () => {
           safely under real household conditions while delivering consistent
           heating performance. For manufacturers and importers, compliance with
           IS 17150:2019 is a critical step toward entering and sustaining
-          presence in the Indian market.
+          presence in the Indian market. When you plan the licence route
+          itself, it helps to align product-specific work with how Indian BIS
+          operates overall —{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Check complete details about documentation, cost, and process etc.
+          </a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
