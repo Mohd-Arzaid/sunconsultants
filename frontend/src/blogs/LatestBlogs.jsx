@@ -16,6 +16,66 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 97,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Corrugated and Semi–Corrugated Asbestos Cement Sheets – IS 459:1992",
+    description:
+      "Get BIS Certificate for Corrugated and Semi Corrugated Cement Sheets under IS 459:1992. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459",
+    date: "9 May 2026",
+  },
+  {
+    id: 96,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Diesel Engines – NOx Reduction Agent AUS 32 – IS 17042 (Part-1): 2018",
+    description:
+      "Get BIS Certificate for Diesel Engines Reduction Agent under IS 17042 (Part 1):2018. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1",
+    date: "9 May 2026",
+  },
+  {
+    id: 95,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Evaporative Air Coolers (Desert Coolers) – IS 3315: 2019",
+    description:
+      "Get BIS Certificate for Evaporative Air Coolers under IS 3315:2019. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/evaporative-air-coolers-is-3315",
+    date: "9 May 2026",
+  },
+  {
+    id: 94,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Insulating Mats for Electrical Purposes – IS 15652: 2006",
+    description:
+      "Get BIS Certificate for Insulating Mats for Electrical Purposes under IS 15652:2006. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/insulating-mats-for-electrical-purposes-is-15652",
+    date: "9 May 2026",
+  },
+  {
+    id: 93,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Live Working Gloves of Insulating Material – IS 13774: 2021",
+    description:
+      "Get BIS Certificate for Live Working Gloves of Insulating Material under IS 13774:2021. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/live-working-gloves-of-insulating-material-is-13774",
+    date: "9 May 2026",
+  },
+  {
+    id: 92,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Asbestos – Cement Pipes and Fittings for Sewerage and Drainage – IS 6908:1991",
+    description:
+      "Get BIS Certificate for Cement Pipes and Fittings for Sewerage and Drainage under IS 6908:1991. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cement-pipes-and-fittings-for-sewarage-and-drainage-is-6908",
+    date: "9 May 2026",
+  },
+  {
     id: 91,
     color: "#0284C7",
     title:

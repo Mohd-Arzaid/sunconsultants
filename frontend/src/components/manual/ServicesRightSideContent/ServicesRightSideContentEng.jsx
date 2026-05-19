@@ -243,6 +243,12 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/water-meter-domestic-type-is-779",
     "/blogs/isi-products/water-meter-bulk-type-is-2373",
     "/blogs/isi-products/fibre-cement-flat-sheets-is-14862",
+    "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459",
+    "/blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1",
+    "/blogs/isi-products/evaporative-air-coolers-is-3315",
+    "/blogs/isi-products/insulating-mats-for-electrical-purposes-is-15652",
+    "/blogs/isi-products/live-working-gloves-of-insulating-material-is-13774",
+    "/blogs/isi-products/cement-pipes-and-fittings-for-sewarage-and-drainage-is-6908",
     "/blogs/isi-products/shallow-corrugated-asbestos-cement-sheets-is-13008",
     "/blogs/isi-products/silica-asbestos-cement-flat-sheets-is-13000",
     "/blogs/isi-products/transmission-devices-v-belts-is-14261",
@@ -1333,6 +1339,42 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Water Meter Bulk Type - English Page";
     if (path.includes("/blogs/isi-products/fibre-cement-flat-sheets-is-14862"))
       return "BIS Certificate for Fibre Cement Flat Sheets - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459"
+      )
+    )
+      return "BIS Certificate for Corrugated and Semi Corrugated Cement Sheets - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1"
+      )
+    )
+      return "BIS Certificate for Diesel Engines – NOx Reduction Agent AUS 32 - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/evaporative-air-coolers-is-3315"
+      )
+    )
+      return "BIS Certificate for Evaporative Air Coolers (Desert Coolers) - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/insulating-mats-for-electrical-purposes-is-15652"
+      )
+    )
+      return "BIS Certificate for Insulating Mats for Electrical Purposes - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/live-working-gloves-of-insulating-material-is-13774"
+      )
+    )
+      return "BIS Certificate for Live Working Gloves of Insulating Material - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/cement-pipes-and-fittings-for-sewarage-and-drainage-is-6908"
+      )
+    )
+      return "BIS Certificate for Cement Pipes and Fittings for Sewerage and Drainage - English Page";
     if (
       path.includes(
         "/blogs/isi-products/shallow-corrugated-asbestos-cement-sheets-is-13008"

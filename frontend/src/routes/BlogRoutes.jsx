@@ -860,6 +860,24 @@ const BISCertificationforWaterMeterBulkType = lazy(() =>
 const BISCertificationforFibreCementFlatSheets = lazy(() =>
   import("@/blogs/BISCertificationforFibreCementFlatSheets")
 );
+const BISCertificationforAsbestos = lazy(() =>
+  import("@/blogs/BISCertificationforAsbestos")
+);
+const BISCertificationforLiveWorkingGloves = lazy(() =>
+  import("@/blogs/BISCertificationforLiveWorkingGloves")
+);
+const BISCertificationforInsulatingMatsforElectricalPurposes = lazy(() =>
+  import("@/blogs/BISCertificationforInsulatingMatsforElectricalPurposes")
+);
+const BISCertificationforEvaporativeAirCoolers = lazy(() =>
+  import("@/blogs/BISCertificationforEvaporativeAirCoolers")
+);
+const BISCertificationforDieselEngines = lazy(() =>
+  import("@/blogs/BISCertificationforDieselEngines")
+);
+const BISCertificationforCorrugatedandSemi = lazy(() =>
+  import("@/blogs/BISCertificationforCorrugatedandSemi")
+);
 const BISCertificationforShallowCorrugatedAsbestosCementSheets = lazy(() =>
   import("@/blogs/BISCertificationforShallowCorrugatedAsbestosCementSheets")
 );
@@ -3069,6 +3087,54 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforFibreCementFlatSheets />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCorrugatedandSemi />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforDieselEngines />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/evaporative-air-coolers-is-3315"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforEvaporativeAirCoolers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/insulating-mats-for-electrical-purposes-is-15652"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforInsulatingMatsforElectricalPurposes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/live-working-gloves-of-insulating-material-is-13774"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforLiveWorkingGloves />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cement-pipes-and-fittings-for-sewarage-and-drainage-is-6908"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforAsbestos />
           </Suspense>
         }
       />
