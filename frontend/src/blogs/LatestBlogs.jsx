@@ -16,6 +16,46 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 101,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Air Filters for General Ventilation – IS 17570 (Part 1): 2021",
+    description:
+      "Get BIS Certificate for Air Filters for general ventilation under IS 17570 (Part 1):2021. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/air-filters-for-general-ventilation-is-17570-part-1",
+    date: "9 May 2026",
+  },
+  {
+    id: 100,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Asbestos Cement Building Boards – IS 2098:1997",
+    description:
+      "Get BIS Certificate for Cement Building Boards under IS 2098:1997. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cement-building-boards-is-2098",
+    date: "10 May 2026",
+  },
+  {
+    id: 99,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Asbestos Cement Flat Sheets – IS 2096: 1992",
+    description:
+      "Get BIS Certificate for Cement Flat Sheets under IS 2096:1992. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cement-flat-sheets-is-2096",
+    date: "10 May 2026",
+  },
+  {
+    id: 98,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Asbestos Cement Pressure Pipes and Joints - IS 1592: 2003",
+    description:
+      "Get BIS Certificate for Cement Pressure Pipes & Joints under IS 1592:2003. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cement-pressure-pipes-and-joints-is-1592",
+    date: "10 May 2026",
+  },
+  {
     id: 97,
     color: "#0284C7",
     title:

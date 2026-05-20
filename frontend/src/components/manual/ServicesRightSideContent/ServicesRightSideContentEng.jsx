@@ -243,6 +243,10 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/water-meter-domestic-type-is-779",
     "/blogs/isi-products/water-meter-bulk-type-is-2373",
     "/blogs/isi-products/fibre-cement-flat-sheets-is-14862",
+    "/blogs/isi-products/air-filters-for-general-ventilation-is-17570-part-1",
+    "/blogs/isi-products/cement-building-boards-is-2098",
+    "/blogs/isi-products/cement-flat-sheets-is-2096",
+    "/blogs/isi-products/cement-pressure-pipes-and-joints-is-1592",
     "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459",
     "/blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1",
     "/blogs/isi-products/evaporative-air-coolers-is-3315",
@@ -1339,6 +1343,26 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Water Meter Bulk Type - English Page";
     if (path.includes("/blogs/isi-products/fibre-cement-flat-sheets-is-14862"))
       return "BIS Certificate for Fibre Cement Flat Sheets - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/air-filters-for-general-ventilation-is-17570-part-1"
+      )
+    )
+      return "BIS Certificate for Air Filters for general ventilation - English Page";
+    if (
+      path.includes("/blogs/isi-products/cement-building-boards-is-2098")
+    )
+      return "BIS Certificate for Cement Building Boards - English Page";
+    if (
+      path.includes("/blogs/isi-products/cement-flat-sheets-is-2096")
+    )
+      return "BIS Certificate for Cement Flat Sheets - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/cement-pressure-pipes-and-joints-is-1592"
+      )
+    )
+      return "BIS Certificate for Cement Pressure Pipes and Joints - English Page";
     if (
       path.includes(
         "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459"

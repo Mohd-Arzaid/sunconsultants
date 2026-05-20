@@ -878,6 +878,18 @@ const BISCertificationforDieselEngines = lazy(() =>
 const BISCertificationforCorrugatedandSemi = lazy(() =>
   import("@/blogs/BISCertificationforCorrugatedandSemi")
 );
+const BISCertificationforAsbestosCementPressurePipesandJoints = lazy(() =>
+  import("@/blogs/BISCertificationforAsbestosCementPressurePipesandJoints")
+);
+const BISCertificationforAsbestosCementFlatSheets = lazy(() =>
+  import("@/blogs/BISCertificationforAsbestosCementFlatSheets")
+);
+const BISCertificationforAsbestosCementBuildingBoards = lazy(() =>
+  import("@/blogs/BISCertificationforAsbestosCementBuildingBoards")
+);
+const BISCertificationforAirFiltersforGeneralVentilation = lazy(() =>
+  import("@/blogs/BISCertificationforAirFiltersforGeneralVentilation")
+);
 const BISCertificationforShallowCorrugatedAsbestosCementSheets = lazy(() =>
   import("@/blogs/BISCertificationforShallowCorrugatedAsbestosCementSheets")
 );
@@ -3087,6 +3099,38 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforFibreCementFlatSheets />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/air-filters-for-general-ventilation-is-17570-part-1"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforAirFiltersforGeneralVentilation />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cement-building-boards-is-2098"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforAsbestosCementBuildingBoards />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cement-flat-sheets-is-2096"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforAsbestosCementFlatSheets />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cement-pressure-pipes-and-joints-is-1592"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforAsbestosCementPressurePipesandJoints />
           </Suspense>
         }
       />
