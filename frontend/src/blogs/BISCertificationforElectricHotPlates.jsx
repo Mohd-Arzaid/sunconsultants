@@ -142,7 +142,7 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS certification for Electric Hot Plates ensures that these heating
+          BIS Certification for Electric Hot Plates ensures that these heating
           appliances comply with IS 302 (Part 1):2024 safety requirements. It
           verifies protection against overheating, electrical leakage, and fire
           hazards, making hot plates safe for cooking applications in Indian
@@ -186,33 +186,18 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Obtaining a BIS Certification for Electric Hot Plates confirms that the
           product has been tested for these conditions and meets the required
-          safety benchmarks. For manufacturers and importers, securing a BIS
-          License for Electric Hot Plates is essential to ensure legal market
+          safety benchmarks. For manufacturers and importers, securing a    {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS License
+                    </a>{" "} for Electric Hot Plates is essential to ensure legal market
           entry and consumer acceptance.
         </p>
 
-        <div className="mb-6 p-4 md:p-5 rounded-lg bg-white border border-teal-200/80 shadow-sm space-y-3 text-gray-600 text-base font-geist">
-          <p>
-            Check complete details about documentation, cost, and process for
-            foreign manufacturer:{" "}
-            <Link
-              to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-              className="text-teal-700 font-medium underline underline-offset-2 hover:text-teal-900 break-all"
-            >
-              https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis
-            </Link>
-          </p>
-          <p>
-            Check complete details about documentation, cost, and process for
-            Indian manufacturer:{" "}
-            <Link
-              to="/a-guide-to-bis-certification-indian-bis"
-              className="text-teal-700 font-medium underline underline-offset-2 hover:text-teal-900 break-all"
-            >
-              https://bis-certifications.com/a-guide-to-bis-certification-indian-bis
-            </Link>
-          </p>
-        </div>
+    
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
@@ -387,9 +372,7 @@ const MainContentLeft = () => {
           audits.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+      
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
@@ -657,10 +640,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Registration</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS Certification</a>
           </li>
         </ul>
 

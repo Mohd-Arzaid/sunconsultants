@@ -373,8 +373,15 @@ const MainContentLeftVariant = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For manufacturers, importers, and distributors, obtaining a BIS
-          Certificate for Fabric Steamers demonstrates that the appliance design
+          For manufacturers, importers, and distributors, obtaining a{" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Certificate
+                    </a>{" "} 
+                    for Fabric Steamers demonstrates that the appliance design
           has been evaluated for electrical safety, temperature control, and
           structural reliability. Certification also indicates that the
           manufacturer maintains consistent quality standards in production.
@@ -603,11 +610,18 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For manufacturers, importers, and distributors, obtaining a BIS
-          Certificate for Fabric Steamers demonstrates that the appliance design
-          has been evaluated for electrical safety, temperature control, and
-          structural reliability. Certification also indicates that the
-          manufacturer maintains consistent quality standards in production.
+          For manufacturers, importers, and distributors, obtaining a{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            BIS Certificate
+          </a>{" "}
+          for Fabric Steamers demonstrates that the appliance design has been
+          evaluated for electrical safety, temperature control, and structural
+          reliability. Certification also indicates that the manufacturer
+          maintains consistent quality standards in production.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -895,9 +909,7 @@ const MainContentLeft = () => {
           conducted to ensure ongoing product quality.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+ 
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
@@ -1203,10 +1215,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Certificate</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS Certificate for Foreign Manufacturer</a>
           </li>
         </ul>
 

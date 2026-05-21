@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
+﻿import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -280,8 +280,14 @@ const MainContentLeft = () => {
           under IS 17636:2022, which lays down the safety, performance, and
           structural requirements for bunk beds used in homes, hostels,
           dormitories, PG accommodations, schools, hotels, and commercial
-          establishments. Any manufacturer—Indian or foreign—must obtain a BIS
-          Certification for Bunk Beds before selling, importing, exporting, or
+            establishments. Any manufacturer—Indian or foreign—must obtain a {" "}
+            <a
+              href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+              className="text-blue-600 hover:underline"
+              rel="noopener noreferrer"
+            >
+              BIS Certification
+            </a>{" "} for Bunk Beds before selling, importing, exporting, or
           distributing bunk beds in the Indian market.
         </p>
 
@@ -566,9 +572,7 @@ const MainContentLeft = () => {
           <li>Renew the license every 1 or 2 years</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+      
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -1075,10 +1079,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certificate</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS License</a>
           </li>
         </ul>
 

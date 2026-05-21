@@ -167,7 +167,14 @@ const MainContentLeft = () => {
           India has made BIS Certification for Fibre Ropes Of Polyester
           mandatory under IS 17609 : 2021. Any manufacturer or importer who
           wants to sell polyester fibre ropes in the Indian market must obtain a
-          valid BIS Certificate for Fibre Ropes Of Polyester. Without this
+          valid    {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Certificate
+                    </a>{" "} for Fibre Ropes Of Polyester. Without this
           certification, such products are considered non-compliant and may be
           banned from sale, seized, or rejected by authorities.
         </p>
@@ -448,9 +455,7 @@ const MainContentLeft = () => {
           <li>Renew the BIS license on time</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+      
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -860,10 +865,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certificate</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS</a>
           </li>
         </ul>
 

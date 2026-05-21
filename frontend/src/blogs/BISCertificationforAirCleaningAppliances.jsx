@@ -1,4 +1,4 @@
-import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
+﻿import FaqAuthorEng from "@/components/common/FaqAuthor/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -141,7 +141,14 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification for Air-Cleaning Appliances verifies that
+        {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Certification
+                    </a>{" "} for Air-Cleaning Appliances verifies that
           electrically operated devices used to purify indoor air comply with the
           safety requirements specified in{" "}
           <strong>IS 302 (Part 1):2024</strong>. This certification confirms that
@@ -455,9 +462,7 @@ const MainContentLeft = () => {
           compliance.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+      
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
@@ -724,10 +729,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Certificate</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS Certificate for Foreign Manufacturer</a>
           </li>
         </ul>
 

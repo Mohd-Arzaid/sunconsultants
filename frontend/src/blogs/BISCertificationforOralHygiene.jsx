@@ -215,8 +215,14 @@ const MainContentLeft = () => {
           Market Access and Brand Credibility
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Retailers and e-commerce platforms prefer certified products. A BIS
-          Certificate for Oral Hygiene Appliances improves product acceptance and
+          Retailers and e-commerce platforms prefer certified products. A    {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Certificate
+                    </a>{" "} for Oral Hygiene Appliances improves product acceptance and
           buyer trust.
         </p>
 
@@ -326,9 +332,7 @@ const MainContentLeft = () => {
               Cost depends on variants, test scope, and inspection
               requirements. Simpler products usually cost less to certify.
             </p>
-            <p className="text-gray-600 text-base font-geist mb-4">
-              <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-            </p>
+         
           </div>
 
           <div>
@@ -371,10 +375,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Registration</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS Certification</a>
           </li>
         </ul>
 

@@ -335,7 +335,14 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification for Commercial Electric Hoods verifies that these electrically operated ventilation systems used in commercial kitchens comply with safety and performance requirements under IS 302 (Part 1):2024. Certification confirms that the hood&apos;s electrical components, motor systems, and heat-resistant design operate safely in demanding cooking environments across India.
+        {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Certification
+                    </a>{" "} for Commercial Electric Hoods verifies that these electrically operated ventilation systems used in commercial kitchens comply with safety and performance requirements under IS 302 (Part 1):2024. Certification confirms that the hood&apos;s electrical components, motor systems, and heat-resistant design operate safely in demanding cooking environments across India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -594,9 +601,6 @@ const MainContentLeft = () => {
           Manufacturers must maintain consistent quality standards even after obtaining the BIS License for Commercial Electric Hoods. Periodic inspections and surveillance testing may be conducted to verify ongoing compliance.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -917,10 +921,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">BIS ISI Certification</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS Certificate for Foreign Manufacturer</a>
           </li>
         </ul>
 

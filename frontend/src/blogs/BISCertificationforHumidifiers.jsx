@@ -351,7 +351,14 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To address these potential hazards, India has established safety evaluation procedures for electrical appliances like humidifiers. The BIS Certification for Humidifiers ensures that the product design, electrical components, and manufacturing processes meet technical safety requirements defined under IS 302 (Part 1):2024.
+          To address these potential hazards, India has established safety evaluation procedures for electrical appliances like humidifiers. The    {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Licence
+                    </a>{" "} for Humidifiers ensures that the product design, electrical components, and manufacturing processes meet technical safety requirements defined under IS 302 (Part 1):2024.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -605,9 +612,7 @@ const MainContentLeft = () => {
           Even after certification is granted, manufacturers must continue maintaining product quality. BIS may conduct surveillance inspections or sample testing to ensure ongoing compliance.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+      
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -905,10 +910,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">BIS ISI Certification</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS Certificate for Foreign Manufacturer</a>
           </li>
         </ul>
 

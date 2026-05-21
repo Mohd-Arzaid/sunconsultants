@@ -178,7 +178,15 @@ const TinIngotBlogMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    From 17th October 2025, the Bureau of Indian Standard (BIS) has made it mandatory for all manufacturers of Tin Ingot to obtain BIS Certification under IS 209:2024. This move is a part of the government&apos;s ongoing efforts to ensure product quality, safety, and compliance across industries. Whether you are a large-scale manufacturer or a small-scale producer, obtaining a BIS Certificate is now compulsory to continue manufacturing, selling, or distributing Tin Ingot in the Indian market.
+                    From 17th October 2025, the Bureau of Indian Standard (BIS) has made it mandatory for all manufacturers of Tin Ingot to obtain BIS Certification under IS 209:2024. This move is a part of the government&apos;s ongoing efforts to ensure product quality, safety, and compliance across industries. Whether you are a large-scale manufacturer or a small-scale producer, obtaining a{" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Certificate
+                    </a>{" "}
+                    is now compulsory to continue manufacturing, selling, or distributing Tin Ingot in the Indian market.
                 </p>
 
                 {/* Introduction Paragraph 2 */}
@@ -344,9 +352,8 @@ const TinIngotBlogMainContentLeft = () => {
                     <li>BIS license cost: Includes application fees, audit charges, and registration fees, also covers product testing, consultant services, and government fees.</li>
                 </ul>
 
-                <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-                  <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-                </p>
+    
+
 
                 <p className="text-gray-600 text-base font-geist mb-6">
                     For small-scale manufacturers, hiring BIS Consultants in India can help minimize unnecessary expenses and ensure faster approval.

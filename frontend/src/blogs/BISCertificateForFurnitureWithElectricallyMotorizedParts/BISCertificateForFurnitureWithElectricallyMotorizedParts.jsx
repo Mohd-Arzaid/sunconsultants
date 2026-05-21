@@ -303,8 +303,14 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Furniture with electrically motorized parts—such as adjustable beds,
           motorized recliner sofas, and height-adjustable desks—must comply with
-          IS 302 (Part 1):2024 before being sold in India. A valid BIS
-          Certificate for Furniture with Electrically Motorized Parts confirms
+          IS 302 (Part 1):2024 before being sold in India. A valid    {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS License
+                    </a>{" "} for Furniture with Electrically Motorized Parts confirms
           electrical safety, insulation reliability, motor protection, and user
           safety under Indian electrical appliance regulations.
         </p>
@@ -552,9 +558,7 @@ const MainContentLeft = () => {
           <li>License renewal is required</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-3 mt-6">
           Documents Required for BIS Certification
@@ -810,10 +814,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Registration </a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS License for Foreign Manufacturer</a>
           </li>
         </ul>
 

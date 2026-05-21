@@ -4,18 +4,6 @@ import { ArrowRight } from "lucide-react";
 const ManyUsersAlsoRead = () => {
   const links = [
     {
-      title: "BIS Certification Complete Guide",
-      path: "/what-is-bis-certificate-indian-bis",
-    },
-    {
-      title: "BIS Certification for Foreign Manufacturers",
-      path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
-    },
-    {
-      title: "BIS Certification for Indian Manufacturers",
-      path: "/a-guide-to-bis-certification-indian-bis",
-    },
-    {
       title: "Scheme X Certification",
       path: "/indian-bis-certification-under-scheme-x",
     },

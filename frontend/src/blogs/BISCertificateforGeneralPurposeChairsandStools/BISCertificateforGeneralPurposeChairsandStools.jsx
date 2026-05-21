@@ -157,7 +157,14 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for General Purpose Chairs and Stools is a
+          The    {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Certificate
+                    </a>{" "} for General Purpose Chairs and Stools is a
           mandatory requirement under Indian Standard IS 17632:2022. This
           standard specifies the safety, durability, and performance
           requirements for chairs and stools used in homes, offices, commercial
@@ -434,9 +441,7 @@ const MainContentLeft = () => {
           <li>Renew license every 1–2 years</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+      
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>

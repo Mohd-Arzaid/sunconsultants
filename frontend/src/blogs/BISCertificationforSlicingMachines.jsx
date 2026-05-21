@@ -149,7 +149,14 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS certification for Slicing Machines confirms that electrically
+        {" "}
+                    <a
+                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                    >
+                        BIS Certification
+                    </a>{" "} for Slicing Machines confirms that electrically
           operated cutting equipment complies with IS 302 (Part 1):2024 safety
           requirements. It ensures protection against electrical hazards, blade
           exposure risks, and overheating, making these machines safe for food
@@ -199,30 +206,7 @@ const MainContentLeft = () => {
           that the product is safe for end users.
         </p>
 
-        <div className="mb-6 p-4 md:p-5 rounded-lg bg-white border border-teal-200/80 shadow-sm space-y-3 text-base font-geist">
-          <Link
-            to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-            className="flex items-center gap-2 text-teal-700 font-medium hover:text-teal-900 transition-colors group"
-          >
-            <span className="shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-teal-100 text-teal-700 group-hover:bg-teal-200 transition-colors">
-              →
-            </span>
-            <span className="underline underline-offset-2">
-              Check complete details about documentation, cost, and process for foreign manufacturer
-            </span>
-          </Link>
-          <Link
-            to="/a-guide-to-bis-certification-indian-bis"
-            className="flex items-center gap-2 text-teal-700 font-medium hover:text-teal-900 transition-colors group"
-          >
-            <span className="shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-teal-100 text-teal-700 group-hover:bg-teal-200 transition-colors">
-              →
-            </span>
-            <span className="underline underline-offset-2">
-              Check complete details about documentation, cost, and process for Indian manufacturer
-            </span>
-          </Link>
-        </div>
+       
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -463,9 +447,7 @@ const MainContentLeft = () => {
           <li>inspection charges</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mt-4 mb-4">
-          <a href="https://bis-certifications.com/what-is-bis-certificate-indian-bis" className="text-blue-600 hover:underline">Check complete details about documentation, cost, and process etc.</a>
-        </p>
+      
         <p className="text-gray-600 text-base font-geist mb-4">
           The cost of bis certification for Slicing Machines varies accordingly.
         </p>
@@ -697,10 +679,10 @@ const MainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certificatione</a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS Certificate</a>
           </li>
         </ul>
 
