@@ -875,6 +875,9 @@ const BISCertificationforEvaporativeAirCoolers = lazy(() =>
 const BISCertificationforDieselEngines = lazy(() =>
   import("@/blogs/BISCertificationforDieselEngines")
 );
+const BISCertificationforBayonetLampHolders = lazy(() =>
+  import("@/blogs/BISCertificationforBayonetLampHolders")
+);
 const BISCertificationforCorrugatedandSemi = lazy(() =>
   import("@/blogs/BISCertificationforCorrugatedandSemi")
 );
@@ -3131,6 +3134,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforAsbestosCementPressurePipesandJoints />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/bayonet-lamp-holders-is-1258"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforBayonetLampHolders />
           </Suspense>
         }
       />

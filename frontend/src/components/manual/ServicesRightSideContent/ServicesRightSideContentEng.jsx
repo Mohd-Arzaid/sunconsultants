@@ -247,6 +247,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/cement-building-boards-is-2098",
     "/blogs/isi-products/cement-flat-sheets-is-2096",
     "/blogs/isi-products/cement-pressure-pipes-and-joints-is-1592",
+    "/blogs/isi-products/bayonet-lamp-holders-is-1258",
     "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459",
     "/blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1",
     "/blogs/isi-products/evaporative-air-coolers-is-3315",
@@ -1363,6 +1364,10 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS Certificate for Cement Pressure Pipes and Joints - English Page";
+    if (
+      path.includes("/blogs/isi-products/bayonet-lamp-holders-is-1258")
+    )
+      return "BIS Certificate for Bayonet Lamp Holders - English Page";
     if (
       path.includes(
         "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459"

@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 102,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Bayonet Lamp Holders – IS 1258: 2005",
+    description:
+      "Get BIS Certificate for Bayonet Lamp Holders under IS 1258:2005. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/bayonet-lamp-holders-is-1258",
+    date: "9 May 2026",
+  },
+  {
     id: 101,
     color: "#0284C7",
     title:
