@@ -24,6 +24,18 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 32,
+    color: "#5B63E6",
+    tagType: "BIS Update",
+    date: "May 27, 2026",
+    displayDate: "27 May 2026",
+    title:
+      "BIS Manak Samachar – May 2026 Highlights: AI Standards, Space Innovation & Major Regulatory Developments",
+    description:
+      "Explore the key highlights from BIS Manak Samachar May 2026 featuring AI & Robotics standardisation, NBCS 2026, space technology standards, conformity assessment reforms, MSME initiatives, and new Indian standards.",
+    link: "/ministry-updates/bis-manak-samachar-may-2026",
+  },
+  {
     id: 31,
     color: "#1A8781",
     tagType: "BIS Update",

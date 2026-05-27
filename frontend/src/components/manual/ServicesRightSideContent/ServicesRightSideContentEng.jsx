@@ -105,6 +105,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-marking-fee-latest-qco-update",
     "/ministry-updates/fmcs-manak-online-bis-certification",
     "/ministry-updates/bis-fmcs-certification-process-digitalization",
+    "/ministry-updates/bis-manak-samachar-may-2026",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -1053,6 +1054,9 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS FMCS Certification Goes Fully Digital - Ministry Updates (English)";
+
+    if (path.includes("/ministry-updates/bis-manak-samachar-may-2026"))
+      return "BIS Manak Samachar – May 2026 Highlights: AI Standards, Space Innovation & Major Regulatory Developments - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

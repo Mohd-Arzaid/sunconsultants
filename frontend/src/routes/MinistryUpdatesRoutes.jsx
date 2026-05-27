@@ -125,6 +125,11 @@ const FMCSDigitalTransformation = lazy(() =>
 const BISFMCSCertificationGoesFullyDigital = lazy(() =>
   import("@/pages/MinistryUpdatesPages/BISFMCSCertificationGoesFullyDigital")
 );
+const BISManakSamacharMay2026 = lazy(() =>
+  import(
+    "@/blogs/BISManakSamacharAIStandardsSpaceInnovation&MajorRegulatoryDevelopments"
+  )
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -383,6 +388,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <BISFMCSCertificationGoesFullyDigital />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-manak-samachar-may-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <BISManakSamacharMay2026 />
           </Suspense>
         }
       />
