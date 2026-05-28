@@ -16,10 +16,10 @@ const FooterChinese = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             请发送电子邮件至{" "}
             <a
-              href="mailto:suncertificationsindia@gmail.com"
+              href="mailto:info@sunconsultants.co.in"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              suncertificationsindia@gmail.com
+              info@sunconsultants.co.in
             </a>{" "}
             或使用下面的选项之一。我们通常在24小时内回复。
           </div>
@@ -296,7 +296,7 @@ const FooterChinese = () => {
               </a>
 
               <a
-                href="mailto:suncertificationsindia@gmail.com?body=Hello"
+                href="mailto:info@sunconsultants.co.in?body=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="发送电子邮件给我们"

@@ -1087,7 +1087,7 @@ const DocumentsSection = () => {
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Email
         </span>
-        suncertificationsindia@gmail.com
+        info@sunconsultants.co.in
         <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Phone

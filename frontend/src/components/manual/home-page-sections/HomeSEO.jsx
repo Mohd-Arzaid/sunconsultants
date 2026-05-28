@@ -74,7 +74,7 @@ const HomeSEO = () => {
             "@type": "ContactPoint",
             telephone: "+91-8010505057",
             contactType: "customer service",
-            email: "suncertificationsindia@gmail.com",
+            email: "info@sunconsultants.co.in",
           },
           sameAs: ["https://twitter.com/CertificationsSun"],
         })}

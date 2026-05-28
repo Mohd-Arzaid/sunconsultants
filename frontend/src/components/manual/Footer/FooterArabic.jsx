@@ -16,10 +16,10 @@ const FooterArabic = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             أرسل لنا بريدًا إلكترونيًا على{" "}
             <a
-              href="mailto:suncertificationsindia@gmail.com"
+              href="mailto:info@sunconsultants.co.in"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              suncertificationsindia@gmail.com
+              info@sunconsultants.co.in
             </a>{" "}
             أو استخدم إحدى الخيارات أدناه. عادة ما نرد خلال 24 ساعة.
           </div>
@@ -296,7 +296,7 @@ const FooterArabic = () => {
               </a>
 
               <a
-                href="mailto:suncertificationsindia@gmail.com?body=مرحبا"
+                href="mailto:info@sunconsultants.co.in?body=مرحبا"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="أرسل لنا بريدًا إلكترونيًا"

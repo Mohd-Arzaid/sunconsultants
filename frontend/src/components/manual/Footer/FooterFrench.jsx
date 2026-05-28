@@ -16,10 +16,10 @@ const FooterFrench = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Envoyez-nous un e-mail à{" "}
             <a
-              href="mailto:suncertificationsindia@gmail.com"
+              href="mailto:info@sunconsultants.co.in"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
-              suncertificationsindia@gmail.com
+              info@sunconsultants.co.in
             </a>{" "}
             ou utilisez l'une des options ci-dessous. Nous répondons
             généralement dans les 24 heures.
@@ -297,7 +297,7 @@ const FooterFrench = () => {
               </a>
 
               <a
-                href="mailto:suncertificationsindia@gmail.com?body=Bonjour"
+                href="mailto:info@sunconsultants.co.in?body=Bonjour"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Envoyez-nous un e-mail"

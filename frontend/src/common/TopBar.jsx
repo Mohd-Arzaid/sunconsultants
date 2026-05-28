@@ -148,11 +148,11 @@ const TopBar = () => {
         </div>
 
         <a
-          href="mailto:suncertificationsindia@gmail.com"
+          href="mailto:info@sunconsultants.co.in"
           className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
         >
           <Mail className="w-4 h-4 mr-2" />
-          suncertificationsindia@gmail.com
+          info@sunconsultants.co.in
         </a>
 
         <div className="w-px h-5 bg-white/30" role="separator" />
