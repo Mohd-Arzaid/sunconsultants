@@ -32,6 +32,16 @@ const ServicesRightSideContentEng = () => {
   const showComponentsPaths = [
     // CRS REGISTRATION PATH
     "/what-is-crs-bis-or-crs-registration",
+    // APEDA REGISTRATION PATH
+    "/apeda-registration-india",
+    // ERDA CERTIFICATE PATH
+    "/erda-certificate-india",
+    // ICAT CERTIFICATE PATH
+    "/icat-certificate-india",
+    // SASO SABER CERTIFICATION PATH
+    "/saso-saber-certification",
+    // STQC CERTIFICATE PATH
+    "/stqc-certificate-india",
     // SCHEME X PATH
     "/indian-bis-certification-under-scheme-x",
     // BISFM PATH - English
@@ -106,6 +116,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/fmcs-manak-online-bis-certification",
     "/ministry-updates/bis-fmcs-certification-process-digitalization",
     "/ministry-updates/bis-manak-samachar-may-2026",
+    "/ministry-updates/bis-new-standards-2026-department-wise-indian-standards",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -804,6 +815,16 @@ const ContactFormServicesRightSideContentEng = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration";
+    if (path.includes("/apeda-registration-india"))
+      return "APEDA Registration";
+    if (path.includes("/erda-certificate-india"))
+      return "Introduction to ERDA and ERDA Certificate";
+    if (path.includes("/icat-certificate-india"))
+      return "ICAT Certificate in India: Complete Information";
+    if (path.includes("/saso-saber-certification"))
+      return "What is SASO Certificate or SABER Certification";
+    if (path.includes("/stqc-certificate-india"))
+      return "STQC Certificate in India: Complete Information";
     if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
       return "CRS Registration Japanese";
     if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
@@ -1057,6 +1078,13 @@ const ContactFormServicesRightSideContentEng = () => {
 
     if (path.includes("/ministry-updates/bis-manak-samachar-may-2026"))
       return "BIS Manak Samachar – May 2026 Highlights: AI Standards, Space Innovation & Major Regulatory Developments - Ministry Updates (English)";
+
+    if (
+      path.includes(
+        "/ministry-updates/bis-new-standards-2026-department-wise-indian-standards"
+      )
+    )
+      return "BIS New Upcoming Indian Standards 2026 – Complete Department-Wise Indian Standards & IS Codes Guide - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

@@ -24,6 +24,18 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 33,
+    color: "#2563EB",
+    tagType: "BIS Update",
+    date: "May 28, 2026",
+    displayDate: "28 May 2026",
+    title:
+      "BIS New Upcoming Indian Standards 2026 – Complete Department-Wise Indian Standards & IS Codes Guide",
+    description:
+      "Explore the latest BIS New Standards 2026 issued by the Bureau of Indian Standards across departments including Civil, Chemical, Mechanical, Electronics, Textiles, Transport, Environment, and more.",
+    link: "/ministry-updates/bis-new-standards-2026-department-wise-indian-standards",
+  },
+  {
     id: 32,
     color: "#5B63E6",
     tagType: "BIS Update",

@@ -15,6 +15,19 @@ const CBCertification = lazy(() => import("../pages/CBCertification"));
 const LHSCable = lazy(() => import("../pages/LHSCable"));
 const NABL = lazy(() => import("../pages/NABL"));
 const CDSCO = lazy(() => import("../pages/CDSCO"));
+const APEDARegistration = lazy(() => import("../pages/APEDARegistration"));
+const IntroductiontoERDAandERDACertificate = lazy(() =>
+  import("../pages/IntroductiontoERDAandERDACertificate")
+);
+const ICATCertificateinIndia = lazy(() =>
+  import("../pages/ICATCertificateinIndia")
+);
+const WhatisSASOCertificateorSABERCertification = lazy(() =>
+  import("../pages/WhatisSASOCertificateorSABERCertification")
+);
+const STQCCertificateinIndia = lazy(() =>
+  import("../pages/STQCCertificateinIndia")
+);
 
 // Lazy load components with named exports
 const EPRService = lazy(() =>
@@ -166,6 +179,46 @@ export const ServicePagesRoutes = () => {
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <CDSCO />
+          </Suspense>
+        }
+      />
+      <Route
+        path="apeda-registration-india"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <APEDARegistration />
+          </Suspense>
+        }
+      />
+      <Route
+        path="erda-certificate-india"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <IntroductiontoERDAandERDACertificate />
+          </Suspense>
+        }
+      />
+      <Route
+        path="icat-certificate-india"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <ICATCertificateinIndia />
+          </Suspense>
+        }
+      />
+      <Route
+        path="saso-saber-certification"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <WhatisSASOCertificateorSABERCertification />
+          </Suspense>
+        }
+      />
+      <Route
+        path="stqc-certificate-india"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <STQCCertificateinIndia />
           </Suspense>
         }
       />

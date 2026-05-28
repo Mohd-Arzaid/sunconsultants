@@ -234,6 +234,41 @@
   <priority>0.9</priority>
 </url>
 
+<!-- APEDA Registration -->
+<url>
+  <loc>https://bis-certifications.com/apeda-registration-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<!-- Introduction to ERDA and ERDA Certificate -->
+<url>
+  <loc>https://bis-certifications.com/erda-certificate-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<!-- ICAT Certificate in India: Complete Information -->
+<url>
+  <loc>https://bis-certifications.com/icat-certificate-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<!-- What is SASO Certificate or SABER Certification -->
+<url>
+  <loc>https://bis-certifications.com/saso-saber-certification</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<!-- STQC Certificate in India: Complete Information -->
+<url>
+  <loc>https://bis-certifications.com/stqc-certificate-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url> 
+
 <url>
   <loc>https://bis-certifications.com/de/was-ist-crs-bis-oder-crs-registrierung</loc>
   <changefreq>monthly</changefreq>
@@ -6773,6 +6808,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-05-27</lastmod>
+  </url>
+  <!-- BIS New Upcoming Indian Standards 2026 – Complete Department-Wise Indian Standards & IS Codes Guide -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/bis-new-standards-2026-department-wise-indian-standards</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-28</lastmod>
   </url>
   <!-- Ministry Updates Pages - End -->
   

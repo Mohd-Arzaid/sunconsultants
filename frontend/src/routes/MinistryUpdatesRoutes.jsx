@@ -130,6 +130,9 @@ const BISManakSamacharMay2026 = lazy(() =>
     "@/blogs/BISManakSamacharAIStandardsSpaceInnovation&MajorRegulatoryDevelopments"
   )
 );
+const BISNewUpcomingIndianStandards2026 = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/BISNewUpcomingIndianStandards2026")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -396,6 +399,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <BISManakSamacharMay2026 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/bis-new-standards-2026-department-wise-indian-standards"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <BISNewUpcomingIndianStandards2026 />
           </Suspense>
         }
       />
