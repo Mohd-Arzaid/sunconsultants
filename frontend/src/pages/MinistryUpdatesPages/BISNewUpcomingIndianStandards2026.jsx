@@ -388,356 +388,3122 @@ const chemicalDepartmentStandardsData = [
   },
   {
     sno: 3,
+    isNumber: "IS 19575:2026",
+    isTitle:
+      "Efficiency Assessment of Anion Exchange Membrane, Proton Exchange Membrane and Alkaline Water Electrolysers",
+  },
+  {
+    sno: 4,
     isNumber: "IS 19358:2025",
     isTitle:
       "NBC Canister - Method of Test - Breakthrough Test for Sulphur Mustard Vapor (BTTSM)",
   },
   {
-    sno: 4,
+    sno: 5,
     isNumber: "IS 19561:2026",
     isTitle: "Sodium Cyanide — Code of Safety",
   },
   {
-    sno: 5,
+    sno: 6,
     isNumber: "IS 19508:2026",
     isTitle: "Selection of PPE for Waste Handling — Guidelines",
   },
   {
-    sno: 6,
+    sno: 7,
     isNumber: "IS 17274 (Part 4):2025",
     isTitle:
       "Respiratory Protective Devices — Methods of Test and Test Equipment Part 4 Determination of gas filter capacity and migration, desorption and carbon monoxide dynamic testing",
   },
   {
-    sno: 7,
+    sno: 8,
     isNumber: "IS 19420:2026",
     isTitle:
       "Personal Protective Equipment — Test Methods for Sunglasses and Related Eyewear",
   },
   {
-    sno: 8,
+    sno: 9,
     isNumber: "IS 19517 (Part 1):2026",
     isTitle:
       "Eye and Face Protection — Sunglasses and Related Eyewear Part 1 Sunglasses for General Use",
   },
   {
-    sno: 9,
+    sno: 10,
     isNumber: "IS 19522:2025",
     isTitle:
       "Safety Harness for Child to be Carried on Two Wheelers Specifications",
   },
   {
-    sno: 10,
+    sno: 11,
     isNumber: "IS 17274 (Part 14):2026",
     isTitle:
       "Respiratory Protective Devices — Methods of Test and Test Equipment Part 14 Measurement of Sound Pressure Level",
   },
   {
-    sno: 11,
+    sno: 12,
     isNumber: "IS 19517 (Part 3):2026",
     isTitle:
       "Eye and Face Protection — Sunglasses and Related Eyewear Part 3 Sunglasses for Running, Cycling and Similar Active Lifestyles",
   },
   {
-    sno: 12,
+    sno: 13,
     isNumber: "IS 19517 (Part 2):2026",
     isTitle:
       "Eye and Face Protection — Sunglasses and Related Eyewear Part 2 Filters for Direct Observation of the Sun",
   },
   {
-    sno: 13,
+    sno: 14,
     isNumber: "IS 19348:2025",
     isTitle: "GLASS SCREEN PROTECTOR - SPECIFICATION",
   },
   {
-    sno: 14,
+    sno: 15,
     isNumber: "IS 19328:2025",
     isTitle: "FIRE RESISTANT GLASS SPECIFICATION",
   },
   {
-    sno: 15,
+    sno: 16,
     isNumber: "IS 19331:2025",
     isTitle: "TINTED FLOAT GLASS - SPECIFICATION",
   },
   {
-    sno: 16,
+    sno: 17,
     isNumber: "IS 19360:2026",
     isTitle: "Coated Glass - Specification",
   },
   {
-    sno: 17,
+    sno: 18,
     isNumber: "IS 14661 (Part 3/Sec 5):2025",
     isTitle:
       "Tissue paper and tissue products Part 3 Methods of Test Section 5 Determination of Optical Properties — Measurement of Brightness and Colour with D65/10° (Outdoor Daylight)",
   },
   {
-    sno: 18,
+    sno: 19,
     isNumber: "IS 14661 (Part 1):2025",
     isTitle: "Tissue paper and tissue products Part 1 Vocabulary",
   },
   {
-    sno: 19,
+    sno: 20,
     isNumber: "IS 14661 (Part 3/Sec 1):2025",
     isTitle:
       "Tissue paper and tissue products Part 3 Methods of test Section 1 Determination of thickness bulking thickness and apparent bulk density and bulk",
   },
   {
-    sno: 20,
+    sno: 21,
     isNumber: "IS 14661 (Part 3/Sec 2):2025",
     isTitle:
       "Tissue paper and tissue products Part 3 Methods of test Section 2 Determination of tensile strength, stretch at maximum force and tensile energy absorption",
   },
   {
-    sno: 21,
+    sno: 22,
     isNumber: "IS 14661 (Part 3/Sec 3):2025",
     isTitle:
       "Tissue paper and tissue products Part 3 Methods of test Section 3 Determination of wet tensile strength",
   },
   {
-    sno: 22,
+    sno: 23,
     isNumber: "IS 14661 (Part 3/Sec 4):2025",
     isTitle:
       "Tissue paper and tissue products Part 3 Methods of Test Section 4 Determination of Grammage",
   },
   {
-    sno: 23,
+    sno: 24,
     isNumber: "IS 14661 (Part 3/Sec 7):2025",
     isTitle:
       "Tissue paper and tissue products Methods of test Part 7 Determination of disintegration in water",
   },
   {
-    sno: 24,
+    sno: 25,
     isNumber: "IS 14661 (Part 3/Sec 6):2025",
     isTitle:
       "Tissue paper and tissue products Part 3 Methods of Test Section 6 Water-Absorption Time and Water-Absorption Capacity, Basket-Immersion Test Method",
   },
   {
-    sno: 25,
+    sno: 26,
     isNumber: "IS 19378:2025",
     isTitle:
       "Base Paper for Sublimation Coating and Sublimation Coated Paper Specification",
   },
   {
-    sno: 26,
+    sno: 27,
     isNumber: "IS 1060 (Part 5/Sec 22):2026",
     isTitle:
       "Method of Sampling and Test for Paper and Allied Products Part 5 Method of Test for Paper and Board Section 22 Determination of roughness smoothness Air leak methods - Oken method",
   },
   {
-    sno: 27,
+    sno: 28,
     isNumber: "IS 19655 (Part 2):2026",
     isTitle:
       "Handmade Paper Board for File Covers and Folders — Specification",
   },
   {
-    sno: 28,
+    sno: 29,
     isNumber: "IS 19655 (Part 1):2026",
     isTitle: "Handmade Paper for Carry Bags Specification",
   },
   {
-    sno: 29,
+    sno: 30,
     isNumber: "IS 19655 (Part 3):2026",
     isTitle: "Handmade Paper for Packaging Specification",
   },
   {
-    sno: 30,
+    sno: 31,
     isNumber: "IS 19655 (Part 4):2026",
     isTitle: "Handmade Paper for Envelopes Specification",
   },
   {
-    sno: 31,
+    sno: 32,
     isNumber: "IS 19655:2026",
     isTitle: "Handmade Paper for Writing Specification",
   },
   {
-    sno: 32,
+    sno: 33,
     isNumber: "IS 19534:2025",
     isTitle:
       "Paper and board Determination of resistance to water penetration",
   },
   {
-    sno: 33,
+    sno: 34,
     isNumber: "IS 19530:2025",
     isTitle:
       "Paper and board Determination of compressive strength Ring crush method",
   },
   {
-    sno: 34,
+    sno: 35,
     isNumber: "IS 19527 (Part 1):2025",
     isTitle:
       "Paper and board Determination of grease resistance Part 1: Permeability test",
   },
   {
-    sno: 35,
+    sno: 36,
     isNumber: "IS 19527 (Part 3):2026",
     isTitle:
       "Paper and board Determination of grease resistance Part 3: Turpentine test for voids in glassine and greaseproof papers",
   },
   {
-    sno: 36,
+    sno: 37,
     isNumber: "IS 19531:2026",
     isTitle:
       "Paper and board Determination of bending stiffness Resonance method",
   },
   {
-    sno: 37,
+    sno: 38,
     isNumber: "IS 19527 (Part 2):2026",
     isTitle:
       "Paper and board Determination of grease resistance Part 2: Surface repellency test",
   },
   {
-    sno: 38,
+    sno: 39,
     isNumber: "IS 19533:2026",
     isTitle:
       "Paper and board Determination of bending stiffness General principles for two-point three-point and four-point methods",
   },
   {
-    sno: 39,
+    sno: 40,
     isNumber: "IS 19627:2026",
     isTitle:
       "Footwear Critical Substances Potentially Present in Footwear and Footwear Components Test Method to Quantitatively Determine Dimethylformamide in Footwear Materials",
   },
   {
-    sno: 40,
+    sno: 41,
     isNumber: "IS 19628:2026",
     isTitle:
       "Footwear Critical Substances Potentially Present in Footwear and Footwear Components Test Method to Quantitatively Determine Polycyclic Aromatic Hydrocarbons PAHs in Footwear Materials",
   },
   {
-    sno: 41,
+    sno: 42,
     isNumber: "IS 19229:2025",
     isTitle: "SHOCK TUBE DETONATORS SPECIFICATION",
   },
   {
-    sno: 42,
+    sno: 43,
     isNumber: "IS 19304:2025",
     isTitle: "Flexible Aerogel blanket - Specification",
   },
   {
-    sno: 43,
+    sno: 44,
     isNumber: "IS 19306:2025",
     isTitle:
       "Fire Performance for Thermal Insulation Materials to be Used in Building Equipments or Building Structures - Method of Test",
   },
   {
-    sno: 44,
+    sno: 45,
     isNumber: "IS 19389:2025",
     isTitle:
       "Monitoring Radioactive Gases in Effluents from Facilities Producing Positron Emitting Radionuclides and Radiopharmaceuticals",
   },
   {
-    sno: 45,
+    sno: 46,
     isNumber: "IS 19390:2025",
     isTitle:
       "Guidance for Gamma Spectrometry Measurement of Radioactive Waste",
   },
   {
-    sno: 46,
+    sno: 47,
     isNumber: "IS 19392:2025",
     isTitle:
       "Measurement of radioactivity - Gamma ray and beta emitting radionuclides - Test method to assess the ease of decontamination of surface materials",
   },
   {
-    sno: 47,
+    sno: 48,
     isNumber: "IS 18066 (Part 4):2026",
     isTitle:
       "Measurement of Radioactivity in the Environment - Air Radon-222 Part 4 Integrated Measurement Method for Determining Average Activity Concentration Using Passive Sampling and Delayed Analysis",
   },
   {
-    sno: 48,
+    sno: 49,
     isNumber: "IS 18066 (Part 6):2026",
     isTitle:
       "Measurement of Radioactivity in the Environment - Air Radon-222 Part 6 Spot Measurement Methods of the Activity Concentration",
   },
   {
-    sno: 49,
+    sno: 50,
     isNumber: "IS 19749:2026",
     isTitle:
       "Probabilistic Risk Assessment of Nuclear Power Plants - Guidelines.",
   },
   {
-    sno: 50,
+    sno: 51,
     isNumber: "IS 5182 (Part 29/Sec 1):2025",
     isTitle:
       "Air Pollution — Methods for Measurement Part 29 Vapor Phase Mercury in Ambient Air Section 1 Cold-Vapor Atomic Fluorescence Spectroscopy Method by Amalgamation Principle",
   },
   {
-    sno: 51,
+    sno: 52,
     isNumber: "IS 5182 (Part 29/Sec 2):2025",
     isTitle:
       "Air Pollution — Methods for Measurement Part 29 Vapor Phase Mercury in Ambient Air Section 2 Cold-Vapor Atomic Absorption or Fluorescence Spectroscopy Method Using Acidified solution of KMnO4",
   },
   {
-    sno: 52,
+    sno: 53,
     isNumber: "IS 11255 (Part 16):2025",
     isTitle:
       "Methods for Measurement of Emission from Stationary Sources Part 16 Chemical Absorption Method for Sampling and Determining Mercury Species in Flue Gas",
   },
   {
-    sno: 53,
+    sno: 54,
     isNumber: "IS 5182 (Part 30):2025",
     isTitle:
       "Air Pollution - Methods For Measurement Part 30 Metals in Particulate Matter in Ambient Air",
   },
   {
-    sno: 54,
+    sno: 55,
     isNumber: "IS 17118 (Part 6):2026",
     isTitle:
       "Indoor Air Part 6 Determination of Organic Compounds VVOC VOC SVOC In Indoor and Test Chamber Air by Active Sampling on Sorbent Tubes Thermal Desorption and Gas Chromatography Using MS or MS FID",
   },
   {
-    sno: 55,
+    sno: 56,
     isNumber: "IS 17118 (Part 7):2026",
     isTitle:
       "Indoor air Part 7: Sampling strategy for determination of airborne asbestos fibre concentrations",
   },
   {
-    sno: 56,
+    sno: 57,
     isNumber: "IS 17118 (Part 10):2026",
     isTitle:
       "Indoor Air Part 10 Determination of the emission of volatile organic compounds from building products and furnishing Emission test cell method",
   },
   {
-    sno: 57,
+    sno: 58,
     isNumber: "IS 17118 (Part 5):2026",
     isTitle:
       "Indoor Air Part 5 Sampling Strategy for Volatile Organic Compounds VOCs",
   },
   {
-    sno: 58,
+    sno: 59,
     isNumber: "IS 17118 (Part 11):2026",
     isTitle:
       "Indoor Air Part 11 Determination of the Emission of Volatile Organic Compounds from Samples of Building Products and Furnishing - Sampling Storage of Samples and Preparation of Test Specimens",
   },
   {
-    sno: 59,
+    sno: 60,
     isNumber: "IS 17118 (Part 15):2026",
     isTitle:
       "Indoor Air Part 15 Sampling Strategy for Nitrogen Dioxide NO2",
   },
   {
-    sno: 60,
+    sno: 61,
     isNumber: "IS 3025 (Part 85):2025",
     isTitle:
       "Methods of Sampling and Test Physical and Chemical for Water and Wastewater Part 85 Detection of selected congeners of polychlorinated dibenzo-p-dioxins and polychlorinated biphenyls Method using a flow immunosensor technique",
   },
   {
-    sno: 61,
+    sno: 62,
     isNumber: "IS 19644:2026",
     isTitle:
       "Water Quality — Guidance and requirements for designing an interlaboratory trial for validation of analytical methods",
   },
   {
-    sno: 62,
+    sno: 63,
     isNumber: "IS 17614 (Part 26):2026",
     isTitle:
       "Water Quality — Sampling Part 26 Guideline on the validation of the storage time of water samples",
   },
   {
-    sno: 63,
+    sno: 64,
     isNumber: "IS 17614 (Part 27):2026",
     isTitle:
       "Water Quality — Sampling Part 27 Guidance on sampling for the parameters of the oceanic carbon dioxide system",
+  },
+];
+
+const environmentAndEcologyDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS/ISO 14007:2019",
+    isTitle:
+      "Environmental management systems — Guidelines for determining environmental costs and benefits",
+  },
+  {
+    sno: 2,
+    isNumber: "IS/ISO 14016:2020",
+    isTitle:
+      "Environmental management — Guidelines on the assurance of environmental reports",
+  },
+  {
+    sno: 3,
+    isNumber: "IS/ISO/TR 14073:2017",
+    isTitle:
+      "Environmental management — Water footprint — Illustrative examples on how to apply ISO 14046",
+  },
+  {
+    sno: 4,
+    isNumber: "IS/ISO 14083:2023",
+    isTitle:
+      "Greenhouse Gases — Quantification and Reporting of Greenhouse Gas Emissions Arising from Transport Chain Operations",
+  },
+  {
+    sno: 5,
+    isNumber: "IS/ISO 14091:2021",
+    isTitle:
+      "Adaptation to Climate Change — Guidelines on Vulnerability Impacts and Risk Assessment",
+  },
+  {
+    sno: 6,
+    isNumber: "IS/ISO 14017:2022",
+    isTitle:
+      "Environmental Management — Requirements with Guidance for Verification and Validation of Water Statements",
+  },
+  {
+    sno: 7,
+    isNumber: "IS/ISO 14055-1:2017",
+    isTitle:
+      "Environmental Management — Guidelines for Establishing Good Practices for Combatting Land Degradation and Desertification Part 1 Good Practices Framework",
+  },
+  {
+    sno: 8,
+    isNumber: "IS/ISO 14068-1:2023",
+    isTitle:
+      "Climate Change Management — Transition to Net Zero Part 1 Carbon Neutrality",
+  },
+  {
+    sno: 9,
+    isNumber: "IS/ISO 14080:2018",
+    isTitle:
+      "Greenhouse Gas Management and Related Activities — Framework and Principles for Methodologies on Climate Actions",
+  },
+  {
+    sno: 10,
+    isNumber: "IS/ISO/TS 14092:2020",
+    isTitle:
+      "Adaptation to Climate Change — Requirements and Guidance on Adaptation Planning for Local Governments and Communities",
+  },
+  {
+    sno: 11,
+    isNumber: "IS/ISO 14093:2022",
+    isTitle:
+      "Mechanism for Financing Local Adaption to Climate Change — Performance-Based Climate Resilience Grants Requirements and Guidelines",
+  },
+  {
+    sno: 12,
+    isNumber: "IS/ISO 14097:2021",
+    isTitle:
+      "Greenhouse Gas Management and Related Activities — Framework Including Principles and Requirements for Assessing and Reporting Investments and Financing Activities Related to Climate Change",
+  },
+  {
+    sno: 13,
+    isNumber: "IS/ISO/TS 14074:2022",
+    isTitle:
+      "Environmental Management — Life Cycle Assessment — Principles, Requirements, and Guidelines for Normalization, Weighting, and Interpretation",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19334 (Part 1):2025",
+    isTitle:
+      "Stationary source emissions — Determination of greenhouse gas emissions in energy-intensive industries Part 1 General aspects",
+  },
+  {
+    sno: 15,
+    isNumber: "IS/ISO 14067:2018",
+    isTitle:
+      "Greenhouse Gases — Carbon Footprint of Products — Requirements and Guidelines for Quantification",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19767:2026",
+    isTitle:
+      "Control of Air Pollution in Coal Based Thermal Power Plant — Code of Practice",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 46001:2019",
+    isTitle:
+      "Water Efficiency Management Systems — Requirements with Guidance for Use",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19756:2026",
+    isTitle: "Benchmarking of Environmental Monitoring Services — Guidelines",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19723:2026",
+    isTitle: "Measurement of Diameter and Girth of Trees — Guidelines",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19766 (Part 1):2026",
+    isTitle:
+      "Sustainability in Building and Civil Engineering Works — Sustainability Indicators — Part 1 Framework for the Development of Indicators and a Core Set of Indicators for Buildings",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19766 (Part 2):2026",
+    isTitle:
+      "Sustainability in buildings and civil engineering works — Sustainability indicators — Part 2 Framework for the development of indicators for civil engineering works",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19372:2025",
+    isTitle:
+      "Thermal Processing of Horticulture and Wet Waste — Guidelines",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19323:2025",
+    isTitle:
+      "Circular Economy — Guidance on the Transition of Business Models and Value Networks (ISO 59010:2024)",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19336:2025",
+    isTitle:
+      "Circular Economy — Vocabulary, Principles, and Guidance for Implementation (ISO 59004:2024)",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19337:2025",
+    isTitle:
+      "Circular Economy — Measuring and Assessing Circularity Performance (ISO 59020:2024)",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19349:2025",
+    isTitle:
+      "Circular Economy — Review of Existing Value Networks (IS/TR 59032:2024)",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 19247 (Part 2):2025",
+    isTitle:
+      "Carbon Dioxide Capture Part 2 — Evaluation Procedure to Assure and Maintain Stable Performance of Post Combustion CO2 Capture Plant Integrated with a Power Plant (ISO 27919 Part 2:2021)",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 19335:2025",
+    isTitle:
+      "Carbon Dioxide Capture, Transportation and Geological Storage — Cross Cutting Issues — Flow Assurance (ISO/TR 27925:2023)",
+  },
+  {
+    sno: 29,
+    isNumber: "IS 19347:2025",
+    isTitle:
+      "Carbon Dioxide Capture — Overview of Carbon Dioxide Capture Technologies in the Cement Industry (ISO/TR 27922:2021)",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 19354:2025",
+    isTitle:
+      "Lifecycle Risk Management for Integrated CCS Projects (ISO/TR 27918:2018)",
+  },
+];
+
+const electrotechnicalDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 6303 (Part 6):2025",
+    isTitle:
+      "Primary Batteries Part 6 Guidance on Environmental Aspects (IEC 60086-6:2020)",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19142:2025",
+    isTitle:
+      "Secondary Cells and Batteries — Marking Symbols for Identification of Their Chemistry (IEC 62902:2019)",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19174:2025",
+    isTitle:
+      "Adaptors for Household and Similar Purposes — Particular Requirements",
+  },
+  {
+    sno: 4,
+    isNumber: "IS/IEC 60034-23:2019",
+    isTitle:
+      "Rotating electrical machines Part 23: Repair overhaul and reclamation",
+  },
+  {
+    sno: 5,
+    isNumber: "IS/IEC/TS 60034-27-5:2021",
+    isTitle:
+      "Rotating Electrical Machines Part 27 Winding Insulation of Rotating Electrical Machines Section 5 Off-line measurement of partial discharge inception voltage under repetitive impulse voltage",
+  },
+  {
+    sno: 6,
+    isNumber: "IS/IEC 60034-27-1:2017",
+    isTitle:
+      "Rotating electrical machines Part 27 Winding insulation of rotating electrical machines Section 1 Off-Line partial discharge measurements on the winding insulation",
+  },
+  {
+    sno: 7,
+    isNumber: "IS/IEC 60034-27-2:2023",
+    isTitle:
+      "Rotating electrical machines Part 27 Winding insulation of rotating electrical machines Section 2 On-line partial discharge measurements on the stator winding insulation",
+  },
+  {
+    sno: 8,
+    isNumber: "IS/IEC 60034-27-3:2015",
+    isTitle:
+      "Rotating electrical machines Part 27 Winding insulation of rotating electrical machines Section 3 Dielectric dissipation factor measurement on stator winding insulation of rotating electrical machines",
+  },
+  {
+    sno: 9,
+    isNumber: "IS/IEC 60034-30-3:2024",
+    isTitle:
+      "Rotating electrical machines Part 30 Efficiency classes Section 3 High voltage a.c. motors IE-code",
+  },
+  {
+    sno: 10,
+    isNumber: "IS/IEC 60773:2021",
+    isTitle:
+      "Rotating electrical machines — Test methods and apparatus for the measurement of the operational characteristics of brushes",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19427:2026",
+    isTitle:
+      "Onsite diagnostic testing of power transformers for condition health assessment",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19283:2025",
+    isTitle:
+      "Graphite Electrodes for Electric Arc Furnaces — Dimensions and Designation (IEC 60239:2005)",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19284 (Part 1):2025",
+    isTitle:
+      "Characteristics of Electric Infra-Red Emitters for Industrial Heating Part 1 Short Wave Infra-Red Emitters (IEC 60240-1:1992)",
+  },
+  {
+    sno: 14,
+    isNumber: "IS/IEC 60519-4:2021",
+    isTitle:
+      "Safety in Installations for Electroheating and Electromagnetic Processing Part 4 Particular Requirements for ARC Furnace Installations (IEC 60519-4:2021)",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19761:2026",
+    isTitle:
+      "Power installations exceeding 1 kV a.c. and 1.5 kV d.c. Part 0 Principles to be observed in the design and erection of high voltage installations — Safety of high voltage installations",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19428:2025",
+    isTitle:
+      "Dry Type Mining Transformers Transwitch Units and Load Centers",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 17900 (Part 7/Sec 1):2025",
+    isTitle:
+      "Lift for the Transport of Person and Goods Part 7 Lifts for Special Applications Section 1 Lifts Used Under-Construction Buildings",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 17900 (Part 7/Sec 4):2025",
+    isTitle:
+      "Lifts for the Transport of Persons and Goods Part 7 Lifts for Special Applications Section 4 Requirements of Lifts for Persons with Disabilities",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 17900 (Part 7/Sec 2):2025",
+    isTitle:
+      "Lifts for the Transport of Persons and Goods Part 7 Lifts for Special Applications Section 2 Rack and Pinion Lifts Used in Under-Construction Buildings",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 17900 (Part 10):2025",
+    isTitle:
+      "Lifts for The Transport of Persons and Goods Part 10 Replacement of Existing Passenger and Goods Passenger Lifts in Existing Buildings",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 17900 (Part 7/Sec 6):2025",
+    isTitle:
+      "Lifts for Transport of Persons and Goods Part 7 Section 6 Occupant Evacuation Lifts Specification",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 17900 (Part 4):2025",
+    isTitle:
+      "Lifts for the Transport of Persons and Goods Part 4 Specifications for Control Devices Buttons Signals Indicators and Other Fittings",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 17900 (Part 11):2025",
+    isTitle:
+      "Lifts for the Transport of Persons and Goods Part 11 Safety Norms for Existing Lifts Risk Assessment and Risk Reduction",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 17900 (Part 5):2026",
+    isTitle:
+      "Lifts for the Transport of Persons and Goods Part 5 Guide for Inspection of Lifts",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 17900 (Part 3/Sec 2):2025",
+    isTitle:
+      "Lifts for the Transport of Persons and Goods Part 3 Specifications for Planning and Selection Section 2 Goods Automobile Lift",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 16463 (Part 22):2026",
+    isTitle:
+      "Low-Voltage Surge Protective Devices Part 22 Surge Protective Devices Connected to Telecommunications and Signalling Networks — Selection and Application Principles",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 16463 (Part 10):2026",
+    isTitle:
+      "Low-Voltage Surge Protective Devices Part 32 Surge Protective Devices Connected to the dc Side of Photovoltaic Installations — Selection and Application Principles",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 16463 (Part 31):2026",
+    isTitle:
+      "Low-Voltage Surge Protective Devices Part 31 Requirements and Test Methods for SPDs for Photovoltaic Installations",
+  },
+  {
+    sno: 29,
+    isNumber: "IS 17123 (Part 3):2025",
+    isTitle:
+      "Adjustable speed electrical power drive systems Part 3 EMC requirements and specific test methods for PDS and machine tools",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 17123 (Part 5/Sec 1):2025",
+    isTitle:
+      "Adjustable speed electrical power drive systems Part 5 Safety requirements Section 1 Electrical thermal and energy",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 17123 (Part 5/Sec 3):2025",
+    isTitle:
+      "Adjustable speed electrical power drive systems Part 5 Safety requirements Section 3 Functional electrical and environmental requirements for encoders",
+  },
+  {
+    sno: 32,
+    isNumber: "IS 17123 (Part 7/Sec 201):2025",
+    isTitle:
+      "Adjustable speed electrical power drive systems Part 7 Generic interface and use of profiles for power drive systems Section 201 Profile type 1 specification",
+  },
+  {
+    sno: 33,
+    isNumber: "IS/IEC 62477-1:2022",
+    isTitle:
+      "Safety requirements for power electronic converter systems and equipment Part 1 General",
+  },
+  {
+    sno: 34,
+    isNumber: "IS/IEC 62477-2:2018",
+    isTitle:
+      "Safety requirements for power electronic converter systems and equipment Part 2 Power electronic converters from 1 000 V a.c or 1 500 V d.c up to 36 kV a.c or 54 kV d.c.",
+  },
+  {
+    sno: 35,
+    isNumber: "IS 13730 (Part 27/Sec 1):2025",
+    isTitle:
+      "Specifications for particular types of winding wires Part 27 Paper tape covered Section 1 Round copper wire",
+  },
+  {
+    sno: 36,
+    isNumber: "IS 13730 (Part 27/Sec 2):2025",
+    isTitle:
+      "Particular Types of Winding Wires — Specification Part 27 Paper Tape Covered Section 2 Round Aluminium Wire",
+  },
+  {
+    sno: 37,
+    isNumber: "IS 13730 (Part 57):2025",
+    isTitle:
+      "Specifications for particular types of winding wires Part 57 Polyamide-imide enameled round copper wire class 220",
+  },
+  {
+    sno: 38,
+    isNumber: "IS 13730 (Part 27/Sec 3):2025",
+    isTitle:
+      "Specifications for particular types of winding wires Part 27 Paper tape covered Section 3 Rectangular copper wire",
+  },
+  {
+    sno: 39,
+    isNumber: "IS 13730 (Part 27/Sec 4):2025",
+    isTitle:
+      "Specifications for particular types of winding wires Part 27 Paper tape covered Section 4 Rectangular aluminium wire",
+  },
+  {
+    sno: 40,
+    isNumber: "IS/IEC 60255-187-1:2021",
+    isTitle:
+      "Measuring relays and protection equipment Part 187 Functional requirements for differential protection Section 1 Restrained and Unrestrained differential protection of motors, generators and transformers (IEC 60255-187-1:2021)",
+  },
+  {
+    sno: 41,
+    isNumber: "IS 14956 (Part 2):2025",
+    isTitle:
+      "Live Working — Minimum Approach Distances Part 2 Method of Determination of the Electrical Component Distance for a.c. Systems from 1.0 kV to 72.5 kV (IEC 61472-2:2021)",
+  },
+  {
+    sno: 42,
+    isNumber: "IS/IEC 60269-7:2021",
+    isTitle:
+      "Low Voltage Fuses Part 7 Fuse-Links for the Protection of Batteries and Battery Systems — Supplementary Requirements (IEC 60269-7:2021)",
+  },
+  {
+    sno: 43,
+    isNumber: "IS/IEC 60269-4:2009",
+    isTitle:
+      "Low-Voltage Fuses Part 4 Fuse-Links for the Protection of Semiconductor Devices — Supplementary Requirements (IEC 60269-4:2009 + Amd 1:2012 + Amd 2:2016)",
+  },
+  {
+    sno: 44,
+    isNumber: "IS/IEC 61400-12-2:2022",
+    isTitle:
+      "Wind Energy Generation Systems Part 12 Power Performance Sec 2 Electricity producing wind turbines based on nacelle anemometry",
+  },
+  {
+    sno: 45,
+    isNumber: "IS/IEC 61400-50-1:2022",
+    isTitle:
+      "Wind Energy Generation Systems Part 50 Wind measurement Sec 1 Application of meteorological mast, nacelle and spinner mounted instruments",
+  },
+  {
+    sno: 46,
+    isNumber: "IS/IEC 61400-12:2022",
+    isTitle:
+      "Wind energy generation systems Part 12 Power performance measurements of electricity producing wind turbines Overview",
+  },
+  {
+    sno: 47,
+    isNumber: "IS/IEC 61400-21-2:2023",
+    isTitle:
+      "Wind Energy Generation Systems Part 21 Measurement and Assessment of Electrical Characteristics Section 2 Wind Power Plants",
+  },
+  {
+    sno: 48,
+    isNumber: "IS/IEC 61400-6:2023",
+    isTitle:
+      "Wind Energy Generation Systems Part 29 Marking and Lighting of Wind Turbines",
+  },
+  {
+    sno: 49,
+    isNumber: "IS/IEC/TS 61400-28:2025",
+    isTitle:
+      "Wind Energy Generation Systems Part 28 Through-Life Management and Life Extension of Wind Power Assets",
+  },
+  {
+    sno: 50,
+    isNumber: "IS/IEC/TS 61400-28:2025",
+    isTitle:
+      "Wind Energy Generation Systems Part 28 Through-life management and life extension of wind power assets",
+  },
+  {
+    sno: 51,
+    isNumber: "IS/IEC 61400-21-2:2023",
+    isTitle:
+      "Wind Energy Generation Systems Part 21 Measurement and Assessment of Electrical Characteristics Section 2 Wind Power Plants",
+  },
+  {
+    sno: 52,
+    isNumber: "IS/IEC TS TS-29:2023",
+    isTitle:
+      "Wind energy generation systems Part 29 Marking and lighting of wind turbines",
+  },
+  {
+    sno: 53,
+    isNumber: "IS/IEC 61400-5:2020",
+    isTitle: "Wind energy generation systems Part 5 Wind turbine blades",
+  },
+  {
+    sno: 54,
+    isNumber: "IS/IEC 61400-6:2020",
+    isTitle:
+      "Wind energy generation systems Part 6 Tower and foundation design requirements",
+  },
+  {
+    sno: 55,
+    isNumber: "IS/IEC 61400-3-1:2019",
+    isTitle:
+      "Wind energy generation systems Part 3 Design Requirements Section 1 Fixed Offshore Wind Turbines",
+  },
+  {
+    sno: 56,
+    isNumber: "IS 19118:2025",
+    isTitle:
+      "Safety of Machinery — Guidelines on Functional Safety of Safety-Related Control System",
+  },
+  {
+    sno: 57,
+    isNumber: "IS 17520 (Part 3):2025",
+    isTitle:
+      "Safety of Machinery — Safety-Related Sensors Used for the Protection of Persons Part 3 Sensor Technologies and Algorithms",
+  },
+  {
+    sno: 58,
+    isNumber: "IS 16502 (Part 5):2026",
+    isTitle:
+      "Safety of Machinery Electro-Sensitive Protective Equipment Part 5 Particular Requirements for Radar-Based Protective Devices",
+  },
+  {
+    sno: 59,
+    isNumber: "IS 19635:2026",
+    isTitle:
+      "Grid Integration of Renewable Energy Generation Terms and Definitions",
+  },
+  {
+    sno: 60,
+    isNumber: "IS 19637:2026",
+    isTitle:
+      "Grid code compliance assessment methods for grid connection of wind and PV Power plants",
+  },
+  {
+    sno: 61,
+    isNumber: "IS 19320:2025",
+    isTitle:
+      "Electrical installations for lighting and beaconing of aerodromes — Characteristics of inset and elevated luminaires used on aerodromes and heliports (IEC 61827:2004)",
+  },
+  {
+    sno: 62,
+    isNumber: "IS 10322 (Part 5/Sec 18):2026",
+    isTitle:
+      "Luminaires Part 5 Particular requirements Section 18 Luminaires for swimming pools and similar applications",
+  },
+  {
+    sno: 63,
+    isNumber: "IS 19691:2026",
+    isTitle:
+      "Lighting systems Characteristics for selected outdoor applications",
+  },
+  {
+    sno: 64,
+    isNumber: "IS 19143 (Part 3/Sec 1):2025",
+    isTitle:
+      "Electrical energy storage EES systems Part 3 Planning and performance assessment of electrical energy storage systems Section 1 General specification (IEC 62933-3-1:2018)",
+  },
+  {
+    sno: 65,
+    isNumber: "IS 19143 (Part 4/Sec 4):2025",
+    isTitle:
+      "Electrical energy storage EES systems Part 4 Environmental requirements Section 4 battery based energy storage systems BESS with reused batteries (IEC 62933-4-4:2023)",
+  },
+  {
+    sno: 66,
+    isNumber: "IS 17067 (Part 2/Sec 2):2025",
+    isTitle:
+      "Electrical Energy Storage EES Systems Part 2 Unit Parameters and Testing Methods Section 2 Application and Performance Testing (IEC 62933-2-2:2022)",
+  },
+  {
+    sno: 67,
+    isNumber: "IS 18972 (Part 101):2026",
+    isTitle:
+      "Marine energy — Wave, tidal and other water current converters Part 101 Wave energy resource assessment and characterization",
+  },
+  {
+    sno: 68,
+    isNumber: "IS 18972 (Part 200):2026",
+    isTitle:
+      "Marine energy — Wave, tidal and other water current converters Part 200 Electricity producing tidal energy converters — Power performance assessment",
+  },
+  {
+    sno: 69,
+    isNumber: "IS 18972 (Part 201):2026",
+    isTitle:
+      "Marine energy — Wave, tidal and other water current converters Part 201 Tidal energy resource assessment and characterization",
+  },
+  {
+    sno: 70,
+    isNumber: "IS 18972 (Part 202):2026",
+    isTitle:
+      "Marine energy — Wave, tidal and other water current converters Part 202 Early stage development of tidal energy converters — Best practices and recommended procedures for the testing of pre-prototy",
+  },
+  {
+    sno: 71,
+    isNumber: "IS 19257:2025",
+    isTitle: "Metal Air Flow Batteries",
+  },
+];
+
+const foodAndAgricultureDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19788:2026",
+    isTitle: "Clothianidin technical — Specification",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19199:2025",
+    isTitle: "Sugar Cane Juice Screens — Specification",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19365:2025",
+    isTitle: "Mating Nucleus Hive for Apis Mellifera — Specification",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 19397:2025",
+    isTitle:
+      "Compounded Feed for Pregnant Cows and Buffaloes — Specification",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 19562:2026",
+    isTitle: "Maize or Corn Silage as Livestock Fodder — Specification",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 19532:2026",
+    isTitle:
+      "Dried Distillers Grain with Solubles DDGS as Livestock Feed Ingredient — Specification",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 19285:2025",
+    isTitle:
+      "Guidelines for the Harvesting Transportation Separation of Stigma Drying and Storage of Saffron before Packing",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19432:2025",
+    isTitle: "Dried dill — Specification",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19440:2025",
+    isTitle: "Dried Parsley Petroselinum crispum — Specification",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19576:2026",
+    isTitle:
+      "Spices and condiments — Dried chive (Allium schoenoprasum L.), Cut and ground — Specification",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19439:2025",
+    isTitle: "Spices and condiments — Dried sumac — Specification",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19303:2025",
+    isTitle:
+      "Tractors, machinery for agriculture and forestry, powered lawn and garden equipment — Safety labels — General principles (ISO 11684:2023)",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19361:2025",
+    isTitle:
+      "Unmanned aerial spraying systems — Requirements and test procedure",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19514:2026",
+    isTitle:
+      "Crop protection equipment — Belly-mounter hand-rotary duster — Specification",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19582:2026",
+    isTitle:
+      "Vegetable fats and oils — Determination of aflatoxins B1, B2, G1 and G2 by immunoaffinity column clean-up and high-performance liquid chromatography",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19287:2025",
+    isTitle:
+      "Sealed Silos for Storage of Foodgrains — Sealing Requirements",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 19468:2026",
+    isTitle:
+      "Irrigation techniques — Localised/remote monitoring and control for irrigation Part 2 Tests",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 8539 (Part 2):2025",
+    isTitle:
+      "Meat Products and Meat Animals — Terminology Part 2 Other Than Poultry",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19272:2025",
+    isTitle: "Rotary Animal Restrainer — Specification",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19458:2025",
+    isTitle:
+      "Eggs and egg products — Determination of fipronil and metabolites residues — Liquid chromatography tandem mass spectrometry method (Adoption of ISO 7124:2023)",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19459:2025",
+    isTitle:
+      "Meat and meat products — Determination of nitrite and nitrate content — Ion chromatography method (Adoption of ISO 7158:2024)",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19457:2026",
+    isTitle:
+      "Meat and meat products — Determination hydroxyproline content (Adoption of ISO 3496:1994)",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19770:2026",
+    isTitle: "Slaughterhouse Waste Management — Code of Practice",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19396:2025",
+    isTitle:
+      "Milk, Dried Milk Products and Cream — Determination of Fat Content — Gravimetric Method (Adoption of ISO 23318:2022)",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19434:2025",
+    isTitle:
+      "Mobile agro-processing units for food grains — Safety requirements",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19515:2026",
+    isTitle: "Spiral Separator — Specification and Test code",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 19589:2026",
+    isTitle:
+      "Plant Layout Optimal Process for Production of Biomass Pellets — Guidelines",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 19588:2026",
+    isTitle: "Biomass Shredder — Specification and Test Code",
+  },
+  {
+    sno: 29,
+    isNumber: "IS 19587:2026",
+    isTitle: "Biomass Hammer Mill — Specification and Test Code",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 19590:2026",
+    isTitle:
+      "Biomass Pelletiser — Ring Die Type — Specification and Test Code",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 19586:2026",
+    isTitle:
+      "Biomass Pelletiser — Crank-Piston-Cylinder Type — Specification and Test Code",
+  },
+  {
+    sno: 32,
+    isNumber: "IS 19585:2026",
+    isTitle:
+      "Power operated coconut dehusker — Specification and Test code",
+  },
+  {
+    sno: 33,
+    isNumber: "IS 19308:2025",
+    isTitle:
+      "Determination of Vitamin B12 in Foods Using Liquid Chromatography and Tandem Mass Spectrometry (LC-MS/MS) — Method of Test",
+  },
+  {
+    sno: 34,
+    isNumber: "IS 18349 (Part 2):2025",
+    isTitle:
+      "Microbiology of the food chain — Horizontal method for the detection and enumeration of Clostridium spp Part 2 Enumeration of Clostridium perfringens by colony-count technique",
+  },
+  {
+    sno: 35,
+    isNumber: "IS 18349 (Part 3):2025",
+    isTitle:
+      "Microbiology of the food chain — Horizontal method for the detection and enumeration of Clostridium spp Part 3 Detection of Clostridium perfringens",
+  },
+  {
+    sno: 36,
+    isNumber: "IS 19333 (Part 1):2025",
+    isTitle:
+      "Water Quality — Detection and enumeration of Pseudomonas aeruginosa Part 1 Method by membrane filtration",
+  },
+  {
+    sno: 37,
+    isNumber: "IS 19333 (Part 2):2025",
+    isTitle:
+      "Water Quality — Detection and enumeration of Pseudomonas aeruginosa Part 2 Most probable number method",
+  },
+  {
+    sno: 38,
+    isNumber: "IS 19338:2025",
+    isTitle:
+      "Water Quality — The variability of test results and the uncertainty of measurement of microbiological enumeration methods",
+  },
+  {
+    sno: 39,
+    isNumber: "IS 19342:2025",
+    isTitle:
+      "Water Quality — Detection and enumeration of thermotolerant Campylobacter spp",
+  },
+  {
+    sno: 40,
+    isNumber: "IS 19353:2025",
+    isTitle:
+      "Microbiology of the Food Chain — Sampling Techniques for Microbiological Analysis of Food and Feed Samples",
+  },
+  {
+    sno: 41,
+    isNumber: "IS 19352:2025",
+    isTitle:
+      "Water Quality — Detection and Quantification of Legionella spp and/or Legionella Pneumophila by Concentration and Genic Amplification by Quantitative Polymerase Chain Reaction qPCR",
+  },
+  {
+    sno: 42,
+    isNumber: "IS 19200:2025",
+    isTitle:
+      "Water Quality — Isolation and identification of Cryptosporidium oocysts and Giardia cysts from water",
+  },
+];
+
+const electronicsAndInformationTechnologyDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS/IEC 60068-2-11:2021",
+    isTitle:
+      "Environmental Testing Part 2: Tests Section 11: Test Ka - Salt mist",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 62402:2019",
+    isTitle:
+      "Obsolescence management ( Superseding IS 16958 : 2018)",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 61709:2017",
+    isTitle:
+      "Electric components Reliability Reference conditions for failure rates and stress models for conversion (Superseding IS 7354 (Part 3): 2011)",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 61703:2016",
+    isTitle:
+      "Mathematical expressions for reliability availability maintainability and maintenance support terms",
+  },
+  {
+    sno: 5,
+    isNumber: "IS/IEC 61649:2008",
+    isTitle: "Weibull Analysis",
+  },
+  {
+    sno: 6,
+    isNumber: "IS/IEC 62429:2007",
+    isTitle:
+      "Reliability growth Stress testing for early failures in unique complex systems",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 62550:2017",
+    isTitle: "Spare Parts Provisioning",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 62740:2015",
+    isTitle: "Root cause analysis RCA",
+  },
+  {
+    sno: 9,
+    isNumber: "IS/IEC 62308:2006",
+    isTitle: "Equipment Reliability Reliability assessment methods",
+  },
+  {
+    sno: 10,
+    isNumber: "IS/IEC 60068-2-21:2021",
+    isTitle:
+      "Environmental Testing Part 2: Tests Section 21: Test U: Robustness of Terminations and Integral Mounting Devices Superseding IS 9000 Part 19Section 1 to 5:1986",
+  },
+  {
+    sno: 11,
+    isNumber: "IS/IEC 60115-2:2023",
+    isTitle:
+      "Fixed resistors for use in electronic equipment Part 2 Sectional specification: Low-power film resistors with leads for through-hole assembly on circuit boards (THT)",
+  },
+  {
+    sno: 12,
+    isNumber: "IS/IEC 60958-4-2:2016",
+    isTitle:
+      "Digital Audio Interface - Part 4: Professional Applications - Section 2: Metadata and Subcode",
+  },
+  {
+    sno: 13,
+    isNumber: "IS/IEC 60958-4-4:2016",
+    isTitle:
+      "Digital Audio Interface - Part 4: Professional Applications - Section 4: Physical and Electrical Parameters",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 62680 (Part 4):2022",
+    isTitle:
+      "Universal Serial Bus Interfaces for Data and Power - Part 4-1: Universal Serial Bus 4 Specification",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 9989 (Part 2):2025",
+    isTitle:
+      "Acoustics Description Measurement and Assessment of Environmental Noise Part 2: Determination of Sound Pressure Levels",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 1996 (Part 1):2016",
+    isTitle:
+      "Acoustics Description Measurement and Assessment of Environmental Noise Part 1: Basic Quantities and Assessment Procedures",
+  },
+  {
+    sno: 17,
+    isNumber: "IS/IEC 60461:2021",
+    isTitle: "Time and control code",
+  },
+  {
+    sno: 18,
+    isNumber: "IS/IEC 63002:2025",
+    isTitle:
+      "Interoperability Specifications and Communication Method for External Power Supplies used with Computing and Consumer Electronics Devices",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19367:2025",
+    isTitle:
+      "Nuclear power plants - Instrumentation control and electrical power systems important to safety - Categorization of functions and classification of systems",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 14700 (Part 5/Sec 1):2026",
+    isTitle:
+      "Electromagnetic Compatibility EMC Part 5: Installation and Mitigation Guidelines Section 1: General Considerations",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 15040:2026",
+    isTitle:
+      "Vehicles Boats and Internal Combustion Engines - Radio Disturbance Characteristics Limits and Methods of Measurement for the Protection of On-Board Receivers",
+  },
+  {
+    sno: 22,
+    isNumber: "IS/IEC 62232:2022",
+    isTitle:
+      "Determination of RF field strength power density and SAR in the vicinity of base stations for the purpose of evaluating human exposure",
+  },
+  {
+    sno: 23,
+    isNumber: "IS/IEC/IEEE-2:2022",
+    isTitle:
+      "Assessment of Power Density of Human Exposure to Radio Frequency Fields from Wireless Devices in Close Proximity to the Head and Body Frequency Range of 6 Ghz to 300 Ghz Part 2 Computational Procedure",
+  },
+  {
+    sno: 24,
+    isNumber: "IS/IEC/IEEE 63195-1:2022",
+    isTitle:
+      "Assessment of Power Density of Human Exposure to Radio Frequency Fields from Wireless Devices in Close Proximity to the Head and Body Frequency Range of 6 Ghz to 300 Ghz Part 1: Measurement Procedure",
+  },
+  {
+    sno: 25,
+    isNumber: "IS/IEC 61000-5-2:2026",
+    isTitle:
+      "Electromagnetic Compatibility EMC Part 5: Installation and Mitigation Guidelines Section 2: Earthing and Cabling",
+  },
+  {
+    sno: 26,
+    isNumber: "IS/ISO/IEC 11801-4:2017",
+    isTitle:
+      "Information technology Generic cabling for customer premises Part 4: Single-tenant homes",
+  },
+  {
+    sno: 27,
+    isNumber: "IS/ISO/IEC 11801-9908:2020",
+    isTitle:
+      "Information technology Generic cabling systems for customer premises Part 9908: Guidance for the support of higher speed applications over optical fibre channels",
+  },
+  {
+    sno: 28,
+    isNumber: "IS/ISO/IEC 11801-9910:2020",
+    isTitle:
+      "Information technology Generic cabling systems for customer premises Part 9910: Specifications for modular plug terminated link cabling",
+  },
+  {
+    sno: 29,
+    isNumber: "IS/ISO/IEC 11801-6:2017",
+    isTitle:
+      "Information technology Generic cabling for customer premises Part 6: Distributed building services",
+  },
+  {
+    sno: 30,
+    isNumber: "IS/ISO/IEC 11801-9909:2020",
+    isTitle:
+      "Information technology Generic cabling systems for customer premises Part 9909: Evaluation of balanced cabling in support of 25 Gbits for reach greater than 30 metres",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 19319:2025",
+    isTitle:
+      "Internet of Things Security and Privacy - Assessment and Evaluation",
+  },
+  {
+    sno: 32,
+    isNumber: "IS/ISO/IEC 27561:2024",
+    isTitle:
+      "Information Security Cybersecurity and Privacy Protection Privacy Operationalisation Model and Method for Engineering POMME",
+  },
+  {
+    sno: 33,
+    isNumber: "IS/ISO/IEC 27033-7:2023",
+    isTitle:
+      "Information technology Network security Part 7: Guidelines for network virtualization security",
+  },
+  {
+    sno: 34,
+    isNumber: "IS/ISO/IEC 27403:2024",
+    isTitle:
+      "Cybersecurity IoT security and privacy Guidelines for IoT-domotics",
+  },
+  {
+    sno: 35,
+    isNumber: "IS/ISO/IEC 27035-4:2024",
+    isTitle:
+      "Information Technology Information Security Incident Management Part 4: Coordination",
+  },
+  {
+    sno: 36,
+    isNumber: "IS/ISO/IEC 20013:2020",
+    isTitle:
+      "Information technology for learning education and training Reference framework of e-Portfolio information",
+  },
+  {
+    sno: 37,
+    isNumber: "IS 19450:2025",
+    isTitle: "Requirements for E-Textbooks in Education",
+  },
+  {
+    sno: 38,
+    isNumber: "IS 18888 (Part 2):2025",
+    isTitle:
+      "Code of Practice for Designing Online Course Contents and Quality Assessment of Course Content Delivery Platform Part 2: Online Course Contents Quality Model and Assessment Methodology",
+  },
+  {
+    sno: 39,
+    isNumber: "IS 18888 (Part 3):2026",
+    isTitle:
+      "Designing Online Course Contents and Quality Assessment of Course Content & Delivery Platform —Code of Practice Part 3 Online Course Hosting Platform Quality Model and Assessment Methodology",
+  },
+  {
+    sno: 40,
+    isNumber: "IS 19321:2025",
+    isTitle: "Navic Receiver - Specification",
+  },
+  {
+    sno: 41,
+    isNumber: "IS 19583:2026",
+    isTitle: "Orthoimagery- Data Acquisition and Accuracy Assessment",
+  },
+  {
+    sno: 42,
+    isNumber: "IS 1885 (Part 90):2025",
+    isTitle:
+      "Electrotechnical Vocabulary Part 89 Magnetic Materials and Components",
+  },
+  {
+    sno: 43,
+    isNumber: "IS 19526:2026",
+    isTitle: "Digital Platform Conformity Assessment",
+  },
+  {
+    sno: 44,
+    isNumber: "IS/IEC 62820-1-2:2017",
+    isTitle:
+      "Building intercom systems Part 1-2: System requirements Building intercom systems using the internet protocol IP",
+  },
+  {
+    sno: 45,
+    isNumber: "IS/IEC 62820-3-1:2017",
+    isTitle:
+      "Building intercom systems Part 3-1: Application guidelines General",
+  },
+  {
+    sno: 46,
+    isNumber: "IS/IEC 62820-3-2:2018",
+    isTitle:
+      "Building intercom systems Part 3-2: Application guidelines Advanced security building intercom systems ASBIS",
+  },
+  {
+    sno: 47,
+    isNumber: "IS 16910 (Part 5/Sec 1):2026",
+    isTitle:
+      "Video surveillance systems for use in security applications Part 5-1: Data specifications and image quality performance for camera devices Environmental test methods for image quality performance",
+  },
+  {
+    sno: 48,
+    isNumber: "IS/IEC 62851-1:2014",
+    isTitle:
+      "Alarm and electronic security systems Social alarm systems Part 1: System requirements",
+  },
+  {
+    sno: 49,
+    isNumber: "IS/IEC 62851-3:2014",
+    isTitle:
+      "Alarm and electronic security systems Social alarm systems Part 3: Local unit and controller",
+  },
+  {
+    sno: 50,
+    isNumber: "IS 16910 (Part 2/Sec 33):2026",
+    isTitle:
+      "Video surveillance systems for use in security applications Part 2-33: Video transmission protocols Cloud uplink and remote management system access",
+  },
+  {
+    sno: 51,
+    isNumber: "IS/IEC 62820-2:2017",
+    isTitle:
+      "Building intercom systems Part 2: System requirements Building intercom systems using the Internet Protocol IP",
+  },
+  {
+    sno: 52,
+    isNumber: "IS 16910 (Part 2/Sec 11):2026",
+    isTitle:
+      "Video Surveillance Systems VSS for use in security applications - Part 2-11: Video transmission protocols - Interop profiles for VMS and cloud VSaaS systems for safe cities and law enforcement",
+  },
+  {
+    sno: 53,
+    isNumber: "IS/IEC 62851-2:2014",
+    isTitle:
+      "Alarm and electronic security systems - Social alarm systems - Part 2: Trigger devices",
+  },
+  {
+    sno: 54,
+    isNumber: "IS/IEC 62851-5:2014",
+    isTitle:
+      "Alarm and electronic security systems Social alarm systems Part 5: Interconnections and communications",
+  },
+  {
+    sno: 55,
+    isNumber: "IS 19386:2025",
+    isTitle: "Internet of Things (IoT) and Digital Twin — Vocabulary",
+  },
+  {
+    sno: 56,
+    isNumber: "IS 19394:2025",
+    isTitle: "Digital Twin — Concepts and Terminology",
+  },
+  {
+    sno: 57,
+    isNumber: "IS 19395:2025",
+    isTitle: "Internet of things (IoT) — Real-time IoT framework",
+  },
+  {
+    sno: 58,
+    isNumber: "IS 19398:2025",
+    isTitle:
+      "Internet of Things (IoT) — Compatibility Requirements and Model for Devices within Industrial IoT Systems",
+  },
+  {
+    sno: 59,
+    isNumber: "IS 19403:2025",
+    isTitle: "Internet of Things (IoT) — Trustworthiness principles",
+  },
+  {
+    sno: 60,
+    isNumber: "IS 19416:2025",
+    isTitle: "Internet of Things (loT) — Digital Twin — Use Cases",
+  },
+  {
+    sno: 61,
+    isNumber: "IS 19629:2026",
+    isTitle:
+      "Internet of Things (IoT) - IoT for Stress Management , Good Health and Well-Being",
+  },
+  {
+    sno: 62,
+    isNumber: "IS 18003 (Part 4/Sec 1):2025",
+    isTitle:
+      "Unified Data Exchange Part 4: Compliance Specifications Section 1: Catalogue Service",
+  },
+  {
+    sno: 63,
+    isNumber: "IS 18006 (Part 4/Sec 1):2025",
+    isTitle:
+      "Municipal Governance Part 4: Fire No Objection Certificate NoC Section 1: Taxonomy",
+  },
+  {
+    sno: 64,
+    isNumber: "IS 18006 (Part 5/Sec 1):2025",
+    isTitle:
+      "Municipal Governance Part 5: Municipal Grievance Redressal Section 1: Taxonomy",
+  },
+  {
+    sno: 65,
+    isNumber: "IS 18006 (Part 6/Sec 1):2025",
+    isTitle:
+      "Municipal Governance Part 6: Trade License Section 1: Taxonomy",
+  },
+  {
+    sno: 66,
+    isNumber: "IS/ISO 22739:2026",
+    isTitle:
+      "Blockchain and Distributed Ledger Technologies — Vocabulary (First Revision)",
+  },
+  {
+    sno: 67,
+    isNumber: "IS/ISO 23644:2023",
+    isTitle:
+      "Blockchain and Distributed Ledger Technologies (DLTs) - Overview of Trust Anchors for DLT-Based Identity Management",
+  },
+  {
+    sno: 68,
+    isNumber: "IS/ISO 6039:2023",
+    isTitle:
+      "Blockchain and Distributed Ledger Technologies - Identifiers of Subjects and Objects for the Design of Blockchain Systems",
+  },
+  {
+    sno: 69,
+    isNumber: "IS/ISO/IEC 5259-1:2024",
+    isTitle:
+      "Artificial Intelligence Data Quality for Analytics and Machine Learning ML Part 1: Overview Terminology and Examples",
+  },
+  {
+    sno: 70,
+    isNumber: "IS/ISO/IEC 5259-2:2024",
+    isTitle:
+      "Artificial Intelligence Data Quality for Analytics and Machine Learning ML Part 2: Data Quality Measures",
+  },
+  {
+    sno: 71,
+    isNumber: "IS/ISO/IEC 5259-3:2024",
+    isTitle:
+      "Artificial Intelligence Data Quality for Analytics and Machine Learning ML Part 3: Data Quality Management Requirements and Guidelines",
+  },
+  {
+    sno: 72,
+    isNumber: "IS/ISO/IEC 5259-4:2024",
+    isTitle:
+      "Artificial intelligence Data Quality for Analytics and Machine Learning ML Part 4: Data Quality Process Framework",
+  },
+  {
+    sno: 73,
+    isNumber: "IS/ISO/IEC 5259-5:2025",
+    isTitle:
+      "Artificial Intelligence — Data Quality for Analytics and Machine Learning (ML) Part 5 Data Quality Governance Framework",
+  },
+  {
+    sno: 74,
+    isNumber: "IS/ISO/IEC 42005:2025",
+    isTitle:
+      "Information technology Artificial intelligence AI AI system impact assessment",
+  },
+  {
+    sno: 75,
+    isNumber: "IS/ISO/IEC 42006:2025",
+    isTitle:
+      "Information technology Artificial intelligence AI Requirements for bodies providing audit and certification of artificial intelligence management systems",
+  },
+  {
+    sno: 76,
+    isNumber: "IS/ISO/IECTR 20226:2025",
+    isTitle:
+      "Information technology Artificial intelligence AI Environmental sustainability aspects of AI systems",
+  },
+  {
+    sno: 77,
+    isNumber: "IS/ISO/IECTS 12791:2024",
+    isTitle:
+      "Information technology Artificial intelligence AI Treatment of unwanted bias in classification and regression machine learning tasks",
+  },
+  {
+    sno: 78,
+    isNumber: "IS/ISO/IECTR 24027:2021",
+    isTitle:
+      "Information technology Artificial intelligence AI Bias in AI systems and AI aided decision making",
+  },
+  {
+    sno: 79,
+    isNumber: "IS/ISO/IEC 22123-2:2023",
+    isTitle: "Information technology Cloud computing Part 2: Concepts",
+  },
+  {
+    sno: 80,
+    isNumber: "IS/ISO/IEC 30134-7:2023",
+    isTitle:
+      "Information technology — Data centres key performance indicators — Part 7: Cooling efficiency ratio (CER)",
+  },
+  {
+    sno: 81,
+    isNumber: "IS/ISO/IEC 5140:2024",
+    isTitle:
+      "Information technology Cloud computing Concepts for multi-cloud and the use of multiple cloud services",
+  },
+  {
+    sno: 82,
+    isNumber: "IS/ISO/IEC 22123-3:2023",
+    isTitle:
+      "Information technology Cloud computing Part 3: Reference architecture",
+  },
+  {
+    sno: 83,
+    isNumber: "IS/ISO/IECTR 10822-1:2025",
+    isTitle:
+      "Cloud computing — Multi-Cloud management Part 1: Overview and use cases",
+  },
+  {
+    sno: 84,
+    isNumber: "IS/ISO/IEC 22237-2:2024",
+    isTitle:
+      "Information technology — Data centre facilities and infrastructures Part 2: Building construction",
+  },
+  {
+    sno: 85,
+    isNumber: "IS/ISO/IEC 22237-6:2024",
+    isTitle:
+      "Information technology — Data centre facilities and infrastructures Part 6: Security systems",
+  },
+  {
+    sno: 86,
+    isNumber: "IS/ISO/IEC 19795-1:2021",
+    isTitle:
+      "Information Technology Biometric Performance Testing and Reporting Part 1: Principles and Framework",
+  },
+  {
+    sno: 87,
+    isNumber: "IS 19380 (Part 4):2025",
+    isTitle:
+      "Information technology Use of biometrics in video surveillance systems Part 4: Ground truth and video annotation procedure",
+  },
+  {
+    sno: 88,
+    isNumber: "IS 19380 (Part 1):2025",
+    isTitle:
+      "Information technology Use of biometrics in video surveillance systems Part 1: System design and specification",
+  },
+  {
+    sno: 89,
+    isNumber: "IS/ISO/IEC 2382-37:2022",
+    isTitle: "Information Technology Vocabulary Part 37: Biometrics",
+  },
+  {
+    sno: 90,
+    isNumber: "IS/IEC 63203-201-1:2022",
+    isTitle:
+      "Wearable Electronic Devices and Technologies Part 201: Electronic Textile Section 1: Measurement Methods for Basic Properties of Conductive Yarns",
+  },
+  {
+    sno: 91,
+    isNumber: "IS 19454:2026",
+    isTitle: "Writable Functional Inks for Pens Conductive and Resistive",
+  },
+  {
+    sno: 92,
+    isNumber: "IS 63240 (Part 1):2026",
+    isTitle:
+      "Active Assisted Living AAL Reference Architecture and Architecture Model Part 1: Reference Architecture",
+  },
+  {
+    sno: 93,
+    isNumber: "IS/IEC 63240-2:2020",
+    isTitle:
+      "Active Assisted Living AAL Reference Architecture and Architecture Model Part 2: Architecture Model",
+  },
+  {
+    sno: 94,
+    isNumber: "IS 63416:2026",
+    isTitle:
+      "Ethical Considerations of Artificial Intelligence AI When Applied in the Active Assisted Living AAL Context",
+  },
+];
+
+const mechanicalEngineeringDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 302 (Part 2/Sec 40):2025",
+    isTitle:
+      "Safety of Household and Similar Electrical Appliances Part 2 Particular Requirements Sec 40 Electrical Heat Pumps, Air-Conditioners and Dehumidifiers (IEC 60335-2-40 : 2022, MOD)",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19409:2025",
+    isTitle:
+      "SERVICE VALVES FOR AIR CONDITIONING AND REFRIGERATION PURPOSES - SPECIFICATION",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19557:2026",
+    isTitle:
+      "Clean Cookstoves and Clean Cooking Solutions — Test Protocols for Institutional Cookstoves",
+  },
+  {
+    sno: 4,
+    isNumber: "IS/ISO 10263-5:2009",
+    isTitle:
+      "Earth-moving machinery Operator enclosure environment Part 5 Windscreen defrosting system test method",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 19539:2026",
+    isTitle:
+      "Earth-moving machinery Product identification numbering system",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 19542 (Part 2):2026",
+    isTitle:
+      "Earth-moving machinery Operators manual Part 2 List of references",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 19541:2026",
+    isTitle:
+      "Earth-moving machinery Hydraulic breakers Terminology and commercial specifications",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19540:2026",
+    isTitle:
+      "Earth-moving machinery - Tip-over protection structure TOPS for compact excavators - Laboratory tests and performance requirements",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19363:2025",
+    isTitle:
+      "METALLIC OR POLYMER COATED WELDED WIRE MESH FENCING SPECIFICATION",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19747:2026",
+    isTitle:
+      "Steel wire ropes — Determination of the actual modulus of elasticity",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19745:2026",
+    isTitle:
+      "STEEL WIRE ROPES — DETERMINATION OF THE TRANSVERS RIGIDITY OF STEEL WIRE ROPES UNDER NO AXIAL LOAD CONDITION",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19746:2026",
+    isTitle:
+      "STEEL WIRE ROPES — DETERMINATION OF ROTATIONAL PROPERTIES",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19309:2025",
+    isTitle: "CRANES REQUIREMENTS FOR TEST LOADS",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19543 (Part 1):2026",
+    isTitle:
+      "PLASTICS AND RUBBER MACHINES CLAMPING SYSTEMS PART 1 SAFETY REQUIREMENTS FOR MAGNETIC CLAMPING SYSTEMS",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19316 (Part 1):2025",
+    isTitle:
+      "Building Construction Machinery and Equipment — Machinery for Concrete Surface Floating and Finishing Part 1 Commercial Specifications (Adoption of ISO 13105-1)",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19322 (Part 2):2025",
+    isTitle:
+      "Building Construction Machinery and Equipment Concrete Pumps Part 2 Procedure for Examination of Technical Parameters (Modified Adoption of ISO 21573-2)",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 19316 (Part 2):2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Machinery for Concrete Surface Floating and Finishing Part 2 Safety Requirements and Verification Adoption of ISO 13105-2",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19565 (Part 2):2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Truck Mixers Part 2 Safety Requirements Adoption of ISO 19711-2",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19570 (Part 1):2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Plants for the Preparation of Concrete and Mortar Part 1 Terminology and Commercial Specifications Adoption of ISO 19720-1",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19573:2026",
+    isTitle:
+      "Road Construction and Maintenance Equipment Chippings Spreaders Terminology and Commercial Specifications Adoption of ISO 15644",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19574:2026",
+    isTitle:
+      "Road Construction and Maintenance Equipment Powder Binder Spreaders Terminology and Commercial Specification Adoption of ISO 15689",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19572:2026",
+    isTitle:
+      "Drilling and Foundation Machinery Horizontal Directional Drilling HDD Machines Commercial Specifications Adoption of ISO 21467",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19565 (Part 1):2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Truck Mixers Part 1 Terminology and Commercial Specifications Adoption of ISO 19711-1",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19560:2026",
+    isTitle:
+      "Road Operation Machinery and Associated Equipment Sweepers Commercial Specifications Adoption of ISO 24147",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19568:2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Classification Adoption of ISO/TR 12603",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19567:2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Pedestrian-Controlled Vibratory Percussion Rammers Terminology and Commercial Specifications Adoption of ISO 19452",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 19564 (Part 1):2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Mobile Crushers Part 1 Terminology and Commercial Specifications Adoption of ISO 21873-1",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 19571:2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Concrete Spraying Machines Terminology and Commercial Specifications Adoption of ISO 21592",
+  },
+  {
+    sno: 29,
+    isNumber: "IS 19569:2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Pedestrian-Controlled Vibratory Plates Terminology and Commercial Specifications Adoption of ISO 19433",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 19566 (Part 1):2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Concrete Placing Systems for Stationary Equipment Part 1 Terminology and Commercial Specifications Adoption of ISO 17740-1",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 19743:2026",
+    isTitle:
+      "Building Construction Machinery and Equipment Pile Driving and Extracting Equipment Terminology and Commercial Specifications Adoption of ISO 11886",
+  },
+  {
+    sno: 32,
+    isNumber: "IS 19765:2026",
+    isTitle:
+      "Road Construction and Maintenance Equipment — Pavers-finishers — Commercial Specifications (First Revision)",
+  },
+  {
+    sno: 33,
+    isNumber: "IS 19687:2026",
+    isTitle:
+      "Safety Guidelines and General Precautions for Abandonment of Tube Wells and Bore Wells",
+  },
+  {
+    sno: 34,
+    isNumber: "IS 19603:2026",
+    isTitle:
+      "Petroleum, chemical and gas service industries — Packaged, integrally geared centrifugal air compressors (Adoption of ISO 10442: 2002)",
+  },
+  {
+    sno: 35,
+    isNumber: "IS 19605 (Part 1):2026",
+    isTitle:
+      "Petroleum, petrochemical and natural gas industries — Axial and centrifugal compressors and expander compressors — Part 1: General requirements (Adoption of ISO 10439-1: 2015)",
+  },
+  {
+    sno: 36,
+    isNumber: "IS 19605 (Part 2):2026",
+    isTitle:
+      "Petroleum, petrochemical and natural gas industries — Axial and centrifugal compressors and expander compressors — Part 2: Non-integrally geared centrifugal and axial compressors (Adoption of ISO 10439-2: 2015)",
+  },
+  {
+    sno: 37,
+    isNumber: "IS 19605 (Part 3):2026",
+    isTitle:
+      "Petroleum, petrochemical and natural gas industries — Axial and centrifugal compressors and expander compressors — Part 3: Integrally geared centrifugal compressors (Adoption of ISO 10439-3: 2015)",
+  },
+  {
+    sno: 38,
+    isNumber: "IS 19605 (Part 4):2026",
+    isTitle:
+      "Petroleum, petrochemical and natural gas industries — Axial and centrifugal compressors and expander compressors — Part 4: Expander-compressors (Adoption of ISO 10439-4: 2015)",
+  },
+  {
+    sno: 39,
+    isNumber: "IS 19604 (Part 1):2026",
+    isTitle:
+      "Petroleum, petrochemical and natural gas industries — Rotary-type positive displacement compressors — Part 1: Process compressors (Adoption of ISO 10440-1: 2007)",
+  },
+  {
+    sno: 40,
+    isNumber: "IS 19604 (Part 2):2026",
+    isTitle:
+      "Petroleum and natural gas industries — Rotary-type positive-displacement compressors — Part 2: Packaged air compressors (oil-free) (Adoption of ISO 10440-2: 2001)",
+  },
+  {
+    sno: 41,
+    isNumber: "IS 19461:2025",
+    isTitle:
+      "ELECTRONIC LOCKS FOR SECURITY EQUIPMENT SPECIFICATIONS",
+  },
+  {
+    sno: 42,
+    isNumber: "IS 19455:2026",
+    isTitle: "Gasket and packing Glossary of terms",
+  },
+  {
+    sno: 43,
+    isNumber: "IS 19599:2026",
+    isTitle:
+      "Gaskets and Packings Oxidation of Expanded Graphite Methods of Test",
+  },
+  {
+    sno: 44,
+    isNumber: "IS 19606:2026",
+    isTitle: "Non-Asbestos Beater Addition Jointing Specification",
+  },
+  {
+    sno: 45,
+    isNumber: "IS 19600:2026",
+    isTitle: "Gasket and Packing Flexible Graphite Material Specification",
+  },
+  {
+    sno: 46,
+    isNumber: "IS 19584:2026",
+    isTitle:
+      "Natural Gas Fuelling Stations — LNG Stations for Fuelling Vehicles (ISO 16924 : 2016, MOD)",
+  },
+  {
+    sno: 47,
+    isNumber: "IS 19558 (Part 3):2026",
+    isTitle:
+      "Energy Audits Part 3 Guidance for Conducting an Energy Audit using ISO 50002-1 in Processes",
+  },
+  {
+    sno: 48,
+    isNumber: "IS 19558 (Part 2):2026",
+    isTitle:
+      "Energy Audits Part 2 Guidance for Conducting an Energy Audit using ISO 50002-1 in Buildings",
+  },
+  {
+    sno: 49,
+    isNumber: "IS 18988 (Part 3):2025",
+    isTitle:
+      "Safety of machinery - Relationship with ISO 12100 Part 3 Implementation of ergonomic principles in safety standards",
+  },
+  {
+    sno: 50,
+    isNumber: "IS 19551:2026",
+    isTitle:
+      "Acoustics — Noise Emitted by Machinery and Equipment — Determination of Emission Sound Pressure Levels at a Work Station and at other Specified Positions Applying Approximate Environmental Corrections",
+  },
+  {
+    sno: 51,
+    isNumber: "IS 19549:2026",
+    isTitle:
+      "Acoustics — Noise Emitted by Machinery and Equipment — Determination of Emission Sound Pressure Levels at a Work Station and at other Specified Positions in an Essentially Free Field over a Reflecting Plane with Negligible Environmental Corrections",
+  },
+  {
+    sno: 52,
+    isNumber: "IS 19544 (Part 1):2026",
+    isTitle:
+      "Acoustics — Determination of Sound Power Levels and Sound Energy Levels of Noise Sources Using Sound Pressure — Engineering Methods for Small Movable Sources in Reverberant Fields Part 1 Comparison Method for a Hard-Walled Test Room",
+  },
+  {
+    sno: 53,
+    isNumber: "IS 19548:2026",
+    isTitle:
+      "Acoustics — Noise Emitted by Machinery and Equipment — Determination of Emission Sound Pressure Levels at a Work Station and at other Specified Positions from the Sound Power Level",
+  },
+  {
+    sno: 54,
+    isNumber: "IS 19547:2026",
+    isTitle:
+      "Acoustics — Noise Emitted by Machinery and Equipment — Determination of Emission Sound Pressure Levels at a Work Station and at other Specified Positions Applying Accurate Environmental Corrections",
+  },
+  {
+    sno: 55,
+    isNumber: "IS 19545:2026",
+    isTitle:
+      "Acoustics — Noise Emitted by Machinery and Equipment — Engineering Method for the Determination of Emission Sound Pressure Levels in Situ at the Work Station and at other Specified Positions using Sound Intensity",
+  },
+  {
+    sno: 56,
+    isNumber: "IS 19553:2026",
+    isTitle:
+      "Acoustics — Determination of Sound Power Levels and Sound Energy Levels of Noise Sources using Sound Pressure — Survey Method Using an Enveloping Measurement Surface over a Reflecting Plane",
+  },
+  {
+    sno: 57,
+    isNumber: "IS 19552:2026",
+    isTitle:
+      "Acoustics — Determination of Sound Power Levels and Sound Energy Levels of Noise Sources using Sound Pressure — Engineering/Survey Methods for use in Situ in a Reverberant Environment",
+  },
+  {
+    sno: 58,
+    isNumber: "IS 19550:2026",
+    isTitle:
+      "Acoustics — Noise Emitted by Machinery and Equipment — Guidelines for the use of Basic Standards for the Determination of Emission Sound Pressure Levels at a Work Station and at other Specified Positions",
+  },
+  {
+    sno: 59,
+    isNumber: "IS 19546:2026",
+    isTitle:
+      "Acoustics — Determination of Sound Power Levels and Sound Energy Levels of Noise Sources using Sound Pressure — Precision Methods for Reverberation Test Rooms",
+  },
+  {
+    sno: 60,
+    isNumber: "IS 19544 (Part 2):2026",
+    isTitle:
+      "Acoustics — Determination of Sound Power Levels of Noise Sources Using Sound Pressure — Engineering Methods for Small, Movable Sources in Reverberant Fields Part 2 Methods for Special Reverberation Test Rooms",
+  },
+  {
+    sno: 61,
+    isNumber: "IS 19554:2026",
+    isTitle:
+      "Acoustics — Determination of Sound Power Levels and Sound Energy Levels of Noise Sources Using Sound Pressure — Precision Methods for Anechoic Rooms and Hemi-Anechoic Rooms",
+  },
+  {
+    sno: 62,
+    isNumber: "IS 19555:2026",
+    isTitle:
+      "Acoustics — Determination of Sound Power Levels and Sound Energy Levels of Noise Sources using Sound Pressure — Engineering Methods for an Essentially Free Field over a Reflecting Plane",
+  },
+];
+
+const medicalEquipmentAndHospitalPlanningDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19233 (Part 1):2025",
+    isTitle:
+      "Implants for Surgery - Coatings on Metallic Surgical Implants Part 1 Plasma-Sprayed Coatings Derived from Titanium or Titanium 6 Aluminum-4 Vanadium Alloy Powders",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19503:2026",
+    isTitle:
+      "Implants for Surgery Determination of Impact Resistance of Ceramic Femoral Heads for Hip Joint Prostheses",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19504:2026",
+    isTitle:
+      "Implants for Surgery Mechanical Testing of Implantable Spinal Devices Fatigue Test Method for Spinal Implant Assemblies Using an Anterior Support",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 19491:2026",
+    isTitle:
+      "Implants for Surgery Test Solutions and Environmental Conditions for Static and Dynamic Corrosion Tests on Implantable Materials and Medical Devices",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 19502:2026",
+    isTitle:
+      "Implants for Surgery Measurements of Open-circuit Potential to Assess Corrosion Behaviour of Metallic Implantable Materials and Medical Devices Over Extended Time Periods",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 19492 (Part 1):2025",
+    isTitle:
+      "Implants for Surgery - Wear of Total Intervertebral Spinal Disc Prostheses Part 1 Loading and Displacement Parameters for Wear Testing and Corresponding Environmental Conditions for Test",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 19501 (Part 1):2026",
+    isTitle:
+      "Implants for Surgery Orthopaedic Joint Prosthesis Part 1 Procedure for Producing Parametric 3D Bone Models from CT Data of the Knee",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19499:2026",
+    isTitle:
+      "Implants for Surgery Metallic Materials Classification of Microstructures for AlphaBeta Titanium Alloy Bars",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19500:2026",
+    isTitle:
+      "Implants for Surgery Wear of Total Ankle-Joint Prostheses Loading and Displacement Parameters for Wear-Testing Machines with Load or Displacement Control and Corresponding Environmental Conditions for Test",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19490 (Part 2):2026",
+    isTitle:
+      "Implants for Surgery Metal Intramedullary Nailing Systems Part 2 Locking Components",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19489:2026",
+    isTitle:
+      "Non-active Surgical Implants Implants for Osteosynthesis Particular Requirements",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19492 (Part 2):2026",
+    isTitle:
+      "Implants for Surgery Wear of Total Intervertebral Spinal Disc Prostheses Part 2 Nucleus Replacements",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19490 (Part 3):2026",
+    isTitle:
+      "Implants for Surgery Metal Intramedullary Nailing Systems Part 3 Connection Devices and Reamer Diameter Measurements",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19512 (Part 2):2025",
+    isTitle:
+      "Implants for Surgery Pre-Clinical Mechanical Assessment of Spinal Implants and Particular Requirements Part 2 Spinal Intervertebral Body Fusion Devices",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19697:2026",
+    isTitle:
+      "Compatibility of lubricants with synthetic male condoms",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19383:2025",
+    isTitle:
+      "Audiometric Test Room - Specification",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 19476:2025",
+    isTitle:
+      "Pure-tone and Speech Audiometers - Specification",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19731:2026",
+    isTitle:
+      "ENT Surgery Instruments –– Otology Drill — Specification",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19791:2026",
+    isTitle:
+      "ENT Surgery Instruments –– Microdebrider — Specification",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19379:2026",
+    isTitle:
+      "Optics and Optical Instruments Ophthalmic Optics Formers",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19443:2026",
+    isTitle:
+      "Ophthalmic optics Contact lens care products Microbiological requirements and test methods for products and regimens for hygienic management of contact lenses",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19399:2026",
+    isTitle:
+      "Ophthalmic optics Contact lenses Determination of shelf-life",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19419:2026",
+    isTitle:
+      "Ophthalmic optics Contact lenses and contact lens care products Guidance for clinical investigations",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19475:2026",
+    isTitle:
+      "Ophthalmic optics Contact lens care products Guidelines for determination of shelf-life",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19402:2026",
+    isTitle:
+      "Ophthalmic optics Contact lens care products Antimicrobial preservative efficacy testing and guidance on determining discard date",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19369:2026",
+    isTitle:
+      "Ophthalmic optics Contact lenses Hygienic management of multipatient use trial contact lenses",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 19422:2026",
+    isTitle:
+      "Ophthalmic optics Spectacle lenses Short wavelength visible solar radiation and the eye",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 19417:2026",
+    isTitle:
+      "Ophthalmic implants Intraocular lenses Guidance on assessment of the need for clinical investigation of intraocular lens design modifications",
+  },
+  {
+    sno: 29,
+    isNumber: "IS 19405:2026",
+    isTitle:
+      "Ophthalmic optics Contact lenses and contact lens care products Determination of physical compatibility of contact lens care products with contact lenses",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 19525:2026",
+    isTitle:
+      "Ophthalmic Optics Spectacle Lenses Fundamental Requirements for Uncut Finished Lenses",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 19453:2025",
+    isTitle:
+      "Ophthalmic optics Spectacle frames Screw threads",
+  },
+  {
+    sno: 32,
+    isNumber: "IS 19479:2026",
+    isTitle:
+      "Sterile Blades for Ophthalmic Microsurgeries for Single Use - Requirements and Test Methods",
+  },
+  {
+    sno: 33,
+    isNumber: "IS 19391:2026",
+    isTitle:
+      "Neurosurgical implants Sterile single-use hydrocephalus shunts",
+  },
+  {
+    sno: 34,
+    isNumber: "IS 19423:2026",
+    isTitle:
+      "Dentistry Compatibility Testing for Metal-Ceramic and Ceramic-Ceramic Systems",
+  },
+  {
+    sno: 35,
+    isNumber: "IS 19424:2026",
+    isTitle:
+      "Dentistry Polymer-Based Die Materials",
+  },
+  {
+    sno: 36,
+    isNumber: "IS 19430:2026",
+    isTitle:
+      "Dentistry Bonding Test Between Polymer Teeth and Denture Base Materials",
+  },
+  {
+    sno: 37,
+    isNumber: "IS 19494:2026",
+    isTitle:
+      "Dentistry Guidance on Colour Measurement",
+  },
+  {
+    sno: 38,
+    isNumber: "IS 19429:2026",
+    isTitle:
+      "Dentistry Bore Diameters for Rotary Instruments such as Discs and Wheels",
+  },
+  {
+    sno: 39,
+    isNumber: "IS 19483:2026",
+    isTitle:
+      "Dentistry General Requirements for Instruments and Related Accessories Used in Dental Implant Placement and Treatment",
+  },
+  {
+    sno: 40,
+    isNumber: "IS 19401:2026",
+    isTitle:
+      "Dentistry Screening Method for Erosion Potential of Oral Rinses on Dental Hard Tissues",
+  },
+  {
+    sno: 41,
+    isNumber: "IS 19477 (Part 3):2026",
+    isTitle:
+      "Dentistry Dental Furnace Part 3 Test Method for the Evaluation of High Temperature Sintering Furnace Measurement with a Separate Thermocouple",
+  },
+  {
+    sno: 42,
+    isNumber: "IS 19617:2026",
+    isTitle:
+      "Dentistry Pre-capsulated Dental Amalgam",
+  },
+  {
+    sno: 43,
+    isNumber: "IS 19495:2026",
+    isTitle:
+      "Dentistry Mandrels for Rotary Instruments",
+  },
+  {
+    sno: 44,
+    isNumber: "IS 19619 (Part 1):2026",
+    isTitle:
+      "Dentistry Portable Dental Equipment for Use in Non-Permanent Healthcare Environment Part 1 General Requirements",
+  },
+  {
+    sno: 45,
+    isNumber: "IS 19619 (Part 3):2026",
+    isTitle:
+      "Dentistry Portable Dental Equipment for Use in Non-Permanent Healthcare Environment Part 3 Portable Suction Equipment",
+  },
+  {
+    sno: 46,
+    isNumber: "IS 19620:2026",
+    isTitle:
+      "Dentistry Physical Properties of Powered Toothbrushes",
+  },
+  {
+    sno: 47,
+    isNumber: "IS 19616:2026",
+    isTitle:
+      "Dentistry Screw Loosening Test Using Cyclic Torsional Loading for Implant Body-Implant Abutment Connection of Endosseous Dental Implants",
+  },
+  {
+    sno: 48,
+    isNumber: "IS 19621:2026",
+    isTitle:
+      "Dentistry Graphical Symbols for Dental Instruments",
+  },
+  {
+    sno: 49,
+    isNumber: "IS 18489 (Part 2):2026",
+    isTitle:
+      "Dentistry Digital Impression Devices Part 2 Methods for Assessing Accuracy for Implanted Devices",
+  },
+  {
+    sno: 50,
+    isNumber: "IS 18682 (Part 5):2026",
+    isTitle:
+      "Dentistry Periodontal Curettes Dental Scalers and Excavators Part 5 Jacquette Scalers",
+  },
+  {
+    sno: 51,
+    isNumber: "IS 19618:2026",
+    isTitle:
+      "Dentistry Filling Instrument with Contra Angle",
+  },
+  {
+    sno: 52,
+    isNumber: "IS 19496:2026",
+    isTitle:
+      "Dentistry Refractory Investment and Die Material",
+  },
+  {
+    sno: 53,
+    isNumber: "IS 19477 (Part 2):2026",
+    isTitle:
+      "Dentistry Dental Furnace Part 2 Test Method for Evaluation of Furnace Programme via Firing Glaze",
+  },
+  {
+    sno: 54,
+    isNumber: "IS 19477:2026",
+    isTitle:
+      "Dentistry Dental Furnace Test Method for Temperature Measurement with Separate Thermocouple",
+  },
+  {
+    sno: 55,
+    isNumber: "IS 19189:2025",
+    isTitle:
+      "Accessible Design Information Contents, Figuration and Display Methods of Tactile Guide Maps",
+  },
+  {
+    sno: 56,
+    isNumber: "IS 19190:2025",
+    isTitle:
+      "Accessible Design Application of Braille on Signage, Equipment and Appliances",
+  },
+  {
+    sno: 57,
+    isNumber: "IS 18651 (Part 28):2025",
+    isTitle:
+      "Wheelchairs Part 28 Requirements and Test Methods for Stair-Climbing Devices",
+  },
+  {
+    sno: 58,
+    isNumber: "IS 18651 (Part 30):2025",
+    isTitle:
+      "Wheelchairs Part 30 Wheelchairs for Changing Occupant Posture – Test Methods and Requirements",
+  },
+  {
+    sno: 59,
+    isNumber: "IS 18651 (Part 25):2025",
+    isTitle:
+      "Wheelchairs Part 25 Lead-Acid Batteries and Chargers for Powered Wheelchairs – Requirements and Test Methods",
+  },
+  {
+    sno: 60,
+    isNumber: "IS 18651 (Part 21):2025",
+    isTitle:
+      "Wheelchairs Part 21 Requirements and Test Methods for Electromagnetic Compatibility of Electrically Powered Wheelchairs and Scooters and Battery Chargers",
+  },
+  {
+    sno: 61,
+    isNumber: "IS 18651 (Part 14):2025",
+    isTitle:
+      "Wheelchairs Part 14 Power and Control Systems for Electrically Powered Wheelchairs and Scooters – Requirements and Test Methods",
+  },
+  {
+    sno: 62,
+    isNumber: "IS 19638 (Part 1):2026",
+    isTitle:
+      "Prosthetics and Orthotics Limb Deficiencies Part 1: Method of Describing Limb Deficiencies Present at Birth",
+  },
+  {
+    sno: 63,
+    isNumber: "IS 19638 (Part 2):2026",
+    isTitle:
+      "Prosthetics and Orthotics Limb Deficiencies Part 2: Method of Describing Lower Limb Amputation Stumps",
+  },
+  {
+    sno: 64,
+    isNumber: "IS 19638 (Part 4):2026",
+    isTitle:
+      "Prosthetics and Orthotics Limb Deficiencies Part 4: Description of Causal Conditions Leading to Amputation",
+  },
+  {
+    sno: 65,
+    isNumber: "IS 19638 (Part 5):2026",
+    isTitle:
+      "Prosthetics and Orthotics Limb Deficiencies Part 5: Description of the Clinical Condition of the Person Who Has Had an Amputation",
+  },
+  {
+    sno: 66,
+    isNumber: "IS 19631:2026",
+    isTitle:
+      "Portable Ramps – Specification",
+  },
+  {
+    sno: 67,
+    isNumber: "IS 19639:2026",
+    isTitle:
+      "Prosthetics and Orthotics Vocabulary Part 4: Terms Relating to Limb Amputation",
+  },
+  {
+    sno: 68,
+    isNumber: "IS 19642:2026",
+    isTitle:
+      "Assistive Products Accessibility Guidelines and Requirements to Survey the Needs of Persons with Sensory Disabilities for Assistive Products and Services",
+  },
+  {
+    sno: 69,
+    isNumber: "IS 13450 (Part 2/Sec 67):2025",
+    isTitle:
+      "Medical Electrical Equipment Part 2 Particular Requirements for Basic Safety and Essential Performance Section 67 Oxygen-Conserving Equipment",
+  },
+  {
+    sno: 70,
+    isNumber: "IS 13450 (Part 2/Sec 74):2025",
+    isTitle:
+      "Medical Electrical Equipment Part 2 Particular Requirements for Basic Safety and Essential Performance Section 74 Respiratory Humidifying Equipment",
+  },
+  {
+    sno: 71,
+    isNumber: "IS 13450 (Part 2/Sec 72):2025",
+    isTitle:
+      "Medical Electrical Equipment Part 2 Particular Requirements for Basic Safety and Essential Performance Section 72 Home Healthcare Environment Ventilators for Ventilator-Dependent Patients",
+  },
+  {
+    sno: 72,
+    isNumber: "IS 19228 (Part 1):2025",
+    isTitle:
+      "Anaesthetic and Respiratory Equipment Heat and Moisture Exchangers (HMEs) for Humidifying Respired Gases in Humans Part 1: HMEs for Use with Minimum Tidal Volumes of 250 ml",
+  },
+  {
+    sno: 73,
+    isNumber: "IS 13450 (Part 2/Sec 55):2025",
+    isTitle:
+      "Medical Electrical Equipment Part 2 Particular Requirements for the Basic Safety and Essential Performance Section 55 Respiratory Gas Monitors",
+  },
+  {
+    sno: 74,
+    isNumber: "IS 19227 (Part 1):2025",
+    isTitle:
+      "Breathing System Filters for Anaesthetic and Respiratory Use Part 1: Salt Test Method to Assess Filtration Performance",
+  },
+  {
+    sno: 75,
+    isNumber: "IS 18881 (Part 1):2025",
+    isTitle:
+      "Aseptic Processing of Health Care Products Part 1 General Requirements",
+  },
+  {
+    sno: 76,
+    isNumber: "IS 19282 (Part 1):2025",
+    isTitle:
+      "Needle-Based Injection Systems for Medical Use – Requirements and Test Methods Part 1 Needle-Based Injection Systems",
+  },
+  {
+    sno: 77,
+    isNumber: "IS 19282 (Part 2):2025",
+    isTitle:
+      "Needle-Based Injection Systems for Medical Use – Requirements and Test Methods Part 2 Double-Ended Pen Needles",
+  },
+  {
+    sno: 78,
+    isNumber: "IS 19329 (Part 4):2025",
+    isTitle:
+      "Prefilled Syringes Part 4 Glass Barrels for Injectables and Sterilized Subassembled Syringes Ready for Filling",
+  },
+  {
+    sno: 79,
+    isNumber: "IS 17964 (Part 7):2025",
+    isTitle:
+      "Small-Bore Connectors for Liquids and Gases in Healthcare Applications Part 7 Connectors for Intravascular or Hypodermic Applications",
+  },
+  {
+    sno: 80,
+    isNumber: "IS 18474 (Part 4):2026",
+    isTitle:
+      "Transfusion Equipment for Medical Use Part 4 Transfusion Sets for Single Use, Gravity Feed",
+  },
+  {
+    sno: 81,
+    isNumber: "IS 18294 (Part 1):2026",
+    isTitle:
+      "Sterilization of Health Care Products — Radiation Part 1 Requirements for the Development, Validation and Routine Control of a Sterilization Process for Medical Devices",
+  },
+  {
+    sno: 82,
+    isNumber: "IS 18344 (Part 1):2026",
+    isTitle:
+      "Washer-Disinfectors Part 1 General Requirements, Terms and Definitions and Tests",
+  },
+  {
+    sno: 83,
+    isNumber: "IS 18344 (Part 2):2026",
+    isTitle:
+      "Washer-Disinfectors Part 2 Requirements and Tests for Washer-Disinfectors Employing Thermal Disinfection for Critical and Semi-Critical Medical Devices",
+  },
+  {
+    sno: 84,
+    isNumber: "IS 18344 (Part 3):2026",
+    isTitle:
+      "Washer-Disinfectors Part 3 Requirements and Tests for Washer-Disinfectors Employing Thermal Disinfection for Human Waste Containers",
+  },
+  {
+    sno: 85,
+    isNumber: "IS 1984 (Part 7):2026",
+    isTitle:
+      "Injection Containers and Accessories Part 7 Injection Caps Made of Aluminium-Plastics Combinations Without Overlapping Plastics",
+  },
+  {
+    sno: 86,
+    isNumber: "IS 19611 (Part 1):2026",
+    isTitle:
+      "Elastomeric Parts for Parenterals and for Devices for Pharmaceutical Use Part 1 Extractables in Aqueous Autoclavates",
+  },
+  {
+    sno: 87,
+    isNumber: "IS 19611 (Part 3):2026",
+    isTitle:
+      "Elastomeric Parts for Parenterals and for Devices for Pharmaceutical Use Part 3 Determination of Released-Particle Count",
+  },
+  {
+    sno: 88,
+    isNumber: "IS 19611 (Part 4):2026",
+    isTitle:
+      "Elastomeric Parts for Parenterals and for Devices for Pharmaceutical Use Part 4 Biological Requirements and Test Methods",
+  },
+  {
+    sno: 89,
+    isNumber: "IS 19329 (Part 7):2026",
+    isTitle:
+      "Prefilled Syringes Part 7 Packaging Systems for Sterilized Subassembled Syringes Ready for Filling",
+  },
+  {
+    sno: 90,
+    isNumber: "IS 19329 (Part 8):2026",
+    isTitle:
+      "Prefilled Syringes Part 8 Requirements and Test Methods for Finished Prefilled Syringes",
+  },
+  {
+    sno: 91,
+    isNumber: "IS 19282 (Part 4):2026",
+    isTitle:
+      "Needle-Based Injection Systems for Medical Use — Requirements and Test Methods Part 4 Needle-Based Injection Systems Containing Electronics",
+  },
+  {
+    sno: 92,
+    isNumber: "IS 19611 (Part 5):2026",
+    isTitle:
+      "Elastomeric Parts for Parenterals and for Devices for Pharmaceutical Use Part 5 Functional Requirements and Testing",
+  },
+  {
+    sno: 93,
+    isNumber: "IS 19612:2026",
+    isTitle:
+      "Aluminium Caps and Aluminium/Plastic Caps for Infusion Bottles and Injection Vials — General Requirements and Test Methods",
+  },
+  {
+    sno: 94,
+    isNumber: "IS 19329 (Part 6):2026",
+    isTitle:
+      "Prefilled Syringes Part 6 Plastic Barrels for Injectables and Sterilized Subassembled Syringes Ready for Filling",
+  },
+  {
+    sno: 95,
+    isNumber: "IS 19282 (Part 3):2026",
+    isTitle:
+      "Needle-Based Injection Systems for Medical Use — Requirements and Test Methods Part 3 Containers and Integrated Fluid Paths",
+  },
+  {
+    sno: 96,
+    isNumber: "IS 19282 (Part 7):2026",
+    isTitle:
+      "Needle-Based Injection Systems for Medical Use — Requirements and Test Methods Part 7 Accessibility for Persons with Visual Impairment",
+  },
+  {
+    sno: 97,
+    isNumber: "IS 19611 (Part 2):2026",
+    isTitle:
+      "Elastomeric Parts for Parenterals and for Devices for Pharmaceutical Use Part 2 Identification and Characterization",
+  },
+  {
+    sno: 98,
+    isNumber: "IS 19282 (Part 5):2026",
+    isTitle:
+      "Needle-Based Injection Systems for Medical Use — Requirements and Test Methods Part 5 Automated Functions",
+  },
+  {
+    sno: 99,
+    isNumber: "IS 19282 (Part 6):2026",
+    isTitle:
+      "Needle-Based Injection Systems for Medical Use — Requirements and Test Methods Part 6 On-Body Delivery Systems",
+  },
+  {
+    sno: 100,
+    isNumber: "IS 18292 (Part 8):2026",
+    isTitle:
+      "Intravascular Catheters — Sterile and Single-Use Catheters Part 8 Catheters for Extracorporeal Blood Treatment",
+  },
+  {
+    sno: 101,
+    isNumber: "IS 19613:2026",
+    isTitle:
+      "Sterilization of Health Care Products — Low Temperature Vaporized Hydrogen Peroxide — Requirements for the Development, Validation and Routine Control of a Sterilization Process for Medical Devices",
+  },
+  {
+    sno: 102,
+    isNumber: "IS 19478:2025",
+    isTitle:
+      "Bovine Endometrial Cytotaping Catheter Specification",
+  },
+  {
+    sno: 103,
+    isNumber: "IS 19173 (Part 1):2025",
+    isTitle:
+      "Medical Device Software Part 1 Guidance on the Application of ISO 14971 to Medical Device Software",
+  },
+  {
+    sno: 104,
+    isNumber: "IS 19771:2026",
+    isTitle:
+      "Medical electrical equipment Dosimeters with ionization chambers as used in Radiotherapy IEC 60731:2011AMD1:2016 CSV MOD",
+  },
+  {
+    sno: 105,
+    isNumber: "IS 18875 (Part 10101):2025",
+    isTitle:
+      "Health Informatics – Device Interoperability Part 10101 Point-of-Care Medical Device Communication – Nomenclature",
+  },
+  {
+    sno: 106,
+    isNumber: "IS 19481:2026",
+    isTitle:
+      "Genomics Informatics — Phenopackets: A Format for Phenotypic Data Exchange",
+  },
+  {
+    sno: 107,
+    isNumber: "IS 19431:2026",
+    isTitle:
+      "Health Informatics — Interoperability of Public Health Emergency Preparedness and Response Information Systems",
+  },
+  {
+    sno: 108,
+    isNumber: "IS 19480:2026",
+    isTitle:
+      "Health Informatics — Standardizing Graphical Content",
+  },
+  {
+    sno: 109,
+    isNumber: "IS 19425:2026",
+    isTitle:
+      "Health Informatics — Workforce Roles and Capabilities for Terminology and Terminology Services in Healthcare (Term Workforce)",
+  },
+  {
+    sno: 110,
+    isNumber: "IS 18875 (Part 10472):2026",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 10472 Personal Health Device Communication — Device Specialization — Medication Monitor",
+  },
+  {
+    sno: 111,
+    isNumber: "IS 19435:2026",
+    isTitle:
+      "Genomics Informatics — Data Elements and Their Metadata for Describing the Tumor Mutation Burden (TMB) Information of Clinical Massive Parallel DNA Sequencing",
+  },
+  {
+    sno: 112,
+    isNumber: "IS ISO:2024",
+    isTitle:
+      "Health Informatics — Categorial Structures for Representation of Ayurvedic Medicinal Water — Decocting Process in Ayurveda",
+  },
+  {
+    sno: 113,
+    isNumber: "IS 19482:2026",
+    isTitle:
+      "Genomics Informatics — Omics Markup Language (OML)",
+  },
+  {
+    sno: 114,
+    isNumber: "IS 18867 (Part 4):2026",
+    isTitle:
+      "Health Informatics — Medical Waveform Format Part 4 Stress Test Electrocardiography",
+  },
+  {
+    sno: 115,
+    isNumber: "IS 18875 (Part 10471):2026",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 10471 Personal Health Device Communication — Device Specialization — Independent Living Activity Hub",
+  },
+  {
+    sno: 116,
+    isNumber: "IS 19421:2026",
+    isTitle:
+      "Genomics Informatics — Data Elements and Their Metadata for Describing the Microsatellite Instability (MSI) Information of Clinical Massive Parallel DNA Sequencing",
+  },
+  {
+    sno: 117,
+    isNumber: "IS 18775 (Part 20701):2025",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 20701 Point-of-Care Medical Device Communication — Service-Oriented Medical Device Exchange Architecture and Protocol Binding",
+  },
+  {
+    sno: 118,
+    isNumber: "IS 18875 (Part 40101):2026",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 40101 Foundational — Cybersecurity — Processes for Vulnerability Assessment",
+  },
+  {
+    sno: 119,
+    isNumber: "IS 18875 (Part 40102):2025",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 40102 Foundational — Cybersecurity — Capabilities for Mitigation",
+  },
+  {
+    sno: 120,
+    isNumber: "IS 18875 (Part 10421):2026",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 10421 Personal Health Device Communication — Device Specialization — Peak Expiratory Flow Monitor (Peak Flow)",
+  },
+  {
+    sno: 121,
+    isNumber: "IS 19433:2025",
+    isTitle:
+      "Health Informatics — Security Requirements for Archiving of Electronic Health Records — Guidelines",
+  },
+  {
+    sno: 122,
+    isNumber: "IS 18667 (Part 5):2025",
+    isTitle:
+      "Health Informatics — Medical Waveform Format Part 5 Neurophysiological Signals",
+  },
+  {
+    sno: 123,
+    isNumber: "IS 18875 (Part 10206):2026",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 10206 Personal Health Device Communication — Abstract Content Information Model",
+  },
+  {
+    sno: 124,
+    isNumber: "IS 18875 (Part 10700):2026",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 10700 Point-of-Care Medical Device Communication — Standard for Base Requirements for Participants in a Service-Oriented Device Connectivity (SDC) System",
+  },
+  {
+    sno: 125,
+    isNumber: "IS 18875 (Part 10701):2026",
+    isTitle:
+      "Health Informatics — Device Interoperability Part 10701 Point-of-Care Medical Device Communication — Metric Provisioning by Participants in a Service-Oriented Device Connectivity (SDC) System",
+  },
+  {
+    sno: 126,
+    isNumber: "IS 19615:2026",
+    isTitle:
+      "Extracellular Vesicles - Characterization",
+  },
+  {
+    sno: 127,
+    isNumber: "IS 19314:2025",
+    isTitle:
+      "Non-chlorinated Plastic Biomedical Waste Bag",
+  },
+  {
+    sno: 128,
+    isNumber: "IS 19330:2026",
+    isTitle:
+      "Formaldehyde Dosimeter - Specification",
+  },
+];
+
+const managementAndSystemsDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19506:2026",
+    isTitle:
+      "Statistical methods Six Sigma Basic criteria underlying benchmarking for Six Sigma in organisations",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19507:2026",
+    isTitle:
+      "Quantitative Methods in Process Improvement - Six Sigma - Competencies for Key Personnel and their Organizations in relation to Six Sigma and Lean Implementation",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19724 (Part 2):2026",
+    isTitle:
+      "Document Management Information Classification, Marking and Handling Part 2: Functional and Technical Requirements for ICMH Solutions",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 19714:2026",
+    isTitle:
+      "Information and Documentation - Paper for Documents - Requirements for Permanence",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 19716:2026",
+    isTitle:
+      "Information and Documentation - Archival Paper - Requirements for Permanence and Durability",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 19715:2026",
+    isTitle: "Impact Assessment for Museums",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 19717:2026",
+    isTitle:
+      "Document Management Applications - Specification for a Digital Safe",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19724 (Part 1):2026",
+    isTitle:
+      "Document Management — Information Classification, Marking and Handling Part 1: Requirements",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19721:2026",
+    isTitle:
+      "Application of Blockchain-Based Traceability Platform for Cold Chain Food",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19718:2026",
+    isTitle:
+      "Information and Documentation — Principles of Identification",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19722:2026",
+    isTitle:
+      "Information and Documentation — Papers and Boards Used for Conservation — Measurement of Impact of Volatiles on Cellulose in Paper",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19719:2026",
+    isTitle:
+      "Trusted Mobile e-Document Framework — Requirements, Functionality and Criteria for Ensuring Reliable and Safe Mobile e-Business",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19720:2026",
+    isTitle:
+      "Information and Documentation — Presentation and Identification of Periodicals",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19318:2025",
+    isTitle: "Internal Investigations of Organizations Guidance",
+  },
+  {
+    sno: 15,
+    isNumber: "IS ISO:2024",
+    isTitle:
+      "Asset Management Guidance on the Management of Data Assets",
+  },
+  {
+    sno: 16,
+    isNumber: "IS/ISO 55011:2024",
+    isTitle:
+      "Asset management Guidance for the development of public policy to enable asset management",
+  },
+  {
+    sno: 17,
+    isNumber: "IS/ISO 55012:2024",
+    isTitle:
+      "Asset management Guidance on people involvement and competence",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19677:2026",
+    isTitle:
+      "Security and Resilience — Guidelines for Complexity Assessment Process",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19676:2026",
+    isTitle:
+      "Security and Resilience – Authenticity, Integrity and Trust for Products and Documents — Guidelines for Interoperable Object Identification and Related Authentication Systems to Deter Counterfeiting and Illicit Trade",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19680:2026",
+    isTitle:
+      "Security and Resilience – Authenticity, Integrity and Trust for Products and Documents — General Principles for Product Fraud Risk and Countermeasures",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19679:2026",
+    isTitle:
+      "Security and Resilience – Authenticity, Integrity and Trust for Products and Documents — Guidelines for the Content, Security, Issuance and Examination of Excise Tax Stamps",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19678:2026",
+    isTitle:
+      "Security and Resilience – Authenticity, Integrity and Trust for Products and Documents — Validation Procedures for the Application of Artefact Metrics",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19797:2026",
+    isTitle:
+      "Security and Resilience — Authenticity, Integrity and Trust for Products and Documents — Guidelines for Securing Physical Documents",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19795:2026",
+    isTitle:
+      "Security and Resilience — Authenticity, Integrity and Trust for Products and Documents — Framework for Establishing Trustworthy Supply and Value Chains",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19802:2026",
+    isTitle:
+      "Security and Resilience — Authenticity, Integrity and Trust for Products and Documents — Specification and Usage of Visible Digital Seal (VDS) Data Format for Authentication, Verification and Acquisition of Data Carried by a Document or Object",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19800:2026",
+    isTitle:
+      "Security and Resilience — Authenticity, Integrity and Trust for Products and Documents — Guidelines for Establishing Interoperability Among Object Identification Systems to Deter Counterfeiting and Illicit Trade",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 19799:2026",
+    isTitle:
+      "Security and Resilience — Community Resilience — Principles, Framework and Guidelines on Urban Resilience",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 19798:2026",
+    isTitle:
+      "Security and Resilience — Community Resilience — Guidelines for Infrastructure Resilience",
+  },
+  {
+    sno: 29,
+    isNumber: "IS 19796:2026",
+    isTitle:
+      "Security and Resilience — Crisis Management — Concepts, Principles and Framework",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 19793:2026",
+    isTitle:
+      "Societal Security — Guidelines for Establishing Partnering Arrangements",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 19794:2026",
+    isTitle:
+      "Security and Resilience — Authenticity, Integrity and Trust for Products and Documents — Guidelines to Establish a Framework for Trust and Interoperability",
+  },
+  {
+    sno: 32,
+    isNumber: "IS 19808:2026",
+    isTitle:
+      "Reference Materials Requirements and Recommendations for Use",
+  },
+  {
+    sno: 33,
+    isNumber: "IS 19806:2026",
+    isTitle:
+      "Reference Materials Approaches for Characterization and Assessment of Homogeneity and Stability",
+  },
+  {
+    sno: 34,
+    isNumber: "IS 19804:2026",
+    isTitle:
+      "Approaches for the Production of Reference Materials with Qualitative Properties",
+  },
+  {
+    sno: 35,
+    isNumber: "IS 19805:2026",
+    isTitle:
+      "Guidance for the Production of Pure Organic Substance Certified Reference Materials",
+  },
+  {
+    sno: 36,
+    isNumber: "IS 19807:2026",
+    isTitle:
+      "Reference Materials — Contents of Certificates, Labels and Accompanying Documentation",
   },
 ];
 
@@ -947,7 +3713,7 @@ const MetaTags = () => {
                 "@type": "Answer",
                 text: "BIS standards cover industries including construction, chemicals, healthcare, electronics, food processing, engineering, energy, agriculture, water management, textiles, and many more.",
               },
-            },
+            }, 
           ],
         })}
       </script>
@@ -1126,7 +3892,7 @@ const MainContentLeft = () => {
 {/* ------------------------------------------------------------------------------------------------------------------------------------------ */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
           Chemical Department (CHD)
         </h2>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -1164,190 +3930,10 @@ const MainContentLeft = () => {
         {/* table of upcoming products of Chemical Department under BIS Certification */}
         <DepartmentStandardsTable data={chemicalDepartmentStandardsData} />
 
-        {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
-         
+  {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
+  <div className="h-px w-full bg-gray-300 my-6"></div> 
 
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Electronics and Information Technology Department (LITD)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Electronics and Information Technology Department (LITD) is
-          responsible for developing standards related to electronics,
-          cybersecurity, digital systems, AI technologies, telecommunications,
-          software interoperability, data privacy, and emerging technologies.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          As India accelerates digital transformation initiatives including
-          Digital India, smart manufacturing, Industry 4.0, IoT adoption, and AI
-          implementation, BIS electronics standards are becoming increasingly
-          important.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          According to BIS strategic documentation, these standards broadly
-          cover: product functionality, safety, quality, security, privacy,
-          interoperability, testing methods, terminology, and technology
-          guidelines.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Electronics and Information Technology
-          Department under BIS Certification
-        </h3>
-
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Medical Equipment and Hospital Planning Department
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Medical Equipment and Hospital Planning Department develops
-          Standards related to medical devices, healthcare technologies, hospital
-          systems, diagnostic equipment, and digital healthcare infrastructure.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The healthcare sector requires extremely high levels of precision,
-          safety, and regulatory compliance. BIS medical standards help ensure
-          that medical devices and healthcare technologies meet strict quality
-          benchmarks.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS reports indicate that this department has published more than 1400
-          standards, with several harmonized with international standards.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Medical Equipment and Hospital Planning
-          Department under BIS Certification
-        </h3>
-
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Food and Agriculture Department (FAD)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Food and Agriculture Department establishes standards for food
-          safety, agricultural products, packaging, storage systems, food
-          testing, and quality assurance mechanisms.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS food standards are critical for:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Public health protection</li>
-          <li>Food processing quality</li>
-          <li>Export compliance</li>
-          <li>Agricultural sustainability</li>
-          <li>Supply chain safety</li>
-          <li>Nutritional consistency</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          These standards help food manufacturers, processors, exporters,
-          retailers, and laboratories comply with safety and quality regulations.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Food and Agriculture Department under BIS
-          Certification
-        </h3>
-
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Production and General Engineering Department (PGD)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Production and General Engineering Department develops standards
-          related to industrial tools, machinery, engineering components,
-          manufacturing systems, and industrial productivity.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          These BIS engineering standards support industrial modernization and
-          manufacturing efficiency across multiple sectors.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Recent standards include tools and elastomer pressure spring
-          specifications.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Key Focus Areas
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Industrial tools</li>
-          <li>Manufacturing quality</li>
-          <li>Engineering products</li>
-          <li>Industrial safety</li>
-          <li>Machine performance</li>
-          <li>Production systems</li>
-        </ul>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Production and General Engineering
-          Department under BIS Certification
-        </h3>
-
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Electro-technical Department (ETD)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Electro-technical Department develops standards for electrical
-          systems, power equipment, energy efficiency technologies, renewable
-          energy systems, and electrical safety mechanisms.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          These standards are highly relevant for India&apos;s growing renewable
-          energy and power infrastructure sectors.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Key Focus Areas
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Electrical safety</li>
-          <li>Power systems</li>
-          <li>Renewable energy</li>
-          <li>Smart grids</li>
-          <li>Electrical equipment</li>
-          <li>Energy efficiency</li>
-        </ul>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Electro-technical Department under BIS
-          Certification
-        </h3>
-
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Water Resources Department (WRD)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Water Resources Department creates standards for water supply
-          systems, wastewater management, irrigation infrastructure, water
-          conservation technologies, and environmental water quality.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          With increasing concerns related to water scarcity and sustainable
-          resource management, BIS water standards are becoming strategically
-          important for India.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Key Focus Areas
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Drinking water systems</li>
-          <li>Wastewater treatment</li>
-          <li>Irrigation infrastructure</li>
-          <li>Water conservation</li>
-          <li>Environmental sustainability</li>
-          <li>Public utility systems</li>
-        </ul>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Water Resources Department under BIS
-          Certification
-        </h3>
-
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+      <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
           Environment and Ecology Department (EED)
         </h2>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -1384,89 +3970,261 @@ const MainContentLeft = () => {
           BIS Certification
         </h3>
 
+        {/* table of upcoming products of Environment and Ecology Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={environmentAndEcologyDepartmentStandardsData}
+        />
+
+  {/* ----------------------------------------------------------------------------------------------------------------------- */}
+
+    <div className="h-px w-full bg-gray-300 my-6"></div>
+
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
+  Electro-technical Department (ETD)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Electro-technical Department develops standards for electrical
+  systems, power equipment, energy efficiency technologies, renewable
+  energy systems, and electrical safety mechanisms.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  These standards are highly relevant for India&apos;s growing renewable
+  energy and power infrastructure sectors.
+</p>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  Key Focus Areas
+</h3>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Electrical safety</li>
+  <li>Power systems</li>
+  <li>Renewable energy</li>
+  <li>Smart grids</li>
+  <li>Electrical equipment</li>
+  <li>Energy efficiency</li>
+</ul>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Electro-technical Department under BIS
+  Certification
+</h3>
+
+        {/* table of upcoming products of Electro-technical Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={electrotechnicalDepartmentStandardsData}
+        />
+
+{/* ----------------------------------------------------------------------------------------------------------------------- */}
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mechanical Engineering Department (MED)
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
+          Food and Agriculture Department (FAD)
         </h2>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Mechanical Engineering Department (MED) is one of the most
-          significant technical divisions within the Bureau of Indian Standards,
-          responsible for developing standards related to machinery, industrial
-          equipment, manufacturing systems, heavy engineering, automation
-          technologies, and mechanical components.
+          The Food and Agriculture Department establishes standards for food
+          safety, agricultural products, packaging, storage systems, food
+          testing, and quality assurance mechanisms.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS mechanical engineering standards are widely used across:
+          BIS food standards are critical for:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Industrial manufacturing</li>
-          <li>Heavy machinery</li>
-          <li>Automotive components</li>
-          <li>Power plants</li>
-          <li>Process industries</li>
-          <li>Pumps and compressors</li>
-          <li>Industrial automation</li>
-          <li>Machine tools</li>
-          <li>HVAC systems</li>
-          <li>Industrial safety systems</li>
+          <li>Public health protection</li>
+          <li>Food processing quality</li>
+          <li>Export compliance</li>
+          <li>Agricultural sustainability</li>
+          <li>Supply chain safety</li>
+          <li>Nutritional consistency</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          These Indian Standards establish technical specifications, testing
-          methods, performance requirements, material standards, and operational
-          safety benchmarks for a broad range of mechanical engineering
-          applications.
+          These standards help food manufacturers, processors, exporters,
+          retailers, and laboratories comply with safety and quality regulations.
         </p>
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Mechanical Engineering Department under
-          BIS Certification
+          List of Upcoming products of Food and Agriculture Department under BIS
+          Certification
         </h3>
 
+
+        {/* table of upcoming products of Food and Agriculture Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={foodAndAgricultureDepartmentStandardsData}
+        />
+
+{/* ----------------------------------------------------------------------------------------------------------------------------- */}
+      
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Management and Systems Department (MSD)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Management and Systems Department (MSD) develops Standards related
-          to organizational management systems, quality management, risk
-          management, governance frameworks, business continuity, process
-          optimization, and operational excellence.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          In today&apos;s highly competitive and compliance-driven business
-          environment, organizations require structured systems to maintain
-          consistency, efficiency, and quality performance. BIS management
-          standards help organizations establish internationally aligned
-          frameworks for operational control, customer satisfaction, and
-          continuous improvement.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The department covers standards associated with:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quality management systems</li>
-          <li>Risk management</li>
-          <li>Knowledge management</li>
-          <li>Innovation management</li>
-          <li>Governance systems</li>
-          <li>Compliance management</li>
-          <li>Information documentation</li>
-          <li>Business continuity systems</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          MSD standards are applicable across virtually every industry including
-          manufacturing, healthcare, IT, infrastructure, logistics, government
-          institutions, education, finance, and service organizations.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Management and Systems Department under
-          BIS Certification
-        </h3>
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
+  Electronics and Information Technology Department (LITD)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Electronics and Information Technology Department (LITD) is
+  responsible for developing standards related to electronics,
+  cybersecurity, digital systems, AI technologies, telecommunications,
+  software interoperability, data privacy, and emerging technologies. 
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  As India accelerates digital transformation initiatives including
+  Digital India, smart manufacturing, Industry 4.0, IoT adoption, and AI
+  implementation, BIS electronics standards are becoming increasingly
+  important.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  According to BIS strategic documentation, these standards broadly
+  cover: product functionality, safety, quality, security, privacy,
+  interoperability, testing methods, terminology, and technology
+  guidelines.
+</p>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Electronics and Information Technology
+  Department under BIS Certification
+</h3>
 
+        {/* table of upcoming products of Electronics and Information Technology Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={electronicsAndInformationTechnologyDepartmentStandardsData} 
+        />
+
+  {/* ---------------------------------------------------------------------------------------------------------------------------` */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+  Mechanical Engineering Department (MED)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Mechanical Engineering Department (MED) is one of the most
+  significant technical divisions within the Bureau of Indian Standards,
+  responsible for developing standards related to machinery, industrial
+  equipment, manufacturing systems, heavy engineering, automation
+  technologies, and mechanical components.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  BIS mechanical engineering standards are widely used across:
+</p>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Industrial manufacturing</li>
+  <li>Heavy machinery</li>
+  <li>Automotive components</li>
+  <li>Power plants</li>
+  <li>Process industries</li>
+  <li>Pumps and compressors</li>
+  <li>Industrial automation</li>
+  <li>Machine tools</li>
+  <li>HVAC systems</li>
+  <li>Industrial safety systems</li>
+</ul>
+<p className="text-gray-600 text-base font-geist mb-4">
+  These Indian Standards establish technical specifications, testing
+  methods, performance requirements, material standards, and operational
+  safety benchmarks for a broad range of mechanical engineering
+  applications.
+</p>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Mechanical Engineering Department under
+  BIS Certification
+</h3>
+
+              {/* table of upcoming products of Mechanical Engineering Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={mechanicalEngineeringDepartmentStandardsData}
+
+        />
+
+
+
+
+{/* ------------------------------------------------------------------------------------------------------------------------------------- */}
+  
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
+  Medical Equipment and Hospital Planning Department (MHD)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Medical Equipment and Hospital Planning Department develops
+  Standards related to medical devices, healthcare technologies, hospital
+  systems, diagnostic equipment, and digital healthcare infrastructure.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The healthcare sector requires extremely high levels of precision,
+  safety, and regulatory compliance. BIS medical standards help ensure
+  that medical devices and healthcare technologies meet strict quality
+  benchmarks.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  BIS reports indicate that this department has published more than 1400
+  standards, with several harmonized with international standards.
+</p>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Medical Equipment and Hospital Planning
+  Department under BIS Certification
+</h3>
+
+{/* table of upcoming products of Medical Equipment and Hospital Planning Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={medicalEquipmentAndHospitalPlanningDepartmentStandardsData}
+        />
+
+{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */}
+
+
+
+<div className="h-px w-full bg-gray-300 my-6"></div>
+
+<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+  Management and Systems Department (MSD)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Management and Systems Department (MSD) develops Standards related
+  to organizational management systems, quality management, risk
+  management, governance frameworks, business continuity, process
+  optimization, and operational excellence.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  In today&apos;s highly competitive and compliance-driven business
+  environment, organizations require structured systems to maintain
+  consistency, efficiency, and quality performance. BIS management
+  standards help organizations establish internationally aligned
+  frameworks for operational control, customer satisfaction, and
+  continuous improvement.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The department covers standards associated with:
+</p>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Quality management systems</li>
+  <li>Risk management</li>
+  <li>Knowledge management</li>
+  <li>Innovation management</li>
+  <li>Governance systems</li>
+  <li>Compliance management</li>
+  <li>Information documentation</li>
+  <li>Business continuity systems</li>
+</ul>
+<p className="text-gray-600 text-base font-geist mb-4">
+  MSD standards are applicable across virtually every industry including
+  manufacturing, healthcare, IT, infrastructure, logistics, government
+  institutions, education, finance, and service organizations.
+</p>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Management and Systems Department under
+  BIS Certification
+</h3>
+
+<div className="h-px w-full bg-gray-300 my-6"></div>
+
+{/* table of upcoming products of Management and Systems Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={managementAndSystemsDepartmentStandardsData}
+        />
+
+{/* ---------------------------------------------------------------------------------------------------- */}
+
+
+
+
+
+<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
           Metallurgical Engineering Department (MTD)
         </h2>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -1499,133 +4257,214 @@ const MainContentLeft = () => {
           BIS Certification
         </h3>
 
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <DepartmentStandardsTable
+          data={medicalEquipmentAndHospitalPlanningDepartmentStandardsData}
+        />
+       
+{/* ------------------------------------------------------------------------------------------------------------------------------- */}
+      
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Petroleum, Coal and Related Products Department (PCD)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Petroleum, Coal and Related Products Department (PCD) develops
-          standards for petroleum products, lubricants, fuels, coal-based
-          products, petrochemicals, energy materials, and associated testing
-          methodologies.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          These standards are crucial for India&apos;s energy infrastructure and
-          industrial economy. BIS petroleum standards help ensure:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fuel quality</li>
-          <li>Operational safety</li>
-          <li>Environmental compliance</li>
-          <li>Energy efficiency</li>
-          <li>Product consistency</li>
-          <li>Industrial reliability</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The department covers standards for:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Diesel and petrol quality</li>
-          <li>Lubricants and greases</li>
-          <li>LPG and gaseous fuels</li>
-          <li>Bitumen and asphalt</li>
-          <li>Coal testing</li>
-          <li>Petrochemical products</li>
-          <li>Fuel storage systems</li>
-          <li>Industrial oils</li>
-        </ul>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Petroleum, Coal and Related Products
-          Department under BIS Certification
-        </h3>
 
-        <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Service Sector Department (SSD)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Service Sector Department (SSD) focuses on developing Standards for
-          service quality, customer experience, operational efficiency, digital
-          services, tourism, healthcare services, logistics, education, and
-          professional service delivery systems.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          As India&apos;s service economy continues to expand rapidly, the need
-          for structured service quality benchmarks has become increasingly
-          important. BIS service sector standards help organizations deliver
-          consistent, reliable, and customer-focused services.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The department supports sectors such as:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Hospitality and tourism</li>
-          <li>Healthcare services</li>
-          <li>Education and training</li>
-          <li>Logistics and supply chain</li>
-          <li>E-commerce</li>
-          <li>Banking and financial services</li>
-          <li>IT-enabled services</li>
-          <li>Professional consulting services</li>
-        </ul>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming services of Service Sector Department under BIS
-          Certification
-        </h3>
+<div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+  Petroleum, Coal and Related Products Department (PCD)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Petroleum, Coal and Related Products Department (PCD) develops
+  standards for petroleum products, lubricants, fuels, coal-based
+  products, petrochemicals, energy materials, and associated testing
+  methodologies.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  These standards are crucial for India&apos;s energy infrastructure and
+  industrial economy. BIS petroleum standards help ensure:
+</p>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Fuel quality</li>
+  <li>Operational safety</li>
+  <li>Environmental compliance</li>
+  <li>Energy efficiency</li>
+  <li>Product consistency</li>
+  <li>Industrial reliability</li>
+</ul>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The department covers standards for:
+</p>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Diesel and petrol quality</li>
+  <li>Lubricants and greases</li>
+  <li>LPG and gaseous fuels</li>
+  <li>Bitumen and asphalt</li>
+  <li>Coal testing</li>
+  <li>Petrochemical products</li>
+  <li>Fuel storage systems</li>
+  <li>Industrial oils</li>
+</ul>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Petroleum, Coal and Related Products
+  Department under BIS Certification
+</h3>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Transport Engineering Department (TED)
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Transport Engineering Department (TED) develops Standards related
-          to automotive engineering, road transport systems, vehicle components,
-          mobility infrastructure, transportation safety, and emerging mobility
-          technologies.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          These BIS transport standards support India&apos;s rapidly evolving
-          transportation ecosystem, including:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Automotive manufacturing</li>
-          <li>Electric vehicles</li>
-          <li>Rail transport</li>
-          <li>Road safety systems</li>
-          <li>Commercial vehicles</li>
-          <li>Intelligent transportation systems</li>
-          <li>Sustainable mobility</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The department establishes technical specifications for vehicle
-          performance, component safety, fuel efficiency, testing methodologies,
-          and transport infrastructure reliability.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          As India promotes electric mobility, smart transportation systems, and
-          sustainable logistics, BIS transport engineering standards are
-          becoming increasingly critical for manufacturers, suppliers, and
-          infrastructure developers.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The department contributes significantly to:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Road safety improvement</li>
-          <li>Vehicle reliability</li>
-          <li>Emission reduction</li>
-          <li>Sustainable transportation</li>
-          <li>Mobility innovation</li>
-          <li>Manufacturing quality</li>
-        </ul>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of Upcoming products of Transport Engineering Department under BIS
-          Certification
-        </h3>
+{/* table of upcoming products of Management and Systems Department under BIS Certification */}
+<DepartmentStandardsTable
+          data={managementAndSystemsDepartmentStandardsData}
+        />
 
+
+        {/* --------------------------------------------------------------------------------------------------------------- */}
+
+
+
+
+
+<div className="h-px w-full bg-gray-300 my-6"></div>
+
+<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+  Production and General Engineering Department (PGD)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Production and General Engineering Department develops standards
+  related to industrial tools, machinery, engineering components,
+  manufacturing systems, and industrial productivity.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  These BIS engineering standards support industrial modernization and
+  manufacturing efficiency across multiple sectors.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  Recent standards include tools and elastomer pressure spring
+  specifications.
+</p>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  Key Focus Areas
+</h3>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Industrial tools</li>
+  <li>Manufacturing quality</li>
+  <li>Engineering products</li>
+  <li>Industrial safety</li>
+  <li>Machine performance</li>
+  <li>Production systems</li>
+</ul>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Production and General Engineering
+  Department under BIS Certification
+</h3>
+
+{/* table of upcoming products of Medical Equipment and Hospital Planning Department under BIS Certification */}
+<DepartmentStandardsTable
+          data={medicalEquipmentAndHospitalPlanningDepartmentStandardsData}
+        />
+
+
+        {/* ----------------------------------------------------------------------------------- */}
+
+
+<div className="h-px w-full bg-gray-300 my-6"></div>
+
+<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+  Service Sector Department (SSD)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Service Sector Department (SSD) focuses on developing Standards for
+  service quality, customer experience, operational efficiency, digital
+  services, tourism, healthcare services, logistics, education, and
+  professional service delivery systems.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  As India&apos;s service economy continues to expand rapidly, the need
+  for structured service quality benchmarks has become increasingly
+  important. BIS service sector standards help organizations deliver
+  consistent, reliable, and customer-focused services.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The department supports sectors such as:
+</p>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Hospitality and tourism</li>
+  <li>Healthcare services</li>
+  <li>Education and training</li>
+  <li>Logistics and supply chain</li>
+  <li>E-commerce</li>
+  <li>Banking and financial services</li>
+  <li>IT-enabled services</li>
+  <li>Professional consulting services</li>
+</ul>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming services of Service Sector Department under BIS
+  Certification
+</h3>
+
+   {/* table of upcoming products of Electronics and Information Technology Department under BIS Certification */}
+   <DepartmentStandardsTable
+          data={electronicsAndInformationTechnologyDepartmentStandardsData} 
+        />
+
+
+
+{/* -------------------------------------------------------------------------------------------------------------------------- */}
+
+
+<div className="h-px w-full bg-gray-300 my-6"></div>
+
+<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+  Transport Engineering Department (TED)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Transport Engineering Department (TED) develops Standards related
+  to automotive engineering, road transport systems, vehicle components,
+  mobility infrastructure, transportation safety, and emerging mobility
+  technologies.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  These BIS transport standards support India&apos;s rapidly evolving
+  transportation ecosystem, including:
+</p>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Automotive manufacturing</li>
+  <li>Electric vehicles</li>
+  <li>Rail transport</li>
+  <li>Road safety systems</li>
+  <li>Commercial vehicles</li>
+  <li>Intelligent transportation systems</li>
+  <li>Sustainable mobility</li>
+</ul>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The department establishes technical specifications for vehicle
+  performance, component safety, fuel efficiency, testing methodologies,
+  and transport infrastructure reliability.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  As India promotes electric mobility, smart transportation systems, and
+  sustainable logistics, BIS transport engineering standards are
+  becoming increasingly critical for manufacturers, suppliers, and
+  infrastructure developers.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The department contributes significantly to:
+</p>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Road safety improvement</li>
+  <li>Vehicle reliability</li>
+  <li>Emission reduction</li>
+  <li>Sustainable transportation</li>
+  <li>Mobility innovation</li>
+  <li>Manufacturing quality</li>
+</ul>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Transport Engineering Department under BIS
+  Certification
+</h3>
+
+{/* table of upcoming products of Management and Systems Department under BIS Certification */}
+<DepartmentStandardsTable
+          data={managementAndSystemsDepartmentStandardsData}
+        />
+        {/* ------------------------------------------------------------------------------------------------ */}
+
+       
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
@@ -1664,7 +4503,55 @@ const MainContentLeft = () => {
           List of Upcoming products of Textile Department under BIS Certification
         </h3>
 
+        
+{/* table of upcoming products of Medical Equipment and Hospital Planning Department under BIS Certification */}
+<DepartmentStandardsTable
+          data={medicalEquipmentAndHospitalPlanningDepartmentStandardsData}
+        />
+
+
+        {/* ----------------------------------------------------------------------------------------------- */}
+
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
+
+<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+  Water Resources Department (WRD)
+</h2>
+<p className="text-gray-600 text-base font-geist mb-4">
+  The Water Resources Department creates standards for water supply
+  systems, wastewater management, irrigation infrastructure, water
+  conservation technologies, and environmental water quality.
+</p>
+<p className="text-gray-600 text-base font-geist mb-4">
+  With increasing concerns related to water scarcity and sustainable
+  resource management, BIS water standards are becoming strategically
+  important for India.
+</p>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  Key Focus Areas
+</h3>
+<ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+  <li>Drinking water systems</li>
+  <li>Wastewater treatment</li>
+  <li>Irrigation infrastructure</li>
+  <li>Water conservation</li>
+  <li>Environmental sustainability</li>
+  <li>Public utility systems</li>
+</ul>
+<h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+  List of Upcoming products of Water Resources Department under BIS
+  Certification
+</h3>
+
+<div className="h-px w-full bg-gray-300 my-6"></div>
+
+{/* table of upcoming products of Management and Systems Department under BIS Certification */}
+<DepartmentStandardsTable
+          data={managementAndSystemsDepartmentStandardsData}
+        />
+{/* --------------------------------------------------------------------------------- */}
+     
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
           Conclusion
