@@ -43,7 +43,7 @@ export default BISNewUpcomingIndianStandards2026;
 const departmentSummaryData = [
   { sno: 1, department: "Ayush Department (AYD)", total: 45 },
   { sno: 2, department: "Civil Engineering Department (CED)", total: 9 },
-  { sno: 3, department: "Chemical Department (CHD)", total: 64 },
+  { sno: 3, department: "Chemical Department (CHD)", total: 63 },
   { sno: 4, department: "Environment and Ecology Department (EED)", total: 30 },
   { sno: 5, department: "Electrotechnical Department (ETD)", total: 71 },
   { sno: 6, department: "Food and Agriculture Department (FAD)", total: 42 },
@@ -75,8 +75,8 @@ const departmentSummaryData = [
     total: 41,
   },
   { sno: 14, department: "Service Sector Department (SSD)", total: 24 },
-  { sno: 15, department: "Transport Engineering Department (TED)", total: 31 },
-  { sno: 16, department: "Textiles Department (TXD)", total: 47 },
+  { sno: 15, department: "Transport Engineering Department (TED)", total: 28 },
+  { sno: 16, department: "Textiles Department (TXD)", total: 46 },
   { sno: 17, department: "Water Resources Department (WRD)", total: 3 },
 ];
 
@@ -3507,6 +3507,1450 @@ const managementAndSystemsDepartmentStandardsData = [
   },
 ];
 
+const metallurgicalEngineeringDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19301:2025",
+    isTitle:
+      "Hot-Rolled and Cold-Rolled Steel Strips Intended for Processing of Fully Processed Grain Oriented Electrical Steel - Specification",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19464:2025",
+    isTitle: "Steel Wire for Hose Reinforcement - Specification",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19474:2026",
+    isTitle:
+      "Hot Dip Aluminium and Aluminium-Silicon Coated Steel Sheet and Strip - Specification",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 2062 (Part 2):2026",
+    isTitle:
+      "Structural Steel - Part 2 - Hot Rolled Quenched and Tempered Steel Plates, Sheets, Strips and Wide Flats",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 19626:2026",
+    isTitle:
+      "Electrolytic Zinc-Nickel Alloy Coated Steel Sheet and Strip - Specification",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 19608:2026",
+    isTitle:
+      "Hot-Rolled Carbon and Alloy Steel Plates, Sheets and Strips - Specification",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 19472:2026",
+    isTitle:
+      "Steel Sheets and Strips for Hot Stamping Applications - Specification",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19497:2026",
+    isTitle:
+      "Carbon and Low-Alloy Steel Wire Rods for Submerged Arc Welding and Gas Shielded Arc Welding Electrodes - Specification",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19469:2025",
+    isTitle: "Jewellery — Consumer Confidence in the Diamond Industry",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19563:2026",
+    isTitle:
+      "Jewellery and Precious Metals — Determination of High Purity Gold, Silver, Platinum and Palladium — Difference Method Using SPARK-OES",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19750:2026",
+    isTitle:
+      "Welding Measurement of preheating temperature interpass temperature and preheat maintenance temperature",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19580:2026",
+    isTitle: "Iron ore and direct reduced iron - Vocabulary",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19773:2026",
+    isTitle:
+      "High chrome grinding media ball for cement mills - Specification",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19559:2026",
+    isTitle: "Hot Rolled Alloy Steel Bars Specification",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19362:2025",
+    isTitle:
+      "Non-destructive testing Eddy Current TestingDetermination of Electrical Conductivity of Non-magnetic Metals",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19406:2026",
+    isTitle:
+      "Metallic and Other Inorganic Coatings — Test for Residual Embrittlement in Both Metallic-Coated and Uncoated Externally-Threaded Articles and Rods — Inclined Wedge Method",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 19407:2026",
+    isTitle:
+      "Method of Measurement of Hydrogen Permeation and Determination of Hydrogen Uptake and Transport in Metals by an Electrochemical Technique",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19657:2026",
+    isTitle:
+      "Microbeam Analysis — Scanning Electron Microscopy Guidelines for Calibrating Image Magnification",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19667:2026",
+    isTitle:
+      "Nanotechnology — Nanoparticles in Powder Form — Characteristics and Measurements",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 1493 (Part 12):2026",
+    isTitle:
+      "Methods of Chemical Analysis of Iron Ores: Part 12 Determination of Various Elements — Inductively Coupled Plasma Atomic Emission Spectrometric Method",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 228 (Part 26):2026",
+    isTitle:
+      "Methods for Chemical Analysis of Steels: Part 26 Determination of Nickel Content — Flame Atomic Absorption Spectrometric Method",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 228 (Part 27):2026",
+    isTitle:
+      "Methods for Chemical Analysis of Steels: Part 27 Determination of Silicon Content — Inductively Coupled Plasma Atomic Emission Spectrometric Method",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 228 (Part 25):2025",
+    isTitle:
+      "Methods for Chemical Analysis of Steels: Part 25 Determination of Sulphur Content — Infrared Absorption Method After Combustion in an Induction Furnace",
+  },
+];
+
+const petroleumCoalAndRelatedProductsDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 1448 (Part 25/Sec 2):2025",
+    isTitle:
+      "Petroleum and Its Products - Methods of Test Part 25 Glass Capillary Kinematic Viscometers - Section 2 Specifications and Operating Instructions",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 1448 (Part 198):2025",
+    isTitle:
+      "Petroleum and Its Products - Methods of Test Part 198 Determination of Hydrocarbon Types and Oxygenates in Automotive Motor Gasoline and in Ethanol (E85) Automotive Fuel — Multidimensional Gas Chromatography Method",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 17315 (Part 3):2025",
+    isTitle:
+      "Petroleum and Related Products - Precision of Measurement Methods and Results Part 3 Monitoring and Verification of Published Precision Data in Relation to Methods of Test",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 17315 (Part 4):2025",
+    isTitle:
+      "Petroleum and Related Products - Precision of Measurement Methods and Results Part 4 Use of Statistical Control Charts to Validate \"In-Statistical-Control\" Status for the Execution of a Standard Test Method in a Single Laboratory",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 17315 (Part 5):2025",
+    isTitle:
+      "Petroleum and Related Products - Precision of Measurement Methods and Results Part 5 Statistical Assessment of Agreement Between Two Different Measurement Methods That Claim to Measure the Same Property",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 1448 (Part 202):2025",
+    isTitle:
+      "Petroleum and Its Products - Methods of Test Part 202 Determination of Fatty Acid Methyl Esters in Biodiesel Blended Automotive Diesel/Paraffinic Diesel Fuels by High-Performance Liquid Chromatography–Refractive Index Detection",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 1448 (Part 201):2025",
+    isTitle:
+      "Petroleum and Its Products - Methods of Test Part 201 Determination of Oxygenates Such as Ethers, Tertiary Amyl Alcohol and C1 to C4 Alcohols in Motor Gasoline by Gas Chromatography Method",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 1448 (Part 204):2026",
+    isTitle:
+      "Industrial Quenching Oils — Determination of Cooling Characteristics — Nickel-Alloy Probe Test Method",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19689:2026",
+    isTitle:
+      "Petroleum and Its Products - Test Methods Part XXX Determination of Total Volatile Sulphur in Gaseous Hydrocarbons and Liquefied Petroleum Gases Through Ultraviolet Fluorescence Detection",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19688:2026",
+    isTitle:
+      "Lubricants - Methods of Tests — Determination of Wear Preventive Characteristics — Four-Ball Method",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 1448 (Part 207):2019",
+    isTitle:
+      "Petroleum and Its Products - Test Methods Part XX Determination of Aromatic Hydrocarbon Types in Aviation Turbine Fuels, Kerosene Type and Petroleum Distillates — High Performance Liquid Chromatography Method with Refractive Index Detection",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 1448 (Part 209):2019",
+    isTitle:
+      "Petroleum and Its Products - Test Methods Part XX Determination of Fatty Acid Methyl Esters (FAME) Content Derived from Biodiesel Fuel in Aviation Turbine Fuel — GC-MS with Selective Ion Monitoring/Scan Detection Method",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 1448 (Part 213):2026",
+    isTitle:
+      "Petroleum and Its Products - Test Methods — Determination of Elements in Unused Lubricating Greases by Inductively Coupled Plasma Atomic Emission Spectrometer",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 1448 (Part 208):2019",
+    isTitle:
+      "Petroleum and Its Products - Test Methods Part XX Determination of Distillation Characteristics of Petroleum Products by Micro Distillation Method",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 1448 (Part 210):2019",
+    isTitle:
+      "Petroleum and Its Products - Test Methods Part XX Evaluation of Lubricity of Aviation Turbine Fuels by Using the Ball-on-Cylinder Lubricity Evaluator (BOCLE)",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 1448 (Part 211):2019",
+    isTitle:
+      "Petroleum and Its Products - Test Methods Part XX Standard Test Method for Vapor Pressure of Petroleum Products — Mini Method",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 1448 (Part 212):2019",
+    isTitle:
+      "Petroleum and Its Products - Test Methods Part XX Determination of Trace Impurities in Monocyclic Aromatic Hydrocarbons with Carbon Number Separation by Gas Chromatography Method",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19275:2025",
+    isTitle:
+      "Automotive Fuels - Paraffinic Diesel Fuel from Synthesis or Hydrotreatment - Specification",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19486:2026",
+    isTitle:
+      "Hexane Industrial Solvent Grade - Specification",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19850:2026",
+    isTitle:
+      "E22, E25, E27 & E30 Fuel – Admixture of Anhydrous Ethanol and Gasoline — Specification",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19232:2025",
+    isTitle:
+      "Methods for Testing Tar and Bituminous Materials - Determination of Specific Gravity of Bituminous Mixtures",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19487:2025",
+    isTitle:
+      "Safe Handling of Bitumen and Bitumen Products - Code of Practice",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19158:2025",
+    isTitle:
+      "Solid Biofuels - Determination of Minor Elements",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19139:2025",
+    isTitle:
+      "Solid Biofuels – Determination of Major Elements – Al, Ca, Fe, Mg, P, K, Si, Na and Ti",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19410:2026",
+    isTitle:
+      "Solid Biofuels — Sampling",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19370:2025",
+    isTitle:
+      "2,6-Di-Tertiary Butyl Phenol - Specification",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 19377:2025",
+    isTitle:
+      "2,4-Di-Tertiary Butyl Phenol - Specification",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 19345:2026",
+    isTitle:
+      "o-Tertiary Butyl Phenol - Specification",
+  },
+  {
+    sno: 29,
+    isNumber: "IS 19374:2026",
+    isTitle:
+      "p-Tertiary Butyl Phenol - Specification",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 19733:2026",
+    isTitle:
+      "Hexylene Glycol - Specification",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 19286:2025",
+    isTitle:
+      "Aluminium Foil Tapes Application in White Goods Industry Specification",
+  },
+  {
+    sno: 32,
+    isNumber: "IS 19668:2026",
+    isTitle:
+      "Rubber raw natural Guidelines for the specification of technically specified rubber TSR",
+  },
+  {
+    sno: 33,
+    isNumber: "IS 19276:2025",
+    isTitle:
+      "Coumarin - Specification",
+  },
+  {
+    sno: 34,
+    isNumber: "IS 19412:2025",
+    isTitle:
+      "Incense Sticks (Agarbatti) - Specification",
+  },
+  {
+    sno: 35,
+    isNumber: "IS 19086:2026",
+    isTitle:
+      "Oil of Clove Leaves [Syzygium aromaticum (L.) Merr. & L.M. Perry, Syn. Eugenia caryophyllus (Spreng.) Bullock & S.G. Harrison] — Specification",
+  },
+  {
+    sno: 36,
+    isNumber: "IS 19087:2026",
+    isTitle:
+      "Oil of Clove Buds [Syzygium aromaticum (L.) Merr. & L.M. Perry, Syn. Eugenia caryophyllus (Spreng.) Bullock & S.G. Harrison] — Specification",
+  },
+  {
+    sno: 37,
+    isNumber: "IS 19088:2026",
+    isTitle:
+      "Oil of Clove Stems [Syzygium aromaticum (L.) Merr. & L.M. Perry, Syn. Eugenia caryophyllus (Spreng.) Bullock & S.G. Harrison] — Specification",
+  },
+  {
+    sno: 38,
+    isNumber: "IS 19516:2026",
+    isTitle:
+      "Determination of Fatty Acids in Natural and Synthetic Perfumery Materials by Gas Chromatography",
+  },
+  {
+    sno: 39,
+    isNumber: "IS 19270:2025",
+    isTitle:
+      "Cosmetics Microbiology — Evaluation of the Antimicrobial Protection of a Cosmetic Product",
+  },
+  {
+    sno: 40,
+    isNumber: "IS 4707 (Part 3):2025",
+    isTitle:
+      "Classification of Cosmetic Raw Materials and Adjuncts Part 3 List of Preservatives Allowed in Cosmetics with Restriction",
+  },
+  {
+    sno: 41,
+    isNumber: "IS 19685:2026",
+    isTitle:
+      "Sunscreen Cosmetic Products - Specification",
+  },
+  {
+    sno: 42,
+    isNumber: "IS 19681:2026",
+    isTitle:
+      "Face Wash - Specification",
+  },
+  {
+    sno: 43,
+    isNumber: "IS 19683:2026",
+    isTitle:
+      "Face and Body Scrub - Specification",
+  },
+  {
+    sno: 44,
+    isNumber: "IS 19682:2026",
+    isTitle:
+      "Shower Gel Body Wash - Specification",
+  },
+  {
+    sno: 45,
+    isNumber: "IS 19684:2026",
+    isTitle:
+      "Oral Rinses for Cosmetics — Specification",
+  },
+  {
+    sno: 46,
+    isNumber: "IS 19110:2025",
+    isTitle:
+      "Lubricants, Industrial Oils and Related Products (Class L) - Family H (Hydraulic Systems) - Hydraulic Fluids in Categories HFAE, HFAS, HFB, HFC, HFDR and HFDU - Specification",
+  },
+  {
+    sno: 47,
+    isNumber: "IS 19366:2025",
+    isTitle:
+      "Lubricants, Industrial Oils and Related Products (Class L) — Family H (Hydraulic Systems) — Specifications for Hydraulic Fluids in Categories HETG, HEPG, HEES and HEPR",
+  },
+  {
+    sno: 48,
+    isNumber: "IS 19221:2025",
+    isTitle:
+      "Vinyl Sulphone ester of 2,5-Dimethoxyaniline - Specification",
+  },
+  {
+    sno: 49,
+    isNumber: "IS 13360 (Part 3/Sec 13):2025",
+    isTitle:
+      "Plastics — Methods of Testing Part 3 Physical and Dimensional Properties Section 13 Determination of Linear Dimensions of Test Specimens",
+  },
+  {
+    sno: 50,
+    isNumber: "IS 13360 (Part 5/Sec 28/Sub-Sec 2):2025",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 28 Determination of Puncture Impact Behaviour of Rigid Plastics Subsection 2 Instrumented Impact Testing",
+  },
+  {
+    sno: 51,
+    isNumber: "IS 13360 (Part 5/Sec 30):2025",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 30 Determination of Scratch Properties",
+  },
+  {
+    sno: 52,
+    isNumber: "IS 13360 (Part 8/Sec 15):2025",
+    isTitle:
+      "Plastics — Methods of Testing Part 8 Permanence/Chemical Properties Section 15 Determination of Resistance to Environmental Stress Cracking (ESC) — General Guidance",
+  },
+  {
+    sno: 53,
+    isNumber: "IS 13360 (Part 8/Sec 16):2025",
+    isTitle:
+      "Plastics — Methods of Testing Part 8 Performance/Chemical Properties Section 16 Determination of Resistance to Environmental Stress Cracking (ESC) — Slow Strain Rate Method",
+  },
+  {
+    sno: 54,
+    isNumber: "IS 13360 (Part 8/Sec 17):2025",
+    isTitle:
+      "Plastics — Methods of Testing Part 8 Permanence/Chemical Properties Section 17 Determination of Resistance to Environmental Stress Cracking (ESC) — Ball or Pin Impression Method",
+  },
+  {
+    sno: 55,
+    isNumber: "IS 13360 (Part 8/Sec 18):2025",
+    isTitle:
+      "Plastics — Methods of Testing Part 8 Permanence/Chemical Properties Section 18 Determination of Resistance to Environmental Stress Cracking (ESC) — Constant Tensile Deformation Method",
+  },
+  {
+    sno: 56,
+    isNumber: "IS 19048:2025",
+    isTitle:
+      "Plastics — Verification of Pendulum Impact-Testing Machines — Charpy, Izod and Tensile Impact-Testing",
+  },
+  {
+    sno: 57,
+    isNumber: "IS 19166:2025",
+    isTitle:
+      "Plastics — Methodology for Assessing Polymer Photoageing by FTIR and UV-Visible Spectroscopy",
+  },
+  {
+    sno: 58,
+    isNumber: "IS 19170:2025",
+    isTitle:
+      "Plastics — Small Enclosures for Conditioning and Testing Using Aqueous Solutions to Maintain the Humidity at a Constant Value",
+  },
+  {
+    sno: 59,
+    isNumber: "IS 13360 (Part 5/Sec 29):2025",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 29 Determination of Tensile Properties at High Strain Rates",
+  },
+  {
+    sno: 60,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 1):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 1 General Principles",
+  },
+  {
+    sno: 61,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 2):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 2 Torsion-Pendulum Method",
+  },
+  {
+    sno: 62,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 3):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 3 Flexural Vibration — Resonance-Curve Method",
+  },
+  {
+    sno: 63,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 4):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 4 Tensile Vibration — Non-Resonance Method",
+  },
+  {
+    sno: 64,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 5):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 5 Flexural Vibration — Non-Resonance Method",
+  },
+  {
+    sno: 65,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 6):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 6 Shear Vibration — Non-Resonance Method",
+  },
+  {
+    sno: 66,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 7):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 7 Torsional Vibration — Non-Resonance Method",
+  },
+  {
+    sno: 67,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 8):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 8 Longitudinal and Shear Vibration — Wave-Propagation Method",
+  },
+  {
+    sno: 68,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 9):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 9 Tensile Vibration — Sonic-Pulse Propagation Method",
+  },
+  {
+    sno: 69,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 10):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 10 Complex Shear Viscosity Using a Parallel-Plate Oscillatory Rheometer",
+  },
+  {
+    sno: 70,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 11):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 11 Glass Transition Temperature",
+  },
+  {
+    sno: 71,
+    isNumber: "IS 13360 (Part 5/Sec 31/Sub-Sec 12):2026",
+    isTitle:
+      "Plastics — Methods of Testing Part 5 Mechanical Properties Section 31 Determination of Dynamic Mechanical Properties Subsection 12 Compressive Vibration — Non-Resonance Method",
+  },
+  {
+    sno: 72,
+    isNumber: "IS 19694:2026",
+    isTitle:
+      "Plastics — Evaluation of the Action of Microorganisms",
+  },
+  {
+    sno: 73,
+    isNumber: "IS 9873 (Part 12):2025",
+    isTitle:
+      "SAFETY OF TOYS PART 12: SAFETY ASPECTS RELATED TO MECHANICAL AND PHYSICAL PROPERTIES COMPARISON OF ISO 8124-1 EN 71-1 AND ASTM F963",
+  },
+];
+
+const productionAndGeneralEngineeringDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19661 (Part 1):2026",
+    isTitle:
+      "Safety Information for the Content of Piping Systems and Tanks Part 1: Piping Systems",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19661 (Part 2):2026",
+    isTitle:
+      "Safety Information for the Content of Piping Systems and Tanks Part 2: Tanks",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19666:2026",
+    isTitle:
+      "Graphical Symbols — Safety Colours and Safety Signs — Natural Disaster Safety Way Guidance System",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 16681 (Part 4):2026",
+    isTitle:
+      "Public Information Guidance Systems Part 4: Installation and Assessment",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 19708:2026",
+    isTitle:
+      "Graphical Symbols — Safety Colours and Safety Signs — Guidance for the Development and Use of a Safety Signing System",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 19524:2026",
+    isTitle:
+      "Hydraulic Impulse Tools — Specification",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 19595 (Part 1):2026",
+    isTitle:
+      "Hand-held Non-Electric Power Tools — Safety Requirements Part 1: Assembly Power Tools for Non-Threaded Mechanical Fasteners",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19595 (Part 3):2026",
+    isTitle:
+      "Hand-held Non-Electric Power Tools — Safety Requirements Part 3: Drills and Tappers",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19595 (Part 7):2026",
+    isTitle:
+      "Hand-held Non-Electric Power Tools — Safety Requirements Part 7: Grinders",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19595 (Part 8):2026",
+    isTitle:
+      "Hand-held Non-Electric Power Tools — Safety Requirements Part 8: Sanders and Polishers",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19537:2026",
+    isTitle:
+      "Hydraulic Torque Wrench — Specification",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19702:2026",
+    isTitle:
+      "Shanks for Pneumatic Tools and Fitting of Chuck Bushings — Dimensions",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19578:2026",
+    isTitle:
+      "Coated abrasives -- Cylindrical sleeves",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19382:2025",
+    isTitle:
+      "Rolling Bearings — Taper Rolling Bearings — Tapered Rollers — Specification",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19579:2026",
+    isTitle:
+      "Rolling Bearings — Cast and Pressed Housings for Insert Bearings — Boundary Dimensions and Tolerances",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19713:2026",
+    isTitle:
+      "Plain Bearings — Handling of Plain Bearings",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 19709:2026",
+    isTitle:
+      "Plain Bearings — Sintered Bushes — Dimensions and Tolerances",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19730:2026",
+    isTitle:
+      "Reuse, Recycling and Disposal of Bearing Materials",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19732 (Part 1):2026",
+    isTitle:
+      "Rolling Bearings — Measuring Methods for Vibration Part 1: Fundamentals",
+  },
+  {
+    sno: 20,
+    isNumber: "IS/ISO 10218-2:2025",
+    isTitle:
+      "Robotics Safety Requirements: Part 2 Industrial Robot Applications and Robot Cells",
+  },
+  {
+    sno: 21,
+    isNumber: "IS/ISO 10218-1:2025",
+    isTitle:
+      "Robotics Safety Requirements: Part 1 Industrial Robots",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19601:2026",
+    isTitle:
+      "Robotics — Test Methods for Exoskeleton-Type Walking RACA Robot",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19701 (Part 1):2026",
+    isTitle:
+      "Automation Systems and Integration — Nuclear Digital Ecosystem Part 1: Overview and Framework",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 17192 (Part 3):2026",
+    isTitle:
+      "Robotics — Performance Criteria and Related Test Methods for Service Robots Part 3: Manipulation",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19758:2026",
+    isTitle:
+      "Windsocks -- Specification",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19269:2025",
+    isTitle:
+      "Time-measuring instruments -- Photoluminescent deposits -- Test methods and requirements",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 14439 (Part 4):2025",
+    isTitle:
+      "Legal Metrology — Gas Volume Meters: Part 4 Thermal Mass Flow Based Gas Meters — Specification",
+  },
+  {
+    sno: 28,
+    isNumber: "SP 4:2025",
+    isTitle:
+      "Revised State of the Art of Metric System in India (An Update to the SP 4:1969 Metric Change in India)",
+  },
+  {
+    sno: 29,
+    isNumber: "SP 74:2025",
+    isTitle:
+      "Revised State of the Art of Metric System in India (An Update to the SP 4:1969 Metric Change in India)",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 19695:2026",
+    isTitle:
+      "Petroleum and Liquid Petroleum Products — Calibration of Spherical Tanks — External Electro-Optical Distance-Ranging Method",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 18538 (Part 2):2026",
+    isTitle:
+      "Gaseous Hydrogen — Fuelling Stations Part 2: Dispensers and Dispensing Systems (ISO 19880-2:2025, MOD)",
+  },
+  {
+    sno: 32,
+    isNumber: "IS 19445:2025",
+    isTitle:
+      "Bomb Disposal Systems Performance Evaluation and Requirements",
+  },
+  {
+    sno: 33,
+    isNumber: "IS 19665 (Part 1):2026",
+    isTitle:
+      "Assembly Tools for Screws and Nuts — Machine-Operated Screwdriver Bits Part 1: Screwdriver Bits for Slotted Head Screws",
+  },
+  {
+    sno: 34,
+    isNumber: "IS 19665 (Part 2):2026",
+    isTitle:
+      "Assembly Tools for Screws and Nuts — Machine-Operated Screwdriver Bits Part 2: Screwdriver Bits for Cross-Recessed Head Screws",
+  },
+  {
+    sno: 35,
+    isNumber: "IS 19665 (Part 3):2026",
+    isTitle:
+      "Assembly Tools for Screws and Nuts — Machine-Operated Screwdriver Bits Part 3: Screwdriver Bits for Hexagon Socket Screws",
+  },
+  {
+    sno: 36,
+    isNumber: "IS 19725:2026",
+    isTitle:
+      "Assembly Tools for Screws and Nuts — Single-Head Engineers Wrenches for Lower Torque Applications — Maximum Outside Dimensions of Heads and Test Torques",
+  },
+  {
+    sno: 37,
+    isNumber: "IS 19705:2026",
+    isTitle:
+      "Spanners and Wrenches — Spline Drive Ends for Power Socket Wrenches",
+  },
+  {
+    sno: 38,
+    isNumber: "IS 19484:2026",
+    isTitle:
+      "Industrial Staples — Specification",
+  },
+  {
+    sno: 39,
+    isNumber: "IS 16506 (Part 8):2026",
+    isTitle:
+      "Optics and Photonics — Optical Coatings : Part 8 Minimum Requirements for Coatings Used for Laser Optics",
+  },
+  {
+    sno: 40,
+    isNumber: "IS 19312:2025",
+    isTitle:
+      "Inflatable Balls — Specification",
+  },
+  {
+    sno: 41,
+    isNumber: "IS 19597:2026",
+    isTitle:
+      "Landing Mats Used in Gymnastics — Specification",
+  },
+];
+
+const serviceSectorDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19610:2026",
+    isTitle:
+      "TRANSPORTATION OF CLOSED BODY VEHICLES GUIDELINES",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19381:2025",
+    isTitle:
+      "Adventure Tourism — Cyclotourism Requirements and Recommendations",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19384:2025",
+    isTitle:
+      "Tourism and Related Services — Online Travel Agency (OTA) Guidelines for Online Accommodation Booking Platform Services",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 19385:2025",
+    isTitle:
+      "Tourism and Related Services — Restaurants and Catering — Vocabulary",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 19625:2026",
+    isTitle:
+      "Organization of Exhibitions — Recommendations and Requirements",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 19581:2026",
+    isTitle:
+      "Sustainable Beach Operations — Requirements",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 19633:2026",
+    isTitle:
+      "Sustainable Tourism — Indicators for Organizations in the Tourism Value Chain — Requirements and Guidance for Use",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19674:2026",
+    isTitle:
+      "Financial Services — Third-Party Payment Service Providers",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19673:2026",
+    isTitle:
+      "Financial Services — Security Information for PKI in Blockchain and DLT Implementations",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19671:2026",
+    isTitle:
+      "Financial Services — Code-Scanning Payment Security",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19672:2026",
+    isTitle:
+      "Security Aspects for Digital Currencies",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19670:2026",
+    isTitle:
+      "Financial Services — Biometrics — Security Framework",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19418:2025",
+    isTitle:
+      "CAMPUS FACILITIES AND ACCOMMODATION SERVICES FOR EDUCATIONAL ORGANIZATIONS — REQUIREMENTS",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19493:2025",
+    isTitle:
+      "Healthcare Services – Format of Hospital Bills – Requirements and Recommendations",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19278 (Part 1):2025",
+    isTitle:
+      "Electronic Signatures and Infrastructures (ESI) — Procedures for Creation and Validation of AdES Digital Signatures Part 1 Creation and Validation",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19332:2025",
+    isTitle:
+      "Electronic Signatures and Infrastructures ESI The framework for standardization of signatures Definitions and abbreviations",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 19598:2026",
+    isTitle:
+      "E-COMMERCE- PRINCIPLES AND GUIDELINES FOR SELF-GOVERNANCE",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19408:2025",
+    isTitle:
+      "Audit Data Collection Customs and Indirect Tax Extension",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19446:2025",
+    isTitle:
+      "Audit data collection extension Government regulated financial reports and payroll",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19690:2026",
+    isTitle:
+      "VIDEO AND DIGITAL GAMES – AGE-RATING AND CONTENT DESCRIPTOR LABELS – SPECIFICATIONS",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19692:2026",
+    isTitle:
+      "MEDIA AND ENTERTAINMENT SOUND AND MUSIC SERVICES VOCABULARY",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19529:2026",
+    isTitle:
+      "MAINTENANCE AND REPAIR SERVICES REQUIREMENTS",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19591:2026",
+    isTitle:
+      "Cold Chain Logistics - Vocabulary",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19696:2026",
+    isTitle:
+      "Requirements and Recommendations for Food Traceability in Cold Chain Logistics",
+  },
+];
+
+const transportEngineeringDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19520 (Part 3):2026",
+    isTitle:
+      "Internal Combustion Engines — Piston Rings — Part 3: Coil-Spring-Loaded Oil Control Rings Made of Steel",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19521:2026",
+    isTitle:
+      "Internal Combustion Engines — Piston Rings — Expander Rail Oil-Control Rings",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19538:2026",
+    isTitle:
+      "Internal Combustion Engines — Piston Rings — Oil Control Rings",
+  },
+  {
+    sno: 4,
+    isNumber: "IS/ISO 6621-5:2020",
+    isTitle:
+      "Internal Combustion Engines — Piston Rings — Part 5: Quality Requirements",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 17128 (Part 4):2026",
+    isTitle:
+      "Automotive Vehicles — Vehicle Dynamics Test Methods Part 4: Ride Comfort Measurements",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 17128 (Part 5):2026",
+    isTitle:
+      "Automotive Vehicles — Vehicle Dynamics Test Methods Part 5: Subjective Evaluation of Vehicle Ride, Handling and Steering",
+  },
+  {
+    sno: 7,
+    isNumber: "ISO/SAE 21434:2021",
+    isTitle:
+      "ROAD VEHICLES CYBER SECURITY ENGINEERING",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19212:2025",
+    isTitle:
+      "SPACE SYSTEMS – LAUNCH PAD AND INTEGRATION SITE – FACILITY, SYSTEM AND EQUIPMENT FAILURE ANALYSIS",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19216:2025",
+    isTitle:
+      "SPACE SYSTEMS LIQUID ROCKET ENGINES AND TEST STANDS TERMS AND DEFINITIONS",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 19215:2025",
+    isTitle:
+      "Space Systems – The Measured Parameters at Firing Bench and Flight Tests of Liquid Rocket Engines",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19224:2025",
+    isTitle:
+      "SPACE SYSTEMS – BELLOWS – DESIGN AND OPERATION",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19266:2025",
+    isTitle:
+      "SPACE SYSTEMS – ORBIT DETERMINATION AND ESTIMATION – PROCESS FOR DESCRIBING TECHNIQUES",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19271:2025",
+    isTitle:
+      "Space Systems – Structural Design – Loads and Induced Environment",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19289:2025",
+    isTitle:
+      "SPACE SYSTEMS – RISK MANAGEMENT",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19290:2025",
+    isTitle:
+      "SPACE SYSTEMS PROJECT REVIEWS",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19302:2025",
+    isTitle:
+      "SPACE SYSTEMS – SPACE LAUNCH COMPLEXES, INTEGRATION SITES AND OTHER FACILITIES – GENERAL TESTING GUIDELINES",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 19265:2025",
+    isTitle:
+      "SPACE SYSTEMS – LITHIUM ION BATTERY FOR SPACE VEHICLES – DESIGN AND VERIFICATION REQUIREMENTS",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19217:2025",
+    isTitle:
+      "SPACE SYSTEMS – DESIGN QUALIFICATION AND ACCEPTANCE TESTS OF SMALL SPACECRAFT AND UNITS",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19258:2025",
+    isTitle:
+      "SPACE SYSTEMS – QUALIFICATION ASSESSMENT",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19288:2025",
+    isTitle:
+      "SPACE SYSTEMS – INTEGRATED LOGISTIC SUPPORT",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19065 (Part 4):2025",
+    isTitle:
+      "SPACE SYSTEMS – SURFACE CLEANLINESS OF FLUID SYSTEMS – PART 4: ROUGH-CLEANING PROCESSES",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19211:2025",
+    isTitle:
+      "Space Systems – Structural Design – Determination of Loading Levels for Static Qualification Testing of Launch Vehicles",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19065 (Part 6):2025",
+    isTitle:
+      "SPACE SYSTEMS – SURFACE CLEANLINESS OF FLUID SYSTEMS – PART 6: PRECISION-CLEANING PROCESSES",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19280:2025",
+    isTitle:
+      "SPACE SYSTEMS – LAUNCH-VEHICLE-TO-SPACECRAFT INTERFACES",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19299:2025",
+    isTitle:
+      "SPACE SYSTEMS – CONTAMINATION AND CLEANLINESS CONTROL",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19297:2025",
+    isTitle:
+      "Ships and Marine Technology Cyber Safety",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 8007 (Part 3):2026",
+    isTitle:
+      "Road vehicles Mechanical couplings between tractors and semi-trailers Part 3: Requirements for semi-trailer contact area to fifth wheel",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 19413:2025",
+    isTitle:
+      "Intelligent Traffic Management System Components — General Specifications for Smart Traffic Signalling Systems",
+  },
+];
+
+const textilesDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19441:2025",
+    isTitle:
+      "Textiles — Smoothness Characteristics of Fabric — Methods of Test",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19577 (Part 1):2026",
+    isTitle:
+      "Textiles — Test Methods for Evaluating the Electrostatic Propensity of Fabrics — Part 1: Test Method Using Corona Charging",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19577 (Part 2):2026",
+    isTitle:
+      "Textiles — Test Methods for Evaluating the Electrostatic Propensity of Fabrics — Part 2: Test Method Using Rotary Mechanical Friction",
+  },
+  {
+    sno: 4,
+    isNumber: "IS 19577 (Part 3):2026",
+    isTitle:
+      "Textiles — Test Methods for Evaluating the Electrostatic Propensity of Fabrics — Part 3: Test Method Using Manual Friction",
+  },
+  {
+    sno: 5,
+    isNumber: "IS 19577 (Part 4):2026",
+    isTitle:
+      "Textiles — Test Methods for Evaluating the Electrostatic Propensity of Fabrics — Part 4: Test Method Using Horizontal Mechanical Friction",
+  },
+  {
+    sno: 6,
+    isNumber: "IS 1966 (Part 3):2026",
+    isTitle:
+      "Textiles — Bursting Properties of Fabrics — Part 3: Ball Bursting Method for Determination of Bursting Strength and Bursting Distension",
+  },
+  {
+    sno: 7,
+    isNumber: "IS 19728:2026",
+    isTitle:
+      "Textiles — Jute Bags for filling 5 kg, 10 kg and 15 kg Foodgrains — Specification",
+  },
+  {
+    sno: 8,
+    isNumber: "IS 19357:2025",
+    isTitle:
+      "Textile Floor Coverings — State of the Art on Maintenance and Cleaning",
+  },
+  {
+    sno: 9,
+    isNumber: "IS 19699:2026",
+    isTitle:
+      "Textile Floor Coverings — Broadloom Woven Carpet — Specification",
+  },
+  {
+    sno: 10,
+    isNumber: "IS 17260 (Part 2):2026",
+    isTitle:
+      "Textile Floor Coverings — Production of Changes in Appearance — Part 2: Hexapod Tumbler Test (First Revision)",
+  },
+  {
+    sno: 11,
+    isNumber: "IS 19712:2026",
+    isTitle:
+      "Textiles — Determination of Dimensional Change of Fabrics — Accelerated Machine Method",
+  },
+  {
+    sno: 12,
+    isNumber: "IS 19703:2026",
+    isTitle:
+      "Textiles — Method of Test — Determination of Polycyclic Aromatic Hydrocarbons After Toluene Extraction by Gas Chromatography–Mass Spectrometry",
+  },
+  {
+    sno: 13,
+    isNumber: "IS 19754:2026",
+    isTitle:
+      "Textiles — Determination of Dyes After Methanol Extraction",
+  },
+  {
+    sno: 14,
+    isNumber: "IS 19704:2026",
+    isTitle:
+      "Jute Packaging Material — Determination of Mineral Oil Saturated Hydrocarbons (MOSH) and Mineral Oil Aromatic Hydrocarbons (MOAH) with Online-Coupled High-Performance Liquid Chromatography–Gas Chromatography–Flame Ionization Detection (HPLC-GC-FID) Analysis",
+  },
+  {
+    sno: 15,
+    isNumber: "IS 19755:2026",
+    isTitle:
+      "Textiles — Determination of Pesticide Residues Content",
+  },
+  {
+    sno: 16,
+    isNumber: "IS 19777:2026",
+    isTitle:
+      "Textiles — Determination of Index Ingredient in Coloured Textiles Dyed with Himalayan Rhubarb",
+  },
+  {
+    sno: 17,
+    isNumber: "IS 19776:2026",
+    isTitle:
+      "Textiles — Determination of Index Ingredient in Coloured Textiles Dyed with Hibiscus",
+  },
+  {
+    sno: 18,
+    isNumber: "IS 19414:2025",
+    isTitle:
+      "Textiles - Helideck Landing Net Made from Sisal or Manila Ropes - Specification",
+  },
+  {
+    sno: 19,
+    isNumber: "IS 19387:2025",
+    isTitle:
+      "Textiles — Single Jersey Cotton, Synthetic and Blended Leggings — Specification",
+  },
+  {
+    sno: 20,
+    isNumber: "IS 19388:2025",
+    isTitle:
+      "Textiles — Single Jersey Cotton, Synthetic and Blended Shorts — Specification",
+  },
+  {
+    sno: 21,
+    isNumber: "IS 19373:2025",
+    isTitle:
+      "Textiles — Single Jersey Cotton, Synthetic and Blended Women's Stockings — Specification",
+  },
+  {
+    sno: 22,
+    isNumber: "IS 19782:2026",
+    isTitle:
+      "Textiles — Knitted Pyjamas — Specification",
+  },
+  {
+    sno: 23,
+    isNumber: "IS 19774:2026",
+    isTitle:
+      "TEXTILES — BAXTER FLYER FOR SLIP DRAFT JUTE SPINNING FRAME — SPECIFICATION",
+  },
+  {
+    sno: 24,
+    isNumber: "IS 19784:2026",
+    isTitle:
+      "Fish Cage Net Structures Used in Aquaculture — Glossary of Terms",
+  },
+  {
+    sno: 25,
+    isNumber: "IS 19523:2026",
+    isTitle:
+      "Textiles — Children Apparel — Safety Requirements",
+  },
+  {
+    sno: 26,
+    isNumber: "IS 19594:2026",
+    isTitle:
+      "Textiles — Woven Trouser — Specification",
+  },
+  {
+    sno: 27,
+    isNumber: "IS 19593:2026",
+    isTitle:
+      "Textiles — Woven Shirt — Specification",
+  },
+  {
+    sno: 28,
+    isNumber: "IS 19662:2026",
+    isTitle:
+      "Textiles — Field Service Cap — Specification",
+  },
+  {
+    sno: 29,
+    isNumber: "IS 19596:2026",
+    isTitle:
+      "Textiles — Filled Jacket — Specification",
+  },
+  {
+    sno: 30,
+    isNumber: "IS 19602:2026",
+    isTitle:
+      "Textiles — Peak Cap — Specification",
+  },
+  {
+    sno: 31,
+    isNumber: "IS 18305 (Part 3):2026",
+    isTitle:
+      "Performance Evaluation Protocol for Digital Fitting Systems — Part 3: Digital Fitting Performance — Gap",
+  },
+  {
+    sno: 32,
+    isNumber: "IS/ISO 8559-4:2023",
+    isTitle:
+      "Size Designation of Clothes — Part 4: Determination of the Coverage Ratios of Body Measurement Tables",
+  },
+  {
+    sno: 33,
+    isNumber: "IS/ISO 8559-5:2023",
+    isTitle:
+      "Size Designation of Clothes — Part 5: Anthropometric Measurements for the Head and Face",
+  },
+  {
+    sno: 34,
+    isNumber: "IS 19727:2026",
+    isTitle:
+      "TEXTILES — COIR BASED GREEN ROOF MODULE — SPECIFICATION",
+  },
+  {
+    sno: 35,
+    isNumber: "IS 19660:2026",
+    isTitle:
+      "Determination of Long-Term Flow of Geosynthetic Drains",
+  },
+  {
+    sno: 36,
+    isNumber: "IS 19764 (Part 2):2026",
+    isTitle:
+      "Geosynthetics — Determination of Compression Behaviour — Part 2: Determination of Short-Term Compression Behaviour",
+  },
+  {
+    sno: 37,
+    isNumber: "IS 19664:2026",
+    isTitle:
+      "Geosynthetics — Guidelines for the Assessment of Durability",
+  },
+  {
+    sno: 38,
+    isNumber: "IS 19663:2026",
+    isTitle:
+      "Geosynthetics — Test Method for the Determination of Water Discharge Capacity for Prefabricated Vertical Drains",
+  },
+  {
+    sno: 39,
+    isNumber: "IS 19498:2025",
+    isTitle:
+      "Textiles — Treated Synthetic Fabrics for Conveyor Belts — Specification",
+  },
+  {
+    sno: 40,
+    isNumber: "IS 19463:2025",
+    isTitle:
+      "Agro Textiles — High Density Polyethylene (HDPE) Woven Dry Fodder Storage Bags — Specification",
+  },
+  {
+    sno: 41,
+    isNumber: "IS 19706:2026",
+    isTitle:
+      "Medical Textiles — Scrub Suit — Specification",
+  },
+  {
+    sno: 42,
+    isNumber: "IS 19393:2026",
+    isTitle:
+      "Textiles - Sports Ropes - Specification",
+  },
+  {
+    sno: 43,
+    isNumber: "IS 19656:2026",
+    isTitle:
+      "TEXTILES — GREIGE AND DIPPED POLYESTER TYRE CORD FABRIC FOR AUTOMOTIVE TYRES — SPECIFICATION",
+  },
+  {
+    sno: 44,
+    isNumber: "IS 19780:2026",
+    isTitle:
+      "TEXTILES — WOVEN CLOTH LABELS — SPECIFICATION",
+  },
+  {
+    sno: 45,
+    isNumber: "IS 19436:2025",
+    isTitle:
+      "Textiles Smart Textiles Test Method for Sheet Resistance of Conductive Textiles using Non-Contact Type",
+  },
+  {
+    sno: 46,
+    isNumber: "IS 19437:2025",
+    isTitle:
+      "TEXTILES AND TEXTILE PRODUCTS SMART INTELLIGENT TEXTILES DEFINITIONS CATEGORISATION APPLICATIONS AND STANDARDIZATION NEEDS",
+  },
+];
+
+const waterResourcesDepartmentStandardsData = [
+  {
+    sno: 1,
+    isNumber: "IS 19738:2026",
+    isTitle:
+      "Parameters and Assessment Criteria for Downstream Flow to Maintain Ecological Balance — Guidelines",
+  },
+  {
+    sno: 2,
+    isNumber: "IS 19744:2026",
+    isTitle:
+      "Preparation of Catchment Area Treatment (CAT) Plan — Guidelines",
+  },
+  {
+    sno: 3,
+    isNumber: "IS 19411:2026",
+    isTitle: "GLOSSARY OF TERMS RELATED TO COASTAL ENGINEERING",
+  },
+];
+
 const DepartmentStandardsTable = ({ data }) => {
   const [showAllRows, setShowAllRows] = useState(false);
   const totalRows = data.length;
@@ -4167,11 +5611,9 @@ const MainContentLeft = () => {
 
 {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */}
 
-
-
 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
   Management and Systems Department (MSD)
 </h2>
 <p className="text-gray-600 text-base font-geist mb-4">
@@ -4219,12 +5661,9 @@ const MainContentLeft = () => {
         />
 
 {/* ---------------------------------------------------------------------------------------------------- */}
+<div className="h-px w-full bg-gray-300 my-6"></div>
 
-
-
-
-
-<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
           Metallurgical Engineering Department (MTD)
         </h2>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -4257,18 +5696,17 @@ const MainContentLeft = () => {
           BIS Certification
         </h3>
 
+    {/* table of upcoming products of Metallurgical Engineering Department under BIS Certification */}
         <DepartmentStandardsTable
-          data={medicalEquipmentAndHospitalPlanningDepartmentStandardsData}
+          data={metallurgicalEngineeringDepartmentStandardsData}
         />
-       
+
 {/* ------------------------------------------------------------------------------------------------------------------------------- */}
       
 
-
-
 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
   Petroleum, Coal and Related Products Department (PCD)
 </h2>
 <p className="text-gray-600 text-base font-geist mb-4">
@@ -4307,21 +5745,16 @@ const MainContentLeft = () => {
   Department under BIS Certification
 </h3>
 
-{/* table of upcoming products of Management and Systems Department under BIS Certification */}
-<DepartmentStandardsTable
-          data={managementAndSystemsDepartmentStandardsData}
+{/* table of upcoming products of Petroleum, Coal and Related Products Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={petroleumCoalAndRelatedProductsDepartmentStandardsData}
         />
 
-
-        {/* --------------------------------------------------------------------------------------------------------------- */}
-
-
-
-
+{/* --------------------------------------------------------------------------------------------------------------- */}
 
 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
   Production and General Engineering Department (PGD)
 </h2>
 <p className="text-gray-600 text-base font-geist mb-4">
@@ -4353,18 +5786,17 @@ const MainContentLeft = () => {
   Department under BIS Certification
 </h3>
 
-{/* table of upcoming products of Medical Equipment and Hospital Planning Department under BIS Certification */}
-<DepartmentStandardsTable
-          data={medicalEquipmentAndHospitalPlanningDepartmentStandardsData}
+{/* table of upcoming products of Production and General Engineering Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={productionAndGeneralEngineeringDepartmentStandardsData}
         />
 
-
-        {/* ----------------------------------------------------------------------------------- */}
+  {/* ----------------------------------------------------------------------------------- */}
 
 
 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
   Service Sector Department (SSD)
 </h2>
 <p className="text-gray-600 text-base font-geist mb-4">
@@ -4397,19 +5829,15 @@ const MainContentLeft = () => {
   Certification
 </h3>
 
-   {/* table of upcoming products of Electronics and Information Technology Department under BIS Certification */}
-   <DepartmentStandardsTable
-          data={electronicsAndInformationTechnologyDepartmentStandardsData} 
-        />
-
-
+{/* table of upcoming products of Service Sector Department under BIS Certification */}
+        <DepartmentStandardsTable data={serviceSectorDepartmentStandardsData} />
 
 {/* -------------------------------------------------------------------------------------------------------------------------- */}
 
 
 <div className="h-px w-full bg-gray-300 my-6"></div>
 
-<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
   Transport Engineering Department (TED)
 </h2>
 <p className="text-gray-600 text-base font-geist mb-4">
@@ -4458,11 +5886,12 @@ const MainContentLeft = () => {
   Certification
 </h3>
 
-{/* table of upcoming products of Management and Systems Department under BIS Certification */}
-<DepartmentStandardsTable
-          data={managementAndSystemsDepartmentStandardsData}
+{/* table of upcoming products of Transport Engineering Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={transportEngineeringDepartmentStandardsData}
         />
-        {/* ------------------------------------------------------------------------------------------------ */}
+
+  {/* ------------------------------------------------------------------------------------------------ */}
 
        
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -4503,19 +5932,15 @@ const MainContentLeft = () => {
           List of Upcoming products of Textile Department under BIS Certification
         </h3>
 
-        
-{/* table of upcoming products of Medical Equipment and Hospital Planning Department under BIS Certification */}
-<DepartmentStandardsTable
-          data={medicalEquipmentAndHospitalPlanningDepartmentStandardsData}
-        />
-
+{/* table of upcoming products of Textiles Department under BIS Certification */}
+        <DepartmentStandardsTable data={textilesDepartmentStandardsData} />
 
         {/* ----------------------------------------------------------------------------------------------- */}
 
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-<h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+<h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-2">
   Water Resources Department (WRD)
 </h2>
 <p className="text-gray-600 text-base font-geist mb-4">
@@ -4544,12 +5969,13 @@ const MainContentLeft = () => {
   Certification
 </h3>
 
-<div className="h-px w-full bg-gray-300 my-6"></div>
 
-{/* table of upcoming products of Management and Systems Department under BIS Certification */}
-<DepartmentStandardsTable
-          data={managementAndSystemsDepartmentStandardsData}
+
+{/* table of upcoming products of Water Resources Department under BIS Certification */}
+        <DepartmentStandardsTable
+          data={waterResourcesDepartmentStandardsData}
         />
+<div className="h-px w-full bg-gray-300 my-6"></div>
 {/* --------------------------------------------------------------------------------- */}
      
 

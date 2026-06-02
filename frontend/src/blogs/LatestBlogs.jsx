@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 103,
+    color: "#0284C7",
+    title:
+      "BIS Certification for Toys in India – Complete Guide to IS 9873  & IS 15644",
+    description:
+      "Get BIS Certificate for Toys under IS 9873 and IS 15644. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/bis-license-for-toys",
+    date: "3 June 2026",
+  },
+  {
     id: 102,
     color: "#0284C7",
     title:

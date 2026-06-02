@@ -117,6 +117,8 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-fmcs-certification-process-digitalization",
     "/ministry-updates/bis-manak-samachar-may-2026",
     "/ministry-updates/bis-new-standards-2026-department-wise-indian-standards",
+    // ALL INDIA FIRST BIS LICENSE PATH
+    "/all-india-first/bis-license-for-respiratory-protective-devices-is-19089-2025",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -260,6 +262,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/cement-flat-sheets-is-2096",
     "/blogs/isi-products/cement-pressure-pipes-and-joints-is-1592",
     "/blogs/isi-products/bayonet-lamp-holders-is-1258",
+    "/blogs/isi-products/bis-license-for-toys",
     "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459",
     "/blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1",
     "/blogs/isi-products/evaporative-air-coolers-is-3315",
@@ -1085,6 +1088,13 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS New Upcoming Indian Standards 2026 – Complete Department-Wise Indian Standards & IS Codes Guide - Ministry Updates (English)";
+    // ALL INDIA FIRST BIS LICENSE PATH
+    if (
+      path.includes(
+        "/all-india-first/bis-license-for-respiratory-protective-devices-is-19089-2025"
+      )
+    )
+      return "All India first BIS License for Respiratory Protective Devices under IS 19089:2025 - India No 1 (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -1400,6 +1410,8 @@ const ContactFormServicesRightSideContentEng = () => {
       path.includes("/blogs/isi-products/bayonet-lamp-holders-is-1258")
     )
       return "BIS Certificate for Bayonet Lamp Holders - English Page";
+    if (path.includes("/blogs/isi-products/bis-license-for-toys"))
+      return "BIS Certificate for Toys | Complete Guide - IS 9873 and IS 15644 - English Page";
     if (
       path.includes(
         "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459"

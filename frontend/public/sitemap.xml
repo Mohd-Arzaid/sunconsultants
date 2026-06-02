@@ -5613,6 +5613,13 @@
     <priority>0.8</priority>
     <lastmod>2026-05-09</lastmod>
   </url>
+  <!-- BIS Certification for Toys in India - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/bis-license-for-toys</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-03</lastmod>
+  </url>
   <!-- BIS Certification for Asbestos Cement Pressure Pipes and Joints - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459</loc>
@@ -6817,6 +6824,21 @@
     <lastmod>2026-05-28</lastmod>
   </url>
   <!-- Ministry Updates Pages - End -->
+
+  <!-- India No 1 Routes -->
+  <url>
+    <loc>https://bis-certifications.com/all-india-first</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/all-india-first/bis-license-for-respiratory-protective-devices-is-19089-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-29</lastmod>
+  </url>
+  <!-- India No 1 Routes - End -->
   
   <!-- Latest Notification Pages -->
   <url>

@@ -67,6 +67,7 @@ import { BISFMPagesRoutes } from "./routes/BISFMPagesRoutes";
 import { MinistryUpdatesRoutes } from "./routes/MinistryUpdatesRoutes";
 import { NotificationsRoutes } from "./routes/NotificationsRoutes";
 import { BlogRoutes } from "./routes/BlogRoutes";
+import { IndiaNo1Routes } from "./routes/IndiaNo1Routes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
 import FaqsPageRoutes from "./routes/FaqsPageRoutes";
 
@@ -227,6 +228,9 @@ function App() {
         {/* Blog Routes */}
         <Route path="Blogs" element={<LatestBlogs />} />
         {BlogRoutes()}
+
+        {/* India No 1 Routes */}
+        {IndiaNo1Routes()}
 
         {/* SchemeX Products Routes */}
         <Route path="SchemeX-products" element={<SchemeXProducts />} />

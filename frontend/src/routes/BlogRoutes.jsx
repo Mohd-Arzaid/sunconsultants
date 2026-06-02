@@ -376,6 +376,9 @@ const BISCertificationforOutdoorBarbecues = lazy(() =>
 const BISCertificateforToiletAppliances = lazy(() =>
   import("@/blogs/BISCertificationforToiletAppliances")
 );
+const BISCertificationforToysinIndia = lazy(() =>
+  import("@/blogs/BISCertificationforToysinIndia")
+);
 const BISCertificateForWorkChairs = lazy(() =>
   import("@/blogs/BISCertificateForWorkChairs/BISCertificateForWorkChairs")
 );
@@ -1942,6 +1945,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateforToiletAppliances />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/bis-license-for-toys"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforToysinIndia />
           </Suspense>
         }
       />

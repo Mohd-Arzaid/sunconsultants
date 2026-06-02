@@ -256,6 +256,12 @@ export const NAVIGATION_DATA = {
       icon: BookText,
     },
     {
+      id: 7,
+      name: "All India First Licenses",
+      link: "/all-india-first",
+      icon: Award,
+    },
+    {
       id: 6,
       name: "Scheme X Products",
       link: "/SchemeX-products",
