@@ -28,6 +28,9 @@ const WhatisSASOCertificateorSABERCertification = lazy(() =>
 const STQCCertificateinIndia = lazy(() =>
   import("../pages/STQCCertificateinIndia")
 );
+const TACCertificateinIndia = lazy(() =>
+  import("../pages/TACCertificateinIndia")
+);
 
 // Lazy load components with named exports
 const EPRService = lazy(() =>
@@ -219,6 +222,14 @@ export const ServicePagesRoutes = () => {
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <STQCCertificateinIndia />
+          </Suspense>
+        }
+      />
+      <Route
+        path="tac-certificate-india"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <TACCertificateinIndia />
           </Suspense>
         }
       />

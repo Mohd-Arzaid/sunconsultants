@@ -42,6 +42,8 @@ const ServicesRightSideContentEng = () => {
     "/saso-saber-certification",
     // STQC CERTIFICATE PATH
     "/stqc-certificate-india",
+    // TAC CERTIFICATE PATH
+    "/tac-certificate-india",
     // SCHEME X PATH
     "/indian-bis-certification-under-scheme-x",
     // BISFM PATH - English
@@ -119,6 +121,8 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-new-standards-2026-department-wise-indian-standards",
     // ALL INDIA FIRST BIS LICENSE PATH
     "/all-india-first/bis-license-for-respiratory-protective-devices-is-19089-2025",
+    "/all-india-first/bis-license-for-forged-steel-socket-welding-fittings-is-4712-1984",
+    "/all-india-first/bis-license-for-polyester-fibre-filled-pillow-is-18930-2024",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -828,6 +832,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "What is SASO Certificate or SABER Certification";
     if (path.includes("/stqc-certificate-india"))
       return "STQC Certificate in India: Complete Information";
+    if (path.includes("/tac-certificate-india"))
+      return "TAC Certificate in India: Complete Information";
     if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
       return "CRS Registration Japanese";
     if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
@@ -1095,6 +1101,18 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "All India first BIS License for Respiratory Protective Devices under IS 19089:2025 - India No 1 (English)";
+    if (
+      path.includes(
+        "/all-india-first/bis-license-for-forged-steel-socket-welding-fittings-is-4712-1984"
+      )
+    )
+      return "All India first BIS License for Forged Steel, Socket-Welding Fittings under IS 4712:1984 - India No 1 (English)";
+    if (
+      path.includes(
+        "/all-india-first/bis-license-for-polyester-fibre-filled-pillow-is-18930-2024"
+      )
+    )
+      return "All India First BIS License for Polyester Fibre Filled Pillow under IS 18930:2024 - India No 1 (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

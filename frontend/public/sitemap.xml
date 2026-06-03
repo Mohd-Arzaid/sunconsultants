@@ -267,7 +267,14 @@
   <loc>https://bis-certifications.com/stqc-certificate-india</loc>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
-</url> 
+</url>
+
+<!-- TAC Certificate in India: Complete Information -->
+<url>
+  <loc>https://bis-certifications.com/tac-certificate-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
 
 <url>
   <loc>https://bis-certifications.com/de/was-ist-crs-bis-oder-crs-registrierung</loc>
@@ -6837,6 +6844,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/all-india-first/bis-license-for-forged-steel-socket-welding-fittings-is-4712-1984</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/all-india-first/bis-license-for-polyester-fibre-filled-pillow-is-18930-2024</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
   <!-- India No 1 Routes - End -->
   
