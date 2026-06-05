@@ -1134,7 +1134,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
           "Avoid penalties for non-compliance.",
           "Prepare production schedules (considering lab testing time).",
           "Facilitate easier customs processing.",
-          "Earn the Indian customer&apos;s long-term brand trust.",
+          "Earn the Indian customer's long-term brand trust.",
         ]}
       />
 
@@ -1145,7 +1145,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
             to="/what-is-bis-certificate-indian-bis"
             className="font-geist font-medium text-blue-900 decoration-blue-900  transition-colors"
           >
-            BIS Certifications
+             BIS Certification Schemes in India
           </Link>
         </p>
       </div>

@@ -389,6 +389,24 @@ const MainContentLeft = () => {
           operational effectiveness.
         </p>
 
+        {/* interlink of product blog page  */}
+           {/* box  */}
+    <div className="mt-5 mb-6 rounded-md bg-gradient-to-r from-[#D4F0ED] to-[#E8F6FF] px-4 py-3 border-l-4 border-[#1A8781] shadow-sm shadow-[#1A8781]/15 ring-1 ring-[#1A8781]/25">
+        <p className="font-geist text-sm md:text-base text-[#1e3a3a]">
+          Get complete details about  {" "}
+         
+           <Link
+            to="/blogs/isi-products/respiratory-protective-devices-is-19089"
+            className="font-geist font-semibold underline text-[#0F6B66] hover:text-[#1A8781] transition-colors"
+          >
+        BIS license for respiratory protective devices
+          </Link> 
+          <br />
+         
+        </p>
+      </div>
+
+
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">

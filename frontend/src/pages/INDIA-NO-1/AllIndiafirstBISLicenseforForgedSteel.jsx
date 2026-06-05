@@ -239,7 +239,14 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           A significant milestone has recently been achieved in the Indian
           manufacturing and quality assurance sector, as the Bureau of Indian
-          Standards (BIS) has granted the All India First License for Forged
+          Standards (BIS) has granted the {" "}
+          <Link
+            to="https://www.bis.gov.in/whats-new/?lang=en"
+            className="text-blue-600 hover:underline"
+          >
+           All India First License for Forged
+           Steel, Socket-Welding Fittings
+          </Link>{" "} for Forged
           Steel, Socket-Welding Fittings under IS 4712:1984. This landmark
           approval reflects the successful implementation of Indian quality
           standards for this product category and demonstrates the growing
@@ -321,6 +328,21 @@ const MainContentLeft = () => {
           socket-welding fittings intended for use in industrial piping systems
           where reliable welded connections are essential.
         </p>
+             {/* box  */}
+    <div className="mt-5 mb-6 rounded-md bg-gradient-to-r from-[#D4F0ED] to-[#E8F6FF] px-4 py-3 border-l-4 border-[#1A8781] shadow-sm shadow-[#1A8781]/15 ring-1 ring-[#1A8781]/25">
+        <p className="font-geist text-sm md:text-base text-[#1e3a3a]">
+          Get complete details about  {" "}
+         
+           <Link
+            to="/blogs/isi-products/forged-steel-socket-welding-fittings-is-4712"
+            className="font-geist font-semibold underline text-[#0F6B66] hover:text-[#1A8781] transition-colors"
+          >
+        BIS license for forged steel, socket-welding fittings
+          </Link> 
+          <br />
+         
+        </p>
+      </div>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 

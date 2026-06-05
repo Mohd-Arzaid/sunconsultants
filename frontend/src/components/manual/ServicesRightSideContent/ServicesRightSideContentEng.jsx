@@ -252,6 +252,8 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/electric-dishwashing-machines",
     "/blogs/isi-products/dishwashers",
     "/blogs/isi-products/slicing-machines",
+    "/blogs/isi-products/respiratory-protective-devices-is-19089",
+    "/blogs/isi-products/forged-steel-socket-welding-fittings-is-4712",
     "/blogs/isi-products/pan-head-screws-is-7483",
     "/blogs/isi-products/tapping-screws-pan-head-is-18480-part-1",
     "/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3",
@@ -1386,6 +1388,10 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Dishwashers - English Page";
     if (path.includes("/blogs/isi-products/slicing-machines"))
       return "BIS Certificate for Slicing Machines - English Page";
+    if (path.includes("/blogs/isi-products/respiratory-protective-devices-is-19089"))
+      return "BIS Certificate for Respiratory Protective Devices - English Page";
+    if (path.includes("/blogs/isi-products/forged-steel-socket-welding-fittings-is-4712"))
+      return "BIS Certificate for Forged Steel Socket Welding Fittings - English Page";
     if (path.includes("/blogs/isi-products/pan-head-screws-is-7483"))
       return "BIS Certificate for Pan Head Screws - English Page";
     if (
