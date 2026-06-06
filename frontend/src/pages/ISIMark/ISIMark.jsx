@@ -21,7 +21,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
-import { ISIMarkAndBISCommonTable } from "../ISIMarkAndBISCommonTable/ISIMarkAndBISCommonTable";
+import BISFMProductTable from "@/pages/BISFMProductTable/BISFMProductTable.jsx";
 import axios from "axios";
 import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
@@ -47,7 +47,7 @@ const ISIMark = () => {
       <ISIMarkContent />
       <ISIMarkFaq />
       <div id="product-table">
-        <ISIMarkAndBISCommonTable />
+        <BISFMProductTable />
       </div>
       <LanguageSelector />
       <div id="services">

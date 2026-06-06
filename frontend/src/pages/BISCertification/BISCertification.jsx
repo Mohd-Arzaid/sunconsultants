@@ -29,7 +29,7 @@ import {
 } from "@/components/ui/table";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
-import { ISIMarkAndBISCommonTable } from "../ISIMarkAndBISCommonTable/ISIMarkAndBISCommonTable";
+import BISFMProductTable from "@/pages/BISFMProductTable/BISFMProductTable.jsx";
 import axios from "axios";
 import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
@@ -54,7 +54,9 @@ const BISCertification = () => {
       <BISCertificationIndex />
       <BISCertificationContent />
       <BISCertificationFaq />
-      <ISIMarkAndBISCommonTable />
+      <div id="product-table">
+        <BISFMProductTable />
+      </div>
       <LanguageSelector />
       <div id="services">
         <BISCertificationServices />
