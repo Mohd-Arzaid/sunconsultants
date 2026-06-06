@@ -152,6 +152,14 @@ export const NAVIGATION_DATA = {
       mobileOrder: 25,
     },
     {
+      id: 26,
+      name: "TAC Certificate",
+      link: "/tac-certificate-india",
+      icon: CheckCircle,
+      desktopOrder: 26,
+      mobileOrder: 26,
+    },
+    {
       id: 12,
       name: "Battery Waste",
       link: "/epr-certificate-for-battery-waste-management-bwm",

@@ -897,9 +897,7 @@ const MainContentLeft = () => {
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
-          <h2 className="service-left-content-heading-two">
-            What is BIS Registration?
-          </h2>
+         
 
           <div className="flex justify-center mt-[20px] md:mt-[26px]">
             <img
@@ -909,6 +907,16 @@ const MainContentLeft = () => {
               className="max-w-full h-auto rounded-lg shadow-md"
             />
           </div>
+
+          <h2 className="service-left-content-heading-two">
+            What is BIS Registration?
+          </h2>
+
+
+          <p className="service-left-content-paragraph">
+          BIS Registration is a quality certification granted by the Bureau of Indian Standards (BIS), the national standards body of India. It serves as an assurance that a product complies with the applicable Indian Standards relating to quality, safety, and performance before it is introduced into the Indian market.
+
+          </p>
 
           <p className="service-left-content-paragraph">
             The Bureau of Indian Standards (BIS) is the national standardization
@@ -1126,7 +1134,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
           "Avoid penalties for non-compliance.",
           "Prepare production schedules (considering lab testing time).",
           "Facilitate easier customs processing.",
-          "Earn the Indian customer&apos;s long-term brand trust.",
+          "Earn the Indian customer's long-term brand trust.",
         ]}
       />
 
@@ -1137,7 +1145,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
             to="/what-is-bis-certificate-indian-bis"
             className="font-geist font-medium text-blue-900 decoration-blue-900  transition-colors"
           >
-            BIS Certifications
+             BIS Certification Schemes in India
           </Link>
         </p>
       </div>
@@ -1158,12 +1166,12 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         Eligibility Criteria for BIS CRS Registration
       </h2>
 
-      <p className="service-left-content-paragraph">
-        Who Can Apply for BIS Certification Under CRS?
+      <p className="service-left-content-heading-three">
+        Who Can Apply for BIS Registration Under CRS?
       </p>
 
       <p className="service-left-content-paragraph">
-        In India, a BIS certificate under the Compulsory Registration Scheme
+        In India, a BIS Licence under the Compulsory Registration Scheme
         (CRS) can only be granted to manufacturers who meet the requirements set
         out by the Bureau of Indian Standards. This is to ensure only authentic
         manufacturers gain the privilege of being able to Register as well as
@@ -1314,8 +1322,9 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
       </h2>
 
       <div className="service-left-content-heading-three">
-        List of documents required to obtain BIS CRS registration.
-      </div>
+        List of documents required to obtain BIS registration under CRS scheme.
+
+      </div>  
 
       <p className="service-left-content-paragraph">
         Filling out the BIS CRS application for registration is entirely
@@ -1485,7 +1494,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
       </div>
 
       <h2 className="service-left-content-heading-two">
-        BIS CRS Registration Process
+      BIS Registration Process Under Compulsory Registration Scheme (CRS)
       </h2>
 
       <p className="service-left-content-paragraph">
@@ -1497,9 +1506,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
       </p>
 
       <p className="service-left-content-paragraph">
-        BIS CRS Process, We&apos;re calling it Certification and Registration
-        System (CRS) for now, and here&apos;s how the journey for BIS
-        Certification unfolds.
+      Here is the step-by-step BIS registration process under Compulsory Registration Scheme (CRS) given below:
       </p>
 
       <div className="service-left-content-heading-three">
@@ -1697,7 +1704,7 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
       </p>
 
       <h3 className="service-left-content-heading-three">
-        Fee Structure for CRS Registration
+      Fee Structure for BIS Registration (Compulsory Registration Scheme)
       </h3>
 
       {/* Fee Structure Table */}
@@ -1928,7 +1935,7 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
       </p>
 
       <h2 className="service-left-content-heading-three">
-        Why Choose a BIS Consultant?
+      Why Choose Sun Certifications India?
       </h2>
       <p className="service-left-content-paragraph">
         The entire BIS CRS registration is very technical and exhaustive with

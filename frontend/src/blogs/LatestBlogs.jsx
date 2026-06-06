@@ -16,6 +16,26 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 105,
+    color: "#0284C7",
+    title:
+      "BIS Certificate for Forged Steel Socket Welding Fittings - IS 4712:1984",
+    description:
+      "Get BIS Certificate for Forged Steel Socket Welding Fittings under IS 4712:1984. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/forged-steel-socket-welding-fittings-is-4712",
+    date: "5 June 2026",
+  },
+  {
+    id: 104,
+    color: "#0284C7",
+    title:
+      "BIS Certificate for Respiratory Protective Devices - IS 19089:2025",
+    description:
+      "Get BIS Certificate for Respiratory Protective Devices under IS 19089:2025. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/respiratory-protective-devices-is-19089",
+    date: "5 June 2026",
+  },
+  {
     id: 103,
     color: "#0284C7",
     title:

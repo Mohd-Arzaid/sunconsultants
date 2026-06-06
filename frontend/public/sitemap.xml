@@ -267,7 +267,14 @@
   <loc>https://bis-certifications.com/stqc-certificate-india</loc>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
-</url> 
+</url>
+
+<!-- TAC Certificate in India: Complete Information -->
+<url>
+  <loc>https://bis-certifications.com/tac-certificate-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
 
 <url>
   <loc>https://bis-certifications.com/de/was-ist-crs-bis-oder-crs-registrierung</loc>
@@ -5620,6 +5627,20 @@
     <priority>0.8</priority>
     <lastmod>2026-06-03</lastmod>
   </url>
+  <!-- BIS Certification for Respiratory Protective Devices - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/respiratory-protective-devices-is-19089</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-05</lastmod> 
+  </url>
+  <!-- BIS Certification for Forged Steel Socket Welding Fittings - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/forged-steel-socket-welding-fittings-is-4712</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-05</lastmod>
+  </url>
   <!-- BIS Certification for Asbestos Cement Pressure Pipes and Joints - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459</loc>
@@ -6837,6 +6858,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-05-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/all-india-first/bis-license-for-forged-steel-socket-welding-fittings-is-4712-1984</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/all-india-first/bis-license-for-polyester-fibre-filled-pillow-is-18930-2024</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
   <!-- India No 1 Routes - End -->
   

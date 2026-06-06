@@ -17,18 +17,19 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
 const CANONICAL_URL =
-  "https://bis-certifications.com/all-india-first/bis-license-for-respiratory-protective-devices-is-19089-2025";
-const PAGE_IMAGE_SRC = "/IndiaNo1Img/RespiratoryProtectiveDevices.png";
+  "https://bis-certifications.com/all-india-first/bis-license-for-forged-steel-socket-welding-fittings-is-4712-1984";
+const PAGE_IMAGE_SRC =
+  "/IndiaNo1Img/BISLicenseofForgedSteelSocketWeldingFittings.png";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/blogImages/allindiafirstbislicenseofrespiratoryprotectivedevices.webp";
-const PDF_SRC = "/pdf/IS19089AIF.pdf";
+  "https://bis-certifications.com/blogImages/allindiafirstbislicenseofforgedsteelsocketweldingfittings.webp";
+const PDF_SRC = "/pdf/IS4712AIF.pdf";
 
 const PAGE_TITLE =
-  "All India first BIS License for Respiratory Protective Devices under IS 19089:2025";
+  "All India first BIS License for Forged Steel, Socket-Welding Fittings under IS 4712:1984";
 const META_DESCRIPTION =
-  "Get complete information about BIS Certification for Respiratory Protective Devices under IS 19089:2025. Learn about ISI Mark requirements, Indian Standards, scope, compliance, and the All India First BIS License granted for Respiratory Protective Devices in India.";
+  "Get complete information about BIS Certification for Forged Steel, Socket-Welding Fittings under IS 4712:1984. Learn about ISI Mark requirements, Indian Standards, scope, compliance, and the All India First BIS License granted for Forged Steel, Socket-Welding Fittings in India.";
 const META_KEYWORDS =
-  "All India First License, Respiratory Safety Equipment Certification, BIS Certification for Respiratory Protective Devices";
+  "All India First License, Forged Steel, Socket-Welding Fittings Certification, BIS Certification for Forged Steel, Socket-Welding Fittings";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -53,8 +54,8 @@ const articleSchema = {
       url: "https://bis-certifications.com/company-logo/company-logo.webp",
     },
   },
-  datePublished: "2026-05-29",
-  dateModified: "2026-05-29",
+  datePublished: "2026-06-04",
+  dateModified: "2026-06-04",
 };
 
 const ratingSchema = {
@@ -82,48 +83,48 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is BIS Certification for Respiratory Protective Devices?",
+      name: "What is BIS Certification for Forged Steel, Socket-Welding Fittings?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BIS Certification for Respiratory Protective Devices is a quality certification issued by the Bureau of Indian Standards confirming that the product complies with the requirements of IS 19089:2025.",
+        text: "BIS Certification for Forged Steel, Socket-Welding Fittings confirms that the product complies with the requirements specified under IS 4712:1984 and meets applicable quality standards established by BIS.",
       },
     },
     {
       "@type": "Question",
-      name: "Which Indian Standard applies to Respiratory Protective Devices?",
+      name: "Which Indian Standard applies to Forged Steel, Socket-Welding Fittings?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The applicable Indian Standard for Respiratory Protective Devices is IS 19089:2025.",
+        text: "The applicable Indian Standard is IS 4712:1984 – Forged Steel, Socket-Welding Fittings.",
       },
     },
     {
       "@type": "Question",
-      name: "Why is BIS Certification important for Respiratory Protective Devices?",
+      name: "What is the purpose of IS 4712:1984?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BIS Certification ensures that Respiratory Protective Devices meet safety, quality, filtration, and performance requirements necessary for effective respiratory protection.",
+        text: "The standard establishes requirements related to the quality, dimensions, manufacturing characteristics, and performance of forged steel socket-welding fittings used in industrial piping systems.",
       },
     },
     {
       "@type": "Question",
-      name: "What does the ISI Mark on Respiratory Protective Devices indicate?",
+      name: "Who received the All India First License for Forged Steel, Socket-Welding Fittings?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The ISI Mark indicates that the product complies with the applicable Indian Standard and has been evaluated under BIS quality and safety requirements.",
+        text: "The All India First License under IS 4712:1984 was granted to M/s Vijay Cycle & Steel Industries.",
       },
     },
     {
       "@type": "Question",
-      name: "What is covered under IS 19089:2025?",
+      name: "What is the BIS Licence Number of the All India First License holder?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "IS 19089:2025 covers performance requirements, testing procedures, filtration efficiency, breathing resistance, sealing performance, durability, and safety parameters for Respiratory Protective Devices.",
+        text: "The BIS Licence Number (CM/L) granted under the All India First License is 9900071122.",
       },
     },
   ],
 };
 
-const AllIndiafirstBISLicenseforRespiratoryProtectiveDevices = () => {
+const AllIndiafirstBISLicenseforForgedSteel = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -136,7 +137,7 @@ const AllIndiafirstBISLicenseforRespiratoryProtectiveDevices = () => {
   );
 };
 
-export default AllIndiafirstBISLicenseforRespiratoryProtectiveDevices;
+export default AllIndiafirstBISLicenseforForgedSteel;
 
 const MetaTags = () => {
   const websiteName = "Sun Certifications India";
@@ -194,7 +195,8 @@ const BreadcrumbContent = () => {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    All India First BIS License for Respiratory Protective Devices
+                    All India First BIS License for Forged Steel, Socket-Welding
+                    Fittings
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -235,209 +237,112 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Bureau of Indian Standards (BIS), under the Government of India,
-          has officially granted the All India First License for Respiratory
-          Protective Devices under IS 19089:2025, marking a significant
-          milestone in the Indian industrial safety and respiratory protection
-          sector. This achievement reflects successful compliance with the
-          latest Indian Standard for Respiratory Protective Devices and
-          demonstrates adherence to stringent BIS quality, safety, and
-          performance requirements. The grant of the{" "}
-          <a
-            href="https://www.bis.gov.in/whats-new/?lang=en"
-            target="_blank"
-            rel="noopener noreferrer"
+          A significant milestone has recently been achieved in the Indian
+          manufacturing and quality assurance sector, as the Bureau of Indian
+          Standards (BIS) has granted the {" "}
+          <Link
+            to="https://www.bis.gov.in/whats-new/?lang=en"
             className="text-blue-600 hover:underline"
           >
-            All India First BIS License
-          </a>{" "}
-          highlights the growing importance of certified respiratory safety
-          equipment in India and reinforces the commitment toward manufacturing
-          reliable, high-performance, and BIS Approved Respiratory Protective
-          Devices for industrial, healthcare, and hazardous working environments.
+           All India First License for Forged
+           Steel, Socket-Welding Fittings
+          </Link>{" "} for Forged
+          Steel, Socket-Welding Fittings under IS 4712:1984. This landmark
+          approval reflects the successful implementation of Indian quality
+          standards for this product category and demonstrates the growing
+          emphasis on standardized industrial components across the country.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Respiratory Protective Devices
+          BIS Certification for Forged Steel, Socket-Welding Fittings
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Respiratory Protective Devices play a critical role in safeguarding
-          workers, healthcare professionals, industrial personnel, and emergency
-          responders from harmful airborne contaminants, toxic gases, dust
-          particles, fumes, aerosols, and infectious agents. With increasing
-          awareness regarding occupational safety, industrial hygiene, and
-          workplace health standards, the demand for high-quality Respiratory
-          Protective Devices has significantly increased across India.
+          Forged Steel, Socket-Welding Fittings are critical piping components
+          widely used in industrial piping systems for creating secure and
+          reliable connections between pipes and equipment. These fittings are
+          extensively utilized in industries such as oil &amp; gas,
+          petrochemicals, power generation, chemical processing, refineries, and
+          manufacturing plants where high-pressure and high-temperature
+          applications demand superior strength and performance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure product reliability, performance efficiency, and user
-          safety, the Bureau of Indian Standards (BIS) has introduced quality
-          regulations and compliance requirements for Respiratory Protective
-          Devices under the applicable Indian Standard IS 19089:2025. Obtaining
-          {" "}
-          <a
-            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-            target="_blank"
-            rel="noopener noreferrer"
+          To ensure product quality, dimensional accuracy, mechanical strength,
+          and reliability, manufacturers are required to comply with the
+          applicable Indian Standard and obtain BIS Certification for Forged
+          Steel, Socket-Welding Fittings. The Bureau of Indian Standards (BIS)
+          plays a vital role in establishing quality benchmarks that help
+          maintain consistency and safety across industrial products used in
+          India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Obtaining a{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
             className="text-blue-600 hover:underline"
           >
-          BIS Certificate
-          </a>{" "}
-           for Respiratory Protective Devices demonstrates that
-          the product complies with stringent Indian safety and quality
-          benchmarks established for respiratory protection equipment.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certification for Respiratory Protective Devices is an
-          important quality assurance mechanism that helps manufacturers
-          maintain consistent product performance while enhancing consumer trust
-          and market credibility. Products carrying the ISI Mark for
-          Respiratory Protective Devices indicate conformity with the
-          prescribed Indian Standard for Respiratory Protective Devices and
-          confirm that the product has undergone rigorous testing and quality
-          evaluation.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers seeking BIS Approval for Respiratory Protective Devices
-          must ensure compliance with all technical specifications, safety
-          requirements, and performance parameters mentioned under IS
-          19089:2025. The BIS License of Respiratory Protective Devices is
-          especially important for industries where respiratory hazards are
-          common, including chemical manufacturing, pharmaceuticals, mining,
-          construction, oil &amp; gas, healthcare, metal processing, and
-          disaster management sectors.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The implementation of the Indian Standard for Respiratory Protective
-          Devices also supports the Government of India&apos;s objective of
-          promoting safe industrial practices, occupational health protection,
-          and standardization in critical safety equipment.
+            BIS Certification
+          </Link>{" "}
+          for Forged Steel, Socket-Welding Fittings demonstrates that the
+          product conforms to the requirements
+          specified under the relevant Indian Standard. Products carrying the
+          ISI Mark for Forged Steel, Socket-Welding Fittings provide assurance
+          regarding quality, manufacturing excellence, and compliance with
+          national standards.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          About Respiratory Protective Devices
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Respiratory Protective Devices (RPDs) are specialized safety equipment
-          designed to protect users from inhaling hazardous airborne substances
-          that may adversely affect respiratory health. These devices are widely
-          used in environments where air contamination levels exceed safe
-          exposure limits or where oxygen deficiency may pose serious risks.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Respiratory Protective Devices are engineered to filter, purify, or
-          supply breathable air depending on the operational requirements and
-          hazard conditions. They are commonly utilized across industrial,
-          medical, firefighting, chemical handling, laboratory, and emergency
-          response applications.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Major Applications of Respiratory Protective Devices
-        </h3>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Respiratory Protective Devices are extensively used in:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chemical and petrochemical industries</li>
-          <li>Pharmaceutical manufacturing units</li>
-          <li>Hospitals and healthcare facilities</li>
-          <li>Mining and construction sites</li>
-          <li>Cement and metal processing plants</li>
-          <li>Firefighting operations</li>
-          <li>Disaster response and rescue operations</li>
-          <li>Paint and coating industries</li>
-          <li>Welding and fabrication sectors</li>
-          <li>Hazardous material handling environments</li>
-        </ul>
-
-        <div className="h-px w-full bg-gray-300 my-6" />
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable Indian Standard for Respiratory Protective Devices
+          Applicable Indian Standard – IS 4712:1984
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 19089:2025 – Respiratory Protective Devices
+          IS 4712:1984 – Forged Steel, Socket-Welding Fittings
         </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for Respiratory Protective Devices is
-          IS 19089:2025. This standard has been formulated by the Bureau of
-          Indian Standards to establish uniform quality, safety, testing, and
-          performance requirements for respiratory protection equipment used in
-          various industrial and occupational environments.
+          The applicable Indian Standard for Forged Steel, Socket-Welding
+          Fittings is IS 4712:1984.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The primary objective of IS 19089:2025 is to ensure that Respiratory
-          Protective Devices provide reliable protection against hazardous
-          airborne contaminants while maintaining user comfort, durability, and
-          operational effectiveness.
+          This standard has been developed by the Bureau of Indian Standards
+          (BIS) to establish uniform requirements for the manufacture and
+          quality assessment of forged steel socket-welding fittings used in
+          industrial piping systems.
         </p>
 
-        {/* interlink of product blog page  */}
-           {/* box  */}
+        <div className="h-px w-full bg-gray-300 my-6" />
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Scope of IS 4712:1984
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The scope of IS 4712:1984 covers the requirements for forged steel
+          socket-welding fittings intended for use in industrial piping systems
+          where reliable welded connections are essential.
+        </p>
+             {/* box  */}
     <div className="mt-5 mb-6 rounded-md bg-gradient-to-r from-[#D4F0ED] to-[#E8F6FF] px-4 py-3 border-l-4 border-[#1A8781] shadow-sm shadow-[#1A8781]/15 ring-1 ring-[#1A8781]/25">
         <p className="font-geist text-sm md:text-base text-[#1e3a3a]">
           Get complete details about  {" "}
          
            <Link
-            to="/blogs/isi-products/respiratory-protective-devices-is-19089"
+            to="/blogs/isi-products/forged-steel-socket-welding-fittings-is-4712"
             className="font-geist font-semibold underline text-[#0F6B66] hover:text-[#1A8781] transition-colors"
           >
-        BIS license for respiratory protective devices
+        BIS license for forged steel, socket-welding fittings
           </Link> 
           <br />
          
         </p>
       </div>
-
-
-        <div className="h-px w-full bg-gray-300 my-6" />
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of the Standard – IS 19089:2025
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The scope of IS 19089:2025 covers the requirements, classification,
-          performance criteria, testing methods, and quality evaluation
-          parameters applicable to Respiratory Protective Devices intended for
-          protection against hazardous airborne contaminants.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The standard broadly addresses various categories of respiratory
-          protection equipment used across industrial, healthcare, and
-          emergency-response applications.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 19089:2025 generally covers:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Respiratory protective equipment designed for industrial safety</li>
-          <li>Devices intended to protect against dust, fumes, gases, and aerosols</li>
-          <li>Air-filtering respiratory systems</li>
-          <li>Breathing protection devices for occupational usage</li>
-          <li>Respiratory devices used in hazardous environments</li>
-          <li>Protective systems intended for emergency response application</li>
-        </ul>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
@@ -446,29 +351,22 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification for Respiratory Protective Devices is an essential
-          quality assurance requirement that supports industrial safety,
-          occupational health protection, and regulatory compliance in India.
-          Compliance with IS 19089:2025 ensures that Respiratory Protective
-          Devices meet stringent safety, filtration, durability, and performance
-          requirements necessary for protecting users against hazardous airborne
-          contaminants.
+          BIS Certification for Forged Steel, Socket-Welding Fittings serves as
+          an important indicator of product quality, reliability, and conformity
+          with Indian Standards. Compliance with IS 4712:1984 helps ensure that
+          these critical piping components meet established requirements related
+          to manufacturing quality, dimensional accuracy, and industrial
+          performance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The ISI Mark for Respiratory Protective Devices serves as an important
-          indicator of product reliability, safety, and adherence to Indian
-          Standards. With growing awareness regarding workplace safety and
-          respiratory health, BIS Approved Respiratory Protective Devices are
-          becoming increasingly important across multiple industrial and
-          healthcare sectors.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The grant of the All India First License under IS 19089:2025 further
-          highlights the advancement of standardized respiratory safety equipment
-          manufacturing in India and reinforces the importance of maintaining
-          high-quality safety products for industrial and commercial applications.
+          The grant of the All India First License to M/s Vijay Cycle &amp; Steel
+          Industries marks an important development in the implementation of
+          quality standards for forged steel socket-welding fittings in India. As
+          industries increasingly prioritize safety, reliability, and
+          standardization, BIS-certified products will continue to play a
+          crucial role in supporting robust and efficient industrial
+          infrastructure.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
@@ -480,56 +378,59 @@ const MainContentLeft = () => {
         <div className="space-y-6">
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              What is BIS Certification for Respiratory Protective Devices?
+              1. What is BIS Certification for Forged Steel, Socket-Welding
+              Fittings?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              BIS Certification for Respiratory Protective Devices is a quality
-              certification issued by the Bureau of Indian Standards confirming
-              that the product complies with the requirements of IS 19089:2025.
+              BIS Certification for Forged Steel, Socket-Welding Fittings
+              confirms that the product complies with the requirements specified
+              under IS 4712:1984 and meets applicable quality standards
+              established by BIS.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Which Indian Standard applies to Respiratory Protective Devices?
+              2. Which Indian Standard applies to Forged Steel, Socket-Welding
+              Fittings?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The applicable Indian Standard for Respiratory Protective Devices
-              is IS 19089:2025.
+              The applicable Indian Standard is IS 4712:1984 – Forged Steel,
+              Socket-Welding Fittings.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Why is BIS Certification important for Respiratory Protective Devices?
+              3. What is the purpose of IS 4712:1984?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              BIS Certification ensures that Respiratory Protective Devices meet
-              safety, quality, filtration, and performance requirements necessary
-              for effective respiratory protection.
+              The standard establishes requirements related to the quality,
+              dimensions, manufacturing characteristics, and performance of
+              forged steel socket-welding fittings used in industrial piping
+              systems.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              What does the ISI Mark on Respiratory Protective Devices indicate?
+              4. Who received the All India First License for Forged Steel,
+              Socket-Welding Fittings?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The ISI Mark indicates that the product complies with the
-              applicable Indian Standard and has been evaluated under BIS quality
-              and safety requirements.
+              The All India First License under IS 4712:1984 was granted to M/s
+              Vijay Cycle &amp; Steel Industries.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              What is covered under IS 19089:2025?
+              5. What is the BIS Licence Number of the All India First License
+              holder?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              IS 19089:2025 covers performance requirements, testing procedures,
-              filtration efficiency, breathing resistance, sealing performance,
-              durability, and safety parameters for Respiratory Protective
-              Devices.
+              The BIS Licence Number (CM/L) granted under the All India First
+              License is 9900071122.
             </p>
           </div>
         </div>
@@ -546,7 +447,7 @@ const MainContentLeft = () => {
               href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
               className="text-blue-600 hover:underline"
             >
-             ISI Mark License
+              ISI Mark License
             </a>
           </li>
           <li>
@@ -554,7 +455,7 @@ const MainContentLeft = () => {
               href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
               className="text-blue-600 hover:underline"
             >
-             BIS FMCS Certificate
+              BIS FMCS Certificate
             </a>
           </li>
         </ul>
@@ -565,7 +466,7 @@ const MainContentLeft = () => {
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
           src={PDF_SRC}
-          title="All India First BIS License for Respiratory Protective Devices under IS 19089:2025 PDF"
+          title="All India First BIS License for Forged Steel, Socket-Welding Fittings under IS 4712:1984 PDF"
           className="w-full h-[800px] bg-white"
           style={{
             boxShadow:

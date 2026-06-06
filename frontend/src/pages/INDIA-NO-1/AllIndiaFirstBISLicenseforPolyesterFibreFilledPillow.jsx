@@ -17,18 +17,19 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
 const CANONICAL_URL =
-  "https://bis-certifications.com/all-india-first/bis-license-for-respiratory-protective-devices-is-19089-2025";
-const PAGE_IMAGE_SRC = "/IndiaNo1Img/RespiratoryProtectiveDevices.png";
+  "https://bis-certifications.com/all-india-first/bis-license-for-polyester-fibre-filled-pillow-is-18930-2024";
+const PAGE_IMAGE_SRC =
+  "/IndiaNo1Img/BISLicenseofPolyesterFibreFilledPillow.png";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/blogImages/allindiafirstbislicenseofrespiratoryprotectivedevices.webp";
-const PDF_SRC = "/pdf/IS19089AIF.pdf";
+  "https://bis-certifications.com/blogImages/allindiafirstbislicenseofpolyesterfibrefilledpillow.webp";
+const PDF_SRC = "/pdf/IS18930AIF.pdf";
 
 const PAGE_TITLE =
-  "All India first BIS License for Respiratory Protective Devices under IS 19089:2025";
+  "All India First BIS License for Polyester Fibre Filled Pillow under IS 18930:2024";
 const META_DESCRIPTION =
-  "Get complete information about BIS Certification for Respiratory Protective Devices under IS 19089:2025. Learn about ISI Mark requirements, Indian Standards, scope, compliance, and the All India First BIS License granted for Respiratory Protective Devices in India.";
+  "Get complete information about BIS Certification for Polyester Fibre Filled Pillow under IS 18930:2024. Learn about ISI Mark requirements, Indian Standards, scope, compliance, and the All India First BIS License granted for Polyester Fibre Filled Pillow in India.";
 const META_KEYWORDS =
-  "All India First License, Respiratory Safety Equipment Certification, BIS Certification for Respiratory Protective Devices";
+  "All India First License, Polyester Fibre Filled Pillow Certification, BIS Certification for Polyester Fibre Filled Pillow";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -53,8 +54,8 @@ const articleSchema = {
       url: "https://bis-certifications.com/company-logo/company-logo.webp",
     },
   },
-  datePublished: "2026-05-29",
-  dateModified: "2026-05-29",
+  datePublished: "2026-06-04",
+  dateModified: "2026-06-04",
 };
 
 const ratingSchema = {
@@ -82,48 +83,48 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is BIS Certification for Respiratory Protective Devices?",
+      name: "Who received the All India First BIS License for Polyester Fibre Filled Pillow under IS 18930:2024?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BIS Certification for Respiratory Protective Devices is a quality certification issued by the Bureau of Indian Standards confirming that the product complies with the requirements of IS 19089:2025.",
+        text: "The All India First BIS License for Polyester Fibre Filled Pillow under IS 18930:2024 was granted to M/s. Alok Industries Limited with BIS Licence Number (CM/L) 7100155803",
       },
     },
     {
       "@type": "Question",
-      name: "Which Indian Standard applies to Respiratory Protective Devices?",
+      name: "What is IS 18930:2024?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The applicable Indian Standard for Respiratory Protective Devices is IS 19089:2025.",
+        text: "IS 18930:2024 is the applicable Indian Standard developed for Polyester Fibre Filled Pillow products, providing a framework for quality requirements and compliance.",
       },
     },
     {
       "@type": "Question",
-      name: "Why is BIS Certification important for Respiratory Protective Devices?",
+      name: "Why is BIS Certification important for Polyester Fibre Filled Pillow?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BIS Certification ensures that Respiratory Protective Devices meet safety, quality, filtration, and performance requirements necessary for effective respiratory protection.",
+        text: "BIS Certification for Polyester Fibre Filled Pillow helps ensure quality consistency, consumer confidence, regulatory compliance, and adherence to recognized Indian standards.",
       },
     },
     {
       "@type": "Question",
-      name: "What does the ISI Mark on Respiratory Protective Devices indicate?",
+      name: "What does the ISI Mark indicate on a Polyester Fibre Filled Pillow?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The ISI Mark indicates that the product complies with the applicable Indian Standard and has been evaluated under BIS quality and safety requirements.",
+        text: "The ISI Mark for Polyester Fibre Filled Pillow indicates that the product conforms to the relevant BIS requirements and has been certified under the applicable Indian Standard.",
       },
     },
     {
       "@type": "Question",
-      name: "What is covered under IS 19089:2025?",
+      name: "What is the significance of receiving the First BIS License in India?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "IS 19089:2025 covers performance requirements, testing procedures, filtration efficiency, breathing resistance, sealing performance, durability, and safety parameters for Respiratory Protective Devices.",
+        text: "Receiving the First BIS License in India under a newly introduced standard demonstrates industry leadership, commitment to quality, and early adoption of regulatory compliance requirements.",
       },
     },
   ],
 };
 
-const AllIndiafirstBISLicenseforRespiratoryProtectiveDevices = () => {
+const AllIndiaFirstBISLicenseforPolyesterFibreFilledPillow = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -136,7 +137,7 @@ const AllIndiafirstBISLicenseforRespiratoryProtectiveDevices = () => {
   );
 };
 
-export default AllIndiafirstBISLicenseforRespiratoryProtectiveDevices;
+export default AllIndiaFirstBISLicenseforPolyesterFibreFilledPillow;
 
 const MetaTags = () => {
   const websiteName = "Sun Certifications India";
@@ -194,7 +195,8 @@ const BreadcrumbContent = () => {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    All India First BIS License for Respiratory Protective Devices
+                    All India First BIS License for Polyester Fibre Filled
+                    Pillow
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -235,209 +237,196 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Bureau of Indian Standards (BIS), under the Government of India,
-          has officially granted the All India First License for Respiratory
-          Protective Devices under IS 19089:2025, marking a significant
-          milestone in the Indian industrial safety and respiratory protection
-          sector. This achievement reflects successful compliance with the
-          latest Indian Standard for Respiratory Protective Devices and
-          demonstrates adherence to stringent BIS quality, safety, and
-          performance requirements. The grant of the{" "}
-          <a
-            href="https://www.bis.gov.in/whats-new/?lang=en"
-            target="_blank"
-            rel="noopener noreferrer"
+          The granting of the All India First  <Link
+            to="/what-is-bis-certificate-indian-bis"
             className="text-blue-600 hover:underline"
           >
-            All India First BIS License
-          </a>{" "}
-          highlights the growing importance of certified respiratory safety
-          equipment in India and reinforces the commitment toward manufacturing
-          reliable, high-performance, and BIS Approved Respiratory Protective
-          Devices for industrial, healthcare, and hazardous working environments.
-        </p>
-
-        <div className="h-px w-full bg-gray-300 my-6" />
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Respiratory Protective Devices
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Respiratory Protective Devices play a critical role in safeguarding
-          workers, healthcare professionals, industrial personnel, and emergency
-          responders from harmful airborne contaminants, toxic gases, dust
-          particles, fumes, aerosols, and infectious agents. With increasing
-          awareness regarding occupational safety, industrial hygiene, and
-          workplace health standards, the demand for high-quality Respiratory
-          Protective Devices has significantly increased across India.
+            BIS License
+          </Link>{" "} for Polyester Fibre
+          Filled Pillow under IS 18930:2024 marks an important milestone in
+          India&apos;s quality assurance and standardization ecosystem. The
+          Bureau of Indian Standards (BIS), the national standards body of
+          India, plays a crucial role in ensuring that products available in the
+          market meet prescribed quality, safety, and performance requirements.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure product reliability, performance efficiency, and user
-          safety, the Bureau of Indian Standards (BIS) has introduced quality
-          regulations and compliance requirements for Respiratory Protective
-          Devices under the applicable Indian Standard IS 19089:2025. Obtaining
-          {" "}
-          <a
-            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
-          >
-          BIS Certificate
-          </a>{" "}
-           for Respiratory Protective Devices demonstrates that
-          the product complies with stringent Indian safety and quality
-          benchmarks established for respiratory protection equipment.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certification for Respiratory Protective Devices is an
-          important quality assurance mechanism that helps manufacturers
-          maintain consistent product performance while enhancing consumer trust
-          and market credibility. Products carrying the ISI Mark for
-          Respiratory Protective Devices indicate conformity with the
-          prescribed Indian Standard for Respiratory Protective Devices and
-          confirm that the product has undergone rigorous testing and quality
-          evaluation.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers seeking BIS Approval for Respiratory Protective Devices
-          must ensure compliance with all technical specifications, safety
-          requirements, and performance parameters mentioned under IS
-          19089:2025. The BIS License of Respiratory Protective Devices is
-          especially important for industries where respiratory hazards are
-          common, including chemical manufacturing, pharmaceuticals, mining,
-          construction, oil &amp; gas, healthcare, metal processing, and
-          disaster management sectors.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The implementation of the Indian Standard for Respiratory Protective
-          Devices also supports the Government of India&apos;s objective of
-          promoting safe industrial practices, occupational health protection,
-          and standardization in critical safety equipment.
-        </p>
-
-        <div className="h-px w-full bg-gray-300 my-6" />
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          About Respiratory Protective Devices
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Respiratory Protective Devices (RPDs) are specialized safety equipment
-          designed to protect users from inhaling hazardous airborne substances
-          that may adversely affect respiratory health. These devices are widely
-          used in environments where air contamination levels exceed safe
-          exposure limits or where oxygen deficiency may pose serious risks.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Respiratory Protective Devices are engineered to filter, purify, or
-          supply breathable air depending on the operational requirements and
-          hazard conditions. They are commonly utilized across industrial,
-          medical, firefighting, chemical handling, laboratory, and emergency
-          response applications.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Major Applications of Respiratory Protective Devices
-        </h3>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Respiratory Protective Devices are extensively used in:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chemical and petrochemical industries</li>
-          <li>Pharmaceutical manufacturing units</li>
-          <li>Hospitals and healthcare facilities</li>
-          <li>Mining and construction sites</li>
-          <li>Cement and metal processing plants</li>
-          <li>Firefighting operations</li>
-          <li>Disaster response and rescue operations</li>
-          <li>Paint and coating industries</li>
-          <li>Welding and fabrication sectors</li>
-          <li>Hazardous material handling environments</li>
-        </ul>
-
-        <div className="h-px w-full bg-gray-300 my-6" />
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable Indian Standard for Respiratory Protective Devices
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 19089:2025 – Respiratory Protective Devices
-        </h3>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for Respiratory Protective Devices is
-          IS 19089:2025. This standard has been formulated by the Bureau of
-          Indian Standards to establish uniform quality, safety, testing, and
-          performance requirements for respiratory protection equipment used in
-          various industrial and occupational environments.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The primary objective of IS 19089:2025 is to ensure that Respiratory
-          Protective Devices provide reliable protection against hazardous
-          airborne contaminants while maintaining user comfort, durability, and
-          operational effectiveness.
-        </p>
-
-        {/* interlink of product blog page  */}
-           {/* box  */}
-    <div className="mt-5 mb-6 rounded-md bg-gradient-to-r from-[#D4F0ED] to-[#E8F6FF] px-4 py-3 border-l-4 border-[#1A8781] shadow-sm shadow-[#1A8781]/15 ring-1 ring-[#1A8781]/25">
-        <p className="font-geist text-sm md:text-base text-[#1e3a3a]">
-          Get complete details about  {" "}
+          In a significant development, M/s. Alok Industries Limited has been
+          awarded the All India First{" "}
          
-           <Link
-            to="/blogs/isi-products/respiratory-protective-devices-is-19089"
-            className="font-geist font-semibold underline text-[#0F6B66] hover:text-[#1A8781] transition-colors"
-          >
-        BIS license for respiratory protective devices
-          </Link> 
-          <br />
-         
+            BIS License
+       
+          for Polyester Fibre Filled Pillow under IS 18930:2024. The company has
+          been granted BIS Licence
+          Number (CM/L): 7100155803, making it the first organization in India
+          to achieve BIS certification for this product category under the newly
+          established Indian Standard.
         </p>
-      </div>
 
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This achievement demonstrates the organization&apos;s commitment to
+          quality, compliance, and consumer confidence while setting a benchmark
+          for the industry. The certification also highlights the growing
+          importance of standardization in the home furnishing and bedding
+          sector.
+        </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of the Standard – IS 19089:2025
+          Significance of the All India First BIS License
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The scope of IS 19089:2025 covers the requirements, classification,
-          performance criteria, testing methods, and quality evaluation
-          parameters applicable to Respiratory Protective Devices intended for
-          protection against hazardous airborne contaminants.
+          Receiving the All India First BIS License for Polyester Fibre Filled
+          Pillow is a noteworthy accomplishment. Being the first license holder
+          under a newly introduced Indian Standard reflects a company&apos;s
+          proactive approach toward regulatory compliance and quality
+          excellence.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The standard broadly addresses various categories of respiratory
-          protection equipment used across industrial, healthcare, and
-          emergency-response applications.
+          The Bureau of Indian Standards Certification process involves thorough
+          evaluation, testing, and verification before a license is granted.
+          Therefore, obtaining the first certification under a new standard
+          demonstrates readiness to align with evolving quality requirements.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The recognition awarded to M/s. Alok Industries Limited establishes
+          industry leadership and showcases its commitment to producing quality
+          products that comply with Indian standards. Such achievements often
+          encourage other manufacturers to follow standardized production
+          practices, ultimately benefiting consumers and the market as a whole.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The issuance of the first BIS license also signifies the beginning of
+          a structured compliance framework for manufacturers operating within
+          this product segment.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6" />
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certification for Polyester Fibre Filled Pillow
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS Certification for Polyester Fibre Filled Pillow serves as an
+          assurance that the product conforms to the requirements specified
+          under IS 18930:2024.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS Certification process conducted by BIS evaluates multiple aspects
+          of manufacturing, quality control, testing procedures, and compliance
+          systems. Once a manufacturer successfully fulfills all prescribed
+          requirements, a BIS licence is granted.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          For consumers, a BIS-certified product provides confidence regarding
+          quality and reliability. For manufacturers, obtaining a BIS License
+          for Polyester Fibre Filled Pillow enhances market credibility and
+          demonstrates adherence to nationally recognized standards.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          As regulatory awareness increases across industries, BIS certification
+          is becoming an important factor in establishing consumer trust and
+          strengthening brand reputation.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6" />
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Applicable Indian Standard – IS 18930:2024
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The applicable Indian Standard for this product is IS 18930:2024.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This standard has been developed to establish quality requirements and
+          performance benchmarks for Polyester Fibre Filled Pillow products
+          manufactured and supplied in India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Indian Standards are formulated through a structured process involving
+          technical experts, industry stakeholders, testing laboratories, and
+          regulatory authorities. Their objective is to ensure consistency,
+          quality, safety, and reliability across product categories.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The implementation of IS 18930:2024 provides manufacturers with a
+          clear compliance framework while helping consumers identify products
+          that meet recognized quality requirements.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6" />
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Industries Using Polyester Fibre Filled Pillow
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Polyester Fibre Filled Pillows are widely used across multiple sectors
+          and applications due to their comfort, durability, and versatility.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          IS 19089:2025 generally covers:
+          Some major industries and sectors utilizing these products include:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Respiratory protective equipment designed for industrial safety</li>
-          <li>Devices intended to protect against dust, fumes, gases, and aerosols</li>
-          <li>Air-filtering respiratory systems</li>
-          <li>Breathing protection devices for occupational usage</li>
-          <li>Respiratory devices used in hazardous environments</li>
-          <li>Protective systems intended for emergency response application</li>
-        </ul>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Residential Housing
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Households across India use polyester fibre filled pillows as part of
+          everyday bedding and home furnishing requirements.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Hospitality Industry
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hotels, resorts, guest houses, and serviced apartments rely heavily on
+          quality bedding products to enhance customer comfort.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Healthcare Facilities
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hospitals, nursing homes, and healthcare institutions use pillows as
+          essential components of patient care environments.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Institutional Accommodation
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hostels, dormitories, educational institutions, and training centers
+          frequently procure bedding products in large quantities.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Home Furnishing Sector
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The broader home furnishing industry incorporates polyester fibre
+          filled pillows into comprehensive bedding and comfort solutions.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          As demand for quality-certified products continues to grow,
+          BIS-certified pillows are expected to gain greater market preference
+          among institutional buyers and individual consumers alike.
+        </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
@@ -446,90 +435,95 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification for Respiratory Protective Devices is an essential
-          quality assurance requirement that supports industrial safety,
-          occupational health protection, and regulatory compliance in India.
-          Compliance with IS 19089:2025 ensures that Respiratory Protective
-          Devices meet stringent safety, filtration, durability, and performance
-          requirements necessary for protecting users against hazardous airborne
-          contaminants.
+          The grant of the All India First BIS License for Polyester Fibre
+          Filled Pillow under IS 18930:2024 represents a significant milestone
+          for both the manufacturer and the industry.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The ISI Mark for Respiratory Protective Devices serves as an important
-          indicator of product reliability, safety, and adherence to Indian
-          Standards. With growing awareness regarding workplace safety and
-          respiratory health, BIS Approved Respiratory Protective Devices are
-          becoming increasingly important across multiple industrial and
-          healthcare sectors.
+          By awarding BIS Licence Number 7100155803 to M/s. Alok Industries
+          Limited, the Bureau of Indian Standards has recognized the
+          company&apos;s compliance with the requirements established under the
+          newly introduced standard.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The grant of the All India First License under IS 19089:2025 further
-          highlights the advancement of standardized respiratory safety equipment
-          manufacturing in India and reinforces the importance of maintaining
-          high-quality safety products for industrial and commercial applications.
+          This achievement reflects a commitment to quality, regulatory
+          compliance, and consumer confidence while setting an example for other
+          manufacturers operating within the sector.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          As BIS certification continues to play an increasingly important role
+          in India&apos;s quality infrastructure, milestones such as the First
+          BIS License in India contribute to stronger standardization practices,
+          improved product quality, and enhanced trust among consumers and
+          businesses alike.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Frequently Asked Questions (FAQs)
+          Frequently Asked Questions
         </h2>
 
         <div className="space-y-6">
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              What is BIS Certification for Respiratory Protective Devices?
+              1. Who received the All India First BIS License for Polyester
+              Fibre Filled Pillow under IS 18930:2024?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              BIS Certification for Respiratory Protective Devices is a quality
-              certification issued by the Bureau of Indian Standards confirming
-              that the product complies with the requirements of IS 19089:2025.
+              The All India First BIS License for Polyester Fibre Filled Pillow
+              under IS 18930:2024 was granted to M/s. Alok Industries Limited
+              with BIS Licence Number (CM/L) 7100155803.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Which Indian Standard applies to Respiratory Protective Devices?
+              2. What is IS 18930:2024?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The applicable Indian Standard for Respiratory Protective Devices
-              is IS 19089:2025.
+              IS 18930:2024 is the applicable Indian Standard developed for
+              Polyester Fibre Filled Pillow products, providing a framework for
+              quality requirements and compliance.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Why is BIS Certification important for Respiratory Protective Devices?
+              3. Why is BIS Certification important for Polyester Fibre Filled
+              Pillow?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              BIS Certification ensures that Respiratory Protective Devices meet
-              safety, quality, filtration, and performance requirements necessary
-              for effective respiratory protection.
+              BIS Certification for Polyester Fibre Filled Pillow helps ensure
+              quality consistency, consumer confidence, regulatory compliance,
+              and adherence to recognized Indian standards.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              What does the ISI Mark on Respiratory Protective Devices indicate?
+              4. What does the ISI Mark indicate on a Polyester Fibre Filled
+              Pillow?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The ISI Mark indicates that the product complies with the
-              applicable Indian Standard and has been evaluated under BIS quality
-              and safety requirements.
+              The ISI Mark for Polyester Fibre Filled Pillow indicates that the
+              product conforms to the relevant BIS requirements and has been
+              certified under the applicable Indian Standard.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              What is covered under IS 19089:2025?
+              5. What is the significance of receiving the First BIS License in
+              India?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              IS 19089:2025 covers performance requirements, testing procedures,
-              filtration efficiency, breathing resistance, sealing performance,
-              durability, and safety parameters for Respiratory Protective
-              Devices.
+              Receiving the First BIS License in India under a newly introduced
+              standard demonstrates industry leadership, commitment to quality,
+              and early adoption of regulatory compliance requirements.
             </p>
           </div>
         </div>
@@ -546,7 +540,7 @@ const MainContentLeft = () => {
               href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
               className="text-blue-600 hover:underline"
             >
-             ISI Mark License
+              ISI Mark Certification
             </a>
           </li>
           <li>
@@ -554,7 +548,7 @@ const MainContentLeft = () => {
               href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
               className="text-blue-600 hover:underline"
             >
-             BIS FMCS Certificate
+             BIS FMCS Certification
             </a>
           </li>
         </ul>
@@ -565,7 +559,7 @@ const MainContentLeft = () => {
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
           src={PDF_SRC}
-          title="All India First BIS License for Respiratory Protective Devices under IS 19089:2025 PDF"
+          title="All India First BIS License for Polyester Fibre Filled Pillow under IS 18930:2024 PDF"
           className="w-full h-[800px] bg-white"
           style={{
             boxShadow:

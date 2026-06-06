@@ -836,6 +836,12 @@ const BISCertificationforFootWarmers = lazy(() =>
 const BISCertificationforSlicingMachines = lazy(() =>
   import("@/blogs/BISCertificationforSlicingMachines")
 );
+const BISCertificationforRespiratoryProtective = lazy(() =>
+  import("@/blogs/BISCertificationforRespiratoryProtective")
+);
+const BISCertificationforForgedSteelSocketWeldingFittings = lazy(() =>
+  import("@/blogs/BISCertificationforForgedSteelSocketWeldingFittings")
+);
 const BISCertificationforPanHeadScrews = lazy(() =>
   import("@/blogs/BISCertificationforPanHeadScrews")
 );
@@ -3041,6 +3047,22 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforSlicingMachines />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/respiratory-protective-devices-is-19089"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforRespiratoryProtective />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/forged-steel-socket-welding-fittings-is-4712"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforForgedSteelSocketWeldingFittings />
           </Suspense>
         }
       />
