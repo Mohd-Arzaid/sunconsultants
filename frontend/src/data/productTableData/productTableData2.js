@@ -22485,7 +22485,7 @@ export const productTableData2 = [
     },
     "isDeNotified": true
   },
-  {    
+  {
     "id": 292,
     "sno": " ",
     "isNumber": "IS 12069 : 1987",
@@ -23354,7 +23354,8 @@ export const productTableData2 = [
           "text": "S.O. 4277(E), dated 01th October 2024"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/bis-license-for-toys"
   },
   {
     "id": "section-flat-transparent-sheet-glass-27",
@@ -30690,7 +30691,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/bayonet-lamp-holders-is-1258"
   },
   {
     "id": 614,
@@ -30740,7 +30742,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/live-working-gloves-of-insulating-material-is-13774"
   },
   {
     "id": 616,
@@ -30765,7 +30768,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/insulating-mats-for-electrical-purposes-is-15652"
   },
   {
     "id": 617,
@@ -30915,7 +30919,8 @@ export const productTableData2 = [
       "title": "114. Diesel Engines – NOx Reduction Agent AUS 32 (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/03/PVC-Homopolymers-PP-Materials-for-Moulding-and-Extrusion-and-Diesel-Engine-NOx-Reduction-agent-AUS-32-QCO.pdf",
       "linkText": "S.O. 922(E), dated 26th February 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1"
   },
   {
     "id": "section-air-cooler-and-air-filters-87",
@@ -30956,7 +30961,8 @@ export const productTableData2 = [
           "text": "S.O. 777(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/evaporative-air-coolers-is-3315"
   },
   {
     "id": 623,
@@ -30989,7 +30995,8 @@ export const productTableData2 = [
           "text": "S.O. 777(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/air-filters-for-general-ventilation-is-17570-part-1"
   },
   {
     "id": "section-electrical-appliances-88",
@@ -31165,7 +31172,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459"
   },
   {
     "id": 631,
@@ -31186,7 +31194,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/cement-pressure-pipes-and-joints-is-1592"
   },
   {
     "id": 632,
@@ -31207,7 +31216,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/cement-flat-sheets-is-2096"
   },
   {
     "id": 633,
@@ -31228,7 +31238,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/cement-building-boards-is-2098"
   },
   {
     "id": 634,
@@ -31249,7 +31260,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/cement-pipes-and-fittings-for-sewarage-and-drainage-is-6908"
   },
   {
     "id": 635,
@@ -31270,7 +31282,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/silica-asbestos-cement-flat-sheets-is-13000"
   },
   {
     "id": 636,
@@ -31291,7 +31304,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/asbestos-cement-cable-conduits-and-troughs-is-8870"
   },
   {
     "id": 637,
@@ -31333,7 +31347,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/shallow-corrugated-asbestos-cement-sheets-is-13008"
   },
   {
     "id": 639,
@@ -31354,7 +31369,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/fibre-cement-flat-sheets-is-14862"
   },
   {
     "id": 640,
@@ -31404,7 +31420,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/water-meter-bulk-type-is-2373"
   },
   {
     "id": 642,
@@ -31425,7 +31442,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/water-meter-domestic-type-is-779"
   },
   {
     "id": 643,
@@ -31446,7 +31464,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/ferrules-for-water-services-is-2692"
   },
   {
     "id": "section-gypsum-based-building-materials-91",
@@ -31512,7 +31531,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/glass-fibre-reinforced-gypsum-panels-is-17400"
   },
   {
     "id": 646,
@@ -31603,7 +31623,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/stationary-storage-water-heaters-is-2082"
   },
   {
     "id": 649,
@@ -31653,7 +31674,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/electric-immersion-water-heaters-368"
   },
   {
     "id": 651,
@@ -31703,7 +31725,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/mini-domestic-water-heaters-is-17150"
   },
   {
     "id": "section-v-belt-93",
@@ -31786,7 +31809,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/transmission-devices-v-belts-is-14261"
   },
   {
     "id": "section-telescopic-ball-bearing-drawer-slide-94",
@@ -31815,7 +31839,8 @@ export const productTableData2 = [
           "text": "S.O. 776(E) Dated 13th February, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/telescopic-ball-bearing-is-17954"
   },
   {
     "id": "section-cross-recessed-screws-95",
@@ -31908,7 +31933,8 @@ export const productTableData2 = [
           "text": "S.O. 3927 (E) Dated 27 August, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/tapping-screws-pan-head-is-18480-part-1"
   },
   {
     "id": 662,
@@ -31925,7 +31951,8 @@ export const productTableData2 = [
           "text": "S.O. 3927 (E) Dated 27 August, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/tapping-screws-flat-head-is-18480-part-2"
   },
   {
     "id": 663,
@@ -31942,13 +31969,15 @@ export const productTableData2 = [
           "text": "S.O. 3927 (E) Dated 27 August, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/tapping-screws-oval-head-is-18480-part-3"
   },
   {
     "id": 664,
     "sno": 600,
     "isNumber": "IS 7483 : 2018/ ISO 7045 : 2011",
     "product": "Pan Head Screws With Type H or Type Z Cross Recess – Product Grade A",
+    "blogPath": "/blogs/isi-products/pan-head-screws-is-7483",
     "notification": {
       "title": "127. Cross Recessed Screws (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -31976,7 +32005,8 @@ export const productTableData2 = [
           "text": "S.O. 3927 (E) Dated 27 August, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/countersunk-flat-head-screws-is-7485"
   },
   {
     "id": 666,
@@ -32010,7 +32040,8 @@ export const productTableData2 = [
           "text": "S.O. 3927 (E) Dated 27 August, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/raised-countersunk-head-screws-is-7486"
   },
   {
     "id": 668,
@@ -32027,7 +32058,8 @@ export const productTableData2 = [
           "text": "S.O. 3927 (E) Dated 27 August, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/drywall-screws-is-18507"
   },
   {
     "id": 669,
@@ -32044,7 +32076,8 @@ export const productTableData2 = [
           "text": "S.O. 3927 (E) Dated 27 August, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/chipboard-screws-is-18508"
   },
   {
     "id": 670,
@@ -32061,7 +32094,8 @@ export const productTableData2 = [
           "text": "S.O. 3927 (E) Dated 27 August, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/cross-recessed-countersunk-head-wood-screws"
   },
   {
     "id": "section-safety-of-household-commercial-and-similar-elect-96",
@@ -32269,6 +32303,420 @@ export const productTableData2 = [
     }
   },
   {
+    "id": "is302-blog-battery-operated-toothbrush",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "DC Supplied/Battery-Operated Toothbrush and Other Oral Hygiene Appliances",
+    "blogPath": "/blogs/isi-products/battery-operated-tootbrush-is-302",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-skin-beauty-care-appliances",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Skin Beauty Care Appliances",
+    "blogPath": "/blogs/isi-products/skin-beauty-care-appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-foot-warmers-and-heating-mats",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Foot Warmers and Heating Mats",
+    "blogPath": "/blogs/isi-products/foot-warmers-and-heating-mats",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-shavers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "DC Supplied/Battery-Operated Shavers, Trimmers, Clippers and Similar Appliances",
+    "blogPath": "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-&similar-appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-dishwashers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Dishwashers",
+    "blogPath": "/blogs/isi-products/dishwashers",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-electric-hot-plates",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Electric Hot Plates",
+    "blogPath": "/blogs/isi-products/electric-hot-plates",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-fixed-immersion-heaters",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Fixed Immersion Heaters",
+    "blogPath": "/blogs/isi-products/fixed-immersion-heaters",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-food-grinding-machines",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Low Speed Food Grinding Machines",
+    "blogPath": "/blogs/isi-products/food-grinding-machines",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-food-waste-disposers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Food Waste Disposers",
+    "blogPath": "/blogs/isi-products/food-waste-disposers",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-humidifiers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Humidifiers",
+    "blogPath": "/blogs/isi-products/humidifiers",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-massage-appliances",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "DC Supplied/Battery-Operated Massage Appliances",
+    "blogPath": "/blogs/isi-products/battery-operated-massage-appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-oral-hygiene-appliances",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Oral Hygiene Appliances",
+    "blogPath": "/blogs/isi-products/oral-hygiene-appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-outdoor-barbecues",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Outdoor Barbecues",
+    "blogPath": "/blogs/isi-products/outdoor-barbecues",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-personal-etransporters",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Personal-eTransporters",
+    "blogPath": "/blogs/isi-products/personal-etransporters",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-shavers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "DC Supplied/Battery-Operated Shavers, Trimmers, Clippers and Similar Appliances",
+    "blogPath": "/blogs/isi-products/battery-operated-shavers-trimmers-clippers-&similar-appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-slicing-machines",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Slicing Machines",
+    "blogPath": "/blogs/isi-products/slicing-machines",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-thermal-storage-room-heaters",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Thermal Storage Room Heaters",
+    "blogPath": "/blogs/isi-products/thermal-storage-room-heaters",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-toilet-appliances",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Toilet Appliances",
+    "blogPath": "/blogs/isi-products/toilet-appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-vacuum-cleaners",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "DC Supplied/Battery-Operated Vacuum Cleaners",
+    "blogPath": "/blogs/isi-products/battery-operated-vaccum-cleaners",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-vacuum-packaging-appliances",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Commercial Vacuum Packaging Appliances",
+    "blogPath": "/blogs/isi-products/vaccum-packaging-appliances",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-vaporizers",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Vaporizers",
+    "blogPath": "/blogs/isi-products/vaporizers",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-whirlpool-baths",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Whirlpool Baths and Whirlpool Spas",
+    "blogPath": "/blogs/isi-products/whirlpool-baths-and-whirlpool-spas",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "is302-blog-hand-held-electric-engraving-tools",
+    "sno": "",
+    "isNumber": "IS 302 (Part 1) : 2024 IEC 60335-1:2020",
+    "product": "Hand Held Electric Engraving Tools",
+    "blogPath": "/blogs/isi-products/hand-held-electric-engraving-tools",
+    "notification": {
+      "title": "128. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      "link": "https://bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
+      "linkText": "S.O. 4098(E), dated 20th September 2024",
+      "amendments": [
+        {
+          "link": "https://bis.gov.in/wp-content/uploads/2025/05/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-Quality-Control-Order-2025-.pdf",
+          "text": "S.O. 2232 (E) Dated 19 May, 2025"
+        }
+      ]
+    }
+  },
+  {
     "id": "section-hand-tools-97",
     "sno": " ",
     "isNumber": "Hand Tools",
@@ -32295,7 +32743,8 @@ export const productTableData2 = [
           "text": "S.O. 5596(E) Dated 04 December, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/chain-pipe-wrenches-is-4123"
   },
   {
     "id": 673,
@@ -32358,7 +32807,8 @@ export const productTableData2 = [
           "text": "S.O. 5596(E) Dated 04 December, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/adjustable-wrenches-is-6149"
   },
   {
     "id": 676,
@@ -32379,13 +32829,15 @@ export const productTableData2 = [
           "text": "S.O. 5596(E) Dated 04 December, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/open-jaw-wrenches-is-2028"
   },
   {
     "id": 677,
     "sno": 613,
     "isNumber": "IS 2029:1998",
     "product": "Ring Wrenches (Spanners)",
+    "blogPath": "/blogs/isi-products/ring-wrenches-is-2029",
     "notification": {
       "title": "129. Hand Tools (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/09/Hand-Tools-QCO-2024.pdf",
@@ -32421,7 +32873,8 @@ export const productTableData2 = [
           "text": "S.O. 5596(E) Dated 04 December, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/pipe-wrenches-is-4003"
   },
   {
     "id": 679,
@@ -32463,7 +32916,8 @@ export const productTableData2 = [
           "text": "S.O. 5596(E) Dated 04 December, 2025"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/combination-side-cutting-pliers-is-3650"
   },
   {
     "id": "section-indutech-98",
@@ -32482,7 +32936,8 @@ export const productTableData2 = [
       "title": "130. Indutech (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Indutech-QCO-2024.pdf",
       "linkText": "S.O. 4326(E), dated 03rd October 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/flat-woven-webbing-slings-is-15041"
   },
   {
     "id": "section-ropes-and-cordages-99",
@@ -32501,7 +32956,8 @@ export const productTableData2 = [
       "title": "131. Ropes and Cordages (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Ropes-and-Cordages-QCO-2024-1.pdf",
       "linkText": "S.O. 4327(E), dated 03rd October 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/manila-ropes-is-1084"
   },
   {
     "id": 683,
@@ -32535,7 +32991,8 @@ export const productTableData2 = [
       "title": "131. Ropes and Cordages (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Ropes-and-Cordages-QCO-2024-1.pdf",
       "linkText": "S.O. 4327(E), dated 03rd October 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022"
   },
   {
     "id": 686,
@@ -32546,7 +33003,8 @@ export const productTableData2 = [
       "title": "131. Ropes and Cordages (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Ropes-and-Cordages-QCO-2024-1.pdf",
       "linkText": "S.O. 4327(E), dated 03rd October 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/steel-wire-ropes-is-1804"
   },
   {
     "id": 687,
@@ -32580,7 +33038,8 @@ export const productTableData2 = [
       "title": "131. Ropes and Cordages (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Ropes-and-Cordages-QCO-2024-1.pdf",
       "linkText": "S.O. 4327(E), dated 03rd October 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/fibre-ropes-polyethylene-8674"
   },
   {
     "id": 690,
@@ -32591,7 +33050,8 @@ export const productTableData2 = [
       "title": "131. Ropes and Cordages (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Ropes-and-Cordages-QCO-2024-1.pdf",
       "linkText": "S.O. 4327(E), dated 03rd October 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/fibre-ropes-polyster-is-17609"
   },
   {
     "id": "section-solar-thermal-systems-devices-and-components-100",
@@ -32610,7 +33070,8 @@ export const productTableData2 = [
       "title": "132. Solar Thermal Systems, Devices and Components (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Solar-Thermal-Systems-Devices-and-Components-QCO-2024.pdf",
       "linkText": "S.O. 4485(E), dated 14th October 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/solar-flat-plate-collector-is-12933"
   },
   {
     "id": 692,
@@ -32632,7 +33093,8 @@ export const productTableData2 = [
       "title": "132. Solar Thermal Systems, Devices and Components (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/10/Solar-Thermal-Systems-Devices-and-Components-QCO-2024.pdf",
       "linkText": "S.O. 4485(E), dated 14th October 2024"
-    }
+    },
+    "blogPath": "/blogs/isi-products/solar-water-heating-systems-is-16542"
   },
   {
     "id": "section-h-acid-k-acid-vinyl-sulphone-101",
@@ -32793,7 +33255,8 @@ export const productTableData2 = [
       "title": "135. Stainless Steel Pipes and Tubes (Quality Control) Order, 2025",
       "link": "https://bis.gov.in/wp-content/uploads/2025/02/Stainless-Steel-Pipes-and-Tubes-QCO-2025.pdf",
       "linkText": "S.O. 693(E), dated 11th February 2025"
-    }
+    },
+    "blogPath": "/blogs/isi-products/seamless-pipes-&-tubes-is-17875"
   },
   {
     "id": 700,
@@ -32804,7 +33267,8 @@ export const productTableData2 = [
       "title": "135. Stainless Steel Pipes and Tubes (Quality Control) Order, 2025",
       "link": "https://bis.gov.in/wp-content/uploads/2025/02/Stainless-Steel-Pipes-and-Tubes-QCO-2025.pdf",
       "linkText": "S.O. 693(E), dated 11th February 2025"
-    }
+    },
+    "blogPath": "/blogs/isi-products/welded-pipes-&-tubes-is-17876"
   },
   {
     "id": "section-furniture-105",
@@ -32837,7 +33301,8 @@ export const productTableData2 = [
           "text": "S.O. 1125 (E) Dated 02 March, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/work-chairs-is-17631"
   },
   {
     "id": 702,
@@ -32888,7 +33353,8 @@ export const productTableData2 = [
           "text": "S.O. 1125 (E) Dated 02 March, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/tables-&-desks-is-17633"
   },
   {
     "id": 704,
@@ -32913,7 +33379,8 @@ export const productTableData2 = [
           "text": "S.O. 1125 (E) Dated 02 March, 2026"
         }
       ]
-    }
+    },
+    "blogPath": "/blogs/isi-products/storage-unit-is-17634"
   },
   {
     "id": 705,
@@ -33039,7 +33506,8 @@ export const productTableData2 = [
         }
       ]
     },
-    "isDeNotified": true
+    "isDeNotified": true,
+    "blogPath": "/bis-certificate-for-refined-zinc"
   },
   {
     "id": 710,
@@ -33061,6 +33529,7 @@ export const productTableData2 = [
         }
       ]
     },
-    "isDeNotified": true
+    "isDeNotified": true,
+    "blogPath": "/bis-certificate-for-tin-ingots"
   }
 ];
