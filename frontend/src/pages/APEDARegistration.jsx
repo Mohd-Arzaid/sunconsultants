@@ -840,9 +840,9 @@ const MainContentLeft = () => {
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
-          <h2 className="service-left-content-heading-two mt-0 mb-2 md:mb-3">
+          <h1 className="service-left-content-heading-two mt-0 mb-2 md:mb-3">
             What is APEDA Registration
-          </h2>
+          </h1>
 
           
 

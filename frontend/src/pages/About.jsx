@@ -33,6 +33,7 @@ import Footer from "@/common/Footer";
 import Services from "@/components/manual/Services";
 import AboutContact from "@/components/manual/about/AboutContact";
 import LogoTicker from "@/components/manual/home-page-sections/LogoTicker";
+import AuditsMarquee from "@/components/manual/home-page-sections/AuditsMarquee";
 import CertificationAndAchievements from "@/components/manual/home-page-sections/CertificationAndAchievements";
 
 // Assets/Images
@@ -1037,6 +1038,9 @@ const About = () => {
       <OurVisionSection />
       <VideoShowcase />
       <Services />
+      <section aria-label="International Audits Showcase" className="w-full">
+        <AuditsMarquee />
+      </section>
       <Testimonials />
       <AboutContact />
       <Footer />
