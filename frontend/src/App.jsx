@@ -44,6 +44,9 @@ import WebinarSkeleton from "./components/ui/webinar-skeleton";
 const Webinar = lazy(() => import("./pages/Webinar"));
 import VideosSkeleton from "./components/ui/videos-skeleton";
 const Videos = lazy(() => import("./pages/Videos"));
+const AuthorizedIndianRepresentativeAIR = lazy(() =>
+  import("./pages/AuthorizedIndianRepresentativeAIR")
+);
 import TermsAndConditions from "./pages/TermsAndConditions";
 import EmployeeLogin from "./pages/EmployeeLogin";
 import Error404 from "./pages/404Error";
@@ -70,6 +73,7 @@ import { BlogRoutes } from "./routes/BlogRoutes";
 import { IndiaNo1Routes } from "./routes/IndiaNo1Routes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
 import FaqsPageRoutes from "./routes/FaqsPageRoutes";
+import ServicesPageSkeleton from "./components/ui/services-page-skeleton";
 
 import MessageFromManagementDesk from "./pages/MessageFromManagementDesk";
 import OrganizationChart from "./pages/organization-chart/organization-chart";
@@ -218,6 +222,14 @@ function App() {
         {MinistryUpdatesRoutes()}
 
         {/* Service Routes */}
+        <Route
+          path="/authorized-indian-representative"
+          element={
+            <Suspense fallback={<ServicesPageSkeleton />}>
+              <AuthorizedIndianRepresentativeAIR />
+            </Suspense>
+          }
+        />
         {ServicePagesRoutes()}
         {SchemeXPagesRoutes()}
         {BISFMPagesRoutes()}
