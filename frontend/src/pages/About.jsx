@@ -16,6 +16,9 @@ import {
   ChevronLeft,
   ChevronRight,
   SlashIcon,
+  Shield,
+  Clock,
+  MapPin,
 } from "lucide-react";
 
 // UI Components
@@ -780,6 +783,428 @@ const Testimonials = () => {
   );
 };
 
+const SERVICE_PILLS = [
+  "BIS Certificate",
+  "LMPC License",
+  "CDSCO Registration",
+  "PESO Approval",
+  "WPC Approvals",
+  "EPR Certificate",
+];
+
+const INDUSTRY_TAGS = [
+  "Footwear",
+  "Electronics",
+  "Chemicals",
+  "Heavy Machinery",
+  "Automotive Components",
+  "Steel Alloys",
+  "Furniture",
+  "Toys",
+  "Skin & Hair Appliances",
+  "Hand Tools",
+];
+
+const PROCESS_STEPS = [
+  "Application preparation",
+  "Lab testing coordination",
+  "Inspection scheduling",
+  "Query responses",
+  "Final certificate issuance",
+];
+
+const AboutStorySections = () => {
+  return (
+    <div className="flex flex-col gap-12 md:gap-16 mb-12 md:mb-16">
+      <section>
+        <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e] mb-5 md:mb-6">
+          A Decade of Simplifying Indian Compliance
+        </h2>
+
+        <div className="space-y-5 max-w-4xl">
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            Founded in 2016, Sun Certifications India has spent nearly a decade
+            helping businesses navigate one of the world&apos;s most layered
+            regulatory environments. Backed by a team of{" "}
+            <span className="font-semibold text-[#1A8781]">
+              50+ compliance specialists
+            </span>
+            , we operate as a full-spectrum consultancy firm where{" "}
+            <span className="font-semibold text-[#1A8781]">
+              BIS Certification
+            </span>{" "}
+            is our core expertise.
+          </p>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            Our clients range from international companies, Indian manufacturers
+            to domestic importers who need BIS certificate, LMPC license, CDSCO
+            registration, PESO approval, WPC approvals, EPR certificate, etc.
+            Regardless of where you are in the world or where you are in the
+            certification process, our job remains the same: take the complexity
+            off your plate and replace it with a clear, actionable path forward.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 md:mt-10">
+          <div className="text-center p-5 bg-white rounded-lg border border-[#1A8781]/30">
+            <div className="text-3xl md:text-4xl font-bold font-geist text-[#1A8781] mb-1">
+              2016
+            </div>
+            <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
+              Founded
+            </p>
+          </div>
+          <div className="text-center p-5 bg-white rounded-lg border border-[#1A8781]/30">
+            <div className="text-3xl md:text-4xl font-bold font-geist text-[#1A8781] mb-1">
+              50+
+            </div>
+            <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
+              Compliance Specialists
+            </p>
+          </div>
+          <div className="text-center p-5 bg-white rounded-lg border border-[#1A8781]/30">
+            <div className="text-3xl md:text-4xl font-bold font-geist text-[#1A8781] mb-1">
+              BIS
+            </div>
+            <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
+              Core Expertise
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-2 md:gap-3 mt-6 md:mt-8">
+          {SERVICE_PILLS.map((service) => (
+            <span
+              key={service}
+              className="px-3 py-1.5 md:px-4 md:py-2 text-sm font-geist text-neutral-700 bg-[#1A8781]/10 border border-[#1A8781]/30 rounded-full"
+            >
+              {service}
+            </span>
+          ))}
+        </div>
+
+        <blockquote className="mt-8 md:mt-10 border-l-4 border-[#1A8781] pl-6 py-4 bg-[#1A8781]/5 rounded-r-lg">
+          <p className="text-base md:text-lg text-neutral-700 font-geist leading-relaxed italic">
+            Take the complexity off your plate and replace it with a clear,
+            actionable path forward.
+          </p>
+        </blockquote>
+      </section>
+
+      <section className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
+        <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300" />
+
+        <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e] mb-5 md:mb-6 relative z-10">
+          End-to-End Certification Across Major Indian Regulatory Scheme
+        </h2>
+
+        <div className="space-y-5 relative z-10">
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            India&apos;s compliance framework is not a single window. Depending
+            on your product, you may need approvals from{" "}
+            <span className="font-semibold text-[#1A8781]">BIS</span>,{" "}
+            <span className="font-semibold text-[#1A8781]">CDSCO</span>,{" "}
+            <span className="font-semibold text-[#1A8781]">PESO</span>,{" "}
+            <span className="font-semibold text-[#1A8781]">LMPC</span>,{" "}
+            <span className="font-semibold text-[#1A8781]">WPC</span>, etc. or
+            a combination of all of them — each governed by a different
+            ministry, each with its own documentation formats, timelines, and
+            inspection requirements. Most consultancies handle one or two of
+            these. We handle all of them, in-house, as a coordinated project.
+          </p>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            This structure benefits both domestic and international clients.
+            Indian manufacturers who need multi-license approvals for products
+            that touch multiple ministries no longer have to manage several
+            consultants simultaneously. And foreign companies dealing with the
+            added complexity of overseas factory audits, sample logistics, and
+            Authorized Indian Representative appointments can rely on a single
+            team to manage every touchpoint end-to-end.
+          </p>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300" />
+
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 p-3 md:p-4 rounded-full h-fit w-fit mb-5 relative z-10">
+            <Clock className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781]" />
+          </div>
+
+          <h3 className="font-playfair text-xl md:text-2xl font-bold text-[#1e1e1e] mb-5 relative z-10">
+            Domestic Expertise
+          </h3>
+
+          <div className="space-y-5 relative z-10">
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+              Domestic businesses working within India&apos;s certification
+              framework often face a different but equally frustrating challenge
+              — not unfamiliarity, but delays. Applications stall at documentation
+              review. Labs schedule backlogs stretch for weeks. A single missing
+              annexure can set a file back by months.
+            </p>
+
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+              Our team has spent years building practical, procedural knowledge
+              of how <span className="font-semibold text-[#1A8781]">BIS</span>,{" "}
+              <span className="font-semibold text-[#1A8781]">LMPC</span>,{" "}
+              <span className="font-semibold text-[#1A8781]">WPC</span>, and
+              other regulatory bodies operate at a day-to-day level. We know what
+              documentation gets rejected, which formats inspectors flag, and
+              where in a typical application the process quietly slows down. That
+              institutional knowledge translates directly into faster turnaround
+              and fewer unexpected setbacks for our Indian clients.
+            </p>
+          </div>
+        </div>
+
+        <div className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300" />
+
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 p-3 md:p-4 rounded-full h-fit w-fit mb-5 relative z-10">
+            <Globe className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781]" />
+          </div>
+
+          <h3 className="font-playfair text-xl md:text-2xl font-bold text-[#1e1e1e] mb-5 relative z-10">
+            International Solutions
+          </h3>
+
+          <div className="space-y-5 relative z-10">
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+              International companies seeking{" "}
+              <span className="font-semibold text-[#1A8781]">BIS</span>{" "}
+              certification face a distinct set of challenges that purely
+              domestic consultancies are simply not designed to solve. The
+              Foreign Manufacturers Certification Scheme requires a physical
+              government factory audit on overseas soil. Sample shipments to
+              India regularly get stuck at customs. And the appointment of a
+              legally accountable Authorized Indian Representative — someone who
+              carries real liability under Indian law — is a decision that
+              demands far more thought than most companies initially give it.
+            </p>
+
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+              Sun Certifications India has built specific operational
+              capabilities around each of these pain points. We deploy our own
+              technical auditors to overseas factories before the BIS officer
+              arrives, running a comprehensive mock inspection to eliminate audit
+              failures before they happen. We manage sample logistics end-to-end
+              — from international freight to Indian customs clearance to
+              laboratory delivery — tracked through a live client dashboard. And
+              our <span className="font-semibold text-[#1A8781]">AIR</span>{" "}
+              service is backed by a structured legal and compliance framework,
+              not an informal third-party arrangement.
+            </p>
+
+            <div className="p-4 md:p-5 bg-white/60 rounded-md border border-neutral-200/80">
+              <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                We built an in-house customs clearance and logistics division
+                exclusively for BIS test samples. We manage international
+                freight coordination, handle Indian customs clearance using the
+                appropriate temporary import frameworks, and deliver your samples
+                directly to the BIS-designated laboratory — tracked end-to-end
+                through a live client dashboard that you can access from anywhere
+                in the world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 border-l-4 border-l-[#1A8781] hover:shadow-lg transition-all duration-300 overflow-hidden">
+        <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300" />
+
+        <div className="flex items-start gap-4 mb-5 relative z-10">
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 p-3 md:p-4 rounded-full h-fit w-fit shrink-0">
+            <Shield className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781]" />
+          </div>
+          <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e]">
+            Authorized Indian Representative (AIR) — A Legal Shield, Not Just a
+            Signature
+          </h2>
+        </div>
+
+        <div className="space-y-5 relative z-10">
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            Under Indian regulations, every foreign manufacturer seeking{" "}
+            <span className="font-semibold text-[#1A8781]">BIS</span>{" "}
+            certification must appoint an Authorized Indian Representative (
+            <span className="font-semibold text-[#1A8781]">AIR</span>). This is
+            not a formality. The AIR carries direct legal and financial liability
+            under Indian law if the product fails compliance checks or market
+            surveillance. It is a position that demands institutional
+            accountability — not a casual third-party arrangement.
+          </p>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            At Sun Certifications, we offer a structured, corporate AIR service
+            backed by dedicated compliance officers and clear legal frameworks.
+            When we act as your AIR, your international legal team deals with an
+            entity that is financially accountable, professionally structured,
+            and deeply familiar with Indian regulatory expectations. We do not
+            outsource this responsibility to freelancers or loose networks. We
+            hold it ourselves.
+          </p>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            For foreign companies worried about appointing a trustworthy Indian
+            representative, this is the most important decision you will make in
+            your India entry strategy. We have built our AIR service to give
+            your corporate legal team complete peace of mind.
+          </p>
+
+          <Link
+            to="/authorized-indian-representative"
+            className="inline-flex items-center gap-2 text-[#1A8781] font-geist font-medium hover:text-[#125E5A] transition-colors duration-200"
+          >
+            Learn more about our AIR service
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e] mb-5 md:mb-6">
+          Industries We Serve — Across the Globe
+        </h2>
+
+        <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-6 md:mb-8 max-w-4xl">
+          Over the years, Sun Certifications India has worked with businesses
+          operating across a wide range of product categories and industries —
+          from large-scale industrial manufacturers to consumer goods brands
+          entering the Indian market for the first time. Our experience spans
+          regulated product categories under:
+        </p>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+          {INDUSTRY_TAGS.map((industry) => (
+            <div
+              key={industry}
+              className="bg-white border border-neutral-200 rounded-lg py-3 px-4 text-center text-sm font-geist text-neutral-700 hover:border-[#1A8781]/40 transition-colors duration-200"
+            >
+              {industry}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
+        <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300" />
+
+        <div className="flex items-center gap-3 mb-5 relative z-10">
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 p-3 rounded-full">
+            <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#1A8781]" />
+          </div>
+          <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e]">
+            Our Global Presence - Serving Manufacturers and Importers across the
+            Globe
+          </h2>
+        </div>
+
+        <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-6 relative z-10">
+          Since our founding in 2016, Sun Certifications India has steadily built
+          a client base that extends well beyond Indian borders. Today, we work
+          with manufacturers and exporters from across Europe, Asia, and North
+          America — companies of varying sizes and industries, all navigating the
+          same challenge: getting their products certified and legally accepted
+          in the Indian market without unnecessary delays, failed audits, or
+          regulatory missteps.
+        </p>
+
+        <div className="flex flex-wrap gap-3 relative z-10">
+          {["Europe", "Asia", "North America"].map((region) => (
+            <span
+              key={region}
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-geist font-medium text-[#1A8781] bg-[#1A8781]/10 border border-[#1A8781]/30 rounded-full"
+            >
+              <Globe className="w-4 h-4" />
+              {region}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12">
+          <div className="md:col-span-2 space-y-5">
+            <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e]">
+              How We Work: Practical Guidance, Not Just Paperwork
+            </h2>
+
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+              Sun Certifications India has been that partner for businesses
+              across a wide range of industries since 2016. We are proud of the
+              reputation we have built — not through marketing, but through the
+              quality of work we deliver and the relationships we maintain with
+              the clients who trust us year after year.
+            </p>
+
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+              If you are looking to obtain a new certification, renew an existing
+              one, expand into a new product line, or simply understand where you
+              stand with Indian regulatory requirements — we are the team to
+              speak with first.
+            </p>
+          </div>
+
+          <div className="md:col-span-3">
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-6">
+              From the first conversation, we assess your product, your target
+              approval, and your timeline — and we tell you honestly what is
+              realistic and what is not. We map out the exact documentation
+              requirements, flag the common points of failure before they become
+              your problem, and stay actively involved through every stage of the
+              process:
+            </p>
+
+            <ul className="space-y-4">
+              {PROCESS_STEPS.map((step, index) => (
+                <li key={step} className="flex items-start gap-4">
+                  <span className="flex items-center justify-center w-8 h-8 shrink-0 rounded-full bg-[#1A8781] text-white text-sm font-geist font-semibold">
+                    {index + 1}
+                  </span>
+                  <span className="text-base md:text-lg text-neutral-700 font-geist pt-0.5">
+                    {step}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 md:mt-10 p-6 md:p-8 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200">
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            Our clients consistently tell us that the single biggest value we
+            provide is not just getting them certified — it is preventing the
+            costly mistakes that happen when companies try to navigate this
+            process without experienced guidance. A failed audit, a rejected
+            sample shipment, or a compliance gap discovered during market
+            surveillance can cost significantly more than the certification
+            itself. We are here to make sure that does not happen.
+          </p>
+        </div>
+
+        <div className="mt-8 md:mt-10 flex justify-center md:justify-start">
+          <Link
+            to="/contact"
+            className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit group active:scale-[0.98]"
+          >
+            <span className="font-geist font-medium text-sm md:text-base">
+              Speak With Our Experts
+            </span>
+            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
+              <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45 group-hover:translate-x-0.5 transition-transform duration-300" />
+            </div>
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
 const AboutUsHero = () => {
   return (
     <div className="max-w-[84rem] mx-auto px-4 md:px-12 py-12 md:py-16">
@@ -788,12 +1213,9 @@ const AboutUsHero = () => {
         <h1 className="font-playfair drop-shadow-lg text-5xl md:text-6xl font-bold text-[#1e1e1e] mb-6 md:mb-8">
           About Us
         </h1>
-        <p className="text-lg md:text-xl font-geist text-neutral-600 max-w-4xl mx-auto px-4 md:px-0 leading-relaxed">
-        Founded in 2016, Sun Certifications India provides end-to-end compliance and certification support for manufacturers and importers operating in the Indian market. The company specializes in guiding businesses through India’s complex regulatory framework, helping them obtain the necessary certifications and licenses requirements.
-
-With over a decade of industry experience, Sun Certifications India has built a strong reputation as a reliable compliance partner. The team focuses on simplifying regulatory procedures, reducing delays, and ensuring that clients meet all applicable standards and approvals. By offering practical guidance and dedicated support throughout the certification process, the company helps businesses achieve smoother market entry and maintain long-term operational success in India.
-        </p>
       </div>
+
+      <AboutStorySections />
 
       {/* Credentials Content - Without Headings */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
@@ -1030,7 +1452,10 @@ const About = () => {
       <section aria-label="Client Marquee" className="w-full py-10 md:py-14">
         <LogoTicker />
       </section>
-      <section aria-label="Certification and Achievements" className="w-full pb-8 md:pb-12">
+      <section
+        aria-label="Certification and Achievements"
+        className="w-full pb-8 md:pb-12"
+      >
         <CertificationAndAchievements />
       </section>
       <WhyChooseUs />
@@ -1038,7 +1463,10 @@ const About = () => {
       <OurVisionSection />
       <VideoShowcase />
       <Services />
-      <section aria-label="International Audits Showcase" className="w-full pb-8 md:pb-12">
+      <section
+        aria-label="International Audits Showcase"
+        className="w-full pb-8 md:pb-12"
+      >
         <AuditsMarquee className="pt-8" />
         <div className="max-w-[88rem] mx-auto px-4 pt-2 mt-2 md:mt-4 flex flex-col items-center">
           <div className="w-16 h-0.5 bg-[#1A8781]/30 rounded-full mb-5" />
@@ -1049,7 +1477,9 @@ const About = () => {
             to="/international-audits"
             className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit group active:scale-[0.98]"
           >
-            <span className="font-geist font-medium text-sm md:text-base">View More</span>
+            <span className="font-geist font-medium text-sm md:text-base">
+              View More
+            </span>
             <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
               <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45 group-hover:translate-x-0.5 transition-transform duration-300" />
             </div>
