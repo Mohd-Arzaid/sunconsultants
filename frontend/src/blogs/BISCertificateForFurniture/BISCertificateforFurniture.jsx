@@ -950,6 +950,20 @@ const MainContentLeft = () => {
 
         <SectionDivider />
 
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Related Resources
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">BIS ISI Certification</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS Certificate for Foreign Manufacturer</a>
+          </li>
+        </ul>
+
         <ManyUsersAlsoRead />
 
         <FaqAuthorEng questionNumber={2} />
