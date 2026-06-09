@@ -1,3 +1,10 @@
 {
+  "redirects": [
+    {
+      "source": "/ministry-updates/dpiit-bis-qco-exemption-2026-notification",
+      "destination": "/ministry-updates/latest-bis-qco-update-for-import-products",
+      "permanent": true
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }

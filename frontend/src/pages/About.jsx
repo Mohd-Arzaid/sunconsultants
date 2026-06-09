@@ -9,16 +9,26 @@ import { Helmet } from "react-helmet-async";
 
 // Lucide Icons
 import {
+  Armchair,
   Bike,
-  Globe,
-  Play,
-  User,
+  Blocks,
+  Car,
   ChevronLeft,
   ChevronRight,
-  SlashIcon,
-  Shield,
   Clock,
+  Cpu,
+  Factory,
+  FlaskConical,
+  Footprints,
+  Globe,
+  Layers,
   MapPin,
+  Play,
+  Shield,
+  SlashIcon,
+  Sparkles,
+  User,
+  Wrench,
 } from "lucide-react";
 
 // UI Components
@@ -38,6 +48,7 @@ import AboutContact from "@/components/manual/about/AboutContact";
 import LogoTicker from "@/components/manual/home-page-sections/LogoTicker";
 import AuditsMarquee from "@/components/manual/home-page-sections/AuditsMarquee";
 import CertificationAndAchievements from "@/components/manual/home-page-sections/CertificationAndAchievements";
+import { NAVIGATION_DATA } from "@/data/navbar-data/navbar-data";
 
 // Assets/Images
 import whychooseus from "../assets/images/whychooseus.jpg";
@@ -783,26 +794,88 @@ const Testimonials = () => {
   );
 };
 
-const SERVICE_PILLS = [
-  "BIS Certificate",
-  "LMPC License",
-  "CDSCO Registration",
-  "PESO Approval",
-  "WPC Approvals",
-  "EPR Certificate",
-];
+const ABOUT_SERVICE_PILLS = [...NAVIGATION_DATA.categories].sort(
+  (a, b) => a.desktopOrder - b.desktopOrder
+);
+
+const ServicePillsScroller = () => {
+  const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const updateScrollState = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 1);
+  };
+
+  useEffect(() => {
+    updateScrollState();
+    window.addEventListener("resize", updateScrollState);
+    return () => window.removeEventListener("resize", updateScrollState);
+  }, []);
+
+  const scroll = (direction) => {
+    scrollRef.current?.scrollBy({
+      left: direction === "left" ? -280 : 280,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <div className="relative mt-6 md:mt-8 mx-auto max-w-3xl md:max-w-4xl px-10 md:px-14">
+      <button
+        type="button"
+        onClick={() => scroll("left")}
+        disabled={!canScrollLeft}
+        aria-label="Previous services"
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 rounded-full w-[36px] h-[36px] md:w-[40px] md:h-[40px] flex items-center justify-center border-2 border-[#1A8781] bg-white/80 hover:bg-[#1A8781]/10 transition-all duration-300 shadow-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white/80"
+      >
+        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-[#1A8781]" />
+      </button>
+
+      <div
+        ref={scrollRef}
+        onScroll={updateScrollState}
+        className="flex gap-2 md:gap-3 overflow-x-auto scroll-smooth scrollbar-hide [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {ABOUT_SERVICE_PILLS.map(({ id, name, link }) => (
+          <Link
+            key={id}
+            to={link}
+            className="shrink-0 px-3 py-1.5 md:px-4 md:py-2 text-sm font-geist text-neutral-700 bg-[#1A8781]/10 border border-[#1A8781]/30 rounded-full hover:bg-[#1A8781]/20 hover:border-[#1A8781]/50 transition-colors duration-200"
+          >
+            {name}
+          </Link>
+        ))}
+      </div>
+
+      <button
+        type="button"
+        onClick={() => scroll("right")}
+        disabled={!canScrollRight}
+        aria-label="Next services"
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 rounded-full w-[36px] h-[36px] md:w-[40px] md:h-[40px] flex items-center justify-center border-2 border-[#1A8781] bg-[#1A8781] hover:bg-[#125E5A] transition-all duration-300 shadow-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-[#1A8781]"
+      >
+        <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-white" />
+      </button>
+    </div>
+  );
+};
 
 const INDUSTRY_TAGS = [
-  "Footwear",
-  "Electronics",
-  "Chemicals",
-  "Heavy Machinery",
-  "Automotive Components",
-  "Steel Alloys",
-  "Furniture",
-  "Toys",
-  "Skin & Hair Appliances",
-  "Hand Tools",
+  { name: "Footwear", icon: Footprints },
+  { name: "Electronics", icon: Cpu },
+  { name: "Chemicals", icon: FlaskConical },
+  { name: "Heavy Machinery", icon: Factory },
+  { name: "Automotive Components", icon: Car },
+  { name: "Steel Alloys", icon: Layers },
+  { name: "Furniture", icon: Armchair },
+  { name: "Toys", icon: Blocks },
+  { name: "Skin & Hair Appliances", icon: Sparkles },
+  { name: "Hand Tools", icon: Wrench },
 ];
 
 const PROCESS_STEPS = [
@@ -824,7 +897,14 @@ const AboutStorySections = () => {
 
           <div className="space-y-5">
             <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed text-center">
-              Founded in 2016, Sun Certifications India has spent nearly a decade
+              Founded in 2016,{" "}
+              <Link
+                to="/"
+                className="font-semibold text-[#1A8781] hover:underline"
+              >
+                Sun Certifications India
+              </Link>{" "}
+              has spent nearly a decade
               helping businesses navigate one of the world&apos;s most layered
               regulatory environments. Backed by a team of{" "}
               <span className="font-semibold text-[#1A8781]">
@@ -875,16 +955,7 @@ const AboutStorySections = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-6 md:mt-8">
-          {SERVICE_PILLS.map((service) => (
-            <span
-              key={service}
-              className="px-3 py-1.5 md:px-4 md:py-2 text-sm font-geist text-neutral-700 bg-[#1A8781]/10 border border-[#1A8781]/30 rounded-full"
-            >
-              {service}
-            </span>
-          ))}
-        </div>
+        <ServicePillsScroller />
 
         <blockquote className="mt-8 md:mt-10 mx-auto max-w-3xl md:max-w-4xl border-l-4 border-[#1A8781] pl-6 py-4 bg-[#1A8781]/5 rounded-r-lg">
           <p className="text-base md:text-lg text-neutral-700 font-geist leading-relaxed italic text-center">
@@ -1068,7 +1139,7 @@ const AboutStorySections = () => {
         </div>
       </section>
 
-      <section>
+      <section className="p-6 md:p-8 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200">
         <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e] mb-5 md:mb-6">
           Industries We Serve — Across the Globe
         </h2>
@@ -1081,13 +1152,21 @@ const AboutStorySections = () => {
           regulated product categories under:
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-          {INDUSTRY_TAGS.map((industry) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+          {INDUSTRY_TAGS.map(({ name, icon: Icon }) => (
             <div
-              key={industry}
-              className="bg-white border border-neutral-200 rounded-lg py-3 px-4 text-center text-sm font-geist text-neutral-700 hover:border-[#1A8781]/40 transition-colors duration-200"
+              key={name}
+              className="group flex flex-col items-center justify-center text-center p-4 md:p-5 bg-white rounded-xl border border-[#1A8781]/30 hover:border-[#1A8781]/60 hover:shadow-md transition-all duration-300 md:hover:-translate-y-1"
             >
-              {industry}
+              <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:bg-[#1A8781]/20 group-hover:border-[#1A8781]/50 p-2.5 md:p-3 rounded-full mb-3 transition-all duration-300">
+                <Icon
+                  className="w-5 h-5 md:w-6 md:h-6 text-[#1A8781]"
+                  aria-hidden="true"
+                />
+              </div>
+              <span className="text-xs sm:text-sm font-geist font-medium text-neutral-700 leading-snug">
+                {name}
+              </span>
             </div>
           ))}
         </div>
@@ -1190,8 +1269,8 @@ const AboutStorySections = () => {
         </div>
 
         <div className="mt-8 md:mt-10 flex justify-center md:justify-start">
-          <Link
-            to="/contact"
+          <a
+            href="tel:+919315973373"
             className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit group active:scale-[0.98]"
           >
             <span className="font-geist font-medium text-sm md:text-base">
@@ -1200,7 +1279,7 @@ const AboutStorySections = () => {
             <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
               <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45 group-hover:translate-x-0.5 transition-transform duration-300" />
             </div>
-          </Link>
+          </a>
         </div>
       </section>
     </div>

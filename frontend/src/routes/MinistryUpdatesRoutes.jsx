@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Navigate, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import MinistryUpdates from "../pages/MinistryUpdates";
 import MinistryUpdatesSkeleton from "@/components/ui/ministry-updates-skeleton";
@@ -304,6 +304,15 @@ export const MinistryUpdatesRoutes = () => {
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <BISCRSMigrationto2023 />
           </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/dpiit-bis-qco-exemption-2026-notification"
+        element={
+          <Navigate
+            to="/ministry-updates/latest-bis-qco-update-for-import-products"
+            replace
+          />
         }
       />
       <Route

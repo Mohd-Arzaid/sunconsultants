@@ -9,6 +9,14 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { SlashIcon } from "lucide-react";
 
 import { Helmet } from "react-helmet-async";
@@ -35,19 +43,19 @@ export default BISCertificateForFurniture;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Furniture in India | BIS Certification, License & Process Guide";
+    "BIS Certification for Furniture in India | ISI Mark Guide";
   const ogTitle =
-    "BIS Certificate for Furniture in India - Complete BIS Certification Guide";
+    "BIS Certification for Furniture in India | ISI Mark Guide";
   const twitterTitle =
-    "BIS Certificate for Furniture | Complete BIS Certification Guide of Indian BIS";
+    "BIS Certification for Furniture in India | ISI Mark Guide";
   const metaDescription =
-    "BIS Certificate for Furniture in India - complete guide on BIS Certification, BIS License, cost, documents, standards, process, online application & BIS Mark for furniture manufacturers.";
+    "Complete guide to BIS certification for furniture in India. Learn BIS standards, ISI mark process, testing, and compliance for manufacturers & importers.";
   const ogDescription =
-    "Looking for BIS Certification for Furniture in India? Learn about BIS License, BIS Mark, applicable standards, certification process, cost, documents & compliance requirements in detail.";
+    "Complete guide to BIS certification for furniture in India. Learn BIS standards, ISI mark process, testing, and compliance for manufacturers & importers.";
   const twitterDescription =
-    "Complete guide to BIS Certificate for Furniture in India - BIS Certification process, cost, documents, BIS Mark, standards & online application explained.";
+    "Complete guide to BIS certification for furniture in India. Learn BIS standards, ISI mark process, testing, and compliance for manufacturers & importers.";
   const metaKeywords =
-    "BIS Certificate for Furniture, BIS Certification for Furniture, BIS License for Furniture, BIS Licence for Furniture, What is BIS, Indian BIS";
+    "bis certification for furniture, bis certification for furniture in India, bis standards for furniture, BIS ISI Certificate for furnitures, BIS certified furnitures, bis certified furniture manufacturers in India, ISI Certification for Furniture, ISI Mark for furniture, ISI consultant for furniture";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/furniture";
   const websiteName = "Sun Certifications India";
@@ -104,8 +112,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Furniture in India – Complete Detailed
-                    Guide
+                    BIS Certification for Furniture in India
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -131,919 +138,817 @@ const MainContent = () => {
   );
 };
 
+const TABLE_WRAP =
+  "mt-6 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]";
+
+const SectionDivider = () => <div className="h-px w-full bg-gray-300 my-6" />;
+
 const MainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
-      {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for Furniture in India – Complete Detailed Guide
+          BIS Certification for Furniture in India: Complete Guide to BIS
+          Standards, ISI Mark, Process &amp; Compliance
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforFurniture.png"
             title="BIS License for Furniture"
-            alt="BIS Certificate for Furniture in India - Complete BIS Certification Guide"
+            alt="BIS Certification for Furniture in India - ISI Mark Guide"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Introduction: BIS Certification and the Indian Furniture Industry
-        </h2>
         <p className="text-gray-600 text-base font-geist mb-4">
-          In India, product quality, safety, and standardization are governed by
-          a central statutory authority known as the Bureau of Indian Standards
-          (BIS). BIS is the national standards organization of India,
-          established under the BIS Act to ensure that products sold in the
-          Indian market conform to defined safety, quality, and performance
-          benchmarks.
+          Furniture is an essential part of homes, offices, and public spaces.
+          Ensuring the safety, durability, and quality of furniture is crucial
+          for consumers and manufacturers alike. In India,{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+          >
+            BIS certification for furniture
+          </Link>{" "}
+          is a mandatory requirement for certain categories of furniture under
+          the Furniture (Quality Control) Order, 2025. This guide provides a
+          detailed overview of BIS standards, ISI marks, the certification
+          process, and compliance requirements.
         </p>
 
+        <SectionDivider />
+
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS?
+          What is BIS Certification for Furniture?
         </h2>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Meaning of BIS Certification for Furniture
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Full Form stands for Bureau of Indian Standards. It functions
-          under the Ministry of Consumer Affairs, Food & Public Distribution,
-          Government of India. BIS plays a crucial role in protecting consumer
-          interests while supporting manufacturers through a transparent
-          standardization and certification ecosystem.
+          BIS certification is a formal process by which the Bureau of Indian
+          Standards (BIS) evaluates products to ensure they comply with Indian
+          standards. For furniture, this certification ensures that products
+          meet defined safety, performance, and quality parameters. Once
+          certified, manufacturers can use the{" "}
+          <Link
+            to="/a-guide-to-bis-certification-indian-bis"
+            className="text-blue-600 hover:underline"
+          >
+            ISI mark
+          </Link>{" "}
+          on their furniture, signaling compliance to buyers.
         </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Indian furniture industry has witnessed rapid growth due to:
-        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Difference Between BIS Certification and ISI Mark for Furniture
+        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Urbanization</li>
-          <li>Expansion of residential and commercial infrastructure</li>
           <li>
-            Growth in hospitality, education, healthcare, and co-living sectors
+            <strong>BIS Certification:</strong> The process of evaluation,
+            testing, and approval by BIS.
           </li>
-          <li>Rising consumer awareness about product safety and durability</li>
+          <li>
+            <strong>ISI Mark:</strong> A mark granted after BIS certification
+            that indicates the product meets Indian standards. The ISI mark is
+            the visible assurance of compliance for consumers.
+          </li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Furniture is no longer considered a purely aesthetic product. It is
-          directly linked to user safety, ergonomics, structural stability, fire
-          resistance, and long-term durability. Incidents involving collapsing
-          beds, unsafe bunk beds, unstable chairs, or substandard storage units
-          have raised concerns among regulators and consumers alike.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          To address these risks,    {" "}
-                    <a
-                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-                        className="text-blue-600 hover:underline"
-                        rel="noopener noreferrer"
-                    >
-                        BIS Certification
-                    </a>{" "} for Furniture has become a
-          critical compliance requirement. BIS ensures that furniture products
-          meet Indian Standards (IS) relating to:
-        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Why BIS Certification is Important for Furniture Manufacturers and
+          Importers
+        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural strength</li>
-          <li>Load-bearing capacity</li>
-          <li>Material quality</li>
-          <li>Design safety</li>
-          <li>Performance under usage conditions</li>
+          <li>Legal compliance with Indian regulations.</li>
+          <li>
+            Access to the Indian market and government procurement opportunities.
+          </li>
+          <li>Enhanced consumer trust and competitive advantage.</li>
+          <li>
+            Reduced risks of recalls, penalties, or import restrictions.
+          </li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For manufacturers, importers, exporters, MSMEs, startups, and
-          furniture brand owners, obtaining a BIS Certificate for Furniture is
-          no longer just a regulatory formality—it is a market necessity.
-        </p>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification for Furniture Matters
+          BIS Certification Requirements for Furniture Manufacturers
         </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>It ensures legal compliance under Indian regulations</li>
-          <li>It enhances consumer trust and brand credibility</li>
-          <li>It enables unrestricted sale and distribution across India</li>
-          <li>It minimizes product liability risks</li>
-          <li>It improves export readiness and global acceptance</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide is designed to be the most authoritative and
-          detailed resource on BIS Certification for Furniture in India. Whether
-          you are a first-time manufacturer or an established furniture brand,
-          this guide answers every possible question related to BIS License for
-          Furniture, BIS Registration for Furniture, applicable standards,
-          process, cost, documents, timelines, and post-certification
-          compliance.
-        </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Requirement
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Details
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Certification Authority", "Bureau of Indian Standards (BIS)"],
+                ["Certification Scheme", "Scheme-I (ISI Mark Certification)"],
+                ["Applicable Law", "Furniture (Quality Control) Order, 2025"],
+                ["Mandatory Marking", "ISI Mark with BIS Licence Number"],
+                [
+                  "Product Testing",
+                  "Required through BIS-recognized laboratories",
+                ],
+                ["Factory Inspection", "Mandatory before licence grant"],
+                [
+                  "Applicable To",
+                  "Indian Manufacturers, Foreign Manufacturers, Importers",
+                ],
+                ["Post-Certification Surveillance", "Required"],
+                [
+                  "Licence Renewal",
+                  "Periodic renewal as per BIS requirements",
+                ],
+              ].map(([req, details], i) => (
+                <TableRow
+                  key={req}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {req}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certificate for Furniture?
+          Regulatory Framework for BIS Certification of Furniture in India
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
+          Overview of the Furniture (Quality Control) Order, 2025
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate for Furniture is an official approval granted by the
-          Bureau of Indian Standards confirming that a specific furniture
-          product complies with the relevant Indian Standard (IS).
+          The Furniture QCO 2025 mandates that certain furniture categories must
+          comply with BIS standards. The QCO provides the legal basis for
+          compulsory certification and outlines the types of furniture covered.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          What is BIS Mark?
+          Role of the Bureau of Indian Standards (BIS)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Mark, commonly known as the ISI Mark, is a standard conformity
-          mark that appears on certified products. It signifies that the
-          furniture has:
+          BIS develops Indian Standards (IS), evaluates manufacturing units,
+          conducts product testing, and issues licenses for the use of the ISI
+          mark. It also monitors compliance through audits and surveillance.
         </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Mandatory vs Voluntary BIS Certification for Furniture
+        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Passed laboratory testing</li>
-          <li>Cleared factory inspection</li>
-          <li>Met all standard requirements</li>
+          <li>
+            <strong>Mandatory:</strong> Categories specified under the Furniture
+            QCO, such as beds, chairs, and storage units.
+          </li>
+          <li>
+            <strong>Voluntary:</strong> Manufacturers can choose certification
+            for additional product categories to enhance market credibility.
+          </li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Logo Explanation
+          Applicability of the Furniture QCO to Manufacturers and Importers
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Logo represents the authority of BIS as India&apos;s national
-          standards body. When used with the ISI Mark on furniture products, it
-          assures buyers that the product complies with BIS Standards.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate India – Legal Status
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          In India, manufacturing, importing, or selling furniture products
-          covered under notified standards without BIS Certification can lead
-          to:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Seizure of goods</li>
-          <li>Heavy monetary penalties</li>
-          <li>Prosecution under BIS Act</li>
-          <li>Ban on sale or import</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Hence, a BIS Certificate for Furniture in India holds strong legal
-          importance.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Important for Furniture Products
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification for Furniture is critical for multiple reasons:
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. Safety & Structural Integrity
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Furniture failures can cause injuries or fatalities. BIS Standards
-          evaluate:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Load-bearing capacity</li>
-          <li>Stability against tipping</li>
-          <li>Joint strength</li>
-          <li>Material performance</li>
+          <li>Indian manufacturers producing furniture covered under the QCO.</li>
+          <li>Foreign manufacturers exporting to India.</li>
+          <li>Importers selling furniture domestically.</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. Quality & Durability
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Certified furniture products ensure:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Long service life</li>
-          <li>Resistance to wear and tear</li>
-          <li>Uniform performance</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. Consumer Trust
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certification Mark builds instant confidence among buyers,
-          institutions, and bulk purchasers.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. Market Access
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Many government tenders, institutional buyers, and large corporations
-          mandate BIS-certified furniture.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. Legal Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Selling non-certified furniture under mandatory BIS norms can attract
-          penalties and legal action.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Furniture Products Covered Under BIS Certification
         </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Furniture is a broad general category under BIS, covering multiple
-          product types, each governed by different Indian Standards (IS
-          Numbers).
-        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Major Furniture Categories Covered:
+          Furniture Categories and Applicable BIS Standards
         </h3>
 
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Work Chairs
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Used in offices, factories, and commercial spaces. Standards focus on
-          ergonomics, stability, and load performance.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          2. General Purpose Chairs and Stools
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Used in homes, schools, and public spaces. BIS evaluates structural
-          safety and material strength.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Tables and Desks
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Includes office desks, study tables, workstations. Standards test load
-          capacity and surface durability.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Storage Units
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Almirahs, cabinets, lockers, shelves. Emphasis on stability, sharp
-          edges, and safe access.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          5. Beds
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Single beds, double beds, folding beds. BIS checks frame strength and
-          long-term performance.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          6. Bunk Beds
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Highly regulated due to safety risks. Focus on guardrails, ladder
-          safety, and fall prevention.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          7. Upholstered Composites for Non-Domestic Furniture
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Used in offices, hotels, auditoriums. Standards include fire
-          resistance and durability tests.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Other Furniture Products
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>School furniture</li>
-          <li>Institutional seating</li>
-          <li>Hospital furniture</li>
-          <li>Modular furniture</li>
-          <li>Metal & wooden furniture systems</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Each product category has its own applicable IS Number, notified
-          separately by BIS.
-        </p>
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          You can also read:
-        </h3>
-        <div className="mb-4 ">
-          <ul className="list-disc ml-6 space-y-2 text-gray-600 text-base font-geist">
-            <li>
-              <Link
-                to="/blogs/isi-products/work-chairs-is-17631"
-                className="text-blue-700 hover:underline"
-              >
-                BIS Certificate for Work Chairs (IS 17631)
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/blogs/isi-products/chairs-and-stools-is-17632"
-                className="text-blue-700 hover:underline"
-              >
-                BIS Certificate for Chairs and Stools (IS 17632)
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/blogs/isi-products/tables-&-desks-is-17633"
-                className="text-blue-700 hover:underline"
-              >
-                BIS Certificate for Tables and Desks (IS 17633)
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/blogs/isi-products/storage-unit-is-17634"
-                className="text-blue-700 hover:underline"
-              >
-                BIS Certificate for Storage Units (IS 17634)
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/blogs/isi-products/beds-is-17635"
-                className="text-blue-700 hover:underline"
-              >
-                BIS Certificate for Beds (IS 17635)
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/blogs/isi-products/bunk-beds-is-17636"
-                className="text-blue-700 hover:underline"
-              >
-                BIS Certificate for Bunk Beds (IS 17636)
-              </Link>
-            </li>
-          </ul>
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Furniture Category
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Applicable Indian Standard
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Standard Title
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 text-[#1e1e1e]">
+                  Certification Requirement
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                {
+                  category: "Work Chairs",
+                  standard: "IS 17631:2022",
+                  title:
+                    "Furniture – Chairs for Office Work – Requirements and Test Methods",
+                  link: "/blogs/isi-products/work-chairs-is-17631",
+                },
+                {
+                  category: "General Purpose Chairs & Stools",
+                  standard: "IS 17632:2022",
+                  title:
+                    "Furniture – General Purpose Chairs and Stools – Requirements and Test Methods",
+                  link: "/blogs/isi-products/chairs-and-stools-is-17632",
+                },
+                {
+                  category: "Tables and Desks",
+                  standard: "IS 17633:2022",
+                  title:
+                    "Furniture – Tables and Desks – Requirements and Test Methods",
+                  link: "/blogs/isi-products/tables-&-desks-is-17633",
+                },
+                {
+                  category: "Storage Units",
+                  standard: "IS 17634:2022",
+                  title:
+                    "Furniture – Storage Units – Requirements and Test Methods",
+                  link: "/blogs/isi-products/storage-unit-is-17634",
+                },
+                {
+                  category: "Beds",
+                  standard: "IS 17635:2022",
+                  title:
+                    "Furniture – Beds – Requirements and Test Methods",
+                  link: "/blogs/isi-products/beds-is-17635",
+                },
+                {
+                  category: "Bunk Beds",
+                  standard: "IS 17636:2022",
+                  title:
+                    "Furniture – Bunk Beds for Domestic Use – Requirements and Test Methods",
+                  link: "/blogs/isi-products/bunk-beds-is-17636",
+                },
+              ].map((row, i) => (
+                <TableRow
+                  key={row.standard}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-[#1e1e1e]">
+                    <Link
+                      to={row.link}
+                      className="text-blue-600 hover:underline"
+                    >
+                      {row.category}
+                    </Link>
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.standard}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.title}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 text-gray-600">
+                    Mandatory under Furniture QCO
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          All covered products must comply with the relevant BIS standards and
+          carry a valid ISI mark before being sold in India. These standards
+          define the minimum requirements for furniture safety, stability, and
+          usability.
+        </p>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Standards Applicable to Furniture
+          BIS Standards for Furniture and Their Requirements
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          What are BIS Standards?
+          Performance Requirements Under BIS Furniture Standards
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Standards are technical specifications published by BIS to define:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Material requirements</li>
-          <li>Performance parameters</li>
-          <li>Testing methods</li>
-          <li>Marking guidelines</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Meaning of IS Numbers
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          An IS Number (Indian Standard Number) uniquely identifies a standard
-          applicable to a product.
+          Furniture must withstand normal use without deformation or structural
+          failure. Tests include weight-bearing capacity, joint strength, and
+          material stability.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Notification Process
+          Safety and Durability Testing Requirements
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS issues official BIS Notifications making certain standards
-          mandatory. Once notified:
+          Furniture must meet safety norms to prevent accidents (e.g., tipping of
+          chairs or collapse of beds) and durability standards to ensure
+          longevity.
         </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Quality Parameters Evaluated During Certification
+        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Compliance becomes compulsory</li>
-          <li>Non-certified products are illegal</li>
+          <li>Material quality and finish.</li>
+          <li>Load-bearing capacity.</li>
+          <li>Stability, ergonomics, and safety features.</li>
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          How to Identify the Correct BIS Standard
+          Compliance Requirements for Different Furniture Categories
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers must:
+          Each furniture type has specific IS standards detailing dimensions,
+          performance tests, and permissible tolerances. Compliance ensures
+          uniformity and quality across manufacturers.
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identify product category</li>
-          <li>Study applicable IS scope</li>
-          <li>Confirm standard applicability</li>
-          <li>Avoid wrong standard selection (a common mistake)</li>
-        </ul>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Types of BIS Certification Applicable for Furniture
+          Who Needs BIS Certification for Furniture?
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS License under ISI Scheme
+          Indian Furniture Manufacturers
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Furniture products are generally covered under the ISI Certification
-          Scheme, which involves:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product testing</li>
-          <li>Factory inspection</li>
-          <li>Surveillance audits</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Registration
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Registration is mainly for electronics and IT products. Furniture
-          usually requires BIS License, not Registration.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Process for Furniture in India
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 1: Pre-Application Preparation
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identify applicable IS Standard</li>
-          <li>Assess product design compliance</li>
-          <li>Prepare technical documentation</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 2: BIS Application
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Submit BIS Application with:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product details</li>
-          <li>Manufacturing details</li>
-          <li>Standard reference</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 3: BIS Apply Online
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Application is filed through BIS online portal.
+          All domestic manufacturers of furniture covered under the Furniture QCO
+          must obtain BIS certification before selling products.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 4: Product Testing
+          Foreign Manufacturers Exporting Furniture to India
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Samples tested in BIS-recognized labs.
+          Exporters must comply with BIS standards to legally sell furniture in
+          India and use the ISI mark.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 5: Factory Inspection
+          Furniture Importers and Brand Owners
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS officers verify:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process</li>
-          <li>Quality control</li>
-          <li>Testing facilities</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 6: Grant of BIS License
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Upon compliance, BIS grants the license.
+          Importers must ensure that the furniture they bring into India complies
+          with BIS norms, even if manufactured abroad.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 7: Use of BIS Certification Mark
+          E-Commerce Sellers and Retail Businesses
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturer can affix BIS Mark / ISI Mark.
+          Online and offline retailers selling furniture under covered categories
+          must verify BIS certification to avoid legal liabilities.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testing Requirements for Furniture
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Testing is a mandatory part of the BIS registration process. Furniture
-          undergo rigorous tests to ensure safety and durability.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Mandatory Tests for Furniture:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural Load Test</li>
-          <li>Stability Test</li>
-          <li>Guardrail Strength Test</li>
-          <li>Impact Test</li>
-          <li>Entrapment Hazard Test</li>
-          <li>Ladder Strength & Angle Test</li>
-          <li>Material Safety Test</li>
-          <li>Edge Radius & Sharpness Test</li>
-          <li>Mattress Support Test</li>
-        </ul>
-
-       
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tests must be performed at a BIS-recognized lab only.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification for Furniture
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Key Documents Include:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration proof</li>
-          <li>Product drawings & specifications</li>
-          <li>Raw material details</li>
-          <li>Test reports</li>
-          <li>Quality control records</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Common Documentation Mistakes:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Incorrect standard reference</li>
-          <li>Incomplete test data</li>
-          <li>Mismatch in product scope</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Cost of BIS Certification for Furniture
+          BIS ISI Certification for Furniture: Step-by-Step Process
         </h2>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Cost Components:
+          Product Identification and Applicable Standard Selection
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Government application fees</li>
-          <li>Testing charges</li>
-          <li>Inspection fees</li>
-          <li>License fees</li>
-        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Identify the furniture category and relevant BIS standard (IS
+          17631–IS 17636) for testing and certification.
+        </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certification Cost Factors:
+          Product Testing in BIS-Recognized Laboratories
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product complexity</li>
-          <li>Number of models</li>
-          <li>Testing requirements</li>
-        </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Note: Professional consultancy fees are separate from government fees.
+          Furniture is tested for strength, stability, and durability in
+          BIS-approved labs. Test reports are mandatory for application.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Submission of BIS Application
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers submit an application to BIS with product specifications,
+          technical details, and test reports.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Factory Inspection and Assessment
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS conducts a factory audit to check manufacturing processes, quality
+          control systems, and production consistency.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Grant of BIS Licence and ISI Mark Permission
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Upon approval, BIS issues a license allowing the manufacturer to use the
+          ISI mark on certified furniture.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Post-Certification Compliance Requirements
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Regular audits, periodic testing, and adherence to BIS standards are
+          required to maintain certification.
+        </p>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Timeline for BIS Certificate Registration
+          Documents Required for BIS Certification of Furniture
         </h2>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Company Registration and Manufacturing Documents
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Average Timeline:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Testing: 3–6 weeks</li>
-          <li>Inspection: 1–2 weeks</li>
-          <li>License Grant: 2–4 weeks</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Total: 8–12 weeks (approx.)
+          Business licenses, GST registration, and manufacturing facility
+          details.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Product Technical Specifications and Drawings
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Detailed designs, materials used, and assembly instructions.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Test Reports and Quality Control Documents
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Reports from BIS-approved labs demonstrating compliance with IS
+          standards.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Factory and Production Process Documents
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Quality management systems, process flow, and inspection procedures.
+        </p>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          How to Get BIS Certification in India for Furniture Manufacturers
+          Testing Requirements for BIS Certified Furniture
         </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Practical Tips:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Choose correct IS standard</li>
-          <li>Ensure factory readiness</li>
-          <li>Maintain testing records</li>
-          <li>Avoid documentation errors</li>
-        </ul>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Testing Area
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Purpose
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                [
+                  "Strength Testing",
+                  "Verifies load-bearing capability",
+                ],
+                [
+                  "Stability Testing",
+                  "Prevents tipping and collapse",
+                ],
+                [
+                  "Durability Testing",
+                  "Assesses performance over repeated use",
+                ],
+                [
+                  "Structural Integrity Testing",
+                  "Evaluates joints, frames, and connections",
+                ],
+                [
+                  "Safety Testing",
+                  "Reduces risk of injury during normal use",
+                ],
+                [
+                  "Functional Performance Testing",
+                  "Confirms intended functionality and usability",
+                ],
+              ].map(([area, purpose], i) => (
+                <TableRow
+                  key={area}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {area}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {purpose}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Furniture must undergo testing in BIS-recognized labs to validate
+          safety, performance, and durability claims.
+        </p>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate Online Application – Practical Overview
+          ISI Mark for Furniture: Usage and Compliance Requirements
         </h2>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          What Does the ISI Mark on Furniture Indicate?
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Online Portal Challenges:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Technical errors</li>
-          <li>Document upload issues</li>
-          <li>Standard selection confusion</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Proper guidance reduces delays.
+          The ISI mark confirms that furniture meets Indian standards and has
+          been certified by BIS.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Rules for Affixing the ISI Mark
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The mark should be visible, permanent, and correctly formatted as per
+          BIS guidelines.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Consequences of Misuse of the ISI Mark
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Illegal use can lead to penalties, license cancellation, and legal action
+          under the BIS Act, 2016.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          How Buyers Can Verify BIS Certified Furniture
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Consumers can verify the license number on BIS&apos;s official website.
+        </p>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Use of BIS Mark & BIS Certification Mark After Approval
+          Timeline, Validity, and Renewal of BIS Certification
         </h2>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Certification Timeline for Furniture Products
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Marking Rules:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Correct IS reference</li>
-          <li>License number</li>
-          <li>Proper size & visibility</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Non-compliance can lead to suspension.
+          Typically 2–3 months, depending on testing and factory inspection
+          schedules.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Validity of BIS Licence
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The licence is valid for 1–3 years and requires renewal before expiry.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Renewal Process for BIS Certification
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Renewal includes updated test reports, factory inspections, and
+          compliance confirmation.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Surveillance and Ongoing Compliance Requirements
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS conducts random audits and tests to ensure continuous adherence to
+          standards.
+        </p>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Challenges in BIS Certification for Furniture
+          Benefits of BIS Certified Furniture
         </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Interpreting standards</li>
-          <li>Product testing failures</li>
-          <li>Inspection non-conformities</li>
-        </ul>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Role of BIS Consultants in Furniture Certification
-        </h2>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Legal Compliance and Market Access
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Professional BIS consultants help by:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identifying correct standards</li>
-          <li>Managing testing & inspection</li>
-          <li>Reducing approval time</li>
-          <li>Avoiding costly rejections</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Conclusion
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification for Furniture is a cornerstone of quality, safety,
-          and legal compliance in India&apos;s growing furniture market. Whether
-          you are a manufacturer, importer, or brand owner, obtaining a BIS
-          Certificate for Furniture in India ensures:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Regulatory compliance</li>
-          <li>Consumer trust</li>
-          <li>Long-term market success</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          By understanding the BIS Certification Process, Standards, Costs, and
-          Compliance requirements, businesses can confidently navigate the
-          regulatory landscape and build safer, stronger, and more reliable
-          furniture products for the Indian market.
+          Mandatory for selling certain furniture types in India.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Improved Product Quality and Consumer Trust
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS certification signals reliability and safety.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Competitive Advantage for Furniture Manufacturers
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Certified furniture has higher market credibility and procurement
+          eligibility.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Eligibility for Government and Institutional Procurement
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Only BIS-certified products can be supplied to government or
+          institutional buyers.
+        </p>
+
+        <SectionDivider />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Frequently Asked Questions for BIS License
+          Penalties for Non-Compliance with BIS Furniture Regulations
         </h2>
 
-        <div className="space-y-4 mb-4">
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Manufacturing or Selling Non-Certified Furniture
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Violates the QCO, resulting in fines and product seizure.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Import Restrictions on Non-Compliant Furniture
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Non-certified imports can be blocked at customs.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Penalties Under the BIS Act, 2016
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Includes monetary fines, imprisonment, and prohibition from selling
+          products.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Business Risks Associated with Non-Compliance
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Loss of consumer trust, legal disputes, and restricted market access.
+        </p>
+
+        <SectionDivider />
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Challenges in Obtaining BIS Certification for Furniture
+        </h2>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Identifying the Correct Indian Standard
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers must ensure their product matches the applicable IS
+          17631–IS 17636 standard.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Managing Testing and Documentation Requirements
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Proper lab testing and documentation are mandatory for approval.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Addressing Factory Audit Observations
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Non-compliance during audits can delay certification.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Maintaining Continuous Compliance After Certification
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ongoing quality monitoring and adherence to BIS standards are required
+          to avoid penalties.
+        </p>
+
+        <SectionDivider />
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          How Sun Certifications India Can Help
+        </h2>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Application and Documentation Support
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Guidance in submitting a complete and accurate BIS application.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Assistance with Product Testing
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Helps coordinate with BIS-approved laboratories.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Audit Preparation and Compliance Guidance
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ensures factory processes meet BIS requirements before inspection.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Post-Licensing Compliance Management
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Advises on record-keeping, surveillance audits, and standard updates.
+        </p>
+
+        <SectionDivider />
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Frequently Asked Questions About BIS Certification for Furniture
+        </h2>
+
+        <div className="space-y-6">
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Is BIS Certification mandatory for all furniture products in
-              India?
+              Is BIS Certification Mandatory for All Furniture Products?
             </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              No, BIS Certification is mandatory only for those furniture
-              products that are covered under notified BIS Standards. However,
-              once a furniture product category is notified by the Bureau of
-              Indian Standards, manufacturing, importing, selling, or
-              distributing that product without a valid BIS License becomes
-              illegal in India.
+            <p className="text-gray-600 text-base font-geist">
+              No. Only furniture listed under the Furniture QCO 2025 requires
+              mandatory BIS certification.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Which furniture products require BIS License instead of BIS
-              Registration?
+              Can Imported Furniture Be Sold Without BIS Certification?
             </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Furniture products generally fall under the ISI Certification
-              Scheme, which requires a BIS License, not BIS Registration. BIS
-              Registration (CRS) mainly applies to electronics and IT products,
-              whereas furniture products require testing + factory inspection +
-              BIS License.
+            <p className="text-gray-600 text-base font-geist">
+              No. Furniture under the mandatory categories cannot be sold in
+              India without BIS approval.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Can imported furniture be sold in India without BIS Certification?
+              How Long Does Furniture Certification Take?
             </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              No. Imported furniture products covered under mandatory BIS
-              Standards must have BIS Certification before customs clearance.
-              Importing non-certified furniture may result in:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Customs detention</li>
-              <li>Re-export or destruction</li>
-              <li>Heavy penalties</li>
-            </ul>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Foreign manufacturers must obtain BIS License before exporting
-              furniture to India.
+            <p className="text-gray-600 text-base font-geist">
+              Typically 2–3 months, depending on testing and inspections.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Can foreign furniture manufacturers apply for BIS Certification?
+              What Is the Difference Between BIS Certification and an ISI Mark?
             </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes. Foreign manufacturers can apply under the Foreign
-              Manufacturers Certification Scheme (FMCS). They must:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Appoint an Authorized Indian Representative (AIR)</li>
-              <li>Comply with Indian Standards</li>
-              <li>Allow BIS factory inspection abroad.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Is BIS Certification required for handmade or small-scale
-              furniture manufacturers?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, if the furniture product is covered under a mandatory BIS
-              standard, then even MSMEs, startups, and small-scale units must
-              obtain BIS Certification. There is no exemption based on
-              production volume.
+            <p className="text-gray-600 text-base font-geist">
+              BIS certification is the approval process; the ISI mark is the
+              certification label displayed on furniture.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Is BIS Certification required for wooden furniture?
+              What Are the Applicable BIS Standards for Furniture?
             </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, wooden furniture products such as beds, chairs, tables,
-              desks, and storage units may require BIS Certification if they
-              fall under notified standards. BIS standards apply to both wooden
-              and metal furniture, depending on product type and usage.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Can one BIS License cover multiple furniture models?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, multiple models or variants can be covered under a single BIS
-              License, provided:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>They fall under the same IS Standard</li>
-              <li>Construction, material, and design parameters are similar</li>
-              <li>BIS approves the grouping during application.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Can BIS Certification be transferred to another manufacturer?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              No. BIS License is non-transferable. Each manufacturer must obtain
-              their own BIS Certificate, even if the product design is
-              identical.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              What is BIS Certificate?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              It is official proof of compliance with BIS Standards.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Is BIS Certification mandatory for furniture?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, for furniture products covered under notified standards.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              How to get BIS Certification in India?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Through testing, inspection, and BIS license approval.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              What is BIS Mark?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              A conformity mark showing BIS approval.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS Certification Cost?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Depends on product type, testing, and scope.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS Full Form?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Bureau of Indian Standards.
+            <p className="text-gray-600 text-base font-geist">
+              IS 17631–IS 17636 cover chairs, stools, work chairs, tables, beds,
+              bunk beds, and storage units.
             </p>
           </div>
         </div>
 
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Related Resources
-        </h2>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification </a>
-          </li>
-          <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS Certification</a>
-          </li>
-        </ul>
+        <SectionDivider />
 
         <ManyUsersAlsoRead />
 

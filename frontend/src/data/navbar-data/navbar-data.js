@@ -31,14 +31,7 @@ export const NAVIGATION_DATA = {
       desktopOrder: 1,
       mobileOrder: 1,
     },
-    {
-      id: 27,
-      name: "AIR",
-      link: "/authorized-indian-representative",
-      icon: Building,
-      desktopOrder: 2,
-      mobileOrder: 2,
-    },
+    
     {
       id: 2,
       name: "CRS Registration",
@@ -167,6 +160,21 @@ export const NAVIGATION_DATA = {
       desktopOrder: 27,
       mobileOrder: 26,
     },
+
+    {
+      id: 27,
+      name: "AIR",
+      link: "/authorized-indian-representative",
+      icon: Building,
+      desktopOrder: 2,
+      mobileOrder: 2,
+    },
+
+    
+
+
+
+
     {
       id: 12,
       name: "Battery Waste",
@@ -239,6 +247,7 @@ export const NAVIGATION_DATA = {
       desktopOrder: 21,
       mobileOrder: 20,
     },
+  
   ],
   updates: [
     {
