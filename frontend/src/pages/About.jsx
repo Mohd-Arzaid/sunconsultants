@@ -816,34 +816,36 @@ const PROCESS_STEPS = [
 const AboutStorySections = () => {
   return (
     <div className="flex flex-col gap-12 md:gap-16 mb-12 md:mb-16">
-      <section>
-        <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e] mb-5 md:mb-6">
-          A Decade of Simplifying Indian Compliance
-        </h2>
+      <section className="text-center">
+        <div className="mx-auto max-w-3xl md:max-w-4xl">
+          <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e1e1e] text-center mb-5 md:mb-6">
+            A Decade of Simplifying Indian Compliance
+          </h2>
 
-        <div className="space-y-5 max-w-4xl">
-          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-            Founded in 2016, Sun Certifications India has spent nearly a decade
-            helping businesses navigate one of the world&apos;s most layered
-            regulatory environments. Backed by a team of{" "}
-            <span className="font-semibold text-[#1A8781]">
-              50+ compliance specialists
-            </span>
-            , we operate as a full-spectrum consultancy firm where{" "}
-            <span className="font-semibold text-[#1A8781]">
-              BIS Certification
-            </span>{" "}
-            is our core expertise.
-          </p>
+          <div className="space-y-5">
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed text-center">
+              Founded in 2016, Sun Certifications India has spent nearly a decade
+              helping businesses navigate one of the world&apos;s most layered
+              regulatory environments. Backed by a team of{" "}
+              <span className="font-semibold text-[#1A8781]">
+                50+ compliance specialists
+              </span>
+              , we operate as a full-spectrum consultancy firm where{" "}
+              <span className="font-semibold text-[#1A8781]">
+                BIS Certification
+              </span>{" "}
+              is our core expertise.
+            </p>
 
-          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-            Our clients range from international companies, Indian manufacturers
-            to domestic importers who need BIS certificate, LMPC license, CDSCO
-            registration, PESO approval, WPC approvals, EPR certificate, etc.
-            Regardless of where you are in the world or where you are in the
-            certification process, our job remains the same: take the complexity
-            off your plate and replace it with a clear, actionable path forward.
-          </p>
+            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed text-center">
+              Our clients range from international companies, Indian manufacturers
+              to domestic importers who need BIS certificate, LMPC license, CDSCO
+              registration, PESO approval, WPC approvals, EPR certificate, etc.
+              Regardless of where you are in the world or where you are in the
+              certification process, our job remains the same: take the complexity
+              off your plate and replace it with a clear, actionable path forward.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 md:mt-10">
@@ -873,7 +875,7 @@ const AboutStorySections = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-2 md:gap-3 mt-6 md:mt-8">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-6 md:mt-8">
           {SERVICE_PILLS.map((service) => (
             <span
               key={service}
@@ -884,8 +886,8 @@ const AboutStorySections = () => {
           ))}
         </div>
 
-        <blockquote className="mt-8 md:mt-10 border-l-4 border-[#1A8781] pl-6 py-4 bg-[#1A8781]/5 rounded-r-lg">
-          <p className="text-base md:text-lg text-neutral-700 font-geist leading-relaxed italic">
+        <blockquote className="mt-8 md:mt-10 mx-auto max-w-3xl md:max-w-4xl border-l-4 border-[#1A8781] pl-6 py-4 bg-[#1A8781]/5 rounded-r-lg">
+          <p className="text-base md:text-lg text-neutral-700 font-geist leading-relaxed italic text-center">
             Take the complexity off your plate and replace it with a clear,
             actionable path forward.
           </p>
@@ -926,7 +928,7 @@ const AboutStorySections = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
         <div className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
           <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300" />
 
