@@ -48,6 +48,8 @@ const ServicesRightSideContentEng = () => {
     "/indian-bis-certification-under-scheme-x",
     // BISFM PATH - English
     "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    // AIR PATH - English
+    "/authorized-indian-representative",
     // BISFM PATH - Indonesian
     "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
     // BISFM PATH - Italian
@@ -909,6 +911,8 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS FMCS Certification - English Page";
+    if (path.includes("/authorized-indian-representative"))
+      return "Authorized Indian Representative (AIR) for BIS Certification";
     // BISFM PATH - Indonesian
     if (
       path.includes(
