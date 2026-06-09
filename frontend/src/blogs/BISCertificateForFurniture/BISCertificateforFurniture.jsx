@@ -164,13 +164,10 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Furniture is an essential part of homes, offices, and public spaces.
           Ensuring the safety, durability, and quality of furniture is crucial
-          for consumers and manufacturers alike. In India,{" "}
-          <Link
-            to="/what-is-bis-certificate-indian-bis"
-            className="text-blue-600 hover:underline"
-          >
+          for consumers and manufacturers alike. In India,
+         
             BIS certification for furniture
-          </Link>{" "}
+        
           is a mandatory requirement for certain categories of furniture under
           the Furniture (Quality Control) Order, 2025. This guide provides a
           detailed overview of BIS standards, ISI marks, the certification
@@ -191,13 +188,10 @@ const MainContentLeft = () => {
           Standards (BIS) evaluates products to ensure they comply with Indian
           standards. For furniture, this certification ensures that products
           meet defined safety, performance, and quality parameters. Once
-          certified, manufacturers can use the{" "}
-          <Link
-            to="/a-guide-to-bis-certification-indian-bis"
-            className="text-blue-600 hover:underline"
-          >
+          certified, manufacturers can use the
+         
             ISI mark
-          </Link>{" "}
+        
           on their furniture, signaling compliance to buyers.
         </p>
 
