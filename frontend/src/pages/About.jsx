@@ -1038,8 +1038,23 @@ const About = () => {
       <OurVisionSection />
       <VideoShowcase />
       <Services />
-      <section aria-label="International Audits Showcase" className="w-full">
-        <AuditsMarquee />
+      <section aria-label="International Audits Showcase" className="w-full pb-8 md:pb-12">
+        <AuditsMarquee className="pt-8" />
+        <div className="max-w-[88rem] mx-auto px-4 pt-2 mt-2 md:mt-4 flex flex-col items-center">
+          <div className="w-16 h-0.5 bg-[#1A8781]/30 rounded-full mb-5" />
+          {/* <p className="text-center text-sm md:text-base text-gray-500 font-geist mb-4 md:mb-5">
+            Explore our international factory audits and compliance success stories
+          </p> */}
+          <Link
+            to="/international-audits"
+            className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit group active:scale-[0.98]"
+          >
+            <span className="font-geist font-medium text-sm md:text-base">View More</span>
+            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
+              <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45 group-hover:translate-x-0.5 transition-transform duration-300" />
+            </div>
+          </Link>
+        </div>
       </section>
       <Testimonials />
       <AboutContact />

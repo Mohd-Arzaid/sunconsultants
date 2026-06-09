@@ -577,8 +577,8 @@ const IndexSection = () => {
       "requirements",
       "service",
       "process",
-      "who-needs",
-      "conclusion",
+      "eligibility",
+      "final-thoughts",
     ],
     []
   );
@@ -589,8 +589,8 @@ const IndexSection = () => {
     requirements: "Requirements",
     service: "Our Service",
     process: "Process",
-    "who-needs": "Who Needs AIR",
-    conclusion: "Conclusion",
+    eligibility: "Eligibility",
+    "final-thoughts": "Final Thoughts",
   };
 
   const handleItemClick = (item) => {
@@ -1074,9 +1074,9 @@ const ProcessSection = () => {
 
 const WhoNeedsSection = () => {
   return (
-    <div id="who-needs" className="flex flex-col scroll-mt-20">
+    <div id="eligibility" className="flex flex-col scroll-mt-20">
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Who Needs AIR</span>
+        <span className="service-left-content-index-heading">ELIGIBILITY</span>
         <Separator className="service-left-content-separator" />
       </div>
 
@@ -1104,9 +1104,9 @@ const WhoNeedsSection = () => {
 
 const ConclusionSection = () => {
   return (
-    <div id="conclusion" className="flex flex-col scroll-mt-20">
+    <div id="final-thoughts" className="flex flex-col scroll-mt-20">
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Conclusion</span>
+        <span className="service-left-content-index-heading">FINAL THOUGHTS</span>
         <Separator className="service-left-content-separator" />
       </div>
 
