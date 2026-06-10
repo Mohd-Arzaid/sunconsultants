@@ -216,7 +216,7 @@ const MainContentLeft = () => {
                 ["Applicable Standard", "IS 17633:2022"],
                 ["Certification Type", "BIS Product Certification"],
                 ["Applicable Mark", "ISI Mark"],
-                ["Certification Scheme", "Scheme-I"],
+                ["Certification Scheme", "Scheme-I (ISI Mark Certification)"],
                 ["Regulatory Authority", "Bureau of Indian Standards (BIS)"],
                 ["Applicable Sector", "Furniture"],
                 [
@@ -236,7 +236,27 @@ const MainContentLeft = () => {
                     {particular}
                   </TableCell>
                   <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                    {details}
+                    {particular === "Certification Scheme" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Scheme-I (ISI Mark Certification)
+                      </a>
+                    ) : particular === "Compliance Requirement" ? (
+                      <>
+                        Mandatory under applicable Quality Control Order (
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                          QCO
+                        </a>
+                        )
+                      </>
+                    ) : (
+                      details
+                    )}
                   </TableCell>
                 </TableRow>
               ))}
@@ -369,6 +389,16 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Manufacturers covered under the applicable regulations must obtain a BIS
           licence and use the ISI Mark in accordance with BIS requirements.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Also check Furniture Products Covered Under Mandatory BIS Certification —{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            BIS Certification for furniture
+          </a>
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
