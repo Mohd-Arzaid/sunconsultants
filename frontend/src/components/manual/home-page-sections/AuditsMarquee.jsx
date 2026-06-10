@@ -102,16 +102,16 @@ const AuditsMarquee = ({ className = "bg-white pt-8" }) => {
     {
       id: 17,
       image: "/auditImages/Bahrain-2.webp",
-      title: "Bahrain Audit 2",
+      title: "Bahrain Audit",
       description:
         "Successful Audit and Grant of BIS License on Aluminium Products under IS 733 , IS 5082 , IS 5484 and IS 398 Part 6 for one of the world's leading manufacturer in Bahrain.",
     },
     {
       id: 18,
       image: "/auditImages/Malaysia-2.webp",
-      title: "Malaysia Audit 2",
+      title: "Vietnam Audit",
       description:
-        "Successful Audit and Grant of BIS License on Sewing Machines under IS 15449 for one of the world's leading manufacturer in Malaysia.",
+        "Successful Audit and Grant of BIS License on Sewing Machines under IS 15449 for one of the world's leading manufacturer in Vietnam.",
     },
   ];
 

@@ -72,6 +72,7 @@ import { NotificationsRoutes } from "./routes/NotificationsRoutes";
 import { BlogRoutes } from "./routes/BlogRoutes";
 import { IndiaNo1Routes } from "./routes/IndiaNo1Routes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
+import { BestAndMostTrustedBISconsultantRoutes } from "./routes/BestAndMostTrustedBISconsultantRoutes"; 
 import FaqsPageRoutes from "./routes/FaqsPageRoutes";
 import ServicesPageSkeleton from "./components/ui/services-page-skeleton";
 
@@ -243,6 +244,9 @@ function App() {
 
         {/* India No 1 Routes */}
         {IndiaNo1Routes()}
+
+        {/* Best And Most Trusted BIS Consultant Routes */}
+        {BestAndMostTrustedBISconsultantRoutes()}
 
         {/* SchemeX Products Routes */}
         <Route path="SchemeX-products" element={<SchemeXProducts />} />

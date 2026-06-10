@@ -286,7 +286,7 @@ const AuditGallery = () => {
       id: 18,
       image: "/auditImages/Malaysia-2.webp",
       description:
-        "Successful Audit and Grant of BIS License on Sewing Machines under IS 15449 for one of the world's leading manufacturer in Malaysia.",
+        "Successful Audit and Grant of BIS License on Sewing Machines under IS 15449 for one of the world's leading manufacturer in Vietnam.",
     },
   ];
 

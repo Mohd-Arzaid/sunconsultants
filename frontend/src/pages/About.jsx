@@ -11,7 +11,6 @@ import { Helmet } from "react-helmet-async";
 import {
   Armchair,
   Bike,
-  Blocks,
   Car,
   ChevronLeft,
   ChevronRight,
@@ -873,9 +872,9 @@ const INDUSTRY_TAGS = [
   { name: "Automotive Components", icon: Car },
   { name: "Steel Alloys", icon: Layers },
   { name: "Furniture", icon: Armchair },
-  { name: "Toys", icon: Blocks },
-  { name: "Skin & Hair Appliances", icon: Sparkles },
   { name: "Hand Tools", icon: Wrench },
+  { name: "Skin & Hair Appliances", icon: Sparkles },
+  { name: "and all other industries", icon: Globe },
 ];
 
 const PROCESS_STEPS = [
@@ -928,7 +927,7 @@ const AboutStorySections = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 md:mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 md:mt-10 max-w-2xl mx-auto">
           <div className="text-center p-5 bg-white rounded-lg border border-[#1A8781]/30">
             <div className="text-3xl md:text-4xl font-bold font-geist text-[#1A8781] mb-1">
               2016
@@ -943,14 +942,6 @@ const AboutStorySections = () => {
             </div>
             <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
               Compliance Specialists
-            </p>
-          </div>
-          <div className="text-center p-5 bg-white rounded-lg border border-[#1A8781]/30">
-            <div className="text-3xl md:text-4xl font-bold font-geist text-[#1A8781] mb-1">
-              BIS
-            </div>
-            <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
-              Core Expertise
             </p>
           </div>
         </div>
@@ -1270,7 +1261,7 @@ const AboutStorySections = () => {
 
         <div className="mt-8 md:mt-10 flex justify-center md:justify-start">
           <a
-            href="tel:+919315973373"
+            href="tel:+918010505057"
             className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit group active:scale-[0.98]"
           >
             <span className="font-geist font-medium text-sm md:text-base">
