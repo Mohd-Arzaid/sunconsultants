@@ -284,14 +284,14 @@ const MainContentLeft = () => {
                 ["Product", "Work Chairs"],
                 ["Applicable Indian Standard", "IS 17631:2022"],
                 ["Certification Type", "BIS Product Certification"],
-                ["Applicable Certification Scheme", "Scheme-I"],
+                ["Applicable Certification Scheme", "Scheme-I (ISI Mark Certification)"],
                 ["Applicable Mark", "ISI Mark"],
                 ["Regulatory Authority", "Bureau of Indian Standards (BIS)"],
                 ["Applicable Ministry", "Ministry of Commerce and Industry"],
-                ["Compliance Requirement", "Mandatory"],
+                ["Compliance Requirement", "Mandatory under applicable Quality Control Order (QCO)"],
                 [
                   "Eligible Applicants",
-                  "Indian Manufacturers and Foreign Manufacturers",
+                  "Indian Manufacturers and Foreign Manufacturers ",
                 ],
               ].map(([particular, details], index) => (
                 <TableRow
@@ -302,7 +302,27 @@ const MainContentLeft = () => {
                     {particular}
                   </TableCell>
                   <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                    {details}
+                    {particular === "Applicable Certification Scheme" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Scheme-I (ISI Mark Certification)
+                      </a>
+                    ) : particular === "Compliance Requirement" ? (
+                      <>
+                        Mandatory under applicable Quality Control Order (
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-work-chairs"
+                          className="text-blue-600 hover:underline"
+                        >
+                          QCO
+                        </a>
+                        )
+                      </>
+                    ) : (
+                      details
+                    )}
                   </TableCell>
                 </TableRow>
               ))}
@@ -464,6 +484,13 @@ const MainContentLeft = () => {
           Review product design, mechanism, and intended use carefully to confirm
           whether your chair falls within the scope of IS 17631:2022.
         </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+        Also Check Furniture Products Covered Under Mandatory BIS Certification -{" "}
+        <a href="https://bis-certifications.com/blogs/isi-products/furniture" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+           BIS Certification for furniture
+        </a>
+          </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
