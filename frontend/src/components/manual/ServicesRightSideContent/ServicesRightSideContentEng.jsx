@@ -127,7 +127,7 @@ const ServicesRightSideContentEng = () => {
     "/all-india-first/bis-license-for-polyester-fibre-filled-pillow-is-18930-2024",
 
     // BEST AND MOST TRUSTED BIS CONSULTANT PATH
-    "/best-bis-consultant-india",
+    "/best-and-most-trusted-bis-consultant-india",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -1124,7 +1124,7 @@ const ContactFormServicesRightSideContentEng = () => {
       return "All India First BIS License for Polyester Fibre Filled Pillow under IS 18930:2024 - India No 1 (English)";
 
     // BEST AND MOST TRUSTED BIS CONSULTANT PATH
-    if (path.includes("/best-bis-consultant-india"))
+    if (path.includes("/best-and-most-trusted-bis-consultant-india"))
       return "Best and most trusted BIS consultant in India – Sun Certifications India (English)";
 
     // BIS CERTIFICATION FAQ PATHS

@@ -8,7 +8,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { SlashIcon } from "lucide-react";
+import { SlashIcon, Check } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
@@ -17,7 +17,7 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
 const CANONICAL_URL =
-  "https://bis-certifications.com/best-bis-consultant-india";
+  "https://bis-certifications.com/best-and-most-trusted-bis-consultant-india";
 const PAGE_IMAGE_SRC = "/blogImages/bestbisconsultantindia.webp";
 const SCHEMA_IMAGE_URL =
   "https://bis-certifications.com/blogImages/bestbisconsultantindia.webp";
@@ -122,6 +122,17 @@ const faqSchema = {
     },
   ],
 };
+
+const TRUST_POINTS = [
+  "We have been doing this since 2016 — not as a side service, but as our core expertise",
+  "We serve both domestic manufacturers and international companies across industries",
+  "We take full ownership of your certification file — from first consultation to license grant",
+  "We keep you informed at every stage — no chasing, no guessing",
+  "We handle compliance beyond BIS — LMPC, WPC, CDSCO, PESO, AIR — so you never need to coordinate multiple agencies",
+];
+
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
 
 const BestAndMostTrustedBISconsultantinIndia = () => {
   return (
@@ -289,11 +300,11 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sun Certifications India is experienced and most trusted bis license
+          Sun Certifications India is an experienced and trusted BIS licence
           consultant across all major BIS certification schemes:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           ISI Mark Certification (Product Certification Scheme)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -304,7 +315,7 @@ const MainContentLeft = () => {
           grant end-to-end.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           CRS Registration (Compulsory Registration Scheme)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -314,7 +325,7 @@ const MainContentLeft = () => {
           and handle the entire registration process.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           FMCS Certification (Foreign Manufacturers Certification Scheme)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -325,9 +336,7 @@ const MainContentLeft = () => {
           process.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Scheme X Certification
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>BIS Scheme X Certification</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           A newer mandatory scheme covering machinery and electrical equipment —
           including industrial machinery, weaving machines, embroidery machines,
@@ -335,7 +344,7 @@ const MainContentLeft = () => {
           and is now applicable to a wide range of capital goods.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           BIS Certificate of Conformity (CoC)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -355,7 +364,7 @@ const MainContentLeft = () => {
           step-by-step breakdown:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           Step 1 — Identify the Applicable Standard
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -365,7 +374,7 @@ const MainContentLeft = () => {
           labelling requirements.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           Step 2 — Establish Testing Facilities
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -374,7 +383,7 @@ const MainContentLeft = () => {
           testing infrastructure at their facility before a licence can be granted.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           Step 3 — Create a BIS Portal Account
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -383,16 +392,14 @@ const MainContentLeft = () => {
           designated Authorized Indian Representative (AIR).
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 4 — Product Testing
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Step 4 — Product Testing</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Get the product tested at a BIS-recognized laboratory as per the
           applicable Indian Standard Specifications (ISS). Accurate, complete test
           reports are critical — any gaps can delay or reject the application.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           Step 5 — Application Submission
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -401,44 +408,34 @@ const MainContentLeft = () => {
           office.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 6 — Query Resolution
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Step 6 — Query Resolution</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           BIS officials review the application and may raise queries or ask for
           additional clarifications. Prompt and accurate responses at this stage
           keep the application moving forward.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 7 — Factory Inspection
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Step 7 — Factory Inspection</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           A BIS officer visits the manufacturing facility to verify compliance —
           checking that the production processes, equipment, and quality controls
           align with the applicable IS standard.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 8 — Sample Verification
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Step 8 — Sample Verification</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           During the inspection, product samples are tested in the in-house
           laboratory. The BIS officer seals samples for independent
           re-verification at a BIS laboratory.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 9 — Audit Completion
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Step 9 — Audit Completion</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Once inspection and sample verification activities are completed, the
           audit is formally finalized and the file is submitted for final review.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 10 — Grant of Licence
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Step 10 — Grant of Licence</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           If all requirements are satisfied, BIS grants the certification licence
           to the manufacturer. The ISI Mark can then be legally applied to the
@@ -451,35 +448,29 @@ const MainContentLeft = () => {
           Documents Required for BIS Certification
         </h2>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Business registration documents
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Business Registration Documents</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Your company incorporation certificate, GST registration, or firm
           registration — proof that your business legally exists and is authorized
           to manufacture or import.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manufacturing process flow chart
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Manufacturing Process Flow Chart</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           A step-by-step diagram showing how your product is made — from raw
           materials to finished goods. BIS uses this to verify that your production
           process is consistent and controlled.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          List of machinery and equipment
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>List of Machinery and Equipment</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           A complete inventory of the machines and testing equipment present at
           your facility, along with calibration records. This confirms you have the
           infrastructure to meet BIS standards.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Product details and technical specifications
+        <h3 className={SUB_HEADING_CLASS}>
+          Product Details and Technical Specifications
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Detailed documentation covering your product&apos;s design, dimensions,
@@ -487,8 +478,8 @@ const MainContentLeft = () => {
           applicable Indian Standard (IS).
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Test reports from BIS-recognized labs
+        <h3 className={SUB_HEADING_CLASS}>
+          Test Reports from BIS-Recognized Labs
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Official test reports confirming your product has been tested against
@@ -496,18 +487,14 @@ const MainContentLeft = () => {
           reports are the core of your application.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Quality control manual
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Quality Control Manual</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           A documented system describing how your factory monitors and maintains
           product quality — covering inspection procedures, testing frequency,
           rejection criteria, and corrective actions.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Trademark certificate
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Trademark Certificate</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           If your brand name or logo will appear alongside the ISI Mark on the
           product or packaging, a registered trademark certificate is required as
@@ -525,7 +512,7 @@ const MainContentLeft = () => {
           Sun Certifications India a different experience:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           Nearly a Decade of Regulatory Experience
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -536,9 +523,7 @@ const MainContentLeft = () => {
           way that only years of hands-on experience can build.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          One Dedicated Point of Contact
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>One Dedicated Point of Contact</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           When you work with us, you get a dedicated project manager who handles
           your file from start to finish. You are never passed between teams or
@@ -546,7 +531,7 @@ const MainContentLeft = () => {
           at every milestone.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           Multi-Ministry Expertise Under One Roof
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -558,9 +543,7 @@ const MainContentLeft = () => {
           coordinate multiple agencies.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Foreign Manufacturer Support
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Foreign Manufacturer Support</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           We work extensively with international clients who need to navigate
           India&apos;s certification requirements from overseas. We understand the
@@ -568,7 +551,7 @@ const MainContentLeft = () => {
           that make FMCS and CRS approvals challenging for foreign companies.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           No Hidden Costs. No Unnecessary Delays.
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -577,9 +560,7 @@ const MainContentLeft = () => {
           is a complication, we tell you early and provide solutions.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Industries We Serve
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>Industries We Serve</h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Our clients include businesses in electronics, electrical equipment,
           footwear, toys, furniture, steel and alloys, automotive components,
@@ -611,26 +592,16 @@ const MainContentLeft = () => {
           Here is why businesses trust Sun Certifications India:
         </p>
 
-        <ul className="list-none mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            ✅ We have been doing this since 2016 — not as a side service, but as
-            our core expertise
-          </li>
-          <li>
-            ✅ We serve both domestic manufacturers and international companies
-            across industries
-          </li>
-          <li>
-            ✅ We take full ownership of your certification file — from first
-            consultation to license grant
-          </li>
-          <li>
-            ✅ We keep you informed at every stage — no chasing, no guessing
-          </li>
-          <li>
-            ✅ We handle compliance beyond BIS — LMPC, WPC, CDSCO, PESO, AIR — so
-            you never need to coordinate multiple agencies
-          </li>
+        <ul className="list-none mb-4 space-y-2">
+          {TRUST_POINTS.map((point, index) => (
+            <li
+              key={index}
+              className="flex items-start gap-2 text-gray-600 text-base font-geist"
+            >
+              <Check size={16} className="text-[#1A8781] mt-1 flex-shrink-0" />
+              <span>{point}</span>
+            </li>
+          ))}
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -644,7 +615,7 @@ const MainContentLeft = () => {
           Frequently Asked Questions
         </h2>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           How long does BIS certification take?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -656,7 +627,7 @@ const MainContentLeft = () => {
           — typically 3 to 6 months from start to finish.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           Is BIS certification mandatory for imports?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -666,7 +637,7 @@ const MainContentLeft = () => {
           important to verify requirements before importing.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           Can foreign manufacturers apply for BIS certification directly?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -676,7 +647,7 @@ const MainContentLeft = () => {
           part of our foreign manufacturer support.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+        <h3 className={SUB_HEADING_CLASS}>
           What documents are typically required?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -686,7 +657,7 @@ const MainContentLeft = () => {
           We provide a customized document checklist after your initial consultation.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
+        <h3 className={SUB_HEADING_CLASS}>
           Does Sun Certifications India handle post-certification compliance?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">

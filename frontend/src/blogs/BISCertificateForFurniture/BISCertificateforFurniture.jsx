@@ -186,33 +186,6 @@ const IntroCallout = ({ children }) => (
   </div>
 );
 
-const KeyStatsRow = () => {
-  const stats = [
-    { label: "Applicable Law", value: "Furniture QCO 2025" },
-    { label: "Standards", value: "IS 17631 – IS 17636" },
-    { label: "Timeline", value: "2–3 Months" },
-    { label: "Marking", value: "ISI Mark Mandatory" },
-  ];
-
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-      {stats.map((stat) => (
-        <div
-          key={stat.label}
-          className="bg-white/70 rounded-lg px-3 py-3 text-center ring-1 ring-gray-900/[0.06]"
-        >
-          <p className="text-xs font-geist font-medium text-[#1A8781] uppercase tracking-wide mb-1">
-            {stat.label}
-          </p>
-          <p className="text-sm md:text-base font-geist font-semibold text-[#1e1e1e]">
-            {stat.value}
-          </p>
-        </div>
-      ))}
-    </div>
-  );
-};
-
 const CheckPointsList = ({ points, variant = "check" }) => {
   const Icon = variant === "warning" ? AlertTriangle : Check;
   const iconBg =
@@ -348,8 +321,6 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
-
-        <KeyStatsRow />
 
         <IntroCallout>
           <p className="text-gray-700 text-base font-geist leading-relaxed">

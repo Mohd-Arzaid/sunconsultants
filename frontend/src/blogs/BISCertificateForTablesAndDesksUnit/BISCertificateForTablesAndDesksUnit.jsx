@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnit = () => {
   return (
     <div className="relative w-full">
@@ -42,18 +48,15 @@ const BISCertificateForTablesAndDesksUnit = () => {
 export default BISCertificateForTablesAndDesksUnit;
 
 const MetaTags = () => {
-  const title =
-    "BIS Certificate for Tables & Desks | IS 17633:2022 BIS License";
-  const ogTitle = "BIS Certification for Tables & Desks – IS 17633:2022 Guide";
-  const twitterTitle = "BIS License for Tables & Desks | IS 17633:2022";
+  const title = "BIS Certification for Tables and Desks | IS 17633:2022";
+  const ogTitle = "BIS Certification for Tables and Desks | IS 17633:2022";
+  const twitterTitle = "BIS Certification for Tables and Desks | IS 17633:2022";
   const metaDescription =
-    "Get BIS Certificate for Tables & Desks under IS 17633:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
-  const ogDescription =
-    "Complete guide to BIS Certification for Tables & Desks as per IS 17633:2022. Know process, cost, documents, testing & BIS license benefits.";
-  const twitterDescription =
-    "Apply for BIS Certificate for Tables & Desks under IS 17633:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Learn everything about BIS Certification for Tables and Desks under IS 17633:2022. Understand ISI Mark requirements, testing, certification process, documents, benefits, and compliance guidance.";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "BIS Certificate for Tables & Desks, BIS License for Tables & Desks, IS 17633:2022, BIS Certification for Tables & Desks";
+    "BIS Certification for Tables and Desks, IS 17633:2022, ISI Mark Tables and Desks, BIS License Tables and Desks, BIS Certification Furniture";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/tables-&-desks-is-17633";
   const websiteName = "Sun Certifications India";
@@ -110,7 +113,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Tables & Desks – IS 17633:2022
+                    BIS Certification for Tables and Desks (IS 17633:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -142,629 +145,668 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for Tables and Desks – Complete Guide to IS 17633:2022
-          BIS Certification
+          BIS Certification for Tables and Desks (IS 17633:2022) – Complete ISI
+          Mark Certification Guide
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="BIS License for Tables and Desks"
-            alt="BIS Certificate for Tables and Desks - IS 17633:2022 BIS Certification"
+            alt="BIS Certification for Tables and Desks - IS 17633:2022 ISI Mark Guide"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The    {" "}
-                    <a
-                        href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-                        className="text-blue-600 hover:underline"
-                        rel="noopener noreferrer"
-                    >
-                        BIS Certificate
-                    </a>{" "} for Tables and Desks is mandatory for all
-          manufacturers, importers, and sellers of tables and desks in India.
-          Under the Indian Standard IS 17633:2022 – Tables and Desks: Safety
-          Requirements, these furniture items must be tested and certified by
-          the Bureau of Indian Standards (BIS) before they can be legally sold
-          in the Indian market.
+          Tables and desks are among the most widely used furniture products
+          across offices, educational institutions, commercial establishments,
+          government organizations, and residential spaces. Since these products
+          are expected to withstand regular use while ensuring user safety,
+          stability, and durability, compliance with recognized quality standards
+          has become increasingly important for manufacturers and importers.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tables and desks are essential components of homes, offices, schools,
-          universities, commercial spaces, hospitality environments, and
-          industrial workplaces. Because they often support weight, impact, and
-          continuous usage, their structural strength and safety are critical.
-          To ensure consumer protection and product reliability, BIS mandates
-          compulsory certification.
+          In India, tables and desks covered under IS 17633:2022 are required to
+          comply with the applicable quality and safety requirements prescribed
+          by the Bureau of Indian Standards (BIS). Manufacturers that
+          successfully meet these requirements can obtain a BIS licence and use
+          the ISI Mark on their products, demonstrating conformity with the
+          relevant Indian Standard.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide explains IS 17633:2022, the BIS registration
-          process, testing, required documentation, fees, timelines, penalties,
-          and benefits for manufacturers and importers.
+          The certification process evaluates various aspects of product
+          performance, including strength, stability, durability, workmanship,
+          dimensions, and overall safety. Compliance not only helps businesses
+          meet regulatory requirements but also improves product credibility and
+          market acceptance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-         
-          <Link
-            to="/bis-qco-updates/bis-certificate-for-tables-and-desks"
-            className="text-blue-700 hover:underline"
-          >
-           Also read the QCO Notification for Tables and Desks (IS 17633)
-          </Link>
+          This comprehensive guide explains everything manufacturers, importers,
+          furniture brands, and procurement professionals need to know about BIS
+          Certification for Tables and Desks under IS 17633:2022, including
+          applicability, certification requirements, testing parameters,
+          documentation, benefits, and the certification process.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          Key Highlights of BIS Certification for Tables and Desks
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a regulatory compliance process administered by
-          the Bureau of Indian Standards, India's national standards authority.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate confirms that the product meets the safety, quality,
-          performance, and durability requirements set by Indian Standards.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Benefits of BIS Certification
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ensures consumer safety</li>
-          <li>Supports high-quality manufacturing</li>
-          <li>Reduces product failure risk</li>
-          <li>Improves market acceptance</li>
-          <li>Legally required under BIS Quality Control Orders (QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Once approved, the product bears the BIS Mark (ISI Mark) along with
-          the license number.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Which Indian Standard Applies to Tables & Desks? – IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable BIS standard is:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – Tables and Desks: Safety
-          Requirements
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This standard defines performance, structural safety, and durability
-          requirements for all types of tables and desks used in residential,
-          commercial, hospitality, and institutional environments.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Products Covered
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Office desks</li>
-          <li>Computer desks</li>
-          <li>Study tables</li>
-          <li>Dining tables</li>
-          <li>Coffee tables</li>
-          <li>Work desks</li>
-          <li>Training desks</li>
-          <li>School/college desks</li>
-          <li>Teacher tables</li>
-          <li>Modular workstation tables</li>
-          <li>Writing tables</li>
-          <li>Meeting/conference tables</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Key Safety Parameters Under IS 17633:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural stability</li>
-          <li>Load-bearing capacity</li>
-          <li>Impact resistance</li>
-          <li>Horizontal/vertical force performance</li>
-          <li>Surface finish quality</li>
-          <li>Edge safety</li>
-          <li>Durability under repetitive use</li>
-          <li>Material safety</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Every table or desk sold in India must comply with these parameters
-          through BIS Registration for Tables & Desks.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Tables and Desks
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tables and desks are high-use furniture items found in homes, offices,
-          schools, and public areas. Structural failures can cause accidents
-          such as:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Collapsing under weight</li>
-          <li>Sharp edge injuries</li>
-          <li>Instability during use</li>
-          <li>Breakage of joints</li>
-          <li>Surface detachment</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          To avoid these hazards, BIS certification ensures:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Safe design and construction</li>
-          <li>Compliance with structural load requirements</li>
-          <li>Durable performance</li>
-          <li>Prevention of tipping and collapse</li>
-          <li>High-quality material selection</li>
-          <li>Uniform market standards</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Selling tables and desks without a BIS License for Tables & Desks is
-          illegal in India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Process for Tables and Desks (IS 17633:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS certification process follows the ISI Scheme (Conformity
-          Assessment Scheme–I), which includes product testing and factory
-          inspection.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 1 – Identify Product Category & Standard
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Confirm that the table/desk falls under IS 17633:2022. Identify number
-          of variants and materials.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 2 – File BIS Application (Online Submission)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Fill the application on the BIS Manak Online Portal with:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturer details</li>
-          <li>Factory address</li>
-          <li>Product specifications</li>
-          <li>Trademark details</li>
-          <li>Quality control systems</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 3 – Payment of BIS Certification Fees
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Includes:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Processing fee</li>
-          <li>Product testing charges</li>
-          <li>Factory inspection fees</li>
-          <li>Marking fees</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 4 – Sample Testing in a BIS-Recognized Laboratory
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Products must undergo full testing as prescribed under IS 17633:2022.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tests Conducted
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stability Test</li>
-          <li>Strength Test (Static Load)</li>
-          <li>Durability Test (Repetitive Loading)</li>
-          <li>Impact Test</li>
-          <li>Deflection Measurement</li>
-          <li>Edge and Surface Safety Test</li>
-          <li>Workspace Load Test</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Lab uploads the test reports directly to BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 5 – BIS Factory Inspection
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS officer visits the manufacturing facility to verify:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quality management system</li>
-          <li>In-house testing capability</li>
-          <li>Raw material control</li>
-          <li>Production line & machinery</li>
-          <li>Calibration of instruments</li>
-          <li>Compliance with STI (Scheme of Testing & Inspection)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 6 – Grant of BIS License
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">BIS issues:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS Certificate</li>
-          <li>ISI Mark approval</li>
-          <li>Unique CML license number</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          After this, the manufacturer can legally mark and sell tables/desks in
-          India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 7 – Post-License Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain records as per STI</li>
-          <li>Use ISI marking correctly</li>
-          <li>Allow periodic BIS inspections</li>
-          <li>Renew license every 1–2 years</li>
-        </ul>
-
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of BIS License for Tables & Desks
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> This standard covers the requirements relating to
-          the performance and safety that is, strength, stability and durability
-          of tables and desks to be used for in a seated and/or standing
-          positions, used by adults.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> This standard applies to completely manufactured/
-          fabricated tables and desks. It also applies to ready-to-assemble
-          units; in that case the requirements of this standard shall apply to
-          the assembled units.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification of Tables & Desks
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manufacturing Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license</li>
-          <li>Machinery list</li>
-          <li>Testing equipment list</li>
-          <li>Calibration certificates</li>
-          <li>Factory layout</li>
-          <li>Process flowchart</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technical Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Table/desk drawings</li>
-          <li>Bill of materials</li>
-          <li>Product specifications</li>
-          <li>Internal quality test reports</li>
-          <li>Photos/videos of the product</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Legal Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Authorized signatory ID proof</li>
-          <li>Address proof</li>
-          <li>Brand authorization letter</li>
-          <li>Trademark registration certificate</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Application Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Filled application form</li>
-          <li>Manufacturer's undertaking</li>
-          <li>Test request letter</li>
-          <li>Letter of authorization</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Complete documentation ensures faster approvals.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testing Requirements under IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The testing evaluates strength, stability, durability, and safety.
-        </p>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clause
+                  Particular
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirement
+                  Details
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design and workmanship
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stability Test
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stated load
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  For occasional heavy loads
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Strength under horizontal static force
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  General
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vertical Impact Test for Glass Table Tops
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vertical Impact Test for All Other Table Tops
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Deflection of Table Tops
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Drop Test
-                </TableCell>
-              </TableRow>
+              {[
+                ["Product", "Tables and Desks"],
+                ["Applicable Standard", "IS 17633:2022"],
+                ["Certification Type", "BIS Product Certification"],
+                ["Applicable Mark", "ISI Mark"],
+                ["Certification Scheme", "Scheme-I"],
+                ["Regulatory Authority", "Bureau of Indian Standards (BIS)"],
+                ["Applicable Sector", "Furniture"],
+                [
+                  "Eligible Applicants",
+                  "Indian Manufacturers and Foreign Manufacturers",
+                ],
+                [
+                  "Compliance Requirement",
+                  "Mandatory under applicable Quality Control Order (QCO)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Testing must be conducted only at BIS-approved laboratories.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          What is BIS Certification for Tables and Desks?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS Certification for Tables and Desks is a conformity assessment process
+          conducted under the Bureau of Indian Standards (BIS) Product Certification
+          Scheme. The certification confirms that the product complies with the
+          requirements specified in IS 17633:2022.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Common Challenges & How to Avoid Them
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. Product failing load or durability tests</strong>
-            <br />
-            Solution: Strengthen joints, use BIS-compliant materials, add
-            reinforcement.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. Incomplete documentation</strong>
-            <br />
-            Solution: Prepare all legal, technical, and manufacturing documents
-            in advance.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. Factory lacking proper testing equipment</strong>
-            <br />
-            Solution: Install required instruments and maintain calibration as
-            per BIS guidelines.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. Incorrect labeling</strong>
-            <br />
-            Solution: Ensure ISI marking follows BIS rules exactly.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. Misclassification of product models</strong>
-            <br />
-            Solution: Get professional guidance to categorize variants
-            correctly.
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Tables & Desks
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal authorization to sell in India</li>
-          <li>Increased customer trust</li>
-          <li>Better product durability</li>
-          <li>Access to major retailers & e-commerce platforms</li>
-          <li>Lower product liability risk</li>
-          <li>Higher brand credibility</li>
-          <li>Compliance with government QCOs</li>
-          <li>Competitive market advantage</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Upon successful certification, manufacturers are permitted to use the ISI
+          Mark on their products, indicating compliance with the applicable Indian
+          Standard.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling or distributing tables/desks without BIS certification may
-          result in:
+          The certification is intended to ensure that tables and desks supplied in
+          the Indian market meet established requirements relating to:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product seizure</li>
-          <li>Heavy fines</li>
-          <li>Criminal prosecution</li>
-          <li>Ban on imports</li>
-          <li>Business closure orders</li>
-          <li>License cancellation</li>
+        <ul className={LIST_CLASS}>
+          <li>Structural strength and stability during normal use</li>
+          <li>Durability, user safety, and material workmanship</li>
+          <li>Full performance requirements under IS 17633:2022</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Bureau of Indian Standards Act, 2016 enforces stringent penalties.
+          For buyers and procurement agencies, the ISI Mark serves as an assurance
+          that the furniture has been evaluated against recognized quality and safety
+          benchmarks.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Tables & Desks?
+          Overview of IS 17633:2022 for Tables and Desks
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This certification is mandatory for:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022 is the Indian Standard that specifies performance and safety
+          requirements for tables and desks intended for adult users in sitting and
+          standing applications.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Foreign manufacturers</li>
-          <li>Importers</li>
-          <li>Traders/brand owners</li>
-          <li>OEM/ODM suppliers</li>
-          <li>Furniture distributors</li>
-          <li>E-commerce sellers</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard covers both:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Fully manufactured (ready-made) tables and desks</li>
+          <li>Ready-to-assemble (RTA) units — tested after complete assembly</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each factory must obtain a separate BIS License.
+          The objective of the standard is to establish minimum performance and safety
+          requirements that help ensure furniture remains stable, durable, and safe
+          throughout its intended service life.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>
+          Key Areas Covered Under IS 17633:2022
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard focuses on several important performance characteristics,
+          including:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Strength Requirements —</strong> Tables and desks must withstand
+            expected loads during normal use without failure or excessive deformation.
+          </li>
+          <li>
+            <strong>Stability Requirements —</strong> Furniture must remain stable in
+            use and resist tipping under foreseeable loading conditions.
+          </li>
+          <li>
+            <strong>Durability Requirements —</strong> Products must retain performance
+            and structural integrity after repeated use over an extended period.
+          </li>
+          <li>
+            <strong>Safety Requirements —</strong> Design and construction must
+            minimize risks from instability, sharp edges, unsafe build, or structural
+            failure.
+          </li>
+          <li>
+            <strong>Workmanship &amp; Construction Quality —</strong> Workmanship,
+            assembly, joints, fasteners, and overall build are assessed for reliable
+            long-term performance.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Choose Us for BIS Certification Consulting?
+          Is BIS Certification for Tables and Desks Mandatory in India?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          We provide end-to-end assistance:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Yes. Tables and desks covered under the applicable Furniture Quality
+          Control Order (QCO) are required to comply with the relevant Indian
+          Standard and obtain BIS Certification before being manufactured, imported,
+          sold, distributed, or offered in the Indian market.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standard interpretation (IS 17633:2022)</li>
-          <li>Product classification</li>
-          <li>Documentation drafting</li>
-          <li>Testing coordination</li>
-          <li>BIS portal filing</li>
-          <li>Factory inspection support</li>
-          <li>Continuous follow-up with BIS</li>
-          <li>License approval</li>
-          <li>Renewal and compliance management</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The objective of mandatory certification is to:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Ensure higher product quality across the furniture industry</li>
+          <li>Protect consumer safety through verified standards</li>
+          <li>Prevent substandard furniture from entering the market</li>
+          <li>Promote standardization and uniform quality benchmarks</li>
+          <li>Build buyer confidence in ISI Mark-certified products</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Our expertise ensures fast, hassle-free, and error-free certification.
+          Manufacturers covered under the applicable regulations must obtain a BIS
+          licence and use the ISI Mark in accordance with BIS requirements.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Product Scope Covered Under IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The scope of IS 17633:2022 extends to various categories of tables and
+          desks designed for adult users across residential, commercial,
+          institutional, and workplace environments.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Examples of products commonly covered include:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Office, study, and computer desks</li>
+          <li>Workstations and multi-purpose desks</li>
+          <li>Conference and meeting tables</li>
+          <li>Institutional and laboratory tables</li>
+          <li>Co-working and commercial-use furniture</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers should carefully review the product specifications and
+          intended use to determine whether their products fall within the scope of
+          IS 17633:2022.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Key Technical Requirements Under IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          To obtain BIS certification, tables and desks must satisfy various
+          performance and safety requirements specified by the standard.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Structural Integrity —</strong> Products must perform under
+            prescribed loads; joints and supporting structures stay secure during
+            testing.
+          </li>
+          <li>
+            <strong>Load-Bearing Performance —</strong> Tables and desks must support
+            specified loads without unacceptable deformation, damage, or failure.
+          </li>
+          <li>
+            <strong>Stability Performance —</strong> Furniture must remain stable in
+            use and reduce tipping risks that could cause injury or property damage.
+          </li>
+          <li>
+            <strong>Durability Performance —</strong> Products must withstand
+            repeated usage cycles while maintaining acceptable performance.
+          </li>
+          <li>
+            <strong>Material &amp; Workmanship —</strong> Materials, finishing, and
+            assembly methods must meet quality controls for consistent production.
+          </li>
+          <li>
+            <strong>Safety Considerations —</strong> Design must minimize hazards from
+            furniture use for consumers and institutional buyers.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Why BIS Certification Matters for Furniture Manufacturers
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The Indian furniture market has become increasingly quality-conscious.
+          Government departments, educational institutions, corporate buyers, and
+          large procurement agencies often prefer products that comply with
+          recognized standards.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Obtaining BIS certification helps manufacturers:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Prove compliance with applicable Indian standards</li>
+          <li>Boost product credibility and brand reputation</li>
+          <li>Win customer and institutional buyer confidence</li>
+          <li>Improve acceptance in government and corporate procurement</li>
+          <li>Strengthen in-house quality management practices</li>
+          <li>Stay ahead of evolving regulatory requirements</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          For manufacturers seeking long-term growth, BIS certification is often
+          viewed as both a compliance requirement and a strategic business advantage.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Testing Requirements for Tables and Desks Under IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Before a manufacturer can obtain BIS certification, product samples must
+          be evaluated against the applicable requirements of IS 17633:2022 through
+          testing at a BIS-recognized laboratory.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The objective of testing is to verify that the furniture meets the
+          prescribed standards for safety, stability, strength, durability, and
+          overall performance.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          While the exact test parameters may vary depending on product design and
+          certification requirements, manufacturers are generally assessed for the
+          following characteristics:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Design &amp; Workmanship —</strong> Construction quality, assembly,
+            finishing, and overall product integrity are examined for safe long-term use.
+          </li>
+          <li>
+            <strong>Dimensional Verification —</strong> Critical measurements are
+            checked against the standard and approved product specifications.
+          </li>
+          <li>
+            <strong>Stability Testing —</strong> Confirms the product stays stable in
+            normal use and flags tipping or structural weaknesses.
+          </li>
+          <li>
+            <strong>Static Load Testing —</strong> Verifies load-bearing capacity
+            without failure, excessive deformation, or damage.
+          </li>
+          <li>
+            <strong>Strength Testing —</strong> Assesses frames, joints, and supports
+            under operational stresses during regular use.
+          </li>
+          <li>
+            <strong>Durability Assessment —</strong> Checks performance retention after
+            repeated usage cycles.
+          </li>
+          <li>
+            <strong>Safety Assessment —</strong> Rules out avoidable risks from
+            instability, defects, or unsafe design features.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certification Process for Tables and Desks
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers seeking BIS certification under IS 17633:2022 must follow a
+          structured certification process established by the Bureau of Indian
+          Standards.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Although specific requirements may vary based on the applicant type and
+          manufacturing location, the general process remains similar.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Step 1: Product Scope Assessment
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The first step involves determining whether the product falls within the
+          scope of IS 17633:2022 and the applicable Quality Control Order. A technical
+          review of the product specifications, intended use, materials, and
+          construction is usually carried out before initiating the certification
+          process.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Step 2: Documentation Preparation
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The manufacturer prepares the required documentation, including company
+          information, manufacturing details, product specifications, quality control
+          procedures, and supporting technical records. Proper documentation is
+          critical because deficiencies at this stage can delay certification.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Step 3: Product Testing
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Product samples are tested at a BIS-recognized laboratory to verify
+          compliance with the requirements of IS 17633:2022. The test report serves
+          as one of the primary technical documents supporting the certification
+          application.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Step 4: Application Submission
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS application is submitted along with supporting documents, test
+          reports, manufacturing information, and quality management records. The
+          application is reviewed by BIS for completeness and technical compliance.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Step 5: Factory Assessment
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS may conduct a factory inspection to evaluate:
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>Manufacturing infrastructure and production capabilities</li>
+          <li>Quality control systems and in-house testing facilities</li>
+          <li>Raw material controls and product traceability mechanisms</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The objective is to verify the manufacturer&apos;s ability to consistently
+          produce compliant products.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Step 6: Evaluation and Review
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS reviews the application, inspection findings, and laboratory test
+          reports before making a certification decision. Any observations raised
+          during the review process must be addressed by the applicant.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Step 7: Grant of BIS Licence
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Upon successful completion of all requirements, BIS grants the licence and
+          authorizes the manufacturer to use the ISI Mark on certified tables and
+          desks.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certification for Indian Manufacturers
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Indian manufacturers generally apply under the domestic certification
+          procedure prescribed by BIS. The process typically includes:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Product testing at a BIS-recognized laboratory</li>
+          <li>Application submission with supporting documents</li>
+          <li>Factory inspection and technical review by BIS</li>
+          <li>Grant of BIS licence and ISI Mark authorization</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Once certified, manufacturers must continue complying with BIS requirements
+          and maintain consistent product quality throughout the licence period.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certification for Foreign Manufacturers
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Foreign manufacturers intending to export tables and desks to India must
+          also obtain BIS certification before supplying products covered under the
+          applicable Quality Control Order.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The certification process generally involves:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Appointment of an Authorized Indian Representative (AIR)</li>
+          <li>Product testing and factory assessment overseas</li>
+          <li>Documentation review and BIS certification approval</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Foreign manufacturers must ensure ongoing compliance with BIS requirements
+          to maintain certification validity.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Documents Required for BIS Certification of Tables and Desks
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Documentation requirements may vary depending on the manufacturer and
+          certification route. However, the following documents are commonly required
+          during the certification process.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Business and Legal Documents</h3>
+        <ul className={LIST_CLASS}>
+          <li>Company registration, manufacturing licence, and GST (if applicable)</li>
+          <li>Authorized signatory details and identity proof</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Manufacturing Information</h3>
+        <ul className={LIST_CLASS}>
+          <li>Process flow chart, factory layout, and machinery details</li>
+          <li>Production infrastructure and capacity records</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Product Information</h3>
+        <ul className={LIST_CLASS}>
+          <li>Product specifications, technical drawings, and catalogue</li>
+          <li>Bill of materials and material/component details</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Quality Control Documents</h3>
+        <ul className={LIST_CLASS}>
+          <li>Internal testing, inspection, and QC procedures</li>
+          <li>Quality control records and equipment calibration reports</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Certification Documents</h3>
+        <ul className={LIST_CLASS}>
+          <li>Laboratory test reports and completed BIS application forms</li>
+          <li>Declarations, undertakings, and other BIS-prescribed documents</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers should ensure that all documentation is accurate, complete,
+          and consistent before submission.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Common Challenges During BIS Certification
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Although the certification process is straightforward when properly managed,
+          manufacturers often encounter several challenges.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Technical interpretation —</strong> Mapping IS 17633:2022
+            requirements to specific product designs can be difficult without expert
+            guidance.
+          </li>
+          <li>
+            <strong>Testing failures —</strong> Weak joints, poor stability, or
+            material issues often lead to lab test rejection.
+          </li>
+          <li>
+            <strong>Documentation gaps —</strong> Incomplete or mismatched records
+            are a frequent cause of application delays.
+          </li>
+          <li>
+            <strong>Factory compliance —</strong> QC systems, traceability, or
+            production controls may need upgrading before licence grant.
+          </li>
+          <li>
+            <strong>Regulatory coordination —</strong> Aligning lab testing,
+            inspections, and BIS follow-ups takes time without structured support.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Benefits of Professional BIS Certification Assistance
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Working with an experienced BIS consultant can help manufacturers avoid
+          costly delays and streamline the certification journey.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Professional support typically includes:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Product scope review and standard interpretation</li>
+          <li>Documentation preparation and application filing</li>
+          <li>Lab testing and factory inspection coordination</li>
+          <li>Ongoing compliance and post-certification support</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This allows manufacturers to focus on production while ensuring regulatory
+          requirements are addressed efficiently.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Why Choose Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India is a regulatory compliance consultancy assisting
+          manufacturers, importers, exporters, and businesses with certification and
+          approval requirements across India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Our experts provide end-to-end support for BIS Certification for Tables and
+          Desks under IS 17633:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Our Services Include</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>Product applicability assessment and BIS compliance consulting</li>
+          <li>Documentation support and application management</li>
+          <li>Testing coordination and factory inspection assistance</li>
+          <li>Regulatory communication and post-certification compliance support</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Our goal is to help businesses navigate the certification process efficiently
+          while minimizing delays and compliance challenges.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -772,119 +814,126 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for Tables and Desks under IS 17633:2022 is a
-          mandatory conformity requirement that ensures product safety,
-          performance, durability, and compliance with national standards.
-          Manufacturers and importers must undergo product testing, factory
-          inspection, and meet all BIS documentation and labeling rules to
-          obtain the ISI Mark.
+          BIS Certification for Tables and Desks under IS 17633:2022 is an important
+          requirement for manufacturers seeking to supply compliant furniture products
+          in the Indian market. The certification helps ensure that tables and desks
+          meet established standards relating to safety, stability, durability,
+          strength, and quality.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          With expert assistance, the entire certification process becomes
-          smooth, fast, and fully compliant with BIS regulations.
+          By obtaining BIS Certification and using the ISI Mark, manufacturers can
+          demonstrate compliance with Indian standards, improve customer confidence,
+          strengthen their market position, and support long-term business growth.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          If you are planning to obtain BIS Certification for Tables and Desks under
+          IS 17633:2022, Sun Certifications India can assist you with end-to-end
+          compliance support, helping you navigate the certification process
+          efficiently and confidently.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS Certificate for Tables & Desks (IS 17633:2022)
+          Frequently Asked Questions (FAQs)
         </h2>
 
-        <div className="space-y-4 mb-4">
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Is BIS certification mandatory for tables and desks?
-              </strong>
-              <br />
-              Yes. As per IS 17633:2022, all tables and desks must be
-              BIS-certified before being sold in India.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          What is IS 17633:2022?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022 is the Indian Standard published by the Bureau of Indian
+          Standards (BIS) that sets minimum performance, stability, durability, and
+          safety requirements for tables and desks intended for adult users in sitting
+          and standing applications.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required for certification?</strong>
-              <br />
-              Mandatory tests include stability, strength, durability,
-              deflection, impact, and surface safety tests.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          Is BIS certification mandatory for tables and desks?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Yes — for products covered under the applicable Furniture Quality Control
+          Order (QCO). Manufacturers and importers must hold a valid BIS licence and
+          comply with IS 17633:2022 before manufacturing, importing, selling, or
+          distributing such furniture in India.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. What is the BIS certification cost?</strong>
-              <br />
-              The cost ranges between ₹65,000 – ₹1,30,000, depending on testing
-              and inspection factors.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          Which certification mark is applicable to tables and desks?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Certified tables and desks are authorized to bear the ISI Mark under the
+          BIS Product Certification Scheme, indicating that the product conforms to
+          the applicable Indian Standard.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. Do foreign manufacturers need BIS Certification?
-              </strong>
-              <br />
-              Yes, through the FMCS scheme, which includes overseas factory
-              inspections by BIS.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          Who can apply for BIS certification?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Both Indian manufacturers and foreign manufacturers may apply, provided
+          their tables and desks fall within the scope of the applicable QCO and meet
+          the requirements of IS 17633:2022.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. Can one license cover multiple table/desk models?
-              </strong>
-              <br />
-              Yes, but only if models are similar in construction and testing
-              parameters.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          What is the purpose of BIS certification?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS certification confirms that furniture meets nationally recognized
+          benchmarks for safety, structural performance, durability, and workmanship —
+          helping protect end users and maintain quality standards across the market.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. How long does the BIS process take?</strong>
-              <br />
-              Approximately 30–45 days.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          What products are covered under IS 17633:2022?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The standard covers adult-use tables and desks used in offices, educational
+          institutions, commercial establishments, and workplace environments — including
+          office desks, workstations, study tables, conference tables, and similar
+          furniture categories.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Is testing mandatory in a BIS-recognized lab?</strong>
-              <br />
-              Yes, only BIS-approved laboratories can conduct the tests.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          Is laboratory testing mandatory?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Yes. Product samples must be tested at a BIS-recognized laboratory, and the
+          resulting test report is a key document in the certification application to
+          demonstrate compliance with IS 17633:2022.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. What happens if the product fails?</strong>
-              <br />
-              It must be redesigned and resubmitted for testing.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          Can imported tables and desks be sold without BIS certification?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          No. Imported products that fall under mandatory certification cannot be
+          legally supplied in India without valid BIS approval. Importers must ensure
+          compliance with the applicable standard before placing products on the
+          market.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is ISI marking mandatory after certification?</strong>
-              <br />
-              Yes, ISI Mark is required on the product and packaging.
-            </p>
-          </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          What is the role of a factory inspection?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS conducts factory assessment to verify that the manufacturer maintains
+          adequate production infrastructure, quality control systems, and product
+          traceability to consistently manufacture compliant tables and desks.
+        </p>
 
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. What documents are needed?</strong>
-              <br />
-              Technical drawings, BOM, factory documents, test reports, QC plan,
-              and legal documents.
-            </p>
-          </div>
-        </div>
+        <h3 className={SUB_HEADING_CLASS}>
+          How can Sun Certifications India help?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India offers end-to-end assistance — including product
+          scope assessment, documentation preparation, laboratory testing coordination,
+          BIS application management, factory inspection readiness, and post-certification
+          compliance support for tables and desks under IS 17633:2022.
+        </p>
 
         {/* PDF Viewer Section */}
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">

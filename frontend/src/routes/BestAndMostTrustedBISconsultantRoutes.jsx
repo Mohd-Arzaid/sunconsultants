@@ -6,7 +6,7 @@ export const BestAndMostTrustedBISconsultantRoutes = () => {
   return (
     <>
       <Route
-        path="/best-bis-consultant-india"
+        path="/best-and-most-trusted-bis-consultant-india"
         element={<BestAndMostTrustedBISconsultantinIndia />}
       />
       <Route
