@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForChairAndStools = () => {
   return (
     <div className="relative w-full">
@@ -41,17 +47,15 @@ const BISCertificateForChairAndStools = () => {
 export default BISCertificateForChairAndStools;
 
 const MetaTags = () => {
-  const title = "BIS Certificate for Chair & Stool | IS 17632:2022 BIS License";
-  const ogTitle = "BIS Certification for Chair & Stool – IS 17632:2022 Guide";
-  const twitterTitle = "BIS License for Chair & Stool | IS 17632:2022";
+  const title = "BIS Certification for General Purpose Chairs and Stools | IS 17632:2022";
+  const ogTitle = "BIS Certification for General Purpose Chairs and Stools | IS 17632:2022";
+  const twitterTitle = "BIS Certification for General Purpose Chairs and Stools | IS 17632:2022";
   const metaDescription =
-    "Get BIS Certificate for Chair & Stool under IS 17632:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
-  const ogDescription =
-    "Complete guide to BIS Certification for Chair & Stool as per IS 17632:2022. Know process, cost, documents, testing & BIS license benefits.";
-  const twitterDescription =
-    "Apply for BIS Certificate for Chair & Stool under IS 17632:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Learn everything about BIS Certification for General Purpose Chairs and Stools under IS 17632:2022. Understand ISI Mark requirements, testing, certification process, documents, benefits, and FAQs";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "BIS Certificate for Chair & Stool, BIS License for Chair & Stool, IS 17632:2022, BIS Certification for Chair & Stool";
+    "BIS Certification for General Purpose Chairs and Stools, IS 17632:2022, ISI Mark Chairs and Stools, BIS License Chairs Stools, BIS Certification Furniture";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/chairs-and-stools-is-17632";
   const websiteName = "Sun Certifications India";
@@ -179,7 +183,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Chair & Stools – IS 17632:2022
+                    BIS Certification for General Purpose Chairs and Stools (IS 17632:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -210,571 +214,484 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for General Purpose Chairs and Stools – Complete Guide
-          to IS 17632:2022
+          BIS Certification for General Purpose Chairs and Stools (IS 17632:2022)
+          – Complete ISI Mark Certification Guide
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="BIS License for Chair & Stools"
-            alt="BIS Certificate for Chair & Stools - IS 17632:2022 BIS Certification"
+            title="BIS License for General Purpose Chairs and Stools"
+            alt="BIS Certification for General Purpose Chairs and Stools - IS 17632:2022 ISI Mark Guide"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The{" "}
-          <a
-            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-            className="text-blue-600 hover:underline"
-            rel="noopener noreferrer"
-          >
-            BIS Certificate
-          </a>{" "}
-          for General Purpose Chairs and Stools is a mandatory requirement under
-          Indian Standard IS 17632:2022. This standard specifies the safety,
-          durability, and performance requirements for chairs and stools used in
-          homes, offices, commercial areas, educational institutions, cafeterias,
-          restaurants, hotels, and public spaces.
+          General purpose chairs and stools are among the most commonly used
+          furniture products across homes, offices, educational institutions,
+          healthcare facilities, retail establishments, public spaces, and commercial
+          environments. Since these seating products are subjected to regular and
+          prolonged use, they must meet specific quality, safety, strength, and
+          durability requirements to ensure reliable performance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chairs and stools are among the most used furniture items and are
-          constantly subjected to load, movement, and repetitive stress. A
-          structurally weak chair or stool can collapse suddenly, leading to
-          injuries. To prevent such hazards and ensure consumer safety, the
-          Bureau of Indian Standards (BIS) requires every manufacturer and
-          importer to obtain BIS Certification for Chairs and Stools before
-          selling them in India.
+          With increasing emphasis on product quality and consumer safety, compliance
+          with Indian Standards has become an important requirement for furniture
+          manufacturers and importers. BIS Certification for General Purpose Chairs
+          and Stools under IS 17632:2022 helps ensure that products meet prescribed
+          performance and safety requirements before being placed on the Indian
+          market.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This page provides a complete guide to BIS Certification for chairs
-          and stools under IS 17632:2022, including the certification process,
-          required documents, testing requirements, fees, challenges, penalties,
-          and benefits.
+          Certification under the Bureau of Indian Standards (BIS) allows
+          manufacturers to use the ISI Mark on compliant products. The ISI Mark
+          serves as an assurance that the product conforms to recognized Indian
+          quality standards and has undergone the required evaluation process.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-      
-          <Link
-            to="/bis-qco-updates/bis-certificate-for-chairs-and-stools"
-            className="text-blue-700 hover:underline"
-          >
-           Also read the QCO Notification for Chairs and Stools (IS 17632)
-          </Link>
+          As the furniture industry continues to grow and procurement agencies
+          increasingly prefer certified products, BIS Certification has become an
+          important compliance and market-access requirement for manufacturers.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          Key Highlights of BIS Certification for General Purpose Chairs and Stools
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product compliance system governed by the
-          Bureau of Indian Standards, the national standards authority of India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS Certificate ensures that a product:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Meets Indian safety and quality standards</li>
-          <li>Has passed BIS-approved lab testing</li>
-          <li>Has undergone factory inspection</li>
-          <li>Saves consumers from unsafe or substandard products</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Certified products display the ISI Mark, demonstrating compliance with
-          Indian Standards.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable Standard – IS 17632:2022 for Chairs & Stools
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Standard for chairs and stools is:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – General Purpose Chairs and Stools:
-          Safety Requirements
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This standard covers all non-specialized chairs and stools used for
-          seating purposes in homes, offices, commercial environments, public
-          places, and institutional settings.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Products Covered Under IS 17632:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>General-purpose chairs</li>
-          <li>Dining chairs</li>
-          <li>Office visitor chairs</li>
-          <li>Study chairs</li>
-          <li>Cafeteria chairs</li>
-          <li>Restaurant chairs</li>
-          <li>Meeting room chairs</li>
-          <li>Waiting area chairs</li>
-          <li>Wooden chairs</li>
-          <li>Metal chairs</li>
-          <li>Plastic chairs (non-specialized)</li>
-          <li>General-purpose stools</li>
-          <li>Bar stools</li>
-          <li>Dining stools</li>
-          <li>Step stools (within defined criteria)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Key Safety & Performance Parameters
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 evaluates:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural strength</li>
-          <li>Stability</li>
-          <li>Durability under repeated use</li>
-          <li>Seat strength</li>
-          <li>Backrest performance</li>
-          <li>Leg impact resistance</li>
-          <li>Joint strength</li>
-          <li>Surface finish quality</li>
-          <li>Edge and corner safety</li>
-          <li>Material quality</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          All chairs and stools sold in India must comply with these parameters
-          and obtain a BIS License for Chairs and Stools.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Chairs & Stools
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Chairs and stools bear human weight and are used frequently across all
-          environments. Structural failure can lead to:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Collapsing chairs</li>
-          <li>Breakage of legs</li>
-          <li>Seat cracking</li>
-          <li>Backrest failure</li>
-          <li>Injury due to sharp edges</li>
-          <li>Instability leading to falls</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Benefits of BIS Certification
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ensures safe seating products</li>
-          <li>Prevents accidents and injuries</li>
-          <li>Improves product durability</li>
-          <li>Prevents substandard imports</li>
-          <li>Establishes uniform market quality</li>
-          <li>Enhances customer confidence</li>
-          <li>Mandatory by Indian law (BIS QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Without BIS Certification, manufacturers cannot legally sell chairs or
-          stools in India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Process for Chairs and Stools (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS process follows the ISI Mark Certification Scheme, involving
-          testing, inspection, and application verification.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 1 – Identify Product Type & Standard
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Confirm that the chair/stool falls under IS 17632:2022. Identify
-          design variants and materials used.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 2 – Submit BIS Application Online
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Application is filed through the BIS Manak Online Portal, requiring:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturer details</li>
-          <li>Factory information</li>
-          <li>Product specifications</li>
-          <li>Brand/trademark details</li>
-          <li>Manufacturing process workflow</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 3 – Pay BIS Certification Fees
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Fees include:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Processing fee</li>
-          <li>Sample testing charges</li>
-          <li>Factory inspection fees</li>
-          <li>Marking fees</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 4 – Product Testing as per IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory testing is performed in a BIS-recognized laboratory.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tests Include:
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stability Test</li>
-          <li>Strength Test for Seat</li>
-          <li>Backrest Durability Test</li>
-          <li>Leg Forward/Side/Rearward Loading Test</li>
-          <li>Seat Impact Test</li>
-          <li>Drop Test</li>
-          <li>Fatigue Test</li>
-          <li>Surface Finish Test</li>
-          <li>Sharp Edge Test</li>
-          <li>Structural durability under repeated cycles</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Test results must show full compliance with IS 17632:2022.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 5 – Factory Inspection by BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS officer visits the factory to evaluate:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process</li>
-          <li>Raw material inspection</li>
-          <li>Quality control procedures</li>
-          <li>Testing capability</li>
-          <li>Calibration of equipment</li>
-          <li>Production volume</li>
-          <li>Compliance with BIS Scheme of Testing & Inspection (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 6 – Grant of BIS License
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          If testing and inspection are successful, BIS issues:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS Certificate (ISI Mark License)</li>
-          <li>CML Number</li>
-          <li>Approval to affix the ISI Mark on chairs and stools</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Step 7 – Post-License Obligations
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Use the ISI Mark as per BIS labeling requirements</li>
-          <li>Maintain quality control records</li>
-          <li>Undergo regular BIS surveillance inspections</li>
-          <li>Renew license every 1–2 years</li>
-        </ul>
-
-  
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of BIS License for Chairs & Stools
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard covers the requirements for general purpose chairs and
-          stools. This standard applies to completely manufactured/fabricated
-          general purpose chairs and stools. It also applies to
-          ready-to-assemble units; in that case the requirements of this
-          standard shall apply to the assembled units.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification of Chairs & Stools
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manufacturer Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license/registration</li>
-          <li>Manufacturing process flowchart</li>
-          <li>Machinery list</li>
-          <li>In-house testing equipment list</li>
-          <li>Calibration certificates</li>
-          <li>Factory layout & floor plan</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technical Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chair/stool drawings</li>
-          <li>Dimensions & specifications</li>
-          <li>Bill of materials</li>
-          <li>Safety features description</li>
-          <li>Internal quality test reports</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Legal Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identity & address proof</li>
-          <li>Brand authorization letter</li>
-          <li>Trademark certificate (optional)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Application Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application form</li>
-          <li>Test request form</li>
-          <li>Declaration forms</li>
-          <li>Authorization letter</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testing Requirements for Chairs & Stools (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 includes extensive mechanical, structural, and safety
-          testing.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Mandatory Tests
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clause
+                  Particular
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirement
+                  Details
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design and workmanship
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Forwards Overbalancing and Sideways Overbalancing for Chairs
-                  without Arms
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rearwards Overbalancing
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sideways Overbalancing for Chairs with Arms
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stools/ Poufs (All Directions)
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Strength Test
-                </TableCell>
-              </TableRow>
+              {[
+                ["Product Name", "General Purpose Chairs and Stools"],
+                ["Applicable Indian Standard", "IS 17632:2022"],
+                ["Certification Type", "BIS Product Certification"],
+                ["Certification Scheme", "Scheme-I"],
+                ["Applicable Mark", "ISI Mark"],
+                ["Regulatory Authority", "Bureau of Indian Standards"],
+                ["Applicable Ministry", "Ministry of Commerce and Industry"],
+                ["Compliance Requirement", "Mandatory"],
+                ["Product Category", "Furniture"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          These tests ensure safe daily use under real-world conditions.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          What is BIS Certification for General Purpose Chairs and Stools?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS Certification for General Purpose Chairs and Stools is a conformity
+          assessment process conducted under the BIS Product Certification Scheme.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Common Challenges & How to Avoid Them
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Chair failing stability tests</strong>
-            <br />
-            Occurs due to improper weight distribution.
-            <br />
-            Fix: Improve leg design, widen base area.
-          </li>
-          <li>
-            <strong>Weak joints causing test failures</strong>
-            <br />
-            Fix: Use reinforced materials & better connectors.
-          </li>
-          <li>
-            <strong>Inadequate in-house testing equipment</strong>
-            <br />
-            Fix: Install required BIS-compliant instruments.
-          </li>
-          <li>
-            <strong>Documentation inconsistencies</strong>
-            <br />
-            Fix: Prepare documents systematically before applying.
-          </li>
-          <li>
-            <strong>Product variants not mapped properly</strong>
-            <br />
-            Fix: Group products based on structure & test parameters.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Chairs & Stools
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal permission to sell in India</li>
-          <li>Improved product safety</li>
-          <li>Enhanced customer trust</li>
-          <li>Lower product liability risk</li>
-          <li>Required for e-commerce listings</li>
-          <li>Essential for government tenders</li>
-          <li>Higher brand credibility</li>
-          <li>Competitive advantage</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The objective of certification is to verify that the product complies with
+          the requirements specified in IS 17632:2022. Once certification is
+          granted, manufacturers are authorized to use the ISI Mark on their products.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling chairs or stools without BIS certification may lead to:
+          The certification process evaluates various aspects of product performance,
+          including:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary fines</li>
-          <li>Product recall/seizure</li>
-          <li>Cancellation of factory licenses</li>
-          <li>Criminal prosecution</li>
-          <li>Import restrictions</li>
-          <li>Market blacklisting</li>
+        <ul className={LIST_CLASS}>
+          <li>Strength</li>
+          <li>Stability</li>
+          <li>Durability</li>
+          <li>Structural performance</li>
+          <li>Safety requirements</li>
+          <li>Material quality</li>
+          <li>Workmanship</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Penalties are enforced under the BIS Act, 2016.
+          The certification helps ensure that seating products supplied in the Indian
+          market meet established quality and safety benchmarks.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Chairs & Stools?
+          Overview of IS 17632:2022
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory for:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022 is the Indian Standard that specifies requirements for
+          General Purpose Chairs and Stools.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Foreign manufacturers exporting to India</li>
-          <li>Importers</li>
-          <li>Brand owners/traders</li>
-          <li>OEM/ODM suppliers</li>
-          <li>Retail chains</li>
-          <li>Online sellers</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The standard establishes requirements related to safety, strength,
+          durability, stability, and overall performance of seating furniture
+          intended for general use.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard applies to:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Completely manufactured chairs and stools</li>
+          <li>Fabricated chairs and stools</li>
+          <li>Ready-to-assemble products after assembly</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each factory requires a separate BIS License.
+          The purpose of the standard is to ensure that furniture products provide
+          safe, reliable, and durable performance throughout their intended service
+          life.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Key Requirements Under IS 17632:2022
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>Strength Requirements</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          General purpose chairs and stools must possess adequate structural strength
+          to withstand expected loading conditions during normal use.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Stability Requirements</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The furniture should remain stable during intended use and should not
+          present unnecessary tipping risks.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Durability Requirements</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Products must be capable of maintaining their structural integrity and
+          performance over repeated usage cycles.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Safety Requirements</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The standard includes safety-related requirements intended to minimize risks
+          associated with furniture use.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Material Quality and Workmanship</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The quality of materials, manufacturing practices, assembly methods, joints,
+          and finishing contribute significantly to compliance with the standard.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Ergonomic Considerations</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The standard incorporates performance-related considerations that contribute
+          to user comfort and practical functionality.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Products Covered Under IS 17632:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard generally applies to:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>General purpose chairs</li>
+          <li>General purpose stools</li>
+          <li>Fixed seating furniture intended for general use</li>
+          <li>Ready-to-assemble seating products after assembly</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers should review the scope of the standard carefully to determine
+          applicability to their products.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Is BIS Certification Mandatory for General Purpose Chairs and Stools?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Yes. Furniture products covered under the applicable Furniture Quality
+          Control Order (QCO) are required to comply with the relevant Indian Standard
+          and obtain BIS Certification before being manufactured, imported, sold,
+          distributed, or supplied in the Indian market.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers covered under the applicable regulatory framework must obtain
+          a BIS licence and comply with marking requirements prescribed by BIS.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Testing Requirements for BIS Certification
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Before certification is granted, product samples must be evaluated through
+          testing conducted at recognized laboratories.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Testing generally focuses on the following parameters:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Structural Performance Evaluation —</strong> Determines whether
+            the chair or stool can withstand normal usage conditions without failure.
+          </li>
+          <li>
+            <strong>Stability Testing —</strong> Assesses whether the furniture
+            remains stable during intended use and resists tipping.
+          </li>
+          <li>
+            <strong>Strength Assessment —</strong> Evaluates load-bearing capability
+            and structural integrity of frames, joints, and supports.
+          </li>
+          <li>
+            <strong>Durability Evaluation —</strong> Checks performance retention
+            after repeated usage cycles over the product&apos;s service life.
+          </li>
+          <li>
+            <strong>Safety Assessment —</strong> Identifies potential hazards and
+            verifies compliance with prescribed safety requirements.
+          </li>
+          <li>
+            <strong>Workmanship Inspection —</strong> Reviews construction quality,
+            finishing, assembly integrity, and overall build standards.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Product Marking Requirements
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Products certified under IS 17632:2022 are generally required to carry
+          identifying information such as:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Manufacturer&apos;s name or trademark</li>
+          <li>Model or design identification</li>
+          <li>Batch or lot number</li>
+          <li>Date of manufacture</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The ISI Mark may only be applied after obtaining a valid BIS licence.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certification Process for General Purpose Chairs and Stools
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>Step 1: Product Scope Evaluation</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The first step involves determining whether the product falls within the
+          scope of IS 17632:2022 and the applicable Furniture QCO.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Review the chair or stool type, intended use, materials, and construction
+          before initiating the certification process.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Step 2: Documentation Preparation</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The manufacturer prepares technical and compliance documentation required
+          for certification, including company records, factory details, product
+          specifications, and quality control procedures.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Complete and accurate documentation helps avoid unnecessary delays during
+          BIS review.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Step 3: Product Testing</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Representative samples are tested at a BIS-recognized laboratory to verify
+          compliance with the requirements of IS 17632:2022.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          The laboratory test report is a key technical document supporting the
+          certification application.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Step 4: BIS Application Submission</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The certification application is submitted along with supporting
+          documentation, test reports, and manufacturing information.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          BIS reviews the application for completeness and technical compliance before
+          proceeding further.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Step 5: Factory Inspection</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS may evaluate the manufacturing facility, production systems, and quality
+          control processes to verify the ability to consistently produce compliant
+          products.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          This assessment typically covers production infrastructure, QC systems, raw
+          material controls, and product traceability.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Step 6: Technical Review</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The application, test reports, and inspection findings are reviewed by BIS
+          before a certification decision is made.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Any observations or deficiencies raised during review must be addressed by
+          the applicant.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Step 7: Grant of Licence</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Upon satisfactory compliance, BIS grants the licence and authorizes the use
+          of the ISI Mark on certified general purpose chairs and stools.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers must continue to comply with BIS requirements throughout the
+          licence period.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Benefits of BIS Certification
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Compliance with Indian Regulations —</strong> Meet mandatory
+            quality and safety requirements under the applicable Furniture QCO.
+          </li>
+          <li>
+            <strong>Legal Market Access —</strong> Supply certified chairs and stools
+            in India in accordance with applicable regulatory requirements.
+          </li>
+          <li>
+            <strong>Enhanced Product Credibility —</strong> The ISI Mark demonstrates
+            conformity with recognized Indian standards.
+          </li>
+          <li>
+            <strong>Increased Customer Confidence —</strong> Consumers and
+            institutional buyers prefer products evaluated against established
+            benchmarks.
+          </li>
+          <li>
+            <strong>Competitive Advantage —</strong> Greater acceptance in commercial
+            and government procurement processes.
+          </li>
+          <li>
+            <strong>Improved Brand Reputation —</strong> Demonstrates commitment to
+            product quality, safety, and long-term reliability.
+          </li>
+          <li>
+            <strong>Support for MSMEs —</strong> Helps small and medium manufacturers
+            strengthen market presence and build customer trust.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Common Challenges Faced During Certification
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Product Testing Failures —</strong> Design or manufacturing
+            deficiencies may result in non-compliance during laboratory evaluation.
+          </li>
+          <li>
+            <strong>Documentation Issues —</strong> Incomplete or inconsistent records
+            frequently cause certification delays.
+          </li>
+          <li>
+            <strong>Manufacturing Compliance Gaps —</strong> Quality control systems
+            may require improvement before certification can be granted.
+          </li>
+          <li>
+            <strong>Regulatory Complexity —</strong> Managing testing, inspections,
+            and certification procedures can be challenging without expert guidance.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Why Choose Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India assists manufacturers, importers, exporters, and
+          businesses with regulatory compliance requirements across India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">Our services include:</p>
+
+        <ul className={LIST_CLASS}>
+          <li>Product applicability assessment</li>
+          <li>BIS certification consulting</li>
+          <li>Documentation support</li>
+          <li>Laboratory testing coordination</li>
+          <li>Factory inspection preparation</li>
+          <li>Application management</li>
+          <li>Regulatory compliance assistance</li>
+          <li>Post-certification support</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Our objective is to help clients navigate certification requirements
+          efficiently and achieve compliance with minimal delays.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -782,112 +699,129 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for General Purpose Chairs and Stools under IS
-          17632:2022 is mandatory for ensuring product safety, structural
-          stability, and durability. BIS certification not only helps
-          manufacturers maintain high-quality standards but also enables legal
-          market access and increases consumer confidence.
+          BIS Certification for General Purpose Chairs and Stools under IS 17632:2022
+          plays an important role in ensuring product quality, safety, strength,
+          stability, and durability. The certification helps manufacturers demonstrate
+          compliance with Indian Standards while strengthening customer confidence and
+          supporting market access.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          With professional assistance, the certification process—from testing
-          to inspection and approval—becomes smooth, predictable, and fully
-          compliant.
+          As demand for quality-assured furniture products continues to grow, BIS
+          Certification and the ISI Mark provide valuable assurance to consumers,
+          institutions, and procurement agencies. Manufacturers that invest in
+          compliance not only meet regulatory requirements but also enhance their
+          competitiveness and long-term market reputation.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          If you are planning to obtain BIS Certification for General Purpose Chairs
+          and Stools under IS 17632:2022, Sun Certifications India can provide expert
+          guidance and end-to-end compliance support throughout the certification
+          process.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS Certificate for Chairs and Stools
+          FAQs – BIS Certification for General Purpose Chairs and Stools (IS 17632:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Is BIS Certification mandatory for chairs and stools?
-              </strong>
+              <strong>1. What is IS 17632:2022?</strong>
               <br />
-              Yes, as per IS 17632:2022, all general-purpose chairs and stools
-              must be BIS certified before being sold in India.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required?</strong>
-              <br />
-              Stability, strength, durability, impact, fatigue, and material
-              safety tests.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. How long does BIS certification take?</strong>
-              <br />
-              Typically 30–45 days.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. What is the certification cost?</strong>
-              <br />
-              Around ₹60,000–₹1,30,000 depending on testing and inspection.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Can foreign manufacturers apply?</strong>
-              <br />
-              Yes, under the FMCS scheme.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Is ISI marking mandatory?</strong>
-              <br />
-              Yes, after BIS license is granted.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Why do chairs fail BIS testing?</strong>
-              <br />
-              Common causes include weak legs, poor joint strength, and
-              instability.
+              IS 17632:2022 is the Indian Standard that specifies requirements for
+              General Purpose Chairs and Stools.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. Can multiple models be covered under one license?
+                2. Is BIS Certification mandatory for General Purpose Chairs and
+                Stools?
               </strong>
               <br />
-              Only if they meet similarity and standard compliance criteria.
+              Products covered under the applicable Furniture Quality Control Order
+              are required to comply with BIS certification requirements.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is a factory inspection required?</strong>
+              <strong>3. What is the ISI Mark?</strong>
               <br />
-              Yes, it is compulsory for ISI mark certification.
+              The ISI Mark is the standard certification mark issued under the BIS
+              Product Certification Scheme.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. What documents are needed?</strong>
+              <strong>4. Who can apply for BIS Certification?</strong>
               <br />
-              Factory license, technical specs, machinery list, QC plan, product
-              drawings, etc.
+              Both Indian manufacturers and foreign manufacturers can apply for
+              certification.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Does BIS Certification require product testing?</strong>
+              <br />
+              Yes. Product testing is an important component of the certification
+              process.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                6. Are ready-to-assemble chairs covered under IS 17632:2022?
+              </strong>
+              <br />
+              Yes. The standard applies to ready-to-assemble products after assembly.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                7. What products are excluded from the scope of IS 17632:2022?
+              </strong>
+              <br />
+              Products such as reclining chairs, rocking chairs, tilting chairs,
+              settees, and certain specialized seating products are generally excluded.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. What are the benefits of obtaining BIS Certification?</strong>
+              <br />
+              Benefits include regulatory compliance, improved product credibility,
+              enhanced customer confidence, and better market acceptance.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>9. Can foreign manufacturers obtain BIS Certification?</strong>
+              <br />
+              Yes. Foreign manufacturers can apply through the applicable BIS
+              certification route for overseas manufacturers.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. How can Sun Certifications India help?</strong>
+              <br />
+              Sun Certifications India provides end-to-end support for BIS
+              certification, including documentation, testing coordination,
+              application management, and compliance assistance.
             </p>
           </div>
         </div>
