@@ -837,103 +837,115 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Frequently Asked Questions (FAQs)
+          FAQs – BIS Certification for Tables and Desks (IS 17633:2022)
         </h2>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          What is IS 17633:2022?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17633:2022 is the Indian Standard published by the Bureau of Indian
-          Standards (BIS) that sets minimum performance, stability, durability, and
-          safety requirements for tables and desks intended for adult users in sitting
-          and standing applications.
-        </p>
+        <div className="space-y-4 mb-4">
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>1. What is IS 17633:2022?</strong>
+              <br />
+              IS 17633:2022 is the Indian Standard published by the Bureau of Indian
+              Standards (BIS) that sets minimum performance, stability, durability, and
+              safety requirements for tables and desks intended for adult users in sitting
+              and standing applications.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          Is BIS certification mandatory for tables and desks?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Yes — for products covered under the applicable Furniture Quality Control
-          Order (QCO). Manufacturers and importers must hold a valid BIS licence and
-          comply with IS 17633:2022 before manufacturing, importing, selling, or
-          distributing such furniture in India.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>2. Is BIS certification mandatory for tables and desks?</strong>
+              <br />
+              Yes — for products covered under the applicable Furniture Quality Control
+              Order (QCO). Manufacturers and importers must hold a valid BIS licence and
+              comply with IS 17633:2022 before manufacturing, importing, selling, or
+              distributing such furniture in India.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          Which certification mark is applicable to tables and desks?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Certified tables and desks are authorized to bear the ISI Mark under the
-          BIS Product Certification Scheme, indicating that the product conforms to
-          the applicable Indian Standard.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>3. Which certification mark is applicable to tables and desks?</strong>
+              <br />
+              Certified tables and desks are authorized to bear the ISI Mark under the
+              BIS Product Certification Scheme, indicating that the product conforms to
+              the applicable Indian Standard.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          Who can apply for BIS certification?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Both Indian manufacturers and foreign manufacturers may apply, provided
-          their tables and desks fall within the scope of the applicable QCO and meet
-          the requirements of IS 17633:2022.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. Who can apply for BIS certification?</strong>
+              <br />
+              Both Indian manufacturers and foreign manufacturers may apply, provided
+              their tables and desks fall within the scope of the applicable QCO and meet
+              the requirements of IS 17633:2022.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          What is the purpose of BIS certification?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS certification confirms that furniture meets nationally recognized
-          benchmarks for safety, structural performance, durability, and workmanship —
-          helping protect end users and maintain quality standards across the market.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. What is the purpose of BIS certification?</strong>
+              <br />
+              BIS certification confirms that furniture meets nationally recognized
+              benchmarks for safety, structural performance, durability, and workmanship —
+              helping protect end users and maintain quality standards across the market.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          What products are covered under IS 17633:2022?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The standard covers adult-use tables and desks used in offices, educational
-          institutions, commercial establishments, and workplace environments — including
-          office desks, workstations, study tables, conference tables, and similar
-          furniture categories.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>6. What products are covered under IS 17633:2022?</strong>
+              <br />
+              The standard covers adult-use tables and desks used in offices, educational
+              institutions, commercial establishments, and workplace environments — including
+              office desks, workstations, study tables, conference tables, and similar
+              furniture categories.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          Is laboratory testing mandatory?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Yes. Product samples must be tested at a BIS-recognized laboratory, and the
-          resulting test report is a key document in the certification application to
-          demonstrate compliance with IS 17633:2022.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>7. Is laboratory testing mandatory?</strong>
+              <br />
+              Yes. Product samples must be tested at a BIS-recognized laboratory, and the
+              resulting test report is a key document in the certification application to
+              demonstrate compliance with IS 17633:2022.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          Can imported tables and desks be sold without BIS certification?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          No. Imported products that fall under mandatory certification cannot be
-          legally supplied in India without valid BIS approval. Importers must ensure
-          compliance with the applicable standard before placing products on the
-          market.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. Can imported tables and desks be sold without BIS certification?</strong>
+              <br />
+              No. Imported products that fall under mandatory certification cannot be
+              legally supplied in India without valid BIS approval. Importers must ensure
+              compliance with the applicable standard before placing products on the
+              market.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          What is the role of a factory inspection?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS conducts factory assessment to verify that the manufacturer maintains
-          adequate production infrastructure, quality control systems, and product
-          traceability to consistently manufacture compliant tables and desks.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>9. What is the role of a factory inspection?</strong>
+              <br />
+              BIS conducts factory assessment to verify that the manufacturer maintains
+              adequate production infrastructure, quality control systems, and product
+              traceability to consistently manufacture compliant tables and desks.
+            </p>
+          </div>
 
-        <h3 className={SUB_HEADING_CLASS}>
-          How can Sun Certifications India help?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sun Certifications India offers end-to-end assistance — including product
-          scope assessment, documentation preparation, laboratory testing coordination,
-          BIS application management, factory inspection readiness, and post-certification
-          compliance support for tables and desks under IS 17633:2022.
-        </p>
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. How can Sun Certifications India help?</strong>
+              <br />
+              Sun Certifications India offers end-to-end assistance — including product
+              scope assessment, documentation preparation, laboratory testing coordination,
+              BIS application management, factory inspection readiness, and post-certification
+              compliance support for tables and desks under IS 17633:2022.
+            </p>
+          </div>
+        </div>
 
         {/* PDF Viewer Section */}
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
