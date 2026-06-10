@@ -350,6 +350,12 @@ export const NAVIGATION_DATA = {
       link: "/awards-and-recognition",
       icon: Award,
     },
+    {
+      id: 7,
+      name: "Trusted BIS Consultant",
+      link: "/best-most-trusted-bis-consultant",
+      icon: ShieldCheck,
+    },
   ],
   faqs: [
     {

@@ -22,7 +22,7 @@ const bestAndMostTrustedBISconsultantPages = [
       "Best and most trusted BIS consultant in India – Sun Certifications India",
     description:
       "Looking for a best and trusted BIS consultant in India? Sun Certifications India offers end-to-end BIS certification, ISI Mark, CRS, FMCS License, and multi-ministry compliance since 2016.",
-    slug: "best-and-most-trusted-bis-consultan",
+    slug: "best-and-most-trusted-bis-consultant-india",
     date: "10 June 2026",
   },
 ];
