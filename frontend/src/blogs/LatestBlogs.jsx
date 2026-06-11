@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 107,
+    color: "#7C3AED",
+    title:
+      "BIS Certificate for Cable Trunking & Ducting Systems - IS 14927 (Part 2):2021",
+    description:
+      "Get BIS Certificate for Cable Trunking & Ducting Systems under IS 14927 (Part 2):2021. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2",
+    date: "9 May 2026",
+  },
+  {
     id: 106,
     color: "#0F766E",
     title: "BIS Certificate for Cabinet Hinges - IS 18297:2023",
