@@ -280,7 +280,7 @@ const MainContentLeft = () => {
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforCableTrunkingAndDuctingSystem.webp"
-            title="BIS Certification for Cable Trunking and Ducting Systems"
+            title="BIS Certificate for Cable Trunking & Ducting Systems - IS 14927 (Part 2):2021 BIS Certification"
             alt="BIS Certificate for Cable Trunking & Ducting Systems - IS 14927 (Part 2):2021 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />

@@ -275,7 +275,7 @@ const MainContentLeft = () => {
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforCabinetHinges.webp"
-            title="BIS Certification for Cabinet Hinges"
+            title="BIS Certificate for Cabinet Hinges - IS 18297:2023 BIS Certification"
             alt="BIS Certificate for Cabinet Hinges - IS 18297:2023 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
