@@ -288,7 +288,7 @@ const MainContentLeft = () => {
                 ["Applicable Mark", "ISI Mark"],
                 ["Regulatory Authority", "Bureau of Indian Standards (BIS)"],
                 ["Applicable Ministry", "Ministry of Commerce and Industry"],
-                ["Compliance Requirement", "Mandatory under applicable Quality Control Order (QCO)"],
+                ["Compliance Requirement", "Mandatory under applicable Furniture QCO (Quality Control Order)"],
                 [
                   "Eligible Applicants",
                   "Indian Manufacturers and Foreign Manufacturers ",
@@ -311,14 +311,13 @@ const MainContentLeft = () => {
                       </a>
                     ) : particular === "Compliance Requirement" ? (
                       <>
-                        Mandatory under applicable Quality Control Order (
+                        Mandatory under applicable{" "}
                         <a
                           href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-work-chairs"
                           className="text-blue-600 hover:underline"
                         >
-                          QCO
+                          <strong>Furniture QCO (Quality Control Order)</strong>
                         </a>
-                        )
                       </>
                     ) : (
                       details
@@ -485,12 +484,20 @@ const MainContentLeft = () => {
           whether your chair falls within the scope of IS 17631:2022.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-        Also Check Furniture Products Covered Under Mandatory BIS Certification -{" "}
-        <a href="https://bis-certifications.com/blogs/isi-products/furniture" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-           BIS Certification for furniture
-        </a>
-          </p>
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Also check Furniture Products Covered Under Mandatory BIS
+            Certification —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS Certification for furniture</strong>
+          </a>
+        </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

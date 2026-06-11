@@ -225,7 +225,7 @@ const MainContentLeft = () => {
                 ],
                 [
                   "Compliance Requirement",
-                  "Mandatory under applicable Quality Control Order (QCO)",
+                  "Mandatory under applicable Furniture QCO (Quality Control Order)",
                 ],
               ].map(([particular, details], index) => (
                 <TableRow
@@ -245,14 +245,14 @@ const MainContentLeft = () => {
                       </a>
                     ) : particular === "Compliance Requirement" ? (
                       <>
-                        Mandatory under applicable Quality Control Order (
+                        Mandatory under applicable {" "}
                         <a
                           href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
                           className="text-blue-600 hover:underline"
                         >
-                          QCO
+                         <strong>Furniture QCO (Quality Control Order)</strong>
                         </a>
-                        )
+                        
                       </>
                     ) : (
                       details
@@ -391,13 +391,16 @@ const MainContentLeft = () => {
           licence and use the ISI Mark in accordance with BIS requirements.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Also check Furniture Products Covered Under Mandatory BIS Certification —{" "}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Also check Furniture Products Covered Under Mandatory BIS
+            Certification —
+          </strong>{" "}
           <a
             href="https://bis-certifications.com/blogs/isi-products/furniture"
             className="text-blue-600 hover:underline"
           >
-            BIS Certification for furniture
+            <strong>BIS Certification for furniture</strong>
           </a>
         </p>
 

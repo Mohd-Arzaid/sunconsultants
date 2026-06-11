@@ -46,7 +46,7 @@ const SocialFloatingButtons = ({ hide }) => {
       </a>
 
       <a
-        href="tel:yourphonenumber" // Replace with your phone number
+        href="tel:+918010505057"
         className="group flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-blue-400/50 relative overflow-hidden"
         aria-label="Call Us"
       >

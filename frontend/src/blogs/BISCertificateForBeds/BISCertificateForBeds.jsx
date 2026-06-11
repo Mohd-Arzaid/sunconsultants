@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBeds = () => {
   return (
     <div className="relative w-full">
@@ -394,130 +400,474 @@ const MainContentLeft = () => {
           requirements, documents, fees, timelines, penalties, and benefits.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-         
-          <Link
-            to="/bis-qco-updates/bis-certificate-for-beds"
-            className="text-blue-700 hover:underline"
-          >
-         Also read the QCO Notification for Beds (IS 17635)
-          </Link>
-        </p>
+     
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          Key Highlights of BIS Certification for Beds
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a conformity assessment scheme introduced by the
-          Bureau of Indian Standards, the national standards authority of India.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Particulars
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Details
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Product", "Beds"],
+                ["Indian Standard", "IS 17635:2022"],
+                ["Title of Standard", "Beds – Specification"],
+                ["Certification Scheme", "BIS ISI Mark Certification"],
+                ["Regulatory Authority", "Bureau of Indian Standards (BIS)"],
+                ["Applicable Mark", "ISI Mark"],
+                [
+                  "Eligible Applicants",
+                  "Indian Manufacturers and Foreign Manufacturers",
+                ],
+                [
+                  "Compliance Requirement",
+                  "Mandatory under applicable Furniture QCO (Quality Control Order)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Certification Scheme" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        BIS ISI Mark Certification
+                      </a>
+                    ) : particular === "Compliance Requirement" ? (
+                      <>
+                        Mandatory under applicable{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>Furniture QCO (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          What is BIS Certificate?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate confirms that a product complies with Indian
-          Standards and is safe, reliable, and suitable for use. Certified
-          products carry the BIS Certification Mark, commonly known as the ISI
-          Mark.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          It signifies that the product has successfully passed:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Laboratory testing</li>
-          <li>Factory inspection</li>
-          <li>Quality control verification</li>
-          <li>Safety compliance evaluation</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Logo on beds assures customers that the product meets
-          government-approved quality and safety standards.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Standard Applicable for Beds – IS 17635:2022
+          What is BIS Certification for Beds?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for beds is:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – Beds: Safety Requirements
+          BIS Certification for Beds is a conformity assessment process through
+          which manufacturers demonstrate that their products comply with the
+          requirements specified in IS 17635:2022. Once compliance is verified
+          through testing, factory assessment, and regulatory review, the
+          manufacturer is granted a BIS licence and may affix the ISI Mark on
+          certified products.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          This standard defines essential safety and performance requirements
-          for beds used in residential and commercial environments.
+          The certification framework is intended to ensure that beds available in
+          the Indian market satisfy established requirements related to:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022 Covers
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Structural strength</li>
-          <li>Load-bearing capacity</li>
-          <li>Stability and durability</li>
-          <li>Material quality</li>
-          <li>Edge and surface finish</li>
-          <li>Safety against collapse</li>
-          <li>Absence of entrapment hazards</li>
-          <li>Long-term performance</li>
+          <li>Stability</li>
+          <li>Durability</li>
+          <li>Surface performance</li>
+          <li>Safety during normal use</li>
+          <li>Performance under foreseeable misuse conditions</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Any bed manufactured or imported into India must comply with IS
-          17635:2022 and obtain a BIS Registration for Beds.
+          These requirements help create a consistent benchmark for quality and
+          consumer protection across different bed designs and manufacturing
+          materials.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Beds
+          Why BIS Certification is Important for Beds
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Beds are used for prolonged durations and support human weight
-          continuously. Poorly designed beds can cause injuries, collapse, or
-          long-term health risks.
+          Beds directly affect user safety because they are designed to support
+          significant loads over extended periods. Poorly designed or inadequately
+          tested products can experience structural failure, instability,
+          deformation, or premature deterioration.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Reasons BIS Certification for Beds is Required
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 addresses these concerns by defining standardized
+          performance and safety requirements that manufacturers must satisfy
+          before their products enter the market. The standard includes
+          requirements relating to strength, stability, durability, workmanship,
+          and surface performance.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ensures structural integrity</li>
-          <li>Prevents collapse and breakage</li>
-          <li>Controls material quality</li>
-          <li>Eliminates sharp edges and unsafe finishes</li>
-          <li>Protects consumers</li>
-          <li>Ensures uniform national quality</li>
-          <li>Mandatory under BIS notification</li>
-          <li>Required for legal sale in India</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          For manufacturers, BIS certification offers several advantages:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Legal authorization to sell covered products in India</li>
+          <li>Demonstration of compliance with Indian Standards</li>
+          <li>Improved market acceptance</li>
+          <li>Enhanced consumer confidence</li>
+          <li>Reduced risk of regulatory action</li>
+          <li>Competitive advantage in institutional and commercial procurement</li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Overview of IS 17635:2022 for Beds
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The Government of India has introduced Quality Control Orders for
+          several furniture products to ensure that products placed on the market
+          meet prescribed safety and quality requirements.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Where IS 17635:2022 is covered under the applicable Furniture QCO,
+          manufacturers are required to obtain BIS certification under Scheme-I and
+          use the Standard Mark (ISI Mark) in accordance with BIS licensing
+          requirements.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 is the Indian Standard that specifies the performance and
+          safety requirements for beds intended for adult users in domestic and
+          non-domestic environments. The standard establishes requirements that
+          help ensure beds remain safe, functional, and durable throughout their
+          intended service life.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Purpose of IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 was developed to provide a comprehensive performance-based
+          standard applicable to modern bed designs manufactured using various
+          materials and construction methods. The standard supersedes the earlier
+          IS 7259 (Part 1):1988, which primarily focused on wooden beds.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The standard evaluates beds without limiting compliance to a particular
+          material or manufacturing process. Instead, it focuses on how the
+          finished product performs under prescribed testing conditions. This
+          approach enables consistent assessment of wooden, metal, engineered
+          wood, and other bed constructions.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Scope of IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          According to the standard, IS 17635:2022 covers requirements related to
+          the performance and safety of beds designed for adult users. The
+          standard applies to products intended for use in both domestic and
+          non-domestic settings.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard applies to:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Completely manufactured beds</li>
+          <li>Fabricated beds</li>
+          <li>Ready-to-assemble beds after assembly</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Without a BIS License for Beds, selling or importing beds in India is
-          illegal.
+          This ensures that products supplied in assembled or knock-down form are
+          evaluated using the same performance and safety criteria.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Objectives of the Standard</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The primary objectives of IS 17635:2022 include:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Ensuring user safety</li>
+          <li>Verifying structural strength</li>
+          <li>Assessing product stability</li>
+          <li>Evaluating durability under repeated use</li>
+          <li>Establishing minimum performance requirements</li>
+          <li>Promoting consistent product quality across manufacturers</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The standard also includes testing methodologies intended to evaluate
+          beds under normal use conditions and reasonably foreseeable misuse
+          scenarios.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Products Covered Under IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 applies to beds intended for adult users in both
+          domestic and non-domestic environments. The standard focuses on the
+          performance, safety, strength, stability, and durability of the finished
+          product rather than restricting compliance to a specific material or
+          manufacturing method.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard applies to:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Completely manufactured beds</li>
+          <li>Fabricated beds</li>
+          <li>Ready-to-assemble (RTA) beds after assembly</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers supplying beds in knock-down condition must ensure that
+          the assembled product complies with all applicable requirements of the
+          standard.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>Note:</strong> This standard does not cover waterbeds, airbeds,
+          foldaway beds, bunk beds and beds for people with special needs, nor
+          the beds for healthcare and medical purposes.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Also check Furniture Products Covered Under Mandatory BIS
+            Certification —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS Certification for furniture</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Key Requirements Under IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The primary objective of IS 17635:2022 is to ensure that beds remain
+          safe, stable, durable, and fit for their intended purpose throughout
+          normal usage conditions. To achieve this objective, the standard
+          establishes several key performance requirements.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Stability Requirements</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Beds must demonstrate adequate resistance to overturning and
+          instability during normal use. Stability testing evaluates whether the
+          product remains secure when subjected to expected loading conditions
+          and user movements.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          A stable bed minimizes the risk of accidents and improves overall user
+          safety.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Strength Requirements</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Strength tests assess the ability of the bed structure to withstand
+          significant loads without structural failure.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          These evaluations typically examine:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Bed frame integrity</li>
+          <li>Joint strength</li>
+          <li>Load-bearing capacity</li>
+          <li>Resistance to excessive deformation</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The purpose is to ensure that the product can safely support intended
+          users during everyday operation.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Durability Requirements</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Durability testing simulates long-term use through repeated loading and
+          movement cycles.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The objective is to determine whether:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Structural connections remain secure</li>
+          <li>Components continue functioning correctly</li>
+          <li>Product performance remains acceptable over time</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Durability requirements help ensure that certified beds maintain
+          reliability throughout their expected service life.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Surface Performance Requirements</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022 references surface performance requirements applicable to
+          furniture finishes.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Depending on the construction and materials used, surfaces may be
+          evaluated for resistance to:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Mechanical damage</li>
+          <li>Wet heat</li>
+          <li>Dry heat</li>
+          <li>Staining</li>
+          <li>Adhesion performance</li>
+          <li>Abrasion and wear</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          These requirements help preserve both functionality and appearance
+          during normal use.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Design and Workmanship Requirements</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard also contains requirements related to design quality and
+          workmanship.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Among other considerations:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Accessible edges should not present injury hazards.</li>
+          <li>Sharp edges and unsafe projections should be avoided.</li>
+          <li>Hollow sections should be properly closed where required.</li>
+          <li>Moving components should be designed to reduce injury risk.</li>
+          <li>
+            The finished product should conform to the declared design and model
+            specifications.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Safety Requirements</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Safety is a core principle throughout IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The standard incorporates requirements intended to reduce risks arising
+          from:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Structural collapse</li>
+          <li>Sharp edges</li>
+          <li>Unsafe projections</li>
+          <li>Component failure</li>
+          <li>Repeated use stresses</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Compliance with these requirements helps ensure that beds remain safe
+          under normal use and reasonably foreseeable misuse conditions.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Is BIS Certification for Beds Mandatory in India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Yes, for furniture products covered under the applicable Quality
+          Control Order, BIS certification is mandatory before such products
+          can be manufactured, imported, sold, distributed, stored, or offered
+          for sale in India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers must verify the latest notification status and
+          implementation dates issued by the Government of India because
+          regulatory requirements may be updated from time to time.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requirement to Use the ISI Mark</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The ISI Mark serves as evidence that a product conforms to the relevant
+          Indian Standard and is manufactured under a valid BIS licence.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The mark may only be applied after:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Successful product testing</li>
+          <li>Factory assessment</li>
+          <li>BIS approval of the application</li>
+          <li>Grant of licence</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Unauthorized use of the ISI Mark is prohibited under the BIS Act,
+          2016.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -619,32 +969,6 @@ const MainContentLeft = () => {
         </ul>
 
      
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of BIS License for Beds
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> This standard covers the requirements related to
-          the performance and safety of beds for adults for domestic and
-          non-domestic use.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> This standard applies to completely manufactured/
-          fabricated beds. It also applies to ready-to-assemble units; in that
-          case the requirements of this standard shall apply to the assembled
-          units.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> This standard does not cover waterbeds, airbeds,
-          foldaway beds, bunk beds and beds for people with special needs, nor
-          the beds for healthcare and medical purposes.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -816,23 +1140,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Beds
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal sale in India</li>
-          <li>Increased customer trust</li>
-          <li>Access to e-commerce platforms</li>
-          <li>Eligibility for government tenders</li>
-          <li>Reduced liability</li>
-          <li>Strong brand credibility</li>
-          <li>Compliance with Indian standards</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Penalties for Non-Compliance
         </h2>
 
@@ -847,30 +1154,6 @@ const MainContentLeft = () => {
           <li>Legal action</li>
           <li>Market ban</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Who Needs BIS Certificate for Beds?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The following entities must obtain a BIS License for Beds:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Foreign manufacturers</li>
-          <li>Importers</li>
-          <li>Furniture brands</li>
-          <li>OEM/ODM suppliers</li>
-          <li>E-commerce sellers</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Each manufacturing unit requires a separate BIS license.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
