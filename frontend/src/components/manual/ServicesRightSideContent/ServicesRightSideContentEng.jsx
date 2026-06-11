@@ -236,6 +236,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/chain-pipe-wrenches-is-4123",
     "/blogs/isi-products/battery-operated-air-purifier-is-302",
     "/blogs/isi-products/foot-warmer-&-heating-mats-is-302",
+    "/blogs/isi-products/cabinet-hinges-is-18297",
     "/blogs/isi-products/battery-operated-vaccum-cleaners",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
     "/blogs/isi-products/battery-operated-massage-appliances",
@@ -1357,6 +1358,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certification for Asbestos Cement Cable Conduits and Troughs - English Page";
     if (path.includes("/blogs/isi-products/foot-warmer-&-heating-mats-is-302"))
       return "BIS Certificate for Foot Warmer & Heating Mats - English Page";
+    if (path.includes("/blogs/isi-products/cabinet-hinges-is-18297"))
+      return "BIS Certificate for Cabinet Hinges - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-vaccum-cleaners"))
       return "BIS Certificate for Vaccum Cleaners - English Page";
     if (path.includes("/blogs/isi-products/battery-operated-tootbrush-is-302"))

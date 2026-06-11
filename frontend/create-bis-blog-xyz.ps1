@@ -4,9 +4,9 @@
 $ErrorActionPreference = "Stop"
 
 $sourceFile = Join-Path $PSScriptRoot "src\blogs\BISCertificationforCrossRecessedTappingScrew.jsx"
-$destFile   = Join-Path $PSScriptRoot "src\blogs\BISCertificationforXYZ.jsx"
 $oldName    = "BISCertificationforCrossRecessedTappingScrew"
 $newName    = "BISCertificationforXYZ"
+$destFile   = Join-Path $PSScriptRoot "src\blogs\$newName.jsx"
 
 if (-not (Test-Path $sourceFile)) {
     Write-Error "Source file not found: $sourceFile"

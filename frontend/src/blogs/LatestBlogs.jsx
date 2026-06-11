@@ -16,6 +16,15 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 106,
+    color: "#0F766E",
+    title: "BIS Certificate for Cabinet Hinges - IS 18297:2023",
+    description:
+      "Get BIS Certificate for Cabinet Hinges under IS 18297:2023. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cabinet-hinges-is-18297",
+    date: "19 May 2026",
+  },
+  {
     id: 105,
     color: "#0284C7",
     title:

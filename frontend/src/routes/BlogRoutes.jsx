@@ -1073,6 +1073,9 @@ const BISCertificationforHeadWoodScrews = lazy(() =>
 const BISCertificationforDrywallScrews = lazy(() =>
   import("@/blogs/BISCertificationforDrywallScrews")
 );
+const BISCertificationforCabinetHingesIs18297 = lazy(() =>
+  import("@/blogs/BISCertificationforCabinetHingesIs18297")
+);
 const BISCertificationforRaisedCountersunkHeadScrews = lazy(() =>
   import("@/blogs/BISCertificationforRaisedCountersunkHeadScrews")
 );
@@ -3751,6 +3754,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforDrywallScrews />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cabinet-hinges-is-18297"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCabinetHingesIs18297 />
           </Suspense>
         }
       />
