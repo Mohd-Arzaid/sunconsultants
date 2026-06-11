@@ -16,6 +16,15 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 108,
+    color: "#0D9488",
+    title: "BIS Certificate for Continuous Piano hinges - IS 3818:1992",
+    description:
+      "Get BIS Certificate for Continuous Piano hinges under IS 3818:1992. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/continuous-piano-hinges-is-3818",
+    date: "19 May 2026",
+  },
+  {
     id: 107,
     color: "#7C3AED",
     title:
