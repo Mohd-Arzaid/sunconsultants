@@ -10,7 +10,7 @@ export const notifications = [
     title: "BIS certification for Work chairs",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “ Work chairs.",
-    pdfUrl: "/pdf/sun-certification-work-chairs.pdf",
+    pdfUrl: "/pdf/bis-qco-for-work-chairs.pdf",
     location: " New Delhi",
     subHeading: "Work Chairs",
     ISNumber: "IS 17631: 2022",
@@ -27,7 +27,7 @@ export const notifications = [
     title: "BIS certification for Chairs and stools",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “ General purpose chairs and stools.",
-    pdfUrl: "/pdf/sun-certification-chairs-and-stools.pdf",
+    pdfUrl: "/pdf/bis-qco-for-chairs-and-stools.pdf",
     location: "New Delhi",
     subHeading: "General purpose chairs and stools",
     ISNumber: "IS 17632: 2022",
@@ -43,7 +43,7 @@ export const notifications = [
     title: "BIS Notification for Tables and desks",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “ Tables and desks.",
-    pdfUrl: "/pdf/sun-certification-tables-and-desks.pdf",
+    pdfUrl: "/pdf/bis-qco-for-tables-and-desks.pdf",
     location: " New Delhi",
     subHeading: "Tables and desks",
     ISNumber: "IS 17633: 2022",
@@ -59,7 +59,7 @@ export const notifications = [
     title: "BIS Notification for Storage units",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “ Storage units.",
-    pdfUrl: "/pdf/sun-certification-storage-units.pdf",
+    pdfUrl: "/pdf/bis-qco-for-storage-units.pdf",
     location: " New Delhi",
     subHeading: "Storage units",
     ISNumber: "IS 17634: 2022",
@@ -74,7 +74,7 @@ export const notifications = [
     date: "13 February 2025",
     title: "BIS Notification for Bunk beds",
     description: "QCO notification Bunk beds under IS 17636: 2022 is as below:",
-    pdfUrl: "/pdf/sun-certification-bunk-beds.pdf",
+    pdfUrl: "/pdf/bis-qco-for-bunk-beds.pdf",
     location: " New Delhi",
     subHeading: "Bunk beds",
     ISNumber: "IS 17636: 2022",
@@ -90,7 +90,7 @@ export const notifications = [
     title: "BIS Notification for Beds",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “ Beds",
-    pdfUrl: "/pdf/sun-certification-beds.pdf",
+    pdfUrl: "/pdf/bis-qco-for-beds.pdf",
     location: " New Delhi",
     subHeading: "Beds",
     ISNumber: "IS 17635: 2022",
@@ -107,7 +107,7 @@ export const notifications = [
     title: "BIS Notification for Solar DC Cable and Fire Survival Cable",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of electric cable for photovoltaic.",
-    pdfUrl: "/pdf/sun-certification-electric-cable-for-photovoltaic.pdf",
+    pdfUrl: "/pdf/bis-qco-for-electric-cable-for-photovoltaic.pdf",
     location: " New Delhi",
     subHeading: "Electric Cable for Photovoltic",
     ISNumber: "IS 17293:2020 ",
@@ -126,7 +126,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of wrought aluminium and aluminium alloys, forging stock and forgings.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloys-forging-stock-and-forgings.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloys-forging-stock-and-forgings.pdf",
     location: " New Delhi",
     subHeading:
       "Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
@@ -143,7 +143,7 @@ export const notifications = [
     title: "BIS Notification for H Acid",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of H Acid.",
-    pdfUrl: "/pdf/sun-certification-h-acid.pdf",
+    pdfUrl: "/pdf/bis-qco-for-h-acid.pdf",
     location: " New Delhi",
     subHeading: "H Acid",
     ISNumber: "IS 8637 : 2020",
@@ -159,7 +159,7 @@ export const notifications = [
     title: "BIS Notification for K Acid",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of K Acid.",
-    pdfUrl: "/pdf/sun-certification-k-acid.pdf",
+    pdfUrl: "/pdf/bis-qco-for-k-acid.pdf",
     location: " New Delhi",
     subHeading: "K Acid",
     ISNumber: "IS 11557: 1986",
@@ -175,7 +175,7 @@ export const notifications = [
     title: "BIS Notification for Vinyl Sulphone",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Vinyl Sulphone.",
-    pdfUrl: "/pdf/sun-certification-vinyl-sulphone.pdf",
+    pdfUrl: "/pdf/bis-qco-for-vinyl-sulphone.pdf",
     location: " New Delhi",
     subHeading: "Vinyl Sulphone",
     ISNumber: " IS 18340 : 2023",
@@ -191,7 +191,7 @@ export const notifications = [
     title: "BIS Notification for Electric Fence Energizers",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Electric Fence Energizers.",
-    pdfUrl: "/pdf/sun-certification-electric-fence-energizers.pdf",
+    pdfUrl: "/pdf/bis-qco-for-electric-fence-energizers.pdf",
     location: " New Delhi",
     subHeading: "Electric Fence Energizers",
     ISNumber: " IS 302-2-76:1999",
@@ -207,7 +207,7 @@ export const notifications = [
     title: "BIS Notification for Clothes Washing Machines",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Clothes Washing Machines.",
-    pdfUrl: "/pdf/sun-certification-clothes-washing-machines.pdf",
+    pdfUrl: "/pdf/bis-qco-for-clothes-washing-machines.pdf",
     location: " New Delhi",
     subHeading: "Clothes Washing Machines",
     ISNumber: "IS 302 (Part 2/Sec 7): 2010",
@@ -223,7 +223,7 @@ export const notifications = [
     title: "BIS Notification for Gypsum Plaster Boards",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Gypsum Plaster Boards.",
-    pdfUrl: "/pdf/sun-certification-gypsum-plaster-boards.pdf",
+    pdfUrl: "/pdf/bis-qco-for-gypsum-plaster-boards.pdf",
     location: " New Delhi",
     subHeading: "Gypsum Plaster Boards",
     ISNumber: "IS 302 (Part 2/Sec 7): 2010",
@@ -241,7 +241,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Aluminium alloy tubes for irrigation purposes -welded tubes.",
     pdfUrl:
-      "/pdf/sun-certification-aluminium-alloy-tubes-for-irrigation-purposes-welded-tubes.pdf",
+      "/pdf/bis-qco-for-aluminium-alloy-tubes-for-irrigation-purposes-welded-tubes.pdf",
     location: " New Delhi",
     subHeading: "Aluminium alloy tubes for irrigation purposes -welded tubes",
     ISNumber: "IS 7092 (Part 1):1992",
@@ -259,7 +259,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Aluminium alloy tube for irrigation purposes – extruded tube.",
     pdfUrl:
-      "/pdf/sun-certification-aluminium-alloy-tube-for-irrigation-purposes-extruded-tube.pdf",
+      "/pdf/bis-qco-for-aluminium-alloy-tube-for-irrigation-purposes-extruded-tube.pdf",
     location: " New Delhi",
     subHeading: "Aluminium alloy tube for irrigation purposes – extruded tube",
     ISNumber: "IS 7092 (Part 2):1987",
@@ -277,7 +277,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of EC Grade Aluminium Rod.",
     pdfUrl:
-      "/pdf/sun-certification-ec-grade-aluminium-rod-produced-by-continuous-casting-and-rolling.pdf",
+      "/pdf/bis-qco-for-ec-grade-aluminium-rod-produced-by-continuous-casting-and-rolling.pdf",
     location: " New Delhi",
     subHeading:
       "EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
@@ -296,7 +296,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought aluminium and aluminium alloy bars, rods and sections.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections.pdf",
     location: " New Delhi",
     subHeading: "Wrought aluminium and aluminium alloy bars, rods and sections",
     ISNumber: "IS 7092 (Part 2):1987 ",
@@ -314,7 +314,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought aluminium and aluminium alloys, forging stock and forgings.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloys-forging-stock-and-forgings.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloys-forging-stock-and-forgings.pdf",
     location: " New Delhi",
     subHeading:
       "Wrought aluminium and aluminium alloys, forging stock and forgings",
@@ -333,7 +333,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought aluminium and aluminium alloy plate for general engineering purposes.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloy-plate-for-general-engineering-purposes.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloy-plate-for-general-engineering-purposes.pdf",
     location: " New Delhi",
     subHeading:
       "Wrought aluminium and aluminium alloy plate for general engineering purposes",
@@ -352,7 +352,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought aluminium and aluminium alloy sheet and strip.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloy-sheet-and-strip.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloy-sheet-and-strip.pdf",
     location: " New Delhi",
     subHeading: "Wrought aluminium and aluminium alloy sheet and strip",
     ISNumber: "IS 734:1975 ",
@@ -368,8 +368,7 @@ export const notifications = [
     title: "BIS Notification for Wrought aluminium and aluminium alloy wire",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought aluminium and aluminium alloy wire.",
-    pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloy-wire.pdf",
+    pdfUrl: "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloy-wire.pdf",
     location: " New Delhi",
     subHeading: "Wrought aluminium and aluminium alloy wire",
     ISNumber: "IS 739:1992",
@@ -387,7 +386,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought aluminium and aluminium alloy rivet stock.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloy-rivet-stock.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloy-rivet-stock.pdf",
     location: " New Delhi",
     subHeading: "Wrought aluminium and aluminium alloy rivet stock",
     ISNumber: "IS 740:1977",
@@ -405,7 +404,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought aluminium and aluminium alloy for electrical applications.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloy-for-electrical-applications.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloy-for-electrical-applications.pdf",
     location: " New Delhi",
     subHeading:
       "Wrought aluminium and aluminium alloy for electrical applications",
@@ -422,7 +421,7 @@ export const notifications = [
     title: "BIS Notification for Aluminium and aluminium alloy foil",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Aluminium and aluminium alloy foil.",
-    pdfUrl: "/pdf/sun-certification-aluminium-and-aluminium-alloy-foil.pdf",
+    pdfUrl: "/pdf/bis-qco-for-aluminium-and-aluminium-alloy-foil.pdf",
     location: " New Delhi",
     subHeading: " Aluminium and aluminium alloy foil",
     ISNumber: "IS 16011:2012",
@@ -438,7 +437,7 @@ export const notifications = [
     title: "BIS Notification for Aluminium composite panel",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Aluminium composite panel.",
-    pdfUrl: "/pdf/sun-certification-aluminium-composite-panel.pdf",
+    pdfUrl: "/pdf/bis-qco-for-aluminium-composite-panel.pdf",
     location: " New Delhi",
     subHeading: "Aluminium composite panel",
     ISNumber: "IS 17682:2021",
@@ -456,7 +455,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought aluminium and aluminium alloys- Extruded round tube and hollow.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloys-extruded-round-tube-and-hollow.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloys-extruded-round-tube-and-hollow.pdf",
     location: " New Delhi",
     subHeading:
       "Wrought aluminium and aluminium alloys- Extruded round tube and hollow",
@@ -475,7 +474,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Wrought Aluminium Wire for Electrical Purposes.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-wire-for-electrical-purposes.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-wire-for-electrical-purposes.pdf",
     location: " New Delhi",
     subHeading: "Wrought Aluminium Wire for Electrical Purposes",
     ISNumber: "IS 2067:1975",
@@ -493,7 +492,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Aluminium for Utensils.",
     pdfUrl:
-      "/pdf/sun-certification-wrought-aluminium-and-aluminium-alloys-for-manufacture-of-utensils.pdf",
+      "/pdf/bis-qco-for-wrought-aluminium-and-aluminium-alloys-for-manufacture-of-utensils.pdf",
     location: " New Delhi",
     subHeading:
       "Wrought aluminium and aluminium alloys for manufacture of utensils",
@@ -510,7 +509,7 @@ export const notifications = [
     title: "BIS Notification for Corrugated Aluminium Sheet",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Corrugated Aluminium Sheet.",
-    pdfUrl: "/pdf/sun-certification-corrugated-aluminium-sheet.pdf",
+    pdfUrl: "/pdf/bis-qco-for-corrugated-aluminium-sheet.pdf",
     location: " New Delhi",
     subHeading: "Corrugated Aluminium Sheet",
     ISNumber: "IS 1254:2007",
@@ -528,7 +527,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Aluminium alloy forging stock and forgings.",
     pdfUrl:
-      "/pdf/sun-certification-aluminium-alloy-forging-stock-and-forgings.pdf",
+      "/pdf/bis-qco-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345-for-aerospace-applications.pdf",
     location: " New Delhi",
     subHeading: "Aluminium alloy forging stock and forgings ",
     ISNumber: "IS 7902:2001",
@@ -544,7 +543,7 @@ export const notifications = [
     title: "BIS Notification for Solar Flat Plate Collector",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Solar Flat Plate Collector.",
-    pdfUrl: "/pdf/sun-certification-solar-flat-plate-collector.pdf",
+    pdfUrl: "/pdf/bis-qco-for-solar-flat-plate-collector.pdf",
     location: " New Delhi",
     subHeading: "Solar Flat Plate Collector ",
     ISNumber: "IS 12933 (Part 1): 2003",
@@ -560,7 +559,7 @@ export const notifications = [
     title: "BIS Notification for Solar Water Heating System",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Solar Water Heating System.",
-    pdfUrl: "/pdf/sun-certification-solar-water-heating-system.pdf",
+    pdfUrl: "/pdf/bis-qco-for-solar-water-heating-system.pdf",
     location: " New Delhi",
     subHeading: "Solar Water Heating System",
     ISNumber: "IS 16544: 2016 ",
@@ -576,7 +575,7 @@ export const notifications = [
     title: "BIS Notification for Storage Water Tank",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Storage Water Tank.",
-    pdfUrl: "/pdf/sun-certification-storage-water-tank.pdf",
+    pdfUrl: "/pdf/bis-qco-for-storage-water-tank.pdf",
     location: " New Delhi",
     subHeading: "Storage Water Tank ",
     ISNumber: "IS 16542: 2016",
@@ -592,7 +591,7 @@ export const notifications = [
     title: "BIS Notification for Flat woven webbing slings",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Flat webbing slings.",
-    pdfUrl: "/pdf/sun-certification-flat-woven-webbing-slings.pdf",
+    pdfUrl: "/pdf/bis-qco-for-flat-woven-webbing-slings.pdf",
     location: " New Delhi",
     subHeading: "Flat woven webbing slings",
     ISNumber: "IS 15041:2001 ",
@@ -609,7 +608,7 @@ export const notifications = [
     title: "BIS Notification for Textiles — Manila Ropes",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Manila Ropes.",
-    pdfUrl: "/pdf/sun-certification-textiles-manila-ropes.pdf",
+    pdfUrl: "/pdf/bis-qco-for-textiles-manila-ropes.pdf",
     location: " New Delhi",
     subHeading: "Textiles — Manila Ropes",
     ISNumber: "IS 1084:2005 ",
@@ -625,7 +624,7 @@ export const notifications = [
     title: "BIS Notification for Fibre Ropes — Polyester",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fibre Ropes — Polyester.",
-    pdfUrl: "/pdf/sun-certification-fibre-ropes-polyester.pdf",
+    pdfUrl: "/pdf/bis-qco-for-fibre-ropes-polyester.pdf",
     location: " New Delhi",
     subHeading: "Fibre Ropes — Polyester",
     ISNumber: "IS 11066:2022 ",
@@ -641,7 +640,7 @@ export const notifications = [
     title: "BIS Notification for Synthetic Fibre Ropes",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Synthetic Fibre Ropes.",
-    pdfUrl: "/pdf/sun-certification-synthetic-fibre-ropes.pdf",
+    pdfUrl: "/pdf/bis-qco-for-synthetic-fibre-ropes.pdf",
     location: " New Delhi",
     subHeading: "Synthetic Fibre Ropes",
     ISNumber: "IS 14928:2001  ",
@@ -657,7 +656,7 @@ export const notifications = [
     title: "BIS Notification for Mixed Polyolefin Fibre Ropes",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Mixed Polyolefin Fibre Ropes.",
-    pdfUrl: "/pdf/sun-certification-mixed-polyolefin-fibre-ropes.pdf",
+    pdfUrl: "/pdf/bis-qco-for-mixed-polyolefin-fibre-ropes.pdf",
     location: " New Delhi",
     subHeading: "Mixed Polyolefin Fibre Ropes",
     ISNumber: " IS 14929: 2022   ",
@@ -673,7 +672,7 @@ export const notifications = [
     title: "BIS Notification for Steel wire ropes – Fibre main cores",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Steel wire ropes – Fibre main cores – Specification.",
-    pdfUrl: "/pdf/sun-certification-steel-wire-ropes-fibre-main-cores.pdf",
+    pdfUrl: "/pdf/bis-qco-for-steel-wire-ropes-fibre-main-cores.pdf",
     location: " New Delhi",
     subHeading: "Steel wire ropes – Fibre main cores",
     ISNumber: "IS 1804:2004",
@@ -689,7 +688,7 @@ export const notifications = [
     title: "BIS Notification for Fibre Ropes Polyamide",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fibre Ropes Polyamide 3-, 4-, 8- and 12- Strand Ropes.",
-    pdfUrl: "/pdf/sun-certification-fibre-ropes-polyamide.pdf",
+    pdfUrl: "/pdf/bis-qco-for-fibre-ropes-polyamide.pdf",
     location: " New Delhi",
     subHeading: "Fibre Ropes — Polyamide — 3-, 4-, 8- and 12- Strand Ropes.",
     ISNumber: "IS 4572:2022 ",
@@ -705,7 +704,7 @@ export const notifications = [
     title: "BIS Notification for Fibre Ropes — Polypropylene",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fibre Ropes — Polypropylene.",
-    pdfUrl: "/pdf/sun-certification-fibre-ropes-polypropylene.pdf",
+    pdfUrl: "/pdf/bis-qco-for-fibre-ropes-polypropylene.pdf",
     location: " New Delhi",
     subHeading: "Fibre Ropes — Polypropylene",
     ISNumber: " IS 5175:2022",
@@ -721,7 +720,7 @@ export const notifications = [
     title: "BIS Notification for Fibre Ropes Polyethylene",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fibre Ropes Polyethylene.",
-    pdfUrl: "/pdf/sun-certification-fibre-ropes-polyethylene.pdf",
+    pdfUrl: "/pdf/bis-qco-for-fibre-ropes-polyethylene.pdf",
     location: " New Delhi",
     subHeading: "Fibre Ropes Polyethylene",
     ISNumber: "IS 8674 : 2013",
@@ -737,7 +736,7 @@ export const notifications = [
     title: "BIS Notification for Fibre Ropes dual Fibres",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fibre Ropes dual Fibres.",
-    pdfUrl: "/pdf/sun-certification-fibre-ropes-dual-fibres.pdf",
+    pdfUrl: "/pdf/bis-qco-for-fibre-ropes-dual-fibres.pdf",
     location: " New Delhi",
     subHeading: "Fibre Ropes dual Fibres",
     ISNumber: " IS 17609 : 2021 ",
@@ -773,7 +772,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “ Wrapped Steel Cylinder Pipes.",
     pdfUrl:
-      "/pdf/sun-certification-bar-or-wire-wrapped-steel-cylinder-pipes-with-mortar-lining-and-coating-including-specials.pdf",
+      "/pdf/bis-qco-for-bar-or-wire-wrapped-steel-cylinder-pipes-with-mortar-lining-and-coating-including-specials.pdf",
     location: " New Delhi",
     subHeading: "Wrapped Steel Cylinder Pipes.",
     ISNumber: "  IS 15155 : 2020 ",
@@ -791,7 +790,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Deformed stainless steel bars and wires.",
     pdfUrl:
-      "/pdf/sun-certification-high-strength-deformed-stainless-steel-bars-and-wires.pdf",
+      "/pdf/bis-qco-for-high-strength-deformed-stainless-steel-bars-and-wires.pdf",
     location: " New Delhi",
     subHeading: "Deformed stainless steel bars and wires.",
     ISNumber: " IS 16651 : 2017 ",
@@ -807,7 +806,7 @@ export const notifications = [
     title: "BIS Notification for Steel Pipe Flanges",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Steel Pipe Flanges.",
-    pdfUrl: "/pdf/sun-certification-steel-pipe-flanges.pdf",
+    pdfUrl: "/pdf/bis-qco-for-steel-pipe-flanges.pdf",
     location: " New Delhi",
     subHeading: "Steel Pipe Flanges",
     ISNumber: " IS 6392 : 2020 ",
@@ -825,7 +824,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Stainless steel tubes.",
     pdfUrl:
-      "/pdf/sun-certification-stainless-steel-tubes-for-the-food-and-beverage-industry.pdf",
+      "/pdf/bis-qco-for-stainless-steel-tubes-for-the-food-and-beverage-industry.pdf",
     location: " New Delhi",
     subHeading: "Stainless steel tubes.",
     ISNumber: "  IS 6913 : 1973 ",
@@ -841,7 +840,7 @@ export const notifications = [
     title: "BIS Notification for Chipboard Screws – Specification",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Chipboard Screws – Specification.",
-    pdfUrl: "/pdf/sun-certification-chipboard-screws-specification.pdf",
+    pdfUrl: "/pdf/bis-qco-for-chipboard-screws-specification.pdf",
     location: " New Delhi",
     subHeading: "Chipboard Screws – Specification",
     ISNumber: "   IS 18508 : 2024  ",
@@ -859,7 +858,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Cross-recessed Countersunk Head Wood Screws – Specification.",
     pdfUrl:
-      "/pdf/sun-certification-cross-recessed-countersunk-head-wood-screws-specification.pdf",
+      "/pdf/bis-qco-for-cross-recessed-countersunk-head-wood-screws-specification.pdf",
     location: " New Delhi",
     subHeading: " Cross-recessed Countersunk Head Wood Screws – Specification",
     ISNumber: " IS 18509 : 2023 ",
@@ -877,7 +876,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fasteners – Pan Head Drilling Screws.",
     pdfUrl:
-      "/pdf/sun-certification-fasteners-cross-recessed-drilling-screws-with-tapping-screw-thread-part-1-pan-head.pdf",
+      "/pdf/bis-qco-for-fasteners-cross-recessed-drilling-screws-with-tapping-screw-thread-part-1-pan-head.pdf",
     location: " New Delhi",
     subHeading:
       "  Fasteners – Cross Recessed Drilling Screws with Tapping Screw Thread Part 1 Pan Head",
@@ -896,7 +895,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fasteners Cross Recessed Drilling Screws with Tapping Screw",
     pdfUrl:
-      "/pdf/sun-certification-fasteners-cross-recessed-drilling-screws-with-tapping-screw-thread-part-3-raised-countersunk-head.pdf",
+      "/pdf/bis-qco-for-fasteners-cross-recessed-drilling-screws-with-tapping-screw-thread-part-3-raised-countersunk-head.pdf",
     location: " New Delhi",
     subHeading:
       "  Fasteners Cross Recessed Drilling Screws with Tapping Screw Thread Part 3 Raised Countersunk Head",
@@ -915,7 +914,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “Cross Recessed Tapping Screw Part 3 Raised Countersunk Oval Head.",
     pdfUrl:
-      "/pdf/sun-certification-cross-recessed-tapping-screw-part-3-raised-countersunk-oval-head.pdf",
+      "/pdf/bis-qco-for-cross-recessed-tapping-screw-part-3-raised-countersunk-oval-head.pdf",
     location: " New Delhi",
     subHeading:
       " Cross Recessed Tapping Screw Part 3 Raised Countersunk Oval Head",
@@ -934,7 +933,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “Cross Recessed Tapping Screws Part 2 Countersunk Flat Head",
     pdfUrl:
-      "/pdf/sun-certification-cross-recessed-tapping-screws-part-2-countersunk-flat-head.pdf",
+      "/pdf/bis-qco-for-cross-recessed-tapping-screws-part-2-countersunk-flat-head.pdf",
     location: " New Delhi",
     subHeading: "  Cross Recessed Tapping Screws Part 2 Countersunk Flat Head",
     ISNumber: " IS 18480 (Part 2) :2023/ ISO 7050 : 2011  ",
@@ -952,7 +951,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Cross Recessed Tapping Screws: Part 1 Pan Head.",
     pdfUrl:
-      "/pdf/sun-certification-cross-recessed-tapping-screws-part-1-pan-head.pdf",
+      "/pdf/bis-qco-for-cross-recessed-tapping-screws-part-1-pan-head.pdf",
     location: " New Delhi",
     subHeading: "  Cross Recessed Tapping Screws: Part 1 Pan Head ",
     ISNumber: " IS 18480 (Part 1) :2023/ ISO 7049 : 2011  ",
@@ -969,7 +968,7 @@ export const notifications = [
     title: "BIS Notification for Drywall Screws – Specification",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Drywall Screws – Specification.",
-    pdfUrl: "/pdf/sun-certification-drywall-screws-specification.pdf",
+    pdfUrl: "/pdf/bis-qco-for-drywall-screws-specification.pdf",
     location: " New Delhi",
     subHeading: "   Drywall Screws – Specification",
     ISNumber: " IS 18507 : 2024  ",
@@ -988,7 +987,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “Fasteners – Cross Recessed Drilling Screws with Tapping..",
     pdfUrl:
-      "/pdf/sun-certification-fasteners-cross-recessed-drilling-screws-with-tapping-screw-thread-part-2-countersunk-head.pdf",
+      "/pdf/bis-qco-for-fasteners-cross-recessed-drilling-screws-with-tapping-screw-thread-part-2-countersunk-head.pdf",
     location: " New Delhi",
     subHeading:
       "Fasteners – Cross Recessed Drilling Screws with Tapping Screw Thread Part 2 Countersunk Head.",
@@ -1008,7 +1007,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Hexagon Washer Head Drilling Screws.",
     pdfUrl:
-      "/pdf/sun-certification-fasteners-hexagon-washer-head-drilling-screws-with-tapping-screw-thread.pdf",
+      "/pdf/bis-qco-for-fasteners-hexagon-washer-head-drilling-screws-with-tapping-screw-thread.pdf",
     location: " New Delhi",
     subHeading:
       "Fasteners – Hexagon Washer Head Drilling Screws with Tapping Screw Thread.",
@@ -1027,7 +1026,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of “Countersunk Flat Head Screws (Common head Style) With..",
     pdfUrl:
-      "/pdf/sun-certification-countersunk-flat-head-screws-common-head-style-with-type-h-or-type-z-cross-recess-product-grade-a-part-1-steel-screws-of-property-class-4.8.pdf",
+      "/pdf/bis-qco-for-countersunk-flat-head-screws-common-head-style-with-type-h-or-type-z-cross-recess-product-grade-a-part-1-steel-screws-of-property-class-48.pdf",
     location: " New Delhi",
     subHeading:
       "Countersunk Flat Head Screws (Common head Style) With Type H or Type Z Cross Recess – Product Grade A Part 1 Steel Screws of Property Class 4.8.",
@@ -1044,7 +1043,7 @@ export const notifications = [
     title: "BIS Notification for Gypsum Based Building Materials",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Gypsum Based Building Materials.",
-    pdfUrl: "/pdf/sun-certification-gypsum-based-building-materials.pdf",
+    pdfUrl: "/pdf/bis-qco-for-gypsum-based-building-materials.pdf",
     location: "New Delhi",
     subHeading: [
       "1.) Gypsum Plaster Boards",
@@ -1072,7 +1071,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Raised Countersunk Head Screws with Cross Recess.",
     pdfUrl:
-      "/pdf/sun-certification-raised-countersunk-head-screws-common-head-style-with-type-h-or-type-z-cross-recess-product-grade-a.pdf",
+      "/pdf/bis-qco-for-raised-countersunk-head-screws-common-head-style-with-type-h-or-type-z-cross-recess-product-grade-a.pdf",
     location: " New Delhi",
     subHeading:
       "Raised countersunk head screws (Common Head Style) with type H or type Z cross recess – Product grade A.",
@@ -1091,7 +1090,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Pan Head Screws with Cross Recess.",
     pdfUrl:
-      "/pdf/sun-certification-pan-head-screws-with-type-h-or-type-z-cross-recess-product-grade-a.pdf",
+      "/pdf/bis-qco-for-pan-head-screws-with-type-h-or-type-z-cross-recess-product-grade-a.pdf",
     location: " New Delhi",
     subHeading:
       "Pan Head Screws With Type H or Type Z Cross Recess – Product Grade A.",
@@ -1108,7 +1107,7 @@ export const notifications = [
     title: "BIS Notification for Flux Cored Solder Wire",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Flux Cored Solder Wire.",
-    pdfUrl: "/pdf/sun-certification-flux-cored-solder-wire.pdf",
+    pdfUrl: "/pdf/bis-qco-for-flux-cored-solder-wire.pdf",
     location: " New Delhi",
     subHeading: "Flux Cored Solder Wire",
     ISNumber: "IS 1921: 2005",
@@ -1125,7 +1124,7 @@ export const notifications = [
     title: "BIS Notification for Chain Pipe Wrenches",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Chain Pipe Wrenches.",
-    pdfUrl: "/pdf/sun-certification-chain-pipe-wrenches.pdf",
+    pdfUrl: "/pdf/bis-qco-for-chain-pipe-wrenches.pdf",
     location: " New Delhi",
     subHeading: "Chain Pipe Wrenches",
     ISNumber: " IS 4123:1982",
@@ -1141,7 +1140,7 @@ export const notifications = [
     title: "BIS Notification for Open Ended Slugging Wrenches (Spanners)",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Open Ended Slugging Wrenches.",
-    pdfUrl: "/pdf/sun-certification-open-ended-slugging-wrenches-spanners.pdf",
+    pdfUrl: "/pdf/bis-qco-for-open-ended-slugging-wrenches-spanners.pdf",
     location: " New Delhi",
     subHeading: "Open Ended Slugging Wrenches (Spanners)",
     ISNumber: "IS 4508:1992",
@@ -1157,7 +1156,7 @@ export const notifications = [
     title: "BIS Notification for Ring Slugging Wrenches (Spanners)",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Ring Slugging Wrenches.",
-    pdfUrl: "/pdf/sun-certification-ring-slugging-wrenches-spanners.pdf",
+    pdfUrl: "/pdf/bis-qco-for-ring-slugging-wrenches-spanners.pdf",
     location: " New Delhi",
     subHeading: "Ring Slugging Wrenches (Spanners)",
     ISNumber: "IS 4509:1992",
@@ -1173,8 +1172,7 @@ export const notifications = [
     title: "BIS Notification for Single-ended Open-jaw Adjustable Wrenches",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Open-jaw Adjustable Wrenches.",
-    pdfUrl:
-      "/pdf/sun-certification-single-ended-open-jaw-adjustable-wrenches.pdf",
+    pdfUrl: "/pdf/bis-qco-for-single-ended-open-jaw-adjustable-wrenches.pdf",
     location: " New Delhi",
     subHeading: "Open-jaw Adjustable Wrenches.",
     ISNumber: " IS 6149:1984 ",
@@ -1190,7 +1188,7 @@ export const notifications = [
     title: "BIS Notification for Open-Jaw Wrenches",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Open-Jaw Wrenches.",
-    pdfUrl: "/pdf/sun-certification-open-jaw-wrenches.pdf",
+    pdfUrl: "/pdf/bis-qco-for-open-jaw-wrenches.pdf",
     location: " New Delhi",
     subHeading: "Open-Jaw Wrenches",
     ISNumber: " IS 2028:2004  ",
@@ -1206,7 +1204,7 @@ export const notifications = [
     title: "BIS Notification for Ring Wrenches",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Ring Wrenches.",
-    pdfUrl: "/pdf/sun-certification-ring-wrenches.pdf",
+    pdfUrl: "/pdf/bis-qco-for-ring-wrenches.pdf",
     location: " New Delhi",
     subHeading: "Ring Wrenches",
     ISNumber: "IS 2029:1998",
@@ -1223,7 +1221,7 @@ export const notifications = [
     title: "BIS Notification for Pipe Wrenches General Purpose",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Pipe Wrenches General Purpose.",
-    pdfUrl: "/pdf/sun-certification-pipe-wrenches-general-purpose.pdf",
+    pdfUrl: "/pdf/bis-qco-for-pipe-wrenches-general-purpose.pdf",
     location: " New Delhi",
     subHeading: "Ring Wrenches",
     ISNumber: "IS 4003 (Part 1): 1978",
@@ -1240,7 +1238,7 @@ export const notifications = [
     title: "BIS Notification for Pipe Wrenches – Heavy Duty",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Pipe Wrenches – Heavy Duty.",
-    pdfUrl: "/pdf/sun-certification-pipe-wrenches-heavy-duty.pdf",
+    pdfUrl: "/pdf/bis-qco-for-pipe-wrenches-heavy-duty.pdf",
     location: " New Delhi",
     subHeading: "Pipe Wrenches – Heavy Duty",
     ISNumber: "IS 4003 (Part 2): 1986",
@@ -1256,7 +1254,7 @@ export const notifications = [
     title: "BIS Notification for Combination Side Cutting Pliers",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Cutting Pliers.",
-    pdfUrl: "/pdf/sun-certification-combination-side-cutting-pliers.pdf",
+    pdfUrl: "/pdf/bis-qco-for-combination-side-cutting-pliers.pdf",
     location: " New Delhi",
     subHeading: "Pipe Wrenches – Heavy Duty",
     ISNumber: "IS 4003 (Part 2): 1986",
@@ -1275,7 +1273,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Safety of Household, Commercial and Similar Electrical Appliances.",
     pdfUrl:
-      "/pdf/sun-certification-safety-of-household-commercial-and-similar-electrical-appliances.pdf",
+      "/pdf/bis-qco-for-safety-of-household-commercial-and-similar-electrical-appliances.pdf",
     location: " New Delhi",
     subHeading:
       "Safety of Household, Commercial and Similar Electrical Appliances",
@@ -1292,7 +1290,7 @@ export const notifications = [
     title: "BIS Notification for Hinges",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Hinges.",
-    pdfUrl: "/pdf/sun-certification-hinges.pdf",
+    pdfUrl: "/pdf/bis-qco-for-hinges.pdf",
     location: " New Delhi",
     subHeading: `1.) Stainless Steel Butt Hinges
 2.) Steel Butt Hinges
@@ -1317,7 +1315,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Steel Wires and related products.",
     pdfUrl:
-      "/pdf/sun-certification-steel-wires-or-strands-nylon-or-wire-ropes-and-wire-mesh.pdf",
+      "/pdf/bis-qco-for-steel-wires-or-strands-nylon-or-wire-ropes-and-wire-mesh.pdf",
     location: " New Delhi",
     subHeading: `1.) Steel Wire Ropes for General Engineering Purposes
   2.) Steel Wire Suspension Ropes for Lifts, Elevators and Hoists
@@ -1341,8 +1339,7 @@ export const notifications = [
     title: "BIS Notification for HDPE/PP Woven Sacks for Packaging Fertilizers",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of HDPE/PP Woven Sacks for fertilizers.",
-    pdfUrl:
-      "/pdf/sun-certification-hdpe-pp-woven-sacks-for-packaging-fertilizers.pdf",
+    pdfUrl: "/pdf/bis-qco-for-hdpepp-woven-sacks-for-packaging-fertilizers.pdf",
     location: " New Delhi",
     subHeading:
       "Textiles—High Density Polyethylene (HDPE)/ Polypropylene (PP) Woven Sacks for Packaging Fertilizers",
@@ -1361,7 +1358,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Mail Sorting & Transport Sacks.",
     pdfUrl:
-      "/pdf/sun-certification-pp-hdpe-laminated-woven-sacks-for-mail-sorting-storage-transport-and-distribution.pdf",
+      "/pdf/bis-qco-for-pp-hdpe-laminated-woven-sacks-for-mail-sorting-storage-transport-and-distribution.pdf",
     location: " New Delhi",
     subHeading:
       "Textiles — Polypropylene (PP)/High Density Polyethylene (HDPE) Laminated Woven Sacks for Mail Sorting, Storage, Transport and Distribution",
@@ -1380,7 +1377,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Cement Packaging Sacks.",
     pdfUrl:
-      "/pdf/sun-certification-polypropylene-pp-woven-laminated-block-bottom-valve-sacks-for-packaging-of-50-kg-cement.pdf",
+      "/pdf/bis-qco-for-polypropylene-pp-woven-laminated-block-bottom-valve-sacks-for-packaging-of-50-kg-cement.pdf",
     location: " New Delhi",
     subHeading:
       "Textiles — Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement",
@@ -1399,7 +1396,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Chains and Sprockets.",
     pdfUrl:
-      "/pdf/sun-certification-precision-roller-and-bush-chains-attachments-and-associated-chains-sprockets.pdf",
+      "/pdf/bis-qco-for-precision-roller-and-bush-chains-attachments-and-associated-chains-sprockets.pdf",
     location: " New Delhi",
     subHeading:
       "Precision Roller and Bush Chains, attachments and associated Chains sprockets",
@@ -1416,7 +1413,7 @@ export const notifications = [
     title: "BIS Notification for Nickel Powder",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Nickel Powder.",
-    pdfUrl: "/pdf/sun-certification-nickel-powder.pdf",
+    pdfUrl: "/pdf/bis-qco-for-nickel-powder.pdf",
     location: " New Delhi",
     subHeading: "Nickel Powder",
     ISNumber: "  IS 7506:1987   ",
@@ -1433,7 +1430,7 @@ export const notifications = [
     title: "BIS Notification for Copper",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Copper.",
-    pdfUrl: "/pdf/sun-certification-copper.pdf",
+    pdfUrl: "/pdf/bis-qco-for-copper.pdf",
     location: " New Delhi",
     subHeading: "Copper",
     ISNumber: "  IS 191:2007    ",
@@ -1450,7 +1447,7 @@ export const notifications = [
     title: "BIS Notification for Cast aluminium and its alloys",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Cast Aluminium alloys and its alloys.",
-    pdfUrl: "/pdf/sun-certification-cast-aluminium-and-its-alloys.pdf",
+    pdfUrl: "/pdf/bis-qco-for-cast-aluminium-and-its-alloys.pdf",
     location: " New Delhi",
     subHeading: "Cast aluminium and its alloys",
     ISNumber: "   IS 617:1994   ",
@@ -1467,7 +1464,7 @@ export const notifications = [
     title: "BIS Notification for High purity primary aluminum ingot",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of High purity primary aluminum ingot.",
-    pdfUrl: "/pdf/sun-certification-high-purity-primary-aluminum-ingot.pdf",
+    pdfUrl: "/pdf/bis-qco-for-high-purity-primary-aluminum-ingot.pdf",
     location: " New Delhi",
     subHeading: "High purity primary aluminum ingot",
     ISNumber: "  IS 11890:1987  ",
@@ -1483,7 +1480,7 @@ export const notifications = [
     title: "BIS Notification for Aluminum alloy ingots for remelting",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Aluminum alloy ingots for remelting.",
-    pdfUrl: "/pdf/sun-certification-aluminum-alloy-ingots-for-remelting.pdf",
+    pdfUrl: "/pdf/bis-qco-for-aluminum-alloy-ingots-for-remelting.pdf",
     location: " New Delhi",
     subHeading: "Aluminum alloy ingots for remelting",
     ISNumber: "   IS 6754:1972 ",
@@ -1499,7 +1496,7 @@ export const notifications = [
     title: "BIS Notification for Primary aluminium ingots for remelting",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Primary aluminium ingots for remelting.",
-    pdfUrl: "/pdf/sun-certification-primary-aluminum-ingots-for-remelting.pdf",
+    pdfUrl: "/pdf/bis-qco-for-primary-aluminium-ingots-for-remelting.pdf",
     location: " New Delhi",
     subHeading: "Primary aluminium ingots for remelting",
     ISNumber: "   IS 2590 : 1987 ",
@@ -1515,7 +1512,7 @@ export const notifications = [
     title: "BIS Notification for Aluminum ingots billets and wire bars",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Aluminum ingots billets and wire bars.",
-    pdfUrl: "/pdf/sun-certification-aluminum-ingots-billets-and-wire-bars.pdf",
+    pdfUrl: "/pdf/bis-qco-for-aluminum-ingots-billets-and-wire-bars.pdf",
     location: " New Delhi",
     subHeading: "Aluminum ingots billets and wire bars",
     ISNumber: "  IS 4026 : 2023 ",
@@ -1531,7 +1528,7 @@ export const notifications = [
     title: "BIS Notification for Telescopic Ball Bearing Drawer Slides",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Telescopic Ball Bearing Drawer Slides.",
-    pdfUrl: "/pdf/sun-certification-telescopic-ball-bearing-drawer-slides.pdf",
+    pdfUrl: "/pdf/bis-qco-for-telescopic-ball-bearing-drawer-slides.pdf",
     location: " New Delhi",
     subHeading: "Telescopic Ball Bearing Drawer Slide",
     ISNumber: " IS 17954: 2023  ",
@@ -1547,7 +1544,7 @@ export const notifications = [
     title: "BIS Notification for Copper Products",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Copper Products.",
-    pdfUrl: "/pdf/sun-certification-copper-products.pdf",
+    pdfUrl: "/pdf/bis-qco-for-copper-products.pdf",
     location: "New Delhi",
     subHeading: `1.) Copper Wire Rods for Electrical Applications
   2.) Copper Rods and Bars for Electrical Purposes
@@ -1572,7 +1569,7 @@ export const notifications = [
     title: "BIS Notification for Agro Textiles",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Agro Textiles.",
-    pdfUrl: "/pdf/sun-certification-agro-textiles.pdf",
+    pdfUrl: "/pdf/bis-qco-for-agro-textiles.pdf",
     location: "New Delhi",
     subHeading: `1.) Crop Cover and Fruit Skirting Bags
   2.) Insect nets
@@ -1608,7 +1605,7 @@ export const notifications = [
     title: "BIS Notification for Plywood for general purposes",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Plywood for general purposes.",
-    pdfUrl: "/pdf/sun-certification-plywood-for-general-purposes.pdf",
+    pdfUrl: "/pdf/bis-qco-for-plywood-for-general-purposes.pdf",
     location: " New Delhi",
     subHeading: "Plywood for general purposes",
     ISNumber: "   IS 303 : 1989",
@@ -1627,7 +1624,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Plywood face panels.",
     pdfUrl:
-      "/pdf/sun-certification-wooden-flush-door-shutters-solid-core-type-plywood-face-panels.pdf",
+      "/pdf/bis-qco-for-wooden-flush-door-shutters-solid-core-type-plywood-face-panels.pdf",
     location: " New Delhi",
     subHeading: " Plywood face panels",
     ISNumber: " IS 2202 (Part 1) : 1999",
@@ -1643,7 +1640,7 @@ export const notifications = [
     title: "BIS Notification for Marine plywood",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Marine plywood.",
-    pdfUrl: "/pdf/sun-certification-marine-plywood.pdf",
+    pdfUrl: "/pdf/bis-qco-for-marine-plywood.pdf",
     location: " New Delhi",
     subHeading: " Marine plywood",
     ISNumber: "  IS 710 : 2010",
@@ -1659,7 +1656,7 @@ export const notifications = [
     title: "BIS Notification for Fire retardant plywood",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fire retardant plywood.",
-    pdfUrl: "/pdf/sun-certification-fire-retardant-plywood.pdf",
+    pdfUrl: "/pdf/bis-qco-for-fire-retardant-plywood.pdf",
     location: " New Delhi",
     subHeading: "  Fire retardant plywood",
     ISNumber: " IS 5509 : 2021 ",
@@ -1675,7 +1672,7 @@ export const notifications = [
     title: "BIS Notification for Veneered decorative plywood",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Veneered decorative plywood.",
-    pdfUrl: "/pdf/sun-certification-veneered-decorative-plywood.pdf",
+    pdfUrl: "/pdf/bis-qco-for-veneered-decorative-plywood.pdf",
     location: " New Delhi",
     subHeading: "  Veneered decorative plywood ",
     ISNumber: " IS 1328:1996 ",
@@ -1691,8 +1688,7 @@ export const notifications = [
     title: "BIS Notification for Particle board and hardboard face panels",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Particle board and hardboard face panels.",
-    pdfUrl:
-      "/pdf/sun-certification-particle-board-and-hardboard-face-panels.pdf",
+    pdfUrl: "/pdf/bis-qco-for-particle-board-and-hardboard-face-panels.pdf",
     location: " New Delhi",
     subHeading: " Particle board and hardboard face panels",
     ISNumber: " IS 2191 (Part 2): 2022",
@@ -1708,7 +1704,7 @@ export const notifications = [
     title: "BIS Notification for Plywood face panels",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Plywood face panels.",
-    pdfUrl: "/pdf/sun-certification-plywood-face-panels.pdf",
+    pdfUrl: "/pdf/bis-qco-for-plywood-face-panels.pdf",
     location: " New Delhi",
     subHeading: "  Plywood face panels",
     ISNumber: " IS 2191 (Part 1): 2022 ",
@@ -1724,7 +1720,7 @@ export const notifications = [
     title: "BIS Notification for Fibre Hardboard Face Panels",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Fibre Hardboard Face Panels.",
-    pdfUrl: "/pdf/sun-certification-fibre-hardboard-face-panels.pdf",
+    pdfUrl: "/pdf/bis-qco-for-fibre-hardboard-face-panels.pdf",
     location: " New Delhi",
     subHeading: " Fibre Hardboard Face Panels",
     ISNumber: " IS 2202 (Part 2): 2022",
@@ -1741,7 +1737,7 @@ export const notifications = [
     title: "BIS Notification for Plywood for concrete shuttering works",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Plywood for concrete shuttering works.",
-    pdfUrl: "/pdf/sun-certification-plywood-for-concrete-shuttering-works.pdf",
+    pdfUrl: "/pdf/bis-qco-for-plywood-for-concrete-shuttering-works.pdf",
     location: " New Delhi",
     subHeading: " Plywood for concrete shuttering works",
     ISNumber: "  IS 4990:2011 ",
@@ -1757,7 +1753,7 @@ export const notifications = [
     title: "BIS Notification for Structural plywood",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Structural plywood.",
-    pdfUrl: "/pdf/sun-certification-structural-plywood.pdf",
+    pdfUrl: "/pdf/bis-qco-for-structural-plywood.pdf",
     location: " New Delhi",
     subHeading: " Structural plywood",
     ISNumber: "  IS 10701 : 2012  ",
@@ -1773,7 +1769,7 @@ export const notifications = [
     title: "BIS Notification for V-Belts",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of V-Belts.",
-    pdfUrl: "/pdf/sun-certification-v-belts.pdf",
+    pdfUrl: "/pdf/bis-qco-for-v-belts.pdf",
     location: "New Delhi",
     subHeading: `1.) V-Belts - Endless V-Belts for Industrial Purposes – General Purpose
   2.) V-Belts - Endless V-Belts for Industrial Purposes – Fire Resistant and Antistatic V-Belts
@@ -1792,7 +1788,7 @@ export const notifications = [
     title: "BIS Notification for Glass Fibre Reinforced Gypsum Panels",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Glass Fibre Reinforced Gypsum Panels.",
-    pdfUrl: "/pdf/sun-certification-glass-fibre-reinforced-gypsum-panels.pdf",
+    pdfUrl: "/pdf/bis-qco-for-glass-fibre-reinforced-gypsum-panels.pdf",
     location: " New Delhi",
     subHeading: " Glass Fibre Reinforced Gypsum Panels",
     ISNumber: " IS 17400:2021 ",
@@ -1810,7 +1806,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Reinforced Gypsum Plaster Boards and Ceiling Tiles.",
     pdfUrl:
-      "/pdf/sun-certification-reinforced-gypsum-plaster-boards-and-ceiling-tiles.pdf",
+      "/pdf/bis-qco-for-reinforced-gypsum-plaster-boards-and-ceiling-tiles.pdf",
     location: " New Delhi",
     subHeading: " Reinforced Gypsum Plaster Boards and Ceiling Tiles",
     ISNumber: "IS 2095 (Part 3):2022 ",
@@ -1826,7 +1822,7 @@ export const notifications = [
     title: "BIS Notification for Evaporative Air Coolers (Desert Coolers)",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Evaporative Air Coolers (Desert Coolers).",
-    pdfUrl: "/pdf/sun-certification-evaporative-air-coolers-desert-coolers.pdf",
+    pdfUrl: "/pdf/bis-qco-for-evaporative-air-coolers-desert-coolers.pdf",
     location: "New Delhi",
     subHeading: `1.) Evaporative Air Coolers
   2.) Air Filters for general ventilation – Technical specifications requirements and classification system based upon particulate matter efficiency (ePM)`,
@@ -1844,8 +1840,7 @@ export const notifications = [
     title: "BIS Notification for Asbestos or Fibre Cement based Products",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Asbestos or Fibre Cement based Products.",
-    pdfUrl:
-      "/pdf/sun-certification-asbestos-or-fibre-cement-based-products.pdf",
+    pdfUrl: "/pdf/bis-qco-for-asbestos-or-fibre-cement-based-products.pdf",
     location: "New Delhi",
     subHeading: `1.) Corrugated and Semi - Corrugated Asbestos Cement Sheets
   2.) Asbestos Cement Pressure Pipes and Joints
@@ -1872,7 +1867,7 @@ export const notifications = [
     title: "BIS Notification for Diesel Engines",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Diesel Engines NOx Reduction Agent AUS 32 Specification.",
-    pdfUrl: "/pdf/sun-certification-diesel-engines.pdf",
+    pdfUrl: "/pdf/bis-qco-for-diesel-engines.pdf",
     location: " New Delhi",
     subHeading: "Diesel Engines – NOx Reduction Agent AUS 32 – Specification",
     ISNumber: "IS 17042 (Part-1): 2018 ",
@@ -1890,7 +1885,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Electrical appliance for commercial dispensing and vending.",
     pdfUrl:
-      "/pdf/sun-certification-electrical-appliance-for-commercial-dispensing-and-vending.pdf",
+      "/pdf/bis-qco-for-electrical-appliance-for-commercial-dispensing-and-vending.pdf",
     location: " New Delhi",
     subHeading: "Electrical appliance for commercial dispensing and vending",
     ISNumber: "IS 302 (Part 2/Sec 75): 2018 ",
@@ -1908,7 +1903,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Electrical appliance for domestic clothes washing.",
     pdfUrl:
-      "/pdf/sun-certification-electrical-appliance-for-domestic-clothes-washing.pdf",
+      "/pdf/bis-qco-for-electrical-appliance-for-domestic-clothes-washing.pdf",
     location: " New Delhi",
     subHeading: "Electrical appliance for domestic clothes washing",
     ISNumber: "IS 302 (Part 2/Sec 7): 2010 ",
@@ -1924,7 +1919,7 @@ export const notifications = [
     title: "BIS Notification for Electrical appliance- Fans",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Electrical appliance- fans for Indian marketplace.",
-    pdfUrl: "/pdf/sun-certification-electrical-appliance-fans.pdf",
+    pdfUrl: "/pdf/bis-qco-for-electrical-appliance-fans.pdf",
     location: " New Delhi",
     subHeading: "Electrical appliance- fans",
     ISNumber: "IS 302 (Part 2/ Sec 80): 2017  ",
@@ -1940,7 +1935,7 @@ export const notifications = [
     title: "QCO Notification for Electric Water Heaters",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Electric Water Heaters.",
-    pdfUrl: "/pdf/sun-certification-electric-water-heaters.pdf",
+    pdfUrl: "/pdf/bis-qco-for-electric-water-heaters.pdf",
     location: "New Delhi",
     subHeading: `1.) Appliances for stationary storage type electric water heaters
   2.) Appliances for electric instantaneous water heaters
@@ -1961,8 +1956,7 @@ export const notifications = [
     title: "BIS Notification for Electrical appliances for skin or hair care",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Electrical Appliances for Skin and Hair care.",
-    pdfUrl:
-      "/pdf/sun-certification-electrical-appliances-for-skin-and-hair-care.pdf",
+    pdfUrl: "/pdf/bis-qco-for-electrical-appliances-for-skin-or-hair-care.pdf",
     location: " New Delhi",
     subHeading: "Electrical Appliances for Skin and Hair care",
     ISNumber: "IS 302 (Part 2/Sec 23): 2009   ",
@@ -1978,7 +1972,7 @@ export const notifications = [
     title: "BIS Notification for Electrical Appliances for Kitchen",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Electrical Appliances for Kitchen.",
-    pdfUrl: "/pdf/sun-certification-electrical-appliances-for-kitchen.pdf",
+    pdfUrl: "/pdf/bis-qco-for-electrical-appliances-for-kitchen.pdf",
     location: "New Delhi",
     subHeading: `1.) Household and similar electrical appliances - particular requirements - toasters, grills, roasters and similar appliances
   2.) Household and similar electrical appliances - particular requirements - range hoods`,
@@ -1996,7 +1990,7 @@ export const notifications = [
     title: "BIS Notification Water Meter and Accessories",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Water Meter and Accessories.",
-    pdfUrl: "/pdf/sun-certification-water-meter-and-accessories.pdf",
+    pdfUrl: "/pdf/bis-qco-for-bis-notification-water-meter-and-accessories.pdf",
     location: "New Delhi",
     subHeading: `1.) Water meters (bulk type)
   2.) Water meters (domestic type)
@@ -2015,7 +2009,7 @@ export const notifications = [
     title: "BIS Notification for Poly Vinyl Chloride (PVC) Homopolymers",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Poly Vinyl Chloride (PVC) Homopolymers.",
-    pdfUrl: "/pdf/sun-certification-poly-vinyl-chloride-pvc-homopolymers.pdf",
+    pdfUrl: "/pdf/bis-qco-for-poly-vinyl-chloride-pvc-homopolymers.pdf",
     location: " New Delhi",
     subHeading: "Poly Vinyl Chloride (PVC) Homopolymers – Specification",
     ISNumber: " IS 17658: 2021   ",
@@ -2033,7 +2027,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Polypropylene (PP) Materials for Moulding and Extrusion.",
     pdfUrl:
-      "/pdf/sun-certification-polypropylene-pp-materials-for-moulding-and-extrusion.pdf",
+      "/pdf/bis-qco-for-polypropylene-pp-materials-for-moulding-and-extrusion.pdf",
     location: " New Delhi",
     subHeading:
       "Specification for Polypropylene (PP) Materials for Moulding and Extrusion",
@@ -2050,7 +2044,7 @@ export const notifications = [
     title: "BIS Notification for Baby Diaper",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Baby Diaper for Indian marketplace.",
-    pdfUrl: "/pdf/sun-certification-baby-diaper.pdf",
+    pdfUrl: "/pdf/bis-qco-for-baby-diaper.pdf",
     location: " New Delhi",
     subHeading: "Baby Diaper",
     ISNumber: " IS 17509: 2021  ",
@@ -2066,7 +2060,7 @@ export const notifications = [
     title: "BIS Notification for Bedsheet and Pillow Cover",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Bedsheet and Pillow Cover.",
-    pdfUrl: "/pdf/sun-certification-bedsheet-and-pillow-cover.pdf",
+    pdfUrl: "/pdf/bis-qco-for-bedsheet-and-pillow-cover.pdf",
     location: " New Delhi",
     subHeading: "Bedsheet and Pillow Cover",
     ISNumber: " IS 17630: 2021 ",
@@ -2082,7 +2076,7 @@ export const notifications = [
     title: "BIS Notification for Dental bib/Napkins",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Dental bib/Napkins.",
-    pdfUrl: "/pdf/sun-certification-dental-bib-napkins.pdf",
+    pdfUrl: "/pdf/bis-qco-for-dental-bibnapkins.pdf",
     location: " New Delhi",
     subHeading: "Bedsheet and Pillow Cover",
     ISNumber: " IS 17630: 2021 ",
@@ -2098,7 +2092,7 @@ export const notifications = [
     title: "BIS Notification for Self-Contained Drinking Water Cooler",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Self-Contained Drinking Water Cooler.",
-    pdfUrl: "/pdf/sun-certification-self-contained-drinking-water-cooler.pdf",
+    pdfUrl: "/pdf/bis-qco-for-self-contained-drinking-water-cooler.pdf",
     location: " New Delhi",
     subHeading: "Self- Contained Drinking Water Cooler",
     ISNumber: "IS 1475 (Part 1): 2001  ",
@@ -2116,7 +2110,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Reusable Sanitary Pad Sanitary Napkin Period Panties.",
     pdfUrl:
-      "/pdf/sun-certification-reusable-sanitary-pad-sanitary-napkin-period-panties.pdf",
+      "/pdf/bis-qco-for-reusable-sanitary-pad-sanitary-napkin-period-panties.pdf",
     location: " New Delhi",
     subHeading: "Reusable Sanitary Pad Sanitary Napkin Period Panties",
     ISNumber: " IS 17514: 2021  ",
@@ -2132,7 +2126,7 @@ export const notifications = [
     title: "BIS Notification for Sanitary napkins",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Sanitary napkins for Indian marketplace.",
-    pdfUrl: "/pdf/sun-certification-sanitary-napkins.pdf",
+    pdfUrl: "/pdf/bis-qco-for-sanitary-napkins.pdf",
     location: " New Delhi",
     subHeading: "Sanitary napkins",
     ISNumber: "  IS 5405: 2019  ",
@@ -2148,7 +2142,7 @@ export const notifications = [
     title: "BIS Notification for Shoe covers",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Shoe covers for Indian marketplace.",
-    pdfUrl: "/pdf/sun-certification-shoe-covers.pdf",
+    pdfUrl: "/pdf/bis-qco-for-shoe-covers.pdf",
     location: " New Delhi",
     subHeading: "Shoe covers",
     ISNumber: " IS 17349: 2020   ",
@@ -2164,7 +2158,7 @@ export const notifications = [
     title: "BIS Notification for Electrical Accessories",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Electrical Accessories.",
-    pdfUrl: "/pdf/sun-certification-electrical-accessories.pdf",
+    pdfUrl: "/pdf/bis-qco-for-electrical-accessories.pdf",
     location: "New Delhi",
     subHeading: `1.) Boxes and Enclosures for Electrical Accessories for Household and Similar Fixed Electrical Installations
   2.) Cable Trunking and Ducting Systems for Electrical Installations - Cable Trunking and Ducting Systems Intended for Mounting on Walls or Ceiling
@@ -2188,7 +2182,7 @@ export const notifications = [
     title: "BIS Notification for Laboratory Glassware",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Laboratory Glassware.",
-    pdfUrl: "/pdf/sun-certification-laboratory-glassware.pdf",
+    pdfUrl: "/pdf/bis-qco-for-laboratory-glassware.pdf",
     location: "New Delhi",
     subHeading: `1.) Laboratory glassware - Graduated measuring cylinders
   2.) Laboratory glassware - One-Mark volumetric flasks
@@ -2209,7 +2203,7 @@ export const notifications = [
     title: "BIS Notification for Cycle and Rickshaw Tyres & Tubes",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Cycle and Rickshaw Tyres & Tubes.",
-    pdfUrl: "/pdf/sun-certification-cycle-and-rickshaw-tyres-tubes.pdf",
+    pdfUrl: "/pdf/bis-qco-for-cycle-and-rickshaw-tyres-tubes.pdf",
     location: "New Delhi",
     subHeading: `1.) Cycle and Rickshaw Pneumatic Tyres
   2.) Cycle - Rubber Tubes (Moulded or Jointed)`,
@@ -2227,7 +2221,7 @@ export const notifications = [
     title: "BIS Notification for Safe Deposit Locker Cabinets",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Safe Deposit Locker Cabinets.",
-    pdfUrl: "/pdf/sun-certification-safe-deposit-locker-cabinets.pdf",
+    pdfUrl: "/pdf/bis-qco-for-safe-deposit-locker-cabinets.pdf",
     location: "New Delhi",
     subHeading: `1.) Safes
   2.) Safe deposit locker cabinets
@@ -2248,7 +2242,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Textiles — HDPE/PP Woven Sacks for Packaging of 25 kg Polymer Materials.",
     pdfUrl:
-      "/pdf/sun-certification-hdpe-pp-woven-sacks-for-packaging-of-25-kg-polymer-materials.pdf",
+      "/pdf/bis-qco-for-hdpepp-woven-sacks-for-packaging-of-25-kg-polymer-materials.pdf",
     location: " New Delhi",
     subHeading:
       "Textiles — High Density Polyethylene (HDPE) Polypropylene (PP) Woven Sacks for Packaging of 25 kg Polymer Materials - Specification",
@@ -2265,8 +2259,7 @@ export const notifications = [
     title: "BIS Legal Metrology – Material Measures of Length",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Material Measures of Length.",
-    pdfUrl:
-      "/pdf/sun-certification-legal-metrology-material-measures-of-length.pdf",
+    pdfUrl: "/pdf/bis-qco-for-legal-metrology-material-measures-of-length.pdf",
     location: "New Delhi",
     subHeading: `1.) Legal metrology - Material measure of length - Woven metallic and glass fibre tape measures
   2.) Legal metrology - Material measures of length - Steel tape measures`,
@@ -2284,7 +2277,7 @@ export const notifications = [
     title: "BIS Notification for Door Fittings",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Door Fittings.",
-    pdfUrl: "/pdf/sun-certification-door-fittings.pdf",
+    pdfUrl: "/pdf/bis-qco-for-door-fittings.pdf",
     location: "New Delhi",
     subHeading: `1.) Door closers (pneumatically regulated) for light doors weighing up to 40 kg
   2.) Door closers, concealed type (hydraulically regulated)
@@ -2307,7 +2300,7 @@ export const notifications = [
     title: "BIS Notification for Drums and Tins",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Drums and Tins.",
-    pdfUrl: "/pdf/sun-certification-drums-and-tins.pdf",
+    pdfUrl: "/pdf/bis-qco-for-drums-and-tins.pdf",
     location: "New Delhi",
     subHeading: `1.) Drums, Large Open Top
   2.) Drums Large, Fixed Ends - Grade A Drums
@@ -2332,7 +2325,7 @@ export const notifications = [
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Helmets for Police Force, Civil Defence, and Personal Protection.",
     pdfUrl:
-      "/pdf/sun-certification-helmets-for-police-force-civil-defence-and-personal-protection.pdf",
+      "/pdf/bis-qco-for-helmets-for-police-force-civil-defence-and-personal-protection.pdf",
     location: "New Delhi",
     subHeading: `1.) Specification for non-metal helmet for firemen and civil defence personnel
 2.) Specification for industrial safety helmets
@@ -2350,7 +2343,7 @@ export const notifications = [
     title: "BIS Notification for Bottled Water Dispensers",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Bottled Water Dispensers.",
-    pdfUrl: "/pdf/sun-certification-bottled-water-dispensers.pdf",
+    pdfUrl: "/pdf/bis-qco-for-bottled-water-dispensers.pdf",
     location: "New Delhi",
     subHeading: `Bottled Water Dispensers for Indian marketplace`,
     ISNumber: `IS 17681: 2022`,
@@ -2368,7 +2361,7 @@ export const notifications = [
     description:
       "This is to notify all manufacturers, suppliers, and stakeholders regarding implementation of IS 17633: 2022 Specification for Tables and Desks.",
     pdfUrl:
-      "/pdf/sun-certification-Implementation-of-IS-17633-2022-Specification-for-Tables-and-Desks.pdf",
+      "/pdf/bis-qco-for-Implementation-of-IS-17633-2022-Specification-for-Tables-and-Desks.pdf",
     location: "New Delhi",
     subHeading: `Implementation of IS 17633: 2022 Specification for Tables and Desks`,
     ISNumber: `IS 17633: 2022`,
@@ -2384,7 +2377,7 @@ export const notifications = [
     title: "BIS Notification for Rubber Gaskets for Pressure Cookers",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Rubber Gaskets for Pressure Cookers.",
-    pdfUrl: "/pdf/sun-certification-rubber-gaskets-for-pressure-cookers.pdf",
+    pdfUrl: "/pdf/bis-qco-for-rubber-gaskets-for-pressure-cookers.pdf",
     location: "New Delhi",
     subHeading: `Bureau of Indian Standards (BIS) has introduced the specification IS 17633: 2022 for Tables and Desks, effective since March 22, 2022. While this standard is not yet under mandatory `,
     ISNumber: `IS 17681: 2022`,
@@ -2400,7 +2393,7 @@ export const notifications = [
     title: "BIS Notification for Electric Cable for Photovoltaic",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Electric Cable for Photovoltaic.",
-    pdfUrl: "/pdf/sun-certification-electric-cable-for-photovoltaic-1.pdf",
+    pdfUrl: "/pdf/bis-qco-for-electric-cable-for-photovoltaic.pdf",
     location: "New Delhi",
     subHeading: `Rubber Gaskets for Pressure Cookers- Specification`,
     ISNumber: `IS 7466: 1994`,
@@ -2416,7 +2409,7 @@ export const notifications = [
     title: "BIS Notification for “Writing and Printing Paper” ",
     description:
       "BIS certification is now mandatory for Writing and Printing Paper (IS 1848 Part 1:2018) from 17th October 2025. All manufacturers and importers must get a BIS license and use the ISI mark to sell in India.",
-    pdfUrl: "/pdf/sun-certification-writing-and-printing-paper.pdf",
+    pdfUrl: "/pdf/bis-qco-for-writing-and-printing-paper.pdf",
     location: "New Delhi",
     subHeading: `Writing and Printing Paper`,
     ISNumber: `under IS 1848 (Part 1):2018`,
@@ -2432,7 +2425,7 @@ export const notifications = [
     title: "BIS Notification for “Coated Papers and Board ( Art and Chrome )”",
     description:
       "BIS license now mandatory for Coated Papers & Board (Art and Chrome) from 17th Oct 2025. ISI mark required to sell in India.",
-    pdfUrl: "/pdf/sun-certification-coated-papers-and-board-art-and-chrome.pdf",
+    pdfUrl: "/pdf/bis-qco-for-coated-papers-and-board-art-and-chrome.pdf",
     location: "New Delhi",
     subHeading: `Coated Papers and Board ( Art and Chrome ) `,
     ISNumber: `IS 4658:2019`,
@@ -2448,7 +2441,7 @@ export const notifications = [
     title: "BIS QCO Notification for “Steel and Steel Products”",
     description:
       "All steel and steel products that are notified under the Quality Control Order (QCO) and are intended for import must comply with the relevant Indian Standards for their respective input materials.",
-    pdfUrl: "/pdf/sun-certification-steel-and-steel-products.pdf",
+    pdfUrl: "/pdf/bis-qco-for-steel-and-steel-products.pdf",
     location: "New Delhi",
     subHeading: `Steel and Steel Products`,
     ISNumber: `N/A`,
@@ -2464,7 +2457,7 @@ export const notifications = [
     title: "BIS QCO Notification for “Refined Zinc”",
     description:
       "BIS certification is now mandatory for Refined Zinc  (IS 209:2024) from 17th October 2025. All manufacturers and importers must get a BIS license and use the ISI mark to sell in India.",
-    pdfUrl: "/pdf/sun-certification-refined-zinc.pdf",
+    pdfUrl: "/pdf/bis-qco-for-refined-zinc.pdf",
     location: "New Delhi",
     subHeading: `Refined Zinc`,
     ISNumber: `IS No. – 209:2024`,
@@ -2481,7 +2474,7 @@ export const notifications = [
     title: "BIS QCO Notification for “Tin Ingot”",
     description:
       "BIS certification is now mandatory for Tin Ingot  (IS 26:2024) from 17th October 2025. All manufacturers and importers must get a BIS license and use the ISI mark to sell in India.",
-    pdfUrl: "/pdf/sun-certification-tin-ingot.pdf",
+    pdfUrl: "/pdf/bis-qco-for-tin-ingot.pdf",
     location: "New Delhi",
     subHeading: `Tin Ingot`,
     ISNumber: `IS No. – 26:2024`,
@@ -2498,7 +2491,7 @@ export const notifications = [
     title: "BIS QCO Notification for “Refined Nickel”",
     description:
       "BIS certification is now mandatory for Refined Nickel (IS 2782:2023) from 17th October 2025. All manufacturers and importers must get a BIS license and use the ISI mark to sell in India.",
-    pdfUrl: "/pdf/sun-certification-refined-nickel.pdf",
+    pdfUrl: "/pdf/bis-qco-for-refined-nickel.pdf",
     location: "New Delhi",
     subHeading: `Refined Nickel`,
     ISNumber: `IS No. – 2782:2023`,
@@ -2515,7 +2508,7 @@ export const notifications = [
     title: "BIS QCO Notification for “Primary Lead”",
     description:
       "BIS certification is now mandatory for Primary Lead (IS 27:2023) from 17th October 2025. All manufacturers and importers must get a BIS license and use the ISI mark to sell in India.",
-    pdfUrl: "/pdf/sun-certification-primary-lead.pdf",
+    pdfUrl: "/pdf/bis-qco-for-primary-lead.pdf",
     location: "New Delhi",
     subHeading: `Primary Lead`,
     ISNumber: `IS No. – 27:2023`,
