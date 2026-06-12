@@ -248,6 +248,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/foot-warmer-&-heating-mats-is-302",
     "/blogs/isi-products/cabinet-hinges-is-18297",
     "/blogs/isi-products/continuous-piano-hinges-is-3818",
+    "/blogs/isi-products/cycle-and-rickshaw-pneumatic-tyres-is-2414",
     "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2",
     "/blogs/isi-products/battery-operated-vaccum-cleaners",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
@@ -1394,6 +1395,12 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Cabinet Hinges - English Page";
     if (path.includes("/blogs/isi-products/continuous-piano-hinges-is-3818"))
       return "BIS Certificate for Continuous Piano hinges - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/cycle-and-rickshaw-pneumatic-tyres-is-2414"
+      )
+    )
+      return "BIS Certificate for Cycle and Rickshaw Pneumatic Tyres - English Page";
     if (
       path.includes(
         "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2"

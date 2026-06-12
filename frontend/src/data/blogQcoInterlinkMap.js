@@ -257,6 +257,14 @@ export const interlinkPairs = [
   2.) V-Belts - Endless V-Belts for Industrial Purposes – Fire Resistant and Antistatic V-Belts
   3.) Transmission Devices – V-Belts Endless Narrow V-Belts for Industrial Use`,
   },
+  {
+    productName: "Cycle and Rickshaw Pneumatic Tyres",
+    isNumber: "IS 2414:2005",
+    blogUrl: "/blogs/isi-products/cycle-and-rickshaw-pneumatic-tyres-is-2414",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-cycle-and-rickshaw-tyres-tubes",
+    qcoMatchKey: `1.) Cycle and Rickshaw Pneumatic Tyres
+  2.) Cycle - Rubber Tubes (Moulded or Jointed)`,
+  },
 ];
 
 /**

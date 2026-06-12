@@ -1079,6 +1079,9 @@ const BISCertificationforCabinetHingesIs18297 = lazy(() =>
 const BISCertificationforContinuousPianoHingesIs3818 = lazy(() =>
   import("@/blogs/BISCertificationforContinuousPianoHingesIs3818")
 );
+const BISCertificationforCycleandRickshawPneumaticTyresIs2414 = lazy(() =>
+  import("@/blogs/BISCertificationforCycleandRickshawPneumaticTyresIs2414")
+);
 const BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2 = lazy(() =>
   import("@/blogs/BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2")
 );
@@ -3776,6 +3779,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforContinuousPianoHingesIs3818 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cycle-and-rickshaw-pneumatic-tyres-is-2414"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCycleandRickshawPneumaticTyresIs2414 />
           </Suspense>
         }
       />
