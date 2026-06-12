@@ -196,16 +196,6 @@ const BreadcrumbContent = () => {
                   <SlashIcon />
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="flex-shrink-0">
-                  <BreadcrumbLink asChild>
-                    <Link to="/best-most-trusted-bis-consultant">
-                      Best &amp; Most Trusted BIS Consultant
-                    </Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator className="flex-shrink-0">
-                  <SlashIcon />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
                     Best and most trusted BIS consultant in India
                   </BreadcrumbPage>
@@ -246,8 +236,23 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Since 2016, Sun Certifications India has been one of the most trusted
-          BIS certification consultants for manufacturers, importers, and foreign
+          Since 2016,{" "}
+          <a
+            href="https://bis-certifications.com/"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Sun Certifications India
+          </a>{" "}
+          has been one of the most trusted{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            BIS certification
+          </a>{" "}
+          consultants for manufacturers, importers, and foreign
           companies looking to enter or operate in the Indian market. Based in
           Delhi and serving clients across the globe, we have guided thousands of
           businesses through BIS certification, BIS registration, ISI Mark
@@ -305,7 +310,12 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          ISI Mark Certification (Product Certification Scheme)
+          <Link
+            to="/a-guide-to-bis-certification-indian-bis"
+            className="hover:underline"
+          >
+            ISI Mark Certification (Product Certification Scheme)
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The most widely recognized quality mark in India. Mandatory for domestic
@@ -316,7 +326,12 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          CRS Registration (Compulsory Registration Scheme)
+          <Link
+            to="/what-is-crs-bis-or-crs-registration"
+            className="hover:underline"
+          >
+            CRS Registration (Compulsory Registration Scheme)
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Mandatory for electronics and IT products such as laptops, mobile
@@ -326,7 +341,12 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          FMCS Certification (Foreign Manufacturers Certification Scheme)
+          <Link
+            to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            className="hover:underline"
+          >
+            FMCS Certification (Foreign Manufacturers Certification Scheme)
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Designed for overseas manufacturers who want to sell their products in
@@ -336,7 +356,14 @@ const MainContentLeft = () => {
           process.
         </p>
 
-        <h3 className={SUB_HEADING_CLASS}>BIS Scheme X Certification</h3>
+        <h3 className={SUB_HEADING_CLASS}>
+          <Link
+            to="/indian-bis-certification-under-scheme-x"
+            className="hover:underline"
+          >
+            BIS Scheme X Certification
+          </Link>
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           A newer mandatory scheme covering machinery and electrical equipment —
           including industrial machinery, weaving machines, embroidery machines,
