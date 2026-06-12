@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 109,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Cycle and Rickshaw Pneumatic Tyres - IS 2414:2005",
+    description:
+      "Get BIS Certificate for Cycle and Rickshaw Pneumatic Tyres under IS 2414:2005. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cycle-and-rickshaw-pneumatic-tyres-is-2414",
+    date: "19 May 2026",
+  },
+  {
     id: 108,
     color: "#0D9488",
     title: "BIS Certificate for Continuous Piano hinges - IS 3818:1992",

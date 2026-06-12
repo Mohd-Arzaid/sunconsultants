@@ -30421,6 +30421,7 @@ export const productTableData2 = [
     "sno": 542,
     "isNumber": "IS 2414:2005",
     "product": "Cycle and Rickshaw Pneumatic Tyres",
+    "blogPath": "/blogs/isi-products/cycle-and-rickshaw-pneumatic-tyres-is-2414",
     "notification": {
       "title": "111. Cycle and Rickshaw Tyres and Tubes (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2023/12/Cycle-and-Rickshaw-tyres-and-Tubes.pdf",
