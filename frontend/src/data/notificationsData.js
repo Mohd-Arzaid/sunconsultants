@@ -753,7 +753,8 @@ export const notifications = [
       "BIS Notification for Countersunk flat head screws (common head style) with type H or Type Z Cross Recess – Product Grade A part 2 Steel Screws of Property Class 8.8, Stainless Steel Screws and Non – Ferrous Metal Screws",
     description:
       "Important update on mandatory BIS Certification for manufacturers and importers of Countersunk flat head screws.",
-    pdfUrl: "/pdf/sun-certification-countersunk-flat-head-screws.pdf",
+    pdfUrl:
+      "/pdf/bis-qco-for-countersunk-flat-head-screws-common-head-style-with-type-h-or-type-z-cross-recess-product-grade-a-part-1-steel-screws-of-property-class-48.pdf",
     location: " New Delhi",
     subHeading:
       "Countersunk flat head screws (common head style) with type H or Type Z Cross Recess – Product Grade A part 2 Steel Screws of Property Class 8.8, Stainless Steel Screws and Non – Ferrous Metal Screws.",

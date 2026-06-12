@@ -7,8 +7,6 @@ const rootDir = path.resolve(__dirname, "..");
 const dataPath = path.join(rootDir, "src/data/notificationsData.js");
 const pdfDir = path.join(rootDir, "public/pdf");
 
-const SKIPPED_URL = "/pdf/sun-certification-countersunk-flat-head-screws.pdf";
-
 const MANUAL_MAP = {
   "sun-certification-aluminium-alloy-forging-stock-and-forgings.pdf":
     "bis-qco-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345-for-aerospace-applications.pdf",
@@ -31,8 +29,6 @@ const MANUAL_MAP = {
 };
 
 function mapUrl(url) {
-  if (url === SKIPPED_URL) return url;
-
   const filename = url.replace("/pdf/", "");
   if (MANUAL_MAP[filename]) {
     return `/pdf/${MANUAL_MAP[filename]}`;
@@ -52,15 +48,9 @@ const pdfFiles = new Set(
 );
 
 const ok = [];
-const skipped = [];
 const broken = [];
 
 for (const url of urls) {
-  if (url === SKIPPED_URL) {
-    skipped.push(url);
-    continue;
-  }
-
   const filename = url.replace("/pdf/", "");
   if (pdfFiles.has(filename)) {
     ok.push(url);
@@ -71,7 +61,6 @@ for (const url of urls) {
 
 console.log(`Total pdfUrls: ${urls.length}`);
 console.log(`OK (file exists): ${ok.length}`);
-console.log(`Skipped (id 45): ${skipped.length}`);
 console.log(`Broken: ${broken.length}`);
 
 if (broken.length > 0) {
@@ -83,9 +72,9 @@ if (broken.length > 0) {
   process.exit(1);
 }
 
-if (ok.length !== 141 || skipped.length !== 1) {
+if (ok.length !== urls.length) {
   console.error(
-    `\nUnexpected counts. Expected 141 OK and 1 skipped, got ${ok.length} OK and ${skipped.length} skipped.`
+    `\nUnexpected counts. Expected ${urls.length} OK, got ${ok.length} OK.`
   );
   process.exit(1);
 }
