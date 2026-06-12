@@ -208,7 +208,9 @@ const MetaTags = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={websiteUrl} />
-      <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(articleSchema)}
+      </script>
       <script type="application/ld+json">{JSON.stringify(ratingSchema)}</script>
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
     </Helmet>
@@ -291,7 +293,8 @@ const MainContentLeft = () => {
           fasteners are designed to cut or form threads directly into materials
           such as sheet metal, plastics, or thin sections without pre-tapping.
           This makes them essential in applications like electrical panels,
-          appliance housings, automotive interiors, and modular assemblies. For
+          appliance housings, automotive interiors, and modular assemblies.
+          {/* For
           official regulatory context, refer to{" "}
           <Link
             to="/bis-qco-updates/bis-certificate-for-cross-recessed-tapping-screw-part-3-raised-countersunk-oval-head"
@@ -299,19 +302,18 @@ const MainContentLeft = () => {
           >
             Also Read the QCO Notification for Cross Recessed Tapping Screws
           </Link>
-          .
+          . */}
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           The raised countersunk oval head design provides a partially flush
           finish while still maintaining a slight dome for improved grip and
-          aesthetic appeal. At the same time, the cross recess ensures
-          efficient torque transfer during installation. However, this
-          combination of features also increases the dependency on precise
-          manufacturing. If the thread profile is not correctly formed, the
-          screw may fail to create a proper mating thread. Similarly, an
-          improperly designed recess can result in tool slippage or head
-          damage.
+          aesthetic appeal. At the same time, the cross recess ensures efficient
+          torque transfer during installation. However, this combination of
+          features also increases the dependency on precise manufacturing. If
+          the thread profile is not correctly formed, the screw may fail to
+          create a proper mating thread. Similarly, an improperly designed
+          recess can result in tool slippage or head damage.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -324,14 +326,14 @@ const MainContentLeft = () => {
           the Indian market.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
+        {/* <p className="text-gray-600 text-base font-geist mb-4">
           <a
             href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
             className="text-blue-600 hover:underline"
           >
             Check complete details about documentation, cost, and process etc.
           </a>
-        </p>
+        </p> */}
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
@@ -342,12 +344,12 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Tapping screws are unique because they do not just fasten
-          components-they actively create their own threads during
-          installation. This dual function introduces specific risks. If the
-          screw is too hard, it may crack the material. If it is too soft, it
-          may fail to form threads properly. The BIS Certification for Cross
-          Recessed Tapping Screw Part 3 Raised Countersunk Oval Head evaluates
-          these critical factors.
+          components-they actively create their own threads during installation.
+          This dual function introduces specific risks. If the screw is too
+          hard, it may crack the material. If it is too soft, it may fail to
+          form threads properly. The BIS Certification for Cross Recessed
+          Tapping Screw Part 3 Raised Countersunk Oval Head evaluates these
+          critical factors.
         </p>
         <p className="text-gray-600 text-base font-geist mb-4">
           The certification process examines how effectively the screw performs
@@ -492,8 +494,9 @@ const MainContentLeft = () => {
               thread design can cause stress cracks or deformation. BIS testing
               evaluates the balance between hardness and flexibility, ensuring
               that the screw forms threads smoothly without damaging the
-              surrounding material. This is particularly important in electronics
-              and appliance assemblies where plastic integrity is critical.
+              surrounding material. This is particularly important in
+              electronics and appliance assemblies where plastic integrity is
+              critical.
             </p>
           </div>
 
@@ -507,8 +510,8 @@ const MainContentLeft = () => {
               flush fitting and a smooth, rounded finish. BIS certification
               ensures that the head dimensions are precise so the screw seats
               properly without creating uneven pressure points. This helps
-              maintain both structural strength and visual finish in applications
-              like panels and enclosures.
+              maintain both structural strength and visual finish in
+              applications like panels and enclosures.
             </p>
           </div>
 
@@ -534,10 +537,10 @@ const MainContentLeft = () => {
             <p className="text-gray-600 text-base font-geist mb-2">
               Typical failures include improper thread formation, excessive
               brittleness due to incorrect heat treatment, uneven recess
-              geometry, and dimensional inconsistencies. These issues can lead to
-              installation problems such as stripping, breakage, or weak
-              fastening. BIS certification identifies and eliminates such defects
-              before the product reaches the market.
+              geometry, and dimensional inconsistencies. These issues can lead
+              to installation problems such as stripping, breakage, or weak
+              fastening. BIS certification identifies and eliminates such
+              defects before the product reaches the market.
             </p>
           </div>
 
@@ -547,12 +550,12 @@ const MainContentLeft = () => {
               operations?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              In automated assembly lines, screws must perform consistently under
-              rapid installation conditions. BIS certification ensures uniform
-              dimensions, proper recess engagement, and reliable thread forming.
-              This reduces tool slippage, minimizes downtime, and ensures smooth
-              operations in industries like electronics manufacturing and
-              automotive assembly.
+              In automated assembly lines, screws must perform consistently
+              under rapid installation conditions. BIS certification ensures
+              uniform dimensions, proper recess engagement, and reliable thread
+              forming. This reduces tool slippage, minimizes downtime, and
+              ensures smooth operations in industries like electronics
+              manufacturing and automotive assembly.
             </p>
           </div>
 
@@ -577,10 +580,11 @@ const MainContentLeft = () => {
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Consistency is essential when producing large volumes of tapping
-              screws. BIS certification requires manufacturers to maintain strict
-              quality control processes, ensuring that every batch meets the same
-              specifications. This repeatability is crucial for maintaining
-              compatibility and performance across different assemblies.
+              screws. BIS certification requires manufacturers to maintain
+              strict quality control processes, ensuring that every batch meets
+              the same specifications. This repeatability is crucial for
+              maintaining compatibility and performance across different
+              assemblies.
             </p>
           </div>
 
@@ -591,8 +595,8 @@ const MainContentLeft = () => {
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Yes, surface coatings such as zinc plating are evaluated to ensure
-              corrosion resistance and uniform application. This is important for
-              screws used in environments exposed to moisture or chemicals.
+              corrosion resistance and uniform application. This is important
+              for screws used in environments exposed to moisture or chemicals.
               Proper coating extends the lifespan of the screw and maintains its
               performance over time.
             </p>
@@ -620,15 +624,28 @@ const MainContentLeft = () => {
           Related Resources
         </h2>
 
+        {/* ye cheej baad mai Abhishek bhai change krvayenge Start  */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Mark Certification Scheme</a>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISI Mark Certification Scheme
+              {/* Abhsihek Bhai batayenge ki iska name kya change krna hai  */}
+            </a>
           </li>
           <li>
-            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS (Foreign Manufacturers Certification Scheme)</a>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              BIS FMCS (Foreign Manufacturers Certification Scheme)
+              {/* Abhsihek Bhai batayenge ki iska name kya change krna hai  */}
+            </a>
           </li>
         </ul>
-
+        {/* ye cheej baad mai Abhishek bhai change krvayenge End  */}
 
         <ManyUsersAlsoRead />
 
@@ -801,4 +818,3 @@ const Services = () => {
     </div>
   );
 };
-

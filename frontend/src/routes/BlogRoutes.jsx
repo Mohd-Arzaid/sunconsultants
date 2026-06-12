@@ -1073,6 +1073,15 @@ const BISCertificationforHeadWoodScrews = lazy(() =>
 const BISCertificationforDrywallScrews = lazy(() =>
   import("@/blogs/BISCertificationforDrywallScrews")
 );
+const BISCertificationforCabinetHingesIs18297 = lazy(() =>
+  import("@/blogs/BISCertificationforCabinetHingesIs18297")
+);
+const BISCertificationforContinuousPianoHingesIs3818 = lazy(() =>
+  import("@/blogs/BISCertificationforContinuousPianoHingesIs3818")
+);
+const BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2 = lazy(() =>
+  import("@/blogs/BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2")
+);
 const BISCertificationforRaisedCountersunkHeadScrews = lazy(() =>
   import("@/blogs/BISCertificationforRaisedCountersunkHeadScrews")
 );
@@ -3751,6 +3760,30 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforDrywallScrews />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cabinet-hinges-is-18297"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCabinetHingesIs18297 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/continuous-piano-hinges-is-3818"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforContinuousPianoHingesIs3818 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2 />
           </Suspense>
         }
       />

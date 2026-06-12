@@ -16,6 +16,34 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 108,
+    color: "#0D9488",
+    title: "BIS Certificate for Continuous Piano hinges - IS 3818:1992",
+    description:
+      "Get BIS Certificate for Continuous Piano hinges under IS 3818:1992. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/continuous-piano-hinges-is-3818",
+    date: "19 May 2026",
+  },
+  {
+    id: 107,
+    color: "#7C3AED",
+    title:
+      "BIS Certificate for Cable Trunking & Ducting Systems - IS 14927 (Part 2):2021",
+    description:
+      "Get BIS Certificate for Cable Trunking & Ducting Systems under IS 14927 (Part 2):2021. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2",
+    date: "9 May 2026",
+  },
+  {
+    id: 106,
+    color: "#0F766E",
+    title: "BIS Certificate for Cabinet Hinges - IS 18297:2023",
+    description:
+      "Get BIS Certificate for Cabinet Hinges under IS 18297:2023. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cabinet-hinges-is-18297",
+    date: "19 May 2026",
+  },
+  {
     id: 105,
     color: "#0284C7",
     title:
