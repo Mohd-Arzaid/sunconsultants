@@ -128,6 +128,16 @@ const ServicesRightSideContentEng = () => {
 
     // BEST AND MOST TRUSTED BIS CONSULTANT PATH
     "/best-and-most-trusted-bis-consultant-india",
+    "/best-and-most-trusted-bis-consultant-france",
+    "/best-and-most-trusted-bis-consultant-germany",
+    "/best-and-most-trusted-bis-consultant-italy",
+    "/best-and-most-trusted-bis-consultant-netherland",
+    "/best-and-most-trusted-bis-consultant-indonesia",
+    "/best-and-most-trusted-bis-consultant-japan",
+    "/best-and-most-trusted-bis-consultant-south-korea",
+    "/best-and-most-trusted-bis-consultant-thailand",
+    "/best-and-most-trusted-bis-consultant-spain",
+    "/best-and-most-trusted-bis-consultant-vietnam",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -1129,6 +1139,26 @@ const ContactFormServicesRightSideContentEng = () => {
     // BEST AND MOST TRUSTED BIS CONSULTANT PATH
     if (path.includes("/best-and-most-trusted-bis-consultant-india"))
       return "Best and most trusted BIS consultant in India – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-france"))
+      return "Best and Most Trusted BIS Certification Consultant in France – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-germany"))
+      return "Best and Most Trusted BIS Certification Consultant in Germany – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-italy"))
+      return "Best and most trusted BIS certification Consultant in Italy – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-netherland"))
+      return "Best and most trusted BIS certification Consultant in Netherland – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-indonesia"))
+      return "Best and most trusted BIS certification Consultant in Indonesia – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-japan"))
+      return "Best and Most Trusted BIS Certification Consultant in Japan – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-south-korea"))
+      return "Best and most trusted BIS certification Consultant in South Korea – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-thailand"))
+      return "Best and most trusted BIS certification Consultant in Thailand – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-spain"))
+      return "Best and most trusted BIS certification Consultant in Spain – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-vietnam"))
+      return "Best and most trusted BIS certification Consultant in Vietnam – Sun Certifications India (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
