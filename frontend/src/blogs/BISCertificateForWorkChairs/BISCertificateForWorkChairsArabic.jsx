@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForWorkChairsArabic = () => {
   return (
     <div className="relative w-full">
@@ -180,7 +186,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    شهادة BIS لكراسي العمل – IS 17631:2022
+                    شهادة BIS لكراسي العمل (IS 17631:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -211,354 +217,344 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          شهادة BIS لكراسي العمل – دليل الامتثال الكامل لـ IS 17631:2022
+          شهادة BIS لكراسي العمل (IS 17631:2022) – دليل شهادة علامة ISI الكامل
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
             title="رخصة BIS لكراسي العمل"
-            alt="شهادة BIS لكراسي العمل - IS 17631:2022 شهادة BIS"
+            alt="شهادة BIS لكراسي العمل - دليل علامة ISI IS 17631:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          أدى الاستخدام المتزايد لمقاعد المكاتب والمهام—سواء في مساحات العمل
-          المؤسسية، أو مراكز العمل المشترك، أو المكاتب المنزلية، أو الإعدادات
-          المؤسسية—إلى جعل السلامة والأداء المريح أمرًا ضروريًا. لضمان تزويد
-          المصنعين بمنتجات مقاعد مستقرة هيكليًا، متينة، وآمنة للمستخدمين، فرضت
-          حكومة الهند شهادة BIS لكراسي العمل بموجب IS 17631:2022.
+          أصبحت كراسي العمل جزءًا أساسيًا من أماكن العمل الحديثة، والمؤسسات
+          التعليمية، والمكاتب الحكومية، ومساحات العمل المشتركة، وبيئات المكاتب
+          المنزلية. مع تزايد تركيز المؤسسات على راحة الموظفين، والإنتاجية،
+          والبيئة المريحة في مكان العمل، والرفاهية المهنية، يستمر الطلب على
+          كراسي العمل عالية الجودة في النمو.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          عادة ما تتحمل كراسي العمل الأحمال المتكررة، وحركة الجسم المستمرة،
-          والإمالة، والدوران، وتعديلات الارتفاع. يمكن أن يؤدي فشل أي ميزة أداء
-          إلى إصابة خطيرة. لهذا السبب أصبح الامتثال لـ IS 17631:2022 – كراسي
-          العمل: متطلبات السلامة إلزاميًا لجميع المصنعين والمستوردين.
+          يمكن أن يؤثر الكرسي المصمم بشكل سيئ سلبًا على الوضعية والراحة
+          والإنتاجية. لهذا السبب، تُعد الجودة والسلامة والمتانة والأداء المريح
+          اعتبارات حاسمة للمصنعين والمشترين ووكالات المشتريات. ولضمان معايير
+          جودة موحدة عبر الصناعة، وضع مكتب المعايير الهندية (BIS) المعيار IS
+          17631:2022، وهو المعيار الهندي المعمول به لكراسي العمل.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يشرح هذا الدليل عملية ترخيص BIS الكاملة، بما في ذلك المعايير،
-          والاختبارات، والرسوم، والتوثيق، والمسؤوليات، والفوائد، والتحديات—مصممة
-          بمحتوى جديد لتجنب التكرار عبر موقعك الإلكتروني.
+          يُطلب من المصنعين المشمولين بالإطار التنظيمي المعمول به الحصول على
+          شهادة BIS واستخدام علامة ISI على المنتجات المتوافقة. تُظهر شهادة BIS
+          أن كرسي العمل قد تم تقييمه وفقًا للمتطلبات المقررة المتعلقة بالسلامة
+          والقوة والاستقرار والمتانة والأداء المريح.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يشرح هذا الدليل الشامل كل ما يحتاج المصنعون والمستوردون وعلامات
+          الأثاث التجارية ومحترفو المشتريات وأصحاب الأعمال إلى معرفته عن شهادة
+          BIS لكراسي العمل بموجب IS 17631:2022.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          فهم شهادة BIS لكراسي العمل
+          نظرة سريعة على شهادة BIS لكراسي العمل
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يشرف مكتب المعايير الهندية (BIS) على جودة وسلامة المنتجات الموردة في
-          السوق الهندي. يجب تقييم أي منتج يندرج تحت معيار هندي مدرج في أمر
-          مراقبة الجودة الإلزامي والحصول على شهادة من BIS قبل البيع.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  البند
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  التفاصيل
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["المنتج", "كراسي العمل"],
+                ["المعيار الهندي المعمول به", "IS 17631:2022"],
+                ["نوع الشهادة", "شهادة منتج BIS"],
+                ["مخطط الشهادة المعمول به", "المخطط I (شهادة علامة ISI)"],
+                ["العلامة المعمول بها", "علامة ISI"],
+                ["السلطة التنظيمية", "مكتب المعايير الهندية (BIS)"],
+                ["الوزارة المعمول بها", "وزارة التجارة والصناعة"],
+                [
+                  "متطلب الامتثال",
+                  "إلزامي بموجب أمر مراقبة الجودة للأثاث (QCO) المعمول به",
+                ],
+                [
+                  "المتقدمون المؤهلون",
+                  "المصنعون الهنود والمصنعون الأجانب ",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "مخطط الشهادة المعمول به" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        المخطط I (شهادة علامة ISI)
+                      </a>
+                    ) : particular === "متطلب الامتثال" ? (
+                      <>
+                        إلزامي بموجب{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-work-chairs"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            أمر مراقبة الجودة للأثاث (QCO) المعمول به
+                          </strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          شهادة BIS – ما تمثله
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          تشير شهادة BIS إلى أن كرسي العمل:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اجتاز اختبارات الأداء والمتانة</li>
-          <li>يلبي مواصفات المواد والبناء</li>
-          <li>آمن للاستخدام اليومي طويل الأمد</li>
-          <li>يتوافق مع الإرشادات المريحة والهيكلية في المعايير الهندية</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يتم إصدار رخصة BIS للمصنعين الذين يستوفون هذه المتطلبات، مما يسمح لهم
-          بوضع علامة ISI.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          المعيار المطبق لكراسي العمل – IS 17631:2022
+          ما هي شهادة BIS لكراسي العمل؟
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          المعيار الحاكم لكراسي المهام والمكاتب هو:
+          شهادة BIS لكراسي العمل هي عملية تقييم امتثال تُجرى بموجب مخطط شهادة
+          منتجات مكتب المعايير الهندية.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17631:2022</strong> – كراسي العمل: متطلبات السلامة
+          الهدف من الشهادة هو التحقق من أن كراسي العمل تتوافق مع المتطلبات
+          المحددة بموجب IS 17631:2022. عند نجاح الشهادة، يُسمح للمصنعين
+          باستخدام علامة ISI على منتجاتهم.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          يركز هذا المعيار على المقاعد المخصصة للاستخدام الممتد في بيئات العمل.
+          تُقيّم عملية الشهادة جوانب مختلفة من الأداء والسلامة لكراسي العمل،
+          بما في ذلك:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المنتجات المشمولة بهذا المعيار
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>كراسي المكاتب المريحة</li>
-          <li>كراسي المهام</li>
-          <li>الكراسي الدوارة</li>
-          <li>كراسي مكاتب العمل</li>
-          <li>كراسي العمل القابلة لتعديل الارتفاع</li>
-          <li>كراسي العمل التنفيذية</li>
-          <li>كراسي العمل بشبكة أو ظهر قماشي</li>
-          <li>الكراسي المجهزة بمساند للأذرع</li>
-          <li>الكراسي مع آليات الإمالة/القفل</li>
+        <ul className={LIST_CLASS}>
+          <li>التصميم المريح</li>
+          <li>السلامة الهيكلية</li>
+          <li>الاستقرار</li>
+          <li>المتانة</li>
+          <li>متطلبات السلامة</li>
+          <li>جودة الصنع</li>
+          <li>أداء المنتج</li>
         </ul>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          توفر علامة ISI تأكيدًا بأن المنتج قد تم تقييمه وفقًا للمعايير الهندية
+          المعترف بها ويلبي متطلبات الجودة المقررة.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          لماذا يعتبر الامتثال لـ IS 17631:2022 أمرًا بالغ الأهمية
+          لماذا تُعد شهادة BIS مهمة لكراسي العمل
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          تختلف كراسي العمل بشكل كبير عن الكراسي متعددة الأغراض لأنها:
+          تُستخدم كراسي العمل لفترات طويلة في المكاتب والمؤسسات التعليمية
+          والمنشآت التجارية ومساحات العمل المنزلية. وبما أن المستخدمين يقضون
+          جزءًا كبيرًا من يومهم جالسين، فإن جودة وأداء هذه الكراسي المريح يؤثر
+          مباشرة على الراحة وكفاءة مكان العمل.
         </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تدعم الحركة المستمرة</li>
-          <li>تستخدم آليات ميكانيكية وتعديل</li>
-          <li>تحمل أحمالًا ديناميكية</li>
-          <li>تتطلب متانة للاستخدام المطول</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          قد تفشل الكراسي المبنية بشكل سيء في:
+          تساعد شهادة BIS في ضمان أن كراسي العمل المعتمدة:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>مفاصل القاعدة</li>
-          <li>آليات الدوران</li>
-          <li>أنظمة رفع الغاز</li>
-          <li>دعم المقعد/الظهر</li>
-          <li>هيكل الأرجل أو العجلات</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يمكن أن يؤدي هذا إلى إصابات في مكان العمل، وتوقف التشغيل، ومشاكل
-          مسؤولية المنتج.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          تضمن شهادة BIS الإلزامية
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تصميم مريح آمن</li>
-          <li>قدرة تحمل موثوقة</li>
-          <li>متانة قوية تحت الاختبار الدوري</li>
-          <li>مقاومة للبلى الميكانيكي</li>
-          <li>الامتثال لمعايير سلامة المستخدم</li>
+        <ul className={LIST_CLASS}>
+          <li>تلبي متطلبات السلامة المقررة</li>
+          <li>توفر أداءً موثوقًا</li>
+          <li>تقدم قوة هيكلية كافية</li>
+          <li>تحافظ على الاستقرار أثناء الاستخدام</li>
+          <li>تدعم المتانة طويلة الأمد</li>
+          <li>تلتزم بمعايير الجودة الهندية</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          وبالتالي، فإن الحصول على رخصة BIS لكراسي العمل أمر غير قابل للتفاوض
-          للمصنعين الهنود والأجانب.
+          بالنسبة للمصنعين، تساعد الشهادة في إثبات جودة المنتج مع دعم الامتثال
+          التنظيمي وقبول السوق.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          نطاق رخصة BIS لكراسي العمل
+          نظرة عامة على IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يغطي هذا المعيار متطلبات كراسي العمل. ينطبق هذا المعيار على كراسي
-          العمل المصنعة/المصنعة بالكامل. كما ينطبق على الوحدات الجاهزة للتجميع؛
-          في هذه الحالة تنطبق متطلبات هذا المعيار على الوحدات المجمعة.
+          IS 17631:2022 هو المعيار الهندي الذي يحدد متطلبات كراسي العمل.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يضع المعيار متطلبات تتعلق بـ:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>السلامة</li>
+          <li>القوة</li>
+          <li>الاستقرار</li>
+          <li>المتانة</li>
+          <li>الاعتبارات المريحة</li>
+          <li>الأداء الوظيفي</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          الهدف هو ضمان أن كراسي العمل قادرة على توفير أداء آمن وموثوق أثناء
+          الاستخدام المطول في بيئات العمل.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>نطاق IS 17631:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          وفقًا للمعيار، يغطي IS 17631:2022 كراسي العمل وينطبق على:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>كراسي العمل المصنعة بالكامل</li>
+          <li>كراسي العمل المجمعة</li>
+          <li>كراسي العمل الجاهزة للتجميع بعد التجميع</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تنطبق متطلبات المعيار على المنتج المجمّع المخصص للاستخدام.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          عملية شهادة BIS خطوة بخطوة لكراسي العمل (IS 17631:2022)
+          أنواع كراسي العمل المشمولة بموجب IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          تتضمن عملية شهادة كراسي العمل مزيجًا من التقييم المخبري، وتدقيق
-          المصنع، والفحص الفني.
+          اعتمادًا على تصميم المنتج والاستخدام المقصود، قد ينطبق المعيار على
+          فئات مختلفة من مقاعد العمل، بما في ذلك:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 1 – تقييم المنتج ورسم الخرائط المعيارية
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          حدد جميع أنواع الكراسي وقم بمحاذاتها مع IS 17631:2022. افهم أي نماذج
-          تشترك في نفس البناء وأيها يتطلب اختبارًا منفصلاً.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 2 – تقديم الطلب عبر الإنترنت
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يقدم المصنع الطلب عبر بوابة Manak Online BIS. المعلومات المطلوبة تشمل:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تفاصيل موقع التصنيع</li>
-          <li>ضوابط المواد الخام</li>
-          <li>المواصفات الفنية</li>
-          <li>قدرات الإنتاج</li>
-          <li>وثائق ملكية العلامة التجارية</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 3 – دفع الرسوم
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يجب دفع الرسوم مقابل:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الطلب</li>
-          <li>المعالجة</li>
-          <li>الاختبار</li>
-          <li>التفتيش</li>
-          <li>العلامة</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 4 – اختبار العينات (متطلبات IS 17631:2022)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          تقوم مختبر معترف به من BIS بتقييم الكرسي مقابل معايير السلامة والأداء
-          المتعددة.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          تشمل اختبارات كرسي العمل
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اختبارات الحمولة الثابتة للمقعد والظهر</li>
-          <li>دورات تحميل المتانة</li>
-          <li>اختبار الدوران/الدوران</li>
-          <li>تحمل آلية الإمالة</li>
-          <li>أداء آلية رفع الغاز</li>
-          <li>قوة العجلات ومقاومة التدحرج</li>
-          <li>استقرار القاعدة واختبار التحميل الزائد</li>
-          <li>قدرة تحميل مسند الذراع</li>
-          <li>اختبارات مقاومة الصدمات</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>كراسي المكاتب —</strong> المقاعد المستخدمة في المكاتب
+            المؤسسية والإدارات الإدارية وبيئات العمل المهنية.
+          </li>
+          <li>
+            <strong>كراسي المهام —</strong> الكراسي المصممة للعمل اليومي على
+            المكتب ومحطات العمل والمهام الجلوسية الروتينية.
+          </li>
+          <li>
+            <strong>كراسي العمل القابلة للتعديل —</strong> الموديلات ذات
+            ميزات تعديل الارتفاع أو الإمالة أو غيرها لتحسين الراحة والبيئة
+            المريحة.
+          </li>
+          <li>
+            <strong>كراسي العمل المؤسسية —</strong> الكراسي الموردة للمدارس
+            والكليات والمكاتب الحكومية والمؤسسات التجارية.
+          </li>
+          <li>
+            <strong>كراسي المكاتب المنزلية —</strong> كراسي العمل المصممة
+            للعمل عن بُعد والعاملين المستقلين وإعدادات المكاتب السكنية.
+          </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يصدر المختبر تقرير اختبار مفصل إلى BIS.
+          راجع تصميم المنتج والآلية والاستخدام المقصود بعناية للتأكد مما إذا
+          كان كرسيك يقع ضمن نطاق IS 17631:2022.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 5 – تدقيق المصنع
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يراجع مفتشو BIS ما يلي في المنشأة:
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            تحقق أيضًا من منتجات الأثاث المشمولة بشهادة BIS الإلزامية —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>شهادة BIS للأثاث</strong>
+          </a>
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>نظام الإنتاج</li>
-          <li>سجلات فحص المواد</li>
-          <li>عمليات ضمان الجودة الداخلية</li>
-          <li>أدوات الاختبار وسجلات المعايرة</li>
-          <li>الامتثال لمخطط الاختبار والتفتيش (STI)</li>
-        </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 6 – منح رخصة BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          بمجرد تأكيد المطابقة، يمنح BIS:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رخصة BIS/شهادة علامة ISI</li>
-          <li>رقم CML فريد</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 7 – الامتثال المستمر
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يجب على المصنعين:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الحفاظ على الفحوصات الداخلية المستمرة</li>
-          <li>اتباع قواعد العلامات</li>
-          <li>التعاون أثناء عمليات التفتيش الرقابية</li>
-          <li>تجديد الترخيص بشكل دوري</li>
-        </ul>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          المستندات المطلوبة لشهادة BIS لكراسي العمل
+          المتطلبات الرئيسية بموجب IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          مجموعة كاملة من المستندات تضمن الموافقة الأسرع.
+          يركز المعيار على عدة خصائص أداء مهمة تساهم في جودة وسلامة كراسي
+          العمل.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          مستندات الأعمال والمصنع
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تسجيل المصنع</li>
-          <li>مخطط التصنيع والتخطيط</li>
-          <li>سير عمل الإنتاج</li>
-          <li>قائمة الآلات</li>
-          <li>قائمة معدات الاختبار</li>
-          <li>شهادات المعايرة</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>التصميم المريح —</strong> يتناول راحة المستخدم ودعم المقعد
+            ومسند الظهر وقابلية التعديل والوضعية الصحيحة لتقليل التعب وتحسين
+            الإنتاجية في مكان العمل.
+          </li>
+          <li>
+            <strong>متطلبات القوة —</strong> يجب أن تتحمل الإطار والوصلات
+            والهياكل الداعمة الاستخدام العادي دون فشل أو فقدان السلامة
+            الهيكلية.
+          </li>
+          <li>
+            <strong>متطلبات الاستقرار —</strong> يجب أن تقاوم الكراسي الانقلاب
+            وتظل مستقرة أثناء الاستخدام الجلوسي المنتظم والحركة.
+          </li>
+          <li>
+            <strong>متطلبات المتانة —</strong> يجب أن يؤدي المنتج باستمرار بعد
+            الاستخدام اليومي المطول والمتكرر طوال عمر الخدمة المقصود.
+          </li>
+          <li>
+            <strong>متطلبات السلامة —</strong> يجب أن يقلل التصميم والبناء من
+            المخاطر القابلة للتجنب الناتجة عن عدم الاستقرار أو العيوب أو
+            البناء غير الآمن.
+          </li>
+          <li>
+            <strong>جودة المواد —</strong> يجب أن تلبي المكونات والتشطيبات
+            معايير الجودة التي تدعم الأداء الآمن والمتين والموثوق.
+          </li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المستندات الفنية
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رسومات هندسية للكرسي</li>
-          <li>مواصفات الآلية</li>
-          <li>أوراق بيانات المواد</li>
-          <li>قائمة المواد</li>
-          <li>تعليمات التجميع</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المستندات القانونية
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>إثبات هوية الموقع المصرح</li>
-          <li>خطابات تفويض العلامة التجارية</li>
-          <li>شهادة العلامة التجارية</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          مستندات BIS المحددة
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>نموذج الطلب</li>
-          <li>التعهدات</li>
-          <li>نموذج طلب الاختبار</li>
-          <li>عينات الملصقات</li>
-        </ul>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          متطلبات الاختبار وفقًا لـ IS 17631:2022
+          متطلبات الاختبار لشهادة BIS لكراسي العمل
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          تخضع كراسي العمل لاختبارات أكثر تعقيدًا من الكراسي العامة بسبب الأجزاء
-          المتحركة.
+          قبل منح الشهادة، يتم تقييم عينات المنتج من خلال الاختبار في مختبر
+          معترف به. يساعد الاختبار في التحقق من الامتثال للمتطلبات المحددة
+          بموجب IS 17631:2022.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          الاختبارات الرئيسية التي يتم إجراؤها
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>الاختبارات الرئيسية التي يتم إجراؤها</h3>
 
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
@@ -571,218 +567,315 @@ const MainContentLeft = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  التصميم والإتقان
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  الانقلاب الحافة الأمامية
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  الانقلاب للأمام
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  الانقلاب للأمام للكراسي مع مسند القدم
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  الانقلاب الجانبي للكراسي بدون مساند الأذرع
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  الانقلاب الجانبي للكراسي مع مساند الأذرع
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  الانقلاب للخلف للكراسي بدون مسند الظهر
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الحمولة الثابتة لحافة المقعد الأمامية
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الحمولة الثابتة المشتركة للمقعد والظهر
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الحمولة الثابتة لمسند الذراع للأسفل — المركزي
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الحمولة الثابتة لمسند الذراع للأسفل — الأمامي
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الحمولة الثابتة الجانبية لمسند الذراع
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الحمولة الثابتة لمسند القدم
-                </TableCell>
-              </TableRow>
+              {[
+                ["4", "التصميم والإتقان"],
+                ["7.3.1", "الانقلاب الحافة الأمامية"],
+                ["7.3.2", "الانقلاب للأمام"],
+                [
+                  "7.3.3",
+                  "الانقلاب للأمام للكراسي مع مسند القدم",
+                ],
+                [
+                  "7.3.4",
+                  "الانقلاب الجانبي للكراسي بدون مساند الأذرع",
+                ],
+                [
+                  "7.3.5",
+                  "الانقلاب الجانبي للكراسي مع مساند الأذرع",
+                ],
+                [
+                  "7.3.6",
+                  "الانقلاب للخلف للكراسي بدون مسند الظهر",
+                ],
+                ["7.4.1", "اختبار الحمولة الثابتة لحافة المقعد الأمامية"],
+                ["7.4.2", "اختبار الحمولة الثابتة المشتركة للمقعد والظهر"],
+                ["7.4.3", "اختبار الحمولة الثابتة لمسند الذراع للأسفل — المركزي"],
+                ["7.4.4", "اختبار الحمولة الثابتة لمسند الذراع للأسفل — الأمامي"],
+                ["7.4.5", "اختبار الحمولة الثابتة الجانبية لمسند الذراع"],
+                ["7.4.6", "اختبار الحمولة الثابتة لمسند القدم"],
+              ].map(([clause, requirement], index) => (
+                <TableRow
+                  key={clause}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {clause}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {requirement}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          تحاكي هذه الاختبارات أشهر أو سنوات من الاستخدام المنتظم في غضون أيام
-          قليلة.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          عملية شهادة BIS لكراسي العمل
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين الذين يسعون للحصول على شهادة BIS بموجب IS 17631:2022
+          إكمال عملية شهادة منظمة.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          التحديات الشائعة في شهادة BIS لكراسي العمل
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            <strong>✔ 1. الفشل في اختبار الميكانيكية/الإمالة</strong> – غالبًا
-            ما يكون بسبب آليات ضعيفة أو أجهزة منخفضة الجودة.
+            <strong>الخطوة 1: تقييم انطباق المنتج —</strong> تأكيد ما إذا كان
+            كرسي العمل يقع ضمن IS 17631:2022 وأمر مراقبة الجودة للأثاث المعمول
+            به قبل بدء الشهادة.
           </li>
           <li>
-            <strong>✔ 2. عدم امتثال آلية رفع الغاز</strong> – يجب أن تلبي رافعات
-            الغاز معايير الضغط والسلامة الصارمة.
+            <strong>الخطوة 2: إعداد المستندات —</strong> تجميع السجلات
+            الفنية والتصنيعية ومراقبة الجودة والقانونية المطلوبة لمراجعة BIS.
           </li>
           <li>
-            <strong>✔ 3. البنية التحتية للاختبار غير كافية</strong> – يتطلب
-            اختبار كرسي العمل منصات متخصصة.
+            <strong>الخطوة 3: اختبار المنتج —</strong> تقديم العينات إلى
+            مختبر معترف به من BIS للتقييم وفقًا لـ IS 17631:2022.
           </li>
           <li>
-            <strong>✔ 4. تجميع المنتج غير الصحيح</strong> – آليات مختلفة =
-            اختبار منفصل.
+            <strong>الخطوة 4: تقديم الطلب —</strong> تقديم طلب BIS مع
+            تقارير الاختبار وتفاصيل المصنع ومستندات الامتثال الداعمة.
           </li>
           <li>
-            <strong>✔ 5. عدم الامتثال لـ STI</strong> – يمكن أن تؤخر أخطاء STI
-            إصدار الترخيص.
+            <strong>الخطوة 5: تفتيش المصنع —</strong> يقيّم BIS أنظمة
+            الإنتاج وإجراءات مراقبة الجودة وقابلية التتبع في منشأة التصنيع.
           </li>
           <li>
-            <strong>✔ 6. عدم تطابق المستندات</strong> – يجب أن يطابق اسم العلامة
-            التجارية واسم الطراز طلب BIS تمامًا.
+            <strong>الخطوة 6: المراجعة الفنية —</strong> يقيّم BIS الطلب
+            ونتائج المختبر ونتائج التفتيش قبل الموافقة النهائية.
+          </li>
+          <li>
+            <strong>الخطوة 7: منح رخصة BIS —</strong> عند نجاح الامتثال، يصدر
+            BIS الرخصة ويُصرّح باستخدام علامة ISI على كراسي العمل المعتمدة.
           </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          مزايا شهادة BIS لكراسي العمل
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>يسهل المبيعات القانونية في جميع أنحاء الهند</li>
-          <li>يعزز ثقة العملاء وسمعة العلامة التجارية</li>
-          <li>يضمن المتانة طويلة الأمد</li>
-          <li>يقلل من مطالبات الضمان والأعطال</li>
-          <li>يحمي من العقوبات التنظيمية</li>
-          <li>يمكن الإدراج في منصات التجارة الإلكترونية</li>
-          <li>إلزامي للمناقصات الحكومية والتوريدات المؤسسية</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          العقوبات لبيع كراسي العمل بدون شهادة BIS
+          شهادة BIS للمصنعين الهنود
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          يمكن أن يؤدي عدم الامتثال إلى:
+          يتقدم المصنعون الهنود عادةً عبر مسار الشهادة المحلية. تتضمن العملية
+          عمومًا:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>عقوبات مالية ثقيلة</li>
-          <li>مصادرة المخزون</li>
-          <li>أوامر إغلاق الإنتاج</li>
-          <li>حظر الاستيراد</li>
-          <li>الملاحقة الجنائية</li>
-          <li>إلغاء ترخيص الأعمال</li>
+        <ul className={LIST_CLASS}>
+          <li>اختبار المنتج في مختبر معترف به من BIS</li>
+          <li>مراجعة المستندات وتقديم طلب BIS</li>
+          <li>تقييم المصنع والمراجعة الفنية من BIS</li>
+          <li>منح رخصة BIS والتفويض بعلامة ISI</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يتم تنفيذ صارم بموجب قانون BIS لعام 2016.
+          بعد الشهادة، يجب على المصنعين الحفاظ على الامتثال المستمر لمتطلبات
+          المراقبة والعلامات والجودة لـ BIS.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          من يجب أن يحصل على شهادة BIS لكراسي العمل؟
+          شهادة BIS للمصنعين الأجانب
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">إلزامي لـ:</p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين الأجانب الذين يعتزمون تصدير كراسي العمل إلى الهند
+          أيضًا الحصول على شهادة BIS قبل توريد المنتجات المشمولة بمتطلبات
+          الشهادة الإلزامية.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>المصنعين الهنود</li>
-          <li>المصنعين الأجانب الذين يصدرون إلى الهند</li>
-          <li>أصحاب العلامات التجارية</li>
-          <li>المستوردين</li>
-          <li>موردي OEM/ODM</li>
-          <li>موزعي المستودعات</li>
-          <li>علامات الأثاث التجارية والإنترنت</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تتضمن العملية عمومًا:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>تعيين ممثل هندي معتمد (AIR)</li>
+          <li>اختبار المنتج في الخارج وتقييم المصنع</li>
+          <li>مراجعة طلب BIS والموافقة على الشهادة</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يتطلب كل مصنع رخصة BIS فريدة.
+          يضمن ذلك أن المنتجات المستوردة تلبي نفس متطلبات الجودة والسلامة
+          المعمول بها للمصنعين المحليين.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          المستندات المطلوبة لشهادة BIS لكراسي العمل
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تُعد الوثائق جزءًا حاسمًا من عملية شهادة BIS لكراسي العمل. قد
+          تختلف المتطلبات بناءً على ما إذا كان مقدم الطلب مصنعًا هنديًا أو
+          مصنعًا أجنبيًا أو مستوردًا، وعلى مخطط الشهادة المتبع. تُعد السجلات
+          غير المكتملة أو غير المتسقة من أكثر أسباب تأخير الطلبات شيوعًا.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تُطلب المستندات التالية عادةً أثناء شهادة BIS لكراسي العمل بموجب IS
+          17631:2022:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>مستندات الأعمال —</strong> شهادة تسجيل الشركة، رخصة
+            التصنيع (إن وجدت)، تسجيل GST، إثبات عنوان العمل، وتفاصيل
+            الموقّع المخول مع إثبات الهوية والعنوان.
+          </li>
+          <li>
+            <strong>مستندات التصنيع —</strong> مخطط تخطيط المصنع، مخطط
+            انسياب عملية التصنيع، قائمة آلات الإنتاج ومعدات الاختبار، وتفاصيل
+            البنية التحتية للإنتاج والطاقة المثبتة.
+          </li>
+          <li>
+            <strong>مستندات المنتج —</strong> مواصفات المنتج، الرسومات
+            الهندسية أو الفنية، دليل المنتج أو قائمة الموديلات، قائمة
+            المواد (BOM)، وتفاصيل المواد الخام والمكونات والأجزاء الحرجة
+            المستخدمة في كرسي العمل.
+          </li>
+          <li>
+            <strong>مستندات مراقبة الجودة —</strong> إجراءات مراقبة الجودة
+            المكتوبة، سجلات فحص المواد الواردة، تقارير فحص العمليات الجارية
+            والمنتجات النهائية، طرق الاختبار الداخلية، وشهادات المعايرة
+            لمعدات القياس والاختبار.
+          </li>
+          <li>
+            <strong>مستندات الشهادة —</strong> تقارير الاختبار من مختبر
+            معترف به من BIS، نماذج طلب BIS المعبأة، الإقرارات والتعهدات،
+            عينات الملصقات أو العلامات، وأي مستندات إضافية يحددها BIS لمسار
+            الشهادة المحدد.
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب أن تكون جميع المستندات دقيقة وكاملة ومتسقة مع تفاصيل المنتج
+          المقدمة في طلب BIS. يُنصح المصنعون بمراجعة متطلبات الوثائق بعناية
+          قبل التقديم لتجنب التأخير غير الضروري في معالجة الشهادة.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          فوائد شهادة BIS لكراسي العمل
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>الامتثال التنظيمي —</strong> الوفاء بالمعايير الهندية
+            الإلزامية ومتطلبات QCO للتصنيع والبيع القانوني.
+          </li>
+          <li>
+            <strong>الوصول القانوني للسوق —</strong> توريد كراسي العمل
+            المعتمدة في الهند دون مخاطر تنظيمية لفئات المنتجات المشمولة.
+          </li>
+          <li>
+            <strong>تعزيز المصداقية —</strong> تشير علامة ISI إلى جودة
+            وسلامة وامتثال تم التحقق منها وفقًا لـ IS 17631:2022.
+          </li>
+          <li>
+            <strong>ثقة العملاء —</strong> يثق المشترون المؤسسيون والمؤسسات
+            والمستخدمون النهائيون بالمنتجات المختبرة وفقًا للمعايير الوطنية.
+          </li>
+          <li>
+            <strong>مشتريات أفضل —</strong> يحسّن الأهلية في المناقصات
+            الحكومية والمؤسسية والتجارية ذات الحجم الكبير.
+          </li>
+          <li>
+            <strong>سمعة علامة تجارية أقوى —</strong> يُظهر الالتزام بالجودة
+            والبيئة المريحة وموثوقية المنتج على المدى الطويل.
+          </li>
+          <li>
+            <strong>تحسين مراقبة الجودة —</strong> يشجع أنظمة مراقبة جودة
+            منظمة وقابلية التتبع ومعايير إنتاج متسقة.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          التحديات الشائعة أثناء شهادة BIS
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>التفسير الفني —</strong> قد يكون ربط بنود IS 17631:2022
+            بتصاميم وآليات ومتغيرات كراسي محددة معقدًا.
+          </li>
+          <li>
+            <strong>فشل الاختبارات —</strong> غالبًا ما تؤدي الإطارات الضعيفة
+            أو عدم الاستقرار أو مشاكل الآلية إلى رفض اختبارات الانقلاب أو
+            الحمولة.
+          </li>
+          <li>
+            <strong>فجوات في المستندات —</strong> غالبًا ما تؤخر الرسومات
+            غير المتطابقة أو سجلات مراقبة الجودة غير المكتملة أو الإقرارات
+            المفقودة الموافقة.
+          </li>
+          <li>
+            <strong>امتثال المصنع —</strong> قد تحتاج ضوابط الإنتاج
+            وقابلية التتبع والاختبار الداخلي إلى ترقية قبل منح الرخصة.
+          </li>
+          <li>
+            <strong>التنسيق التنظيمي —</strong> يستغرق مواءمة اختبار المختبر
+            وتفتيشات BIS ومتابعة الاستفسارات وقتًا دون دعم خبير.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          لماذا تختار Sun Certifications India؟
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India هي شركة استشارات امتثال تنظيمي تساعد
+          المصنعين والمستوردين والمصدرين والشركات في الحصول على شهادات
+          وموافقات مختلفة مطلوبة للسوق الهندي.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يقدم فريقنا مساعدة شاملة لشهادة BIS لكراسي العمل بموجب IS 17631:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>تشمل خدماتنا</h3>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>تقييم انطباق المنتج —</strong> نؤكد ما إذا كانت كراسي
+            العمل الخاصة بك تقع ضمن IS 17631:2022 وأمر مراقبة الجودة المعمول
+            به.
+          </li>
+          <li>
+            <strong>استشارات امتثال BIS —</strong> إرشادات خبراء حول مسارات
+            الشهادة والالتزامات ومتطلبات المعيار.
+          </li>
+          <li>
+            <strong>المساعدة في المستندات —</strong> إعداد ومراجعة وتنظيم
+            جميع سجلات طلب BIS والمصنع.
+          </li>
+          <li>
+            <strong>تنسيق الاختبار —</strong> دعم شامل لتقديم العينات
+            والاختبار في المختبرات المعترف بها.
+          </li>
+          <li>
+            <strong>دعم تفتيش المصنع —</strong> فحوصات الجاهزية لتقييم
+            المصنع من BIS وتقييمات الامتثال.
+          </li>
+          <li>
+            <strong>إدارة الطلب —</strong> التعامل مع تقديمات BIS والمتابعات
+            والتواصل التنظيمي نيابةً عنك.
+          </li>
+          <li>
+            <strong>دعم ما بعد الشهادة —</strong> مساعدة مستمرة في المراقبة
+            وقواعد العلامات ومتطلبات صيانة الرخصة.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -790,14 +883,29 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          تعد شهادة BIS لكراسي العمل بموجب IS 17631:2022 أمرًا بالغ الأهمية
-          لضمان منتجات مقاعد آمنة ومتينة ومريحة في الهند. تعزز الشهادة الإلزامية
-          ثقة العملاء، وتقلل من مخاطر مسؤولية المنتج، وتضمن الامتثال لمعايير
-          الجودة الوطنية. مع الدعم المهني، تصبح رحلة الشهادة—من الاختبار إلى
-          التفتيش إلى الترخيص—فعالة وقابلة للتنبؤ.
+          تلعب شهادة BIS لكراسي العمل بموجب IS 17631:2022 دورًا مهمًا في
+          ضمان الجودة والسلامة والمتانة والاستقرار والأداء المريح في منتجات
+          مقاعد العمل.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          من خلال الحصول على شهادة BIS واستخدام علامة ISI، يمكن للمصنعين
+          إثبات الامتثال للمعايير الهندية، وتعزيز ثقة العملاء، وتحسين
+          مصداقية المنتج، ودعم نمو الأعمال على المدى الطويل.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          سواء كنت مصنعًا هنديًا أو مصنعًا في الخارج يسعى للوصول إلى السوق
+          الهندي، فإن فهم متطلبات IS 17631:2022 خطوة أساسية نحو الامتثال
+          التنظيمي والنجاح في السوق.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          إذا كنت تخطط للحصول على شهادة BIS لكراسي العمل بموجب IS 17631:2022،
+          يمكن لـ Sun Certifications India تبسيط العملية من خلال الإرشاد
+          التنظيمي الخبير والدعم الشامل للامتثال.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -807,82 +915,93 @@ const MainContentLeft = () => {
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. ما هي الكراسي التي تندرج تحت IS 17631:2022؟</strong>
+              <strong>1. ما هي شهادة BIS لكراسي العمل؟</strong>
               <br />
-              أي كرسي مصمم لبيئات العمل، بما في ذلك كراسي المكاتب المريحة،
-              وكراسي المهام، والكراسي الدوارة، والكراسي القابلة للتعديل.
+              تؤكد شهادة BIS أن كراسي العمل تتوافق مع متطلبات IS 17631:2022
+              ومتطلبات الشهادة المعمول بها.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. هل شهادة BIS إلزامية لكراسي العمل؟</strong>
+              <strong>2. ما هو IS 17631:2022؟</strong>
               <br />
-              نعم. شهادة BIS إلزامية قبل تصنيع أو بيع أو استيراد كراسي العمل في
-              الهند.
+              IS 17631:2022 هو المعيار الهندي الذي يحدد متطلبات كراسي العمل،
+              بما في ذلك السلامة والقوة والاستقرار والمتانة والاعتبارات
+              المريحة.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>3. هل شهادة BIS إلزامية لكراسي العمل؟</strong>
+              <br />
+              يُطلب من كراسي العمل المشمولة بالإطار التنظيمي المعمول به
+              الامتثال لمتطلبات شهادة BIS.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. ما هي علامة ISI؟</strong>
+              <br />
+              علامة ISI هي علامة الشهادة القياسية الصادرة بموجب مخطط شهادة
+              منتجات BIS.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. من يمكنه التقدم للحصول على شهادة BIS؟</strong>
+              <br />
+              يمكن للمصنعين الهنود والمصنعين الأجانب التقدم.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>6. هل تتطلب شهادة BIS اختبار المنتج؟</strong>
+              <br />
+              نعم. يُعد اختبار المنتج جزءًا مهمًا من عملية الشهادة.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                3. ما الذي يجعل اختبار كرسي العمل مختلفًا عن اختبار الكرسي
-                العام؟
+                7. هل تتطلب كراسي العمل المستوردة شهادة BIS؟
               </strong>
               <br />
-              تستخدم كراسي العمل آليات مثل الدوران، ورفع الغاز، وأنظمة الإمالة،
-              والعجلات—مما يتطلب اختبارات ميكانيكية ومتانة متقدمة.
+              يجب أن تتوافق المنتجات المشمولة بمتطلبات الشهادة الإلزامية مع
+              لوائح BIS المعمول بها قبل توريدها في الهند.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. كم تستغرق شهادة BIS؟</strong>
+              <strong>8. ما الاختبارات التي تُجرى بموجب IS 17631:2022؟</strong>
               <br />
-              عادة 30-45 يومًا للمصنع الهندي وحوالي 120 يومًا للمصنعين الأجانب،
-              اعتمادًا على الاختبارات والتوثيق.
+              يتضمن المعيار تقييمات مثل تقييم التصميم والإتقان، والتحقق
+              من الأبعاد، واختبار الاستقرار، واختبار الحمولة الثابتة.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. هل يمكن للمصنعين الأجانب التقديم؟</strong>
+              <strong>9. لماذا يُعد التصميم المريح مهمًا لكراسي العمل؟</strong>
               <br />
-              نعم، من خلال FMCS (مخطط شهادة المصنعين الأجانب).
+              يساعد التصميم المريح في تحسين راحة المستخدم ويدعم الوضعية
+              الصحيحة ويساهم في تجربة عمل أفضل.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. ماذا لو فشل الكرسي في اختبار BIS؟</strong>
+              <strong>10. كيف يمكن لـ Sun Certifications India المساعدة؟</strong>
               <br />
-              يجب إعادة تصميمه وتصحيحه وإعادة اختباره حتى يلبي IS 17631:2022.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. ما هي المستندات المطلوبة لطلب BIS؟</strong>
-              <br />
-              تفاصيل المصنع، رسومات المنتج، قائمة الآلات، مستندات مراقبة الجودة،
-              ملكية العلامة التجارية، والأوراق القانونية.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. هل تتطلب جميع نماذج الكراسي اختبارًا منفصلاً؟</strong>
-              <br />
-              إذا اختلفت النماذج في التصميم أو الآلية أو الهيكل، فقد يكون
-              الاختبار المنفصل مطلوبًا.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. هل وضع علامة ISI إلزامي بعد الموافقة؟</strong>
-              <br />
-              نعم، يجب أن تظهر علامة ISI على المنتج والملصق والتغليف.
+              تقدم Sun Certifications India المساعدة في تقييم الانطباق
+              والمستندات وتنسيق الاختبار والاستعداد للتفتيش وإدارة الطلب
+              ودعم الامتثال.
             </p>
           </div>
         </div>
@@ -899,6 +1018,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          موارد ذات صلة
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline"> شهادة ISI</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">شهادة BIS للمصنع الأجنبي</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadArabic />
 

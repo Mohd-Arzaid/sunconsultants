@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForWorkChairsSpanish = () => {
   return (
     <div className="relative w-full">
@@ -182,7 +188,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Certificado BIS para Sillas de Trabajo – IS 17631:2022
+                    Certificación BIS para Sillas de Trabajo (IS 17631:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -213,374 +219,383 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Certificado BIS para Sillas de Trabajo – Guía Completa de Cumplimiento
-          para IS 17631:2022
+          Certificación BIS para Sillas de Trabajo (IS 17631:2022) – Guía
+          Completa de Certificación de Marca ISI
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
             title="Licencia BIS para Sillas de Trabajo"
-            alt="Certificado BIS para Sillas de Trabajo - IS 17631:2022 Certificación BIS"
+            alt="Certificación BIS para Sillas de Trabajo - Guía de Marca ISI IS 17631:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          El uso creciente de asientos de oficina y trabajo, ya sea en espacios
-          corporativos, centros de coworking, oficinas en casa o configuraciones
-          institucionales, ha hecho esencial el rendimiento de seguridad y
-          ergonomía. Para asegurar que los fabricantes suministren productos de
-          asientos estructuralmente estables, duraderos y seguros para el
-          usuario, el Gobierno de India ha ordenado la Certificación BIS para
-          Sillas de Trabajo bajo IS 17631:2022.
+          Las sillas de trabajo se han convertido en una parte esencial de los
+          entornos laborales modernos, instituciones educativas, oficinas
+          gubernamentales, espacios de coworking y oficinas en casa. A medida que
+          las organizaciones ponen mayor énfasis en la comodidad de los empleados,
+          la productividad, la ergonomía en el lugar de trabajo y el bienestar
+          ocupacional, la demanda de sillas de trabajo de alta calidad continúa
+          creciendo.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Las sillas de trabajo típicamente soportan cargas repetitivas,
-          movimiento corporal continuo, inclinación, giro y ajustes de altura.
-          Una falla en cualquier característica de rendimiento puede llevar a
-          lesiones graves. Por esto, el cumplimiento con IS 17631:2022 – Sillas
-          de Trabajo: Requisitos de Seguridad es ahora obligatorio para todos
-          los fabricantes e importadores.
+          Una silla mal diseñada puede afectar negativamente la postura, la
+          comodidad y la productividad. Por esta razón, la calidad, la seguridad,
+          la durabilidad y el rendimiento ergonómico son consideraciones críticas
+          para fabricantes, compradores y agencias de adquisición. Para garantizar
+          estándares de calidad uniformes en la industria, la Oficina de Normas de
+          India (BIS) ha establecido IS 17631:2022, la Norma India aplicable a las
+          sillas de trabajo.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Esta guía explica el proceso completo de licenciamiento BIS,
-          incluyendo estándares, pruebas, tarifas, documentación,
-          responsabilidades, beneficios y desafíos, elaborada con contenido
-          fresco para evitar duplicación en su sitio web.
+          Los fabricantes cubiertos bajo el marco regulatorio aplicable deben
+          obtener la Certificación BIS y usar la Marca ISI en productos conformes.
+          La Certificación BIS demuestra que la silla de trabajo ha sido
+          evaluada según los requisitos prescritos relacionados con la seguridad,
+          la resistencia, la estabilidad, la durabilidad y el rendimiento
+          ergonómico.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Esta guía completa explica todo lo que fabricantes, importadores,
+          marcas de muebles, profesionales de adquisiciones y propietarios de
+          negocios necesitan saber sobre la Certificación BIS para Sillas de
+          Trabajo bajo IS 17631:2022.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Comprensión de la Certificación BIS para Sillas de Trabajo
+          Resumen Rápido de la Certificación BIS para Sillas de Trabajo
+        </h2>
+
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Particular
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Detalles
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Producto", "Sillas de Trabajo"],
+                ["Norma India Aplicable", "IS 17631:2022"],
+                ["Tipo de Certificación", "Certificación de Producto BIS"],
+                [
+                  "Esquema de Certificación Aplicable",
+                  "Esquema-I (Certificación de Marca ISI)",
+                ],
+                ["Marca Aplicable", "Marca ISI"],
+                [
+                  "Autoridad Regulatoria",
+                  "Oficina de Normas de India (BIS)",
+                ],
+                ["Ministerio Aplicable", "Ministerio de Comercio e Industria"],
+                [
+                  "Requisito de Cumplimiento",
+                  "Obligatorio bajo la QCO de Muebles aplicable (Orden de Control de Calidad)",
+                ],
+                [
+                  "Solicitantes Elegibles",
+                  "Fabricantes Indios y Fabricantes Extranjeros ",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Esquema de Certificación Aplicable" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Esquema-I (Certificación de Marca ISI)
+                      </a>
+                    ) : particular === "Requisito de Cumplimiento" ? (
+                      <>
+                        Obligatorio bajo la{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-work-chairs"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            QCO de Muebles (Orden de Control de Calidad)
+                          </strong>
+                        </a>{" "}
+                        aplicable
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ¿Qué es la Certificación BIS para Sillas de Trabajo?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          La Oficina de Normas de India (BIS) supervisa la calidad y seguridad
-          de los productos suministrados en el mercado indio. Cualquier producto
-          que caiga bajo una Norma India listada en una Orden de Control de
-          Calidad obligatoria debe ser evaluado y certificado por BIS antes de
-          la venta.
+          La Certificación BIS para Sillas de Trabajo es un proceso de evaluación
+          de conformidad realizado bajo el Esquema de Certificación de Productos
+          de la Oficina de Normas de India.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Certificado BIS – Lo que Representa
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El propósito de la certificación es verificar que las sillas de trabajo
+          cumplan con los requisitos especificados bajo IS 17631:2022. Tras una
+          certificación exitosa, los fabricantes pueden usar la Marca ISI en sus
+          productos.
+        </p>
+
         <p className="text-gray-600 text-base font-geist mb-3">
-          Un Certificado BIS indica que una silla de trabajo:
+          El proceso de certificación evalúa varios aspectos de rendimiento y
+          seguridad de las sillas de trabajo, incluyendo:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ha pasado las pruebas de rendimiento y durabilidad</li>
-          <li>Cumple con las especificaciones de material y construcción</li>
-          <li>Es segura para uso diario a largo plazo</li>
+        <ul className={LIST_CLASS}>
+          <li>Diseño ergonómico</li>
+          <li>Integridad estructural</li>
+          <li>Estabilidad</li>
+          <li>Durabilidad</li>
+          <li>Requisitos de seguridad</li>
+          <li>Calidad de fabricación</li>
+          <li>Rendimiento del producto</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La Marca ISI proporciona la garantía de que el producto ha sido
+          evaluado según las normas indias reconocidas y cumple con los requisitos
+          de calidad prescritos.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Por Qué es Importante la Certificación BIS para Sillas de Trabajo
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Las sillas de trabajo se utilizan durante períodos prolongados en
+          oficinas, instituciones educativas, establecimientos comerciales y
+          espacios de trabajo en casa. Dado que los usuarios pasan una parte
+          significativa del día sentados, la calidad y el rendimiento ergonómico
+          de estas sillas afectan directamente la comodidad y la eficiencia en el
+          lugar de trabajo.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La Certificación BIS ayuda a garantizar que las sillas de trabajo
+          certificadas:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Cumplan con los requisitos de seguridad prescritos</li>
+          <li>Ofrezcan un rendimiento confiable</li>
+          <li>Proporcionen resistencia estructural adecuada</li>
+          <li>Mantengan la estabilidad durante el uso</li>
+          <li>Soporten la durabilidad a largo plazo</li>
+          <li>Cumplan con los estándares de calidad indios</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Para los fabricantes, la certificación ayuda a demostrar la calidad del
+          producto mientras apoya el cumplimiento regulatorio y la aceptación en el
+          mercado.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Resumen de IS 17631:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17631:2022 es la Norma India que especifica los requisitos para las
+          sillas de trabajo.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norma establece requisitos relacionados con:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Seguridad</li>
+          <li>Resistencia</li>
+          <li>Estabilidad</li>
+          <li>Durabilidad</li>
+          <li>Consideraciones ergonómicas</li>
+          <li>Rendimiento funcional</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El objetivo es garantizar que las sillas de trabajo sean capaces de
+          proporcionar un rendimiento seguro y confiable durante el uso prolongado
+          en entornos laborales.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1">
+          Alcance de IS 17631:2022
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Según la norma, IS 17631:2022 cubre las sillas de trabajo y se aplica a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Sillas de trabajo completamente fabricadas</li>
+          <li>Sillas de trabajo fabricadas</li>
+          <li>Sillas de trabajo listas para ensamblar después del ensamblaje</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los requisitos de la norma se aplican al producto ensamblado destinado
+          al uso.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tipos de Sillas de Trabajo Cubiertas bajo IS 17631:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dependiendo del diseño del producto y la aplicación prevista, la norma
+          puede aplicarse a varias categorías de mobiliario de asientos para el
+          lugar de trabajo, incluyendo:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            Cumple con las pautas ergonómicas y estructurales en las Normas
-            Indias
+            <strong>Sillas de Trabajo de Oficina —</strong> Asientos utilizados en
+            oficinas corporativas, departamentos administrativos y entornos
+            profesionales de trabajo.
+          </li>
+          <li>
+            <strong>Sillas de Tarea —</strong> Sillas construidas para el trabajo
+            diario en escritorio, estaciones de trabajo y tareas rutinarias
+            sentadas.
+          </li>
+          <li>
+            <strong>Sillas de Trabajo Ajustables —</strong> Modelos con altura,
+            inclinación u otras características ajustables para mejorar la comodidad
+            y la ergonomía.
+          </li>
+          <li>
+            <strong>Sillas de Trabajo Institucionales —</strong> Sillas
+            suministradas a escuelas, colegios, oficinas gubernamentales e
+            instituciones comerciales.
+          </li>
+          <li>
+            <strong>Sillas de Oficina en Casa —</strong> Sillas de trabajo
+            diseñadas para trabajo remoto, freelancers y configuraciones de
+            oficina residencial.
           </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Los fabricantes que cumplen con estos requisitos reciben una Licencia
-          BIS que les permite colocar la Marca ISI.
+          Revise cuidadosamente el diseño del producto, el mecanismo y el uso
+          previsto para confirmar si su silla entra dentro del alcance de IS
+          17631:2022.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            También consulte los Productos de Muebles Cubiertos bajo la
+            Certificación BIS Obligatoria —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Certificación BIS para muebles</strong>
+          </a>
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Estándar Aplicable para Sillas de Trabajo – IS 17631:2022
+          Requisitos Clave bajo IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          El estándar que rige para sillas de trabajo y oficina es:
+          La norma se centra en varias características de rendimiento importantes
+          que contribuyen a la calidad y seguridad de las sillas de trabajo.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17631:2022</strong> – Sillas de Trabajo: Requisitos de
-          Seguridad
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Este estándar se enfoca en asientos destinados para uso extendido en
-          entornos de trabajo.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Productos Cubiertos Bajo Este Estándar
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sillas ergonómicas de oficina</li>
-          <li>Sillas de trabajo</li>
-          <li>Sillas giratorias</li>
-          <li>Sillas de escritorio de trabajo</li>
-          <li>Sillas de trabajo con altura ajustable</li>
-          <li>Sillas ejecutivas de trabajo</li>
-          <li>Sillas de trabajo con respaldo de malla o tela</li>
-          <li>Sillas equipadas con reposabrazos</li>
-          <li>Sillas con mecanismos de inclinación/bloqueo</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Diseño Ergonómico —</strong> Aborda la comodidad del usuario,
+            el soporte del asiento y respaldo, la ajustabilidad y la postura
+            adecuada para reducir la fatiga y mejorar la productividad en el
+            lugar de trabajo.
+          </li>
+          <li>
+            <strong>Requisitos de Resistencia —</strong> El marco, las uniones y
+            las estructuras de soporte deben soportar el uso normal sin fallas o
+            pérdida de integridad.
+          </li>
+          <li>
+            <strong>Requisitos de Estabilidad —</strong> Las sillas deben resistir
+            el vuelco y permanecer estables durante el uso sentado regular y el
+            movimiento.
+          </li>
+          <li>
+            <strong>Requisitos de Durabilidad —</strong> Los productos deben
+            funcionar de manera consistente después del uso prolongado y repetido
+            diario durante su vida útil prevista.
+          </li>
+          <li>
+            <strong>Requisitos de Seguridad —</strong> El diseño y la construcción
+            deben minimizar los riesgos evitables por inestabilidad, defectos o
+            construcción insegura.
+          </li>
+          <li>
+            <strong>Calidad de Materiales —</strong> Los componentes y acabados
+            deben cumplir con estándares de calidad que respalden un rendimiento
+            seguro, duradero y confiable.
+          </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Por qué el Cumplimiento de IS 17631:2022 es Crítico
+          Requisitos de Prueba para la Certificación BIS de Sillas de Trabajo
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Las sillas de trabajo difieren significativamente de las sillas de uso
-          general porque:
+          Antes de otorgar la certificación, las muestras del producto se evalúan
+          mediante pruebas en un laboratorio reconocido. Las pruebas ayudan a
+          verificar el cumplimiento con los requisitos especificados bajo IS
+          17631:2022.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Soportan movimiento continuo</li>
-          <li>Utilizan mecanismos mecánicos y de ajuste</li>
-          <li>Soportan cargas dinámicas</li>
-          <li>Requieren durabilidad para uso prolongado</li>
-        </ul>
+        <h3 className={SUB_HEADING_CLASS}>Pruebas Clave Realizadas</h3>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Las sillas mal construidas pueden fallar en:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Uniones de la base</li>
-          <li>Mecanismos giratorios</li>
-          <li>Sistemas de elevación de gas</li>
-          <li>Soporte del asiento/respaldo</li>
-          <li>Estructura de patas o ruedas</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Esto puede llevar a lesiones en el lugar de trabajo, tiempo de
-          inactividad operacional y problemas de responsabilidad del producto.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          La Certificación BIS Obligatoria Asegura
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Diseño ergonómico seguro</li>
-          <li>Capacidad de carga confiable</li>
-          <li>Fuerte durabilidad bajo pruebas cíclicas</li>
-          <li>Resistencia al desgaste mecánico</li>
-          <li>Cumplimiento con parámetros de seguridad del usuario</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Por lo tanto, obtener una Licencia BIS para Sillas de Trabajo es no
-          negociable para fabricantes indios y extranjeros.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Alcance de la Licencia BIS para Sillas de Trabajo
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Este estándar cubre los requisitos de las sillas de trabajo. Este
-          estándar se aplica a sillas de trabajo completamente
-          fabricadas/ensambladas. También se aplica a unidades listas para
-          ensamblar; en ese caso, los requisitos de este estándar se aplicarán a
-          las unidades ensambladas.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Proceso de Certificación BIS Paso a Paso para Sillas de Trabajo (IS
-          17631:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          El proceso de certificación para sillas de trabajo involucra una
-          mezcla de evaluación de laboratorio, auditoría de fábrica y escrutinio
-          técnico.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 1 – Evaluación del Producto y Mapeo de Estándares
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Identifique todas las variantes de sillas y alinéelas con IS
-          17631:2022. Comprenda qué modelos comparten la misma construcción y
-          cuáles requieren pruebas separadas.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 2 – Envío de Solicitud en Línea
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          El fabricante envía la solicitud a través del Portal BIS Manak Online.
-          La información requerida incluye:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Detalles del sitio de fabricación</li>
-          <li>Controles de materia prima</li>
-          <li>Especificaciones técnicas</li>
-          <li>Capacidades de producción</li>
-          <li>Documentación de propiedad de marca</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 3 – Pago de Tarifas
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Se deben pagar tarifas por:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Solicitud</li>
-          <li>Procesamiento</li>
-          <li>Pruebas</li>
-          <li>Inspección</li>
-          <li>Marcado</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 4 – Pruebas de Muestra (Requisitos IS 17631:2022)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Un laboratorio reconocido por BIS evalúa la silla contra múltiples
-          criterios de seguridad y rendimiento.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Las Pruebas de Silla de Trabajo Incluyen
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Pruebas de carga estática del asiento y respaldo</li>
-          <li>Ciclos de carga de durabilidad</li>
-          <li>Pruebas de giro/rotación</li>
-          <li>Resistencia del mecanismo de inclinación</li>
-          <li>Rendimiento del mecanismo de elevación de gas</li>
-          <li>Resistencia de ruedas y resistencia al rodamiento</li>
-          <li>Estabilidad de la base y pruebas de sobrecarga</li>
-          <li>Capacidad de carga del reposabrazos</li>
-          <li>Pruebas de resistencia al impacto</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          El laboratorio emite un informe de prueba detallado a BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 5 – Auditoría de Fábrica
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Los inspectores de BIS revisan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sistema de producción</li>
-          <li>Registros de inspección de materiales</li>
-          <li>Procesos internos de aseguramiento de calidad</li>
-          <li>Instrumentos de prueba y registros de calibración</li>
-          <li>Cumplimiento con el Esquema de Pruebas e Inspección (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 6 – Otorgamiento de Licencia BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Una vez confirmada la conformidad, BIS otorga:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>La certificación de Licencia BIS/Marca ISI</li>
-          <li>Un número CML único</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 7 – Cumplimiento Consistente
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Los fabricantes deben:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mantener controles internos continuos</li>
-          <li>Seguir las reglas de marcado</li>
-          <li>Cooperar durante las inspecciones de vigilancia</li>
-          <li>Renovar la licencia periódicamente</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documentos Requeridos para la Certificación BIS de Sillas de Trabajo
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Un conjunto completo de documentos asegura una aprobación más rápida.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documentos Comerciales y de Fábrica
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Registro de fábrica</li>
-          <li>Diagrama y diseño de fabricación</li>
-          <li>Flujo de trabajo de producción</li>
-          <li>Lista de maquinaria</li>
-          <li>Lista de equipos de prueba</li>
-          <li>Certificados de calibración</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documentos Técnicos
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Planos de ingeniería de sillas</li>
-          <li>Especificaciones de mecanismos</li>
-          <li>Hojas de datos de materiales</li>
-          <li>Lista de materiales</li>
-          <li>Instrucciones de ensamblaje</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documentos Legales
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Prueba de identidad del signatario autorizado</li>
-          <li>Cartas de autorización de marca</li>
-          <li>Certificado de marca registrada</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documentos Específicos de BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Formulario de solicitud</li>
-          <li>Compromisos</li>
-          <li>Formulario de solicitud de prueba</li>
-          <li>Muestras de etiquetas</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Requisitos de Prueba según IS 17631:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Las sillas de trabajo se someten a pruebas más complejas que las
-          sillas generales debido a las partes móviles.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Pruebas Clave Realizadas
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
@@ -593,227 +608,349 @@ const MainContentLeft = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Diseño y mano de obra
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco del Borde Frontal
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco Hacia Adelante
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco Hacia Adelante para Sillas con Reposapiés
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco Lateral para Sillas Sin Reposabrazos
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco Lateral para Sillas Con Reposabrazos
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco Hacia Atrás para Sillas Sin Respaldo
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Prueba de Carga Estática del Borde Frontal del Asiento
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Prueba de Carga Estática Combinada del Asiento y Respaldo
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Prueba de Carga Estática Hacia Abajo del Reposabrazos —
-                  Central
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Prueba de Carga Estática Hacia Abajo del Reposabrazos —
-                  Frontal
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Prueba de Carga Estática Lateral del Reposabrazos
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Prueba de Carga Estática del Reposapiés
-                </TableCell>
-              </TableRow>
+              {[
+                ["4", "Diseño y mano de obra"],
+                ["7.3.1", "Vuelco del Borde Frontal"],
+                ["7.3.2", "Vuelco Hacia Adelante"],
+                [
+                  "7.3.3",
+                  "Vuelco Hacia Adelante para Sillas con Reposapiés",
+                ],
+                [
+                  "7.3.4",
+                  "Vuelco Lateral para Sillas Sin Reposabrazos",
+                ],
+                [
+                  "7.3.5",
+                  "Vuelco Lateral para Sillas Con Reposabrazos",
+                ],
+                [
+                  "7.3.6",
+                  "Vuelco Hacia Atrás para Sillas Sin Respaldo",
+                ],
+                ["7.4.1", "Prueba de Carga Estática del Borde Frontal del Asiento"],
+                ["7.4.2", "Prueba de Carga Estática Combinada del Asiento y Respaldo"],
+                [
+                  "7.4.3",
+                  "Prueba de Carga Estática Hacia Abajo del Reposabrazos — Central",
+                ],
+                [
+                  "7.4.4",
+                  "Prueba de Carga Estática Hacia Abajo del Reposabrazos — Frontal",
+                ],
+                ["7.4.5", "Prueba de Carga Estática Lateral del Reposabrazos"],
+                ["7.4.6", "Prueba de Carga Estática del Reposapiés"],
+              ].map(([clause, requirement], index) => (
+                <TableRow
+                  key={clause}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {clause}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {requirement}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Estas pruebas simulan meses o años de uso regular en unos pocos días.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Proceso de Certificación BIS para Sillas de Trabajo
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los fabricantes que buscan la Certificación BIS bajo IS 17631:2022 deben
+          completar un proceso de certificación estructurado.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Desafíos Comunes en la Certificación BIS para Sillas de Trabajo
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            <strong>✔ 1. Fallo en pruebas mecánicas/de inclinación</strong> – A
-            menudo causado por mecanismos débiles o hardware de baja calidad.
+            <strong>Paso 1: Evaluación de Aplicabilidad del Producto —</strong>{" "}
+            Confirme si la silla de trabajo entra bajo IS 17631:2022 y la QCO de
+            Muebles aplicable antes de iniciar la certificación.
           </li>
           <li>
-            <strong>
-              ✔ 2. Incumplimiento del mecanismo de elevación de gas
-            </strong>{" "}
-            – Los elevadores de gas deben cumplir parámetros estrictos de
-            presión y seguridad.
+            <strong>Paso 2: Preparación de Documentación —</strong> Compile
+            registros técnicos, de fabricación, control de calidad y legales
+            requeridos para la revisión de BIS.
           </li>
           <li>
-            <strong>✔ 3. Infraestructura de pruebas inadecuada</strong> – Las
-            pruebas de sillas de trabajo requieren equipos especializados.
+            <strong>Paso 3: Pruebas del Producto —</strong> Envíe muestras a un
+            laboratorio reconocido por BIS para evaluación según IS 17631:2022.
           </li>
           <li>
-            <strong>✔ 4. Agrupación incorrecta de productos</strong> –
-            Diferentes mecanismos = pruebas separadas.
+            <strong>Paso 4: Presentación de la Solicitud —</strong> Presente la
+            solicitud BIS con informes de prueba, detalles de fábrica y documentos
+            de cumplimiento de respaldo.
           </li>
           <li>
-            <strong>✔ 5. Incumplimiento de STI</strong> – Los errores de STI
-            pueden retrasar la emisión de la licencia.
+            <strong>Paso 5: Inspección de Fábrica —</strong> BIS evalúa los
+            sistemas de producción, procedimientos de control de calidad y
+            trazabilidad en la instalación de fabricación.
           </li>
           <li>
-            <strong>✔ 6. Desajustes de documentos</strong> – El nombre de la
-            marca y el modelo deben coincidir exactamente con la solicitud BIS.
+            <strong>Paso 6: Revisión Técnica —</strong> BIS evalúa la solicitud,
+            los resultados de laboratorio y los hallazgos de inspección antes de la
+            aprobación final.
           </li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Ventajas de la Certificación BIS para Sillas de Trabajo
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Facilita las ventas legales en toda India</li>
-          <li>Aumenta la confianza del cliente y la reputación de la marca</li>
-          <li>Asegura durabilidad a largo plazo</li>
-          <li>Reduce reclamos de garantía y fallas</li>
-          <li>Protege de sanciones regulatorias</li>
-          <li>Permite listado en plataformas de comercio electrónico</li>
           <li>
-            Obligatorio para licitaciones gubernamentales y suministros
-            corporativos
+            <strong>Paso 7: Otorgamiento de Licencia BIS —</strong> Tras el
+            cumplimiento exitoso, BIS emite la licencia y autoriza el uso de la
+            Marca ISI en las sillas de trabajo certificadas.
           </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Sanciones por Vender Sillas de Trabajo Sin Certificación BIS
+          Certificación BIS para Fabricantes Indios
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          El incumplimiento puede resultar en:
+          Los fabricantes indios generalmente solicitan a través de la ruta de
+          certificación doméstica. El proceso generalmente incluye:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Multas financieras severas</li>
-          <li>Confiscación de inventario</li>
-          <li>Órdenes de cierre de producción</li>
-          <li>Prohibición de importación</li>
-          <li>Procesamiento penal</li>
-          <li>Cancelación de licencia comercial</li>
+        <ul className={LIST_CLASS}>
+          <li>Pruebas del producto en un laboratorio reconocido por BIS</li>
+          <li>Revisión de documentación y presentación de solicitud BIS</li>
+          <li>Evaluación de fábrica y evaluación técnica por BIS</li>
+          <li>Otorgamiento de licencia BIS y autorización de Marca ISI</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Se lleva a cabo una aplicación estricta bajo la Ley BIS, 2016.
+          Después de la certificación, los fabricantes deben mantener el
+          cumplimiento continuo con la vigilancia, el marcado y los requisitos de
+          calidad de BIS.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ¿Quién Debe Obtener la Certificación BIS para Sillas de Trabajo?
+          Certificación BIS para Fabricantes Extranjeros
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Obligatorio para:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los fabricantes extranjeros que pretenden exportar sillas de trabajo a
+          India también deben obtener la Certificación BIS antes de suministrar
+          productos cubiertos bajo los requisitos de certificación obligatoria.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabricantes indios</li>
-          <li>Fabricantes extranjeros que exportan a India</li>
-          <li>Propietarios de marcas</li>
-          <li>Importadores</li>
-          <li>Proveedores OEM/ODM</li>
-          <li>Distribuidores de almacén</li>
-          <li>Marcas de muebles minoristas y en línea</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          El proceso generalmente incluye:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>
+            Nombramiento de un Representante Autorizado en India (AIR)
+          </li>
+          <li>Pruebas de producto en el extranjero y evaluación de fábrica</li>
+          <li>Revisión de solicitud BIS y aprobación de certificación</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Cada fábrica requiere una licencia BIS única.
+          Esto garantiza que los productos importados cumplan con los mismos
+          requisitos de calidad y seguridad aplicables a los fabricantes
+          nacionales.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Documentos Requeridos para la Certificación BIS de Sillas de Trabajo
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La documentación es una parte crítica del proceso de certificación BIS
+          para sillas de trabajo. Los requisitos pueden diferir según si el
+          solicitante es un fabricante indio, fabricante extranjero o importador,
+          y según el esquema de certificación seguido. Los registros incompletos o
+          inconsistentes se encuentran entre las razones más comunes de retrasos
+          en las solicitudes.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Los siguientes documentos son comúnmente requeridos durante la
+          certificación BIS de sillas de trabajo bajo IS 17631:2022:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Documentos Comerciales —</strong> Certificado de registro de
+            empresa, licencia de fabricación (si aplica), registro GST, comprobante
+            de domicilio comercial, y detalles del signatario autorizado con
+            comprobante de identidad y domicilio.
+          </li>
+          <li>
+            <strong>Documentos de Fabricación —</strong> Plan de distribución de
+            fábrica, diagrama de flujo del proceso de fabricación, lista de
+            maquinaria de producción y equipos de prueba, y detalles de la
+            infraestructura de producción y capacidad instalada.
+          </li>
+          <li>
+            <strong>Documentos del Producto —</strong> Especificaciones del
+            producto, planos de ingeniería o técnicos, catálogo de productos o
+            lista de modelos, lista de materiales (BOM), y detalles de materias
+            primas, componentes y piezas críticas utilizadas en la silla de
+            trabajo.
+          </li>
+          <li>
+            <strong>Documentos de Control de Calidad —</strong> Procedimientos
+            escritos de control de calidad, registros de inspección de materiales
+            entrantes, informes de inspección de productos en proceso y terminados,
+            métodos de prueba internos, y certificados de calibración para equipos
+            de medición y prueba.
+          </li>
+          <li>
+            <strong>Documentos de Certificación —</strong> Informes de prueba de
+            un laboratorio reconocido por BIS, formularios de solicitud BIS
+            debidamente completados, declaraciones y compromisos, muestras de
+            etiquetas o marcado, y cualquier documento adicional prescrito por BIS
+            para la ruta de certificación específica.
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Todos los documentos deben ser precisos, completos y consistentes con
+          los detalles del producto presentados en la solicitud BIS. Se recomienda
+          a los fabricantes revisar cuidadosamente los requisitos de documentación
+          antes de presentar para evitar retrasos innecesarios en el procesamiento
+          de la certificación.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Beneficios de la Certificación BIS para Sillas de Trabajo
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Cumplimiento Regulatorio —</strong> Cumpla con las normas
+            indias obligatorias y los requisitos de QCO para la fabricación y
+            venta legal.
+          </li>
+          <li>
+            <strong>Acceso Legal al Mercado —</strong> Suministre sillas de trabajo
+            certificadas en India sin riesgo regulatorio para las categorías de
+            productos cubiertas.
+          </li>
+          <li>
+            <strong>Mayor Credibilidad —</strong> La Marca ISI señala calidad
+            verificada, seguridad y conformidad con IS 17631:2022.
+          </li>
+          <li>
+            <strong>Confianza del Cliente —</strong> Compradores corporativos,
+            instituciones y usuarios finales confían en productos probados según
+            referencias nacionales.
+          </li>
+          <li>
+            <strong>Mejores Adquisiciones —</strong> Mejora la elegibilidad en
+            licitaciones gubernamentales, institucionales y comerciales de gran
+            volumen.
+          </li>
+          <li>
+            <strong>Reputación de Marca Más Sólida —</strong> Demuestra
+            compromiso con la calidad, la ergonomía y la confiabilidad del producto
+            a largo plazo.
+          </li>
+          <li>
+            <strong>Control de Calidad Mejorado —</strong> Fomenta sistemas
+            estructurados de control de calidad, trazabilidad y estándares de
+            producción consistentes.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Desafíos Comunes Durante la Certificación BIS
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Interpretación técnica —</strong> Mapear las cláusulas de IS
+            17631:2022 a diseños, mecanismos y variantes específicas de sillas
+            puede ser complejo.
+          </li>
+          <li>
+            <strong>Fallos en pruebas —</strong> Marcos débiles, mala estabilidad o
+            problemas de mecanismo a menudo conducen al rechazo en pruebas de
+            vuelco o carga.
+          </li>
+          <li>
+            <strong>Brechas en documentación —</strong> Planos inconsistentes,
+            registros de control de calidad incompletos o declaraciones faltantes
+            comúnmente retrasan la aprobación.
+          </li>
+          <li>
+            <strong>Cumplimiento de fábrica —</strong> Los controles de producción,
+            la trazabilidad y las pruebas internas pueden necesitar mejoras antes
+            del otorgamiento de la licencia.
+          </li>
+          <li>
+            <strong>Coordinación regulatoria —</strong> Alinear las pruebas de
+            laboratorio, las inspecciones de BIS y las consultas de seguimiento
+            lleva tiempo sin apoyo experto.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ¿Por Qué Elegir Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India es una consultoría de cumplimiento regulatorio
+          que asiste a fabricantes, importadores, exportadores y empresas en la
+          obtención de diversas certificaciones y aprobaciones requeridas para el
+          mercado indio.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nuestro equipo proporciona asistencia integral para la Certificación BIS
+          de Sillas de Trabajo bajo IS 17631:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Nuestros Servicios Incluyen</h3>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Evaluación de Aplicabilidad del Producto —</strong> Confirmamos
+            si sus sillas de trabajo entran bajo IS 17631:2022 y la QCO aplicable.
+          </li>
+          <li>
+            <strong>Consultoría de Cumplimiento BIS —</strong> Orientación experta
+            sobre rutas de certificación, obligaciones y requisitos de la norma.
+          </li>
+          <li>
+            <strong>Asistencia con Documentación —</strong> Preparación, revisión y
+            organización de todos los registros de solicitud BIS y de fábrica.
+          </li>
+          <li>
+            <strong>Coordinación de Pruebas —</strong> Apoyo integral para el envío
+            de muestras y pruebas en laboratorios reconocidos.
+          </li>
+          <li>
+            <strong>Apoyo en Inspección de Fábrica —</strong> Verificaciones de
+            preparación para la evaluación de fábrica y cumplimiento de BIS.
+          </li>
+          <li>
+            <strong>Gestión de Solicitudes —</strong> Manejo de presentaciones BIS,
+            seguimientos y comunicación regulatoria en su nombre.
+          </li>
+          <li>
+            <strong>Apoyo Post-Certificación —</strong> Asistencia continua con
+            vigilancia, reglas de marcado y requisitos de mantenimiento de licencia.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -821,114 +958,147 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          El Certificado BIS para Sillas de Trabajo bajo IS 17631:2022 es
-          crucial para asegurar productos de asientos seguros, duraderos y
-          ergonómicamente sólidos en India. La certificación obligatoria mejora
-          la confianza del cliente, reduce los riesgos de responsabilidad del
-          producto y asegura el cumplimiento con los estándares de calidad
-          nacionales. Con apoyo profesional, el viaje de certificación, desde
-          las pruebas hasta la inspección y el licenciamiento, se vuelve
-          eficiente y predecible.
+          La Certificación BIS para Sillas de Trabajo bajo IS 17631:2022 desempeña
+          un papel importante en garantizar la calidad, seguridad, durabilidad,
+          estabilidad y rendimiento ergonómico en productos de asientos para el
+          lugar de trabajo.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Al obtener la Certificación BIS y usar la Marca ISI, los fabricantes
+          pueden demostrar el cumplimiento con las normas indias, fortalecer la
+          confianza del cliente, mejorar la credibilidad del producto y apoyar el
+          crecimiento empresarial a largo plazo.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ya sea que sea un fabricante indio o un fabricante extranjero que busca
+          acceso al mercado indio, comprender los requisitos de IS 17631:2022 es
+          un paso esencial hacia el cumplimiento regulatorio y el éxito en el
+          mercado.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Si planea obtener la Certificación BIS para Sillas de Trabajo bajo IS
+          17631:2022, Sun Certifications India puede ayudar a simplificar el
+          proceso a través de orientación regulatoria experta y apoyo integral de
+          cumplimiento.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Preguntas Frecuentes – Certificado BIS para Sillas de Trabajo (IS
+          Preguntas Frecuentes – Certificación BIS para Sillas de Trabajo (IS
           17631:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. ¿Qué sillas caen bajo IS 17631:2022?</strong>
+              <strong>
+                1. ¿Qué es la Certificación BIS para Sillas de Trabajo?
+              </strong>
               <br />
-              Cualquier silla diseñada para entornos de trabajo, incluyendo
-              sillas ergonómicas de oficina, sillas de trabajo, sillas
-              giratorias y sillas ajustables.
+              La Certificación BIS confirma que las sillas de trabajo cumplen con
+              los requisitos de IS 17631:2022 y los requisitos de certificación
+              aplicables.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>2. ¿Qué es IS 17631:2022?</strong>
+              <br />
+              IS 17631:2022 es la Norma India que especifica los requisitos para
+              sillas de trabajo, incluyendo seguridad, resistencia, estabilidad,
+              durabilidad y consideraciones ergonómicas.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. ¿Es obligatoria la Certificación BIS para sillas de trabajo?
+                3. ¿Es obligatoria la Certificación BIS para sillas de trabajo?
               </strong>
               <br />
-              Sí. La certificación BIS es obligatoria antes de fabricar, vender
-              o importar sillas de trabajo en India.
+              Las sillas de trabajo cubiertas bajo el marco regulatorio aplicable
+              deben cumplir con los requisitos de certificación BIS.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. ¿Qué es la Marca ISI?</strong>
+              <br />
+              La Marca ISI es la marca de certificación estándar emitida bajo el
+              Esquema de Certificación de Productos BIS.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. ¿Quién puede solicitar la Certificación BIS?</strong>
+              <br />
+              Tanto fabricantes indios como fabricantes extranjeros pueden
+              solicitar.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                3. ¿Qué hace que las pruebas de sillas de trabajo sean
-                diferentes de las pruebas de sillas generales?
+                6. ¿La Certificación BIS requiere pruebas del producto?
               </strong>
               <br />
-              Las sillas de trabajo usan mecanismos como giros, elevadores de
-              gas, sistemas de inclinación y ruedas, requiriendo pruebas
-              mecánicas y de resistencia avanzadas.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. ¿Cuánto tiempo toma la certificación BIS?</strong>
-              <br />
-              Típicamente 30–45 días para fabricantes indios y alrededor de 120
-              días para fabricantes extranjeros, dependiendo de las pruebas y
-              documentación.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. ¿Pueden aplicar fabricantes extranjeros?</strong>
-              <br />
-              Sí, a través del FMCS (Esquema de Certificación para Fabricantes
-              Extranjeros).
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. ¿Qué pasa si una silla falla las pruebas BIS?</strong>
-              <br />
-              Debe ser rediseñada, corregida y vuelta a probar hasta que cumpla
-              con IS 17631:2022.
+              Sí. Las pruebas del producto son una parte importante del proceso de
+              certificación.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                7. ¿Qué documentos se requieren para la solicitud BIS?
+                7. ¿Las sillas de trabajo importadas requieren Certificación BIS?
               </strong>
               <br />
-              Detalles de fábrica, planos de productos, lista de maquinaria,
-              documentos QC, propiedad de marca y papeles legales.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. ¿Requieren todas las sillas pruebas separadas?</strong>
-              <br />
-              Si los modelos difieren en diseño, mecanismo o estructura, pueden
-              necesitarse pruebas separadas.
+              Los productos cubiertos bajo requisitos de certificación obligatoria
+              deben cumplir con las regulaciones BIS aplicables antes de ser
+              suministrados en India.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                9. ¿Es obligatorio el marcado ISI después de la aprobación?
+                8. ¿Qué pruebas se realizan bajo IS 17631:2022?
               </strong>
               <br />
-              Sí, la marca ISI debe aparecer en el producto, etiqueta y empaque.
+              La norma incluye evaluaciones como evaluación de diseño y mano de
+              obra, verificación dimensional, pruebas de estabilidad y pruebas de
+              carga estática.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. ¿Por qué es importante el diseño ergonómico para las sillas de
+                trabajo?
+              </strong>
+              <br />
+              El diseño ergonómico ayuda a mejorar la comodidad del usuario, apoya
+              una postura adecuada y contribuye a una mejor experiencia en el lugar
+              de trabajo.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. ¿Cómo puede ayudar Sun Certifications India?</strong>
+              <br />
+              Sun Certifications India proporciona asistencia con evaluación de
+              aplicabilidad, documentación, coordinación de pruebas, preparación
+              para inspección, gestión de solicitudes y apoyo de cumplimiento.
             </p>
           </div>
         </div>
@@ -945,6 +1115,32 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Recursos Relacionados
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              {" "}
+              Certificado ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Certificado BIS para Fabricante Extranjero
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadSpanish />
 

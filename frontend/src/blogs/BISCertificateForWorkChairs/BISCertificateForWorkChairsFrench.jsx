@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForWorkChairsFrench = () => {
   return (
     <div className="relative w-full">
@@ -182,7 +188,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Certificat BIS pour chaises de travail – IS 17631:2022
+                    Certification BIS pour chaises de travail (IS 17631:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -213,377 +219,377 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Certificat BIS pour chaises de travail – Guide complet de conformité
-          pour IS 17631:2022
+          Certification BIS pour chaises de travail (IS 17631:2022) – Guide
+          complet de certification Marque ISI
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
             title="Licence BIS pour chaises de travail"
-            alt="Certificat BIS pour chaises de travail - IS 17631:2022 Certification BIS"
+            alt="Certification BIS pour chaises de travail - Guide Marque ISI IS 17631:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          L&apos;utilisation croissante de sièges de bureau et de travail—que ce
-          soit dans les espaces de travail d&apos;entreprise, les centres de
-          coworking, les bureaux à domicile ou les installations
-          institutionnelles—a rendu la sécurité et les performances ergonomiques
-          essentielles. Pour garantir que les fabricants fournissent des
-          produits d&apos;assise structurellement stables, durables et sûrs pour
-          les utilisateurs, le gouvernement indien a rendu obligatoire la
-          certification BIS pour les chaises de travail selon IS 17631:2022.
+          Les chaises de travail sont devenues un élément essentiel des
+          environnements de travail modernes, des établissements d&apos;enseignement,
+          des bureaux gouvernementaux, des espaces de coworking et des bureaux à
+          domicile. Alors que les organisations accordent une importance accrue au
+          confort des employés, à la productivité, à l&apos;ergonomie au travail et
+          au bien-être professionnel, la demande de chaises de travail de haute
+          qualité ne cesse de croître.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Les chaises de travail subissent généralement des charges répétitives,
-          des mouvements corporels continus, des inclinaisons, des rotations et
-          des ajustements de hauteur. Une défaillance de toute fonctionnalité de
-          performance peut entraîner des blessures graves. C&apos;est pourquoi
-          la conformité à IS 17631:2022 – Chaises de travail : Exigences de
-          sécurité est maintenant obligatoire pour tous les fabricants et
-          importateurs.
+          Une chaise mal conçue peut avoir un impact négatif sur la posture, le
+          confort et la productivité. Pour cette raison, la qualité, la sécurité,
+          la durabilité et les performances ergonomiques sont des considérations
+          essentielles pour les fabricants, les acheteurs et les agences
+          d&apos;approvisionnement. Afin de garantir des normes de qualité
+          uniformes dans l&apos;industrie, le Bureau of Indian Standards (BIS) a
+          établi IS 17631:2022, la norme indienne applicable aux chaises de
+          travail.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ce guide explique le processus complet d&apos;octroi de licence BIS, y
-          compris les normes, les tests, les frais, la documentation, les
-          responsabilités, les avantages et les défis—créé avec un contenu frais
-          pour éviter la duplication sur votre site web.
+          Les fabricants couverts par le cadre réglementaire applicable sont tenus
+          d&apos;obtenir la certification BIS et d&apos;utiliser la marque ISI sur
+          les produits conformes. La certification BIS démontre que la chaise de
+          travail a été évaluée selon les exigences prescrites en matière de
+          sécurité, de résistance, de stabilité, de durabilité et de performance
+          ergonomique.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ce guide complet explique tout ce que les fabricants, importateurs,
+          marques de mobilier, professionnels de l&apos;approvisionnement et
+          propriétaires d&apos;entreprise doivent savoir sur la certification BIS
+          pour les chaises de travail selon IS 17631:2022.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Comprendre la certification BIS pour les chaises de travail
+          Aperçu rapide de la certification BIS pour les chaises de travail
+        </h2>
+
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Élément
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Détails
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Produit", "Chaises de travail"],
+                ["Norme indienne applicable", "IS 17631:2022"],
+                ["Type de certification", "Certification de produit BIS"],
+                [
+                  "Schéma de certification applicable",
+                  "Schéma I (Certification Marque ISI)",
+                ],
+                ["Marque applicable", "Marque ISI"],
+                ["Autorité réglementaire", "Bureau of Indian Standards (BIS)"],
+                ["Ministère applicable", "Ministère du Commerce et de l'Industrie"],
+                [
+                  "Exigence de conformité",
+                  "Obligatoire en vertu du QCO Meubles applicable (Quality Control Order)",
+                ],
+                [
+                  "Demandeurs éligibles",
+                  "Fabricants indiens et fabricants étrangers ",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Schéma de certification applicable" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Schéma I (Certification Marque ISI)
+                      </a>
+                    ) : particular === "Exigence de conformité" ? (
+                      <>
+                        Obligatoire en vertu du{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-work-chairs"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>QCO Meubles applicable (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Qu&apos;est-ce que la certification BIS pour les chaises de travail ?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Le Bureau of Indian Standards (BIS) supervise la qualité et la
-          sécurité des produits fournis sur le marché indien. Tout produit
-          relevant d&apos;une norme indienne répertoriée dans un arrêté de
-          contrôle qualité obligatoire doit être évalué et certifié par BIS
-          avant la vente.
+          La certification BIS pour les chaises de travail est un processus
+          d&apos;évaluation de la conformité mené dans le cadre du schème de
+          certification de produits du Bureau of Indian Standards.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Certificat BIS – Ce qu&apos;il représente
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;objectif de la certification est de vérifier que les chaises de
+          travail respectent les exigences spécifiées dans IS 17631:2022. Après une
+          certification réussie, les fabricants sont autorisés à utiliser la marque
+          ISI sur leurs produits.
+        </p>
+
         <p className="text-gray-600 text-base font-geist mb-3">
-          Un certificat BIS indique qu&apos;une chaise de travail :
+          Le processus de certification évalue divers aspects de performance et de
+          sécurité des chaises de travail, notamment :
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>A réussi les tests de performance et de durabilité</li>
-          <li>Répond aux spécifications de matériaux et de construction</li>
-          <li>Est sûre pour un usage quotidien à long terme</li>
+        <ul className={LIST_CLASS}>
+          <li>Conception ergonomique</li>
+          <li>Intégrité structurelle</li>
+          <li>Stabilité</li>
+          <li>Durabilité</li>
+          <li>Exigences de sécurité</li>
+          <li>Qualité de fabrication</li>
+          <li>Performance du produit</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La marque ISI garantit que le produit a été évalué selon les normes
+          indiennes reconnues et répond aux exigences de qualité prescrites.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Pourquoi la certification BIS est importante pour les chaises de travail
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les chaises de travail sont utilisées pendant de longues périodes dans
+          les bureaux, les établissements d&apos;enseignement, les établissements
+          commerciaux et les espaces de travail à domicile. Comme les utilisateurs
+          passent une part importante de leur journée assis, la qualité et la
+          performance ergonomique de ces chaises affectent directement le confort
+          et l&apos;efficacité au travail.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La certification BIS contribue à garantir que les chaises de travail
+          certifiées :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Respectent les exigences de sécurité prescrites</li>
+          <li>Offrent des performances fiables</li>
+          <li>Présentent une résistance structurelle adéquate</li>
+          <li>Maintiennent leur stabilité pendant l&apos;utilisation</li>
+          <li>Assurent une durabilité à long terme</li>
+          <li>Se conforment aux normes de qualité indiennes</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Pour les fabricants, la certification permet de démontrer la qualité du
+          produit tout en facilitant la conformité réglementaire et
+          l&apos;acceptation sur le marché.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Aperçu de IS 17631:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17631:2022 est la norme indienne qui spécifie les exigences pour les
+          chaises de travail.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norme établit des exigences relatives à :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>La sécurité</li>
+          <li>La résistance</li>
+          <li>La stabilité</li>
+          <li>La durabilité</li>
+          <li>Les considérations ergonomiques</li>
+          <li>La performance fonctionnelle</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;objectif est de garantir que les chaises de travail sont capables
+          de fournir des performances sûres et fiables lors d&apos;une utilisation
+          prolongée dans les environnements de travail.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Portée de IS 17631:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Selon la norme, IS 17631:2022 couvre les chaises de travail et
+          s&apos;applique à :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Chaises de travail entièrement fabriquées</li>
+          <li>Chaises de travail assemblées</li>
+          <li>Chaises de travail prêtes à assembler après assemblage</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les exigences de la norme s&apos;appliquent au produit assemblé destiné à
+          l&apos;utilisation.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Types de chaises de travail couvertes par IS 17631:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Selon la conception du produit et l&apos;application prévue, la norme
+          peut s&apos;appliquer à diverses catégories de sièges de travail,
+          notamment :
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            Respecte les directives ergonomiques et structurelles des normes
-            indiennes
+            <strong>Chaises de bureau —</strong> Sièges utilisés dans les bureaux
+            d&apos;entreprise, les services administratifs et les environnements
+            professionnels.
+          </li>
+          <li>
+            <strong>Chaises de tâche —</strong> Chaises conçues pour le travail
+            quotidien au bureau, les postes de travail et les tâches assises
+            routinières.
+          </li>
+          <li>
+            <strong>Chaises de travail réglables —</strong> Modèles avec des
+            fonctions réglables en hauteur, inclinaison ou autres pour améliorer le
+            confort et l&apos;ergonomie.
+          </li>
+          <li>
+            <strong>Chaises de travail institutionnelles —</strong> Chaises
+            fournies aux écoles, collèges, bureaux gouvernementaux et
+            établissements commerciaux.
+          </li>
+          <li>
+            <strong>Chaises de bureau à domicile —</strong> Chaises de travail
+            conçues pour le télétravail, les freelances et les bureaux
+            résidentiels.
           </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Les fabricants qui répondent à ces exigences reçoivent une licence BIS
-          leur permettant d&apos;apposer la marque ISI.
+          Examinez attentivement la conception du produit, le mécanisme et
+          l&apos;usage prévu pour confirmer si votre chaise relève de la portée de
+          IS 17631:2022.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Consultez également les produits de mobilier couverts par la
+            certification BIS obligatoire —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Certification BIS pour meubles</strong>
+          </a>
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Norme applicable pour les chaises de travail – IS 17631:2022
+          Exigences clés selon IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          La norme régissant les chaises de travail et de bureau est :
+          La norme se concentre sur plusieurs caractéristiques de performance
+          importantes qui contribuent à la qualité et à la sécurité des chaises de
+          travail.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17631:2022</strong> – Chaises de travail : Exigences de
-          sécurité
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Cette norme se concentre sur les sièges destinés à un usage prolongé
-          dans les environnements de travail.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Produits couverts par cette norme
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chaises de bureau ergonomiques</li>
-          <li>Chaises de travail</li>
-          <li>Chaises pivotantes</li>
-          <li>Chaises de bureau de travail</li>
-          <li>Chaises de travail à hauteur réglable</li>
-          <li>Chaises de travail exécutives</li>
-          <li>Chaises de travail à dossier en mesh ou en tissu</li>
-          <li>Chaises équipées d&apos;accoudoirs</li>
-          <li>Chaises avec mécanismes d&apos;inclinaison/verrouillage</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Conception ergonomique —</strong> Traite du confort de
+            l&apos;utilisateur, du support du siège et du dossier, de
+            l&apos;ajustabilité et de la posture correcte pour réduire la fatigue
+            et améliorer la productivité au travail.
+          </li>
+          <li>
+            <strong>Exigences de résistance —</strong> Le cadre, les joints et les
+            structures de support doivent résister à une utilisation normale sans
+            défaillance ni perte d&apos;intégrité.
+          </li>
+          <li>
+            <strong>Exigences de stabilité —</strong> Les chaises doivent résister
+            au basculement et rester stables pendant l&apos;utilisation assise
+            régulière et les mouvements.
+          </li>
+          <li>
+            <strong>Exigences de durabilité —</strong> Les produits doivent
+            performer de manière constante après une utilisation quotidienne
+            prolongée et répétée sur leur durée de vie prévue.
+          </li>
+          <li>
+            <strong>Exigences de sécurité —</strong> La conception et la
+            construction doivent minimiser les risques évitables liés à
+            l&apos;instabilité, aux défauts ou à une fabrication dangereuse.
+          </li>
+          <li>
+            <strong>Qualité des matériaux —</strong> Les composants et finitions
+            doivent répondre aux normes de qualité qui garantissent des performances
+            sûres, durables et fiables.
+          </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Pourquoi la conformité IS 17631:2022 est cruciale
+          Exigences de test pour la certification BIS des chaises de travail
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Les chaises de travail diffèrent considérablement des chaises à usage
-          général car elles :
+          Avant l&apos;octroi de la certification, les échantillons de produits
+          sont évalués par des tests dans un laboratoire reconnu. Les tests
+          permettent de vérifier la conformité aux exigences spécifiées dans IS
+          17631:2022.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Supportent un mouvement continu</li>
-          <li>Utilisent des mécanismes mécaniques et d&apos;ajustement</li>
-          <li>Portent des charges dynamiques</li>
-          <li>Nécessitent une durabilité pour un usage prolongé</li>
-        </ul>
+        <h3 className={SUB_HEADING_CLASS}>Principaux tests effectués</h3>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Les chaises mal construites peuvent échouer au niveau de :
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Joints de base</li>
-          <li>Mécanismes pivotants</li>
-          <li>Systèmes de levage à gaz</li>
-          <li>Support de siège/dossier</li>
-          <li>Structure des pieds ou des roulettes</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Cela peut entraîner des blessures sur le lieu de travail, des temps
-          d&apos;arrêt opérationnels et des problèmes de responsabilité produit.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          La certification BIS obligatoire garantit
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Conception ergonomique sûre</li>
-          <li>Capacité de charge fiable</li>
-          <li>Forte durabilité sous tests cycliques</li>
-          <li>Résistance à l&apos;usure mécanique</li>
-          <li>Conformité aux paramètres de sécurité des utilisateurs</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ainsi, l&apos;obtention d&apos;une licence BIS pour les chaises de
-          travail est non négociable pour les fabricants indiens et étrangers.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Portée de la licence BIS pour les chaises de travail
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Cette norme couvre les exigences pour les chaises de travail. Cette
-          norme s&apos;applique aux chaises de travail complètement fabriquées.
-          Elle s&apos;applique également aux unités prêtes à assembler ; dans ce
-          cas, les exigences de cette norme s&apos;appliquent aux unités
-          assemblées.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Processus de certification BIS étape par étape pour les chaises de
-          travail (IS 17631:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Le processus de certification pour les chaises de travail implique un
-          mélange d&apos;évaluation en laboratoire, d&apos;audit d&apos;usine et
-          d&apos;examen technique.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 1 – Évaluation du produit et cartographie des normes
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Identifiez toutes les variantes de chaises et alignez-les avec IS
-          17631:2022. Comprenez quels modèles partagent la même construction et
-          lesquels nécessitent des tests séparés.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 2 – Soumission de la demande en ligne
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Le fabricant soumet la demande via le portail BIS Manak Online. Les
-          informations requises incluent :
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Détails du site de fabrication</li>
-          <li>Contrôles des matières premières</li>
-          <li>Spécifications techniques</li>
-          <li>Capacités de production</li>
-          <li>Documentation de propriété de la marque</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 3 – Paiement des frais
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Les frais doivent être payés pour :
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Demande</li>
-          <li>Traitement</li>
-          <li>Tests</li>
-          <li>Inspection</li>
-          <li>Marquage</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 4 – Tests d&apos;échantillons (Exigences IS 17631:2022)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Un laboratoire reconnu par BIS évalue la chaise selon plusieurs
-          critères de sécurité et de performance.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Les tests de chaise de travail incluent
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tests de charge statique du siège et du dossier</li>
-          <li>Cycles de chargement de durabilité</li>
-          <li>Tests de pivotement/rotation</li>
-          <li>Endurance du mécanisme d&apos;inclinaison</li>
-          <li>Performance du mécanisme de levage à gaz</li>
-          <li>Résistance des roulettes et résistance au roulement</li>
-          <li>Stabilité de base et tests de surcharge</li>
-          <li>Capacité de charge des accoudoirs</li>
-          <li>Tests de résistance aux chocs</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Le laboratoire émet un rapport de test détaillé à BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 5 – Audit d&apos;usine
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Les inspecteurs BIS examinent les éléments suivants de
-          l&apos;installation :
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Système de production</li>
-          <li>Dossiers d&apos;inspection des matériaux</li>
-          <li>Processus d&apos;assurance qualité interne</li>
-          <li>Instruments de test et journaux de calibration</li>
-          <li>Conformité au schéma de test et d&apos;inspection (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 6 – Octroi de la licence BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Une fois la conformité confirmée, BIS accorde :
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>La certification de licence BIS/Marque ISI</li>
-          <li>Un numéro CML unique</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 7 – Conformité constante
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Les fabricants doivent :
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintenir des contrôles internes continus</li>
-          <li>Suivre les règles de marquage</li>
-          <li>Coopérer lors des inspections de surveillance</li>
-          <li>Renouveler la licence périodiquement</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents requis pour la certification BIS des chaises de travail
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Un ensemble complet de documents garantit une approbation plus rapide.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documents d&apos;entreprise et d&apos;usine
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Enregistrement de l&apos;usine</li>
-          <li>Diagramme et plan de fabrication</li>
-          <li>Flux de travail de production</li>
-          <li>Liste des machines</li>
-          <li>Liste de l&apos;équipement de test</li>
-          <li>Certificats de calibration</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documents techniques
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Dessins techniques de la chaise</li>
-          <li>Spécifications des mécanismes</li>
-          <li>Fiches de données matérielles</li>
-          <li>Nomenclature</li>
-          <li>Instructions d&apos;assemblage</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documents juridiques
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Preuve d&apos;identité du signataire autorisé</li>
-          <li>Lettres d&apos;autorisation de marque</li>
-          <li>Certificat de marque de commerce</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documents spécifiques BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Formulaire de demande</li>
-          <li>Engagements</li>
-          <li>Formulaire de demande de test</li>
-          <li>Échantillons d&apos;étiquettes</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Exigences de test selon IS 17631:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Les chaises de travail subissent des tests plus complexes que les
-          chaises générales en raison des pièces mobiles.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Tests clés effectués
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
@@ -596,232 +602,354 @@ const MainContentLeft = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Conception et finition
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Renversement du bord avant
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Renversement vers l&apos;avant
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Renversement vers l&apos;avant pour chaises avec repose-pieds
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Renversement latéral pour chaises sans accoudoirs
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Renversement latéral pour chaises avec accoudoirs
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Renversement vers l&apos;arrière pour chaises sans dossier
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de charge statique du bord avant du siège
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de charge statique combiné siège et dossier
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de charge statique vers le bas de l&apos;accoudoir —
-                  Central
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de charge statique vers le bas de l&apos;accoudoir —
-                  Avant
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de charge statique latérale de l&apos;accoudoir
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de charge statique du repose-pieds
-                </TableCell>
-              </TableRow>
+              {[
+                ["4", "Conception et finition"],
+                ["7.3.1", "Renversement du bord avant"],
+                ["7.3.2", "Renversement vers l'avant"],
+                [
+                  "7.3.3",
+                  "Renversement vers l'avant pour chaises avec repose-pieds",
+                ],
+                [
+                  "7.3.4",
+                  "Renversement latéral pour chaises sans accoudoirs",
+                ],
+                [
+                  "7.3.5",
+                  "Renversement latéral pour chaises avec accoudoirs",
+                ],
+                [
+                  "7.3.6",
+                  "Renversement vers l'arrière pour chaises sans dossier",
+                ],
+                ["7.4.1", "Test de charge statique du bord avant du siège"],
+                ["7.4.2", "Test de charge statique combiné siège et dossier"],
+                [
+                  "7.4.3",
+                  "Test de charge statique vers le bas de l'accoudoir — Central",
+                ],
+                [
+                  "7.4.4",
+                  "Test de charge statique vers le bas de l'accoudoir — Avant",
+                ],
+                ["7.4.5", "Test de charge statique latérale de l'accoudoir"],
+                ["7.4.6", "Test de charge statique du repose-pieds"],
+              ].map(([clause, requirement], index) => (
+                <TableRow
+                  key={clause}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {clause}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {requirement}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Ces tests simulent des mois ou des années d&apos;utilisation régulière
-          en quelques jours.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Défis courants dans la certification BIS pour les chaises de travail
+          Processus de certification BIS pour les chaises de travail
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants souhaitant obtenir la certification BIS selon IS
+          17631:2022 doivent suivre un processus de certification structuré.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            <strong>
-              ✔ 1. Échec dans les tests mécaniques/d&apos;inclinaison
-            </strong>{" "}
-            – Souvent causé par des mécanismes faibles ou du matériel de qualité
-            inférieure.
+            <strong>Étape 1 : Évaluation de l&apos;applicabilité du produit —</strong>{" "}
+            Confirmer si la chaise de travail relève de IS 17631:2022 et du QCO
+            Meubles applicable avant de commencer la certification.
           </li>
           <li>
-            <strong>✔ 2. Non-conformité du mécanisme de levage à gaz</strong> –
-            Les levages à gaz doivent répondre à des paramètres stricts de
-            pression et de sécurité.
+            <strong>Étape 2 : Préparation de la documentation —</strong> Compiler
+            les dossiers techniques, de fabrication, de contrôle qualité et
+            juridiques requis pour l&apos;examen BIS.
           </li>
           <li>
-            <strong>✔ 3. Infrastructure de test inadéquate</strong> – Les tests
-            de chaises de travail nécessitent des installations spécialisées.
+            <strong>Étape 3 : Tests du produit —</strong> Soumettre des
+            échantillons à un laboratoire reconnu par BIS pour évaluation selon IS
+            17631:2022.
           </li>
           <li>
-            <strong>✔ 4. Regroupement de produits incorrect</strong> –
-            Différents mécanismes = tests séparés.
+            <strong>Étape 4 : Soumission de la demande —</strong> Déposer la
+            demande BIS avec les rapports de test, les détails de l&apos;usine et
+            les documents de conformité justificatifs.
           </li>
           <li>
-            <strong>✔ 5. Non-conformité STI</strong> – Les erreurs STI peuvent
-            retarder l&apos;émission de la licence.
+            <strong>Étape 5 : Inspection d&apos;usine —</strong> BIS évalue les
+            systèmes de production, les procédures QC et la traçabilité sur le site
+            de fabrication.
           </li>
           <li>
-            <strong>✔ 6. Incohérences de documents</strong> – Le nom de la
-            marque et le nom du modèle doivent correspondre exactement à la
-            demande BIS.
+            <strong>Étape 6 : Examen technique —</strong> BIS évalue la demande,
+            les résultats de laboratoire et les conclusions de l&apos;inspection
+            avant l&apos;approbation finale.
+          </li>
+          <li>
+            <strong>Étape 7 : Octroi de la licence BIS —</strong> En cas de
+            conformité réussie, BIS délivre la licence et autorise l&apos;utilisation
+            de la marque ISI sur les chaises de travail certifiées.
           </li>
         </ul>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Certification BIS pour les fabricants indiens
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Les fabricants indiens postulent généralement via la filière de
+          certification domestique. Le processus comprend généralement :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Tests du produit dans un laboratoire reconnu par BIS</li>
+          <li>Examen de la documentation et dépôt de la demande BIS</li>
+          <li>Évaluation d&apos;usine et examen technique par BIS</li>
+          <li>Octroi de la licence BIS et autorisation de la marque ISI</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Après la certification, les fabricants doivent maintenir une conformité
+          continue avec les exigences de surveillance, de marquage et de qualité
+          BIS.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Certification BIS pour les fabricants étrangers
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants étrangers souhaitant exporter des chaises de travail vers
+          l&apos;Inde doivent également obtenir la certification BIS avant de
+          fournir des produits couverts par les exigences de certification
+          obligatoire.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Le processus comprend généralement :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>
+            Nomination d&apos;un représentant indien autorisé (AIR – Authorized
+            Indian Representative)
+          </li>
+          <li>Tests du produit à l&apos;étranger et évaluation d&apos;usine</li>
+          <li>Examen de la demande BIS et approbation de la certification</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Cela garantit que les produits importés répondent aux mêmes exigences de
+          qualité et de sécurité applicables aux fabricants nationaux.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Documents requis pour la certification BIS des chaises de travail
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La documentation est un élément essentiel du processus de certification
+          BIS pour les chaises de travail. Les exigences peuvent différer selon que
+          le demandeur est un fabricant indien, un fabricant étranger ou un
+          importateur, et selon le schéma de certification suivi. Les dossiers
+          incomplets ou incohérents figurent parmi les principales causes de retards
+          de demande.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Les documents suivants sont couramment requis lors de la certification
+          BIS des chaises de travail selon IS 17631:2022 :
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Documents d&apos;entreprise —</strong> Certificat
+            d&apos;enregistrement de la société, licence de fabrication (le cas
+            échéant), enregistrement GST, justificatif d&apos;adresse commerciale,
+            et détails du signataire autorisé avec pièces d&apos;identité et
+            d&apos;adresse.
+          </li>
+          <li>
+            <strong>Documents de fabrication —</strong> Plan d&apos;implantation
+            de l&apos;usine, organigramme du processus de fabrication, liste des
+            machines de production et équipements de test, et détails de
+            l&apos;infrastructure de production et de la capacité installée.
+          </li>
+          <li>
+            <strong>Documents produit —</strong> Spécifications du produit,
+            plans techniques ou ingénierie, catalogue ou liste des modèles,
+            nomenclature (BOM), et détails des matières premières, composants et
+            pièces critiques utilisés dans la chaise de travail.
+          </li>
+          <li>
+            <strong>Documents de contrôle qualité —</strong> Procédures écrites de
+            contrôle qualité, dossiers d&apos;inspection des matières entrantes,
+            rapports d&apos;inspection en cours et produits finis, méthodes de test
+            internes, et certificats d&apos;étalonnage des équipements de mesure et
+            de test.
+          </li>
+          <li>
+            <strong>Documents de certification —</strong> Rapports de test d&apos;un
+            laboratoire reconnu par BIS, formulaires de demande BIS dûment remplis,
+            déclarations et engagements, échantillons d&apos;étiquettes ou de
+            marquage, et tout document supplémentaire prescrit par BIS pour la
+            filière de certification spécifique.
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tous les documents doivent être exacts, complets et cohérents avec les
+          détails du produit soumis dans la demande BIS. Il est conseillé aux
+          fabricants d&apos;examiner attentivement les exigences documentaires avant
+          le dépôt afin d&apos;éviter des retards inutiles dans le traitement de la
+          certification.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Avantages de la certification BIS pour les chaises de travail
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Facilite les ventes légales dans toute l&apos;Inde</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            Renforce la confiance des clients et la réputation de la marque
+            <strong>Conformité réglementaire —</strong> Respecter les normes
+            indiennes obligatoires et les exigences QCO pour une fabrication et une
+            vente légales.
           </li>
-          <li>Garantit une durabilité à long terme</li>
-          <li>Réduit les réclamations de garantie et les défaillances</li>
-          <li>Protège contre les pénalités réglementaires</li>
-          <li>Permet l&apos;inscription sur les plateformes e-commerce</li>
           <li>
-            Obligatoire pour les appels d&apos;offres gouvernementaux et les
-            approvisionnements d&apos;entreprise
+            <strong>Accès légal au marché —</strong> Fournir des chaises de travail
+            certifiées en Inde sans risque réglementaire pour les catégories de
+            produits couvertes.
+          </li>
+          <li>
+            <strong>Crédibilité renforcée —</strong> La marque ISI signale une
+            qualité, une sécurité et une conformité vérifiées avec IS 17631:2022.
+          </li>
+          <li>
+            <strong>Confiance des clients —</strong> Les acheteurs corporatifs, les
+            institutions et les utilisateurs finaux font confiance aux produits
+            testés selon les références nationales.
+          </li>
+          <li>
+            <strong>Meilleurs approvisionnements —</strong> Améliore
+            l&apos;éligibilité aux appels d&apos;offres gouvernementaux,
+            institutionnels et commerciaux à grand volume.
+          </li>
+          <li>
+            <strong>Réputation de marque renforcée —</strong> Démontre
+            l&apos;engagement envers la qualité, l&apos;ergonomie et la fiabilité
+            du produit à long terme.
+          </li>
+          <li>
+            <strong>Contrôle qualité amélioré —</strong> Encourage des systèmes QC
+            structurés, la traçabilité et des normes de production cohérentes.
           </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Pénalités pour la vente de chaises de travail sans certification BIS
+          Défis courants lors de la certification BIS
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          La non-conformité peut entraîner :
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Lourdes pénalités financières</li>
-          <li>Confiscation des stocks</li>
-          <li>Ordres d&apos;arrêt de production</li>
-          <li>Interdiction d&apos;importation</li>
-          <li>Poursuites pénales</li>
-          <li>Annulation de la licence commerciale</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Interprétation technique —</strong> Faire correspondre les
+            clauses de IS 17631:2022 à des conceptions, mécanismes et variantes de
+            chaises spécifiques peut être complexe.
+          </li>
+          <li>
+            <strong>Échecs aux tests —</strong> Des cadres faibles, une mauvaise
+            stabilité ou des problèmes de mécanisme entraînent souvent un rejet aux
+            tests de renversement ou de charge.
+          </li>
+          <li>
+            <strong>Lacunes documentaires —</strong> Des plans incohérents, des
+            dossiers QC incomplets ou des déclarations manquantes retardent
+            couramment l&apos;approbation.
+          </li>
+          <li>
+            <strong>Conformité d&apos;usine —</strong> Les contrôles de production,
+            la traçabilité et les tests internes peuvent nécessiter une mise à
+            niveau avant l&apos;octroi de la licence.
+          </li>
+          <li>
+            <strong>Coordination réglementaire —</strong> Aligner les tests en
+            laboratoire, les inspections BIS et les demandes de suivi prend du
+            temps sans accompagnement expert.
+          </li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Une application stricte est effectuée sous la loi BIS de 2016.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Qui doit obtenir la certification BIS pour les chaises de travail ?
+          Pourquoi choisir Sun Certifications India ?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Obligatoire pour :
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India est un cabinet de conseil en conformité
+          réglementaire qui assiste les fabricants, importateurs, exportateurs et
+          entreprises dans l&apos;obtention de diverses certifications et
+          approbations requises pour le marché indien.
         </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabricants indiens</li>
-          <li>Fabricants étrangers exportant vers l&apos;Inde</li>
-          <li>Propriétaires de marques</li>
-          <li>Importateurs</li>
-          <li>Fournisseurs OEM/ODM</li>
-          <li>Distributeurs d&apos;entrepôt</li>
-          <li>Marques de meubles de détail et en ligne</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chaque usine nécessite une licence BIS unique.
+          Notre équipe fournit une assistance complète pour la certification BIS
+          des chaises de travail selon IS 17631:2022.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Nos services comprennent</h3>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Évaluation de l&apos;applicabilité du produit —</strong> Nous
+            confirmons si vos chaises de travail relèvent de IS 17631:2022 et du
+            QCO applicable.
+          </li>
+          <li>
+            <strong>Conseil en conformité BIS —</strong> Accompagnement expert sur
+            les filières de certification, les obligations et les exigences de la
+            norme.
+          </li>
+          <li>
+            <strong>Assistance documentaire —</strong> Préparation, examen et
+            organisation de tous les dossiers de demande BIS et d&apos;usine.
+          </li>
+          <li>
+            <strong>Coordination des tests —</strong> Accompagnement complet pour
+            la soumission d&apos;échantillons et les tests dans des laboratoires
+            reconnus.
+          </li>
+          <li>
+            <strong>Support à l&apos;inspection d&apos;usine —</strong> Vérifications
+            de préparation pour l&apos;évaluation d&apos;usine BIS et les audits de
+            conformité.
+          </li>
+          <li>
+            <strong>Gestion de la demande —</strong> Prise en charge des dépôts
+            BIS, des relances et de la communication réglementaire en votre nom.
+          </li>
+          <li>
+            <strong>Support post-certification —</strong> Assistance continue pour
+            la surveillance, les règles de marquage et le maintien de la licence.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -829,122 +957,135 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Le certificat BIS pour les chaises de travail selon IS 17631:2022 est
-          crucial pour garantir des produits d&apos;assise sûrs, durables et
-          ergonomiquement solides en Inde. La certification obligatoire renforce
-          la confiance des clients, réduit les risques de responsabilité produit
-          et garantit la conformité aux normes de qualité nationales. Avec un
-          soutien professionnel, le parcours de certification—des tests à
-          l&apos;inspection en passant par l&apos;octroi de licence—devient
-          efficace et prévisible.
+          La certification BIS pour les chaises de travail selon IS 17631:2022 joue
+          un rôle important pour garantir la qualité, la sécurité, la durabilité, la
+          stabilité et les performances ergonomiques des produits d&apos;assise de
+          travail.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          En obtenant la certification BIS et en utilisant la marque ISI, les
+          fabricants peuvent démontrer leur conformité aux normes indiennes,
+          renforcer la confiance des clients, améliorer la crédibilité du produit
+          et soutenir la croissance commerciale à long terme.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Que vous soyez un fabricant indien ou un fabricant étranger souhaitant
+          accéder au marché indien, comprendre les exigences de IS 17631:2022 est
+          une étape essentielle vers la conformité réglementaire et le succès
+          commercial.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Si vous envisagez d&apos;obtenir la certification BIS pour les chaises de
+          travail selon IS 17631:2022, Sun Certifications India peut simplifier le
+          processus grâce à un accompagnement réglementaire expert et un support
+          complet en matière de conformité.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQ – Certificat BIS pour chaises de travail (IS 17631:2022)
+          FAQ – Certification BIS pour chaises de travail (IS 17631:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. Quelles chaises relèvent de IS 17631:2022 ?</strong>
+              <strong>1. Qu&apos;est-ce que la certification BIS pour les chaises de travail ?</strong>
               <br />
-              Toute chaise conçue pour les environnements de travail, y compris
-              les chaises ergonomiques de bureau, les chaises de travail, les
-              chaises pivotantes et les chaises réglables.
+              La certification BIS confirme que les chaises de travail respectent
+              les exigences de IS 17631:2022 et les exigences de certification
+              applicables.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>2. Qu&apos;est-ce que IS 17631:2022 ?</strong>
+              <br />
+              IS 17631:2022 est la norme indienne qui spécifie les exigences pour
+              les chaises de travail, notamment la sécurité, la résistance, la
+              stabilité, la durabilité et les considérations ergonomiques.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>3. La certification BIS est-elle obligatoire pour les chaises de travail ?</strong>
+              <br />
+              Les chaises de travail couvertes par le cadre réglementaire applicable
+              doivent se conformer aux exigences de certification BIS.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. Qu&apos;est-ce que la marque ISI ?</strong>
+              <br />
+              La marque ISI est la marque de certification standard délivrée dans
+              le cadre du schème de certification de produits BIS.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Qui peut demander la certification BIS ?</strong>
+              <br />
+              Les fabricants indiens et les fabricants étrangers peuvent postuler.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>6. La certification BIS nécessite-t-elle des tests de produit ?</strong>
+              <br />
+              Oui. Les tests de produit constituent une part importante du processus
+              de certification.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. La certification BIS est-elle obligatoire pour les chaises de
-                travail ?
+                7. Les chaises de travail importées nécessitent-elles la certification BIS ?
               </strong>
               <br />
-              Oui. La certification BIS est obligatoire avant la fabrication, la
-              vente ou l&apos;importation de chaises de travail en Inde.
+              Les produits couverts par les exigences de certification obligatoire
+              doivent se conformer aux réglementations BIS applicables avant d&apos;être
+              fournis en Inde.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                3. Qu&apos;est-ce qui rend les tests de chaises de travail
-                différents des tests de chaises générales ?
-              </strong>
+              <strong>8. Quels tests sont effectués selon IS 17631:2022 ?</strong>
               <br />
-              Les chaises de travail utilisent des mécanismes comme les pivots,
-              les levages à gaz, les systèmes d&apos;inclinaison et les
-              roulettes—nécessitant des tests mécaniques et d&apos;endurance
-              avancés.
+              La norme comprend des évaluations telles que l&apos;examen de la
+              conception et de la finition, la vérification dimensionnelle, les
+              tests de stabilité et les tests de charge statique.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. Combien de temps prend la certification BIS ?</strong>
+              <strong>9. Pourquoi la conception ergonomique est-elle importante pour les chaises de travail ?</strong>
               <br />
-              Généralement 30–45 jours pour les fabricants indiens et environ
-              120 jours pour les fabricants étrangers, selon les tests et la
-              documentation.
+              La conception ergonomique contribue à améliorer le confort de
+              l&apos;utilisateur, favorise une posture correcte et améliore
+              l&apos;expérience au travail.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. Les fabricants étrangers peuvent-ils postuler ?
-              </strong>
+              <strong>10. Comment Sun Certifications India peut-elle aider ?</strong>
               <br />
-              Oui, via le FMCS (Foreign Manufacturers Certification Scheme).
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                6. Que se passe-t-il si une chaise échoue aux tests BIS ?
-              </strong>
-              <br />
-              Elle doit être repensée, corrigée et retestée jusqu&apos;à ce
-              qu&apos;elle réponde à IS 17631:2022.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                7. Quels documents sont requis pour la demande BIS ?
-              </strong>
-              <br />
-              Détails de l&apos;usine, dessins de produits, liste des machines,
-              documents QC, propriété de la marque et papiers juridiques.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                8. Tous les modèles de chaises nécessitent-ils des tests séparés
-                ?
-              </strong>
-              <br />
-              Si les modèles diffèrent par la conception, le mécanisme ou la
-              structure, des tests séparés peuvent être nécessaires.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                9. Le marquage ISI est-il obligatoire après approbation ?
-              </strong>
-              <br />
-              Oui, la marque ISI doit apparaître sur le produit,
-              l&apos;étiquette et l&apos;emballage.
+              Sun Certifications India fournit une assistance pour
+              l&apos;évaluation de l&apos;applicabilité, la documentation, la
+              coordination des tests, la préparation à l&apos;inspection, la gestion
+              de la demande et le support en matière de conformité.
             </p>
           </div>
         </div>
@@ -961,6 +1102,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Ressources connexes
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline"> Certificat ISI</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">Certificat BIS pour fabricant étranger</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadFrench />
 

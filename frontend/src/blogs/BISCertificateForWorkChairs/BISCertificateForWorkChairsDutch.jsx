@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForWorkChairsDutch = () => {
   return (
     <div className="relative w-full">
@@ -180,7 +186,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificaat voor Werkstoelen – IS 17631:2022
+                    BIS Certificering voor Werkstoelen (IS 17631:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -211,369 +217,356 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificaat voor Werkstoelen – Een Volledige Nalevingsgids voor IS
-          17631:2022
+          BIS Certificering voor Werkstoelen (IS 17631:2022) – Volledige ISI Mark
+          Certificeringsgids
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
             title="BIS Licentie voor Werkstoelen"
-            alt="BIS Certificaat voor Werkstoelen - IS 17631:2022 BIS Certificering"
+            alt="BIS Certificering voor Werkstoelen - IS 17631:2022 ISI Mark Gids"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het toenemende gebruik van kantoor- en taakstoelen—of het nu in
-          bedrijfsruimtes, co-working centra, thuis kantoren of institutionele
-          opstellingen is—heeft veiligheid en ergonomische prestaties essentieel
-          gemaakt. Om ervoor te zorgen dat fabrikanten structureel stabiele,
-          duurzame en gebruikersveilige zitproducten leveren, heeft de regering
-          van India BIS Certificering voor Werkstoelen onder IS 17631:2022
-          verplicht gesteld.
+          Werkstoelen zijn een essentieel onderdeel geworden van moderne
+          werkplekken, onderwijsinstellingen, overheidskantoren, co-working
+          ruimtes en thuiskantooromgevingen. Naarmate organisaties meer nadruk
+          leggen op het comfort van medewerkers, productiviteit, ergonomie op de
+          werkplek en beroepswelzijn, blijft de vraag naar hoogwaardige
+          werkstoelen groeien.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Werkstoelen doorstaan doorgaans herhaaldelijke belasting, continue
-          lichaamsbeweging, kantelen, draaien en hoogteaanpassingen. Een falen
-          in een prestatiekenmerk kan leiden tot ernstig letsel. Daarom is
-          naleving van IS 17631:2022 – Werkstoelen: Veiligheidseisen nu
-          verplicht voor alle fabrikanten en importeurs.
+          Een slecht ontworpen stoel kan de houding, het comfort en de
+          productiviteit negatief beïnvloeden. Daarom zijn kwaliteit, veiligheid,
+          duurzaamheid en ergonomische prestaties cruciale overwegingen voor
+          fabrikanten, kopers en inkooporganisaties. Om uniforme
+          kwaliteitsnormen in de sector te waarborgen, heeft het Bureau of
+          Indian Standards (BIS) IS 17631:2022 vastgesteld, de Indiase norm die
+          van toepassing is op werkstoelen.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Deze gids legt het volledige BIS licentieproces uit, inclusief normen,
-          testen, kosten, documentatie, verantwoordelijkheden, voordelen en
-          uitdagingen—gecreëerd met verse inhoud om duplicatie op uw website te
-          voorkomen.
+          Fabrikanten die onder het toepasselijke regelgevingskader vallen,
+          moeten BIS Certificering verkrijgen en het ISI Merk op conforme
+          producten aanbrengen. BIS Certificering toont aan dat de werkstoel is
+          beoordeeld aan de hand van voorgeschreven eisen met betrekking tot
+          veiligheid, sterkte, stabiliteit, duurzaamheid en ergonomische
+          prestaties.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Deze uitgebreide gids legt alles uit wat fabrikanten, importeurs,
+          meubelmerken, inkoopprofessionals en ondernemers moeten weten over
+          BIS Certificering voor Werkstoelen onder IS 17631:2022.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certificering voor Werkstoelen Begrijpen
+          Snel Overzicht van BIS Certificering voor Werkstoelen
+        </h2>
+
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Onderdeel
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Details
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Product", "Werkstoelen"],
+                ["Toepasselijke Indiase Norm", "IS 17631:2022"],
+                ["Certificeringstype", "BIS Productcertificering"],
+                ["Toepasselijk Certificeringsschema", "Schema-I (ISI Mark Certificering)"],
+                ["Toepasselijk Merk", "ISI Mark"],
+                ["Regelgevende Autoriteit", "Bureau of Indian Standards (BIS)"],
+                ["Toepasselijk Ministerie", "Ministerie van Handel en Industrie"],
+                ["Nalevingsvereiste", "Verplicht onder toepasselijke Meubel QCO (Quality Control Order)"],
+                [
+                  "In aanmerking komende aanvragers",
+                  "Indiase Fabrikanten en Buitenlandse Fabrikanten ",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Toepasselijk Certificeringsschema" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Schema-I (ISI Mark Certificering)
+                      </a>
+                    ) : particular === "Nalevingsvereiste" ? (
+                      <>
+                        Verplicht onder toepasselijke{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-work-chairs"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>Meubel QCO (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Wat is BIS Certificering voor Werkstoelen?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het Bureau of Indian Standards (BIS) houdt toezicht op de kwaliteit en
-          veiligheid van producten die op de Indiase markt worden geleverd. Elk
-          product dat onder een Indiase norm valt die in een verplichte
-          Kwaliteitscontrole Order is opgenomen, moet door BIS worden
-          geëvalueerd en gecertificeerd voordat het wordt verkocht.
+          BIS Certificering voor Werkstoelen is een conformiteitsbeoordelingsproces
+          dat wordt uitgevoerd onder het BIS Productcertificeringsschema van het
+          Bureau of Indian Standards.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificaat – Wat Het Vertegenwoordigt
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Het doel van certificering is om te verifiëren dat werkstoelen voldoen
+          aan de eisen zoals gespecificeerd onder IS 17631:2022. Na succesvolle
+          certificering mogen fabrikanten het ISI Merk op hun producten aanbrengen.
+        </p>
+
         <p className="text-gray-600 text-base font-geist mb-3">
-          Een BIS Certificaat geeft aan dat een werkstoel:
+          Het certificeringsproces evalueert verschillende prestatie- en
+          veiligheidsaspecten van werkstoelen, waaronder:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Prestatie- en duurzaamheidstesten heeft doorstaan</li>
-          <li>Voldoet aan materiaal- en constructiespecificaties</li>
-          <li>Veilig is voor langdurig dagelijks gebruik</li>
+        <ul className={LIST_CLASS}>
+          <li>Ergonomisch ontwerp</li>
+          <li>Structurele integriteit</li>
+          <li>Stabiliteit</li>
+          <li>Duurzaamheid</li>
+          <li>Veiligheidseisen</li>
+          <li>Afwerking</li>
+          <li>Productprestaties</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Het ISI Merk biedt de zekerheid dat het product is beoordeeld aan de
+          hand van erkende Indiase normen en voldoet aan de voorgeschreven
+          kwaliteitseisen.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Waarom BIS Certificering Belangrijk is voor Werkstoelen
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Werkstoelen worden gedurende lange perioden gebruikt in kantoren,
+          onderwijsinstellingen, commerciële vestigingen en thuiswerkplekken.
+          Aangezien gebruikers een aanzienlijk deel van hun dag zittend doorbrengen,
+          beïnvloeden de kwaliteit en ergonomische prestaties van deze stoelen
+          rechtstreeks het comfort en de efficiëntie op de werkplek.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS Certificering helpt ervoor te zorgen dat gecertificeerde werkstoelen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Voldoen aan voorgeschreven veiligheidseisen</li>
+          <li>Betrouwbare prestaties leveren</li>
+          <li>Voldoende structurele sterkte bieden</li>
+          <li>Stabiliteit behouden tijdens gebruik</li>
+          <li>Langdurige duurzaamheid ondersteunen</li>
+          <li>Voldoen aan Indiase kwaliteitsnormen</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Voor fabrikanten helpt certificering om productkwaliteit aan te tonen en
+          ondersteunt het regelgevende naleving en marktacceptatie.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Overzicht van IS 17631:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17631:2022 is de Indiase norm die eisen specificeert voor werkstoelen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De norm stelt eisen vast met betrekking tot:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Veiligheid</li>
+          <li>Sterkte</li>
+          <li>Stabiliteit</li>
+          <li>Duurzaamheid</li>
+          <li>Ergonomische overwegingen</li>
+          <li>Functionele prestaties</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Het doel is om ervoor te zorgen dat werkstoelen in staat zijn om veilige
+          en betrouwbare prestaties te leveren tijdens langdurig gebruik in
+          werkomgevingen.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1">Reikwijdte van IS 17631:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Volgens de norm dekt IS 17631:2022 werkstoelen en is van toepassing op:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Volledig gefabriceerde werkstoelen</li>
+          <li>Gefabriceerde werkstoelen</li>
+          <li>Klaar-voor-montage werkstoelen na montage</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De eisen van de norm zijn van toepassing op het gemonteerde product dat
+          bedoeld is voor gebruik.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Soorten Werkstoelen Gedekt Onder IS 17631:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Afhankelijk van het productontwerp en de beoogde toepassing kan de norm
+          van toepassing zijn op verschillende categorieën werkplekzitmeubilair,
+          waaronder:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            Voldoet aan de ergonomische en structurele richtlijnen in Indiase
-            Normen
+            <strong>Kantoor Werkstoelen —</strong> Zitmeubilair gebruikt in
+            bedrijfskantoren, administratieve afdelingen en professionele
+            werkomgevingen.
+          </li>
+          <li>
+            <strong>Taakstoelen —</strong> Stoelen gebouwd voor dagelijks bureauwerk,
+            werkstations en routinematige zittende taken.
+          </li>
+          <li>
+            <strong>Verstelbare Werkstoelen —</strong> Modellen met hoogte, kantel
+            of andere verstelbare functies om comfort en ergonomie te verbeteren.
+          </li>
+          <li>
+            <strong>Institutionele Werkstoelen —</strong> Stoelen geleverd aan
+            scholen, hogescholen, overheidskantoren en commerciële instellingen.
+          </li>
+          <li>
+            <strong>Thuiskantoor Stoelen —</strong> Werkstoelen ontworpen voor
+            thuiswerken, freelancers en residentiële kantooropstellingen.
           </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Fabrikanten die aan deze eisen voldoen, krijgen een BIS Licentie
-          waarmee ze het ISI Merk mogen aanbrengen.
+          Beoordeel productontwerp, mechanisme en beoogd gebruik zorgvuldig om te
+          bevestigen of uw stoel binnen de reikwijdte van IS 17631:2022 valt.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Bekijk ook Meubelproducten Gedekt Onder Verplichte BIS
+            Certificering —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS Certificering voor meubels</strong>
+          </a>
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Toepasselijke Norm voor Werkstoelen – IS 17631:2022
+          Belangrijkste Eisen Onder IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          De toepasselijke norm voor taak- en kantoorwerkstoelen is:
+          De norm richt zich op verschillende belangrijke prestatiekenmerken die
+          bijdragen aan de kwaliteit en veiligheid van werkstoelen.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17631:2022</strong> – Werkstoelen: Veiligheidseisen
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Deze norm richt zich op zitplaatsen bedoeld voor langdurig gebruik in
-          werkomgevingen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Producten Gedekt Onder Deze Norm
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ergonomische kantoorstoelen</li>
-          <li>Taakstoelen</li>
-          <li>Draaistoelen</li>
-          <li>Werkbureaustoelen</li>
-          <li>Werkstoelen met verstelbare hoogte</li>
-          <li>Uitvoerende werkstoelen</li>
-          <li>Werkstoelen met mesh of stoffen rugleuning</li>
-          <li>Stoelen uitgerust met armsteunen</li>
-          <li>Stoelen met kantel-/vergrendelingsmechanismen</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Ergonomisch Ontwerp —</strong> Richt zich op gebruikerscomfort,
+            zit- en rugleuningondersteuning, verstelbaarheid en juiste houding om
+            vermoeidheid te verminderen en de productiviteit op de werkplek te
+            verbeteren.
+          </li>
+          <li>
+            <strong>Sterkte-eisen —</strong> Frame, verbindingen en dragende
+            structuren moeten normaal gebruik weerstaan zonder falen of verlies
+            van integriteit.
+          </li>
+          <li>
+            <strong>Stabiliteitseisen —</strong> Stoelen moeten kantelen
+            weerstaan en stabiel blijven tijdens regulier zittend gebruik en
+            beweging.
+          </li>
+          <li>
+            <strong>Duurzaamheidseisen —</strong> Producten moeten consistent
+            presteren na langdurig en herhaald dagelijks gebruik gedurende hun
+            beoogde levensduur.
+          </li>
+          <li>
+            <strong>Veiligheidseisen —</strong> Ontwerp en constructie moeten
+            vermijdbare gevaren door instabiliteit, defecten of onveilige bouw
+            minimaliseren.
+          </li>
+          <li>
+            <strong>Materiaalkwaliteit —</strong> Componenten en afwerkingen
+            moeten voldoen aan kwaliteitsnormen die veilige, duurzame en
+            betrouwbare prestaties ondersteunen.
+          </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Waarom IS 17631:2022 Naleving Cruciaal Is
+          Testeisen voor BIS Certificering van Werkstoelen
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Werkstoelen verschillen aanzienlijk van algemene stoelen omdat ze:
+          Voordat certificering wordt verleend, worden productmonsters beoordeeld
+          door testen in een erkend laboratorium. Testen helpen naleving te
+          verifiëren van de eisen gespecificeerd onder IS 17631:2022.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Continue beweging ondersteunen</li>
-          <li>Mechanische en aanpassingsmechanismen gebruiken</li>
-          <li>Dynamische belasting dragen</li>
-          <li>Duurzaamheid vereisen voor langdurig gebruik</li>
-        </ul>
+        <h3 className={SUB_HEADING_CLASS}>Belangrijkste Uitgevoerde Testen</h3>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Slecht gebouwde stoelen kunnen falen bij:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Basisverbindingen</li>
-          <li>Draaimechanismen</li>
-          <li>Gasliftsystemen</li>
-          <li>Zit-/rugondersteuning</li>
-          <li>Poot- of wielstructuur</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Dit kan leiden tot werkplekletsels, operationele stilstand en
-          productaansprakelijkheidsproblemen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Verplichte BIS Certificering Zorgt Voor
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Veilig ergonomisch ontwerp</li>
-          <li>Betrouwbare draagkracht</li>
-          <li>Sterke duurzaamheid onder cyclische testen</li>
-          <li>Weerstand tegen mechanische slijtage</li>
-          <li>Naleving van gebruikersveiligheidsparameters</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Het verkrijgen van een BIS Licentie voor Werkstoelen is dus
-          niet-onderhandelbaar voor Indiase en buitenlandse fabrikanten.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Reikwijdte van BIS Licentie voor Werkstoelen
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Deze norm dekt de eisen voor werkstoelen. Deze norm is van toepassing
-          op volledig gefabriceerde werkstoelen. Het is ook van toepassing op
-          klaar-voor-montage eenheden; in dat geval zijn de eisen van deze norm
-          van toepassing op de gemonteerde eenheden.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Stap-voor-Stap BIS Certificeringsproces voor Werkstoelen (IS
-          17631:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Het certificeringsproces voor werkstoelen omvat een mix van
-          laboratoriumevaluatie, fabrieksaudit en technische controle.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 1 – Productevaluatie & Norm Mapping
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Identificeer alle stoelvarianten en stem ze af op IS 17631:2022.
-          Begrijp welke modellen dezelfde constructie delen en welke aparte
-          testen vereisen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 2 – Online Aanvraag Indienen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          De fabrikant dient de aanvraag in via het Manak Online BIS Portaal.
-          Vereiste informatie omvat:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabriekslocatiegegevens</li>
-          <li>Grondstofcontroles</li>
-          <li>Technische specificaties</li>
-          <li>Productiecapaciteiten</li>
-          <li>Merkeigendomsdocumentatie</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 3 – Kostenbetaling
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Kosten moeten worden betaald voor:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Aanvraag</li>
-          <li>Verwerking</li>
-          <li>Testen</li>
-          <li>Inspectie</li>
-          <li>Merken</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 4 – Monstertesten (IS 17631:2022 Eisen)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Een door BIS erkend laboratorium evalueert de stoel tegen meerdere
-          veiligheids- en prestatiecriteria.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Werkstoel Testen Omvatten
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zit- en rug statische belastingstesten</li>
-          <li>Duurzaamheidsbelastingscycli</li>
-          <li>Draai-/rotatietesten</li>
-          <li>Kantelmechanisme uithoudingsvermogen</li>
-          <li>Gasliftmechanisme prestaties</li>
-          <li>Wielsterkte en rolweerstand</li>
-          <li>Basisstabiliteit en overbelastingstesten</li>
-          <li>Armsteun belastingscapaciteit</li>
-          <li>Schokbestendigheidstesten</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Het laboratorium geeft een gedetailleerd testrapport af aan BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 5 – Fabrieksaudit
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS inspecteurs beoordelen de faciliteit&apos;s:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Productiesysteem</li>
-          <li>Materiaalinspectierecords</li>
-          <li>Interne kwaliteitsborgingsprocessen</li>
-          <li>Testinstrumenten & kalibratielogboeken</li>
-          <li>Naleving van het Test- en Inspectieschema (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 6 – Verlening van BIS Licentie
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Zodra conformiteit is bevestigd, verleent BIS:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>De BIS Licentie/ISI Merk certificering</li>
-          <li>Een uniek CML nummer</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 7 – Consistente Naleving
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Fabrikanten moeten:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Voortdurende interne controles handhaven</li>
-          <li>Merkenregels volgen</li>
-          <li>Meewerken tijdens toezichtinspecties</li>
-          <li>De licentie periodiek vernieuwen</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documenten Vereist voor BIS Certificering van Werkstoelen
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Een complete set documenten zorgt voor snellere goedkeuring.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bedrijfs- & Fabrieksdocumenten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabrieksregistratie</li>
-          <li>Productiediagram & indeling</li>
-          <li>Productieworkflow</li>
-          <li>Machinelijst</li>
-          <li>Testapparatuurlijst</li>
-          <li>Kalibratiecertificaten</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technische Documenten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stoel technische tekeningen</li>
-          <li>Mechanismespecificaties</li>
-          <li>Materiaaldatabladen</li>
-          <li>Stuklijst</li>
-          <li>Montage-instructies</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Juridische Documenten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identiteitsbewijs van gemachtigde ondertekenaar</li>
-          <li>Merkautorisatiebrieven</li>
-          <li>Handelsmerk certificaat</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS-Specifieke Documenten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Aanvraagformulier</li>
-          <li>Verklaringen</li>
-          <li>Testaanvraagformulier</li>
-          <li>Labelsamples</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testeisen Volgens IS 17631:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Werkstoelen ondergaan complexere testen dan algemene stoelen vanwege
-          bewegende onderdelen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Belangrijkste Uitgevoerde Testen
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
@@ -586,220 +579,330 @@ const MainContentLeft = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Ontwerp en afwerking
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Voorrand Omkanteling
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Voorwaartse Omkanteling
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Voorwaartse Omkanteling voor Stoelen met Voetsteun
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Zijwaartse Omkanteling voor Stoelen Zonder Armsteunen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Zijwaartse Omkanteling voor Stoelen Met Armsteunen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Achterwaartse Omkanteling voor Stoelen Zonder Rugleuning
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Zit Voorrand Statische Belastingstest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Gecombineerde Zit en Rug Statische Belastingstest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Armsteun Neerwaartse Statische Belastingstest — Centraal
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Armsteun Neerwaartse Statische Belastingstest — Voor
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Armsteun Zijwaartse Statische Belastingstest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Voetsteun Statische Belastingstest
-                </TableCell>
-              </TableRow>
+              {[
+                ["4", "Ontwerp en afwerking"],
+                ["7.3.1", "Voorrand Omkanteling"],
+                ["7.3.2", "Voorwaartse Omkanteling"],
+                [
+                  "7.3.3",
+                  "Voorwaartse Omkanteling voor Stoelen met Voetsteun",
+                ],
+                [
+                  "7.3.4",
+                  "Zijwaartse Omkanteling voor Stoelen Zonder Armsteunen",
+                ],
+                [
+                  "7.3.5",
+                  "Zijwaartse Omkanteling voor Stoelen Met Armsteunen",
+                ],
+                [
+                  "7.3.6",
+                  "Achterwaartse Omkanteling voor Stoelen Zonder Rugleuning",
+                ],
+                ["7.4.1", "Zit Voorrand Statische Belastingstest"],
+                ["7.4.2", "Gecombineerde Zit en Rug Statische Belastingstest"],
+                ["7.4.3", "Armsteun Neerwaartse Statische Belastingstest — Centraal"],
+                ["7.4.4", "Armsteun Neerwaartse Statische Belastingstest — Voor"],
+                ["7.4.5", "Armsteun Zijwaartse Statische Belastingstest"],
+                ["7.4.6", "Voetsteun Statische Belastingstest"],
+              ].map(([clause, requirement], index) => (
+                <TableRow
+                  key={clause}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {clause}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {requirement}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Deze testen simuleren maanden of jaren van regelmatig gebruik binnen
-          enkele dagen.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Veelvoorkomende Uitdagingen bij BIS Certificering voor Werkstoelen
+          BIS Certificeringsproces voor Werkstoelen
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Fabrikanten die BIS Certificering onder IS 17631:2022 zoeken, moeten een
+          gestructureerd certificeringsproces doorlopen.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            <strong>✔ 1. Falen in mechanische/kanteltesten</strong> – Vaak
-            veroorzaakt door zwakke mechanismen of lage kwaliteit hardware.
+            <strong>Stap 1: Producttoepasselijkheidsbeoordeling —</strong> Bevestig
+            of de werkstoel onder IS 17631:2022 en de toepasselijke Meubel QCO
+            valt voordat u met certificering begint.
           </li>
           <li>
-            <strong>✔ 2. Gasliftmechanisme niet-conformiteit</strong> –
-            Gasliften moeten voldoen aan strikte druk- en veiligheidsparameters.
+            <strong>Stap 2: Documentatievoorbereiding —</strong> Stel technische,
+            productie-, kwaliteitscontrole- en juridische dossiers samen die
+            vereist zijn voor BIS-beoordeling.
           </li>
           <li>
-            <strong>✔ 3. Onvoldoende testinfrastructuur</strong> – Werkstoel
-            testen vereist gespecialiseerde opstellingen.
+            <strong>Stap 3: Producttesten —</strong> Dien monsters in bij een
+            door BIS erkend laboratorium voor evaluatie tegen IS 17631:2022.
           </li>
           <li>
-            <strong>✔ 4. Onjuiste productgroepering</strong> – Verschillende
-            mechanismen = aparte testen.
+            <strong>Stap 4: Aanvraagindiening —</strong> Dien de BIS-aanvraag in
+            met testrapporten, fabrieksdetails en ondersteunende
+            nalevingsdocumenten.
           </li>
           <li>
-            <strong>✔ 5. STI niet-conformiteit</strong> – STI fouten kunnen
-            licentieverlening vertragen.
+            <strong>Stap 5: Fabrieksinspectie —</strong> BIS beoordeelt
+            productiesystemen, QC-procedures en traceerbaarheid in de
+            productiefaciliteit.
           </li>
           <li>
-            <strong>✔ 6. Documentmismatches</strong> – Merknaam en modelnaam
-            moeten exact overeenkomen met BIS aanvraag.
+            <strong>Stap 6: Technische Beoordeling —</strong> BIS evalueert de
+            aanvraag, laboratoriumresultaten en inspectiebevindingen vóór
+            definitieve goedkeuring.
+          </li>
+          <li>
+            <strong>Stap 7: Verlening van BIS Licentie —</strong> Bij succesvolle
+            naleving verleent BIS de licentie en autoriseert het gebruik van het
+            ISI Merk op gecertificeerde werkstoelen.
           </li>
         </ul>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certificering voor Indiase Fabrikanten
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Indiase fabrikanten dienen doorgaans aan via de binnenlandse
+          certificeringsroute. Het proces omvat doorgaans:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Producttesten in een door BIS erkend laboratorium</li>
+          <li>Documentatiebeoordeling en BIS-aanvraagindiening</li>
+          <li>Fabrieksbeoordeling en technische evaluatie door BIS</li>
+          <li>Verlening van BIS-licentie en ISI Mark-autorisatie</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Na certificering moeten fabrikanten voortdurende naleving handhaven met
+          BIS-toezicht, merken en kwaliteitseisen.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certificering voor Buitenlandse Fabrikanten
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Buitenlandse fabrikanten die werkstoelen naar India willen exporteren,
+          moeten ook BIS Certificering verkrijgen voordat ze producten leveren die
+          onder verplichte certificeringseisen vallen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Het proces omvat doorgaans:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Aanstelling van een Geautoriseerde Indiase Vertegenwoordiger (AIR)</li>
+          <li>Overseas producttesten en fabrieksbeoordeling</li>
+          <li>BIS-aanvraagbeoordeling en certificeringsgoedkeuring</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dit zorgt ervoor dat geïmporteerde producten voldoen aan dezelfde
+          kwaliteits- en veiligheidseisen die van toepassing zijn op binnenlandse
+          fabrikanten.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Documenten Vereist voor BIS Certificering van Werkstoelen
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Documentatie is een cruciaal onderdeel van het BIS-certificeringsproces
+          voor werkstoelen. Vereisten kunnen verschillen op basis van of de
+          aanvrager een Indiase fabrikant, buitenlandse fabrikant of importeur is,
+          en op het gevolgde certificeringsschema. Onvolledige of inconsistente
+          dossiers behoren tot de meest voorkomende redenen voor vertragingen bij
+          aanvragen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De volgende documenten zijn doorgaans vereist tijdens BIS-certificering
+          van werkstoelen onder IS 17631:2022:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Bedrijfsdocumenten —</strong> Bedrijfsregistratiecertificaat,
+            productielicentie (indien van toepassing), GST-registratie,
+            bedrijfsadresbewijs en gegevens van geautoriseerde ondertekenaar met
+            identiteits- en adresbewijs.
+          </li>
+          <li>
+            <strong>Productiedocumenten —</strong> Fabrieksindeling, productieproces
+            stroomdiagram, lijst van productiemachines en testapparatuur, en
+            details van productie-infrastructuur en geïnstalleerde capaciteit.
+          </li>
+          <li>
+            <strong>Productdocumenten —</strong> Productspecificaties, technische
+            of engineeringtekeningen, productcatalogus of modellijst, stuklijst
+            (BOM), en details van grondstoffen, componenten en kritieke onderdelen
+            gebruikt in de werkstoel.
+          </li>
+          <li>
+            <strong>Kwaliteitscontroledocumenten —</strong> Geschreven
+            kwaliteitscontroleprocedures, inspectiedossiers van inkomend materiaal,
+            in-process en eindproduct inspectierapporten, interne testmethoden, en
+            kalibratiecertificaten voor meet- en testapparatuur.
+          </li>
+          <li>
+            <strong>Certificeringsdocumenten —</strong> Testrapporten van een
+            door BIS erkend laboratorium, correct ingevulde BIS-aanvraagformulieren,
+            verklaringen en ondernemingen, label- of merkingsamples, en eventuele
+            aanvullende documenten voorgeschreven door BIS voor de specifieke
+            certificeringsroute.
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Alle documenten moeten nauwkeurig, volledig en consistent zijn met de
+          productdetails ingediend in de BIS-aanvraag. Fabrikanten wordt geadviseerd
+          documentatievereisten zorgvuldig te beoordelen vóór indiening om
+          onnodige vertragingen in de certificeringsverwerking te voorkomen.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Voordelen van BIS Certificering voor Werkstoelen
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Faciliteert legale verkoop in heel India</li>
-          <li>Verhoogt klantvertrouwen & merk reputatie</li>
-          <li>Zorgt voor langdurige duurzaamheid</li>
-          <li>Vermindert garantieclaims en storingen</li>
-          <li>Beschermt tegen regelgevingsboetes</li>
-          <li>Maakt vermelding op e-commerce platforms mogelijk</li>
-          <li>Verplicht voor overheidsaanbestedingen en bedrijfsleveringen</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Regelgevende Naleving —</strong> Voldoe aan verplichte Indiase
+            normen en QCO-eisen voor wettige productie en verkoop.
+          </li>
+          <li>
+            <strong>Legale Markttoegang —</strong> Lever gecertificeerde werkstoelen
+            in India zonder regelgevingsrisico voor gedekte productcategorieën.
+          </li>
+          <li>
+            <strong>Verhoogde Geloofwaardigheid —</strong> Het ISI Merk signaleert
+            geverifieerde kwaliteit, veiligheid en conformiteit met IS 17631:2022.
+          </li>
+          <li>
+            <strong>Klantvertrouwen —</strong> Bedrijfskopers, instellingen en
+            eindgebruikers vertrouwen producten die zijn getest tegen nationale
+            benchmarks.
+          </li>
+          <li>
+            <strong>Betere Inkoop —</strong> Verbetert de geschiktheid voor
+            overheids-, institutionele en grootschalige commerciële aanbestedingen.
+          </li>
+          <li>
+            <strong>Sterkere Merkreputatie —</strong> Toont toewijding aan
+            kwaliteit, ergonomie en langdurige productbetrouwbaarheid.
+          </li>
+          <li>
+            <strong>Verbeterde Kwaliteitscontrole —</strong> Stimuleert gestructureerde
+            QC-systemen, traceerbaarheid en consistente productienormen.
+          </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Boetes voor Verkoop van Werkstoelen Zonder BIS Certificering
+          Veelvoorkomende Uitdagingen bij BIS Certificering
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Niet-naleving kan resulteren in:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zware financiële boetes</li>
-          <li>Inbeslagname van voorraad</li>
-          <li>Productiestop bevelen</li>
-          <li>Importverbod</li>
-          <li>Strafrechtelijke vervolging</li>
-          <li>Intrekking van bedrijfslicentie</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Technische interpretatie —</strong> Het toewijzen van IS
+            17631:2022-clausules aan specifieke stoelontwerpen, mechanismen en
+            varianten kan complex zijn.
+          </li>
+          <li>
+            <strong>Testfouten —</strong> Zwakke frames, slechte stabiliteit of
+            mechanismeproblemen leiden vaak tot afwijzing bij omkantelings- of
+            belastingstesten.
+          </li>
+          <li>
+            <strong>Documentatielacunes —</strong> Niet-overeenkomende tekeningen,
+            onvolledige QC-dossiers of ontbrekende verklaringen vertragen
+            goedkeuring vaak.
+          </li>
+          <li>
+            <strong>Fabrieksnaleving —</strong> Productiecontroles, traceerbaarheid
+            en interne testen moeten mogelijk worden verbeterd vóór licentieverlening.
+          </li>
+          <li>
+            <strong>Regelgevende coördinatie —</strong> Het afstemmen van
+            laboratoriumtesten, BIS-inspecties en vervolgvragen kost tijd zonder
+            deskundige ondersteuning.
+          </li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Strikte handhaving wordt uitgevoerd onder de BIS Wet, 2016.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wie Moet BIS Certificering voor Werkstoelen Verkrijgen?
+          Waarom Kiezen voor Sun Certifications India?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Verplicht voor:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India is een regelgevingscompliance consultancy die
+          fabrikanten, importeurs, exporteurs en bedrijven ondersteunt bij het
+          verkrijgen van verschillende certificeringen en goedkeuringen vereist
+          voor de Indiase markt.
         </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indiase fabrikanten</li>
-          <li>Buitenlandse fabrikanten die naar India exporteren</li>
-          <li>Merkeigenaren</li>
-          <li>Importeurs</li>
-          <li>OEM/ODM leveranciers</li>
-          <li>Magazijn distributeurs</li>
-          <li>Retail en online meubelmerken</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Elke fabriek vereist een unieke BIS licentie.
+          Ons team biedt end-to-end ondersteuning voor BIS Certificering van
+          Werkstoelen onder IS 17631:2022.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Onze Diensten Omvatten</h3>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Producttoepasselijkheidsbeoordeling —</strong> Wij bevestigen
+            of uw werkstoelen onder IS 17631:2022 en de toepasselijke QCO vallen.
+          </li>
+          <li>
+            <strong>BIS Nalevingsadvies —</strong> Deskundige begeleiding over
+            certificeringsroutes, verplichtingen en normvereisten.
+          </li>
+          <li>
+            <strong>Documentatie-ondersteuning —</strong> Voorbereiding, beoordeling
+            en organisatie van alle BIS-aanvraag- en fabrieksdossiers.
+          </li>
+          <li>
+            <strong>Testcoördinatie —</strong> End-to-end ondersteuning voor
+            monsterindiening en testen in erkende laboratoria.
+          </li>
+          <li>
+            <strong>Fabrieksinspectie-ondersteuning —</strong> Gereedheidschecks
+            voor BIS-fabrieksbeoordeling en nalevingsevaluaties.
+          </li>
+          <li>
+            <strong>Aanvraagbeheer —</strong> Afhandeling van BIS-indieningen,
+            follow-ups en regelgevende communicatie namens u.
+          </li>
+          <li>
+            <strong>Ondersteuning na Certificering —</strong> Doorlopende
+            assistentie met toezicht, merkenregels en licentieonderhoudseisen.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -807,108 +910,134 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS Certificaat voor Werkstoelen onder IS 17631:2022 is cruciaal
-          voor het waarborgen van veilige, duurzame en ergonomisch verantwoorde
-          zitproducten in India. Verplichte certificering verhoogt
-          klantvertrouwen, vermindert productaansprakelijkheidsrisico&apos;s en
-          zorgt voor naleving van nationale kwaliteitsnormen. Met professionele
-          ondersteuning wordt het certificeringstraject—van testen tot inspectie
-          tot licentieverlening—efficiënt en voorspelbaar.
+          BIS Certificering voor Werkstoelen onder IS 17631:2022 speelt een
+          belangrijke rol bij het waarborgen van kwaliteit, veiligheid,
+          duurzaamheid, stabiliteit en ergonomische prestaties in
+          werkplekzitproducten.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Door BIS Certificering te verkrijgen en het ISI Merk te gebruiken, kunnen
+          fabrikanten naleving van Indiase normen aantonen, het klantvertrouwen
+          versterken, de productgeloofwaardigheid verbeteren en langdurige
+          bedrijfsgroei ondersteunen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Of u nu een Indiase fabrikant bent of een buitenlandse fabrikant die
+          toegang zoekt tot de Indiase markt, het begrijpen van de eisen van IS
+          17631:2022 is een essentiële stap richting regelgevende naleving en
+          marktsucces.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Als u van plan bent BIS Certificering voor Werkstoelen onder IS
+          17631:2022 te verkrijgen, kan Sun Certifications India het proces
+          vereenvoudigen door deskundige regelgevende begeleiding en end-to-end
+          nalevingsondersteuning.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Veelgestelde Vragen – BIS Certificaat voor Werkstoelen (IS 17631:2022)
+          Veelgestelde Vragen – BIS Certificering voor Werkstoelen (IS 17631:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. Welke stoelen vallen onder IS 17631:2022?</strong>
+              <strong>1. Wat is BIS Certificering voor Werkstoelen?</strong>
               <br />
-              Elke stoel ontworpen voor werkomgevingen, inclusief ergonomische
-              kantoorstoelen, taakstoelen, draaistoelen en verstelbare stoelen.
+              BIS Certificering bevestigt dat werkstoelen voldoen aan de eisen
+              van IS 17631:2022 en toepasselijke certificeringseisen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>2. Wat is IS 17631:2022?</strong>
+              <br />
+              IS 17631:2022 is de Indiase norm die eisen specificeert voor
+              werkstoelen, waaronder veiligheid, sterkte, stabiliteit,
+              duurzaamheid en ergonomische overwegingen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>3. Is BIS Certificering verplicht voor werkstoelen?</strong>
+              <br />
+              Werkstoelen die onder het toepasselijke regelgevingskader vallen,
+              moeten voldoen aan BIS-certificeringseisen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. Wat is het ISI Merk?</strong>
+              <br />
+              Het ISI Merk is het standaard certificeringsmerk uitgegeven onder
+              het BIS Productcertificeringsschema.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Wie kan aanvragen voor BIS Certificering?</strong>
+              <br />
+              Zowel Indiase fabrikanten als buitenlandse fabrikanten kunnen
+              aanvragen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>6. Vereist BIS Certificering producttesten?</strong>
+              <br />
+              Ja. Producttesten vormen een belangrijk onderdeel van het
+              certificeringsproces.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. Is BIS Certificering verplicht voor werkstoelen?
+                7. Vereisen geïmporteerde werkstoelen BIS Certificering?
               </strong>
               <br />
-              Ja. BIS certificering is verplicht voordat werkstoelen worden
-              gefabriceerd, verkocht of geïmporteerd in India.
+              Producten die onder verplichte certificeringseisen vallen, moeten
+              voldoen aan toepasselijke BIS-regelgeving voordat ze in India
+              worden geleverd.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                3. Wat maakt werkstoel testen anders dan algemene stoel testen?
-              </strong>
+              <strong>8. Welke testen worden uitgevoerd onder IS 17631:2022?</strong>
               <br />
-              Werkstoelen gebruiken mechanismen zoals draaipunten, gasliften,
-              kantelsystemen en wielen—wat geavanceerde mechanische en
-              uithoudingstesten vereist.
+              De norm omvat evaluaties zoals ontwerp- en afwerkingsbeoordeling,
+              dimensionele verificatie, stabiliteitstesten en statische
+              belastingstesten.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. Hoe lang duurt BIS certificering?</strong>
+              <strong>9. Waarom is ergonomisch ontwerp belangrijk voor werkstoelen?</strong>
               <br />
-              Meestal 30–45 dagen voor Indiase fabrikanten en ongeveer 120 dagen
-              voor buitenlandse fabrikanten, afhankelijk van testen en
-              documentatie.
+              Ergonomisch ontwerp helpt het gebruikerscomfort te verbeteren,
+              ondersteunt de juiste houding en draagt bij aan een betere
+              werkplekervaring.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Kunnen buitenlandse fabrikanten aanvragen?</strong>
+              <strong>10. Hoe kan Sun Certifications India helpen?</strong>
               <br />
-              Ja, via het FMCS (Foreign Manufacturers Certification Scheme).
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Wat als een stoel faalt bij BIS testen?</strong>
-              <br />
-              Deze moet worden herontworpen, gecorrigeerd en opnieuw getest
-              totdat deze voldoet aan IS 17631:2022.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                7. Welke documenten zijn vereist voor BIS aanvraag?
-              </strong>
-              <br />
-              Fabrieksgegevens, producttekeningen, machinelijst, QC documenten,
-              merkeigendom en juridische papieren.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Vereisen alle stoelmodellen aparte testen?</strong>
-              <br />
-              Als modellen verschillen in ontwerp, mechanisme of structuur,
-              kunnen aparte testen nodig zijn.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is ISI merken verplicht na goedkeuring?</strong>
-              <br />
-              Ja, het ISI merk moet verschijnen op het product, label en
-              verpakking.
+              Sun Certifications India biedt ondersteuning bij
+              toepasselijkheidsbeoordeling, documentatie, testcoördinatie,
+              inspectievoorbereiding, aanvraagbeheer en nalevingsondersteuning.
             </p>
           </div>
         </div>
@@ -925,6 +1054,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Gerelateerde Bronnen
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline"> ISI Certificaat</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS Certificaat voor Buitenlandse Fabrikant</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadDutch />
 

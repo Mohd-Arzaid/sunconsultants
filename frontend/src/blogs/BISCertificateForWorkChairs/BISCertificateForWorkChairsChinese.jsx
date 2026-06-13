@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForWorkChairsChinese = () => {
   return (
     <div className="relative w-full">
@@ -180,7 +186,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    工作椅BIS证书 – IS 17631:2022
+                    工作椅BIS认证（IS 17631:2022）
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -211,335 +217,315 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          工作椅BIS证书 – IS 17631:2022完整合规指南
+          工作椅BIS认证（IS 17631:2022）– ISI标志认证完整指南
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
             title="工作椅BIS许可证"
-            alt="工作椅BIS证书 - IS 17631:2022 BIS认证"
+            alt="工作椅BIS认证 - IS 17631:2022 ISI标志指南"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          办公和任务座椅的使用日益增加——无论是在企业工作空间、联合办公中心、家庭办公室还是机构设置中——使得安全性和人体工程学性能变得至关重要。为确保制造商提供结构稳定、耐用且对用户安全的座椅产品，印度政府已强制要求工作椅在IS
-          17631:2022标准下进行BIS认证。
+          工作椅已成为现代工作场所、教育机构、政府办公室、联合办公空间和家庭办公环境的重要组成部分。随着各组织越来越重视员工舒适度、生产力、工作场所人体工程学和职业健康，对高质量工作椅的需求持续增长。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          工作椅通常需要承受重复载荷、持续的身体运动、倾斜、旋转和高度调节。任何性能特性的故障都可能导致严重伤害。这就是为什么遵守IS
-          17631:2022 – 工作椅：安全要求现在对所有制造商和进口商都是强制性的。
+          设计不良的椅子会对姿势、舒适度和生产力产生负面影响。因此，质量、安全、耐用性和人体工程学性能是制造商、采购方和采购机构的关键考量因素。为确保行业统一的质量标准，印度标准局（BIS）已制定适用于工作椅的印度标准IS
+          17631:2022。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          本指南解释了完整的BIS许可流程，包括标准、测试、费用、文件、责任、优势和挑战——采用全新内容编写，以避免在您的网站上重复。
+          适用监管框架涵盖的制造商必须获得BIS认证，并在合规产品上使用ISI标志。BIS认证表明工作椅已按照与安全、强度、稳定性、耐用性和人体工程学性能相关的要求进行了评估。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          本综合指南详细说明了制造商、进口商、家具品牌、采购专业人士和企业主在IS
+          17631:2022标准下需要了解的工作椅BIS认证的全部内容。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          了解工作椅BIS认证
+          工作椅BIS认证快速概览
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          印度标准局（BIS）监督在印度市场供应的产品的质量和安全。任何属于强制性质量控制命令中列出的印度标准的产品必须在销售前由BIS评估和认证。
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  项目
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  详情
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["产品", "工作椅"],
+                ["适用印度标准", "IS 17631:2022"],
+                ["认证类型", "BIS产品认证"],
+                ["适用认证计划", "计划-I（ISI标志认证）"],
+                ["适用标志", "ISI标志"],
+                ["监管机构", "印度标准局（BIS）"],
+                ["适用部门", "商务和工业部"],
+                [
+                  "合规要求",
+                  "根据适用的家具QCO（质量控制令）为强制性要求",
+                ],
+                ["合格申请人", "印度制造商和外国制造商"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "适用认证计划" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        计划-I（ISI标志认证）
+                      </a>
+                    ) : particular === "合规要求" ? (
+                      <>
+                        根据适用的{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-work-chairs"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>家具QCO（质量控制令）</strong>
+                        </a>
+                        为强制性要求
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS证书 – 它代表什么
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS证书表明工作椅：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>已通过性能和耐久性测试</li>
-          <li>符合材料和结构规格</li>
-          <li>可安全长期日常使用</li>
-          <li>符合印度标准中的人体工程学和结构指南</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          满足这些要求的制造商将获得BIS许可证，允许他们使用ISI标记。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          工作椅适用标准 – IS 17631:2022
+          什么是工作椅BIS认证？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          任务和办公工作椅的管辖标准是：
+          工作椅BIS认证是在印度标准局产品认证计划下进行的符合性评估流程。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17631:2022</strong> – 工作椅：安全要求
+          认证的目的是验证工作椅是否符合IS
+          17631:2022规定的各项要求。成功获得认证后，制造商可以在其产品上使用ISI标志。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          本标准专注于用于工作环境中长期使用的座椅。
+          认证流程评估工作椅的多种性能和安全方面，包括：
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          本标准涵盖的产品
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>人体工程学办公椅</li>
-          <li>任务椅</li>
-          <li>转椅</li>
-          <li>工作台椅</li>
-          <li>可调节高度的工作椅</li>
-          <li>行政工作椅</li>
-          <li>网布或织物靠背工作椅</li>
-          <li>配备扶手的椅子</li>
-          <li>带倾斜/锁定机构的椅子</li>
+        <ul className={LIST_CLASS}>
+          <li>人体工程学设计</li>
+          <li>结构完整性</li>
+          <li>稳定性</li>
+          <li>耐用性</li>
+          <li>安全要求</li>
+          <li>工艺质量</li>
+          <li>产品性能</li>
         </ul>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ISI标志向消费者保证，产品已按照公认的印度标准进行评估，并满足规定的质量要求。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          为什么IS 17631:2022合规性至关重要
+          工作椅BIS认证为何重要
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          工作椅与通用椅子显著不同，因为它们：
+          工作椅在办公室、教育机构、商业场所和家庭工作空间中长时间使用。由于用户每天有相当比例的时间处于坐姿状态，这些椅子的质量和人体工程学性能直接影响舒适度和工作效率。
         </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>支持持续运动</li>
-          <li>使用机械和调节机制</li>
-          <li>承受动态载荷</li>
-          <li>需要长期使用的耐久性</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          制作不良的椅子可能在以下方面失效：
+          BIS认证有助于确保经过认证的工作椅：
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>底座接头</li>
-          <li>旋转机制</li>
-          <li>气动升降系统</li>
-          <li>座椅/靠背支撑</li>
-          <li>腿或脚轮结构</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          这可能导致工作场所伤害、运营停机时间和产品责任问题。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          强制性BIS认证确保
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>安全的人体工程学设计</li>
-          <li>可靠的承载能力</li>
-          <li>循环测试下的强耐久性</li>
-          <li>抗机械磨损</li>
-          <li>符合用户安全参数</li>
+        <ul className={LIST_CLASS}>
+          <li>满足规定的安全要求</li>
+          <li>提供可靠的性能</li>
+          <li>具备足够的结构强度</li>
+          <li>在使用过程中保持稳定</li>
+          <li>支持长期耐用性</li>
+          <li>符合印度质量标准</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          因此，对于印度和外国制造商来说，获得工作椅BIS许可证是不可协商的。
+          对制造商而言，认证有助于展示产品质量，同时支持监管合规和市场认可。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          工作椅BIS许可证范围
+          IS 17631:2022概述
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          本标准涵盖工作椅的要求。本标准适用于完全制造/制作的工作椅。它也适用于即装即用单元；在这种情况下，本标准的要求应适用于组装单元。
+          IS 17631:2022是规定工作椅要求的印度标准。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-3">
+          该标准建立了与以下方面相关的要求：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>安全</li>
+          <li>强度</li>
+          <li>稳定性</li>
+          <li>耐用性</li>
+          <li>人体工程学考量</li>
+          <li>功能性能</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          其目标是确保工作椅在工作场所环境中长时间使用时能够提供安全可靠的性能。
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1">
+          IS 17631:2022的适用范围
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          根据该标准，IS 17631:2022涵盖工作椅，适用于：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>完全制造的工作椅</li>
+          <li>组装制造的工作椅</li>
+          <li>即装即用工作椅（组装后）</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          该标准的要求适用于供实际使用的组装成品。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          工作椅BIS认证流程步骤（IS 17631:2022）
+          IS 17631:2022涵盖的工作椅类型
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          工作椅的认证过程涉及实验室评估、工厂审计和技术审查的混合。
+          根据产品设计和预期用途，该标准可能适用于各类工作场所座椅家具，包括：
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤1 – 产品评估和标准映射
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          识别所有椅子变体并将其与IS
-          17631:2022对齐。了解哪些型号共享相同的结构，哪些需要单独测试。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤2 – 在线申请提交
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          制造商通过Manak在线BIS门户提交申请。所需信息包括：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>制造现场详情</li>
-          <li>原材料控制</li>
-          <li>技术规格</li>
-          <li>生产能力</li>
-          <li>品牌所有权文件</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤3 – 费用支付
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          必须支付以下费用：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>申请费</li>
-          <li>处理费</li>
-          <li>测试费</li>
-          <li>检查费</li>
-          <li>标记费</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤4 – 样品测试（IS 17631:2022要求）
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS认可的实验室根据多项安全和性能标准评估椅子。
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          工作椅测试包括
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>座椅和靠背静态载荷测试</li>
-          <li>耐久性加载循环</li>
-          <li>旋转/旋转测试</li>
-          <li>倾斜机构耐久性</li>
-          <li>气动升降机构性能</li>
-          <li>脚轮强度和滚动阻力</li>
-          <li>底座稳定性和过载测试</li>
-          <li>扶手载荷能力</li>
-          <li>抗冲击测试</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>办公工作椅 —</strong>{" "}
+            用于企业办公室、行政部门和专业工作场所的座椅。
+          </li>
+          <li>
+            <strong>任务椅 —</strong>{" "}
+            专为日常办公桌工作、工作站和常规坐姿任务而设计的椅子。
+          </li>
+          <li>
+            <strong>可调节工作椅 —</strong>{" "}
+            具有高度、倾斜或其他可调节功能以提高舒适度和人体工程学性能的型号。
+          </li>
+          <li>
+            <strong>机构工作椅 —</strong>{" "}
+            供应给学校、大学、政府办公室和商业机构的椅子。
+          </li>
+          <li>
+            <strong>家庭办公椅 —</strong>{" "}
+            为远程工作、自由职业者和家庭办公环境设计的工作椅。
+          </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          实验室向BIS发布详细的测试报告。
+          请仔细审查产品设计、机制和使用目的，以确认您的椅子是否属于IS
+          17631:2022的适用范围。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤5 – 工厂审计
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS检查员审查设施：
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            另请查看强制BIS认证涵盖的家具产品 —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>家具BIS认证</strong>
+          </a>
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>生产系统</li>
-          <li>材料检查记录</li>
-          <li>内部质量保证流程</li>
-          <li>测试仪器和校准日志</li>
-          <li>符合测试和检查方案（STI）</li>
-        </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤6 – 授予BIS许可证
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          一旦确认符合性，BIS授予：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS许可证/ISI标记认证</li>
-          <li>唯一的CML编号</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤7 – 持续合规
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">制造商必须：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>保持持续的内部检查</li>
-          <li>遵守标记规则</li>
-          <li>在监督检查期间配合</li>
-          <li>定期更新许可证</li>
-        </ul>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          工作椅BIS认证所需文件
+          IS 17631:2022的主要要求
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          完整的文件集可确保更快的批准。
+          该标准关注多项重要的性能特征，这些特征对工作椅的质量和安全性至关重要。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          商业和工厂文件
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>工厂注册</li>
-          <li>制造图和布局</li>
-          <li>生产工作流程</li>
-          <li>机械清单</li>
-          <li>测试设备清单</li>
-          <li>校准证书</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>人体工程学设计 —</strong>{" "}
+            关注用户舒适度、座椅和靠背支撑、可调节性以及正确姿势，以减少疲劳并提高工作场所生产力。
+          </li>
+          <li>
+            <strong>强度要求 —</strong>{" "}
+            框架、连接件和支撑结构必须能够承受正常使用而不发生故障或结构完整性丧失。
+          </li>
+          <li>
+            <strong>稳定性要求 —</strong>{" "}
+            椅子必须抵抗倾倒，在常规坐姿使用和移动过程中保持稳定。
+          </li>
+          <li>
+            <strong>耐用性要求 —</strong>{" "}
+            产品在预期使用寿命内经过长期和重复的日常使用后仍须保持一致的性能。
+          </li>
+          <li>
+            <strong>安全要求 —</strong>{" "}
+            设计和构造必须最大限度地减少因不稳定、缺陷或不安全结构而带来的可避免的隐患。
+          </li>
+          <li>
+            <strong>材料质量 —</strong>{" "}
+            零部件和表面处理必须符合支持安全、耐用和可靠性能的质量标准。
+          </li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          技术文件
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>椅子工程图纸</li>
-          <li>机构规格</li>
-          <li>材料数据表</li>
-          <li>材料清单</li>
-          <li>组装说明</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          法律文件
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>授权签字人身份证明</li>
-          <li>品牌授权信</li>
-          <li>商标证书</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS特定文件
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>申请表</li>
-          <li>承诺书</li>
-          <li>测试申请表</li>
-          <li>标签样本</li>
-        </ul>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          根据IS 17631:2022的测试要求
+          工作椅BIS认证的测试要求
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          由于移动部件，工作椅比普通椅子需要更复杂的测试。
+          在授予认证之前，产品样品须在认可实验室进行测试评估。测试有助于验证是否符合IS
+          17631:2022规定的各项要求。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          进行的关键测试
-        </h3>
+        <h3 className={SUB_HEADING_CLASS}>进行的主要测试</h3>
 
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
@@ -552,216 +538,283 @@ const MainContentLeft = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  设计和工艺
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  前缘翻倒
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  向前翻倒
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  带脚凳椅子的向前翻倒
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  无扶手椅子的侧向翻倒
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  带扶手椅子的侧向翻倒
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  无靠背椅子的向后翻倒
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  座椅前缘静态载荷测试
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  座椅和靠背组合静态载荷测试
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  扶手向下静态载荷测试 — 中央
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  扶手向下静态载荷测试 — 前部
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  扶手侧向静态载荷测试
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  脚凳静态载荷测试
-                </TableCell>
-              </TableRow>
+              {[
+                ["4", "设计和工艺"],
+                ["7.3.1", "前缘翻倒"],
+                ["7.3.2", "向前翻倒"],
+                ["7.3.3", "带脚凳椅子的向前翻倒"],
+                ["7.3.4", "无扶手椅子的侧向翻倒"],
+                ["7.3.5", "带扶手椅子的侧向翻倒"],
+                ["7.3.6", "无靠背椅子的向后翻倒"],
+                ["7.4.1", "座椅前缘静态载荷测试"],
+                ["7.4.2", "座椅和靠背组合静态载荷测试"],
+                ["7.4.3", "扶手向下静态载荷测试 — 中央"],
+                ["7.4.4", "扶手向下静态载荷测试 — 前部"],
+                ["7.4.5", "扶手侧向静态载荷测试"],
+                ["7.4.6", "脚凳静态载荷测试"],
+              ].map(([clause, requirement], index) => (
+                <TableRow
+                  key={clause}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {clause}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {requirement}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          这些测试在几天内模拟数月或数年的常规使用。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          工作椅BIS认证的常见挑战
+          工作椅BIS认证流程
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <p className="text-gray-600 text-base font-geist mb-4">
+          寻求在IS
+          17631:2022标准下获得BIS认证的制造商必须完成结构化的认证流程。
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            <strong>✔ 1. 机械/倾斜测试失败</strong> –
-            通常由薄弱机制或低质量硬件引起。
+            <strong>步骤1：产品适用性评估 —</strong>{" "}
+            在开始认证之前，确认工作椅是否属于IS
+            17631:2022及适用的家具QCO范围。
           </li>
           <li>
-            <strong>✔ 2. 气动升降机构不合规</strong> –
-            气动升降必须满足严格的压力和安全参数。
+            <strong>步骤2：文件准备 —</strong>{" "}
+            整理BIS审查所需的技术、制造、质量控制和法律记录。
           </li>
           <li>
-            <strong>✔ 3. 测试基础设施不足</strong> – 工作椅测试需要专门的设备。
+            <strong>步骤3：产品测试 —</strong>{" "}
+            将样品提交至BIS认可实验室，按照IS 17631:2022进行评估。
           </li>
           <li>
-            <strong>✔ 4. 产品分组不正确</strong> – 不同机制 = 单独测试。
+            <strong>步骤4：申请提交 —</strong>{" "}
+            提交BIS申请，附测试报告、工厂详情和支持性合规文件。
           </li>
           <li>
-            <strong>✔ 5. STI不合规</strong> – STI错误可能延迟许可证颁发。
+            <strong>步骤5：工厂检查 —</strong>{" "}
+            BIS评估制造设施的生产系统、质量控制程序和可追溯性。
           </li>
           <li>
-            <strong>✔ 6. 文件不匹配</strong> –
-            品牌名称和型号名称必须与BIS申请完全匹配。
+            <strong>步骤6：技术审查 —</strong>{" "}
+            BIS在最终批准前评估申请、实验室结果和检查结果。
+          </li>
+          <li>
+            <strong>步骤7：授予BIS许可证 —</strong>{" "}
+            成功合规后，BIS颁发许可证并授权在认证工作椅上使用ISI标志。
           </li>
         </ul>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          印度制造商的BIS认证
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          印度制造商通常通过国内认证途径申请。流程一般包括：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>在BIS认可实验室进行产品测试</li>
+          <li>文件审查和BIS申请提交</li>
+          <li>BIS进行工厂评估和技术审查</li>
+          <li>授予BIS许可证和ISI标志授权</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          获得认证后，制造商必须持续遵守BIS监督、标志使用和质量要求。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          外国制造商的BIS认证
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          计划向印度出口工作椅的外国制造商，在供应属于强制认证要求范围的产品之前，也必须获得BIS认证。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          流程一般包括：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>指定授权印度代表（AIR）</li>
+          <li>海外产品测试和工厂评估</li>
+          <li>BIS申请审查和认证批准</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          这确保进口产品满足与国内制造商相同的质量和安全要求。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          工作椅BIS认证所需文件
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          文件是工作椅BIS认证流程的关键组成部分。要求可能因申请人是印度制造商、外国制造商还是进口商，以及所遵循的认证计划而有所不同。不完整或不一致的记录是申请延迟的最常见原因之一。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          在IS
+          17631:2022标准下的工作椅BIS认证过程中，通常需要以下文件：
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>商业文件 —</strong>{" "}
+            公司注册证书、制造许可证（如适用）、GST注册、营业地址证明，以及授权签字人的身份和地址证明。
+          </li>
+          <li>
+            <strong>制造文件 —</strong>{" "}
+            工厂布局图、制造工艺流程图、生产机械和测试设备清单，以及生产基础设施和安装产能详情。
+          </li>
+          <li>
+            <strong>产品文件 —</strong>{" "}
+            产品规格、工程或技术图纸、产品目录或型号清单、物料清单（BOM），以及工作椅所用原材料、零部件和关键部件的详情。
+          </li>
+          <li>
+            <strong>质量控制文件 —</strong>{" "}
+            书面质量控制程序、来料检验记录、过程检验和成品检验报告、内部测试方法，以及测量和测试设备的校准证书。
+          </li>
+          <li>
+            <strong>认证文件 —</strong>{" "}
+            BIS认可实验室的测试报告、完整填写的BIS申请表、声明和承诺书、标签或标志样本，以及BIS针对特定认证途径规定的任何其他文件。
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          所有文件应准确、完整，并与BIS申请中提交的产品详情一致。建议制造商在提交前仔细审查文件要求，以避免认证处理过程中出现不必要的延迟。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           工作椅BIS认证的优势
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>促进在印度的合法销售</li>
-          <li>提升客户信任和品牌声誉</li>
-          <li>确保长期耐久性</li>
-          <li>减少保修索赔和故障</li>
-          <li>保护免受监管处罚</li>
-          <li>可在电子商务平台上架</li>
-          <li>政府招标和企业供应的强制性要求</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>监管合规 —</strong>{" "}
+            满足强制性的印度标准和QCO要求，合法制造和销售。
+          </li>
+          <li>
+            <strong>合法市场准入 —</strong>{" "}
+            在涵盖的产品类别中，可在印度供应认证工作椅而无监管风险。
+          </li>
+          <li>
+            <strong>提升信誉 —</strong>{" "}
+            ISI标志表明质量、安全性和符合IS 17631:2022标准。
+          </li>
+          <li>
+            <strong>客户信心 —</strong>{" "}
+            企业采购方、机构和终端用户信任经过国家标准测试的产品。
+          </li>
+          <li>
+            <strong>更好的采购机会 —</strong>{" "}
+            提高在政府、机构和大批量商业招标中的资格。
+          </li>
+          <li>
+            <strong>更强的品牌声誉 —</strong>{" "}
+            展示对质量、人体工程学和长期产品可靠性的承诺。
+          </li>
+          <li>
+            <strong>改善质量控制 —</strong>{" "}
+            促进结构化QC系统、可追溯性和一致的生产标准。
+          </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          销售无BIS认证工作椅的处罚
+          BIS认证过程中常见的挑战
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          不合规可能导致：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>巨额经济处罚</li>
-          <li>库存没收</li>
-          <li>生产停工令</li>
-          <li>禁止进口</li>
-          <li>刑事起诉</li>
-          <li>营业执照取消</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>技术解读 —</strong>{" "}
+            将IS
+            17631:2022条款对应到特定椅子设计、机制和变体可能较为复杂。
+          </li>
+          <li>
+            <strong>测试失败 —</strong>{" "}
+            框架薄弱、稳定性差或机制问题常导致翻倒或载荷测试不合格。
+          </li>
+          <li>
+            <strong>文件缺失 —</strong>{" "}
+            图纸不匹配、QC记录不完整或缺少声明通常会延迟批准。
+          </li>
+          <li>
+            <strong>工厂合规 —</strong>{" "}
+            生产控制、可追溯性和内部测试可能需要在颁发许可证前进行升级。
+          </li>
+          <li>
+            <strong>监管协调 —</strong>{" "}
+            在没有专家支持的情况下，协调实验室测试、BIS检查和后续问询需要时间。
+          </li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          根据2016年BIS法案严格执行。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          谁必须获得工作椅BIS认证？
+          为何选择Sun Certifications India？
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          强制性适用于：
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications
+          India是一家监管合规咨询公司，协助制造商、进口商、出口商和企业获得进入印度市场所需的各种认证和批准。
         </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>印度制造商</li>
-          <li>向印度出口的外国制造商</li>
-          <li>品牌所有者</li>
-          <li>进口商</li>
-          <li>OEM/ODM供应商</li>
-          <li>仓库分销商</li>
-          <li>零售和在线家具品牌</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          每个工厂都需要唯一的BIS许可证。
+          我们的团队在IS
+          17631:2022标准下为工作椅BIS认证提供端到端协助。
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>我们的服务包括</h3>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>产品适用性评估 —</strong>{" "}
+            我们确认您的工作椅是否属于IS 17631:2022及适用QCO范围。
+          </li>
+          <li>
+            <strong>BIS合规咨询 —</strong>{" "}
+            就认证途径、义务和标准要求提供专业指导。
+          </li>
+          <li>
+            <strong>文件协助 —</strong>{" "}
+            准备、审查和组织所有BIS申请和工厂记录。
+          </li>
+          <li>
+            <strong>测试协调 —</strong>{" "}
+            在认可实验室提供样品提交和测试的端到端支持。
+          </li>
+          <li>
+            <strong>工厂检查支持 —</strong>{" "}
+            为BIS工厂评估和合规审查提供准备检查。
+          </li>
+          <li>
+            <strong>申请管理 —</strong>{" "}
+            代表您处理BIS申请提交、跟进和监管沟通。
+          </li>
+          <li>
+            <strong>认证后支持 —</strong>{" "}
+            在监督、标志规则或许可证维护要求方面提供持续协助。
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -769,87 +822,112 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          根据IS
-          17631:2022标准，工作椅BIS证书对于确保印度安全、耐用且符合人体工程学的座椅产品至关重要。强制性认证增强了客户信任，降低了产品责任风险，并确保符合国家质量标准。在专业支持下，从测试到检查再到许可的认证过程变得高效且可预测。
+          IS
+          17631:2022标准下的工作椅BIS认证在确保工作场所座椅产品的质量、安全、耐用性、稳定性和人体工程学性能方面发挥着重要作用。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          通过获得BIS认证并使用ISI标志，制造商可以展示对印度标准的合规性，增强客户信心，提升产品信誉，并支持长期业务增长。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          无论您是印度制造商还是寻求进入印度市场的海外制造商，了解IS
+          17631:2022的要求都是实现监管合规和市场成功的关键步骤。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          如果您计划在IS
+          17631:2022标准下获得工作椅BIS认证，Sun Certifications
+          India可以通过专业的监管指导和端到端合规支持帮助简化流程。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          常见问题 – 工作椅BIS证书（IS 17631:2022）
+          常见问题 – 工作椅BIS认证（IS 17631:2022）
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. 哪些椅子属于IS 17631:2022？</strong>
+              <strong>1. 什么是工作椅BIS认证？</strong>
               <br />
-              任何为工作环境设计的椅子，包括办公人体工程学椅、任务椅、转椅和可调节椅子。
+              BIS认证确认工作椅符合IS
+              17631:2022的要求及适用的认证规定。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. 工作椅BIS认证是强制性的吗？</strong>
+              <strong>2. 什么是IS 17631:2022？</strong>
               <br />
-              是的。在印度制造、销售或进口工作椅之前，BIS认证是强制性的。
+              IS
+              17631:2022是规定工作椅要求的印度标准，包括安全、强度、稳定性、耐用性和人体工程学考量。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. 工作椅测试与普通椅子测试有何不同？</strong>
+              <strong>3. 工作椅BIS认证是强制性的吗？</strong>
               <br />
-              工作椅使用旋转、气动升降、倾斜系统和脚轮等机制——需要先进的机械和耐久性测试。
+              适用监管框架涵盖的工作椅必须遵守BIS认证要求。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. BIS认证需要多长时间？</strong>
+              <strong>4. 什么是ISI标志？</strong>
               <br />
-              对于印度制造商通常需要30-45天，对于外国制造商大约需要120天，具体取决于测试和文件。
+              ISI标志是在BIS产品认证计划下颁发的标准认证标志。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. 外国制造商可以申请吗？</strong>
+              <strong>5. 谁可以申请BIS认证？</strong>
               <br />
-              可以，通过FMCS（外国制造商认证计划）。
+              印度制造商和外国制造商均可申请。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. 如果椅子BIS测试失败怎么办？</strong>
+              <strong>6. BIS认证需要产品测试吗？</strong>
               <br />
-              必须重新设计、纠正并重新测试，直到符合IS 17631:2022。
+              是的。产品测试是认证流程的重要组成部分。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. BIS申请需要哪些文件？</strong>
+              <strong>7. 进口工作椅需要BIS认证吗？</strong>
               <br />
-              工厂详情、产品图纸、机械清单、质量控制文件、品牌所有权和法律文件。
+              属于强制认证要求范围的产品在印度供应前必须遵守适用的BIS法规。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. 所有椅子型号都需要单独测试吗？</strong>
+              <strong>8. IS 17631:2022下进行哪些测试？</strong>
               <br />
-              如果型号在设计、机制或结构上不同，可能需要单独测试。
+              该标准包括设计和工艺评估、尺寸验证、稳定性测试和静态载荷测试等评估项目。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. 批准后ISI标记是强制性的吗？</strong>
+              <strong>9. 人体工程学设计对工作椅为何重要？</strong>
               <br />
-              是的，ISI标记必须出现在产品、标签和包装上。
+              人体工程学设计有助于提高用户舒适度、支持正确姿势，并改善工作场所体验。
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. Sun Certifications India如何提供帮助？</strong>
+              <br />
+              Sun Certifications
+              India提供适用性评估、文件准备、测试协调、检查准备、申请管理和合规支持方面的协助。
             </p>
           </div>
         </div>
@@ -866,6 +944,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          相关资源
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISI证书
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              外国制造商BIS证书
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadChinese />
 

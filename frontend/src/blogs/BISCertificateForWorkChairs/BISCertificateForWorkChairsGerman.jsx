@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForWorkChairsGerman = () => {
   return (
     <div className="relative w-full">
@@ -181,7 +187,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS-Zertifikat für Arbeitsstühle – IS 17631:2022
+                    BIS-Zertifizierung für Arbeitsstühle (IS 17631:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -212,373 +218,368 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS-Zertifikat für Arbeitsstühle – Ein vollständiger
-          Compliance-Leitfaden für IS 17631:2022
+          BIS-Zertifizierung für Arbeitsstühle (IS 17631:2022) – Vollständiger
+          ISI-Marken-Zertifizierungsleitfaden
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
             title="BIS-Lizenz für Arbeitsstühle"
-            alt="BIS-Zertifikat für Arbeitsstühle - IS 17631:2022 BIS-Zertifizierung"
+            alt="BIS-Zertifizierung für Arbeitsstühle - IS 17631:2022 ISI-Marken-Leitfaden"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Die zunehmende Nutzung von Büro- und Arbeitsstühlen—ob in
-          Unternehmensräumen, Co-Working-Zentren, Home Offices oder
-          institutionellen Einrichtungen—hat Sicherheit und ergonomische
-          Leistung unerlässlich gemacht. Um sicherzustellen, dass Hersteller
-          strukturell stabile, langlebige und benutzerfreundliche Sitzprodukte
-          liefern, hat die indische Regierung die BIS-Zertifizierung für
-          Arbeitsstühle nach IS 17631:2022 vorgeschrieben.
+          Arbeitsstühle sind zu einem unverzichtbaren Bestandteil moderner
+          Arbeitsplätze, Bildungseinrichtungen, Behörden, Co-Working-Spaces und
+          Home-Office-Umgebungen geworden. Da Unternehmen zunehmend Wert auf
+          Mitarbeiterkomfort, Produktivität, ergonomische Arbeitsplatzgestaltung
+          und betriebliches Wohlbefinden legen, steigt die Nachfrage nach
+          hochwertigen Arbeitsstühlen kontinuierlich.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Arbeitsstühle sind typischerweise wiederholten Belastungen,
-          kontinuierlichen Körperbewegungen, Neigungen, Drehungen und
-          Höhenverstellungen ausgesetzt. Ein Ausfall einer Leistungsfunktion
-          kann zu schweren Verletzungen führen. Deshalb ist die Einhaltung von
-          IS 17631:2022 – Arbeitsstühle: Sicherheitsanforderungen jetzt für alle
-          Hersteller und Importeure obligatorisch.
+          Ein schlecht konstruierter Stuhl kann Haltung, Komfort und
+          Produktivität negativ beeinflussen. Aus diesem Grund sind Qualität,
+          Sicherheit, Haltbarkeit und ergonomische Leistung entscheidende
+          Kriterien für Hersteller, Einkäufer und Beschaffungsstellen. Um
+          einheitliche Qualitätsstandards in der Branche sicherzustellen, hat das
+          Bureau of Indian Standards (BIS) IS 17631:2022 als indischen Standard
+          für Arbeitsstühle festgelegt.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Dieser Leitfaden erläutert den vollständigen BIS-Lizenzierungsprozess,
-          einschließlich Standards, Tests, Gebühren, Dokumentation,
-          Verantwortlichkeiten, Vorteilen und Herausforderungen—erstellt mit
-          frischem Inhalt, um Duplikate auf Ihrer Website zu vermeiden.
+          Hersteller, die unter den geltenden regulatorischen Rahmenbedingungen
+          fallen, müssen eine BIS-Zertifizierung erhalten und das ISI-Zeichen
+          auf konformen Produkten anbringen. Die BIS-Zertifizierung belegt, dass
+          der Arbeitsstuhl anhand der vorgeschriebenen Anforderungen in Bezug
+          auf Sicherheit, Festigkeit, Stabilität, Haltbarkeit und ergonomische
+          Leistung bewertet wurde.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dieser umfassende Leitfaden erklärt alles, was Hersteller, Importeure,
+          Möbelmarken, Beschaffungsfachleute und Unternehmer über die
+          BIS-Zertifizierung für Arbeitsstühle gemäß IS 17631:2022 wissen
+          müssen.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Verständnis der BIS-Zertifizierung für Arbeitsstühle
+          Kurzüberblick zur BIS-Zertifizierung für Arbeitsstühle
+        </h2>
+
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Merkmal
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Details
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Produkt", "Arbeitsstühle"],
+                ["Anwendbarer indischer Standard", "IS 17631:2022"],
+                ["Zertifizierungstyp", "BIS-Produktzertifizierung"],
+                [
+                  "Anwendbares Zertifizierungsschema",
+                  "Scheme-I (ISI-Marken-Zertifizierung)",
+                ],
+                ["Anwendbare Marke", "ISI-Marke"],
+                [
+                  "Regulierungsbehörde",
+                  "Bureau of Indian Standards (BIS)",
+                ],
+                ["Zuständiges Ministerium", "Ministerium für Handel und Industrie"],
+                [
+                  "Compliance-Anforderung",
+                  "Obligatorisch gemäß anwendbarer Furniture QCO (Quality Control Order)",
+                ],
+                [
+                  "Berechtigte Antragsteller",
+                  "Indische Hersteller und ausländische Hersteller ",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Anwendbares Zertifizierungsschema" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Scheme-I (ISI-Marken-Zertifizierung)
+                      </a>
+                    ) : particular === "Compliance-Anforderung" ? (
+                      <>
+                        Obligatorisch gemäß anwendbarer{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-work-chairs"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>Furniture QCO (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Was ist die BIS-Zertifizierung für Arbeitsstühle?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das Bureau of Indian Standards (BIS) überwacht die Qualität und
-          Sicherheit von Produkten, die auf dem indischen Markt angeboten
-          werden. Jedes Produkt, das unter einen indischen Standard fällt, der
-          in einer obligatorischen Qualitätskontrollverordnung aufgeführt ist,
-          muss vor dem Verkauf von BIS bewertet und zertifiziert werden.
+          Die BIS-Zertifizierung für Arbeitsstühle ist ein Konformitätsbewertungsverfahren,
+          das im Rahmen des BIS-Produktzertifizierungsschemas durchgeführt wird.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS-Zertifikat – Was es bedeutet
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Zweck der Zertifizierung ist die Überprüfung, ob Arbeitsstühle den
+          Anforderungen gemäß IS 17631:2022 entsprechen. Nach erfolgreicher
+          Zertifizierung dürfen Hersteller das ISI-Zeichen auf ihren Produkten
+          anbringen.
+        </p>
+
         <p className="text-gray-600 text-base font-geist mb-3">
-          Ein BIS-Zertifikat zeigt an, dass ein Arbeitsstuhl:
+          Der Zertifizierungsprozess bewertet verschiedene Leistungs- und
+          Sicherheitsaspekte von Arbeitsstühlen, darunter:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Leistungs- und Haltbarkeitstests bestanden hat</li>
-          <li>Material- und Konstruktionsspezifikationen erfüllt</li>
-          <li>Für langfristige tägliche Nutzung sicher ist</li>
+        <ul className={LIST_CLASS}>
+          <li>Ergonomisches Design</li>
+          <li>Strukturelle Integrität</li>
+          <li>Stabilität</li>
+          <li>Haltbarkeit</li>
+          <li>Sicherheitsanforderungen</li>
+          <li>Verarbeitungsqualität</li>
+          <li>Produktleistung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die ISI-Marke bietet die Gewissheit, dass das Produkt anhand anerkannter
+          indischer Standards bewertet wurde und die vorgeschriebenen
+          Qualitätsanforderungen erfüllt.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Warum die BIS-Zertifizierung für Arbeitsstühle wichtig ist
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Arbeitsstühle werden über lange Zeiträume in Büros, Bildungseinrichtungen,
+          gewerblichen Betrieben und Home-Office-Arbeitsplätzen genutzt. Da Nutzer
+          einen erheblichen Teil ihres Tages im Sitzen verbringen, beeinflussen
+          Qualität und ergonomische Leistung dieser Stühle unmittelbar Komfort
+          und Effizienz am Arbeitsplatz.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die BIS-Zertifizierung trägt dazu bei sicherzustellen, dass zertifizierte
+          Arbeitsstühle:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Die vorgeschriebenen Sicherheitsanforderungen erfüllen</li>
+          <li>Zuverlässige Leistung bieten</li>
+          <li>Ausreichende strukturelle Festigkeit aufweisen</li>
+          <li>Während der Nutzung stabil bleiben</li>
+          <li>Langfristige Haltbarkeit gewährleisten</li>
+          <li>Indischen Qualitätsstandards entsprechen</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Für Hersteller hilft die Zertifizierung, Produktqualität nachzuweisen und
+          unterstützt gleichzeitig regulatorische Compliance und Marktakzeptanz.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Überblick über IS 17631:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17631:2022 ist der indische Standard, der Anforderungen für
+          Arbeitsstühle festlegt.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Der Standard definiert Anforderungen in Bezug auf:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Sicherheit</li>
+          <li>Festigkeit</li>
+          <li>Stabilität</li>
+          <li>Haltbarkeit</li>
+          <li>Ergonomische Aspekte</li>
+          <li>Funktionale Leistung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ziel ist es sicherzustellen, dass Arbeitsstühle bei längerer Nutzung in
+          Arbeitsumgebungen sichere und zuverlässige Leistung bieten.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1">
+          Anwendungsbereich von IS 17631:2022
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Gemäß dem Standard umfasst IS 17631:2022 Arbeitsstühle und gilt für:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Vollständig hergestellte Arbeitsstühle</li>
+          <li>Gefertigte Arbeitsstühle</li>
+          <li>Montagefertige Arbeitsstühle nach der Montage</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Anforderungen des Standards gelten für das montierte Produkt, das
+          zur Nutzung bestimmt ist.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Arten von Arbeitsstühlen, die unter IS 17631:2022 fallen
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Je nach Produktdesign und vorgesehenem Einsatz kann der Standard für
+          verschiedene Kategorien von Arbeitsplatz-Sitzmöbeln gelten, darunter:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            Den ergonomischen und strukturellen Richtlinien in indischen
-            Standards entspricht
+            <strong>Büro-Arbeitsstühle —</strong> Sitzmöbel für Unternehmensbüros,
+            Verwaltungsabteilungen und professionelle Arbeitsumgebungen.
+          </li>
+          <li>
+            <strong>Task Chairs —</strong> Stühle für tägliche Schreibtischarbeit,
+            Arbeitsplätze und routinemäßige sitzende Tätigkeiten.
+          </li>
+          <li>
+            <strong>Verstellbare Arbeitsstühle —</strong> Modelle mit
+            Höhen-, Neigungs- oder anderen Verstellfunktionen zur Verbesserung
+            von Komfort und Ergonomie.
+          </li>
+          <li>
+            <strong>Institutionelle Arbeitsstühle —</strong> Stühle für Schulen,
+            Hochschulen, Behörden und gewerbliche Einrichtungen.
+          </li>
+          <li>
+            <strong>Home-Office-Stühle —</strong> Arbeitsstühle für Remote-Arbeit,
+            Freelancer und häusliche Büroeinrichtungen.
           </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Herstellern, die diese Anforderungen erfüllen, wird eine BIS-Lizenz
-          erteilt, die es ihnen ermöglicht, das ISI-Zeichen anzubringen.
+          Prüfen Sie Produktdesign, Mechanismus und vorgesehenen Einsatz sorgfältig,
+          um zu bestätigen, ob Ihr Stuhl in den Anwendungsbereich von IS 17631:2022
+          fällt.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Prüfen Sie auch Möbelprodukte, die unter der obligatorischen
+            BIS-Zertifizierung fallen —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS-Zertifizierung für Möbel</strong>
+          </a>
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Anwendbarer Standard für Arbeitsstühle – IS 17631:2022
+          Wichtige Anforderungen gemäß IS 17631:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Der maßgebliche Standard für Arbeits- und Bürostühle ist:
+          Der Standard konzentriert sich auf mehrere wichtige Leistungsmerkmale,
+          die zur Qualität und Sicherheit von Arbeitsstühlen beitragen.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17631:2022</strong> – Arbeitsstühle:
-          Sicherheitsanforderungen
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Dieser Standard konzentriert sich auf Sitzmöbel, die für den
-          langfristigen Einsatz in Arbeitsumgebungen bestimmt sind.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Von diesem Standard abgedeckte Produkte
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ergonomische Bürostühle</li>
-          <li>Arbeitsstühle</li>
-          <li>Drehstühle</li>
-          <li>Büroarbeitsstühle</li>
-          <li>Höhenverstellbare Arbeitsstühle</li>
-          <li>Executive-Arbeitsstühle</li>
-          <li>Arbeitsstühle mit Mesh- oder Stoffrücken</li>
-          <li>Stühle mit Armlehnen</li>
-          <li>Stühle mit Neigungs-/Verriegelungsmechanismen</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Ergonomisches Design —</strong> Berücksichtigt Nutzerkomfort,
+            Sitz- und Rückenlehnenstütze, Verstellbarkeit und korrekte Haltung zur
+            Reduzierung von Ermüdung und Steigerung der Produktivität am Arbeitsplatz.
+          </li>
+          <li>
+            <strong>Festigkeitsanforderungen —</strong> Rahmen, Verbindungen und
+            tragende Strukturen müssen der normalen Nutzung ohne Versagen oder
+            Verlust der Integrität standhalten.
+          </li>
+          <li>
+            <strong>Stabilitätsanforderungen —</strong> Stühle müssen dem Kippen
+            widerstehen und bei regulärer sitzender Nutzung und Bewegung stabil
+            bleiben.
+          </li>
+          <li>
+            <strong>Haltbarkeitsanforderungen —</strong> Produkte müssen nach
+            langfristiger und wiederholter täglicher Nutzung über ihre vorgesehene
+            Lebensdauer hinweg konstante Leistung erbringen.
+          </li>
+          <li>
+            <strong>Sicherheitsanforderungen —</strong> Design und Konstruktion
+            müssen vermeidbare Gefahren durch Instabilität, Mängel oder unsichere
+            Verarbeitung minimieren.
+          </li>
+          <li>
+            <strong>Materialqualität —</strong> Komponenten und Oberflächen müssen
+            Qualitätsstandards erfüllen, die sichere, langlebige und zuverlässige
+            Leistung unterstützen.
+          </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum die Einhaltung von IS 17631:2022 kritisch ist
+          Testanforderungen für die BIS-Zertifizierung von Arbeitsstühlen
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Arbeitsstühle unterscheiden sich erheblich von Allzweckstühlen, da
-          sie:
+          Vor der Erteilung der Zertifizierung werden Produktproben in einem
+          anerkannten Labor geprüft. Die Tests dienen der Überprüfung der
+          Einhaltung der Anforderungen gemäß IS 17631:2022.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kontinuierliche Bewegung unterstützen</li>
-          <li>Mechanische und Verstellmechanismen verwenden</li>
-          <li>Dynamische Lasten tragen</li>
-          <li>Haltbarkeit für langfristige Nutzung erfordern</li>
-        </ul>
+        <h3 className={SUB_HEADING_CLASS}>Wichtigste durchgeführte Tests</h3>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Schlecht gebaute Stühle können versagen bei:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Basisverbindungen</li>
-          <li>Drehmechanismen</li>
-          <li>Gasdruckfedersystemen</li>
-          <li>Sitz-/Rückenstütze</li>
-          <li>Bein- oder Rollenstruktur</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Dies kann zu Arbeitsplatzverletzungen, Betriebsausfällen und
-          Produkthaftungsproblemen führen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Obligatorische BIS-Zertifizierung gewährleistet
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sicheres ergonomisches Design</li>
-          <li>Zuverlässige Tragfähigkeit</li>
-          <li>Starke Haltbarkeit bei zyklischen Tests</li>
-          <li>Widerstandsfähigkeit gegen mechanischen Verschleiß</li>
-          <li>Einhaltung der Benutzersicherheitsparameter</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Daher ist die Erlangung einer BIS-Lizenz für Arbeitsstühle für
-          indische und ausländische Hersteller nicht verhandelbar.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Umfang der BIS-Lizenz für Arbeitsstühle
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dieser Standard deckt die Anforderungen für Arbeitsstühle ab. Dieser
-          Standard gilt für vollständig hergestellte/gefertigte Arbeitsstühle.
-          Er gilt auch für montagefertige Einheiten; in diesem Fall gelten die
-          Anforderungen dieses Standards für die montierten Einheiten.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Schritt-für-Schritt BIS-Zertifizierungsprozess für Arbeitsstühle (IS
-          17631:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der Zertifizierungsprozess für Arbeitsstühle umfasst eine Mischung aus
-          Laborevaluierung, Werksaudit und technischer Prüfung.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 1 – Produktbewertung & Standardzuordnung
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Identifizieren Sie alle Stuhlvarianten und ordnen Sie sie IS
-          17631:2022 zu. Verstehen Sie, welche Modelle die gleiche Konstruktion
-          teilen und welche separate Tests erfordern.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 2 – Online-Antragseinreichung
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Der Hersteller reicht den Antrag über das Manak Online BIS-Portal ein.
-          Erforderliche Informationen umfassen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Details zum Herstellungsstandort</li>
-          <li>Rohstoffkontrollen</li>
-          <li>Technische Spezifikationen</li>
-          <li>Produktionskapazitäten</li>
-          <li>Markeneigentumsdokumentation</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 3 – Gebührenzahlung
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Gebühren müssen gezahlt werden für:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Antrag</li>
-          <li>Bearbeitung</li>
-          <li>Tests</li>
-          <li>Inspektion</li>
-          <li>Kennzeichnung</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 4 – Probenprüfung (IS 17631:2022 Anforderungen)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Ein von BIS anerkanntes Labor bewertet den Stuhl nach mehreren
-          Sicherheits- und Leistungskriterien.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Arbeitsstuhltests umfassen
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sitz- und Rückenstatiklasttests</li>
-          <li>Haltbarkeitsbelastungszyklen</li>
-          <li>Dreh-/Rotationsprüfung</li>
-          <li>Neigungsmechanismus-Belastbarkeit</li>
-          <li>Gasdruckfeder-Leistung</li>
-          <li>Rollenfestigkeit und Rollwiderstand</li>
-          <li>Basisstabilität und Überlastprüfung</li>
-          <li>Armlehnen-Tragfähigkeit</li>
-          <li>Schlagfestigkeitstests</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Das Labor erstellt einen detaillierten Prüfbericht für BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 5 – Werksaudit
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS-Inspektoren prüfen die Einrichtung:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produktionssystem</li>
-          <li>Materialprüfungsaufzeichnungen</li>
-          <li>Interne Qualitätssicherungsprozesse</li>
-          <li>Prüfinstrumente & Kalibrierungsprotokolle</li>
-          <li>Einhaltung des Prüf- und Inspektionsschemas (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 6 – Erteilung der BIS-Lizenz
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Sobald die Konformität bestätigt ist, erteilt BIS:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Die BIS-Lizenz/ISI-Marken-Zertifizierung</li>
-          <li>Eine eindeutige CML-Nummer</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 7 – Kontinuierliche Einhaltung
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Hersteller müssen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Laufende interne Kontrollen durchführen</li>
-          <li>Kennzeichnungsregeln befolgen</li>
-          <li>Bei Überwachungsinspektionen kooperieren</li>
-          <li>Die Lizenz regelmäßig erneuern</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Für die BIS-Zertifizierung von Arbeitsstühlen erforderliche Dokumente
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ein vollständiger Satz von Dokumenten gewährleistet eine schnellere
-          Genehmigung.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Geschäfts- & Werksdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Werksregistrierung</li>
-          <li>Herstellungsdiagramm & Layout</li>
-          <li>Produktionsablauf</li>
-          <li>Maschinenliste</li>
-          <li>Prüfgeräteliste</li>
-          <li>Kalibrierungszertifikate</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technische Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stuhlkonstruktionszeichnungen</li>
-          <li>Mechanismus-Spezifikationen</li>
-          <li>Materialdatenblätter</li>
-          <li>Stückliste</li>
-          <li>Montageanleitungen</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Rechtliche Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identitätsnachweis des autorisierten Unterzeichners</li>
-          <li>Markenautorisierungsschreiben</li>
-          <li>Markenzertifikat</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS-spezifische Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Antragsformular</li>
-          <li>Verpflichtungserklärungen</li>
-          <li>Prüfantragsformular</li>
-          <li>Etikettenmuster</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Prüfanforderungen gemäß IS 17631:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Arbeitsstühle unterliegen aufgrund beweglicher Teile komplexeren Tests
-          als allgemeine Stühle.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Durchgeführte Haupttests
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
@@ -591,224 +592,341 @@ const MainContentLeft = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design und Verarbeitung
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vorderkanten-Umkippen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vorwärts-Umkippen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vorwärts-Umkippen für Stühle mit Fußstütze
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Seitwärts-Umkippen für Stühle ohne Armlehnen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Seitwärts-Umkippen für Stühle mit Armlehnen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rückwärts-Umkippen für Stühle ohne Rückenlehne
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sitz-Vorderkanten-Statiklasttest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Kombinierter Sitz- und Rücken-Statiklasttest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Armlehnen-Abwärts-Statiklasttest — Zentral
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Armlehnen-Abwärts-Statiklasttest — Vorne
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Armlehnen-Seitwärts-Statiklasttest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Fußstütze-Statiklasttest
-                </TableCell>
-              </TableRow>
+              {[
+                ["4", "Design und Verarbeitung"],
+                ["7.3.1", "Vorderkanten-Umkippen"],
+                ["7.3.2", "Vorwärts-Umkippen"],
+                [
+                  "7.3.3",
+                  "Vorwärts-Umkippen für Stühle mit Fußstütze",
+                ],
+                [
+                  "7.3.4",
+                  "Seitwärts-Umkippen für Stühle ohne Armlehnen",
+                ],
+                [
+                  "7.3.5",
+                  "Seitwärts-Umkippen für Stühle mit Armlehnen",
+                ],
+                [
+                  "7.3.6",
+                  "Rückwärts-Umkippen für Stühle ohne Rückenlehne",
+                ],
+                ["7.4.1", "Sitz-Vorderkanten-Statiklasttest"],
+                ["7.4.2", "Kombinierter Sitz- und Rücken-Statiklasttest"],
+                ["7.4.3", "Armlehnen-Abwärts-Statiklasttest — Zentral"],
+                ["7.4.4", "Armlehnen-Abwärts-Statiklasttest — Vorne"],
+                ["7.4.5", "Armlehnen-Seitwärts-Statiklasttest"],
+                ["7.4.6", "Fußstütze-Statiklasttest"],
+              ].map(([clause, requirement], index) => (
+                <TableRow
+                  key={clause}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {clause}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {requirement}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Diese Tests simulieren Monate oder Jahre regelmäßiger Nutzung
-          innerhalb weniger Tage.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Häufige Herausforderungen bei der BIS-Zertifizierung für Arbeitsstühle
+          BIS-Zertifizierungsprozess für Arbeitsstühle
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller, die eine BIS-Zertifizierung gemäß IS 17631:2022 anstreben,
+          müssen einen strukturierten Zertifizierungsprozess durchlaufen.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            <strong>✔ 1. Ausfall bei mechanischen/Neigungstests</strong> – Oft
-            verursacht durch schwache Mechanismen oder minderwertige Hardware.
+            <strong>Schritt 1: Bewertung der Produktanwendbarkeit —</strong>{" "}
+            Bestätigen Sie, ob der Arbeitsstuhl unter IS 17631:2022 und die
+            anwendbare Furniture QCO fällt, bevor Sie mit der Zertifizierung
+            beginnen.
           </li>
           <li>
-            <strong>✔ 2. Nichtkonformität des Gasdruckfedermechanismus</strong>{" "}
-            – Gasdruckfedern müssen strenge Druck- und Sicherheitsparameter
-            erfüllen.
+            <strong>Schritt 2: Dokumentationsvorbereitung —</strong> Stellen Sie
+            technische, produktionsbezogene, qualitätskontrollbezogene und
+            rechtliche Unterlagen zusammen, die für die BIS-Prüfung erforderlich
+            sind.
           </li>
           <li>
-            <strong>✔ 3. Unzureichende Testinfrastruktur</strong> – Tests von
-            Arbeitsstühlen erfordern spezialisierte Prüfstände.
+            <strong>Schritt 3: Produkttests —</strong> Reichen Sie Proben in einem
+            BIS-anerkannten Labor zur Bewertung gemäß IS 17631:2022 ein.
           </li>
           <li>
-            <strong>✔ 4. Falsche Produktgruppierung</strong> – Verschiedene
-            Mechanismen = separate Tests.
+            <strong>Schritt 4: Antragseinreichung —</strong> Reichen Sie den
+            BIS-Antrag mit Prüfberichten, Werksdetails und unterstützenden
+            Compliance-Dokumenten ein.
           </li>
           <li>
-            <strong>✔ 5. STI-Nichtkonformität</strong> – STI-Fehler können die
-            Lizenzausstellung verzögern.
+            <strong>Schritt 5: Werksinspektion —</strong> BIS bewertet
+            Produktionssysteme, QC-Verfahren und Rückverfolgbarkeit in der
+            Fertigungsstätte.
           </li>
           <li>
-            <strong>✔ 6. Dokumenteninkonsistenzen</strong> – Markenname und
-            Modellname müssen genau mit der BIS-Bewerbung übereinstimmen.
+            <strong>Schritt 6: Technische Prüfung —</strong> BIS wertet Antrag,
+            Laborergebnisse und Inspektionsbefunde aus, bevor die endgültige
+            Genehmigung erteilt wird.
+          </li>
+          <li>
+            <strong>Schritt 7: Erteilung der BIS-Lizenz —</strong> Bei
+            erfolgreicher Konformität erteilt BIS die Lizenz und autorisiert die
+            Verwendung des ISI-Zeichens auf zertifizierten Arbeitsstühlen.
           </li>
         </ul>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS-Zertifizierung für indische Hersteller
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Indische Hersteller beantragen in der Regel über das inländische
+          Zertifizierungsverfahren. Der Prozess umfasst typischerweise:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Produkttests in einem BIS-anerkannten Labor</li>
+          <li>Dokumentenprüfung und BIS-Antragstellung</li>
+          <li>Werksbewertung und technische Beurteilung durch BIS</li>
+          <li>Erteilung der BIS-Lizenz und ISI-Marken-Autorisierung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nach der Zertifizierung müssen Hersteller die laufende Einhaltung der
+          BIS-Überwachungs-, Kennzeichnungs- und Qualitätsanforderungen
+          aufrechterhalten.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS-Zertifizierung für ausländische Hersteller
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ausländische Hersteller, die Arbeitsstühle nach Indien exportieren
+          möchten, müssen ebenfalls eine BIS-Zertifizierung erhalten, bevor sie
+          Produkte liefern, die unter obligatorische Zertifizierungsanforderungen
+          fallen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Der Prozess umfasst in der Regel:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Bestellung eines Authorized Indian Representative (AIR)</li>
+          <li>Produkttests im Ausland und Werksbewertung</li>
+          <li>BIS-Antragsprüfung und Zertifizierungsgenehmigung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dies stellt sicher, dass importierte Produkte dieselben Qualitäts- und
+          Sicherheitsanforderungen erfüllen, die auch für inländische Hersteller
+          gelten.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Erforderliche Dokumente für die BIS-Zertifizierung von Arbeitsstühlen
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dokumentation ist ein entscheidender Bestandteil des
+          BIS-Zertifizierungsprozesses für Arbeitsstühle. Die Anforderungen
+          können je nachdem variieren, ob der Antragsteller ein indischer
+          Hersteller, ausländischer Hersteller oder Importeur ist und welches
+          Zertifizierungsschema befolgt wird. Unvollständige oder widersprüchliche
+          Unterlagen gehören zu den häufigsten Gründen für Verzögerungen bei
+          Anträgen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die folgenden Dokumente werden bei der BIS-Zertifizierung von
+          Arbeitsstühlen gemäß IS 17631:2022 üblicherweise benötigt:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Geschäftsdokumente —</strong> Firmenregistrierungsbescheinigung,
+            Herstellungslizenz (falls zutreffend), GST-Registrierung,
+            Nachweis der Geschäftsadresse sowie Angaben zum autorisierten
+            Unterzeichner mit Identitäts- und Adressnachweis.
+          </li>
+          <li>
+            <strong>Produktionsdokumente —</strong> Werkshlayoutplan,
+            Fertigungsprozessflussdiagramm, Liste der Produktionsmaschinen und
+            Prüfausrüstung sowie Details zur Produktionsinfrastruktur und
+            installierten Kapazität.
+          </li>
+          <li>
+            <strong>Produktdokumente —</strong> Produktspezifikationen,
+            technische oder Konstruktionszeichnungen, Produktkatalog oder
+            Modellliste, Stückliste (BOM) sowie Details zu Rohmaterialien,
+            Komponenten und kritischen Teilen des Arbeitsstuhls.
+          </li>
+          <li>
+            <strong>Qualitätskontrolldokumente —</strong> Schriftliche
+            Qualitätskontrollverfahren, Prüfprotokolle für eingehendes Material,
+            Prüfberichte für Zwischen- und Endprodukte, interne Testmethoden
+            sowie Kalibrierungszertifikate für Mess- und Prüfausrüstung.
+          </li>
+          <li>
+            <strong>Zertifizierungsdokumente —</strong> Prüfberichte aus einem
+            BIS-anerkannten Labor, ordnungsgemäß ausgefüllte BIS-Antragsformulare,
+            Erklärungen und Verpflichtungen, Etiketten- oder Kennzeichnungsmuster
+            sowie alle weiteren von BIS für den jeweiligen Zertifizierungsweg
+            vorgeschriebenen Dokumente.
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Alle Dokumente sollten korrekt, vollständig und konsistent mit den im
+          BIS-Antrag angegebenen Produktdetails sein. Herstellern wird empfohlen,
+          die Dokumentationsanforderungen sorgfältig zu prüfen, bevor sie den
+          Antrag einreichen, um unnötige Verzögerungen im Zertifizierungsprozess
+          zu vermeiden.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Vorteile der BIS-Zertifizierung für Arbeitsstühle
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ermöglicht legale Verkäufe in ganz Indien</li>
-          <li>Steigert das Kundenvertrauen & Markenreputation</li>
-          <li>Gewährleistet langfristige Haltbarkeit</li>
-          <li>Reduziert Garantieansprüche und Ausfälle</li>
-          <li>Schützt vor regulatorischen Strafen</li>
-          <li>Ermöglicht Auflistung auf E-Commerce-Plattformen</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
           <li>
-            Obligatorisch für Regierungsausschreibungen und
-            Unternehmenslieferungen
+            <strong>Regulatorische Compliance —</strong> Erfüllung obligatorischer
+            indischer Standards und QCO-Anforderungen für rechtmäßige Herstellung
+            und den Verkauf.
+          </li>
+          <li>
+            <strong>Rechtlicher Marktzugang —</strong> Lieferung zertifizierter
+            Arbeitsstühle in Indien ohne regulatorisches Risiko für abgedeckte
+            Produktkategorien.
+          </li>
+          <li>
+            <strong>Stärkere Glaubwürdigkeit —</strong> Die ISI-Marke signalisiert
+            geprüfte Qualität, Sicherheit und Konformität mit IS 17631:2022.
+          </li>
+          <li>
+            <strong>Kundenvertrauen —</strong> Unternehmenskunden, Institutionen
+            und Endnutzer vertrauen Produkten, die an nationalen Benchmarks
+            getestet wurden.
+          </li>
+          <li>
+            <strong>Bessere Beschaffungschancen —</strong> Verbessert die
+            Eignung für Regierungs-, institutionelle und großvolumige gewerbliche
+            Ausschreibungen.
+          </li>
+          <li>
+            <strong>Stärkerer Markenruf —</strong> Zeigt Engagement für Qualität,
+            Ergonomie und langfristige Produktzuverlässigkeit.
+          </li>
+          <li>
+            <strong>Verbesserte Qualitätskontrolle —</strong> Fördert strukturierte
+            QC-Systeme, Rückverfolgbarkeit und einheitliche Produktionsstandards.
           </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Strafen für den Verkauf von Arbeitsstühlen ohne BIS-Zertifizierung
+          Häufige Herausforderungen bei der BIS-Zertifizierung
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Nichtkonformität kann zu Folgendem führen:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Schwere finanzielle Strafen</li>
-          <li>Beschlagnahmung des Inventars</li>
-          <li>Produktionsstilllegungsanordnungen</li>
-          <li>Importverbot</li>
-          <li>Strafverfolgung</li>
-          <li>Widerruf der Geschäftslizenz</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Technische Interpretation —</strong> Die Zuordnung der
+            IS-17631:2022-Klauseln zu spezifischen Stuhldesigns, Mechanismen und
+            Varianten kann komplex sein.
+          </li>
+          <li>
+            <strong>Testfehler —</strong> Schwache Rahmen, mangelnde Stabilität
+            oder Mechanismusprobleme führen häufig zur Ablehnung bei
+            Umkipp- oder Lasttests.
+          </li>
+          <li>
+            <strong>Dokumentationslücken —</strong> Abweichende Zeichnungen,
+            unvollständige QC-Unterlagen oder fehlende Erklärungen verzögern
+            Genehmigungen häufig.
+          </li>
+          <li>
+            <strong>Werks-Compliance —</strong> Produktionskontrollen,
+            Rückverfolgbarkeit und interne Tests müssen möglicherweise vor der
+            Lizenzerteilung verbessert werden.
+          </li>
+          <li>
+            <strong>Regulatorische Koordination —</strong> Die Abstimmung von
+            Labortests, BIS-Inspektionen und Nachfragen erfordert ohne
+            fachkundige Unterstützung Zeit.
+          </li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Strenge Durchsetzung erfolgt unter dem BIS-Gesetz von 2016.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wer muss eine BIS-Zertifizierung für Arbeitsstühle erhalten?
+          Warum Sun Certifications India wählen?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Obligatorisch für:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India ist eine Beratungsgesellschaft für regulatorische
+          Compliance, die Hersteller, Importeure, Exporteure und Unternehmen bei
+          der Erlangung verschiedener Zertifizierungen und Genehmigungen für den
+          indischen Markt unterstützt.
         </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indische Hersteller</li>
-          <li>Ausländische Hersteller, die nach Indien exportieren</li>
-          <li>Markeninhaber</li>
-          <li>Importeure</li>
-          <li>OEM/ODM-Lieferanten</li>
-          <li>Lagerhändler</li>
-          <li>Einzelhandels- und Online-Möbelmarken</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Jedes Werk benötigt eine eindeutige BIS-Lizenz.
+          Unser Team bietet umfassende Unterstützung bei der BIS-Zertifizierung
+          von Arbeitsstühlen gemäß IS 17631:2022.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Unsere Leistungen umfassen</h3>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Bewertung der Produktanwendbarkeit —</strong> Wir prüfen, ob
+            Ihre Arbeitsstühle unter IS 17631:2022 und die anwendbare QCO fallen.
+          </li>
+          <li>
+            <strong>BIS-Compliance-Beratung —</strong> Fachkundige Beratung zu
+            Zertifizierungswegen, Pflichten und Standardanforderungen.
+          </li>
+          <li>
+            <strong>Dokumentationsunterstützung —</strong> Vorbereitung, Prüfung
+            und Organisation aller BIS-Antrags- und Werksunterlagen.
+          </li>
+          <li>
+            <strong>Testkoordination —</strong> Umfassende Unterstützung bei der
+            Probenabgabe und Prüfung in anerkannten Laboratorien.
+          </li>
+          <li>
+            <strong>Unterstützung bei Werksinspektion —</strong> Vorbereitungsprüfungen
+            für BIS-Werksbewertungen und Compliance-Beurteilungen.
+          </li>
+          <li>
+            <strong>Antragsmanagement —</strong> Bearbeitung von BIS-Anträgen,
+            Nachverfolgungen und regulatorischer Kommunikation in Ihrem Namen.
+          </li>
+          <li>
+            <strong>Support nach der Zertifizierung —</strong> Laufende Unterstützung
+            bei Überwachung, Kennzeichnungsregeln und Lizenzpflege.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -816,115 +934,140 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Zertifikat für Arbeitsstühle nach IS 17631:2022 ist
-          entscheidend für die Gewährleistung sicherer, langlebiger und
-          ergonomisch solider Sitzprodukte in Indien. Die obligatorische
-          Zertifizierung stärkt das Kundenvertrauen, reduziert
-          Produkthaftungsrisiken und gewährleistet die Einhaltung nationaler
-          Qualitätsstandards. Mit professioneller Unterstützung wird der
-          Zertifizierungsprozess—von Tests über Inspektionen bis zur
-          Lizenzierung—effizient und vorhersehbar.
+          Die BIS-Zertifizierung für Arbeitsstühle gemäß IS 17631:2022 spielt eine
+          wichtige Rolle bei der Sicherstellung von Qualität, Sicherheit,
+          Haltbarkeit, Stabilität und ergonomischer Leistung bei
+          Arbeitsplatz-Sitzmöbeln.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Durch die Erlangung der BIS-Zertifizierung und die Verwendung des
+          ISI-Zeichens können Hersteller die Einhaltung indischer Standards
+          nachweisen, das Kundenvertrauen stärken, die Produktglaubwürdigkeit
+          verbessern und langfristiges Geschäftswachstum unterstützen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ob Sie ein indischer Hersteller oder ein ausländischer Hersteller sind,
+          der Zugang zum indischen Markt anstrebt – das Verständnis der
+          Anforderungen von IS 17631:2022 ist ein wesentlicher Schritt hin zu
+          regulatorischer Compliance und Markterfolg.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Wenn Sie planen, eine BIS-Zertifizierung für Arbeitsstühle gemäß IS
+          17631:2022 zu erhalten, kann Sun Certifications India den Prozess durch
+          fachkundige regulatorische Beratung und umfassende Compliance-Unterstützung
+          vereinfachen.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS-Zertifikat für Arbeitsstühle (IS 17631:2022)
+          FAQs – BIS-Zertifizierung für Arbeitsstühle (IS 17631:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. Welche Stühle fallen unter IS 17631:2022?</strong>
+              <strong>1. Was ist die BIS-Zertifizierung für Arbeitsstühle?</strong>
               <br />
-              Jeder Stuhl, der für Arbeitsumgebungen konzipiert ist,
-              einschließlich ergonomischer Bürostühle, Arbeitsstühle, Drehstühle
-              und verstellbare Stühle.
+              Die BIS-Zertifizierung bestätigt, dass Arbeitsstühle den
+              Anforderungen von IS 17631:2022 und den geltenden
+              Zertifizierungsvorgaben entsprechen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>2. Was ist IS 17631:2022?</strong>
+              <br />
+              IS 17631:2022 ist der indische Standard, der Anforderungen für
+              Arbeitsstühle festlegt, einschließlich Sicherheit, Festigkeit,
+              Stabilität, Haltbarkeit und ergonomischer Aspekte.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. Ist die BIS-Zertifizierung für Arbeitsstühle obligatorisch?
+                3. Ist die BIS-Zertifizierung für Arbeitsstühle obligatorisch?
               </strong>
               <br />
-              Ja. Die BIS-Zertifizierung ist vor der Herstellung, dem Verkauf
-              oder dem Import von Arbeitsstühlen in Indien obligatorisch.
+              Arbeitsstühle, die unter den geltenden regulatorischen
+              Rahmenbedingungen fallen, müssen die BIS-Zertifizierungsanforderungen
+              erfüllen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. Was ist die ISI-Marke?</strong>
+              <br />
+              Die ISI-Marke ist das standardmäßige Zertifizierungszeichen, das im
+              Rahmen des BIS-Produktzertifizierungsschemas vergeben wird.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Wer kann eine BIS-Zertifizierung beantragen?</strong>
+              <br />
+              Sowohl indische als auch ausländische Hersteller können einen Antrag
+              stellen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                3. Was unterscheidet Tests von Arbeitsstühlen von Tests
-                allgemeiner Stühle?
+                6. Erfordert die BIS-Zertifizierung Produkttests?
               </strong>
               <br />
-              Arbeitsstühle verwenden Mechanismen wie Drehungen, Gasdruckfedern,
-              Neigungssysteme und Rollen—was fortgeschrittene mechanische und
-              Belastbarkeitstests erfordert.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. Wie lange dauert die BIS-Zertifizierung?</strong>
-              <br />
-              Typischerweise 30–45 Tage für indische Hersteller und etwa 120
-              Tage für ausländische Hersteller, abhängig von Tests und
-              Dokumentation.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Können ausländische Hersteller sich bewerben?</strong>
-              <br />
-              Ja, über das FMCS (Foreign Manufacturers Certification Scheme).
+              Ja. Produkttests sind ein wichtiger Bestandteil des
+              Zertifizierungsprozesses.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                6. Was passiert, wenn ein Stuhl die BIS-Tests nicht besteht?
+                7. Benötigen importierte Arbeitsstühle eine BIS-Zertifizierung?
               </strong>
               <br />
-              Er muss neu gestaltet, korrigiert und erneut getestet werden, bis
-              er IS 17631:2022 entspricht.
+              Produkte, die unter obligatorische Zertifizierungsanforderungen
+              fallen, müssen vor der Lieferung in Indien die geltenden
+              BIS-Vorschriften erfüllen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. Welche Tests werden gemäß IS 17631:2022 durchgeführt?</strong>
+              <br />
+              Der Standard umfasst Bewertungen wie Design- und Verarbeitungsprüfung,
+              Maßkontrolle, Stabilitätstests und Statiklasttests.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                7. Welche Dokumente sind für die BIS-Bewerbung erforderlich?
+                9. Warum ist ergonomisches Design für Arbeitsstühle wichtig?
               </strong>
               <br />
-              Werksdetails, Produktzeichnungen, Maschinenliste, QC-Dokumente,
-              Markeneigentum und rechtliche Papiere.
+              Ergonomisches Design verbessert den Nutzerkomfort, unterstützt eine
+              korrekte Haltung und trägt zu einem besseren Arbeitserlebnis bei.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Erfordern alle Stuhlmodelle separate Tests?</strong>
+              <strong>10. Wie kann Sun Certifications India helfen?</strong>
               <br />
-              Wenn sich Modelle in Design, Mechanismus oder Struktur
-              unterscheiden, können separate Tests erforderlich sein.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                9. Ist die ISI-Kennzeichnung nach Genehmigung obligatorisch?
-              </strong>
-              <br />
-              Ja, das ISI-Zeichen muss auf dem Produkt, dem Etikett und der
-              Verpackung erscheinen.
+              Sun Certifications India unterstützt bei Anwendbarkeitsprüfung,
+              Dokumentation, Testkoordination, Inspektionsvorbereitung,
+              Antragsmanagement und Compliance-Betreuung.
             </p>
           </div>
         </div>
@@ -941,6 +1084,32 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Verwandte Ressourcen
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              {" "}
+              ISI-Zertifikat
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              BIS-Zertifikat für ausländische Hersteller
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadGerman />
 
