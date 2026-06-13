@@ -350,6 +350,12 @@ export const NAVIGATION_DATA = {
       link: "/awards-and-recognition",
       icon: Award,
     },
+    {
+      id: 7,
+      name: "Best BIS consltuten india",
+      link: "/best-and-most-trusted-bis-consultant-india",
+      icon: CheckCircle,
+    },
   ],
   faqs: [
     {

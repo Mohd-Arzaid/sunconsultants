@@ -18,9 +18,10 @@ import FooterEng from "@/components/manual/Footer/FooterEng";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-india";
-const PAGE_IMAGE_SRC = "/blogImages/bestbisconsultantindia.webp";
+const PAGE_IMAGE_SRC =
+  "/BestandMostTrustedBISCertificationConsultant/BISConsultantsinIndia.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/blogImages/bestbisconsultantindia.webp";
+  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BISConsultantsinIndia.webp";
 
 const PAGE_TITLE =
   "Best and most trusted BIS consultant in India – Sun Certifications India";
@@ -228,7 +229,14 @@ const MainContentLeft = () => {
           {PAGE_TITLE}
         </h1>
 
-       
+        <div className="mb-6">
+          <img
+            src={PAGE_IMAGE_SRC}
+            title={PAGE_TITLE}
+            alt={PAGE_TITLE}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
 
         <p className="text-gray-600 text-base font-geist mb-4 font-semibold">
           Navigating BIS certification is complicated. We make it
