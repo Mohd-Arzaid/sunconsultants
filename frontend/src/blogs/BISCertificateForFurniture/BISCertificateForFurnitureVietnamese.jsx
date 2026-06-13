@@ -9,7 +9,38 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { SlashIcon } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  AlertTriangle,
+  Building2,
+  Check,
+  ClipboardCheck,
+  Clock,
+  Eye,
+  Factory,
+  FileText,
+  FlaskConical,
+  Globe,
+  Package,
+  RefreshCw,
+  Scale,
+  ShieldCheck,
+  ShoppingCart,
+  SlashIcon,
+} from "lucide-react";
 
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -31,7 +62,7 @@ const BISCertificateForFurnitureVietnamese = () => {
   );
 };
 
-export default BISCertificateForFurnitureVietnamese ;
+export default BISCertificateForFurnitureVietnamese;
 
 const MetaTags = () => {
   const title =
@@ -104,7 +135,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Chứng nhận BIS cho Nội thất tại Ấn Độ – Hướng dẫn Chi tiết Hoàn chỉnh
+                    Chứng nhận BIS cho Nội thất tại Ấn Độ
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -130,16 +161,158 @@ const MainContent = () => {
   );
 };
 
+const TABLE_WRAP =
+  "mt-6 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]";
+
+const SectionDivider = () => (
+  <div className="service-left-content-divider my-8 md:my-10" />
+);
+
+const SectionHeading = ({ children }) => (
+  <h2 className="text-xl md:text-2xl font-geist font-bold text-[#1e1e1e] mb-4 pl-4 border-l-4 border-[#1A8781]">
+    {children}
+  </h2>
+);
+
+const SubSectionHeading = ({ children }) => (
+  <h3 className="text-base md:text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-4">
+    {children}
+  </h3>
+);
+
+const IntroCallout = ({ children }) => (
+  <div className="rounded-md bg-[#EAF3FF] border-l-4 border-[#1A8781] px-4 py-3 mb-6">
+    {children}
+  </div>
+);
+
+const CheckPointsList = ({ points, variant = "check" }) => {
+  const Icon = variant === "warning" ? AlertTriangle : Check;
+  const iconBg =
+    variant === "warning" ? "bg-amber-500/10" : "bg-green-500/10";
+
+  return (
+    <div className="bg-white/50 rounded-xl p-4 ring-1 ring-gray-900/[0.05] mt-2 mb-4">
+      <ul className="flex flex-col gap-3 list-none">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-start gap-3">
+            <div
+              className={`${iconBg} p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5`}
+            >
+              <Icon size={12} className="text-[#020817]" />
+            </div>
+            <p className="font-geist text-sm md:text-base text-[#42434d] tracking-wide text-left max-w-full leading-relaxed flex-1">
+              {point}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const NumberedSteps = ({ steps, showTimeline = true }) => {
+  if (!showTimeline) {
+    return (
+      <div className="mt-4 mb-4 flex flex-col gap-4">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-3 bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+          >
+            <div className="w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+              {index + 1}
+            </div>
+            <div className="flex-1">
+              <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+                {step.title}
+              </h3>
+              <p className="text-gray-600 text-base font-geist">
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-4 mb-4 border-l-2 border-[#1A8781]/30 ml-3 pl-6 flex flex-col gap-4">
+      {steps.map((step, index) => (
+        <div
+          key={index}
+          className="relative bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+        >
+          <div className="absolute -left-[31px] top-4 w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center">
+            {index + 1}
+          </div>
+          <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+            {step.title}
+          </h3>
+          <p className="text-gray-600 text-base font-geist">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const InfoCardGrid = ({ items }) => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      {items.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <div
+            key={index}
+            className="bg-white/60 rounded-lg p-4 ring-1 ring-gray-900/[0.06] hover:ring-gray-900/[0.12] hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+          >
+            {Icon && (
+              <div className="mb-3 w-9 h-9 rounded-full bg-[#1A8781]/10 text-[#1A8781] flex items-center justify-center">
+                <Icon size={18} />
+              </div>
+            )}
+            <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-2">
+              {item.title}
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base font-geist leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const FaqAccordion = ({ items }) => {
+  return (
+    <div className="rounded-xl bg-white/60 p-4 md:p-5 ring-1 ring-gray-900/[0.06]">
+      <Accordion type="single" collapsible className="w-full">
+        {items.map((item, index) => (
+          <AccordionItem key={index} value={`faq-${index}`}>
+            <AccordionTrigger className="text-left font-geist font-semibold text-[#1e1e1e] hover:no-underline">
+              {item.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-gray-600 font-geist text-base">
+              {item.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
+  );
+};
+
 const MainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
-      {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Chứng nhận BIS cho Nội thất tại Ấn Độ – Hướng dẫn Chi tiết Hoàn chỉnh
+          Chứng nhận BIS cho Nội thất tại Ấn Độ: Hướng dẫn Hoàn chỉnh về Tiêu
+          chuẩn BIS, Dấu ISI, Quy trình &amp; Tuân thủ
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforFurniture.png"
@@ -149,820 +322,758 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Giới thiệu: Chứng nhận BIS và Ngành Nội thất Ấn Độ
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tại Ấn Độ, chất lượng sản phẩm, an toàn và tiêu chuẩn hóa được quản lý bởi
-          một cơ quan pháp lý trung ương được gọi là Cục Tiêu chuẩn Ấn Độ
-          (BIS). BIS là tổ chức tiêu chuẩn quốc gia của Ấn Độ,
-          được thành lập theo Đạo luật BIS để đảm bảo rằng các sản phẩm được bán trên
-          thị trường Ấn Độ tuân thủ các tiêu chuẩn an toàn, chất lượng và hiệu suất
-          đã được xác định.
-        </p>
+        <IntroCallout>
+          <p className="text-gray-700 text-base font-geist leading-relaxed">
+            Nội thất là một phần thiết yếu trong nhà ở, văn phòng và không gian
+            công cộng. Đảm bảo an toàn, độ bền và chất lượng nội thất là điều
+            vô cùng quan trọng đối với cả người tiêu dùng và nhà sản xuất. Tại
+            Ấn Độ,{" "}
+            <strong>chứng nhận BIS cho nội thất</strong> là yêu cầu bắt buộc
+            đối với một số danh mục nội thất theo Furniture (Quality Control)
+            Order, 2025. Hướng dẫn này cung cấp tổng quan chi tiết về tiêu chuẩn
+            BIS, dấu ISI, quy trình chứng nhận và yêu cầu tuân thủ.
+          </p>
+        </IntroCallout>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS là gì?
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS là viết tắt của Cục Tiêu chuẩn Ấn Độ. Nó hoạt động
-          dưới Bộ Công vụ Người tiêu dùng, Thực phẩm & Phân phối Công cộng,
-          Chính phủ Ấn Độ. BIS đóng vai trò quan trọng trong việc bảo vệ lợi ích của người tiêu dùng
-          đồng thời hỗ trợ các nhà sản xuất thông qua một hệ sinh thái
-          tiêu chuẩn hóa và chứng nhận minh bạch.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ngành nội thất Ấn Độ đã chứng kiến sự tăng trưởng nhanh chóng do:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Đô thị hóa</li>
-          <li>Mở rộng cơ sở hạ tầng dân cư và thương mại</li>
-          <li>
-            Tăng trưởng trong các lĩnh vực khách sạn, giáo dục, y tế và sống chung
-          </li>
-          <li>Nhận thức ngày càng tăng của người tiêu dùng về an toàn sản phẩm và độ bền</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Nội thất không còn được coi là một sản phẩm thuần túy về mặt thẩm mỹ. Nó
-          liên quan trực tiếp đến an toàn người dùng, công thái học, độ ổn định cấu trúc, khả năng
-          chống cháy và độ bền lâu dài. Các sự cố liên quan đến giường
-          sụp đổ, giường tầng không an toàn, ghế không ổn định hoặc tủ lưu trữ kém chất lượng
-          đã làm dấy lên mối quan ngại trong số các nhà quản lý và người tiêu dùng.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Để giải quyết những rủi ro này, Chứng nhận BIS cho Nội thất đã trở thành một
-          yêu cầu tuân thủ quan trọng. BIS đảm bảo rằng các sản phẩm nội thất
-          đáp ứng các Tiêu chuẩn Ấn Độ (IS) liên quan đến:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Độ bền cấu trúc</li>
-          <li>Khả năng chịu tải</li>
-          <li>Chất lượng vật liệu</li>
-          <li>An toàn thiết kế</li>
-          <li>Hiệu suất trong điều kiện sử dụng</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Đối với các nhà sản xuất, nhà nhập khẩu, nhà xuất khẩu, MSME, công ty khởi nghiệp và
-          chủ sở hữu thương hiệu nội thất, việc có được Chứng nhận BIS cho Nội thất
-          không còn chỉ là một thủ tục pháp lý—nó là một nhu cầu thị trường.
-        </p>
+        <SectionDivider />
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tại sao Chứng nhận BIS cho Nội thất Quan trọng
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Nó đảm bảo tuân thủ pháp lý theo quy định của Ấn Độ</li>
-          <li>Nó nâng cao niềm tin của người tiêu dùng và uy tín thương hiệu</li>
-          <li>Nó cho phép bán và phân phối không hạn chế trên toàn Ấn Độ</li>
-          <li>Nó giảm thiểu rủi ro trách nhiệm sản phẩm</li>
-          <li>Nó cải thiện khả năng sẵn sàng xuất khẩu và chấp nhận toàn cầu</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Hướng dẫn toàn diện này được thiết kế để trở thành nguồn tài liệu có thẩm quyền và
-          chi tiết nhất về Chứng nhận BIS cho Nội thất tại Ấn Độ. Dù
-          bạn là nhà sản xuất lần đầu hay một thương hiệu nội thất đã thành lập,
-          hướng dẫn này trả lời mọi câu hỏi có thể liên quan đến Giấy phép BIS cho
-          Nội thất, Đăng ký BIS cho Nội thất, tiêu chuẩn áp dụng,
-          quy trình, chi phí, tài liệu, thời gian và tuân thủ sau chứng nhận.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+        <SectionHeading>
           Chứng nhận BIS cho Nội thất là gì?
-        </h2>
+        </SectionHeading>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Ý nghĩa Chứng nhận BIS
-        </h3>
+        <SubSectionHeading>
+          Ý nghĩa Chứng nhận BIS cho Nội thất
+        </SubSectionHeading>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chứng nhận BIS cho Nội thất là sự chấp thuận chính thức được cấp bởi
-          Cục Tiêu chuẩn Ấn Độ xác nhận rằng một sản phẩm nội thất cụ thể
-          tuân thủ Tiêu chuẩn Ấn Độ (IS) liên quan.
+          Chứng nhận BIS là quy trình chính thức mà Cục Tiêu chuẩn Ấn Độ (BIS)
+          đánh giá sản phẩm để đảm bảo chúng tuân thủ các tiêu chuẩn Ấn Độ. Đối
+          với nội thất, chứng nhận này đảm bảo sản phẩm đáp ứng các thông số an
+          toàn, hiệu suất và chất lượng đã được xác định. Sau khi được chứng
+          nhận, nhà sản xuất có thể sử dụng <strong>dấu ISI</strong> trên nội
+          thất của mình, thể hiện sự tuân thủ với người mua.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dấu BIS là gì?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dấu BIS, thường được gọi là Dấu ISI, là dấu phù hợp tiêu chuẩn
-          xuất hiện trên các sản phẩm được chứng nhận. Nó cho thấy rằng
-          nội thất đã:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Vượt qua kiểm tra phòng thí nghiệm</li>
-          <li>Vượt qua thanh tra nhà máy</li>
-          <li>Đáp ứng tất cả các yêu cầu tiêu chuẩn</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Giải thích Logo BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Logo BIS đại diện cho thẩm quyền của BIS với tư cách là cơ quan tiêu chuẩn quốc gia
-          của Ấn Độ. Khi được sử dụng cùng với Dấu ISI trên các sản phẩm nội thất, nó
-          đảm bảo cho người mua rằng sản phẩm tuân thủ Tiêu chuẩn BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Chứng nhận BIS Ấn Độ – Tình trạng Pháp lý
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tại Ấn Độ, sản xuất, nhập khẩu hoặc bán các sản phẩm nội thất
-          được bao phủ bởi các tiêu chuẩn đã được thông báo mà không có Chứng nhận BIS có thể dẫn
-          đến:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tịch thu hàng hóa</li>
-          <li>Phạt tiền nặng</li>
-          <li>Khởi tố theo Đạo luật BIS</li>
-          <li>Cấm bán hoặc nhập khẩu</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Do đó, Chứng nhận BIS cho Nội thất tại Ấn Độ có tầm quan trọng pháp lý
-          mạnh mẽ.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tại sao Chứng nhận BIS Quan trọng cho Sản phẩm Nội thất
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Chứng nhận BIS cho Nội thất là quan trọng vì nhiều lý do:
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. An toàn & Tính toàn vẹn Cấu trúc
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sự cố nội thất có thể gây thương tích hoặc tử vong. Tiêu chuẩn BIS
-          đánh giá:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Khả năng chịu tải</li>
-          <li>Độ ổn định chống lật</li>
-          <li>Độ bền khớp nối</li>
-          <li>Hiệu suất vật liệu</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. Chất lượng & Độ bền
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Các sản phẩm nội thất được chứng nhận đảm bảo:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tuổi thọ sử dụng lâu dài</li>
-          <li>Khả năng chống mài mòn</li>
-          <li>Hiệu suất đồng đều</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. Niềm tin Người tiêu dùng
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dấu Chứng nhận BIS xây dựng sự tin cậy ngay lập tức trong số người mua,
-          các tổ chức và người mua số lượng lớn.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. Tiếp cận Thị trường
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Nhiều đấu thầu chính phủ, người mua tổ chức và các tập đoàn lớn
-          yêu cầu nội thất được chứng nhận BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. Tuân thủ Pháp lý
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Bán nội thất không được chứng nhận theo quy định BIS bắt buộc có thể bị
-          phạt và hành động pháp lý.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Sản phẩm Nội thất được Bao phủ bởi Chứng nhận BIS
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Nội thất là một danh mục chung rộng lớn dưới BIS, bao gồm nhiều
-          loại sản phẩm, mỗi loại được quản lý bởi các Tiêu chuẩn Ấn Độ khác nhau (Số
-          IS).
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Các Danh mục Nội thất Chính được Bao phủ:
-        </h3>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Ghế Làm việc
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Được sử dụng trong văn phòng, nhà máy và không gian thương mại. Tiêu chuẩn tập trung vào
-          công thái học, độ ổn định và hiệu suất tải.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Ghế và Ghế đẩu Mục đích Chung
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Được sử dụng trong nhà, trường học và không gian công cộng. BIS đánh giá an toàn
-          cấu trúc và độ bền vật liệu.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Bàn và Bàn làm việc
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Bao gồm bàn văn phòng, bàn học, bàn làm việc. Tiêu chuẩn kiểm tra khả năng
-          chịu tải và độ bền bề mặt.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Tủ Lưu trữ
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tủ quần áo, tủ, tủ khóa, kệ. Nhấn mạnh vào độ ổn định, cạnh
-          sắc và truy cập an toàn.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          5. Giường
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Giường đơn, giường đôi, giường gấp. BIS kiểm tra độ bền khung và
-          hiệu suất lâu dài.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          6. Giường Tầng
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Được quy định nghiêm ngặt do rủi ro an toàn. Tập trung vào lan can, an toàn
-          thang và phòng ngừa ngã.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          7. Vật liệu Composite Bọc nệm cho Nội thất Không Gia đình
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Được sử dụng trong văn phòng, khách sạn, hội trường. Tiêu chuẩn bao gồm khả năng
-          chống cháy và kiểm tra độ bền.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Sản phẩm Nội thất Khác
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Nội thất trường học</li>
-          <li>Ghế ngồi thể chế</li>
-          <li>Nội thất bệnh viện</li>
-          <li>Nội thất mô-đun</li>
-          <li>Hệ thống nội thất kim loại & gỗ</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Mỗi danh mục sản phẩm có Số IS áp dụng riêng, được thông báo
-          riêng bởi BIS.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tiêu chuẩn BIS Áp dụng cho Nội thất
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Tiêu chuẩn BIS là gì?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tiêu chuẩn BIS là các thông số kỹ thuật được BIS công bố để xác định:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Yêu cầu vật liệu</li>
-          <li>Thông số hiệu suất</li>
-          <li>Phương pháp kiểm tra</li>
-          <li>Hướng dẫn đánh dấu</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Ý nghĩa của Số IS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Số IS (Số Tiêu chuẩn Ấn Độ) xác định duy nhất một tiêu chuẩn
-          áp dụng cho một sản phẩm.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Quy trình Thông báo BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS phát hành Thông báo BIS chính thức làm cho một số tiêu chuẩn
-          trở thành bắt buộc. Một khi được thông báo:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tuân thủ trở thành bắt buộc</li>
-          <li>Sản phẩm không được chứng nhận là bất hợp pháp</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Cách Xác định Tiêu chuẩn BIS Đúng
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Các nhà sản xuất phải:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Xác định danh mục sản phẩm</li>
-          <li>Nghiên cứu phạm vi IS áp dụng</li>
-          <li>Xác nhận khả năng áp dụng tiêu chuẩn</li>
-          <li>Tránh lựa chọn tiêu chuẩn sai (một lỗi phổ biến)</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Các Loại Chứng nhận BIS Áp dụng cho Nội thất
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Giấy phép BIS theo Chương trình ISI
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sản phẩm nội thất thường được bao phủ bởi Chương trình Chứng nhận
-          ISI, bao gồm:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kiểm tra sản phẩm</li>
-          <li>Thanh tra nhà máy</li>
-          <li>Kiểm toán giám sát</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Đăng ký BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Đăng ký BIS chủ yếu dành cho sản phẩm điện tử và CNTT. Nội thất
-          thường yêu cầu Giấy phép BIS, không phải Đăng ký.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Quy trình Chứng nhận BIS cho Nội thất tại Ấn Độ
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 1: Chuẩn bị Trước Đơn
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Xác định Tiêu chuẩn IS áp dụng</li>
-          <li>Đánh giá tuân thủ thiết kế sản phẩm</li>
-          <li>Chuẩn bị tài liệu kỹ thuật</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 2: Đơn BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Nộp Đơn BIS với:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chi tiết sản phẩm</li>
-          <li>Chi tiết sản xuất</li>
-          <li>Tham chiếu tiêu chuẩn</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 3: Đăng ký BIS Trực tuyến
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Đơn được nộp qua cổng thông tin trực tuyến BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 4: Kiểm tra Sản phẩm
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Mẫu được kiểm tra tại các phòng thí nghiệm được BIS công nhận.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 5: Thanh tra Nhà máy
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Cán bộ BIS xác minh:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quy trình sản xuất</li>
-          <li>Kiểm soát chất lượng</li>
-          <li>Cơ sở kiểm tra</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 6: Cấp Giấy phép BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sau khi tuân thủ, BIS cấp giấy phép.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 7: Sử dụng Dấu Chứng nhận BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Nhà sản xuất có thể gắn Dấu BIS / Dấu ISI.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Yêu cầu Kiểm tra cho Nội thất
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Kiểm tra là một phần bắt buộc của quy trình đăng ký BIS. Nội thất
-          trải qua các kiểm tra nghiêm ngặt để đảm bảo an toàn và độ bền.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Các Kiểm tra Bắt buộc cho Nội thất:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kiểm tra Tải Cấu trúc</li>
-          <li>Kiểm tra Độ ổn định</li>
-          <li>Kiểm tra Độ bền Lan can</li>
-          <li>Kiểm tra Va đập</li>
-          <li>Kiểm tra Nguy cơ Mắc kẹt</li>
-          <li>Kiểm tra Độ bền & Góc Thang</li>
-          <li>Kiểm tra An toàn Vật liệu</li>
-          <li>Kiểm tra Bán kính Cạnh & Độ sắc</li>
-          <li>Kiểm tra Hỗ trợ Nệm</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Các kiểm tra phải được thực hiện tại phòng thí nghiệm được BIS công nhận.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tài liệu Cần thiết cho Chứng nhận BIS cho Nội thất
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tài liệu Chính Bao gồm:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Bằng chứng đăng ký nhà máy</li>
-          <li>Bản vẽ sản phẩm & thông số kỹ thuật</li>
-          <li>Chi tiết nguyên liệu thô</li>
-          <li>Báo cáo kiểm tra</li>
-          <li>Hồ sơ kiểm soát chất lượng</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Lỗi Tài liệu Phổ biến:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tham chiếu tiêu chuẩn không đúng</li>
-          <li>Dữ liệu kiểm tra không đầy đủ</li>
-          <li>Không khớp phạm vi sản phẩm</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Chi phí Chứng nhận BIS cho Nội thất
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Thành phần Chi phí Chứng nhận BIS:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Phí đơn chính phủ</li>
-          <li>Phí kiểm tra</li>
-          <li>Phí thanh tra</li>
-          <li>Phí giấy phép</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Yếu tố Chi phí Chứng nhận BIS:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Độ phức tạp sản phẩm</li>
-          <li>Số lượng mẫu</li>
-          <li>Yêu cầu kiểm tra</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Lưu ý: Phí tư vấn chuyên nghiệp tách biệt với phí chính phủ.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Thời gian Đăng ký Chứng nhận BIS
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Thời gian Trung bình:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kiểm tra: 3–6 tuần</li>
-          <li>Thanh tra: 1–2 tuần</li>
-          <li>Cấp Giấy phép: 2–4 tuần</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tổng: 8–12 tuần (xấp xỉ)
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Cách Lấy Chứng nhận BIS tại Ấn Độ cho Nhà sản xuất Nội thất
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Mẹo Thực tế:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chọn tiêu chuẩn IS đúng</li>
-          <li>Đảm bảo nhà máy sẵn sàng</li>
-          <li>Duy trì hồ sơ kiểm tra</li>
-          <li>Tránh lỗi tài liệu</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Đơn Đăng ký Chứng nhận BIS Trực tuyến – Tổng quan Thực tế
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Thách thức Cổng thông tin Trực tuyến:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Lỗi kỹ thuật</li>
-          <li>Vấn đề tải tài liệu</li>
-          <li>Nhầm lẫn lựa chọn tiêu chuẩn</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Hướng dẫn đúng giảm thiểu sự chậm trễ.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Sử dụng Dấu BIS & Dấu Chứng nhận BIS Sau Khi Phê duyệt
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Quy tắc Đánh dấu:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tham chiếu IS đúng</li>
-          <li>Số giấy phép</li>
-          <li>Kích thước & độ hiển thị phù hợp</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Không tuân thủ có thể dẫn đến đình chỉ.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Thách thức trong Chứng nhận BIS cho Nội thất
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Diễn giải tiêu chuẩn</li>
-          <li>Thất bại kiểm tra sản phẩm</li>
-          <li>Không phù hợp thanh tra</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vai trò của Tư vấn viên BIS trong Chứng nhận Nội thất
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tư vấn viên BIS chuyên nghiệp giúp bằng cách:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Xác định tiêu chuẩn đúng</li>
-          <li>Quản lý kiểm tra & thanh tra</li>
-          <li>Giảm thời gian phê duyệt</li>
-          <li>Tránh từ chối tốn kém</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Kết luận
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Chứng nhận BIS cho Nội thất là nền tảng của chất lượng, an toàn,
-          và tuân thủ pháp lý trong thị trường nội thất đang phát triển của Ấn Độ. Dù
-          bạn là nhà sản xuất, nhà nhập khẩu hay chủ sở hữu thương hiệu, việc có được Chứng nhận
-          BIS cho Nội thất tại Ấn Độ đảm bảo:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tuân thủ quy định</li>
-          <li>Niềm tin người tiêu dùng</li>
-          <li>Thành công thị trường lâu dài</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Bằng cách hiểu Quy trình Chứng nhận BIS, Tiêu chuẩn, Chi phí và
-          yêu cầu Tuân thủ, các doanh nghiệp có thể tự tin điều hướng
-          môi trường quy định và xây dựng các sản phẩm nội thất an toàn hơn, mạnh mẽ hơn và đáng tin cậy hơn
-          cho thị trường Ấn Độ.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Câu hỏi Thường gặp về Giấy phép BIS
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Chứng nhận BIS có bắt buộc cho tất cả sản phẩm nội thất tại
-              Ấn Độ không?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Không, Chứng nhận BIS chỉ bắt buộc đối với những sản phẩm nội thất
-              được bao phủ bởi các Tiêu chuẩn BIS đã được thông báo. Tuy nhiên,
-              một khi một danh mục sản phẩm nội thất được thông báo bởi Cục
-              Tiêu chuẩn Ấn Độ, việc sản xuất, nhập khẩu, bán hoặc
-              phân phối sản phẩm đó mà không có Giấy phép BIS hợp lệ trở thành
-              bất hợp pháp tại Ấn Độ.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Sản phẩm nội thất nào yêu cầu Giấy phép BIS thay vì Đăng ký
-              BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Sản phẩm nội thất thường thuộc Chương trình Chứng nhận
-              ISI, yêu cầu Giấy phép BIS, không phải Đăng ký BIS. Đăng ký
-              BIS (CRS) chủ yếu áp dụng cho sản phẩm điện tử và CNTT,
-              trong khi sản phẩm nội thất yêu cầu kiểm tra + thanh tra nhà máy +
-              Giấy phép BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Nội thất nhập khẩu có thể được bán tại Ấn Độ mà không có Chứng nhận BIS không?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Không. Sản phẩm nội thất nhập khẩu được bao phủ bởi các Tiêu chuẩn BIS
-              bắt buộc phải có Chứng nhận BIS trước khi thông quan hải quan.
-              Nhập khẩu nội thất không được chứng nhận có thể dẫn đến:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Giữ lại hải quan</li>
-              <li>Tái xuất hoặc tiêu hủy</li>
-              <li>Phạt nặng</li>
-            </ul>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Các nhà sản xuất nước ngoài phải có Giấy phép BIS trước khi xuất khẩu
-              nội thất sang Ấn Độ.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Nhà sản xuất nội thất nước ngoài có thể đăng ký Chứng nhận BIS không?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Có. Nhà sản xuất nước ngoài có thể đăng ký theo Chương trình
-              Chứng nhận Nhà sản xuất Nước ngoài (FMCS). Họ phải:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Bổ nhiệm một Đại diện Ấn Độ được Ủy quyền (AIR)</li>
-              <li>Tuân thủ Tiêu chuẩn Ấn Độ</li>
-              <li>Cho phép thanh tra nhà máy BIS ở nước ngoài.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Chứng nhận BIS có bắt buộc cho nhà sản xuất nội thất thủ công hoặc quy mô nhỏ
-              không?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Có, nếu sản phẩm nội thất được bao phủ bởi một tiêu chuẩn BIS
-              bắt buộc, thì ngay cả MSME, công ty khởi nghiệp và đơn vị quy mô nhỏ cũng phải
-              có Chứng nhận BIS. Không có miễn trừ dựa trên
-              khối lượng sản xuất.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Chứng nhận BIS có bắt buộc cho nội thất gỗ không?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Có, sản phẩm nội thất gỗ như giường, ghế, bàn,
-              bàn làm việc và tủ lưu trữ có thể yêu cầu Chứng nhận BIS nếu chúng
-              thuộc các tiêu chuẩn đã được thông báo. Tiêu chuẩn BIS áp dụng cho cả nội thất
-              gỗ và kim loại, tùy thuộc vào loại sản phẩm và cách sử dụng.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Một Giấy phép BIS có thể bao phủ nhiều mẫu nội thất không?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Có, nhiều mẫu hoặc biến thể có thể được bao phủ bởi một Giấy phép BIS
-              duy nhất, với điều kiện:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Chúng thuộc cùng Tiêu chuẩn IS</li>
-              <li>Các thông số xây dựng, vật liệu và thiết kế tương tự</li>
-              <li>BIS phê duyệt nhóm trong quá trình đăng ký.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Chứng nhận BIS có thể được chuyển giao cho nhà sản xuất khác không?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Không. Giấy phép BIS không thể chuyển giao. Mỗi nhà sản xuất phải có
-              Chứng nhận BIS riêng, ngay cả khi thiết kế sản phẩm
-              giống hệt nhau.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Chứng nhận BIS là gì?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Đó là bằng chứng chính thức về tuân thủ Tiêu chuẩn BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Chứng nhận BIS có bắt buộc cho nội thất không?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Có, đối với sản phẩm nội thất được bao phủ bởi các tiêu chuẩn đã được thông báo.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Làm thế nào để có Chứng nhận BIS tại Ấn Độ?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Thông qua kiểm tra, thanh tra và phê duyệt giấy phép BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Dấu BIS là gì?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Một dấu phù hợp cho thấy sự phê duyệt của BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Chi phí Chứng nhận BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Phụ thuộc vào loại sản phẩm, kiểm tra và phạm vi.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS là viết tắt của gì?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Cục Tiêu chuẩn Ấn Độ.
-            </p>
-          </div>
+        <SubSectionHeading>
+          Sự khác biệt giữa Chứng nhận BIS và Dấu ISI cho Nội thất
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Chứng nhận BIS</strong> — Quy trình đánh giá, kiểm tra
+              và phê duyệt bởi BIS.
+            </>,
+            <>
+              <strong>Dấu ISI</strong> — Dấu được cấp sau khi chứng nhận BIS,
+              cho biết sản phẩm đáp ứng tiêu chuẩn Ấn Độ. Dấu ISI là bảo đảm
+              tuân thủ hiển thị đối với người tiêu dùng.
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          Tại sao Chứng nhận BIS quan trọng đối với Nhà sản xuất và Nhà nhập
+          khẩu Nội thất
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Tuân thủ pháp lý theo quy định của Ấn Độ",
+            "Tiếp cận thị trường Ấn Độ và cơ hội mua sắm của chính phủ",
+            "Nâng cao niềm tin người tiêu dùng và lợi thế cạnh tranh",
+            "Giảm thiểu rủi ro thu hồi, phạt tiền hoặc hạn chế nhập khẩu",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Yêu cầu Chứng nhận BIS cho Nhà sản xuất Nội thất
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Yêu cầu
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Chi tiết
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Cơ quan Chứng nhận", "Cục Tiêu chuẩn Ấn Độ (BIS)"],
+                ["Chương trình Chứng nhận", "Scheme-I (Chứng nhận Dấu ISI)"],
+                ["Luật Áp dụng", "Furniture (Quality Control) Order, 2025"],
+                ["Đánh dấu Bắt buộc", "Dấu ISI kèm Số Giấy phép BIS"],
+                [
+                  "Kiểm tra Sản phẩm",
+                  "Bắt buộc qua các phòng thí nghiệm được BIS công nhận",
+                ],
+                ["Thanh tra Nhà máy", "Bắt buộc trước khi cấp giấy phép"],
+                [
+                  "Áp dụng cho",
+                  "Nhà sản xuất Ấn Độ, Nhà sản xuất Nước ngoài, Nhà nhập khẩu",
+                ],
+                ["Giám sát Sau Chứng nhận", "Bắt buộc"],
+                [
+                  "Gia hạn Giấy phép",
+                  "Gia hạn định kỳ theo yêu cầu của BIS",
+                ],
+              ].map(([req, details], i) => (
+                <TableRow
+                  key={req}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {req}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Khung Pháp lý cho Chứng nhận BIS Nội thất tại Ấn Độ
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Scale,
+              title: "Furniture (Quality Control) Order, 2025",
+              description:
+                "Furniture QCO 2025 quy định một số danh mục nội thất phải tuân thủ tiêu chuẩn BIS. QCO cung cấp cơ sở pháp lý cho chứng nhận bắt buộc và nêu rõ các loại nội thất được bao phủ.",
+            },
+            {
+              icon: Building2,
+              title: "Vai trò của Cục Tiêu chuẩn Ấn Độ (BIS)",
+              description:
+                "BIS xây dựng Tiêu chuẩn Ấn Độ (IS), đánh giá đơn vị sản xuất, tiến hành kiểm tra sản phẩm và cấp giấy phép sử dụng dấu ISI. BIS cũng giám sát tuân thủ thông qua kiểm toán và giám sát.",
+            },
+          ]}
+        />
+
+        <SubSectionHeading>
+          Chứng nhận BIS Bắt buộc so với Tự nguyện cho Nội thất
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Bắt buộc</strong> — Các danh mục được quy định theo
+              Furniture QCO, như giường, ghế và tủ lưu trữ.
+            </>,
+            <>
+              <strong>Tự nguyện</strong> — Nhà sản xuất có thể chọn chứng nhận
+              cho các danh mục sản phẩm bổ sung để nâng cao uy tín thị trường.
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          Phạm vi Áp dụng của Furniture QCO đối với Nhà sản xuất và Nhà nhập
+          khẩu
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Nhà sản xuất Ấn Độ sản xuất nội thất thuộc phạm vi QCO",
+            "Nhà sản xuất nước ngoài xuất khẩu sang Ấn Độ",
+            "Nhà nhập khẩu bán nội thất trong nước",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Sản phẩm Nội thất được Bao phủ bởi Chứng nhận BIS
+        </SectionHeading>
+
+        <SubSectionHeading>
+          Danh mục Nội thất và Tiêu chuẩn BIS Áp dụng
+        </SubSectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Danh mục Nội thất
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Tiêu chuẩn Ấn Độ Áp dụng
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Tên Tiêu chuẩn
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 text-[#1e1e1e]">
+                  Yêu cầu Chứng nhận
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                {
+                  category: "Ghế Làm việc",
+                  standard: "IS 17631:2022",
+                  title:
+                    "Furniture – Chairs for Office Work – Requirements and Test Methods",
+                  link: "/blogs/isi-products/work-chairs-is-17631",
+                },
+                {
+                  category: "Ghế và Ghế đẩu Mục đích Chung",
+                  standard: "IS 17632:2022",
+                  title:
+                    "Furniture – General Purpose Chairs and Stools – Requirements and Test Methods",
+                  link: "/blogs/isi-products/chairs-and-stools-is-17632",
+                },
+                {
+                  category: "Bàn và Bàn làm việc",
+                  standard: "IS 17633:2022",
+                  title:
+                    "Furniture – Tables and Desks – Requirements and Test Methods",
+                  link: "/blogs/isi-products/tables-&-desks-is-17633",
+                },
+                {
+                  category: "Tủ Lưu trữ",
+                  standard: "IS 17634:2022",
+                  title:
+                    "Furniture – Storage Units – Requirements and Test Methods",
+                  link: "/blogs/isi-products/storage-unit-is-17634",
+                },
+                {
+                  category: "Giường",
+                  standard: "IS 17635:2022",
+                  title:
+                    "Furniture – Beds – Requirements and Test Methods",
+                  link: "/blogs/isi-products/beds-is-17635",
+                },
+                {
+                  category: "Giường Tầng",
+                  standard: "IS 17636:2022",
+                  title:
+                    "Furniture – Bunk Beds for Domestic Use – Requirements and Test Methods",
+                  link: "/blogs/isi-products/bunk-beds-is-17636",
+                },
+              ].map((row, i) => (
+                <TableRow
+                  key={row.standard}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-[#1e1e1e]">
+                    <Link
+                      to={row.link}
+                      className="text-blue-600 hover:underline"
+                    >
+                      {row.category}
+                    </Link>
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.standard}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.title}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 text-gray-600">
+                    Bắt buộc theo Furniture QCO
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tất cả sản phẩm được bao phủ phải tuân thủ các tiêu chuẩn BIS liên
+          quan và mang dấu ISI hợp lệ trước khi được bán tại Ấn Độ. Các tiêu
+          chuẩn này xác định yêu cầu tối thiểu về an toàn, độ ổn định và khả
+          năng sử dụng của nội thất.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Tiêu chuẩn BIS cho Nội thất và Yêu cầu của chúng
+        </SectionHeading>
+
+        <SubSectionHeading>
+          Yêu cầu Hiệu suất theo Tiêu chuẩn BIS Nội thất
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          Nội thất phải chịu được sử dụng bình thường mà không bị biến dạng hoặc
+          hỏng cấu trúc.
+        </p>
+        <CheckPointsList
+          points={[
+            "Khả năng chịu tải trong điều kiện tải bình thường và tải đỉnh",
+            "Độ bền khớp nối và kết nối",
+            "Độ ổn định vật liệu không bị cong vênh hoặc suy giảm",
+          ]}
+        />
+
+        <SubSectionHeading>
+          Yêu cầu Kiểm tra An toàn và Độ bền
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          Nội thất phải đáp ứng các tiêu chuẩn an toàn để ngăn ngừa tai nạn và
+          tiêu chuẩn độ bền để đảm bảo tuổi thọ lâu dài.
+        </p>
+        <CheckPointsList
+          points={[
+            "Ngăn ngừa lật (ghế, ghế đẩu và các đơn vị không ổn định)",
+            "Ngăn ngừa sụp đổ dưới tải trọng định mức (giường, giường tầng, tủ lưu trữ)",
+            "Độ bền lâu dài thông qua kiểm tra hiệu suất sử dụng lặp lại",
+          ]}
+        />
+
+        <SubSectionHeading>
+          Thông số Chất lượng được Đánh giá trong Chứng nhận
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Chất lượng vật liệu và hoàn thiện bề mặt",
+            "Khả năng chịu tải",
+            "Độ ổn định, công thái học và tính năng an toàn",
+          ]}
+        />
+
+        <SubSectionHeading>
+          Yêu cầu Tuân thủ cho các Danh mục Nội thất Khác nhau
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mỗi loại nội thất có tiêu chuẩn IS cụ thể nêu rõ kích thước, kiểm tra
+          hiệu suất và dung sai cho phép. Tuân thủ đảm bảo tính đồng nhất và
+          chất lượng giữa các nhà sản xuất.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Ai Cần Chứng nhận BIS cho Nội thất?
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Factory,
+              title: "Nhà sản xuất Nội thất Ấn Độ",
+              description:
+                "Tất cả nhà sản xuất trong nước của nội thất thuộc phạm vi Furniture QCO phải có chứng nhận BIS trước khi bán sản phẩm.",
+            },
+            {
+              icon: Globe,
+              title: "Nhà sản xuất Nước ngoài Xuất khẩu Nội thất sang Ấn Độ",
+              description:
+                "Nhà xuất khẩu phải tuân thủ tiêu chuẩn BIS để bán nội thất hợp pháp tại Ấn Độ và sử dụng dấu ISI.",
+            },
+            {
+              icon: Package,
+              title: "Nhà nhập khẩu Nội thất và Chủ sở hữu Thương hiệu",
+              description:
+                "Nhà nhập khẩu phải đảm bảo nội thất họ đưa vào Ấn Độ tuân thủ quy chuẩn BIS, ngay cả khi sản xuất ở nước ngoài.",
+            },
+            {
+              icon: ShoppingCart,
+              title: "Người bán Thương mại Điện tử và Doanh nghiệp Bán lẻ",
+              description:
+                "Nhà bán lẻ trực tuyến và ngoại tuyến bán nội thất thuộc các danh mục được bao phủ phải xác minh chứng nhận BIS để tránh trách nhiệm pháp lý.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Chứng nhận BIS ISI cho Nội thất: Quy trình Từng bước
+        </SectionHeading>
+
+        <NumberedSteps
+          steps={[
+            {
+              title: "Xác định Sản phẩm và Lựa chọn Tiêu chuẩn Áp dụng",
+              description:
+                "Xác định danh mục nội thất và tiêu chuẩn BIS liên quan (IS 17631–IS 17636) để kiểm tra và chứng nhận.",
+            },
+            {
+              title: "Kiểm tra Sản phẩm tại Phòng thí nghiệm được BIS Công nhận",
+              description:
+                "Nội thất được kiểm tra về độ bền, độ ổn định và tuổi thọ tại các phòng thí nghiệm được BIS phê duyệt. Báo cáo kiểm tra là bắt buộc cho đơn đăng ký.",
+            },
+            {
+              title: "Nộp Đơn BIS",
+              description:
+                "Nhà sản xuất nộp đơn cho BIS kèm thông số sản phẩm, chi tiết kỹ thuật và báo cáo kiểm tra.",
+            },
+            {
+              title: "Thanh tra và Đánh giá Nhà máy",
+              description:
+                "BIS tiến hành kiểm toán nhà máy để kiểm tra quy trình sản xuất, hệ thống kiểm soát chất lượng và tính nhất quán sản xuất.",
+            },
+            {
+              title: "Cấp Giấy phép BIS và Quyền sử dụng Dấu ISI",
+              description:
+                "Sau khi được phê duyệt, BIS cấp giấy phép cho phép nhà sản xuất sử dụng dấu ISI trên nội thất đã được chứng nhận.",
+            },
+            {
+              title: "Yêu cầu Tuân thủ Sau Chứng nhận",
+              description:
+                "Kiểm toán định kỳ, kiểm tra định kỳ và tuân thủ tiêu chuẩn BIS là bắt buộc để duy trì chứng nhận.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Tài liệu Cần thiết cho Chứng nhận BIS Nội thất
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Đăng ký Công ty và Tài liệu Sản xuất</strong> — Giấy
+              phép kinh doanh, đăng ký GST và chi tiết cơ sở sản xuất.
+            </>,
+            <>
+              <strong>Thông số Kỹ thuật và Bản vẽ Sản phẩm</strong> — Thiết kế
+              chi tiết, vật liệu sử dụng và hướng dẫn lắp ráp.
+            </>,
+            <>
+              <strong>Báo cáo Kiểm tra và Tài liệu Kiểm soát Chất lượng</strong>{" "}
+              — Báo cáo từ phòng thí nghiệm được BIS phê duyệt chứng minh tuân
+              thủ tiêu chuẩn IS.
+            </>,
+            <>
+              <strong>Tài liệu Nhà máy và Quy trình Sản xuất</strong> — Hệ
+              thống quản lý chất lượng, luồng quy trình và thủ tục kiểm tra.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Yêu cầu Kiểm tra cho Nội thất được Chứng nhận BIS
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Lĩnh vực Kiểm tra
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Mục đích
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                [
+                  "Kiểm tra Độ bền",
+                  "Xác minh khả năng chịu tải",
+                ],
+                [
+                  "Kiểm tra Độ ổn định",
+                  "Ngăn ngừa lật và sụp đổ",
+                ],
+                [
+                  "Kiểm tra Tuổi thọ",
+                  "Đánh giá hiệu suất qua sử dụng lặp lại",
+                ],
+                [
+                  "Kiểm tra Tính toàn vẹn Cấu trúc",
+                  "Đánh giá khớp nối, khung và kết nối",
+                ],
+                [
+                  "Kiểm tra An toàn",
+                  "Giảm rủi ro thương tích trong sử dụng bình thường",
+                ],
+                [
+                  "Kiểm tra Hiệu suất Chức năng",
+                  "Xác nhận chức năng và khả năng sử dụng theo thiết kế",
+                ],
+              ].map(([area, purpose], i) => (
+                <TableRow
+                  key={area}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {area}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {purpose}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nội thất phải được kiểm tra tại các phòng thí nghiệm được BIS công
+          nhận để xác thực các tuyên bố về an toàn, hiệu suất và độ bền.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Dấu ISI cho Nội thất: Quy tắc Sử dụng và Yêu cầu Tuân thủ
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Dấu ISI Thể hiện điều gì</strong> — Xác nhận nội thất
+              đáp ứng tiêu chuẩn Ấn Độ và đã được BIS chứng nhận.
+            </>,
+            <>
+              <strong>Quy tắc Gắn Dấu ISI</strong> — Dấu phải hiển thị rõ ràng,
+              bền vững và định dạng đúng theo hướng dẫn của BIS.
+            </>,
+            <>
+              <strong>Hậu quả Sử dụng Sai</strong> — Sử dụng trái phép có thể
+              dẫn đến phạt tiền, thu hồi giấy phép và hành động pháp lý theo
+              Đạo luật BIS, 2016.
+            </>,
+            <>
+              <strong>Cách Người mua Xác minh</strong> — Người tiêu dùng có thể
+              xác minh số giấy phép trên trang web chính thức của BIS.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Thời gian, Hiệu lực và Gia hạn Chứng nhận BIS
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Clock,
+              title: "Thời gian Chứng nhận cho Sản phẩm Nội thất",
+              description:
+                "Thường từ 2–3 tháng, tùy thuộc vào lịch kiểm tra và thanh tra nhà máy.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "Hiệu lực Giấy phép BIS",
+              description:
+                "Giấy phép có hiệu lực 1–3 năm và cần gia hạn trước khi hết hạn.",
+            },
+            {
+              icon: RefreshCw,
+              title: "Quy trình Gia hạn Chứng nhận BIS",
+              description:
+                "Gia hạn bao gồm báo cáo kiểm tra cập nhật, thanh tra nhà máy và xác nhận tuân thủ.",
+            },
+            {
+              icon: Eye,
+              title: "Giám sát và Yêu cầu Tuân thủ Liên tục",
+              description:
+                "BIS tiến hành kiểm toán ngẫu nhiên và kiểm tra để đảm bảo tuân thủ tiêu chuẩn liên tục.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Lợi ích của Nội thất được Chứng nhận BIS
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Tuân thủ Pháp lý và Tiếp cận Thị trường</strong> — Bắt
+              buộc để bán một số loại nội thất tại Ấn Độ.
+            </>,
+            <>
+              <strong>Cải thiện Chất lượng Sản phẩm và Niềm tin Người tiêu
+              dùng</strong> — Chứng nhận BIS thể hiện độ tin cậy và an toàn.
+            </>,
+            <>
+              <strong>Lợi thế Cạnh tranh cho Nhà sản xuất</strong> — Nội thất
+              được chứng nhận có uy tín thị trường cao hơn và đủ điều kiện mua
+              sắm.
+            </>,
+            <>
+              <strong>Đủ điều kiện Mua sắm Chính phủ</strong> — Chỉ sản phẩm
+              được chứng nhận BIS mới có thể cung cấp cho người mua chính phủ
+              hoặc tổ chức.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Hình phạt khi Không Tuân thủ Quy định BIS về Nội thất
+        </SectionHeading>
+
+        <CheckPointsList
+          variant="warning"
+          points={[
+            <>
+              <strong>Sản xuất hoặc Bán Nội thất Chưa được Chứng nhận</strong>{" "}
+              — Vi phạm QCO, dẫn đến phạt tiền và tịch thu sản phẩm.
+            </>,
+            <>
+              <strong>Hạn chế Nhập khẩu Nội thất Không Tuân thủ</strong> —
+              Hàng nhập khẩu chưa được chứng nhận có thể bị chặn tại hải quan.
+            </>,
+            <>
+              <strong>Hình phạt theo Đạo luật BIS, 2016</strong> — Bao gồm phạt
+              tiền, tù giam và cấm bán sản phẩm.
+            </>,
+            <>
+              <strong>Rủi ro Kinh doanh khi Không Tuân thủ</strong> — Mất niềm
+              tin người tiêu dùng, tranh chấp pháp lý và hạn chế tiếp cận thị
+              trường.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Thách thức trong Việc Đạt Chứng nhận BIS cho Nội thất
+        </SectionHeading>
+
+        <NumberedSteps
+          showTimeline={false}
+          steps={[
+            {
+              title: "Xác định Tiêu chuẩn Ấn Độ Đúng",
+              description:
+                "Nhà sản xuất phải đảm bảo sản phẩm phù hợp với tiêu chuẩn IS 17631–IS 17636 áp dụng.",
+            },
+            {
+              title: "Quản lý Yêu cầu Kiểm tra và Tài liệu",
+              description:
+                "Kiểm tra phòng thí nghiệm và tài liệu đầy đủ là bắt buộc để được phê duyệt.",
+            },
+            {
+              title: "Xử lý Nhận xét từ Kiểm toán Nhà máy",
+              description:
+                "Không tuân thủ trong kiểm toán có thể làm chậm chứng nhận.",
+            },
+            {
+              title: "Duy trì Tuân thủ Liên tục Sau Chứng nhận",
+              description:
+                "Giám sát chất lượng liên tục và tuân thủ tiêu chuẩn BIS là cần thiết để tránh hình phạt.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Sun Certifications India Có thể Hỗ trợ Như thế nào
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: FileText,
+              title: "Hỗ trợ Đơn đăng ký và Tài liệu",
+              description:
+                "Hướng dẫn nộp đơn BIS đầy đủ và chính xác.",
+            },
+            {
+              icon: FlaskConical,
+              title: "Hỗ trợ Kiểm tra Sản phẩm",
+              description:
+                "Giúp phối hợp với các phòng thí nghiệm được BIS phê duyệt.",
+            },
+            {
+              icon: ClipboardCheck,
+              title: "Chuẩn bị Kiểm toán và Hướng dẫn Tuân thủ",
+              description:
+                "Đảm bảo quy trình nhà máy đáp ứng yêu cầu BIS trước khi thanh tra.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "Quản lý Tuân thủ Sau Cấp Giấy phép",
+              description:
+                "Tư vấn về lưu trữ hồ sơ, kiểm toán giám sát và cập nhật tiêu chuẩn.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Câu hỏi Thường gặp về Chứng nhận BIS cho Nội thất
+        </SectionHeading>
+
+        <FaqAccordion
+          items={[
+            {
+              question:
+                "Chứng nhận BIS có bắt buộc cho tất cả sản phẩm nội thất không?",
+              answer:
+                "Không. Chỉ nội thất được liệt kê theo Furniture QCO 2025 mới yêu cầu chứng nhận BIS bắt buộc.",
+            },
+            {
+              question:
+                "Nội thất nhập khẩu có thể bán mà không có Chứng nhận BIS không?",
+              answer:
+                "Không. Nội thất thuộc các danh mục bắt buộc không thể bán tại Ấn Độ nếu chưa được BIS phê duyệt.",
+            },
+            {
+              question: "Chứng nhận Nội thất mất bao lâu?",
+              answer:
+                "Thường từ 2–3 tháng, tùy thuộc vào kiểm tra và thanh tra.",
+            },
+            {
+              question:
+                "Sự khác biệt giữa Chứng nhận BIS và Dấu ISI là gì?",
+              answer:
+                "Chứng nhận BIS là quy trình phê duyệt; dấu ISI là nhãn chứng nhận hiển thị trên nội thất.",
+            },
+            {
+              question:
+                "Tiêu chuẩn BIS nào áp dụng cho Nội thất?",
+              answer:
+                "IS 17631–IS 17636 bao phủ ghế, ghế đẩu, ghế làm việc, bàn, giường, giường tầng và tủ lưu trữ.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>Tài nguyên Liên quan</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                Chứng nhận BIS ISI
+              </a>
+            </>,
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                Chứng nhận BIS cho Nhà sản xuất Nước ngoài
+              </a>
+            </>,
+          ]}
+        />
 
         <ManyUsersAlsoRead />
 

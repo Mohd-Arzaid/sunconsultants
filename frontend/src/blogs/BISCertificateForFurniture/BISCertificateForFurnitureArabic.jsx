@@ -9,7 +9,38 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { SlashIcon } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  AlertTriangle,
+  Building2,
+  Check,
+  ClipboardCheck,
+  Clock,
+  Eye,
+  Factory,
+  FileText,
+  FlaskConical,
+  Globe,
+  Package,
+  RefreshCw,
+  Scale,
+  ShieldCheck,
+  ShoppingCart,
+  SlashIcon,
+} from "lucide-react";
 
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -99,7 +130,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    شهادة BIS للأثاث في الهند – دليل مفصل كامل
+                    شهادة BIS للأثاث في الهند
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -125,816 +156,899 @@ const MainContent = () => {
   );
 };
 
+const TABLE_WRAP =
+  "mt-6 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]";
+
+const SectionDivider = () => (
+  <div className="service-left-content-divider my-8 md:my-10" />
+);
+
+const SectionHeading = ({ children }) => (
+  <h2 className="text-xl md:text-2xl font-geist font-bold text-[#1e1e1e] mb-4 pl-4 border-l-4 border-[#1A8781]">
+    {children}
+  </h2>
+);
+
+const SubSectionHeading = ({ children }) => (
+  <h3 className="text-base md:text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-4">
+    {children}
+  </h3>
+);
+
+const IntroCallout = ({ children }) => (
+  <div className="rounded-md bg-[#EAF3FF] border-l-4 border-[#1A8781] px-4 py-3 mb-6">
+    {children}
+  </div>
+);
+
+const CheckPointsList = ({ points, variant = "check" }) => {
+  const Icon = variant === "warning" ? AlertTriangle : Check;
+  const iconBg =
+    variant === "warning" ? "bg-amber-500/10" : "bg-green-500/10";
+
+  return (
+    <div className="bg-white/50 rounded-xl p-4 ring-1 ring-gray-900/[0.05] mt-2 mb-4">
+      <ul className="flex flex-col gap-3 list-none">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-start gap-3">
+            <div
+              className={`${iconBg} p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5`}
+            >
+              <Icon size={12} className="text-[#020817]" />
+            </div>
+            <p className="font-geist text-sm md:text-base text-[#42434d] tracking-wide text-left max-w-full leading-relaxed flex-1">
+              {point}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const NumberedSteps = ({ steps, showTimeline = true }) => {
+  if (!showTimeline) {
+    return (
+      <div className="mt-4 mb-4 flex flex-col gap-4">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-3 bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+          >
+            <div className="w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+              {index + 1}
+            </div>
+            <div className="flex-1">
+              <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+                {step.title}
+              </h3>
+              <p className="text-gray-600 text-base font-geist">
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-4 mb-4 border-l-2 border-[#1A8781]/30 ml-3 pl-6 flex flex-col gap-4">
+      {steps.map((step, index) => (
+        <div
+          key={index}
+          className="relative bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+        >
+          <div className="absolute -left-[31px] top-4 w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center">
+            {index + 1}
+          </div>
+          <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+            {step.title}
+          </h3>
+          <p className="text-gray-600 text-base font-geist">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const InfoCardGrid = ({ items }) => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      {items.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <div
+            key={index}
+            className="bg-white/60 rounded-lg p-4 ring-1 ring-gray-900/[0.06] hover:ring-gray-900/[0.12] hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+          >
+            {Icon && (
+              <div className="mb-3 w-9 h-9 rounded-full bg-[#1A8781]/10 text-[#1A8781] flex items-center justify-center">
+                <Icon size={18} />
+              </div>
+            )}
+            <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-2">
+              {item.title}
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base font-geist leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const FaqAccordion = ({ items }) => {
+  return (
+    <div className="rounded-xl bg-white/60 p-4 md:p-5 ring-1 ring-gray-900/[0.06]">
+      <Accordion type="single" collapsible className="w-full">
+        {items.map((item, index) => (
+          <AccordionItem key={index} value={`faq-${index}`}>
+            <AccordionTrigger className="text-left font-geist font-semibold text-[#1e1e1e] hover:no-underline">
+              {item.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-gray-600 font-geist text-base">
+              {item.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
+  );
+};
+
 const MainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
-      {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          شهادة BIS للأثاث في الهند – دليل مفصل كامل
+          شهادة BIS للأثاث في الهند: دليل شامل لمعايير BIS وعلامة ISI والعملية
+          والامتثال
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforFurniture.png"
             title="ترخيص BIS للأثاث"
-            alt="شهادة BIS للأثاث في الهند - دليل شهادة BIS الكامل"
+            alt="شهادة BIS للأثاث في الهند - دليل علامة ISI"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          مقدمة: شهادة BIS وصناعة الأثاث الهندية
-        </h2>
+        <IntroCallout>
+          <p className="text-gray-700 text-base font-geist leading-relaxed">
+            الأثاث جزء أساسي من المنازل والمكاتب والأماكن العامة. ضمان سلامة
+            الأثاث ومتانته وجودته أمر بالغ الأهمية للمستهلكين والمصنعين على حد
+            سواء. في الهند، تُعد{" "}
+            <strong>شهادة BIS للأثاث</strong> متطلبًا إلزاميًا لفئات معينة من
+            الأثاث بموجب أمر مراقبة الجودة للأثاث (Furniture (Quality Control)
+            Order)، 2025. يقدم هذا الدليل نظرة شاملة على معايير BIS وعلامة ISI
+            وعملية الشهادة ومتطلبات الامتثال.
+          </p>
+        </IntroCallout>
+
+        <SectionDivider />
+
+        <SectionHeading>ما هي شهادة BIS للأثاث؟</SectionHeading>
+
+        <SubSectionHeading>معنى شهادة BIS للأثاث</SubSectionHeading>
         <p className="text-gray-600 text-base font-geist mb-4">
-          في الهند، يتم تنظيم جودة المنتج والسلامة والتوحيد القياسي من قبل سلطة
-          قانونية مركزية تُعرف باسم مكتب المعايير الهندية (BIS). BIS هو منظمة
-          المعايير الوطنية في الهند، التي تأسست بموجب قانون BIS لضمان أن
-          المنتجات المباعة في السوق الهندية تتوافق مع معايير السلامة والجودة
-          والأداء المحددة.
+          شهادة BIS هي عملية رسمية يقوم بموجبها مكتب المعايير الهندية (BIS)
+          بتقييم المنتجات للتأكد من امتثالها للمعايير الهندية. بالنسبة للأثاث،
+          تضمن هذه الشهادة أن المنتجات تلبي معايير السلامة والأداء والجودة
+          المحددة. بعد الحصول على الشهادة، يمكن للمصنعين استخدام{" "}
+          <strong>علامة ISI</strong> على أثاثهم، مما يشير إلى الامتثال للمشترين.
         </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ما هو BIS؟
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          الشكل الكامل لـ BIS يعني مكتب المعايير الهندية. يعمل تحت إشراف وزارة
-          شؤون المستهلك والغذاء والتوزيع العام، حكومة الهند. يلعب BIS دورًا
-          حاسمًا في حماية مصالح المستهلكين مع دعم المصنعين من خلال نظام توحيد
-          قياسي وشهادة شفاف.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          شهدت صناعة الأثاث الهندية نموًا سريعًا بسبب:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>التحضر</li>
-          <li>توسع البنية التحتية السكنية والتجارية</li>
-          <li>
-            النمو في قطاعات الضيافة والتعليم والرعاية الصحية والمعيشة المشتركة
-          </li>
-          <li>زيادة وعي المستهلكين حول سلامة المنتج ومتانته</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          لم يعد الأثاث يُعتبر منتجًا جماليًا بحتًا. إنه مرتبط مباشرة بسلامة
-          المستخدم وعلم الحركة والاستقرار الهيكلي ومقاومة الحريق والمتانة طويلة
-          الأمد. الحوادث التي تنطوي على انهيار الأسرة والأسرة المزدوجة غير
-          الآمنة والكراسي غير المستقرة أو وحدات التخزين دون المستوى أثارت مخاوف
-          بين المنظمين والمستهلكين على حد سواء.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          لمعالجة هذه المخاطر، أصبحت شهادة BIS للأثاث متطلبًا حاسمًا للامتثال.
-          يضمن BIS أن منتجات الأثاث تلبي المعايير الهندية (IS) المتعلقة بـ:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>القوة الهيكلية</li>
-          <li>القدرة على تحمل الأحمال</li>
-          <li>جودة المواد</li>
-          <li>سلامة التصميم</li>
-          <li>الأداء في ظل ظروف الاستخدام</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          بالنسبة للمصنعين والمستوردين والمصدرين والشركات الصغيرة والمتوسطة
-          والشركات الناشئة وأصحاب العلامات التجارية للأثاث، لم يعد الحصول على
-          شهادة BIS للأثاث مجرد شكليات تنظيمية—بل هو ضرورة سوقية.
-        </p>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          لماذا تهم شهادة BIS للأثاث
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تضمن الامتثال القانوني بموجب اللوائح الهندية</li>
-          <li>تعزز ثقة المستهلك ومصداقية العلامة التجارية</li>
-          <li>تمكن من البيع والتوزيع غير المقيد في جميع أنحاء الهند</li>
-          <li>تقليل مخاطر المسؤولية عن المنتج</li>
-          <li>تحسين جاهزية التصدير والقبول العالمي</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تم تصميم هذا الدليل الشامل ليكون المصدر الأكثر موثوقية وتفصيلاً حول
-          شهادة BIS للأثاث في الهند. سواء كنت مصنعًا لأول مرة أو علامة تجارية
-          أثاث راسخة، يجيب هذا الدليل على كل سؤال محتمل يتعلق بترخيص BIS للأثاث
-          وتسجيل BIS للأثاث والمعايير المعمول بها والعملية والتكلفة والمستندات
-          والجداول الزمنية والامتثال بعد الشهادة.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ما هي شهادة BIS للأثاث؟
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معنى شهادة BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للأثاث هي موافقة رسمية تمنحها مكتب المعايير الهندية تؤكد أن
-          منتج أثاث محدد يتوافق مع المعيار الهندي (IS) ذي الصلة.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ما هي علامة BIS؟
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          علامة BIS، المعروفة باسم علامة ISI، هي علامة مطابقة قياسية تظهر على
-          المنتجات المعتمدة. تشير إلى أن الأثاث قد:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اجتاز الاختبارات المعملية</li>
-          <li>تم فحص المصنع</li>
-          <li>استوفى جميع متطلبات المعيار</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          شرح شعار BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يمثل شعار BIS سلطة BIS كجهة معايير وطنية في الهند. عند استخدامه مع
-          علامة ISI على منتجات الأثاث، يضمن للمشترين أن المنتج يتوافق مع معايير
-          BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          شهادة BIS الهند – الحالة القانونية
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          في الهند، يمكن أن يؤدي تصنيع أو استيراد أو بيع منتجات الأثاث المغطاة
-          بموجب المعايير المعلنة دون شهادة BIS إلى:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>مصادرة البضائع</li>
-          <li>غرامات مالية ثقيلة</li>
-          <li>الملاحقة القضائية بموجب قانون BIS</li>
-          <li>حظر البيع أو الاستيراد</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          وبالتالي، تحمل شهادة BIS للأثاث في الهند أهمية قانونية قوية.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          لماذا شهادة BIS مهمة لمنتجات الأثاث
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للأثاث حرجة لأسباب متعددة:
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. السلامة والسلامة الهيكلية
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يمكن أن تسبب أعطال الأثاث إصابات أو وفيات. تقيم معايير BIS:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>القدرة على تحمل الأحمال</li>
-          <li>الاستقرار ضد الانقلاب</li>
-          <li>قوة المفاصل</li>
-          <li>أداء المواد</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. الجودة والمتانة
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تضمن منتجات الأثاث المعتمدة:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>عمر خدمة طويل</li>
-          <li>مقاومة التآكل والتمزق</li>
-          <li>أداء موحد</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. ثقة المستهلك
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          علامة شهادة BIS تبني ثقة فورية بين المشترين والمؤسسات والمشترين
-          بالجملة.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. الوصول إلى السوق
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          العديد من المناقصات الحكومية والمشترين المؤسسيين والشركات الكبيرة تفرض
-          أثاثًا معتمدًا من BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. الامتثال القانوني
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          بيع أثاث غير معتمد بموجب معايير BIS الإلزامية يمكن أن يجذب غرامات
-          وإجراءات قانونية.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          منتجات الأثاث المغطاة بموجب شهادة BIS
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          الأثاث هو فئة عامة واسعة تحت BIS، يغطي أنواعًا متعددة من المنتجات، كل
-          منها يحكمها معايير هندية مختلفة (أرقام IS).
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          فئات الأثاث الرئيسية المغطاة:
-        </h3>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          1. كراسي العمل
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تُستخدم في المكاتب والمصانع والمساحات التجارية. تركز المعايير على علم
-          الحركة والاستقرار وأداء الأحمال.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          2. كراسي ومقاعد للأغراض العامة
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تُستخدم في المنازل والمدارس والمساحات العامة. يقيم BIS السلامة
-          الهيكلية وقوة المواد.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          3. الطاولات والمكاتب
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يشمل مكاتب المكاتب وطاولات الدراسة ومحطات العمل. تختبر المعايير قدرة
-          تحمل الأحمال ومتانة السطح.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          4. وحدات التخزين
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          الخزائن والخزانات والخزائن والرفوف. التركيز على الاستقرار والحواف
-          الحادة والوصول الآمن.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          5. الأسرة
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          أسرة مفردة وأسرة مزدوجة وأسرة قابلة للطي. يتحقق BIS من قوة الإطار
-          والأداء طويل الأمد.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          6. الأسرة المزدوجة
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          منظمة للغاية بسبب مخاطر السلامة. التركيز على الحواجز وسلامة السلم ومنع
-          السقوط.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          7. المركبات المنجدة للأثاث غير المنزلي
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تُستخدم في المكاتب والفنادق والقاعات. تشمل المعايير اختبارات مقاومة
-          الحريق والمتانة.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          منتجات أثاث أخرى
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>أثاث المدرسة</li>
-          <li>مقاعد مؤسسية</li>
-          <li>أثاث المستشفى</li>
-          <li>أثاث معياري</li>
-          <li>أنظمة أثاث معدنية وخشبية</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          لكل فئة منتج رقم IS الخاص بها المعمول به، يتم إعلانه بشكل منفصل من قبل
-          BIS.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          معايير BIS المعمول بها للأثاث
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ما هي معايير BIS؟
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          معايير BIS هي مواصفات تقنية تنشرها BIS لتحديد:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>متطلبات المواد</li>
-          <li>معاملات الأداء</li>
-          <li>طرق الاختبار</li>
-          <li>إرشادات العلامات</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معنى أرقام IS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          رقم IS (رقم المعيار الهندي) يحدد بشكل فريد معيارًا معمولاً به على
-          منتج.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          عملية إشعار BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يصدر BIS إشعارات BIS الرسمية التي تجعل معايير معينة إلزامية. بمجرد
-          الإشعار:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>يصبح الامتثال إلزاميًا</li>
-          <li>المنتجات غير المعتمدة غير قانونية</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          كيفية تحديد معيار BIS الصحيح
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يجب على المصنعين:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تحديد فئة المنتج</li>
-          <li>دراسة نطاق IS المعمول به</li>
-          <li>تأكيد قابلية تطبيق المعيار</li>
-          <li>تجنب اختيار المعيار الخاطئ (خطأ شائع)</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          أنواع شهادة BIS المعمول بها للأثاث
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ترخيص BIS بموجب مخطط ISI
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          منتجات الأثاث مغطاة بشكل عام بموجب مخطط شهادة ISI، والذي يتضمن:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اختبار المنتج</li>
-          <li>فحص المصنع</li>
-          <li>عمليات تدقيق المراقبة</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          تسجيل BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تسجيل BIS مخصص بشكل أساسي للمنتجات الإلكترونية ومنتجات تكنولوجيا
-          المعلومات. عادة ما يتطلب الأثاث ترخيص BIS، وليس التسجيل.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          عملية شهادة BIS للأثاث في الهند
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 1: التحضير قبل التقديم
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تحديد معيار IS المعمول به</li>
-          <li>تقييم امتثال تصميم المنتج</li>
-          <li>إعداد الوثائق التقنية</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 2: طلب BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تقديم طلب BIS مع:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تفاصيل المنتج</li>
-          <li>تفاصيل التصنيع</li>
-          <li>مرجع المعيار</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 3: التقديم على BIS عبر الإنترنت
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يتم تقديم الطلب من خلال بوابة BIS الإلكترونية.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 4: اختبار المنتج
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يتم اختبار العينات في مختبرات معترف بها من BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 5: فحص المصنع
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يتحقق ضباط BIS من:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>عملية التصنيع</li>
-          <li>مراقبة الجودة</li>
-          <li>مرافق الاختبار</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 6: منح ترخيص BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          عند الامتثال، يمنح BIS الترخيص.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 7: استخدام علامة شهادة BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يمكن للمصنع وضع علامة BIS / علامة ISI.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          متطلبات الاختبار للأثاث
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          الاختبار جزء إلزامي من عملية تسجيل BIS. يخضع الأثاث لاختبارات صارمة
-          لضمان السلامة والمتانة.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الاختبارات الإلزامية للأثاث:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اختبار تحميل هيكلي</li>
-          <li>اختبار الاستقرار</li>
-          <li>اختبار قوة الحاجز</li>
-          <li>اختبار الصدمة</li>
-          <li>اختبار خطر الاحتجاز</li>
-          <li>اختبار قوة وزاوية السلم</li>
-          <li>اختبار سلامة المواد</li>
-          <li>اختبار نصف قطر الحافة والحدة</li>
-          <li>اختبار دعم المرتبة</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يجب إجراء الاختبارات في مختبر معترف به من BIS فقط.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          المستندات المطلوبة لشهادة BIS للأثاث
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          المستندات الرئيسية تشمل:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>إثبات تسجيل المصنع</li>
-          <li>رسومات المنتج والمواصفات</li>
-          <li>تفاصيل المواد الخام</li>
-          <li>تقارير الاختبار</li>
-          <li>سجلات مراقبة الجودة</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          أخطاء التوثيق الشائعة:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>مرجع معيار غير صحيح</li>
-          <li>بيانات اختبار غير مكتملة</li>
-          <li>عدم تطابق في نطاق المنتج</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          تكلفة شهادة BIS للأثاث
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          مكونات تكلفة شهادة BIS:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رسوم طلب الحكومة</li>
-          <li>رسوم الاختبار</li>
-          <li>رسوم الفحص</li>
-          <li>رسوم الترخيص</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          عوامل تكلفة شهادة BIS:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تعقيد المنتج</li>
-          <li>عدد النماذج</li>
-          <li>متطلبات الاختبار</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ملاحظة: رسوم الاستشارة المهنية منفصلة عن الرسوم الحكومية.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          الجدول الزمني لتسجيل شهادة BIS
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          الجدول الزمني المتوسط:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الاختبار: 3–6 أسابيع</li>
-          <li>الفحص: 1–2 أسبوع</li>
-          <li>منح الترخيص: 2–4 أسابيع</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          الإجمالي: 8–12 أسبوع (تقريبًا)
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          كيفية الحصول على شهادة BIS في الهند لمصنعي الأثاث
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">نصائح عملية:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اختر معيار IS الصحيح</li>
-          <li>تأكد من جاهزية المصنع</li>
-          <li>احتفظ بسجلات الاختبار</li>
-          <li>تجنب أخطاء التوثيق</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          التطبيق عبر الإنترنت لشهادة BIS – نظرة عملية
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تحديات البوابة الإلكترونية:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>أخطاء تقنية</li>
-          <li>مشاكل تحميل المستندات</li>
-          <li>الارتباك في اختيار المعيار</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          الإرشاد المناسب يقلل من التأخير.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          استخدام علامة BIS وعلامة شهادة BIS بعد الموافقة
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          قواعد العلامات:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>مرجع IS صحيح</li>
-          <li>رقم الترخيص</li>
-          <li>الحجم والوضوح المناسب</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          عدم الامتثال يمكن أن يؤدي إلى التعليق.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          التحديات في شهادة BIS للأثاث
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تفسير المعايير</li>
-          <li>فشل اختبار المنتج</li>
-          <li>عدم المطابقة في الفحص</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          دور مستشاري BIS في شهادة الأثاث
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يساعد مستشاري BIS المحترفون من خلال:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تحديد المعايير الصحيحة</li>
-          <li>إدارة الاختبار والفحص</li>
-          <li>تقليل وقت الموافقة</li>
-          <li>تجنب الرفض المكلف</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          الخلاصة
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للأثاث هي حجر الزاوية للجودة والسلامة والامتثال القانوني في
-          سوق الأثاث المتنامي في الهند. سواء كنت مصنعًا أو مستوردًا أو صاحب
-          علامة تجارية، فإن الحصول على شهادة BIS للأثاث في الهند يضمن:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الامتثال التنظيمي</li>
-          <li>ثقة المستهلك</li>
-          <li>نجاح السوق طويل الأمد</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          من خلال فهم عملية شهادة BIS والمعايير والتكاليف ومتطلبات الامتثال،
-          يمكن للشركات التنقل بثقة في المشهد التنظيمي وبناء منتجات أثاث أكثر
-          أمانًا وقوة وموثوقية للسوق الهندي.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          الأسئلة الشائعة لترخيص BIS
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              هل شهادة BIS إلزامية لجميع منتجات الأثاث في الهند؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              لا، شهادة BIS إلزامية فقط لتلك منتجات الأثاث المغطاة بموجب معايير
-              BIS المعلنة. ومع ذلك، بمجرد إعلان فئة منتج أثاث من قبل مكتب
-              المعايير الهندية، يصبح تصنيع أو استيراد أو بيع أو توزيع ذلك المنتج
-              دون ترخيص BIS صالح غير قانوني في الهند.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              أي منتجات أثاث تتطلب ترخيص BIS بدلاً من تسجيل BIS؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              منتجات الأثاث تقع بشكل عام تحت مخطط شهادة ISI، والذي يتطلب ترخيص
-              BIS، وليس تسجيل BIS. ينطبق تسجيل BIS (CRS) بشكل أساسي على المنتجات
-              الإلكترونية ومنتجات تكنولوجيا المعلومات، بينما تتطلب منتجات الأثاث
-              الاختبار + فحص المصنع + ترخيص BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              هل يمكن بيع الأثاث المستورد في الهند دون شهادة BIS؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              لا. يجب أن يكون لمنتجات الأثاث المستوردة المغطاة بموجب معايير BIS
-              الإلزامية شهادة BIS قبل التخليص الجمركي. قد يؤدي استيراد أثاث غير
-              معتمد إلى:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>احتجاز الجمارك</li>
-              <li>إعادة التصدير أو التدمير</li>
-              <li>غرامات ثقيلة</li>
-            </ul>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              يجب على المصنعين الأجانب الحصول على ترخيص BIS قبل تصدير الأثاث إلى
-              الهند.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              هل يمكن لمصنعي الأثاث الأجانب التقدم بطلب للحصول على شهادة BIS؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              نعم. يمكن للمصنعين الأجانب التقدم بطلب بموجب مخطط شهادة المصنعين
-              الأجانب (FMCS). يجب عليهم:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>تعيين ممثل هندي معتمد (AIR)</li>
-              <li>الامتثال للمعايير الهندية</li>
-              <li>السماح بفحص مصنع BIS في الخارج.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              هل شهادة BIS مطلوبة لمصنعي الأثاث اليدوي أو الصغير؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              نعم، إذا كان منتج الأثاث مغطى بموجب معيار BIS إلزامي، فيجب حتى على
-              الشركات الصغيرة والمتوسطة والشركات الناشئة والوحدات الصغيرة الحصول
-              على شهادة BIS. لا يوجد إعفاء بناءً على حجم الإنتاج.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              هل شهادة BIS مطلوبة للأثاث الخشبي؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              نعم، قد تتطلب منتجات الأثاث الخشبي مثل الأسرة والكراسي والطاولات
-              والمكاتب ووحدات التخزين شهادة BIS إذا كانت تحت المعايير المعلنة.
-              تنطبق معايير BIS على الأثاث الخشبي والمعدني، اعتمادًا على نوع
-              المنتج والاستخدام.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              هل يمكن لترخيص BIS واحد تغطية نماذج أثاث متعددة؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              نعم، يمكن تغطية نماذج أو متغيرات متعددة بموجب ترخيص BIS واحد،
-              بشرط:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>تقع تحت نفس معيار IS</li>
-              <li>معاملات البناء والمواد والتصميم متشابهة</li>
-              <li>يوافق BIS على التجميع أثناء التقديم.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              هل يمكن نقل شهادة BIS إلى مصنع آخر؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              لا. ترخيص BIS غير قابل للتحويل. يجب على كل مصنع الحصول على شهادة
-              BIS الخاصة به، حتى لو كان تصميم المنتج متطابقًا.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              ما هي شهادة BIS؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              إنه دليل رسمي على الامتثال لمعايير BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              هل شهادة BIS إلزامية للأثاث؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              نعم، لمنتجات الأثاث المغطاة بموجب المعايير المعلنة.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              كيفية الحصول على شهادة BIS في الهند؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              من خلال الاختبار والفحص وموافقة ترخيص BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              ما هي علامة BIS؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              علامة مطابقة تظهر موافقة BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              تكلفة شهادة BIS؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              يعتمد على نوع المنتج والاختبار والنطاق.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              الشكل الكامل لـ BIS؟
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              مكتب المعايير الهندية.
-            </p>
-          </div>
+        <SubSectionHeading>
+          الفرق بين شهادة BIS وعلامة ISI للأثاث
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>شهادة BIS</strong> — عملية التقييم والاختبار والموافقة من
+              قبل BIS.
+            </>,
+            <>
+              <strong>علامة ISI</strong> — علامة تُمنح بعد شهادة BIS وتشير إلى
+              أن المنتج يتوافق مع المعايير الهندية. علامة ISI هي الضمان المرئي
+              للامتثال للمستهلكين.
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          لماذا تُعد شهادة BIS مهمة لمصنعي الأثاث والمستوردين
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "الامتثال القانوني للوائح الهندية",
+            "الوصول إلى السوق الهندي وفرص المشتريات الحكومية",
+            "تعزيز ثقة المستهلك والميزة التنافسية",
+            "تقليل مخاطر الاستدعاء والغرامات أو قيود الاستيراد",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          متطلبات شهادة BIS لمصنعي الأثاث
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  المتطلب
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  التفاصيل
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["جهة الشهادة", "مكتب المعايير الهندية (BIS)"],
+                ["مخطط الشهادة", "المخطط الأول (شهادة علامة ISI)"],
+                ["القانون المعمول به", "أمر مراقبة الجودة للأثاث، 2025"],
+                ["العلامة الإلزامية", "علامة ISI مع رقم ترخيص BIS"],
+                [
+                  "اختبار المنتج",
+                  "مطلوب عبر مختبرات معترف بها من BIS",
+                ],
+                ["فحص المصنع", "إلزامي قبل منح الترخيص"],
+                [
+                  "ينطبق على",
+                  "المصنعين الهنود، المصنعين الأجانب، المستوردين",
+                ],
+                ["المراقبة بعد الشهادة", "مطلوبة"],
+                [
+                  "تجديد الترخيص",
+                  "تجديد دوري وفقًا لمتطلبات BIS",
+                ],
+              ].map(([req, details], i) => (
+                <TableRow
+                  key={req}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {req}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          الإطار التنظيمي لشهادة BIS للأثاث في الهند
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Scale,
+              title: "أمر مراقبة الجودة للأثاث، 2025",
+              description:
+                "يُلزم أمر مراقبة الجودة للأثاث 2025 فئات معينة من الأثاث بالامتثال لمعايير BIS. يشكل الأمر الأساس القانوني للشهادة الإلزامية ويحدد أنواع الأثاث المشمولة.",
+            },
+            {
+              icon: Building2,
+              title: "دور مكتب المعايير الهندية (BIS)",
+              description:
+                "يطور BIS المعايير الهندية (IS)، ويقيّم وحدات التصنيع، ويجري اختبارات المنتجات، ويصدر تراخيص استخدام علامة ISI. كما يراقب الامتثال من خلال التدقيق والمتابعة.",
+            },
+          ]}
+        />
+
+        <SubSectionHeading>
+          الشهادة الإلزامية مقابل الطوعية لشهادة BIS للأثاث
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>إلزامية</strong> — الفئات المحددة بموجب أمر مراقبة الجودة
+              للأثاث، مثل الأسرة والكراسي ووحدات التخزين.
+            </>,
+            <>
+              <strong>طوعية</strong> — يمكن للمصنعين اختيار شهادة فئات منتجات
+              إضافية لتعزيز مصداقية السوق.
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          انطباق أمر مراقبة الجودة للأثاث على المصنعين والمستوردين
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "المصنعون الهنود الذين ينتجون أثاثًا مشمولًا بموجب الأمر",
+            "المصنعون الأجانب الذين يصدرون إلى الهند",
+            "المستوردون الذين يبيعون الأثاث محليًا",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          منتجات الأثاث المشمولة بشهادة BIS
+        </SectionHeading>
+
+        <SubSectionHeading>
+          فئات الأثاث والمعايير الهندية المعمول بها
+        </SubSectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  فئة الأثاث
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  المعيار الهندي المعمول به
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  عنوان المعيار
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 text-[#1e1e1e]">
+                  متطلب الشهادة
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                {
+                  category: "كراسي العمل",
+                  standard: "IS 17631:2022",
+                  title:
+                    "Furniture – Chairs for Office Work – Requirements and Test Methods",
+                  link: "/blogs/isi-products/work-chairs-is-17631",
+                },
+                {
+                  category: "كراسي ومقاعد للأغراض العامة",
+                  standard: "IS 17632:2022",
+                  title:
+                    "Furniture – General Purpose Chairs and Stools – Requirements and Test Methods",
+                  link: "/blogs/isi-products/chairs-and-stools-is-17632",
+                },
+                {
+                  category: "الطاولات والمكاتب",
+                  standard: "IS 17633:2022",
+                  title:
+                    "Furniture – Tables and Desks – Requirements and Test Methods",
+                  link: "/blogs/isi-products/tables-&-desks-is-17633",
+                },
+                {
+                  category: "وحدات التخزين",
+                  standard: "IS 17634:2022",
+                  title:
+                    "Furniture – Storage Units – Requirements and Test Methods",
+                  link: "/blogs/isi-products/storage-unit-is-17634",
+                },
+                {
+                  category: "الأسرة",
+                  standard: "IS 17635:2022",
+                  title:
+                    "Furniture – Beds – Requirements and Test Methods",
+                  link: "/blogs/isi-products/beds-is-17635",
+                },
+                {
+                  category: "الأسرة المزدوجة",
+                  standard: "IS 17636:2022",
+                  title:
+                    "Furniture – Bunk Beds for Domestic Use – Requirements and Test Methods",
+                  link: "/blogs/isi-products/bunk-beds-is-17636",
+                },
+              ].map((row, i) => (
+                <TableRow
+                  key={row.standard}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-[#1e1e1e]">
+                    <Link
+                      to={row.link}
+                      className="text-blue-600 hover:underline"
+                    >
+                      {row.category}
+                    </Link>
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.standard}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.title}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 text-gray-600">
+                    إلزامي بموجب أمر مراقبة الجودة للأثاث
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب أن تتوافق جميع المنتجات المشمولة مع معايير BIS ذات الصلة وتحمل
+          علامة ISI صالحة قبل بيعها في الهند. تحدد هذه المعايير الحد الأدنى
+          لمتطلبات سلامة الأثاث واستقراره وسهولة استخدامه.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          معايير BIS للأثاث ومتطلباتها
+        </SectionHeading>
+
+        <SubSectionHeading>
+          متطلبات الأداء بموجب معايير BIS للأثاث
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          يجب أن يتحمل الأثاث الاستخدام العادي دون تشوه أو فشل هيكلي.
+        </p>
+        <CheckPointsList
+          points={[
+            "القدرة على تحمل الأحمال في ظروف الاستخدام العادية والذروة",
+            "قوة الوصلات ومتانة التوصيلات",
+            "استقرار المواد دون التواء أو تدهور",
+          ]}
+        />
+
+        <SubSectionHeading>
+          متطلبات اختبار السلامة والمتانة
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          يجب أن يلبي الأثاث معايير السلامة لمنع الحوادث ومعايير المتانة لضمان
+          العمر الافتراضي الطويل.
+        </p>
+        <CheckPointsList
+          points={[
+            "منع الانقلاب (الكراسي والمقاعد والوحدات غير المستقرة)",
+            "منع الانهيار تحت الحمل المحدد (الأسرة والأسرة المزدوجة والتخزين)",
+            "المتانة طويلة الأمد من خلال اختبارات الأداء عند الاستخدام المتكرر",
+          ]}
+        />
+
+        <SubSectionHeading>
+          معايير الجودة المُقيَّمة أثناء الشهادة
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "جودة المواد والتشطيب",
+            "القدرة على تحمل الأحمال",
+            "الاستقرار والتصميم الإرغونومي وميزات السلامة",
+          ]}
+        />
+
+        <SubSectionHeading>
+          متطلبات الامتثال لفئات الأثاث المختلفة
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          لكل نوع من الأثاث معايير IS محددة تفصل الأبعاد واختبارات الأداء
+          والتسامحات المسموح بها. يضمن الامتثال التوحيد والجودة عبر جميع
+          المصنعين.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>من يحتاج إلى شهادة BIS للأثاث؟</SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Factory,
+              title: "مصنعو الأثاث الهنود",
+              description:
+                "يجب على جميع المصنعين المحليين للأثاث المشمول بأمر مراقبة الجودة للأثاث الحصول على شهادة BIS قبل بيع المنتجات.",
+            },
+            {
+              icon: Globe,
+              title: "المصنعون الأجانب الذين يصدرون الأثاث إلى الهند",
+              description:
+                "يجب على المصدرين الامتثال لمعايير BIS لبيع الأثاث قانونيًا في الهند واستخدام علامة ISI.",
+            },
+            {
+              icon: Package,
+              title: "مستوردو الأثاث وأصحاب العلامات التجارية",
+              description:
+                "يجب على المستوردين التأكد من أن الأثاث الذي يدخلونه إلى الهند يتوافق مع معايير BIS، حتى لو كان مصنوعًا في الخارج.",
+            },
+            {
+              icon: ShoppingCart,
+              title: "بائعو التجارة الإلكترونية وأعمال التجزئة",
+              description:
+                "يجب على تجار التجزئة عبر الإنترنت وخارجه الذين يبيعون أثاثًا ضمن الفئات المشمولة التحقق من شهادة BIS لتجنب المسؤولية القانونية.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          شهادة BIS ISI للأثاث: العملية خطوة بخطوة
+        </SectionHeading>
+
+        <NumberedSteps
+          steps={[
+            {
+              title: "تحديد المنتج واختيار المعيار المعمول به",
+              description:
+                "حدد فئة الأثاث ومعيار BIS ذي الصلة (IS 17631–IS 17636) للاختبار والشهادة.",
+            },
+            {
+              title: "اختبار المنتج في مختبرات معترف بها من BIS",
+              description:
+                "يُختبر الأثاث للقوة والاستقرار والمتانة في مختبرات معتمدة من BIS. تقارير الاختبار إلزامية للتقديم.",
+            },
+            {
+              title: "تقديم طلب BIS",
+              description:
+                "يقدم المصنعون طلبًا إلى BIS مع مواصفات المنتج والتفاصيل الفنية وتقارير الاختبار.",
+            },
+            {
+              title: "فحص المصنع والتقييم",
+              description:
+                "يجري BIS تدقيقًا للمصنع للتحقق من عمليات التصنيع وأنظمة مراقبة الجودة واتساق الإنتاج.",
+            },
+            {
+              title: "منح ترخيص BIS وإذن علامة ISI",
+              description:
+                "عند الموافقة، يصدر BIS ترخيصًا يسمح للمصنع باستخدام علامة ISI على الأثاث المعتمد.",
+            },
+            {
+              title: "متطلبات الامتثال بعد الشهادة",
+              description:
+                "التدقيقات المنتظمة والاختبارات الدورية والالتزام بمعايير BIS مطلوبة للحفاظ على الشهادة.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          المستندات المطلوبة لشهادة BIS للأثاث
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>تسجيل الشركة ومستندات التصنيع</strong> — تراخيص
+              الأعمال وتسجيل GST وتفاصيل منشأة التصنيع.
+            </>,
+            <>
+              <strong>المواصفات الفنية للمنتج والرسومات</strong> — التصاميم
+              التفصيلية والمواد المستخدمة وتعليمات التجميع.
+            </>,
+            <>
+              <strong>تقارير الاختبار ومستندات مراقبة الجودة</strong> —
+              تقارير من مختبرات معتمدة من BIS تثبت الامتثال لمعايير IS.
+            </>,
+            <>
+              <strong>مستندات المصنع وعملية الإنتاج</strong> — أنظمة إدارة
+              الجودة وتدفق العمليات وإجراءات الفحص.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          متطلبات الاختبار للأثاث المعتمد من BIS
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  مجال الاختبار
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  الغرض
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                [
+                  "اختبار القوة",
+                  "يتحقق من القدرة على تحمل الأحمال",
+                ],
+                [
+                  "اختبار الاستقرار",
+                  "يمنع الانقلاب والانهيار",
+                ],
+                [
+                  "اختبار المتانة",
+                  "يقيّم الأداء عند الاستخدام المتكرر",
+                ],
+                [
+                  "اختبار السلامة الهيكلية",
+                  "يقيّم الوصلات والإطارات والتوصيلات",
+                ],
+                [
+                  "اختبار السلامة",
+                  "يقلل مخاطر الإصابة أثناء الاستخدام العادي",
+                ],
+                [
+                  "اختبار الأداء الوظيفي",
+                  "يؤكد الوظيفة المقصودة وسهولة الاستخدام",
+                ],
+              ].map(([area, purpose], i) => (
+                <TableRow
+                  key={area}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {area}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {purpose}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب إجراء اختبار الأثاث في مختبرات معترف بها من BIS للتحقق من ادعاءات
+          السلامة والأداء والمتانة.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          علامة ISI للأثاث: الاستخدام ومتطلبات الامتثال
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>ما تشير إليه علامة ISI</strong> — تؤكد أن الأثاث يتوافق
+              مع المعايير الهندية وقد حصل على شهادة BIS.
+            </>,
+            <>
+              <strong>قواعد وضع علامة ISI</strong> — يجب أن تكون العلامة مرئية
+              ودائمة ومنسقة بشكل صحيح وفقًا لإرشادات BIS.
+            </>,
+            <>
+              <strong>عواقب سوء الاستخدام</strong> — الاستخدام غير القانوني
+              قد يؤدي إلى غرامات وإلغاء الترخيص وإجراءات قانونية بموجب قانون
+              BIS لعام 2016.
+            </>,
+            <>
+              <strong>كيف يمكن للمشترين التحقق</strong> — يمكن للمستهلكين
+              التحقق من رقم الترخيص على الموقع الرسمي لـ BIS.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          الجدول الزمني وصلاحية وتجديد شهادة BIS
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Clock,
+              title: "الجدول الزمني للشهادة لمنتجات الأثاث",
+              description:
+                "عادةً من 2 إلى 3 أشهر، حسب جداول الاختبار وفحص المصنع.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "صلاحية ترخيص BIS",
+              description:
+                "الترخيص صالح لمدة 1–3 سنوات ويتطلب التجديد قبل انتهاء الصلاحية.",
+            },
+            {
+              icon: RefreshCw,
+              title: "عملية تجديد شهادة BIS",
+              description:
+                "يشمل التجديد تقارير اختبار محدثة وفحوصات المصنع وتأكيد الامتثال.",
+            },
+            {
+              icon: Eye,
+              title: "المراقبة ومتطلبات الامتثال المستمرة",
+              description:
+                "يجري BIS تدقيقات واختبارات عشوائية لضمان الالتزام المستمر بالمعايير.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>فوائد الأثاث المعتمد من BIS</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>الامتثال القانوني والوصول إلى السوق</strong> — إلزامي
+              لبيع أنواع معينة من الأثاث في الهند.
+            </>,
+            <>
+              <strong>تحسين جودة المنتج وثقة المستهلك</strong> — تشير شهادة
+              BIS إلى الموثوقية والسلامة.
+            </>,
+            <>
+              <strong>الميزة التنافسية للمصنعين</strong> — الأثاث المعتمد
+              يتمتع بمصداقية أعلى في السوق وأهلية للمشتريات.
+            </>,
+            <>
+              <strong>الأهلية للمشتريات الحكومية</strong> — يمكن توريد المنتجات
+              المعتمدة من BIS فقط للمشترين الحكوميين أو المؤسسيين.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          العقوبات على عدم الامتثال للوائح BIS للأثاث
+        </SectionHeading>
+
+        <CheckPointsList
+          variant="warning"
+          points={[
+            <>
+              <strong>تصنيع أو بيع أثاث غير معتمد</strong> — يخالف أمر مراقبة
+              الجودة للأثاث ويؤدي إلى غرامات ومصادرة المنتجات.
+            </>,
+            <>
+              <strong>قيود الاستيراد على الأثاث غير المتوافق</strong> — قد
+              تُحجز الاستيرادات غير المعتمدة في الجمارك.
+            </>,
+            <>
+              <strong>العقوبات بموجب قانون BIS لعام 2016</strong> — تشمل
+              الغرامات المالية والسجن وحظر البيع.
+            </>,
+            <>
+              <strong>مخاطر الأعمال عند عدم الامتثال</strong> — فقدان ثقة
+              المستهلك والنزاعات القانونية وتقييد الوصول إلى السوق.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          التحديات في الحصول على شهادة BIS للأثاث
+        </SectionHeading>
+
+        <NumberedSteps
+          showTimeline={false}
+          steps={[
+            {
+              title: "تحديد المعيار الهندي الصحيح",
+              description:
+                "يجب على المصنعين التأكد من أن منتجاتهم تتوافق مع معيار IS 17631–IS 17636 المعمول به.",
+            },
+            {
+              title: "إدارة متطلبات الاختبار والتوثيق",
+              description:
+                "الاختبار المعملي المناسب والتوثيق إلزاميان للموافقة.",
+            },
+            {
+              title: "معالجة ملاحظات تدقيق المصنع",
+              description:
+                "عدم الامتثال أثناء التدقيقات قد يؤخر الشهادة.",
+            },
+            {
+              title: "الحفاظ على الامتثال المستمر بعد الشهادة",
+              description:
+                "المراقبة المستمرة للجودة والالتزام بمعايير BIS مطلوبة لتجنب العقوبات.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>كيف يمكن لـ Sun Certifications India المساعدة</SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: FileText,
+              title: "دعم الطلب والتوثيق",
+              description:
+                "إرشاد في تقديم طلب BIS كامل ودقيق.",
+            },
+            {
+              icon: FlaskConical,
+              title: "المساعدة في اختبار المنتج",
+              description:
+                "يساعد في التنسيق مع المختبرات المعتمدة من BIS.",
+            },
+            {
+              icon: ClipboardCheck,
+              title: "التحضير للتدقيق وإرشادات الامتثال",
+              description:
+                "يضمن أن عمليات المصنع تلبي متطلبات BIS قبل الفحص.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "إدارة الامتثال بعد الترخيص",
+              description:
+                "يقدم المشورة بشأن حفظ السجلات وتدقيقات المراقبة وتحديثات المعايير.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          الأسئلة الشائعة حول شهادة BIS للأثاث
+        </SectionHeading>
+
+        <FaqAccordion
+          items={[
+            {
+              question:
+                "هل شهادة BIS إلزامية لجميع منتجات الأثاث؟",
+              answer:
+                "لا. فقط الأثاث المدرج بموجب أمر مراقبة الجودة للأثاث 2025 يتطلب شهادة BIS إلزامية.",
+            },
+            {
+              question:
+                "هل يمكن بيع الأثاث المستورد دون شهادة BIS؟",
+              answer:
+                "لا. لا يمكن بيع الأثاث ضمن الفئات الإلزامية في الهند دون موافقة BIS.",
+            },
+            {
+              question: "كم تستغرق شهادة الأثاث؟",
+              answer:
+                "عادةً من 2 إلى 3 أشهر، حسب الاختبارات والفحوصات.",
+            },
+            {
+              question:
+                "ما الفرق بين شهادة BIS وعلامة ISI؟",
+              answer:
+                "شهادة BIS هي عملية الموافقة؛ علامة ISI هي ملصق الشهادة المعروض على الأثاث.",
+            },
+            {
+              question:
+                "ما هي معايير BIS المعمول بها للأثاث؟",
+              answer:
+                "تغطي IS 17631–IS 17636 الكراسي والمقاعد وكراسي العمل والطاولات والأسرة والأسرة المزدوجة ووحدات التخزين.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>موارد ذات صلة</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                شهادة BIS ISI
+              </a>
+            </>,
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                شهادة BIS للمصنعين الأجانب
+              </a>
+            </>,
+          ]}
+        />
 
         <ManyUsersAlsoReadArabic />
 

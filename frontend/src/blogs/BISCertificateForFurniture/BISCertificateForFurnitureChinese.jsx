@@ -9,7 +9,38 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { SlashIcon } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  AlertTriangle,
+  Building2,
+  Check,
+  ClipboardCheck,
+  Clock,
+  Eye,
+  Factory,
+  FileText,
+  FlaskConical,
+  Globe,
+  Package,
+  RefreshCw,
+  Scale,
+  ShieldCheck,
+  ShoppingCart,
+  SlashIcon,
+} from "lucide-react";
 
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -100,7 +131,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    印度家具BIS证书 – 完整详细指南
+                    印度家具BIS认证
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -126,746 +157,818 @@ const MainContent = () => {
   );
 };
 
+const TABLE_WRAP =
+  "mt-6 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]";
+
+const SectionDivider = () => (
+  <div className="service-left-content-divider my-8 md:my-10" />
+);
+
+const SectionHeading = ({ children }) => (
+  <h2 className="text-xl md:text-2xl font-geist font-bold text-[#1e1e1e] mb-4 pl-4 border-l-4 border-[#1A8781]">
+    {children}
+  </h2>
+);
+
+const SubSectionHeading = ({ children }) => (
+  <h3 className="text-base md:text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-4">
+    {children}
+  </h3>
+);
+
+const IntroCallout = ({ children }) => (
+  <div className="rounded-md bg-[#EAF3FF] border-l-4 border-[#1A8781] px-4 py-3 mb-6">
+    {children}
+  </div>
+);
+
+const CheckPointsList = ({ points, variant = "check" }) => {
+  const Icon = variant === "warning" ? AlertTriangle : Check;
+  const iconBg =
+    variant === "warning" ? "bg-amber-500/10" : "bg-green-500/10";
+
+  return (
+    <div className="bg-white/50 rounded-xl p-4 ring-1 ring-gray-900/[0.05] mt-2 mb-4">
+      <ul className="flex flex-col gap-3 list-none">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-start gap-3">
+            <div
+              className={`${iconBg} p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5`}
+            >
+              <Icon size={12} className="text-[#020817]" />
+            </div>
+            <p className="font-geist text-sm md:text-base text-[#42434d] tracking-wide text-left max-w-full leading-relaxed flex-1">
+              {point}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const NumberedSteps = ({ steps, showTimeline = true }) => {
+  if (!showTimeline) {
+    return (
+      <div className="mt-4 mb-4 flex flex-col gap-4">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-3 bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+          >
+            <div className="w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+              {index + 1}
+            </div>
+            <div className="flex-1">
+              <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+                {step.title}
+              </h3>
+              <p className="text-gray-600 text-base font-geist">
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-4 mb-4 border-l-2 border-[#1A8781]/30 ml-3 pl-6 flex flex-col gap-4">
+      {steps.map((step, index) => (
+        <div
+          key={index}
+          className="relative bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+        >
+          <div className="absolute -left-[31px] top-4 w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center">
+            {index + 1}
+          </div>
+          <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+            {step.title}
+          </h3>
+          <p className="text-gray-600 text-base font-geist">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const InfoCardGrid = ({ items }) => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      {items.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <div
+            key={index}
+            className="bg-white/60 rounded-lg p-4 ring-1 ring-gray-900/[0.06] hover:ring-gray-900/[0.12] hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+          >
+            {Icon && (
+              <div className="mb-3 w-9 h-9 rounded-full bg-[#1A8781]/10 text-[#1A8781] flex items-center justify-center">
+                <Icon size={18} />
+              </div>
+            )}
+            <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-2">
+              {item.title}
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base font-geist leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const FaqAccordion = ({ items }) => {
+  return (
+    <div className="rounded-xl bg-white/60 p-4 md:p-5 ring-1 ring-gray-900/[0.06]">
+      <Accordion type="single" collapsible className="w-full">
+        {items.map((item, index) => (
+          <AccordionItem key={index} value={`faq-${index}`}>
+            <AccordionTrigger className="text-left font-geist font-semibold text-[#1e1e1e] hover:no-underline">
+              {item.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-gray-600 font-geist text-base">
+              {item.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
+  );
+};
+
 const MainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
-      {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          印度家具BIS证书 – 完整详细指南
+          印度家具BIS认证：BIS标准、ISI标志、流程与合规完整指南
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforFurniture.png"
             title="家具BIS许可证"
-            alt="印度家具BIS证书 - 完整BIS认证指南"
+            alt="印度家具BIS认证 - ISI标志指南"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          简介：BIS认证与印度家具行业
-        </h2>
+        <IntroCallout>
+          <p className="text-gray-700 text-base font-geist leading-relaxed">
+            家具是家庭、办公室和公共场所的重要组成部分。确保家具的安全性、耐用性和质量对消费者和制造商都至关重要。在印度，根据2025年家具（质量控制）令，某些类别的家具必须获得
+            <strong>家具BIS认证</strong>
+            。本指南详细介绍了BIS标准、ISI标志、认证流程和合规要求。
+          </p>
+        </IntroCallout>
+
+        <SectionDivider />
+
+        <SectionHeading>什么是家具BIS认证？</SectionHeading>
+
+        <SubSectionHeading>家具BIS认证的含义</SubSectionHeading>
         <p className="text-gray-600 text-base font-geist mb-4">
-          在印度，产品质量、安全和标准化由中央法定机构印度标准局（BIS）管理。BIS是印度的国家标准组织，根据BIS法案设立，旨在确保在印度市场销售的产品符合既定的安全、质量和性能基准。
+          BIS认证是印度标准局（BIS）评估产品以确保其符合印度标准的正式流程。对于家具而言，该认证确保产品满足既定的安全性、性能和品质参数。获得认证后，制造商可以在家具上使用
+          <strong>ISI标志</strong>，向购买者表明产品符合合规要求。
         </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          什么是BIS？
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS全称是印度标准局。它在印度政府消费者事务、食品和公共分配部领导下运作。BIS在保护消费者利益的同时，通过透明的标准化和认证生态系统支持制造商，发挥着关键作用。
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          印度家具行业由于以下原因经历了快速增长：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>城市化</li>
-          <li>住宅和商业基础设施的扩张</li>
-          <li>酒店、教育、医疗和共同生活领域的增长</li>
-          <li>消费者对产品安全和耐用性意识的提高</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          家具不再被视为纯粹的美学产品。它直接关系到用户安全、人体工程学、结构稳定性、防火性和长期耐用性。涉及坍塌床、不安全的双层床、不稳定的椅子或不合格储物单元的事件引起了监管机构和消费者的关注。
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          为了解决这些风险，家具BIS认证已成为关键的合规要求。BIS确保家具产品符合与以下方面相关的印度标准（IS）：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>结构强度</li>
-          <li>承载能力</li>
-          <li>材料质量</li>
-          <li>设计安全性</li>
-          <li>使用条件下的性能</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          对于制造商、进口商、出口商、中小微企业、初创企业和家具品牌所有者而言，获得家具BIS证书不再仅仅是监管形式——它是市场必需品。
-        </p>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          为什么家具BIS认证很重要
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>它确保符合印度法规的法律合规性</li>
-          <li>它增强消费者信任和品牌信誉</li>
-          <li>它使产品能够在印度全境无限制销售和分销</li>
-          <li>它最大限度地降低产品责任风险</li>
-          <li>它提高出口准备度和全球接受度</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          本综合指南旨在成为印度家具BIS认证最权威和详细的资源。无论您是首次制造商还是成熟的家具品牌，本指南都回答了与家具BIS许可证、家具BIS注册、适用标准、流程、成本、文件、时间表和认证后合规相关的所有可能问题。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          什么是家具BIS证书？
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS证书含义
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          家具BIS证书是印度标准局授予的正式批准，确认特定家具产品符合相关印度标准（IS）。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          什么是BIS标志？
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS标志，通常称为ISI标志，是出现在认证产品上的标准符合性标志。它表示家具已：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>通过实验室测试</li>
-          <li>通过工厂检查</li>
-          <li>满足所有标准要求</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS标志说明
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS标志代表BIS作为印度国家标准机构的权威。当在家具产品上与ISI标志一起使用时，它向购买者保证产品符合BIS标准。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          印度BIS证书 – 法律地位
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          在印度，制造、进口或销售属于已通知标准范围内的家具产品而未获得BIS认证可能导致：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>货物被扣押</li>
-          <li>巨额罚款</li>
-          <li>根据BIS法案被起诉</li>
-          <li>禁止销售或进口</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          因此，印度家具BIS证书具有重要的法律意义。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          为什么BIS认证对家具产品很重要
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          家具BIS认证因多种原因至关重要：
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. 安全性和结构完整性
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          家具故障可能导致伤害或死亡。BIS标准评估：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>承载能力</li>
-          <li>抗倾覆稳定性</li>
-          <li>连接强度</li>
-          <li>材料性能</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. 质量和耐用性
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          认证家具产品确保：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>使用寿命长</li>
-          <li>抗磨损</li>
-          <li>性能一致</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. 消费者信任
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS认证标志在购买者、机构和批量采购者中建立即时信心。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. 市场准入
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          许多政府招标、机构购买者和大型公司要求使用BIS认证家具。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. 法律合规
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          在强制性BIS规范下销售未认证家具可能招致罚款和法律诉讼。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS认证涵盖的家具产品
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          家具是BIS下的一个广泛通用类别，涵盖多种产品类型，每种产品由不同的印度标准（IS编号）管理。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          涵盖的主要家具类别：
-        </h3>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          1. 工作椅
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          用于办公室、工厂和商业空间。标准侧重于人体工程学、稳定性和负载性能。
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          2. 通用椅子和凳子
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          用于家庭、学校和公共场所。BIS评估结构安全性和材料强度。
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          3. 桌子和办公桌
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          包括办公桌、学习桌、工作站。标准测试负载能力和表面耐用性。
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          4. 储物单元
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          衣柜、橱柜、储物柜、架子。强调稳定性、锋利边缘和安全通道。
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          5. 床
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          单人床、双人床、折叠床。BIS检查框架强度和长期性能。
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          6. 双层床
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          由于安全风险而受到严格监管。重点关注护栏、梯子安全和防坠落。
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          7. 非家用家具的软包复合材料
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          用于办公室、酒店、礼堂。标准包括防火性和耐用性测试。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          其他家具产品
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>学校家具</li>
-          <li>机构座椅</li>
-          <li>医院家具</li>
-          <li>模块化家具</li>
-          <li>金属和木制家具系统</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          每个产品类别都有自己的适用IS编号，由BIS单独通知。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          适用于家具的BIS标准
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          什么是BIS标准？
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS标准是BIS发布的技术规范，用于定义：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>材料要求</li>
-          <li>性能参数</li>
-          <li>测试方法</li>
-          <li>标记指南</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS编号的含义
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS编号（印度标准编号）唯一标识适用于产品的标准。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS通知流程
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS发布官方BIS通知，使某些标准成为强制性标准。一旦通知：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>合规成为强制性要求</li>
-          <li>未认证产品为非法</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          如何识别正确的BIS标准
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">制造商必须：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>识别产品类别</li>
-          <li>研究适用的IS范围</li>
-          <li>确认标准适用性</li>
-          <li>避免错误的标准选择（常见错误）</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          适用于家具的BIS认证类型
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ISI计划下的BIS许可证
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          家具产品通常属于ISI认证计划，该计划涉及：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>产品测试</li>
-          <li>工厂检查</li>
-          <li>监督审核</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS注册
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS注册主要用于电子和IT产品。家具通常需要BIS许可证，而不是注册。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          印度家具BIS认证流程
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤1：申请前准备
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>识别适用的IS标准</li>
-          <li>评估产品设计合规性</li>
-          <li>准备技术文件</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤2：BIS申请
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          提交BIS申请，包括：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>产品详情</li>
-          <li>制造详情</li>
-          <li>标准参考</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤3：BIS在线申请
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          通过BIS在线门户提交申请。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤4：产品测试
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          在BIS认可的实验室测试样品。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤5：工厂检查
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">BIS官员验证：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>制造过程</li>
-          <li>质量控制</li>
-          <li>测试设施</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤6：授予BIS许可证
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          符合要求后，BIS授予许可证。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤7：使用BIS认证标志
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          制造商可以贴附BIS标志/ISI标志。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          家具测试要求
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          测试是BIS注册流程的强制性部分。家具经过严格测试以确保安全性和耐用性。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          家具强制性测试：
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>结构负载测试</li>
-          <li>稳定性测试</li>
-          <li>护栏强度测试</li>
-          <li>冲击测试</li>
-          <li>夹陷危险测试</li>
-          <li>梯子强度和角度测试</li>
-          <li>材料安全测试</li>
-          <li>边缘半径和锋利度测试</li>
-          <li>床垫支撑测试</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          测试必须在BIS认可的实验室进行。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          家具BIS认证所需文件
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          关键文件包括：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>工厂注册证明</li>
-          <li>产品图纸和规格</li>
-          <li>原材料详情</li>
-          <li>测试报告</li>
-          <li>质量控制记录</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          常见文件错误：
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>标准参考错误</li>
-          <li>测试数据不完整</li>
-          <li>产品范围不匹配</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          家具BIS认证成本
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS证书成本组成部分：
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>政府申请费</li>
-          <li>测试费用</li>
-          <li>检查费</li>
-          <li>许可证费</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS认证成本因素：
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>产品复杂性</li>
-          <li>型号数量</li>
-          <li>测试要求</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          注意：专业咨询费与政府费用分开。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS证书注册时间表
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">平均时间表：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>测试：3-6周</li>
-          <li>检查：1-2周</li>
-          <li>许可证授予：2-4周</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          总计：8-12周（大约）
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          印度家具制造商如何获得BIS认证
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">实用提示：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>选择正确的IS标准</li>
-          <li>确保工厂准备就绪</li>
-          <li>维护测试记录</li>
-          <li>避免文件错误</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS证书在线申请 – 实用概述
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          在线门户挑战：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>技术错误</li>
-          <li>文件上传问题</li>
-          <li>标准选择混淆</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          适当的指导可以减少延误。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          批准后使用BIS标志和BIS认证标志
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">标记规则：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>正确的IS参考</li>
-          <li>许可证编号</li>
-          <li>适当的尺寸和可见性</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          不合规可能导致暂停。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          家具BIS认证的挑战
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>标准解释</li>
-          <li>产品测试失败</li>
-          <li>检查不符合项</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS咨询师在家具认证中的作用
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          专业BIS咨询师通过以下方式提供帮助：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>识别正确的标准</li>
-          <li>管理测试和检查</li>
-          <li>减少批准时间</li>
-          <li>避免昂贵的拒绝</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          结论
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          家具BIS认证是印度不断增长的家具市场中质量、安全和法律合规的基石。无论您是制造商、进口商还是品牌所有者，在印度获得家具BIS证书可确保：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>监管合规</li>
-          <li>消费者信任</li>
-          <li>长期市场成功</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          通过了解BIS认证流程、标准、成本和合规要求，企业可以自信地应对监管环境，为印度市场打造更安全、更坚固、更可靠的家具产品。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS许可证常见问题
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              印度所有家具产品是否都需要BIS认证？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              不是，BIS认证仅对属于已通知BIS标准范围内的家具产品是强制性的。但是，一旦家具产品类别被印度标准局通知，在没有有效BIS许可证的情况下制造、进口、销售或分销该产品在印度是违法的。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              哪些家具产品需要BIS许可证而不是BIS注册？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              家具产品通常属于ISI认证计划，需要BIS许可证，而不是BIS注册。BIS注册（CRS）主要用于电子和IT产品，而家具产品需要测试+工厂检查+BIS许可证。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              进口家具是否可以在没有BIS认证的情况下在印度销售？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              不可以。属于强制性BIS标准范围内的进口家具产品必须在清关前获得BIS认证。进口未认证家具可能导致：
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>海关扣留</li>
-              <li>重新出口或销毁</li>
-              <li>巨额罚款</li>
-            </ul>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              外国制造商必须在向印度出口家具前获得BIS许可证。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              外国家具制造商可以申请BIS认证吗？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              可以。外国制造商可以根据外国制造商认证计划（FMCS）申请。他们必须：
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>指定授权印度代表（AIR）</li>
-              <li>遵守印度标准</li>
-              <li>允许BIS在海外进行工厂检查</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              手工或小型家具制造商是否需要BIS认证？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              是的，如果家具产品属于强制性BIS标准范围内，那么即使是中小微企业、初创企业和小型单位也必须获得BIS认证。没有基于生产量的豁免。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              木制家具是否需要BIS认证？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              是的，如果床、椅子、桌子、办公桌和储物单元等木制家具产品属于已通知标准范围内，则可能需要BIS认证。BIS标准适用于木制和金属家具，具体取决于产品类型和用途。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              一个BIS许可证可以涵盖多个家具型号吗？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              可以，多个型号或变体可以在单个BIS许可证下涵盖，前提是：
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>它们属于相同的IS标准</li>
-              <li>结构、材料和设计参数相似</li>
-              <li>BIS在申请期间批准分组</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS认证可以转让给另一个制造商吗？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              不可以。BIS许可证不可转让。每个制造商必须获得自己的BIS证书，即使产品设计相同。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              什么是BIS证书？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              它是符合BIS标准的正式证明。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              家具是否需要BIS认证？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              是的，对于属于已通知标准范围内的家具产品。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              如何在印度获得BIS认证？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              通过测试、检查和BIS许可证批准。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              什么是BIS标志？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              显示BIS批准符合性标志。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS认证成本？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              取决于产品类型、测试和范围。
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS全称是什么？
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              印度标准局。
-            </p>
-          </div>
+        <SubSectionHeading>
+          家具BIS认证与ISI标志的区别
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>BIS认证</strong> — BIS进行评估、测试和批准的流程。
+            </>,
+            <>
+              <strong>ISI标志</strong> —
+              BIS认证后授予的标志，表明产品符合印度标准。ISI标志是消费者可见的合规保证。
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          为什么家具BIS认证对制造商和进口商很重要
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "符合印度法规的法律合规性",
+            "进入印度市场和政府采购机会",
+            "增强消费者信任和竞争优势",
+            "降低召回、罚款或进口限制的风险",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>家具制造商的BIS认证要求</SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  要求
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  详情
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["认证机构", "印度标准局（BIS）"],
+                ["认证计划", "计划一（ISI标志认证）"],
+                ["适用法律", "Furniture (Quality Control) Order, 2025"],
+                ["强制性标记", "带有BIS许可证号的ISI标志"],
+                ["产品测试", "须通过BIS认可的实验室进行"],
+                ["工厂检查", "颁发许可证前为强制性要求"],
+                [
+                  "适用范围",
+                  "印度制造商、外国制造商、进口商",
+                ],
+                ["认证后监督", "必需"],
+                ["许可证续期", "根据BIS要求定期续期"],
+              ].map(([req, details], i) => (
+                <TableRow
+                  key={req}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {req}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
+
+        <SectionDivider />
+
+        <SectionHeading>印度家具BIS认证的监管框架</SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Scale,
+              title: "Furniture (Quality Control) Order, 2025",
+              description:
+                "家具QCO 2025规定某些家具类别必须符合BIS标准。QCO为强制性认证提供法律依据，并明确涵盖的家具类型。",
+            },
+            {
+              icon: Building2,
+              title: "印度标准局（BIS）的作用",
+              description:
+                "BIS制定印度标准（IS），评估制造单位，进行产品测试，并颁发使用ISI标志的许可证。它还通过审计和监督来监控合规情况。",
+            },
+          ]}
+        />
+
+        <SubSectionHeading>强制性 vs 自愿性家具BIS认证</SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>强制性</strong> —
+              家具QCO中规定的类别，如床、椅子和储物单元。
+            </>,
+            <>
+              <strong>自愿性</strong> —
+              制造商可以选择对额外产品类别进行认证，以提升市场信誉。
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          家具QCO对制造商和进口商的适用性
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "生产QCO涵盖家具的印度制造商",
+            "向印度出口的外国制造商",
+            "在国内销售家具的进口商",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>BIS认证涵盖的家具产品</SectionHeading>
+
+        <SubSectionHeading>家具类别及适用的BIS标准</SubSectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  家具类别
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  适用的印度标准
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  标准标题
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 text-[#1e1e1e]">
+                  认证要求
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                {
+                  category: "工作椅",
+                  standard: "IS 17631:2022",
+                  title:
+                    "Furniture – Chairs for Office Work – Requirements and Test Methods",
+                  link: "/blogs/isi-products/work-chairs-is-17631",
+                },
+                {
+                  category: "通用椅子和凳子",
+                  standard: "IS 17632:2022",
+                  title:
+                    "Furniture – General Purpose Chairs and Stools – Requirements and Test Methods",
+                  link: "/blogs/isi-products/chairs-and-stools-is-17632",
+                },
+                {
+                  category: "桌子和办公桌",
+                  standard: "IS 17633:2022",
+                  title:
+                    "Furniture – Tables and Desks – Requirements and Test Methods",
+                  link: "/blogs/isi-products/tables-&-desks-is-17633",
+                },
+                {
+                  category: "储物单元",
+                  standard: "IS 17634:2022",
+                  title:
+                    "Furniture – Storage Units – Requirements and Test Methods",
+                  link: "/blogs/isi-products/storage-unit-is-17634",
+                },
+                {
+                  category: "床",
+                  standard: "IS 17635:2022",
+                  title:
+                    "Furniture – Beds – Requirements and Test Methods",
+                  link: "/blogs/isi-products/beds-is-17635",
+                },
+                {
+                  category: "双层床",
+                  standard: "IS 17636:2022",
+                  title:
+                    "Furniture – Bunk Beds for Domestic Use – Requirements and Test Methods",
+                  link: "/blogs/isi-products/bunk-beds-is-17636",
+                },
+              ].map((row, i) => (
+                <TableRow
+                  key={row.standard}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-[#1e1e1e]">
+                    <Link
+                      to={row.link}
+                      className="text-blue-600 hover:underline"
+                    >
+                      {row.category}
+                    </Link>
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.standard}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.title}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 text-gray-600">
+                    根据家具QCO为强制性要求
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          所有涵盖的产品必须符合相关BIS标准，并在印度销售前持有有效的ISI标志。这些标准定义了家具安全性、稳定性和可用性的最低要求。
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>家具BIS标准及其要求</SectionHeading>
+
+        <SubSectionHeading>BIS家具标准下的性能要求</SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          家具必须能够承受正常使用，而不发生变形或结构失效。
+        </p>
+        <CheckPointsList
+          points={[
+            "正常和峰值负载条件下的承重能力",
+            "连接强度和连接耐久性",
+            "材料稳定性，无翘曲或降解",
+          ]}
+        />
+
+        <SubSectionHeading>安全性和耐用性测试要求</SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          家具必须满足安全规范以防止事故，并满足耐用性标准以确保使用寿命。
+        </p>
+        <CheckPointsList
+          points={[
+            "防止倾倒（椅子、凳子和不稳定的单元）",
+            "防止额定负载下坍塌（床、双层床、储物单元）",
+            "通过重复使用性能测试实现长期耐用性",
+          ]}
+        />
+
+        <SubSectionHeading>认证期间评估的质量参数</SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "材料质量和表面处理",
+            "承重能力",
+            "稳定性、人体工程学和安全性特征",
+          ]}
+        />
+
+        <SubSectionHeading>不同家具类别的合规要求</SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          每种家具类型都有特定的IS标准，详细规定尺寸、性能测试和允许公差。合规确保各制造商之间的统一性和质量。
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>谁需要家具BIS认证？</SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Factory,
+              title: "印度家具制造商",
+              description:
+                "所有生产家具QCO涵盖家具的国内制造商在销售产品前必须获得BIS认证。",
+            },
+            {
+              icon: Globe,
+              title: "向印度出口家具的外国制造商",
+              description:
+                "出口商必须遵守BIS标准，才能合法在印度销售家具并使用ISI标志。",
+            },
+            {
+              icon: Package,
+              title: "家具进口商和品牌所有者",
+              description:
+                "进口商必须确保其进口到印度的家具符合BIS规范，即使产品是在国外制造的。",
+            },
+            {
+              icon: ShoppingCart,
+              title: "电子商务卖家和零售企业",
+              description:
+                "销售涵盖类别家具的线上和线下零售商必须核实BIS认证，以避免法律责任。",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>家具BIS ISI认证：分步流程</SectionHeading>
+
+        <NumberedSteps
+          steps={[
+            {
+              title: "产品识别和适用标准选择",
+              description:
+                "确定家具类别及相关BIS标准（IS 17631–IS 17636），用于测试和认证。",
+            },
+            {
+              title: "在BIS认可实验室进行产品测试",
+              description:
+                "家具在BIS批准的实验室中进行强度、稳定性和耐用性测试。测试报告为申请所必需。",
+            },
+            {
+              title: "提交BIS申请",
+              description:
+                "制造商向BIS提交申请，包括产品规格、技术细节和测试报告。",
+            },
+            {
+              title: "工厂检查和评估",
+              description:
+                "BIS进行工厂审计，检查制造流程、质量控制系统和生产一致性。",
+            },
+            {
+              title: "授予BIS许可证和ISI标志许可",
+              description:
+                "批准后，BIS颁发许可证，允许制造商在认证家具上使用ISI标志。",
+            },
+            {
+              title: "认证后合规要求",
+              description:
+                "需要定期审计、周期性测试和遵守BIS标准以维持认证。",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>家具BIS认证所需文件</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>公司注册和制造文件</strong> —
+              营业执照、GST注册和制造设施详情。
+            </>,
+            <>
+              <strong>产品技术规格和图纸</strong> —
+              详细设计、所用材料和组装说明。
+            </>,
+            <>
+              <strong>测试报告和质量控制文件</strong> —
+              来自BIS批准实验室的报告，证明符合IS标准。
+            </>,
+            <>
+              <strong>工厂和生产流程文件</strong> —
+              质量管理体系、流程图和检验程序。
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>BIS认证家具的测试要求</SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  测试领域
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  目的
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["强度测试", "验证承重能力"],
+                ["稳定性测试", "防止倾倒和坍塌"],
+                ["耐用性测试", "评估重复使用下的性能"],
+                ["结构完整性测试", "评估连接、框架和接合处"],
+                ["安全测试", "降低正常使用中的受伤风险"],
+                ["功能性能测试", "确认预期功能和可用性"],
+              ].map(([area, purpose], i) => (
+                <TableRow
+                  key={area}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {area}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {purpose}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          家具必须在BIS认可的实验室进行测试，以验证安全性、性能和耐用性声明。
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>家具ISI标志：使用与合规要求</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>ISI标志的含义</strong> —
+              确认家具符合印度标准并已由BIS认证。
+            </>,
+            <>
+              <strong>ISI标志粘贴规则</strong> —
+              标志应可见、永久且按照BIS指南正确格式化。
+            </>,
+            <>
+              <strong>滥用的后果</strong> —
+              非法使用可能导致根据2016年BIS法案受到处罚、许可证撤销和法律诉讼。
+            </>,
+            <>
+              <strong>购买者如何验证</strong> —
+              消费者可以在BIS官方网站上验证许可证号。
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>BIS认证的时间表、有效性和续期</SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Clock,
+              title: "家具产品认证时间表",
+              description:
+                "通常为2–3个月，取决于测试和工厂检查安排。",
+            },
+            {
+              icon: ShieldCheck,
+              title: "BIS许可证有效期",
+              description:
+                "许可证有效期为1–3年，须在到期前续期。",
+            },
+            {
+              icon: RefreshCw,
+              title: "BIS认证续期流程",
+              description:
+                "续期包括更新的测试报告、工厂检查和合规确认。",
+            },
+            {
+              icon: Eye,
+              title: "监督和持续合规要求",
+              description:
+                "BIS进行随机审计和测试，确保持续遵守标准。",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>BIS认证家具的优势</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>法律合规和市场准入</strong> —
+              在印度销售某些类型家具的强制性要求。
+            </>,
+            <>
+              <strong>提高产品质量和消费者信任</strong> —
+              BIS认证表明可靠性和安全性。
+            </>,
+            <>
+              <strong>制造商的竞争优势</strong> —
+              认证家具具有更高的市场信誉和采购资格。
+            </>,
+            <>
+              <strong>政府采购资格</strong> —
+              只有BIS认证产品才能供应给政府或机构采购方。
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>违反BIS家具法规的处罚</SectionHeading>
+
+        <CheckPointsList
+          variant="warning"
+          points={[
+            <>
+              <strong>制造或销售未认证家具</strong> —
+              违反QCO，导致罚款和产品扣押。
+            </>,
+            <>
+              <strong>对不合规家具的进口限制</strong> —
+              未认证的进口产品可能在海关被拦截。
+            </>,
+            <>
+              <strong>根据2016年BIS法案的处罚</strong> —
+              包括罚款、监禁和禁止销售。
+            </>,
+            <>
+              <strong>不合规的商业风险</strong> —
+              失去消费者信任、法律纠纷和受限的市场准入。
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>获得家具BIS认证的挑战</SectionHeading>
+
+        <NumberedSteps
+          showTimeline={false}
+          steps={[
+            {
+              title: "确定正确的印度标准",
+              description:
+                "制造商必须确保其产品符合适用的IS 17631–IS 17636标准。",
+            },
+            {
+              title: "管理测试和文件要求",
+              description:
+                "适当的实验室测试和文件是批准所必需的。",
+            },
+            {
+              title: "解决工厂审计意见",
+              description:
+                "审计期间的不合规可能延迟认证。",
+            },
+            {
+              title: "认证后保持持续合规",
+              description:
+                "需要持续的质量监控和遵守BIS标准以避免处罚。",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>Sun Certifications India 如何提供帮助</SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: FileText,
+              title: "申请和文件支持",
+              description:
+                "指导提交完整准确的BIS申请。",
+            },
+            {
+              icon: FlaskConical,
+              title: "产品测试协助",
+              description:
+                "协助与BIS批准的实验室进行协调。",
+            },
+            {
+              icon: ClipboardCheck,
+              title: "审计准备和合规指导",
+              description:
+                "确保工厂流程在检查前符合BIS要求。",
+            },
+            {
+              icon: ShieldCheck,
+              title: "许可证后合规管理",
+              description:
+                "就记录保存、监督审计和标准更新提供建议。",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>关于家具BIS认证的常见问题</SectionHeading>
+
+        <FaqAccordion
+          items={[
+            {
+              question: "所有家具产品是否都必须进行BIS认证？",
+              answer:
+                "不是。只有家具QCO 2025中列出的家具才需要强制性BIS认证。",
+            },
+            {
+              question: "进口家具可以在没有BIS认证的情况下销售吗？",
+              answer:
+                "不可以。强制性类别下的家具未经BIS批准不得在印度销售。",
+            },
+            {
+              question: "家具认证需要多长时间？",
+              answer:
+                "通常为2–3个月，取决于测试和检查。",
+            },
+            {
+              question: "BIS认证和ISI标志有什么区别？",
+              answer:
+                "BIS认证是批准流程；ISI标志是显示在家具上的认证标签。",
+            },
+            {
+              question: "家具适用的BIS标准有哪些？",
+              answer:
+                "IS 17631–IS 17636涵盖椅子、凳子、工作椅、桌子、床、双层床和储物单元。",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>相关资源</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                BIS ISI认证
+              </a>
+            </>,
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                外国制造商BIS证书
+              </a>
+            </>,
+          ]}
+        />
 
         <ManyUsersAlsoReadChinese />
 

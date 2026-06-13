@@ -9,7 +9,38 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { SlashIcon } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  AlertTriangle,
+  Building2,
+  Check,
+  ClipboardCheck,
+  Clock,
+  Eye,
+  Factory,
+  FileText,
+  FlaskConical,
+  Globe,
+  Package,
+  RefreshCw,
+  Scale,
+  ShieldCheck,
+  ShoppingCart,
+  SlashIcon,
+} from "lucide-react";
 
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -104,8 +135,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikat BIS untuk Perabotan di India – Panduan Lengkap
-                    Detail
+                    Sertifikasi BIS untuk Perabotan di India
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -131,849 +161,921 @@ const MainContent = () => {
   );
 };
 
+const TABLE_WRAP =
+  "mt-6 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]";
+
+const SectionDivider = () => (
+  <div className="service-left-content-divider my-8 md:my-10" />
+);
+
+const SectionHeading = ({ children }) => (
+  <h2 className="text-xl md:text-2xl font-geist font-bold text-[#1e1e1e] mb-4 pl-4 border-l-4 border-[#1A8781]">
+    {children}
+  </h2>
+);
+
+const SubSectionHeading = ({ children }) => (
+  <h3 className="text-base md:text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-4">
+    {children}
+  </h3>
+);
+
+const IntroCallout = ({ children }) => (
+  <div className="rounded-md bg-[#EAF3FF] border-l-4 border-[#1A8781] px-4 py-3 mb-6">
+    {children}
+  </div>
+);
+
+const CheckPointsList = ({ points, variant = "check" }) => {
+  const Icon = variant === "warning" ? AlertTriangle : Check;
+  const iconBg =
+    variant === "warning" ? "bg-amber-500/10" : "bg-green-500/10";
+
+  return (
+    <div className="bg-white/50 rounded-xl p-4 ring-1 ring-gray-900/[0.05] mt-2 mb-4">
+      <ul className="flex flex-col gap-3 list-none">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-start gap-3">
+            <div
+              className={`${iconBg} p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5`}
+            >
+              <Icon size={12} className="text-[#020817]" />
+            </div>
+            <p className="font-geist text-sm md:text-base text-[#42434d] tracking-wide text-left max-w-full leading-relaxed flex-1">
+              {point}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const NumberedSteps = ({ steps, showTimeline = true }) => {
+  if (!showTimeline) {
+    return (
+      <div className="mt-4 mb-4 flex flex-col gap-4">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-3 bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+          >
+            <div className="w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+              {index + 1}
+            </div>
+            <div className="flex-1">
+              <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+                {step.title}
+              </h3>
+              <p className="text-gray-600 text-base font-geist">
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-4 mb-4 border-l-2 border-[#1A8781]/30 ml-3 pl-6 flex flex-col gap-4">
+      {steps.map((step, index) => (
+        <div
+          key={index}
+          className="relative bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+        >
+          <div className="absolute -left-[31px] top-4 w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center">
+            {index + 1}
+          </div>
+          <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+            {step.title}
+          </h3>
+          <p className="text-gray-600 text-base font-geist">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const InfoCardGrid = ({ items }) => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      {items.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <div
+            key={index}
+            className="bg-white/60 rounded-lg p-4 ring-1 ring-gray-900/[0.06] hover:ring-gray-900/[0.12] hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+          >
+            {Icon && (
+              <div className="mb-3 w-9 h-9 rounded-full bg-[#1A8781]/10 text-[#1A8781] flex items-center justify-center">
+                <Icon size={18} />
+              </div>
+            )}
+            <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-2">
+              {item.title}
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base font-geist leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const FaqAccordion = ({ items }) => {
+  return (
+    <div className="rounded-xl bg-white/60 p-4 md:p-5 ring-1 ring-gray-900/[0.06]">
+      <Accordion type="single" collapsible className="w-full">
+        {items.map((item, index) => (
+          <AccordionItem key={index} value={`faq-${index}`}>
+            <AccordionTrigger className="text-left font-geist font-semibold text-[#1e1e1e] hover:no-underline">
+              {item.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-gray-600 font-geist text-base">
+              {item.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
+  );
+};
+
 const MainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
-      {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikat BIS untuk Perabotan di India – Panduan Lengkap Detail
+          Sertifikasi BIS untuk Perabotan di India: Panduan Lengkap Standar
+          BIS, Tanda ISI, Proses &amp; Kepatuhan
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforFurniture.png"
             title="Lisensi BIS untuk Perabotan"
-            alt="Sertifikat BIS untuk Perabotan di India - Panduan Lengkap Sertifikasi BIS"
+            alt="Sertifikasi BIS untuk Perabotan di India - Panduan Tanda ISI"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Pengantar: Sertifikasi BIS dan Industri Perabotan India
-        </h2>
+        <IntroCallout>
+          <p className="text-gray-700 text-base font-geist leading-relaxed">
+            Perabotan merupakan bagian penting dari rumah, kantor, dan ruang
+            publik. Memastikan keselamatan, daya tahan, dan kualitas perabotan
+            sangat penting bagi konsumen maupun produsen. Di India,{" "}
+            <strong>Sertifikasi BIS untuk perabotan</strong> merupakan
+            persyaratan wajib untuk kategori perabotan tertentu berdasarkan
+            Furniture (Quality Control) Order, 2025. Panduan ini memberikan
+            gambaran mendetail tentang standar BIS, tanda ISI, proses
+            sertifikasi, dan persyaratan kepatuhan.
+          </p>
+        </IntroCallout>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Apa itu Sertifikasi BIS untuk Perabotan?
+        </SectionHeading>
+
+        <SubSectionHeading>
+          Arti Sertifikasi BIS untuk Perabotan
+        </SubSectionHeading>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Di India, kualitas produk, keselamatan, dan standardisasi diatur oleh
-          otoritas statutori pusat yang dikenal sebagai Bureau of Indian
-          Standards (BIS). BIS adalah organisasi standar nasional India,
-          didirikan di bawah Undang-Undang BIS untuk memastikan bahwa produk
-          yang dijual di pasar India sesuai dengan tolok ukur keselamatan,
-          kualitas, dan kinerja yang ditetapkan.
+          Sertifikasi BIS adalah proses formal di mana Bureau of Indian
+          Standards (BIS) mengevaluasi produk untuk memastikan kepatuhan
+          terhadap standar India. Untuk perabotan, sertifikasi ini memastikan
+          bahwa produk memenuhi parameter keselamatan, kinerja, dan kualitas
+          yang ditetapkan. Setelah tersertifikasi, produsen dapat menggunakan{" "}
+          <strong>Tanda ISI</strong> pada perabotan mereka, yang menandakan
+          kepatuhan kepada pembeli.
         </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Apa itu BIS?
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS adalah singkatan dari Bureau of Indian Standards. BIS berfungsi di
-          bawah Kementerian Urusan Konsumen, Pangan & Distribusi Publik,
-          Pemerintah India. BIS memainkan peran penting dalam melindungi
-          kepentingan konsumen sambil mendukung produsen melalui ekosistem
-          standardisasi dan sertifikasi yang transparan.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Industri perabotan India telah mengalami pertumbuhan pesat karena:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Urbanisasi</li>
-          <li>Ekspansi infrastruktur perumahan dan komersial</li>
-          <li>
-            Pertumbuhan di sektor perhotelan, pendidikan, kesehatan, dan
-            co-living
-          </li>
-          <li>
-            Meningkatnya kesadaran konsumen tentang keselamatan dan daya tahan
-            produk
-          </li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Perabotan tidak lagi dianggap sebagai produk yang murni estetis.
-          Perabotan secara langsung terkait dengan keselamatan pengguna,
-          ergonomi, stabilitas struktural, ketahanan api, dan daya tahan jangka
-          panjang. Insiden yang melibatkan tempat tidur yang runtuh, tempat
-          tidur susun yang tidak aman, kursi yang tidak stabil, atau unit
-          penyimpanan yang tidak standar telah menimbulkan kekhawatiran di
-          kalangan regulator dan konsumen.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Untuk mengatasi risiko ini, Sertifikasi BIS untuk Perabotan telah
-          menjadi persyaratan kepatuhan yang kritis. BIS memastikan bahwa produk
-          perabotan memenuhi Standar India (IS) yang berkaitan dengan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kekuatan struktural</li>
-          <li>Kapasitas menahan beban</li>
-          <li>Kualitas material</li>
-          <li>Keselamatan desain</li>
-          <li>Kinerja dalam kondisi penggunaan</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Bagi produsen, importir, eksportir, UKM, startup, dan pemilik merek
-          perabotan, memperoleh Sertifikat BIS untuk Perabotan tidak lagi hanya
-          formalitas regulasi—ini adalah kebutuhan pasar.
-        </p>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Mengapa Sertifikasi BIS untuk Perabotan Penting
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Memastikan kepatuhan hukum di bawah peraturan India</li>
-          <li>Meningkatkan kepercayaan konsumen dan kredibilitas merek</li>
-          <li>
-            Memungkinkan penjualan dan distribusi tanpa batas di seluruh India
-          </li>
-          <li>Meminimalkan risiko tanggung jawab produk</li>
-          <li>Meningkatkan kesiapan ekspor dan penerimaan global</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Panduan komprehensif ini dirancang untuk menjadi sumber daya yang
-          paling otoritatif dan terperinci tentang Sertifikasi BIS untuk
-          Perabotan di India. Baik Anda adalah produsen pertama kali atau merek
-          perabotan yang mapan, panduan ini menjawab setiap pertanyaan yang
-          mungkin terkait dengan Lisensi BIS untuk Perabotan, Registrasi BIS
-          untuk Perabotan, standar yang berlaku, proses, biaya, dokumen, jadwal,
-          dan kepatuhan pasca-sertifikasi.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Apa itu Sertifikat BIS untuk Perabotan?
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Arti Sertifikat BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikat BIS untuk Perabotan adalah persetujuan resmi yang diberikan
-          oleh Bureau of Indian Standards yang mengkonfirmasi bahwa produk
-          perabotan tertentu mematuhi Standar India (IS) yang relevan.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Apa itu Tanda BIS?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tanda BIS, yang biasa dikenal sebagai Tanda ISI, adalah tanda
-          kesesuaian standar yang muncul pada produk bersertifikat. Ini
-          menandakan bahwa perabotan telah:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Lulus pengujian laboratorium</li>
-          <li>Lulus inspeksi pabrik</li>
-          <li>Memenuhi semua persyaratan standar</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Penjelasan Logo BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Logo BIS mewakili otoritas BIS sebagai badan standar nasional India.
-          Ketika digunakan dengan Tanda ISI pada produk perabotan, ini
-          meyakinkan pembeli bahwa produk tersebut mematuhi Standar BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Sertifikat BIS India – Status Hukum
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Di India, memproduksi, mengimpor, atau menjual produk perabotan yang
-          tercakup dalam standar yang diberitahukan tanpa Sertifikasi BIS dapat
-          menyebabkan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Penyitaan barang</li>
-          <li>Denda moneter yang berat</li>
-          <li>Penuntutan di bawah Undang-Undang BIS</li>
-          <li>Larangan penjualan atau impor</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Oleh karena itu, Sertifikat BIS untuk Perabotan di India memiliki
-          kepentingan hukum yang kuat.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Mengapa Sertifikasi BIS Penting untuk Produk Perabotan
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS untuk Perabotan sangat penting karena beberapa alasan:
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. Keselamatan & Integritas Struktural
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Kegagalan perabotan dapat menyebabkan cedera atau kematian. Standar
-          BIS mengevaluasi:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kapasitas menahan beban</li>
-          <li>Stabilitas terhadap terbalik</li>
-          <li>Kekuatan sambungan</li>
-          <li>Kinerja material</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. Kualitas & Daya Tahan
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Produk perabotan bersertifikat memastikan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Masa pakai yang panjang</li>
-          <li>Ketahanan terhadap keausan</li>
-          <li>Kinerja yang seragam</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. Kepercayaan Konsumen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tanda Sertifikasi BIS membangun kepercayaan instan di kalangan
-          pembeli, institusi, dan pembeli grosir.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. Akses Pasar
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Banyak tender pemerintah, pembeli institusional, dan perusahaan besar
-          mewajibkan perabotan bersertifikat BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. Kepatuhan Hukum
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Menjual perabotan yang tidak bersertifikat di bawah norma BIS wajib
-          dapat menarik denda dan tindakan hukum.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Produk Perabotan yang Dicakup dalam Sertifikasi BIS
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Perabotan adalah kategori umum yang luas di bawah BIS, mencakup
-          berbagai jenis produk, masing-masing diatur oleh Standar India yang
-          berbeda (Nomor IS).
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Kategori Perabotan Utama yang Dicakup:
-        </h3>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Kursi Kerja
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Digunakan di kantor, pabrik, dan ruang komersial. Standar fokus pada
-          ergonomi, stabilitas, dan kinerja beban.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Kursi dan Bangku Tujuan Umum
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Digunakan di rumah, sekolah, dan ruang publik. BIS mengevaluasi
-          keselamatan struktural dan kekuatan material.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Meja dan Meja Tulis
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Termasuk meja kantor, meja belajar, workstation. Standar menguji
-          kapasitas beban dan daya tahan permukaan.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Unit Penyimpanan
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Lemari, kabinet, loker, rak. Penekanan pada stabilitas, tepi tajam,
-          dan akses yang aman.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          5. Tempat Tidur
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tempat tidur tunggal, tempat tidur ganda, tempat tidur lipat. BIS
-          memeriksa kekuatan rangka dan kinerja jangka panjang.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          6. Tempat Tidur Susun
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sangat diatur karena risiko keselamatan. Fokus pada pagar pengaman,
-          keselamatan tangga, dan pencegahan jatuh.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          7. Komposit Berlapis untuk Perabotan Non-Domestik
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Digunakan di kantor, hotel, auditorium. Standar mencakup pengujian
-          ketahanan api dan daya tahan.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Produk Perabotan Lainnya
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Perabotan sekolah</li>
-          <li>Tempat duduk institusional</li>
-          <li>Perabotan rumah sakit</li>
-          <li>Perabotan modular</li>
-          <li>Sistem perabotan logam & kayu</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap kategori produk memiliki Nomor IS yang berlaku sendiri,
-          diberitahukan secara terpisah oleh BIS.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Standar BIS yang Berlaku untuk Perabotan
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Apa itu Standar BIS?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Standar BIS adalah spesifikasi teknis yang diterbitkan oleh BIS untuk
-          mendefinisikan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Persyaratan material</li>
-          <li>Parameter kinerja</li>
-          <li>Metode pengujian</li>
-          <li>Panduan penandaan</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Arti Nomor IS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Nomor IS (Nomor Standar India) secara unik mengidentifikasi standar
-          yang berlaku untuk suatu produk.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Proses Pemberitahuan BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS mengeluarkan Pemberitahuan BIS resmi yang membuat standar tertentu
-          menjadi wajib. Setelah diberitahukan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kepatuhan menjadi wajib</li>
-          <li>Produk yang tidak bersertifikat adalah ilegal</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Cara Mengidentifikasi Standar BIS yang Benar
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Produsen harus:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mengidentifikasi kategori produk</li>
-          <li>Mempelajari ruang lingkup IS yang berlaku</li>
-          <li>Mengkonfirmasi keberlakuan standar</li>
-          <li>Menghindari pemilihan standar yang salah (kesalahan umum)</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Jenis Sertifikasi BIS yang Berlaku untuk Perabotan
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Lisensi BIS di bawah Skema ISI
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Produk perabotan umumnya dicakup dalam Skema Sertifikasi ISI, yang
-          melibatkan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Pengujian produk</li>
-          <li>Inspeksi pabrik</li>
-          <li>Audit pengawasan</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Registrasi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Registrasi BIS terutama untuk produk elektronik dan IT. Perabotan
-          biasanya memerlukan Lisensi BIS, bukan Registrasi.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Proses Sertifikasi BIS untuk Perabotan di India
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 1: Persiapan Pra-Aplikasi
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mengidentifikasi Standar IS yang berlaku</li>
-          <li>Menilai kepatuhan desain produk</li>
-          <li>Mempersiapkan dokumentasi teknis</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 2: Aplikasi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ajukan Aplikasi BIS dengan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Detail produk</li>
-          <li>Detail manufaktur</li>
-          <li>Referensi standar</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 3: Aplikasi BIS Online
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Aplikasi diajukan melalui portal online BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 4: Pengujian Produk
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sampel diuji di laboratorium yang diakui BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 5: Inspeksi Pabrik
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Petugas BIS memverifikasi:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Proses manufaktur</li>
-          <li>Kontrol kualitas</li>
-          <li>Fasilitas pengujian</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 6: Pemberian Lisensi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setelah kepatuhan, BIS memberikan lisensi.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 7: Penggunaan Tanda Sertifikasi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Produsen dapat memasang Tanda BIS / Tanda ISI.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Persyaratan Pengujian untuk Perabotan
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pengujian adalah bagian wajib dari proses registrasi BIS. Perabotan
-          menjalani pengujian ketat untuk memastikan keselamatan dan daya tahan.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Pengujian Wajib untuk Perabotan:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Uji Beban Struktural</li>
-          <li>Uji Stabilitas</li>
-          <li>Uji Kekuatan Pagar Pengaman</li>
-          <li>Uji Dampak</li>
-          <li>Uji Bahaya Terjebak</li>
-          <li>Uji Kekuatan & Sudut Tangga</li>
-          <li>Uji Keselamatan Material</li>
-          <li>Uji Radius Tepi & Ketajaman</li>
-          <li>Uji Dukungan Kasur</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pengujian harus dilakukan di laboratorium yang diakui BIS saja.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Dokumen yang Diperlukan untuk Sertifikasi BIS untuk Perabotan
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dokumen Utama Meliputi:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Bukti registrasi pabrik</li>
-          <li>Gambar produk & spesifikasi</li>
-          <li>Detail bahan baku</li>
-          <li>Laporan pengujian</li>
-          <li>Catatan kontrol kualitas</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Kesalahan Dokumentasi Umum:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Referensi standar yang salah</li>
-          <li>Data pengujian tidak lengkap</li>
-          <li>Ketidaksesuaian dalam ruang lingkup produk</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Biaya Sertifikasi BIS untuk Perabotan
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Komponen Biaya Sertifikat BIS:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Biaya aplikasi pemerintah</li>
-          <li>Biaya pengujian</li>
-          <li>Biaya inspeksi</li>
-          <li>Biaya lisensi</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Faktor Biaya Sertifikasi BIS:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kompleksitas produk</li>
-          <li>Jumlah model</li>
-          <li>Persyaratan pengujian</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Catatan: Biaya konsultasi profesional terpisah dari biaya pemerintah.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Jadwal Registrasi Sertifikat BIS
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Jadwal Rata-rata:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Pengujian: 3–6 minggu</li>
-          <li>Inspeksi: 1–2 minggu</li>
-          <li>Pemberian Lisensi: 2–4 minggu</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Total: 8–12 minggu (sekitar)
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Cara Mendapatkan Sertifikasi BIS di India untuk Produsen Perabotan
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">Tips Praktis:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Pilih standar IS yang benar</li>
-          <li>Pastikan kesiapan pabrik</li>
-          <li>Pertahankan catatan pengujian</li>
-          <li>Hindari kesalahan dokumentasi</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Aplikasi Sertifikat BIS Online – Tinjauan Praktis
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tantangan Portal Online:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kesalahan teknis</li>
-          <li>Masalah unggah dokumen</li>
-          <li>Kebingungan pemilihan standar</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Panduan yang tepat mengurangi penundaan.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Penggunaan Tanda BIS & Tanda Sertifikasi BIS Setelah Persetujuan
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Aturan Penandaan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Referensi IS yang benar</li>
-          <li>Nomor lisensi</li>
-          <li>Ukuran & visibilitas yang tepat</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ketidakpatuhan dapat menyebabkan penangguhan.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tantangan dalam Sertifikasi BIS untuk Perabotan
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Menafsirkan standar</li>
-          <li>Kegagalan pengujian produk</li>
-          <li>Ketidaksesuaian inspeksi</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Peran Konsultan BIS dalam Sertifikasi Perabotan
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Konsultan BIS profesional membantu dengan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mengidentifikasi standar yang benar</li>
-          <li>Mengelola pengujian & inspeksi</li>
-          <li>Mengurangi waktu persetujuan</li>
-          <li>Menghindari penolakan yang mahal</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Kesimpulan
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS untuk Perabotan adalah landasan kualitas, keselamatan,
-          dan kepatuhan hukum di pasar perabotan India yang berkembang. Baik
-          Anda adalah produsen, importir, atau pemilik merek, memperoleh
-          Sertifikat BIS untuk Perabotan di India memastikan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kepatuhan regulasi</li>
-          <li>Kepercayaan konsumen</li>
-          <li>Kesuksesan pasar jangka panjang</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dengan memahami Proses Sertifikasi BIS, Standar, Biaya, dan
-          persyaratan Kepatuhan, bisnis dapat dengan percaya diri menavigasi
-          lanskap regulasi dan membangun produk perabotan yang lebih aman, lebih
-          kuat, dan lebih andal untuk pasar India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Pertanyaan yang Sering Diajukan untuk Lisensi BIS
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apakah Sertifikasi BIS wajib untuk semua produk perabotan di
-              India?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Tidak, Sertifikasi BIS wajib hanya untuk produk perabotan yang
-              tercakup dalam Standar BIS yang diberitahukan. Namun, setelah
-              kategori produk perabotan diberitahukan oleh Bureau of Indian
-              Standards, memproduksi, mengimpor, menjual, atau mendistribusikan
-              produk tersebut tanpa Lisensi BIS yang valid menjadi ilegal di
-              India.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Produk perabotan mana yang memerlukan Lisensi BIS daripada
-              Registrasi BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Produk perabotan umumnya masuk dalam Skema Sertifikasi ISI, yang
-              memerlukan Lisensi BIS, bukan Registrasi BIS. Registrasi BIS (CRS)
-              terutama berlaku untuk produk elektronik dan IT, sedangkan produk
-              perabotan memerlukan pengujian + inspeksi pabrik + Lisensi BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apakah perabotan impor dapat dijual di India tanpa Sertifikasi
-              BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Tidak. Produk perabotan impor yang tercakup dalam Standar BIS
-              wajib harus memiliki Sertifikasi BIS sebelum clearance bea cukai.
-              Mengimpor perabotan yang tidak bersertifikat dapat mengakibatkan:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Penahanan bea cukai</li>
-              <li>Ekspor ulang atau penghancuran</li>
-              <li>Denda berat</li>
-            </ul>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Produsen asing harus memperoleh Lisensi BIS sebelum mengekspor
-              perabotan ke India.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apakah produsen perabotan asing dapat mengajukan Sertifikasi BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ya. Produsen asing dapat mengajukan di bawah Skema Sertifikasi
-              Produsen Asing (FMCS). Mereka harus:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Mengangkat Perwakilan India yang Berwenang (AIR)</li>
-              <li>Mematuhi Standar India</li>
-              <li>Mengizinkan inspeksi pabrik BIS di luar negeri.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apakah Sertifikasi BIS diperlukan untuk produsen perabotan buatan
-              tangan atau skala kecil?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ya, jika produk perabotan tercakup dalam standar BIS wajib, maka
-              bahkan UKM, startup, dan unit skala kecil harus memperoleh
-              Sertifikasi BIS. Tidak ada pengecualian berdasarkan volume
-              produksi.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apakah Sertifikasi BIS diperlukan untuk perabotan kayu?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ya, produk perabotan kayu seperti tempat tidur, kursi, meja, meja
-              tulis, dan unit penyimpanan mungkin memerlukan Sertifikasi BIS
-              jika mereka masuk dalam standar yang diberitahukan. Standar BIS
-              berlaku untuk perabotan kayu dan logam, tergantung pada jenis
-              produk dan penggunaan.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apakah satu Lisensi BIS dapat mencakup beberapa model perabotan?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ya, beberapa model atau varian dapat dicakup dalam satu Lisensi
-              BIS, asalkan:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Mereka masuk dalam Standar IS yang sama</li>
-              <li>Parameter konstruksi, material, dan desain serupa</li>
-              <li>BIS menyetujui pengelompokan selama aplikasi.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apakah Sertifikasi BIS dapat dialihkan ke produsen lain?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Tidak. Lisensi BIS tidak dapat dialihkan. Setiap produsen harus
-              memperoleh Sertifikat BIS mereka sendiri, bahkan jika desain
-              produk identik.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apa itu Sertifikat BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ini adalah bukti resmi kepatuhan terhadap Standar BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apakah Sertifikasi BIS wajib untuk perabotan?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ya, untuk produk perabotan yang tercakup dalam standar yang
-              diberitahukan.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Bagaimana cara mendapatkan Sertifikasi BIS di India?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Melalui pengujian, inspeksi, dan persetujuan lisensi BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Apa itu Tanda BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Tanda kesesuaian yang menunjukkan persetujuan BIS.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Biaya Sertifikasi BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Tergantung pada jenis produk, pengujian, dan ruang lingkup.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Kepanjangan BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Bureau of Indian Standards.
-            </p>
-          </div>
+        <SubSectionHeading>
+          Perbedaan antara Sertifikasi BIS dan Tanda ISI untuk Perabotan
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Sertifikasi BIS</strong> — Proses evaluasi, pengujian, dan
+              persetujuan oleh BIS.
+            </>,
+            <>
+              <strong>Tanda ISI</strong> — Tanda yang diberikan setelah
+              sertifikasi BIS yang menunjukkan produk memenuhi standar India.
+              Tanda ISI adalah jaminan kepatuhan yang terlihat bagi konsumen.
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          Mengapa Sertifikasi BIS Penting bagi Produsen dan Importir Perabotan
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Kepatuhan hukum terhadap peraturan India",
+            "Akses ke pasar India dan peluang pengadaan pemerintah",
+            "Kepercayaan konsumen yang lebih kuat dan keunggulan kompetitif",
+            "Risiko penarikan produk, denda, atau pembatasan impor yang lebih rendah",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Persyaratan Sertifikasi BIS untuk Produsen Perabotan
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Persyaratan
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Detail
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Otoritas Sertifikasi", "Bureau of Indian Standards (BIS)"],
+                ["Skema Sertifikasi", "Skema-I (Sertifikasi Tanda ISI)"],
+                ["Undang-Undang yang Berlaku", "Furniture (Quality Control) Order, 2025"],
+                ["Penandaan Wajib", "Tanda ISI dengan Nomor Lisensi BIS"],
+                [
+                  "Pengujian Produk",
+                  "Diperlukan melalui laboratorium yang diakui BIS",
+                ],
+                ["Inspeksi Pabrik", "Wajib sebelum pemberian lisensi"],
+                [
+                  "Berlaku Untuk",
+                  "Produsen India, Produsen Asing, Importir",
+                ],
+                ["Pengawasan Pasca-Sertifikasi", "Diperlukan"],
+                [
+                  "Perpanjangan Lisensi",
+                  "Perpanjangan berkala sesuai persyaratan BIS",
+                ],
+              ].map(([req, details], i) => (
+                <TableRow
+                  key={req}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {req}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Kerangka Regulasi Sertifikasi BIS Perabotan di India
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Scale,
+              title: "Furniture (Quality Control) Order, 2025",
+              description:
+                "Furniture QCO 2025 mewajibkan kategori perabotan tertentu untuk mematuhi standar BIS. QCO memberikan dasar hukum untuk sertifikasi wajib dan menguraikan jenis perabotan yang dicakup.",
+            },
+            {
+              icon: Building2,
+              title: "Peran Bureau of Indian Standards (BIS)",
+              description:
+                "BIS mengembangkan Standar India (IS), mengevaluasi unit manufaktur, melakukan pengujian produk, dan menerbitkan lisensi untuk penggunaan tanda ISI. BIS juga memantau kepatuhan melalui audit dan pengawasan.",
+            },
+          ]}
+        />
+
+        <SubSectionHeading>
+          Sertifikasi BIS Wajib vs Sukarela untuk Perabotan
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Wajib</strong> — Kategori yang ditetapkan dalam Furniture
+              QCO, seperti tempat tidur, kursi, dan unit penyimpanan.
+            </>,
+            <>
+              <strong>Sukarela</strong> — Produsen dapat memilih sertifikasi
+              untuk kategori produk tambahan guna meningkatkan kredibilitas
+              pasar.
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          Penerapan Furniture QCO pada Produsen dan Importir
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Produsen India yang memproduksi perabotan yang tercakup dalam QCO",
+            "Produsen asing yang mengekspor ke India",
+            "Importir yang menjual perabotan di dalam negeri",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Produk Perabotan yang Dicakup dalam Sertifikasi BIS
+        </SectionHeading>
+
+        <SubSectionHeading>
+          Kategori Perabotan dan Standar BIS yang Berlaku
+        </SubSectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Kategori Perabotan
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Standar India yang Berlaku
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Judul Standar
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 text-[#1e1e1e]">
+                  Persyaratan Sertifikasi
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                {
+                  category: "Kursi Kerja",
+                  standard: "IS 17631:2022",
+                  title:
+                    "Furniture – Chairs for Office Work – Requirements and Test Methods",
+                  link: "/blogs/isi-products/work-chairs-is-17631",
+                },
+                {
+                  category: "Kursi dan Bangku Tujuan Umum",
+                  standard: "IS 17632:2022",
+                  title:
+                    "Furniture – General Purpose Chairs and Stools – Requirements and Test Methods",
+                  link: "/blogs/isi-products/chairs-and-stools-is-17632",
+                },
+                {
+                  category: "Meja dan Meja Tulis",
+                  standard: "IS 17633:2022",
+                  title:
+                    "Furniture – Tables and Desks – Requirements and Test Methods",
+                  link: "/blogs/isi-products/tables-&-desks-is-17633",
+                },
+                {
+                  category: "Unit Penyimpanan",
+                  standard: "IS 17634:2022",
+                  title:
+                    "Furniture – Storage Units – Requirements and Test Methods",
+                  link: "/blogs/isi-products/storage-unit-is-17634",
+                },
+                {
+                  category: "Tempat Tidur",
+                  standard: "IS 17635:2022",
+                  title:
+                    "Furniture – Beds – Requirements and Test Methods",
+                  link: "/blogs/isi-products/beds-is-17635",
+                },
+                {
+                  category: "Tempat Tidur Susun",
+                  standard: "IS 17636:2022",
+                  title:
+                    "Furniture – Bunk Beds for Domestic Use – Requirements and Test Methods",
+                  link: "/blogs/isi-products/bunk-beds-is-17636",
+                },
+              ].map((row, i) => (
+                <TableRow
+                  key={row.standard}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-[#1e1e1e]">
+                    <Link
+                      to={row.link}
+                      className="text-blue-600 hover:underline"
+                    >
+                      {row.category}
+                    </Link>
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.standard}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.title}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 text-gray-600">
+                    Wajib berdasarkan Furniture QCO
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Semua produk yang tercakup harus mematuhi standar BIS yang relevan
+          dan memiliki tanda ISI yang valid sebelum dijual di India. Standar
+          ini menetapkan persyaratan minimum untuk keselamatan, stabilitas, dan
+          kegunaan perabotan.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Standar BIS untuk Perabotan dan Persyaratannya
+        </SectionHeading>
+
+        <SubSectionHeading>
+          Persyaratan Kinerja Berdasarkan Standar Perabotan BIS
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          Perabotan harus mampu menahan penggunaan normal tanpa deformasi atau
+          kegagalan struktural.
+        </p>
+        <CheckPointsList
+          points={[
+            "Kapasitas menahan beban dalam kondisi beban normal dan puncak",
+            "Kekuatan sambungan dan daya tahan koneksi",
+            "Stabilitas material tanpa melengkung atau degradasi",
+          ]}
+        />
+
+        <SubSectionHeading>
+          Persyaratan Pengujian Keselamatan dan Daya Tahan
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          Perabotan harus memenuhi norma keselamatan untuk mencegah kecelakaan
+          dan standar daya tahan untuk memastikan umur panjang.
+        </p>
+        <CheckPointsList
+          points={[
+            "Pencegahan terbalik (kursi, bangku, dan unit yang tidak stabil)",
+            "Pencegahan runtuh di bawah beban nominal (tempat tidur, tempat tidur susun, penyimpanan)",
+            "Daya tahan jangka panjang melalui uji kinerja penggunaan berulang",
+          ]}
+        />
+
+        <SubSectionHeading>
+          Parameter Kualitas yang Dievaluasi Selama Sertifikasi
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Kualitas material dan finishing",
+            "Kapasitas menahan beban",
+            "Stabilitas, ergonomi, dan fitur keselamatan",
+          ]}
+        />
+
+        <SubSectionHeading>
+          Persyaratan Kepatuhan untuk Berbagai Kategori Perabotan
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Setiap jenis perabotan memiliki standar IS khusus yang merinci
+          dimensi, uji kinerja, dan toleransi yang diizinkan. Kepatuhan
+          memastikan keseragaman dan kualitas di seluruh produsen.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Siapa yang Membutuhkan Sertifikasi BIS untuk Perabotan?
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Factory,
+              title: "Produsen Perabotan India",
+              description:
+                "Semua produsen domestik perabotan yang tercakup dalam Furniture QCO harus memperoleh sertifikasi BIS sebelum menjual produk.",
+            },
+            {
+              icon: Globe,
+              title: "Produsen Asing yang Mengekspor Perabotan ke India",
+              description:
+                "Eksportir harus mematuhi standar BIS untuk menjual perabotan secara legal di India dan menggunakan tanda ISI.",
+            },
+            {
+              icon: Package,
+              title: "Importir Perabotan dan Pemilik Merek",
+              description:
+                "Importir harus memastikan perabotan yang mereka bawa ke India mematuhi norma BIS, meskipun diproduksi di luar negeri.",
+            },
+            {
+              icon: ShoppingCart,
+              title: "Penjual E-Commerce dan Bisnis Ritel",
+              description:
+                "Pengecer online dan offline yang menjual perabotan dalam kategori yang tercakup harus memverifikasi sertifikasi BIS untuk menghindari tanggung jawab hukum.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Sertifikasi BIS ISI untuk Perabotan: Proses Langkah demi Langkah
+        </SectionHeading>
+
+        <NumberedSteps
+          steps={[
+            {
+              title: "Identifikasi Produk dan Pemilihan Standar yang Berlaku",
+              description:
+                "Identifikasi kategori perabotan dan standar BIS yang relevan (IS 17631–IS 17636) untuk pengujian dan sertifikasi.",
+            },
+            {
+              title: "Pengujian Produk di Laboratorium yang Diakui BIS",
+              description:
+                "Perabotan diuji untuk kekuatan, stabilitas, dan daya tahan di laboratorium yang disetujui BIS. Laporan uji wajib untuk aplikasi.",
+            },
+            {
+              title: "Pengajuan Aplikasi BIS",
+              description:
+                "Produsen mengajukan aplikasi ke BIS dengan spesifikasi produk, detail teknis, dan laporan uji.",
+            },
+            {
+              title: "Inspeksi Pabrik dan Penilaian",
+              description:
+                "BIS melakukan audit pabrik untuk memeriksa proses manufaktur, sistem kontrol kualitas, dan konsistensi produksi.",
+            },
+            {
+              title: "Pemberian Lisensi BIS dan Izin Tanda ISI",
+              description:
+                "Setelah disetujui, BIS menerbitkan lisensi yang memungkinkan produsen menggunakan tanda ISI pada perabotan yang tersertifikasi.",
+            },
+            {
+              title: "Persyaratan Kepatuhan Pasca-Sertifikasi",
+              description:
+                "Audit rutin, pengujian berkala, dan kepatuhan terhadap standar BIS diperlukan untuk mempertahankan sertifikasi.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Dokumen yang Diperlukan untuk Sertifikasi BIS Perabotan
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Registrasi Perusahaan dan Dokumen Manufaktur</strong> —
+              Lisensi bisnis, registrasi GST, dan detail fasilitas manufaktur.
+            </>,
+            <>
+              <strong>Spesifikasi Teknis Produk dan Gambar</strong> — Desain
+              detail, material yang digunakan, dan instruksi perakitan.
+            </>,
+            <>
+              <strong>Laporan Uji dan Dokumen Kontrol Kualitas</strong> —
+              Laporan dari laboratorium yang disetujui BIS yang menunjukkan
+              kepatuhan terhadap standar IS.
+            </>,
+            <>
+              <strong>Dokumen Pabrik dan Proses Produksi</strong> — Sistem
+              manajemen kualitas, alur proses, dan prosedur inspeksi.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Persyaratan Pengujian untuk Perabotan Bersertifikat BIS
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Area Pengujian
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Tujuan
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                [
+                  "Pengujian Kekuatan",
+                  "Memverifikasi kapasitas menahan beban",
+                ],
+                [
+                  "Pengujian Stabilitas",
+                  "Mencegah terbalik dan runtuh",
+                ],
+                [
+                  "Pengujian Daya Tahan",
+                  "Menilai kinerja selama penggunaan berulang",
+                ],
+                [
+                  "Pengujian Integritas Struktural",
+                  "Mengevaluasi sambungan, rangka, dan koneksi",
+                ],
+                [
+                  "Pengujian Keselamatan",
+                  "Mengurangi risiko cedera selama penggunaan normal",
+                ],
+                [
+                  "Pengujian Kinerja Fungsional",
+                  "Mengonfirmasi fungsionalitas dan kegunaan yang dimaksudkan",
+                ],
+              ].map(([area, purpose], i) => (
+                <TableRow
+                  key={area}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {area}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {purpose}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Perabotan harus menjalani pengujian di laboratorium yang diakui BIS
+          untuk memvalidasi klaim keselamatan, kinerja, dan daya tahan.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Tanda ISI untuk Perabotan: Penggunaan dan Persyaratan Kepatuhan
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Apa yang Ditunjukkan Tanda ISI</strong> — Mengonfirmasi
+              bahwa perabotan memenuhi standar India dan telah disertifikasi oleh
+              BIS.
+            </>,
+            <>
+              <strong>Aturan Pemasangan Tanda ISI</strong> — Tanda harus
+              terlihat, permanen, dan diformat dengan benar sesuai pedoman BIS.
+            </>,
+            <>
+              <strong>Konsekuensi Penyalahgunaan</strong> — Penggunaan ilegal
+              dapat mengakibatkan denda, pencabutan lisensi, dan tindakan hukum
+              berdasarkan Undang-Undang BIS, 2016.
+            </>,
+            <>
+              <strong>Cara Pembeli Dapat Memverifikasi</strong> — Konsumen dapat
+              memverifikasi nomor lisensi di situs web resmi BIS.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Jadwal, Masa Berlaku, dan Perpanjangan Sertifikasi BIS
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Clock,
+              title: "Jadwal Sertifikasi untuk Produk Perabotan",
+              description:
+                "Biasanya 2–3 bulan, tergantung pada jadwal pengujian dan inspeksi pabrik.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "Masa Berlaku Lisensi BIS",
+              description:
+                "Lisensi berlaku selama 1–3 tahun dan memerlukan perpanjangan sebelum kedaluwarsa.",
+            },
+            {
+              icon: RefreshCw,
+              title: "Proses Perpanjangan Sertifikasi BIS",
+              description:
+                "Perpanjangan mencakup laporan uji terbaru, inspeksi pabrik, dan konfirmasi kepatuhan.",
+            },
+            {
+              icon: Eye,
+              title: "Pengawasan dan Persyaratan Kepatuhan Berkelanjutan",
+              description:
+                "BIS melakukan audit dan pengujian acak untuk memastikan kepatuhan berkelanjutan terhadap standar.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Manfaat Perabotan Bersertifikat BIS
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Kepatuhan Hukum dan Akses Pasar</strong> — Wajib untuk
+              menjual jenis perabotan tertentu di India.
+            </>,
+            <>
+              <strong>Kualitas Produk dan Kepercayaan Konsumen yang Lebih Baik</strong>{" "}
+              — Sertifikasi BIS menandakan keandalan dan keselamatan.
+            </>,
+            <>
+              <strong>Keunggulan Kompetitif bagi Produsen</strong> — Perabotan
+              tersertifikasi memiliki kredibilitas pasar dan kelayakan pengadaan
+              yang lebih tinggi.
+            </>,
+            <>
+              <strong>Kelayakan untuk Pengadaan Pemerintah</strong> — Hanya
+              produk bersertifikat BIS yang dapat dipasok kepada pembeli
+              pemerintah atau institusional.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Sanksi atas Ketidakpatuhan terhadap Regulasi Perabotan BIS
+        </SectionHeading>
+
+        <CheckPointsList
+          variant="warning"
+          points={[
+            <>
+              <strong>Memproduksi atau Menjual Perabotan Tidak Tersertifikasi</strong>{" "}
+              — Melanggar QCO, mengakibatkan denda dan penyitaan produk.
+            </>,
+            <>
+              <strong>Pembatasan Impor untuk Perabotan Tidak Patuh</strong> —
+              Impor yang tidak tersertifikasi dapat diblokir di bea cukai.
+            </>,
+            <>
+              <strong>Sanksi Berdasarkan Undang-Undang BIS, 2016</strong> —
+              Meliputi denda uang, hukuman penjara, dan larangan penjualan
+              produk.
+            </>,
+            <>
+              <strong>Risiko Bisnis atas Ketidakpatuhan</strong> — Kehilangan
+              kepercayaan konsumen, sengketa hukum, dan akses pasar yang
+              terbatas.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Tantangan dalam Memperoleh Sertifikasi BIS untuk Perabotan
+        </SectionHeading>
+
+        <NumberedSteps
+          showTimeline={false}
+          steps={[
+            {
+              title: "Mengidentifikasi Standar India yang Benar",
+              description:
+                "Produsen harus memastikan produk mereka sesuai dengan standar IS 17631–IS 17636 yang berlaku.",
+            },
+            {
+              title: "Mengelola Persyaratan Pengujian dan Dokumentasi",
+              description:
+                "Pengujian laboratorium dan dokumentasi yang tepat wajib untuk persetujuan.",
+            },
+            {
+              title: "Menangani Temuan Audit Pabrik",
+              description:
+                "Ketidakpatuhan selama audit dapat menunda sertifikasi.",
+            },
+            {
+              title: "Mempertahankan Kepatuhan Berkelanjutan Setelah Sertifikasi",
+              description:
+                "Pemantauan kualitas berkelanjutan dan kepatuhan terhadap standar BIS diperlukan untuk menghindari sanksi.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Bagaimana Sun Certifications India Dapat Membantu
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: FileText,
+              title: "Dukungan Aplikasi dan Dokumentasi",
+              description:
+                "Panduan dalam mengajukan aplikasi BIS yang lengkap dan akurat.",
+            },
+            {
+              icon: FlaskConical,
+              title: "Bantuan Pengujian Produk",
+              description:
+                "Membantu koordinasi dengan laboratorium yang disetujui BIS.",
+            },
+            {
+              icon: ClipboardCheck,
+              title: "Persiapan Audit dan Panduan Kepatuhan",
+              description:
+                "Memastikan proses pabrik memenuhi persyaratan BIS sebelum inspeksi.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "Manajemen Kepatuhan Pasca-Lisensi",
+              description:
+                "Memberikan saran tentang pencatatan, audit pengawasan, dan pembaruan standar.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Pertanyaan yang Sering Diajukan tentang Sertifikasi BIS untuk Perabotan
+        </SectionHeading>
+
+        <FaqAccordion
+          items={[
+            {
+              question:
+                "Apakah Sertifikasi BIS Wajib untuk Semua Produk Perabotan?",
+              answer:
+                "Tidak. Hanya perabotan yang tercantum dalam Furniture QCO 2025 yang memerlukan sertifikasi BIS wajib.",
+            },
+            {
+              question:
+                "Apakah Perabotan Impor Dapat Dijual Tanpa Sertifikasi BIS?",
+              answer:
+                "Tidak. Perabotan dalam kategori wajib tidak dapat dijual di India tanpa persetujuan BIS.",
+            },
+            {
+              question: "Berapa Lama Proses Sertifikasi Perabotan?",
+              answer:
+                "Biasanya 2–3 bulan, tergantung pada pengujian dan inspeksi.",
+            },
+            {
+              question:
+                "Apa Perbedaan antara Sertifikasi BIS dan Tanda ISI?",
+              answer:
+                "Sertifikasi BIS adalah proses persetujuan; tanda ISI adalah label sertifikasi yang ditampilkan pada perabotan.",
+            },
+            {
+              question:
+                "Apa Standar BIS yang Berlaku untuk Perabotan?",
+              answer:
+                "IS 17631–IS 17636 mencakup kursi, bangku, kursi kerja, meja, tempat tidur, tempat tidur susun, dan unit penyimpanan.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>Sumber Daya Terkait</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                Sertifikasi BIS ISI
+              </a>
+            </>,
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                Sertifikat BIS untuk Produsen Asing
+              </a>
+            </>,
+          ]}
+        />
 
         <ManyUsersAlsoReadIndonesian />
 

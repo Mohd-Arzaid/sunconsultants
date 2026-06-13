@@ -9,7 +9,38 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { SlashIcon } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  AlertTriangle,
+  Building2,
+  Check,
+  ClipboardCheck,
+  Clock,
+  Eye,
+  Factory,
+  FileText,
+  FlaskConical,
+  Globe,
+  Package,
+  RefreshCw,
+  Scale,
+  ShieldCheck,
+  ShoppingCart,
+  SlashIcon,
+} from "lucide-react";
 
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -104,7 +135,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    ใบรับรอง BIS สำหรับเฟอร์นิเจอร์ในอินเดีย – คู่มือฉบับสมบูรณ์
+                    การรับรอง BIS สำหรับเฟอร์นิเจอร์ในอินเดีย
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -130,843 +161,913 @@ const MainContent = () => {
   );
 };
 
+const TABLE_WRAP =
+  "mt-6 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]";
+
+const SectionDivider = () => (
+  <div className="service-left-content-divider my-8 md:my-10" />
+);
+
+const SectionHeading = ({ children }) => (
+  <h2 className="text-xl md:text-2xl font-geist font-bold text-[#1e1e1e] mb-4 pl-4 border-l-4 border-[#1A8781]">
+    {children}
+  </h2>
+);
+
+const SubSectionHeading = ({ children }) => (
+  <h3 className="text-base md:text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-4">
+    {children}
+  </h3>
+);
+
+const IntroCallout = ({ children }) => (
+  <div className="rounded-md bg-[#EAF3FF] border-l-4 border-[#1A8781] px-4 py-3 mb-6">
+    {children}
+  </div>
+);
+
+const CheckPointsList = ({ points, variant = "check" }) => {
+  const Icon = variant === "warning" ? AlertTriangle : Check;
+  const iconBg =
+    variant === "warning" ? "bg-amber-500/10" : "bg-green-500/10";
+
+  return (
+    <div className="bg-white/50 rounded-xl p-4 ring-1 ring-gray-900/[0.05] mt-2 mb-4">
+      <ul className="flex flex-col gap-3 list-none">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-start gap-3">
+            <div
+              className={`${iconBg} p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5`}
+            >
+              <Icon size={12} className="text-[#020817]" />
+            </div>
+            <p className="font-geist text-sm md:text-base text-[#42434d] tracking-wide text-left max-w-full leading-relaxed flex-1">
+              {point}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const NumberedSteps = ({ steps, showTimeline = true }) => {
+  if (!showTimeline) {
+    return (
+      <div className="mt-4 mb-4 flex flex-col gap-4">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-3 bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+          >
+            <div className="w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+              {index + 1}
+            </div>
+            <div className="flex-1">
+              <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+                {step.title}
+              </h3>
+              <p className="text-gray-600 text-base font-geist">
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-4 mb-4 border-l-2 border-[#1A8781]/30 ml-3 pl-6 flex flex-col gap-4">
+      {steps.map((step, index) => (
+        <div
+          key={index}
+          className="relative bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+        >
+          <div className="absolute -left-[31px] top-4 w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center">
+            {index + 1}
+          </div>
+          <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+            {step.title}
+          </h3>
+          <p className="text-gray-600 text-base font-geist">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const InfoCardGrid = ({ items }) => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      {items.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <div
+            key={index}
+            className="bg-white/60 rounded-lg p-4 ring-1 ring-gray-900/[0.06] hover:ring-gray-900/[0.12] hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+          >
+            {Icon && (
+              <div className="mb-3 w-9 h-9 rounded-full bg-[#1A8781]/10 text-[#1A8781] flex items-center justify-center">
+                <Icon size={18} />
+              </div>
+            )}
+            <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-2">
+              {item.title}
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base font-geist leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const FaqAccordion = ({ items }) => {
+  return (
+    <div className="rounded-xl bg-white/60 p-4 md:p-5 ring-1 ring-gray-900/[0.06]">
+      <Accordion type="single" collapsible className="w-full">
+        {items.map((item, index) => (
+          <AccordionItem key={index} value={`faq-${index}`}>
+            <AccordionTrigger className="text-left font-geist font-semibold text-[#1e1e1e] hover:no-underline">
+              {item.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-gray-600 font-geist text-base">
+              {item.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
+  );
+};
+
 const MainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
-      {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          ใบรับรอง BIS สำหรับเฟอร์นิเจอร์ในอินเดีย – คู่มือฉบับสมบูรณ์
+          การรับรอง BIS สำหรับเฟอร์นิเจอร์ในอินเดีย: คู่มือฉบับสมบูรณ์เกี่ยวกับ
+          มาตรฐาน BIS เครื่องหมาย ISI กระบวนการ &amp; การปฏิบัติตามกฎระเบียบ
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforFurniture.png"
             title="ใบอนุญาต BIS สำหรับเฟอร์นิเจอร์"
-            alt="ใบรับรอง BIS สำหรับเฟอร์นิเจอร์ในอินเดีย - คู่มือการรับรอง BIS ฉบับสมบูรณ์"
+            alt="การรับรอง BIS สำหรับเฟอร์นิเจอร์ในอินเดีย - คู่มือเครื่องหมาย ISI"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          บทนำ: การรับรอง BIS และอุตสาหกรรมเฟอร์นิเจอร์อินเดีย
-        </h2>
+        <IntroCallout>
+          <p className="text-gray-700 text-base font-geist leading-relaxed">
+            เฟอร์นิเจอร์เป็นส่วนสำคัญของบ้าน สำนักงาน และพื้นที่สาธารณะ
+            การรับประกันความปลอดภัย ความทนทาน และคุณภาพของเฟอร์นิเจอร์มีความสำคัญ
+            ทั้งสำหรับผู้บริโภคและผู้ผลิต ในอินเดีย{" "}
+            <strong>การรับรอง BIS สำหรับเฟอร์นิเจอร์</strong> เป็นข้อกำหนดบังคับ
+            สำหรับหมวดหมู่เฟอร์นิเจอร์บางประเภทภายใต้ Furniture (Quality Control)
+            Order, 2025 คู่มือนี้ให้ภาพรวมโดยละเอียดเกี่ยวกับมาตรฐาน BIS
+            เครื่องหมาย ISI กระบวนการรับรอง และข้อกำหนดการปฏิบัติตามกฎระเบียบ
+          </p>
+        </IntroCallout>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          การรับรอง BIS สำหรับเฟอร์นิเจอร์คืออะไร?
+        </SectionHeading>
+
+        <SubSectionHeading>
+          ความหมายของการรับรอง BIS สำหรับเฟอร์นิเจอร์
+        </SubSectionHeading>
         <p className="text-gray-600 text-base font-geist mb-4">
-          ในอินเดีย คุณภาพของผลิตภัณฑ์ ความปลอดภัย และการมาตรฐานถูกควบคุมโดย
-          หน่วยงานกฎหมายส่วนกลางที่เรียกว่าสำนักงานมาตรฐานอินเดีย (BIS) BIS
-          เป็นองค์กรมาตรฐานแห่งชาติของอินเดีย จัดตั้งขึ้นภายใต้พระราชบัญญัติ BIS
-          เพื่อให้แน่ใจว่าผลิตภัณฑ์ที่ขายในตลาดอินเดียเป็นไปตามมาตรฐานความปลอดภัย
-          คุณภาพ และประสิทธิภาพที่กำหนดไว้
+          การรับรอง BIS เป็นกระบวนการอย่างเป็นทางการที่สำนักงานมาตรฐานอินเดีย
+          (BIS) ประเมินผลิตภัณฑ์เพื่อให้แน่ใจว่าเป็นไปตามมาตรฐานอินเดีย
+          สำหรับเฟอร์นิเจอร์ การรับรองนี้รับประกันว่าผลิตภัณฑ์ตรงตามพารามิเตอร์
+          ด้านความปลอดภัย ประสิทธิภาพ และคุณภาพที่กำหนดไว้
+          เมื่อได้รับการรับรองแล้ว ผู้ผลิตสามารถใช้{" "}
+          <strong>เครื่องหมาย ISI</strong> บนเฟอร์นิเจอร์ของตน
+          เพื่อแสดงการปฏิบัติตามกฎระเบียบต่อผู้ซื้อ
         </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS คืออะไร?
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Full Form หมายถึงสำนักงานมาตรฐานอินเดีย
-          ทำงานภายใต้กระทรวงกิจการผู้บริโภค อาหารและการจัดจำหน่ายสาธารณะ
-          รัฐบาลอินเดีย BIS มีบทบาทสำคัญในการปกป้องผลประโยชน์ของผู้บริโภค
-          ในขณะที่สนับสนุนผู้ผลิตผ่านระบบนิเวศการมาตรฐานและการรับรองที่โปร่งใส
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          อุตสาหกรรมเฟอร์นิเจอร์อินเดียมีการเติบโตอย่างรวดเร็วเนื่องจาก:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การขยายตัวของเมือง</li>
-          <li>การขยายโครงสร้างพื้นฐานที่อยู่อาศัยและเชิงพาณิชย์</li>
-          <li>
-            การเติบโตในภาคการต้อนรับ การศึกษา สาธารณสุข และการอยู่อาศัยร่วมกัน
-          </li>
-          <li>
-            การตระหนักรู้ของผู้บริโภคเกี่ยวกับความปลอดภัยและความทนทานของผลิตภัณฑ์เพิ่มขึ้น
-          </li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เฟอร์นิเจอร์ไม่ถือเป็นผลิตภัณฑ์ที่เน้นความสวยงามเท่านั้นอีกต่อไป
-          มันเชื่อมโยงโดยตรงกับความปลอดภัยของผู้ใช้ หลักการยศาสตร์
-          ความเสถียรของโครงสร้าง ความต้านทานไฟ และความทนทานในระยะยาว
-          เหตุการณ์ที่เกี่ยวข้องกับเตียงพัง เตียงสองชั้นที่ไม่ปลอดภัย
-          เก้าอี้ที่ไม่มั่นคง หรือตู้เก็บของที่ไม่ได้มาตรฐาน
-          ได้สร้างความกังวลในหมู่ผู้ควบคุมและผู้บริโภค
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เพื่อแก้ไขความเสี่ยงเหล่านี้ การรับรอง BIS
-          สำหรับเฟอร์นิเจอร์ได้กลายเป็นข้อกำหนดการปฏิบัติตามกฎระเบียบที่สำคัญ
-          BIS รับประกันว่าผลิตภัณฑ์เฟอร์นิเจอร์เป็นไปตามมาตรฐานอินเดีย (IS)
-          ที่เกี่ยวข้องกับ:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ความแข็งแรงของโครงสร้าง</li>
-          <li>ความสามารถในการรับน้ำหนัก</li>
-          <li>คุณภาพวัสดุ</li>
-          <li>ความปลอดภัยในการออกแบบ</li>
-          <li>ประสิทธิภาพภายใต้สภาวะการใช้งาน</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          สำหรับผู้ผลิต ผู้นำเข้า ผู้ส่งออก MSMEs สตาร์ทอัพ
-          และเจ้าของแบรนด์เฟอร์นิเจอร์ การได้รับใบรับรอง BIS
-          สำหรับเฟอร์นิเจอร์ไม่ใช่เพียงพิธีการตามกฎระเบียบอีกต่อไป
-          แต่เป็นความจำเป็นของตลาด
-        </p>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ทำไมการรับรอง BIS สำหรับเฟอร์นิเจอร์จึงสำคัญ
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>รับประกันการปฏิบัติตามกฎระเบียบภายใต้กฎระเบียบของอินเดีย</li>
-          <li>เพิ่มความไว้วางใจของผู้บริโภคและความน่าเชื่อถือของแบรนด์</li>
-          <li>เปิดโอกาสการขายและการจัดจำหน่ายอย่างไม่จำกัดทั่วอินเดีย</li>
-          <li>ลดความเสี่ยงความรับผิดชอบของผลิตภัณฑ์</li>
-          <li>ปรับปรุงความพร้อมในการส่งออกและการยอมรับทั่วโลก</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          คู่มือฉบับสมบูรณ์นี้ได้รับการออกแบบให้เป็นแหล่งข้อมูลที่มีอำนาจและละเอียดที่สุดเกี่ยวกับการรับรอง
-          BIS สำหรับเฟอร์นิเจอร์ในอินเดีย
-          ไม่ว่าคุณจะเป็นผู้ผลิตรายแรกหรือแบรนด์เฟอร์นิเจอร์ที่ยืนหยัด
-          คู่มือนี้ตอบคำถามที่เป็นไปได้ทั้งหมดที่เกี่ยวข้องกับใบอนุญาต BIS
-          สำหรับเฟอร์นิเจอร์ การลงทะเบียน BIS สำหรับเฟอร์นิเจอร์
-          มาตรฐานที่ใช้ได้ กระบวนการ ต้นทุน เอกสาร
-          ระยะเวลาและการปฏิบัติตามกฎระเบียบหลังการรับรอง
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ใบรับรอง BIS สำหรับเฟอร์นิเจอร์คืออะไร?
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ความหมายของใบรับรอง BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ใบรับรอง BIS
-          สำหรับเฟอร์นิเจอร์คือการอนุมัติอย่างเป็นทางการที่ออกโดยสำนักงานมาตรฐานอินเดีย
-          ยืนยันว่าผลิตภัณฑ์เฟอร์นิเจอร์เฉพาะเป็นไปตามมาตรฐานอินเดีย (IS)
-          ที่เกี่ยวข้อง
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          เครื่องหมาย BIS คืออะไร?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เครื่องหมาย BIS หรือที่เรียกกันทั่วไปว่าเครื่องหมาย ISI
-          เป็นเครื่องหมายการปฏิบัติตามมาตรฐานที่ปรากฏบนผลิตภัณฑ์ที่ได้รับการรับรอง
-          มันแสดงว่าเฟอร์นิเจอร์ได้:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ผ่านการทดสอบในห้องปฏิบัติการ</li>
-          <li>ผ่านการตรวจสอบโรงงาน</li>
-          <li>เป็นไปตามข้อกำหนดมาตรฐานทั้งหมด</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          คำอธิบายโลโก้ BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          โลโก้ BIS แสดงถึงอำนาจของ BIS ในฐานะองค์กรมาตรฐานแห่งชาติของอินเดีย
-          เมื่อใช้ร่วมกับเครื่องหมาย ISI บนผลิตภัณฑ์เฟอร์นิเจอร์
-          มันรับประกันให้ผู้ซื้อว่าผลิตภัณฑ์เป็นไปตามมาตรฐาน BIS
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ใบรับรอง BIS อินเดีย – สถานะทางกฎหมาย
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ในอินเดีย การผลิต นำเข้า หรือขายผลิตภัณฑ์เฟอร์นิเจอร์
-          ที่อยู่ภายใต้มาตรฐานที่ประกาศใช้โดยไม่มีการรับรอง BIS อาจนำไปสู่:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การยึดสินค้า</li>
-          <li>ค่าปรับทางเงินจำนวนมาก</li>
-          <li>การดำเนินคดีภายใต้พระราชบัญญัติ BIS</li>
-          <li>การห้ามขายหรือนำเข้า</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ดังนั้น ใบรับรอง BIS
-          สำหรับเฟอร์นิเจอร์ในอินเดียจึงมีความสำคัญทางกฎหมายอย่างมาก
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ทำไมการรับรอง BIS จึงสำคัญสำหรับผลิตภัณฑ์เฟอร์นิเจอร์
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          การรับรอง BIS สำหรับเฟอร์นิเจอร์มีความสำคัญด้วยหลายเหตุผล:
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. ความปลอดภัยและความสมบูรณ์ของโครงสร้าง
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ความล้มเหลวของเฟอร์นิเจอร์อาจทำให้เกิดการบาดเจ็บหรือเสียชีวิต มาตรฐาน
-          BIS ประเมิน:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ความสามารถในการรับน้ำหนัก</li>
-          <li>ความเสถียรต่อการพลิกคว่ำ</li>
-          <li>ความแข็งแรงของข้อต่อ</li>
-          <li>ประสิทธิภาพของวัสดุ</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. คุณภาพและความทนทาน
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ผลิตภัณฑ์เฟอร์นิเจอร์ที่ได้รับการรับรองรับประกัน:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>อายุการใช้งานยาวนาน</li>
-          <li>ความต้านทานต่อการสึกหรอ</li>
-          <li>ประสิทธิภาพสม่ำเสมอ</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. ความไว้วางใจของผู้บริโภค
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เครื่องหมายการรับรอง BIS สร้างความมั่นใจทันทีในหมู่ผู้ซื้อ สถาบัน
-          และผู้ซื้อจำนวนมาก
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. การเข้าถึงตลาด
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          การประมูลของรัฐบาล ผู้ซื้อสถาบัน และบริษัทขนาดใหญ่หลายแห่ง
-          กำหนดให้ใช้เฟอร์นิเจอร์ที่ได้รับการรับรอง BIS
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. การปฏิบัติตามกฎหมาย
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          การขายเฟอร์นิเจอร์ที่ไม่ได้รับการรับรองภายใต้มาตรฐาน BIS
-          ที่บังคับใช้อาจทำให้เกิดค่าปรับและการดำเนินคดีทางกฎหมาย
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ผลิตภัณฑ์เฟอร์นิเจอร์ที่อยู่ภายใต้การรับรอง BIS
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เฟอร์นิเจอร์เป็นหมวดหมู่ทั่วไปที่กว้างขวางภายใต้ BIS
-          ครอบคลุมผลิตภัณฑ์หลายประเภท แต่ละประเภทถูกควบคุมโดยมาตรฐานอินเดีย
-          (หมายเลข IS) ที่แตกต่างกัน
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          หมวดหมู่เฟอร์นิเจอร์หลักที่ครอบคลุม:
-        </h3>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          1. เก้าอี้ทำงาน
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ใช้ในสำนักงาน โรงงาน และพื้นที่เชิงพาณิชย์ มาตรฐานเน้นหลักการยศาสตร์
-          ความเสถียร และประสิทธิภาพการรับน้ำหนัก
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          2. เก้าอี้และม้านั่งอเนกประสงค์
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ใช้ในบ้าน โรงเรียน และพื้นที่สาธารณะ BIS
-          ประเมินความปลอดภัยของโครงสร้างและความแข็งแรงของวัสดุ
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          3. โต๊ะและโต๊ะทำงาน
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          รวมถึงโต๊ะทำงาน โต๊ะเรียน สถานีงาน
-          มาตรฐานทดสอบความสามารถในการรับน้ำหนักและความทนทานของพื้นผิว
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          4. ตู้เก็บของ
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ตู้เสื้อผ้า ตู้ลิ้นชัก ตู้ล็อกเกอร์ ชั้นวางของ เน้นความเสถียร ขอบคม
-          และการเข้าถึงที่ปลอดภัย
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          5. เตียง
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เตียงเดี่ยว เตียงคู่ เตียงพับได้ BIS
-          ตรวจสอบความแข็งแรงของโครงและประสิทธิภาพในระยะยาว
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          6. เตียงสองชั้น
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ถูกควบคุมอย่างเข้มงวดเนื่องจากความเสี่ยงด้านความปลอดภัย เน้นราวกันตก
-          ความปลอดภัยของบันได และการป้องกันการตก
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          7. เฟอร์นิเจอร์บุผ้าสำหรับเฟอร์นิเจอร์นอกบ้าน
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ใช้ในสำนักงาน โรงแรม ห้องประชุม
-          มาตรฐานรวมถึงการทดสอบความต้านทานไฟและความทนทาน
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ผลิตภัณฑ์เฟอร์นิเจอร์อื่นๆ
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>เฟอร์นิเจอร์โรงเรียน</li>
-          <li>ที่นั่งสถาบัน</li>
-          <li>เฟอร์นิเจอร์โรงพยาบาล</li>
-          <li>เฟอร์นิเจอร์แบบโมดูลาร์</li>
-          <li>ระบบเฟอร์นิเจอร์โลหะและไม้</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          แต่ละหมวดหมู่ผลิตภัณฑ์มีหมายเลข IS ที่ใช้ได้ของตัวเอง
-          ซึ่งประกาศแยกกันโดย BIS
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          มาตรฐาน BIS ที่ใช้กับเฟอร์นิเจอร์
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          มาตรฐาน BIS คืออะไร?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          มาตรฐาน BIS คือข้อกำหนดทางเทคนิคที่เผยแพร่โดย BIS เพื่อกำหนด:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ข้อกำหนดวัสดุ</li>
-          <li>พารามิเตอร์ประสิทธิภาพ</li>
-          <li>วิธีการทดสอบ</li>
-          <li>แนวทางการทำเครื่องหมาย</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ความหมายของหมายเลข IS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          หมายเลข IS (หมายเลขมาตรฐานอินเดีย)
-          ระบุมาตรฐานที่ใช้กับผลิตภัณฑ์อย่างเฉพาะเจาะจง
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          กระบวนการแจ้งเตือน BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS ออกประกาศ BIS อย่างเป็นทางการทำให้มาตรฐานบางอย่างเป็นข้อบังคับ
-          เมื่อประกาศแล้ว:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การปฏิบัติตามกฎระเบียบกลายเป็นข้อบังคับ</li>
-          <li>ผลิตภัณฑ์ที่ไม่ได้รับการรับรองเป็นสิ่งผิดกฎหมาย</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          วิธีระบุมาตรฐาน BIS ที่ถูกต้อง
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">ผู้ผลิตต้อง:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ระบุหมวดหมู่ผลิตภัณฑ์</li>
-          <li>ศึกษาขอบเขต IS ที่ใช้ได้</li>
-          <li>ยืนยันการบังคับใช้มาตรฐาน</li>
-          <li>หลีกเลี่ยงการเลือกมาตรฐานผิด (ข้อผิดพลาดที่พบบ่อย)</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ประเภทการรับรอง BIS ที่ใช้กับเฟอร์นิเจอร์
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ใบอนุญาต BIS ภายใต้โครงการ ISI
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ผลิตภัณฑ์เฟอร์นิเจอร์โดยทั่วไปอยู่ภายใต้โครงการรับรอง ISI
-          ซึ่งเกี่ยวข้องกับ:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การทดสอบผลิตภัณฑ์</li>
-          <li>การตรวจสอบโรงงาน</li>
-          <li>การตรวจสอบการเฝ้าระวัง</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          การลงทะเบียน BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          การลงทะเบียน BIS ส่วนใหญ่ใช้สำหรับผลิตภัณฑ์อิเล็กทรอนิกส์และ IT
-          เฟอร์นิเจอร์มักต้องการใบอนุญาต BIS ไม่ใช่การลงทะเบียน
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          กระบวนการรับรอง BIS สำหรับเฟอร์นิเจอร์ในอินเดีย
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 1: การเตรียมก่อนการสมัคร
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ระบุมาตรฐาน IS ที่ใช้ได้</li>
-          <li>ประเมินการปฏิบัติตามการออกแบบผลิตภัณฑ์</li>
-          <li>เตรียมเอกสารทางเทคนิค</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 2: การสมัคร BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ส่งใบสมัคร BIS พร้อมด้วย:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>รายละเอียดผลิตภัณฑ์</li>
-          <li>รายละเอียดการผลิต</li>
-          <li>อ้างอิงมาตรฐาน</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 3: สมัคร BIS ออนไลน์
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          สมัครผ่านพอร์ทัลออนไลน์ของ BIS
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 4: การทดสอบผลิตภัณฑ์
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ตัวอย่างทดสอบในห้องปฏิบัติการที่ BIS รับรอง
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 5: การตรวจสอบโรงงาน
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เจ้าหน้าที่ BIS ตรวจสอบ:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>กระบวนการผลิต</li>
-          <li>การควบคุมคุณภาพ</li>
-          <li>สิ่งอำนวยความสะดวกในการทดสอบ</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 6: การอนุมัติใบอนุญาต BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เมื่อปฏิบัติตามกฎระเบียบ BIS จะอนุมัติใบอนุญาต
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 7: การใช้เครื่องหมายการรับรอง BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ผู้ผลิตสามารถติดเครื่องหมาย BIS / เครื่องหมาย ISI ได้
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ข้อกำหนดการทดสอบสำหรับเฟอร์นิเจอร์
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          การทดสอบเป็นส่วนบังคับของกระบวนการลงทะเบียน BIS
-          เฟอร์นิเจอร์ต้องผ่านการทดสอบอย่างเข้มงวดเพื่อให้แน่ใจในความปลอดภัยและความทนทาน
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          การทดสอบบังคับสำหรับเฟอร์นิเจอร์:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การทดสอบน้ำหนักโครงสร้าง</li>
-          <li>การทดสอบความเสถียร</li>
-          <li>การทดสอบความแข็งแรงของราวกันตก</li>
-          <li>การทดสอบการกระแทก</li>
-          <li>การทดสอบอันตรายจากการติดขัด</li>
-          <li>การทดสอบความแข็งแรงและมุมของบันได</li>
-          <li>การทดสอบความปลอดภัยของวัสดุ</li>
-          <li>การทดสอบรัศมีขอบและความคม</li>
-          <li>การทดสอบการรองรับที่นอน</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ต้องทำการทดสอบที่ห้องปฏิบัติการที่ BIS รับรองเท่านั้น
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          เอกสารที่จำเป็นสำหรับการรับรอง BIS สำหรับเฟอร์นิเจอร์
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เอกสารสำคัญรวมถึง:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>หลักฐานการลงทะเบียนโรงงาน</li>
-          <li>แบบแปลนและข้อกำหนดผลิตภัณฑ์</li>
-          <li>รายละเอียดวัตถุดิบ</li>
-          <li>รายงานการทดสอบ</li>
-          <li>บันทึกการควบคุมคุณภาพ</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ข้อผิดพลาดในการจัดทำเอกสารที่พบบ่อย:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การอ้างอิงมาตรฐานไม่ถูกต้อง</li>
-          <li>ข้อมูลการทดสอบไม่สมบูรณ์</li>
-          <li>ไม่ตรงกับขอบเขตผลิตภัณฑ์</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ต้นทุนการรับรอง BIS สำหรับเฟอร์นิเจอร์
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ส่วนประกอบต้นทุนใบรับรอง BIS:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ค่าธรรมเนียมการสมัครของรัฐบาล</li>
-          <li>ค่าธรรมเนียมการทดสอบ</li>
-          <li>ค่าธรรมเนียมการตรวจสอบ</li>
-          <li>ค่าธรรมเนียมใบอนุญาต</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ปัจจัยต้นทุนการรับรอง BIS:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ความซับซ้อนของผลิตภัณฑ์</li>
-          <li>จำนวนรุ่น</li>
-          <li>ข้อกำหนดการทดสอบ</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          หมายเหตุ: ค่าธรรมเนียมที่ปรึกษามืออาชีพแยกจากค่าธรรมเนียมของรัฐบาล
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ระยะเวลาสำหรับการลงทะเบียนใบรับรอง BIS
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ระยะเวลาเฉลี่ย:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การทดสอบ: 3–6 สัปดาห์</li>
-          <li>การตรวจสอบ: 1–2 สัปดาห์</li>
-          <li>การอนุมัติใบอนุญาต: 2–4 สัปดาห์</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          รวม: 8–12 สัปดาห์ (ประมาณ)
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          วิธีรับการรับรอง BIS ในอินเดียสำหรับผู้ผลิตเฟอร์นิเจอร์
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เคล็ดลับที่เป็นประโยชน์:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>เลือกมาตรฐาน IS ที่ถูกต้อง</li>
-          <li>ให้แน่ใจว่าโรงงานพร้อม</li>
-          <li>รักษาบันทึกการทดสอบ</li>
-          <li>หลีกเลี่ยงข้อผิดพลาดในการจัดทำเอกสาร</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          การสมัครใบรับรอง BIS ออนไลน์ – ภาพรวมที่เป็นประโยชน์
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ความท้าทายของพอร์ทัลออนไลน์:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ข้อผิดพลาดทางเทคนิค</li>
-          <li>ปัญหาการอัปโหลดเอกสาร</li>
-          <li>ความสับสนในการเลือกมาตรฐาน</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          คำแนะนำที่เหมาะสมช่วยลดความล่าช้า
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          การใช้เครื่องหมาย BIS และเครื่องหมายการรับรอง BIS หลังการอนุมัติ
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          กฎการทำเครื่องหมาย:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การอ้างอิง IS ที่ถูกต้อง</li>
-          <li>หมายเลขใบอนุญาต</li>
-          <li>ขนาดและความชัดเจนที่เหมาะสม</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          การไม่ปฏิบัติตามอาจนำไปสู่การระงับ
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ความท้าทายในการรับรอง BIS สำหรับเฟอร์นิเจอร์
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การตีความมาตรฐาน</li>
-          <li>ความล้มเหลวในการทดสอบผลิตภัณฑ์</li>
-          <li>การไม่เป็นไปตามข้อกำหนดในการตรวจสอบ</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          บทบาทของที่ปรึกษา BIS ในการรับรองเฟอร์นิเจอร์
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ที่ปรึกษา BIS มืออาชีพช่วยโดย:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ระบุมาตรฐานที่ถูกต้อง</li>
-          <li>จัดการการทดสอบและการตรวจสอบ</li>
-          <li>ลดเวลาการอนุมัติ</li>
-          <li>หลีกเลี่ยงการปฏิเสธที่มีค่าใช้จ่ายสูง</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          สรุป
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          การรับรอง BIS สำหรับเฟอร์นิเจอร์เป็นรากฐานสำคัญของคุณภาพ ความปลอดภัย
-          และการปฏิบัติตามกฎหมายในตลาดเฟอร์นิเจอร์ที่กำลังเติบโตของอินเดีย
-          ไม่ว่าคุณจะเป็นผู้ผลิต ผู้นำเข้า หรือเจ้าของแบรนด์ การได้รับใบรับรอง
-          BIS สำหรับเฟอร์นิเจอร์ในอินเดียรับประกัน:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การปฏิบัติตามกฎระเบียบ</li>
-          <li>ความไว้วางใจของผู้บริโภค</li>
-          <li>ความสำเร็จในตลาดระยะยาว</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          โดยการทำความเข้าใจกระบวนการรับรอง BIS มาตรฐาน ต้นทุน
-          และข้อกำหนดการปฏิบัติตามกฎระเบียบ
-          ธุรกิจสามารถนำทางในภูมิทัศน์กฎระเบียบได้อย่างมั่นใจ
-          และสร้างผลิตภัณฑ์เฟอร์นิเจอร์ที่ปลอดภัย แข็งแรง
-          และเชื่อถือได้มากขึ้นสำหรับตลาดอินเดีย
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          คำถามที่พบบ่อยสำหรับใบอนุญาต BIS
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              การรับรอง BIS
-              เป็นข้อบังคับสำหรับผลิตภัณฑ์เฟอร์นิเจอร์ทั้งหมดในอินเดียหรือไม่?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ไม่ การรับรอง BIS
-              เป็นข้อบังคับเฉพาะสำหรับผลิตภัณฑ์เฟอร์นิเจอร์ที่อยู่ภายใต้มาตรฐาน
-              BIS ที่ประกาศใช้เท่านั้น
-              อย่างไรก็ตามเมื่อหมวดหมู่ผลิตภัณฑ์เฟอร์นิเจอร์ถูกประกาศโดยสำนักงานมาตรฐานอินเดีย
-              การผลิต นำเข้า ขาย หรือจำหน่ายผลิตภัณฑ์นั้นโดยไม่มีใบอนุญาต BIS
-              ที่ถูกต้องจะกลายเป็นสิ่งผิดกฎหมายในอินเดีย
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              ผลิตภัณฑ์เฟอร์นิเจอร์ใดที่ต้องการใบอนุญาต BIS แทนการลงทะเบียน BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ผลิตภัณฑ์เฟอร์นิเจอร์โดยทั่วไปอยู่ภายใต้โครงการรับรอง ISI
-              ซึ่งต้องการใบอนุญาต BIS ไม่ใช่การลงทะเบียน BIS การลงทะเบียน BIS
-              (CRS) ส่วนใหญ่ใช้กับผลิตภัณฑ์อิเล็กทรอนิกส์และ IT
-              ในขณะที่ผลิตภัณฑ์เฟอร์นิเจอร์ต้องการการทดสอบ + การตรวจสอบโรงงาน +
-              ใบอนุญาต BIS
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              เฟอร์นิเจอร์นำเข้าสามารถขายในอินเดียได้โดยไม่มีการรับรอง BIS
-              หรือไม่?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ไม่ ผลิตภัณฑ์เฟอร์นิเจอร์นำเข้าที่อยู่ภายใต้มาตรฐาน BIS
-              ที่บังคับใช้ต้องมีการรับรอง BIS ก่อนการผ่านศุลกากร
-              การนำเข้าเฟอร์นิเจอร์ที่ไม่ได้รับการรับรองอาจส่งผลให้:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>การกักกันศุลกากร</li>
-              <li>การส่งกลับหรือทำลาย</li>
-              <li>ค่าปรับจำนวนมาก</li>
-            </ul>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ผู้ผลิตต่างประเทศต้องได้รับใบอนุญาต BIS
-              ก่อนส่งออกเฟอร์นิเจอร์ไปยังอินเดีย
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              ผู้ผลิตเฟอร์นิเจอร์ต่างประเทศสามารถสมัครการรับรอง BIS ได้หรือไม่?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ได้
-              ผู้ผลิตต่างประเทศสามารถสมัครภายใต้โครงการรับรองผู้ผลิตต่างประเทศ
-              (FMCS) พวกเขาต้อง:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>แต่งตั้งตัวแทนอินเดียที่ได้รับอนุญาต (AIR)</li>
-              <li>ปฏิบัติตามมาตรฐานอินเดีย</li>
-              <li>อนุญาตให้ BIS ตรวจสอบโรงงานในต่างประเทศ</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              การรับรอง BIS
-              จำเป็นสำหรับผู้ผลิตเฟอร์นิเจอร์ทำมือหรือขนาดเล็กหรือไม่?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ใช่ หากผลิตภัณฑ์เฟอร์นิเจอร์อยู่ภายใต้มาตรฐาน BIS
-              ที่บังคับใช้แม้แต่ MSMEs สตาร์ทอัพ และหน่วยงานขนาดเล็ก
-              ต้องได้รับการรับรอง BIS ไม่มีการยกเว้นตามปริมาณการผลิต
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              การรับรอง BIS จำเป็นสำหรับเฟอร์นิเจอร์ไม้หรือไม่?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ใช่ ผลิตภัณฑ์เฟอร์นิเจอร์ไม้เช่นเตียง เก้าอี้ โต๊ะ โต๊ะทำงาน
-              และตู้เก็บของอาจต้องการการรับรอง BIS
-              หากอยู่ภายใต้มาตรฐานที่ประกาศใช้ มาตรฐาน BIS
-              ใช้กับเฟอร์นิเจอร์ทั้งไม้และโลหะ
-              ขึ้นอยู่กับประเภทผลิตภัณฑ์และการใช้งาน
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              ใบอนุญาต BIS
-              หนึ่งใบสามารถครอบคลุมรุ่นเฟอร์นิเจอร์หลายรุ่นได้หรือไม่?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ได้ รุ่นหรือตัวแปรหลายรุ่นสามารถครอบคลุมภายใต้ใบอนุญาต BIS
-              เดียวกัน โดยมีเงื่อนไขว่า:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>อยู่ภายใต้มาตรฐาน IS เดียวกัน</li>
-              <li>พารามิเตอร์การก่อสร้าง วัสดุ และการออกแบบคล้ายกัน</li>
-              <li>BIS อนุมัติการจัดกลุ่มระหว่างการสมัคร</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              การรับรอง BIS สามารถโอนให้ผู้ผลิตรายอื่นได้หรือไม่?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ไม่ ใบอนุญาต BIS ไม่สามารถโอนได้ ผู้ผลิตแต่ละรายต้องได้รับใบรับรอง
-              BIS ของตัวเอง แม้ว่าการออกแบบผลิตภัณฑ์จะเหมือนกันก็ตาม
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              ใบรับรอง BIS คืออะไร?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              เป็นหลักฐานอย่างเป็นทางการของการปฏิบัติตามมาตรฐาน BIS
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              การรับรอง BIS เป็นข้อบังคับสำหรับเฟอร์นิเจอร์หรือไม่?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ใช่ สำหรับผลิตภัณฑ์เฟอร์นิเจอร์ที่อยู่ภายใต้มาตรฐานที่ประกาศใช้
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              วิธีรับการรับรอง BIS ในอินเดีย?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ผ่านการทดสอบ การตรวจสอบ และการอนุมัติใบอนุญาต BIS
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              เครื่องหมาย BIS คืออะไร?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              เครื่องหมายการปฏิบัติตามที่แสดงการอนุมัติ BIS
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              ต้นทุนการรับรอง BIS?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              ขึ้นอยู่กับประเภทผลิตภัณฑ์ การทดสอบ และขอบเขต
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS Full Form คืออะไร?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              สำนักงานมาตรฐานอินเดีย
-            </p>
-          </div>
+        <SubSectionHeading>
+          ความแตกต่างระหว่างการรับรอง BIS และเครื่องหมาย ISI สำหรับเฟอร์นิเจอร์
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>การรับรอง BIS</strong> — กระบวนการประเมิน การทดสอบ
+              และการอนุมัติโดย BIS
+            </>,
+            <>
+              <strong>เครื่องหมาย ISI</strong> — เครื่องหมายที่ได้รับหลังการรับรอง
+              BIS ซึ่งแสดงว่าผลิตภัณฑ์เป็นไปตามมาตรฐานอินเดีย
+              เครื่องหมาย ISI คือการรับประกันการปฏิบัติตามที่ผู้บริโภคเห็นได้ชัด
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          ทำไมการรับรอง BIS จึงสำคัญสำหรับผู้ผลิตและผู้นำเข้าเฟอร์นิเจอร์
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "การปฏิบัติตามกฎหมายตามข้อบังญัติของอินเดีย",
+            "การเข้าถึงตลาดอินเดียและโอกาสในการจัดซื้อของรัฐบาล",
+            "ความไว้วางใจของผู้บริโภคที่เพิ่มขึ้นและข้อได้เปรียบทางการแข่งขัน",
+            "ลดความเสี่ยงจากการเรียกคืนสินค้า ค่าปรับ หรือข้อจำกัดการนำเข้า",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          ข้อกำหนดการรับรอง BIS สำหรับผู้ผลิตเฟอร์นิเจอร์
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  ข้อกำหนด
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  รายละเอียด
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["หน่วยงานรับรอง", "Bureau of Indian Standards (BIS)"],
+                ["โครงการรับรอง", "Scheme-I (การรับรองเครื่องหมาย ISI)"],
+                ["กฎหมายที่ใช้บังคับ", "Furniture (Quality Control) Order, 2025"],
+                ["การทำเครื่องหมายบังคับ", "เครื่องหมาย ISI พร้อมหมายเลขใบอนุญาต BIS"],
+                [
+                  "การทดสอบผลิตภัณฑ์",
+                  "จำเป็นต้องทำผ่านห้องปฏิบัติการที่ BIS รับรอง",
+                ],
+                ["การตรวจสอบโรงงาน", "บังคับก่อนการออกใบอนุญาต"],
+                [
+                  "ใช้บังคับกับ",
+                  "ผู้ผลิตอินเดีย ผู้ผลิตต่างประเทศ ผู้นำเข้า",
+                ],
+                ["การเฝ้าระวังหลังการรับรอง", "จำเป็น"],
+                [
+                  "การต่ออายุใบอนุญาต",
+                  "ต่ออายุเป็นระยะตามข้อกำหนดของ BIS",
+                ],
+              ].map(([req, details], i) => (
+                <TableRow
+                  key={req}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {req}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          กรอบกฎระเบียบสำหรับการรับรอง BIS ของเฟอร์นิเจอร์ในอินเดีย
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Scale,
+              title: "Furniture (Quality Control) Order, 2025",
+              description:
+                "Furniture QCO 2025 กำหนดให้หมวดหมู่เฟอร์นิเจอร์บางประเภทต้องปฏิบัติตามมาตรฐาน BIS QCO เป็นรากฐานทางกฎหมายสำหรับการรับรองบังคับและระบุประเภทเฟอร์นิเจอร์ที่ครอบคลุม",
+            },
+            {
+              icon: Building2,
+              title: "บทบาทของ Bureau of Indian Standards (BIS)",
+              description:
+                "BIS จัดทำมาตรฐานอินเดีย (IS) ประเมินหน่วยการผลิต ดำเนินการทดสอบผลิตภัณฑ์ และออกใบอนุญาตสำหรับการใช้เครื่องหมาย ISI รวมถึงตรวจสอบการปฏิบัติตามผ่านการตรวจสอบและการเฝ้าระวัง",
+            },
+          ]}
+        />
+
+        <SubSectionHeading>
+          การรับรอง BIS บังคับ vs สมัครใจสำหรับเฟอร์นิเจอร์
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>บังคับ</strong> — หมวดหมู่ที่ระบุภายใต้ Furniture QCO
+              เช่น เตียง เก้าอี้ และตู้เก็บของ
+            </>,
+            <>
+              <strong>สมัครใจ</strong> — ผู้ผลิตสามารถเลือกรับรองหมวดหมู่ผลิตภัณฑ์
+              เพิ่มเติมเพื่อเพิ่มความน่าเชื่อถือในตลาด
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          การบังคับใช้ Furniture QCO กับผู้ผลิตและผู้นำเข้า
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "ผู้ผลิตอินเดียที่ผลิตเฟอร์นิเจอร์ภายใต้ QCO",
+            "ผู้ผลิตต่างประเทศที่ส่งออกไปยังอินเดีย",
+            "ผู้นำเข้าที่ขายเฟอร์นิเจอร์ในประเทศ",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          ผลิตภัณฑ์เฟอร์นิเจอร์ที่อยู่ภายใต้การรับรอง BIS
+        </SectionHeading>
+
+        <SubSectionHeading>
+          หมวดหมู่เฟอร์นิเจอร์และมาตรฐาน BIS ที่ใช้บังคับ
+        </SubSectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  หมวดหมู่เฟอร์นิเจอร์
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  มาตรฐานอินเดียที่ใช้บังคับ
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  ชื่อมาตรฐาน
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 text-[#1e1e1e]">
+                  ข้อกำหนดการรับรอง
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                {
+                  category: "เก้าอี้ทำงาน",
+                  standard: "IS 17631:2022",
+                  title:
+                    "Furniture – Chairs for Office Work – Requirements and Test Methods",
+                  link: "/blogs/isi-products/work-chairs-is-17631",
+                },
+                {
+                  category: "เก้าอี้และม้านั่งอเนกประสงค์",
+                  standard: "IS 17632:2022",
+                  title:
+                    "Furniture – General Purpose Chairs and Stools – Requirements and Test Methods",
+                  link: "/blogs/isi-products/chairs-and-stools-is-17632",
+                },
+                {
+                  category: "โต๊ะและโต๊ะทำงาน",
+                  standard: "IS 17633:2022",
+                  title:
+                    "Furniture – Tables and Desks – Requirements and Test Methods",
+                  link: "/blogs/isi-products/tables-&-desks-is-17633",
+                },
+                {
+                  category: "ตู้เก็บของ",
+                  standard: "IS 17634:2022",
+                  title:
+                    "Furniture – Storage Units – Requirements and Test Methods",
+                  link: "/blogs/isi-products/storage-unit-is-17634",
+                },
+                {
+                  category: "เตียง",
+                  standard: "IS 17635:2022",
+                  title:
+                    "Furniture – Beds – Requirements and Test Methods",
+                  link: "/blogs/isi-products/beds-is-17635",
+                },
+                {
+                  category: "เตียงสองชั้น",
+                  standard: "IS 17636:2022",
+                  title:
+                    "Furniture – Bunk Beds for Domestic Use – Requirements and Test Methods",
+                  link: "/blogs/isi-products/bunk-beds-is-17636",
+                },
+              ].map((row, i) => (
+                <TableRow
+                  key={row.standard}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-[#1e1e1e]">
+                    <Link
+                      to={row.link}
+                      className="text-blue-600 hover:underline"
+                    >
+                      {row.category}
+                    </Link>
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.standard}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.title}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 text-gray-600">
+                    บังคับภายใต้ Furniture QCO
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ผลิตภัณฑ์ที่ครอบคลุมทั้งหมดต้องปฏิบัติตามมาตรฐาน BIS ที่เกี่ยวข้อง
+          และมีเครื่องหมาย ISI ที่ถูกต้องก่อนจำหน่ายในอินเดีย
+          มาตรฐานเหล่านี้กำหนดข้อกำหนดขั้นต่ำด้านความปลอดภัย ความเสถียร
+          และการใช้งานของเฟอร์นิเจอร์
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          มาตรฐาน BIS สำหรับเฟอร์นิเจอร์และข้อกำหนด
+        </SectionHeading>
+
+        <SubSectionHeading>
+          ข้อกำหนดด้านประสิทธิภาพภายใต้มาตรฐาน BIS สำหรับเฟอร์นิเจอร์
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          เฟอร์นิเจอร์ต้องทนต่อการใช้งานปกติโดยไม่บิดเบี้ยวหรือเสียหายทางโครงสร้าง
+        </p>
+        <CheckPointsList
+          points={[
+            "ความสามารถในการรับน้ำหนักภายใต้สภาวะโหลดปกติและโหลดสูงสุด",
+            "ความแข็งแรงของข้อต่อและความทนทานของการเชื่อมต่อ",
+            "ความเสถียรของวัสดุโดยไม่บิดเบี้ยวหรือเสื่อมสภาพ",
+          ]}
+        />
+
+        <SubSectionHeading>
+          ข้อกำหนดการทดสอบความปลอดภัยและความทนทาน
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          เฟอร์นิเจอร์ต้องเป็นไปตามมาตรฐานความปลอดภัยเพื่อป้องกันอุบัติเหตุ
+          และมาตรฐานความทนทานเพื่อรับประกันอายุการใช้งานยาวนาน
+        </p>
+        <CheckPointsList
+          points={[
+            "การป้องกันการพลิกคว่ำ (เก้าอี้ ม้านั่ง และหน่วยที่ไม่เสถียร)",
+            "การป้องกันการพังทลายภายใต้น้ำหนักที่กำหนด (เตียง เตียงสองชั้น ตู้เก็บของ)",
+            "ความทนทานระยะยาวผ่านการทดสอบประสิทธิภาพการใช้งานซ้ำ",
+          ]}
+        />
+
+        <SubSectionHeading>
+          พารามิเตอร์คุณภาพที่ประเมินระหว่างการรับรอง
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "คุณภาพวัสดุและการตกแต่งผิว",
+            "ความสามารถในการรับน้ำหนัก",
+            "ความเสถียร หลักการยศาสตร์ และคุณสมบัติด้านความปลอดภัย",
+          ]}
+        />
+
+        <SubSectionHeading>
+          ข้อกำหนดการปฏิบัติตามสำหรับหมวดหมู่เฟอร์นิเจอร์ต่างๆ
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          แต่ละประเภทเฟอร์นิเจอร์มีมาตรฐาน IS เฉพาะที่ระบุขนาด การทดสอบประสิทธิภาพ
+          และความคลาดเคลื่อนที่ยอมรับได้ การปฏิบัติตามช่วยรับประกันความสม่ำเสมอ
+          และคุณภาพในหมู่ผู้ผลิต
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          ใครต้องการการรับรอง BIS สำหรับเฟอร์นิเจอร์?
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Factory,
+              title: "ผู้ผลิตเฟอร์นิเจอร์อินเดีย",
+              description:
+                "ผู้ผลิตในประเทศทั้งหมดของเฟอร์นิเจอร์ภายใต้ Furniture QCO ต้องได้รับการรับรอง BIS ก่อนจำหน่ายผลิตภัณฑ์",
+            },
+            {
+              icon: Globe,
+              title: "ผู้ผลิตต่างประเทศที่ส่งออกเฟอร์นิเจอร์ไปอินเดีย",
+              description:
+                "ผู้ส่งออกต้องปฏิบัติตามมาตรฐาน BIS เพื่อขายเฟอร์นิเจอร์ในอินเดียอย่างถูกกฎหมายและใช้เครื่องหมาย ISI",
+            },
+            {
+              icon: Package,
+              title: "ผู้นำเข้าเฟอร์นิเจอร์และเจ้าของแบรนด์",
+              description:
+                "ผู้นำเข้าต้องให้แน่ใจว่าเฟอร์นิเจอร์ที่นำเข้าอินเดียเป็นไปตามมาตรฐาน BIS แม้จะผลิตในต่างประเทศ",
+            },
+            {
+              icon: ShoppingCart,
+              title: "ผู้ขายอีคอมเมิร์ซและธุรกิจค้าปลีก",
+              description:
+                "ผู้ค้าออนไลน์และออฟไลน์ที่ขายเฟอร์นิเจอร์ในหมวดหมู่ที่ครอบคลุมต้องตรวจสอบการรับรอง BIS เพื่อหลีกเลี่ยงความรับผิดทางกฎหมาย",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          การรับรอง BIS ISI สำหรับเฟอร์นิเจอร์: กระบวนการทีละขั้นตอน
+        </SectionHeading>
+
+        <NumberedSteps
+          steps={[
+            {
+              title: "การระบุผลิตภัณฑ์และการเลือกมาตรฐานที่ใช้บังคับ",
+              description:
+                "ระบุหมวดหมู่เฟอร์นิเจอร์และมาตรฐาน BIS ที่เกี่ยวข้อง (IS 17631–IS 17636) สำหรับการทดสอบและการรับรอง",
+            },
+            {
+              title: "การทดสอบผลิตภัณฑ์ในห้องปฏิบัติการที่ BIS รับรอง",
+              description:
+                "เฟอร์นิเจอร์ถูกทดสอบความแข็งแรง ความเสถียร และความทนทานในห้องปฏิบัติการที่ BIS อนุมัติ รายงานการทดสอบเป็นข้อบังคับสำหรับการสมัคร",
+            },
+            {
+              title: "การยื่นคำขอ BIS",
+              description:
+                "ผู้ผลิตยื่นคำขอต่อ BIS พร้อมข้อมูลจำเพาะผลิตภัณฑ์ รายละเอียดทางเทคนิค และรายงานการทดสอบ",
+            },
+            {
+              title: "การตรวจสอบและประเมินโรงงาน",
+              description:
+                "BIS ดำเนินการตรวจสอบโรงงานเพื่อตรวจสอบกระบวนการผลิต ระบบควบคุมคุณภาพ และความสม่ำเสมอของการผลิต",
+            },
+            {
+              title: "การออกใบอนุญาต BIS และอนุญาตเครื่องหมาย ISI",
+              description:
+                "เมื่อได้รับการอนุมัติ BIS จะออกใบอนุญาตให้ผู้ผลิตใช้เครื่องหมาย ISI บนเฟอร์นิเจอร์ที่ได้รับการรับรอง",
+            },
+            {
+              title: "ข้อกำหนดการปฏิบัติตามหลังการรับรอง",
+              description:
+                "จำเป็นต้องมีการตรวจสอบเป็นประจำ การทดสอบเป็นระยะ และการปฏิบัติตามมาตรฐาน BIS เพื่อรักษาการรับรอง",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          เอกสารที่จำเป็นสำหรับการรับรอง BIS ของเฟอร์นิเจอร์
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>เอกสารการจดทะเบียนบริษัทและการผลิต</strong> —
+              ใบอนุญาตธุรกิจ การลงทะเบียน GST และรายละเอียดสถานที่ผลิต
+            </>,
+            <>
+              <strong>ข้อมูลจำเพาะทางเทคนิคและแบบแปลนผลิตภัณฑ์</strong> —
+              แบบออกแบบโดยละเอียด วัสดุที่ใช้ และคำแนะนำการประกอบ
+            </>,
+            <>
+              <strong>รายงานการทดสอบและเอกสารควบคุมคุณภาพ</strong> —
+              รายงานจากห้องปฏิบัติการที่ BIS อนุมัติแสดงการปฏิบัติตามมาตรฐาน IS
+            </>,
+            <>
+              <strong>เอกสารโรงงานและกระบวนการผลิต</strong> —
+              ระบบการจัดการคุณภาพ ขั้นตอนกระบวนการ และขั้นตอนการตรวจสอบ
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          ข้อกำหนดการทดสอบสำหรับเฟอร์นิเจอร์ที่ได้รับการรับรอง BIS
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  ด้านการทดสอบ
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  วัตถุประสงค์
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                [
+                  "การทดสอบความแข็งแรง",
+                  "ตรวจสอบความสามารถในการรับน้ำหนัก",
+                ],
+                [
+                  "การทดสอบความเสถียร",
+                  "ป้องกันการพลิกคว่ำและการพังทลาย",
+                ],
+                [
+                  "การทดสอบความทนทาน",
+                  "ประเมินประสิทธิภาพจากการใช้งานซ้ำ",
+                ],
+                [
+                  "การทดสอบความสมบูรณ์ของโครงสร้าง",
+                  "ประเมินข้อต่อ โครง และการเชื่อมต่อ",
+                ],
+                [
+                  "การทดสอบความปลอดภัย",
+                  "ลดความเสี่ยงการบาดเจ็บระหว่างการใช้งานปกติ",
+                ],
+                [
+                  "การทดสอบประสิทธิภาพการทำงาน",
+                  "ยืนยันฟังก์ชันและการใช้งานตามที่ออกแบบไว้",
+                ],
+              ].map(([area, purpose], i) => (
+                <TableRow
+                  key={area}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {area}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {purpose}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          เฟอร์นิเจอร์ต้องผ่านการทดสอบในห้องปฏิบัติการที่ BIS รับรอง
+          เพื่อยืนยันความปลอดภัย ประสิทธิภาพ และความทนทาน
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          เครื่องหมาย ISI สำหรับเฟอร์นิเจอร์: การใช้งานและข้อกำหนดการปฏิบัติตาม
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>สิ่งที่เครื่องหมาย ISI แสดง</strong> — ยืนยันว่าเฟอร์นิเจอร์
+              เป็นไปตามมาตรฐานอินเดียและได้รับการรับรองโดย BIS
+            </>,
+            <>
+              <strong>กฎการติดเครื่องหมาย ISI</strong> — เครื่องหมายควรมองเห็นได้
+              ถาวร และจัดรูปแบบถูกต้องตามแนวทางของ BIS
+            </>,
+            <>
+              <strong>ผลกระทบจากการใช้ในทางที่ผิด</strong> — การใช้โดยไม่ได้รับอนุญาต
+              อาจนำไปสู่ค่าปรับ การเพิกถอนใบอนุญาต และดำเนินคดีตามพระราชบัญญัติ BIS
+              ปี 2016
+            </>,
+            <>
+              <strong>วิธีที่ผู้ซื้อสามารถตรวจสอบได้</strong> — ผู้บริโภคสามารถตรวจสอบ
+              หมายเลขใบอนุญาตบนเว็บไซต์อย่างเป็นทางการของ BIS
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          ระยะเวลา ความถูกต้อง และการต่ออายุการรับรอง BIS
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Clock,
+              title: "ระยะเวลาการรับรองสำหรับผลิตภัณฑ์เฟอร์นิเจอร์",
+              description:
+                "โดยทั่วไป 2–3 เดือน ขึ้นอยู่กับตารางการทดสอบและการตรวจสอบโรงงาน",
+            },
+            {
+              icon: ShieldCheck,
+              title: "ความถูกต้องของใบอนุญาต BIS",
+              description:
+                "ใบอนุญาตมีอายุ 1–3 ปี และต้องต่ออายุก่อนหมดอายุ",
+            },
+            {
+              icon: RefreshCw,
+              title: "กระบวนการต่ออายุการรับรอง BIS",
+              description:
+                "การต่ออายุรวมถึงรายงานการทดสอบที่อัปเดต การตรวจสอบโรงงาน และการยืนยันการปฏิบัติตาม",
+            },
+            {
+              icon: Eye,
+              title: "การเฝ้าระวังและข้อกำหนดการปฏิบัติตามอย่างต่อเนื่อง",
+              description:
+                "BIS ดำเนินการตรวจสอบและทดสอบแบบสุ่มเพื่อให้แน่ใจว่ามีการปฏิบัติตามมาตรฐานอย่างต่อเนื่อง",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          ประโยชน์ของเฟอร์นิเจอร์ที่ได้รับการรับรอง BIS
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>การปฏิบัติตามกฎหมายและการเข้าถึงตลาด</strong> —
+              บังคับสำหรับการขายเฟอร์นิเจอร์บางประเภทในอินเดีย
+            </>,
+            <>
+              <strong>คุณภาพผลิตภัณฑ์ที่ดีขึ้นและความไว้วางใจของผู้บริโภค</strong>{" "}
+              — การรับรอง BIS แสดงถึงความน่าเชื่อถือและความปลอดภัย
+            </>,
+            <>
+              <strong>ข้อได้เปรียบทางการแข่งขันสำหรับผู้ผลิต</strong> —
+              เฟอร์นิเจอร์ที่ได้รับการรับรองมีความน่าเชื่อถือในตลาดสูงกว่า
+              และมีสิทธิ์ในการจัดซื้อ
+            </>,
+            <>
+              <strong>สิทธิ์ในการจัดซื้อของรัฐบาล</strong> — เฉพาะผลิตภัณฑ์ที่ได้รับการรับรอง
+              BIS เท่านั้นที่สามารถจัดหาให้กับผู้ซื้อของรัฐหรือสถาบันได้
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          บทลงโทษสำหรับการไม่ปฏิบัติตามกฎระเบียบ BIS สำหรับเฟอร์นิเจอร์
+        </SectionHeading>
+
+        <CheckPointsList
+          variant="warning"
+          points={[
+            <>
+              <strong>การผลิตหรือขายเฟอร์นิเจอร์ที่ไม่ได้รับการรับรอง</strong> —
+              ละเมิด QCO ส่งผลให้ถูกปรับและยึดสินค้า
+            </>,
+            <>
+              <strong>ข้อจำกัดการนำเข้าเฟอร์นิเจอร์ที่ไม่เป็นไปตามข้อกำหนด</strong> —
+              สินค้านำเข้าที่ไม่ได้รับการรับรองอาจถูกบล็อกที่ศุลกากร
+            </>,
+            <>
+              <strong>บทลงโทษภายใต้พระราชบัญญัติ BIS ปี 2016</strong> — รวมถึง
+              ค่าปรับ จำคุก และห้ามขายผลิตภัณฑ์
+            </>,
+            <>
+              <strong>ความเสี่ยงทางธุรกิจจากการไม่ปฏิบัติตาม</strong> — สูญเสีย
+              ความไว้วางใจของผู้บริโภค ข้อพิพาททางกฎหมาย และการเข้าถึงตลาดที่จำกัด
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          ความท้าทายในการขอรับการรับรอง BIS สำหรับเฟอร์นิเจอร์
+        </SectionHeading>
+
+        <NumberedSteps
+          showTimeline={false}
+          steps={[
+            {
+              title: "การระบุมาตรฐานอินเดียที่ถูกต้อง",
+              description:
+                "ผู้ผลิตต้องให้แน่ใจว่าผลิตภัณฑ์ตรงกับมาตรฐาน IS 17631–IS 17636 ที่ใช้บังคับ",
+            },
+            {
+              title: "การจัดการข้อกำหนดการทดสอบและเอกสาร",
+              description:
+                "การทดสอบในห้องปฏิบัติการและเอกสารที่ถูกต้องเป็นข้อบังคับสำหรับการอนุมัติ",
+            },
+            {
+              title: "การแก้ไขข้อสังเกตจากการตรวจสอบโรงงาน",
+              description:
+                "การไม่ปฏิบัติตามระหว่างการตรวจสอบอาจทำให้การรับรองล่าช้า",
+            },
+            {
+              title: "การรักษาการปฏิบัติตามอย่างต่อเนื่องหลังการรับรอง",
+              description:
+                "จำเป็นต้องมีการตรวจสอบคุณภาพอย่างต่อเนื่องและปฏิบัติตามมาตรฐาน BIS เพื่อหลีกเลี่ยงค่าปรับ",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Sun Certifications India สามารถช่วยได้อย่างไร
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: FileText,
+              title: "การสนับสนุนการสมัครและเอกสาร",
+              description:
+                "คำแนะนำในการยื่นคำขอ BIS ที่สมบูรณ์และถูกต้อง",
+            },
+            {
+              icon: FlaskConical,
+              title: "ความช่วยเหลือในการทดสอบผลิตภัณฑ์",
+              description:
+                "ช่วยประสานงานกับห้องปฏิบัติการที่ BIS อนุมัติ",
+            },
+            {
+              icon: ClipboardCheck,
+              title: "การเตรียมตัวสำหรับการตรวจสอบและคำแนะนำการปฏิบัติตาม",
+              description:
+                "ให้แน่ใจว่ากระบวนการในโรงงานเป็นไปตามข้อกำหนดของ BIS ก่อนการตรวจสอบ",
+            },
+            {
+              icon: ShieldCheck,
+              title: "การจัดการการปฏิบัติตามหลังการออกใบอนุญาต",
+              description:
+                "ให้คำแนะนำเกี่ยวกับการเก็บบันทึก การตรวจสอบเฝ้าระวัง และการอัปเดตมาตรฐาน",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          คำถามที่พบบ่อยเกี่ยวกับการรับรอง BIS สำหรับเฟอร์นิเจอร์
+        </SectionHeading>
+
+        <FaqAccordion
+          items={[
+            {
+              question:
+                "การรับรอง BIS เป็นข้อบังคับสำหรับผลิตภัณฑ์เฟอร์นิเจอร์ทั้งหมดหรือไม่?",
+              answer:
+                "ไม่ มีเฉพาะเฟอร์นิเจอร์ที่ระบุภายใต้ Furniture QCO 2025 เท่านั้นที่ต้องการการรับรอง BIS บังคับ",
+            },
+            {
+              question:
+                "เฟอร์นิเจอร์นำเข้าสามารถขายได้โดยไม่มีการรับรอง BIS หรือไม่?",
+              answer:
+                "ไม่ เฟอร์นิเจอร์ในหมวดหมู่บังคับไม่สามารถขายในอินเดียได้โดยไม่ได้รับการอนุมัติจาก BIS",
+            },
+            {
+              question: "การรับรองเฟอร์นิเจอร์ใช้เวลานานเท่าใด?",
+              answer:
+                "โดยทั่วไป 2–3 เดือน ขึ้นอยู่กับการทดสอบและการตรวจสอบ",
+            },
+            {
+              question:
+                "ความแตกต่างระหว่างการรับรอง BIS และเครื่องหมาย ISI คืออะไร?",
+              answer:
+                "การรับรอง BIS คือกระบวนการอนุมัติ เครื่องหมาย ISI คือป้ายรับรองที่แสดงบนเฟอร์นิเจอร์",
+            },
+            {
+              question:
+                "มาตรฐาน BIS ที่ใช้บังคับสำหรับเฟอร์นิเจอร์มีอะไรบ้าง?",
+              answer:
+                "IS 17631–IS 17636 ครอบคลุมเก้าอี้ ม้านั่ง เก้าอี้ทำงาน โต๊ะ เตียง เตียงสองชั้น และตู้เก็บของ",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>แหล่งข้อมูลที่เกี่ยวข้อง</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                การรับรอง BIS ISI
+              </a>
+            </>,
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                ใบรับรอง BIS สำหรับผู้ผลิตต่างประเทศ
+              </a>
+            </>,
+          ]}
+        />
 
         <ManyUsersAlsoReadThai />
 

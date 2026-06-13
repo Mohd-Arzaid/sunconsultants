@@ -9,7 +9,38 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { SlashIcon } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  AlertTriangle,
+  Building2,
+  Check,
+  ClipboardCheck,
+  Clock,
+  Eye,
+  Factory,
+  FileText,
+  FlaskConical,
+  Globe,
+  Package,
+  RefreshCw,
+  Scale,
+  ShieldCheck,
+  ShoppingCart,
+  SlashIcon,
+} from "lucide-react";
 
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -104,8 +135,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificaat voor Meubels in India – Volledige
-                    Gedetailleerde Gids
+                    BIS Certificering voor Meubels in India
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -131,859 +161,929 @@ const MainContent = () => {
   );
 };
 
+const TABLE_WRAP =
+  "mt-6 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]";
+
+const SectionDivider = () => (
+  <div className="service-left-content-divider my-8 md:my-10" />
+);
+
+const SectionHeading = ({ children }) => (
+  <h2 className="text-xl md:text-2xl font-geist font-bold text-[#1e1e1e] mb-4 pl-4 border-l-4 border-[#1A8781]">
+    {children}
+  </h2>
+);
+
+const SubSectionHeading = ({ children }) => (
+  <h3 className="text-base md:text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-4">
+    {children}
+  </h3>
+);
+
+const IntroCallout = ({ children }) => (
+  <div className="rounded-md bg-[#EAF3FF] border-l-4 border-[#1A8781] px-4 py-3 mb-6">
+    {children}
+  </div>
+);
+
+const CheckPointsList = ({ points, variant = "check" }) => {
+  const Icon = variant === "warning" ? AlertTriangle : Check;
+  const iconBg =
+    variant === "warning" ? "bg-amber-500/10" : "bg-green-500/10";
+
+  return (
+    <div className="bg-white/50 rounded-xl p-4 ring-1 ring-gray-900/[0.05] mt-2 mb-4">
+      <ul className="flex flex-col gap-3 list-none">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-start gap-3">
+            <div
+              className={`${iconBg} p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5`}
+            >
+              <Icon size={12} className="text-[#020817]" />
+            </div>
+            <p className="font-geist text-sm md:text-base text-[#42434d] tracking-wide text-left max-w-full leading-relaxed flex-1">
+              {point}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const NumberedSteps = ({ steps, showTimeline = true }) => {
+  if (!showTimeline) {
+    return (
+      <div className="mt-4 mb-4 flex flex-col gap-4">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-3 bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+          >
+            <div className="w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+              {index + 1}
+            </div>
+            <div className="flex-1">
+              <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+                {step.title}
+              </h3>
+              <p className="text-gray-600 text-base font-geist">
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-4 mb-4 border-l-2 border-[#1A8781]/30 ml-3 pl-6 flex flex-col gap-4">
+      {steps.map((step, index) => (
+        <div
+          key={index}
+          className="relative bg-white/70 rounded-lg p-4 ring-1 ring-gray-900/[0.05]"
+        >
+          <div className="absolute -left-[31px] top-4 w-7 h-7 rounded-full bg-[#1A8781] text-white text-xs font-bold flex items-center justify-center">
+            {index + 1}
+          </div>
+          <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-1">
+            {step.title}
+          </h3>
+          <p className="text-gray-600 text-base font-geist">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const InfoCardGrid = ({ items }) => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      {items.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <div
+            key={index}
+            className="bg-white/60 rounded-lg p-4 ring-1 ring-gray-900/[0.06] hover:ring-gray-900/[0.12] hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+          >
+            {Icon && (
+              <div className="mb-3 w-9 h-9 rounded-full bg-[#1A8781]/10 text-[#1A8781] flex items-center justify-center">
+                <Icon size={18} />
+              </div>
+            )}
+            <h3 className="text-base font-geist font-semibold text-[#1e1e1e] mb-2">
+              {item.title}
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base font-geist leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const FaqAccordion = ({ items }) => {
+  return (
+    <div className="rounded-xl bg-white/60 p-4 md:p-5 ring-1 ring-gray-900/[0.06]">
+      <Accordion type="single" collapsible className="w-full">
+        {items.map((item, index) => (
+          <AccordionItem key={index} value={`faq-${index}`}>
+            <AccordionTrigger className="text-left font-geist font-semibold text-[#1e1e1e] hover:no-underline">
+              {item.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-gray-600 font-geist text-base">
+              {item.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
+  );
+};
+
 const MainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
-      {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificaat voor Meubels in India – Volledige Gedetailleerde Gids
+          BIS Certificering voor Meubels in India: Volledige Gids over BIS
+          Normen, ISI Markering, Proces &amp; Naleving
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/blogImages/BISLicenseforFurniture.png"
             title="BIS Licentie voor Meubels"
-            alt="BIS Certificaat voor Meubels in India - Volledige BIS Certificeringsgids"
+            alt="BIS Certificering voor Meubels in India - ISI Markering Gids"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Introductie: BIS Certificering en de Indiase Meubelindustrie
-        </h2>
+        <IntroCallout>
+          <p className="text-gray-700 text-base font-geist leading-relaxed">
+            Meubels zijn een essentieel onderdeel van woningen, kantoren en
+            openbare ruimtes. Het waarborgen van de veiligheid, duurzaamheid en
+            kwaliteit van meubels is cruciaal voor zowel consumenten als
+            fabrikanten. In India is{" "}
+            <strong>BIS Certificering voor Meubels</strong> een verplichte
+            vereiste voor bepaalde meubelcategorieën onder de Furniture (Quality
+            Control) Order, 2025. Deze gids biedt een gedetailleerd overzicht
+            van BIS Normen, ISI Markering, het certificeringsproces en
+            nalevingsvereisten.
+          </p>
+        </IntroCallout>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Wat is BIS Certificering voor Meubels?
+        </SectionHeading>
+
+        <SubSectionHeading>
+          Betekenis van BIS Certificering voor Meubels
+        </SubSectionHeading>
         <p className="text-gray-600 text-base font-geist mb-4">
-          In India worden productkwaliteit, veiligheid en standaardisatie
-          beheerd door een centrale statutaire autoriteit genaamd het Bureau of
-          Indian Standards (BIS). BIS is de nationale normenorganisatie van
-          India, opgericht onder de BIS-wet om ervoor te zorgen dat producten
-          die op de Indiase markt worden verkocht, voldoen aan gedefinieerde
-          veiligheids-, kwaliteits- en prestatie- benchmarks.
+          BIS Certificering is een formeel proces waarbij het Bureau of Indian
+          Standards (BIS) producten evalueert om te verzekeren dat ze voldoen
+          aan Indiase Normen. Voor meubels garandeert deze certificering dat
+          producten voldoen aan gedefinieerde veiligheids-, prestatie- en
+          kwaliteitsparameters. Na certificering kunnen fabrikanten de{" "}
+          <strong>ISI Markering</strong> op hun meubels gebruiken, wat naleving
+          aan kopers signaleert.
         </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wat is BIS?
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Volledige Vorm staat voor Bureau of Indian Standards. Het
-          functioneert onder het Ministerie van Consumentenzaken, Voedsel &
-          Openbare Distributie, Regering van India. BIS speelt een cruciale rol
-          bij het beschermen van consumenten- belangen terwijl fabrikanten
-          worden ondersteund door een transparant standaardisatie- en
-          certificeringsecosysteem.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          De Indiase meubelindustrie heeft een snelle groei doorgemaakt door:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Verstedelijking</li>
-          <li>Uitbreiding van residentiële en commerciële infrastructuur</li>
-          <li>
-            Groei in horeca, onderwijs, gezondheidszorg en co-living sectoren
-          </li>
-          <li>
-            Toenemend consumentenbewustzijn over productveiligheid en
-            duurzaamheid
-          </li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Meubels worden niet langer beschouwd als een puur esthetisch product.
-          Het is direct gekoppeld aan gebruikersveiligheid, ergonomie,
-          structurele stabiliteit, brand- weerstand en langetermijnduurzaamheid.
-          Incidenten met instortende bedden, onveilige stapelbedden, instabiele
-          stoelen of ondermaatse opslageenheden hebben zorgen gewekt bij
-          regelgevers en consumenten.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Om deze risico&apos;s aan te pakken, is BIS Certificering voor Meubels
-          een kritische nalevingsvereiste geworden. BIS zorgt ervoor dat
-          meubelproducten voldoen aan Indiase Normen (IS) met betrekking tot:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structurele sterkte</li>
-          <li>Draagvermogen</li>
-          <li>Materiaalkwaliteit</li>
-          <li>Ontwerpveiligheid</li>
-          <li>Prestaties onder gebruiksomstandigheden</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Voor fabrikanten, importeurs, exporteurs, MKB&apos;s, startups en
-          meubelmerkeigenaren is het verkrijgen van een BIS Certificaat voor
-          Meubels niet langer alleen een regelgevingsformaliteit—het is een
-          marktbehoefte.
-        </p>
+        <SubSectionHeading>
+          Verschil tussen BIS Certificering en ISI Markering voor Meubels
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>BIS Certificering</strong> — Het proces van evaluatie,
+              testen en goedkeuring door BIS.
+            </>,
+            <>
+              <strong>ISI Markering</strong> — Een markering die na BIS
+              Certificering wordt verleend en aangeeft dat het product voldoet
+              aan Indiase Normen. De ISI Markering is de zichtbare garantie van
+              naleving voor consumenten.
+            </>,
+          ]}
+        />
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Waarom BIS Certificering voor Meubels Belangrijk is
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Het zorgt voor wettelijke naleving onder Indiase regelgeving</li>
-          <li>Het versterkt consumentenvertrouwen en merkgeloofwaardigheid</li>
-          <li>
-            Het maakt onbeperkte verkoop en distributie in heel India mogelijk
-          </li>
-          <li>Het minimaliseert productaansprakelijkheidsrisico&apos;s</li>
-          <li>Het verbetert exportbereidheid en wereldwijde acceptatie</li>
-        </ul>
+        <SubSectionHeading>
+          Waarom BIS Certificering belangrijk is voor meubelfabrikanten en
+          importeurs
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Wettelijke naleving van Indiase regelgeving",
+            "Toegang tot de Indiase markt en overheidsaanbestedingen",
+            "Versterkt consumentenvertrouwen en concurrentievoordeel",
+            "Verminderd risico op terugroepacties, boetes of importbeperkingen",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          BIS Certificeringsvereisten voor Meubelfabrikanten
+        </SectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Vereiste
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Details
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Certificeringsautoriteit", "Bureau of Indian Standards (BIS)"],
+                ["Certificeringsschema", "Schema-I (ISI Markering Certificering)"],
+                ["Toepasselijke wet", "Furniture (Quality Control) Order, 2025"],
+                ["Verplichte markering", "ISI Markering met BIS Licentienummer"],
+                [
+                  "Producttesten",
+                  "Vereist via BIS-erkende laboratoria",
+                ],
+                ["Fabrieksinspectie", "Verplicht vóór licentieverlening"],
+                [
+                  "Van toepassing op",
+                  "Indiase fabrikanten, buitenlandse fabrikanten, importeurs",
+                ],
+                ["Toezicht na certificering", "Vereist"],
+                [
+                  "Licentieverlenging",
+                  "Periodieke verlenging volgens BIS-vereisten",
+                ],
+              ].map(([req, details], i) => (
+                <TableRow
+                  key={req}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {req}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {details}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Regelgevend kader voor BIS Certificering van Meubels in India
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Scale,
+              title: "Furniture (Quality Control) Order, 2025",
+              description:
+                "De Furniture QCO 2025 schrijft voor dat bepaalde meubelcategorieën moeten voldoen aan BIS Normen. De QCO vormt de juridische basis voor verplichte certificering en beschrijft de gedekte meubeltypen.",
+            },
+            {
+              icon: Building2,
+              title: "Rol van het Bureau of Indian Standards (BIS)",
+              description:
+                "BIS ontwikkelt Indiase Normen (IS), evalueert productie-eenheden, voert producttesten uit en verleent licenties voor het gebruik van de ISI Markering. Het houdt naleving in de gaten via audits en toezicht.",
+            },
+          ]}
+        />
+
+        <SubSectionHeading>
+          Verplichte vs. vrijwillige BIS Certificering voor Meubels
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Verplicht</strong> — Categorieën gespecificeerd onder de
+              Furniture QCO, zoals bedden, stoelen en opslageenheden.
+            </>,
+            <>
+              <strong>Vrijwillig</strong> — Fabrikanten kunnen ervoor kiezen
+              extra productcategorieën te certificeren om marktgeloofwaardigheid
+              te vergroten.
+            </>,
+          ]}
+        />
+
+        <SubSectionHeading>
+          Toepasbaarheid van de Furniture QCO op fabrikanten en importeurs
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Indiase fabrikanten die meubels produceren die onder de QCO vallen",
+            "Buitenlandse fabrikanten die naar India exporteren",
+            "Importeurs die meubels binnenlands verkopen",
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Meubelproducten gedekt onder BIS Certificering
+        </SectionHeading>
+
+        <SubSectionHeading>
+          Meubelcategorieën en toepasselijke BIS Normen
+        </SubSectionHeading>
+
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Meubelcategorie
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Toepasselijke Indiase Norm
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Normtitel
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-sm md:text-base px-3 md:px-4 py-3 text-[#1e1e1e]">
+                  Certificeringsvereiste
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                {
+                  category: "Werkstoelen",
+                  standard: "IS 17631:2022",
+                  title:
+                    "Furniture – Chairs for Office Work – Requirements and Test Methods",
+                  link: "/blogs/isi-products/work-chairs-is-17631",
+                },
+                {
+                  category: "Algemene Doel Stoelen en Krukken",
+                  standard: "IS 17632:2022",
+                  title:
+                    "Furniture – General Purpose Chairs and Stools – Requirements and Test Methods",
+                  link: "/blogs/isi-products/chairs-and-stools-is-17632",
+                },
+                {
+                  category: "Tafels en Bureaus",
+                  standard: "IS 17633:2022",
+                  title:
+                    "Furniture – Tables and Desks – Requirements and Test Methods",
+                  link: "/blogs/isi-products/tables-&-desks-is-17633",
+                },
+                {
+                  category: "Opslageenheden",
+                  standard: "IS 17634:2022",
+                  title:
+                    "Furniture – Storage Units – Requirements and Test Methods",
+                  link: "/blogs/isi-products/storage-unit-is-17634",
+                },
+                {
+                  category: "Bedden",
+                  standard: "IS 17635:2022",
+                  title:
+                    "Furniture – Beds – Requirements and Test Methods",
+                  link: "/blogs/isi-products/beds-is-17635",
+                },
+                {
+                  category: "Stapelbedden",
+                  standard: "IS 17636:2022",
+                  title:
+                    "Furniture – Bunk Beds for Domestic Use – Requirements and Test Methods",
+                  link: "/blogs/isi-products/bunk-beds-is-17636",
+                },
+              ].map((row, i) => (
+                <TableRow
+                  key={row.standard}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-[#1e1e1e]">
+                    <Link
+                      to={row.link}
+                      className="text-blue-600 hover:underline"
+                    >
+                      {row.category}
+                    </Link>
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.standard}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 border-r border-gray-200/50 text-gray-600">
+                    {row.title}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-3 md:px-4 py-3 text-gray-600">
+                    Verplicht onder Furniture QCO
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          Deze uitgebreide gids is ontworpen om de meest gezaghebbende en
-          gedetailleerde bron over BIS Certificering voor Meubels in India te
-          zijn. Of u nu een eerste keer fabrikant bent of een gevestigd
-          meubelmerk, deze gids beantwoordt elke mogelijke vraag met betrekking
-          tot BIS Licentie voor Meubels, BIS Registratie voor Meubels,
-          toepasselijke normen, proces, kosten, documenten, tijdlijnen en
-          post-certificering naleving.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wat is BIS Certificaat voor Meubels?
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificaat Betekenis
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Een BIS Certificaat voor Meubels is een officiële goedkeuring verleend
-          door het Bureau of Indian Standards die bevestigt dat een specifiek
-          meubel- product voldoet aan de relevante Indiase Norm (IS).
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Wat is BIS Markering?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          De BIS Markering, algemeen bekend als de ISI Markering, is een
-          standaard conformiteit- markering die op gecertificeerde producten
-          verschijnt. Het betekent dat het meubel heeft:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Laboratoriumtesten doorstaan</li>
-          <li>Fabrieksinspectie doorstaan</li>
-          <li>Aan alle standaardvereisten voldaan</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Logo Uitleg
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS Logo vertegenwoordigt het gezag van BIS als India&apos;s
-          nationale normenorganisatie. Wanneer gebruikt met de ISI Markering op
-          meubelproducten, geeft het kopers de zekerheid dat het product voldoet
-          aan BIS Normen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificaat India – Juridische Status
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          In India kan het produceren, importeren of verkopen van
-          meubelproducten die onder gemelde normen vallen zonder BIS
-          Certificering leiden tot:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Inbeslagname van goederen</li>
-          <li>Zware geldboetes</li>
-          <li>Vervolging onder BIS-wet</li>
-          <li>Verbod op verkoop of import</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Daarom heeft een BIS Certificaat voor Meubels in India een sterke
-          juridische betekenis.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Waarom BIS Certificering Belangrijk is voor Meubelproducten
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certificering voor Meubels is cruciaal om meerdere redenen:
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          1. Veiligheid & Structurele Integriteit
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Meubelfalen kan verwondingen of dodelijke slachtoffers veroorzaken.
-          BIS Normen evalueren:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Draagvermogen</li>
-          <li>Stabiliteit tegen kantelen</li>
-          <li>Verbindingssterkte</li>
-          <li>Materiaalprestaties</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          2. Kwaliteit & Duurzaamheid
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Gecertificeerde meubelproducten zorgen voor:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Lange levensduur</li>
-          <li>Weerstand tegen slijtage</li>
-          <li>Uniforme prestaties</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          3. Consumentenvertrouwen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          De BIS Certificeringsmarkering bouwt direct vertrouwen op bij kopers,
-          instellingen en bulkinkopers.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          4. Markttoegang
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Veel overheidsaanbestedingen, institutionele kopers en grote bedrijven
-          vereisen BIS-gecertificeerde meubels.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          5. Juridische Naleving
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Het verkopen van niet-gecertificeerde meubels onder verplichte
-          BIS-normen kan boetes en juridische actie aantrekken.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Meubelproducten Gedekt Onder BIS Certificering
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Meubels is een brede algemene categorie onder BIS, die meerdere
-          producttypen omvat, elk beheerd door verschillende Indiase Normen (IS
-          Nummers).
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Belangrijkste Meubelcategorieën Gedekt:
-        </h3>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Werkstoelen
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Gebruikt in kantoren, fabrieken en commerciële ruimtes. Normen richten
-          zich op ergonomie, stabiliteit en belastingsprestaties.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Algemene Doel Stoelen en Krukken
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Gebruikt in huizen, scholen en openbare ruimtes. BIS evalueert
-          structurele veiligheid en materiaalsterkte.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Tafels en Bureaus
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Inclusief kantoorbureaus, studietafels, werkstations. Normen testen
-          belasting- capaciteit en oppervlakteduurzaamheid.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Opslageenheden
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Kasten, kasten, lockers, planken. Nadruk op stabiliteit, scherpe
-          randen en veilige toegang.
-        </p>
-
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          5. Bedden
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Enkele bedden, tweepersoonsbedden, opklapbedden. BIS controleert frame
-          sterkte en langetermijnprestaties.
+          Alle gedekte producten moeten voldoen aan de relevante BIS Normen en
+          een geldige ISI Markering dragen voordat ze in India worden verkocht.
+          Deze normen definiëren de minimumvereisten voor veiligheid,
+          stabiliteit en bruikbaarheid van meubels.
         </p>
 
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          6. Stapelbedden
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Zeer gereguleerd vanwege veiligheidsrisico&apos;s. Focus op leuningen,
-          ladder- veiligheid en valpreventie.
+        <SectionDivider />
+
+        <SectionHeading>
+          BIS Normen voor Meubels en hun vereisten
+        </SectionHeading>
+
+        <SubSectionHeading>
+          Prestatievereisten onder BIS Meubelnormen
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          Meubels moeten normaal gebruik weerstaan zonder vervorming of
+          structureel falen.
         </p>
+        <CheckPointsList
+          points={[
+            "Draagvermogen onder normale en piekbelastingsomstandigheden",
+            "Verbindingssterkte en duurzaamheid van verbindingen",
+            "Materiaalstabiliteit zonder vervorming of degradatie",
+          ]}
+        />
 
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          7. Gestoffeerde Composieten voor Niet-Domestieke Meubels
-        </h4>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Gebruikt in kantoren, hotels, auditoria. Normen omvatten brand-
-          weerstand en duurzaamheidstests.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Andere Meubelproducten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Schoolmeubels</li>
-          <li>Institutionele zitplaatsen</li>
-          <li>Ziekenhuismeubels</li>
-          <li>Modulaire meubels</li>
-          <li>Metalen & houten meubelsystemen</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Elke productcategorie heeft zijn eigen toepasselijke IS Nummer, apart
-          gemeld door BIS.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Normen Toepasbaar op Meubels
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Wat zijn BIS Normen?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Normen zijn technische specificaties gepubliceerd door BIS om te
-          definiëren:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Materiaalvereisten</li>
-          <li>Prestatieparameters</li>
-          <li>Testmethoden</li>
-          <li>Markeringrichtlijnen</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Betekenis van IS Nummers
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Een IS Nummer (Indian Standard Number) identificeert uniek een norm
-          toepasbaar op een product.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Melding Proces
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS geeft officiële BIS Meldingen uit die bepaalde normen verplicht
-          maken. Eenmaal gemeld:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Naleving wordt verplicht</li>
-          <li>Niet-gecertificeerde producten zijn illegaal</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Hoe de Juiste BIS Norm te Identificeren
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Fabrikanten moeten:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Productcategorie identificeren</li>
-          <li>Toepasselijke IS-omvang bestuderen</li>
-          <li>Normtoepasbaarheid bevestigen</li>
-          <li>Verkeerde normselectie vermijden (een veelvoorkomende fout)</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Soorten BIS Certificering Toepasbaar voor Meubels
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Licentie onder ISI Schema
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Meubelproducten vallen over het algemeen onder het ISI Certificering-
-          Schema, dat omvat:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Producttesten</li>
-          <li>Fabrieksinspectie</li>
-          <li>Toezichtscontroles</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Registratie
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Registratie is voornamelijk voor elektronica en IT-producten.
-          Meubels vereisen meestal BIS Licentie, niet Registratie.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certificeringsproces voor Meubels in India
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 1: Voorbereiding voor Aanvraag
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Toepasselijke IS Norm identificeren</li>
-          <li>Productontwerp naleving beoordelen</li>
-          <li>Technische documentatie voorbereiden</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 2: BIS Aanvraag
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dien BIS Aanvraag in met:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Productdetails</li>
-          <li>Productiedetails</li>
-          <li>Normreferentie</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 3: BIS Online Aanvragen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Aanvraag wordt ingediend via BIS online portaal.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 4: Producttesten
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Monsters getest in BIS-erkende laboratoria.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 5: Fabrieksinspectie
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS-functionarissen verifiëren:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Productieproces</li>
-          <li>Kwaliteitscontrole</li>
-          <li>Testfaciliteiten</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 6: Verlening van BIS Licentie
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Bij naleving verleent BIS de licentie.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 7: Gebruik van BIS Certificeringsmarkering
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Fabrikant kan BIS Markering / ISI Markering aanbrengen.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testvereisten voor Meubels
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Testen is een verplicht onderdeel van het BIS registratieproces.
-          Meubels ondergaan rigoureuze tests om veiligheid en duurzaamheid te
+        <SubSectionHeading>
+          Veiligheids- en duurzaamheidstestvereisten
+        </SubSectionHeading>
+        <p className="text-gray-600 text-base font-geist mb-2">
+          Meubels moeten voldoen aan veiligheidsnormen om ongevallen te
+          voorkomen en duurzaamheidsnormen om een lange levensduur te
           waarborgen.
         </p>
+        <CheckPointsList
+          points={[
+            "Voorkoming van kantelen (stoelen, krukken en instabiele eenheden)",
+            "Voorkoming van instorting onder nominale belasting (bedden, stapelbedden, opslag)",
+            "Langetermijnduurzaamheid door herhaald gebruik prestatietests",
+          ]}
+        />
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Verplichte Tests voor Meubels:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structurele Belastingstest</li>
-          <li>Stabiliteitstest</li>
-          <li>Leuningsterktetest</li>
-          <li>Impacttest</li>
-          <li>Beklemming Gevaartest</li>
-          <li>Ladder Sterkte & Hoektest</li>
-          <li>Materiaalveiligheidstest</li>
-          <li>Randradius & Scherptetest</li>
-          <li>Matrasondersteuningstest</li>
-        </ul>
+        <SubSectionHeading>
+          Kwaliteitsparameters geëvalueerd tijdens certificering
+        </SubSectionHeading>
+        <CheckPointsList
+          points={[
+            "Materiaalkwaliteit en afwerking",
+            "Draagvermogen",
+            "Stabiliteit, ergonomie en veiligheidskenmerken",
+          ]}
+        />
+
+        <SubSectionHeading>
+          Nalevingsvereisten voor verschillende meubelcategorieën
+        </SubSectionHeading>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tests moeten alleen worden uitgevoerd in een BIS-erkend laboratorium.
+          Elk meubeltype heeft specifieke IS Normen met afmetingen,
+          prestatietests en toegestane toleranties. Naleving zorgt voor
+          uniformiteit en kwaliteit bij alle fabrikanten.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <SectionDivider />
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documenten Vereist voor BIS Certificering voor Meubels
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Belangrijke Documenten Inclusief:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabrieksregistratiebewijs</li>
-          <li>Producttekeningen & specificaties</li>
-          <li>Grondstofdetails</li>
-          <li>Testrapporten</li>
-          <li>Kwaliteitscontrole records</li>
-        </ul>
+        <SectionHeading>
+          Wie heeft BIS Certificering voor Meubels nodig?
+        </SectionHeading>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Veelvoorkomende Documentatiefouten:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Onjuiste normreferentie</li>
-          <li>Onvolledige testgegevens</li>
-          <li>Mismatch in productomvang</li>
-        </ul>
+        <InfoCardGrid
+          items={[
+            {
+              icon: Factory,
+              title: "Indiase Meubelfabrikanten",
+              description:
+                "Alle binnenlandse fabrikanten van meubels die onder de Furniture QCO vallen, moeten BIS Certificering verkrijgen voordat ze producten verkopen.",
+            },
+            {
+              icon: Globe,
+              title: "Buitenlandse fabrikanten die meubels naar India exporteren",
+              description:
+                "Exporteurs moeten voldoen aan BIS Normen om meubels legaal in India te verkopen en de ISI Markering te gebruiken.",
+            },
+            {
+              icon: Package,
+              title: "Meubelimporteurs en merkeigenaren",
+              description:
+                "Importeurs moeten ervoor zorgen dat de meubels die ze naar India brengen voldoen aan BIS Normen, ook als ze in het buitenland zijn geproduceerd.",
+            },
+            {
+              icon: ShoppingCart,
+              title: "E-commerce verkopers en retailbedrijven",
+              description:
+                "Online en offline retailers die meubels onder gedekte categorieën verkopen, moeten BIS Certificering verifiëren om juridische aansprakelijkheid te vermijden.",
+            },
+          ]}
+        />
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <SectionDivider />
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Kosten van BIS Certificering voor Meubels
-        </h2>
+        <SectionHeading>
+          BIS ISI Certificering voor Meubels: Stapsgewijs Proces
+        </SectionHeading>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificaat Kostencomponenten:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Overheidsaanvraagkosten</li>
-          <li>Testkosten</li>
-          <li>Inspectiekosten</li>
-          <li>Licentiekosten</li>
-        </ul>
+        <NumberedSteps
+          steps={[
+            {
+              title: "Productidentificatie en selectie van toepasselijke norm",
+              description:
+                "Identificeer de meubelcategorie en relevante BIS Norm (IS 17631–IS 17636) voor testen en certificering.",
+            },
+            {
+              title: "Producttesten in BIS-erkende laboratoria",
+              description:
+                "Meubels worden getest op sterkte, stabiliteit en duurzaamheid in BIS-goedgekeurde laboratoria. Testrapporten zijn verplicht voor de aanvraag.",
+            },
+            {
+              title: "Indiening van BIS Aanvraag",
+              description:
+                "Fabrikanten dienen een aanvraag in bij BIS met productspecificaties, technische details en testrapporten.",
+            },
+            {
+              title: "Fabrieksinspectie en beoordeling",
+              description:
+                "BIS voert een fabrieksaudit uit om productieprocessen, kwaliteitscontrolesystemen en productieconsistentie te controleren.",
+            },
+            {
+              title: "Verlening van BIS Licentie en ISI Markering toestemming",
+              description:
+                "Na goedkeuring verleent BIS een licentie waarmee de fabrikant de ISI Markering op gecertificeerde meubels mag gebruiken.",
+            },
+            {
+              title: "Nalevingsvereisten na certificering",
+              description:
+                "Regelmatige audits, periodieke testen en naleving van BIS Normen zijn vereist om de certificering te behouden.",
+            },
+          ]}
+        />
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificeringskostenfactoren:
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Productcomplexiteit</li>
-          <li>Aantal modellen</li>
-          <li>Testvereisten</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Opmerking: Professionele advieskosten zijn gescheiden van
-          overheidskosten.
-        </p>
+        <SectionDivider />
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <SectionHeading>
+          Documenten vereist voor BIS Certificering van Meubels
+        </SectionHeading>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tijdlijn voor BIS Certificaat Registratie
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Gemiddelde Tijdlijn:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Testen: 3–6 weken</li>
-          <li>Inspectie: 1–2 weken</li>
-          <li>Licentie Verlening: 2–4 weken</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Totaal: 8–12 weken (ongeveer)
-        </p>
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Bedrijfsregistratie en productiedocumenten</strong> —
+              Bedrijfslicenties, GST-registratie en details van de
+              productiefaciliteit.
+            </>,
+            <>
+              <strong>Technische productspecificaties en tekeningen</strong> —
+              Gedetailleerde ontwerpen, gebruikte materialen en
+              montage-instructies.
+            </>,
+            <>
+              <strong>Testrapporten en kwaliteitscontroledocumenten</strong> —
+              Rapporten van BIS-goedgekeurde laboratoria die naleving van IS
+              Normen aantonen.
+            </>,
+            <>
+              <strong>Fabrieks- en productieprocesdocumenten</strong> —
+              Kwaliteitsmanagementsystemen, processtroom en
+              inspectieprocedures.
+            </>,
+          ]}
+        />
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <SectionDivider />
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Hoe BIS Certificering te Krijgen in India voor Meubelfabrikanten
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Praktische Tips:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kies de juiste IS norm</li>
-          <li>Zorg voor fabrieksbereidheid</li>
-          <li>Houd testrecords bij</li>
-          <li>Vermijd documentatiefouten</li>
-        </ul>
+        <SectionHeading>
+          Testvereisten voor BIS-gecertificeerde Meubels
+        </SectionHeading>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certificaat Online Aanvraag – Praktisch Overzicht
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Online Portaal Uitdagingen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Technische fouten</li>
-          <li>Document upload problemen</li>
-          <li>Normselectie verwarring</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Juiste begeleiding vermindert vertragingen.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Gebruik van BIS Markering & BIS Certificeringsmarkering Na Goedkeuring
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Markeringregels:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Juiste IS referentie</li>
-          <li>Licentienummer</li>
-          <li>Juiste grootte & zichtbaarheid</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Niet-naleving kan leiden tot schorsing.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Uitdagingen in BIS Certificering voor Meubels
-        </h2>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Normen interpreteren</li>
-          <li>Producttestfalen</li>
-          <li>Inspectie niet-conformiteiten</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Rol van BIS Consultants bij Meubelcertificering
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Professionele BIS consultants helpen door:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Juiste normen identificeren</li>
-          <li>Testen & inspectie beheren</li>
-          <li>Goedkeuringstijd verkorten</li>
-          <li>Kostbare afwijzingen vermijden</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Conclusie
-        </h2>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certificering voor Meubels is een hoeksteen van kwaliteit,
-          veiligheid, en juridische naleving in India&apos;s groeiende
-          meubelmarkt. Of u nu een fabrikant, importeur of merkeigenaar bent,
-          het verkrijgen van een BIS Certificaat voor Meubels in India zorgt
-          voor:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Regelgevingsnaleving</li>
-          <li>Consumentenvertrouwen</li>
-          <li>Langetermijnmarktsucces</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Door het BIS Certificeringsproces, Normen, Kosten en
-          Nalevingsvereisten te begrijpen, kunnen bedrijven vol vertrouwen
-          navigeren in het regelgevingslandschap en veiligere, sterkere en
-          betrouwbaardere meubelproducten bouwen voor de Indiase markt.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Veelgestelde Vragen over BIS Licentie
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Is BIS Certificering verplicht voor alle meubelproducten in India?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Nee, BIS Certificering is alleen verplicht voor die meubel-
-              producten die onder gemelde BIS Normen vallen. Echter, zodra een
-              meubelproductcategorie wordt gemeld door het Bureau of Indian
-              Standards, wordt het produceren, importeren, verkopen of
-              distribueren van dat product zonder een geldige BIS Licentie
-              illegaal in India.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Welke meubelproducten vereisen BIS Licentie in plaats van BIS
-              Registratie?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Meubelproducten vallen over het algemeen onder het ISI
-              Certificering- Schema, dat een BIS Licentie vereist, niet BIS
-              Registratie. BIS Registratie (CRS) is voornamelijk van toepassing
-              op elektronica en IT-producten, terwijl meubelproducten testen +
-              fabrieksinspectie + BIS Licentie vereisen.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Kunnen geïmporteerde meubels in India worden verkocht zonder BIS
-              Certificering?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Nee. Geïmporteerde meubelproducten die onder verplichte BIS Normen
-              vallen, moeten BIS Certificering hebben vóór douaneafhandeling.
-              Het importeren van niet-gecertificeerde meubels kan resulteren in:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Douane-inbeslagname</li>
-              <li>Heruitvoer of vernietiging</li>
-              <li>Zware boetes</li>
-            </ul>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Buitenlandse fabrikanten moeten BIS Licentie verkrijgen voordat ze
-              meubels naar India exporteren.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Kunnen buitenlandse meubelfabrikanten BIS Certificering aanvragen?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ja. Buitenlandse fabrikanten kunnen aanvragen onder het
-              Buitenlandse Fabrikanten Certificeringsschema (FMCS). Zij moeten:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>
-                Een Geautoriseerde Indiase Vertegenwoordiger (AIR) aanstellen
-              </li>
-              <li>Voldoen aan Indiase Normen</li>
-              <li>BIS fabrieksinspectie in het buitenland toestaan.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Is BIS Certificering vereist voor handgemaakte of kleinschalige
-              meubelfabrikanten?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ja, als het meubelproduct onder een verplichte BIS norm valt,
-              moeten zelfs MKB&apos;s, startups en kleinschalige eenheden BIS
-              Certificering verkrijgen. Er is geen vrijstelling op basis van
-              productievolume.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Is BIS Certificering vereist voor houten meubels?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ja, houten meubelproducten zoals bedden, stoelen, tafels, bureaus
-              en opslageenheden kunnen BIS Certificering vereisen als ze onder
-              gemelde normen vallen. BIS normen zijn van toepassing op zowel
-              houten als metalen meubels, afhankelijk van producttype en
-              gebruik.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Kan één BIS Licentie meerdere meubelmodellen dekken?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ja, meerdere modellen of varianten kunnen worden gedekt onder één
-              BIS Licentie, mits:
-            </p>
-            <ul className="list-disc ml-6 mb-2 space-y-2 text-gray-600 text-base font-geist">
-              <li>Ze vallen onder dezelfde IS Norm</li>
-              <li>
-                Constructie, materiaal en ontwerpparameters zijn vergelijkbaar
-              </li>
-              <li>BIS keurt de groepering goed tijdens de aanvraag.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Kan BIS Certificering worden overgedragen aan een andere
-              fabrikant?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Nee. BIS Licentie is niet overdraagbaar. Elke fabrikant moet zijn
-              eigen BIS Certificaat verkrijgen, zelfs als het productontwerp
-              identiek is.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Wat is BIS Certificaat?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Het is officieel bewijs van naleving van BIS Normen.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Is BIS Certificering verplicht voor meubels?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Ja, voor meubelproducten die onder gemelde normen vallen.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Hoe BIS Certificering te krijgen in India?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Via testen, inspectie en BIS licentie goedkeuring.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              Wat is BIS Markering?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Een conformiteitsmarkering die BIS goedkeuring toont.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS Certificeringskosten?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Hangt af van producttype, testen en omvang.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              BIS Volledige Vorm?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Bureau of Indian Standards.
-            </p>
-          </div>
+        <div className={TABLE_WRAP}>
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Testgebied
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Doel
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                [
+                  "Sterktetest",
+                  "Verifieert draagvermogen",
+                ],
+                [
+                  "Stabiliteitstest",
+                  "Voorkomt kantelen en instorting",
+                ],
+                [
+                  "Duurzaamheidstest",
+                  "Beoordeelt prestaties bij herhaald gebruik",
+                ],
+                [
+                  "Structurele integriteitstest",
+                  "Evalueert verbindingen, frames en aansluitingen",
+                ],
+                [
+                  "Veiligheidstest",
+                  "Vermindert risico op letsel bij normaal gebruik",
+                ],
+                [
+                  "Functionele prestatietest",
+                  "Bevestigt beoogde functionaliteit en bruikbaarheid",
+                ],
+              ].map(([area, purpose], i) => (
+                <TableRow
+                  key={area}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${i % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {area}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {purpose}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Meubels moeten worden getest in BIS-erkende laboratoria om
+          veiligheids-, prestatie- en duurzaamheidsclaims te valideren.
+        </p>
+
+        <SectionDivider />
+
+        <SectionHeading>
+          ISI Markering voor Meubels: Gebruik en nalevingsvereisten
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Wat de ISI Markering aangeeft</strong> — Bevestigt dat
+              meubels voldoen aan Indiase Normen en zijn gecertificeerd door BIS.
+            </>,
+            <>
+              <strong>Regels voor het aanbrengen van de ISI Markering</strong> —
+              De markering moet zichtbaar, permanent en correct geformatteerd
+              zijn volgens BIS-richtlijnen.
+            </>,
+            <>
+              <strong>Gevolgen van misbruik</strong> — Illegaal gebruik kan
+              leiden tot boetes, licentie-intrekking en juridische stappen onder
+              de BIS-wet van 2016.
+            </>,
+            <>
+              <strong>Hoe kopers kunnen verifiëren</strong> — Consumenten kunnen
+              het licentienummer verifiëren op de officiële website van BIS.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Tijdlijn, geldigheid en verlenging van BIS Certificering
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: Clock,
+              title: "Certificeringstijdlijn voor meubelproducten",
+              description:
+                "Doorgaans 2–3 maanden, afhankelijk van test- en fabrieksinspectieschema&apos;s.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "Geldigheid van BIS Licentie",
+              description:
+                "De licentie is 1–3 jaar geldig en moet vóór het verstrijken worden verlengd.",
+            },
+            {
+              icon: RefreshCw,
+              title: "Verlengingsproces voor BIS Certificering",
+              description:
+                "Verlenging omvat bijgewerkte testrapporten, fabrieksinspecties en bevestiging van naleving.",
+            },
+            {
+              icon: Eye,
+              title: "Toezicht en doorlopende nalevingsvereisten",
+              description:
+                "BIS voert steekproefaudits en testen uit om continue naleving van normen te waarborgen.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Voordelen van BIS-gecertificeerde Meubels
+        </SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <strong>Wettelijke naleving en markttoegang</strong> — Verplicht
+              voor de verkoop van bepaalde meubeltypen in India.
+            </>,
+            <>
+              <strong>Verbeterde productkwaliteit en consumentenvertrouwen</strong>{" "}
+              — BIS Certificering signaleert betrouwbaarheid en veiligheid.
+            </>,
+            <>
+              <strong>Concurrentievoordeel voor fabrikanten</strong> —
+              Gecertificeerde meubels hebben hogere marktgeloofwaardigheid en
+              aanbestedingsgeschiktheid.
+            </>,
+            <>
+              <strong>Geschiktheid voor overheidsaanbestedingen</strong> — Alleen
+              BIS-gecertificeerde producten kunnen worden geleverd aan
+              overheids- of institutionele kopers.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Straffen bij niet-naleving van BIS Meubelregelgeving
+        </SectionHeading>
+
+        <CheckPointsList
+          variant="warning"
+          points={[
+            <>
+              <strong>Productie of verkoop van niet-gecertificeerde meubels</strong>{" "}
+              — Schendt de QCO, wat leidt tot boetes en inbeslagname van
+              producten.
+            </>,
+            <>
+              <strong>Importbeperkingen voor niet-conforme meubels</strong> —
+              Niet-gecertificeerde importen kunnen bij de douane worden
+              geblokkeerd.
+            </>,
+            <>
+              <strong>Straffen onder de BIS-wet van 2016</strong> — Omvat
+              geldboetes, gevangenisstraf en verbod op verkoop van producten.
+            </>,
+            <>
+              <strong>Bedrijfsrisico&apos;s bij niet-naleving</strong> — Verlies
+              van consumentenvertrouwen, juridische geschillen en beperkte
+              markttoegang.
+            </>,
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Uitdagingen bij het verkrijgen van BIS Certificering voor Meubels
+        </SectionHeading>
+
+        <NumberedSteps
+          showTimeline={false}
+          steps={[
+            {
+              title: "Identificatie van de juiste Indiase Norm",
+              description:
+                "Fabrikanten moeten ervoor zorgen dat hun product overeenkomt met de toepasselijke IS 17631–IS 17636 norm.",
+            },
+            {
+              title: "Beheer van test- en documentatievereisten",
+              description:
+                "Correcte laboratoriumtesten en documentatie zijn verplicht voor goedkeuring.",
+            },
+            {
+              title: "Aanpakken van fabrieksaudit-opmerkingen",
+              description:
+                "Niet-naleving tijdens audits kan certificering vertragen.",
+            },
+            {
+              title: "Behoud van continue naleving na certificering",
+              description:
+                "Doorlopende kwaliteitsbewaking en naleving van BIS Normen zijn vereist om boetes te vermijden.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Hoe Sun Certifications India kan helpen
+        </SectionHeading>
+
+        <InfoCardGrid
+          items={[
+            {
+              icon: FileText,
+              title: "Ondersteuning bij aanvraag en documentatie",
+              description:
+                "Begeleiding bij het indienen van een volledige en correcte BIS Aanvraag.",
+            },
+            {
+              icon: FlaskConical,
+              title: "Ondersteuning bij producttesten",
+              description:
+                "Helpt bij coördinatie met BIS-goedgekeurde laboratoria.",
+            },
+            {
+              icon: ClipboardCheck,
+              title: "Auditvoorbereiding en nalevingsbegeleiding",
+              description:
+                "Zorgt ervoor dat fabrieksprocessen voldoen aan BIS-vereisten vóór inspectie.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "Nalevingsbeheer na licentieverlening",
+              description:
+                "Adviseert over administratie, toezichtsaudits en normupdates.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>
+          Veelgestelde Vragen over BIS Certificering voor Meubels
+        </SectionHeading>
+
+        <FaqAccordion
+          items={[
+            {
+              question:
+                "Is BIS Certificering verplicht voor alle meubelproducten?",
+              answer:
+                "Nee. Alleen meubels die onder de Furniture QCO 2025 zijn opgenomen, vereisen verplichte BIS Certificering.",
+            },
+            {
+              question:
+                "Kunnen geïmporteerde meubels worden verkocht zonder BIS Certificering?",
+              answer:
+                "Nee. Meubels onder de verplichte categorieën mogen in India niet worden verkocht zonder BIS-goedkeuring.",
+            },
+            {
+              question: "Hoe lang duurt meubelcertificering?",
+              answer:
+                "Doorgaans 2–3 maanden, afhankelijk van testen en inspecties.",
+            },
+            {
+              question:
+                "Wat is het verschil tussen BIS Certificering en ISI Markering?",
+              answer:
+                "BIS Certificering is het goedkeuringsproces; de ISI Markering is het certificeringslabel dat op meubels wordt aangebracht.",
+            },
+            {
+              question:
+                "Welke BIS Normen zijn van toepassing op meubels?",
+              answer:
+                "IS 17631–IS 17636 dekken stoelen, krukken, werkstoelen, tafels, bedden, stapelbedden en opslageenheden.",
+            },
+          ]}
+        />
+
+        <SectionDivider />
+
+        <SectionHeading>Gerelateerde Bronnen</SectionHeading>
+
+        <CheckPointsList
+          points={[
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                BIS ISI Certificering
+              </a>
+            </>,
+            <>
+              <a
+                href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+                className="text-blue-600 hover:underline"
+              >
+                BIS Certificaat voor Buitenlandse Fabrikanten
+              </a>
+            </>,
+          ]}
+        />
 
         <ManyUsersAlsoReadDutch />
 
