@@ -15,7 +15,7 @@ import { Menu, X, ChevronDown, ChevronUp, LogIn, ShieldCheck, User, Briefcase } 
 
 const STYLES = {
   button:
-    "text-[15px] uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors px-3 h-9",
+    "text-[16px] uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors px-3 h-9",
   navContentItem:
     "text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center",
   mobileButton:
@@ -415,7 +415,7 @@ const Navbar = () => {
             <div className="relative ml-2" ref={loginDropdownRef}>
               <Button
                 variant="outline"
-                className="flex items-center gap-1.5 text-[13px] font-roboto font-medium uppercase tracking-wide border-neutral-300 hover:bg-neutral-100 transition-colors px-3 py-2 h-9"
+                className="flex items-center gap-2 text-[14px] font-roboto font-medium uppercase tracking-wide border-neutral-300 hover:bg-neutral-100 transition-colors px-3 py-2 h-9"
                 onClick={() => setLoginOpen(!loginOpen)}
               >
                 <LogIn className="w-4 h-4" />
