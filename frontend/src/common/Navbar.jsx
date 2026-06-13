@@ -15,7 +15,7 @@ import { Menu, X, ChevronDown, ChevronUp, LogIn, ShieldCheck, User, Briefcase } 
 
 const STYLES = {
   button:
-    "text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors",
+    "text-[16px] uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors px-3 h-9",
   navContentItem:
     "text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center",
   mobileButton:
@@ -327,7 +327,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center justify-end">
           {/* Home, About & Services */}
           <NavigationMenu>
-              <NavigationMenuList>
+              <NavigationMenuList className="space-x-0">
                 {/* Home */}
                 <NavigationMenuItem>
                   <Link to="/">
@@ -363,7 +363,7 @@ const Navbar = () => {
 
             {/* Updates */}
             <NavigationMenu>
-              <NavigationMenuList>
+              <NavigationMenuList className="space-x-0">
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={STYLES.button}>
                     Updates
@@ -377,7 +377,7 @@ const Navbar = () => {
 
             {/* Gallery */}
             <NavigationMenu>
-              <NavigationMenuList>
+              <NavigationMenuList className="space-x-0">
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={STYLES.button}>
                     Gallery
@@ -391,7 +391,7 @@ const Navbar = () => {
 
             {/* FAQs */}
             <NavigationMenu>
-              <NavigationMenuList>
+              <NavigationMenuList className="space-x-0">
                 <NavigationMenuItem>
                   <Link to="/faqs">
                     <Button variant="link" className={STYLES.button}>
@@ -412,10 +412,10 @@ const Navbar = () => {
             </NavigationMenu>
 
             {/* Login Dropdown */}
-            <div className="relative ml-3" ref={loginDropdownRef}>
+            <div className="relative ml-2" ref={loginDropdownRef}>
               <Button
                 variant="outline"
-                className="flex items-center gap-2 text-sm font-roboto font-medium uppercase tracking-wide border-neutral-300 hover:bg-neutral-100 transition-colors px-4 py-2"
+                className="flex items-center gap-2 text-[14px] font-roboto font-medium uppercase tracking-wide border-neutral-300 hover:bg-neutral-100 transition-colors px-3 py-2 h-9"
                 onClick={() => setLoginOpen(!loginOpen)}
               >
                 <LogIn className="w-4 h-4" />
