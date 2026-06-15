@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnitJapanese = () => {
   return (
     <div className="relative w-full">
@@ -109,7 +115,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    テーブルと机のBIS認証 – IS 17633:2022
+                    テーブルと机のBIS認証（IS 17633:2022）
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -141,573 +147,677 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          テーブルと机のBIS認証 – IS 17633:2022 BIS認証の完全ガイド
+          テーブルと机のBIS認証（IS 17633:2022） – ISIマーク認証の完全ガイド
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="テーブルと机のBISライセンス"
-            alt="テーブルと机のBIS認証 - IS 17633:2022 BIS認証"
+            alt="テーブルと机のBIS認証 - IS 17633:2022 ISIマークガイド"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          テーブルと机のBIS認証は、インドのすべてのテーブルと机の製造業者、輸入業者、販売業者に義務付けられています。インド規格IS 17633:2022 – テーブルと机：安全性要件に基づき、これらの家具はインド市場で合法的に販売される前に、インド標準局（BIS）によってテストおよび認証される必要があります。
+          テーブルと机は、オフィス、教育機関、商業施設、政府機関、住宅空間で
+          最も広く使用されている家具製品の一つです。これらの製品は、利用者の
+          安全性、安定性、耐久性を確保しながら日常的な使用に耐えることが
+          求められるため、認められた品質基準への準拠が製造業者と輸入業者に
+          とってますます重要になっています。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          テーブルと机は、家庭、オフィス、学校、大学、商業スペース、ホスピタリティ環境、産業職場の重要な構成要素です。重量、衝撃、継続的な使用を支えることが多いため、構造的な強度と安全性が重要です。消費者の保護と製品の信頼性を確保するため、BISは必須認証を義務付けています。
+          インドでは、IS 17633:2022の対象となるテーブルと机は、インド標準局
+          （BIS）が定める該当する品質および安全性要件に準拠することが
+          求められます。これらの要件を満たした製造業者は、BISライセンスを
+          取得し、製品にISIマークを使用して、該当するインド規格への適合性を
+          示すことができます。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          この包括的なガイドでは、IS 17633:2022、BIS登録プロセス、テスト、必要な書類、費用、タイムライン、罰則、製造業者と輸入業者へのメリットについて説明します。
+          認証プロセスでは、強度、安定性、耐久性、工作、寸法、全体的な安全性
+          など、製品性能のさまざまな側面が評価されます。準拠は、企業が規制
+          要件を満たすのに役立つだけでなく、製品の信頼性と市場での受け入れを
+          向上させます。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          この包括的なガイドでは、適用範囲、認証要件、テストパラメータ、書類、
+          メリット、認証プロセスを含め、IS 17633:2022に基づくテーブルと机の
+          BIS認証について、製造業者、輸入業者、家具ブランド、調達担当者が
+          知っておくべきすべてを説明します。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS認証とは何ですか？
+          テーブルと机のBIS認証の主なハイライト
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証は、インドの国家標準機関であるインド標準局が管理する規制遵守プロセスです。
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  項目
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  詳細
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["製品", "テーブルと机"],
+                ["適用規格", "IS 17633:2022"],
+                ["認証タイプ", "BIS製品認証"],
+                ["適用マーク", "ISIマーク"],
+                ["認証スキーム", "スキーム-I（ISIマーク認証）"],
+                ["規制当局", "インド標準局（BIS）"],
+                ["適用分野", "家具"],
+                [
+                  "対象申請者",
+                  "インドの製造業者および外国の製造業者",
+                ],
+                [
+                  "準拠要件",
+                  "該当する家具QCO（品質管理命令）に基づき必須",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "認証スキーム" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        スキーム-I（ISIマーク認証）
+                      </a>
+                    ) : particular === "準拠要件" ? (
+                      <>
+                        該当する{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>家具QCO（品質管理命令）</strong>
+                        </a>
+                        に基づき必須
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS認証の意味
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証は、製品がインド規格によって設定された安全性、品質、性能、耐久性の要件を満たしていることを確認します。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS認証のメリット
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>消費者の安全性を確保</li>
-          <li>高品質な製造をサポート</li>
-          <li>製品故障のリスクを低減</li>
-          <li>市場での受け入れを改善</li>
-          <li>BIS品質管理命令（QCO）に基づく法的要件</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          承認されると、製品にはライセンス番号とともにBISマーク（ISIマーク）が表示されます。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          テーブルと机に適用されるインド規格は？ – IS 17633:2022
+          テーブルと机のBIS認証とは何ですか？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          適用されるBIS規格は次のとおりです：
+          テーブルと机のBIS認証は、インド標準局（BIS）製品認証スキームに
+          基づいて実施される適合性評価プロセスです。この認証は、製品が
+          IS 17633:2022に規定された要件に準拠していることを確認します。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – テーブルと机：安全性要件
+          認証が成功すると、製造業者は製品にISIマークを使用することが許可され、
+          該当するインド規格への準拠を示します。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          この規格は、住宅、商業、ホスピタリティ、機関環境で使用されるあらゆる種類のテーブルと机の性能、構造安全性、耐久性要件を定義しています。
+          この認証は、インド市場で供給されるテーブルと机が、以下に関する確立
+          された要件を満たすことを確保することを目的としています：
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          対象製品
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>オフィスデスク</li>
-          <li>コンピューターデスク</li>
-          <li>学習テーブル</li>
-          <li>ダイニングテーブル</li>
-          <li>コーヒーテーブル</li>
-          <li>ワークデスク</li>
-          <li>トレーニングデスク</li>
-          <li>学校/大学の机</li>
-          <li>教師用テーブル</li>
-          <li>モジュラー作業台テーブル</li>
-          <li>書き物テーブル</li>
-          <li>会議/会議テーブル</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17633:2022の主要安全性パラメータ
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>構造の安定性</li>
-          <li>耐荷重能力</li>
-          <li>衝撃抵抗性</li>
-          <li>水平/垂直力性能</li>
-          <li>表面仕上げ品質</li>
-          <li>縁の安全性</li>
-          <li>繰り返し使用下での耐久性</li>
-          <li>材料の安全性</li>
+        <ul className={LIST_CLASS}>
+          <li>通常使用時の構造的な強度と安定性</li>
+          <li>耐久性、利用者の安全性、材料の工作</li>
+          <li>IS 17633:2022に基づく完全な性能要件</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インドで販売されるすべてのテーブルまたは机は、テーブルと机のBIS登録を通じてこれらのパラメータに準拠する必要があります。
+          購入者および調達機関にとって、ISIマークは、家具が認められた品質と
+          安全性のベンチマークに対して評価されたことの保証となります。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          テーブルと机のBIS認証が必須である理由
+          テーブルと机に関するIS 17633:2022の概要
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          テーブルと机は、家庭、オフィス、学校、公共エリアで見られる高使用率の家具です。構造的な故障は、以下のような事故を引き起こす可能性があります：
+          IS 17633:2022は、座った状態および立った状態での用途における成人
+          利用者向けのテーブルと机の性能および安全性要件を規定するインド規格
+          です。
         </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>重量による崩壊</li>
-          <li>鋭い縁による怪我</li>
-          <li>使用中の不安定性</li>
-          <li>接合部の破損</li>
-          <li>表面の剥離</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          これらの危険を避けるため、BIS認証は以下を確保します：
+          この規格は次の両方をカバーしています：
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>安全な設計と構造</li>
-          <li>構造負荷要件への準拠</li>
-          <li>耐久性のある性能</li>
-          <li>転倒と崩壊の防止</li>
-          <li>高品質な材料の選択</li>
-          <li>統一された市場基準</li>
+        <ul className={LIST_CLASS}>
+          <li>完全に製造された（既製の）テーブルと机</li>
+          <li>組み立て式（RTA）ユニット — 完全に組み立てた後にテスト</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          テーブルと机のBISライセンスなしにテーブルと机を販売することは、インドでは違法です。
+          この規格の目的は、家具が想定される耐用年数を通じて安定し、耐久性が
+          あり、安全であることを確保するのに役立つ最低限の性能および安全性
+          要件を確立することです。
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>
+          IS 17633:2022でカバーされる主要分野
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          この規格は、以下を含むいくつかの重要な性能特性に焦点を当てて
+          います：
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>強度要件 —</strong> テーブルと机は、故障や過度の変形なく、
+            通常使用時に予想される負荷に耐えなければなりません。
+          </li>
+          <li>
+            <strong>安定性要件 —</strong> 家具は使用中に安定を保ち、予見可能な
+            負荷条件下で転倒に耐えなければなりません。
+          </li>
+          <li>
+            <strong>耐久性要件 —</strong> 製品は、長期間にわたる繰り返し使用後も
+            性能と構造的完全性を維持しなければなりません。
+          </li>
+          <li>
+            <strong>安全性要件 —</strong> 設計と構造は、不安定性、鋭い縁、
+            不安全な造り、または構造的故障によるリスクを最小限に抑えなければ
+            なりません。
+          </li>
+          <li>
+            <strong>工作と構造品質 —</strong> 工作、組み立て、接合部、留め具、
+            全体的な造りが、信頼できる長期性能のために評価されます。
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          テーブルと机のBIS認証プロセス（IS 17633:2022）
+          インドでテーブルと机のBIS認証は必須ですか？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証プロセスは、製品テストと工場検査を含むISIスキーム（適合性評価スキーム-I）に従います。
+          はい。該当する家具品質管理命令（QCO）の対象となるテーブルと机は、
+          インド市場で製造、輸入、販売、流通、または提供される前に、関連する
+          インド規格に準拠し、BIS認証を取得することが求められます。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ1 – 製品カテゴリと規格の特定
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          必須認証の目的は以下のとおりです：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>家具業界全体でより高い製品品質を確保する</li>
+          <li>検証済みの規格を通じて消費者の安全を保護する</li>
+          <li>基準以下の家具が市場に出回るのを防ぐ</li>
+          <li>標準化と統一された品質ベンチマークを促進する</li>
+          <li>ISIマーク認証製品に対する購入者の信頼を構築する</li>
+        </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          テーブル/机がIS 17633:2022に該当することを確認します。バリエーションと材料の数を特定します。
+          該当する規制の対象となる製造業者は、BISライセンスを取得し、BIS要件に
+          従ってISIマークを使用する必要があります。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ2 – BIS申請提出（オンライン提出）
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS Manakオンラインポータルで申請を記入します：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製造業者の詳細</li>
-          <li>工場住所</li>
-          <li>製品仕様</li>
-          <li>商標の詳細</li>
-          <li>品質管理システム</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ3 – BIS認証費用の支払い
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">含まれるもの：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>申請料</li>
-          <li>処理料</li>
-          <li>製品テスト料</li>
-          <li>工場検査料</li>
-          <li>マーキング料</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ4 – BIS認定実験室でのサンプルテスト
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          製品はIS 17633:2022に規定されている完全なテストを受ける必要があります。
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          実施されるテスト
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>安定性テスト</li>
-          <li>強度テスト（静的負荷）</li>
-          <li>耐久性テスト（繰り返し負荷）</li>
-          <li>衝撃テスト</li>
-          <li>たわみ測定</li>
-          <li>縁と表面の安全性テスト</li>
-          <li>作業スペース負荷テスト</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          実験室はテストレポートを直接BISにアップロードします。
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            必須BIS認証の対象となる家具製品もご確認ください —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>家具のBIS認証</strong>
+          </a>
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ5 – BIS工場検査
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS職員が製造施設を訪問して以下を確認します：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>品質管理体制</li>
-          <li>社内テスト能力</li>
-          <li>原材料管理</li>
-          <li>生産ラインと機械</li>
-          <li>計器の較正</li>
-          <li>STI（テストと検査スキーム）への準拠</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ6 – BISライセンスの付与
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">BISが発行するもの：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS認証</li>
-          <li>ISIマーク承認</li>
-          <li>固有のCMLライセンス番号</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          これにより、製造業者は合法的にテーブル/机にマークを付けてインドで販売できます。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ステップ7 – ライセンス後のコンプライアンス
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          製造業者は以下を行う必要があります：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>STIに従って記録を維持</li>
-          <li>ISIマーキングを正しく使用</li>
-          <li>定期的なBIS検査を許可</li>
-          <li>1〜2年ごとにライセンスを更新</li>
-        </ul>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          テーブルと机のBISライセンスの範囲
+          IS 17633:2022でカバーされる製品範囲
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> この規格は、座った位置および/または立った位置で使用される、成人が使用するテーブルと机の性能と安全性、すなわち強度、安定性、耐久性に関する要件をカバーしています。
+          IS 17633:2022の範囲は、住宅、商業、機関、職場環境全体にわたって成人
+          利用者向けに設計されたさまざまなカテゴリのテーブルと机に及びます。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          一般的にカバーされる製品の例は以下のとおりです：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>オフィス、学習、コンピューター用デスク</li>
+          <li>ワークステーションと多目的デスク</li>
+          <li>会議用テーブル</li>
+          <li>機関用および実験室用テーブル</li>
+          <li>コワーキングおよび商業用家具</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          製造業者は、自社製品がIS 17633:2022の範囲に該当するかどうかを判断
+          するために、製品仕様と用途を慎重に確認する必要があります。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17633:2022に基づく主要な技術要件
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS認証を取得するには、テーブルと机が規格で規定されたさまざまな
+          性能および安全性要件を満たす必要があります。
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>構造的完全性 —</strong> 製品は規定された負荷の下で性能を
+            発揮しなければならず、接合部と支持構造はテスト中に安定を保ちます。
+          </li>
+          <li>
+            <strong>耐荷重性能 —</strong> テーブルと机は、許容できない変形、
+            損傷、または故障なく、指定された負荷を支えなければなりません。
+          </li>
+          <li>
+            <strong>安定性性能 —</strong> 家具は使用中に安定を保ち、怪我や
+            物的損害を引き起こす可能性のある転倒リスクを軽減しなければ
+            なりません。
+          </li>
+          <li>
+            <strong>耐久性性能 —</strong> 製品は、許容可能な性能を維持しながら、
+            繰り返しの使用サイクルに耐えなければなりません。
+          </li>
+          <li>
+            <strong>材料と工作 —</strong> 材料、仕上げ、組み立て方法は、一貫した
+            生産のための品質管理を満たさなければなりません。
+          </li>
+          <li>
+            <strong>安全性への配慮 —</strong> 設計は、消費者および機関購入者に
+            とっての家具使用による危険を最小限に抑えなければなりません。
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          家具製造業者にとってBIS認証が重要な理由
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          インドの家具市場はますます品質を重視するようになっています。政府
+          部門、教育機関、企業の購入者、大規模な調達機関は、認められた規格に
+          準拠した製品を好むことが多くあります。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS認証の取得は、製造業者が以下を行うのに役立ちます：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>該当するインド規格への準拠を証明する</li>
+          <li>製品の信頼性とブランドの評判を高める</li>
+          <li>顧客および機関購入者の信頼を獲得する</li>
+          <li>政府および企業の調達における受け入れを改善する</li>
+          <li>社内の品質管理慣行を強化する</li>
+          <li>進化する規制要件に先んじる</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          長期的な成長を目指す製造業者にとって、BIS認証は、準拠要件と戦略的な
+          事業上の利点の両方として見なされることがよくあります。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17633:2022に基づくテーブルと机のテスト要件
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          製造業者がBIS認証を取得する前に、製品サンプルはBIS認定実験室での
+          テストを通じて、IS 17633:2022の該当する要件に対して評価される必要が
+          あります。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> この規格は、完全に製造/製作されたテーブルと机に適用されます。組み立て済みユニットにも適用されます。その場合、この規格の要件は組み立て済みユニットに適用されます。
+          テストの目的は、家具が安全性、安定性、強度、耐久性、全体的な性能に
+          関する規定された基準を満たしていることを検証することです。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-3">
+          正確なテストパラメータは製品設計や認証要件によって異なる場合が
+          ありますが、製造業者は一般的に以下の特性について評価されます：
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>設計と工作 —</strong> 構造品質、組み立て、仕上げ、全体的な
+            製品の完全性が、安全な長期使用のために検査されます。
+          </li>
+          <li>
+            <strong>寸法検証 —</strong> 重要な寸法が規格および承認された製品
+            仕様に対して確認されます。
+          </li>
+          <li>
+            <strong>安定性テスト —</strong> 製品が通常使用時に安定を保つことを
+            確認し、転倒や構造的な弱点を特定します。
+          </li>
+          <li>
+            <strong>静的負荷テスト —</strong> 故障、過度の変形、または損傷なく
+            耐荷重能力を検証します。
+          </li>
+          <li>
+            <strong>強度テスト —</strong> 通常使用時の運用ストレス下で、フレーム、
+            接合部、支持部を評価します。
+          </li>
+          <li>
+            <strong>耐久性評価 —</strong> 繰り返しの使用サイクル後の性能維持を
+            確認します。
+          </li>
+          <li>
+            <strong>安全性評価 —</strong> 不安定性、欠陥、または不安全な設計
+            特性による回避可能なリスクを排除します。
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          テーブルと机のBIS認証プロセス
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022に基づくBIS認証を求める製造業者は、インド標準局が
+          確立した体系的な認証プロセスに従う必要があります。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          具体的な要件は申請者のタイプや製造場所によって異なる場合があります
+          が、一般的なプロセスは同様です。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          ステップ1：製品範囲の評価
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          最初のステップでは、製品がIS 17633:2022および該当する品質管理命令の
+          範囲に該当するかどうかを判断します。通常、認証プロセスを開始する前に、
+          製品仕様、用途、材料、構造に関する技術的レビューが実施されます。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          ステップ2：書類の準備
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          製造業者は、会社情報、製造詳細、製品仕様、品質管理手順、関連する
+          技術記録を含む必要な書類を準備します。この段階での不備は認証を遅らせる
+          可能性があるため、適切な書類作成が極めて重要です。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          ステップ3：製品テスト
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          製品サンプルはBIS認定実験室でテストされ、IS 17633:2022の要件への
+          準拠が検証されます。テストレポートは、認証申請を裏付ける主要な技術
+          書類の一つとして役立ちます。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          ステップ4：申請の提出
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS申請は、関連書類、テストレポート、製造情報、品質管理記録とともに
+          提出されます。申請は、完全性と技術的準拠についてBISによってレビュー
+          されます。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          ステップ5：工場評価
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BISは以下を評価するために工場検査を実施する場合があります：
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>製造インフラと生産能力</li>
+          <li>品質管理システムと社内テスト施設</li>
+          <li>原材料管理と製品トレーサビリティの仕組み</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          目的は、製造業者が準拠製品を一貫して生産する能力を検証することです。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          ステップ6：評価とレビュー
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BISは、認証決定を下す前に、申請、検査結果、実験室テストレポートを
+          レビューします。レビュープロセス中に提起された所見は、申請者が
+          対処する必要があります。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          ステップ7：BISライセンスの付与
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          すべての要件が正常に完了すると、BISはライセンスを付与し、製造業者が
+          認証済みのテーブルと机にISIマークを使用することを許可します。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          インドの製造業者向けBIS認証
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          インドの製造業者は、一般的にBISが規定する国内認証手順に基づいて
+          申請します。プロセスには通常、以下が含まれます：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>BIS認定実験室での製品テスト</li>
+          <li>関連書類を添えた申請の提出</li>
+          <li>BISによる工場検査と技術的レビュー</li>
+          <li>BISライセンスの付与とISIマーク使用の許可</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          認証を取得した後、製造業者はBIS要件への準拠を継続し、ライセンス期間中
+          一貫した製品品質を維持する必要があります。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          外国の製造業者向けBIS認証
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          テーブルと机をインドに輸出しようとする外国の製造業者も、該当する
+          品質管理命令の対象となる製品を供給する前にBIS認証を取得する必要が
+          あります。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          認証プロセスには一般的に以下が含まれます：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>権限を有するインド代表者（AIR）の任命</li>
+          <li>海外での製品テストと工場評価</li>
+          <li>書類レビューとBIS認証の承認</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          外国の製造業者は、認証の有効性を維持するために、BIS要件への継続的な
+          準拠を確保する必要があります。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           テーブルと机のBIS認証に必要な書類
         </h2>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          製造書類
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>工場ライセンス</li>
-          <li>機械リスト</li>
-          <li>テスト機器リスト</li>
-          <li>較正証明書</li>
-          <li>工場レイアウト</li>
-          <li>プロセスフロー図</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          書類要件は、製造業者と認証ルートによって異なる場合があります。
+          ただし、認証プロセス中に以下の書類が一般的に必要となります。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>事業および法的書類</h3>
+        <ul className={LIST_CLASS}>
+          <li>会社登録、製造ライセンス、GST（該当する場合）</li>
+          <li>権限を有する署名者の詳細とID証明</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          技術書類
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>テーブル/机の図面</li>
-          <li>材料表</li>
-          <li>製品仕様</li>
-          <li>社内品質テストレポート</li>
-          <li>製品の写真/動画</li>
+        <h3 className={SUB_HEADING_CLASS}>製造情報</h3>
+        <ul className={LIST_CLASS}>
+          <li>プロセスフロー図、工場レイアウト、機械の詳細</li>
+          <li>生産インフラと能力の記録</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          法的書類
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>承認された署名者のID証明</li>
-          <li>住所証明</li>
-          <li>ブランド承認書</li>
-          <li>商標登録証明書</li>
+        <h3 className={SUB_HEADING_CLASS}>製品情報</h3>
+        <ul className={LIST_CLASS}>
+          <li>製品仕様、技術図面、カタログ</li>
+          <li>部品表と材料/部品の詳細</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS申請書類
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>記入済み申請書</li>
-          <li>製造業者の約束書</li>
-          <li>テスト依頼書</li>
-          <li>承認書</li>
+        <h3 className={SUB_HEADING_CLASS}>品質管理書類</h3>
+        <ul className={LIST_CLASS}>
+          <li>社内テスト、検査、QC手順</li>
+          <li>品質管理記録と機器の較正レポート</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>認証書類</h3>
+        <ul className={LIST_CLASS}>
+          <li>実験室テストレポートと記入済みのBIS申請書</li>
+          <li>宣言書、約束書、その他BISが規定する書類</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          完全な書類により、より迅速な承認が保証されます。
+          製造業者は、提出前にすべての書類が正確、完全、かつ一貫していることを
+          確保する必要があります。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          IS 17633:2022に基づくテスト要件
+          BIS認証中の一般的な課題
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          テストは強度、安定性、耐久性、安全性を評価します。
+          認証プロセスは適切に管理されれば簡単ですが、製造業者はいくつかの課題に
+          直面することがよくあります。
         </p>
 
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
-          <Table className="min-w-full border-collapse">
-            <TableHeader>
-              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  条項
-                </TableHead>
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  要件
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  設計と工作
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  安定性テスト
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  指定負荷
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  時折の重い負荷用
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  水平静的力下での強度
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  一般
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  ガラステーブルトップの垂直衝撃テスト
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  その他すべてのテーブルトップの垂直衝撃テスト
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  テーブルトップのたわみ
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  落下テスト
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </div>
-
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          テストはBIS承認の実験室でのみ実施する必要があります。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          一般的な課題と回避方法
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. 負荷または耐久性テストに失敗する製品</strong>
-            <br />
-            解決策：接合部を強化し、BIS準拠材料を使用し、補強を追加します。
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. 不完全な書類</strong>
-            <br />
-            解決策：すべての法的、技術的、製造書類を事前に準備します。
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. 適切なテスト機器を備えていない工場</strong>
-            <br />
-            解決策：必要な計器を設置し、BISガイドラインに従って較正を維持します。
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. 誤ったラベリング</strong>
-            <br />
-            解決策：ISIマーキングがBISルールに正確に従うことを確認します。
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. 製品モデルの誤分類</strong>
-            <br />
-            解決策：バリエーションを正しく分類するために専門的なガイダンスを得ます。
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          テーブルと机のBIS認証のメリット
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドでの販売の法的承認</li>
-          <li>顧客の信頼の向上</li>
-          <li>製品の耐久性の向上</li>
-          <li>大手小売業者とeコマースプラットフォームへのアクセス</li>
-          <li>製品責任リスクの低減</li>
-          <li>ブランドの信頼性の向上</li>
-          <li>政府QCOへの準拠</li>
-          <li>競争力のある市場優位性</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>技術的解釈 —</strong> IS 17633:2022の要件を特定の製品設計に
+            対応付けることは、専門的なガイダンスなしでは難しい場合があります。
+          </li>
+          <li>
+            <strong>テストの失敗 —</strong> 弱い接合部、不十分な安定性、または
+            材料の問題は、実験室テストの不合格につながることがよくあります。
+          </li>
+          <li>
+            <strong>書類の不備 —</strong> 不完全または不一致の記録は、申請の
+            遅延の頻繁な原因です。
+          </li>
+          <li>
+            <strong>工場の準拠 —</strong> QCシステム、トレーサビリティ、または
+            生産管理は、ライセンス付与前にアップグレードが必要な場合が
+            あります。
+          </li>
+          <li>
+            <strong>規制の調整 —</strong> 実験室テスト、検査、BISのフォロー
+            アップを調整するには、体系的なサポートなしでは時間がかかります。
+          </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          非準拠に対する罰則
+          専門的なBIS認証支援のメリット
         </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          経験豊富なBISコンサルタントと協力することで、製造業者は費用のかかる
+          遅延を回避し、認証の道のりを合理化することができます。
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS認証なしでテーブル/机を販売または配布すると、以下が発生する可能性があります：
+          専門的なサポートには通常、以下が含まれます：
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>製品の差し押さえ</li>
-          <li>多額の罰金</li>
-          <li>刑事訴追</li>
-          <li>輸入禁止</li>
-          <li>事業閉鎖命令</li>
-          <li>ライセンスの取り消し</li>
+        <ul className={LIST_CLASS}>
+          <li>製品範囲のレビューと規格の解釈</li>
+          <li>書類の準備と申請の提出</li>
+          <li>実験室テストと工場検査の調整</li>
+          <li>継続的な準拠と認証後のサポート</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インド標準局法2016は、厳格な罰則を執行します。
+          これにより、製造業者は規制要件が効率的に対処されることを確保しながら、
+          生産に集中することができます。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          テーブルと机のBIS認証が必要なのは誰ですか？
+          Sun Certifications Indiaを選ぶ理由
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          この認証は以下に必須です：
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications Indiaは、インド全土で認証および承認要件に関して
+          製造業者、輸入業者、輸出業者、企業を支援する規制コンプライアンス
+          コンサルタント会社です。
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドの製造業者</li>
-          <li>外国の製造業者</li>
-          <li>輸入業者</li>
-          <li>貿易業者/ブランド所有者</li>
-          <li>OEM/ODMサプライヤー</li>
-          <li>家具販売業者</li>
-          <li>eコマース販売業者</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          当社の専門家は、IS 17633:2022に基づくテーブルと机のBIS認証について
+          エンドツーエンドのサポートを提供します。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>当社のサービス内容</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>製品適用性評価とBISコンプライアンスコンサルティング</li>
+          <li>書類サポートと申請管理</li>
+          <li>テスト調整と工場検査支援</li>
+          <li>規制当局とのコミュニケーションと認証後の準拠サポート</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          各工場は別々のBISライセンスを取得する必要があります。
+          当社の目標は、遅延とコンプライアンスの課題を最小限に抑えながら、企業が
+          認証プロセスを効率的に進められるよう支援することです。
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS認証コンサルティングで私たちを選ぶ理由
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          エンドツーエンドのサポートを提供します：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>規格の解釈（IS 17633:2022）</li>
-          <li>製品分類</li>
-          <li>書類作成</li>
-          <li>テスト調整</li>
-          <li>BISポータル提出</li>
-          <li>工場検査サポート</li>
-          <li>BISとの継続的なフォローアップ</li>
-          <li>ライセンス承認</li>
-          <li>更新とコンプライアンス管理</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          私たちの専門知識により、迅速で、問題なく、エラーのない認証が保証されます。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -715,14 +825,24 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17633:2022に基づくテーブルと机のBIS認証は、製品の安全性、性能、耐久性、国家規格への準拠を確保する必須の適合要件です。製造業者と輸入業者は、ISIマークを取得するために、製品テスト、工場検査を受け、すべてのBIS書類とラベリングルールを満たす必要があります。
+          IS 17633:2022に基づくテーブルと机のBIS認証は、インド市場で準拠した
+          家具製品を供給しようとする製造業者にとって重要な要件です。この認証は、
+          テーブルと机が安全性、安定性、耐久性、強度、品質に関する確立された
+          規格を満たすことを確保するのに役立ちます。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          専門家の支援により、認証プロセス全体がスムーズで迅速になり、BIS規制に完全に準拠します。
+          BIS認証を取得しISIマークを使用することで、製造業者はインド規格への
+          準拠を示し、顧客の信頼を向上させ、市場での地位を強化し、長期的な
+          事業成長を支えることができます。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022に基づくテーブルと机のBIS認証の取得を計画している場合、
+          Sun Certifications Indiaはエンドツーエンドのコンプライアンスサポートで
+          支援し、認証プロセスを効率的かつ確実に進めるお手伝いをします。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -732,87 +852,103 @@ const MainContentLeft = () => {
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. テーブルと机のBIS認証は必須ですか？
-              </strong>
+              <strong>1. IS 17633:2022とは何ですか？</strong>
               <br />
-              はい。IS 17633:2022に基づき、すべてのテーブルと机はインドで販売される前にBIS認証を受ける必要があります。
+              IS 17633:2022は、座った状態および立った状態での用途における成人
+              利用者向けのテーブルと机に関する最低限の性能、安定性、耐久性、
+              安全性要件を定める、インド標準局（BIS）が発行したインド規格です。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. 認証に必要なテストは何ですか？</strong>
+              <strong>2. テーブルと机にBIS認証は必須ですか？</strong>
               <br />
-              必須テストには、安定性、強度、耐久性、たわみ、衝撃、表面安全性テストが含まれます。
+              はい — 該当する家具品質管理命令（QCO）の対象となる製品については
+              必須です。製造業者と輸入業者は、インドでそのような家具を製造、輸入、
+              販売、または流通させる前に、有効なBISライセンスを保有し、
+              IS 17633:2022に準拠する必要があります。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. BIS認証の費用はいくらですか？</strong>
+              <strong>3. テーブルと机に適用される認証マークはどれですか？</strong>
               <br />
-              費用は₹65,000 – ₹1,30,000の範囲で、テストと検査の要因によって異なります。
+              認証されたテーブルと机は、BIS製品認証スキームに基づきISIマークを
+              表示することが許可され、製品が該当するインド規格に適合していること
+              を示します。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. 外国の製造業者もBIS認証が必要ですか？
-              </strong>
+              <strong>4. 誰がBIS認証を申請できますか？</strong>
               <br />
-              はい、BISによる海外工場検査を含むFMCSスキームを通じて必要です。
+              インドの製造業者と外国の製造業者の両方が、テーブルと机が該当する
+              QCOの範囲に該当し、IS 17633:2022の要件を満たす場合に申請できます。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. 1つのライセンスで複数のテーブル/机モデルをカバーできますか？
-              </strong>
+              <strong>5. BIS認証の目的は何ですか？</strong>
               <br />
-              はい、ただしモデルが構造とテストパラメータで類似している場合のみです。
+              BIS認証は、家具が安全性、構造性能、耐久性、工作に関する国家的に
+              認められたベンチマークを満たしていることを確認し、エンドユーザーを
+              保護し、市場全体で品質基準を維持するのに役立ちます。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. BISプロセスにはどのくらい時間がかかりますか？</strong>
+              <strong>6. IS 17633:2022の対象となる製品は何ですか？</strong>
               <br />
-              約30〜45日。
+              この規格は、オフィス、教育機関、商業施設、職場環境で使用される
+              成人用のテーブルと机をカバーしており、オフィスデスク、ワーク
+              ステーション、学習テーブル、会議用テーブル、および類似の家具
+              カテゴリを含みます。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. BIS認定の実験室でのテストは必須ですか？</strong>
+              <strong>7. 実験室テストは必須ですか？</strong>
               <br />
-              はい、BIS承認の実験室のみがテストを実施できます。
+              はい。製品サンプルはBIS認定実験室でテストする必要があり、その結果の
+              テストレポートは、IS 17633:2022への準拠を示すための認証申請における
+              重要な書類です。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. 製品が不合格になった場合はどうなりますか？</strong>
+              <strong>8. 輸入されたテーブルと机はBIS認証なしで販売できますか？</strong>
               <br />
-              再設計し、テストのために再提出する必要があります。
+              いいえ。必須認証の対象となる輸入製品は、有効なBIS承認なしにインドで
+              合法的に供給することはできません。輸入業者は、製品を市場に出す前に
+              該当する規格への準拠を確保する必要があります。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. 認証後のISIマーキングは必須ですか？</strong>
+              <strong>9. 工場検査の役割は何ですか？</strong>
               <br />
-              はい、製品と包装にISIマークが必要です。
+              BISは、製造業者が準拠したテーブルと机を一貫して製造するための
+              十分な生産インフラ、品質管理システム、製品トレーサビリティを
+              維持していることを検証するために工場評価を実施します。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. 必要な書類は何ですか？</strong>
+              <strong>10. Sun Certifications Indiaはどのように支援できますか？</strong>
               <br />
-              技術図面、BOM、工場書類、テストレポート、QC計画、法的書類。
+              Sun Certifications Indiaは、製品範囲の評価、書類の準備、実験室
+              テストの調整、BIS申請管理、工場検査の準備、IS 17633:2022に基づく
+              テーブルと机の認証後の準拠サポートを含む、エンドツーエンドの支援を
+              提供します。
             </p>
           </div>
         </div>
@@ -829,6 +965,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          関連リソース
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISIマークライセンス</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS証明書</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadJapanese />
 

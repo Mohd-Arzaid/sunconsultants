@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnitDutch = () => {
   return (
     <div className="relative w-full">
@@ -109,7 +115,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificaat voor Tafels & Bureaus – IS 17633:2022
+                    BIS Certificering voor Tafels en Bureaus (IS 17633:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -141,610 +147,728 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificaat voor Tafels en Bureaus – Complete Gids voor IS 17633:2022
-          BIS Certificering
+          BIS Certificering voor Tafels en Bureaus (IS 17633:2022) – Complete
+          Gids voor ISI Merk Certificering
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="BIS Licentie voor Tafels en Bureaus"
-            alt="BIS Certificaat voor Tafels en Bureaus - IS 17633:2022 BIS Certificering"
+            alt="BIS Certificering voor Tafels en Bureaus - IS 17633:2022 ISI Merk Gids"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS Certificaat voor Tafels en Bureaus is verplicht voor alle
-          fabrikanten, importeurs en verkopers van tafels en bureaus in India.
-          Volgens de Indiase Standaard IS 17633:2022 – Tafels en Bureaus: Veiligheids-
-          vereisten moeten deze meubelstukken worden getest en gecertificeerd door
-          het Bureau of Indian Standards (BIS) voordat ze legaal kunnen worden verkocht
-          op de Indiase markt.
+          Tafels en bureaus behoren tot de meest gebruikte meubelproducten in
+          kantoren, onderwijsinstellingen, commerciële vestigingen,
+          overheidsorganisaties en woonruimtes. Aangezien van deze producten wordt
+          verwacht dat ze bestand zijn tegen regelmatig gebruik en tegelijkertijd de
+          veiligheid, stabiliteit en duurzaamheid voor de gebruiker waarborgen, is
+          naleving van erkende kwaliteitsnormen steeds belangrijker geworden voor
+          fabrikanten en importeurs.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tafels en bureaus zijn essentiële componenten van huizen, kantoren, scholen,
-          universiteiten, commerciële ruimtes, horeca-omgevingen en
-          industriële werkplekken. Omdat ze vaak gewicht, impact en
-          continu gebruik ondersteunen, zijn hun structurele sterkte en veiligheid cruciaal.
-          Om consumentenbescherming en productbetrouwbaarheid te waarborgen, verplicht BIS
-          verplichte certificering.
+          In India moeten tafels en bureaus die onder IS 17633:2022 vallen voldoen
+          aan de toepasselijke kwaliteits- en veiligheidsvereisten die zijn
+          voorgeschreven door het Bureau of Indian Standards (BIS). Fabrikanten die
+          met succes aan deze vereisten voldoen, kunnen een BIS-licentie verkrijgen
+          en het ISI Merk op hun producten gebruiken, waarmee zij conformiteit met
+          de relevante Indiase Standaard aantonen.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Deze uitgebreide gids legt IS 17633:2022 uit, het BIS-registratie-
-          proces, testen, vereiste documentatie, kosten, tijdlijnen, boetes,
-          en voordelen voor fabrikanten en importeurs.
+          Het certificeringsproces beoordeelt verschillende aspecten van de
+          productprestaties, waaronder sterkte, stabiliteit, duurzaamheid,
+          vakmanschap, afmetingen en algehele veiligheid. Naleving helpt bedrijven
+          niet alleen om aan de wettelijke vereisten te voldoen, maar verbetert ook
+          de geloofwaardigheid van het product en de marktacceptatie.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Deze uitgebreide gids legt alles uit wat fabrikanten, importeurs,
+          meubelmerken en inkoopprofessionals moeten weten over BIS Certificering
+          voor Tafels en Bureaus onder IS 17633:2022, inclusief toepasbaarheid,
+          certificeringsvereisten, testparameters, documentatie, voordelen en het
+          certificeringsproces.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wat is BIS Certificering?
+          Belangrijkste Hoogtepunten van BIS Certificering voor Tafels en Bureaus
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certificering is een regelgevingsconformiteitsproces beheerd door
-          het Bureau of Indian Standards, de nationale normautoriteit van India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Betekenis van BIS Certificaat
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Een BIS Certificaat bevestigt dat het product voldoet aan de veiligheids-, kwaliteits-,
-          prestaties- en duurzaamheidseisen vastgesteld door Indiase Normen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Voordelen van BIS Certificering
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zorgt voor consumentenveiligheid</li>
-          <li>Ondersteunt hoogwaardige productie</li>
-          <li>Vermindert productfoutrisico</li>
-          <li>Verbetert marktacceptatie</li>
-          <li>Wettelijk vereist onder BIS Kwaliteitscontrole Orders (QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Na goedkeuring draagt het product het BIS Merk (ISI Merk) samen met
-          het licentienummer.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Welke Indiase Standaard is van Toepassing op Tafels & Bureaus? – IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          De toepasselijke BIS-standaard is:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – Tafels en Bureaus: Veiligheids-
-          vereisten
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Deze standaard definieert prestaties-, structurele veiligheids- en duurzaamheids-
-          vereisten voor alle soorten tafels en bureaus gebruikt in residentiële,
-          commerciële, horeca- en institutionele omgevingen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Gedekte Producten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kantoorbureaus</li>
-          <li>Computerbureaus</li>
-          <li>Studietafels</li>
-          <li>Eettafels</li>
-          <li>Salontafels</li>
-          <li>Werkbureaus</li>
-          <li>Trainingstafels</li>
-          <li>School/universiteit bureaus</li>
-          <li>Lerarentafels</li>
-          <li>Modulaire werkplektafels</li>
-          <li>Schrijftafels</li>
-          <li>Vergader-/conferentietafels</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Belangrijke Veiligheidsparameters Onder IS 17633:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structurele stabiliteit</li>
-          <li>Draagvermogen</li>
-          <li>Schokbestendigheid</li>
-          <li>Horizontale/verticale krachtprestaties</li>
-          <li>Oppervlakteafwerkingskwaliteit</li>
-          <li>Randveiligheid</li>
-          <li>Duurzaamheid bij herhaald gebruik</li>
-          <li>Materiaalveiligheid</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Elke tafel of bureau die in India wordt verkocht, moet voldoen aan deze parameters
-          via BIS Registratie voor Tafels & Bureaus.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Waarom BIS Certificering Verplicht is voor Tafels en Bureaus
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tafels en bureaus zijn veelgebruikte meubelstukken die voorkomen in huizen, kantoren,
-          scholen en openbare ruimtes. Structurele storingen kunnen ongevallen veroorzaken
-          zoals:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Instorten onder gewicht</li>
-          <li>Scherpe randverwondingen</li>
-          <li>Instabiliteit tijdens gebruik</li>
-          <li>Breuk van verbindingen</li>
-          <li>Oppervlakte loslating</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Om deze gevaren te vermijden, zorgt BIS-certificering voor:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Veilig ontwerp en constructie</li>
-          <li>Naleving van structurele belastingvereisten</li>
-          <li>Duurzame prestaties</li>
-          <li>Voorkoming van kantelen en instorten</li>
-          <li>Hoogwaardige materiaalkeuze</li>
-          <li>Uniforme marktstandaarden</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Het verkopen van tafels en bureaus zonder een BIS Licentie voor Tafels & Bureaus is
-          illegaal in India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certificeringsproces voor Tafels en Bureaus (IS 17633:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS-certificeringsproces volgt het ISI Schema (Conformiteits-
-          beoordelingsschema-I), dat producttesten en fabrieks-
-          inspectie omvat.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 1 – Identificeer Productcategorie & Standaard
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Bevestig dat de tafel/bureau valt onder IS 17633:2022. Identificeer aantal
-          varianten en materialen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 2 – Dien BIS Aanvraag in (Online Indiening)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Vul de aanvraag in op het BIS Manak Online Portaal met:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabrikantgegevens</li>
-          <li>Fabrieksadres</li>
-          <li>Productspecificaties</li>
-          <li>Handelsmerkgegevens</li>
-          <li>Kwaliteitscontrolesystemen</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 3 – Betaling van BIS Certificeringskosten
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Omvat:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Aanvraagkosten</li>
-          <li>Verwerkingskosten</li>
-          <li>Producttestkosten</li>
-          <li>Fabrieksinspectiekosten</li>
-          <li>Markeerkosten</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 4 – Steekproef Testen in een BIS-Erkend Laboratorium
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Producten moeten volledig worden getest zoals voorgeschreven onder IS 17633:2022.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Uitgevoerde Tests
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stabiliteitstest</li>
-          <li>Sterktetest (Statische Belasting)</li>
-          <li>Duurzaamheidstest (Herhaalde Belasting)</li>
-          <li>Schoktest</li>
-          <li>Doorbuiging Meting</li>
-          <li>Rand- en Oppervlakteveiligheidstest</li>
-          <li>Werkruimte Belastingstest</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Lab uploadt de testrapporten direct naar BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 5 – BIS Fabrieksinspectie
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Een BIS-functionaris bezoekt de productiefaciliteit om te verifiëren:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kwaliteitsmanagementsysteem</li>
-          <li>Interne testcapaciteit</li>
-          <li>Grondstofcontrole</li>
-          <li>Productielijn & machines</li>
-          <li>Kalibratie van instrumenten</li>
-          <li>Naleving van STI (Schema van Testen & Inspectie)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 6 – Verlening van BIS Licentie
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">BIS verleent:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS Certificaat</li>
-          <li>ISI Merk goedkeuring</li>
-          <li>Uniek CML licentienummer</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Hierna kan de fabrikant legaal tafels/bureaus markeren en verkopen in
-          India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 7 – Naleving na Licentie
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Fabrikanten moeten:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Records bijhouden volgens STI</li>
-          <li>ISI-markering correct gebruiken</li>
-          <li>Periodieke BIS-inspecties toestaan</li>
-          <li>Licentie elke 1-2 jaar vernieuwen</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Reikwijdte van BIS Licentie voor Tafels & Bureaus
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Deze standaard dekt de vereisten met betrekking tot
-          de prestaties en veiligheid, dat wil zeggen, sterkte, stabiliteit en duurzaamheid
-          van tafels en bureaus die worden gebruikt in zittende en/of staande
-          posities, gebruikt door volwassenen.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Deze standaard is van toepassing op volledig gefabriceerde/
-          vervaardigde tafels en bureaus. Het is ook van toepassing op klaar-voor-montage
-          eenheden; in dat geval zijn de vereisten van deze standaard van toepassing op
-          de gemonteerde eenheden.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vereiste Documenten voor BIS Certificering van Tafels & Bureaus
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Productiedocumenten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabriekslicentie</li>
-          <li>Machinelijst</li>
-          <li>Testapparatuur lijst</li>
-          <li>Kalibratiecertificaten</li>
-          <li>Fabrieksindeling</li>
-          <li>Processtroomdiagram</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technische Documenten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tafel/bureau tekeningen</li>
-          <li>Materiaallijst</li>
-          <li>Productspecificaties</li>
-          <li>Interne kwaliteitstestrapporten</li>
-          <li>Foto&apos;s/video&apos;s van het product</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Juridische Documenten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Geautoriseerde ondertekenaar ID-bewijs</li>
-          <li>Adresbewijs</li>
-          <li>Merkautorisatiebrief</li>
-          <li>Handelsmerkregistratiecertificaat</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Aanvraagdocumenten
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ingevuld aanvraagformulier</li>
-          <li>Fabrikant verklaring</li>
-          <li>Testverzoekbrief</li>
-          <li>Autorisatiebrief</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Volledige documentatie zorgt voor snellere goedkeuringen.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testvereisten onder IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          De test evalueert sterkte, stabiliteit, duurzaamheid en veiligheid.
-        </p>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clausule
+                  Onderdeel
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Vereiste
+                  Details
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Ontwerp en vakmanschap
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stabiliteitstest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Opgegeven belasting
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Voor incidentele zware belastingen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sterkte onder horizontale statische kracht
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Algemeen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Verticale Schoktest voor Glazen Tafelbladen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Verticale Schoktest voor Alle Andere Tafelbladen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Doorbuiging van Tafelbladen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Valtest
-                </TableCell>
-              </TableRow>
+              {[
+                ["Product", "Tafels en Bureaus"],
+                ["Toepasselijke Standaard", "IS 17633:2022"],
+                ["Certificeringstype", "BIS Productcertificering"],
+                ["Toepasselijk Merk", "ISI Merk"],
+                ["Certificeringsschema", "Schema-I (ISI Merk Certificering)"],
+                ["Regelgevende Autoriteit", "Bureau of Indian Standards (BIS)"],
+                ["Toepasselijke Sector", "Meubilair"],
+                [
+                  "In Aanmerking Komende Aanvragers",
+                  "Indiase Fabrikanten en Buitenlandse Fabrikanten",
+                ],
+                [
+                  "Nalevingsvereiste",
+                  "Verplicht onder toepasselijke Meubel QCO (Quality Control Order)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Certificeringsschema" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Schema-I (ISI Merk Certificering)
+                      </a>
+                    ) : particular === "Nalevingsvereiste" ? (
+                      <>
+                        Verplicht onder toepasselijke {" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                         <strong>Meubel QCO (Quality Control Order)</strong>
+                        </a>
+                        
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Testen moet alleen worden uitgevoerd in BIS-goedgekeurde laboratoria.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Wat is BIS Certificering voor Tafels en Bureaus?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS Certificering voor Tafels en Bureaus is een
+          conformiteitsbeoordelingsproces dat wordt uitgevoerd onder het Bureau of
+          Indian Standards (BIS) Productcertificeringsschema. De certificering
+          bevestigt dat het product voldoet aan de vereisten gespecificeerd in IS
+          17633:2022.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Veelvoorkomende Uitdagingen & Hoe Ze Te Vermijden
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. Product faalt belasting- of duurzaamheidstests</strong>
-            <br />
-            Oplossing: Versterk verbindingen, gebruik BIS-conforme materialen, voeg
-            versterking toe.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. Onvolledige documentatie</strong>
-            <br />
-            Oplossing: Bereid alle juridische, technische en productiedocumenten
-            van tevoren voor.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. Fabriek mist geschikte testapparatuur</strong>
-            <br />
-            Oplossing: Installeer vereiste instrumenten en handhaaf kalibratie volgens
-            BIS-richtlijnen.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. Onjuiste etikettering</strong>
-            <br />
-            Oplossing: Zorg ervoor dat ISI-markering BIS-regels exact volgt.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. Verkeerde classificatie van productmodellen</strong>
-            <br />
-            Oplossing: Krijg professionele begeleiding om varianten correct te categoriseren.
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Voordelen van BIS Certificering voor Tafels & Bureaus
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Wettelijke autorisatie om te verkopen in India</li>
-          <li>Verhoogd klantvertrouwen</li>
-          <li>Betere productduurzaamheid</li>
-          <li>Toegang tot grote retailers & e-commerce platforms</li>
-          <li>Lager productaansprakelijkheidsrisico</li>
-          <li>Hogere merkgeloofwaardigheid</li>
-          <li>Naleving van overheids-QCOs</li>
-          <li>Concurrentievoordeel op de markt</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Boetes voor Naleving
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Na succesvolle certificering mogen fabrikanten het ISI Merk op hun
+          producten gebruiken, wat naleving van de toepasselijke Indiase Standaard
+          aangeeft.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Het verkopen of distribueren van tafels/bureaus zonder BIS-certificering kan
-          resulteren in:
+          De certificering is bedoeld om te waarborgen dat tafels en bureaus die op
+          de Indiase markt worden geleverd, voldoen aan vastgestelde vereisten met
+          betrekking tot:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product inbeslagname</li>
-          <li>Zware boetes</li>
-          <li>Strafrechtelijke vervolging</li>
-          <li>Verbod op import</li>
-          <li>Bedrijfsstopzetting bevelen</li>
-          <li>Licentie annulering</li>
+        <ul className={LIST_CLASS}>
+          <li>Structurele sterkte en stabiliteit tijdens normaal gebruik</li>
+          <li>Duurzaamheid, gebruikersveiligheid en materiaalvakmanschap</li>
+          <li>Volledige prestatievereisten onder IS 17633:2022</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          De Bureau of Indian Standards Act, 2016 handhaaft strenge boetes.
+          Voor kopers en inkoopinstanties dient het ISI Merk als een garantie dat
+          het meubilair is beoordeeld aan de hand van erkende kwaliteits- en
+          veiligheidsnormen.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wie Heeft BIS Certificering Nodig voor Tafels & Bureaus?
+          Overzicht van IS 17633:2022 voor Tafels en Bureaus
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Deze certificering is verplicht voor:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022 is de Indiase Standaard die prestaties- en
+          veiligheidsvereisten specificeert voor tafels en bureaus bedoeld voor
+          volwassen gebruikers in zittende en staande toepassingen.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indiase fabrikanten</li>
-          <li>Buitenlandse fabrikanten</li>
-          <li>Importeurs</li>
-          <li>Handelaren/merkeigenaren</li>
-          <li>OEM/ODM leveranciers</li>
-          <li>Meubeldistributeurs</li>
-          <li>E-commerce verkopers</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De standaard dekt beide:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Volledig vervaardigde (kant-en-klare) tafels en bureaus</li>
+          <li>Klaar-voor-montage (RTA) eenheden — getest na volledige montage</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Elke fabriek moet een aparte BIS Licentie verkrijgen.
+          Het doel van de standaard is het vaststellen van minimale prestaties- en
+          veiligheidsvereisten die helpen waarborgen dat meubilair stabiel,
+          duurzaam en veilig blijft gedurende de beoogde levensduur.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>
+          Belangrijkste Gebieden Gedekt Onder IS 17633:2022
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De standaard richt zich op verschillende belangrijke
+          prestatiekenmerken, waaronder:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Sterktevereisten —</strong> Tafels en bureaus moeten verwachte
+            belastingen tijdens normaal gebruik weerstaan zonder falen of
+            buitensporige vervorming.
+          </li>
+          <li>
+            <strong>Stabiliteitsvereisten —</strong> Meubilair moet stabiel blijven
+            tijdens gebruik en kantelen weerstaan onder voorzienbare
+            belastingomstandigheden.
+          </li>
+          <li>
+            <strong>Duurzaamheidsvereisten —</strong> Producten moeten prestaties en
+            structurele integriteit behouden na herhaald gebruik gedurende een
+            langere periode.
+          </li>
+          <li>
+            <strong>Veiligheidsvereisten —</strong> Ontwerp en constructie moeten de
+            risico's van instabiliteit, scherpe randen, onveilige bouw of
+            structureel falen minimaliseren.
+          </li>
+          <li>
+            <strong>Vakmanschap &amp; Constructiekwaliteit —</strong> Vakmanschap,
+            montage, verbindingen, bevestigingen en algehele bouw worden beoordeeld
+            voor betrouwbare prestaties op lange termijn.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Waarom Ons Kiezen voor BIS Certificeringsadvies?
+          Is BIS Certificering voor Tafels en Bureaus Verplicht in India?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Wij bieden end-to-end assistentie:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ja. Tafels en bureaus die vallen onder de toepasselijke Meubel Quality
+          Control Order (QCO) moeten voldoen aan de relevante Indiase Standaard en
+          BIS Certificering verkrijgen voordat ze worden vervaardigd, geïmporteerd,
+          verkocht, gedistribueerd of aangeboden op de Indiase markt.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standaard interpretatie (IS 17633:2022)</li>
-          <li>Productclassificatie</li>
-          <li>Documentatie opstellen</li>
-          <li>Testcoördinatie</li>
-          <li>BIS portaal indiening</li>
-          <li>Fabrieksinspectie ondersteuning</li>
-          <li>Continue opvolging met BIS</li>
-          <li>Licentie goedkeuring</li>
-          <li>Vernieuwing en nalevingsbeheer</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Het doel van verplichte certificering is om:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Hogere productkwaliteit in de meubelindustrie te waarborgen</li>
+          <li>Consumentenveiligheid te beschermen via geverifieerde normen</li>
+          <li>Te voorkomen dat ondermaats meubilair de markt betreedt</li>
+          <li>Standaardisatie en uniforme kwaliteitsnormen te bevorderen</li>
+          <li>Kopersvertrouwen in ISI Merk-gecertificeerde producten op te bouwen</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Onze expertise zorgt voor snelle, probleemloze en foutloze certificering.
+          Fabrikanten die onder de toepasselijke regelgeving vallen, moeten een
+          BIS-licentie verkrijgen en het ISI Merk gebruiken in overeenstemming met
+          de BIS-vereisten.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Bekijk ook Meubelproducten Gedekt Onder Verplichte BIS
+            Certificering —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS Certificering voor meubilair</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Productreikwijdte Gedekt Onder IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De reikwijdte van IS 17633:2022 strekt zich uit tot verschillende
+          categorieën tafels en bureaus die zijn ontworpen voor volwassen
+          gebruikers in residentiële, commerciële, institutionele en
+          werkomgevingen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Voorbeelden van veelgedekte producten zijn:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Kantoor-, studie- en computerbureaus</li>
+          <li>Werkstations en multifunctionele bureaus</li>
+          <li>Conferentie- en vergadertafels</li>
+          <li>Institutionele en laboratoriumtafels</li>
+          <li>Co-working en commercieel meubilair</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Fabrikanten moeten de productspecificaties en het beoogde gebruik
+          zorgvuldig beoordelen om te bepalen of hun producten binnen de reikwijdte
+          van IS 17633:2022 vallen.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Belangrijke Technische Vereisten Onder IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Om BIS-certificering te verkrijgen, moeten tafels en bureaus voldoen aan
+          verschillende prestaties- en veiligheidsvereisten die door de standaard
+          worden gespecificeerd.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Structurele Integriteit —</strong> Producten moeten presteren
+            onder voorgeschreven belastingen; verbindingen en ondersteunende
+            structuren blijven veilig tijdens het testen.
+          </li>
+          <li>
+            <strong>Draagvermogenprestaties —</strong> Tafels en bureaus moeten
+            gespecificeerde belastingen ondersteunen zonder onaanvaardbare
+            vervorming, schade of falen.
+          </li>
+          <li>
+            <strong>Stabiliteitsprestaties —</strong> Meubilair moet stabiel blijven
+            tijdens gebruik en kantelrisico's verminderen die letsel of materiële
+            schade kunnen veroorzaken.
+          </li>
+          <li>
+            <strong>Duurzaamheidsprestaties —</strong> Producten moeten herhaalde
+            gebruikscycli weerstaan met behoud van aanvaardbare prestaties.
+          </li>
+          <li>
+            <strong>Materiaal &amp; Vakmanschap —</strong> Materialen, afwerking en
+            montagemethoden moeten voldoen aan kwaliteitscontroles voor consistente
+            productie.
+          </li>
+          <li>
+            <strong>Veiligheidsoverwegingen —</strong> Het ontwerp moet gevaren van
+            het gebruik van meubilair voor consumenten en institutionele kopers
+            minimaliseren.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Waarom BIS Certificering Belangrijk is voor Meubelfabrikanten
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De Indiase meubelmarkt is steeds kwaliteitsbewuster geworden.
+          Overheidsdiensten, onderwijsinstellingen, zakelijke kopers en grote
+          inkoopinstanties geven vaak de voorkeur aan producten die voldoen aan
+          erkende normen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Het verkrijgen van BIS-certificering helpt fabrikanten:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Naleving van toepasselijke Indiase normen aan te tonen</li>
+          <li>Productgeloofwaardigheid en merkreputatie te vergroten</li>
+          <li>Vertrouwen van klanten en institutionele kopers te winnen</li>
+          <li>Acceptatie bij overheids- en zakelijke inkoop te verbeteren</li>
+          <li>Interne kwaliteitsmanagementpraktijken te versterken</li>
+          <li>Voorop te blijven lopen op veranderende wettelijke vereisten</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Voor fabrikanten die langetermijngroei nastreven, wordt BIS-certificering
+          vaak gezien als zowel een nalevingsvereiste als een strategisch
+          bedrijfsvoordeel.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Testvereisten voor Tafels en Bureaus Onder IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Voordat een fabrikant BIS-certificering kan verkrijgen, moeten
+          productmonsters worden geëvalueerd aan de hand van de toepasselijke
+          vereisten van IS 17633:2022 door middel van testen in een door BIS-erkend
+          laboratorium.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Het doel van het testen is om te verifiëren dat het meubilair voldoet aan
+          de voorgeschreven normen voor veiligheid, stabiliteit, sterkte,
+          duurzaamheid en algehele prestaties.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Hoewel de exacte testparameters kunnen variëren afhankelijk van het
+          productontwerp en de certificeringsvereisten, worden fabrikanten over het
+          algemeen beoordeeld op de volgende kenmerken:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Ontwerp &amp; Vakmanschap —</strong> Constructiekwaliteit,
+            montage, afwerking en algehele productintegriteit worden onderzocht voor
+            veilig langdurig gebruik.
+          </li>
+          <li>
+            <strong>Dimensionale Verificatie —</strong> Kritieke metingen worden
+            gecontroleerd aan de hand van de standaard en goedgekeurde
+            productspecificaties.
+          </li>
+          <li>
+            <strong>Stabiliteitstest —</strong> Bevestigt dat het product stabiel
+            blijft bij normaal gebruik en signaleert kantelen of structurele
+            zwakheden.
+          </li>
+          <li>
+            <strong>Statische Belastingstest —</strong> Verifieert het draagvermogen
+            zonder falen, buitensporige vervorming of schade.
+          </li>
+          <li>
+            <strong>Sterktetest —</strong> Beoordeelt frames, verbindingen en
+            ondersteuningen onder operationele spanningen tijdens regelmatig
+            gebruik.
+          </li>
+          <li>
+            <strong>Duurzaamheidsbeoordeling —</strong> Controleert prestatiebehoud
+            na herhaalde gebruikscycli.
+          </li>
+          <li>
+            <strong>Veiligheidsbeoordeling —</strong> Sluit vermijdbare risico's uit
+            van instabiliteit, defecten of onveilige ontwerpkenmerken.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certificeringsproces voor Tafels en Bureaus
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Fabrikanten die BIS-certificering onder IS 17633:2022 nastreven, moeten
+          een gestructureerd certificeringsproces volgen dat is vastgesteld door het
+          Bureau of Indian Standards.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hoewel specifieke vereisten kunnen variëren op basis van het type
+          aanvrager en de productielocatie, blijft het algemene proces vergelijkbaar.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Stap 1: Beoordeling van Productreikwijdte
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De eerste stap omvat het bepalen of het product binnen de reikwijdte van
+          IS 17633:2022 en de toepasselijke Quality Control Order valt. Een
+          technische beoordeling van de productspecificaties, het beoogde gebruik,
+          materialen en constructie wordt doorgaans uitgevoerd voordat het
+          certificeringsproces wordt gestart.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Stap 2: Voorbereiding van Documentatie
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De fabrikant bereidt de vereiste documentatie voor, inclusief
+          bedrijfsinformatie, productiegegevens, productspecificaties,
+          kwaliteitscontroleprocedures en ondersteunende technische records.
+          Correcte documentatie is cruciaal omdat tekortkomingen in dit stadium de
+          certificering kunnen vertragen.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Stap 3: Producttesten
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Productmonsters worden getest in een door BIS-erkend laboratorium om
+          naleving van de vereisten van IS 17633:2022 te verifiëren. Het testrapport
+          dient als een van de primaire technische documenten ter ondersteuning van
+          de certificeringsaanvraag.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Stap 4: Indiening van Aanvraag
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De BIS-aanvraag wordt ingediend samen met ondersteunende documenten,
+          testrapporten, productie-informatie en kwaliteitsmanagementrecords. De
+          aanvraag wordt door BIS beoordeeld op volledigheid en technische naleving.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Stap 5: Fabrieksbeoordeling
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS kan een fabrieksinspectie uitvoeren om te evalueren:
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>Productie-infrastructuur en productiecapaciteiten</li>
+          <li>Kwaliteitscontrolesystemen en interne testfaciliteiten</li>
+          <li>Grondstofcontroles en producttraceerbaarheidsmechanismen</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Het doel is om het vermogen van de fabrikant te verifiëren om
+          consequent conforme producten te produceren.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Stap 6: Evaluatie en Beoordeling
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS beoordeelt de aanvraag, inspectiebevindingen en
+          laboratoriumtestrapporten voordat een certificeringsbeslissing wordt
+          genomen. Eventuele opmerkingen die tijdens het beoordelingsproces worden
+          gemaakt, moeten door de aanvrager worden behandeld.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Stap 7: Verlening van BIS Licentie
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Na succesvolle voltooiing van alle vereisten verleent BIS de licentie en
+          autoriseert de fabrikant om het ISI Merk te gebruiken op gecertificeerde
+          tafels en bureaus.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certificering voor Indiase Fabrikanten
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Indiase fabrikanten dienen over het algemeen een aanvraag in onder de
+          binnenlandse certificeringsprocedure voorgeschreven door BIS. Het proces
+          omvat doorgaans:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Producttesten in een door BIS-erkend laboratorium</li>
+          <li>Indiening van aanvraag met ondersteunende documenten</li>
+          <li>Fabrieksinspectie en technische beoordeling door BIS</li>
+          <li>Verlening van BIS-licentie en ISI Merk autorisatie</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Eenmaal gecertificeerd, moeten fabrikanten blijven voldoen aan de
+          BIS-vereisten en een consistente productkwaliteit handhaven gedurende de
+          licentieperiode.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS Certificering voor Buitenlandse Fabrikanten
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Buitenlandse fabrikanten die tafels en bureaus naar India willen
+          exporteren, moeten ook BIS-certificering verkrijgen voordat zij producten
+          leveren die vallen onder de toepasselijke Quality Control Order.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Het certificeringsproces omvat over het algemeen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Aanstelling van een Geautoriseerde Indiase Vertegenwoordiger (AIR)</li>
+          <li>Producttesten en fabrieksbeoordeling in het buitenland</li>
+          <li>Documentatiebeoordeling en goedkeuring van BIS-certificering</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Buitenlandse fabrikanten moeten doorlopende naleving van de
+          BIS-vereisten waarborgen om de geldigheid van de certificering te
+          behouden.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Vereiste Documenten voor BIS Certificering van Tafels en Bureaus
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Documentatievereisten kunnen variëren afhankelijk van de fabrikant en de
+          certificeringsroute. De volgende documenten zijn echter veelgevraagd
+          tijdens het certificeringsproces.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Bedrijfs- en Juridische Documenten</h3>
+        <ul className={LIST_CLASS}>
+          <li>Bedrijfsregistratie, productielicentie en GST (indien van toepassing)</li>
+          <li>Gegevens van geautoriseerde ondertekenaar en identiteitsbewijs</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Productie-informatie</h3>
+        <ul className={LIST_CLASS}>
+          <li>Processtroomdiagram, fabrieksindeling en machinegegevens</li>
+          <li>Productie-infrastructuur en capaciteitsrecords</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Productinformatie</h3>
+        <ul className={LIST_CLASS}>
+          <li>Productspecificaties, technische tekeningen en catalogus</li>
+          <li>Materiaallijst en materiaal-/componentgegevens</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Kwaliteitscontroledocumenten</h3>
+        <ul className={LIST_CLASS}>
+          <li>Interne testen, inspectie en QC-procedures</li>
+          <li>Kwaliteitscontrolerecords en kalibratierapporten van apparatuur</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Certificeringsdocumenten</h3>
+        <ul className={LIST_CLASS}>
+          <li>Laboratoriumtestrapporten en ingevulde BIS-aanvraagformulieren</li>
+          <li>Verklaringen, toezeggingen en andere door BIS-voorgeschreven documenten</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Fabrikanten moeten ervoor zorgen dat alle documentatie nauwkeurig,
+          volledig en consistent is voordat ze deze indienen.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Veelvoorkomende Uitdagingen Tijdens BIS Certificering
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hoewel het certificeringsproces eenvoudig is wanneer het goed wordt
+          beheerd, ondervinden fabrikanten vaak verschillende uitdagingen.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Technische interpretatie —</strong> Het in kaart brengen van IS
+            17633:2022 vereisten naar specifieke productontwerpen kan moeilijk zijn
+            zonder deskundige begeleiding.
+          </li>
+          <li>
+            <strong>Testfalen —</strong> Zwakke verbindingen, slechte stabiliteit of
+            materiaalproblemen leiden vaak tot afkeuring van labtesten.
+          </li>
+          <li>
+            <strong>Documentatiehiaten —</strong> Onvolledige of niet-overeenkomende
+            records zijn een veelvoorkomende oorzaak van aanvraagvertragingen.
+          </li>
+          <li>
+            <strong>Fabrieksnaleving —</strong> QC-systemen, traceerbaarheid of
+            productiecontroles moeten mogelijk worden geüpgraded voordat de licentie
+            wordt verleend.
+          </li>
+          <li>
+            <strong>Regelgevingscoördinatie —</strong> Het afstemmen van labtesten,
+            inspecties en BIS-opvolgingen kost tijd zonder gestructureerde
+            ondersteuning.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Voordelen van Professionele BIS Certificeringsassistentie
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Samenwerken met een ervaren BIS-consultant kan fabrikanten helpen kostbare
+          vertragingen te vermijden en het certificeringstraject te stroomlijnen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Professionele ondersteuning omvat doorgaans:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Beoordeling van productreikwijdte en interpretatie van de standaard</li>
+          <li>Voorbereiding van documentatie en indiening van aanvraag</li>
+          <li>Coördinatie van labtesten en fabrieksinspectie</li>
+          <li>Doorlopende naleving en ondersteuning na certificering</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hierdoor kunnen fabrikanten zich richten op de productie terwijl wordt
+          gewaarborgd dat aan de wettelijke vereisten efficiënt wordt voldaan.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Waarom Sun Certifications India Kiezen?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India is een regelgevingsnalevingsconsultancy die
+          fabrikanten, importeurs, exporteurs en bedrijven ondersteunt met
+          certificerings- en goedkeuringsvereisten in heel India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Onze experts bieden end-to-end ondersteuning voor BIS Certificering voor
+          Tafels en Bureaus onder IS 17633:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Onze Diensten Omvatten</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>Beoordeling van producttoepasbaarheid en BIS-nalevingsadvies</li>
+          <li>Documentatieondersteuning en aanvraagbeheer</li>
+          <li>Testcoördinatie en fabrieksinspectie-assistentie</li>
+          <li>Regelgevingscommunicatie en nalevingsondersteuning na certificering</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ons doel is om bedrijven te helpen het certificeringsproces efficiënt te
+          doorlopen en tegelijkertijd vertragingen en nalevingsuitdagingen te
+          minimaliseren.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -752,116 +876,141 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS Certificaat voor Tafels en Bureaus onder IS 17633:2022 is een
-          verplichte conformiteitsvereiste die productveiligheid,
-          prestaties, duurzaamheid en naleving van nationale normen waarborgt.
-          Fabrikanten en importeurs moeten producttesten, fabrieks-
-          inspectie ondergaan en voldoen aan alle BIS documentatie- en etiketteringsregels om
-          het ISI Merk te verkrijgen.
+          BIS Certificering voor Tafels en Bureaus onder IS 17633:2022 is een
+          belangrijke vereiste voor fabrikanten die conforme meubelproducten op de
+          Indiase markt willen leveren. De certificering helpt waarborgen dat tafels
+          en bureaus voldoen aan vastgestelde normen met betrekking tot veiligheid,
+          stabiliteit, duurzaamheid, sterkte en kwaliteit.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Met deskundige assistentie wordt het hele certificeringsproces
-          soepel, snel en volledig conform BIS-voorschriften.
+          Door BIS Certificering te verkrijgen en het ISI Merk te gebruiken, kunnen
+          fabrikanten naleving van Indiase normen aantonen, het vertrouwen van
+          klanten verbeteren, hun marktpositie versterken en langetermijngroei van
+          het bedrijf ondersteunen.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Als u van plan bent BIS Certificering voor Tafels en Bureaus onder IS
+          17633:2022 te verkrijgen, kan Sun Certifications India u helpen met
+          end-to-end nalevingsondersteuning, zodat u het certificeringsproces
+          efficiënt en met vertrouwen kunt doorlopen.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Veelgestelde Vragen – BIS Certificaat voor Tafels & Bureaus (IS 17633:2022)
+          Veelgestelde Vragen – BIS Certificering voor Tafels en Bureaus (IS 17633:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Is BIS-certificering verplicht voor tafels en bureaus?
-              </strong>
+              <strong>1. Wat is IS 17633:2022?</strong>
               <br />
-              Ja. Volgens IS 17633:2022 moeten alle tafels en bureaus
-              BIS-gecertificeerd zijn voordat ze in India worden verkocht.
+              IS 17633:2022 is de Indiase Standaard gepubliceerd door het Bureau of
+              Indian Standards (BIS) die minimale prestaties-, stabiliteits-,
+              duurzaamheids- en veiligheidsvereisten vaststelt voor tafels en bureaus
+              bedoeld voor volwassen gebruikers in zittende en staande toepassingen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Welke tests zijn vereist voor certificering?</strong>
+              <strong>2. Is BIS-certificering verplicht voor tafels en bureaus?</strong>
               <br />
-              Verplichte tests omvatten stabiliteit, sterkte, duurzaamheid,
-              doorbuiging, impact en oppervlakteveiligheidstests.
+              Ja — voor producten die vallen onder de toepasselijke Meubel Quality
+              Control Order (QCO). Fabrikanten en importeurs moeten een geldige
+              BIS-licentie hebben en voldoen aan IS 17633:2022 voordat zij dergelijk
+              meubilair in India vervaardigen, importeren, verkopen of distribueren.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Wat zijn de BIS-certificeringskosten?</strong>
+              <strong>3. Welk certificeringsmerk is van toepassing op tafels en bureaus?</strong>
               <br />
-              De kosten variëren tussen ₹65.000 – ₹1.30.000, afhankelijk van test-
-              en inspectiefactoren.
+              Gecertificeerde tafels en bureaus zijn geautoriseerd om het ISI Merk te
+              dragen onder het BIS Productcertificeringsschema, wat aangeeft dat het
+              product voldoet aan de toepasselijke Indiase Standaard.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. Hebben buitenlandse fabrikanten BIS Certificering nodig?
-              </strong>
+              <strong>4. Wie kan BIS-certificering aanvragen?</strong>
               <br />
-              Ja, via het FMCS-schema, dat buitenlandse fabrieks-
-              inspecties door BIS omvat.
+              Zowel Indiase fabrikanten als buitenlandse fabrikanten kunnen een
+              aanvraag indienen, op voorwaarde dat hun tafels en bureaus binnen de
+              reikwijdte van de toepasselijke QCO vallen en voldoen aan de vereisten
+              van IS 17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. Kan één licentie meerdere tafel/bureau modellen dekken?
-              </strong>
+              <strong>5. Wat is het doel van BIS-certificering?</strong>
               <br />
-              Ja, maar alleen als modellen vergelijkbaar zijn in constructie en test-
-              parameters.
+              BIS-certificering bevestigt dat meubilair voldoet aan nationaal erkende
+              normen voor veiligheid, structurele prestaties, duurzaamheid en
+              vakmanschap — wat helpt eindgebruikers te beschermen en
+              kwaliteitsnormen op de markt te handhaven.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Hoe lang duurt het BIS-proces?</strong>
+              <strong>6. Welke producten vallen onder IS 17633:2022?</strong>
               <br />
-              Ongeveer 30–45 dagen.
+              De standaard dekt tafels en bureaus voor volwassen gebruik in kantoren,
+              onderwijsinstellingen, commerciële vestigingen en werkomgevingen —
+              inclusief kantoorbureaus, werkstations, studietafels, conferentietafels
+              en soortgelijke meubelcategorieën.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Is testen verplicht in een BIS-erkend lab?</strong>
+              <strong>7. Is laboratoriumtesten verplicht?</strong>
               <br />
-              Ja, alleen BIS-goedgekeurde laboratoria kunnen de tests uitvoeren.
+              Ja. Productmonsters moeten worden getest in een door BIS-erkend
+              laboratorium, en het resulterende testrapport is een belangrijk
+              document in de certificeringsaanvraag om naleving van IS 17633:2022 aan
+              te tonen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Wat gebeurt er als het product faalt?</strong>
+              <strong>8. Kunnen geïmporteerde tafels en bureaus zonder BIS-certificering worden verkocht?</strong>
               <br />
-              Het moet opnieuw worden ontworpen en opnieuw worden ingediend voor testen.
+              Nee. Geïmporteerde producten die onder verplichte certificering vallen,
+              kunnen niet legaal in India worden geleverd zonder geldige
+              BIS-goedkeuring. Importeurs moeten naleving van de toepasselijke
+              standaard waarborgen voordat ze producten op de markt brengen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is ISI-markering verplicht na certificering?</strong>
+              <strong>9. Wat is de rol van een fabrieksinspectie?</strong>
               <br />
-              Ja, ISI Merk is vereist op het product en de verpakking.
+              BIS voert een fabrieksbeoordeling uit om te verifiëren dat de fabrikant
+              over voldoende productie-infrastructuur, kwaliteitscontrolesystemen en
+              producttraceerbaarheid beschikt om consequent conforme tafels en
+              bureaus te vervaardigen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. Welke documenten zijn nodig?</strong>
+              <strong>10. Hoe kan Sun Certifications India helpen?</strong>
               <br />
-              Technische tekeningen, BOM, fabrieksdocumenten, testrapporten, QC-plan,
-              en juridische documenten.
+              Sun Certifications India biedt end-to-end assistentie — inclusief
+              beoordeling van productreikwijdte, voorbereiding van documentatie,
+              coördinatie van laboratoriumtesten, beheer van BIS-aanvragen,
+              voorbereiding op fabrieksinspectie en nalevingsondersteuning na
+              certificering voor tafels en bureaus onder IS 17633:2022.
             </p>
           </div>
         </div>
@@ -878,6 +1027,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Gerelateerde Bronnen
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI Merk Licentie</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS Certificaat</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadDutch />
 

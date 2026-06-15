@@ -33,6 +33,7 @@ const ServicesRightSideContentItalian = () => {
     "/what-is-crs-bis-or-crs-registration",
     "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano",
     "/certificazione-bis-in-italia",
+    "/migliore-e-piu-affidabile-consulente-certificazione-bis-italia",
     "/it/cose-il-crs-bis-o-registrazione-crs",
     // ISI Mark Italian Page Url
     "/it/certificazione-bis-isi-mark",
@@ -646,6 +647,12 @@ const ContactFormServicesRightSideContentItalian = () => {
       return "BIS FMCS Certification - Italian Page";
     if (path.includes("/certificazione-bis-in-italia"))
       return "Italy Blog Italian";
+    if (
+      path.includes(
+        "/migliore-e-piu-affidabile-consulente-certificazione-bis-italia"
+      )
+    )
+      return "Migliore e più affidabile consulente certificazione BIS in Italia – Sun Certifications India (Italian)";
     if (path.includes("/it/cose-il-crs-bis-o-registrazione-crs"))
       return "CRS Registration (Italian)";
     if (path.includes("/it/certificazione-bis-isi-mark"))

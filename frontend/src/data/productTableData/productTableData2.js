@@ -30297,6 +30297,7 @@ export const productTableData2 = [
     "sno": 538,
     "isNumber": "IS 3818:1992",
     "product": "Continuous (Piano) hinges",
+    "blogPath": "/blogs/isi-products/cabinet-hinges-is-18297",
     "notification": {
       "title": "110. Hinges (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2023/12/Hinges-QCO.pdf",
@@ -30384,6 +30385,7 @@ export const productTableData2 = [
     "sno": 541,
     "isNumber": "IS 18297:2023",
     "product": "Cabinet hinges",
+    "blogPath": "/blogs/isi-products/cabinet-hinges-is-18297",
     "notification": {
       "title": "110. Hinges (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2023/12/Hinges-QCO.pdf",
@@ -30649,6 +30651,7 @@ export const productTableData2 = [
     "sno": 551,
     "isNumber": "IS 14927 (Part 2): 2001",
     "product": "Cable Trunking and Ducting Systems for Electrical Installations – Cable Trunking and Ducting Systems Intended for Mounting on Walls or Ceiling",
+    "blogPath": "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2",
     "notification": {
       "title": "Electrical Accessories (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2024/01/Electrical-Accessories1.pdf",

@@ -33,6 +33,7 @@ const ServicesRightSideContentFrench = () => {
     "/certification-bis-schema-x-pour-equipements-de-traitement-thermique",
     "/certification-bis-schema-x-pour-compresseurs",
     "/certification-bis-en-france",
+    "/meilleur-et-plus-fiable-consultant-certification-bis-france",
     "/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs",
     // ISI Mark French Page Url
     "/fr/certification-bis-marque-isi",
@@ -614,6 +615,12 @@ const ContactFormServicesRightSideContentFrench = () => {
 
     if (path.includes("/certification-bis-en-france"))
       return "France Blog (French)";
+    if (
+      path.includes(
+        "/meilleur-et-plus-fiable-consultant-certification-bis-france"
+      )
+    )
+      return "Meilleur et Plus Fiable Consultant en Certification BIS en France – Sun Certifications India (French)";
     if (path.includes("/certification-bis-schema-x-pour-compresseurs"))
       return "Schema X Certification for Compressors (French)";
     if (path.includes("/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"))

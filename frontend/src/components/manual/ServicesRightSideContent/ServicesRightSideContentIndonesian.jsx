@@ -32,6 +32,7 @@ const ServicesRightSideContentIndonesian = () => {
     "/what-is-crs-bis-or-crs-registration",
     "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
     "/sertifikasi-bis-di-indonesia",
+    "/konsultan-sertifikasi-bis-terbaik-dan-terpercaya-indonesia",
     "/id/apa-itu-crs-bis-atau-registrasi-crs",
     // ISI Mark Indonesian Page Url
     "/id/sertifikasi-bis-isi-mark",
@@ -649,6 +650,12 @@ const ContactFormServicesRightSideContentIndonesian = () => {
       return "BIS FMCS Certification - Indonesian Page";
     if (path.includes("/sertifikasi-bis-di-indonesia"))
       return "Indonesia Blog (Indonesian)";
+    if (
+      path.includes(
+        "/konsultan-sertifikasi-bis-terbaik-dan-terpercaya-indonesia"
+      )
+    )
+      return "Konsultan Sertifikasi BIS Terbaik dan Paling Terpercaya di Indonesia – Sun Certifications India (Indonesian)";
     if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
       return "CRS Registration (Indonesian)";
     if (path.includes("/id/sertifikasi-bis-isi-mark"))

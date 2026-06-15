@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnitGerman = () => {
   return (
     <div className="relative w-full">
@@ -109,7 +115,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS-Zertifikat für Tische & Schreibtische – IS 17633:2022
+                    BIS-Zertifizierung für Tische und Schreibtische (IS 17633:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -141,609 +147,740 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS-Zertifikat für Tische und Schreibtische – Vollständiger Leitfaden zur BIS-Zertifizierung IS 17633:2022
+          BIS-Zertifizierung für Tische und Schreibtische (IS 17633:2022) –
+          Vollständiger Leitfaden zur ISI-Marken-Zertifizierung
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="BIS-Lizenz für Tische und Schreibtische"
-            alt="BIS-Zertifikat für Tische und Schreibtische - BIS-Zertifizierung IS 17633:2022"
+            alt="BIS-Zertifizierung für Tische und Schreibtische - IS 17633:2022 ISI-Marken-Leitfaden"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Zertifikat für Tische und Schreibtische ist für alle
-          Hersteller, Importeure und Verkäufer von Tischen und Schreibtischen in Indien obligatorisch.
-          Gemäß der indischen Norm IS 17633:2022 – Tische und Schreibtische: Sicherheits-
-          Anforderungen müssen diese Möbelstücke getestet und vom
-          Bureau of Indian Standards (BIS) zertifiziert werden, bevor sie legal verkauft werden können
-          auf dem indischen Markt.
+          Tische und Schreibtische gehören zu den am häufigsten verwendeten
+          Möbelprodukten in Büros, Bildungseinrichtungen, Gewerbebetrieben,
+          Regierungsorganisationen und Wohnräumen. Da von diesen Produkten
+          erwartet wird, dass sie der regelmäßigen Nutzung standhalten und
+          gleichzeitig Benutzersicherheit, Stabilität und Haltbarkeit
+          gewährleisten, ist die Einhaltung anerkannter Qualitätsnormen für
+          Hersteller und Importeure zunehmend wichtig geworden.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tische und Schreibtische sind wesentliche Bestandteile von Häusern, Büros, Schulen,
-          Universitäten, Gewerberäumen, Gastronomieumgebungen und
-          industriellen Arbeitsplätzen. Da sie oft Gewicht, Stöße und
-          kontinuierliche Nutzung unterstützen, sind ihre strukturelle Festigkeit und Sicherheit kritisch.
-          Um Verbraucherschutz und Produktzuverlässigkeit zu gewährleisten, schreibt das BIS
-          obligatorische Zertifizierung vor.
+          In Indien müssen Tische und Schreibtische, die unter IS 17633:2022
+          fallen, die geltenden Qualitäts- und Sicherheitsanforderungen des
+          Bureau of Indian Standards (BIS) erfüllen. Hersteller, die diese
+          Anforderungen erfolgreich erfüllen, können eine BIS-Lizenz erhalten
+          und die ISI-Marke auf ihren Produkten verwenden, was die
+          Konformität mit der relevanten indischen Norm belegt.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Dieser umfassende Leitfaden erklärt IS 17633:2022, den BIS-Registrierungs-
-          prozess, Tests, erforderliche Dokumentation, Gebühren, Zeitpläne, Strafen
-          und Vorteile für Hersteller und Importeure.
+          Der Zertifizierungsprozess bewertet verschiedene Aspekte der
+          Produktleistung, einschließlich Festigkeit, Stabilität, Haltbarkeit,
+          Verarbeitung, Abmessungen und allgemeine Sicherheit. Die Einhaltung
+          hilft Unternehmen nicht nur, regulatorische Anforderungen zu
+          erfüllen, sondern verbessert auch die Produktglaubwürdigkeit und die
+          Marktakzeptanz.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dieser umfassende Leitfaden erklärt alles, was Hersteller,
+          Importeure, Möbelmarken und Beschaffungsexperten über die
+          BIS-Zertifizierung für Tische und Schreibtische nach IS 17633:2022
+          wissen müssen, einschließlich Anwendbarkeit,
+          Zertifizierungsanforderungen, Testparametern, Dokumentation,
+          Vorteilen und dem Zertifizierungsprozess.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Was ist die BIS-Zertifizierung?
+          Wichtige Highlights der BIS-Zertifizierung für Tische und Schreibtische
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die BIS-Zertifizierung ist ein regulatorischer Compliance-Prozess, der von
-          dem Bureau of Indian Standards, Indiens nationaler Normungsbehörde, verwaltet wird.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bedeutung des BIS-Zertifikats
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ein BIS-Zertifikat bestätigt, dass das Produkt die Sicherheits-, Qualitäts-,
-          Leistungs- und Haltbarkeitsanforderungen erfüllt, die von den indischen Normen festgelegt wurden.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Vorteile der BIS-Zertifizierung
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Gewährleistet Verbrauchersicherheit</li>
-          <li>Unterstützt hochwertige Fertigung</li>
-          <li>Reduziert das Produktausfallrisiko</li>
-          <li>Verbessert die Marktakzeptanz</li>
-          <li>Gesetzlich erforderlich unter BIS Quality Control Orders (QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Nach der Genehmigung trägt das Produkt die BIS-Marke (ISI-Marke) zusammen mit
-          der Lizenznummer.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Welche indische Norm gilt für Tische & Schreibtische? – IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die anwendbare BIS-Norm ist:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – Tische und Schreibtische: Sicherheits-
-          Anforderungen
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Diese Norm definiert Leistungs-, strukturelle Sicherheits- und Haltbarkeits-
-          anforderungen für alle Arten von Tischen und Schreibtischen, die in Wohn-,
-          gewerblichen, gastronomischen und institutionellen Umgebungen verwendet werden.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Abgedeckte Produkte
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Büroschreibtische</li>
-          <li>Computerschreibtische</li>
-          <li>Arbeitstische</li>
-          <li>Esstische</li>
-          <li>Couch-Tische</li>
-          <li>Arbeitsschreibtische</li>
-          <li>Schulungstische</li>
-          <li>Schul-/Hochschulschreibtische</li>
-          <li>Lehrertische</li>
-          <li>Modulare Arbeitsplatz-Tische</li>
-          <li>Schreibtische</li>
-          <li>Besprechungs-/Konferenztische</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Wichtige Sicherheitsparameter unter IS 17633:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Strukturelle Stabilität</li>
-          <li>Tragfähigkeit</li>
-          <li>Schlagfestigkeit</li>
-          <li>Horizontale/vertikale Kraftleistung</li>
-          <li>Oberflächenqualität</li>
-          <li>Kantensicherheit</li>
-          <li>Haltbarkeit bei wiederholter Nutzung</li>
-          <li>Materialsicherheit</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Jeder in Indien verkaufte Tisch oder Schreibtisch muss diesen Parametern entsprechen
-          durch BIS-Registrierung für Tische & Schreibtische.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum die BIS-Zertifizierung für Tische und Schreibtische obligatorisch ist
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tische und Schreibtische sind häufig genutzte Möbelstücke, die in Häusern, Büros,
-          Schulen und öffentlichen Bereichen zu finden sind. Strukturelle Ausfälle können Unfälle verursachen
-          wie:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zusammenbruch unter Gewicht</li>
-          <li>Verletzungen durch scharfe Kanten</li>
-          <li>Instabilität während der Nutzung</li>
-          <li>Bruch von Verbindungen</li>
-          <li>Oberflächenablösung</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Um diese Gefahren zu vermeiden, gewährleistet die BIS-Zertifizierung:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sichere Konstruktion und Bauweise</li>
-          <li>Einhaltung der strukturellen Lastanforderungen</li>
-          <li>Langlebige Leistung</li>
-          <li>Verhinderung von Kippen und Zusammenbruch</li>
-          <li>Hochwertige Materialauswahl</li>
-          <li>Einheitliche Marktstandards</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der Verkauf von Tischen und Schreibtischen ohne BIS-Lizenz für Tische & Schreibtische ist
-          in Indien illegal.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS-Zertifizierungsprozess für Tische und Schreibtische (IS 17633:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der BIS-Zertifizierungsprozess folgt dem ISI-Schema (Konformitäts-
-          Bewertungsschema–I), das Produkttests und Fabrikinspektionen umfasst.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 1 – Produktkategorie & Norm identifizieren
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Bestätigen Sie, dass der Tisch/Schreibtisch unter IS 17633:2022 fällt. Identifizieren Sie die Anzahl
-          der Varianten und Materialien.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 2 – BIS-Antrag einreichen (Online-Einreichung)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Füllen Sie den Antrag im BIS Manak Online-Portal aus mit:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Herstellerdetails</li>
-          <li>Fabrikadresse</li>
-          <li>Produktspezifikationen</li>
-          <li>Markendetails</li>
-          <li>Qualitätskontrollsysteme</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 3 – Zahlung der BIS-Zertifizierungsgebühren
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Umfasst:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Antragsgebühr</li>
-          <li>Bearbeitungsgebühr</li>
-          <li>Produkttestgebühren</li>
-          <li>Fabrikinspektionsgebühren</li>
-          <li>Kennzeichnungsgebühren</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 4 – Musterprüfung in einem BIS-anerkannten Labor
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Produkte müssen vollständige Tests durchlaufen, wie unter IS 17633:2022 vorgeschrieben.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Durchgeführte Tests
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stabilitätstest</li>
-          <li>Festigkeitstest (statische Last)</li>
-          <li>Haltbarkeitstest (wiederholte Belastung)</li>
-          <li>Schlagtest</li>
-          <li>Durchbiegungsmessung</li>
-          <li>Kanten- und Oberflächensicherheitstest</li>
-          <li>Arbeitsplatzlasttest</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Das Labor lädt die Testberichte direkt an das BIS hoch.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 5 – BIS-Fabrikinspektion
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Ein BIS-Beamter besucht die Fertigungsstätte, um zu überprüfen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Qualitätsmanagementsystem</li>
-          <li>Interne Testfähigkeit</li>
-          <li>Rohstoffkontrolle</li>
-          <li>Produktionslinie & Maschinen</li>
-          <li>Kalibrierung von Instrumenten</li>
-          <li>Einhaltung von STI (Schema für Tests & Inspektion)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 6 – Erteilung der BIS-Lizenz
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Das BIS erteilt:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS-Zertifikat</li>
-          <li>ISI-Marken-Genehmigung</li>
-          <li>Eindeutige CML-Lizenznummer</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Danach kann der Hersteller Tische/Schreibtische legal kennzeichnen und in
-          Indien verkaufen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 7 – Compliance nach Lizenzierung
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Hersteller müssen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Aufzeichnungen gemäß STI führen</li>
-          <li>ISI-Kennzeichnung korrekt verwenden</li>
-          <li>Periodische BIS-Inspektionen zulassen</li>
-          <li>Lizenz alle 1–2 Jahre erneuern</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Umfang der BIS-Lizenz für Tische & Schreibtische
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Diese Norm deckt die Anforderungen bezüglich
-          der Leistung und Sicherheit ab, d. h. Festigkeit, Stabilität und Haltbarkeit
-          von Tischen und Schreibtischen, die in sitzender und/oder stehender
-          Position verwendet werden, von Erwachsenen genutzt.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Diese Norm gilt für vollständig hergestellte/
-          gefertigte Tische und Schreibtische. Sie gilt auch für montagefertige
-          Einheiten; in diesem Fall gelten die Anforderungen dieser Norm für
-          die montierten Einheiten.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Erforderliche Dokumente für die BIS-Zertifizierung von Tischen & Schreibtischen
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Fertigungsdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabriklizenz</li>
-          <li>Maschinenliste</li>
-          <li>Testausrüstungsliste</li>
-          <li>Kalibrierungszertifikate</li>
-          <li>Fabriklayout</li>
-          <li>Prozessablaufdiagramm</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technische Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tisch-/Schreibtisch-Zeichnungen</li>
-          <li>Stückliste</li>
-          <li>Produktspezifikationen</li>
-          <li>Interne Qualitätstestberichte</li>
-          <li>Fotos/Videos des Produkts</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Rechtliche Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ausweiskopie des autorisierten Unterzeichners</li>
-          <li>Adressnachweis</li>
-          <li>Markenautorisierungsschreiben</li>
-          <li>Markenregistrierungszertifikat</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS-Antragsdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ausgefülltes Antragsformular</li>
-          <li>Herstellerverpflichtung</li>
-          <li>Testanfrageschreiben</li>
-          <li>Autorisierungsschreiben</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Vollständige Dokumentation gewährleistet schnellere Genehmigungen.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testanforderungen unter IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die Tests bewerten Festigkeit, Stabilität, Haltbarkeit und Sicherheit.
-        </p>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Klausel
+                  Merkmal
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Anforderung
+                  Details
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design und Verarbeitung
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stabilitätstest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Angegebene Last
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Für gelegentliche schwere Lasten
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Festigkeit unter horizontaler statischer Kraft
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Allgemein
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vertikaler Schlagtest für Glastischplatten
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vertikaler Schlagtest für alle anderen Tischplatten
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Durchbiegung von Tischplatten
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Falltest
-                </TableCell>
-              </TableRow>
+              {[
+                ["Produkt", "Tische und Schreibtische"],
+                ["Anwendbare Norm", "IS 17633:2022"],
+                ["Zertifizierungstyp", "BIS-Produktzertifizierung"],
+                ["Anwendbare Marke", "ISI-Marke"],
+                ["Zertifizierungsschema", "Schema-I (ISI-Marken-Zertifizierung)"],
+                ["Regulierungsbehörde", "Bureau of Indian Standards (BIS)"],
+                ["Anwendbarer Sektor", "Möbel"],
+                [
+                  "Berechtigte Antragsteller",
+                  "Indische Hersteller und ausländische Hersteller",
+                ],
+                [
+                  "Compliance-Anforderung",
+                  "Obligatorisch unter geltender Möbel-QCO (Quality Control Order)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Zertifizierungsschema" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Schema-I (ISI-Marken-Zertifizierung)
+                      </a>
+                    ) : particular === "Compliance-Anforderung" ? (
+                      <>
+                        Obligatorisch unter geltender {" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                         <strong>Möbel-QCO (Quality Control Order)</strong>
+                        </a>
+                        
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Tests müssen nur in BIS-genehmigten Labors durchgeführt werden.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Was ist die BIS-Zertifizierung für Tische und Schreibtische?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die BIS-Zertifizierung für Tische und Schreibtische ist ein
+          Konformitätsbewertungsprozess, der im Rahmen des
+          Produktzertifizierungsschemas des Bureau of Indian Standards (BIS)
+          durchgeführt wird. Die Zertifizierung bestätigt, dass das Produkt die
+          in IS 17633:2022 festgelegten Anforderungen erfüllt.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Häufige Herausforderungen & Wie man sie vermeidet
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. Produkt fällt bei Last- oder Haltbarkeitstests durch</strong>
-            <br />
-            Lösung: Verbindungen verstärken, BIS-konforme Materialien verwenden, Verstärkung
-            hinzufügen.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. Unvollständige Dokumentation</strong>
-            <br />
-            Lösung: Alle rechtlichen, technischen und Fertigungsdokumente
-            im Voraus vorbereiten.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. Fabrik fehlt geeignete Testausrüstung</strong>
-            <br />
-            Lösung: Erforderliche Instrumente installieren und Kalibrierung gemäß
-            BIS-Richtlinien aufrechterhalten.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. Falsche Kennzeichnung</strong>
-            <br />
-            Lösung: Sicherstellen, dass die ISI-Kennzeichnung den BIS-Regeln genau folgt.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. Fehlklassifizierung von Produktmodellen</strong>
-            <br />
-            Lösung: Professionelle Beratung einholen, um Varianten
-            korrekt zu kategorisieren.
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vorteile der BIS-Zertifizierung für Tische & Schreibtische
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Rechtliche Autorisierung zum Verkauf in Indien</li>
-          <li>Erhöhtes Kundenvertrauen</li>
-          <li>Bessere Produkthaltbarkeit</li>
-          <li>Zugang zu großen Einzelhändlern & E-Commerce-Plattformen</li>
-          <li>Geringeres Produkthaftungsrisiko</li>
-          <li>Höhere Markenglaubwürdigkeit</li>
-          <li>Einhaltung staatlicher QCOs</li>
-          <li>Wettbewerbsvorteil auf dem Markt</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Strafen bei Nichtkonformität
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nach erfolgreicher Zertifizierung dürfen Hersteller die ISI-Marke auf
+          ihren Produkten verwenden, was die Einhaltung der geltenden indischen
+          Norm anzeigt.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Der Verkauf oder die Verteilung von Tischen/Schreibtischen ohne BIS-Zertifizierung kann
-          führen zu:
+          Die Zertifizierung soll sicherstellen, dass auf dem indischen Markt
+          gelieferte Tische und Schreibtische die festgelegten Anforderungen
+          erfüllen in Bezug auf:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produktbeschlagnahme</li>
-          <li>Schwere Geldstrafen</li>
-          <li>Strafrechtliche Verfolgung</li>
-          <li>Importverbot</li>
-          <li>Geschäftsschließungsanordnungen</li>
-          <li>Lizenzwiderruf</li>
+        <ul className={LIST_CLASS}>
+          <li>Strukturelle Festigkeit und Stabilität bei normaler Nutzung</li>
+          <li>Haltbarkeit, Benutzersicherheit und Materialverarbeitung</li>
+          <li>Vollständige Leistungsanforderungen nach IS 17633:2022</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das Bureau of Indian Standards Act, 2016 verhängt strenge Strafen.
+          Für Käufer und Beschaffungsstellen dient die ISI-Marke als Garantie
+          dafür, dass die Möbel anhand anerkannter Qualitäts- und
+          Sicherheitsmaßstäbe bewertet wurden.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wer benötigt die BIS-Zertifizierung für Tische & Schreibtische?
+          Überblick über IS 17633:2022 für Tische und Schreibtische
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Diese Zertifizierung ist obligatorisch für:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022 ist die indische Norm, die Leistungs- und
+          Sicherheitsanforderungen für Tische und Schreibtische festlegt, die
+          für erwachsene Benutzer in sitzenden und stehenden Anwendungen
+          bestimmt sind.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indische Hersteller</li>
-          <li>Ausländische Hersteller</li>
-          <li>Importeure</li>
-          <li>Händler/Markeninhaber</li>
-          <li>OEM/ODM-Lieferanten</li>
-          <li>Möbelhändler</li>
-          <li>E-Commerce-Verkäufer</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Norm deckt beides ab:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Vollständig hergestellte (gebrauchsfertige) Tische und Schreibtische</li>
+          <li>Montagefertige (RTA) Einheiten — getestet nach vollständiger Montage</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Jede Fabrik muss eine separate BIS-Lizenz erhalten.
+          Das Ziel der Norm besteht darin, Mindestanforderungen an Leistung und
+          Sicherheit festzulegen, die dazu beitragen, dass Möbel während ihrer
+          gesamten vorgesehenen Lebensdauer stabil, haltbar und sicher bleiben.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>
+          Wichtige Bereiche unter IS 17633:2022
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Norm konzentriert sich auf mehrere wichtige Leistungsmerkmale,
+          darunter:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Festigkeitsanforderungen —</strong> Tische und Schreibtische
+            müssen den erwarteten Lasten bei normaler Nutzung ohne Versagen oder
+            übermäßige Verformung standhalten.
+          </li>
+          <li>
+            <strong>Stabilitätsanforderungen —</strong> Möbel müssen bei der
+            Nutzung stabil bleiben und unter vorhersehbaren Belastungsbedingungen
+            dem Kippen widerstehen.
+          </li>
+          <li>
+            <strong>Haltbarkeitsanforderungen —</strong> Produkte müssen ihre
+            Leistung und strukturelle Integrität nach wiederholter Nutzung über
+            einen längeren Zeitraum beibehalten.
+          </li>
+          <li>
+            <strong>Sicherheitsanforderungen —</strong> Konstruktion und Bauweise
+            müssen Risiken durch Instabilität, scharfe Kanten, unsichere Bauweise
+            oder strukturelles Versagen minimieren.
+          </li>
+          <li>
+            <strong>Verarbeitung &amp; Konstruktionsqualität —</strong>
+            Verarbeitung, Montage, Verbindungen, Befestigungselemente und der
+            gesamte Aufbau werden auf zuverlässige Langzeitleistung bewertet.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum uns für BIS-Zertifizierungsberatung wählen?
+          Ist die BIS-Zertifizierung für Tische und Schreibtische in Indien obligatorisch?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Wir bieten umfassende Unterstützung:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ja. Tische und Schreibtische, die unter die geltende Möbel-Quality
+          Control Order (QCO) fallen, müssen die relevante indische Norm
+          einhalten und eine BIS-Zertifizierung erhalten, bevor sie auf dem
+          indischen Markt hergestellt, importiert, verkauft, vertrieben oder
+          angeboten werden.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Normeninterpretation (IS 17633:2022)</li>
-          <li>Produktklassifizierung</li>
-          <li>Dokumentationserstellung</li>
-          <li>Testkoordination</li>
-          <li>BIS-Portal-Einreichung</li>
-          <li>Fabrikinspektionsunterstützung</li>
-          <li>Kontinuierliche Nachverfolgung mit BIS</li>
-          <li>Lizenzgenehmigung</li>
-          <li>Verlängerung und Compliance-Management</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Das Ziel der obligatorischen Zertifizierung ist es:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Eine höhere Produktqualität in der gesamten Möbelindustrie zu gewährleisten</li>
+          <li>Die Verbrauchersicherheit durch verifizierte Normen zu schützen</li>
+          <li>Zu verhindern, dass minderwertige Möbel auf den Markt gelangen</li>
+          <li>Standardisierung und einheitliche Qualitätsmaßstäbe zu fördern</li>
+          <li>Das Käufervertrauen in ISI-markierte Produkte aufzubauen</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Unsere Expertise gewährleistet schnelle, problemlose und fehlerfreie Zertifizierung.
+          Hersteller, die unter die geltenden Vorschriften fallen, müssen eine
+          BIS-Lizenz erhalten und die ISI-Marke gemäß den BIS-Anforderungen
+          verwenden.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Sehen Sie auch die Möbelprodukte, die unter die obligatorische
+            BIS-Zertifizierung fallen —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS-Zertifizierung für Möbel</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Produktumfang unter IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Der Umfang von IS 17633:2022 erstreckt sich auf verschiedene
+          Kategorien von Tischen und Schreibtischen, die für erwachsene Benutzer
+          in Wohn-, Gewerbe-, institutionellen und Arbeitsplatzumgebungen
+          konzipiert sind.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Beispiele für häufig abgedeckte Produkte sind:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Büro-, Schreib- und Computerschreibtische</li>
+          <li>Arbeitsplätze und Mehrzweckschreibtische</li>
+          <li>Konferenz- und Besprechungstische</li>
+          <li>Institutions- und Labortische</li>
+          <li>Co-Working- und Gewerbemöbel</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller sollten die Produktspezifikationen und den
+          Verwendungszweck sorgfältig prüfen, um festzustellen, ob ihre Produkte
+          in den Anwendungsbereich von IS 17633:2022 fallen.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Wichtige technische Anforderungen unter IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Um die BIS-Zertifizierung zu erhalten, müssen Tische und Schreibtische
+          verschiedene von der Norm festgelegte Leistungs- und
+          Sicherheitsanforderungen erfüllen.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Strukturelle Integrität —</strong> Produkte müssen unter
+            vorgeschriebenen Lasten funktionieren; Verbindungen und
+            Tragstrukturen bleiben während der Prüfung sicher.
+          </li>
+          <li>
+            <strong>Tragfähigkeit —</strong> Tische und Schreibtische müssen
+            festgelegte Lasten ohne inakzeptable Verformung, Beschädigung oder
+            Versagen tragen.
+          </li>
+          <li>
+            <strong>Stabilitätsleistung —</strong> Möbel müssen bei der Nutzung
+            stabil bleiben und Kipprisiken reduzieren, die Verletzungen oder
+            Sachschäden verursachen könnten.
+          </li>
+          <li>
+            <strong>Haltbarkeitsleistung —</strong> Produkte müssen wiederholten
+            Nutzungszyklen standhalten und dabei eine akzeptable Leistung
+            beibehalten.
+          </li>
+          <li>
+            <strong>Material &amp; Verarbeitung —</strong> Materialien,
+            Endbearbeitung und Montagemethoden müssen Qualitätskontrollen für
+            eine konsistente Produktion erfüllen.
+          </li>
+          <li>
+            <strong>Sicherheitsaspekte —</strong> Die Konstruktion muss Gefahren
+            durch die Möbelnutzung für Verbraucher und institutionelle Käufer
+            minimieren.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Warum die BIS-Zertifizierung für Möbelhersteller wichtig ist
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Der indische Möbelmarkt ist zunehmend qualitätsbewusst geworden.
+          Regierungsabteilungen, Bildungseinrichtungen, Unternehmenskäufer und
+          große Beschaffungsstellen bevorzugen oft Produkte, die anerkannte
+          Normen erfüllen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Der Erhalt der BIS-Zertifizierung hilft Herstellern:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Die Einhaltung der geltenden indischen Normen nachzuweisen</li>
+          <li>Die Produktglaubwürdigkeit und den Markenruf zu steigern</li>
+          <li>Das Vertrauen von Kunden und institutionellen Käufern zu gewinnen</li>
+          <li>Die Akzeptanz bei staatlicher und Unternehmensbeschaffung zu verbessern</li>
+          <li>Interne Qualitätsmanagementpraktiken zu stärken</li>
+          <li>Sich entwickelnden regulatorischen Anforderungen voraus zu sein</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Für Hersteller, die langfristiges Wachstum anstreben, wird die
+          BIS-Zertifizierung oft sowohl als Compliance-Anforderung als auch als
+          strategischer Geschäftsvorteil betrachtet.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Testanforderungen für Tische und Schreibtische unter IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Bevor ein Hersteller die BIS-Zertifizierung erhalten kann, müssen
+          Produktmuster durch Tests in einem BIS-anerkannten Labor anhand der
+          geltenden Anforderungen von IS 17633:2022 bewertet werden.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Das Ziel der Tests besteht darin, zu überprüfen, ob die Möbel die
+          vorgeschriebenen Normen für Sicherheit, Stabilität, Festigkeit,
+          Haltbarkeit und Gesamtleistung erfüllen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Obwohl die genauen Testparameter je nach Produktdesign und
+          Zertifizierungsanforderungen variieren können, werden Hersteller im
+          Allgemeinen auf die folgenden Merkmale geprüft:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Design &amp; Verarbeitung —</strong> Konstruktionsqualität,
+            Montage, Endbearbeitung und allgemeine Produktintegrität werden für
+            eine sichere Langzeitnutzung untersucht.
+          </li>
+          <li>
+            <strong>Maßprüfung —</strong> Kritische Maße werden anhand der Norm
+            und der genehmigten Produktspezifikationen überprüft.
+          </li>
+          <li>
+            <strong>Stabilitätsprüfung —</strong> Bestätigt, dass das Produkt bei
+            normaler Nutzung stabil bleibt, und kennzeichnet Kipp- oder
+            strukturelle Schwächen.
+          </li>
+          <li>
+            <strong>Statische Lastprüfung —</strong> Überprüft die Tragfähigkeit
+            ohne Versagen, übermäßige Verformung oder Beschädigung.
+          </li>
+          <li>
+            <strong>Festigkeitsprüfung —</strong> Bewertet Rahmen, Verbindungen
+            und Stützen unter Betriebsbelastungen bei regelmäßiger Nutzung.
+          </li>
+          <li>
+            <strong>Haltbarkeitsbewertung —</strong> Überprüft die Beibehaltung
+            der Leistung nach wiederholten Nutzungszyklen.
+          </li>
+          <li>
+            <strong>Sicherheitsbewertung —</strong> Schließt vermeidbare Risiken
+            durch Instabilität, Mängel oder unsichere Designmerkmale aus.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS-Zertifizierungsprozess für Tische und Schreibtische
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller, die eine BIS-Zertifizierung nach IS 17633:2022 anstreben,
+          müssen einen strukturierten Zertifizierungsprozess befolgen, der vom
+          Bureau of Indian Standards festgelegt wurde.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Obwohl die spezifischen Anforderungen je nach Antragstellertyp und
+          Fertigungsstandort variieren können, bleibt der allgemeine Prozess
+          ähnlich.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 1: Bewertung des Produktumfangs
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Der erste Schritt besteht darin, festzustellen, ob das Produkt in den
+          Anwendungsbereich von IS 17633:2022 und der geltenden Quality Control
+          Order fällt. Eine technische Überprüfung der Produktspezifikationen,
+          des Verwendungszwecks, der Materialien und der Konstruktion wird in der
+          Regel vor Einleitung des Zertifizierungsprozesses durchgeführt.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 2: Vorbereitung der Dokumentation
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Der Hersteller bereitet die erforderliche Dokumentation vor,
+          einschließlich Unternehmensinformationen, Fertigungsdetails,
+          Produktspezifikationen, Qualitätskontrollverfahren und unterstützenden
+          technischen Aufzeichnungen. Eine ordnungsgemäße Dokumentation ist
+          entscheidend, da Mängel in dieser Phase die Zertifizierung verzögern
+          können.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 3: Produktprüfung
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produktmuster werden in einem BIS-anerkannten Labor getestet, um die
+          Einhaltung der Anforderungen von IS 17633:2022 zu überprüfen. Der
+          Testbericht dient als eines der primären technischen Dokumente zur
+          Unterstützung des Zertifizierungsantrags.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 4: Einreichung des Antrags
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Der BIS-Antrag wird zusammen mit unterstützenden Dokumenten,
+          Testberichten, Fertigungsinformationen und
+          Qualitätsmanagementaufzeichnungen eingereicht. Der Antrag wird vom BIS
+          auf Vollständigkeit und technische Konformität geprüft.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 5: Fabrikbewertung
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Das BIS kann eine Fabrikinspektion durchführen, um zu bewerten:
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>Fertigungsinfrastruktur und Produktionskapazitäten</li>
+          <li>Qualitätskontrollsysteme und interne Testeinrichtungen</li>
+          <li>Rohstoffkontrollen und Produktrückverfolgbarkeitsmechanismen</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Das Ziel besteht darin, die Fähigkeit des Herstellers zu überprüfen,
+          konsistent konforme Produkte herzustellen.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 6: Bewertung und Überprüfung
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Das BIS überprüft den Antrag, die Inspektionsergebnisse und die
+          Laborprüfberichte, bevor es eine Zertifizierungsentscheidung trifft.
+          Alle während des Überprüfungsprozesses aufgeworfenen Beobachtungen
+          müssen vom Antragsteller behandelt werden.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 7: Erteilung der BIS-Lizenz
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nach erfolgreichem Abschluss aller Anforderungen erteilt das BIS die
+          Lizenz und autorisiert den Hersteller, die ISI-Marke auf
+          zertifizierten Tischen und Schreibtischen zu verwenden.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS-Zertifizierung für indische Hersteller
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Indische Hersteller beantragen die Zertifizierung in der Regel im
+          Rahmen des vom BIS vorgeschriebenen inländischen
+          Zertifizierungsverfahrens. Der Prozess umfasst typischerweise:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Produktprüfung in einem BIS-anerkannten Labor</li>
+          <li>Antragseinreichung mit unterstützenden Dokumenten</li>
+          <li>Fabrikinspektion und technische Überprüfung durch das BIS</li>
+          <li>Erteilung der BIS-Lizenz und ISI-Marken-Autorisierung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nach der Zertifizierung müssen Hersteller weiterhin die
+          BIS-Anforderungen einhalten und während der gesamten Lizenzlaufzeit
+          eine konsistente Produktqualität aufrechterhalten.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS-Zertifizierung für ausländische Hersteller
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ausländische Hersteller, die Tische und Schreibtische nach Indien
+          exportieren möchten, müssen ebenfalls eine BIS-Zertifizierung
+          erhalten, bevor sie Produkte liefern, die unter die geltende Quality
+          Control Order fallen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Der Zertifizierungsprozess umfasst im Allgemeinen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Bestellung eines autorisierten indischen Vertreters (AIR)</li>
+          <li>Produktprüfung und Fabrikbewertung im Ausland</li>
+          <li>Dokumentenprüfung und BIS-Zertifizierungsgenehmigung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ausländische Hersteller müssen die kontinuierliche Einhaltung der
+          BIS-Anforderungen sicherstellen, um die Gültigkeit der Zertifizierung
+          aufrechtzuerhalten.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Erforderliche Dokumente für die BIS-Zertifizierung von Tischen und Schreibtischen
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Dokumentationsanforderungen können je nach Hersteller und
+          Zertifizierungsweg variieren. Die folgenden Dokumente sind jedoch
+          während des Zertifizierungsprozesses üblicherweise erforderlich.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Geschäfts- und Rechtsdokumente</h3>
+        <ul className={LIST_CLASS}>
+          <li>Unternehmensregistrierung, Fertigungslizenz und GST (falls zutreffend)</li>
+          <li>Angaben zum autorisierten Unterzeichner und Identitätsnachweis</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Fertigungsinformationen</h3>
+        <ul className={LIST_CLASS}>
+          <li>Prozessablaufdiagramm, Fabriklayout und Maschinendetails</li>
+          <li>Produktionsinfrastruktur und Kapazitätsaufzeichnungen</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Produktinformationen</h3>
+        <ul className={LIST_CLASS}>
+          <li>Produktspezifikationen, technische Zeichnungen und Katalog</li>
+          <li>Stückliste und Material-/Komponentendetails</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Qualitätskontrolldokumente</h3>
+        <ul className={LIST_CLASS}>
+          <li>Interne Test-, Inspektions- und QC-Verfahren</li>
+          <li>Qualitätskontrollaufzeichnungen und Geräte-Kalibrierungsberichte</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Zertifizierungsdokumente</h3>
+        <ul className={LIST_CLASS}>
+          <li>Laborprüfberichte und ausgefüllte BIS-Antragsformulare</li>
+          <li>Erklärungen, Verpflichtungen und andere vom BIS vorgeschriebene Dokumente</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller sollten sicherstellen, dass alle Dokumente vor der
+          Einreichung korrekt, vollständig und konsistent sind.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Häufige Herausforderungen während der BIS-Zertifizierung
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Obwohl der Zertifizierungsprozess bei ordnungsgemäßer Verwaltung
+          unkompliziert ist, stoßen Hersteller oft auf mehrere
+          Herausforderungen.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Technische Auslegung —</strong> Die Zuordnung der
+            Anforderungen von IS 17633:2022 zu spezifischen Produktdesigns kann
+            ohne fachkundige Beratung schwierig sein.
+          </li>
+          <li>
+            <strong>Testfehler —</strong> Schwache Verbindungen, schlechte
+            Stabilität oder Materialprobleme führen oft zur Ablehnung bei
+            Labortests.
+          </li>
+          <li>
+            <strong>Dokumentationslücken —</strong> Unvollständige oder nicht
+            übereinstimmende Aufzeichnungen sind eine häufige Ursache für
+            Antragsverzögerungen.
+          </li>
+          <li>
+            <strong>Fabrikkonformität —</strong> QC-Systeme,
+            Rückverfolgbarkeit oder Produktionskontrollen müssen möglicherweise
+            vor der Lizenzerteilung verbessert werden.
+          </li>
+          <li>
+            <strong>Regulatorische Koordination —</strong> Die Abstimmung von
+            Labortests, Inspektionen und BIS-Nachverfolgungen erfordert ohne
+            strukturierte Unterstützung Zeit.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Vorteile professioneller Unterstützung bei der BIS-Zertifizierung
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Zusammenarbeit mit einem erfahrenen BIS-Berater kann Herstellern
+          helfen, kostspielige Verzögerungen zu vermeiden und den
+          Zertifizierungsweg zu optimieren.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Professionelle Unterstützung umfasst typischerweise:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Überprüfung des Produktumfangs und Normenauslegung</li>
+          <li>Dokumentationsvorbereitung und Antragseinreichung</li>
+          <li>Koordination von Labortests und Fabrikinspektionen</li>
+          <li>Laufende Compliance- und Unterstützung nach der Zertifizierung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dies ermöglicht es Herstellern, sich auf die Produktion zu
+          konzentrieren, während regulatorische Anforderungen effizient
+          behandelt werden.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Warum Sun Certifications India wählen?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India ist eine Beratungsfirma für regulatorische
+          Compliance, die Hersteller, Importeure, Exporteure und Unternehmen bei
+          Zertifizierungs- und Genehmigungsanforderungen in ganz Indien
+          unterstützt.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Unsere Experten bieten umfassende Unterstützung für die
+          BIS-Zertifizierung für Tische und Schreibtische nach IS 17633:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Unsere Dienstleistungen umfassen</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>Bewertung der Produktanwendbarkeit und BIS-Compliance-Beratung</li>
+          <li>Dokumentationsunterstützung und Antragsverwaltung</li>
+          <li>Testkoordination und Unterstützung bei der Fabrikinspektion</li>
+          <li>Regulatorische Kommunikation und Compliance-Unterstützung nach der Zertifizierung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Unser Ziel ist es, Unternehmen dabei zu helfen, den
+          Zertifizierungsprozess effizient zu navigieren und dabei Verzögerungen
+          und Compliance-Herausforderungen zu minimieren.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -751,116 +888,148 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Zertifikat für Tische und Schreibtische unter IS 17633:2022 ist eine
-          obligatorische Konformitätsanforderung, die Produktsicherheit,
-          Leistung, Haltbarkeit und Einhaltung nationaler Normen gewährleistet.
-          Hersteller und Importeure müssen Produkttests, Fabrik-
-          inspektionen durchlaufen und alle BIS-Dokumentations- und Kennzeichnungsregeln einhalten, um
-          die ISI-Marke zu erhalten.
+          Die BIS-Zertifizierung für Tische und Schreibtische nach IS
+          17633:2022 ist eine wichtige Anforderung für Hersteller, die konforme
+          Möbelprodukte auf dem indischen Markt liefern möchten. Die
+          Zertifizierung trägt dazu bei, dass Tische und Schreibtische die
+          festgelegten Normen in Bezug auf Sicherheit, Stabilität, Haltbarkeit,
+          Festigkeit und Qualität erfüllen.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mit fachkundiger Unterstützung wird der gesamte Zertifizierungsprozess
-          reibungslos, schnell und vollständig konform mit BIS-Vorschriften.
+          Durch den Erhalt der BIS-Zertifizierung und die Verwendung der
+          ISI-Marke können Hersteller die Einhaltung indischer Normen
+          nachweisen, das Kundenvertrauen verbessern, ihre Marktposition stärken
+          und langfristiges Geschäftswachstum unterstützen.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Wenn Sie planen, eine BIS-Zertifizierung für Tische und Schreibtische
+          nach IS 17633:2022 zu erhalten, kann Sun Certifications India Sie mit
+          umfassender Compliance-Unterstützung begleiten und Ihnen helfen, den
+          Zertifizierungsprozess effizient und sicher zu navigieren.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQ – BIS-Zertifikat für Tische & Schreibtische (IS 17633:2022)
+          FAQs – BIS-Zertifizierung für Tische und Schreibtische (IS 17633:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Ist die BIS-Zertifizierung für Tische und Schreibtische obligatorisch?
-              </strong>
+              <strong>1. Was ist IS 17633:2022?</strong>
               <br />
-              Ja. Gemäß IS 17633:2022 müssen alle Tische und Schreibtische
-              BIS-zertifiziert sein, bevor sie in Indien verkauft werden.
+              IS 17633:2022 ist die vom Bureau of Indian Standards (BIS)
+              veröffentlichte indische Norm, die Mindestanforderungen an
+              Leistung, Stabilität, Haltbarkeit und Sicherheit für Tische und
+              Schreibtische festlegt, die für erwachsene Benutzer in sitzenden
+              und stehenden Anwendungen bestimmt sind.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Welche Tests sind für die Zertifizierung erforderlich?</strong>
+              <strong>2. Ist die BIS-Zertifizierung für Tische und Schreibtische obligatorisch?</strong>
               <br />
-              Obligatorische Tests umfassen Stabilitäts-, Festigkeits-, Haltbarkeits-,
-              Durchbiegungs-, Schlag- und Oberflächensicherheitstests.
+              Ja — für Produkte, die unter die geltende Möbel-Quality Control
+              Order (QCO) fallen. Hersteller und Importeure müssen eine gültige
+              BIS-Lizenz besitzen und IS 17633:2022 einhalten, bevor sie solche
+              Möbel in Indien herstellen, importieren, verkaufen oder
+              vertreiben.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Wie hoch sind die BIS-Zertifizierungskosten?</strong>
+              <strong>3. Welche Zertifizierungsmarke gilt für Tische und Schreibtische?</strong>
               <br />
-              Die Kosten liegen zwischen ₹65.000 – ₹1.30.000, abhängig von Test-
-              und Inspektionsfaktoren.
+              Zertifizierte Tische und Schreibtische sind berechtigt, die
+              ISI-Marke im Rahmen des BIS-Produktzertifizierungsschemas zu
+              tragen, was anzeigt, dass das Produkt der geltenden indischen Norm
+              entspricht.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. Benötigen ausländische Hersteller die BIS-Zertifizierung?
-              </strong>
+              <strong>4. Wer kann die BIS-Zertifizierung beantragen?</strong>
               <br />
-              Ja, über das FMCS-Schema, das Übersee-Fabrik-
-              inspektionen durch das BIS umfasst.
+              Sowohl indische Hersteller als auch ausländische Hersteller können
+              die Zertifizierung beantragen, sofern ihre Tische und Schreibtische
+              in den Anwendungsbereich der geltenden QCO fallen und die
+              Anforderungen von IS 17633:2022 erfüllen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. Kann eine Lizenz mehrere Tisch-/Schreibtisch-Modelle abdecken?
-              </strong>
+              <strong>5. Was ist der Zweck der BIS-Zertifizierung?</strong>
               <br />
-              Ja, aber nur wenn die Modelle in Konstruktion und Test-
-              parametern ähnlich sind.
+              Die BIS-Zertifizierung bestätigt, dass Möbel national anerkannte
+              Maßstäbe für Sicherheit, strukturelle Leistung, Haltbarkeit und
+              Verarbeitung erfüllen — und trägt dazu bei, Endbenutzer zu schützen
+              und Qualitätsstandards auf dem Markt aufrechtzuerhalten.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Wie lange dauert der BIS-Prozess?</strong>
+              <strong>6. Welche Produkte werden unter IS 17633:2022 abgedeckt?</strong>
               <br />
-              Etwa 30–45 Tage.
+              Die Norm deckt Tische und Schreibtische für Erwachsene ab, die in
+              Büros, Bildungseinrichtungen, Gewerbebetrieben und
+              Arbeitsplatzumgebungen verwendet werden — einschließlich
+              Büroschreibtischen, Arbeitsplätzen, Schreibtischen, Konferenztischen
+              und ähnlichen Möbelkategorien.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Ist das Testen in einem BIS-anerkannten Labor obligatorisch?</strong>
+              <strong>7. Ist eine Laborprüfung obligatorisch?</strong>
               <br />
-              Ja, nur BIS-genehmigte Labors können die Tests durchführen.
+              Ja. Produktmuster müssen in einem BIS-anerkannten Labor getestet
+              werden, und der resultierende Testbericht ist ein wichtiges
+              Dokument im Zertifizierungsantrag, um die Einhaltung von IS
+              17633:2022 nachzuweisen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Was passiert, wenn das Produkt durchfällt?</strong>
+              <strong>8. Können importierte Tische und Schreibtische ohne BIS-Zertifizierung verkauft werden?</strong>
               <br />
-              Es muss neu gestaltet und erneut zur Prüfung eingereicht werden.
+              Nein. Importierte Produkte, die unter die obligatorische
+              Zertifizierung fallen, können in Indien nicht legal ohne gültige
+              BIS-Genehmigung geliefert werden. Importeure müssen die Einhaltung
+              der geltenden Norm sicherstellen, bevor sie Produkte auf den Markt
+              bringen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Ist die ISI-Kennzeichnung nach der Zertifizierung obligatorisch?</strong>
+              <strong>9. Welche Rolle spielt eine Fabrikinspektion?</strong>
               <br />
-              Ja, die ISI-Marke ist auf dem Produkt und der Verpackung erforderlich.
+              Das BIS führt eine Fabrikbewertung durch, um zu überprüfen, ob der
+              Hersteller eine ausreichende Produktionsinfrastruktur,
+              Qualitätskontrollsysteme und Produktrückverfolgbarkeit unterhält,
+              um konsistent konforme Tische und Schreibtische herzustellen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. Welche Dokumente werden benötigt?</strong>
+              <strong>10. Wie kann Sun Certifications India helfen?</strong>
               <br />
-              Technische Zeichnungen, Stückliste, Fabrikdokumente, Testberichte, QC-Plan
-              und rechtliche Dokumente.
+              Sun Certifications India bietet umfassende Unterstützung —
+              einschließlich Bewertung des Produktumfangs,
+              Dokumentationsvorbereitung, Koordination von Labortests,
+              BIS-Antragsverwaltung, Vorbereitung auf die Fabrikinspektion und
+              Compliance-Unterstützung nach der Zertifizierung für Tische und
+              Schreibtische nach IS 17633:2022.
             </p>
           </div>
         </div>
@@ -877,6 +1046,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Verwandte Ressourcen
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI-Marken-Lizenz</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS-FMCS-Zertifikat</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadGerman />
 

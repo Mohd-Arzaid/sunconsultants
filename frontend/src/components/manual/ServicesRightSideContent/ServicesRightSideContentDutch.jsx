@@ -32,6 +32,7 @@ const ServicesRightSideContentDutch = () => {
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
     "/bis-certificering-in-nederland",
+    "/beste-en-meest-betrouwbare-bis-certificeringsconsultant-nederland",
     "/nl/wat-is-crs-bis-of-crs-registratie",
     // ISI Mark Dutch Page Url
     "/nl/bis-isi-mark-certificering",
@@ -641,6 +642,12 @@ const ContactFormServicesRightSideContentDutch = () => {
       return "CRS Registration (Dutch)";
     if (path.includes("/bis-certificering-in-nederland"))
       return "Netherlands Blog Dutch";
+    if (
+      path.includes(
+        "/beste-en-meest-betrouwbare-bis-certificeringsconsultant-nederland"
+      )
+    )
+      return "Beste en meest betrouwbare BIS-certificeringsconsultant in Nederland – Sun Certifications India (Dutch)";
     if (path.includes("/nl/wat-is-crs-bis-of-crs-registratie"))
       return "CRS Registration (Dutch)";
     if (path.includes("/nl/bis-isi-mark-certificering"))

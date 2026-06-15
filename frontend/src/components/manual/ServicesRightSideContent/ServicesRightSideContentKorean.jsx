@@ -35,6 +35,7 @@ const ServicesRightSideContentKorean = () => {
     "/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi",
 
     "/hangug-ui-bis-injeung",
+    "/hangug-eseo-choegowa-gajang-sinrohaneun-bis-injeung-konsulteonteu",
     "/ko/crs-bis-i-mueos-inga-crs-deunglog",
     // ISI Mark Korean Page Url
     "/ko/bis-isi-mark-injeung",
@@ -615,6 +616,12 @@ const ContactFormServicesRightSideContentKorean = () => {
       return "BISFM (FMCS - Foreign Manufacturers) Korean Page";
 
     if (path.includes("/hangug-ui-bis-injeung")) return "Korea Blog (Korean)";
+    if (
+      path.includes(
+        "/hangug-eseo-choegowa-gajang-sinrohaneun-bis-injeung-konsulteonteu"
+      )
+    )
+      return "한국 최고의 가장 신뢰할 수 있는 BIS 인증 컨설턴트 – Sun Certifications India (Korean)";
     if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
       return "CRS Registration (Korean)";
     if (path.includes("/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"))

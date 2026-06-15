@@ -33,6 +33,7 @@ const ServicesRightSideContentJapanese = () => {
     "/what-is-crs-bis-or-crs-registration",
     "/ja/indo-no-bis-nintei-sukimu-x",
     "/nihon-niokeru-bis-ninsho",
+    "/saikou-de-saishinraisuru-bis-nintei-konsarutanto-nihon",
     "/ja/crs-bis-toha-nani-ka-crs-toroku",
     "/blogs/isi-products/nidan-beddo-is-17636",
     // BIS Certificate for Beds Japanese Page Url
@@ -639,6 +640,12 @@ const ContactFormServicesRightSideContentJapanese = () => {
       return "Scheme X Japanese";
     if (path.includes("/nihon-niokeru-bis-ninsho"))
       return "Japan Blog Japanese";
+    if (
+      path.includes(
+        "/saikou-de-saishinraisuru-bis-nintei-konsarutanto-nihon"
+      )
+    )
+      return "最高で最も信頼できるBIS認定コンサルタント（日本）– Sun Certifications India (Japanese)";
     if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
       return "CRS Registration (Japanese)";
     // ISIMark Japanese Page Url

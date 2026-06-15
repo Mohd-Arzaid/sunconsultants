@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnitArabic = () => {
   return (
     <div className="relative w-full">
@@ -142,7 +148,7 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          شهادة BIS للطاولات والمكاتب – دليل شامل لشهادة BIS IS 17633:2022
+          شهادة BIS للطاولات والمكاتب (IS 17633:2022) – الدليل الكامل لشهادة علامة ISI
         </h1>
 
         {/* Featured Image */}
@@ -150,267 +156,538 @@ const MainContentLeft = () => {
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="ترخيص BIS للطاولات والمكاتب"
-            alt="شهادة BIS للطاولات والمكاتب - IS 17633:2022 شهادة BIS"
+            alt="شهادة BIS للطاولات والمكاتب - IS 17633:2022 دليل علامة ISI"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للطاولات والمكاتب إلزامية لجميع المصنعين والمستوردين والبائعين للطاولات والمكاتب في الهند. بموجب المعيار الهندي IS 17633:2022 – الطاولات والمكاتب: متطلبات السلامة، يجب اختبار هذه العناصر من الأثاث والتحقق منها من قبل مكتب المعايير الهندية (BIS) قبل أن يتم بيعها قانونياً في السوق الهندية.
+          تُعد الطاولات والمكاتب من أكثر منتجات الأثاث استخداماً على نطاق واسع في
+          المكاتب والمؤسسات التعليمية والمنشآت التجارية والمؤسسات الحكومية
+          والمساحات السكنية. وبما أنه يُتوقع من هذه المنتجات تحمّل الاستخدام المنتظم
+          مع ضمان سلامة المستخدم والاستقرار والمتانة، فقد أصبح الامتثال لمعايير
+          الجودة المعترف بها أمراً متزايد الأهمية للمصنعين والمستوردين.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          الطاولات والمكاتب هي مكونات أساسية في المنازل والمكاتب والمدارس والجامعات والمساحات التجارية وبيئات الضيافة وأماكن العمل الصناعية. نظراً لأنها غالباً ما تدعم الوزن والصدمات والاستخدام المستمر، فإن قوتها الهيكلية وسلامتها أمران بالغان الأهمية. لضمان حماية المستهلك وموثوقية المنتج، يفرض BIS شهادة إلزامية.
+          في الهند، يُطلب من الطاولات والمكاتب المشمولة بموجب IS 17633:2022 الامتثال
+          لمتطلبات الجودة والسلامة المعمول بها التي يحددها مكتب المعايير الهندية
+          (BIS). يمكن للمصنعين الذين يستوفون هذه المتطلبات بنجاح الحصول على ترخيص BIS
+          واستخدام علامة ISI على منتجاتهم، مما يدل على المطابقة للمعيار الهندي ذي
+          الصلة.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يشرح هذا الدليل الشامل IS 17633:2022، عملية تسجيل BIS، الاختبار، الوثائق المطلوبة، الرسوم، الجداول الزمنية، العقوبات، والفوائد للمصنعين والمستوردين.
+          تُقيّم عملية الشهادة جوانب مختلفة من أداء المنتج، بما في ذلك القوة
+          والاستقرار والمتانة والإتقان والأبعاد والسلامة العامة. ولا يساعد الامتثال
+          الشركات على تلبية المتطلبات التنظيمية فحسب، بل يحسّن أيضاً مصداقية المنتج
+          وقبوله في السوق.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يشرح هذا الدليل الشامل كل ما يحتاج المصنعون والمستوردون والعلامات التجارية
+          للأثاث ومحترفو المشتريات معرفته حول شهادة BIS للطاولات والمكاتب بموجب
+          IS 17633:2022، بما في ذلك القابلية للتطبيق ومتطلبات الشهادة ومعايير
+          الاختبار والوثائق والفوائد وعملية الشهادة.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ما هي شهادة BIS؟
+          أبرز نقاط شهادة BIS للطاولات والمكاتب
+        </h2>
+
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  البند
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  التفاصيل
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["المنتج", "الطاولات والمكاتب"],
+                ["المعيار المعمول به", "IS 17633:2022"],
+                ["نوع الشهادة", "شهادة منتج BIS"],
+                ["العلامة المعمول بها", "علامة ISI"],
+                ["مخطط الشهادة", "المخطط الأول (شهادة علامة ISI)"],
+                ["السلطة التنظيمية", "مكتب المعايير الهندية (BIS)"],
+                ["القطاع المعمول به", "الأثاث"],
+                [
+                  "المتقدمون المؤهلون",
+                  "المصنعون الهنود والمصنعون الأجانب",
+                ],
+                [
+                  "متطلب الامتثال",
+                  "إلزامي بموجب أمر مراقبة الجودة (QCO) للأثاث المعمول به",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "مخطط الشهادة" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        المخطط الأول (شهادة علامة ISI)
+                      </a>
+                    ) : particular === "متطلب الامتثال" ? (
+                      <>
+                        إلزامي بموجب{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>أمر مراقبة الجودة (QCO) للأثاث</strong>
+                        </a>{" "}
+                        المعمول به
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ما هي شهادة BIS للطاولات والمكاتب؟
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS هي عملية امتثال تنظيمية تديرها مكتب المعايير الهندية، هيئة المعايير الوطنية في الهند.
+          شهادة BIS للطاولات والمكاتب هي عملية تقييم مطابقة تُجرى بموجب مخطط شهادة
+          المنتجات لمكتب المعايير الهندية (BIS). تؤكد الشهادة أن المنتج يمتثل
+          للمتطلبات المحددة في IS 17633:2022.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معنى شهادة BIS
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          تؤكد شهادة BIS أن المنتج يلبي متطلبات السلامة والجودة والأداء والمتانة التي وضعتها المعايير الهندية.
+          عند الحصول على الشهادة بنجاح، يُسمح للمصنعين باستخدام علامة ISI على
+          منتجاتهم، مما يدل على الامتثال للمعيار الهندي المعمول به.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          فوائد شهادة BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>يضمن سلامة المستهلك</li>
-          <li>يدعم التصنيع عالي الجودة</li>
-          <li>يقلل من مخاطر فشل المنتج</li>
-          <li>يحسن قبول السوق</li>
-          <li>مطلوب قانونياً بموجب أوامر مراقبة الجودة BIS (QCOs)</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تهدف الشهادة إلى ضمان أن الطاولات والمكاتب المورّدة في السوق الهندية تلبي
+          المتطلبات المعتمدة المتعلقة بـ:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>القوة الهيكلية والاستقرار أثناء الاستخدام العادي</li>
+          <li>المتانة وسلامة المستخدم وإتقان المواد</li>
+          <li>متطلبات الأداء الكاملة بموجب IS 17633:2022</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          بمجرد الموافقة، يحمل المنتج علامة BIS (علامة ISI) مع رقم الترخيص.
+          بالنسبة للمشترين ووكالات المشتريات، تُعد علامة ISI ضماناً بأن الأثاث قد تم
+          تقييمه وفقاً لمعايير الجودة والسلامة المعترف بها.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ما المعيار الهندي الذي ينطبق على الطاولات والمكاتب؟ – IS 17633:2022
+          نظرة عامة على IS 17633:2022 للطاولات والمكاتب
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          المعيار BIS المعمول به هو:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – الطاولات والمكاتب: متطلبات السلامة
+          IS 17633:2022 هو المعيار الهندي الذي يحدد متطلبات الأداء والسلامة للطاولات
+          والمكاتب المخصصة للمستخدمين البالغين في تطبيقات الجلوس والوقوف.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          يحدد هذا المعيار متطلبات الأداء والسلامة الهيكلية والمتانة لجميع أنواع الطاولات والمكاتب المستخدمة في البيئات السكنية والتجارية والضيافة والمؤسسية.
+          يغطي المعيار كلاً من:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المنتجات المشمولة
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>مكاتب المكتب</li>
-          <li>مكاتب الكمبيوتر</li>
-          <li>طاولات الدراسة</li>
-          <li>طاولات الطعام</li>
-          <li>طاولات القهوة</li>
-          <li>مكاتب العمل</li>
-          <li>مكاتب التدريب</li>
-          <li>مكاتب المدرسة/الكلية</li>
-          <li>طاولات المعلم</li>
-          <li>طاولات محطات العمل المعيارية</li>
-          <li>طاولات الكتابة</li>
-          <li>طاولات الاجتماعات/المؤتمرات</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معايير السلامة الرئيسية بموجب IS 17633:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الاستقرار الهيكلي</li>
-          <li>القدرة على تحمل الأحمال</li>
-          <li>مقاومة الصدمات</li>
-          <li>أداء القوة الأفقية/العمودية</li>
-          <li>جودة التشطيب السطحي</li>
-          <li>سلامة الحواف</li>
-          <li>المتانة تحت الاستخدام المتكرر</li>
-          <li>سلامة المواد</li>
+        <ul className={LIST_CLASS}>
+          <li>الطاولات والمكاتب المصنّعة بالكامل (الجاهزة)</li>
+          <li>
+            الوحدات الجاهزة للتجميع (RTA) — التي يتم اختبارها بعد التجميع الكامل
+          </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يجب أن تمتثل كل طاولة أو مكتب يتم بيعه في الهند لهذه المعايير من خلال تسجيل BIS للطاولات والمكاتب.
+          الهدف من المعيار هو وضع الحد الأدنى من متطلبات الأداء والسلامة التي تساعد
+          على ضمان بقاء الأثاث مستقراً ومتيناً وآمناً طوال عمره التشغيلي المقصود.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          لماذا شهادة BIS إلزامية للطاولات والمكاتب
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          الطاولات والمكاتب هي عناصر أثاث عالية الاستخدام موجودة في المنازل والمكاتب والمدارس والمناطق العامة. يمكن أن تسبب الأعطال الهيكلية حوادث مثل:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الانهيار تحت الوزن</li>
-          <li>إصابات الحواف الحادة</li>
-          <li>عدم الاستقرار أثناء الاستخدام</li>
-          <li>كسر المفاصل</li>
-          <li>انفصال السطح</li>
-        </ul>
+        <h3 className={SUB_HEADING_CLASS}>
+          المجالات الرئيسية المشمولة بموجب IS 17633:2022
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          لتجنب هذه المخاطر، تضمن شهادة BIS:
+          يركز المعيار على عدة خصائص أداء مهمة، بما في ذلك:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>التصميم والبناء الآمن</li>
-          <li>الامتثال لمتطلبات الأحمال الهيكلية</li>
-          <li>الأداء المتين</li>
-          <li>منع الانقلاب والانهيار</li>
-          <li>اختيار مواد عالية الجودة</li>
-          <li>معايير السوق الموحدة</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          بيع الطاولات والمكاتب بدون ترخيص BIS للطاولات والمكاتب غير قانوني في الهند.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          عملية شهادة BIS للطاولات والمكاتب (IS 17633:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تتبع عملية شهادة BIS مخطط ISI (مخطط تقييم المطابقة-I)، والذي يتضمن اختبار المنتج وتفتيش المصنع.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 1 – تحديد فئة المنتج والمعيار
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تأكد من أن الطاولة/المكتب يندرج تحت IS 17633:2022. حدد عدد المتغيرات والمواد.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 2 – تقديم طلب BIS (التقديم عبر الإنترنت)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          املأ الطلب على بوابة BIS Manak Online بـ:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تفاصيل المصنع</li>
-          <li>عنوان المصنع</li>
-          <li>مواصفات المنتج</li>
-          <li>تفاصيل العلامة التجارية</li>
-          <li>أنظمة مراقبة الجودة</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 3 – دفع رسوم شهادة BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">يشمل:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رسوم الطلب</li>
-          <li>رسوم المعالجة</li>
-          <li>رسوم اختبار المنتج</li>
-          <li>رسوم تفتيش المصنع</li>
-          <li>رسوم العلامة</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 4 – اختبار العينات في مختبر معترف به من BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يجب أن تخضع المنتجات لاختبار كامل كما هو موضح في IS 17633:2022.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          الاختبارات التي يتم إجراؤها
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اختبار الاستقرار</li>
-          <li>اختبار القوة (الحمل الثابت)</li>
-          <li>اختبار المتانة (التحميل المتكرر)</li>
-          <li>اختبار الصدمة</li>
-          <li>قياس الانحراف</li>
-          <li>اختبار سلامة الحواف والسطح</li>
-          <li>اختبار حمل مساحة العمل</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يرفع المختبر تقارير الاختبار مباشرة إلى BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 5 – تفتيش مصنع BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يزور موظف BIS منشأة التصنيع للتحقق من:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>نظام إدارة الجودة</li>
-          <li>القدرة على الاختبار الداخلي</li>
-          <li>التحكم في المواد الخام</li>
-          <li>خط الإنتاج والآلات</li>
-          <li>معايرة الأدوات</li>
-          <li>الامتثال لـ STI (مخطط الاختبار والتفتيش)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 6 – منح ترخيص BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">يصدر BIS:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>شهادة BIS</li>
-          <li>موافقة علامة ISI</li>
-          <li>رقم ترخيص CML فريد</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          بعد ذلك، يمكن للمصنع وضع علامة وبيع الطاولات/المكاتب قانونياً في الهند.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 7 – الامتثال بعد الترخيص
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يجب على المصنعين:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الحفاظ على السجلات وفقاً لـ STI</li>
-          <li>استخدام علامة ISI بشكل صحيح</li>
-          <li>السماح بتفتيشات BIS الدورية</li>
-          <li>تجديد الترخيص كل 1-2 سنة</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>متطلبات القوة —</strong> يجب أن تتحمل الطاولات والمكاتب الأحمال
+            المتوقعة أثناء الاستخدام العادي دون فشل أو تشوه مفرط.
+          </li>
+          <li>
+            <strong>متطلبات الاستقرار —</strong> يجب أن يظل الأثاث مستقراً أثناء
+            الاستخدام ويقاوم الانقلاب تحت ظروف التحميل المتوقعة.
+          </li>
+          <li>
+            <strong>متطلبات المتانة —</strong> يجب أن تحافظ المنتجات على الأداء
+            والسلامة الهيكلية بعد الاستخدام المتكرر على مدى فترة طويلة.
+          </li>
+          <li>
+            <strong>متطلبات السلامة —</strong> يجب أن يقلل التصميم والبناء من المخاطر
+            الناجمة عن عدم الاستقرار أو الحواف الحادة أو البناء غير الآمن أو الفشل
+            الهيكلي.
+          </li>
+          <li>
+            <strong>جودة الإتقان والبناء —</strong> يتم تقييم الإتقان والتجميع
+            والمفاصل والمثبتات والبناء العام لضمان أداء موثوق طويل الأمد.
+          </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          نطاق ترخيص BIS للطاولات والمكاتب
+          هل شهادة BIS للطاولات والمكاتب إلزامية في الهند؟
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> يغطي هذا المعيار المتطلبات المتعلقة بالأداء والسلامة، أي القوة والاستقرار والمتانة للطاولات والمكاتب المستخدمة في وضع الجلوس و/أو الوقوف، المستخدمة من قبل البالغين.
+          نعم. يُطلب من الطاولات والمكاتب المشمولة بأمر مراقبة الجودة (QCO) للأثاث
+          المعمول به الامتثال للمعيار الهندي ذي الصلة والحصول على شهادة BIS قبل
+          تصنيعها أو استيرادها أو بيعها أو توزيعها أو عرضها في السوق الهندية.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          الهدف من الشهادة الإلزامية هو:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>ضمان جودة منتج أعلى عبر صناعة الأثاث</li>
+          <li>حماية سلامة المستهلك من خلال معايير موثقة</li>
+          <li>منع دخول الأثاث دون المستوى إلى السوق</li>
+          <li>تعزيز التوحيد القياسي ومعايير الجودة الموحدة</li>
+          <li>بناء ثقة المشتري في المنتجات المعتمدة بعلامة ISI</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين المشمولين باللوائح المعمول بها الحصول على ترخيص BIS
+          واستخدام علامة ISI وفقاً لمتطلبات BIS.
+        </p>
+
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            تحقق أيضاً من منتجات الأثاث المشمولة بشهادة BIS الإلزامية —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>شهادة BIS للأثاث</strong>
+          </a>
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          نطاق المنتجات المشمولة بموجب IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يمتد نطاق IS 17633:2022 ليشمل فئات مختلفة من الطاولات والمكاتب المصممة
+          للمستخدمين البالغين عبر البيئات السكنية والتجارية والمؤسسية وأماكن العمل.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تشمل أمثلة المنتجات المشمولة بشكل شائع:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>مكاتب المكتب والدراسة والكمبيوتر</li>
+          <li>محطات العمل والمكاتب متعددة الأغراض</li>
+          <li>طاولات المؤتمرات والاجتماعات</li>
+          <li>الطاولات المؤسسية والمخبرية</li>
+          <li>أثاث العمل المشترك والاستخدام التجاري</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين مراجعة مواصفات المنتج والاستخدام المقصود بعناية لتحديد ما
+          إذا كانت منتجاتهم تقع ضمن نطاق IS 17633:2022.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          المتطلبات التقنية الرئيسية بموجب IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          للحصول على شهادة BIS، يجب أن تستوفي الطاولات والمكاتب متطلبات الأداء
+          والسلامة المختلفة المحددة بموجب المعيار.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>السلامة الهيكلية —</strong> يجب أن تؤدي المنتجات تحت الأحمال
+            المحددة؛ وتبقى المفاصل والهياكل الداعمة آمنة أثناء الاختبار.
+          </li>
+          <li>
+            <strong>أداء تحمل الأحمال —</strong> يجب أن تدعم الطاولات والمكاتب
+            الأحمال المحددة دون تشوه أو ضرر أو فشل غير مقبول.
+          </li>
+          <li>
+            <strong>أداء الاستقرار —</strong> يجب أن يظل الأثاث مستقراً أثناء
+            الاستخدام ويقلل من مخاطر الانقلاب التي قد تسبب إصابة أو ضرراً بالممتلكات.
+          </li>
+          <li>
+            <strong>أداء المتانة —</strong> يجب أن تتحمل المنتجات دورات الاستخدام
+            المتكررة مع الحفاظ على أداء مقبول.
+          </li>
+          <li>
+            <strong>المواد والإتقان —</strong> يجب أن تستوفي المواد والتشطيب وطرق
+            التجميع ضوابط الجودة للإنتاج المتسق.
+          </li>
+          <li>
+            <strong>اعتبارات السلامة —</strong> يجب أن يقلل التصميم من المخاطر
+            الناجمة عن استخدام الأثاث للمستهلكين والمشترين المؤسسيين.
+          </li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          لماذا تهم شهادة BIS لمصنعي الأثاث
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          أصبح سوق الأثاث الهندي مهتماً بالجودة بشكل متزايد. وغالباً ما تفضّل
+          الإدارات الحكومية والمؤسسات التعليمية والمشترون من الشركات ووكالات
+          المشتريات الكبيرة المنتجات التي تمتثل للمعايير المعترف بها.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يساعد الحصول على شهادة BIS المصنعين على:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>إثبات الامتثال للمعايير الهندية المعمول بها</li>
+          <li>تعزيز مصداقية المنتج وسمعة العلامة التجارية</li>
+          <li>كسب ثقة العملاء والمشترين المؤسسيين</li>
+          <li>تحسين القبول في المشتريات الحكومية والشركات</li>
+          <li>تعزيز ممارسات إدارة الجودة الداخلية</li>
+          <li>البقاء في طليعة المتطلبات التنظيمية المتطورة</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          بالنسبة للمصنعين الذين يسعون إلى النمو طويل الأمد، غالباً ما يُنظر إلى شهادة
+          BIS على أنها متطلب امتثال وميزة تجارية استراتيجية في آن واحد.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          متطلبات الاختبار للطاولات والمكاتب بموجب IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          قبل أن يتمكن المصنع من الحصول على شهادة BIS، يجب تقييم عينات المنتج وفقاً
+          للمتطلبات المعمول بها في IS 17633:2022 من خلال الاختبار في مختبر معترف به
+          من BIS.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> ينطبق هذا المعيار على الطاولات والمكاتب المصنعة/المصنفة بالكامل. كما ينطبق على الوحدات الجاهزة للتجميع؛ في هذه الحالة، تنطبق متطلبات هذا المعيار على الوحدات المجمعة.
+          الهدف من الاختبار هو التحقق من أن الأثاث يلبي المعايير المحددة للسلامة
+          والاستقرار والقوة والمتانة والأداء العام.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          بينما قد تختلف معايير الاختبار الدقيقة بناءً على تصميم المنتج ومتطلبات
+          الشهادة، يتم تقييم المصنعين بشكل عام للخصائص التالية:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>التصميم والإتقان —</strong> يتم فحص جودة البناء والتجميع والتشطيب
+            وسلامة المنتج العامة للاستخدام الآمن طويل الأمد.
+          </li>
+          <li>
+            <strong>التحقق من الأبعاد —</strong> يتم فحص القياسات الحرجة مقابل المعيار
+            ومواصفات المنتج المعتمدة.
+          </li>
+          <li>
+            <strong>اختبار الاستقرار —</strong> يؤكد بقاء المنتج مستقراً في الاستخدام
+            العادي ويكشف عن نقاط الضعف في الانقلاب أو الهيكل.
+          </li>
+          <li>
+            <strong>اختبار الحمل الثابت —</strong> يتحقق من قدرة تحمل الأحمال دون فشل
+            أو تشوه مفرط أو ضرر.
+          </li>
+          <li>
+            <strong>اختبار القوة —</strong> يقيّم الإطارات والمفاصل والدعامات تحت
+            الإجهادات التشغيلية أثناء الاستخدام المنتظم.
+          </li>
+          <li>
+            <strong>تقييم المتانة —</strong> يفحص الحفاظ على الأداء بعد دورات
+            الاستخدام المتكررة.
+          </li>
+          <li>
+            <strong>تقييم السلامة —</strong> يستبعد المخاطر التي يمكن تجنبها الناجمة
+            عن عدم الاستقرار أو العيوب أو ميزات التصميم غير الآمنة.
+          </li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          عملية شهادة BIS للطاولات والمكاتب
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين الذين يسعون للحصول على شهادة BIS بموجب IS 17633:2022 اتباع
+          عملية شهادة منظمة وضعها مكتب المعايير الهندية.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          على الرغم من أن المتطلبات المحددة قد تختلف بناءً على نوع المتقدم وموقع
+          التصنيع، تظل العملية العامة متشابهة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          الخطوة 1: تقييم نطاق المنتج
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تتضمن الخطوة الأولى تحديد ما إذا كان المنتج يقع ضمن نطاق IS 17633:2022 وأمر
+          مراقبة الجودة المعمول به. عادةً ما يتم إجراء مراجعة تقنية لمواصفات المنتج
+          والاستخدام المقصود والمواد والبناء قبل بدء عملية الشهادة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          الخطوة 2: إعداد الوثائق
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يقوم المصنع بإعداد الوثائق المطلوبة، بما في ذلك معلومات الشركة وتفاصيل
+          التصنيع ومواصفات المنتج وإجراءات مراقبة الجودة والسجلات التقنية الداعمة.
+          الوثائق المناسبة أمر بالغ الأهمية لأن أوجه القصور في هذه المرحلة يمكن أن
+          تؤخر الشهادة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          الخطوة 3: اختبار المنتج
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يتم اختبار عينات المنتج في مختبر معترف به من BIS للتحقق من الامتثال
+          لمتطلبات IS 17633:2022. يُعد تقرير الاختبار أحد الوثائق التقنية الأساسية
+          الداعمة لطلب الشهادة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          الخطوة 4: تقديم الطلب
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يتم تقديم طلب BIS مع الوثائق الداعمة وتقارير الاختبار ومعلومات التصنيع
+          وسجلات إدارة الجودة. تتم مراجعة الطلب من قبل BIS للتأكد من اكتماله وامتثاله
+          التقني.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          الخطوة 5: تقييم المصنع
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          قد يجري BIS تفتيشاً للمصنع لتقييم:
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>البنية التحتية للتصنيع وقدرات الإنتاج</li>
+          <li>أنظمة مراقبة الجودة ومرافق الاختبار الداخلية</li>
+          <li>ضوابط المواد الخام وآليات تتبع المنتج</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          الهدف هو التحقق من قدرة المصنع على إنتاج منتجات متوافقة باستمرار.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          الخطوة 6: التقييم والمراجعة
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يراجع BIS الطلب ونتائج التفتيش وتقارير اختبار المختبر قبل اتخاذ قرار
+          الشهادة. يجب على المتقدم معالجة أي ملاحظات تُثار أثناء عملية المراجعة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          الخطوة 7: منح ترخيص BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          عند الانتهاء بنجاح من جميع المتطلبات، يمنح BIS الترخيص ويفوّض المصنع
+          باستخدام علامة ISI على الطاولات والمكاتب المعتمدة.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          شهادة BIS للمصنعين الهنود
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يتقدم المصنعون الهنود عموماً بموجب إجراء الشهادة المحلية الذي يحدده BIS.
+          تتضمن العملية عادةً:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>اختبار المنتج في مختبر معترف به من BIS</li>
+          <li>تقديم الطلب مع الوثائق الداعمة</li>
+          <li>تفتيش المصنع والمراجعة التقنية من قبل BIS</li>
+          <li>منح ترخيص BIS وتفويض علامة ISI</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          بمجرد الحصول على الشهادة، يجب على المصنعين الاستمرار في الامتثال لمتطلبات
+          BIS والحفاظ على جودة منتج متسقة طوال فترة الترخيص.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          شهادة BIS للمصنعين الأجانب
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين الأجانب الذين يعتزمون تصدير الطاولات والمكاتب إلى الهند
+          الحصول أيضاً على شهادة BIS قبل توريد المنتجات المشمولة بأمر مراقبة الجودة
+          المعمول به.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تتضمن عملية الشهادة عموماً:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>تعيين ممثل هندي مفوض (AIR)</li>
+          <li>اختبار المنتج وتقييم المصنع في الخارج</li>
+          <li>مراجعة الوثائق والموافقة على شهادة BIS</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين الأجانب ضمان الامتثال المستمر لمتطلبات BIS للحفاظ على صلاحية
+          الشهادة.
         </p>
 
         {/* Separator Line */}
@@ -420,292 +697,137 @@ const MainContentLeft = () => {
           الوثائق المطلوبة لشهادة BIS للطاولات والمكاتب
         </h2>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          وثائق التصنيع
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ترخيص المصنع</li>
-          <li>قائمة الآلات</li>
-          <li>قائمة معدات الاختبار</li>
-          <li>شهادات المعايرة</li>
-          <li>تخطيط المصنع</li>
-          <li>مخطط تدفق العملية</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          قد تختلف متطلبات الوثائق بناءً على المصنع ومسار الشهادة. ومع ذلك، عادةً ما
+          تكون الوثائق التالية مطلوبة أثناء عملية الشهادة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الوثائق التجارية والقانونية</h3>
+        <ul className={LIST_CLASS}>
+          <li>تسجيل الشركة وترخيص التصنيع وضريبة السلع والخدمات (إن وجدت)</li>
+          <li>تفاصيل الموقّع المفوض وإثبات الهوية</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الوثائق التقنية
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رسومات الطاولة/المكتب</li>
-          <li>قائمة المواد</li>
-          <li>مواصفات المنتج</li>
-          <li>تقارير اختبار الجودة الداخلية</li>
-          <li>صور/فيديوهات المنتج</li>
+        <h3 className={SUB_HEADING_CLASS}>معلومات التصنيع</h3>
+        <ul className={LIST_CLASS}>
+          <li>مخطط تدفق العملية وتخطيط المصنع وتفاصيل الآلات</li>
+          <li>سجلات البنية التحتية للإنتاج والقدرة</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الوثائق القانونية
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>إثبات هوية الموقع المصرح</li>
-          <li>إثبات العنوان</li>
-          <li>خطاب تفويض العلامة التجارية</li>
-          <li>شهادة تسجيل العلامة التجارية</li>
+        <h3 className={SUB_HEADING_CLASS}>معلومات المنتج</h3>
+        <ul className={LIST_CLASS}>
+          <li>مواصفات المنتج والرسومات التقنية والكتالوج</li>
+          <li>قائمة المواد وتفاصيل المواد/المكونات</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          وثائق طلب BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>نموذج الطلب المملوء</li>
-          <li>التعهد من المصنع</li>
-          <li>خطاب طلب الاختبار</li>
-          <li>خطاب التفويض</li>
+        <h3 className={SUB_HEADING_CLASS}>وثائق مراقبة الجودة</h3>
+        <ul className={LIST_CLASS}>
+          <li>إجراءات الاختبار الداخلي والتفتيش ومراقبة الجودة</li>
+          <li>سجلات مراقبة الجودة وتقارير معايرة المعدات</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>وثائق الشهادة</h3>
+        <ul className={LIST_CLASS}>
+          <li>تقارير اختبار المختبر ونماذج طلب BIS المكتملة</li>
+          <li>الإقرارات والتعهدات والوثائق الأخرى التي يحددها BIS</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          الوثائق الكاملة تضمن الموافقات الأسرع.
+          يجب على المصنعين التأكد من أن جميع الوثائق دقيقة وكاملة ومتسقة قبل التقديم.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          متطلبات الاختبار بموجب IS 17633:2022
+          التحديات الشائعة أثناء شهادة BIS
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يقيم الاختبار القوة والاستقرار والمتانة والسلامة.
+          على الرغم من أن عملية الشهادة بسيطة عند إدارتها بشكل صحيح، إلا أن المصنعين
+          غالباً ما يواجهون عدة تحديات.
         </p>
 
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
-          <Table className="min-w-full border-collapse">
-            <TableHeader>
-              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  البند
-                </TableHead>
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  المتطلب
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  التصميم والإتقان
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الاستقرار
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  الحمل المعلن
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  للأحمال الثقيلة العرضية
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  القوة تحت القوة الثابتة الأفقية
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  عام
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الصدمة العمودية لأسطح الطاولات الزجاجية
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار الصدمة العمودية لجميع أسطح الطاولات الأخرى
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  انحراف أسطح الطاولات
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار السقوط
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </div>
-
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          يجب إجراء الاختبار فقط في المختبرات المعتمدة من BIS.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          التحديات الشائعة وكيفية تجنبها
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. فشل المنتج في اختبارات الحمل أو المتانة</strong>
-            <br />
-            الحل: تقوية المفاصل، استخدام مواد متوافقة مع BIS، إضافة التعزيز.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. الوثائق غير مكتملة</strong>
-            <br />
-            الحل: إعداد جميع الوثائق القانونية والتقنية والتصنيع مسبقاً.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. المصنع يفتقر إلى معدات الاختبار المناسبة</strong>
-            <br />
-            الحل: تثبيت الأدوات المطلوبة والحفاظ على المعايرة وفقاً لإرشادات BIS.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. وضع العلامات غير صحيح</strong>
-            <br />
-            الحل: تأكد من أن علامة ISI تتبع قواعد BIS بدقة.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. تصنيف نماذج المنتج بشكل خاطئ</strong>
-            <br />
-            الحل: احصل على إرشاد مهني لتصنيف المتغيرات بشكل صحيح.
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          فوائد شهادة BIS للطاولات والمكاتب
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>التفويض القانوني للبيع في الهند</li>
-          <li>زيادة ثقة العملاء</li>
-          <li>متانة أفضل للمنتج</li>
-          <li>الوصول إلى تجار التجزئة الكبار ومنصات التجارة الإلكترونية</li>
-          <li>انخفاض مخاطر مسؤولية المنتج</li>
-          <li>مصداقية أعلى للعلامة التجارية</li>
-          <li>الامتثال لأوامر مراقبة الجودة الحكومية (QCOs)</li>
-          <li>ميزة تنافسية في السوق</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>التفسير التقني —</strong> قد يكون ربط متطلبات IS 17633:2022
+            بتصاميم المنتجات المحددة صعباً دون إرشاد متخصص.
+          </li>
+          <li>
+            <strong>فشل الاختبارات —</strong> غالباً ما تؤدي المفاصل الضعيفة أو ضعف
+            الاستقرار أو مشاكل المواد إلى رفض اختبار المختبر.
+          </li>
+          <li>
+            <strong>فجوات الوثائق —</strong> السجلات غير المكتملة أو غير المتطابقة سبب
+            متكرر لتأخير الطلبات.
+          </li>
+          <li>
+            <strong>امتثال المصنع —</strong> قد تحتاج أنظمة مراقبة الجودة أو التتبع أو
+            ضوابط الإنتاج إلى ترقية قبل منح الترخيص.
+          </li>
+          <li>
+            <strong>التنسيق التنظيمي —</strong> يستغرق التوفيق بين اختبار المختبر
+            والتفتيشات ومتابعات BIS وقتاً دون دعم منظم.
+          </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          العقوبات لعدم الامتثال
+          فوائد المساعدة المهنية في شهادة BIS
         </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يمكن أن يساعد العمل مع مستشار BIS ذي خبرة المصنعين على تجنب التأخيرات
+          المكلفة وتبسيط رحلة الشهادة.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          بيع أو توزيع الطاولات/المكاتب بدون شهادة BIS قد يؤدي إلى:
+          يشمل الدعم المهني عادةً:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>مصادرة المنتج</li>
-          <li>غرامات ثقيلة</li>
-          <li>الملاحقة الجنائية</li>
-          <li>حظر الاستيراد</li>
-          <li>أوامر إغلاق الأعمال</li>
-          <li>إلغاء الترخيص</li>
+        <ul className={LIST_CLASS}>
+          <li>مراجعة نطاق المنتج وتفسير المعيار</li>
+          <li>إعداد الوثائق وتقديم الطلب</li>
+          <li>تنسيق اختبار المختبر وتفتيش المصنع</li>
+          <li>الامتثال المستمر ودعم ما بعد الشهادة</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يفرض قانون مكتب المعايير الهندية لعام 2016 عقوبات صارمة.
+          يتيح ذلك للمصنعين التركيز على الإنتاج مع ضمان معالجة المتطلبات التنظيمية
+          بكفاءة.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          من يحتاج إلى شهادة BIS للطاولات والمكاتب؟
+          لماذا تختار Sun Certifications India؟
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          هذه الشهادة إلزامية لـ:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India هي استشارة امتثال تنظيمي تساعد المصنعين والمستوردين
+          والمصدّرين والشركات في متطلبات الشهادة والموافقة عبر الهند.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>المصنعين الهنود</li>
-          <li>المصنعين الأجانب</li>
-          <li>المستوردين</li>
-          <li>التجار/أصحاب العلامات التجارية</li>
-          <li>موردي OEM/ODM</li>
-          <li>موزعي الأثاث</li>
-          <li>بائعي التجارة الإلكترونية</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يقدم خبراؤنا دعماً شاملاً من البداية إلى النهاية لشهادة BIS للطاولات
+          والمكاتب بموجب IS 17633:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>تشمل خدماتنا</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>تقييم قابلية تطبيق المنتج واستشارات الامتثال لـ BIS</li>
+          <li>دعم الوثائق وإدارة الطلب</li>
+          <li>تنسيق الاختبار والمساعدة في تفتيش المصنع</li>
+          <li>التواصل التنظيمي ودعم الامتثال بعد الشهادة</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يجب على كل مصنع الحصول على ترخيص BIS منفصل.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          لماذا تختارنا لاستشارات شهادة BIS؟
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          نقدم المساعدة من البداية إلى النهاية:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تفسير المعيار (IS 17633:2022)</li>
-          <li>تصنيف المنتج</li>
-          <li>صياغة الوثائق</li>
-          <li>تنسيق الاختبار</li>
-          <li>تقديم طلب بوابة BIS</li>
-          <li>دعم تفتيش المصنع</li>
-          <li>المتابعة المستمرة مع BIS</li>
-          <li>موافقة الترخيص</li>
-          <li>إدارة التجديد والامتثال</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تضمن خبرتنا شهادة سريعة وخالية من المتاعب والأخطاء.
+          هدفنا هو مساعدة الشركات على اجتياز عملية الشهادة بكفاءة مع تقليل التأخيرات
+          وتحديات الامتثال.
         </p>
 
         {/* Separator Line */}
@@ -716,11 +838,22 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للطاولات والمكاتب بموجب IS 17633:2022 هي متطلب مطابقة إلزامي يضمن سلامة المنتج والأداء والمتانة والامتثال للمعايير الوطنية. يجب على المصنعين والمستوردين الخضوع لاختبار المنتج وتفتيش المصنع والوفاء بجميع قواعد وثائق BIS ووضع العلامات للحصول على علامة ISI.
+          تُعد شهادة BIS للطاولات والمكاتب بموجب IS 17633:2022 متطلباً مهماً للمصنعين
+          الذين يسعون لتوريد منتجات أثاث متوافقة في السوق الهندية. تساعد الشهادة على
+          ضمان أن الطاولات والمكاتب تلبي المعايير المعتمدة المتعلقة بالسلامة
+          والاستقرار والمتانة والقوة والجودة.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          مع المساعدة الخبيرة، تصبح عملية الشهادة بأكملها سلسة وسريعة ومتوافقة بالكامل مع لوائح BIS.
+          من خلال الحصول على شهادة BIS واستخدام علامة ISI، يمكن للمصنعين إثبات
+          الامتثال للمعايير الهندية وتحسين ثقة العملاء وتعزيز موقعهم في السوق ودعم
+          النمو التجاري طويل الأمد.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          إذا كنت تخطط للحصول على شهادة BIS للطاولات والمكاتب بموجب IS 17633:2022،
+          يمكن لـ Sun Certifications India مساعدتك بدعم امتثال شامل من البداية إلى
+          النهاية، مما يساعدك على اجتياز عملية الشهادة بكفاءة وثقة.
         </p>
 
         {/* Separator Line */}
@@ -733,87 +866,102 @@ const MainContentLeft = () => {
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. هل شهادة BIS إلزامية للطاولات والمكاتب؟
-              </strong>
+              <strong>1. ما هو IS 17633:2022؟</strong>
               <br />
-              نعم. وفقاً لـ IS 17633:2022، يجب أن تكون جميع الطاولات والمكاتب معتمدة من BIS قبل بيعها في الهند.
+              IS 17633:2022 هو المعيار الهندي الصادر عن مكتب المعايير الهندية (BIS)
+              الذي يحدد الحد الأدنى من متطلبات الأداء والاستقرار والمتانة والسلامة
+              للطاولات والمكاتب المخصصة للمستخدمين البالغين في تطبيقات الجلوس والوقوف.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. ما الاختبارات المطلوبة للشهادة؟</strong>
+              <strong>2. هل شهادة BIS إلزامية للطاولات والمكاتب؟</strong>
               <br />
-              تشمل الاختبارات الإلزامية اختبارات الاستقرار والقوة والمتانة والانحراف والصدمة وسلامة السطح.
+              نعم — للمنتجات المشمولة بأمر مراقبة الجودة (QCO) للأثاث المعمول به. يجب
+              على المصنعين والمستوردين الحصول على ترخيص BIS صالح والامتثال لـ
+              IS 17633:2022 قبل تصنيع أو استيراد أو بيع أو توزيع هذا الأثاث في الهند.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. ما هي تكلفة شهادة BIS؟</strong>
+              <strong>3. ما علامة الشهادة المعمول بها على الطاولات والمكاتب؟</strong>
               <br />
-              تتراوح التكلفة بين ₹65,000 – ₹1,30,000، اعتماداً على عوامل الاختبار والتفتيش.
+              يُسمح للطاولات والمكاتب المعتمدة بحمل علامة ISI بموجب مخطط شهادة المنتجات
+              لـ BIS، مما يشير إلى أن المنتج يتوافق مع المعيار الهندي المعمول به.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. هل يحتاج المصنعون الأجانب إلى شهادة BIS؟
-              </strong>
+              <strong>4. من يمكنه التقدم للحصول على شهادة BIS؟</strong>
               <br />
-              نعم، من خلال مخطط FMCS، والذي يتضمن تفتيشات المصانع في الخارج من قبل BIS.
+              يمكن لكل من المصنعين الهنود والمصنعين الأجانب التقدم، شريطة أن تقع
+              طاولاتهم ومكاتبهم ضمن نطاق أمر مراقبة الجودة المعمول به وتلبي متطلبات
+              IS 17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. هل يمكن لترخيص واحد أن يغطي نماذج طاولة/مكتب متعددة؟
-              </strong>
+              <strong>5. ما الغرض من شهادة BIS؟</strong>
               <br />
-              نعم، ولكن فقط إذا كانت النماذج متشابهة في البناء ومعايير الاختبار.
+              تؤكد شهادة BIS أن الأثاث يلبي المعايير المعترف بها وطنياً للسلامة
+              والأداء الهيكلي والمتانة والإتقان — مما يساعد على حماية المستخدمين
+              النهائيين والحفاظ على معايير الجودة عبر السوق.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. كم تستغرق عملية BIS؟</strong>
+              <strong>6. ما المنتجات المشمولة بموجب IS 17633:2022؟</strong>
               <br />
-              ما يقرب من 30-45 يوماً.
+              يغطي المعيار الطاولات والمكاتب المخصصة للبالغين المستخدمة في المكاتب
+              والمؤسسات التعليمية والمنشآت التجارية وبيئات العمل — بما في ذلك مكاتب
+              المكتب ومحطات العمل وطاولات الدراسة وطاولات المؤتمرات وفئات الأثاث
+              المماثلة.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. هل الاختبار إلزامي في مختبر معترف به من BIS؟</strong>
+              <strong>7. هل اختبار المختبر إلزامي؟</strong>
               <br />
-              نعم، فقط المختبرات المعتمدة من BIS يمكنها إجراء الاختبارات.
+              نعم. يجب اختبار عينات المنتج في مختبر معترف به من BIS، ويُعد تقرير
+              الاختبار الناتج وثيقة أساسية في طلب الشهادة لإثبات الامتثال لـ
+              IS 17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. ماذا يحدث إذا فشل المنتج؟</strong>
+              <strong>8. هل يمكن بيع الطاولات والمكاتب المستوردة دون شهادة BIS؟</strong>
               <br />
-              يجب إعادة تصميمه وإعادة تقديمه للاختبار.
+              لا. لا يمكن توريد المنتجات المستوردة التي تقع تحت الشهادة الإلزامية
+              قانونياً في الهند دون موافقة BIS صالحة. يجب على المستوردين ضمان الامتثال
+              للمعيار المعمول به قبل طرح المنتجات في السوق.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. هل وضع علامة ISI إلزامي بعد الشهادة؟</strong>
+              <strong>9. ما دور تفتيش المصنع؟</strong>
               <br />
-              نعم، علامة ISI مطلوبة على المنتج والتغليف.
+              يجري BIS تقييم المصنع للتحقق من أن المصنع يحافظ على بنية تحتية كافية
+              للإنتاج وأنظمة مراقبة الجودة وتتبع المنتج لتصنيع طاولات ومكاتب متوافقة
+              باستمرار.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. ما الوثائق المطلوبة؟</strong>
+              <strong>10. كيف يمكن لـ Sun Certifications India المساعدة؟</strong>
               <br />
-              الرسومات التقنية، قائمة المواد (BOM)، وثائق المصنع، تقارير الاختبار، خطة مراقبة الجودة، والوثائق القانونية.
+              تقدم Sun Certifications India مساعدة شاملة من البداية إلى النهاية — بما
+              في ذلك تقييم نطاق المنتج وإعداد الوثائق وتنسيق اختبار المختبر وإدارة طلب
+              BIS وجاهزية تفتيش المصنع ودعم الامتثال بعد الشهادة للطاولات والمكاتب
+              بموجب IS 17633:2022.
             </p>
           </div>
         </div>
@@ -830,6 +978,22 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          موارد ذات صلة
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ترخيص علامة ISI</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">شهادة BIS FMCS</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadArabic />
 

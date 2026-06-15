@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnitIndonesian = () => {
   return (
     <div className="relative w-full">
@@ -141,7 +147,8 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikat BIS untuk Meja dan Meja Tulis – Panduan Lengkap Sertifikasi BIS IS 17633:2022
+          Sertifikasi BIS untuk Meja dan Meja Tulis (IS 17633:2022) – Panduan
+          Lengkap Sertifikasi Tanda ISI
         </h1>
 
         {/* Featured Image */}
@@ -149,602 +156,705 @@ const MainContentLeft = () => {
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="Lisensi BIS untuk Meja dan Meja Tulis"
-            alt="Sertifikat BIS untuk Meja dan Meja Tulis - Sertifikasi BIS IS 17633:2022"
+            alt="Sertifikasi BIS untuk Meja dan Meja Tulis - Panduan Tanda ISI IS 17633:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikat BIS untuk Meja dan Meja Tulis wajib bagi semua
-          produsen, importir, dan penjual meja dan meja tulis di India.
-          Di bawah Standar India IS 17633:2022 – Meja dan Meja Tulis: Persyaratan
-          Keselamatan, item furnitur ini harus diuji dan disertifikasi oleh
-          Bureau of Indian Standards (BIS) sebelum dapat dijual secara legal
-          di pasar India.
+          Meja dan meja tulis termasuk produk furnitur yang paling banyak
+          digunakan di kantor, lembaga pendidikan, perusahaan komersial,
+          organisasi pemerintah, dan ruang hunian. Karena produk-produk ini
+          diharapkan mampu menahan penggunaan rutin sekaligus menjamin
+          keselamatan pengguna, stabilitas, dan daya tahan, kepatuhan terhadap
+          standar kualitas yang diakui menjadi semakin penting bagi produsen dan
+          importir.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Meja dan meja tulis adalah komponen penting dari rumah, kantor, sekolah,
-          universitas, ruang komersial, lingkungan perhotelan, dan
-          tempat kerja industri. Karena mereka sering menopang beban, benturan, dan
-          penggunaan terus-menerus, kekuatan struktural dan keselamatannya sangat penting.
-          Untuk memastikan perlindungan konsumen dan keandalan produk, BIS mewajibkan
-          sertifikasi wajib.
+          Di India, meja dan meja tulis yang tercakup dalam IS 17633:2022 wajib
+          mematuhi persyaratan kualitas dan keselamatan yang berlaku sebagaimana
+          ditetapkan oleh Bureau of Indian Standards (BIS). Produsen yang berhasil
+          memenuhi persyaratan ini dapat memperoleh lisensi BIS dan menggunakan
+          Tanda ISI pada produk mereka, yang menunjukkan kesesuaian dengan Standar
+          India yang relevan.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Panduan komprehensif ini menjelaskan IS 17633:2022, proses registrasi BIS,
-          pengujian, dokumentasi yang diperlukan, biaya, timeline, hukuman,
-          dan manfaat bagi produsen dan importir.
+          Proses sertifikasi mengevaluasi berbagai aspek kinerja produk,
+          termasuk kekuatan, stabilitas, daya tahan, pengerjaan, dimensi, dan
+          keselamatan secara keseluruhan. Kepatuhan tidak hanya membantu bisnis
+          memenuhi persyaratan regulasi tetapi juga meningkatkan kredibilitas
+          produk dan penerimaan pasar.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Panduan komprehensif ini menjelaskan segala hal yang perlu diketahui
+          produsen, importir, merek furnitur, dan profesional pengadaan tentang
+          Sertifikasi BIS untuk Meja dan Meja Tulis di bawah IS 17633:2022,
+          termasuk keberlakuan, persyaratan sertifikasi, parameter pengujian,
+          dokumentasi, manfaat, dan proses sertifikasi.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS?
+          Sorotan Utama Sertifikasi BIS untuk Meja dan Meja Tulis
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS adalah proses kepatuhan regulasi yang dikelola oleh
-          Bureau of Indian Standards, otoritas standar nasional India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Arti Sertifikat BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikat BIS mengkonfirmasi bahwa produk memenuhi persyaratan keselamatan, kualitas,
-          kinerja, dan daya tahan yang ditetapkan oleh Standar India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manfaat Sertifikasi BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Memastikan keselamatan konsumen</li>
-          <li>Mendukung manufaktur berkualitas tinggi</li>
-          <li>Mengurangi risiko kegagalan produk</li>
-          <li>Meningkatkan penerimaan pasar</li>
-          <li>Diwajibkan secara hukum di bawah Perintah Kontrol Kualitas BIS (QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setelah disetujui, produk menampilkan Tanda BIS (Tanda ISI) bersama dengan
-          nomor lisensi.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Standar India Mana yang Berlaku untuk Meja & Meja Tulis? – IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Standar BIS yang berlaku adalah:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – Meja dan Meja Tulis: Persyaratan
-          Keselamatan
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Standar ini mendefinisikan persyaratan kinerja, keselamatan struktural, dan daya tahan
-          untuk semua jenis meja dan meja tulis yang digunakan di lingkungan
-          perumahan, komersial, perhotelan, dan institusional.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Produk yang Dicakup
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Meja kantor</li>
-          <li>Meja komputer</li>
-          <li>Meja belajar</li>
-          <li>Meja makan</li>
-          <li>Meja kopi</li>
-          <li>Meja kerja</li>
-          <li>Meja pelatihan</li>
-          <li>Meja tulis sekolah/kuliah</li>
-          <li>Meja guru</li>
-          <li>Meja workstation modular</li>
-          <li>Meja tulis</li>
-          <li>Meja rapat/konferensi</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Parameter Keselamatan Utama di Bawah IS 17633:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stabilitas struktural</li>
-          <li>Kapasitas menahan beban</li>
-          <li>Ketahanan benturan</li>
-          <li>Kinerja gaya horizontal/vertikal</li>
-          <li>Kualitas finishing permukaan</li>
-          <li>Keselamatan tepi</li>
-          <li>Daya tahan di bawah penggunaan berulang</li>
-          <li>Keselamatan material</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap meja atau meja tulis yang dijual di India harus mematuhi parameter ini
-          melalui Registrasi BIS untuk Meja & Meja Tulis.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Mengapa Sertifikasi BIS Wajib untuk Meja dan Meja Tulis
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Meja dan meja tulis adalah item furnitur yang banyak digunakan yang ditemukan di rumah, kantor,
-          sekolah, dan area publik. Kegagalan struktural dapat menyebabkan kecelakaan
-          seperti:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Runtuh di bawah beban</li>
-          <li>Cedera tepi tajam</li>
-          <li>Ketidakstabilan selama penggunaan</li>
-          <li>Kerusakan sambungan</li>
-          <li>Pelepasan permukaan</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Untuk menghindari bahaya ini, sertifikasi BIS memastikan:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Desain dan konstruksi yang aman</li>
-          <li>Kepatuhan terhadap persyaratan beban struktural</li>
-          <li>Kinerja tahan lama</li>
-          <li>Pencegahan terbalik dan runtuh</li>
-          <li>Pemilihan material berkualitas tinggi</li>
-          <li>Standar pasar yang seragam</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Menjual meja dan meja tulis tanpa Lisensi BIS untuk Meja & Meja Tulis adalah
-          ilegal di India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Proses Sertifikasi BIS untuk Meja dan Meja Tulis (IS 17633:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Proses sertifikasi BIS mengikuti Skema ISI (Skema Penilaian
-          Kesesuaian–I), yang mencakup pengujian produk dan inspeksi
-          pabrik.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 1 – Identifikasi Kategori Produk & Standar
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Konfirmasikan bahwa meja/meja tulis termasuk dalam IS 17633:2022. Identifikasi jumlah
-          varian dan material.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 2 – Ajukan Aplikasi BIS (Pengajuan Online)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Isi aplikasi di Portal Online BIS Manak dengan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Detail produsen</li>
-          <li>Alamat pabrik</li>
-          <li>Spesifikasi produk</li>
-          <li>Detail merek dagang</li>
-          <li>Sistem kontrol kualitas</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 3 – Pembayaran Biaya Sertifikasi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Termasuk:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Biaya aplikasi</li>
-          <li>Biaya pemrosesan</li>
-          <li>Biaya pengujian produk</li>
-          <li>Biaya inspeksi pabrik</li>
-          <li>Biaya penandaan</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 4 – Pengujian Sampel di Laboratorium yang Diakui BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Produk harus menjalani pengujian lengkap seperti yang ditentukan di bawah IS 17633:2022.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Pengujian yang Dilakukan
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Uji Stabilitas</li>
-          <li>Uji Kekuatan (Beban Statis)</li>
-          <li>Uji Daya Tahan (Beban Berulang)</li>
-          <li>Uji Dampak</li>
-          <li>Pengukuran Defleksi</li>
-          <li>Uji Keselamatan Tepi dan Permukaan</li>
-          <li>Uji Beban Ruang Kerja</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Lab mengunggah laporan pengujian langsung ke BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 5 – Inspeksi Pabrik BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Petugas BIS mengunjungi fasilitas manufaktur untuk memverifikasi:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sistem manajemen kualitas</li>
-          <li>Kemampuan pengujian internal</li>
-          <li>Kontrol material mentah</li>
-          <li>Lini produksi & mesin</li>
-          <li>Kalibrasi instrumen</li>
-          <li>Kepatuhan dengan STI (Skema Pengujian & Inspeksi)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 6 – Pemberian Lisensi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">BIS menerbitkan:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sertifikat BIS</li>
-          <li>Persetujuan Tanda ISI</li>
-          <li>Nomor lisensi CML unik</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setelah ini, produsen dapat secara legal menandai dan menjual meja/meja tulis di
-          India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 7 – Kepatuhan Pasca-Lisensi
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Produsen harus:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mempertahankan catatan sesuai STI</li>
-          <li>Menggunakan penandaan ISI dengan benar</li>
-          <li>Mengizinkan inspeksi BIS berkala</li>
-          <li>Memperpanjang lisensi setiap 1–2 tahun</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Ruang Lingkup Lisensi BIS untuk Meja & Meja Tulis
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Standar ini mencakup persyaratan yang berkaitan dengan
-          kinerja dan keselamatan yaitu, kekuatan, stabilitas dan daya tahan
-          meja dan meja tulis yang akan digunakan dalam posisi duduk dan/atau berdiri,
-          digunakan oleh orang dewasa.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Standar ini berlaku untuk meja dan meja tulis yang sepenuhnya diproduksi/
-          difabrikasi. Ini juga berlaku untuk unit siap rakitan;
-          dalam hal itu persyaratan standar ini akan berlaku untuk
-          unit yang dirakit.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Dokumen yang Diperlukan untuk Sertifikasi BIS Meja & Meja Tulis
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dokumen Manufaktur
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Lisensi pabrik</li>
-          <li>Daftar mesin</li>
-          <li>Daftar peralatan pengujian</li>
-          <li>Sertifikat kalibrasi</li>
-          <li>Layout pabrik</li>
-          <li>Diagram alir proses</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dokumen Teknis
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Gambar meja/meja tulis</li>
-          <li>Daftar material</li>
-          <li>Spesifikasi produk</li>
-          <li>Laporan uji kualitas internal</li>
-          <li>Foto/video produk</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dokumen Hukum
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Bukti identitas penandatangan yang berwenang</li>
-          <li>Bukti alamat</li>
-          <li>Surat otorisasi merek</li>
-          <li>Sertifikat pendaftaran merek dagang</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dokumen Aplikasi BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Formulir aplikasi yang diisi</li>
-          <li>Perjanjian produsen</li>
-          <li>Surat permintaan pengujian</li>
-          <li>Surat otorisasi</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dokumentasi lengkap memastikan persetujuan yang lebih cepat.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Persyaratan Pengujian di Bawah IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pengujian mengevaluasi kekuatan, stabilitas, daya tahan, dan keselamatan.
-        </p>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Klausul
+                  Rincian
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Persyaratan
+                  Detail
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Desain dan pengerjaan
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Uji Stabilitas
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Beban yang dinyatakan
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Untuk beban berat sesekali
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Kekuatan di bawah gaya statis horizontal
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Umum
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Uji Dampak Vertikal untuk Permukaan Meja Kaca
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Uji Dampak Vertikal untuk Semua Permukaan Meja Lainnya
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Defleksi Permukaan Meja
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Uji Jatuh
-                </TableCell>
-              </TableRow>
+              {[
+                ["Produk", "Meja dan Meja Tulis"],
+                ["Standar yang Berlaku", "IS 17633:2022"],
+                ["Jenis Sertifikasi", "Sertifikasi Produk BIS"],
+                ["Tanda yang Berlaku", "Tanda ISI"],
+                ["Skema Sertifikasi", "Skema-I (Sertifikasi Tanda ISI)"],
+                ["Otoritas Regulasi", "Bureau of Indian Standards (BIS)"],
+                ["Sektor yang Berlaku", "Furnitur"],
+                [
+                  "Pemohon yang Memenuhi Syarat",
+                  "Produsen India dan Produsen Asing",
+                ],
+                [
+                  "Persyaratan Kepatuhan",
+                  "Wajib di bawah QCO Furnitur (Perintah Kontrol Kualitas) yang berlaku",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Skema Sertifikasi" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Skema-I (Sertifikasi Tanda ISI)
+                      </a>
+                    ) : particular === "Persyaratan Kepatuhan" ? (
+                      <>
+                        Wajib di bawah {" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                         <strong>QCO Furnitur (Perintah Kontrol Kualitas)</strong>
+                        </a>
+                        {" "}yang berlaku
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Pengujian harus dilakukan hanya di laboratorium yang disetujui BIS.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Apa itu Sertifikasi BIS untuk Meja dan Meja Tulis?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sertifikasi BIS untuk Meja dan Meja Tulis adalah proses penilaian
+          kesesuaian yang dilakukan di bawah Skema Sertifikasi Produk Bureau of
+          Indian Standards (BIS). Sertifikasi ini memastikan bahwa produk mematuhi
+          persyaratan yang ditentukan dalam IS 17633:2022.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tantangan Umum & Cara Menghindarinya
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. Produk gagal dalam uji beban atau daya tahan</strong>
-            <br />
-            Solusi: Perkuat sambungan, gunakan material yang sesuai BIS, tambahkan
-            penguatan.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. Dokumentasi tidak lengkap</strong>
-            <br />
-            Solusi: Siapkan semua dokumen hukum, teknis, dan manufaktur
-            terlebih dahulu.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. Pabrik kekurangan peralatan pengujian yang tepat</strong>
-            <br />
-            Solusi: Pasang instrumen yang diperlukan dan pertahankan kalibrasi sesuai
-            pedoman BIS.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. Pelabelan yang salah</strong>
-            <br />
-            Solusi: Pastikan penandaan ISI mengikuti aturan BIS dengan tepat.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. Klasifikasi model produk yang salah</strong>
-            <br />
-            Solusi: Dapatkan panduan profesional untuk mengkategorikan varian
-            dengan benar.
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Manfaat Sertifikasi BIS untuk Meja & Meja Tulis
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Otorisasi legal untuk menjual di India</li>
-          <li>Meningkatkan kepercayaan pelanggan</li>
-          <li>Daya tahan produk yang lebih baik</li>
-          <li>Akses ke pengecer besar & platform e-commerce</li>
-          <li>Risiko tanggung jawab produk yang lebih rendah</li>
-          <li>Kredibilitas merek yang lebih tinggi</li>
-          <li>Kepatuhan dengan QCO pemerintah</li>
-          <li>Keuntungan pasar kompetitif</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Hukuman untuk Ketidakpatuhan
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Setelah sertifikasi berhasil, produsen diizinkan menggunakan Tanda ISI
+          pada produk mereka, yang menunjukkan kepatuhan terhadap Standar India
+          yang berlaku.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Menjual atau mendistribusikan meja/meja tulis tanpa sertifikasi BIS dapat
-          mengakibatkan:
+          Sertifikasi ini bertujuan memastikan bahwa meja dan meja tulis yang
+          dipasok di pasar India memenuhi persyaratan yang ditetapkan terkait:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Penyitaan produk</li>
-          <li>Denda berat</li>
-          <li>Tuntutan pidana</li>
-          <li>Larangan impor</li>
-          <li>Perintah penutupan bisnis</li>
-          <li>Pembatalan lisensi</li>
+        <ul className={LIST_CLASS}>
+          <li>Kekuatan struktural dan stabilitas selama penggunaan normal</li>
+          <li>Daya tahan, keselamatan pengguna, dan kualitas pengerjaan material</li>
+          <li>Persyaratan kinerja penuh di bawah IS 17633:2022</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Undang-Undang Bureau of Indian Standards, 2016 memberlakukan hukuman yang ketat.
+          Bagi pembeli dan lembaga pengadaan, Tanda ISI menjadi jaminan bahwa
+          furnitur telah dievaluasi terhadap tolok ukur kualitas dan keselamatan
+          yang diakui.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Siapa yang Membutuhkan Sertifikasi BIS untuk Meja & Meja Tulis?
+          Ikhtisar IS 17633:2022 untuk Meja dan Meja Tulis
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Sertifikasi ini wajib untuk:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022 adalah Standar India yang menetapkan persyaratan kinerja
+          dan keselamatan untuk meja dan meja tulis yang ditujukan bagi pengguna
+          dewasa dalam aplikasi duduk dan berdiri.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produsen India</li>
-          <li>Produsen asing</li>
-          <li>Importir</li>
-          <li>Pedagang/pemilik merek</li>
-          <li>Pemasok OEM/ODM</li>
-          <li>Distributor furnitur</li>
-          <li>Penjual e-commerce</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Standar ini mencakup keduanya:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Meja dan meja tulis yang diproduksi penuh (siap pakai)</li>
+          <li>Unit siap rakit (RTA) — diuji setelah perakitan lengkap</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap pabrik harus memperoleh Lisensi BIS terpisah.
+          Tujuan standar ini adalah menetapkan persyaratan kinerja dan
+          keselamatan minimum yang membantu memastikan furnitur tetap stabil,
+          tahan lama, dan aman sepanjang masa pakai yang dimaksudkan.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>
+          Area Utama yang Dicakup Di Bawah IS 17633:2022
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Standar ini berfokus pada beberapa karakteristik kinerja penting,
+          termasuk:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Persyaratan Kekuatan —</strong> Meja dan meja tulis harus mampu
+            menahan beban yang diperkirakan selama penggunaan normal tanpa
+            kegagalan atau deformasi berlebihan.
+          </li>
+          <li>
+            <strong>Persyaratan Stabilitas —</strong> Furnitur harus tetap stabil
+            saat digunakan dan tahan terhadap terbalik di bawah kondisi pembebanan
+            yang dapat diperkirakan.
+          </li>
+          <li>
+            <strong>Persyaratan Daya Tahan —</strong> Produk harus mempertahankan
+            kinerja dan integritas struktural setelah penggunaan berulang dalam
+            jangka waktu yang lama.
+          </li>
+          <li>
+            <strong>Persyaratan Keselamatan —</strong> Desain dan konstruksi harus
+            meminimalkan risiko dari ketidakstabilan, tepi tajam, konstruksi tidak
+            aman, atau kegagalan struktural.
+          </li>
+          <li>
+            <strong>Kualitas Pengerjaan &amp; Konstruksi —</strong> Pengerjaan,
+            perakitan, sambungan, pengencang, dan konstruksi keseluruhan dinilai
+            untuk kinerja jangka panjang yang andal.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Mengapa Memilih Kami untuk Konsultasi Sertifikasi BIS?
+          Apakah Sertifikasi BIS untuk Meja dan Meja Tulis Wajib di India?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Kami menyediakan bantuan end-to-end:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ya. Meja dan meja tulis yang tercakup dalam Perintah Kontrol Kualitas
+          (QCO) Furnitur yang berlaku wajib mematuhi Standar India yang relevan
+          dan memperoleh Sertifikasi BIS sebelum diproduksi, diimpor, dijual,
+          didistribusikan, atau ditawarkan di pasar India.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Interpretasi standar (IS 17633:2022)</li>
-          <li>Klasifikasi produk</li>
-          <li>Penyusunan dokumentasi</li>
-          <li>Koordinasi pengujian</li>
-          <li>Pengajuan portal BIS</li>
-          <li>Dukungan inspeksi pabrik</li>
-          <li>Tindak lanjut berkelanjutan dengan BIS</li>
-          <li>Persetujuan lisensi</li>
-          <li>Pembaruan dan manajemen kepatuhan</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tujuan sertifikasi wajib adalah untuk:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Memastikan kualitas produk yang lebih tinggi di seluruh industri furnitur</li>
+          <li>Melindungi keselamatan konsumen melalui standar yang terverifikasi</li>
+          <li>Mencegah furnitur di bawah standar memasuki pasar</li>
+          <li>Mempromosikan standardisasi dan tolok ukur kualitas yang seragam</li>
+          <li>Membangun kepercayaan pembeli terhadap produk bersertifikat Tanda ISI</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Keahlian kami memastikan sertifikasi yang cepat, tanpa masalah, dan bebas kesalahan.
+          Produsen yang tercakup dalam peraturan yang berlaku harus memperoleh
+          lisensi BIS dan menggunakan Tanda ISI sesuai dengan persyaratan BIS.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Periksa juga Produk Furnitur yang Tercakup dalam Sertifikasi BIS
+            Wajib —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Sertifikasi BIS untuk furnitur</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Cakupan Produk Di Bawah IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Cakupan IS 17633:2022 meliputi berbagai kategori meja dan meja tulis
+          yang dirancang untuk pengguna dewasa di lingkungan hunian, komersial,
+          institusional, dan tempat kerja.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Contoh produk yang umumnya dicakup meliputi:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Meja kantor, meja belajar, dan meja komputer</li>
+          <li>Workstation dan meja serbaguna</li>
+          <li>Meja konferensi dan meja rapat</li>
+          <li>Meja institusional dan meja laboratorium</li>
+          <li>Furnitur co-working dan penggunaan komersial</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen harus meninjau dengan cermat spesifikasi produk dan tujuan
+          penggunaan untuk menentukan apakah produk mereka termasuk dalam cakupan
+          IS 17633:2022.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Persyaratan Teknis Utama Di Bawah IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Untuk memperoleh sertifikasi BIS, meja dan meja tulis harus memenuhi
+          berbagai persyaratan kinerja dan keselamatan yang ditentukan oleh
+          standar.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Integritas Struktural —</strong> Produk harus berkinerja di
+            bawah beban yang ditentukan; sambungan dan struktur penopang tetap
+            aman selama pengujian.
+          </li>
+          <li>
+            <strong>Kinerja Menahan Beban —</strong> Meja dan meja tulis harus
+            menopang beban yang ditentukan tanpa deformasi, kerusakan, atau
+            kegagalan yang tidak dapat diterima.
+          </li>
+          <li>
+            <strong>Kinerja Stabilitas —</strong> Furnitur harus tetap stabil saat
+            digunakan dan mengurangi risiko terbalik yang dapat menyebabkan cedera
+            atau kerusakan properti.
+          </li>
+          <li>
+            <strong>Kinerja Daya Tahan —</strong> Produk harus mampu menahan siklus
+            penggunaan berulang sambil mempertahankan kinerja yang dapat diterima.
+          </li>
+          <li>
+            <strong>Material &amp; Pengerjaan —</strong> Material, finishing, dan
+            metode perakitan harus memenuhi kontrol kualitas untuk produksi yang
+            konsisten.
+          </li>
+          <li>
+            <strong>Pertimbangan Keselamatan —</strong> Desain harus meminimalkan
+            bahaya dari penggunaan furnitur bagi konsumen dan pembeli
+            institusional.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Mengapa Sertifikasi BIS Penting bagi Produsen Furnitur
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Pasar furnitur India semakin sadar akan kualitas. Departemen
+          pemerintah, lembaga pendidikan, pembeli korporat, dan lembaga pengadaan
+          besar sering kali lebih memilih produk yang mematuhi standar yang
+          diakui.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Memperoleh sertifikasi BIS membantu produsen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Membuktikan kepatuhan terhadap standar India yang berlaku</li>
+          <li>Meningkatkan kredibilitas produk dan reputasi merek</li>
+          <li>Memenangkan kepercayaan pelanggan dan pembeli institusional</li>
+          <li>Meningkatkan penerimaan dalam pengadaan pemerintah dan korporat</li>
+          <li>Memperkuat praktik manajemen kualitas internal</li>
+          <li>Tetap unggul terhadap perubahan persyaratan regulasi</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Bagi produsen yang mencari pertumbuhan jangka panjang, sertifikasi BIS
+          sering kali dipandang sebagai persyaratan kepatuhan sekaligus keunggulan
+          bisnis strategis.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Persyaratan Pengujian untuk Meja dan Meja Tulis Di Bawah IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sebelum produsen dapat memperoleh sertifikasi BIS, sampel produk harus
+          dievaluasi terhadap persyaratan IS 17633:2022 yang berlaku melalui
+          pengujian di laboratorium yang diakui BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tujuan pengujian adalah memverifikasi bahwa furnitur memenuhi standar
+          yang ditentukan untuk keselamatan, stabilitas, kekuatan, daya tahan, dan
+          kinerja secara keseluruhan.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Meskipun parameter pengujian yang tepat dapat bervariasi tergantung pada
+          desain produk dan persyaratan sertifikasi, produsen umumnya dinilai
+          untuk karakteristik berikut:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Desain &amp; Pengerjaan —</strong> Kualitas konstruksi,
+            perakitan, finishing, dan integritas produk keseluruhan diperiksa untuk
+            penggunaan jangka panjang yang aman.
+          </li>
+          <li>
+            <strong>Verifikasi Dimensi —</strong> Pengukuran penting diperiksa
+            terhadap standar dan spesifikasi produk yang disetujui.
+          </li>
+          <li>
+            <strong>Pengujian Stabilitas —</strong> Memastikan produk tetap stabil
+            dalam penggunaan normal dan menandai kelemahan terbalik atau struktural.
+          </li>
+          <li>
+            <strong>Pengujian Beban Statis —</strong> Memverifikasi kapasitas
+            menahan beban tanpa kegagalan, deformasi berlebihan, atau kerusakan.
+          </li>
+          <li>
+            <strong>Pengujian Kekuatan —</strong> Menilai rangka, sambungan, dan
+            penopang di bawah tekanan operasional selama penggunaan rutin.
+          </li>
+          <li>
+            <strong>Penilaian Daya Tahan —</strong> Memeriksa retensi kinerja
+            setelah siklus penggunaan berulang.
+          </li>
+          <li>
+            <strong>Penilaian Keselamatan —</strong> Menyingkirkan risiko yang dapat
+            dihindari dari ketidakstabilan, cacat, atau fitur desain yang tidak
+            aman.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Proses Sertifikasi BIS untuk Meja dan Meja Tulis
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen yang mencari sertifikasi BIS di bawah IS 17633:2022 harus
+          mengikuti proses sertifikasi terstruktur yang ditetapkan oleh Bureau of
+          Indian Standards.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Meskipun persyaratan spesifik dapat bervariasi berdasarkan jenis pemohon
+          dan lokasi manufaktur, proses umumnya tetap serupa.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 1: Penilaian Cakupan Produk
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Langkah pertama melibatkan penentuan apakah produk termasuk dalam cakupan
+          IS 17633:2022 dan Perintah Kontrol Kualitas yang berlaku. Tinjauan teknis
+          terhadap spesifikasi produk, tujuan penggunaan, material, dan konstruksi
+          biasanya dilakukan sebelum memulai proses sertifikasi.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 2: Persiapan Dokumentasi
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen menyiapkan dokumentasi yang diperlukan, termasuk informasi
+          perusahaan, detail manufaktur, spesifikasi produk, prosedur kontrol
+          kualitas, dan catatan teknis pendukung. Dokumentasi yang tepat sangat
+          penting karena kekurangan pada tahap ini dapat menunda sertifikasi.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 3: Pengujian Produk
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sampel produk diuji di laboratorium yang diakui BIS untuk memverifikasi
+          kepatuhan terhadap persyaratan IS 17633:2022. Laporan pengujian menjadi
+          salah satu dokumen teknis utama yang mendukung aplikasi sertifikasi.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 4: Pengajuan Aplikasi
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Aplikasi BIS diajukan bersama dengan dokumen pendukung, laporan
+          pengujian, informasi manufaktur, dan catatan manajemen kualitas.
+          Aplikasi ditinjau oleh BIS untuk kelengkapan dan kepatuhan teknis.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 5: Penilaian Pabrik
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS dapat melakukan inspeksi pabrik untuk mengevaluasi:
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>Infrastruktur manufaktur dan kemampuan produksi</li>
+          <li>Sistem kontrol kualitas dan fasilitas pengujian internal</li>
+          <li>Kontrol material mentah dan mekanisme keterlacakan produk</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tujuannya adalah memverifikasi kemampuan produsen untuk secara konsisten
+          memproduksi produk yang patuh.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 6: Evaluasi dan Tinjauan
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS meninjau aplikasi, temuan inspeksi, dan laporan pengujian
+          laboratorium sebelum membuat keputusan sertifikasi. Setiap pengamatan
+          yang muncul selama proses tinjauan harus ditangani oleh pemohon.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 7: Pemberian Lisensi BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Setelah berhasil menyelesaikan semua persyaratan, BIS memberikan lisensi
+          dan mengizinkan produsen menggunakan Tanda ISI pada meja dan meja tulis
+          bersertifikat.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sertifikasi BIS untuk Produsen India
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Produsen India umumnya mengajukan di bawah prosedur sertifikasi domestik
+          yang ditetapkan oleh BIS. Proses ini biasanya mencakup:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Pengujian produk di laboratorium yang diakui BIS</li>
+          <li>Pengajuan aplikasi dengan dokumen pendukung</li>
+          <li>Inspeksi pabrik dan tinjauan teknis oleh BIS</li>
+          <li>Pemberian lisensi BIS dan otorisasi Tanda ISI</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Setelah disertifikasi, produsen harus terus mematuhi persyaratan BIS dan
+          mempertahankan kualitas produk yang konsisten sepanjang masa lisensi.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sertifikasi BIS untuk Produsen Asing
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen asing yang berniat mengekspor meja dan meja tulis ke India juga
+          harus memperoleh sertifikasi BIS sebelum memasok produk yang tercakup
+          dalam Perintah Kontrol Kualitas yang berlaku.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Proses sertifikasi umumnya melibatkan:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Penunjukan Perwakilan India yang Berwenang (AIR)</li>
+          <li>Pengujian produk dan penilaian pabrik di luar negeri</li>
+          <li>Tinjauan dokumentasi dan persetujuan sertifikasi BIS</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen asing harus memastikan kepatuhan berkelanjutan terhadap
+          persyaratan BIS untuk mempertahankan validitas sertifikasi.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Dokumen yang Diperlukan untuk Sertifikasi BIS Meja dan Meja Tulis
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Persyaratan dokumentasi dapat bervariasi tergantung pada produsen dan
+          jalur sertifikasi. Namun, dokumen berikut umumnya diperlukan selama
+          proses sertifikasi.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Dokumen Bisnis dan Hukum</h3>
+        <ul className={LIST_CLASS}>
+          <li>Pendaftaran perusahaan, lisensi manufaktur, dan GST (jika berlaku)</li>
+          <li>Detail penandatangan yang berwenang dan bukti identitas</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Informasi Manufaktur</h3>
+        <ul className={LIST_CLASS}>
+          <li>Diagram alir proses, layout pabrik, dan detail mesin</li>
+          <li>Infrastruktur produksi dan catatan kapasitas</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Informasi Produk</h3>
+        <ul className={LIST_CLASS}>
+          <li>Spesifikasi produk, gambar teknis, dan katalog</li>
+          <li>Daftar material dan detail material/komponen</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Dokumen Kontrol Kualitas</h3>
+        <ul className={LIST_CLASS}>
+          <li>Pengujian internal, inspeksi, dan prosedur QC</li>
+          <li>Catatan kontrol kualitas dan laporan kalibrasi peralatan</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Dokumen Sertifikasi</h3>
+        <ul className={LIST_CLASS}>
+          <li>Laporan pengujian laboratorium dan formulir aplikasi BIS yang diisi</li>
+          <li>Deklarasi, undertaking, dan dokumen lain yang ditentukan BIS</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen harus memastikan bahwa semua dokumentasi akurat, lengkap, dan
+          konsisten sebelum pengajuan.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tantangan Umum Selama Sertifikasi BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Meskipun proses sertifikasi mudah jika dikelola dengan baik, produsen
+          sering kali menghadapi beberapa tantangan.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Interpretasi teknis —</strong> Memetakan persyaratan IS
+            17633:2022 ke desain produk tertentu bisa sulit tanpa panduan ahli.
+          </li>
+          <li>
+            <strong>Kegagalan pengujian —</strong> Sambungan lemah, stabilitas
+            buruk, atau masalah material sering menyebabkan penolakan uji
+            laboratorium.
+          </li>
+          <li>
+            <strong>Kesenjangan dokumentasi —</strong> Catatan yang tidak lengkap
+            atau tidak sesuai adalah penyebab umum penundaan aplikasi.
+          </li>
+          <li>
+            <strong>Kepatuhan pabrik —</strong> Sistem QC, keterlacakan, atau
+            kontrol produksi mungkin perlu ditingkatkan sebelum pemberian lisensi.
+          </li>
+          <li>
+            <strong>Koordinasi regulasi —</strong> Menyelaraskan pengujian
+            laboratorium, inspeksi, dan tindak lanjut BIS membutuhkan waktu tanpa
+            dukungan terstruktur.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Manfaat Bantuan Sertifikasi BIS Profesional
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Bekerja dengan konsultan BIS berpengalaman dapat membantu produsen
+          menghindari penundaan yang mahal dan memperlancar perjalanan
+          sertifikasi.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Dukungan profesional biasanya mencakup:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Tinjauan cakupan produk dan interpretasi standar</li>
+          <li>Persiapan dokumentasi dan pengajuan aplikasi</li>
+          <li>Koordinasi pengujian laboratorium dan inspeksi pabrik</li>
+          <li>Kepatuhan berkelanjutan dan dukungan pasca-sertifikasi</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ini memungkinkan produsen fokus pada produksi sambil memastikan
+          persyaratan regulasi ditangani secara efisien.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Mengapa Memilih Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India adalah konsultansi kepatuhan regulasi yang
+          membantu produsen, importir, eksportir, dan bisnis dengan persyaratan
+          sertifikasi dan persetujuan di seluruh India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Para ahli kami memberikan dukungan menyeluruh untuk Sertifikasi BIS untuk
+          Meja dan Meja Tulis di bawah IS 17633:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Layanan Kami Meliputi</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>Penilaian keberlakuan produk dan konsultasi kepatuhan BIS</li>
+          <li>Dukungan dokumentasi dan manajemen aplikasi</li>
+          <li>Koordinasi pengujian dan bantuan inspeksi pabrik</li>
+          <li>Komunikasi regulasi dan dukungan kepatuhan pasca-sertifikasi</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tujuan kami adalah membantu bisnis menavigasi proses sertifikasi secara
+          efisien sambil meminimalkan penundaan dan tantangan kepatuhan.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -752,116 +862,140 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikat BIS untuk Meja dan Meja Tulis di bawah IS 17633:2022 adalah
-          persyaratan kesesuaian wajib yang memastikan keselamatan produk,
-          kinerja, daya tahan, dan kepatuhan terhadap standar nasional.
-          Produsen dan importir harus menjalani pengujian produk, inspeksi
-          pabrik, dan memenuhi semua aturan dokumentasi dan pelabelan BIS untuk
-          memperoleh Tanda ISI.
+          Sertifikasi BIS untuk Meja dan Meja Tulis di bawah IS 17633:2022 adalah
+          persyaratan penting bagi produsen yang ingin memasok produk furnitur yang
+          patuh di pasar India. Sertifikasi ini membantu memastikan bahwa meja dan
+          meja tulis memenuhi standar yang ditetapkan terkait keselamatan,
+          stabilitas, daya tahan, kekuatan, dan kualitas.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Dengan bantuan ahli, seluruh proses sertifikasi menjadi
-          lancar, cepat, dan sepenuhnya sesuai dengan peraturan BIS.
+          Dengan memperoleh Sertifikasi BIS dan menggunakan Tanda ISI, produsen
+          dapat menunjukkan kepatuhan terhadap standar India, meningkatkan
+          kepercayaan pelanggan, memperkuat posisi pasar mereka, dan mendukung
+          pertumbuhan bisnis jangka panjang.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Jika Anda berencana memperoleh Sertifikasi BIS untuk Meja dan Meja Tulis
+          di bawah IS 17633:2022, Sun Certifications India dapat membantu Anda
+          dengan dukungan kepatuhan menyeluruh, membantu Anda menavigasi proses
+          sertifikasi secara efisien dan percaya diri.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQ – Sertifikat BIS untuk Meja & Meja Tulis (IS 17633:2022)
+          FAQ – Sertifikasi BIS untuk Meja dan Meja Tulis (IS 17633:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Apakah sertifikasi BIS wajib untuk meja dan meja tulis?
-              </strong>
+              <strong>1. Apa itu IS 17633:2022?</strong>
               <br />
-              Ya. Sesuai IS 17633:2022, semua meja dan meja tulis harus
-              disertifikasi BIS sebelum dijual di India.
+              IS 17633:2022 adalah Standar India yang diterbitkan oleh Bureau of
+              Indian Standards (BIS) yang menetapkan persyaratan minimum kinerja,
+              stabilitas, daya tahan, dan keselamatan untuk meja dan meja tulis yang
+              ditujukan bagi pengguna dewasa dalam aplikasi duduk dan berdiri.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Pengujian apa yang diperlukan untuk sertifikasi?</strong>
+              <strong>2. Apakah sertifikasi BIS wajib untuk meja dan meja tulis?</strong>
               <br />
-              Pengujian wajib meliputi uji stabilitas, kekuatan, daya tahan,
-              defleksi, dampak, dan keselamatan permukaan.
+              Ya — untuk produk yang tercakup dalam Perintah Kontrol Kualitas (QCO)
+              Furnitur yang berlaku. Produsen dan importir harus memiliki lisensi
+              BIS yang valid dan mematuhi IS 17633:2022 sebelum memproduksi,
+              mengimpor, menjual, atau mendistribusikan furnitur tersebut di India.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Berapa biaya sertifikasi BIS?</strong>
+              <strong>3. Tanda sertifikasi mana yang berlaku untuk meja dan meja tulis?</strong>
               <br />
-              Biaya berkisar antara ₹65.000 – ₹1.30.000, tergantung pada faktor
-              pengujian dan inspeksi.
+              Meja dan meja tulis bersertifikat diizinkan menggunakan Tanda ISI di
+              bawah Skema Sertifikasi Produk BIS, yang menunjukkan bahwa produk
+              sesuai dengan Standar India yang berlaku.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. Apakah produsen asing memerlukan Sertifikasi BIS?
-              </strong>
+              <strong>4. Siapa yang dapat mengajukan sertifikasi BIS?</strong>
               <br />
-              Ya, melalui skema FMCS, yang mencakup inspeksi pabrik luar negeri
-              oleh BIS.
+              Baik produsen India maupun produsen asing dapat mengajukan, asalkan
+              meja dan meja tulis mereka termasuk dalam cakupan QCO yang berlaku dan
+              memenuhi persyaratan IS 17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. Dapatkah satu lisensi mencakup beberapa model meja/meja tulis?
-              </strong>
+              <strong>5. Apa tujuan sertifikasi BIS?</strong>
               <br />
-              Ya, tetapi hanya jika model serupa dalam konstruksi dan parameter
-              pengujian.
+              Sertifikasi BIS memastikan bahwa furnitur memenuhi tolok ukur yang
+              diakui secara nasional untuk keselamatan, kinerja struktural, daya
+              tahan, dan pengerjaan — membantu melindungi pengguna akhir dan
+              mempertahankan standar kualitas di seluruh pasar.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Berapa lama proses BIS berlangsung?</strong>
+              <strong>6. Produk apa saja yang dicakup di bawah IS 17633:2022?</strong>
               <br />
-              Sekitar 30–45 hari.
+              Standar ini mencakup meja dan meja tulis untuk penggunaan dewasa yang
+              digunakan di kantor, lembaga pendidikan, perusahaan komersial, dan
+              lingkungan tempat kerja — termasuk meja kantor, workstation, meja
+              belajar, meja konferensi, dan kategori furnitur serupa.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Apakah pengujian wajib di lab yang diakui BIS?</strong>
+              <strong>7. Apakah pengujian laboratorium wajib?</strong>
               <br />
-              Ya, hanya laboratorium yang disetujui BIS yang dapat melakukan pengujian.
+              Ya. Sampel produk harus diuji di laboratorium yang diakui BIS, dan
+              laporan pengujian yang dihasilkan merupakan dokumen kunci dalam
+              aplikasi sertifikasi untuk menunjukkan kepatuhan terhadap IS
+              17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Apa yang terjadi jika produk gagal?</strong>
+              <strong>8. Dapatkah meja dan meja tulis impor dijual tanpa sertifikasi BIS?</strong>
               <br />
-              Produk harus didesain ulang dan diajukan kembali untuk pengujian.
+              Tidak. Produk impor yang termasuk dalam sertifikasi wajib tidak dapat
+              dipasok secara legal di India tanpa persetujuan BIS yang valid.
+              Importir harus memastikan kepatuhan terhadap standar yang berlaku
+              sebelum menempatkan produk di pasar.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Apakah penandaan ISI wajib setelah sertifikasi?</strong>
+              <strong>9. Apa peran inspeksi pabrik?</strong>
               <br />
-              Ya, Tanda ISI diperlukan pada produk dan kemasan.
+              BIS melakukan penilaian pabrik untuk memverifikasi bahwa produsen
+              mempertahankan infrastruktur produksi yang memadai, sistem kontrol
+              kualitas, dan keterlacakan produk untuk secara konsisten memproduksi
+              meja dan meja tulis yang patuh.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. Dokumen apa yang diperlukan?</strong>
+              <strong>10. Bagaimana Sun Certifications India dapat membantu?</strong>
               <br />
-              Gambar teknis, BOM, dokumen pabrik, laporan pengujian, rencana QC,
-              dan dokumen hukum.
+              Sun Certifications India menawarkan bantuan menyeluruh — termasuk
+              penilaian cakupan produk, persiapan dokumentasi, koordinasi pengujian
+              laboratorium, manajemen aplikasi BIS, kesiapan inspeksi pabrik, dan
+              dukungan kepatuhan pasca-sertifikasi untuk meja dan meja tulis di
+              bawah IS 17633:2022.
             </p>
           </div>
         </div>
@@ -878,6 +1012,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sumber Daya Terkait
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">Lisensi Tanda ISI</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">Sertifikat BIS FMCS</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadIndonesian />
 

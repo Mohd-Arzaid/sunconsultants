@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnitChinese = () => {
   return (
     <div className="relative w-full">
@@ -141,573 +147,587 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          桌子和办公桌BIS证书 – IS 17633:2022 BIS认证完整指南
+          桌子和办公桌BIS认证（IS 17633:2022）——ISI标志认证完整指南
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="桌子和办公桌BIS许可证"
-            alt="桌子和办公桌BIS证书 - IS 17633:2022 BIS认证"
+            alt="桌子和办公桌BIS认证 - IS 17633:2022 ISI标志指南"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          桌子和办公桌BIS证书对于印度所有桌子和办公桌的制造商、进口商和销售商都是强制性的。根据印度标准IS 17633:2022 – 桌子和办公桌：安全要求，这些家具产品必须经过印度标准局（BIS）的测试和认证，才能在印度市场合法销售。
+          桌子和办公桌是办公室、教育机构、商业场所、政府组织和住宅空间中使用最广泛的家具产品之一。由于这些产品需要在确保用户安全、稳定性和耐久性的同时承受日常使用，因此对制造商和进口商而言，符合公认的质量标准变得越来越重要。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          桌子和办公桌是家庭、办公室、学校、大学、商业空间、酒店环境和工业工作场所的重要组成部分。由于它们经常承受重量、冲击和持续使用，其结构强度和安全至关重要。为确保消费者保护和产品可靠性，BIS强制要求认证。
+          在印度，IS 17633:2022标准涵盖的桌子和办公桌必须符合印度标准局（BIS）规定的适用质量和安全要求。成功满足这些要求的制造商可以获得BIS许可证，并在其产品上使用ISI标志，以证明符合相关的印度标准。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          本综合指南解释了IS 17633:2022、BIS注册流程、测试、所需文件、费用、时间表、处罚以及对制造商和进口商的益处。
+          认证流程评估产品性能的各个方面，包括强度、稳定性、耐久性、工艺、尺寸和整体安全性。合规不仅有助于企业满足监管要求，还能提高产品的可信度和市场接受度。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          本综合指南解释了制造商、进口商、家具品牌和采购专业人士需要了解的有关IS 17633:2022标准下桌子和办公桌BIS认证的所有信息，包括适用性、认证要求、测试参数、文件、益处和认证流程。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          什么是BIS认证？
+          桌子和办公桌BIS认证的关键要点
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS认证是由印度标准局（印度国家标准机构）管理的监管合规流程。
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  项目
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  详情
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["产品", "桌子和办公桌"],
+                ["适用标准", "IS 17633:2022"],
+                ["认证类型", "BIS产品认证"],
+                ["适用标志", "ISI标志"],
+                ["认证计划", "计划-I（ISI标志认证）"],
+                ["监管机构", "印度标准局（BIS）"],
+                ["适用行业", "家具"],
+                [
+                  "合格申请人",
+                  "印度制造商和外国制造商",
+                ],
+                [
+                  "合规要求",
+                  "根据适用的家具QCO（质量控制令）强制执行",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "认证计划" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        计划-I（ISI标志认证）
+                      </a>
+                    ) : particular === "合规要求" ? (
+                      <>
+                        根据适用的{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                         <strong>家具QCO（质量控制令）</strong>
+                        </a>
+                        {" "}强制执行
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS证书的含义
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS证书确认产品符合印度标准规定的安全、质量、性能和耐久性要求。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS认证的益处
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>确保消费者安全</li>
-          <li>支持高质量制造</li>
-          <li>降低产品故障风险</li>
-          <li>提高市场接受度</li>
-          <li>BIS质量控制令（QCOs）法律要求</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          一旦获得批准，产品将带有BIS标志（ISI标志）以及许可证号码。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          适用于桌子和办公桌的印度标准是什么？– IS 17633:2022
+          什么是桌子和办公桌BIS认证？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          适用的BIS标准是：
+          桌子和办公桌BIS认证是在印度标准局（BIS）产品认证计划下进行的符合性评估流程。该认证确认产品符合IS 17633:2022标准规定的要求。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – 桌子和办公桌：安全要求
+          认证成功后，制造商被允许在其产品上使用ISI标志，表明符合适用的印度标准。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          该标准定义了用于住宅、商业、酒店和机构环境的所有类型桌子和办公桌的性能、结构安全和耐久性要求。
+          该认证旨在确保在印度市场供应的桌子和办公桌满足与以下方面相关的既定要求：
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          涵盖的产品
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>办公桌</li>
-          <li>电脑桌</li>
-          <li>学习桌</li>
-          <li>餐桌</li>
-          <li>咖啡桌</li>
-          <li>工作桌</li>
-          <li>培训桌</li>
-          <li>学校/大学课桌</li>
-          <li>教师桌</li>
-          <li>模块化工作站桌</li>
-          <li>写字桌</li>
-          <li>会议/会议室桌</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17633:2022下的关键安全参数
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>结构稳定性</li>
-          <li>承载能力</li>
-          <li>抗冲击性</li>
-          <li>水平/垂直力性能</li>
-          <li>表面处理质量</li>
-          <li>边缘安全</li>
-          <li>重复使用下的耐久性</li>
-          <li>材料安全</li>
+        <ul className={LIST_CLASS}>
+          <li>正常使用过程中的结构强度和稳定性</li>
+          <li>耐久性、用户安全和材料工艺</li>
+          <li>IS 17633:2022标准下的全部性能要求</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在印度销售的每张桌子或办公桌都必须通过桌子和办公桌BIS注册符合这些参数。
+          对于买家和采购机构而言，ISI标志保证家具已根据公认的质量和安全基准进行了评估。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          为什么桌子和办公桌需要BIS认证
+          桌子和办公桌IS 17633:2022概述
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          桌子和办公桌是在家庭、办公室、学校和公共场所常见的高使用率家具。结构故障可能导致事故，例如：
+          IS 17633:2022是印度标准，规定了供成人在坐姿和站姿应用中使用的桌子和办公桌的性能和安全要求。
         </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>承重时坍塌</li>
-          <li>尖锐边缘伤害</li>
-          <li>使用时不稳定</li>
-          <li>接头断裂</li>
-          <li>表面脱落</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          为避免这些危险，BIS认证确保：
+          该标准涵盖以下两种类型：
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>安全的设计和构造</li>
-          <li>符合结构载荷要求</li>
-          <li>耐用的性能</li>
-          <li>防止翻倒和坍塌</li>
-          <li>高质量材料选择</li>
-          <li>统一的市场标准</li>
+        <ul className={LIST_CLASS}>
+          <li>完全制造（成品）的桌子和办公桌</li>
+          <li>即装即用（RTA）单元——在完全组装后进行测试</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在印度，没有桌子和办公桌BIS许可证就销售桌子和办公桌是违法的。
+          该标准的目标是确立最低性能和安全要求，以帮助确保家具在其预期使用寿命内保持稳定、耐用和安全。
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>
+          IS 17633:2022涵盖的关键领域
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          该标准着重于几个重要的性能特征，包括：
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>强度要求——</strong>桌子和办公桌必须能够承受正常使用过程中的预期载荷，而不会发生故障或过度变形。
+          </li>
+          <li>
+            <strong>稳定性要求——</strong>家具在使用时必须保持稳定，并在可预见的载荷条件下抵抗翻倒。
+          </li>
+          <li>
+            <strong>耐久性要求——</strong>产品在长时间反复使用后必须保持性能和结构完整性。
+          </li>
+          <li>
+            <strong>安全要求——</strong>设计和构造必须将因不稳定、锋利边缘、不安全构造或结构故障带来的风险降至最低。
+          </li>
+          <li>
+            <strong>工艺与构造质量——</strong>对工艺、组装、接头、紧固件和整体构造进行评估，以确保可靠的长期性能。
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          桌子和办公桌BIS认证流程（IS 17633:2022）
+          桌子和办公桌BIS认证在印度是强制性的吗？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS认证流程遵循ISI计划（符合性评估计划-I），包括产品测试和工厂检查。
+          是的。适用的家具质量控制令（QCO）涵盖的桌子和办公桌必须符合相关的印度标准，并在印度市场制造、进口、销售、分销或提供之前获得BIS认证。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤1 – 确定产品类别和标准
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          强制认证的目标是：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>确保整个家具行业的产品质量更高</li>
+          <li>通过经过验证的标准保护消费者安全</li>
+          <li>防止不合标准的家具进入市场</li>
+          <li>促进标准化和统一的质量基准</li>
+          <li>建立买家对ISI标志认证产品的信心</li>
+        </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          确认桌子/办公桌属于IS 17633:2022。确定变体数量和材料。
+          适用法规涵盖的制造商必须获得BIS许可证，并按照BIS要求使用ISI标志。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤2 – 提交BIS申请（在线提交）
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          在BIS Manak在线门户上填写申请，包括：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>制造商详细信息</li>
-          <li>工厂地址</li>
-          <li>产品规格</li>
-          <li>商标详细信息</li>
-          <li>质量控制系统</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤3 – 支付BIS认证费用
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">包括：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>申请费</li>
-          <li>处理费</li>
-          <li>产品测试费用</li>
-          <li>工厂检查费用</li>
-          <li>标记费用</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤4 – 在BIS认可的实验室进行样品测试
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          产品必须按照IS 17633:2022的规定进行完整测试。
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          进行的测试
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>稳定性测试</li>
-          <li>强度测试（静载荷）</li>
-          <li>耐久性测试（重复加载）</li>
-          <li>冲击测试</li>
-          <li>挠度测量</li>
-          <li>边缘和表面安全测试</li>
-          <li>工作空间载荷测试</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          实验室直接将测试报告上传到BIS。
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            另请查看强制性BIS认证涵盖的家具产品——
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>家具BIS认证</strong>
+          </a>
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤5 – BIS工厂检查
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS官员访问制造设施以验证：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>质量管理系统</li>
-          <li>内部测试能力</li>
-          <li>原材料控制</li>
-          <li>生产线和机械</li>
-          <li>仪器校准</li>
-          <li>符合STI（测试和检查计划）</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤6 – 授予BIS许可证
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">BIS颁发：</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS证书</li>
-          <li>ISI标志批准</li>
-          <li>唯一的CML许可证号码</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          此后，制造商可以在印度合法标记和销售桌子/办公桌。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          步骤7 – 许可证后合规
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          制造商必须：
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>按照STI维护记录</li>
-          <li>正确使用ISI标记</li>
-          <li>允许定期BIS检查</li>
-          <li>每1-2年更新许可证</li>
-        </ul>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          桌子和办公桌BIS许可证范围
+          IS 17633:2022涵盖的产品范围
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> 本标准涵盖与性能和安全性相关的要求，即用于坐姿和/或站姿、供成人使用的桌子和办公桌的强度、稳定性和耐久性。
+          IS 17633:2022的范围扩展到为住宅、商业、机构和工作场所环境中的成人用户设计的各类桌子和办公桌。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          通常涵盖的产品示例包括：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>办公桌、学习桌和电脑桌</li>
+          <li>工作站和多用途办公桌</li>
+          <li>会议桌和会客桌</li>
+          <li>机构和实验室桌</li>
+          <li>联合办公和商用家具</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          制造商应仔细审查产品规格和预期用途，以确定其产品是否属于IS 17633:2022的范围。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17633:2022下的关键技术要求
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          要获得BIS认证，桌子和办公桌必须满足该标准规定的各种性能和安全要求。
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>结构完整性——</strong>产品必须在规定载荷下正常工作；接头和支撑结构在测试期间保持牢固。
+          </li>
+          <li>
+            <strong>承载性能——</strong>桌子和办公桌必须支撑规定的载荷，而不会出现不可接受的变形、损坏或故障。
+          </li>
+          <li>
+            <strong>稳定性性能——</strong>家具在使用时必须保持稳定，并降低可能造成人身伤害或财产损失的翻倒风险。
+          </li>
+          <li>
+            <strong>耐久性性能——</strong>产品必须承受反复使用周期，同时保持可接受的性能。
+          </li>
+          <li>
+            <strong>材料与工艺——</strong>材料、表面处理和组装方法必须满足质量控制，以实现一致的生产。
+          </li>
+          <li>
+            <strong>安全考虑——</strong>设计必须将家具使用过程中对消费者和机构买家的危害降至最低。
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          为什么BIS认证对家具制造商很重要
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          印度家具市场越来越注重质量。政府部门、教育机构、企业买家和大型采购机构通常更青睐符合公认标准的产品。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          获得BIS认证有助于制造商：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>证明符合适用的印度标准</li>
+          <li>提升产品可信度和品牌声誉</li>
+          <li>赢得客户和机构买家的信任</li>
+          <li>提高在政府和企业采购中的接受度</li>
+          <li>加强内部质量管理实践</li>
+          <li>领先于不断变化的监管要求</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          对于寻求长期增长的制造商而言，BIS认证通常被视为合规要求和战略业务优势。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17633:2022下桌子和办公桌的测试要求
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          在制造商获得BIS认证之前，产品样品必须在BIS认可的实验室通过测试，根据IS 17633:2022的适用要求进行评估。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> 本标准适用于完全制造/制造的桌子和办公桌。它也适用于即装即用单元；在这种情况下，本标准的要求应适用于组装单元。
+          测试的目标是验证家具是否满足安全、稳定性、强度、耐久性和整体性能的规定标准。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-3">
+          虽然具体的测试参数可能因产品设计和认证要求而异，但制造商通常会针对以下特征进行评估：
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>设计与工艺——</strong>检查构造质量、组装、表面处理和整体产品完整性，以确保安全的长期使用。
+          </li>
+          <li>
+            <strong>尺寸验证——</strong>根据标准和批准的产品规格检查关键尺寸。
+          </li>
+          <li>
+            <strong>稳定性测试——</strong>确认产品在正常使用中保持稳定，并标记翻倒或结构薄弱问题。
+          </li>
+          <li>
+            <strong>静载荷测试——</strong>验证承载能力，无故障、过度变形或损坏。
+          </li>
+          <li>
+            <strong>强度测试——</strong>评估在常规使用中操作应力下的框架、接头和支撑。
+          </li>
+          <li>
+            <strong>耐久性评估——</strong>检查反复使用周期后的性能保持情况。
+          </li>
+          <li>
+            <strong>安全评估——</strong>排除因不稳定、缺陷或不安全设计特征带来的可避免风险。
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          桌子和办公桌BIS认证流程
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          根据IS 17633:2022寻求BIS认证的制造商必须遵循印度标准局制定的结构化认证流程。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          尽管具体要求可能因申请人类型和制造地点而异，但总体流程基本相似。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          步骤1：产品范围评估
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          第一步是确定产品是否属于IS 17633:2022和适用质量控制令的范围。在启动认证流程之前，通常会对产品规格、预期用途、材料和构造进行技术审查。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          步骤2：文件准备
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          制造商准备所需的文件，包括公司信息、制造细节、产品规格、质量控制程序和支持性技术记录。妥善的文件至关重要，因为此阶段的缺陷可能会延误认证。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          步骤3：产品测试
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          产品样品在BIS认可的实验室进行测试，以验证是否符合IS 17633:2022的要求。测试报告是支持认证申请的主要技术文件之一。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          步骤4：申请提交
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS申请连同支持文件、测试报告、制造信息和质量管理记录一并提交。BIS会审查申请的完整性和技术合规性。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          步骤5：工厂评估
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS可能会进行工厂检查以评估：
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>制造基础设施和生产能力</li>
+          <li>质量控制系统和内部测试设施</li>
+          <li>原材料控制和产品可追溯性机制</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          目标是验证制造商持续生产合规产品的能力。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          步骤6：评估与审查
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS在做出认证决定之前会审查申请、检查结果和实验室测试报告。审查过程中提出的任何意见都必须由申请人处理。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          步骤7：授予BIS许可证
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          在成功完成所有要求后，BIS授予许可证，并授权制造商在经过认证的桌子和办公桌上使用ISI标志。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          印度制造商的BIS认证
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          印度制造商通常根据BIS规定的国内认证程序申请。该流程通常包括：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>在BIS认可的实验室进行产品测试</li>
+          <li>连同支持文件提交申请</li>
+          <li>BIS进行工厂检查和技术审查</li>
+          <li>授予BIS许可证和ISI标志授权</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          一旦获得认证，制造商必须在许可证有效期内继续遵守BIS要求并保持一致的产品质量。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          外国制造商的BIS认证
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          打算向印度出口桌子和办公桌的外国制造商在供应适用质量控制令涵盖的产品之前，也必须获得BIS认证。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          认证流程通常包括：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>任命授权印度代表（AIR）</li>
+          <li>在海外进行产品测试和工厂评估</li>
+          <li>文件审查和BIS认证批准</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          外国制造商必须确保持续遵守BIS要求，以保持认证的有效性。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           桌子和办公桌BIS认证所需文件
         </h2>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          制造文件
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>工厂许可证</li>
-          <li>机械清单</li>
-          <li>测试设备清单</li>
-          <li>校准证书</li>
-          <li>工厂布局</li>
-          <li>工艺流程图</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          文件要求可能因制造商和认证途径而异。但是，认证过程中通常需要以下文件。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>商业和法律文件</h3>
+        <ul className={LIST_CLASS}>
+          <li>公司注册、制造许可证和GST（如适用）</li>
+          <li>授权签署人详细信息和身份证明</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          技术文件
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>桌子/办公桌图纸</li>
-          <li>材料清单</li>
-          <li>产品规格</li>
-          <li>内部质量测试报告</li>
-          <li>产品照片/视频</li>
+        <h3 className={SUB_HEADING_CLASS}>制造信息</h3>
+        <ul className={LIST_CLASS}>
+          <li>工艺流程图、工厂布局和机械详情</li>
+          <li>生产基础设施和产能记录</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          法律文件
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>授权签署人身份证明</li>
-          <li>地址证明</li>
-          <li>品牌授权书</li>
-          <li>商标注册证书</li>
+        <h3 className={SUB_HEADING_CLASS}>产品信息</h3>
+        <ul className={LIST_CLASS}>
+          <li>产品规格、技术图纸和目录</li>
+          <li>材料清单和材料/组件详情</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS申请文件
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>填写的申请表</li>
-          <li>制造商承诺书</li>
-          <li>测试请求函</li>
-          <li>授权书</li>
+        <h3 className={SUB_HEADING_CLASS}>质量控制文件</h3>
+        <ul className={LIST_CLASS}>
+          <li>内部测试、检查和质量控制程序</li>
+          <li>质量控制记录和设备校准报告</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>认证文件</h3>
+        <ul className={LIST_CLASS}>
+          <li>实验室测试报告和填写完整的BIS申请表</li>
+          <li>声明、承诺书和其他BIS规定的文件</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          完整的文件确保更快的审批。
+          制造商应确保所有文件在提交前准确、完整且一致。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          IS 17633:2022下的测试要求
+          BIS认证过程中的常见挑战
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          测试评估强度、稳定性、耐久性和安全性。
+          尽管认证流程在妥善管理时是简单明了的，但制造商常常会遇到一些挑战。
         </p>
 
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
-          <Table className="min-w-full border-collapse">
-            <TableHeader>
-              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  条款
-                </TableHead>
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  要求
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  设计和工艺
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  稳定性测试
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  规定载荷
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  偶尔重载
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  水平静力下的强度
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  一般
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  玻璃桌面垂直冲击测试
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  所有其他桌面垂直冲击测试
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  桌面挠度
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  跌落测试
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </div>
-
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          测试必须在BIS认可的实验室进行。
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          常见挑战及如何避免
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. 产品在载荷或耐久性测试中失败</strong>
-            <br />
-            解决方案：加强接头，使用符合BIS的材料，增加加固。
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. 文件不完整</strong>
-            <br />
-            解决方案：提前准备所有法律、技术和制造文件。
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. 工厂缺乏适当的测试设备</strong>
-            <br />
-            解决方案：安装所需仪器，并按照BIS指南维护校准。
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. 标签不正确</strong>
-            <br />
-            解决方案：确保ISI标记完全遵循BIS规则。
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. 产品型号分类错误</strong>
-            <br />
-            解决方案：获得专业指导以正确分类变体。
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          桌子和办公桌BIS认证的益处
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>在印度合法销售的授权</li>
-          <li>增加客户信任</li>
-          <li>更好的产品耐久性</li>
-          <li>进入主要零售商和电子商务平台</li>
-          <li>降低产品责任风险</li>
-          <li>更高的品牌可信度</li>
-          <li>符合政府QCOs</li>
-          <li>市场竞争优势</li>
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>技术解释——</strong>在没有专家指导的情况下，将IS 17633:2022要求映射到特定产品设计可能很困难。
+          </li>
+          <li>
+            <strong>测试失败——</strong>接头薄弱、稳定性差或材料问题常常导致实验室测试被拒。
+          </li>
+          <li>
+            <strong>文件缺口——</strong>不完整或不匹配的记录是申请延误的常见原因。
+          </li>
+          <li>
+            <strong>工厂合规——</strong>质量控制系统、可追溯性或生产控制可能需要在许可证授予前进行升级。
+          </li>
+          <li>
+            <strong>监管协调——</strong>在没有结构化支持的情况下，协调实验室测试、检查和BIS跟进需要时间。
+          </li>
         </ul>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          不合规的处罚
+          专业BIS认证协助的益处
         </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          与经验丰富的BIS顾问合作可以帮助制造商避免代价高昂的延误，并简化认证过程。
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          在没有BIS认证的情况下销售或分销桌子/办公桌可能导致：
+          专业支持通常包括：
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>产品没收</li>
-          <li>重罚</li>
-          <li>刑事起诉</li>
-          <li>禁止进口</li>
-          <li>业务关闭令</li>
-          <li>许可证取消</li>
+        <ul className={LIST_CLASS}>
+          <li>产品范围审查和标准解释</li>
+          <li>文件准备和申请提交</li>
+          <li>实验室测试和工厂检查协调</li>
+          <li>持续合规和认证后支持</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          2016年《印度标准局法》执行严格的处罚。
+          这使制造商能够专注于生产，同时确保高效地满足监管要求。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          谁需要桌子和办公桌BIS认证？
+          为什么选择Sun Certifications India？
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          此认证对以下人员是强制性的：
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India是一家监管合规咨询公司，协助制造商、进口商、出口商和企业满足印度各地的认证和审批要求。
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>印度制造商</li>
-          <li>外国制造商</li>
-          <li>进口商</li>
-          <li>贸易商/品牌所有者</li>
-          <li>OEM/ODM供应商</li>
-          <li>家具分销商</li>
-          <li>电子商务卖家</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          我们的专家为IS 17633:2022标准下的桌子和办公桌BIS认证提供端到端支持。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>我们的服务包括</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>产品适用性评估和BIS合规咨询</li>
+          <li>文件支持和申请管理</li>
+          <li>测试协调和工厂检查协助</li>
+          <li>监管沟通和认证后合规支持</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          每个工厂必须获得单独的BIS许可证。
+          我们的目标是帮助企业高效地完成认证流程，同时最大限度地减少延误和合规挑战。
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          为什么选择我们进行BIS认证咨询？
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          我们提供端到端的协助：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>标准解释（IS 17633:2022）</li>
-          <li>产品分类</li>
-          <li>文件起草</li>
-          <li>测试协调</li>
-          <li>BIS门户提交</li>
-          <li>工厂检查支持</li>
-          <li>与BIS持续跟进</li>
-          <li>许可证批准</li>
-          <li>续期和合规管理</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          我们的专业知识确保快速、无忧、无错误的认证。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -715,104 +735,101 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          根据IS 17633:2022，桌子和办公桌BIS证书是一项强制性符合性要求，确保产品安全、性能、耐久性以及符合国家标准。制造商和进口商必须进行产品测试、工厂检查，并满足所有BIS文件和标签规则，才能获得ISI标志。
+          根据IS 17633:2022，桌子和办公桌BIS认证是制造商寻求在印度市场供应合规家具产品的重要要求。该认证有助于确保桌子和办公桌符合与安全、稳定性、耐久性、强度和质量相关的既定标准。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在专家协助下，整个认证过程变得顺畅、快速，并完全符合BIS法规。
+          通过获得BIS认证并使用ISI标志，制造商可以证明符合印度标准，提高客户信心，巩固市场地位，并支持长期业务增长。
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          如果您计划获得IS 17633:2022标准下的桌子和办公桌BIS认证，Sun Certifications India可以为您提供端到端的合规支持，帮助您高效、自信地完成认证流程。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          常见问题 – 桌子和办公桌BIS证书（IS 17633:2022）
+          常见问题 – 桌子和办公桌BIS认证（IS 17633:2022）
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. 桌子和办公桌的BIS认证是强制性的吗？
-              </strong>
+              <strong>1. 什么是IS 17633:2022？</strong>
               <br />
-              是的。根据IS 17633:2022，所有桌子和办公桌在印度销售前必须获得BIS认证。
+              IS 17633:2022是由印度标准局（BIS）发布的印度标准，为供成人在坐姿和站姿应用中使用的桌子和办公桌制定了最低性能、稳定性、耐久性和安全要求。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. 认证需要哪些测试？</strong>
+              <strong>2. 桌子和办公桌的BIS认证是强制性的吗？</strong>
               <br />
-              强制性测试包括稳定性、强度、耐久性、挠度、冲击和表面安全测试。
+              是的——对于适用的家具质量控制令（QCO）涵盖的产品。制造商和进口商在印度制造、进口、销售或分销此类家具之前，必须持有有效的BIS许可证并符合IS 17633:2022。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. BIS认证费用是多少？</strong>
+              <strong>3. 桌子和办公桌适用哪种认证标志？</strong>
               <br />
-              费用在₹65,000 – ₹1,30,000之间，取决于测试和检查因素。
+              经过认证的桌子和办公桌被授权在BIS产品认证计划下使用ISI标志，表明产品符合适用的印度标准。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. 外国制造商需要BIS认证吗？
-              </strong>
+              <strong>4. 谁可以申请BIS认证？</strong>
               <br />
-              是的，通过FMCS计划，包括BIS对海外工厂的检查。
+              印度制造商和外国制造商均可申请，前提是其桌子和办公桌属于适用QCO的范围并满足IS 17633:2022的要求。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. 一个许可证可以涵盖多个桌子/办公桌型号吗？
-              </strong>
+              <strong>5. BIS认证的目的是什么？</strong>
               <br />
-              是的，但前提是型号在结构和测试参数上相似。
+              BIS认证确认家具符合国家认可的安全、结构性能、耐久性和工艺基准——有助于保护最终用户并维护整个市场的质量标准。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. BIS流程需要多长时间？</strong>
+              <strong>6. IS 17633:2022涵盖哪些产品？</strong>
               <br />
-              大约30-45天。
+              该标准涵盖用于办公室、教育机构、商业场所和工作场所环境的成人用桌子和办公桌——包括办公桌、工作站、学习桌、会议桌和类似家具类别。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. 测试必须在BIS认可的实验室进行吗？</strong>
+              <strong>7. 实验室测试是强制性的吗？</strong>
               <br />
-              是的，只有BIS认可的实验室才能进行测试。
+              是的。产品样品必须在BIS认可的实验室进行测试，所产生的测试报告是认证申请中证明符合IS 17633:2022的关键文件。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. 如果产品失败会怎样？</strong>
+              <strong>8. 进口的桌子和办公桌可以在没有BIS认证的情况下销售吗？</strong>
               <br />
-              必须重新设计并重新提交测试。
+              不可以。属于强制认证范围的进口产品在未获得有效BIS批准的情况下不能在印度合法供应。进口商必须在将产品投放市场之前确保符合适用标准。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. 认证后ISI标记是强制性的吗？</strong>
+              <strong>9. 工厂检查的作用是什么？</strong>
               <br />
-              是的，产品和包装上需要ISI标志。
+              BIS进行工厂评估，以验证制造商是否维护了足够的生产基础设施、质量控制系统和产品可追溯性，以持续制造合规的桌子和办公桌。
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. 需要哪些文件？</strong>
+              <strong>10. Sun Certifications India如何提供帮助？</strong>
               <br />
-              技术图纸、物料清单、工厂文件、测试报告、质量控制计划和法律文件。
+              Sun Certifications India提供端到端的协助——包括产品范围评估、文件准备、实验室测试协调、BIS申请管理、工厂检查准备，以及IS 17633:2022标准下桌子和办公桌的认证后合规支持。
             </p>
           </div>
         </div>
@@ -821,7 +838,7 @@ const MainContentLeft = () => {
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
             src="/BIS-Product-Pdf/IS-17633-2022-Sun-Certifications-India.pdf"
-            title="桌子和办公桌BIS证书 - IS 17633:2022 PDF"
+            title="桌子和办公桌BIS认证 - IS 17633:2022 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -830,7 +847,22 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <ManyUsersAlsoReadChinese /> 
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          相关资源
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">ISI标志许可证</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">BIS FMCS证书</a>
+          </li>
+        </ul>
+
+        <ManyUsersAlsoReadChinese />
 
         <FaqAuthorChinese questionNumber={2} />
       </div>

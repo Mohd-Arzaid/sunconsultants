@@ -36,6 +36,7 @@ const ServicesRightSideContentSpanish = () => {
     "/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico",
 
     "/certificacion-bis-en-espana",
+    "/mejor-y-mas-confiable-consultor-certificacion-bis-espana",
     "/es/que-es-crs-bis-o-registro-crs",
     // ISI Mark Spanish Page Url
     "/es/certificacion-bis-marca-isi",
@@ -614,6 +615,12 @@ const ContactFormServicesRightSideContentSpanish = () => {
       return "Schema X Certification for Heat Treatment Equipment (Spanish)";
     if (path.includes("/certificacion-bis-en-espana"))
       return "Spain Blog (Spanish)";
+    if (
+      path.includes(
+        "/mejor-y-mas-confiable-consultor-certificacion-bis-espana"
+      )
+    )
+      return "Mejor y más confiable consultor de certificación BIS en España – Sun Certifications India (Spanish)";
     if (path.includes("/certificacion-bis-scheme-x-para-compresores"))
       return "Schema X Certification for Compressors (Spanish)";
     if (path.includes("/es/que-es-crs-bis-o-registro-crs"))

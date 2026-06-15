@@ -35,6 +35,7 @@ const ServicesRightSideContentGerman = () => {
     "/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung",
 
     "/bis-zertifizierung-in-deutschland",
+    "/bester-und-vertrauenswuerdigster-bis-zertifizierungsberater-deutschland",
     "/de/was-ist-crs-bis-oder-crs-registrierung",
     // ISI Mark German Page Url
     "/de/bis-isi-mark-zertifizierung",
@@ -615,6 +616,12 @@ const ContactFormServicesRightSideContentGerman = () => {
 
     if (path.includes("/bis-zertifizierung-in-deutschland"))
       return "Germany Blog German";
+    if (
+      path.includes(
+        "/bester-und-vertrauenswuerdigster-bis-zertifizierungsberater-deutschland"
+      )
+    )
+      return "Bester und vertrauenswürdigster BIS-Zertifizierungsberater in Deutschland – Sun Certifications India (German)";
     if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
       return "CRS Registration (German)";
     if (path.includes("/de/bis-isi-mark-zertifizierung"))

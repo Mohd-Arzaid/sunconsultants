@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnitFrench = () => {
   return (
     <div className="relative w-full">
@@ -109,7 +115,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Certificat BIS pour Tables & Bureaux – IS 17633:2022
+                    Certification BIS pour Tables et Bureaux (IS 17633:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -141,7 +147,8 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Certificat BIS pour Tables et Bureaux – Guide Complet sur la Certification BIS IS 17633:2022
+          Certification BIS pour Tables et Bureaux (IS 17633:2022) – Guide Complet
+          de Certification Marque ISI
         </h1>
 
         {/* Featured Image */}
@@ -149,601 +156,716 @@ const MainContentLeft = () => {
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="Licence BIS pour Tables et Bureaux"
-            alt="Certificat BIS pour Tables et Bureaux - Certification BIS IS 17633:2022"
+            alt="Certification BIS pour Tables et Bureaux - Guide Marque ISI IS 17633:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Le Certificat BIS pour Tables et Bureaux est obligatoire pour tous les
-          fabricants, importateurs et vendeurs de tables et bureaux en Inde.
-          Selon la Norme Indienne IS 17633:2022 – Tables et Bureaux : Exigences de
-          Sécurité, ces articles de mobilier doivent être testés et certifiés par
-          le Bureau of Indian Standards (BIS) avant de pouvoir être légalement vendus
-          sur le marché indien.
+          Les tables et bureaux comptent parmi les produits de mobilier les plus
+          largement utilisés dans les bureaux, les établissements d&apos;enseignement,
+          les établissements commerciaux, les organisations gouvernementales et les
+          espaces résidentiels. Comme ces produits sont censés résister à un usage
+          régulier tout en garantissant la sécurité de l&apos;utilisateur, la stabilité
+          et la durabilité, la conformité aux normes de qualité reconnues est devenue
+          de plus en plus importante pour les fabricants et les importateurs.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Les tables et bureaux sont des composants essentiels des foyers, bureaux, écoles,
-          universités, espaces commerciaux, environnements d&apos;hôtellerie et
-          lieux de travail industriels. Parce qu&apos;ils supportent souvent le poids, les chocs et
-          une utilisation continue, leur résistance structurelle et leur sécurité sont critiques.
-          Pour assurer la protection des consommateurs et la fiabilité des produits, le BIS impose
-          une certification obligatoire.
+          En Inde, les tables et bureaux couverts par IS 17633:2022 doivent se
+          conformer aux exigences applicables de qualité et de sécurité prescrites par
+          le Bureau of Indian Standards (BIS). Les fabricants qui satisfont avec succès
+          à ces exigences peuvent obtenir une licence BIS et utiliser la Marque ISI sur
+          leurs produits, démontrant ainsi la conformité à la Norme Indienne pertinente.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ce guide complet explique IS 17633:2022, le processus d&apos;enregistrement BIS,
-          les tests, la documentation requise, les frais, les délais, les pénalités,
-          et les avantages pour les fabricants et importateurs.
+          Le processus de certification évalue divers aspects de la performance du
+          produit, y compris la résistance, la stabilité, la durabilité, la qualité de
+          fabrication, les dimensions et la sécurité globale. La conformité aide non
+          seulement les entreprises à satisfaire aux exigences réglementaires, mais
+          améliore également la crédibilité du produit et son acceptation sur le marché.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ce guide complet explique tout ce que les fabricants, les importateurs, les
+          marques de mobilier et les professionnels des achats doivent savoir sur la
+          Certification BIS pour Tables et Bureaux selon IS 17633:2022, y compris
+          l&apos;applicabilité, les exigences de certification, les paramètres de test,
+          la documentation, les avantages et le processus de certification.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Qu&apos;est-ce que la Certification BIS ?
+          Points Clés de la Certification BIS pour Tables et Bureaux
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          La Certification BIS est un processus de conformité réglementaire administré par
-          le Bureau of Indian Standards, l&apos;autorité nationale des normes de l&apos;Inde.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Signification du Certificat BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Un Certificat BIS confirme que le produit répond aux exigences de sécurité, qualité,
-          performance et durabilité établies par les Normes Indiennes.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Avantages de la Certification BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Assure la sécurité des consommateurs</li>
-          <li>Soutient une fabrication de haute qualité</li>
-          <li>Réduit le risque de défaillance du produit</li>
-          <li>Améliore l&apos;acceptation sur le marché</li>
-          <li>Exigé légalement sous les Ordres de Contrôle Qualité BIS (QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Une fois approuvé, le produit porte la Marque BIS (Marque ISI) ainsi que
-          le numéro de licence.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Quelle Norme Indienne s&apos;Applique aux Tables & Bureaux ? – IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          La norme BIS applicable est :
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – Tables et Bureaux : Exigences de
-          Sécurité
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Cette norme définit les exigences de performance, de sécurité structurelle et de durabilité
-          pour tous les types de tables et bureaux utilisés dans les environnements
-          résidentiels, commerciaux, d&apos;hôtellerie et institutionnels.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Produits Couverts
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Bureaux de bureau</li>
-          <li>Bureaux d&apos;ordinateur</li>
-          <li>Tables d&apos;étude</li>
-          <li>Tables à manger</li>
-          <li>Tables basses</li>
-          <li>Bureaux de travail</li>
-          <li>Tables de formation</li>
-          <li>Bureaux d&apos;école/université</li>
-          <li>Tables d&apos;enseignant</li>
-          <li>Tables de poste de travail modulaires</li>
-          <li>Tables d&apos;écriture</li>
-          <li>Tables de réunion/conférence</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paramètres de Sécurité Clés sous IS 17633:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stabilité structurelle</li>
-          <li>Capacité de charge</li>
-          <li>Résistance aux chocs</li>
-          <li>Performance de force horizontale/verticale</li>
-          <li>Qualité de finition de surface</li>
-          <li>Sécurité des bords</li>
-          <li>Durabilité sous utilisation répétitive</li>
-          <li>Sécurité des matériaux</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Chaque table ou bureau vendu en Inde doit se conformer à ces paramètres
-          via l&apos;Enregistrement BIS pour Tables & Bureaux.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Pourquoi la Certification BIS est Obligatoire pour les Tables et Bureaux
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Les tables et bureaux sont des articles de mobilier à usage intensif trouvés dans les foyers, bureaux,
-          écoles et espaces publics. Les défaillances structurelles peuvent causer des accidents
-          tels que :
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Effondrement sous le poids</li>
-          <li>Blessures par bords tranchants</li>
-          <li>Instabilité pendant l&apos;utilisation</li>
-          <li>Rupture des joints</li>
-          <li>Détachement de surface</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Pour éviter ces dangers, la certification BIS assure :
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Conception et construction sécurisées</li>
-          <li>Conformité aux exigences de charge structurelle</li>
-          <li>Performance durable</li>
-          <li>Prévention du basculement et de l&apos;effondrement</li>
-          <li>Sélection de matériaux de haute qualité</li>
-          <li>Normes de marché uniformes</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Vendre des tables et bureaux sans Licence BIS pour Tables & Bureaux est
-          illégal en Inde.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Processus de Certification BIS pour Tables et Bureaux (IS 17633:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Le processus de certification BIS suit le Schéma ISI (Schéma d&apos;Évaluation de la
-          Conformité–I), qui comprend les tests de produits et l&apos;inspection de l&apos;usine.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 1 – Identifier la Catégorie de Produit & la Norme
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Confirmez que la table/bureau relève de IS 17633:2022. Identifiez le nombre
-          de variantes et de matériaux.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 2 – Déposer la Demande BIS (Soumission en Ligne)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Remplissez la demande sur le Portail BIS Manak en Ligne avec :
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Détails du fabricant</li>
-          <li>Adresse de l&apos;usine</li>
-          <li>Spécifications du produit</li>
-          <li>Détails de la marque</li>
-          <li>Systèmes de contrôle qualité</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 3 – Paiement des Frais de Certification BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Comprend :</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Frais de demande</li>
-          <li>Frais de traitement</li>
-          <li>Frais de test du produit</li>
-          <li>Frais d&apos;inspection de l&apos;usine</li>
-          <li>Frais de marquage</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 4 – Test d&apos;Échantillon dans un Laboratoire Reconnu par le BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Les produits doivent subir des tests complets comme prescrit sous IS 17633:2022.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tests Effectués
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Test de Stabilité</li>
-          <li>Test de Résistance (Charge Statique)</li>
-          <li>Test de Durabilité (Chargement Répétitif)</li>
-          <li>Test de Choc</li>
-          <li>Mesure de Déflexion</li>
-          <li>Test de Sécurité des Bords et de la Surface</li>
-          <li>Test de Charge de l&apos;Espace de Travail</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Le laboratoire télécharge les rapports de test directement vers le BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 5 – Inspection de l&apos;Usine BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Un agent BIS visite l&apos;installation de fabrication pour vérifier :
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Système de gestion de la qualité</li>
-          <li>Capacité de test interne</li>
-          <li>Contrôle des matières premières</li>
-          <li>Ligne de production & machines</li>
-          <li>Étalonnage des instruments</li>
-          <li>Conformité avec STI (Schéma de Test & Inspection)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 6 – Octroi de la Licence BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Le BIS délivre :</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Certificat BIS</li>
-          <li>Approbation de la Marque ISI</li>
-          <li>Numéro de licence CML unique</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Après cela, le fabricant peut légalement marquer et vendre des tables/bureaux en
-          Inde.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Étape 7 – Conformité Post-Licence
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Les fabricants doivent :
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintenir les dossiers selon STI</li>
-          <li>Utiliser le marquage ISI correctement</li>
-          <li>Permettre les inspections BIS périodiques</li>
-          <li>Renouveler la licence tous les 1–2 ans</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Portée de la Licence BIS pour Tables & Bureaux
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Cette norme couvre les exigences relatives à
-          la performance et à la sécurité, c&apos;est-à-dire, la résistance, la stabilité et la durabilité
-          des tables et bureaux à utiliser en position assise et/ou debout,
-          utilisés par des adultes.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Cette norme s&apos;applique aux tables et bureaux complètement fabriqués/
-          manufacturés. Elle s&apos;applique également aux unités prêtes à assembler ;
-          dans ce cas, les exigences de cette norme s&apos;appliqueront aux
-          unités assemblées.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documents Requis pour la Certification BIS des Tables & Bureaux
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documents de Fabrication
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Licence d&apos;usine</li>
-          <li>Liste des machines</li>
-          <li>Liste de l&apos;équipement de test</li>
-          <li>Certificats d&apos;étalonnage</li>
-          <li>Plan de l&apos;usine</li>
-          <li>Schéma de processus</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documents Techniques
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Dessins de table/bureau</li>
-          <li>Nomenclature des matériaux</li>
-          <li>Spécifications du produit</li>
-          <li>Rapports de test de qualité interne</li>
-          <li>Photos/vidéos du produit</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documents Légaux
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Preuve d&apos;identité du signataire autorisé</li>
-          <li>Preuve d&apos;adresse</li>
-          <li>Lettre d&apos;autorisation de marque</li>
-          <li>Certificat d&apos;enregistrement de marque</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documents de Demande BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Formulaire de demande rempli</li>
-          <li>Engagement du fabricant</li>
-          <li>Lettre de demande de test</li>
-          <li>Lettre d&apos;autorisation</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Une documentation complète assure des approbations plus rapides.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Exigences de Test sous IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Les tests évaluent la résistance, la stabilité, la durabilité et la sécurité.
-        </p>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clause
+                  Particularité
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Exigence
+                  Détails
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Conception et exécution
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de Stabilité
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Charge indiquée
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Pour charges lourdes occasionnelles
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Résistance sous force statique horizontale
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Général
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de Choc Vertical pour Plateaux de Table en Verre
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de Choc Vertical pour Tous les Autres Plateaux de Table
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Déflexion des Plateaux de Table
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test de Chute
-                </TableCell>
-              </TableRow>
+              {[
+                ["Produit", "Tables et Bureaux"],
+                ["Norme Applicable", "IS 17633:2022"],
+                ["Type de Certification", "Certification de Produit BIS"],
+                ["Marque Applicable", "Marque ISI"],
+                ["Schéma de Certification", "Schéma-I (Certification Marque ISI)"],
+                ["Autorité de Réglementation", "Bureau of Indian Standards (BIS)"],
+                ["Secteur Applicable", "Mobilier"],
+                [
+                  "Demandeurs Éligibles",
+                  "Fabricants Indiens et Fabricants Étrangers",
+                ],
+                [
+                  "Exigence de Conformité",
+                  "Obligatoire sous le QCO Mobilier applicable (Ordre de Contrôle Qualité)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Schéma de Certification" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Schéma-I (Certification Marque ISI)
+                      </a>
+                    ) : particular === "Exigence de Conformité" ? (
+                      <>
+                        Obligatoire sous le {" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                         <strong>QCO Mobilier applicable (Ordre de Contrôle Qualité)</strong>
+                        </a>
+                        
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Les tests doivent être effectués uniquement dans les laboratoires approuvés par le BIS.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Qu&apos;est-ce que la Certification BIS pour Tables et Bureaux ?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La Certification BIS pour Tables et Bureaux est un processus d&apos;évaluation
+          de la conformité mené dans le cadre du Schéma de Certification de Produit du
+          Bureau of Indian Standards (BIS). La certification confirme que le produit se
+          conforme aux exigences spécifiées dans IS 17633:2022.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Défis Courants & Comment Les Éviter
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. Produit échouant aux tests de charge ou de durabilité</strong>
-            <br />
-            Solution : Renforcer les joints, utiliser des matériaux conformes BIS, ajouter
-            des renforts.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. Documentation incomplète</strong>
-            <br />
-            Solution : Préparer tous les documents légaux, techniques et de fabrication
-            à l&apos;avance.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. Usine manquant d&apos;équipement de test approprié</strong>
-            <br />
-            Solution : Installer les instruments requis et maintenir l&apos;étalonnage selon
-            les directives BIS.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. Étiquetage incorrect</strong>
-            <br />
-            Solution : S&apos;assurer que le marquage ISI suit exactement les règles BIS.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. Mauvaise classification des modèles de produits</strong>
-            <br />
-            Solution : Obtenir des conseils professionnels pour catégoriser les variantes
-            correctement.
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Avantages de la Certification BIS pour Tables & Bureaux
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Autorisation légale de vendre en Inde</li>
-          <li>Confiance accrue des clients</li>
-          <li>Meilleure durabilité du produit</li>
-          <li>Accès aux grands détaillants & plateformes e-commerce</li>
-          <li>Risque de responsabilité produit réduit</li>
-          <li>Crédibilité de marque plus élevée</li>
-          <li>Conformité aux QCOs gouvernementaux</li>
-          <li>Avantage concurrentiel sur le marché</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Pénalités pour Non-Conformité
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Après une certification réussie, les fabricants sont autorisés à utiliser la
+          Marque ISI sur leurs produits, indiquant la conformité à la Norme Indienne
+          applicable.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Vendre ou distribuer des tables/bureaux sans certification BIS peut
-          entraîner :
+          La certification vise à garantir que les tables et bureaux fournis sur le
+          marché indien répondent aux exigences établies relatives à :
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Saisie du produit</li>
-          <li>Lourdes amendes</li>
-          <li>Poursuites pénales</li>
-          <li>Interdiction d&apos;importation</li>
-          <li>Ordres de fermeture d&apos;entreprise</li>
-          <li>Annulation de licence</li>
+        <ul className={LIST_CLASS}>
+          <li>La résistance structurelle et la stabilité lors d&apos;une utilisation normale</li>
+          <li>La durabilité, la sécurité de l&apos;utilisateur et la qualité de fabrication des matériaux</li>
+          <li>Toutes les exigences de performance selon IS 17633:2022</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          La Loi sur le Bureau of Indian Standards, 2016 impose des pénalités strictes.
+          Pour les acheteurs et les agences d&apos;achat, la Marque ISI sert d&apos;assurance
+          que le mobilier a été évalué selon des références de qualité et de sécurité
+          reconnues.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Qui a Besoin de la Certification BIS pour Tables & Bureaux ?
+          Aperçu de IS 17633:2022 pour Tables et Bureaux
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Cette certification est obligatoire pour :
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022 est la Norme Indienne qui spécifie les exigences de performance
+          et de sécurité pour les tables et bureaux destinés à des utilisateurs adultes
+          dans des applications assises et debout.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabricants indiens</li>
-          <li>Fabricants étrangers</li>
-          <li>Importateurs</li>
-          <li>Commerçants/propriétaires de marques</li>
-          <li>Fournisseurs OEM/ODM</li>
-          <li>Distributeurs de mobilier</li>
-          <li>Vendeurs e-commerce</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norme couvre à la fois :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Les tables et bureaux entièrement fabriqués (prêts à l&apos;emploi)</li>
+          <li>Les unités prêtes à assembler (RTA) — testées après assemblage complet</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Chaque usine doit obtenir une Licence BIS séparée.
+          L&apos;objectif de la norme est d&apos;établir des exigences minimales de
+          performance et de sécurité qui aident à garantir que le mobilier reste stable,
+          durable et sûr tout au long de sa durée de service prévue.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>
+          Domaines Clés Couverts par IS 17633:2022
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norme se concentre sur plusieurs caractéristiques de performance
+          importantes, notamment :
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Exigences de Résistance —</strong> Les tables et bureaux doivent
+            résister aux charges prévues lors d&apos;une utilisation normale sans
+            défaillance ni déformation excessive.
+          </li>
+          <li>
+            <strong>Exigences de Stabilité —</strong> Le mobilier doit rester stable en
+            utilisation et résister au basculement dans des conditions de charge
+            prévisibles.
+          </li>
+          <li>
+            <strong>Exigences de Durabilité —</strong> Les produits doivent conserver
+            leur performance et leur intégrité structurelle après une utilisation
+            répétée sur une période prolongée.
+          </li>
+          <li>
+            <strong>Exigences de Sécurité —</strong> La conception et la construction
+            doivent minimiser les risques liés à l&apos;instabilité, aux bords
+            tranchants, à une construction dangereuse ou à une défaillance structurelle.
+          </li>
+          <li>
+            <strong>Qualité de Fabrication et de Construction —</strong> La qualité de
+            fabrication, l&apos;assemblage, les joints, les fixations et la construction
+            globale sont évalués pour une performance fiable à long terme.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Pourquoi Nous Choisir pour le Conseil en Certification BIS ?
+          La Certification BIS pour Tables et Bureaux est-elle Obligatoire en Inde ?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Nous fournissons une assistance de bout en bout :
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Oui. Les tables et bureaux couverts par l&apos;Ordre de Contrôle Qualité (QCO)
+          Mobilier applicable doivent se conformer à la Norme Indienne pertinente et
+          obtenir la Certification BIS avant d&apos;être fabriqués, importés, vendus,
+          distribués ou proposés sur le marché indien.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Interprétation des normes (IS 17633:2022)</li>
-          <li>Classification des produits</li>
-          <li>Rédaction de documentation</li>
-          <li>Coordination des tests</li>
-          <li>Dépôt sur le portail BIS</li>
-          <li>Soutien à l&apos;inspection d&apos;usine</li>
-          <li>Suivi continu avec le BIS</li>
-          <li>Approbation de licence</li>
-          <li>Renouvellement et gestion de la conformité</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          L&apos;objectif de la certification obligatoire est de :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Garantir une meilleure qualité des produits dans toute l&apos;industrie du mobilier</li>
+          <li>Protéger la sécurité des consommateurs grâce à des normes vérifiées</li>
+          <li>Empêcher l&apos;entrée de mobilier de qualité inférieure sur le marché</li>
+          <li>Promouvoir la standardisation et des références de qualité uniformes</li>
+          <li>Renforcer la confiance des acheteurs dans les produits certifiés Marque ISI</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Notre expertise assure une certification rapide, sans tracas et sans erreur.
+          Les fabricants couverts par les réglementations applicables doivent obtenir une
+          licence BIS et utiliser la Marque ISI conformément aux exigences du BIS.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Consultez également les Produits de Mobilier Couverts par la Certification
+            BIS Obligatoire —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Certification BIS pour le mobilier</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Portée des Produits Couverts par IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La portée de IS 17633:2022 s&apos;étend à diverses catégories de tables et
+          bureaux conçus pour des utilisateurs adultes dans des environnements
+          résidentiels, commerciaux, institutionnels et de travail.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Exemples de produits couramment couverts :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Bureaux de bureau, d&apos;étude et d&apos;ordinateur</li>
+          <li>Postes de travail et bureaux polyvalents</li>
+          <li>Tables de conférence et de réunion</li>
+          <li>Tables institutionnelles et de laboratoire</li>
+          <li>Mobilier de coworking et à usage commercial</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants doivent examiner attentivement les spécifications du produit et
+          l&apos;utilisation prévue pour déterminer si leurs produits entrent dans la
+          portée de IS 17633:2022.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Exigences Techniques Clés sous IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Pour obtenir la certification BIS, les tables et bureaux doivent satisfaire à
+          diverses exigences de performance et de sécurité spécifiées par la norme.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Intégrité Structurelle —</strong> Les produits doivent fonctionner
+            sous les charges prescrites ; les joints et les structures de support
+            restent sécurisés pendant les tests.
+          </li>
+          <li>
+            <strong>Performance de Capacité de Charge —</strong> Les tables et bureaux
+            doivent supporter les charges spécifiées sans déformation, dommage ou
+            défaillance inacceptable.
+          </li>
+          <li>
+            <strong>Performance de Stabilité —</strong> Le mobilier doit rester stable en
+            utilisation et réduire les risques de basculement pouvant causer des
+            blessures ou des dommages matériels.
+          </li>
+          <li>
+            <strong>Performance de Durabilité —</strong> Les produits doivent résister à
+            des cycles d&apos;utilisation répétés tout en maintenant une performance
+            acceptable.
+          </li>
+          <li>
+            <strong>Matériaux et Qualité de Fabrication —</strong> Les matériaux, la
+            finition et les méthodes d&apos;assemblage doivent respecter les contrôles de
+            qualité pour une production cohérente.
+          </li>
+          <li>
+            <strong>Considérations de Sécurité —</strong> La conception doit minimiser
+            les dangers liés à l&apos;utilisation du mobilier pour les consommateurs et les
+            acheteurs institutionnels.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Pourquoi la Certification BIS est Importante pour les Fabricants de Mobilier
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Le marché indien du mobilier est devenu de plus en plus soucieux de la qualité.
+          Les départements gouvernementaux, les établissements d&apos;enseignement, les
+          acheteurs d&apos;entreprise et les grandes agences d&apos;achat préfèrent souvent
+          les produits conformes aux normes reconnues.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          L&apos;obtention de la certification BIS aide les fabricants à :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Prouver la conformité aux Normes Indiennes applicables</li>
+          <li>Renforcer la crédibilité du produit et la réputation de la marque</li>
+          <li>Gagner la confiance des clients et des acheteurs institutionnels</li>
+          <li>Améliorer l&apos;acceptation dans les achats gouvernementaux et d&apos;entreprise</li>
+          <li>Renforcer les pratiques internes de gestion de la qualité</li>
+          <li>Anticiper l&apos;évolution des exigences réglementaires</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Pour les fabricants en quête de croissance à long terme, la certification BIS
+          est souvent considérée à la fois comme une exigence de conformité et comme un
+          avantage commercial stratégique.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Exigences de Test pour Tables et Bureaux sous IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Avant qu&apos;un fabricant puisse obtenir la certification BIS, les échantillons
+          de produits doivent être évalués selon les exigences applicables de
+          IS 17633:2022 par des tests dans un laboratoire reconnu par le BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;objectif des tests est de vérifier que le mobilier répond aux normes
+          prescrites en matière de sécurité, de stabilité, de résistance, de durabilité et
+          de performance globale.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Bien que les paramètres de test exacts puissent varier selon la conception du
+          produit et les exigences de certification, les fabricants sont généralement
+          évalués pour les caractéristiques suivantes :
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Conception et Qualité de Fabrication —</strong> La qualité de
+            construction, l&apos;assemblage, la finition et l&apos;intégrité globale du
+            produit sont examinés pour une utilisation sûre à long terme.
+          </li>
+          <li>
+            <strong>Vérification Dimensionnelle —</strong> Les mesures critiques sont
+            vérifiées par rapport à la norme et aux spécifications de produit approuvées.
+          </li>
+          <li>
+            <strong>Test de Stabilité —</strong> Confirme que le produit reste stable en
+            utilisation normale et signale les faiblesses de basculement ou
+            structurelles.
+          </li>
+          <li>
+            <strong>Test de Charge Statique —</strong> Vérifie la capacité de charge sans
+            défaillance, déformation excessive ou dommage.
+          </li>
+          <li>
+            <strong>Test de Résistance —</strong> Évalue les cadres, les joints et les
+            supports sous les contraintes opérationnelles lors d&apos;une utilisation
+            régulière.
+          </li>
+          <li>
+            <strong>Évaluation de la Durabilité —</strong> Vérifie le maintien de la
+            performance après des cycles d&apos;utilisation répétés.
+          </li>
+          <li>
+            <strong>Évaluation de la Sécurité —</strong> Écarte les risques évitables liés
+            à l&apos;instabilité, aux défauts ou aux caractéristiques de conception
+            dangereuses.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Processus de Certification BIS pour Tables et Bureaux
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants cherchant à obtenir la certification BIS sous IS 17633:2022
+          doivent suivre un processus de certification structuré établi par le Bureau of
+          Indian Standards.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Bien que les exigences spécifiques puissent varier selon le type de demandeur et
+          le lieu de fabrication, le processus général reste similaire.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Étape 1 : Évaluation de la Portée du Produit
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La première étape consiste à déterminer si le produit entre dans la portée de
+          IS 17633:2022 et de l&apos;Ordre de Contrôle Qualité applicable. Une revue
+          technique des spécifications du produit, de l&apos;utilisation prévue, des
+          matériaux et de la construction est généralement effectuée avant d&apos;initier le
+          processus de certification.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Étape 2 : Préparation de la Documentation
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Le fabricant prépare la documentation requise, y compris les informations sur
+          l&apos;entreprise, les détails de fabrication, les spécifications du produit, les
+          procédures de contrôle qualité et les documents techniques justificatifs. Une
+          documentation appropriée est essentielle car des lacunes à ce stade peuvent
+          retarder la certification.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Étape 3 : Test du Produit
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les échantillons de produits sont testés dans un laboratoire reconnu par le BIS
+          pour vérifier la conformité aux exigences de IS 17633:2022. Le rapport de test
+          sert de l&apos;un des principaux documents techniques soutenant la demande de
+          certification.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Étape 4 : Soumission de la Demande
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La demande BIS est soumise avec les documents justificatifs, les rapports de
+          test, les informations de fabrication et les dossiers de gestion de la qualité.
+          La demande est examinée par le BIS pour vérifier son exhaustivité et sa
+          conformité technique.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Étape 5 : Évaluation de l&apos;Usine
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Le BIS peut effectuer une inspection de l&apos;usine pour évaluer :
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>L&apos;infrastructure de fabrication et les capacités de production</li>
+          <li>Les systèmes de contrôle qualité et les installations de test internes</li>
+          <li>Les contrôles des matières premières et les mécanismes de traçabilité du produit</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;objectif est de vérifier la capacité du fabricant à produire de manière
+          cohérente des produits conformes.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Étape 6 : Évaluation et Revue
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Le BIS examine la demande, les constatations d&apos;inspection et les rapports de
+          test de laboratoire avant de prendre une décision de certification. Toute
+          observation soulevée pendant le processus de revue doit être traitée par le
+          demandeur.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Étape 7 : Octroi de la Licence BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Après l&apos;achèvement réussi de toutes les exigences, le BIS octroie la licence
+          et autorise le fabricant à utiliser la Marque ISI sur les tables et bureaux
+          certifiés.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Certification BIS pour les Fabricants Indiens
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Les fabricants indiens demandent généralement la certification selon la
+          procédure de certification nationale prescrite par le BIS. Le processus comprend
+          généralement :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Le test du produit dans un laboratoire reconnu par le BIS</li>
+          <li>La soumission de la demande avec les documents justificatifs</li>
+          <li>L&apos;inspection de l&apos;usine et la revue technique par le BIS</li>
+          <li>L&apos;octroi de la licence BIS et l&apos;autorisation de la Marque ISI</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Une fois certifiés, les fabricants doivent continuer à se conformer aux
+          exigences du BIS et maintenir une qualité de produit cohérente tout au long de
+          la période de licence.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Certification BIS pour les Fabricants Étrangers
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants étrangers ayant l&apos;intention d&apos;exporter des tables et
+          bureaux vers l&apos;Inde doivent également obtenir la certification BIS avant de
+          fournir des produits couverts par l&apos;Ordre de Contrôle Qualité applicable.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Le processus de certification implique généralement :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>La nomination d&apos;un Représentant Indien Autorisé (AIR)</li>
+          <li>Le test du produit et l&apos;évaluation de l&apos;usine à l&apos;étranger</li>
+          <li>La revue de la documentation et l&apos;approbation de la certification BIS</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants étrangers doivent assurer une conformité continue aux exigences
+          du BIS pour maintenir la validité de la certification.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Documents Requis pour la Certification BIS des Tables et Bureaux
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les exigences de documentation peuvent varier selon le fabricant et la voie de
+          certification. Cependant, les documents suivants sont couramment requis pendant
+          le processus de certification.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Documents Commerciaux et Légaux</h3>
+        <ul className={LIST_CLASS}>
+          <li>Enregistrement de l&apos;entreprise, licence de fabrication et GST (le cas échéant)</li>
+          <li>Détails du signataire autorisé et preuve d&apos;identité</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Informations de Fabrication</h3>
+        <ul className={LIST_CLASS}>
+          <li>Diagramme de flux de processus, plan de l&apos;usine et détails des machines</li>
+          <li>Infrastructure de production et dossiers de capacité</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Informations sur le Produit</h3>
+        <ul className={LIST_CLASS}>
+          <li>Spécifications du produit, dessins techniques et catalogue</li>
+          <li>Nomenclature et détails des matériaux/composants</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Documents de Contrôle Qualité</h3>
+        <ul className={LIST_CLASS}>
+          <li>Procédures de test internes, d&apos;inspection et de contrôle qualité</li>
+          <li>Dossiers de contrôle qualité et rapports d&apos;étalonnage des équipements</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Documents de Certification</h3>
+        <ul className={LIST_CLASS}>
+          <li>Rapports de test de laboratoire et formulaires de demande BIS remplis</li>
+          <li>Déclarations, engagements et autres documents prescrits par le BIS</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants doivent s&apos;assurer que toute la documentation est exacte,
+          complète et cohérente avant la soumission.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Défis Courants Pendant la Certification BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Bien que le processus de certification soit simple lorsqu&apos;il est
+          correctement géré, les fabricants rencontrent souvent plusieurs défis.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Interprétation technique —</strong> Faire correspondre les exigences
+            de IS 17633:2022 à des conceptions de produits spécifiques peut être difficile
+            sans conseils d&apos;experts.
+          </li>
+          <li>
+            <strong>Échecs de test —</strong> Des joints faibles, une mauvaise stabilité
+            ou des problèmes de matériaux conduisent souvent au rejet des tests en
+            laboratoire.
+          </li>
+          <li>
+            <strong>Lacunes de documentation —</strong> Des dossiers incomplets ou
+            incohérents sont une cause fréquente de retards de demande.
+          </li>
+          <li>
+            <strong>Conformité de l&apos;usine —</strong> Les systèmes de contrôle qualité,
+            la traçabilité ou les contrôles de production peuvent nécessiter une mise à
+            niveau avant l&apos;octroi de la licence.
+          </li>
+          <li>
+            <strong>Coordination réglementaire —</strong> Aligner les tests en
+            laboratoire, les inspections et les suivis du BIS prend du temps sans un
+            soutien structuré.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Avantages d&apos;une Assistance Professionnelle à la Certification BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Travailler avec un consultant BIS expérimenté peut aider les fabricants à éviter
+          des retards coûteux et à rationaliser le parcours de certification.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Le soutien professionnel comprend généralement :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>La revue de la portée du produit et l&apos;interprétation des normes</li>
+          <li>La préparation de la documentation et le dépôt de la demande</li>
+          <li>La coordination des tests en laboratoire et de l&apos;inspection de l&apos;usine</li>
+          <li>La conformité continue et le soutien post-certification</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Cela permet aux fabricants de se concentrer sur la production tout en
+          garantissant que les exigences réglementaires sont traitées efficacement.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Pourquoi Choisir Sun Certifications India ?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India est un cabinet de conseil en conformité réglementaire
+          qui assiste les fabricants, les importateurs, les exportateurs et les
+          entreprises avec les exigences de certification et d&apos;approbation à travers
+          l&apos;Inde.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nos experts fournissent un soutien de bout en bout pour la Certification BIS pour
+          Tables et Bureaux sous IS 17633:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Nos Services Comprennent</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>L&apos;évaluation de l&apos;applicabilité du produit et le conseil en conformité BIS</li>
+          <li>Le soutien à la documentation et la gestion de la demande</li>
+          <li>La coordination des tests et l&apos;assistance à l&apos;inspection de l&apos;usine</li>
+          <li>La communication réglementaire et le soutien à la conformité post-certification</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Notre objectif est d&apos;aider les entreprises à naviguer efficacement dans le
+          processus de certification tout en minimisant les retards et les défis de
+          conformité.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -751,116 +873,142 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Le Certificat BIS pour Tables et Bureaux sous IS 17633:2022 est une
-          exigence de conformité obligatoire qui assure la sécurité du produit,
-          la performance, la durabilité et la conformité aux normes nationales.
-          Les fabricants et importateurs doivent subir des tests de produits, une inspection
-          d&apos;usine, et respecter toutes les règles de documentation et d&apos;étiquetage BIS pour
-          obtenir la Marque ISI.
+          La Certification BIS pour Tables et Bureaux sous IS 17633:2022 est une exigence
+          importante pour les fabricants cherchant à fournir des produits de mobilier
+          conformes sur le marché indien. La certification aide à garantir que les tables
+          et bureaux répondent aux normes établies relatives à la sécurité, la stabilité,
+          la durabilité, la résistance et la qualité.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Avec une assistance experte, tout le processus de certification devient
-          fluide, rapide et entièrement conforme aux règlements BIS.
+          En obtenant la Certification BIS et en utilisant la Marque ISI, les fabricants
+          peuvent démontrer la conformité aux Normes Indiennes, améliorer la confiance des
+          clients, renforcer leur position sur le marché et soutenir la croissance
+          commerciale à long terme.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Si vous prévoyez d&apos;obtenir la Certification BIS pour Tables et Bureaux sous
+          IS 17633:2022, Sun Certifications India peut vous assister avec un soutien à la
+          conformité de bout en bout, vous aidant à naviguer dans le processus de
+          certification de manière efficace et confiante.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQ – Certificat BIS pour Tables & Bureaux (IS 17633:2022)
+          FAQ – Certification BIS pour Tables et Bureaux (IS 17633:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. La certification BIS est-elle obligatoire pour les tables et bureaux ?
-              </strong>
+              <strong>1. Qu&apos;est-ce que IS 17633:2022 ?</strong>
               <br />
-              Oui. Selon IS 17633:2022, toutes les tables et bureaux doivent être
-              certifiés BIS avant d&apos;être vendus en Inde.
+              IS 17633:2022 est la Norme Indienne publiée par le Bureau of Indian
+              Standards (BIS) qui fixe les exigences minimales de performance, de
+              stabilité, de durabilité et de sécurité pour les tables et bureaux destinés
+              à des utilisateurs adultes dans des applications assises et debout.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Quels tests sont requis pour la certification ?</strong>
+              <strong>2. La certification BIS est-elle obligatoire pour les tables et bureaux ?</strong>
               <br />
-              Les tests obligatoires comprennent les tests de stabilité, résistance, durabilité,
-              déflexion, choc et sécurité de surface.
+              Oui — pour les produits couverts par l&apos;Ordre de Contrôle Qualité (QCO)
+              Mobilier applicable. Les fabricants et importateurs doivent détenir une
+              licence BIS valide et se conformer à IS 17633:2022 avant de fabriquer,
+              importer, vendre ou distribuer un tel mobilier en Inde.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Quel est le coût de la certification BIS ?</strong>
+              <strong>3. Quelle marque de certification s&apos;applique aux tables et bureaux ?</strong>
               <br />
-              Le coût varie entre ₹65 000 – ₹1 30 000, selon les facteurs de test
-              et d&apos;inspection.
+              Les tables et bureaux certifiés sont autorisés à porter la Marque ISI dans
+              le cadre du Schéma de Certification de Produit BIS, indiquant que le produit
+              est conforme à la Norme Indienne applicable.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. Les fabricants étrangers ont-ils besoin de la Certification BIS ?
-              </strong>
+              <strong>4. Qui peut demander la certification BIS ?</strong>
               <br />
-              Oui, via le schéma FMCS, qui comprend des inspections d&apos;usines à l&apos;étranger
-              par le BIS.
+              Les fabricants indiens et les fabricants étrangers peuvent tous deux
+              demander la certification, à condition que leurs tables et bureaux entrent
+              dans la portée du QCO applicable et répondent aux exigences de
+              IS 17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. Une licence peut-elle couvrir plusieurs modèles de table/bureau ?
-              </strong>
+              <strong>5. Quel est l&apos;objectif de la certification BIS ?</strong>
               <br />
-              Oui, mais seulement si les modèles sont similaires en construction et en paramètres
-              de test.
+              La certification BIS confirme que le mobilier répond aux références
+              reconnues au niveau national en matière de sécurité, de performance
+              structurelle, de durabilité et de qualité de fabrication — contribuant à
+              protéger les utilisateurs finaux et à maintenir les normes de qualité sur le
+              marché.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Combien de temps prend le processus BIS ?</strong>
+              <strong>6. Quels produits sont couverts par IS 17633:2022 ?</strong>
               <br />
-              Environ 30–45 jours.
+              La norme couvre les tables et bureaux à usage adulte utilisés dans les
+              bureaux, les établissements d&apos;enseignement, les établissements
+              commerciaux et les environnements de travail — y compris les bureaux de
+              bureau, les postes de travail, les tables d&apos;étude, les tables de
+              conférence et les catégories de mobilier similaires.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Le test est-il obligatoire dans un laboratoire reconnu par le BIS ?</strong>
+              <strong>7. Le test en laboratoire est-il obligatoire ?</strong>
               <br />
-              Oui, seuls les laboratoires approuvés par le BIS peuvent effectuer les tests.
+              Oui. Les échantillons de produits doivent être testés dans un laboratoire
+              reconnu par le BIS, et le rapport de test résultant est un document clé de la
+              demande de certification pour démontrer la conformité à IS 17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Que se passe-t-il si le produit échoue ?</strong>
+              <strong>8. Les tables et bureaux importés peuvent-ils être vendus sans certification BIS ?</strong>
               <br />
-              Il doit être repensé et resoumis pour les tests.
+              Non. Les produits importés relevant de la certification obligatoire ne
+              peuvent pas être légalement fournis en Inde sans approbation BIS valide. Les
+              importateurs doivent assurer la conformité à la norme applicable avant de
+              mettre les produits sur le marché.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Le marquage ISI est-il obligatoire après la certification ?</strong>
+              <strong>9. Quel est le rôle d&apos;une inspection de l&apos;usine ?</strong>
               <br />
-              Oui, la Marque ISI est requise sur le produit et l&apos;emballage.
+              Le BIS effectue une évaluation de l&apos;usine pour vérifier que le fabricant
+              maintient une infrastructure de production adéquate, des systèmes de contrôle
+              qualité et une traçabilité du produit pour fabriquer de manière cohérente des
+              tables et bureaux conformes.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. Quels documents sont nécessaires ?</strong>
+              <strong>10. Comment Sun Certifications India peut-elle aider ?</strong>
               <br />
-              Dessins techniques, nomenclature, documents d&apos;usine, rapports de test, plan QC,
-              et documents légaux.
+              Sun Certifications India offre une assistance de bout en bout — y compris
+              l&apos;évaluation de la portée du produit, la préparation de la documentation,
+              la coordination des tests en laboratoire, la gestion de la demande BIS, la
+              préparation à l&apos;inspection de l&apos;usine et le soutien à la conformité
+              post-certification pour les tables et bureaux sous IS 17633:2022.
             </p>
           </div>
         </div>
@@ -877,6 +1025,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Ressources Connexes
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">Licence Marque ISI</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">Certificat BIS FMCS</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadFrench />
 

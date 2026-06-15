@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForTablesAndDesksUnitItalian = () => {
   return (
     <div className="relative w-full">
@@ -141,610 +147,728 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Certificato BIS per Tavoli e Scrivanie – Guida Completa alla Certificazione BIS IS 17633:2022
+          Certificazione BIS per Tavoli e Scrivanie (IS 17633:2022) – Guida
+          Completa alla Certificazione con Marchio ISI
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
             title="Licenza BIS per Tavoli e Scrivanie"
-            alt="Certificato BIS per Tavoli e Scrivanie - Certificazione BIS IS 17633:2022"
+            alt="Certificazione BIS per Tavoli e Scrivanie - Guida al Marchio ISI IS 17633:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Il Certificato BIS per Tavoli e Scrivanie è obbligatorio per tutti i
-          produttori, importatori e venditori di tavoli e scrivanie in India.
-          Secondo lo Standard Indiano IS 17633:2022 – Tavoli e Scrivanie: Requisiti di
-          Sicurezza, questi articoli di arredamento devono essere testati e certificati dal
-          Bureau of Indian Standards (BIS) prima di poter essere legalmente venduti
-          nel mercato indiano.
+          Tavoli e scrivanie sono tra i prodotti di arredamento più diffusi in
+          uffici, istituti scolastici, esercizi commerciali, enti governativi e
+          spazi residenziali. Poiché ci si aspetta che questi prodotti resistano
+          all&apos;uso quotidiano garantendo al contempo sicurezza dell&apos;utente,
+          stabilità e durata, la conformità a standard di qualità riconosciuti è
+          diventata sempre più importante per produttori e importatori.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tavoli e scrivanie sono componenti essenziali di case, uffici, scuole,
-          università, spazi commerciali, ambienti di ospitalità e
-          luoghi di lavoro industriali. Poiché spesso supportano peso, impatti e
-          uso continuo, la loro resistenza strutturale e sicurezza sono critiche.
-          Per garantire la protezione dei consumatori e l&apos;affidabilità del prodotto, il BIS impone
-          certificazione obbligatoria.
+          In India, i tavoli e le scrivanie coperti da IS 17633:2022 devono
+          conformarsi ai requisiti applicabili di qualità e sicurezza prescritti
+          dal Bureau of Indian Standards (BIS). I produttori che soddisfano con
+          successo questi requisiti possono ottenere una licenza BIS e utilizzare
+          il Marchio ISI sui propri prodotti, dimostrando la conformità al
+          relativo Standard Indiano.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Questa guida completa spiega IS 17633:2022, il processo di registrazione BIS,
-          test, documentazione richiesta, tariffe, tempistiche, sanzioni,
-          e benefici per produttori e importatori.
+          Il processo di certificazione valuta vari aspetti delle prestazioni del
+          prodotto, tra cui resistenza, stabilità, durata, lavorazione, dimensioni
+          e sicurezza complessiva. La conformità non solo aiuta le aziende a
+          soddisfare i requisiti normativi, ma migliora anche la credibilità del
+          prodotto e l&apos;accettazione sul mercato.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Questa guida completa spiega tutto ciò che produttori, importatori,
+          marchi di arredamento e professionisti degli acquisti devono sapere
+          sulla Certificazione BIS per Tavoli e Scrivanie ai sensi di IS
+          17633:2022, inclusi applicabilità, requisiti di certificazione,
+          parametri di test, documentazione, benefici e processo di
+          certificazione.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Cos&apos;è la Certificazione BIS?
+          Punti Chiave della Certificazione BIS per Tavoli e Scrivanie
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          La Certificazione BIS è un processo di conformità normativa amministrato dal
-          Bureau of Indian Standards, l&apos;autorità nazionale degli standard dell&apos;India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Significato del Certificato BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Un Certificato BIS conferma che il prodotto soddisfa i requisiti di sicurezza, qualità,
-          prestazioni e durata stabiliti dagli Standard Indiani.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Benefici della Certificazione BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Garantisce la sicurezza dei consumatori</li>
-          <li>Supporta la produzione di alta qualità</li>
-          <li>Riduce il rischio di guasto del prodotto</li>
-          <li>Migliora l&apos;accettazione del mercato</li>
-          <li>Richiesto legalmente ai sensi degli Ordini di Controllo Qualità BIS (QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Una volta approvato, il prodotto porta il Marchio BIS (Marchio ISI) insieme al
-          numero di licenza.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Quale Standard Indiano si Applica a Tavoli & Scrivanie? – IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Lo standard BIS applicabile è:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – Tavoli e Scrivanie: Requisiti di
-          Sicurezza
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Questo standard definisce i requisiti di prestazioni, sicurezza strutturale e durata
-          per tutti i tipi di tavoli e scrivanie utilizzati in ambienti
-          residenziali, commerciali, di ospitalità e istituzionali.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Prodotti Coperti
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Scrivanie da ufficio</li>
-          <li>Scrivanie per computer</li>
-          <li>Tavoli da studio</li>
-          <li>Tavoli da pranzo</li>
-          <li>Tavolini da caffè</li>
-          <li>Scrivanie da lavoro</li>
-          <li>Tavoli per formazione</li>
-          <li>Scrivanie scolastiche/universitarie</li>
-          <li>Tavoli per insegnanti</li>
-          <li>Tavoli da postazione modulari</li>
-          <li>Scrivanie</li>
-          <li>Tavoli per riunioni/conferenze</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Parametri di Sicurezza Chiave ai Sensi di IS 17633:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stabilità strutturale</li>
-          <li>Capacità di carico</li>
-          <li>Resistenza agli urti</li>
-          <li>Prestazioni di forza orizzontale/verticale</li>
-          <li>Qualità della finitura superficiale</li>
-          <li>Sicurezza dei bordi</li>
-          <li>Durata sotto uso ripetitivo</li>
-          <li>Sicurezza dei materiali</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ogni tavolo o scrivania venduto in India deve conformarsi a questi parametri
-          attraverso la Registrazione BIS per Tavoli & Scrivanie.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Perché la Certificazione BIS è Obbligatoria per Tavoli e Scrivanie
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tavoli e scrivanie sono articoli di arredamento ad alto utilizzo presenti in case, uffici,
-          scuole e aree pubbliche. I cedimenti strutturali possono causare incidenti
-          come:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Cedimento sotto peso</li>
-          <li>Lesioni da bordi taglienti</li>
-          <li>Instabilità durante l&apos;uso</li>
-          <li>Rottura delle giunzioni</li>
-          <li>Distacco della superficie</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Per evitare questi pericoli, la certificazione BIS garantisce:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Progettazione e costruzione sicure</li>
-          <li>Conformità ai requisiti di carico strutturale</li>
-          <li>Prestazioni durevoli</li>
-          <li>Prevenzione di ribaltamento e crollo</li>
-          <li>Selezione di materiali di alta qualità</li>
-          <li>Standard di mercato uniformi</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Vendere tavoli e scrivanie senza una Licenza BIS per Tavoli & Scrivanie è
-          illegale in India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Processo di Certificazione BIS per Tavoli e Scrivanie (IS 17633:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Il processo di certificazione BIS segue lo Schema ISI (Schema di Valutazione della
-          Conformità–I), che include test del prodotto e ispezione
-          della fabbrica.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Passo 1 – Identificare Categoria Prodotto & Standard
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Confermare che il tavolo/scrivania rientra in IS 17633:2022. Identificare il numero
-          di varianti e materiali.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Passo 2 – Presentare Domanda BIS (Invio Online)
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Compilare la domanda sul Portale Online BIS Manak con:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Dettagli del produttore</li>
-          <li>Indirizzo della fabbrica</li>
-          <li>Specifiche del prodotto</li>
-          <li>Dettagli del marchio</li>
-          <li>Sistemi di controllo qualità</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Passo 3 – Pagamento delle Tariffe di Certificazione BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Include:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tariffa di domanda</li>
-          <li>Tariffa di elaborazione</li>
-          <li>Spese per test del prodotto</li>
-          <li>Tariffe per ispezione della fabbrica</li>
-          <li>Tariffe per marcatura</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Passo 4 – Test Campione in un Laboratorio Riconosciuto BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          I prodotti devono sottoporsi a test completi come prescritto ai sensi di IS 17633:2022.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Test Eseguiti
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Test di Stabilità</li>
-          <li>Test di Resistenza (Carico Statico)</li>
-          <li>Test di Durata (Carico Ripetitivo)</li>
-          <li>Test di Impatto</li>
-          <li>Misurazione della Deflessione</li>
-          <li>Test di Sicurezza dei Bordi e della Superficie</li>
-          <li>Test di Carico dello Spazio di Lavoro</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Il laboratorio carica i rapporti di test direttamente al BIS.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Passo 5 – Ispezione Fabbrica BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Un funzionario BIS visita la struttura di produzione per verificare:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sistema di gestione della qualità</li>
-          <li>Capacità di test interna</li>
-          <li>Controllo dei materiali grezzi</li>
-          <li>Linea di produzione & macchinari</li>
-          <li>Calibrazione degli strumenti</li>
-          <li>Conformità con STI (Schema di Test & Ispezione)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Passo 6 – Concessione della Licenza BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Il BIS emette:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Certificato BIS</li>
-          <li>Approvazione Marchio ISI</li>
-          <li>Numero di licenza CML unico</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dopo questo, il produttore può legalmente marcare e vendere tavoli/scrivanie in
-          India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Passo 7 – Conformità Post-Licenza
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          I produttori devono:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mantenere registri secondo STI</li>
-          <li>Utilizzare correttamente la marcatura ISI</li>
-          <li>Consentire ispezioni BIS periodiche</li>
-          <li>Rinnovare la licenza ogni 1–2 anni</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Ambito della Licenza BIS per Tavoli & Scrivanie
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Questo standard copre i requisiti relativi a
-          prestazioni e sicurezza, cioè resistenza, stabilità e durata
-          di tavoli e scrivanie da utilizzare in posizioni sedute e/o in piedi,
-          utilizzate da adulti.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Questo standard si applica a tavoli e scrivanie completamente prodotti/
-          fabbricati. Si applica anche a unità pronte per il montaggio;
-          in tal caso i requisiti di questo standard si applicano alle
-          unità assemblate.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documenti Richiesti per la Certificazione BIS di Tavoli & Scrivanie
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documenti di Produzione
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Licenza della fabbrica</li>
-          <li>Lista macchinari</li>
-          <li>Lista attrezzature di test</li>
-          <li>Certificati di calibrazione</li>
-          <li>Layout della fabbrica</li>
-          <li>Diagramma di flusso del processo</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documenti Tecnici
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Disegni tavolo/scrivania</li>
-          <li>Distinta materiali</li>
-          <li>Specifiche del prodotto</li>
-          <li>Rapporti di test qualità interni</li>
-          <li>Foto/video del prodotto</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documenti Legali
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Prova di identità del firmatario autorizzato</li>
-          <li>Prova di indirizzo</li>
-          <li>Lettera di autorizzazione del marchio</li>
-          <li>Certificato di registrazione del marchio</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documenti della Domanda BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Modulo di domanda compilato</li>
-          <li>Impegno del produttore</li>
-          <li>Lettera di richiesta test</li>
-          <li>Lettera di autorizzazione</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          La documentazione completa garantisce approvazioni più rapide.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Requisiti di Test ai Sensi di IS 17633:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          I test valutano resistenza, stabilità, durata e sicurezza.
-        </p>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clausola
+                  Voce
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requisito
+                  Dettagli
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Progettazione e lavorazione
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test di Stabilità
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Carico dichiarato
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Per carichi pesanti occasionali
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Resistenza sotto forza statica orizzontale
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Generale
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test di Impatto Verticale per Piani Tavolo in Vetro
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test di Impatto Verticale per Tutti gli Altri Piani Tavolo
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Deflessione dei Piani Tavolo
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Test di Caduta
-                </TableCell>
-              </TableRow>
+              {[
+                ["Prodotto", "Tavoli e Scrivanie"],
+                ["Standard Applicabile", "IS 17633:2022"],
+                ["Tipo di Certificazione", "Certificazione di Prodotto BIS"],
+                ["Marchio Applicabile", "Marchio ISI"],
+                ["Schema di Certificazione", "Schema-I (Certificazione con Marchio ISI)"],
+                ["Autorità di Regolamentazione", "Bureau of Indian Standards (BIS)"],
+                ["Settore Applicabile", "Arredamento"],
+                [
+                  "Richiedenti Ammissibili",
+                  "Produttori Indiani e Produttori Esteri",
+                ],
+                [
+                  "Requisito di Conformità",
+                  "Obbligatorio ai sensi del QCO Arredamento applicabile (Ordine di Controllo Qualità)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Schema di Certificazione" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Schema-I (Certificazione con Marchio ISI)
+                      </a>
+                    ) : particular === "Requisito di Conformità" ? (
+                      <>
+                        Obbligatorio ai sensi del {" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-tables-and-desks"
+                          className="text-blue-600 hover:underline"
+                        >
+                         <strong>QCO Arredamento (Ordine di Controllo Qualità)</strong>
+                        </a>
+                        
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          I test devono essere condotti solo presso laboratori approvati BIS.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Cos&apos;è la Certificazione BIS per Tavoli e Scrivanie?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La Certificazione BIS per Tavoli e Scrivanie è un processo di
+          valutazione della conformità condotto ai sensi dello Schema di
+          Certificazione di Prodotto del Bureau of Indian Standards (BIS). La
+          certificazione conferma che il prodotto è conforme ai requisiti
+          specificati in IS 17633:2022.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Sfide Comuni & Come Evitarle
-        </h2>
-
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. Prodotto che fallisce i test di carico o durata</strong>
-            <br />
-            Soluzione: Rafforzare le giunzioni, utilizzare materiali conformi BIS, aggiungere
-            rinforzi.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. Documentazione incompleta</strong>
-            <br />
-            Soluzione: Preparare tutti i documenti legali, tecnici e di produzione
-            in anticipo.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. Fabbrica priva di attrezzature di test adeguate</strong>
-            <br />
-            Soluzione: Installare gli strumenti richiesti e mantenere la calibrazione secondo
-            le linee guida BIS.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. Etichettatura errata</strong>
-            <br />
-            Soluzione: Assicurarsi che la marcatura ISI segua esattamente le regole BIS.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. Classificazione errata dei modelli di prodotto</strong>
-            <br />
-            Soluzione: Ottenere una guida professionale per categorizzare le varianti
-            correttamente.
-          </p>
-        </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Benefici della Certificazione BIS per Tavoli & Scrivanie
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Autorizzazione legale per vendere in India</li>
-          <li>Aumento della fiducia dei clienti</li>
-          <li>Migliore durata del prodotto</li>
-          <li>Accesso a grandi rivenditori & piattaforme e-commerce</li>
-          <li>Rischio di responsabilità del prodotto inferiore</li>
-          <li>Credibilità del marchio superiore</li>
-          <li>Conformità con QCO governativi</li>
-          <li>Vantaggio competitivo sul mercato</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Sanzioni per Non Conformità
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dopo aver ottenuto con successo la certificazione, i produttori sono
+          autorizzati a utilizzare il Marchio ISI sui propri prodotti, a
+          indicazione della conformità al relativo Standard Indiano.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Vendere o distribuire tavoli/scrivanie senza certificazione BIS può
-          comportare:
+          La certificazione mira a garantire che i tavoli e le scrivanie forniti
+          nel mercato indiano soddisfino i requisiti stabiliti relativi a:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sequestro del prodotto</li>
-          <li>Multe pesanti</li>
-          <li>Persecuzione penale</li>
-          <li>Divieto di importazione</li>
-          <li>Ordini di chiusura dell&apos;attività</li>
-          <li>Cancellazione della licenza</li>
+        <ul className={LIST_CLASS}>
+          <li>Resistenza e stabilità strutturale durante il normale utilizzo</li>
+          <li>Durata, sicurezza dell&apos;utente e lavorazione dei materiali</li>
+          <li>Tutti i requisiti di prestazione ai sensi di IS 17633:2022</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Il Bureau of Indian Standards Act, 2016 applica sanzioni rigorose.
+          Per acquirenti e agenzie di acquisto, il Marchio ISI rappresenta una
+          garanzia che l&apos;arredamento è stato valutato secondo parametri
+          riconosciuti di qualità e sicurezza.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Chi Ha Bisogno della Certificazione BIS per Tavoli & Scrivanie?
+          Panoramica di IS 17633:2022 per Tavoli e Scrivanie
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Questa certificazione è obbligatoria per:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17633:2022 è lo Standard Indiano che specifica i requisiti di
+          prestazione e sicurezza per tavoli e scrivanie destinati a utenti adulti
+          in applicazioni da seduti e in piedi.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produttori indiani</li>
-          <li>Produttori stranieri</li>
-          <li>Importatori</li>
-          <li>Commercianti/proprietari di marchi</li>
-          <li>Fornitori OEM/ODM</li>
-          <li>Distributori di mobili</li>
-          <li>Venditori e-commerce</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Lo standard copre entrambi:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Tavoli e scrivanie completamente prodotti (pronti all&apos;uso)</li>
+          <li>Unità pronte per il montaggio (RTA) — testate dopo il completo assemblaggio</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ogni fabbrica deve ottenere una Licenza BIS separata.
+          L&apos;obiettivo dello standard è stabilire requisiti minimi di
+          prestazione e sicurezza che aiutino a garantire che l&apos;arredamento
+          rimanga stabile, durevole e sicuro per tutta la sua vita utile prevista.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>
+          Aree Chiave Coperte da IS 17633:2022
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Lo standard si concentra su diverse importanti caratteristiche di
+          prestazione, tra cui:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Requisiti di Resistenza —</strong> Tavoli e scrivanie devono
+            resistere ai carichi previsti durante il normale utilizzo senza
+            cedimenti o deformazioni eccessive.
+          </li>
+          <li>
+            <strong>Requisiti di Stabilità —</strong> L&apos;arredamento deve
+            rimanere stabile durante l&apos;uso e resistere al ribaltamento in
+            condizioni di carico prevedibili.
+          </li>
+          <li>
+            <strong>Requisiti di Durata —</strong> I prodotti devono mantenere le
+            prestazioni e l&apos;integrità strutturale dopo un uso ripetuto per un
+            periodo prolungato.
+          </li>
+          <li>
+            <strong>Requisiti di Sicurezza —</strong> La progettazione e la
+            costruzione devono ridurre al minimo i rischi da instabilità, bordi
+            taglienti, costruzione non sicura o cedimento strutturale.
+          </li>
+          <li>
+            <strong>Lavorazione e Qualità di Costruzione —</strong> Lavorazione,
+            assemblaggio, giunzioni, elementi di fissaggio e costruzione
+            complessiva vengono valutati per prestazioni affidabili a lungo
+            termine.
+          </li>
+        </ul>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Perché Sceglierci per la Consulenza sulla Certificazione BIS?
+          La Certificazione BIS per Tavoli e Scrivanie è Obbligatoria in India?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Forniamo assistenza end-to-end:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sì. I tavoli e le scrivanie coperti dall&apos;Ordine di Controllo Qualità
+          (QCO) Arredamento applicabile devono conformarsi al relativo Standard
+          Indiano e ottenere la Certificazione BIS prima di essere prodotti,
+          importati, venduti, distribuiti o offerti nel mercato indiano.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Interpretazione standard (IS 17633:2022)</li>
-          <li>Classificazione prodotto</li>
-          <li>Redazione documentazione</li>
-          <li>Coordinamento test</li>
-          <li>Presentazione portale BIS</li>
-          <li>Supporto ispezione fabbrica</li>
-          <li>Follow-up continuo con BIS</li>
-          <li>Approvazione licenza</li>
-          <li>Rinnovo e gestione conformità</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          L&apos;obiettivo della certificazione obbligatoria è:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Garantire una maggiore qualità del prodotto in tutto il settore dell&apos;arredamento</li>
+          <li>Proteggere la sicurezza dei consumatori tramite standard verificati</li>
+          <li>Impedire l&apos;ingresso sul mercato di arredamento scadente</li>
+          <li>Promuovere la standardizzazione e parametri di qualità uniformi</li>
+          <li>Costruire la fiducia degli acquirenti nei prodotti certificati con Marchio ISI</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          La nostra competenza garantisce una certificazione veloce, senza problemi e senza errori.
+          I produttori coperti dalle normative applicabili devono ottenere una
+          licenza BIS e utilizzare il Marchio ISI in conformità ai requisiti BIS.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-black-600 text-base font-geist mb-4">
+          <strong>
+            Verifica anche i Prodotti di Arredamento Coperti dalla
+            Certificazione BIS Obbligatoria —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Certificazione BIS per l&apos;arredamento</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Ambito di Prodotto Coperto da IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;ambito di IS 17633:2022 si estende a varie categorie di tavoli e
+          scrivanie progettati per utenti adulti in ambienti residenziali,
+          commerciali, istituzionali e di lavoro.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Esempi di prodotti comunemente coperti includono:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Scrivanie da ufficio, da studio e per computer</li>
+          <li>Postazioni di lavoro e scrivanie multifunzionali</li>
+          <li>Tavoli per conferenze e riunioni</li>
+          <li>Tavoli istituzionali e da laboratorio</li>
+          <li>Arredamento per co-working e uso commerciale</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I produttori dovrebbero esaminare attentamente le specifiche del
+          prodotto e l&apos;uso previsto per determinare se i loro prodotti
+          rientrano nell&apos;ambito di IS 17633:2022.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Requisiti Tecnici Chiave ai Sensi di IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Per ottenere la certificazione BIS, i tavoli e le scrivanie devono
+          soddisfare vari requisiti di prestazione e sicurezza specificati dallo
+          standard.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Integrità Strutturale —</strong> I prodotti devono funzionare
+            sotto i carichi prescritti; le giunzioni e le strutture di supporto
+            rimangono sicure durante i test.
+          </li>
+          <li>
+            <strong>Prestazioni di Capacità di Carico —</strong> Tavoli e
+            scrivanie devono sostenere i carichi specificati senza deformazioni,
+            danni o cedimenti inaccettabili.
+          </li>
+          <li>
+            <strong>Prestazioni di Stabilità —</strong> L&apos;arredamento deve
+            rimanere stabile durante l&apos;uso e ridurre i rischi di ribaltamento
+            che potrebbero causare lesioni o danni materiali.
+          </li>
+          <li>
+            <strong>Prestazioni di Durata —</strong> I prodotti devono resistere a
+            cicli d&apos;uso ripetuti mantenendo prestazioni accettabili.
+          </li>
+          <li>
+            <strong>Materiali e Lavorazione —</strong> Materiali, finitura e metodi
+            di assemblaggio devono soddisfare i controlli di qualità per una
+            produzione costante.
+          </li>
+          <li>
+            <strong>Considerazioni sulla Sicurezza —</strong> La progettazione deve
+            ridurre al minimo i pericoli derivanti dall&apos;uso dell&apos;arredamento
+            per consumatori e acquirenti istituzionali.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Perché la Certificazione BIS è Importante per i Produttori di Arredamento
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Il mercato indiano dell&apos;arredamento è diventato sempre più attento
+          alla qualità. Dipartimenti governativi, istituti scolastici, acquirenti
+          aziendali e grandi agenzie di acquisto spesso preferiscono prodotti
+          conformi a standard riconosciuti.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Ottenere la certificazione BIS aiuta i produttori a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Dimostrare la conformità agli standard indiani applicabili</li>
+          <li>Aumentare la credibilità del prodotto e la reputazione del marchio</li>
+          <li>Conquistare la fiducia dei clienti e degli acquirenti istituzionali</li>
+          <li>Migliorare l&apos;accettazione negli acquisti governativi e aziendali</li>
+          <li>Rafforzare le pratiche interne di gestione della qualità</li>
+          <li>Anticipare i requisiti normativi in evoluzione</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Per i produttori che cercano una crescita a lungo termine, la
+          certificazione BIS è spesso vista sia come requisito di conformità sia
+          come vantaggio strategico per il business.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Requisiti di Test per Tavoli e Scrivanie ai Sensi di IS 17633:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Prima che un produttore possa ottenere la certificazione BIS, i campioni
+          di prodotto devono essere valutati rispetto ai requisiti applicabili di
+          IS 17633:2022 attraverso test presso un laboratorio riconosciuto dal BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;obiettivo dei test è verificare che l&apos;arredamento soddisfi gli
+          standard prescritti per sicurezza, stabilità, resistenza, durata e
+          prestazioni complessive.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Sebbene i parametri di test esatti possano variare a seconda della
+          progettazione del prodotto e dei requisiti di certificazione, i
+          produttori vengono generalmente valutati per le seguenti
+          caratteristiche:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Progettazione e Lavorazione —</strong> Qualità di costruzione,
+            assemblaggio, finitura e integrità complessiva del prodotto vengono
+            esaminate per un uso sicuro a lungo termine.
+          </li>
+          <li>
+            <strong>Verifica Dimensionale —</strong> Le misurazioni critiche
+            vengono controllate rispetto allo standard e alle specifiche di
+            prodotto approvate.
+          </li>
+          <li>
+            <strong>Test di Stabilità —</strong> Conferma che il prodotto rimanga
+            stabile durante il normale utilizzo e segnala ribaltamenti o debolezze
+            strutturali.
+          </li>
+          <li>
+            <strong>Test di Carico Statico —</strong> Verifica la capacità di
+            carico senza cedimenti, deformazioni eccessive o danni.
+          </li>
+          <li>
+            <strong>Test di Resistenza —</strong> Valuta telai, giunzioni e
+            supporti sotto le sollecitazioni operative durante l&apos;uso regolare.
+          </li>
+          <li>
+            <strong>Valutazione della Durata —</strong> Verifica il mantenimento
+            delle prestazioni dopo cicli d&apos;uso ripetuti.
+          </li>
+          <li>
+            <strong>Valutazione della Sicurezza —</strong> Esclude rischi evitabili
+            derivanti da instabilità, difetti o caratteristiche di progettazione
+            non sicure.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Processo di Certificazione BIS per Tavoli e Scrivanie
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I produttori che cercano la certificazione BIS ai sensi di IS 17633:2022
+          devono seguire un processo di certificazione strutturato stabilito dal
+          Bureau of Indian Standards.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sebbene i requisiti specifici possano variare in base al tipo di
+          richiedente e alla sede di produzione, il processo generale rimane
+          simile.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Passo 1: Valutazione dell&apos;Ambito di Prodotto
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Il primo passo consiste nel determinare se il prodotto rientra
+          nell&apos;ambito di IS 17633:2022 e dell&apos;Ordine di Controllo Qualità
+          applicabile. Prima di avviare il processo di certificazione viene
+          solitamente effettuata una revisione tecnica delle specifiche del
+          prodotto, dell&apos;uso previsto, dei materiali e della costruzione.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Passo 2: Preparazione della Documentazione
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Il produttore prepara la documentazione richiesta, comprese le
+          informazioni aziendali, i dettagli di produzione, le specifiche del
+          prodotto, le procedure di controllo qualità e i registri tecnici di
+          supporto. Una documentazione adeguata è fondamentale perché eventuali
+          carenze in questa fase possono ritardare la certificazione.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Passo 3: Test del Prodotto
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I campioni di prodotto vengono testati presso un laboratorio riconosciuto
+          dal BIS per verificare la conformità ai requisiti di IS 17633:2022. Il
+          rapporto di test funge da uno dei principali documenti tecnici a supporto
+          della domanda di certificazione.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Passo 4: Presentazione della Domanda
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La domanda BIS viene presentata insieme ai documenti di supporto, ai
+          rapporti di test, alle informazioni di produzione e ai registri di
+          gestione della qualità. La domanda viene esaminata dal BIS per
+          completezza e conformità tecnica.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Passo 5: Valutazione della Fabbrica
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Il BIS può condurre un&apos;ispezione della fabbrica per valutare:
+        </p>
+        <ul className={LIST_CLASS}>
+          <li>Infrastruttura di produzione e capacità produttive</li>
+          <li>Sistemi di controllo qualità e strutture di test interne</li>
+          <li>Controlli sui materiali grezzi e meccanismi di tracciabilità del prodotto</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;obiettivo è verificare la capacità del produttore di realizzare
+          costantemente prodotti conformi.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Passo 6: Valutazione e Revisione
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Il BIS esamina la domanda, gli esiti dell&apos;ispezione e i rapporti di
+          test di laboratorio prima di prendere una decisione sulla certificazione.
+          Eventuali osservazioni sollevate durante il processo di revisione devono
+          essere affrontate dal richiedente.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Passo 7: Concessione della Licenza BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Al completamento con successo di tutti i requisiti, il BIS concede la
+          licenza e autorizza il produttore a utilizzare il Marchio ISI su tavoli e
+          scrivanie certificati.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Certificazione BIS per Produttori Indiani
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          I produttori indiani generalmente presentano domanda secondo la procedura
+          di certificazione nazionale prescritta dal BIS. Il processo include
+          tipicamente:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Test del prodotto presso un laboratorio riconosciuto dal BIS</li>
+          <li>Presentazione della domanda con i documenti di supporto</li>
+          <li>Ispezione della fabbrica e revisione tecnica da parte del BIS</li>
+          <li>Concessione della licenza BIS e autorizzazione del Marchio ISI</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Una volta certificati, i produttori devono continuare a conformarsi ai
+          requisiti BIS e mantenere una qualità del prodotto costante per tutto il
+          periodo di validità della licenza.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Certificazione BIS per Produttori Esteri
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Anche i produttori esteri che intendono esportare tavoli e scrivanie in
+          India devono ottenere la certificazione BIS prima di fornire prodotti
+          coperti dall&apos;Ordine di Controllo Qualità applicabile.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Il processo di certificazione generalmente comporta:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Nomina di un Rappresentante Indiano Autorizzato (AIR)</li>
+          <li>Test del prodotto e valutazione della fabbrica all&apos;estero</li>
+          <li>Revisione della documentazione e approvazione della certificazione BIS</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I produttori esteri devono garantire una conformità continua ai requisiti
+          BIS per mantenere la validità della certificazione.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Documenti Richiesti per la Certificazione BIS di Tavoli e Scrivanie
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I requisiti di documentazione possono variare a seconda del produttore e
+          del percorso di certificazione. Tuttavia, i seguenti documenti sono
+          comunemente richiesti durante il processo di certificazione.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Documenti Commerciali e Legali</h3>
+        <ul className={LIST_CLASS}>
+          <li>Registrazione aziendale, licenza di produzione e GST (se applicabile)</li>
+          <li>Dettagli del firmatario autorizzato e prova di identità</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Informazioni di Produzione</h3>
+        <ul className={LIST_CLASS}>
+          <li>Diagramma di flusso del processo, layout della fabbrica e dettagli dei macchinari</li>
+          <li>Registri di infrastruttura e capacità produttiva</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Informazioni sul Prodotto</h3>
+        <ul className={LIST_CLASS}>
+          <li>Specifiche del prodotto, disegni tecnici e catalogo</li>
+          <li>Distinta materiali e dettagli su materiali/componenti</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Documenti di Controllo Qualità</h3>
+        <ul className={LIST_CLASS}>
+          <li>Procedure interne di test, ispezione e CQ</li>
+          <li>Registri di controllo qualità e rapporti di calibrazione degli strumenti</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Documenti di Certificazione</h3>
+        <ul className={LIST_CLASS}>
+          <li>Rapporti di test di laboratorio e moduli di domanda BIS compilati</li>
+          <li>Dichiarazioni, impegni e altri documenti prescritti dal BIS</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I produttori dovrebbero assicurarsi che tutta la documentazione sia
+          accurata, completa e coerente prima della presentazione.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sfide Comuni Durante la Certificazione BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sebbene il processo di certificazione sia semplice se gestito
+          correttamente, i produttori incontrano spesso diverse sfide.
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Interpretazione tecnica —</strong> Mappare i requisiti di IS
+            17633:2022 su specifiche progettazioni di prodotto può essere difficile
+            senza una guida esperta.
+          </li>
+          <li>
+            <strong>Fallimenti nei test —</strong> Giunzioni deboli, scarsa
+            stabilità o problemi sui materiali portano spesso al rifiuto dei test
+            di laboratorio.
+          </li>
+          <li>
+            <strong>Lacune nella documentazione —</strong> Registri incompleti o
+            incoerenti sono una causa frequente di ritardi nelle domande.
+          </li>
+          <li>
+            <strong>Conformità della fabbrica —</strong> I sistemi di CQ, la
+            tracciabilità o i controlli di produzione potrebbero richiedere
+            aggiornamenti prima della concessione della licenza.
+          </li>
+          <li>
+            <strong>Coordinamento normativo —</strong> Allineare test di
+            laboratorio, ispezioni e follow-up BIS richiede tempo senza un supporto
+            strutturato.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Vantaggi dell&apos;Assistenza Professionale per la Certificazione BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Collaborare con un consulente BIS esperto può aiutare i produttori a
+          evitare costosi ritardi e a semplificare il percorso di certificazione.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Il supporto professionale include tipicamente:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Revisione dell&apos;ambito di prodotto e interpretazione dello standard</li>
+          <li>Preparazione della documentazione e presentazione della domanda</li>
+          <li>Coordinamento dei test di laboratorio e dell&apos;ispezione della fabbrica</li>
+          <li>Conformità continua e supporto post-certificazione</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ciò consente ai produttori di concentrarsi sulla produzione garantendo al
+          contempo che i requisiti normativi siano gestiti in modo efficiente.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Perché Scegliere Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India è una società di consulenza per la conformità
+          normativa che assiste produttori, importatori, esportatori e aziende con
+          i requisiti di certificazione e approvazione in tutta l&apos;India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I nostri esperti forniscono un supporto end-to-end per la Certificazione
+          BIS per Tavoli e Scrivanie ai sensi di IS 17633:2022.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>I Nostri Servizi Includono</h3>
+
+        <ul className={LIST_CLASS}>
+          <li>Valutazione dell&apos;applicabilità del prodotto e consulenza sulla conformità BIS</li>
+          <li>Supporto alla documentazione e gestione della domanda</li>
+          <li>Coordinamento dei test e assistenza per l&apos;ispezione della fabbrica</li>
+          <li>Comunicazione normativa e supporto alla conformità post-certificazione</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Il nostro obiettivo è aiutare le aziende a navigare il processo di
+          certificazione in modo efficiente riducendo al minimo ritardi e sfide di
+          conformità.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -752,115 +876,142 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Il Certificato BIS per Tavoli e Scrivanie ai sensi di IS 17633:2022 è un
-          requisito di conformità obbligatorio che garantisce sicurezza del prodotto,
-          prestazioni, durata e conformità agli standard nazionali.
-          Produttori e importatori devono sottoporsi a test del prodotto, ispezione della fabbrica
-          e soddisfare tutte le regole di documentazione e etichettatura BIS per
-          ottenere il Marchio ISI.
+          La Certificazione BIS per Tavoli e Scrivanie ai sensi di IS 17633:2022 è
+          un requisito importante per i produttori che desiderano fornire prodotti
+          di arredamento conformi nel mercato indiano. La certificazione aiuta a
+          garantire che tavoli e scrivanie soddisfino gli standard stabiliti
+          relativi a sicurezza, stabilità, durata, resistenza e qualità.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Con l&apos;assistenza di esperti, l&apos;intero processo di certificazione diventa
-          fluido, veloce e pienamente conforme alle normative BIS.
+          Ottenendo la Certificazione BIS e utilizzando il Marchio ISI, i
+          produttori possono dimostrare la conformità agli standard indiani,
+          migliorare la fiducia dei clienti, rafforzare la propria posizione di
+          mercato e sostenere la crescita aziendale a lungo termine.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Se stai pianificando di ottenere la Certificazione BIS per Tavoli e
+          Scrivanie ai sensi di IS 17633:2022, Sun Certifications India può
+          assisterti con un supporto alla conformità end-to-end, aiutandoti a
+          navigare il processo di certificazione in modo efficiente e sicuro.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Domande Frequenti – Certificato BIS per Tavoli & Scrivanie (IS 17633:2022)
+          FAQ – Certificazione BIS per Tavoli e Scrivanie (IS 17633:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. La certificazione BIS è obbligatoria per tavoli e scrivanie?
-              </strong>
+              <strong>1. Cos&apos;è IS 17633:2022?</strong>
               <br />
-              Sì. Secondo IS 17633:2022, tutti i tavoli e scrivanie devono essere
-              certificati BIS prima di essere venduti in India.
+              IS 17633:2022 è lo Standard Indiano pubblicato dal Bureau of Indian
+              Standards (BIS) che stabilisce i requisiti minimi di prestazione,
+              stabilità, durata e sicurezza per tavoli e scrivanie destinati a
+              utenti adulti in applicazioni da seduti e in piedi.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Quali test sono richiesti per la certificazione?</strong>
+              <strong>2. La certificazione BIS è obbligatoria per tavoli e scrivanie?</strong>
               <br />
-              I test obbligatori includono test di stabilità, resistenza, durata,
-              deflessione, impatto e sicurezza superficiale.
+              Sì — per i prodotti coperti dall&apos;Ordine di Controllo Qualità (QCO)
+              Arredamento applicabile. Produttori e importatori devono possedere una
+              licenza BIS valida e conformarsi a IS 17633:2022 prima di produrre,
+              importare, vendere o distribuire tale arredamento in India.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Qual è il costo della certificazione BIS?</strong>
+              <strong>3. Quale marchio di certificazione è applicabile ai tavoli e alle scrivanie?</strong>
               <br />
-              Il costo varia tra ₹65.000 – ₹1.30.000, a seconda dei fattori di test
-              e ispezione.
+              I tavoli e le scrivanie certificati sono autorizzati a recare il
+              Marchio ISI ai sensi dello Schema di Certificazione di Prodotto BIS, a
+              indicazione che il prodotto è conforme al relativo Standard Indiano.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. I produttori stranieri hanno bisogno della Certificazione BIS?
-              </strong>
+              <strong>4. Chi può richiedere la certificazione BIS?</strong>
               <br />
-              Sì, attraverso lo schema FMCS, che include ispezioni della fabbrica all&apos;estero
-              da parte del BIS.
+              Possono fare domanda sia i produttori indiani sia i produttori esteri,
+              a condizione che i loro tavoli e scrivanie rientrino nell&apos;ambito
+              del QCO applicabile e soddisfino i requisiti di IS 17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. Una licenza può coprire più modelli di tavolo/scrivania?
-              </strong>
+              <strong>5. Qual è lo scopo della certificazione BIS?</strong>
               <br />
-              Sì, ma solo se i modelli sono simili nella costruzione e nei parametri di test.
+              La certificazione BIS conferma che l&apos;arredamento soddisfa i
+              parametri riconosciuti a livello nazionale per sicurezza, prestazioni
+              strutturali, durata e lavorazione — contribuendo a proteggere gli
+              utenti finali e a mantenere gli standard di qualità in tutto il
+              mercato.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Quanto tempo richiede il processo BIS?</strong>
+              <strong>6. Quali prodotti sono coperti da IS 17633:2022?</strong>
               <br />
-              Circa 30–45 giorni.
+              Lo standard copre tavoli e scrivanie per uso adulto utilizzati in
+              uffici, istituti scolastici, esercizi commerciali e ambienti di lavoro
+              — inclusi scrivanie da ufficio, postazioni di lavoro, tavoli da studio,
+              tavoli per conferenze e categorie di arredamento simili.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Il test è obbligatorio in un laboratorio riconosciuto BIS?</strong>
+              <strong>7. Il test di laboratorio è obbligatorio?</strong>
               <br />
-              Sì, solo i laboratori approvati BIS possono condurre i test.
+              Sì. I campioni di prodotto devono essere testati presso un laboratorio
+              riconosciuto dal BIS, e il rapporto di test risultante è un documento
+              chiave nella domanda di certificazione per dimostrare la conformità a
+              IS 17633:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Cosa succede se il prodotto fallisce?</strong>
+              <strong>8. I tavoli e le scrivanie importati possono essere venduti senza certificazione BIS?</strong>
               <br />
-              Deve essere riprogettato e ripresentato per i test.
+              No. I prodotti importati che rientrano nella certificazione
+              obbligatoria non possono essere legalmente forniti in India senza una
+              valida approvazione BIS. Gli importatori devono garantire la conformità
+              al relativo standard prima di immettere i prodotti sul mercato.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. La marcatura ISI è obbligatoria dopo la certificazione?</strong>
+              <strong>9. Qual è il ruolo di un&apos;ispezione della fabbrica?</strong>
               <br />
-              Sì, il Marchio ISI è richiesto sul prodotto e sull&apos;imballaggio.
+              Il BIS conduce una valutazione della fabbrica per verificare che il
+              produttore mantenga un&apos;infrastruttura di produzione adeguata,
+              sistemi di controllo qualità e tracciabilità del prodotto per produrre
+              costantemente tavoli e scrivanie conformi.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. Quali documenti sono necessari?</strong>
+              <strong>10. Come può aiutare Sun Certifications India?</strong>
               <br />
-              Disegni tecnici, BOM, documenti della fabbrica, rapporti di test, piano QC,
-              e documenti legali.
+              Sun Certifications India offre assistenza end-to-end — inclusi
+              valutazione dell&apos;ambito di prodotto, preparazione della
+              documentazione, coordinamento dei test di laboratorio, gestione della
+              domanda BIS, preparazione all&apos;ispezione della fabbrica e supporto
+              alla conformità post-certificazione per tavoli e scrivanie ai sensi di
+              IS 17633:2022.
             </p>
           </div>
         </div>
@@ -877,6 +1028,21 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Risorse Correlate
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis" className="text-blue-600 hover:underline">Licenza Marchio ISI</a>
+          </li>
+          <li>
+            <a href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="text-blue-600 hover:underline">Certificato BIS FMCS</a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadItalian />
 
