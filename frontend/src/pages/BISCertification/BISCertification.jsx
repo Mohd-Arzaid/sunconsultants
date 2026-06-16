@@ -69,16 +69,13 @@ const BISCertification = () => {
 export default BISCertification;
 
 const BISCertificationMetaTags = () => {
-  const { pathname } = useLocation();
   const title = "BIS Certification in India | Types, Process, Documents & Fees";
   const description =
     "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.";
   const keywords =
     "BIS Certification, BIS Certification Process, BIS Registration, BIS Registration Process, BIS Certification Scheme, Product Certification Scheme, Mandatory Certification Scheme, BIS Mandatory Products List, ISI Mark, BIS FMCS, BIS Hallmarking Scheme, Eco Mark Scheme, BIS Certification Consultant, ISI Certification Consultant, BIS ISI Mark Consultant, What is BIS Certification, BIS Certification Download, BIS Certification Cost, India BIS Certification, BIS Certification Full Form, BIS Certification India, Indian BIS Certification, BIS Certification Means, BIS Certification Check, BIS License Online in India, BIS Certification Online, BIS Certificate, BIS Certificate Online.";
   const canonicalUrl =
-    typeof window !== "undefined"
-      ? `${window.location.origin}${pathname}`
-      : "";
+    "https://bis-certifications.com/what-is-bis-certificate-indian-bis";
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";

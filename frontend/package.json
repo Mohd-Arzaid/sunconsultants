@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node --max-old-space-size=8192 node_modules/vite/bin/vite.js build",
+    "postbuild": "node prerender.mjs",
     "build:analyze": "node --max-old-space-size=8192 node_modules/vite/bin/vite.js build --mode analyze",
     "preview": "vite preview",
     "analyze": "npx vite-bundle-analyzer dist/",
@@ -51,6 +52,8 @@
     "postcss": "^8.4.47",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
+    "puppeteer": "^24.2.0",
+    "sirv": "^3.0.1",
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.8"
   }

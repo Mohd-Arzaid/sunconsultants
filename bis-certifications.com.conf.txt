@@ -1,0 +1,666 @@
+# Redirect www to non-www
+server {
+    listen 443 ssl http2;
+    server_name www.bis-certifications.com;
+
+    ssl_certificate /etc/letsencrypt/live/bis-certifications.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/bis-certifications.com/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    return 301 https://bis-certifications.com$request_uri;
+}
+
+# Main server block
+server {
+    listen 443 ssl http2;
+    server_name bis-certifications.com;
+
+    root /root/sunconsultants/frontend/dist;
+    index index.html;
+
+    # SSL Configuration
+    ssl_certificate /etc/letsencrypt/live/bis-certifications.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/bis-certifications.com/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    # =================================================================
+    # 410 GONE - Permanently Removed Pages (for Google Search Console)
+    # =================================================================
+
+    # German (de) pages
+    location = /bis-schema-x-zertifizierung-fuer-baugerate {
+        return 410;
+    }
+
+    location = /bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall {
+        return 410;
+    }
+
+    location = /de/latest-notification/survival-cable {
+        return 410;
+    }
+
+    location = /de/bis-schema-x-zertifizierung-fuer-webmaschinen {
+        return 410;
+    }
+
+    location = /de/latest-notification/and-desks {
+        return 410;
+    }
+
+    location = /de/bis-schema-x-zertifizierung-fuer-kranen {
+        return 410;
+    }
+
+    location = /de/bis-schema-x-zertifizierung-fuer-rotierende-elektrische-maschinen {
+        return 410;
+    }
+
+    location = /de/bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete {
+        return 410;
+    }
+
+    location = /bis-schema-x-zertifizierung-fuer-verpackungsmaschinen {
+        return 410;
+    }
+
+    location = /bis-schema-x-zertifizierung-fuer-werkzeugmaschinen {
+        return 410;
+    }
+
+    location = /bis-schema-x-zertifizierung-fuer-dieselgeneratoren {
+        return 410;
+    }
+
+    location = /bis-schema-x-zertifizierung-fuer-kompressoren {
+        return 410;
+    }
+
+    location = /bis-schema-x-zertifizierung-fuer-stickmaschinen {
+        return 410;
+    }
+
+    location = /de/latest-notification/fence-energizers {
+        return 410;
+    }
+
+    location = /de/leitfaden-zur-bis-zertifizierung-indisches-bis {
+        return 410;
+    }
+
+    # Spanish (es) pages
+    location = /es/certificacion-bis-scheme-x-para-generadores-diesel {
+        return 410;
+    }
+
+    location = /es/certificacion-bis-scheme-x-para-maquinas-electricas-rotativas {
+        return 410;
+    }
+
+    location = /es/certificacion-bis-scheme-x-para-maquinas-de-tejido {
+        return 410;
+    }
+
+    location = /es/certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia {
+        return 410;
+    }
+
+    location = /es/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico {
+        return 410;
+    }
+
+    location = /es/certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision {
+        return 410;
+    }
+
+    location = /es/guia-certificacion-bis-bis-indio {
+        return 410;
+    }
+
+    location = /es/certificacion-bis-scheme-x-para-herramientas-de-maquina {
+        return 410;
+    }
+
+    # Korean (ko) pages
+    location = /ko/bis-seukim-x-injeung-wonsimbunligi-mich-yeolgwa-ttoneun-jeongje-gigye {
+        return 410;
+    }
+
+    location = /ko/bis-seukim-x-injeung-keurein {
+        return 410;
+    }
+
+    location = /ko/bis-seukim-x-injeung-geonseol-gigye {
+        return 410;
+    }
+
+    location = /ko/bis-injeung-gaideu-indo-bis {
+        return 410;
+    }
+
+    # French pages
+    location = /bis-scheme-x-certification-for-cranes-french {
+        return 410;
+    }
+
+    location = /bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts-french {
+        return 410;
+    }
+
+    location = /bis-scheme-x-certification-for-packing-machinery-french {
+        return 410;
+    }
+
+    location = /bis-scheme-x-certification-for-embroidery-machinery-french {
+        return 410;
+    }
+
+    location = /bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery-french {
+        return 410;
+    }
+
+    location = /bis-scheme-x-certification-for-heat-treatment-equipment-french {
+        return 410;
+    }
+
+    # Arabic (ar) pages
+    location = /ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x {
+        return 410;
+    }
+
+    location = /ar/shahadat-bis-isi-mark {
+        return 410;
+    }
+
+    # Indonesian (id) pages
+    location = /id/panduan-sertifikasi-bis-untuk-pabrikan-asing-bis-india {
+        return 410;
+    }
+
+    location = /id/panduan-sertifikasi-bis-bis-india {
+        return 410;
+    }
+
+    # French (fr) pages
+    location = /fr/guide-certification-bis-bis-indien {
+        return 410;
+    }
+
+
+    # Vietnamese (vi) pages
+    location = /vi/chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-may-moc-theu {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-cong-trinh-cong-cong-va-thiet-bi-co-khi {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-may-det {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-len-den-1000-volts {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-may-bien-ap {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-may-moc-dong-goi {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-thiet-bi-xu-ly-nhiet {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua {
+        return 410;
+    }
+
+    location = /vi/chung-nhan-bis-scheme-x-cho-may-nen-khi {
+        return 410;
+    }
+
+    location = /vi/huong-dan-chung-nhan-bis-bis-an-do {
+        return 410;
+    }
+
+
+    # Japanese (ja) pages
+
+    # Italian (it) pages
+    location = /it/guida-alla-certificazione-bis-bis-indiano {
+        return 410;
+    }
+
+
+    # English pages - Scheme X
+    location = /bis-scheme-x-certification-india {
+        return 410;
+    }
+
+    location = /bis-scheme-x-certification-for-gears-gearings-and-transmission-elements {
+        return 410;
+    }
+
+    location = /bis-isi-mark-certification {
+        return 410;
+    }
+
+    location = /schemeX {
+        return 410;
+    }
+
+    # BIS QCO Updates - Removed pages
+    location = /bis-qco-updates/bis-certificate-for-hdpepp-woven-sacks-for-packaging-fertilizers {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-bis-notification-helmet-for-police-force-civil-defence-and-personal-protection {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-and-desks {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-and-rolling {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-fence-energizers {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for--welded-tubes {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-extruded-tube {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-hdpepp-woven-sacks-for-packaging-of-25-kg-polymer-materials {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-bis-legal-metrology-material-measures-of-length {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-dental-bibnapkins {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-and-forgings {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-and-sections {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-survival-cable {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-steel-wires-or-strands-nylon-or-wire-ropes-and-wire-mesh {
+        return 410;
+    }
+
+    location = /bis-qco-updates/bis-certificate-for-coated-papers-and-board-art-and-chrome {
+        return 410;
+    }
+
+    # Latest Notification - Removed pages
+    location = /latest-notification/and-forgings {
+        return 410;
+    }
+
+    location = /latest-notification/and-sections {
+        return 410;
+    }
+
+    location = /latest-notification/-welded-tubes {
+        return 410;
+    }
+
+    location = /latest-notification/extruded-tube {
+        return 410;
+    }
+
+    location = /latest-notification/survival-cable {
+        return 410;
+    }
+
+    location = /latest-notification/and-desks {
+        return 410;
+    }
+
+    location = /latest-notification/and-rolling {
+        return 410;
+    }
+
+    location = /latest-notification/fence-energizers {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-aluminium-and-aluminium-alloy-foil {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-chairs-and-stools {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-fasteners-cross-recessed-drilling-screws-with-tapping-screw-thread-part-2-countersunk-head {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-fire-retardant-plywood {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-pipe-wrenches-heavy-duty {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-agro-textiles {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-wrought-aluminium-and-aluminium-alloys-for-manufacture-of-utensils {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-baby-diaper {
+        return 410;
+    }
+
+    location = /latest-notification/bis-certificate-for-fibre-ropes-dual-fibres {
+        return 410;
+    }
+
+    location = /latest-notification/plaster-boards {
+        return 410;
+    }
+
+    location = /latest-notification/washing-machines {
+        return 410;
+    }
+
+    # BIS / Services - Removed pages
+    location = /bis/what-is-crs-bis-or-crs-registration {
+        return 410;
+    }
+
+    location = /services/epr-registration {
+        return 410;
+    }
+
+    location = /services/rohs {
+        return 410;
+    }
+
+    location = /services/wpc {
+        return 410;
+    }
+
+    location = /services/tec {
+        return 410;
+    }
+
+    location = /services/bis-mark-foreign {
+        return 410;
+    }
+
+    # Miscellaneous removed pages
+    location = /a- {
+        return 410;
+    }
+
+    location = /a {
+        return 410;
+    }
+
+    location = /a-guide {
+        return 410;
+    }
+
+    location = /clients {
+        return 410;
+    }
+
+    # BIS Certification pages - Removed
+    location = /bis-certification-for-work-chairs-is-17631 {
+        return 410;
+    }
+
+    location = /bis-certification-for-chair-&-stools-is-17632 {
+        return 410;
+    }
+
+    location = /bis-certification-for-tables-&-desks-unit-is-17633 {
+        return 410;
+    }
+
+    location = /bis-certification-for-beds-is-17635 {
+        return 410;
+    }
+
+    location = /bis-certification-for-welded-pipes-and-tubes-is-17876 {
+        return 410;
+    }
+
+    location = /bis-certification-for-seamless-pipes-and-tubes-is-17875 {
+        return 410;
+    }
+
+    location = /bis-certification-for-bunk-beds-is-17636 {
+        return 410;
+    }
+
+    location = /bis-certification-for-storage-unit-is-17634 {
+        return 410;
+    }
+
+    # Blog pages - Removed
+    location = /blogs/ISI-products/flashlight-IS-2083 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/beds-IS-17635:2022 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/bunk-beds-IS-17636:2022 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/flashlight-IS-2083:2024 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/storage-unit-IS-17634:2022 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/chairs-and-stools-IS-17632:2022 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/tables-&-desks-IS-17633:2022 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/work-chairs-IS-17631:2022 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/fibre-ropes-polyethylene-17636:2022 {
+        return 410;
+    }
+
+    location = /blogs/isi-products/fibre-ropes-polyethylene-17636 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/steel-wire-ropes-IS-1804:2004 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/solar-water-heating-systems-IS-16542:2016 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021 {
+        return 410;
+    }
+
+    location = /blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001 {
+        return 410;
+    }
+
+    # =================================================================
+    # End of 410 GONE Pages
+    # =================================================================
+
+    # Services URL redirects
+    location = /services/isi-mark-indian {
+        return 301 https://bis-certifications.com/what-is-bis-certificate-indian-bis;
+    }
+
+    location = /services/plastic-waste {
+        return 301 https://bis-certifications.com/epr-certificate-for-plastic-waste-management-pwm;
+    }
+
+    location = /services/ce-certification {
+        return 301 https://bis-certifications.com/ce-certification;
+    }
+
+    location = /services/plastic-waste-management {
+        return 301 https://bis-certifications.com/epr-certificate-for-plastic-waste-management-pwm;
+    }
+
+    # Redirect old BIS License URLs to new BIS Certification URLs
+    location = /bis-license-for-bunk-beds-Indian-bis {
+        return 301 https://bis-certifications.com/bis-certification-for-bunk-beds-is-17636;
+    }
+
+    location = /bis-license-for-storage-units-Indian-bis {
+        return 301 https://bis-certifications.com/bis-certification-for-storage-unit-is-17634;
+    }
+
+    # Fix for PVC Homopolymers URL mismatch
+    location = /bis-qco-updates/bis-certificate-for-poly-vinyl-chloride-pvc-homopolymers-specification {
+        return 301 https://bis-certifications.com/bis-qco-updates/bis-certificate-for-poly-vinyl-chloride-pvc-homopolymers;
+    }
+
+    # Fix for Diesel Engines URL mismatch
+    location = /bis-qco-updates/bis-certificate-for-diesel-engines-nox-reduction-agent-aus-32-specification {
+        return 301 https://bis-certifications.com/bis-qco-updates/bis-certificate-for-diesel-engines;
+    }
+
+    # Legacy Notification URLs
+    location ~ ^/latest-notification/bis-certificate-for-(.+)$ {
+        return 301 https://bis-certifications.com/bis-qco-updates/bis-certificate-for-$1;
+    }
+
+    location ~ ^/latest-notification/(.+)$ {
+        return 301 https://bis-certifications.com/bis-qco-updates/$1;
+    }
+
+    location /latest-notifications {
+        return 301 https://bis-certifications.com/bis-qco-updates;
+    }
+
+    # PDF files - long cache with indexing
+    location ~* ^/pdf/.*\.pdf$ {
+        add_header X-Robots-Tag "index, follow" always;
+        add_header Cache-Control "public, max-age=31536000, immutable" always;
+        try_files $uri =404;
+    }
+
+    # API Proxy - no caching
+    location /api/ {
+        add_header Cache-Control "no-store, no-cache, must-revalidate, max-age=0" always;
+        add_header Pragma "no-cache" always;
+
+        proxy_pass http://localhost:5000/api/;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+        proxy_no_cache 1;
+    }
+
+    # CRITICAL: index.html - no cache (MUST be before location /)
+    location = /index.html {
+        add_header Cache-Control "no-cache, must-revalidate" always;
+        try_files $uri =404;
+    }
+
+    # JavaScript / CSS - aggressive cache (Vite generates unique hashes)
+    location ~* \.(js|css)$ {
+        add_header Cache-Control "public, max-age=31536000, immutable" always;
+        try_files $uri =404;
+    }
+
+    # Images / Fonts / Icons - long cache
+    location ~* \.(?:ico|gif|jpe?g|png|webp|svg|woff2?|woff|ttf|eot)$ {
+        add_header Cache-Control "public, max-age=2592000, immutable" always;
+        try_files $uri =404;
+    }
+
+    # Prerendered BIS Certification page - full HTML for SEO (View Page Source / curl)
+    location = /what-is-bis-certificate-indian-bis {
+        add_header Cache-Control "no-cache, must-revalidate" always;
+        try_files /what-is-bis-certificate-indian-bis/index.html =404;
+    }
+
+    # Default SPA fallback
+    location / {
+        try_files $uri /index.html;
+    }
+}
+
+# HTTP to HTTPS redirect
+server {
+    listen 80;
+    server_name bis-certifications.com www.bis-certifications.com;
+
+    return 301 https://bis-certifications.com$request_uri;
+}
