@@ -645,10 +645,35 @@ server {
         try_files $uri =404;
     }
 
-    # Prerendered BIS Certification page - full HTML for SEO (View Page Source / curl)
+    # Prerendered pages - full HTML for SEO (View Page Source / curl)
+    location = / {
+        add_header Cache-Control "no-cache, must-revalidate" always;
+        try_files /home/index.html =404;
+    }
+
     location = /what-is-bis-certificate-indian-bis {
         add_header Cache-Control "no-cache, must-revalidate" always;
         try_files /what-is-bis-certificate-indian-bis/index.html =404;
+    }
+
+    location = /a-guide-to-bis-certification-indian-bis {
+        add_header Cache-Control "no-cache, must-revalidate" always;
+        try_files /a-guide-to-bis-certification-indian-bis/index.html =404;
+    }
+
+    location = /a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis {
+        add_header Cache-Control "no-cache, must-revalidate" always;
+        try_files /a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis/index.html =404;
+    }
+
+    location = /what-is-crs-bis-or-crs-registration {
+        add_header Cache-Control "no-cache, must-revalidate" always;
+        try_files /what-is-crs-bis-or-crs-registration/index.html =404;
+    }
+
+    location = /indian-bis-certification-under-scheme-x {
+        add_header Cache-Control "no-cache, must-revalidate" always;
+        try_files /indian-bis-certification-under-scheme-x/index.html =404;
     }
 
     # Default SPA fallback

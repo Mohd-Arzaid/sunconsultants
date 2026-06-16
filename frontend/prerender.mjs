@@ -9,9 +9,46 @@ import sirv from "sirv";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = join(__dirname, "dist");
 const PORT = 45678;
-const ROUTE = "/what-is-bis-certificate-indian-bis";
-const OUTPUT_DIR = join(DIST, "what-is-bis-certificate-indian-bis");
-const OUTPUT_FILE = join(OUTPUT_DIR, "index.html");
+const PRODUCTION_ORIGIN = "https://bis-certifications.com";
+
+const ROUTES = [
+  {
+    route: "/",
+    outDir: "home",
+    waitSelectors: ["footer"],
+    waitIds: [],
+  },
+  {
+    route: "/what-is-bis-certificate-indian-bis",
+    outDir: "what-is-bis-certificate-indian-bis",
+    waitSelectors: ["#product-table"],
+    waitIds: ["biscertification-faq-schema", "bis-certification-rating-schema"],
+  },
+  {
+    route: "/a-guide-to-bis-certification-indian-bis",
+    outDir: "a-guide-to-bis-certification-indian-bis",
+    waitSelectors: ["#product-table"],
+    waitIds: ["isimark-faq-schema", "isimark-rating-schema"],
+  },
+  {
+    route: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    outDir: "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    waitSelectors: ["#product-table"],
+    waitIds: ["bisfm-faq-schema", "bis-fmcs-rating-schema"],
+  },
+  {
+    route: "/what-is-crs-bis-or-crs-registration",
+    outDir: "what-is-crs-bis-or-crs-registration",
+    waitSelectors: [".product-table-section"],
+    waitIds: ["crs-faq-schema", "bis-crs-rating-schema"],
+  },
+  {
+    route: "/indian-bis-certification-under-scheme-x",
+    outDir: "indian-bis-certification-under-scheme-x",
+    waitSelectors: ["#faqs"],
+    waitIds: ["bis-scheme-x-rating-schema"],
+  },
+];
 
 const SYSTEM_CHROME_PATHS = [
   "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
@@ -42,6 +79,46 @@ const server = createServer((req, res) => {
   serve(req, res);
 });
 
+async function prerenderRoute(browser, routeConfig) {
+  const { route, outDir, waitSelectors, waitIds } = routeConfig;
+  const page = await browser.newPage();
+
+  try {
+    await page.goto(`http://localhost:${PORT}${route}`, {
+      waitUntil: "networkidle0",
+      timeout: 120000,
+    });
+
+    for (const selector of waitSelectors) {
+      await page.waitForSelector(selector, { timeout: 60000 });
+    }
+
+    if (waitIds.length) {
+      await page.waitForFunction(
+        (ids) => ids.every((id) => document.getElementById(id)),
+        { timeout: 60000 },
+        waitIds
+      );
+    }
+
+    let html = await page.evaluate(
+      () => "<!DOCTYPE html>\n" + document.documentElement.outerHTML
+    );
+    html = html.replaceAll(
+      `http://localhost:${PORT}`,
+      PRODUCTION_ORIGIN
+    );
+
+    const outputDir = join(DIST, outDir);
+    const outputFile = join(outputDir, "index.html");
+    mkdirSync(outputDir, { recursive: true });
+    writeFileSync(outputFile, html, "utf8");
+    console.log(`Prerendered ${route} -> ${outputFile}`);
+  } finally {
+    await page.close();
+  }
+}
+
 async function prerender() {
   await new Promise((resolve) => server.listen(PORT, resolve));
   console.log(`Serving dist at http://localhost:${PORT}`);
@@ -49,27 +126,9 @@ async function prerender() {
   const browser = await puppeteer.launch(getLaunchOptions());
 
   try {
-    const page = await browser.newPage();
-    await page.goto(`http://localhost:${PORT}${ROUTE}`, {
-      waitUntil: "networkidle0",
-      timeout: 120000,
-    });
-
-    await page.waitForSelector("#product-table", { timeout: 60000 });
-    await page.waitForFunction(
-      () =>
-        document.getElementById("biscertification-faq-schema") &&
-        document.getElementById("bis-certification-rating-schema"),
-      { timeout: 60000 }
-    );
-
-    const html = await page.evaluate(
-      () => "<!DOCTYPE html>\n" + document.documentElement.outerHTML
-    );
-
-    mkdirSync(OUTPUT_DIR, { recursive: true });
-    writeFileSync(OUTPUT_FILE, html, "utf8");
-    console.log(`Prerendered ${ROUTE} -> ${OUTPUT_FILE}`);
+    for (const routeConfig of ROUTES) {
+      await prerenderRoute(browser, routeConfig);
+    }
   } finally {
     await browser.close();
     server.close();
