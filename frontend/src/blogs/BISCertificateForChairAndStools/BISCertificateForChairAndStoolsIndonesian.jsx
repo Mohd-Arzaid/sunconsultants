@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForChairAndStoolsIndonesian = () => {
   return (
     <div className="relative w-full">
@@ -42,18 +48,17 @@ export default BISCertificateForChairAndStoolsIndonesian;
 
 const MetaTags = () => {
   const title =
-    "Sertifikat BIS untuk Kursi & Bangku | IS 17632:2022 Lisensi BIS";
+    "Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum | IS 17632:2022";
   const ogTitle =
-    "Sertifikasi BIS untuk Kursi & Bangku – Panduan IS 17632:2022";
-  const twitterTitle = "Lisensi BIS untuk Kursi & Bangku | IS 17632:2022";
+    "Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum | IS 17632:2022";
+  const twitterTitle =
+    "Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum | IS 17632:2022";
   const metaDescription =
-    "Dapatkan Sertifikat BIS untuk Kursi & Bangku di bawah IS 17632:2022. Proses, dokumen, pengujian, biaya & timeline untuk Sertifikasi BIS di India.";
-  const ogDescription =
-    "Panduan lengkap Sertifikasi BIS untuk Kursi & Bangku sesuai IS 17632:2022. Ketahui proses, biaya, dokumen, pengujian & manfaat lisensi BIS.";
-  const twitterDescription =
-    "Ajukan Sertifikat BIS untuk Kursi & Bangku di bawah IS 17632:2022. Pelajari proses BIS, dokumen, pengujian, biaya & timeline di India.";
+    "Pelajari semua tentang Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum di bawah IS 17632:2022. Pahami persyaratan Tanda ISI, pengujian, proses sertifikasi, dokumen, manfaat, dan FAQ";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "Sertifikat BIS untuk Kursi & Bangku, Lisensi BIS untuk Kursi & Bangku, IS 17632:2022, Sertifikasi BIS untuk Kursi & Bangku";
+    "Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum, IS 17632:2022, Tanda ISI Kursi dan Bangku, Lisensi BIS Kursi Bangku, Sertifikasi BIS Furnitur";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/kursi-dan-bangku-is-17632";
   const websiteName = "Sun Certifications India";
@@ -180,7 +185,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikat BIS untuk Kursi & Bangku – IS 17632:2022
+                    Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum (IS
+                    17632:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -211,555 +217,549 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikat BIS untuk Kursi dan Bangku Tujuan Umum – Panduan Lengkap
-          untuk IS 17632:2022
+          Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum (IS 17632:2022) –
+          Panduan Lengkap Sertifikasi Tanda ISI
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="Lisensi BIS untuk Kursi & Bangku"
-            alt="Sertifikat BIS untuk Kursi & Bangku - Sertifikasi BIS IS 17632:2022"
+            title="Lisensi BIS untuk Kursi dan Bangku Tujuan Umum"
+            alt="Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum - Panduan Tanda ISI IS 17632:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikat BIS untuk Kursi dan Bangku Tujuan Umum adalah persyaratan
-          wajib di bawah Standar India IS 17632:2022. Standar ini menetapkan
-          persyaratan keselamatan, daya tahan, dan kinerja untuk kursi dan
-          bangku yang digunakan di rumah, kantor, area komersial, lembaga
-          pendidikan, kafetaria, restoran, hotel, dan ruang publik.
+          Kursi dan bangku tujuan umum termasuk di antara produk furnitur yang
+          paling umum digunakan di rumah, kantor, lembaga pendidikan, fasilitas
+          kesehatan, toko ritel, ruang publik, dan lingkungan komersial. Karena
+          produk tempat duduk ini digunakan secara rutin dan dalam jangka waktu
+          lama, produk tersebut harus memenuhi persyaratan kualitas, keselamatan,
+          kekuatan, dan daya tahan tertentu untuk memastikan kinerja yang andal.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Kursi dan bangku termasuk di antara item furnitur yang paling banyak
-          digunakan dan terus-menerus terkena beban, gerakan, dan stres
-          berulang. Kursi atau bangku yang strukturnya lemah dapat runtuh
-          tiba-tiba, menyebabkan cedera. Untuk mencegah bahaya tersebut dan
-          memastikan keselamatan konsumen, Bureau of Indian Standards (BIS)
-          mewajibkan setiap produsen dan importir untuk memperoleh Sertifikasi
-          BIS untuk Kursi dan Bangku sebelum menjualnya di India.
+          Dengan meningkatnya penekanan pada kualitas produk dan keselamatan
+          konsumen, kepatuhan terhadap Standar India telah menjadi persyaratan
+          penting bagi produsen dan importir furnitur. Sertifikasi BIS untuk
+          Kursi dan Bangku Tujuan Umum di bawah IS 17632:2022 membantu memastikan
+          bahwa produk memenuhi persyaratan kinerja dan keselamatan yang
+          ditetapkan sebelum dipasarkan di pasar India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Halaman ini menyediakan panduan lengkap untuk Sertifikasi BIS untuk
-          kursi dan bangku di bawah IS 17632:2022, termasuk proses sertifikasi,
-          dokumen yang diperlukan, persyaratan pengujian, biaya, tantangan,
-          sanksi, dan manfaat.
+          Sertifikasi melalui Bureau of Indian Standards (BIS) memungkinkan
+          produsen menggunakan Tanda ISI pada produk yang memenuhi syarat. Tanda
+          ISI berfungsi sebagai jaminan bahwa produk sesuai dengan standar
+          kualitas India yang diakui dan telah melalui proses evaluasi yang
+          diperlukan.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Seiring industri furnitur terus berkembang dan lembaga pengadaan
+          semakin memilih produk bersertifikat, Sertifikasi BIS telah menjadi
+          persyaratan kepatuhan dan akses pasar yang penting bagi produsen.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS?
+          Sorotan Utama Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS adalah sistem kepatuhan produk yang diatur oleh Bureau
-          of Indian Standards, otoritas standar nasional India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Arti Sertifikat BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Sertifikat BIS memastikan bahwa produk:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Memenuhi standar keselamatan dan kualitas India</li>
-          <li>Telah lulus pengujian laboratorium yang disetujui BIS</li>
-          <li>Telah menjalani inspeksi pabrik</li>
-          <li>
-            Menyelamatkan konsumen dari produk yang tidak aman atau di bawah
-            standar
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Produk yang disertifikasi menampilkan Tanda ISI, menunjukkan kepatuhan
-          terhadap Standar India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Standar yang Berlaku – IS 17632:2022 untuk Kursi & Bangku
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Standar BIS untuk kursi dan bangku adalah:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – Kursi dan Bangku Tujuan Umum:
-          Persyaratan Keselamatan
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Standar ini mencakup semua kursi dan bangku non-spesialis yang
-          digunakan untuk keperluan tempat duduk di rumah, kantor, lingkungan
-          komersial, tempat umum, dan pengaturan institusional.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Produk yang Dicakup di Bawah IS 17632:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kursi tujuan umum</li>
-          <li>Kursi makan</li>
-          <li>Kursi pengunjung kantor</li>
-          <li>Kursi belajar</li>
-          <li>Kursi kafetaria</li>
-          <li>Kursi restoran</li>
-          <li>Kursi ruang rapat</li>
-          <li>Kursi area tunggu</li>
-          <li>Kursi kayu</li>
-          <li>Kursi logam</li>
-          <li>Kursi plastik (non-spesialis)</li>
-          <li>Bangku tujuan umum</li>
-          <li>Bangku bar</li>
-          <li>Bangku makan</li>
-          <li>Bangku tangga (dalam kriteria yang ditentukan)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Parameter Keselamatan & Kinerja Utama
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 mengevaluasi:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kekuatan struktural</li>
-          <li>Stabilitas</li>
-          <li>Daya tahan di bawah penggunaan berulang</li>
-          <li>Kekuatan tempat duduk</li>
-          <li>Kinerja sandaran</li>
-          <li>Ketahanan benturan kaki</li>
-          <li>Kekuatan sambungan</li>
-          <li>Kualitas finishing permukaan</li>
-          <li>Keselamatan tepi dan sudut</li>
-          <li>Kualitas material</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Semua kursi dan bangku yang dijual di India harus mematuhi parameter
-          ini dan memperoleh Lisensi BIS untuk Kursi dan Bangku.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Mengapa Sertifikasi BIS Wajib untuk Kursi & Bangku
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Kursi dan bangku menahan berat manusia dan digunakan secara sering di
-          semua lingkungan. Kegagalan struktural dapat menyebabkan:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kursi yang runtuh</li>
-          <li>Patahnya kaki</li>
-          <li>Retaknya tempat duduk</li>
-          <li>Kegagalan sandaran</li>
-          <li>Cedera akibat tepi tajam</li>
-          <li>Ketidakstabilan yang menyebabkan jatuh</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Manfaat Sertifikasi BIS
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Memastikan produk tempat duduk yang aman</li>
-          <li>Mencegah kecelakaan dan cedera</li>
-          <li>Meningkatkan daya tahan produk</li>
-          <li>Mencegah impor di bawah standar</li>
-          <li>Membangun kualitas pasar yang seragam</li>
-          <li>Meningkatkan kepercayaan pelanggan</li>
-          <li>Wajib menurut hukum India (BIS QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tanpa Sertifikasi BIS, produsen tidak dapat secara hukum menjual kursi
-          atau bangku di India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Proses Sertifikasi BIS untuk Kursi dan Bangku (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Proses BIS mengikuti Skema Sertifikasi Tanda ISI, melibatkan
-          pengujian, inspeksi, dan verifikasi aplikasi.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 1 – Identifikasi Tipe Produk & Standar
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Konfirmasi bahwa kursi/bangku termasuk di bawah IS 17632:2022.
-          Identifikasi varian desain dan material yang digunakan.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 2 – Ajukan Aplikasi BIS Online
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Aplikasi diajukan melalui Portal Online BIS Manak, memerlukan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Detail produsen</li>
-          <li>Informasi pabrik</li>
-          <li>Spesifikasi produk</li>
-          <li>Detail merek/merek dagang</li>
-          <li>Alur kerja proses manufaktur</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 3 – Bayar Biaya Sertifikasi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Biaya meliputi:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Biaya aplikasi</li>
-          <li>Biaya pemrosesan</li>
-          <li>Biaya pengujian sampel</li>
-          <li>Biaya inspeksi pabrik</li>
-          <li>Biaya penandaan</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 4 – Pengujian Produk sesuai IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Pengujian wajib dilakukan di laboratorium yang diakui BIS.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tes Meliputi:
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Uji Stabilitas</li>
-          <li>Uji Kekuatan untuk Tempat Duduk</li>
-          <li>Uji Daya Tahan Sandaran</li>
-          <li>Uji Beban Kaki Depan/Samping/Belakang</li>
-          <li>Uji Dampak Tempat Duduk</li>
-          <li>Uji Jatuh</li>
-          <li>Uji Kelelahan</li>
-          <li>Uji Finishing Permukaan</li>
-          <li>Uji Tepi Tajam</li>
-          <li>Daya tahan struktural di bawah siklus berulang</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Hasil tes harus menunjukkan kepatuhan penuh dengan IS 17632:2022.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 5 – Inspeksi Pabrik oleh BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Petugas BIS mengunjungi pabrik untuk mengevaluasi:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Proses manufaktur</li>
-          <li>Inspeksi bahan baku</li>
-          <li>Prosedur kontrol kualitas</li>
-          <li>Kemampuan pengujian</li>
-          <li>Kalibrasi peralatan</li>
-          <li>Volume produksi</li>
-          <li>Kepatuhan dengan Skema Pengujian & Inspeksi BIS (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 6 – Pemberian Lisensi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Jika pengujian dan inspeksi berhasil, BIS mengeluarkan:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sertifikat BIS (Lisensi Tanda ISI)</li>
-          <li>Nomor CML</li>
-          <li>Persetujuan untuk menempelkan Tanda ISI pada kursi dan bangku</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Langkah 7 – Kewajiban Pasca-Lisensi
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Produsen harus:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Menggunakan Tanda ISI sesuai persyaratan pelabelan BIS</li>
-          <li>Mempertahankan catatan kontrol kualitas</li>
-          <li>Menjalani inspeksi pengawasan BIS secara teratur</li>
-          <li>Memperpanjang lisensi setiap 1–2 tahun</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Ruang Lingkup Lisensi BIS untuk Kursi & Bangku
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Standar ini mencakup persyaratan untuk kursi dan bangku tujuan umum.
-          Standar ini berlaku untuk kursi dan bangku tujuan umum yang sepenuhnya
-          diproduksi/dibuat. Ini juga berlaku untuk unit siap perakitan; dalam
-          hal ini persyaratan standar ini akan berlaku untuk unit yang dirakit.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Dokumen yang Diperlukan untuk Sertifikasi BIS Kursi & Bangku
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dokumen Produsen
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Lisensi/registrasi pabrik</li>
-          <li>Diagram alir proses manufaktur</li>
-          <li>Daftar mesin</li>
-          <li>Daftar peralatan pengujian internal</li>
-          <li>Sertifikat kalibrasi</li>
-          <li>Layout pabrik & denah lantai</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dokumen Teknis
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Gambar kursi/bangku</li>
-          <li>Dimensi & spesifikasi</li>
-          <li>Daftar material</li>
-          <li>Deskripsi fitur keselamatan</li>
-          <li>Laporan uji kualitas internal</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dokumen Hukum
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Bukti identitas & alamat</li>
-          <li>Surat otorisasi merek</li>
-          <li>Sertifikat merek dagang (opsional)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Dokumen Aplikasi BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Formulir aplikasi</li>
-          <li>Formulir permintaan pengujian</li>
-          <li>Formulir deklarasi</li>
-          <li>Surat otorisasi</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Persyaratan Pengujian untuk Kursi & Bangku (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 mencakup pengujian mekanis, struktural, dan keselamatan
-          yang ekstensif.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Tes Wajib
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Klausul
+                  Rincian
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Persyaratan
+                  Detail
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Desain dan pengerjaan
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Overbalancing Depan dan Overbalancing Samping untuk Kursi
-                  tanpa Lengan
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Overbalancing Belakang
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Overbalancing Samping untuk Kursi dengan Lengan
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Bangku/ Poufs (Semua Arah)
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Uji Kekuatan
-                </TableCell>
-              </TableRow>
+              {[
+                ["Nama Produk", "Kursi dan Bangku Tujuan Umum"],
+                ["Standar India yang Berlaku", "IS 17632:2022"],
+                ["Jenis Sertifikasi", "Sertifikasi Produk BIS"],
+                ["Skema Sertifikasi", "Skema-I (Sertifikasi Tanda ISI)"],
+                ["Tanda yang Berlaku", "Tanda ISI"],
+                ["Otoritas Regulasi", "Bureau of Indian Standards"],
+                ["Kementerian yang Berlaku", "Kementerian Perdagangan dan Industri"],
+                [
+                  "Persyaratan Kepatuhan",
+                  "Wajib di bawah QCO Furnitur yang berlaku (Quality Control Order)",
+                ],
+                ["Kategori Produk", "Furnitur"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Skema Sertifikasi" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Skema-I (Sertifikasi Tanda ISI)
+                      </a>
+                    ) : particular === "Persyaratan Kepatuhan" ? (
+                      <>
+                        Wajib di bawah{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-chairs-and-stools"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>QCO Furnitur (Quality Control Order)</strong>
+                        </a>{" "}
+                        yang berlaku
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Tes-tes ini memastikan penggunaan harian yang aman di bawah kondisi
-          dunia nyata.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Apa itu Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum adalah proses
+          penilaian kesesuaian yang dilakukan di bawah Skema Sertifikasi Produk
+          BIS.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tujuan sertifikasi adalah memverifikasi bahwa produk mematuhi
+          persyaratan yang ditetapkan dalam IS 17632:2022. Setelah sertifikasi
+          diberikan, produsen diizinkan menggunakan Tanda ISI pada produk mereka.
+        </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tantangan Umum & Cara Menghindarinya
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Proses sertifikasi mengevaluasi berbagai aspek kinerja produk,
+          termasuk:
+        </p>
 
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Kursi gagal dalam uji stabilitas</strong>
-            <br />
-            Terjadi karena distribusi berat yang tidak tepat.
-            <br />
-            Perbaikan: Tingkatkan desain kaki, perluas area dasar.
-          </li>
-          <li>
-            <strong>Sambungan lemah menyebabkan kegagalan tes</strong>
-            <br />
-            Perbaikan: Gunakan material yang diperkuat & konektor yang lebih
-            baik.
-          </li>
-          <li>
-            <strong>Peralatan pengujian internal yang tidak memadai</strong>
-            <br />
-            Perbaikan: Pasang instrumen yang sesuai BIS yang diperlukan.
-          </li>
-          <li>
-            <strong>Ketidakkonsistenan dokumentasi</strong>
-            <br />
-            Perbaikan: Siapkan dokumen secara sistematis sebelum mengajukan.
-          </li>
-          <li>
-            <strong>Varian produk tidak dipetakan dengan benar</strong>
-            <br />
-            Perbaikan: Kelompokkan produk berdasarkan struktur & parameter tes.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Manfaat Sertifikasi BIS untuk Kursi & Bangku
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Izin legal untuk menjual di India</li>
-          <li>Peningkatan keselamatan produk</li>
-          <li>Peningkatan kepercayaan pelanggan</li>
-          <li>Risiko tanggung jawab produk yang lebih rendah</li>
-          <li>Diperlukan untuk daftar e-commerce</li>
-          <li>Penting untuk tender pemerintah</li>
-          <li>Kredibilitas merek yang lebih tinggi</li>
-          <li>Keunggulan kompetitif</li>
+        <ul className={LIST_CLASS}>
+          <li>Kekuatan</li>
+          <li>Stabilitas</li>
+          <li>Daya tahan</li>
+          <li>Kinerja struktural</li>
+          <li>Persyaratan keselamatan</li>
+          <li>Kualitas material</li>
+          <li>Pengerjaan</li>
         </ul>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sertifikasi membantu memastikan bahwa produk tempat duduk yang
+          disuplai di pasar India memenuhi tolok ukur kualitas dan keselamatan
+          yang mapan.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Sanksi untuk Ketidakpatuhan
+          Gambaran Umum IS 17632:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022 adalah Standar India yang menetapkan persyaratan untuk
+          Kursi dan Bangku Tujuan Umum.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Standar ini menetapkan persyaratan terkait keselamatan, kekuatan, daya
+          tahan, stabilitas, dan kinerja keseluruhan furnitur tempat duduk yang
+          dimaksudkan untuk penggunaan umum.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Standar ini berlaku untuk:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Kursi dan bangku yang diproduksi sepenuhnya</li>
+          <li>Kursi dan bangku yang difabrikasi</li>
+          <li>Produk siap rakit setelah perakitan</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tujuan standar ini adalah memastikan bahwa produk furnitur memberikan
+          kinerja yang aman, andal, dan tahan lama sepanjang masa layanan yang
+          dimaksudkan.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Persyaratan Utama di Bawah IS 17632:2022
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Kekuatan</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Kursi dan bangku tujuan umum harus memiliki kekuatan struktural yang
+          memadai untuk menahan kondisi beban yang diharapkan selama penggunaan
+          normal.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Stabilitas</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Furnitur harus tetap stabil selama penggunaan yang dimaksudkan dan
+          tidak boleh menimbulkan risiko terbalik yang tidak perlu.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Daya Tahan</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produk harus mampu mempertahankan integritas struktural dan kinerjanya
+          selama siklus penggunaan berulang.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Keselamatan</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Standar ini mencakup persyaratan terkait keselamatan yang dimaksudkan
+          untuk meminimalkan risiko yang terkait dengan penggunaan furnitur.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Kualitas Material dan Pengerjaan</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Kualitas material, praktik manufaktur, metode perakitan, sambungan, dan
+          finishing berkontribusi signifikan terhadap kepatuhan standar.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Pertimbangan Ergonomis</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Standar ini menggabungkan pertimbangan terkait kinerja yang
+          berkontribusi pada kenyamanan pengguna dan fungsionalitas praktis.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Produk yang Tercakup di Bawah IS 17632:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Menjual kursi atau bangku tanpa sertifikasi BIS dapat menyebabkan:
+          Standar ini umumnya berlaku untuk:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Denda moneter yang berat</li>
-          <li>Penarikan/penyitaan produk</li>
-          <li>Pembatalan lisensi pabrik</li>
-          <li>Penuntutan pidana</li>
-          <li>Pembatasan impor</li>
-          <li>Daftar hitam pasar</li>
+        <ul className={LIST_CLASS}>
+          <li>Kursi tujuan umum</li>
+          <li>Bangku tujuan umum</li>
+          <li>Furnitur tempat duduk tetap yang dimaksudkan untuk penggunaan umum</li>
+          <li>Produk tempat duduk siap rakit setelah perakitan</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sanksi diberlakukan di bawah Undang-Undang BIS, 2016.
+          Produsen harus meninjau ruang lingkup standar dengan cermat untuk
+          menentukan keterapannya pada produk mereka.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Periksa juga Produk Furnitur yang Tercakup di Bawah Sertifikasi BIS
+            Wajib —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Sertifikasi BIS untuk furnitur</strong>
+          </a>
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Siapa yang Membutuhkan Sertifikasi BIS untuk Kursi & Bangku?
+          Apakah Sertifikasi BIS Wajib untuk Kursi dan Bangku Tujuan Umum?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">Wajib untuk:</p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ya. Produk furnitur yang tercakup di bawah Quality Control Order (QCO)
+          Furnitur yang berlaku diwajibkan mematuhi Standar India yang relevan
+          dan memperoleh Sertifikasi BIS sebelum diproduksi, diimpor, dijual,
+          didistribusikan, atau disuplai di pasar India.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produsen India</li>
-          <li>Produsen asing yang mengekspor ke India</li>
-          <li>Importir</li>
-          <li>Pemilik merek/pedagang</li>
-          <li>Pemasok OEM/ODM</li>
-          <li>Rantai ritel</li>
-          <li>Penjual online</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen yang tercakup di bawah kerangka regulasi yang berlaku harus
+          memperoleh lisensi BIS dan mematuhi persyaratan penandaan yang
+          ditetapkan oleh BIS.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Persyaratan Pengujian untuk Sertifikasi BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sebelum sertifikasi diberikan, sampel produk harus dievaluasi melalui
+          pengujian yang dilakukan di laboratorium yang diakui.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Pengujian umumnya berfokus pada parameter berikut:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Evaluasi Kinerja Struktural —</strong> Menentukan apakah
+            kursi atau bangku dapat menahan kondisi penggunaan normal tanpa
+            kegagalan.
+          </li>
+          <li>
+            <strong>Pengujian Stabilitas —</strong> Menilai apakah furnitur
+            tetap stabil selama penggunaan yang dimaksudkan dan menahan
+            terbalik.
+          </li>
+          <li>
+            <strong>Penilaian Kekuatan —</strong> Mengevaluasi kapasitas
+            menahan beban dan integritas struktural rangka, sambungan, dan
+            penopang.
+          </li>
+          <li>
+            <strong>Evaluasi Daya Tahan —</strong> Memeriksa retensi kinerja
+            setelah siklus penggunaan berulang sepanjang masa layanan produk.
+          </li>
+          <li>
+            <strong>Penilaian Keselamatan —</strong> Mengidentifikasi potensi
+            bahaya dan memverifikasi kepatuhan terhadap persyaratan keselamatan
+            yang ditetapkan.
+          </li>
+          <li>
+            <strong>Inspeksi Pengerjaan —</strong> Meninjau kualitas
+            konstruksi, finishing, integritas perakitan, dan standar pengerjaan
+            keseluruhan.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Persyaratan Penandaan Produk
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Produk yang disertifikasi di bawah IS 17632:2022 umumnya diwajibkan
+          membawa informasi identifikasi seperti:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Nama atau merek dagang produsen</li>
+          <li>Identifikasi model atau desain</li>
+          <li>Nomor batch atau lot</li>
+          <li>Tanggal produksi</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap pabrik memerlukan Lisensi BIS terpisah.
+          Tanda ISI hanya boleh diterapkan setelah memperoleh lisensi BIS yang
+          valid.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Proses Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 1: Evaluasi Ruang Lingkup Produk
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Langkah pertama melibatkan penentuan apakah produk termasuk dalam
+          ruang lingkup IS 17632:2022 dan QCO Furnitur yang berlaku.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Tinjau jenis kursi atau bangku, penggunaan yang dimaksudkan, material,
+          dan konstruksi sebelum memulai proses sertifikasi.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 2: Persiapan Dokumentasi
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen menyiapkan dokumentasi teknis dan kepatuhan yang diperlukan
+          untuk sertifikasi, termasuk catatan perusahaan, detail pabrik,
+          spesifikasi produk, dan prosedur kontrol kualitas.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Dokumentasi yang lengkap dan akurat membantu menghindari penundaan
+          yang tidak perlu selama tinjauan BIS.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Langkah 3: Pengujian Produk</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sampel representatif diuji di laboratorium yang diakui BIS untuk
+          memverifikasi kepatuhan terhadap persyaratan IS 17632:2022.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Laporan uji laboratorium adalah dokumen teknis utama yang mendukung
+          aplikasi sertifikasi.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Langkah 4: Pengajuan Aplikasi BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Aplikasi sertifikasi diajukan beserta dokumentasi pendukung, laporan
+          uji, dan informasi manufaktur.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          BIS meninjau aplikasi untuk kelengkapan dan kepatuhan teknis sebelum
+          melanjutkan lebih jauh.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Langkah 5: Inspeksi Pabrik</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS dapat mengevaluasi fasilitas manufaktur, sistem produksi, dan
+          proses kontrol kualitas untuk memverifikasi kemampuan memproduksi
+          produk yang memenuhi syarat secara konsisten.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Penilaian ini biasanya mencakup infrastruktur produksi, sistem QC,
+          kontrol bahan baku, dan ketertelusuran produk.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Langkah 6: Tinjauan Teknis</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Aplikasi, laporan uji, dan temuan inspeksi ditinjau oleh BIS sebelum
+          keputusan sertifikasi dibuat.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Setiap observasi atau kekurangan yang muncul selama tinjauan harus
+          ditangani oleh pelamar.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Langkah 7: Pemberian Lisensi</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Setelah kepatuhan memuaskan, BIS memberikan lisensi dan mengotorisasi
+          penggunaan Tanda ISI pada kursi dan bangku tujuan umum yang
+          disertifikasi.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen harus terus mematuhi persyaratan BIS sepanjang periode
+          lisensi.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Manfaat Sertifikasi BIS
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Kepatuhan terhadap Regulasi India —</strong> Memenuhi
+            persyaratan kualitas dan keselamatan wajib di bawah QCO Furnitur
+            yang berlaku.
+          </li>
+          <li>
+            <strong>Akses Pasar Legal —</strong> Menyediakan kursi dan bangku
+            bersertifikat di India sesuai dengan persyaratan regulasi yang
+            berlaku.
+          </li>
+          <li>
+            <strong>Kredibilitas Produk yang Meningkat —</strong> Tanda ISI
+            menunjukkan kesesuaian dengan standar India yang diakui.
+          </li>
+          <li>
+            <strong>Kepercayaan Pelanggan yang Meningkat —</strong> Konsumen
+            dan pembeli institusional lebih memilih produk yang dievaluasi
+            terhadap tolok ukur yang mapan.
+          </li>
+          <li>
+            <strong>Keunggulan Kompetitif —</strong> Penerimaan yang lebih
+            besar dalam proses pengadaan komersial dan pemerintah.
+          </li>
+          <li>
+            <strong>Reputasi Merek yang Lebih Baik —</strong> Menunjukkan
+            komitmen terhadap kualitas produk, keselamatan, dan keandalan jangka
+            panjang.
+          </li>
+          <li>
+            <strong>Dukungan untuk UMKM —</strong> Membantu produsen kecil dan
+            menengah memperkuat kehadiran pasar dan membangun kepercayaan
+            pelanggan.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tantangan Umum Selama Sertifikasi
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Kegagalan Pengujian Produk —</strong> Kekurangan desain
+            atau manufaktur dapat mengakibatkan ketidakpatuhan selama evaluasi
+            laboratorium.
+          </li>
+          <li>
+            <strong>Masalah Dokumentasi —</strong> Catatan yang tidak lengkap
+            atau tidak konsisten sering menyebabkan penundaan sertifikasi.
+          </li>
+          <li>
+            <strong>Kesenjangan Kepatuhan Manufaktur —</strong> Sistem kontrol
+            kualitas mungkin perlu ditingkatkan sebelum sertifikasi dapat
+            diberikan.
+          </li>
+          <li>
+            <strong>Kompleksitas Regulasi —</strong> Mengelola pengujian,
+            inspeksi, dan prosedur sertifikasi dapat menjadi tantangan tanpa
+            bimbingan ahli.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Mengapa Memilih Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India membantu produsen, importir, eksportir, dan
+          bisnis dengan persyaratan kepatuhan regulasi di seluruh India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Layanan kami meliputi:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Penilaian keterapan produk</li>
+          <li>Konsultasi sertifikasi BIS</li>
+          <li>Dukungan dokumentasi</li>
+          <li>Koordinasi pengujian laboratorium</li>
+          <li>Persiapan inspeksi pabrik</li>
+          <li>Manajemen aplikasi</li>
+          <li>Bantuan kepatuhan regulasi</li>
+          <li>Dukungan pasca-sertifikasi</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tujuan kami adalah membantu klien menavigasi persyaratan sertifikasi
+          secara efisien dan mencapai kepatuhan dengan penundaan minimal.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -767,113 +767,138 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikat BIS untuk Kursi dan Bangku Tujuan Umum di bawah IS
-          17632:2022 wajib untuk memastikan keselamatan produk, stabilitas
-          struktural, dan daya tahan. Sertifikasi BIS tidak hanya membantu
-          produsen mempertahankan standar kualitas tinggi tetapi juga
-          memungkinkan akses pasar legal dan meningkatkan kepercayaan konsumen.
+          Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum di bawah IS
+          17632:2022 memainkan peran penting dalam memastikan kualitas produk,
+          keselamatan, kekuatan, stabilitas, dan daya tahan. Sertifikasi
+          membantu produsen menunjukkan kepatuhan terhadap Standar India
+          sambil memperkuat kepercayaan pelanggan dan mendukung akses pasar.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Dengan bantuan profesional, proses sertifikasi—dari pengujian hingga
-          inspeksi dan persetujuan—menjadi lancar, dapat diprediksi, dan
-          sepenuhnya patuh.
+          Seiring permintaan produk furnitur terjamin kualitasnya terus
+          meningkat, Sertifikasi BIS dan Tanda ISI memberikan jaminan berharga
+          bagi konsumen, institusi, dan lembaga pengadaan. Produsen yang
+          berinvestasi dalam kepatuhan tidak hanya memenuhi persyaratan regulasi
+          tetapi juga meningkatkan daya saing dan reputasi pasar jangka panjang
+          mereka.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Jika Anda berencana memperoleh Sertifikasi BIS untuk Kursi dan Bangku
+          Tujuan Umum di bawah IS 17632:2022, Sun Certifications India dapat
+          memberikan panduan ahli dan dukungan kepatuhan end-to-end sepanjang
+          proses sertifikasi.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQ – Sertifikat BIS untuk Kursi dan Bangku
+          FAQ – Sertifikasi BIS untuk Kursi dan Bangku Tujuan Umum (IS
+          17632:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Apakah Sertifikasi BIS wajib untuk kursi dan bangku?
-              </strong>
+              <strong>1. Apa itu IS 17632:2022?</strong>
               <br />
-              Ya, sesuai IS 17632:2022, semua kursi dan bangku tujuan umum harus
-              disertifikasi BIS sebelum dijual di India.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Tes apa yang diperlukan?</strong>
-              <br />
-              Tes stabilitas, kekuatan, daya tahan, dampak, kelelahan, dan
-              keselamatan material.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Berapa lama sertifikasi BIS berlangsung?</strong>
-              <br />
-              Biasanya 30–45 hari.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. Berapa biaya sertifikasi?</strong>
-              <br />
-              Sekitar ₹60.000–₹1,30.000 tergantung pada pengujian dan inspeksi.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Bisakah produsen asing mengajukan?</strong>
-              <br />
-              Ya, di bawah skema FMCS.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Apakah penandaan ISI wajib?</strong>
-              <br />
-              Ya, setelah lisensi BIS diberikan.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Mengapa kursi gagal dalam pengujian BIS?</strong>
-              <br />
-              Penyebab umum termasuk kaki lemah, kekuatan sambungan yang buruk,
-              dan ketidakstabilan.
+              IS 17632:2022 adalah Standar India yang menetapkan persyaratan
+              untuk Kursi dan Bangku Tujuan Umum.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. Bisakah beberapa model dicakup di bawah satu lisensi?
+                2. Apakah Sertifikasi BIS wajib untuk Kursi dan Bangku Tujuan
+                Umum?
               </strong>
               <br />
-              Hanya jika mereka memenuhi kriteria kesamaan dan kepatuhan
-              standar.
+              Produk yang tercakup di bawah Quality Control Order Furnitur yang
+              berlaku diwajibkan mematuhi persyaratan sertifikasi BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Apakah inspeksi pabrik diperlukan?</strong>
+              <strong>3. Apa itu Tanda ISI?</strong>
               <br />
-              Ya, ini wajib untuk sertifikasi tanda ISI.
+              Tanda ISI adalah tanda sertifikasi standar yang diterbitkan di
+              bawah Skema Sertifikasi Produk BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. Dokumen apa yang diperlukan?</strong>
+              <strong>4. Siapa yang dapat mengajukan Sertifikasi BIS?</strong>
               <br />
-              Lisensi pabrik, spesifikasi teknis, daftar mesin, rencana QC,
-              gambar produk, dll.
+              Baik produsen India maupun produsen asing dapat mengajukan
+              sertifikasi.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                5. Apakah Sertifikasi BIS memerlukan pengujian produk?
+              </strong>
+              <br />
+              Ya. Pengujian produk adalah komponen penting dari proses
+              sertifikasi.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                6. Apakah kursi siap rakit tercakup di bawah IS 17632:2022?
+              </strong>
+              <br />
+              Ya. Standar ini berlaku untuk produk siap rakit setelah perakitan.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                7. Produk apa yang dikecualikan dari ruang lingkup IS 17632:2022?
+              </strong>
+              <br />
+              Produk seperti kursi recliner, kursi goyang, kursi miring, sofa,
+              dan produk tempat duduk khusus tertentu umumnya dikecualikan.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                8. Apa manfaat memperoleh Sertifikasi BIS?
+              </strong>
+              <br />
+              Manfaatnya meliputi kepatuhan regulasi, kredibilitas produk yang
+              lebih baik, kepercayaan pelanggan yang meningkat, dan penerimaan
+              pasar yang lebih baik.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. Bisakah produsen asing memperoleh Sertifikasi BIS?
+              </strong>
+              <br />
+              Ya. Produsen asing dapat mengajukan melalui rute sertifikasi BIS
+              yang berlaku untuk produsen di luar negeri.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. Bagaimana Sun Certifications India dapat membantu?</strong>
+              <br />
+              Sun Certifications India menyediakan dukungan end-to-end untuk
+              sertifikasi BIS, termasuk dokumentasi, koordinasi pengujian,
+              manajemen aplikasi, dan bantuan kepatuhan.
             </p>
           </div>
         </div>
@@ -890,6 +915,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sumber Daya Terkait
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Sertifikasi ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Sertifikasi BIS untuk Produsen Asing
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadIndonesian />
 

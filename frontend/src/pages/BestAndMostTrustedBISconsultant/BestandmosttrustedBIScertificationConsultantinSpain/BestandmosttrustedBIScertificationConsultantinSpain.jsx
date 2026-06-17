@@ -324,7 +324,16 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           What Spanish manufacturers are now discovering — some mid-shipment, some
-          mid-contract — is that India&apos;s Bureau of Indian Standards (BIS)
+          mid-contract — is that India&apos;s{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS)
           mandatory certification regime is expanding rapidly. Products that
           entered India freely under earlier import conditions now require valid
           BIS certification before they can legally clear Indian customs. For

@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsFrench = () => {
   return (
     <div className="relative w-full">
@@ -149,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/lits-is-17635",
+          },
+          headline: "Certificat BIS pour lits",
+          description:
+            "La certification BIS pour les lits en Inde est une assurance qualité obligatoire, principalement selon IS 17635:2022, garantissant des normes de sécurité, de durabilité et de performance.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "Certificat BIS pour lits",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "La certification BIS pour les lits en Inde est une assurance qualité obligatoire, principalement selon IS 17635:2022, garantissant des normes de sécurité, de durabilité et de performance.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "La certification BIS est-elle obligatoire pour les lits en Inde ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Oui, selon IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Quelle est la validité du certificat BIS ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1 à 2 ans, renouvelable.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Les fabricants étrangers peuvent-ils postuler ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Oui, sous FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Le certificat BIS peut-il être demandé en ligne ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Oui.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "La marque ISI est-elle obligatoire sur les lits ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Oui.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Combien de temps dure le processus ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30 à 45 jours.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Les lits en bois et en métal sont-ils tous deux couverts ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Oui, s'ils sont conformes à IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "L'inspection de l'usine est-elle obligatoire ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Oui.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Les commerçants peuvent-ils demander le BIS ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Seulement les propriétaires de marque avec contrôle de fabrication.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -228,8 +373,8 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Le certificat BIS pour lits est une exigence de conformité obligatoire
-          en Inde pour les fabricants et importateurs de lits destinés à un
-          usage domestique et commercial. Selon la dernière norme indienne IS
+          en Inde pour les fabricants et importateurs de lits destinés à un usage
+          domestique et commercial. Selon la dernière norme indienne IS
           17635:2022 – Lits (Exigences de sécurité), tous les lits doivent
           répondre à des critères stricts de sécurité, de durabilité, de
           structure et de performance avant d&apos;être vendus sur le marché
@@ -242,8 +387,15 @@ const MainContentLeft = () => {
           hébergements PG et installations institutionnelles. Toute faiblesse
           structurelle, arêtes vives, défaillance des matériaux ou faible
           capacité de charge peut entraîner de graves blessures. Pour prévenir
-          de tels risques, le Bureau des normes indiennes (BIS) rend obligatoire
-          la certification BIS pour les lits.
+          de tels risques, le Bureau des normes indiennes (BIS) rend obligatoire{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            la certification BIS
+          </a>{" "}
+          pour les lits.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -257,119 +409,511 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Qu&apos;est-ce que la certification BIS ?
+          Points clés de la certification BIS pour les lits
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          La certification BIS est un système d&apos;évaluation de la conformité
-          introduit par le Bureau des normes indiennes, l&apos;autorité
-          nationale des normes de l&apos;Inde.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Particularités
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Détails
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Produit", "Lits"],
+                ["Norme indienne", "IS 17635:2022"],
+                ["Titre de la norme", "Lits – Spécification"],
+                ["Schéma de certification", "Certification Marque ISI BIS"],
+                [
+                  "Autorité réglementaire",
+                  "Bureau des normes indiennes (BIS)",
+                ],
+                ["Marque applicable", "Marque ISI"],
+                [
+                  "Demandeurs admissibles",
+                  "Fabricants indiens et fabricants étrangers",
+                ],
+                [
+                  "Exigence de conformité",
+                  "Obligatoire en vertu du QCO Meubles applicable (Quality Control Order)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Schéma de certification" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Certification Marque ISI BIS
+                      </a>
+                    ) : particular === "Exigence de conformité" ? (
+                      <>
+                        Obligatoire en vertu du{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            QCO Meubles applicable (Quality Control Order)
+                          </strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Qu&apos;est-ce qu&apos;un certificat BIS ?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Un certificat BIS confirme qu&apos;un produit est conforme aux normes
-          indiennes et est sûr, fiable et adapté à l&apos;usage. Les produits
-          certifiés portent la marque de certification BIS, communément appelée
-          la marque ISI.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Signification du certificat BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Il signifie que le produit a réussi avec succès :
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Les tests en laboratoire</li>
-          <li>L&apos;inspection de l&apos;usine</li>
-          <li>La vérification du contrôle qualité</li>
-          <li>L&apos;évaluation de la conformité à la sécurité</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Le logo BIS sur les lits assure aux clients que le produit répond aux
-          normes de qualité et de sécurité approuvées par le gouvernement.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Norme BIS applicable aux lits – IS 17635:2022
+          Qu&apos;est-ce que la certification BIS pour les lits ?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          La norme indienne applicable aux lits est :
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – Lits : Exigences de sécurité
+          La certification BIS pour les lits est un processus d&apos;évaluation
+          de la conformité par lequel les fabricants démontrent que leurs
+          produits respectent les exigences spécifiées dans IS 17635:2022. Une
+          fois la conformité vérifiée par des tests, une évaluation d&apos;usine
+          et un examen réglementaire, le fabricant reçoit une licence BIS et
+          peut apposer la marque ISI sur les produits certifiés.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Cette norme définit les exigences essentielles de sécurité et de
-          performance pour les lits utilisés dans les environnements
-          résidentiels et commerciaux.
+          Le cadre de certification vise à garantir que les lits disponibles sur
+          le marché indien satisfont aux exigences établies relatives à :
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022 couvre
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Résistance structurelle</li>
-          <li>Capacité de charge</li>
-          <li>Stabilité et durabilité</li>
-          <li>Qualité des matériaux</li>
-          <li>Finition des bords et surfaces</li>
-          <li>Sécurité contre l&apos;effondrement</li>
-          <li>Absence de risques de piégeage</li>
-          <li>Performance à long terme</li>
+        <ul className={LIST_CLASS}>
+          <li>La résistance structurelle</li>
+          <li>La stabilité</li>
+          <li>La durabilité</li>
+          <li>Les performances de surface</li>
+          <li>La sécurité lors d&apos;une utilisation normale</li>
+          <li>
+            Les performances dans des conditions d&apos;usage abusif prévisibles
+          </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tout lit fabriqué ou importé en Inde doit être conforme à IS
-          17635:2022 et obtenir un enregistrement BIS pour lits.
+          Ces exigences contribuent à établir une référence cohérente en matière
+          de qualité et de protection des consommateurs pour différents designs
+          de lits et matériaux de fabrication.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Pourquoi la certification BIS est obligatoire pour les lits
+          Pourquoi la certification BIS est importante pour les lits
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Les lits sont utilisés pendant de longues durées et supportent
-          continuellement le poids humain. Les lits mal conçus peuvent causer
-          des blessures, un effondrement ou des risques pour la santé à long
-          terme.
+          Les lits affectent directement la sécurité des utilisateurs car ils
+          sont conçus pour supporter des charges importantes sur de longues
+          périodes. Les produits mal conçus ou insuffisamment testés peuvent
+          connaître une défaillance structurelle, une instabilité, une
+          déformation ou une détérioration prématurée.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Raisons pour lesquelles la certification BIS pour lits est requise
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 répond à ces préoccupations en définissant des exigences
+          normalisées de performance et de sécurité que les fabricants doivent
+          satisfaire avant que leurs produits n&apos;entrent sur le marché. La
+          norme comprend des exigences relatives à la résistance, à la stabilité,
+          à la durabilité, à la finition et aux performances de surface.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Assure l&apos;intégrité structurelle</li>
-          <li>Prévient l&apos;effondrement et la rupture</li>
-          <li>Contrôle la qualité des matériaux</li>
-          <li>Élimine les arêtes vives et les finitions dangereuses</li>
-          <li>Protège les consommateurs</li>
-          <li>Assure une qualité nationale uniforme</li>
-          <li>Obligatoire selon la notification BIS</li>
-          <li>Requis pour la vente légale en Inde</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Pour les fabricants, la certification BIS offre plusieurs avantages :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>
+            Autorisation légale de vendre les produits couverts en Inde
+          </li>
+          <li>Démonstration de conformité aux normes indiennes</li>
+          <li>Meilleure acceptation sur le marché</li>
+          <li>Confiance accrue des consommateurs</li>
+          <li>Réduction du risque d&apos;action réglementaire</li>
+          <li>
+            Avantage concurrentiel dans les marchés institutionnels et
+            commerciaux
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Aperçu de IS 17635:2022 pour les lits
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Le gouvernement de l&apos;Inde a introduit des ordres de contrôle
+          qualité pour plusieurs produits de mobilier afin de garantir que les
+          produits mis sur le marché respectent les exigences prescrites en
+          matière de sécurité et de qualité.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Lorsque IS 17635:2022 est couvert par le QCO Meubles applicable, les
+          fabricants sont tenus d&apos;obtenir la certification BIS selon le
+          Schéma I et d&apos;utiliser la marque standard (Marque ISI) conformément
+          aux exigences de licence BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 est la norme indienne qui spécifie les exigences de
+          performance et de sécurité pour les lits destinés aux utilisateurs
+          adultes dans les environnements domestiques et non domestiques. La
+          norme établit des exigences visant à garantir que les lits restent
+          sûrs, fonctionnels et durables tout au long de leur durée de vie
+          prévue.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Objectif de IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 a été développée pour fournir une norme complète basée
+          sur la performance, applicable aux designs modernes de lits fabriqués
+          à l&apos;aide de divers matériaux et méthodes de construction. La
+          norme remplace l&apos;ancienne IS 7259 (Partie 1) : 1988, qui
+          concernait principalement les lits en bois.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La norme évalue les lits sans limiter la conformité à un matériau ou
+          un processus de fabrication particulier. Elle se concentre plutôt sur
+          la performance du produit fini dans des conditions d&apos;essai
+          prescrites. Cette approche permet une évaluation cohérente des lits en
+          bois, en métal, en bois reconstitué et d&apos;autres constructions.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Champ d&apos;application de IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Selon la norme, IS 17635:2022 couvre les exigences relatives à la
+          performance et à la sécurité des lits conçus pour les utilisateurs
+          adultes. La norme s&apos;applique aux produits destinés à une
+          utilisation dans des environnements domestiques et non domestiques.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norme s&apos;applique à :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Les lits entièrement fabriqués</li>
+          <li>Les lits assemblés sur site</li>
+          <li>Les lits prêts à assembler après montage</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sans licence BIS pour lits, la vente ou l&apos;importation de lits en
-          Inde est illégale.
+          Cela garantit que les produits fournis en forme montée ou en kit sont
+          évalués selon les mêmes critères de performance et de sécurité.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Objectifs de la norme</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Les principaux objectifs de IS 17635:2022 comprennent :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Assurer la sécurité des utilisateurs</li>
+          <li>Vérifier la résistance structurelle</li>
+          <li>Évaluer la stabilité du produit</li>
+          <li>Évaluer la durabilité en cas d&apos;utilisation répétée</li>
+          <li>Établir des exigences minimales de performance</li>
+          <li>
+            Promouvoir une qualité de produit cohérente entre les fabricants
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La norme comprend également des méthodologies d&apos;essai destinées à
+          évaluer les lits dans des conditions d&apos;utilisation normale et des
+          scénarios d&apos;usage abusif raisonnablement prévisibles.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Produits couverts par IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 s&apos;applique aux lits destinés aux utilisateurs
+          adultes dans les environnements domestiques et non domestiques. La
+          norme se concentre sur la performance, la sécurité, la résistance, la
+          stabilité et la durabilité du produit fini plutôt que de restreindre
+          la conformité à un matériau ou une méthode de fabrication spécifique.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norme s&apos;applique à :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Les lits entièrement fabriqués</li>
+          <li>Les lits assemblés sur site</li>
+          <li>Les lits prêts à assembler (RTA) après montage</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants fournissant des lits en condition knock-down doivent
+          s&apos;assurer que le produit assemblé respecte toutes les exigences
+          applicables de la norme.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>Remarque :</strong> Cette norme ne couvre pas les lits à eau,
+          les lits à air, les lits pliants, les lits superposés et les lits pour
+          personnes à besoins spéciaux, ni les lits à des fins de soins de santé
+          et médicales.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Consultez également les produits de mobilier couverts par la
+            certification BIS obligatoire —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Certification BIS pour le mobilier</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Exigences clés selon IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;objectif principal de IS 17635:2022 est de garantir que les lits
+          restent sûrs, stables, durables et adaptés à leur usage prévu dans des
+          conditions d&apos;utilisation normale. Pour atteindre cet objectif, la
+          norme établit plusieurs exigences clés de performance.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Exigences de stabilité</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les lits doivent démontrer une résistance adéquate au basculement et
+          à l&apos;instabilité lors d&apos;une utilisation normale. Les essais de
+          stabilité évaluent si le produit reste sécurisé lorsqu&apos;il est
+          soumis aux conditions de charge attendues et aux mouvements de
+          l&apos;utilisateur.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Un lit stable minimise le risque d&apos;accidents et améliore la
+          sécurité globale de l&apos;utilisateur.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Exigences de résistance</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Les essais de résistance évaluent la capacité de la structure du lit à
+          supporter des charges importantes sans défaillance structurelle.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Ces évaluations examinent généralement :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>L&apos;intégrité du cadre du lit</li>
+          <li>La résistance des joints</li>
+          <li>La capacité de charge</li>
+          <li>La résistance à la déformation excessive</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;objectif est de garantir que le produit peut supporter en toute
+          sécurité les utilisateurs prévus lors d&apos;une utilisation
+          quotidienne.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Exigences de durabilité</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Les essais de durabilité simulent une utilisation à long terme par des
+          cycles répétés de charge et de mouvement.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          L&apos;objectif est de déterminer si :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Les connexions structurelles restent sécurisées</li>
+          <li>Les composants continuent de fonctionner correctement</li>
+          <li>
+            Les performances du produit restent acceptables au fil du temps
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les exigences de durabilité contribuent à garantir que les lits
+          certifiés maintiennent leur fiabilité tout au long de leur durée de
+          vie prévue.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Exigences de performance de surface
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022 fait référence aux exigences de performance de surface
+          applicables aux finitions de mobilier.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Selon la construction et les matériaux utilisés, les surfaces peuvent
+          être évaluées pour leur résistance à :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Les dommages mécaniques</li>
+          <li>La chaleur humide</li>
+          <li>La chaleur sèche</li>
+          <li>Les taches</li>
+          <li>Les performances d&apos;adhésion</li>
+          <li>L&apos;abrasion et l&apos;usure</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ces exigences contribuent à préserver à la fois la fonctionnalité et
+          l&apos;apparence lors d&apos;une utilisation normale.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Exigences de conception et de finition
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norme contient également des exigences relatives à la qualité de
+          conception et à la finition.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Entre autres considérations :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>
+            Les arêtes accessibles ne doivent pas présenter de risques de
+            blessure.
+          </li>
+          <li>
+            Les arêtes vives et les saillies dangereuses doivent être évitées.
+          </li>
+          <li>
+            Les sections creuses doivent être correctement fermées lorsque
+            requis.
+          </li>
+          <li>
+            Les composants mobiles doivent être conçus pour réduire le risque
+            de blessure.
+          </li>
+          <li>
+            Le produit fini doit être conforme aux spécifications de conception
+            et de modèle déclarées.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Exigences de sécurité</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La sécurité est un principe fondamental tout au long de IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norme intègre des exigences visant à réduire les risques découlant
+          de :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>L&apos;effondrement structurel</li>
+          <li>Les arêtes vives</li>
+          <li>Les saillies dangereuses</li>
+          <li>La défaillance des composants</li>
+          <li>Les contraintes d&apos;utilisation répétée</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Le respect de ces exigences contribue à garantir que les lits
+          restent sûrs en cas d&apos;utilisation normale et dans des conditions
+          d&apos;usage abusif raisonnablement prévisibles.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          La certification BIS pour les lits est-elle obligatoire en Inde ?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Oui, pour les produits de mobilier couverts par l&apos;ordre de
+          contrôle qualité applicable, la certification BIS est obligatoire avant
+          que ces produits puissent être fabriqués, importés, vendus, distribués,
+          stockés ou mis en vente en Inde.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Les fabricants doivent vérifier le dernier statut de notification et
+          les dates de mise en œuvre publiées par le gouvernement de l&apos;Inde,
+          car les exigences réglementaires peuvent être mises à jour de temps à
+          autre.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Obligation d&apos;utiliser la marque ISI
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La marque ISI sert de preuve qu&apos;un produit est conforme à la norme
+          indienne pertinente et est fabriqué sous une licence BIS valide.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La marque ne peut être apposée qu&apos;après :
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Des tests de produit réussis</li>
+          <li>Une évaluation d&apos;usine</li>
+          <li>L&apos;approbation BIS de la demande</li>
+          <li>La délivrance de la licence</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;utilisation non autorisée de la marque ISI est interdite en
+          vertu de la loi BIS de 2016.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -378,7 +922,7 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Le processus de certification BIS en Inde suit une procédure
-          structurée dans le cadre du système de certification ISI.
+          structurée dans le cadre du Schéma de certification ISI.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
@@ -396,7 +940,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Soumettre la demande via le portail en ligne BIS Manak avec :
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Détails du fabricant</li>
           <li>Adresse de l&apos;usine</li>
           <li>Description du produit</li>
@@ -410,7 +954,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Payer les frais applicables, y compris :
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Frais de demande</li>
           <li>Frais de traitement</li>
           <li>Frais de test</li>
@@ -422,13 +966,12 @@ const MainContentLeft = () => {
           Étape 4 – Tests du produit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Les échantillons sont testés dans des laboratoires reconnus par le
-          BIS.
+          Les échantillons sont testés dans des laboratoires reconnus par le BIS.
         </p>
         <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
           Les tests comprennent
         </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Test de charge statique</li>
           <li>Test de durabilité</li>
           <li>Test de stabilité</li>
@@ -443,7 +986,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Un agent BIS inspecte :
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>L&apos;installation de fabrication</li>
           <li>Le contrôle des matières premières</li>
           <li>Les tests en cours de processus</li>
@@ -457,7 +1000,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Après conformité, le BIS délivre :
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Certificat BIS</li>
           <li>Autorisation de la marque ISI</li>
           <li>Numéro CML</li>
@@ -466,38 +1009,11 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Étape 7 – Conformité post-certification
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Inspections de surveillance</li>
           <li>Renouvellement tous les 1 à 2 ans</li>
           <li>Contrôle qualité continu</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Portée de la licence BIS pour lits
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Cette norme couvre les exigences relatives aux
-          performances et à la sécurité des lits pour adultes à usage domestique
-          et non domestique.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Cette norme s&apos;applique aux lits entièrement
-          fabriqués/construits. Elle s&apos;applique également aux unités prêtes
-          à assembler ; dans ce cas, les exigences de cette norme
-          s&apos;appliquent aux unités assemblées.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> Cette norme ne couvre pas les lits à eau, les
-          lits à air, les lits pliants, les lits superposés et les lits pour
-          personnes à besoins spéciaux, ni les lits à des fins de soins de santé
-          et médicales.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -513,7 +1029,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Documents du fabricant
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Enregistrement/licence de l&apos;usine</li>
           <li>Organigramme du processus de fabrication</li>
           <li>Liste des machines</li>
@@ -526,7 +1042,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Documents juridiques
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Preuve d&apos;adresse</li>
           <li>Preuve d&apos;identité</li>
           <li>Autorisation de la marque</li>
@@ -536,7 +1052,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Documents techniques
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Dessins du produit</li>
           <li>Spécifications</li>
           <li>Nomenclature des matériaux</li>
@@ -643,7 +1159,7 @@ const MainContentLeft = () => {
           Défis courants et comment les éviter
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>
             <strong>Sélection incorrecte de la norme</strong> – Vérifiez
             toujours la norme indienne correcte.
@@ -670,23 +1186,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Avantages de la certification BIS pour lits
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Vente légale en Inde</li>
-          <li>Confiance accrue des clients</li>
-          <li>Accès aux plateformes e-commerce</li>
-          <li>Admissibilité aux appels d&apos;offres gouvernementaux</li>
-          <li>Réduction de la responsabilité</li>
-          <li>Crédibilité de marque forte</li>
-          <li>Conformité aux normes indiennes</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Pénalités pour non-conformité
         </h2>
 
@@ -694,37 +1193,13 @@ const MainContentLeft = () => {
           La vente de lits sans certification BIS peut entraîner :
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Amendes lourdes</li>
           <li>Saisie des produits</li>
           <li>Fermeture de l&apos;entreprise</li>
           <li>Action en justice</li>
           <li>Interdiction du marché</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Qui a besoin du certificat BIS pour lits ?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Les entités suivantes doivent obtenir une licence BIS pour lits :
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabricants indiens</li>
-          <li>Fabricants étrangers</li>
-          <li>Importateurs</li>
-          <li>Marques de mobilier</li>
-          <li>Fournisseurs OEM/ODM</li>
-          <li>Vendeurs e-commerce</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Chaque unité de fabrication nécessite une licence BIS distincte.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -737,7 +1212,7 @@ const MainContentLeft = () => {
           Nous fournissons un conseil BIS de bout en bout, y compris :
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Cartographie des normes</li>
           <li>Soutien à la documentation</li>
           <li>Coordination des tests</li>
@@ -787,7 +1262,8 @@ const MainContentLeft = () => {
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>2. Quelle est la validité du certificat BIS ?</strong>
-              <br />1 à 2 ans, renouvelable.
+              <br />
+              1 à 2 ans, renouvelable.
             </p>
           </div>
 
@@ -871,6 +1347,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Ressources connexes
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Certificat Marque ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Licence BIS FMCS
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadFrench />
 

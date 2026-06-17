@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsDutch = () => {
   return (
     <div className="relative w-full">
@@ -149,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/bedden-is-17635",
+          },
+          headline: "BIS Certificaat voor Bedden",
+          description:
+            "BIS certificering voor bedden in India is een verplichte kwaliteitsgarantie, voornamelijk onder IS 17635:2022, die veiligheids-, duurzaamheids- en prestatienormen waarborgt.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS Certificaat voor Bedden",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "BIS certificering voor bedden in India is een verplichte kwaliteitsgarantie, voornamelijk onder IS 17635:2022, die veiligheids-, duurzaamheids- en prestatienormen waarborgt.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is BIS certificering verplicht voor bedden in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja, onder IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Wat is de geldigheid van het BIS Certificaat?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 jaar, vernieuwbaar.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kunnen buitenlandse fabrikanten aanvragen?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja, onder FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kan BIS Certificaat online worden aangevraagd?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is ISI Merk verplicht op bedden?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Hoe lang duurt het proces?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45 dagen.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Zijn houten en metalen bedden beide gedekt?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja, indien voldaan aan IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is fabrieksinspectie verplicht?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kunnen handelaren BIS aanvragen?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Alleen merkeigenaren met productiecontrole.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -227,146 +372,424 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS Certificaat voor Bedden is een verplichte nalevingsvereiste in
-          India voor fabrikanten en importeurs van bedden bestemd voor
-          huishoudelijk en commercieel gebruik. Volgens de nieuwste Indiase
-          Standaard IS 17635:2022 – Bedden (Veiligheidsvereisten) moeten alle
-          bedden voldoen aan strikte veiligheids-, duurzaamheids-, structurele
-          en prestatiecriteria voordat ze op de Indiase markt worden verkocht.
+          Het BIS Certificaat voor Bedden is een verplichte nalevingsvereiste in India voor fabrikanten en importeurs van bedden bestemd voor huishoudelijk en commercieel gebruik. Volgens de nieuwste Indiase Norm IS 17635:2022 – Bedden (Veiligheidsvereisten) moeten alle bedden voldoen aan strikte veiligheids-, duurzaamheids-, structurele en prestatiecriteria voordat ze op de Indiase markt worden verkocht.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bedden zijn essentiële meubelproducten die dagelijks worden gebruikt
-          in woningen, hotels, ziekenhuizen, hostels, PG-accommodaties en
-          institutionele faciliteiten. Structurele zwakte, scherpe randen,
-          materiaalfalen of slechte draagkracht kunnen leiden tot ernstige
-          verwondingen. Om dergelijke risico&apos;s te voorkomen, verplicht het
-          Bureau of Indian Standards (BIS) BIS Certificering voor Bedden.
+          Bedden zijn essentiële meubelproducten die dagelijks worden gebruikt in huizen, hotels, ziekenhuizen, hostels, PG-accommodaties en institutionele faciliteiten. Structurele zwakte, scherpe randen, materiaalfalen of slechte draagcapaciteit kunnen leiden tot ernstig letsel. Om dergelijke risico's te voorkomen, verplicht het Bureau of Indian Standards (BIS) de{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            BIS Certificering
+          </a>{" "}
+          voor Bedden.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Deze uitgebreide gids legt alles uit over BIS Licentie voor Bedden,
-          inclusief toepasselijke normen, certificeringsproces, testvereisten,
-          documenten, kosten, tijdlijnen, boetes en voordelen.
+          Deze uitgebreide gids legt alles uit over de BIS Licentie voor Bedden, inclusief toepasselijke normen, certificeringsproces, testvereisten, documenten, kosten, tijdlijnen, boetes en voordelen.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wat is BIS Certificering?
+          Belangrijkste Hoogtepunten van BIS Certificering voor Bedden
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certificering is een conformiteitsbeoordelingsregeling
-          geïntroduceerd door het Bureau of Indian Standards, de nationale
-          normenautoriteit van India.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Bijzonderheden
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Details
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Product", "Bedden"],
+                ["Indiase Norm", "IS 17635:2022"],
+                ["Titel van de Norm", "Bedden – Specificatie"],
+                ["Certificatieschema", "BIS ISI Merk Certificering"],
+                ["Regelgevende Autoriteit", "Bureau of Indian Standards (BIS)"],
+                ["Toepasselijk Merk", "ISI Merk"],
+                [
+                  "In aanmerking komende Aanvragers",
+                  "Indiase Fabrikanten en Buitenlandse Fabrikanten",
+                ],
+                [
+                  "Nalevingsvereiste",
+                  "Verplicht onder toepasselijke Meubel QCO (Quality Control Order)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Certificatieschema" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        BIS ISI Merk Certificering
+                      </a>
+                    ) : particular === "Nalevingsvereiste" ? (
+                      <>
+                        Verplicht onder toepasselijke{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>Meubel QCO (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Wat is een BIS Certificaat?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Een BIS Certificaat bevestigt dat een product voldoet aan Indiase
-          Normen en veilig, betrouwbaar en geschikt is voor gebruik.
-          Gecertificeerde producten dragen het BIS Certificeringsmerk, algemeen
-          bekend als het ISI Merk.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS Certificaat Betekenis
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Het betekent dat het product met succes heeft doorstaan:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Laboratoriumtesten</li>
-          <li>Fabrieksinspectie</li>
-          <li>Kwaliteitscontrole verificatie</li>
-          <li>Veiligheidsnalevingsbeoordeling</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS Logo op bedden verzekert klanten dat het product voldoet aan
-          door de overheid goedgekeurde kwaliteits- en veiligheidsnormen.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Standaard Toepasbaar voor Bedden – IS 17635:2022
+          Wat is BIS Certificering voor Bedden?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          De toepasselijke Indiase Standaard voor bedden is:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – Bedden: Veiligheidsvereisten
+          BIS Certificering voor Bedden is een conformiteitsbeoordelingsproces waarbij fabrikanten aantonen dat hun producten voldoen aan de vereisten in IS 17635:2022. Na verificatie van naleving via testen, fabrieksbeoordeling en regelgevende controle krijgt de fabrikant een BIS licentie en mag het ISI Merk op gecertificeerde producten worden aangebracht.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Deze standaard definieert essentiële veiligheids- en
-          prestatievereisten voor bedden die worden gebruikt in residentiële en
-          commerciële omgevingen.
+          Het certificeringskader is bedoeld om ervoor te zorgen dat bedden die op de Indiase markt beschikbaar zijn, voldoen aan vastgestelde vereisten met betrekking tot:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022 Dekking
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Structurele sterkte</li>
-          <li>Draagkracht</li>
-          <li>Stabiliteit en duurzaamheid</li>
-          <li>Materiaalkwaliteit</li>
-          <li>Rand- en oppervlakteafwerking</li>
-          <li>Veiligheid tegen instorting</li>
-          <li>Afwezigheid van beknellingsgevaren</li>
-          <li>Langetermijnprestaties</li>
+          <li>Stabiliteit</li>
+          <li>Duurzaamheid</li>
+          <li>Oppervlakteprestaties</li>
+          <li>Veiligheid bij normaal gebruik</li>
+          <li>Prestaties onder redelijk voorzienbare misbruiksomstandigheden</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Elk bed dat in India wordt gefabriceerd of geïmporteerd, moet voldoen
-          aan IS 17635:2022 en een BIS Registratie voor Bedden verkrijgen.
+          Deze vereisten helpen een consistent benchmark voor kwaliteit en consumentenbescherming te creëren over verschillende bedontwerpen en fabricagematerialen.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Waarom BIS Certificering Verplicht is voor Bedden
+          Waarom BIS Certificering Belangrijk is voor Bedden
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bedden worden gedurende langere perioden gebruikt en ondersteunen
-          continu menselijk gewicht. Slecht ontworpen bedden kunnen
-          verwondingen, instorting of langetermijngezondheidsrisico&apos;s
-          veroorzaken.
+          Bedden beïnvloeden direct de veiligheid van gebruikers omdat ze ontworpen zijn om aanzienlijke belastingen over langere perioden te dragen. Slecht ontworpen of onvoldoende geteste producten kunnen structureel falen, instabiliteit, vervorming of voortijdige verslechtering vertonen.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Redenen waarom BIS Certificering voor Bedden Vereist is
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 pakt deze zorgen aan door gestandaardiseerde prestatie- en veiligheidsvereisten te definiëren die fabrikanten moeten vervullen voordat hun producten op de markt komen. De norm omvat vereisten met betrekking tot sterkte, stabiliteit, duurzaamheid, vakmanschap en oppervlakteprestaties.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zorgt voor structurele integriteit</li>
-          <li>Voorkomt instorting en breuk</li>
-          <li>Controleert materiaalkwaliteit</li>
-          <li>Elimineert scherpe randen en onveilige afwerkingen</li>
-          <li>Beschermt consumenten</li>
-          <li>Zorgt voor uniforme nationale kwaliteit</li>
-          <li>Verplicht onder BIS melding</li>
-          <li>Vereist voor legale verkoop in India</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Voor fabrikanten biedt BIS certificering verschillende voordelen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Juridische toestemming om gedekte producten in India te verkopen</li>
+          <li>Aantonen van naleving van Indiase Normen</li>
+          <li>Verbeterde marktacceptatie</li>
+          <li>Verhoogd consumentenvertrouwen</li>
+          <li>Verminderd risico op regelgevende actie</li>
+          <li>Concurrentievoordeel bij institutionele en commerciële inkoop</li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Overzicht van IS 17635:2022 voor Bedden
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De regering van India heeft Quality Control Orders (QCO) ingevoerd voor verschillende meubelproducten om ervoor te zorgen dat producten op de markt voldoen aan voorgeschreven veiligheids- en kwaliteitsvereisten.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Wanneer IS 17635:2022 onder de toepasselijke Meubel QCO valt, moeten fabrikanten BIS certificering onder Schema-I verkrijgen en het Standaardmerk (ISI Merk) gebruiken in overeenstemming met BIS licentievereisten.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 is de Indiase Norm die prestatie- en veiligheidsvereisten specificeert voor bedden bestemd voor volwassen gebruikers in huishoudelijke en niet-huishoudelijke omgevingen. De norm stelt vereisten vast die ervoor zorgen dat bedden veilig, functioneel en duurzaam blijven gedurende hun beoogde levensduur.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Doel van IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 is ontwikkeld om een uitgebreide prestatiegebaseerde norm te bieden voor moderne bedontwerpen vervaardigd met verschillende materialen en constructiemethoden. De norm vervangt de eerdere IS 7259 (Deel 1):1988, die voornamelijk gericht was op houten bedden.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De norm evalueert bedden zonder naleving te beperken tot een bepaald materiaal of fabricageproces. In plaats daarvan richt ze zich op hoe het afgewerkte product presteert onder voorgeschreven testomstandigheden. Deze aanpak maakt consistente beoordeling mogelijk van houten, metalen, geëngineerd hout en andere bedconstructies.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Reikwijdte van IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Volgens de norm dekt IS 17635:2022 vereisten met betrekking tot de prestaties en veiligheid van bedden ontworpen voor volwassen gebruikers. De norm is van toepassing op producten bestemd voor gebruik in zowel huishoudelijke als niet-huishoudelijke settings.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De norm is van toepassing op:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Volledig vervaardigde bedden</li>
+          <li>Gefabriceerde bedden</li>
+          <li>Klaar-voor-montage bedden na montage</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Zonder een BIS Licentie voor Bedden is het verkopen of importeren van
-          bedden in India illegaal.
+          Dit zorgt ervoor dat producten geleverd in gemonteerde of knock-down vorm worden beoordeeld met dezelfde prestatie- en veiligheidscriteria.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Doelstellingen van de Norm</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De primaire doelstellingen van IS 17635:2022 omvatten:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Zorgen voor gebruikersveiligheid</li>
+          <li>Verifiëren van structurele sterkte</li>
+          <li>Beoordelen van productstabiliteit</li>
+          <li>Evalueren van duurzaamheid bij herhaald gebruik</li>
+          <li>Vaststellen van minimale prestatievereisten</li>
+          <li>Bevorderen van consistente productkwaliteit bij fabrikanten</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          De norm omvat ook testmethodologieën bedoeld om bedden te evalueren onder normale gebruiksomstandigheden en redelijk voorzienbare misbruikscenario's.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Producten Gedekt onder IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 is van toepassing op bedden bestemd voor volwassen gebruikers in huishoudelijke en niet-huishoudelijke omgevingen. De norm richt zich op prestaties, veiligheid, sterkte, stabiliteit en duurzaamheid van het afgewerkte product in plaats van naleving te beperken tot een specifiek materiaal of fabricagemethode.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De norm is van toepassing op:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Volledig vervaardigde bedden</li>
+          <li>Gefabriceerde bedden</li>
+          <li>Klaar-voor-montage (RTA) bedden na montage</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Fabrikanten die bedden in knock-down conditie leveren, moeten ervoor zorgen dat het gemonteerde product voldoet aan alle toepasselijke vereisten van de norm.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>Opmerking:</strong> Deze norm dekt geen waterbedden, luchtbedden, opklapbedden, stapelbedden en bedden voor mensen met speciale behoeften, noch bedden voor gezondheidszorg en medische doeleinden.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Bekijk ook Meubelproducten Gedekt onder Verplichte BIS Certificering —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS Certificering voor meubels</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Belangrijkste Vereisten onder IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Het primaire doel van IS 17635:2022 is ervoor te zorgen dat bedden veilig, stabiel, duurzaam en geschikt blijven voor hun beoogde doel onder normale gebruiksomstandigheden. Om dit doel te bereiken, stellt de norm verschillende belangrijke prestatievereisten vast.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Stabiliteitsvereisten</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Bedden moeten adequate weerstand tegen kantelen en instabiliteit tijdens normaal gebruik demonstreren. Stabiliteitstests evalueren of het product veilig blijft wanneer het wordt onderworpen aan verwachte belastingsomstandigheden en gebruikersbewegingen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Een stabiel bed minimaliseert het risico op ongevallen en verbetert de algehele veiligheid van gebruikers.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Sterktevereisten</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Sterktetests beoordelen het vermogen van de bedstructuur om aanzienlijke belastingen te weerstaan zonder structureel falen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Deze evaluaties onderzoeken typisch:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Integriteit van bedframe</li>
+          <li>Verbindingssterkte</li>
+          <li>Draagcapaciteit</li>
+          <li>Weerstand tegen overmatige vervorming</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Het doel is ervoor te zorgen dat het product de beoogde gebruikers veilig kan dragen tijdens dagelijks gebruik.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Duurzaamheidsvereisten</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Duurzaamheidstests simuleren langdurig gebruik door herhaalde belastings- en bewegingscycli.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Het doel is te bepalen of:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Structurele verbindingen veilig blijven</li>
+          <li>Componenten correct blijven functioneren</li>
+          <li>Productprestaties acceptabel blijven over tijd</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Duurzaamheidsvereisten helpen ervoor te zorgen dat gecertificeerde bedden betrouwbaar blijven gedurende hun verwachte levensduur.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Oppervlakteprestatievereisten</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022 verwijst naar oppervlakteprestatievereisten van toepassing op meubelafwerkingen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Afhankelijk van de constructie en gebruikte materialen kunnen oppervlakken worden geëvalueerd op weerstand tegen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Mechanische schade</li>
+          <li>Natte hitte</li>
+          <li>Droge hitte</li>
+          <li>Vlekken</li>
+          <li>Adhesieprestaties</li>
+          <li>Slijtage en slijtage</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Deze vereisten helpen zowel functionaliteit als uiterlijk te behouden tijdens normaal gebruik.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Ontwerp- en Vakmanschapsvereisten
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De norm bevat ook vereisten met betrekking tot ontwerpkwaliteit en vakmanschap.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Onder andere:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Toegankelijke randen mogen geen letselgevaar vormen.</li>
+          <li>Scherpe randen en onveilige uitsteeksels moeten worden vermeden.</li>
+          <li>Holle secties moeten waar nodig correct worden afgesloten.</li>
+          <li>Bewegende componenten moeten worden ontworpen om het risico op letsel te verminderen.</li>
+          <li>
+            Het afgewerkte product moet voldoen aan de verklaarde ontwerp- en modelspecificaties.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Veiligheidsvereisten</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Veiligheid is een kernprincipe in IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          De norm omvat vereisten bedoeld om risico's te verminderen voortvloeiend uit:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Structurele instorting</li>
+          <li>Scherpe randen</li>
+          <li>Onveilige uitsteeksels</li>
+          <li>Componentfalen</li>
+          <li>Herhaalde gebruiksstress</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Naleving van deze vereisten helpt ervoor te zorgen dat bedden veilig blijven onder normaal gebruik en redelijk voorzienbare misbruiksomstandigheden.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Is BIS Certificering voor Bedden Verplicht in India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ja, voor meubelproducten gedekt onder de toepasselijke Quality Control Order is BIS certificering verplicht voordat dergelijke producten in India kunnen worden vervaardigd, geïmporteerd, verkocht, gedistribueerd, opgeslagen of te koop aangeboden.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Fabrikanten moeten de laatste meldingsstatus en implementatiedata uitgegeven door de regering van India verifiëren, omdat regelgevende vereisten van tijd tot tijd kunnen worden bijgewerkt.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Vereiste om het ISI Merk te Gebruiken
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Het ISI Merk dient als bewijs dat een product voldoet aan de relevante Indiase Norm en wordt vervaardigd onder een geldige BIS licentie.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Het merk mag alleen worden aangebracht na:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Succesvolle producttests</li>
+          <li>Fabrieksbeoordeling</li>
+          <li>BIS goedkeuring van de aanvraag</li>
+          <li>Verlening van licentie</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ongeautoriseerd gebruik van het ISI Merk is verboden onder de BIS Act, 2016.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -374,16 +797,14 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS certificeringsproces in India volgt een gestructureerde
-          procedure onder het ISI Certificeringsschema.
+          Het BIS certificeringsproces in India volgt een gestructureerde procedure onder het ISI Certificeringsschema.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Stap 1 – Identificeer Standaard & Productbereik
+          Stap 1 – Identificeer Norm & Productbereik
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bevestig toepasbaarheid onder IS 17635:2022 en bepaal
-          productvarianten.
+          Bevestig toepasbaarheid onder IS 17635:2022 en bepaal productvarianten.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
@@ -471,33 +892,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Bereik van BIS Licentie voor Bedden
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Deze standaard dekt de vereisten met betrekking
-          tot de prestaties en veiligheid van bedden voor volwassenen voor
-          huishoudelijk en niet-huishoudelijk gebruik.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Deze standaard is van toepassing op volledig
-          gefabriceerde/vervaardigde bedden. Het is ook van toepassing op
-          klaar-voor-montage eenheden; in dat geval zijn de vereisten van deze
-          standaard van toepassing op de gemonteerde eenheden.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> Deze standaard dekt geen waterbedden,
-          luchtbedden, opklapbedden, stapelbedden en bedden voor mensen met
-          speciale behoeften, noch de bedden voor gezondheidszorg en medische
-          doeleinden.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documenten Vereist voor BIS Certificering van Bedden
         </h2>
 
@@ -561,7 +955,7 @@ const MainContentLeft = () => {
                   Clausule
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Vereiste
+                  Anforderung
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -627,8 +1021,7 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Testen moeten alleen worden uitgevoerd bij BIS-goedgekeurde
-          laboratoria.
+          Testen moeten alleen worden uitgevoerd bij BIS-goedgekeurde laboratoria.
         </p>
 
         {/* Separator Line */}
@@ -665,23 +1058,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Voordelen van BIS Certificering voor Bedden
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legale verkoop in India</li>
-          <li>Verhoogd klantvertrouwen</li>
-          <li>Toegang tot e-commerce platforms</li>
-          <li>In aanmerking komen voor overheidsaanbestedingen</li>
-          <li>Verminderde aansprakelijkheid</li>
-          <li>Sterke merkgeloofwaardigheid</li>
-          <li>Naleving van Indiase normen</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Boetes voor Naleving
         </h2>
 
@@ -696,30 +1072,6 @@ const MainContentLeft = () => {
           <li>Juridische actie</li>
           <li>Marktverbod</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wie Heeft BIS Certificaat voor Bedden Nodig?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          De volgende entiteiten moeten een BIS Licentie voor Bedden verkrijgen:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indiase fabrikanten</li>
-          <li>Buitenlandse fabrikanten</li>
-          <li>Importeurs</li>
-          <li>Meubelmerken</li>
-          <li>OEM/ODM leveranciers</li>
-          <li>E-commerce verkopers</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Elke productie-eenheid vereist een aparte BIS licentie.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -751,12 +1103,7 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het BIS Certificaat voor Bedden onder IS 17635:2022 is een verplichte
-          juridische vereiste die veiligheid, kwaliteit en duurzaamheid
-          waarborgt. Het verkrijgen van een BIS Licentie voor Bedden beschermt
-          consumenten, versterkt de merkwaarde en maakt legale markttoegang in
-          heel India mogelijk. Met deskundige ondersteuning wordt het
-          certificeringsproces naadloos en efficiënt.
+          Het BIS Certificaat voor Bedden onder IS 17635:2022 is een verplichte juridische vereiste die veiligheid, kwaliteit en duurzaamheid waarborgt. Het verkrijgen van een BIS Licentie voor Bedden beschermt consumenten, versterkt de merkwaarde en maakt legale markttoegang in heel India mogelijk. Met deskundige ondersteuning wordt het certificeringsproces naadloos en efficiënt.
         </p>
 
         {/* Separator Line */}
@@ -819,7 +1166,9 @@ const MainContentLeft = () => {
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Zijn houten en metalen bedden beide gedekt?</strong>
+              <strong>
+                7. Zijn houten en metalen bedden beide gedekt?
+              </strong>
               <br />
               Ja, indien voldaan aan IS 17635:2022.
             </p>
@@ -854,6 +1203,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Gerelateerde Bronnen
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISI Merk Certificaat
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              BIS FMCS Licentie
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadDutch />
 

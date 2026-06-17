@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsArabic = () => {
   return (
     <div className="relative w-full">
@@ -58,7 +64,8 @@ const MetaTags = () => {
     "https://bis-certifications.com/blogs/isi-products/asrat-is-17635";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
-  const publisher = "Dhruv Aggarwal، رئيس العمليات في Sun Certification India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   return (
     <Helmet>
@@ -148,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/asrat-is-17635",
+          },
+          headline: "شهادة BIS للأسرة",
+          description:
+            "شهادة BIS للأسرة في الهند هي ضمان جودة إلزامي، بموجب IS 17635:2022 بشكل أساسي، يضمن معايير السلامة والمتانة والأداء.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "شهادة BIS للأسرة",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "شهادة BIS للأسرة في الهند هي ضمان جودة إلزامي، بموجب IS 17635:2022 بشكل أساسي، يضمن معايير السلامة والمتانة والأداء.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "هل شهادة BIS إلزامية للأسرة في الهند؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "نعم، بموجب IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "ما هي صلاحية شهادة BIS؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 سنة، قابلة للتجديد.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "هل يمكن للمصنعين الأجانب التقديم؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "نعم، بموجب FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "هل يمكن التقدم بطلب شهادة BIS عبر الإنترنت؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "نعم.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "هل علامة ISI إلزامية على الأسرة؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "نعم.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "كم تستغرق العملية؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45 يوماً.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "هل الأسرة الخشبية والمعدنية مغطاة كلاهما؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "نعم، إذا كانت متوافقة مع IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "هل تفتيش المصنع إلزامي؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "نعم.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "هل يمكن للتجار التقدم بطلب BIS؟",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "فقط أصحاب العلامات التجارية مع السيطرة على التصنيع.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -237,8 +383,16 @@ const MainContentLeft = () => {
           الأسرة هي منتجات أثاث أساسية تُستخدم يومياً في المنازل، والفنادق،
           والمستشفيات، وبيوت الطلبة، وأماكن الإقامة PG، والمرافق المؤسسية. أي
           ضعف هيكلي، أو حواف حادة، أو فشل في المواد، أو قدرة تحميل ضعيفة يمكن أن
-          يؤدي إلى إصابات خطيرة. لمنع مثل هذه المخاطر، مكتب المعايير الهندي
-          (BIS) يفرض شهادة BIS للأسرة.
+          يؤدي إلى إصابات خطيرة. لمنع مثل هذه المخاطر، يفرض مكتب المعايير الهندي
+          (BIS){" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            شهادة BIS
+          </a>{" "}
+          للأسرة.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -251,113 +405,446 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ما هي شهادة BIS؟
+          أبرز نقاط شهادة BIS للأسرة
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS هي مخطط تقييم المطابقة الذي قدمه مكتب المعايير الهندي، سلطة
-          المعايير الوطنية في الهند.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  البند
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  التفاصيل
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["المنتج", "الأسرة"],
+                ["المعيار الهندي", "IS 17635:2022"],
+                ["عنوان المعيار", "الأسرة – المواصفات"],
+                ["مخطط الشهادة", "شهادة علامة ISI BIS"],
+                ["السلطة التنظيمية", "مكتب المعايير الهندية (BIS)"],
+                ["العلامة المعمول بها", "علامة ISI"],
+                [
+                  "المتقدمون المؤهلون",
+                  "المصنعون الهنود والمصنعون الأجانب",
+                ],
+                [
+                  "متطلب الامتثال",
+                  "إلزامي بموجب أمر مراقبة الجودة (QCO) للأثاث المعمول به",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "مخطط الشهادة" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        شهادة علامة ISI BIS
+                      </a>
+                    ) : particular === "متطلب الامتثال" ? (
+                      <>
+                        إلزامي بموجب{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            أمر مراقبة الجودة (QCO) للأثاث المعمول به
+                          </strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ما هي شهادة BIS؟
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تؤكد شهادة BIS أن المنتج يتوافق مع المعايير الهندية وهو آمن وموثوق
-          ومناسب للاستخدام. المنتجات المعتمدة تحمل علامة شهادة BIS، المعروفة
-          باسم علامة ISI.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معنى شهادة BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يشير إلى أن المنتج نجح في اجتياز:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الاختبارات المعملية</li>
-          <li>فحص المصنع</li>
-          <li>التحقق من مراقبة الجودة</li>
-          <li>تقييم الامتثال للسلامة</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          شعار BIS على الأسرة يطمئن العملاء أن المنتج يلبي معايير الجودة
-          والسلامة المعتمدة من الحكومة.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          المعيار BIS المعمول به للأسرة – IS 17635:2022
+          ما هي شهادة BIS للأسرة؟
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          المعيار الهندي المعمول به للأسرة هو:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – الأسرة: متطلبات السلامة
+          شهادة BIS للأسرة هي عملية تقييم مطابقة يثبت من خلالها المصنعون أن
+          منتجاتهم تتوافق مع المتطلبات المحددة في IS 17635:2022. بمجرد التحقق من
+          الامتثال من خلال الاختبار، وتقييم المصنع، والمراجعة التنظيمية، يُمنح
+          المصنع ترخيص BIS ويمكنه وضع علامة ISI على المنتجات المعتمدة.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          يحدد هذا المعيار متطلبات السلامة والأداء الأساسية للأسرة المستخدمة في
-          البيئات السكنية والتجارية.
+          يهدف إطار الشهادة إلى ضمان أن الأسرة المتوفرة في السوق الهندي تلبي
+          المتطلبات المعتمدة المتعلقة بـ:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          يغطي IS 17635:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>القوة الهيكلية</li>
-          <li>قدرة التحمل</li>
-          <li>الاستقرار والمتانة</li>
-          <li>جودة المواد</li>
-          <li>الحواف والانتهاء السطحي</li>
-          <li>السلامة ضد الانهيار</li>
-          <li>عدم وجود مخاطر الاحتجاز</li>
-          <li>الأداء طويل الأمد</li>
+          <li>الاستقرار</li>
+          <li>المتانة</li>
+          <li>أداء السطح</li>
+          <li>السلامة أثناء الاستخدام العادي</li>
+          <li>الأداء في ظروف سوء الاستخدام المتوقعة</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يجب أن تتوافق أي سرير مصنع أو مستورد إلى الهند مع IS 17635:2022
-          والحصول على تسجيل BIS للأسرة.
+          تساعد هذه المتطلبات في إنشاء معيار متسق للجودة وحماية المستهلك عبر
+          مختلف تصاميم الأسرة ومواد التصنيع.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          لماذا شهادة BIS إلزامية للأسرة
+          لماذا شهادة BIS مهمة للأسرة
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          تُستخدم الأسرة لفترات طويلة وتدعم وزن الإنسان باستمرار. الأسرة المصممة
-          بشكل سيئ يمكن أن تسبب إصابات، أو انهيار، أو مخاطر صحية طويلة الأمد.
+          تؤثر الأسرة مباشرة على سلامة المستخدم لأنها مصممة لتحمل أحمالاً كبيرة
+          لفترات طويلة. المنتجات المصممة بشكل سيئ أو التي لم تُختبر بشكل كافٍ
+          يمكن أن تتعرض لفشل هيكلي، أو عدم استقرار، أو تشوه، أو تدهور مبكر.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          أسباب الحاجة إلى شهادة BIS للأسرة
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يعالج IS 17635:2022 هذه المخاوف من خلال تحديد متطلبات أداء وسلامة
+          موحدة يجب على المصنعين استيفاؤها قبل دخول منتجاتهم إلى السوق. يتضمن
+          المعيار متطلبات تتعلق بالقوة، والاستقرار، والمتانة، والإتقان، وأداء
+          السطح.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>يضمن السلامة الهيكلية</li>
-          <li>يمنع الانهيار والكسر</li>
-          <li>يتحكم في جودة المواد</li>
-          <li>يقضي على الحواف الحادة والانتهاء غير الآمن</li>
-          <li>يحمي المستهلكين</li>
-          <li>يضمن جودة وطنية موحدة</li>
-          <li>إلزامي بموجب إشعار BIS</li>
-          <li>مطلوب للبيع القانوني في الهند</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          بالنسبة للمصنعين، توفر شهادة BIS عدة مزايا:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>التفويض القانوني لبيع المنتجات المشمولة في الهند</li>
+          <li>إثبات الامتثال للمعايير الهندية</li>
+          <li>تحسين قبول السوق</li>
+          <li>تعزيز ثقة المستهلك</li>
+          <li>تقليل مخاطر الإجراءات التنظيمية</li>
+          <li>ميزة تنافسية في المشتريات المؤسسية والتجارية</li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          نظرة عامة على IS 17635:2022 للأسرة
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          أصدرت حكومة الهند أوامر مراقبة الجودة لعدة منتجات أثاث لضمان أن
+          المنتجات الموضوعة في السوق تلبي متطلبات السلامة والجودة المقررة.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          حيثما يكون IS 17635:2022 مشمولاً بموجب أمر مراقبة الجودة (QCO) للأثاث
+          المعمول به، يُطلب من المصنعين الحصول على شهادة BIS بموجب المخطط الأول
+          واستخدام العلامة القياسية (علامة ISI) وفقاً لمتطلبات ترخيص BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 هو المعيار الهندي الذي يحدد متطلبات الأداء والسلامة
+          للأسرة المخصصة للبالغين في البيئات المنزلية وغير المنزلية. يضع المعيار
+          متطلبات تساعد على ضمان بقاء الأسرة آمنة وعملية ومتينة طوال عمرها
+          الخدمي المقصود.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الغرض من IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تم تطوير IS 17635:2022 لتوفير معيار شامل قائم على الأداء ينطبق على
+          تصاميم الأسرة الحديثة المصنعة باستخدام مواد وطرق بناء مختلفة. يحل
+          المعيار محل IS 7259 (الجزء 1):1988 السابق، الذي ركز بشكل أساسي على
+          الأسرة الخشبية.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يقيّم المعيار الأسرة دون تقييد الامتثال بمادة أو عملية تصنيع معينة.
+          بدلاً من ذلك، يركز على كيفية أداء المنتج النهائي في ظروف الاختبار
+          المقررة. يتيح هذا النهج تقييماً متسقاً للأسرة الخشبية والمعدنية
+          والخشب الهندسي وغيرها من البنى.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>نطاق IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          وفقاً للمعيار، يغطي IS 17635:2022 المتطلبات المتعلقة بأداء وسلامة
+          الأسرة المصممة للبالغين. ينطبق المعيار على المنتجات المخصصة للاستخدام
+          في البيئات المنزلية وغير المنزلية.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          ينطبق المعيار على:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>الأسرة المصنعة بالكامل</li>
+          <li>الأسرة المجمعة</li>
+          <li>الأسرة الجاهزة للتجميع بعد التركيب</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          بدون ترخيص BIS للأسرة، بيع أو استيراد الأسرة في الهند غير قانوني.
+          يضمن ذلك تقييم المنتجات الموردة في شكل مجمّع أو قابل للفك باستخدام
+          نفس معايير الأداء والسلامة.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>أهداف المعيار</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تشمل الأهداف الرئيسية لـ IS 17635:2022:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>ضمان سلامة المستخدم</li>
+          <li>التحقق من القوة الهيكلية</li>
+          <li>تقييم استقرار المنتج</li>
+          <li>تقييم المتانة تحت الاستخدام المتكرر</li>
+          <li>وضع الحد الأدنى لمتطلبات الأداء</li>
+          <li>تعزيز جودة المنتج المتسقة عبر المصنعين</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يتضمن المعيار أيضاً منهجيات اختبار تهدف إلى تقييم الأسرة في ظروف
+          الاستخدام العادي وسيناريوهات سوء الاستخدام المتوقعة بشكل معقول.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          المنتجات المشمولة بموجب IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ينطبق IS 17635:2022 على الأسرة المخصصة للبالغين في البيئات المنزلية
+          وغير المنزلية. يركز المعيار على أداء وسلامة وقوة واستقرار ومتانة
+          المنتج النهائي بدلاً من تقييد الامتثال بمادة أو طريقة تصنيع محددة.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          ينطبق المعيار على:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>الأسرة المصنعة بالكامل</li>
+          <li>الأسرة المجمعة</li>
+          <li>الأسرة الجاهزة للتجميع (RTA) بعد التركيب</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين الذين يوردون أسرة في حالة قابلة للفك التأكد من أن
+          المنتج المجمّع يتوافق مع جميع المتطلبات المعمول بها للمعيار.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>ملاحظة:</strong> لا يغطي هذا المعيار أسرة الماء، وأسرة الهواء،
+          والأسرة القابلة للطي، والأسرة المزدوجة والأسرة للأشخاص ذوي الاحتياجات
+          الخاصة، ولا الأسرة للرعاية الصحية والأغراض الطبية.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            تحقق أيضاً من منتجات الأثاث المشمولة بموجب شهادة BIS الإلزامية —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>شهادة BIS للأثاث</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          المتطلبات الرئيسية بموجب IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          الهدف الأساسي من IS 17635:2022 هو ضمان بقاء الأسرة آمنة ومستقرة
+          ومتينة ومناسبة للغرض المقصود في ظروف الاستخدام العادي. لتحقيق هذا
+          الهدف، يضع المعيار عدة متطلبات أداء رئيسية.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات الاستقرار</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب أن تُظهر الأسرة مقاومة كافية للانقلاب وعدم الاستقرار أثناء
+          الاستخدام العادي. يقيّم اختبار الاستقرار ما إذا كان المنتج يبقى آمناً
+          عند تعرضه لظروف التحميل المتوقعة وحركات المستخدم.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تقلل السرير المستقر من مخاطر الحوادث وتحسّن سلامة المستخدم بشكل عام.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات القوة</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تقيّم اختبارات القوة قدرة هيكل السرير على تحمل أحمال كبيرة دون فشل
+          هيكلي.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تفحص هذه التقييمات عادةً:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>سلامة إطار السرير</li>
+          <li>قوة المفاصل</li>
+          <li>قدرة تحمل الحمل</li>
+          <li>مقاومة التشوه المفرط</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          الغرض هو ضمان أن المنتج يمكنه دعم المستخدمين المقصودين بأمان أثناء
+          التشغيل اليومي.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات المتانة</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يحاكي اختبار المتانة الاستخدام طويل الأمد من خلال دورات متكررة من
+          التحميل والحركة.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          الهدف هو تحديد ما إذا:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>تظل الوصلات الهيكلية آمنة</li>
+          <li>تستمر المكونات في العمل بشكل صحيح</li>
+          <li>يبقى أداء المنتج مقبولاً مع مرور الوقت</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تساعد متطلبات المتانة على ضمان أن الأسرة المعتمدة تحافظ على
+          موثوقيتها طوال عمرها الخدمي المتوقع.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات أداء السطح</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يشير IS 17635:2022 إلى متطلبات أداء السطح المعمول بها على تشطيبات
+          الأثاث.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          اعتماداً على البناء والمواد المستخدمة، قد تُقيَّم الأسطح لمقاومتها
+          لـ:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>الأضرار الميكانيكية</li>
+          <li>الحرارة الرطبة</li>
+          <li>الحرارة الجافة</li>
+          <li>التلطيخ</li>
+          <li>أداء الالتصاق</li>
+          <li>التآكل والبلى</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تساعد هذه المتطلبات في الحفاظ على الوظيفة والمظهر أثناء الاستخدام
+          العادي.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات التصميم والإتقان</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يحتوي المعيار أيضاً على متطلبات تتعلق بجودة التصميم والإتقان.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          من بين الاعتبارات الأخرى:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>يجب ألا تُشكّل الحواف المتاحة مخاطر إصابة.</li>
+          <li>يجب تجنب الحواف الحادة والبروز غير الآمن.</li>
+          <li>يجب إغلاق الأقسام المجوفة بشكل صحيح حيثما يلزم.</li>
+          <li>يجب تصميم المكونات المتحركة لتقليل مخاطر الإصابة.</li>
+          <li>
+            يجب أن يتوافق المنتج النهائي مع مواصفات التصميم والطراز المعلنة.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات السلامة</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          السلامة مبدأ أساسي في جميع أنحاء IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يتضمن المعيار متطلبات تهدف إلى تقليل المخاطر الناشئة عن:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>الانهيار الهيكلي</li>
+          <li>الحواف الحادة</li>
+          <li>البروز غير الآمن</li>
+          <li>فشل المكونات</li>
+          <li>إجهادات الاستخدام المتكرر</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يساعد الامتثال لهذه المتطلبات على ضمان بقاء الأسرة آمنة في الاستخدام
+          العادي وظروف سوء الاستخدام المتوقعة بشكل معقول.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          هل شهادة BIS للأسرة إلزامية في الهند؟
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          نعم، بالنسبة لمنتجات الأثاث المشمولة بموجب أمر مراقبة الجودة المعمول
+          به، تكون شهادة BIS إلزامية قبل أن يمكن تصنيع هذه المنتجات أو استيرادها
+          أو بيعها أو توزيعها أو تخزينها أو عرضها للبيع في الهند.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين التحقق من أحدث حالة إشعار وتواريخ التنفيذ الصادرة عن
+          حكومة الهند لأن المتطلبات التنظيمية قد تُحدَّث من وقت لآخر.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلب استخدام علامة ISI</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تعمل علامة ISI كدليل على أن المنتج يتوافق مع المعيار الهندي ذي
+          الصلة ويُصنع بموجب ترخيص BIS ساري.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          لا يمكن وضع العلامة إلا بعد:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>نجاح اختبار المنتج</li>
+          <li>تقييم المصنع</li>
+          <li>موافقة BIS على الطلب</li>
+          <li>منح الترخيص</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          الاستخدام غير المصرح به لعلامة ISI محظور بموجب قانون BIS لعام 2016.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -381,7 +868,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           تقديم الطلب عبر بوابة BIS Manak الإلكترونية مع:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>تفاصيل المصنع</li>
           <li>عنوان المصنع</li>
           <li>وصف المنتج</li>
@@ -395,7 +882,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           دفع الرسوم المعمول بها بما في ذلك:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>رسوم الطلب</li>
           <li>رسوم المعالجة</li>
           <li>رسوم الاختبار</li>
@@ -412,7 +899,7 @@ const MainContentLeft = () => {
         <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
           يتضمن الاختبار
         </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>اختبار الحمل الثابت</li>
           <li>اختبار المتانة</li>
           <li>اختبار الاستقرار</li>
@@ -427,7 +914,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           يقوم ضابط BIS بتفتيش:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>منشأة التصنيع</li>
           <li>التحكم في المواد الخام</li>
           <li>الاختبار أثناء العملية</li>
@@ -441,7 +928,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           بعد الامتثال، يصدر BIS:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>شهادة BIS</li>
           <li>إذن علامة ISI</li>
           <li>رقم CML</li>
@@ -450,35 +937,11 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           الخطوة 7 – الامتثال بعد الشهادة
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>تفتيشات المراقبة</li>
           <li>التجديد كل 1–2 سنة</li>
           <li>مراقبة الجودة المستمرة</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          نطاق ترخيص BIS للأسرة
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> يغطي هذا المعيار المتطلبات المتعلقة بأداء وسلامة
-          الأسرة للبالغين للاستخدام المنزلي وغير المنزلي.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> ينطبق هذا المعيار على الأسرة المصنعة/ المصنعة
-          بالكامل. كما ينطبق على الوحدات الجاهزة للتجميع؛ في تلك الحالة تنطبق
-          متطلبات هذا المعيار على الوحدات المجمعة.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> لا يغطي هذا المعيار أسرة الماء، وأسرة الهواء،
-          والأسرة القابلة للطي، والأسرة المزدوجة والأسرة للأشخاص ذوي الاحتياجات
-          الخاصة، ولا الأسرة للرعاية الصحية والأغراض الطبية.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -494,7 +957,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           مستندات المصنع
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>تسجيل/ترخيص المصنع</li>
           <li>مخطط عملية التصنيع</li>
           <li>قائمة الآلات</li>
@@ -507,7 +970,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           المستندات القانونية
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>إثبات العنوان</li>
           <li>إثبات الهوية</li>
           <li>تفويض العلامة التجارية</li>
@@ -517,7 +980,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           المستندات التقنية
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>رسومات المنتج</li>
           <li>المواصفات</li>
           <li>فاتورة المواد</li>
@@ -623,7 +1086,7 @@ const MainContentLeft = () => {
           التحديات الشائعة وكيفية تجنبها
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>
             <strong>اختيار المعيار غير الصحيح</strong> – تحقق دائمًا من المعيار
             الهندي الصحيح.
@@ -650,23 +1113,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          فوائد شهادة BIS للأسرة
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>البيع القانوني في الهند</li>
-          <li>زيادة ثقة العملاء</li>
-          <li>الوصول إلى منصات التجارة الإلكترونية</li>
-          <li>الأهلية لمناقصات الحكومة</li>
-          <li>تقليل المسؤولية</li>
-          <li>مصداقية العلامة التجارية القوية</li>
-          <li>الامتثال للمعايير الهندية</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           العقوبات على عدم الامتثال
         </h2>
 
@@ -674,37 +1120,13 @@ const MainContentLeft = () => {
           بيع الأسرة بدون شهادة BIS يمكن أن يؤدي إلى:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>غرامات ثقيلة</li>
           <li>مصادرة المنتج</li>
           <li>إغلاق الأعمال</li>
           <li>إجراء قانوني</li>
           <li>حظر السوق</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          من يحتاج إلى شهادة BIS للأسرة؟
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يجب على الكيانات التالية الحصول على ترخيص BIS للأسرة:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>المصنعون الهنود</li>
-          <li>المصنعون الأجانب</li>
-          <li>المستوردون</li>
-          <li>علامات الأثاث</li>
-          <li>موردو OEM/ODM</li>
-          <li>بائعون التجارة الإلكترونية</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تتطلب كل وحدة تصنيع ترخيص BIS منفصل.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -717,7 +1139,7 @@ const MainContentLeft = () => {
           نقدم استشارات BIS شاملة، بما في ذلك:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>رسم خرائط المعايير</li>
           <li>دعم التوثيق</li>
           <li>تنسيق الاختبار</li>
@@ -835,6 +1257,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          موارد ذات صلة
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              شهادة علامة ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ترخيص BIS FMCS
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadArabic />
 

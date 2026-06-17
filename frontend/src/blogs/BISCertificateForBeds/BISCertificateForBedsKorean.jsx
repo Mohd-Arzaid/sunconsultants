@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsKorean = () => {
   return (
     <div className="relative w-full">
@@ -58,7 +64,8 @@ const MetaTags = () => {
     "https://bis-certifications.com/blogs/isi-products/chimdae-is-17635";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
-  const publisher = "Dhruv Aggarwal, Sun Certification India 운영 책임자";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   return (
     <Helmet>
@@ -148,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/chimdae-is-17635",
+          },
+          headline: "침대용 BIS 인증서",
+          description:
+            "인도에서 침대용 BIS 인증은 주로 IS 17635:2022에 따른 필수 품질 보증으로, 안전, 내구성 및 성능 기준을 보장합니다.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "침대용 BIS 인증서",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "인도에서 침대용 BIS 인증은 주로 IS 17635:2022에 따른 필수 품질 보증으로, 안전, 내구성 및 성능 기준을 보장합니다.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "인도에서 침대에 BIS 인증이 필수인가요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "네, IS 17635:2022에 따라 필수입니다.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "BIS 인증서의 유효기간은 얼마인가요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1~2년, 갱신 가능합니다.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "외국 제조업체도 신청할 수 있나요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "네, FMCS에 따라 신청할 수 있습니다.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "BIS 인증서를 온라인으로 신청할 수 있나요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "네.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "침대에 ISI 마크가 필수인가요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "네.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "프로세스는 얼마나 걸리나요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30~45일.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "나무 및 금속 침대 모두 포함되나요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "네, IS 17635:2022를 준수하는 경우.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "공장 검사가 필수인가요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "네.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "무역업체도 BIS에 신청할 수 있나요?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "제조 관리를 보유한 브랜드 소유자만 가능합니다.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -226,19 +372,26 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          침대용 BIS 인증서는 IS 17635:2022에 따라 인도에서 필수 요구사항이며,
-          가정용 및 상업용 침대를 제조 및 수입하는 제조업체 및 수입업체를 위한
-          것입니다. 최신 인도 표준 IS 17635:2022 – 침대(안전 요구사항)에 따라
-          모든 침대는 인도 시장에서 판매되기 전에 엄격한 안전, 내구성, 구조 및
-          성능 기준을 충족해야 합니다.
+          침대용 BIS 인증서는 가정용 및 상업용 침대를 제조 및 수입하는 제조업체 및
+          수입업체를 위한 인도의 필수 규정 준수 요건입니다. 최신 인도 표준 IS
+          17635:2022 – 침대(안전 요구사항)에 따라 모든 침대는 인도 시장에서
+          판매되기 전에 엄격한 안전, 내구성, 구조 및 성능 기준을 충족해야
+          합니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           침대는 가정, 호텔, 병원, 호스텔, PG 숙소 및 기관 시설에서 매일
           사용되는 필수 가구 제품입니다. 구조적 약점, 날카로운 가장자리, 재료
           실패 또는 낮은 하중 지지 능력은 심각한 부상을 초래할 수 있습니다.
-          이러한 위험을 방지하기 위해 인도 표준국(BIS)은 침대용 BIS 인증을
-          의무화합니다.
+          이러한 위험을 방지하기 위해 인도 표준국(BIS)은{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            BIS 인증
+          </a>{" "}
+          을 침대에 의무화합니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -251,114 +404,453 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS 인증이란 무엇인가요?
+          침대용 BIS 인증의 주요 하이라이트
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS 인증은 인도의 국가 표준 기관인 인도 표준국이 도입한 적합성 평가
-          제도입니다.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  항목
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  세부사항
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["제품", "침대"],
+                ["인도 표준", "IS 17635:2022"],
+                ["표준 명칭", "침대 – 규격"],
+                ["인증 제도", "BIS ISI 마크 인증"],
+                ["규제 기관", "Bureau of Indian Standards (BIS)"],
+                ["적용 마크", "ISI 마크"],
+                [
+                  "신청 자격자",
+                  "인도 제조업체 및 외국 제조업체",
+                ],
+                [
+                  "규정 준수 요건",
+                  "해당 가구 QCO(Quality Control Order)에 따른 필수 사항",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "인증 제도" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        BIS ISI 마크 인증
+                      </a>
+                    ) : particular === "규정 준수 요건" ? (
+                      <>
+                        해당{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>가구 QCO(Quality Control Order)</strong>
+                        </a>
+                        에 따른 필수 사항
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 인증서란 무엇인가요?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS 인증서는 제품이 인도 표준을 준수하고 안전하고 신뢰할 수 있으며
-          사용하기 에 적합함을 확인합니다. 인증 제품은 일반적으로 ISI 마크로
-          알려진 BIS 인증 마크를 표시합니다.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 인증서의 의미
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          제품이 다음을 성공적으로 통과했음을 의미합니다:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>실험실 테스트</li>
-          <li>공장 검사</li>
-          <li>품질 관리 검증</li>
-          <li>안전 규정 준수 평가</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          침대의 BIS 로고는 고객에게 제품이 정부 승인 품질 및 안전 표준을
-          충족함을 보장합니다.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          침대에 적용되는 BIS 표준 – IS 17635:2022
+          침대용 BIS 인증이란?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          침대에 적용되는 인도 표준은 다음과 같습니다:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – 침대: 안전 요구사항
+          침대용 BIS 인증은 제조업체가 IS 17635:2022에 명시된 요구사항을
+          준수함을 입증하는 적합성 평가 프로세스입니다. 테스트, 공장 평가 및
+          규제 검토를 통해 규정 준수가 확인되면 제조업체는 BIS 라이선스를
+          부여받고 인증 제품에 ISI 마크를 부착할 수 있습니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          이 표준은 주거 및 상업 환경에서 사용되는 침대의 필수 안전 및 성능
-          요구사항을 정의합니다.
+          인증 프레임워크는 인도 시장에서 판매되는 침대가 다음과 관련된
+          확립된 요구사항을 충족하도록 설계되었습니다:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022가 다루는 내용
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>구조적 강도</li>
-          <li>하중 지지 능력</li>
-          <li>안정성 및 내구성</li>
-          <li>재료 품질</li>
-          <li>가장자리 및 표면 마감</li>
-          <li>붕괴에 대한 안전성</li>
-          <li>끼임 위험 부재</li>
-          <li>장기 성능</li>
+          <li>안정성</li>
+          <li>내구성</li>
+          <li>표면 성능</li>
+          <li>정상 사용 시 안전성</li>
+          <li>예상 가능한 오용 조건에서의 성능</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          인도에서 제조되거나 수입되는 모든 침대는 IS 17635:2022를 준수하고
-          침대용 BIS 등록을 받아야 합니다.
+          이러한 요구사항은 다양한 침대 설계 및 제조 재료에 걸쳐 품질 및
+          소비자 보호를 위한 일관된 기준을 만드는 데 도움이 됩니다.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          침대에 BIS 인증이 필수인 이유
+          침대에 BIS 인증이 중요한 이유
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          침대는 장기간 사용되며 인간의 체중을 지속적으로 지지합니다. 설계가
-          불량한 침대는 부상, 붕괴 또는 장기적인 건강 위험을 초래할 수 있습니다.
+          침대는 장기간 상당한 하중을 지지하도록 설계되기 때문에 사용자
+          안전에 직접적인 영향을 미칩니다. 설계가 불량하거나 테스트가
+          불충분한 제품은 구조적 실패, 불안정성, 변형 또는 조기 열화를
+          겪을 수 있습니다.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          침대에 BIS 인증이 필요한 이유
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022는 제품이 시장에 출시되기 전에 제조업체가 충족해야
+          하는 표준화된 성능 및 안전 요구사항을 정의하여 이러한 우려를
+          해결합니다. 이 표준에는 강도, 안정성, 내구성, 제작 품질 및 표면
+          성능과 관련된 요구사항이 포함됩니다.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>구조적 무결성 보장</li>
-          <li>붕괴 및 파손 방지</li>
-          <li>재료 품질 관리</li>
-          <li>날카로운 가장자리 및 불안전한 마감 제거</li>
-          <li>소비자 보호</li>
-          <li>균일한 국가 품질 보장</li>
-          <li>BIS 고시에 따른 필수 사항</li>
-          <li>인도에서 합법적 판매에 필요</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          제조업체에게 BIS 인증은 여러 가지 이점을 제공합니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>인도에서 해당 제품을 판매할 법적 권한</li>
+          <li>인도 표준 준수 입증</li>
+          <li>시장 수용성 향상</li>
+          <li>소비자 신뢰 증대</li>
+          <li>규제 조치 위험 감소</li>
+          <li>기관 및 상업 조달에서의 경쟁 우위</li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          침대용 IS 17635:2022 개요
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          인도 정부는 시장에 출시되는 제품이 규정된 안전 및 품질 요구사항을
+          충족하도록 여러 가구 제품에 대한 품질 관리 명령(QCO)을 도입했습니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022가 해당 가구 QCO에 포함되는 경우, 제조업체는 제1호
+          제도(Schema-I)에 따라 BIS 인증을 취득하고 BIS 라이선스 요건에
+          따라 표준 마크(ISI 마크)를 사용해야 합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022는 가정 및 비가정 환경에서 성인 사용자를 위한 침대의
+          성능 및 안전 요구사항을 규정하는 인도 표준입니다. 이 표준은 침대가
+          의도된 사용 수명 동안 안전하고 기능적이며 내구성 있게 유지되도록
+          요구사항을 수립합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>IS 17635:2022의 목적</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022는 다양한 재료 및 제작 방법으로 제조된 현대 침대
+          설계에 적용 가능한 포괄적인 성능 기반 표준을 제공하기 위해
+          개발되었습니다. 이 표준은 주로 목재 침대에 초점을 맞춘 이전
+          IS 7259 (Part 1):1988을 대체합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이 표준은 특정 재료나 제조 공정에 규정 준수를 제한하지 않고
+          침대를 평가합니다. 대신 규정된 테스트 조건에서 완성품이 어떻게
+          성능을 발휘하는지에 초점을 맞춥니다. 이 접근 방식은 목재,
+          금속, 엔지니어드 우드 및 기타 침대 구조의 일관된 평가를
+          가능하게 합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>IS 17635:2022의 적용 범위</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          표준에 따르면 IS 17635:2022는 성인 사용자를 위해 설계된 침대의
+          성능 및 안전과 관련된 요구사항을 다룹니다. 이 표준은 가정 및
+          비가정 환경 모두에서 사용하기 위한 제품에 적용됩니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          이 표준은 다음에 적용됩니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>완전히 제조된 침대</li>
+          <li>제작된 침대</li>
+          <li>조립 후 조립식(RTA) 침대</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          침대용 BIS 라이선스 없이는 인도에서 침대를 판매하거나 수입하는 것은
-          불법입니다.
+          이를 통해 조립된 형태 또는 분해 조립(knock-down) 형태로
+          공급되는 제품도 동일한 성능 및 안전 기준으로 평가됩니다.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>표준의 목표</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022의 주요 목표는 다음과 같습니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>사용자 안전 보장</li>
+          <li>구조적 강도 검증</li>
+          <li>제품 안정성 평가</li>
+          <li>반복 사용 시 내구성 평가</li>
+          <li>최소 성능 요구사항 수립</li>
+          <li>제조업체 간 일관된 제품 품질 촉진</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이 표준에는 정상 사용 조건 및 합리적으로 예상 가능한 오용
+          시나리오에서 침대를 평가하기 위한 테스트 방법론도 포함됩니다.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17635:2022에 포함되는 제품
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022는 가정 및 비가정 환경에서 성인 사용자를 위한
+          침대에 적용됩니다. 이 표준은 특정 재료나 제조 방법에 규정
+          준수를 제한하기보다 완성품의 성능, 안전, 강도, 안정성 및
+          내구성에 초점을 맞춥니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          이 표준은 다음에 적용됩니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>완전히 제조된 침대</li>
+          <li>제작된 침대</li>
+          <li>조립 후 조립식(RTA) 침대</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          분해 조립 상태로 침대를 공급하는 제조업체는 조립된 제품이
+          표준의 모든 해당 요구사항을 준수하도록 해야 합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>참고:</strong> 이 표준은 워터베드, 에어베드, 접이식
+          침대, 이층 침대 및 특수 요구사항이 있는 사람을 위한 침대, 그리고
+          의료 및 의학 목적의 침대를 다루지 않습니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            필수 BIS 인증 대상 가구 제품도 확인하세요 —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>가구용 BIS 인증</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17635:2022의 주요 요구사항
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022의 주요 목적은 침대가 정상 사용 조건에서 의도된
+          목적에 안전하고, 안정적이며, 내구성 있고 적합하게 유지되도록
+          하는 것입니다. 이 목적을 달성하기 위해 표준은 여러 주요 성능
+          요구사항을 수립합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>안정성 요구사항</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          침대는 정상 사용 중 전도 및 불안정성에 대한 적절한 저항력을
+          입증해야 합니다. 안정성 테스트는 예상 하중 조건 및 사용자
+          움직임에 노출될 때 제품이 안전하게 유지되는지 평가합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          안정적인 침대는 사고 위험을 최소화하고 전반적인 사용자
+          안전을 향상시킵니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>강도 요구사항</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          강도 테스트는 침대 구조가 구조적 실패 없이 상당한 하중을
+          견딜 수 있는 능력을 평가합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          이러한 평가는 일반적으로 다음을 검사합니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>침대 프레임 무결성</li>
+          <li>접합부 강도</li>
+          <li>하중 지지 능력</li>
+          <li>과도한 변형에 대한 저항</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          목적은 제품이 일상적인 사용 중 의도된 사용자를 안전하게
+          지지할 수 있도록 하는 것입니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>내구성 요구사항</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          내구성 테스트는 반복적인 하중 및 움직임 주기를 통해 장기
+          사용을 시뮬레이션합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          목적은 다음을 판단하는 것입니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>구조적 연결이 안전하게 유지되는지</li>
+          <li>구성 요소가 올바르게 계속 기능하는지</li>
+          <li>시간이 지남에 따라 제품 성능이 허용 가능한 수준을 유지하는지</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          내구성 요구사항은 인증된 침대가 예상 사용 수명 동안
+          신뢰성을 유지하도록 돕습니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>표면 성능 요구사항</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022는 가구 마감에 적용되는 표면 성능 요구사항을
+          참조합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          구조 및 사용된 재료에 따라 표면은 다음에 대한 저항력을
+          평가받을 수 있습니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>기계적 손상</li>
+          <li>습열</li>
+          <li>건열</li>
+          <li>얼룩</li>
+          <li>접착 성능</li>
+          <li>마모 및 내마모성</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이러한 요구사항은 정상 사용 중 기능과 외관을 모두
+          보존하는 데 도움이 됩니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>설계 및 제작 품질 요구사항</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          이 표준에는 설계 품질 및 제작 품질과 관련된 요구사항도
+          포함됩니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          기타 고려 사항 중:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>접근 가능한 가장자리는 부상 위험을 제시해서는 안 됩니다.</li>
+          <li>날카로운 가장자리와 불안전한 돌출부는 피해야 합니다.</li>
+          <li>필요한 경우 중공 단면은 적절히 밀봉되어야 합니다.</li>
+          <li>움직이는 구성 요소는 부상 위험을 줄이도록 설계되어야 합니다.</li>
+          <li>
+            완성된 제품은 선언된 설계 및 모델 사양에 부합해야 합니다.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>안전 요구사항</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          안전은 IS 17635:2022 전반에 걸친 핵심 원칙입니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          이 표준에는 다음에서 발생하는 위험을 줄이기 위한 요구사항이
+          포함됩니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>구조적 붕괴</li>
+          <li>날카로운 가장자리</li>
+          <li>불안전한 돌출부</li>
+          <li>구성 요소 고장</li>
+          <li>반복 사용 스트레스</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이러한 요구사항을 준수하면 침대가 정상 사용 및 합리적으로
+          예상 가능한 오용 조건에서 안전하게 유지됩니다.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          인도에서 침대용 BIS 인증이 필수인가요?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          네, 해당 품질 관리 명령(QCO)에 포함되는 가구 제품의 경우,
+          해당 제품을 인도에서 제조, 수입, 판매, 유통, 보관 또는
+          판매 목적으로 제공하기 전에 BIS 인증이 필수입니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          규제 요구사항은 수시로 업데이트될 수 있으므로 제조업체는
+          인도 정부가 발행한 최신 고시 상태 및 시행일을 확인해야
+          합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ISI 마크 사용 요건</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          ISI 마크는 제품이 관련 인도 표준을 준수하며 유효한 BIS
+          라이선스 하에 제조되었음을 증명합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          마크는 다음 이후에만 부착할 수 있습니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>성공적인 제품 테스트</li>
+          <li>공장 평가</li>
+          <li>BIS 신청 승인</li>
+          <li>라이선스 부여</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ISI 마크의 무단 사용은 BIS Act, 2016에 따라 금지됩니다.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -366,15 +858,16 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          인도의 BIS 인증 프로세스는 ISI 인증 제도 하에서 구조화된 절차를
-          따릅니다.
+          인도의 BIS 인증 프로세스는 ISI 인증 제도 하에서 구조화된
+          절차를 따릅니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           1단계 – 표준 및 제품 범위 식별
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17635:2022에 따른 적용 가능성을 확인하고 제품 변형을 결정합니다.
+          IS 17635:2022에 따른 적용 가능성을 확인하고 제품 변형을
+          결정합니다.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
@@ -457,30 +950,6 @@ const MainContentLeft = () => {
           <li>1~2년마다 갱신</li>
           <li>지속적인 품질 관리</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          침대용 BIS 라이선스 범위
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong>이 표준은 가정용 및 비가정용 성인용 침대의 성능 및
-          안전과 관련된 요구사항을 다룹니다.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong>이 표준은 완전히 제조/제작된 침대에 적용됩니다.
-          조립 준비 완료 유닛에도 적용되며, 이 경우 이 표준의 요구사항은 조립된
-          유닛에 적용됩니다.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong>이 표준은 워터베드, 에어베드, 접이식 침대, 이층
-          침대 및 특수 요구사항이 있는 사람을 위한 침대, 그리고 의료 및 의학
-          목적의 침대를 다루지 않습니다.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -652,23 +1121,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          침대용 BIS 인증의 혜택
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>인도에서 합법적 판매</li>
-          <li>고객 신뢰 증가</li>
-          <li>전자상거래 플랫폼 접근</li>
-          <li>정부 입찰 자격</li>
-          <li>책임 감소</li>
-          <li>강력한 브랜드 신뢰성</li>
-          <li>인도 표준 준수</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           규정 미준수에 대한 처벌
         </h2>
 
@@ -683,30 +1135,6 @@ const MainContentLeft = () => {
           <li>법적 조치</li>
           <li>시장 금지</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          침대용 BIS 인증서가 필요한 사람은 누구인가요?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          다음 기업은 침대용 BIS 라이선스를 받아야 합니다:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>인도 제조업체</li>
-          <li>외국 제조업체</li>
-          <li>수입업체</li>
-          <li>가구 브랜드</li>
-          <li>OEM/ODM 공급업체</li>
-          <li>전자상거래 판매업체</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          각 제조 단위는 별도의 BIS 라이선스가 필요합니다.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -838,6 +1266,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          관련 자료
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISI 마크 인증서
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              BIS FMCS 라이선스
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadKorean />
 

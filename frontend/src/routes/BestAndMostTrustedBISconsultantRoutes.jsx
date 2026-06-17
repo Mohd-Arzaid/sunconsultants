@@ -15,9 +15,11 @@ import BestandmosttrustedBIScertificationConsultantinJapanlang from "@/pages/Bes
 import BestandmosttrustedBIScertificationConsultantinSouthKorea from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinSouthKorea/BestandmosttrustedBIScertificationConsultantinSouthKorea";
 import BestandmosttrustedBIScertificationConsultantinSouthKorealang from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinSouthKorea/BestandmosttrustedBIScertificationConsultantinSouthKorealang";
 import BestandmosttrustedBIScertificationConsultantinThailand from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinThailand/BestandmosttrustedBIScertificationConsultantinThailand";
+import BestandmosttrustedBIScertificationConsultantinThailandlang from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinThailand/BestandmosttrustedBIScertificationConsultantinThailandlang";
 import BestandmosttrustedBIScertificationConsultantinSpain from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinSpain/BestandmosttrustedBIScertificationConsultantinSpain";
 import BestandmosttrustedBIScertificationConsultantinSpainlang from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinSpain/BestandmosttrustedBIScertificationConsultantinSpainlang";
-import BestandmosttrustedBIScertificationConsultantinVietnam from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinVietnam";
+import BestandmosttrustedBIScertificationConsultantinVietnam from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinVietnam/BestandmosttrustedBIScertificationConsultantinVietnam";
+import BestandmosttrustedBIScertificationConsultantinVietnamlang from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinVietnam/BestandmosttrustedBIScertificationConsultantinVietnamlang";
 
 export const BestAndMostTrustedBISconsultantRoutes = () => {
   return (
@@ -87,6 +89,10 @@ export const BestAndMostTrustedBISconsultantRoutes = () => {
         element={<BestandmosttrustedBIScertificationConsultantinThailand />}
       />
       <Route
+        path="/konsaltan-bis-thi-di-thi-sut-lae-na-chue-thai-thi-sut-prathet-thai"
+        element={<BestandmosttrustedBIScertificationConsultantinThailandlang />}
+      />
+      <Route
         path="/best-and-most-trusted-bis-consultant-spain"
         element={<BestandmosttrustedBIScertificationConsultantinSpain />}
       />
@@ -97,6 +103,10 @@ export const BestAndMostTrustedBISconsultantRoutes = () => {
       <Route
         path="/best-and-most-trusted-bis-consultant-vietnam"
         element={<BestandmosttrustedBIScertificationConsultantinVietnam />}
+      />
+      <Route
+        path="/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam"
+        element={<BestandmosttrustedBIScertificationConsultantinVietnamlang />}
       />
     </>
   );

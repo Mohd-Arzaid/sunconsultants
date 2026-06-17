@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsIndonesian = () => {
   return (
     <div className="relative w-full">
@@ -148,6 +154,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/ranjang-is-17635",
+          },
+          headline: "Sertifikat BIS untuk Ranjang",
+          description:
+            "Sertifikasi BIS untuk ranjang di India adalah jaminan kualitas wajib, terutama di bawah IS 17635:2022, yang memastikan standar keselamatan, daya tahan, dan kinerja.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "Sertifikat BIS untuk Ranjang",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "Sertifikasi BIS untuk ranjang di India adalah jaminan kualitas wajib, terutama di bawah IS 17635:2022, yang memastikan standar keselamatan, daya tahan, dan kinerja.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Apakah sertifikasi BIS wajib untuk ranjang di India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ya, di bawah IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Berapa validitas Sertifikat BIS?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 tahun, dapat diperpanjang.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Bisakah produsen asing mengajukan?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ya, di bawah FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Bisakah Sertifikat BIS diajukan secara online?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ya.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Apakah Tanda ISI wajib pada ranjang?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ya.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Berapa lama prosesnya?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45 hari.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Apakah ranjang kayu dan logam keduanya tercakup?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ya, jika sesuai dengan IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Apakah inspeksi pabrik wajib?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ya.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Bisakah pedagang mengajukan BIS?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Hanya pemilik merek dengan kontrol manufaktur.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -239,8 +384,15 @@ const MainContentLeft = () => {
           rumah, hotel, rumah sakit, asrama, akomodasi PG, dan fasilitas
           institusional. Kelemahan struktural, tepi tajam, kegagalan material,
           atau kapasitas beban yang buruk dapat menyebabkan cedera serius. Untuk
-          mencegah risiko tersebut, Bureau of Indian Standards (BIS) mewajibkan
-          Sertifikasi BIS untuk Ranjang.
+          mencegah risiko tersebut, Bureau of Indian Standards (BIS) mewajibkan{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Sertifikasi BIS
+          </a>{" "}
+          untuk Ranjang.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -253,117 +405,480 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS?
+          Sorotan Utama Sertifikasi BIS untuk Ranjang
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS adalah program penilaian kesesuaian yang diperkenalkan
-          oleh Bureau of Indian Standards, otoritas standar nasional India.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Rincian
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Detail
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Produk", "Ranjang"],
+                ["Standar India", "IS 17635:2022"],
+                ["Judul Standar", "Ranjang – Spesifikasi"],
+                ["Skema Sertifikasi", "Sertifikasi Tanda ISI BIS"],
+                ["Otoritas Regulasi", "Bureau of Indian Standards (BIS)"],
+                ["Tanda yang Berlaku", "Tanda ISI"],
+                [
+                  "Pelamar yang Memenuhi Syarat",
+                  "Produsen India dan Produsen Asing",
+                ],
+                [
+                  "Persyaratan Kepatuhan",
+                  "Wajib di bawah QCO Furnitur yang berlaku (Quality Control Order)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Skema Sertifikasi" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Sertifikasi Tanda ISI BIS
+                      </a>
+                    ) : particular === "Persyaratan Kepatuhan" ? (
+                      <>
+                        Wajib di bawah{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>QCO Furnitur (Quality Control Order)</strong>
+                        </a>{" "}
+                        yang berlaku
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Apa itu Sertifikat BIS?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikat BIS mengonfirmasi bahwa produk sesuai dengan Standar India
-          dan aman, dapat diandalkan, dan layak digunakan. Produk yang
-          disertifikasi membawa Tanda Sertifikasi BIS, yang biasa dikenal
-          sebagai Tanda ISI.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Arti Sertifikat BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Ini menandakan bahwa produk telah berhasil lulus:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Pengujian laboratorium</li>
-          <li>Inspeksi pabrik</li>
-          <li>Verifikasi kontrol kualitas</li>
-          <li>Evaluasi kepatuhan keselamatan</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Logo BIS pada ranjang meyakinkan pelanggan bahwa produk memenuhi
-          standar kualitas dan keselamatan yang disetujui pemerintah.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Standar BIS yang Berlaku untuk Ranjang – IS 17635:2022
+          Apa itu Sertifikasi BIS untuk Ranjang?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Standar India yang berlaku untuk ranjang adalah:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – Ranjang: Persyaratan Keselamatan
+          Sertifikasi BIS untuk Ranjang adalah proses penilaian kesesuaian
+          melalui mana produsen menunjukkan bahwa produk mereka mematuhi
+          persyaratan yang ditetapkan dalam IS 17635:2022. Setelah kepatuhan
+          diverifikasi melalui pengujian, penilaian pabrik, dan tinjauan
+          regulasi, produsen diberikan lisensi BIS dan dapat menempelkan Tanda
+          ISI pada produk yang disertifikasi.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Standar ini mendefinisikan persyaratan keselamatan dan kinerja penting
-          untuk ranjang yang digunakan di lingkungan perumahan dan komersial.
+          Kerangka sertifikasi ini dimaksudkan untuk memastikan bahwa ranjang
+          yang tersedia di pasar India memenuhi persyaratan yang ditetapkan
+          terkait:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022 Mencakup
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Kekuatan struktural</li>
-          <li>Kapasitas menahan beban</li>
-          <li>Stabilitas dan daya tahan</li>
-          <li>Kualitas material</li>
-          <li>Finishing tepi dan permukaan</li>
-          <li>Keselamatan terhadap keruntuhan</li>
-          <li>Tidak adanya bahaya terperangkap</li>
-          <li>Kinerja jangka panjang</li>
+          <li>Stabilitas</li>
+          <li>Daya tahan</li>
+          <li>Kinerja permukaan</li>
+          <li>Keselamatan selama penggunaan normal</li>
+          <li>Kinerja dalam kondisi penyalahgunaan yang dapat diperkirakan</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap ranjang yang diproduksi atau diimpor ke India harus mematuhi IS
-          17635:2022 dan memperoleh Registrasi BIS untuk Ranjang.
+          Persyaratan ini membantu menciptakan tolok ukur yang konsisten untuk
+          kualitas dan perlindungan konsumen di berbagai desain ranjang dan
+          material manufaktur.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Mengapa Sertifikasi BIS Wajib untuk Ranjang
+          Mengapa Sertifikasi BIS Penting untuk Ranjang
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ranjang digunakan untuk durasi yang lama dan menopang berat badan
-          manusia secara terus-menerus. Ranjang yang dirancang dengan buruk
-          dapat menyebabkan cedera, keruntuhan, atau risiko kesehatan jangka
-          panjang.
+          Ranjang secara langsung memengaruhi keselamatan pengguna karena
+          dirancang untuk menopang beban signifikan dalam jangka waktu yang
+          lama. Produk yang dirancang dengan buruk atau diuji secara tidak
+          memadai dapat mengalami kegagalan struktural, ketidakstabilan,
+          deformasi, atau deteriorasi prematur.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Alasan Sertifikasi BIS untuk Ranjang Diperlukan
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 mengatasi kekhawatiran ini dengan mendefinisikan
+          persyaratan kinerja dan keselamatan standar yang harus dipenuhi
+          produsen sebelum produk mereka memasuki pasar. Standar ini mencakup
+          persyaratan terkait kekuatan, stabilitas, daya tahan, pengerjaan, dan
+          kinerja permukaan.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Memastikan integritas struktural</li>
-          <li>Mencegah keruntuhan dan kerusakan</li>
-          <li>Mengontrol kualitas material</li>
-          <li>Menghilangkan tepi tajam dan finishing yang tidak aman</li>
-          <li>Melindungi konsumen</li>
-          <li>Memastikan kualitas nasional yang seragam</li>
-          <li>Wajib berdasarkan pemberitahuan BIS</li>
-          <li>Diperlukan untuk penjualan legal di India</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Bagi produsen, sertifikasi BIS menawarkan beberapa keuntungan:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Otorisasi hukum untuk menjual produk yang tercakup di India</li>
+          <li>Demonstrasi kepatuhan terhadap Standar India</li>
+          <li>Penerimaan pasar yang lebih baik</li>
+          <li>Kepercayaan konsumen yang meningkat</li>
+          <li>Risiko tindakan regulasi yang berkurang</li>
+          <li>Keunggulan kompetitif dalam pengadaan institusional dan komersial</li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Gambaran Umum IS 17635:2022 untuk Ranjang
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Pemerintah India telah memperkenalkan Quality Control Order (QCO)
+          untuk beberapa produk furnitur guna memastikan bahwa produk yang
+          dipasarkan memenuhi persyaratan keselamatan dan kualitas yang
+          ditetapkan.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Jika IS 17635:2022 tercakup di bawah QCO Furnitur yang berlaku,
+          produsen diwajibkan memperoleh sertifikasi BIS di bawah Skema-I dan
+          menggunakan Tanda Standar (Tanda ISI) sesuai dengan persyaratan
+          lisensi BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 adalah Standar India yang menetapkan persyaratan kinerja
+          dan keselamatan untuk ranjang yang dimaksudkan untuk pengguna dewasa
+          di lingkungan domestik dan non-domestik. Standar ini menetapkan
+          persyaratan yang membantu memastikan ranjang tetap aman, fungsional,
+          dan tahan lama sepanjang masa layanan yang dimaksudkan.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Tujuan IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 dikembangkan untuk menyediakan standar berbasis kinerja
+          yang komprehensif yang berlaku untuk desain ranjang modern yang
+          diproduksi menggunakan berbagai material dan metode konstruksi.
+          Standar ini menggantikan IS 7259 (Bagian 1):1988 sebelumnya, yang
+          terutama berfokus pada ranjang kayu.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Standar ini mengevaluasi ranjang tanpa membatasi kepatuhan pada
+          material atau proses manufaktur tertentu. Sebaliknya, standar ini
+          berfokus pada bagaimana produk jadi berkinerja di bawah kondisi
+          pengujian yang ditetapkan. Pendekatan ini memungkinkan penilaian yang
+          konsisten terhadap konstruksi ranjang kayu, logam, kayu rekayasa, dan
+          lainnya.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Ruang Lingkup IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Menurut standar ini, IS 17635:2022 mencakup persyaratan terkait
+          kinerja dan keselamatan ranjang yang dirancang untuk pengguna dewasa.
+          Standar ini berlaku untuk produk yang dimaksudkan untuk digunakan
+          baik di lingkungan domestik maupun non-domestik.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Standar ini berlaku untuk:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Ranjang yang diproduksi sepenuhnya</li>
+          <li>Ranjang yang difabrikasi</li>
+          <li>Ranjang siap rakit setelah perakitan</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tanpa Lisensi BIS untuk Ranjang, menjual atau mengimpor ranjang di
-          India adalah ilegal.
+          Hal ini memastikan bahwa produk yang disuplai dalam bentuk terakit
+          atau knock-down dievaluasi menggunakan kriteria kinerja dan
+          keselamatan yang sama.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Tujuan Standar</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tujuan utama IS 17635:2022 meliputi:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Memastikan keselamatan pengguna</li>
+          <li>Memverifikasi kekuatan struktural</li>
+          <li>Menilai stabilitas produk</li>
+          <li>Mengevaluasi daya tahan dalam penggunaan berulang</li>
+          <li>Menetapkan persyaratan kinerja minimum</li>
+          <li>Mempromosikan kualitas produk yang konsisten di seluruh produsen</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Standar ini juga mencakup metodologi pengujian yang dimaksudkan untuk
+          mengevaluasi ranjang di bawah kondisi penggunaan normal dan skenario
+          penyalahgunaan yang dapat diperkirakan secara wajar.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Produk yang Tercakup di Bawah IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 berlaku untuk ranjang yang dimaksudkan untuk pengguna
+          dewasa di lingkungan domestik dan non-domestik. Standar ini
+          berfokus pada kinerja, keselamatan, kekuatan, stabilitas, dan daya
+          tahan produk jadi daripada membatasi kepatuhan pada material atau
+          metode manufaktur tertentu.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Standar ini berlaku untuk:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Ranjang yang diproduksi sepenuhnya</li>
+          <li>Ranjang yang difabrikasi</li>
+          <li>Ranjang siap rakit (RTA) setelah perakitan</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen yang mensuplai ranjang dalam kondisi knock-down harus
+          memastikan bahwa produk yang dirakit mematuhi semua persyaratan
+          standar yang berlaku.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>Catatan:</strong> Standar ini tidak mencakup ranjang air,
+          ranjang udara, ranjang lipat, ranjang susun dan ranjang untuk orang
+          dengan kebutuhan khusus, maupun ranjang untuk keperluan kesehatan dan
+          medis.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Periksa juga Produk Furnitur yang Tercakup di Bawah Sertifikasi BIS
+            Wajib —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Sertifikasi BIS untuk furnitur</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Persyaratan Utama di Bawah IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tujuan utama IS 17635:2022 adalah memastikan bahwa ranjang tetap aman,
+          stabil, tahan lama, dan layak untuk tujuan yang dimaksudkan sepanjang
+          kondisi penggunaan normal. Untuk mencapai tujuan ini, standar
+          menetapkan beberapa persyaratan kinerja utama.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Stabilitas</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ranjang harus menunjukkan resistensi yang memadai terhadap
+          terbaliknya dan ketidakstabilan selama penggunaan normal. Pengujian
+          stabilitas mengevaluasi apakah produk tetap aman ketika dikenai
+          kondisi beban yang diharapkan dan gerakan pengguna.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ranjang yang stabil meminimalkan risiko kecelakaan dan meningkatkan
+          keselamatan pengguna secara keseluruhan.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Kekuatan</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Uji kekuatan menilai kemampuan struktur ranjang untuk menahan beban
+          signifikan tanpa kegagalan struktural.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Evaluasi ini biasanya memeriksa:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Integritas rangka ranjang</li>
+          <li>Kekuatan sambungan</li>
+          <li>Kapasitas menahan beban</li>
+          <li>Resistensi terhadap deformasi berlebihan</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tujuannya adalah memastikan bahwa produk dapat dengan aman menopang
+          pengguna yang dimaksudkan selama operasi sehari-hari.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Daya Tahan</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Pengujian daya tahan mensimulasikan penggunaan jangka panjang melalui
+          siklus beban dan gerakan berulang.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tujuannya adalah menentukan apakah:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Sambungan struktural tetap aman</li>
+          <li>Komponen terus berfungsi dengan benar</li>
+          <li>Kinerja produk tetap dapat diterima seiring waktu</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Persyaratan daya tahan membantu memastikan bahwa ranjang bersertifikat
+          tetap andal sepanjang masa layanan yang diharapkan.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Kinerja Permukaan</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022 merujuk pada persyaratan kinerja permukaan yang berlaku
+          untuk finishing furnitur.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tergantung pada konstruksi dan material yang digunakan, permukaan
+          dapat dievaluasi untuk resistensi terhadap:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Kerusakan mekanis</li>
+          <li>Panas basah</li>
+          <li>Panas kering</li>
+          <li>Noda</li>
+          <li>Kinerja adhesi</li>
+          <li>Abrasi dan keausan</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Persyaratan ini membantu menjaga fungsionalitas dan penampilan selama
+          penggunaan normal.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Persyaratan Desain dan Pengerjaan
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Standar ini juga berisi persyaratan terkait kualitas desain dan
+          pengerjaan.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Di antara pertimbangan lainnya:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Tepi yang dapat diakses tidak boleh menimbulkan bahaya cedera.</li>
+          <li>Tepi tajam dan tonjolan yang tidak aman harus dihindari.</li>
+          <li>Bagian berongga harus ditutup dengan benar jika diperlukan.</li>
+          <li>Komponen bergerak harus dirancang untuk mengurangi risiko cedera.</li>
+          <li>
+            Produk jadi harus sesuai dengan spesifikasi desain dan model yang
+            dideklarasikan.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Persyaratan Keselamatan</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Keselamatan adalah prinsip inti di seluruh IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Standar ini menggabungkan persyaratan yang dimaksudkan untuk
+          mengurangi risiko yang timbul dari:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Keruntuhan struktural</li>
+          <li>Tepi tajam</li>
+          <li>Tonjolan yang tidak aman</li>
+          <li>Kegagalan komponen</li>
+          <li>Stres penggunaan berulang</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Kepatuhan terhadap persyaratan ini membantu memastikan bahwa ranjang
+          tetap aman di bawah penggunaan normal dan kondisi penyalahgunaan yang
+          dapat diperkirakan secara wajar.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Apakah Sertifikasi BIS untuk Ranjang Wajib di India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ya, untuk produk furnitur yang tercakup di bawah Quality Control Order
+          yang berlaku, sertifikasi BIS wajib sebelum produk tersebut dapat
+          diproduksi, diimpor, dijual, didistribusikan, disimpan, atau
+          ditawarkan untuk dijual di India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produsen harus memverifikasi status pemberitahuan terbaru dan tanggal
+          implementasi yang dikeluarkan oleh Pemerintah India karena persyaratan
+          regulasi dapat diperbarui dari waktu ke waktu.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Persyaratan Penggunaan Tanda ISI
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tanda ISI berfungsi sebagai bukti bahwa produk sesuai dengan Standar
+          India yang relevan dan diproduksi di bawah lisensi BIS yang valid.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tanda ini hanya dapat diterapkan setelah:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Pengujian produk berhasil</li>
+          <li>Penilaian pabrik</li>
+          <li>Persetujuan BIS atas aplikasi</li>
+          <li>Pemberian lisensi</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Penggunaan Tanda ISI tanpa otorisasi dilarang di bawah BIS Act, 2016.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -463,32 +978,6 @@ const MainContentLeft = () => {
           <li>Perpanjangan setiap 1–2 tahun</li>
           <li>Kontrol kualitas berkelanjutan</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Ruang Lingkup Lisensi BIS untuk Ranjang
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Standar ini mencakup persyaratan terkait kinerja
-          dan keselamatan ranjang untuk orang dewasa untuk penggunaan domestik
-          dan non-domestik.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Standar ini berlaku untuk ranjang yang
-          diproduksi/ dibuat sepenuhnya. Ini juga berlaku untuk unit siap
-          rakitan; dalam hal itu persyaratan standar ini akan berlaku untuk unit
-          yang dirakit.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> Standar ini tidak mencakup ranjang air, ranjang
-          udara, ranjang lipat, ranjang susun dan ranjang untuk orang dengan
-          kebutuhan khusus, maupun ranjang untuk keperluan kesehatan dan medis.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -661,23 +1150,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Manfaat Sertifikasi BIS untuk Ranjang
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Penjualan legal di India</li>
-          <li>Meningkatkan kepercayaan pelanggan</li>
-          <li>Akses ke platform e-commerce</li>
-          <li>Kelayakan untuk tender pemerintah</li>
-          <li>Mengurangi tanggung jawab</li>
-          <li>Kredibilitas merek yang kuat</li>
-          <li>Kepatuhan terhadap standar India</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Sanksi untuk Ketidakpatuhan
         </h2>
 
@@ -692,30 +1164,6 @@ const MainContentLeft = () => {
           <li>Tindakan hukum</li>
           <li>Larangan pasar</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Siapa yang Membutuhkan Sertifikat BIS untuk Ranjang?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Entitas berikut harus memperoleh Lisensi BIS untuk Ranjang:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produsen India</li>
-          <li>Produsen asing</li>
-          <li>Importir</li>
-          <li>Merek furnitur</li>
-          <li>Pemasok OEM/ODM</li>
-          <li>Penjual e-commerce</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap unit manufaktur memerlukan lisensi BIS terpisah.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -851,6 +1299,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sumber Daya Terkait
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Sertifikat Tanda ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Lisensi BIS FMCS
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadIndonesian />
 

@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsSpanish = () => {
   return (
     <div className="relative w-full">
@@ -149,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/camas-is-17635",
+          },
+          headline: "Certificado BIS para Camas",
+          description:
+            "La certificación BIS para camas en India es una garantía de calidad obligatoria, principalmente bajo IS 17635:2022, que asegura estándares de seguridad, durabilidad y rendimiento.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "Certificado BIS para Camas",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "La certificación BIS para camas en India es una garantía de calidad obligatoria, principalmente bajo IS 17635:2022, que asegura estándares de seguridad, durabilidad y rendimiento.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "¿Es obligatoria la certificación BIS para camas en India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí, según IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Cuál es la validez del Certificado BIS?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 años, renovable.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Pueden aplicar fabricantes extranjeros?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí, bajo FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Se puede solicitar el Certificado BIS en línea?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Es obligatoria la Marca ISI en las camas?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Cuánto tiempo tarda el proceso?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45 días.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Están cubiertas tanto las camas de madera como las de metal?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí, si cumplen con IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Es obligatoria la inspección de fábrica?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Pueden los comerciantes solicitar BIS?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Solo propietarios de marca con control de fabricación.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -227,12 +372,12 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          El Certificado BIS para Camas es un requisito obligatorio en India
-          según IS 17635:2022, dirigido a fabricantes e importadores de camas
-          para uso doméstico y comercial. Según el último Estándar Indio IS
+          El Certificado BIS para Camas es un requisito de cumplimiento
+          obligatorio en India para fabricantes e importadores de camas
+          destinadas al uso doméstico y comercial. Según la última Norma India IS
           17635:2022 – Camas (Requisitos de Seguridad), todas las camas deben
-          cumplir con estrictos estándares de seguridad, durabilidad, estructura
-          y rendimiento antes de ser vendidas en el mercado indio.
+          cumplir estrictos estándares de seguridad, durabilidad, estructura y
+          rendimiento antes de ser vendidas en el mercado indio.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -241,7 +386,15 @@ const MainContentLeft = () => {
           e instalaciones institucionales. Cualquier debilidad estructural,
           bordes afilados, fallo de materiales o baja capacidad de carga puede
           resultar en lesiones graves. Para prevenir tales riesgos, la Oficina
-          de Estándares de la India (BIS) exige la Certificación BIS para Camas.
+          de Estándares de la India (BIS) exige la{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Certificación BIS
+          </a>{" "}
+          para Camas.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -254,118 +407,496 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ¿Qué es la Certificación BIS?
+          Aspectos Clave de la Certificación BIS para Camas
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          La Certificación BIS es un esquema de evaluación de conformidad
-          introducido por la Oficina de Estándares de la India, la autoridad
-          nacional de estándares de India.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Aspecto
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Detalles
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Producto", "Camas"],
+                ["Norma India", "IS 17635:2022"],
+                ["Título de la Norma", "Camas – Especificación"],
+                ["Esquema de Certificación", "Certificación con Marca ISI BIS"],
+                [
+                  "Autoridad Reguladora",
+                  "Oficina de Estándares de la India (BIS)",
+                ],
+                ["Marca Aplicable", "Marca ISI"],
+                [
+                  "Solicitantes Elegibles",
+                  "Fabricantes Indios y Fabricantes Extranjeros",
+                ],
+                [
+                  "Requisito de Cumplimiento",
+                  "Obligatorio bajo la QCO de Mobiliario aplicable (Orden de Control de Calidad)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Esquema de Certificación" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Certificación con Marca ISI BIS
+                      </a>
+                    ) : particular === "Requisito de Cumplimiento" ? (
+                      <>
+                        Obligatorio bajo la{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            QCO de Mobiliario aplicable (Orden de Control de
+                            Calidad)
+                          </strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ¿Qué es el Certificado BIS?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Un Certificado BIS confirma que un producto cumple con los Estándares
-          Indios y es seguro, confiable y adecuado para su uso. Los productos
-          certificados llevan la Marca de Certificación BIS, comúnmente conocida
-          como la Marca ISI.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Significado del Certificado BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Significa que el producto ha pasado exitosamente:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Pruebas de laboratorio</li>
-          <li>Inspección de fábrica</li>
-          <li>Verificación de control de calidad</li>
-          <li>Evaluación de cumplimiento de seguridad</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          El Logo BIS en las camas asegura a los clientes que el producto cumple
-          con los estándares de calidad y seguridad aprobados por el gobierno.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Estándar BIS Aplicable para Camas – IS 17635:2022
+          ¿Qué es la Certificación BIS para Camas?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          El Estándar Indio aplicable para camas es:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – Camas: Requisitos de Seguridad
+          La Certificación BIS para Camas es un proceso de evaluación de
+          conformidad mediante el cual los fabricantes demuestran que sus
+          productos cumplen con los requisitos especificados en IS 17635:2022.
+          Una vez verificado el cumplimiento mediante pruebas, evaluación de
+          fábrica y revisión regulatoria, al fabricante se le otorga una licencia
+          BIS y puede colocar la Marca ISI en los productos certificados.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Este estándar define los requisitos esenciales de seguridad y
-          rendimiento para camas utilizadas en entornos residenciales y
-          comerciales.
+          El marco de certificación tiene como objetivo garantizar que las camas
+          disponibles en el mercado indio satisfagan los requisitos establecidos
+          relacionados con:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022 Cubre
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Resistencia estructural</li>
-          <li>Capacidad de carga</li>
-          <li>Estabilidad y durabilidad</li>
-          <li>Calidad del material</li>
-          <li>Acabado de bordes y superficie</li>
-          <li>Seguridad contra colapso</li>
-          <li>Ausencia de riesgos de atrapamiento</li>
-          <li>Rendimiento a largo plazo</li>
+          <li>Estabilidad</li>
+          <li>Durabilidad</li>
+          <li>Rendimiento superficial</li>
+          <li>Seguridad durante el uso normal</li>
+          <li>Rendimiento bajo condiciones de uso indebido previsibles</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Cualquier cama fabricada o importada a India debe cumplir con IS
-          17635:2022 y obtener un Registro BIS para Camas.
+          Estos requisitos ayudan a crear un referente consistente de calidad y
+          protección al consumidor en diferentes diseños de camas y materiales
+          de fabricación.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ¿Por qué la Certificación BIS es Obligatoria para las Camas?
+          Por Qué es Importante la Certificación BIS para Camas
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Las camas se utilizan durante períodos prolongados y soportan el peso
-          humano continuamente. Las camas mal diseñadas pueden causar lesiones,
-          colapso o riesgos para la salud a largo plazo.
+          Las camas afectan directamente la seguridad del usuario porque están
+          diseñadas para soportar cargas significativas durante períodos
+          prolongados. Los productos mal diseñados o insuficientemente probados
+          pueden experimentar fallos estructurales, inestabilidad, deformación
+          o deterioro prematuro.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Razones por las que se Requiere la Certificación BIS para Camas
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 aborda estas preocupaciones definiendo requisitos
+          estandarizados de rendimiento y seguridad que los fabricantes deben
+          satisfacer antes de que sus productos ingresen al mercado. La norma
+          incluye requisitos relacionados con resistencia, estabilidad,
+          durabilidad, mano de obra y rendimiento superficial.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Garantiza la integridad estructural</li>
-          <li>Previene el colapso y la rotura</li>
-          <li>Controla la calidad del material</li>
-          <li>Elimina bordes afilados y acabados inseguros</li>
-          <li>Protege a los consumidores</li>
-          <li>Garantiza calidad nacional uniforme</li>
-          <li>Obligatorio según notificación BIS</li>
-          <li>Requerido para venta legal en India</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Para los fabricantes, la certificación BIS ofrece varias ventajas:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Autorización legal para vender productos cubiertos en India</li>
+          <li>Demostración de cumplimiento con las Normas Indias</li>
+          <li>Mayor aceptación en el mercado</li>
+          <li>Mayor confianza del consumidor</li>
+          <li>Reducción del riesgo de acción regulatoria</li>
+          <li>
+            Ventaja competitiva en adquisiciones institucionales y comerciales
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Descripción General de IS 17635:2022 para Camas
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El Gobierno de India ha introducido Órdenes de Control de Calidad para
+          varios productos de mobiliario a fin de garantizar que los productos
+          colocados en el mercado cumplan con los requisitos de seguridad y
+          calidad prescritos.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Cuando IS 17635:2022 está cubierto bajo la QCO de Mobiliario
+          aplicable, los fabricantes deben obtener la certificación BIS bajo el
+          Esquema-I y usar la Marca Estándar (Marca ISI) de acuerdo con los
+          requisitos de licencia BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 es la Norma India que especifica los requisitos de
+          rendimiento y seguridad para camas destinadas a usuarios adultos en
+          entornos domésticos y no domésticos. La norma establece requisitos que
+          ayudan a garantizar que las camas permanezcan seguras, funcionales y
+          duraderas durante toda su vida útil prevista.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Propósito de IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 fue desarrollada para proporcionar una norma integral
+          basada en el rendimiento aplicable a los diseños modernos de camas
+          fabricadas con diversos materiales y métodos de construcción. La norma
+          reemplaza a la anterior IS 7259 (Parte 1):1988, que se centraba
+          principalmente en camas de madera.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La norma evalúa las camas sin limitar el cumplimiento a un material o
+          proceso de fabricación particular. En su lugar, se centra en cómo
+          rinde el producto terminado bajo las condiciones de prueba prescritas.
+          Este enfoque permite una evaluación consistente de construcciones de
+          camas de madera, metal, madera de ingeniería y otras.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Alcance de IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Según la norma, IS 17635:2022 cubre requisitos relacionados con el
+          rendimiento y la seguridad de las camas diseñadas para usuarios adultos.
+          La norma se aplica a productos destinados al uso tanto en entornos
+          domésticos como no domésticos.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norma se aplica a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Camas completamente fabricadas</li>
+          <li>Camas fabricadas</li>
+          <li>Camas listas para ensamblar después del ensamblaje</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sin una Licencia BIS para Camas, vender o importar camas en India es
-          ilegal.
+          Esto garantiza que los productos suministrados en forma ensamblada o
+          desmontable se evalúen utilizando los mismos criterios de rendimiento
+          y seguridad.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Objetivos de la Norma</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Los objetivos principales de IS 17635:2022 incluyen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Garantizar la seguridad del usuario</li>
+          <li>Verificar la resistencia estructural</li>
+          <li>Evaluar la estabilidad del producto</li>
+          <li>Evaluar la durabilidad bajo uso repetido</li>
+          <li>Establecer requisitos mínimos de rendimiento</li>
+          <li>Promover una calidad de producto consistente entre fabricantes</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La norma también incluye metodologías de prueba destinadas a evaluar
+          las camas bajo condiciones de uso normal y escenarios de uso indebido
+          razonablemente previsibles.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Productos Cubiertos Bajo IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 se aplica a camas destinadas a usuarios adultos en
+          entornos domésticos y no domésticos. La norma se centra en el
+          rendimiento, la seguridad, la resistencia, la estabilidad y la
+          durabilidad del producto terminado, en lugar de restringir el
+          cumplimiento a un material o método de fabricación específico.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norma se aplica a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Camas completamente fabricadas</li>
+          <li>Camas fabricadas</li>
+          <li>Camas listas para ensamblar (RTA) después del ensamblaje</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los fabricantes que suministran camas en condición desmontable deben
+          garantizar que el producto ensamblado cumpla con todos los requisitos
+          aplicables de la norma.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>Nota:</strong> Esta norma no cubre camas de agua, colchones de
+          aire, camas plegables, literas y camas para personas con necesidades
+          especiales, ni las camas para fines de atención médica y médicos.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Consulte también los Productos de Mobiliario Cubiertos Bajo la
+            Certificación BIS Obligatoria —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Certificación BIS para mobiliario</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Requisitos Clave Bajo IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El objetivo principal de IS 17635:2022 es garantizar que las camas
+          permanezcan seguras, estables, duraderas y aptas para su propósito
+          previsto durante las condiciones normales de uso. Para lograr este
+          objetivo, la norma establece varios requisitos clave de rendimiento.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisitos de Estabilidad</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Las camas deben demostrar una resistencia adecuada al vuelco y a la
+          inestabilidad durante el uso normal. Las pruebas de estabilidad
+          evalúan si el producto permanece seguro cuando se somete a condiciones
+          de carga esperadas y movimientos del usuario.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Una cama estable minimiza el riesgo de accidentes y mejora la
+          seguridad general del usuario.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisitos de Resistencia</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Las pruebas de resistencia evalúan la capacidad de la estructura de la
+          cama para soportar cargas significativas sin fallo estructural.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Estas evaluaciones examinan típicamente:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Integridad del marco de la cama</li>
+          <li>Resistencia de las juntas</li>
+          <li>Capacidad de carga</li>
+          <li>Resistencia a la deformación excesiva</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El propósito es garantizar que el producto pueda soportar de forma
+          segura a los usuarios previstos durante la operación diaria.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisitos de Durabilidad</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Las pruebas de durabilidad simulan el uso a largo plazo mediante ciclos
+          repetidos de carga y movimiento.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          El objetivo es determinar si:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Las conexiones estructurales permanecen seguras</li>
+          <li>Los componentes siguen funcionando correctamente</li>
+          <li>El rendimiento del producto sigue siendo aceptable con el tiempo</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los requisitos de durabilidad ayudan a garantizar que las camas
+          certificadas mantengan su fiabilidad durante toda su vida útil prevista.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Requisitos de Rendimiento Superficial
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022 hace referencia a requisitos de rendimiento superficial
+          aplicables a acabados de mobiliario.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Dependiendo de la construcción y los materiales utilizados, las
+          superficies pueden evaluarse por resistencia a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Daños mecánicos</li>
+          <li>Calor húmedo</li>
+          <li>Calor seco</li>
+          <li>Manchas</li>
+          <li>Rendimiento de adhesión</li>
+          <li>Abrasión y desgaste</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Estos requisitos ayudan a preservar tanto la funcionalidad como la
+          apariencia durante el uso normal.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Requisitos de Diseño y Mano de Obra
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norma también contiene requisitos relacionados con la calidad del
+          diseño y la mano de obra.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Entre otras consideraciones:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>
+            Los bordes accesibles no deben presentar riesgos de lesión.
+          </li>
+          <li>Se deben evitar bordes afilados y proyecciones inseguras.</li>
+          <li>
+            Las secciones huecas deben cerrarse adecuadamente cuando sea
+            necesario.
+          </li>
+          <li>
+            Los componentes móviles deben diseñarse para reducir el riesgo de
+            lesión.
+          </li>
+          <li>
+            El producto terminado debe conformarse con las especificaciones de
+            diseño y modelo declaradas.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisitos de Seguridad</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La seguridad es un principio fundamental en IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norma incorpora requisitos destinados a reducir los riesgos derivados
+          de:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Colapso estructural</li>
+          <li>Bordes afilados</li>
+          <li>Proyecciones inseguras</li>
+          <li>Fallo de componentes</li>
+          <li>Esfuerzos por uso repetido</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El cumplimiento de estos requisitos ayuda a garantizar que las camas
+          permanezcan seguras bajo uso normal y condiciones de uso indebido
+          razonablemente previsibles.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ¿Es Obligatoria la Certificación BIS para Camas en India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sí, para los productos de mobiliario cubiertos bajo la Orden de Control
+          de Calidad aplicable, la certificación BIS es obligatoria antes de que
+          dichos productos puedan fabricarse, importarse, venderse, distribuirse,
+          almacenarse u ofrecerse en venta en India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los fabricantes deben verificar el estado de la última notificación y
+          las fechas de implementación emitidas por el Gobierno de India, ya que
+          los requisitos regulatorios pueden actualizarse periódicamente.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Requisito de Uso de la Marca ISI
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La Marca ISI sirve como evidencia de que un producto cumple con la
+          Norma India relevante y se fabrica bajo una licencia BIS válida.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La marca solo puede aplicarse después de:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Pruebas de producto exitosas</li>
+          <li>Evaluación de fábrica</li>
+          <li>Aprobación BIS de la solicitud</li>
+          <li>Otorgamiento de licencia</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El uso no autorizado de la Marca ISI está prohibido bajo la Ley BIS de
+          2016.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -378,7 +909,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 1 – Identificar Estándar y Alcance del Producto
+          Paso 1 – Identificar Norma y Alcance del Producto
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Confirmar la aplicabilidad bajo IS 17635:2022 y determinar las
@@ -470,33 +1001,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Alcance de la Licencia BIS para Camas
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Este estándar cubre los requisitos relacionados
-          con el rendimiento y la seguridad de las camas para adultos para uso
-          doméstico y no doméstico.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Este estándar se aplica a camas completamente
-          fabricadas/construidas. También se aplica a unidades listas para
-          ensamblar; en ese caso, los requisitos de este estándar se aplicarán a
-          las unidades ensambladas.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> Este estándar no cubre camas de agua, colchones
-          de aire, camas plegables, literas y camas para personas con
-          necesidades especiales, ni las camas para fines de atención médica y
-          médicos.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Documentos Requeridos para la Certificación BIS de Camas
         </h2>
 
@@ -571,7 +1075,7 @@ const MainContentLeft = () => {
                   4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Diseño y fabricación
+                  Diseño y mano de obra
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -641,7 +1145,7 @@ const MainContentLeft = () => {
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
             <strong>Selección incorrecta del estándar</strong> – Siempre
-            verifica el Estándar Indio correcto.
+            verifica la Norma India correcta.
           </li>
           <li>
             <strong>Documentación deficiente</strong> – Los documentos faltantes
@@ -665,23 +1169,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Beneficios de la Certificación BIS para Camas
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Venta legal en India</li>
-          <li>Mayor confianza del cliente</li>
-          <li>Acceso a plataformas de comercio electrónico</li>
-          <li>Elegibilidad para licitaciones gubernamentales</li>
-          <li>Reducción de responsabilidad</li>
-          <li>Fuerte credibilidad de marca</li>
-          <li>Cumplimiento con estándares indios</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Sanciones por Incumplimiento
         </h2>
 
@@ -696,30 +1183,6 @@ const MainContentLeft = () => {
           <li>Acción legal</li>
           <li>Prohibición del mercado</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ¿Quién Necesita el Certificado BIS para Camas?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Las siguientes entidades deben obtener una Licencia BIS para Camas:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabricantes indios</li>
-          <li>Fabricantes extranjeros</li>
-          <li>Importadores</li>
-          <li>Marcas de muebles</li>
-          <li>Proveedores OEM/ODM</li>
-          <li>Vendedores de comercio electrónico</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Cada unidad de fabricación requiere una licencia BIS separada.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -858,6 +1321,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Recursos Relacionados
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Certificado de Marca ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Licencia BIS FMCS
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadSpanish />
 

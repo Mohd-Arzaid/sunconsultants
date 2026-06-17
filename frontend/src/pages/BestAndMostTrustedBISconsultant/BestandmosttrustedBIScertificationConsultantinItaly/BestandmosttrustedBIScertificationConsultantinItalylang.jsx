@@ -18,9 +18,9 @@ import { Services as ServicesItalian } from "@/pages/SchemeX/SchemeXItalian";
 const CANONICAL_URL =
   "https://bis-certifications.com/migliore-e-piu-affidabile-consulente-certificazione-bis-italia";
 const PAGE_IMAGE_SRC =
-  "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantinItaly.webp";
+  "/BestandMostTrustedBISCertificationConsultant/IlmigliorconsulenteBISinItalia.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BestBISConsultantinItaly.webp";
+  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/IlmigliorconsulenteBISinItalia.webp";
 
 const PAGE_TITLE =
   "Migliore e più affidabile consulente di certificazione BIS in Italia – Sun Certifications India";
@@ -316,7 +316,16 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Il Bureau of Indian Standards dell&apos;India sta ampliando i suoi
+          Il{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          dell&apos;India sta ampliando i suoi
           Ordini obbligatori di controllo qualità (QCO) per coprire macchinari
           industriali e attrezzature di capitale nell&apos;ambito degli Schemi
           BIS. Per i marchi italiani di macchinari tessili, i produttori di
@@ -409,6 +418,10 @@ const MainContentLeft = () => {
             <li key={point}>{point}</li>
           ))}
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4"> 
+        Le aziende italiane che desiderano esportare i propri prodotti in India devono spesso soddisfare specifici requisiti normativi previsti dal Ufficio indiano per gli standard. Per questo motivo, molte imprese cercano informazioni relative Certificazione BIS l'India, Certificato BIS l'India, Licenza BIS l'India o Certificato BIS indiano . La conformità agli standard BIS è obbligatoria per numerose categorie di prodotti e rappresenta un requisito essenziale per l'accesso al mercato indiano. Che si tratti di ottenere una Registrazione BIS l'India, una Certificazione BIS indiana o una Licenza BIS per prodotti industriali ed elettronici, una corretta gestione della documentazione e delle procedure normative è fondamentale. Sun Certifications India supporta i produttori italiani durante l'intero processo di certificazione, garantendo assistenza professionale per test di laboratorio, documentazione tecnica, conformità normativa e approvazioni BIS necessarie per operare legalmente in India.
+        </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

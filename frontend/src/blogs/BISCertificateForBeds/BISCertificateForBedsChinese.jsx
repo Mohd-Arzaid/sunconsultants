@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsChinese = () => {
   return (
     <div className="relative w-full">
@@ -52,7 +58,8 @@ const MetaTags = () => {
     "IS 17635:2022床具BIS认证完整指南。了解流程、成本、文件、测试及BIS许可证优势。";
   const twitterDescription =
     "申请IS 17635:2022下的床具BIS证书。了解BIS流程、文件、测试、费用及印度时间表。";
-  const metaKeywords = "床具BIS证书, 床具BIS许可证, IS 17635:2022, 床具BIS认证";
+  const metaKeywords =
+    "床具BIS证书, 床具BIS许可证, IS 17635:2022, 床具BIS认证";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/chuangju-is-17635";
   const websiteName = "Sun Certifications India";
@@ -147,6 +154,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/chuangju-is-17635",
+          },
+          headline: "床具BIS证书",
+          description:
+            "印度床具BIS认证是一项强制性质量保证要求，主要依据IS 17635:2022，确保符合安全、耐用性和性能标准。",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "床具BIS证书",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "印度床具BIS认证是一项强制性质量保证要求，主要依据IS 17635:2022，确保符合安全、耐用性和性能标准。",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "床具在印度是否必须进行BIS认证？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "是的，根据IS 17635:2022。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "BIS证书有效期是多久？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2年，可续期。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "外国制造商可以申请吗？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "可以，根据FMCS。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "BIS证书可以在线申请吗？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "可以。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "床具上是否必须标注ISI标志？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "是的。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "流程需要多长时间？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45天。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "木床和金属床都涵盖吗？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "是的，如果符合IS 17635:2022。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "工厂检查是否强制？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "是的。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "贸易商可以申请BIS吗？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "只有拥有制造控制权的品牌所有者。",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -225,131 +371,427 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          床具BIS证书是印度对用于家庭
-          和商业用途的床具制造商和进口商的强制性合规要求。根据最新印度标准IS
-          17635:2022 – 床具（安全要求），所有床具在
-          印度市场销售前必须满足严格的安全、 耐用性、结构性和性能基准。
+          床具BIS证书是印度对用于家庭和商业用途的床具制造商和进口商的强制性合规要求。根据最新印度标准IS
+          17635:2022 – 床具（安全要求），所有床具在印度市场销售前必须满足严格的安全、耐用性、结构性和性能基准。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          床具是家庭、酒店、
-          医院、宿舍、PG住宿和机构设施中日常使用的基本家具产品。
-          任何结构缺陷、尖锐边缘、材料故障或负载能力差
-          都可能导致严重伤害。为防止此类风险，
-          印度标准局（BIS）强制要求床具进行BIS认证。
+          床具是家庭、酒店、医院、宿舍、PG住宿和机构设施中日常使用的基本家具产品。任何结构缺陷、尖锐边缘、材料故障或负载能力差都可能导致严重伤害。为防止此类风险，印度标准局（BIS）强制要求床具进行{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            BIS认证
+          </a>
+          。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          本综合指南解释了床具BIS许可证的所有内容， 包括适用标准、认证流程、测试
-          要求、文件、费用、时间表、处罚和优势。
+          本综合指南解释了床具BIS许可证的所有内容，包括适用标准、认证流程、测试要求、文件、费用、时间表、处罚和优势。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          什么是BIS认证？
+          床具BIS认证要点
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS认证是由 印度标准局（印度国家标准机构）推出的符合性评估计划。
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  项目
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  详情
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["产品", "床具"],
+                ["印度标准", "IS 17635:2022"],
+                ["标准名称", "床具 – 规范"],
+                ["认证计划", "BIS ISI标志认证"],
+                ["监管机构", "印度标准局（BIS）"],
+                ["适用标志", "ISI标志"],
+                ["合格申请人", "印度制造商和外国制造商"],
+                [
+                  "合规要求",
+                  "根据适用的家具QCO（质量控制令）强制要求",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "认证计划" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        BIS ISI标志认证
+                      </a>
+                    ) : particular === "合规要求" ? (
+                      <>
+                        根据适用的{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>家具QCO（质量控制令）</strong>
+                        </a>
+                        强制要求
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          什么是BIS证书？
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS证书确认产品符合印度 标准，安全、可靠且适合使用。经认证的
-          产品带有BIS认证标志，通常称为ISI 标志。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS证书含义
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          它表示产品已成功通过：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>实验室测试</li>
-          <li>工厂检查</li>
-          <li>质量控制验证</li>
-          <li>安全合规性评估</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          床具上的BIS标志向客户保证产品符合 政府批准的质量和安全标准。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          适用于床具的BIS标准 – IS 17635:2022
+          什么是床具BIS认证？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          适用于床具的印度标准是：
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – 床具：安全要求
+          床具BIS认证是一种符合性评估流程，制造商通过该流程证明其产品符合IS
+          17635:2022中规定的要求。通过测试、工厂评估和监管审查验证合规性后，制造商将获得BIS许可证，并可在认证产品上标注ISI标志。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          本标准定义了用于住宅和商业环境的床具的 基本安全和性能要求。
+          该认证框架旨在确保印度市场上销售的床具满足以下既定要求：
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022涵盖
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>结构强度</li>
-          <li>承载能力</li>
-          <li>稳定性和耐用性</li>
-          <li>材料质量</li>
-          <li>边缘和表面处理</li>
-          <li>防倒塌安全</li>
-          <li>无夹伤危险</li>
-          <li>长期性能</li>
+          <li>稳定性</li>
+          <li>耐用性</li>
+          <li>表面性能</li>
+          <li>正常使用时的安全性</li>
+          <li>可预见误用条件下的性能</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          任何在印度制造或进口的床具必须符合IS 17635:2022并获得床具BIS注册。
+          这些要求有助于为不同床具设计和制造材料建立一致的质量和消费者保护基准。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          为什么床具必须进行BIS认证
+          为什么床具BIS认证很重要
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          床具使用时间长，持续支撑人体重量。 设计不良的床具可能导致伤害、倒塌或
-          长期健康风险。
+          床具直接影响用户安全，因为它们设计用于在较长时间内支撑显著负载。设计不良或测试不足的产品可能出现结构故障、不稳定、变形或过早老化。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          床具需要BIS认证的原因
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022通过定义制造商在产品进入市场前必须满足的标准化性能和安全要求来解决这些担忧。该标准包括与强度、稳定性、耐用性、工艺和表面性能相关的要求。
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>确保结构完整性</li>
-          <li>防止倒塌和破损</li>
-          <li>控制材料质量</li>
-          <li>消除尖锐边缘和不安全处理</li>
-          <li>保护消费者</li>
-          <li>确保全国统一质量</li>
-          <li>BIS通知强制要求</li>
-          <li>在印度合法销售所需</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          对制造商而言，BIS认证具有多项优势：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>在印度合法销售涵盖产品的授权</li>
+          <li>证明符合印度标准</li>
+          <li>提高市场接受度</li>
+          <li>增强消费者信心</li>
+          <li>降低监管行动风险</li>
+          <li>在机构和商业采购中的竞争优势</li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17635:2022床具概述
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          印度政府已为多种家具产品引入质量控制令（QCO），以确保投放市场的产品满足规定的安全和质量要求。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          当IS
+          17635:2022纳入适用的家具QCO时，制造商必须根据方案-I获得BIS认证，并按照BIS许可要求使用标准标志（ISI标志）。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022是规定适用于家庭和非家庭环境中成人用户床具的性能和安全要求的印度标准。该标准确立的要求有助于确保床具在其预期使用寿命内保持安全、功能和耐用。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>IS 17635:2022的目的</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022旨在为采用各种材料和构造方法制造的现代床具设计提供全面的基于性能的标准。该标准取代了较早的IS
+          7259（第1部分）：1988，后者主要关注木制床具。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          该标准评估床具时不将合规性限制于特定材料或制造工艺，而是关注成品在规定的测试条件下的表现。这种方法能够一致地评估木制、金属、工程木材和其他床具结构。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>IS 17635:2022的适用范围</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          根据该标准，IS
+          17635:2022涵盖与为成人用户设计的床具的性能和安全相关的要求。该标准适用于家庭和非家庭环境中使用的产品。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          该标准适用于：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>完全制造的床具</li>
+          <li>组装的床具</li>
+          <li>组装后的即装即用床具</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          没有床具BIS许可证，在印度销售或进口床具是 非法的。
+          这确保以组装或散装形式供应的产品使用相同的性能和安全标准进行评估。
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>标准目标</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022的主要目标包括：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>确保用户安全</li>
+          <li>验证结构强度</li>
+          <li>评估产品稳定性</li>
+          <li>评估重复使用下的耐用性</li>
+          <li>建立最低性能要求</li>
+          <li>促进各制造商产品质量的一致性</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          该标准还包括旨在评估正常使用条件和合理可预见误用场景下床具的测试方法。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17635:2022涵盖的产品
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022适用于家庭和非家庭环境中成人用户使用的床具。该标准关注成品的性能、安全、强度、稳定性和耐用性，而非将合规性限制于特定材料或制造方法。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          该标准适用于：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>完全制造的床具</li>
+          <li>组装的床具</li>
+          <li>组装后的即装即用（RTA）床具</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          以散装形式供应床具的制造商必须确保组装后的产品符合该标准的所有适用要求。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>注意：</strong>
+          本标准不涵盖水床、气床、折叠床、双层床和特殊需求人群的床具，也不涵盖用于医疗保健和医疗目的的床具。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            另请查看强制BIS认证涵盖的家具产品 —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>家具BIS认证</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17635:2022主要要求
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022的主要目标是确保床具在正常使用条件下保持安全、稳定、耐用且适合其预期用途。为实现这一目标，该标准确立了若干关键性能要求。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>稳定性要求</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          床具必须证明在正常使用期间具有足够的抗倾覆和不稳定性能力。稳定性测试评估产品在承受预期负载条件和用户移动时是否保持安全。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          稳定的床具可最大限度地降低事故风险并提高整体用户安全。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>强度要求</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          强度测试评估床架结构在不发生结构故障的情况下承受显著负载的能力。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          这些评估通常检查：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>床架完整性</li>
+          <li>接头强度</li>
+          <li>承载能力</li>
+          <li>抗过度变形能力</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          目的是确保产品在日常使用过程中能够安全支撑预期用户。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>耐久性要求</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          耐久性测试通过重复的负载和移动循环模拟长期使用。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          目的是确定：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>结构连接是否保持牢固</li>
+          <li>组件是否继续正常运作</li>
+          <li>产品性能是否随时间保持可接受</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          耐久性要求有助于确保认证床具在其预期使用寿命内保持可靠性。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>表面性能要求</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022引用了适用于家具饰面的表面性能要求。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          根据构造和所用材料，表面可能会评估以下方面的抗性：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>机械损伤</li>
+          <li>湿热</li>
+          <li>干热</li>
+          <li>染色</li>
+          <li>附着力性能</li>
+          <li>磨损</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          这些要求有助于在正常使用期间保持功能和外观。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>设计和工艺要求</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          该标准还包含与设计质量和工艺相关的要求。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          除其他考虑因素外：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>可触及的边缘不应构成伤害危险。</li>
+          <li>应避免尖锐边缘和不安全的突出物。</li>
+          <li>空心部分应在需要时正确封闭。</li>
+          <li>活动组件应设计为降低伤害风险。</li>
+          <li>成品应符合声明的设计和型号规格。</li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>安全要求</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          安全是IS 17635:2022的核心原则。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          该标准纳入旨在降低以下风险的要求：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>结构倒塌</li>
+          <li>尖锐边缘</li>
+          <li>不安全的突出物</li>
+          <li>组件故障</li>
+          <li>重复使用应力</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          遵守这些要求有助于确保床具在正常使用和合理可预见误用条件下保持安全。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          床具BIS认证在印度是否强制？
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          是的，对于适用质量控制令（QCO）涵盖的家具产品，在印度制造、进口、销售、分销、储存或提供销售之前，BIS认证是强制性的。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          制造商必须核实印度政府发布的最新通知状态和实施日期，因为监管要求可能会不时更新。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>使用ISI标志的要求</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          ISI标志证明产品符合相关印度标准，并在有效的BIS许可证下制造。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          该标志只能在以下情况之后使用：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>产品测试成功</li>
+          <li>工厂评估</li>
+          <li>BIS批准申请</li>
+          <li>授予许可证</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          根据《2016年BIS法》，未经授权使用ISI标志是被禁止的。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -357,14 +799,14 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          印度的BIS认证流程遵循ISI认证计划下的 结构化程序。
+          印度的BIS认证流程遵循ISI认证计划下的结构化程序。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           步骤1 – 确定标准和产品范围
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          确认IS 17635:2022下的适用性并确定产品 变体。
+          确认IS 17635:2022下的适用性并确定产品变体。
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
@@ -416,7 +858,9 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           步骤5 – 工厂检查
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">BIS官员检查：</p>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          BIS官员检查：
+        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>制造设施</li>
           <li>原材料控制</li>
@@ -445,30 +889,6 @@ const MainContentLeft = () => {
           <li>每1–2年续期</li>
           <li>持续质量控制</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          床具BIS许可证范围
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> 本标准涵盖与
-          成人床具的性能和安全相关的要求，用于家庭和 非家庭用途。
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> 本标准适用于完全制造/
-          制造的床具。它也适用于即装即用单元；在那种
-          情况下，本标准的要求应适用于已组装 的单元。
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> 本标准不涵盖水床、气床、
-          折叠床、双层床和特殊需求人群的床具，也不涵盖
-          用于医疗保健和医疗目的的床具。
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -615,37 +1035,20 @@ const MainContentLeft = () => {
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>标准选择错误</strong> – 始终验证 正确的印度标准。
+            <strong>标准选择错误</strong> – 始终验证正确的印度标准。
           </li>
           <li>
-            <strong>文件不完整</strong> – 缺失文件导致 延误；提前准备。
+            <strong>文件不完整</strong> – 缺失文件导致延误；提前准备。
           </li>
           <li>
-            <strong>实验室测试失败</strong> – 确保高质量材料 和结构。
+            <strong>实验室测试失败</strong> – 确保高质量材料和结构。
           </li>
           <li>
-            <strong>工厂未准备好</strong> – 确保QMS和测试 设备得到适当维护。
+            <strong>工厂未准备好</strong> – 确保QMS和测试设备得到适当维护。
           </li>
           <li>
-            <strong>商标不匹配</strong> – 品牌名称必须与许可证 申请一致。
+            <strong>商标不匹配</strong> – 品牌名称必须与许可证申请一致。
           </li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          床具BIS认证的优势
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>在印度合法销售</li>
-          <li>增加客户信任</li>
-          <li>进入电商平台</li>
-          <li>符合政府招标资格</li>
-          <li>降低责任风险</li>
-          <li>强大的品牌信誉</li>
-          <li>符合印度标准</li>
         </ul>
 
         {/* Separator Line */}
@@ -666,30 +1069,6 @@ const MainContentLeft = () => {
           <li>法律诉讼</li>
           <li>市场禁令</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          谁需要床具BIS证书？
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          以下实体必须获得床具BIS许可证：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>印度制造商</li>
-          <li>外国制造商</li>
-          <li>进口商</li>
-          <li>家具品牌</li>
-          <li>OEM/ODM供应商</li>
-          <li>电商卖家</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          每个制造单位需要单独的BIS许可证。
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -721,9 +1100,8 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17635:2022下的床具BIS证书是确保安全、质量和耐用性的
-          强制性法律要求。获得 床具BIS许可证可保护消费者，增强品牌价值，并
-          在印度全境实现合法市场准入。在专家支持下， 认证过程变得无缝且高效。
+          IS
+          17635:2022下的床具BIS证书是确保安全、质量和耐用性的强制性法律要求。获得床具BIS许可证可保护消费者，增强品牌价值，并在印度全境实现合法市场准入。在专家支持下，认证过程变得无缝且高效。
         </p>
 
         {/* Separator Line */}
@@ -819,6 +1197,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          相关资源
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISI标志证书
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              BIS FMCS许可证
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadChinese />
 

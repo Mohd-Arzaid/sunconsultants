@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForChairAndStoolsArabic = () => {
   return (
     <div className="relative w-full">
@@ -41,17 +47,18 @@ const BISCertificateForChairAndStoolsArabic = () => {
 export default BISCertificateForChairAndStoolsArabic;
 
 const MetaTags = () => {
-  const title = "شهادة BIS للكراسي والمقاعد | رخصة BIS IS 17632:2022";
-  const ogTitle = "شهادة BIS للكراسي والمقاعد – دليل IS 17632:2022";
-  const twitterTitle = "رخصة BIS للكراسي والمقاعد | IS 17632:2022";
+  const title =
+    "شهادة BIS للكراسي والمقاعد للأغراض العامة | IS 17632:2022";
+  const ogTitle =
+    "شهادة BIS للكراسي والمقاعد للأغراض العامة | IS 17632:2022";
+  const twitterTitle =
+    "شهادة BIS للكراسي والمقاعد للأغراض العامة | IS 17632:2022";
   const metaDescription =
-    "احصل على شهادة BIS للكراسي والمقاعد بموجب IS 17632:2022. العملية، المستندات، الاختبارات، التكلفة والجدول الزمني لشهادة BIS في الهند.";
-  const ogDescription =
-    "دليل كامل لشهادة BIS للكراسي والمقاعد وفقًا لـ IS 17632:2022. تعرف على العملية، التكلفة، المستندات، الاختبارات وفوائد رخصة BIS.";
-  const twitterDescription =
-    "تقدم بطلب للحصول على شهادة BIS للكراسي والمقاعد بموجب IS 17632:2022. تعرف على عملية BIS، المستندات، الاختبارات، الرسوم والجدول الزمني في الهند.";
+    "تعرّف على كل ما يخص شهادة BIS للكراسي والمقاعد للأغراض العامة بموجب IS 17632:2022. افهم متطلبات علامة ISI والاختبار وعملية الشهادة والمستندات والفوائد والأسئلة الشائعة";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "شهادة BIS للكراسي والمقاعد، رخصة BIS للكراسي والمقاعد، IS 17632:2022، شهادة BIS للكراسي والمقاعد";
+    "شهادة BIS للكراسي والمقاعد للأغراض العامة، IS 17632:2022، علامة ISI للكراسي والمقاعد، رخصة BIS للكراسي والمقاعد، شهادة BIS للأثاث";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/karasi-wa-masaaid-is-17632";
   const websiteName = "Sun Certifications India";
@@ -179,7 +186,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    شهادة BIS للكراسي والمقاعد – IS 17632:2022
+                    شهادة BIS للكراسي والمقاعد للأغراض العامة (IS 17632:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -194,7 +201,7 @@ const BreadcrumbContent = () => {
 const MainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
-      <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+      <div className="flex flex-col gap-6 md:flex-row md:gap-[48px] w-full">
         {/* Left Side Content */}
         <MainContentLeft />
 
@@ -210,370 +217,57 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          شهادة BIS للكراسي والمقاعد للأغراض العامة – دليل كامل لـ IS 17632:2022
+          شهادة BIS للكراسي والمقاعد للأغراض العامة (IS 17632:2022) – دليل
+          شهادة علامة ISI الكامل
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="رخصة BIS للكراسي والمقاعد"
-            alt="شهادة BIS للكراسي والمقاعد - IS 17632:2022 شهادة BIS"
+            title="رخصة BIS للكراسي والمقاعد للأغراض العامة"
+            alt="شهادة BIS للكراسي والمقاعد للأغراض العامة - دليل علامة ISI IS 17632:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للكراسي والمقاعد للأغراض العامة هي متطلب إلزامي بموجب
-          المعيار الهندي IS 17632:2022. يحدد هذا المعيار متطلبات السلامة
-          والمتانة والأداء للكراسي والمقاعد المستخدمة في المنازل والمكاتب
-          والمناطق التجارية والمؤسسات التعليمية والمقاصف والمطاعم والفنادق
-          والأماكن العامة.
+          تُعد الكراسي والمقاعد للأغراض العامة من بين أكثر منتجات الأثاث
+          استخدامًا في المنازل والمكاتب والمؤسسات التعليمية والمرافق الصحية
+          والمؤسسات التجارية والأماكن العامة والبيئات التجارية. وبما
+          أن هذه منتجات الجلوس تخضع للاستخدام المنتظم والمطول، يجب أن تلبي
+          متطلبات محددة للجودة والسلامة والقوة والمتانة لضمان أداء موثوق.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          الكراسي والمقاعد من بين أكثر عناصر الأثاث استخدامًا وتتعرض باستمرار
-          للحمل والحركة والإجهاد المتكرر. يمكن أن ينهار الكرسي أو المقعد الضعيف
-          هيكليًا فجأة، مما يؤدي إلى إصابات. لمنع مثل هذه المخاطر وضمان سلامة
-          المستهلك، يتطلب مكتب المعايير الهندية (BIS) من كل مصنع ومستورد الحصول
-          على شهادة BIS للكراسي والمقاعد قبل بيعها في الهند.
+          مع تزايد التركيز على جودة المنتج وسلامة المستهلك، أصبح الامتثال
+          للمعايير الهندية متطلبًا مهمًا لمصنعي الأثاث والمستوردين. تساعد
+          شهادة BIS للكراسي والمقاعد للأغراض العامة بموجب IS 17632:2022 في
+          ضمان أن المنتجات تلبي متطلبات الأداء والسلامة المقررة قبل طرحها
+          في السوق الهندي.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          توفر هذه الصفحة دليلاً كاملاً لشهادة BIS للكراسي والمقاعد بموجب IS
-          17632:2022، بما في ذلك عملية الشهادة والمستندات المطلوبة ومتطلبات
-          الاختبار والرسوم والتحديات والعقوبات والفوائد.
+          تتيح الشهادة بموجب مكتب المعايير الهندية (BIS) للمصنعين استخدام
+          علامة ISI على المنتجات المتوافقة. وتُعد علامة ISI تأكيدًا بأن
+          المنتج يتوافق مع معايير الجودة الهندية المعترف بها وقد خضع لعملية
+          التقييم المطلوبة.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          مع استمرار نمو صناعة الأثاث وتفضيل وكالات المشتريات بشكل متزايد
+          للمنتجات المعتمدة، أصبحت شهادة BIS متطلبًا مهمًا للامتثال والوصول
+          إلى السوق للمصنعين.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ما هي شهادة BIS؟
+          أبرز نقاط شهادة BIS للكراسي والمقاعد للأغراض العامة
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS هي نظام امتثال للمنتجات يحكمه مكتب المعايير الهندية، سلطة
-          المعايير الوطنية في الهند.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معنى شهادة BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          تضمن شهادة BIS أن المنتج:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>يلبي معايير السلامة والجودة الهندية</li>
-          <li>اجتاز اختبارات المختبر المعتمدة من BIS</li>
-          <li>خضع لفحص المصنع</li>
-          <li>يحمي المستهلكين من المنتجات غير الآمنة أو دون المستوى</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تعرض المنتجات المعتمدة علامة ISI، مما يثبت الامتثال للمعايير الهندية.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          المعيار المطبق – IS 17632:2022 للكراسي والمقاعد
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          المعيار BIS للكراسي والمقاعد هو:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – الكراسي والمقاعد للأغراض العامة:
-          متطلبات السلامة
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يغطي هذا المعيار جميع الكراسي والمقاعد غير المتخصصة المستخدمة لأغراض
-          الجلوس في المنازل والمكاتب والبيئات التجارية والأماكن العامة
-          والإعدادات المؤسسية.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المنتجات المشمولة بموجب IS 17632:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>كراسي للأغراض العامة</li>
-          <li>كراسي الطعام</li>
-          <li>كراسي زوار المكتب</li>
-          <li>كراسي الدراسة</li>
-          <li>كراسي المقصف</li>
-          <li>كراسي المطعم</li>
-          <li>كراسي غرفة الاجتماعات</li>
-          <li>كراسي منطقة الانتظار</li>
-          <li>كراسي خشبية</li>
-          <li>كراسي معدنية</li>
-          <li>كراسي بلاستيكية (غير متخصصة)</li>
-          <li>مقاعد للأغراض العامة</li>
-          <li>مقاعد البار</li>
-          <li>مقاعد الطعام</li>
-          <li>مقاعد الدرج (ضمن المعايير المحددة)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          معايير السلامة والأداء الرئيسية
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يقيم IS 17632:2022:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>القوة الهيكلية</li>
-          <li>الاستقرار</li>
-          <li>المتانة تحت الاستخدام المتكرر</li>
-          <li>قوة المقعد</li>
-          <li>أداء مسند الظهر</li>
-          <li>مقاومة تأثير الأرجل</li>
-          <li>قوة المفاصل</li>
-          <li>جودة التشطيب السطحي</li>
-          <li>سلامة الحواف والزوايا</li>
-          <li>جودة المواد</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يجب أن تمتثل جميع الكراسي والمقاعد المباعة في الهند لهذه المعايير
-          والحصول على رخصة BIS للكراسي والمقاعد.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          لماذا شهادة BIS إلزامية للكراسي والمقاعد
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تحمل الكراسي والمقاعد وزن الإنسان وتستخدم بشكل متكرر في جميع البيئات.
-          يمكن أن يؤدي الفشل الهيكلي إلى:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>انهيار الكراسي</li>
-          <li>كسر الأرجل</li>
-          <li>تصدع المقعد</li>
-          <li>فشل مسند الظهر</li>
-          <li>إصابة بسبب الحواف الحادة</li>
-          <li>عدم الاستقرار المؤدي إلى السقوط</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          فوائد شهادة BIS
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>يضمن منتجات جلوس آمنة</li>
-          <li>يمنع الحوادث والإصابات</li>
-          <li>يحسن متانة المنتج</li>
-          <li>يمنع الواردات دون المستوى</li>
-          <li>يؤسس جودة سوق موحدة</li>
-          <li>يعزز ثقة العملاء</li>
-          <li>إلزامي بموجب القانون الهندي (BIS QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          بدون شهادة BIS، لا يمكن للمصنعين بيع الكراسي أو المقاعد بشكل قانوني في
-          الهند.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          عملية شهادة BIS للكراسي والمقاعد (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تتبع عملية BIS مخطط شهادة علامة ISI، بما في ذلك الاختبار والفحص
-          والتحقق من الطلب.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 1 – تحديد نوع المنتج والمعيار
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          تأكد من أن الكرسي/المقعد يندرج تحت IS 17632:2022. حدد متغيرات التصميم
-          والمواد المستخدمة.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 2 – تقديم طلب BIS عبر الإنترنت
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يتم تقديم الطلب من خلال بوابة BIS Manak عبر الإنترنت، ويتطلب:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>تفاصيل المصنع</li>
-          <li>معلومات المصنع</li>
-          <li>مواصفات المنتج</li>
-          <li>تفاصيل العلامة التجارية/العلامة التجارية</li>
-          <li>سير عمل عملية التصنيع</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 3 – دفع رسوم شهادة BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">تشمل الرسوم:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رسوم الطلب</li>
-          <li>رسوم المعالجة</li>
-          <li>رسوم اختبار العينات</li>
-          <li>رسوم فحص المصنع</li>
-          <li>رسوم العلامة</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 4 – اختبار المنتج وفقًا لـ IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يتم إجراء الاختبار الإلزامي في مختبر معتمد من BIS.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          تشمل الاختبارات:
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>اختبار الاستقرار</li>
-          <li>اختبار القوة للمقعد</li>
-          <li>اختبار متانة مسند الظهر</li>
-          <li>اختبار تحميل الأرجل للأمام/الجانب/الخلف</li>
-          <li>اختبار تأثير المقعد</li>
-          <li>اختبار السقوط</li>
-          <li>اختبار التعب</li>
-          <li>اختبار التشطيب السطحي</li>
-          <li>اختبار الحواف الحادة</li>
-          <li>المتانة الهيكلية تحت الدورات المتكررة</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يجب أن تظهر نتائج الاختبار الامتثال الكامل لـ IS 17632:2022.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 5 – فحص المصنع من قبل BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يزور ضابط BIS المصنع لتقييم:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>عملية التصنيع</li>
-          <li>فحص المواد الخام</li>
-          <li>إجراءات مراقبة الجودة</li>
-          <li>قدرة الاختبار</li>
-          <li>معايرة المعدات</li>
-          <li>حجم الإنتاج</li>
-          <li>الامتثال لمخطط BIS للاختبار والفحص (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 6 – منح رخصة BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          إذا نجحت الاختبارات والفحص، يصدر BIS:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>شهادة BIS (رخصة علامة ISI)</li>
-          <li>رقم CML</li>
-          <li>الموافقة على وضع علامة ISI على الكراسي والمقاعد</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          الخطوة 7 – الالتزامات بعد الترخيص
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          يجب على المصنعين:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>استخدام علامة ISI وفقًا لمتطلبات وضع العلامات BIS</li>
-          <li>الحفاظ على سجلات مراقبة الجودة</li>
-          <li>الخضوع لفحوصات BIS الرقابية المنتظمة</li>
-          <li>تجديد الترخيص كل 1-2 سنوات</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          نطاق رخصة BIS للكراسي والمقاعد
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يغطي هذا المعيار المتطلبات للكراسي والمقاعد للأغراض العامة. ينطبق هذا
-          المعيار على الكراسي والمقاعد للأغراض العامة المصنعة/المصنعة بالكامل.
-          كما ينطبق على الوحدات الجاهزة للتجميع؛ في هذه الحالة تنطبق متطلبات هذا
-          المعيار على الوحدات المجمعة.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          المستندات المطلوبة لشهادة BIS للكراسي والمقاعد
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          مستندات المصنع
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ترخيص/تسجيل المصنع</li>
-          <li>مخطط انسيابي لعملية التصنيع</li>
-          <li>قائمة الآلات</li>
-          <li>قائمة معدات الاختبار الداخلية</li>
-          <li>شهادات المعايرة</li>
-          <li>تخطيط المصنع ومسقط الأرضية</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المستندات التقنية
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>رسومات الكرسي/المقعد</li>
-          <li>الأبعاد والمواصفات</li>
-          <li>قائمة المواد</li>
-          <li>وصف ميزات السلامة</li>
-          <li>تقارير اختبار الجودة الداخلية</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          المستندات القانونية
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>إثبات الهوية والعنوان</li>
-          <li>خطاب تفويض العلامة التجارية</li>
-          <li>شهادة العلامة التجارية (اختياري)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          مستندات طلب BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>نموذج الطلب</li>
-          <li>نموذج طلب الاختبار</li>
-          <li>نماذج الإعلان</li>
-          <li>خطاب التفويض</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          متطلبات الاختبار للكراسي والمقاعد (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          يتضمن IS 17632:2022 اختبارات ميكانيكية وهيكلية واختبارات سلامة واسعة.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          الاختبارات الإلزامية
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
@@ -581,170 +275,466 @@ const MainContentLeft = () => {
                   البند
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  المتطلب
+                  التفاصيل
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  التصميم والحرفية
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  عدم التوازن للأمام وعدم التوازن الجانبي للكراسي بدون أذرع
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  عدم التوازن للخلف
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  عدم التوازن الجانبي للكراسي ذات الأذرع
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  المقاعد/المقاعد (جميع الاتجاهات)
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  اختبار القوة
-                </TableCell>
-              </TableRow>
+              {[
+                ["اسم المنتج", "الكراسي والمقاعد للأغراض العامة"],
+                ["المعيار الهندي المعمول به", "IS 17632:2022"],
+                ["نوع الشهادة", "شهادة منتج BIS"],
+                ["مخطط الشهادة", "المخطط I (شهادة علامة ISI)"],
+                ["العلامة المعمول بها", "علامة ISI"],
+                ["السلطة التنظيمية", "مكتب المعايير الهندية (BIS)"],
+                ["الوزارة المعمول بها", "وزارة التجارة والصناعة"],
+                [
+                  "متطلب الامتثال",
+                  "إلزامي بموجب أمر مراقبة الجودة للأثاث (QCO) المعمول به",
+                ],
+                ["فئة المنتج", "الأثاث"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "مخطط الشهادة" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        المخطط I (شهادة علامة ISI)
+                      </a>
+                    ) : particular === "متطلب الامتثال" ? (
+                      <>
+                        إلزامي بموجب{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-chairs-and-stools"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            أمر مراقبة الجودة للأثاث (QCO) المعمول به
+                          </strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          تضمن هذه الاختبارات الاستخدام اليومي الآمن تحت ظروف العالم الحقيقي.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ما هي شهادة BIS للكراسي والمقاعد للأغراض العامة؟
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          شهادة BIS للكراسي والمقاعد للأغراض العامة هي عملية تقييم امتثال
+          تُجرى بموجب مخطط شهادة منتجات BIS.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          الهدف من الشهادة هو التحقق من أن المنتج يتوافق مع المتطلبات
+          المحددة في IS 17632:2022. وبمجرد منح الشهادة، يُصرّح للمصنعين
+          باستخدام علامة ISI على منتجاتهم.
+        </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          التحديات الشائعة وكيفية تجنبها
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تُقيّم عملية الشهادة جوانب مختلفة من أداء المنتج، بما في ذلك:
+        </p>
 
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>فشل الكرسي في اختبارات الاستقرار</strong>
-            <br />
-            يحدث بسبب توزيع الوزن غير الصحيح.
-            <br />
-            الحل: تحسين تصميم الأرجل، توسيع منطقة القاعدة.
-          </li>
-          <li>
-            <strong>المفاصل الضعيفة تسبب فشل الاختبار</strong>
-            <br />
-            الحل: استخدام مواد معززة وموصلات أفضل.
-          </li>
-          <li>
-            <strong>معدات الاختبار الداخلية غير كافية</strong>
-            <br />
-            الحل: تثبيت الأدوات المطلوبة المتوافقة مع BIS.
-          </li>
-          <li>
-            <strong>عدم اتساق الوثائق</strong>
-            <br />
-            الحل: إعداد المستندات بشكل منهجي قبل التقديم.
-          </li>
-          <li>
-            <strong>متغيرات المنتج غير معينة بشكل صحيح</strong>
-            <br />
-            الحل: تجميع المنتجات بناءً على الهيكل ومعايير الاختبار.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          فوائد شهادة BIS للكراسي والمقاعد
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>الإذن القانوني للبيع في الهند</li>
-          <li>تحسين سلامة المنتج</li>
-          <li>تعزيز ثقة العملاء</li>
-          <li>تقليل مخاطر مسؤولية المنتج</li>
-          <li>مطلوب لقوائم التجارة الإلكترونية</li>
-          <li>ضروري لمناقصات الحكومة</li>
-          <li>مصداقية علامة تجارية أعلى</li>
-          <li>ميزة تنافسية</li>
+        <ul className={LIST_CLASS}>
+          <li>القوة</li>
+          <li>الاستقرار</li>
+          <li>المتانة</li>
+          <li>الأداء الهيكلي</li>
+          <li>متطلبات السلامة</li>
+          <li>جودة المواد</li>
+          <li>الإتقان</li>
         </ul>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تساعد الشهادة في ضمان أن منتجات الجلوس الموردة في السوق الهندي
+          تلبي معايير الجودة والسلامة المعتمدة.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          العقوبات لعدم الامتثال
+          نظرة عامة على IS 17632:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022 هو المعيار الهندي الذي يحدد متطلبات الكراسي والمقاعد
+          للأغراض العامة.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يضع المعيار متطلبات تتعلق بالسلامة والقوة والمتانة والاستقرار
+          والأداء العام لأثاث الجلوس المخصص للاستخدام العام.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          ينطبق المعيار على:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>الكراسي والمقاعد المصنعة بالكامل</li>
+          <li>الكراسي والمقاعد المجمعة</li>
+          <li>المنتجات الجاهزة للتجميع بعد التجميع</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          الهدف من المعيار هو ضمان أن منتجات الأثاث توفر أداءً آمنًا وموثوقًا
+          ومتينًا طوال عمر الخدمة المقصود.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          المتطلبات الرئيسية بموجب IS 17632:2022
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات القوة</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب أن تتمتع الكراسي والمقاعد للأغراض العامة بقوة هيكلية كافية
+          لتحمل ظروف التحميل المتوقعة أثناء الاستخدام العادي.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات الاستقرار</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب أن يظل الأثاث مستقرًا أثناء الاستخدام المقصود ولا يشكل مخاطر
+          انقلاب غير ضرورية.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات المتانة</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب أن تكون المنتجات قادرة على الحفاظ على سلامتها الهيكلية
+          وأدائها عبر دورات الاستخدام المتكررة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>متطلبات السلامة</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يتضمن المعيار متطلبات متعلقة بالسلامة تهدف إلى تقليل المخاطر
+          المرتبطة باستخدام الأثاث.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>جودة المواد والإتقان</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تساهم جودة المواد وممارسات التصنيع وطرق التجميع والوصلات
+          والتشطيب بشكل كبير في الامتثال للمعيار.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الاعتبارات البشرية</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يتضمن المعيار اعتبارات متعلقة بالأداء تساهم في راحة المستخدم
+          والوظائف العملية.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          المنتجات المشمولة بموجب IS 17632:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          بيع الكراسي أو المقاعد بدون شهادة BIS قد يؤدي إلى:
+          ينطبق المعيار عمومًا على:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>غرامات مالية ثقيلة</li>
-          <li>استدعاء/مصادرة المنتج</li>
-          <li>إلغاء تراخيص المصنع</li>
-          <li>الملاحقة الجنائية</li>
-          <li>قيود الاستيراد</li>
-          <li>القائمة السوداء في السوق</li>
+        <ul className={LIST_CLASS}>
+          <li>الكراسي للأغراض العامة</li>
+          <li>المقاعد للأغراض العامة</li>
+          <li>أثاث الجلوس الثابت المخصص للاستخدام العام</li>
+          <li>منتجات الجلوس الجاهزة للتجميع بعد التجميع</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يتم فرض العقوبات بموجب قانون BIS لعام 2016.
+          يجب على المصنعين مراجعة نطاق المعيار بعناية لتحديد انطباقه على
+          منتجاتهم.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            تحقق أيضًا من منتجات الأثاث المشمولة بشهادة BIS الإلزامية —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>شهادة BIS للأثاث</strong>
+          </a>
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          من يحتاج إلى شهادة BIS للكراسي والمقاعد؟
+          هل شهادة BIS إلزامية للكراسي والمقاعد للأغراض العامة؟
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">إلزامي لـ:</p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          نعم. يُطلب من منتجات الأثاث المشمولة بأمر مراقبة الجودة للأثاث
+          (QCO) المعمول به الامتثال للمعيار الهندي ذي الصلة والحصول على
+          شهادة BIS قبل التصنيع أو الاستيراد أو البيع أو التوزيع أو
+          التوريد في السوق الهندي.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>المصنعين الهنود</li>
-          <li>المصنعين الأجانب المصدرين إلى الهند</li>
-          <li>المستوردين</li>
-          <li>أصحاب العلامات التجارية/التجار</li>
-          <li>موردي OEM/ODM</li>
-          <li>سلاسل البيع بالتجزئة</li>
-          <li>البائعين عبر الإنترنت</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين المشمولين بالإطار التنظيمي المعمول به الحصول
+          على رخصة BIS والامتثال لمتطلبات وضع العلامات المقررة من BIS.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          متطلبات الاختبار لشهادة BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          قبل منح الشهادة، يجب تقييم عينات المنتج من خلال الاختبار في
+          مختبرات معترف بها.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يركز الاختبار عمومًا على المعايير التالية:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>تقييم الأداء الهيكلي —</strong> يحدد ما إذا كان الكرسي
+            أو المقعد قادرًا على تحمل ظروف الاستخدام العادي دون فشل.
+          </li>
+          <li>
+            <strong>اختبار الاستقرار —</strong> يقيّم ما إذا كان الأثاث
+            يظل مستقرًا أثناء الاستخدام المقصود ويقاوم الانقلاب.
+          </li>
+          <li>
+            <strong>تقييم القوة —</strong> يقيّم قدرة تحمل الأحمال
+            والسلامة الهيكلية للإطارات والوصلات والدعامات.
+          </li>
+          <li>
+            <strong>تقييم المتانة —</strong> يتحقق من الحفاظ على الأداء
+            بعد دورات الاستخدام المتكررة طوال عمر خدمة المنتج.
+          </li>
+          <li>
+            <strong>تقييم السلامة —</strong> يحدد المخاطر المحتملة
+            ويتحقق من الامتثال لمتطلبات السلامة المقررة.
+          </li>
+          <li>
+            <strong>فحص الإتقان —</strong> يراجع جودة البناء والتشطيب
+            وسلامة التجميع ومعايير البناء العامة.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          متطلبات وضع العلامات على المنتج
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          يُطلب عمومًا من المنتجات المعتمدة بموجب IS 17632:2022 حمل
+          معلومات تعريفية مثل:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>اسم المصنع أو العلامة التجارية</li>
+          <li>تعريف الموديل أو التصميم</li>
+          <li>رقم الدفعة أو اللوت</li>
+          <li>تاريخ التصنيع</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          يتطلب كل مصنع رخصة BIS منفصلة.
+          لا يجوز وضع علامة ISI إلا بعد الحصول على رخصة BIS سارية.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          عملية شهادة BIS للكراسي والمقاعد للأغراض العامة
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>الخطوة 1: تقييم نطاق المنتج</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تتضمن الخطوة الأولى تحديد ما إذا كان المنتج يقع ضمن نطاق IS
+          17632:2022 وأمر مراقبة الجودة للأثاث (QCO) المعمول به.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          راجع نوع الكرسي أو المقعد والاستخدام المقصود والمواد والبناء
+          قبل بدء عملية الشهادة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الخطوة 2: إعداد المستندات</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يُعد المصنع المستندات الفنية والامتثالية المطلوبة للشهادة، بما
+          في ذلك سجلات الشركة وتفاصيل المصنع ومواصفات المنتج وإجراءات
+          مراقبة الجودة.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          تساعد المستندات الكاملة والدقيقة في تجنب التأخير غير الضروري
+          أثناء مراجعة BIS.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الخطوة 3: اختبار المنتج</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تُختبر عينات ممثلة في مختبر معترف به من BIS للتحقق من
+          الامتثال لمتطلبات IS 17632:2022.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          يُعد تقرير اختبار المختبر مستندًا فنيًا رئيسيًا يدعم طلب
+          الشهادة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الخطوة 4: تقديم طلب BIS</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يُقدَّم طلب الشهادة مع المستندات الداعمة وتقارير الاختبار
+          ومعلومات التصنيع.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          يراجع BIS الطلب من حيث الاكتمال والامتثال الفني قبل المضي
+          قدمًا.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الخطوة 5: تفتيش المصنع</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          قد يقيّم BIS منشأة التصنيع وأنظمة الإنتاج وعمليات مراقبة
+          الجودة للتحقق من القدرة على إنتاج منتجات متوافقة باستمرار.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          يغطي هذا التقييم عادةً البنية التحتية للإنتاج وأنظمة مراقبة
+          الجودة وضوابط المواد الخام وقابلية تتبع المنتج.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الخطوة 6: المراجعة الفنية</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يراجع BIS الطلب وتقارير الاختبار ونتائج التفتيش قبل اتخاذ
+          قرار الشهادة.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          يجب على مقدم الطلب معالجة أي ملاحظات أو نواقص تُثار أثناء
+          المراجعة.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>الخطوة 7: منح الرخصة</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          عند تحقيق الامتثال المرضي، يمنح BIS الرخصة ويُصرّح
+          باستخدام علامة ISI على الكراسي والمقاعد للأغراض العامة
+          المعتمدة.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          يجب على المصنعين الاستمرار في الامتثال لمتطلبات BIS طوال
+          فترة الرخصة.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          فوائد شهادة BIS
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>الامتثال للوائح الهندية —</strong> تلبية متطلبات
+            الجودة والسلامة الإلزامية بموجب أمر مراقبة الجودة للأثاث
+            المعمول به.
+          </li>
+          <li>
+            <strong>الوصول القانوني للسوق —</strong> توريد الكراسي
+            والمقاعد المعتمدة في الهند وفقًا للمتطلبات التنظيمية
+            المعمول بها.
+          </li>
+          <li>
+            <strong>تعزيز مصداقية المنتج —</strong> تُظهر علامة ISI
+            التوافق مع المعايير الهندية المعترف بها.
+          </li>
+          <li>
+            <strong>زيادة ثقة العملاء —</strong> يفضل المستهلكون
+            والمشترون المؤسسيون المنتجات المُقيَّمة وفقًا للمعايير
+            المعتمدة.
+          </li>
+          <li>
+            <strong>ميزة تنافسية —</strong> قبول أكبر في عمليات
+            المشتريات التجارية والحكومية.
+          </li>
+          <li>
+            <strong>تحسين سمعة العلامة التجارية —</strong> يُظهر
+            الالتزام بجودة المنتج والسلامة والموثوقية على المدى
+            الطويل.
+          </li>
+          <li>
+            <strong>دعم المؤسسات الصغيرة والمتوسطة —</strong> يساعد
+            المصنعين الصغار والمتوسطين على تعزيز حضورهم في السوق
+            وبناء ثقة العملاء.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          التحديات الشائعة أثناء الشهادة
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>فشل اختبار المنتج —</strong> قد تؤدي أوجه القصور
+            في التصميم أو التصنيع إلى عدم الامتثال أثناء التقييم
+            المخبري.
+          </li>
+          <li>
+            <strong>مشاكل في المستندات —</strong> غالبًا ما تسبب
+            السجلات غير المكتملة أو غير المتسقة تأخيرات في الشهادة.
+          </li>
+          <li>
+            <strong>فجوات امتثال التصنيع —</strong> قد تتطلب أنظمة
+            مراقبة الجودة تحسينًا قبل منح الشهادة.
+          </li>
+          <li>
+            <strong>تعقيد اللوائح —</strong> قد يكون إدارة الاختبار
+            والتفتيشات وإجراءات الشهادة صعبًا دون إرشاد خبير.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          لماذا تختار Sun Certifications India؟
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          تساعد Sun Certifications India المصنعين والمستوردين والمصدرين
+          والشركات في متطلبات الامتثال التنظيمي في جميع أنحاء الهند.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          تشمل خدماتنا:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>تقييم انطباق المنتج</li>
+          <li>استشارات شهادة BIS</li>
+          <li>دعم المستندات</li>
+          <li>تنسيق اختبار المختبر</li>
+          <li>الاستعداد لتفتيش المصنع</li>
+          <li>إدارة الطلب</li>
+          <li>المساعدة في الامتثال التنظيمي</li>
+          <li>الدعم بعد الشهادة</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          هدفنا هو مساعدة العملاء على التنقل في متطلبات الشهادة بكفاءة
+          وتحقيق الامتثال بأقل قدر من التأخير.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -752,105 +742,132 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          شهادة BIS للكراسي والمقاعد للأغراض العامة بموجب IS 17632:2022 إلزامية
-          لضمان سلامة المنتج والاستقرار الهيكلي والمتانة. لا تساعد شهادة BIS
-          المصنعين فقط في الحفاظ على معايير الجودة العالية ولكنها تمكن أيضًا من
-          الوصول القانوني للسوق وتزيد من ثقة المستهلك.
+          تلعب شهادة BIS للكراسي والمقاعد للأغراض العامة بموجب IS 17632:2022
+          دورًا مهمًا في ضمان جودة المنتج وسلامته وقوته واستقراره
+          ومتانته. تساعد الشهادة المصنعين على إثبات الامتثال للمعايير
+          الهندية مع تعزيز ثقة العملاء ودعم الوصول إلى السوق.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          مع المساعدة المهنية، تصبح عملية الشهادة—من الاختبار إلى الفحص
-          والموافقة—سلسة وقابلة للتنبؤ ومتوافقة بالكامل.
+          مع استمرار الطلب على منتجات الأثاث المضمونة الجودة في النمو،
+          توفر شهادة BIS وعلامة ISI تأكيدًا قيمًا للمستهلكين والمؤسسات
+          ووكالات المشتريات. المصنعون الذين يستثمرون في الامتثال لا
+          يلبون المتطلبات التنظيمية فحسب، بل يعززون أيضًا قدرتهم التنافسية
+          وسمعتهم في السوق على المدى الطويل.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          إذا كنت تخطط للحصول على شهادة BIS للكراسي والمقاعد للأغراض
+          العامة بموجب IS 17632:2022، يمكن لـ Sun Certifications India
+          تقديم إرشادات خبيرة ودعم شامل للامتثال طوال عملية الشهادة.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          الأسئلة الشائعة – شهادة BIS للكراسي والمقاعد
+          الأسئلة الشائعة – شهادة BIS للكراسي والمقاعد للأغراض العامة
+          (IS 17632:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. هل شهادة BIS إلزامية للكراسي والمقاعد؟</strong>
+              <strong>1. ما هو IS 17632:2022؟</strong>
               <br />
-              نعم، وفقًا لـ IS 17632:2022، يجب أن تكون جميع الكراسي والمقاعد
-              للأغراض العامة معتمدة من BIS قبل بيعها في الهند.
+              IS 17632:2022 هو المعيار الهندي الذي يحدد متطلبات الكراسي
+              والمقاعد للأغراض العامة.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. ما هي الاختبارات المطلوبة؟</strong>
+              <strong>
+                2. هل شهادة BIS إلزامية للكراسي والمقاعد للأغراض
+                العامة؟
+              </strong>
               <br />
-              اختبارات الاستقرار والقوة والمتانة والتأثير والتعب وسلامة المواد.
+              يُطلب من المنتجات المشمولة بأمر مراقبة الجودة للأثاث
+              المعمول به الامتثال لمتطلبات شهادة BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. كم تستغرق شهادة BIS؟</strong>
+              <strong>3. ما هي علامة ISI؟</strong>
               <br />
-              عادة 30-45 يومًا.
+              علامة ISI هي علامة الشهادة القياسية الصادرة بموجب مخطط
+              شهادة منتجات BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. ما هي تكلفة الشهادة؟</strong>
+              <strong>4. من يمكنه التقدم للحصول على شهادة BIS؟</strong>
               <br />
-              حوالي ₹60,000–₹1,30,000 اعتمادًا على الاختبار والفحص.
+              يمكن للمصنعين الهنود والمصنعين الأجانب التقدم للحصول على
+              الشهادة.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. هل يمكن للمصنعين الأجانب التقديم؟</strong>
+              <strong>5. هل تتطلب شهادة BIS اختبار المنتج؟</strong>
               <br />
-              نعم، بموجب مخطط FMCS.
+              نعم. يُعد اختبار المنتج جزءًا مهمًا من عملية الشهادة.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. هل وضع علامة ISI إلزامي؟</strong>
+              <strong>
+                6. هل الكراسي الجاهزة للتجميع مشمولة بموجب IS
+                17632:2022؟
+              </strong>
               <br />
-              نعم، بعد منح رخصة BIS.
+              نعم. ينطبق المعيار على المنتجات الجاهزة للتجميع بعد
+              التجميع.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. لماذا تفشل الكراسي في اختبار BIS؟</strong>
+              <strong>
+                7. ما المنتجات المستثناة من نطاق IS 17632:2022؟
+              </strong>
               <br />
-              تشمل الأسباب الشائعة الأرجل الضعيفة وقوة المفاصل الضعيفة وعدم
-              الاستقرار.
+              منتجات مثل الكراسي القابلة للإمالة والكراسي الهزّازة
+              والكراسي المائلة والكنبات وبعض منتجات الجلوس المتخصصة
+              مستثناة عمومًا.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. هل يمكن تغطية نماذج متعددة تحت ترخيص واحد؟</strong>
+              <strong>8. ما فوائد الحصول على شهادة BIS؟</strong>
               <br />
-              فقط إذا كانت تلبي معايير التشابه والامتثال للمعيار.
+              تشمل الفوائد الامتثال التنظيمي وتحسين مصداقية المنتج
+              وتعزيز ثقة العملاء وقبول أفضل في السوق.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. هل فحص المصنع مطلوب؟</strong>
+              <strong>
+                9. هل يمكن للمصنعين الأجانب الحصول على شهادة BIS؟
+              </strong>
               <br />
-              نعم، إلزامي لشهادة علامة ISI.
+              نعم. يمكن للمصنعين الأجانب التقدم من خلال مسار شهادة BIS
+              المعمول به للمصنعين في الخارج.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. ما هي المستندات المطلوبة؟</strong>
+              <strong>10. كيف يمكن لـ Sun Certifications India المساعدة؟</strong>
               <br />
-              ترخيص المصنع والمواصفات التقنية وقائمة الآلات وخطة QC ورسومات
-              المنتج، إلخ.
+              تقدم Sun Certifications India دعمًا شاملاً لشهادة BIS،
+              بما في ذلك المستندات وتنسيق الاختبار وإدارة الطلب
+              والمساعدة في الامتثال.
             </p>
           </div>
         </div>
@@ -867,6 +884,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          موارد ذات صلة
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              شهادة ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              شهادة BIS للمصنع الأجنبي
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadArabic />
 

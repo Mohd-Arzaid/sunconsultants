@@ -388,7 +388,16 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS (Bureau of Indian Standards) is India&apos;s national standards body
+          BIS (
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>
+          ) is India&apos;s national standards body
           under the Ministry of Consumer Affairs. Products under mandatory Quality
           Control Orders (QCOs) cannot legally enter, be sold, or be distributed in
           India without valid BIS certification — regardless of KC Mark status, KS

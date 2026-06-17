@@ -322,7 +322,16 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           India has a mandatory product certification regime that operates
           independently of SNI, BPOM, or any Indonesian certification system.
-          The Bureau of Indian Standards (BIS) governs what enters India — and for
+          The{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS) governs what enters India — and for
           a growing list of product categories, no BIS certification means no legal
           entry.
         </p>

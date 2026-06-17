@@ -394,7 +394,16 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Bureau of Indian Standards (BIS) is India&apos;s national standards
+          The{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS) is India&apos;s national standards
           body, operating under the BIS Act, 2016. It administers mandatory
           product certification schemes that cover a growing list of product
           categories sold or imported into India.

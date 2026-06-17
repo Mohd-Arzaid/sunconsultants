@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsGerman = () => {
   return (
     <div className="relative w-full">
@@ -51,7 +57,7 @@ const MetaTags = () => {
   const ogDescription =
     "Vollständiger Leitfaden zur BIS-Zertifizierung für Betten nach IS 17635:2022. Erfahren Sie Prozess, Kosten, Dokumente, Tests und BIS-Lizenzvorteile.";
   const twitterDescription =
-    "Beantragen Sie ein BIS-Zertifikat für Betten nach IS 17635:2022. Lernen Sie den BIS-Prozess, Dokumente, Tests, Gebühren und Zeitplan in Indien kennen.";
+    "Beantragen Sie ein BIS-Zertifikat für Betten nach IS 17635:2022. Erfahren Sie BIS-Prozess, Dokumente, Tests, Gebühren und Zeitplan in Indien.";
   const metaKeywords =
     "BIS-Zertifikat für Betten, BIS-Lizenz für Betten, IS 17635:2022, BIS-Zertifizierung für Betten";
   const websiteUrl =
@@ -59,7 +65,7 @@ const MetaTags = () => {
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
-    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+    "Dhruv Aggarwal, Leiter der Betriebe bei Sun Certification India";
 
   return (
     <Helmet>
@@ -149,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/betten-is-17635",
+          },
+          headline: "BIS-Zertifikat für Betten",
+          description:
+            "Die BIS-Zertifizierung für Betten in Indien ist eine obligatorische Qualitätssicherung, primär nach IS 17635:2022, die Sicherheits-, Haltbarkeits- und Leistungsstandards gewährleistet.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "BIS-Zertifikat für Betten",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "Die BIS-Zertifizierung für Betten in Indien ist eine obligatorische Qualitätssicherung, primär nach IS 17635:2022, die Sicherheits-, Haltbarkeits- und Leistungsstandards gewährleistet.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Ist die BIS-Zertifizierung für Betten in Indien obligatorisch?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja, gemäß IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Wie lange ist das BIS-Zertifikat gültig?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 Jahre, verlängerbar.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Können ausländische Hersteller einen Antrag stellen?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja, im Rahmen von FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kann das BIS-Zertifikat online beantragt werden?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Ist das ISI-Zeichen auf Betten obligatorisch?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Wie lange dauert der Prozess?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45 Tage.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Werden sowohl Holz- als auch Metallbetten abgedeckt?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja, bei Einhaltung von IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Ist die Werksinspektion obligatorisch?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Ja.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Können Händler BIS beantragen?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nur Markeninhaber mit Fertigungskontrolle.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -163,7 +308,7 @@ const BreadcrumbContent = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
+                    <Link to="/">Startseite</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -237,18 +382,25 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Betten sind wesentliche Möbelprodukte, die täglich in Häusern, Hotels,
-          Krankenhäusern, Hostels, PG-Unterkünften und institutionellen
-          Einrichtungen verwendet werden. Jede strukturelle Schwäche, scharfe
-          Kanten, Materialversagen oder schlechte Tragfähigkeit kann zu schweren
-          Verletzungen führen. Um solche Risiken zu verhindern, schreibt das
-          Bureau of Indian Standards (BIS) die BIS-Zertifizierung für Betten
-          vor.
+          Betten gehören zu den wichtigsten Möbelprodukten und werden täglich in
+          Privathaushalten, Hotels, Krankenhäusern, Hostels, PG-Unterkünften und
+          institutionellen Einrichtungen genutzt. Strukturelle Schwächen, scharfe
+          Kanten, Materialversagen oder unzureichende Tragfähigkeit können zu
+          schweren Verletzungen führen. Um solche Risiken zu vermeiden, schreibt
+          das Bureau of Indian Standards (BIS) die{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            BIS-Zertifizierung
+          </a>{" "}
+          für Betten vor.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Dieser umfassende Leitfaden erklärt alles über die BIS-Lizenz für
-          Betten, einschließlich anwendbarer Normen, Zertifizierungsprozess,
+          Betten – einschließlich anwendbarer Normen, Zertifizierungsprozess,
           Testanforderungen, Dokumente, Gebühren, Zeitpläne, Strafen und
           Vorteile.
         </p>
@@ -257,119 +409,480 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Was ist BIS-Zertifizierung?
+          Wichtige Highlights der BIS-Zertifizierung für Betten
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die BIS-Zertifizierung ist ein Konformitätsbewertungssystem, das vom
-          Bureau of Indian Standards, der nationalen Normungsbehörde Indiens,
-          eingeführt wurde.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Merkmal
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Details
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Produkt", "Betten"],
+                ["Indische Norm", "IS 17635:2022"],
+                ["Bezeichnung der Norm", "Betten – Spezifikation"],
+                ["Zertifizierungsschema", "BIS ISI-Marken-Zertifizierung"],
+                ["Regulierungsbehörde", "Bureau of Indian Standards (BIS)"],
+                ["Anwendbare Marke", "ISI-Marke"],
+                [
+                  "Berechtigte Antragsteller",
+                  "Indische Hersteller und ausländische Hersteller",
+                ],
+                [
+                  "Compliance-Anforderung",
+                  "Obligatorisch gemäß anwendbarer Möbel-QCO (Quality Control Order)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Zertifizierungsschema" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        BIS ISI-Marken-Zertifizierung
+                      </a>
+                    ) : particular === "Compliance-Anforderung" ? (
+                      <>
+                        Obligatorisch gemäß anwendbarer{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>Möbel-QCO (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Was ist ein BIS-Zertifikat?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ein BIS-Zertifikat bestätigt, dass ein Produkt den indischen Normen
-          entspricht und sicher, zuverlässig und gebrauchstauglich ist.
-          Zertifizierte Produkte tragen das BIS-Zertifizierungszeichen,
-          allgemein bekannt als ISI-Zeichen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bedeutung des BIS-Zertifikats
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Es bedeutet, dass das Produkt erfolgreich bestanden hat:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Laborprüfungen</li>
-          <li>Werksinspektion</li>
-          <li>Qualitätskontrolle-Verifizierung</li>
-          <li>Sicherheitskonformitätsbewertung</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Logo auf Betten versichert Kunden, dass das Produkt staatlich
-          genehmigte Qualitäts- und Sicherheitsstandards erfüllt.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS-Norm anwendbar für Betten – IS 17635:2022
+          Was ist die BIS-Zertifizierung für Betten?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Die anwendbare indische Norm für Betten ist:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – Betten: Sicherheitsanforderungen
+          Die BIS-Zertifizierung für Betten ist ein Konformitätsbewertungsverfahren,
+          mit dem Hersteller nachweisen, dass ihre Produkte die in IS 17635:2022
+          festgelegten Anforderungen erfüllen. Nach erfolgreicher Prüfung durch
+          Tests, Werksbewertung und behördliche Überprüfung wird dem Hersteller
+          eine BIS-Lizenz erteilt und er darf das ISI-Zeichen auf zertifizierten
+          Produkten anbringen.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Diese Norm definiert wesentliche Sicherheits- und
-          Leistungsanforderungen für Betten, die in Wohn- und Gewerbeumgebungen
-          verwendet werden.
+          Das Zertifizierungssystem soll sicherstellen, dass auf dem indischen
+          Markt erhältliche Betten festgelegte Anforderungen erfüllen in Bezug
+          auf:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022 deckt ab
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Strukturelle Festigkeit</li>
-          <li>Tragfähigkeit</li>
-          <li>Stabilität und Haltbarkeit</li>
-          <li>Materialqualität</li>
-          <li>Kanten- und Oberflächenbearbeitung</li>
-          <li>Sicherheit gegen Einsturz</li>
-          <li>Fehlen von Einklemmgefahren</li>
-          <li>Langzeitleistung</li>
+          <li>Stabilität</li>
+          <li>Haltbarkeit</li>
+          <li>Oberflächenleistung</li>
+          <li>Sicherheit bei normaler Nutzung</li>
+          <li>Leistung unter vorhersehbaren Fehlgebrauchsbedingungen</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Jedes in Indien hergestellte oder importierte Bett muss IS 17635:2022
-          entsprechen und eine BIS-Registrierung für Betten erhalten.
+          Diese Anforderungen schaffen einen einheitlichen Maßstab für Qualität
+          und Verbraucherschutz über unterschiedliche Bettkonstruktionen und
+          Materialien hinweg.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum BIS-Zertifizierung für Betten obligatorisch ist
+          Warum die BIS-Zertifizierung für Betten wichtig ist
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Betten werden über längere Zeiträume verwendet und tragen
-          kontinuierlich menschliches Gewicht. Schlecht konstruierte Betten
-          können Verletzungen, Einsturz oder langfristige Gesundheitsrisiken
-          verursachen.
+          Betten wirken sich unmittelbar auf die Sicherheit der Nutzer aus, da
+          sie über längere Zeiträume erhebliche Lasten tragen müssen. Schlecht
+          konstruierte oder unzureichend geprüfte Produkte können
+          Strukturversagen, Instabilität, Verformung oder vorzeitige
+          Verschleißerscheinungen aufweisen.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Gründe, warum BIS-Zertifizierung für Betten erforderlich ist
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 adressiert diese Risiken, indem standardisierte
+          Leistungs- und Sicherheitsanforderungen definiert werden, die
+          Hersteller erfüllen müssen, bevor ihre Produkte in den Verkehr
+          gebracht werden. Die Norm umfasst Anforderungen zu Festigkeit,
+          Stabilität, Haltbarkeit, Verarbeitung und Oberflächenleistung.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Gewährleistet strukturelle Integrität</li>
-          <li>Verhindert Einsturz und Bruch</li>
-          <li>Kontrolliert Materialqualität</li>
-          <li>Eliminiert scharfe Kanten und unsichere Oberflächen</li>
-          <li>Schützt Verbraucher</li>
-          <li>Gewährleistet einheitliche nationale Qualität</li>
-          <li>Obligatorisch gemäß BIS-Benachrichtigung</li>
-          <li>Erforderlich für den legalen Verkauf in Indien</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Für Hersteller bietet die BIS-Zertifizierung mehrere Vorteile:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Rechtliche Berechtigung zum Verkauf abgedeckter Produkte in Indien</li>
+          <li>Nachweis der Konformität mit indischen Normen</li>
+          <li>Verbesserte Marktakzeptanz</li>
+          <li>Stärkeres Verbrauchervertrauen</li>
+          <li>Geringeres Risiko behördlicher Maßnahmen</li>
+          <li>Wettbewerbsvorteil bei institutioneller und gewerblicher Beschaffung</li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Überblick über IS 17635:2022 für Betten
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die indische Regierung hat Quality Control Orders (QCO) für mehrere
+          Möbelprodukte eingeführt, um sicherzustellen, dass in den Verkehr
+          gebrachte Produkte vorgeschriebene Sicherheits- und
+          Qualitätsanforderungen erfüllen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Wenn IS 17635:2022 unter der anwendbaren Möbel-QCO fällt, müssen
+          Hersteller eine BIS-Zertifizierung nach Schema-I erhalten und das
+          Standardzeichen (ISI-Marke) gemäß den BIS-Lizenzvorschriften
+          verwenden.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 ist die indische Norm, die Leistungs- und
+          Sicherheitsanforderungen für Betten festlegt, die für erwachsene
+          Nutzer in häuslichen und nicht-häuslichen Umgebungen bestimmt sind.
+          Die Norm definiert Anforderungen, die sicherstellen sollen, dass
+          Betten während ihrer vorgesehenen Nutzungsdauer sicher, funktionsfähig
+          und haltbar bleiben.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Zweck von IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 wurde entwickelt, um eine umfassende
+          leistungsbasierte Norm für moderne Bettkonstruktionen bereitzustellen,
+          die mit verschiedenen Materialien und Fertigungsverfahren hergestellt
+          werden. Die Norm ersetzt die frühere IS 7259 (Teil 1):1988, die
+          primär auf Holzbetten ausgerichtet war.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Norm bewertet Betten, ohne die Konformität auf ein bestimmtes
+          Material oder Fertigungsverfahren zu beschränken. Stattdessen
+          konzentriert sie sich darauf, wie das fertige Produkt unter den
+          vorgeschriebenen Prüfbedingungen abschneidet. Dieser Ansatz
+          ermöglicht eine einheitliche Bewertung von Holz-, Metall-,
+          Holzwerkstoff- und anderen Bettkonstruktionen.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Anwendungsbereich von IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Gemäß der Norm umfasst IS 17635:2022 Anforderungen an Leistung und
+          Sicherheit von Betten für erwachsene Nutzer. Die Norm gilt für
+          Produkte, die sowohl in häuslichen als auch in nicht-häuslichen
+          Umgebungen verwendet werden sollen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Norm gilt für:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Vollständig hergestellte Betten</li>
+          <li>Gefertigte Betten</li>
+          <li>Montagefertige Betten nach der Montage</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ohne BIS-Lizenz für Betten ist der Verkauf oder Import von Betten in
-          Indien illegal.
+          Damit wird sichergestellt, dass Produkte in montiertem oder
+          zerlegbarem Zustand nach denselben Leistungs- und
+          Sicherheitskriterien bewertet werden.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Ziele der Norm</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die wesentlichen Ziele von IS 17635:2022 umfassen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Gewährleistung der Nutzersicherheit</li>
+          <li>Überprüfung der strukturellen Festigkeit</li>
+          <li>Bewertung der Produktstabilität</li>
+          <li>Beurteilung der Haltbarkeit bei wiederholter Nutzung</li>
+          <li>Festlegung von Mindestleistungsanforderungen</li>
+          <li>Förderung einheitlicher Produktqualität bei allen Herstellern</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Norm enthält außerdem Prüfmethoden zur Bewertung von Betten unter
+          normalen Nutzungsbedingungen und bei vernünftigerweise vorhersehbarem
+          Fehlgebrauch.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Von IS 17635:2022 abgedeckte Produkte
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 gilt für Betten, die für erwachsene Nutzer in häuslichen
+          und nicht-häuslichen Umgebungen bestimmt sind. Die Norm konzentriert
+          sich auf Leistung, Sicherheit, Festigkeit, Stabilität und Haltbarkeit
+          des fertigen Produkts, anstatt die Konformität auf ein bestimmtes
+          Material oder Fertigungsverfahren zu beschränken.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Norm gilt für:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Vollständig hergestellte Betten</li>
+          <li>Gefertigte Betten</li>
+          <li>Montagefertige (RTA) Betten nach der Montage</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller, die Betten in zerlegbarem Zustand liefern, müssen
+          sicherstellen, dass das montierte Produkt alle anwendbaren
+          Anforderungen der Norm erfüllt.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>Hinweis:</strong> Diese Norm gilt nicht für Wasserbetten,
+          Luftbetten, Klappbetten, Etagenbetten und Betten für Menschen mit
+          besonderen Bedürfnissen sowie nicht für Betten für Gesundheits- und
+          medizinische Zwecke.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Ebenfalls prüfen: Möbelprodukte unter obligatorischer
+            BIS-Zertifizierung —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS-Zertifizierung für Möbel</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Wichtige Anforderungen nach IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Das Hauptziel von IS 17635:2022 besteht darin, sicherzustellen, dass
+          Betten unter normalen Nutzungsbedingungen sicher, stabil, haltbar und
+          für den vorgesehenen Zweck geeignet bleiben. Zu diesem Zweck legt die
+          Norm mehrere zentrale Leistungsanforderungen fest.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Stabilitätsanforderungen</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Betten müssen ausreichenden Widerstand gegen Kippen und Instabilität
+          bei normaler Nutzung aufweisen. Stabilitätstests prüfen, ob das
+          Produkt bei erwarteten Belastungsbedingungen und Nutzerbewegungen
+          sicher bleibt.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ein stabiles Bett minimiert das Unfallrisiko und verbessert die
+          Gesamtsicherheit der Nutzer.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Festigkeitsanforderungen</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Festigkeitstests bewerten die Fähigkeit der Bettkonstruktion,
+          erhebliche Lasten ohne strukturelles Versagen zu tragen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Diese Prüfungen untersuchen typischerweise:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Integrität des Bettrahmens</li>
+          <li>Verbindungsfestigkeit</li>
+          <li>Tragfähigkeit</li>
+          <li>Widerstand gegen übermäßige Verformung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ziel ist es sicherzustellen, dass das Produkt die vorgesehenen Nutzer
+          im täglichen Gebrauch sicher tragen kann.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Haltbarkeitsanforderungen</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Haltbarkeitstests simulieren langfristige Nutzung durch wiederholte
+          Belastungs- und Bewegungszyklen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Ziel ist festzustellen, ob:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Strukturverbindungen dauerhaft sicher bleiben</li>
+          <li>Komponenten weiterhin ordnungsgemäß funktionieren</li>
+          <li>Die Produktleistung über die Zeit akzeptabel bleibt</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Haltbarkeitsanforderungen tragen dazu bei, dass zertifizierte Betten
+          während ihrer vorgesehenen Nutzungsdauer zuverlässig bleiben.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Anforderungen an die Oberflächenleistung</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022 verweist auf Anforderungen an die Oberflächenleistung,
+          die für Möbeloberflächen gelten.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Je nach Konstruktion und verwendeten Materialien können Oberflächen
+          auf Beständigkeit gegen geprüft werden:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Mechanische Beschädigung</li>
+          <li>Feuchte Wärme</li>
+          <li>Trockene Wärme</li>
+          <li>Verfärbung</li>
+          <li>Haftungseigenschaften</li>
+          <li>Abrieb und Verschleiß</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Diese Anforderungen tragen dazu bei, Funktionalität und Erscheinungsbild
+          während der normalen Nutzung zu erhalten.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Anforderungen an Design und Verarbeitung
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Norm enthält außerdem Anforderungen an Designqualität und
+          Verarbeitung.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Zu den weiteren Aspekten gehören:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Zugängliche Kanten dürfen keine Verletzungsgefahr darstellen.</li>
+          <li>Scharfe Kanten und unsichere Vorsprünge sind zu vermeiden.</li>
+          <li>Hohlräume sind erforderlichenfalls ordnungsgemäß zu verschließen.</li>
+          <li>Bewegliche Komponenten sind so zu gestalten, dass Verletzungsrisiken reduziert werden.</li>
+          <li>
+            Das fertige Produkt muss den deklarierten Design- und
+            Modellspezifikationen entsprechen.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Sicherheitsanforderungen</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Sicherheit ist ein zentrales Prinzip in IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Norm enthält Anforderungen zur Verringerung von Risiken durch:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Strukturellen Einsturz</li>
+          <li>Scharfe Kanten</li>
+          <li>Unsichere Vorsprünge</li>
+          <li>Komponentenversagen</li>
+          <li>Belastungen bei wiederholter Nutzung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Einhaltung dieser Anforderungen trägt dazu bei, dass Betten bei
+          normaler Nutzung und vernünftigerweise vorhersehbarem Fehlgebrauch
+          sicher bleiben.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Ist die BIS-Zertifizierung für Betten in Indien obligatorisch?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ja – für Möbelprodukte, die unter die anwendbare Quality Control
+          Order fallen, ist eine BIS-Zertifizierung obligatorisch, bevor solche
+          Produkte in Indien hergestellt, importiert, verkauft, vertrieben,
+          gelagert oder zum Verkauf angeboten werden dürfen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller müssen den aktuellen Benachrichtigungsstatus und die
+          Umsetzungstermine der indischen Regierung prüfen, da regulatorische
+          Anforderungen von Zeit zu Zeit aktualisiert werden können.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Verpflichtung zur Verwendung des ISI-Zeichens
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Das ISI-Zeichen belegt, dass ein Produkt der relevanten indischen Norm
+          entspricht und unter einer gültigen BIS-Lizenz hergestellt wird.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Marke darf erst angebracht werden, nachdem:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Produkttests erfolgreich abgeschlossen wurden</li>
+          <li>Die Werksbewertung durchgeführt wurde</li>
+          <li>BIS den Antrag genehmigt hat</li>
+          <li>Die Lizenz erteilt wurde</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die unbefugte Verwendung des ISI-Zeichens ist nach dem BIS Act, 2016
+          untersagt.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -378,11 +891,11 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Der BIS-Zertifizierungsprozess in Indien folgt einem strukturierten
-          Verfahren unter dem ISI-Zertifizierungsschema.
+          Verfahren im Rahmen des ISI-Zertifizierungsschemas.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 1 – Norm und Produktumfang identifizieren
+          Schritt 1 – Norm und Produktumfang festlegen
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Anwendbarkeit unter IS 17635:2022 bestätigen und Produktvarianten
@@ -462,40 +975,13 @@ const MainContentLeft = () => {
         </ul>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 7 – Post-Zertifizierungs-Konformität
+          Schritt 7 – Konformität nach der Zertifizierung
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Überwachungsinspektionen</li>
           <li>Verlängerung alle 1–2 Jahre</li>
           <li>Laufende Qualitätskontrolle</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Umfang der BIS-Lizenz für Betten
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Diese Norm deckt die Anforderungen bezüglich der
-          Leistung und Sicherheit von Betten für Erwachsene für den häuslichen
-          und nicht-häuslichen Gebrauch ab.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Diese Norm gilt für vollständig hergestellte/
-          gefertigte Betten. Sie gilt auch für montagefertige Einheiten; in
-          diesem Fall gelten die Anforderungen dieser Norm für die montierten
-          Einheiten.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> Diese Norm deckt keine Wasserbetten, Luftbetten,
-          Klappbetten, Etagenbetten und Betten für Menschen mit besonderen
-          Bedürfnissen ab, noch die Betten für Gesundheits- und medizinische
-          Zwecke.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -631,8 +1117,8 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Tests müssen nur in von BIS genehmigten Laboratorien durchgeführt
-          werden.
+          Tests müssen ausschließlich in von BIS genehmigten Laboratorien
+          durchgeführt werden.
         </p>
 
         {/* Separator Line */}
@@ -644,16 +1130,16 @@ const MainContentLeft = () => {
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>Falsche Normauswahl</strong> – Überprüfen Sie immer die
+            <strong>Falsche Normauswahl</strong> – Überprüfen Sie stets die
             richtige indische Norm.
           </li>
           <li>
-            <strong>Schlechte Dokumentation</strong> – Fehlende Dokumente
-            verursachen Verzögerungen; bereiten Sie sie im Voraus vor.
+            <strong>Unvollständige Dokumentation</strong> – Fehlende Unterlagen
+            verursachen Verzögerungen; bereiten Sie diese im Voraus vor.
           </li>
           <li>
-            <strong>Fehlgeschlagene Labortests</strong> – Stellen Sie sicher,
-            dass hochwertige Materialien und Konstruktion verwendet werden.
+            <strong>Fehlgeschlagene Labortests</strong> – Setzen Sie auf
+            hochwertige Materialien und solide Konstruktion.
           </li>
           <li>
             <strong>Werk nicht bereit</strong> – Stellen Sie sicher, dass QMS
@@ -669,32 +1155,16 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vorteile der BIS-Zertifizierung für Betten
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal Verkauf in Indien</li>
-          <li>Erhöhtes Kundenvertrauen</li>
-          <li>Zugang zu E-Commerce-Plattformen</li>
-          <li>Berechtigung für Regierungsausschreibungen</li>
-          <li>Reduzierte Haftung</li>
-          <li>Starke Markenglaubwürdigkeit</li>
-          <li>Konformität mit indischen Normen</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Strafen bei Nichtkonformität
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Der Verkauf von Betten ohne BIS-Zertifizierung kann führen zu:
+          Der Verkauf von Betten ohne BIS-Zertifizierung kann folgende Folgen
+          haben:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Schweren Geldstrafen</li>
+          <li>Hohe Geldstrafen</li>
           <li>Produktbeschlagnahme</li>
           <li>Geschäftsschließung</li>
           <li>Rechtliche Schritte</li>
@@ -705,31 +1175,7 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wer braucht ein BIS-Zertifikat für Betten?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Die folgenden Einheiten müssen eine BIS-Lizenz für Betten erhalten:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indische Hersteller</li>
-          <li>Ausländische Hersteller</li>
-          <li>Importeure</li>
-          <li>Möbelmarken</li>
-          <li>OEM/ODM-Lieferanten</li>
-          <li>E-Commerce-Verkäufer</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Jede Fertigungseinheit erfordert eine separate BIS-Lizenz.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum uns für BIS-Zertifizierung für Betten wählen?
+          Warum uns für die BIS-Zertifizierung für Betten wählen?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -742,7 +1188,7 @@ const MainContentLeft = () => {
           <li>Testkoordination</li>
           <li>Antragseinreichung</li>
           <li>Werksinspektionsabwicklung</li>
-          <li>BIS-Verbindung</li>
+          <li>BIS-Kommunikation</li>
           <li>Lizenzausstellung</li>
           <li>Verlängerungs- und Überwachungsunterstützung</li>
         </ul>
@@ -759,8 +1205,9 @@ const MainContentLeft = () => {
           obligatorische rechtliche Anforderung, die Sicherheit, Qualität und
           Haltbarkeit gewährleistet. Die Erlangung einer BIS-Lizenz für Betten
           schützt Verbraucher, stärkt den Markenwert und ermöglicht den
-          rechtmäßigen Marktzugang in ganz Indien. Mit Expertenunterstützung
-          wird der Zertifizierungsprozess nahtlos und effizient.
+          rechtmäßigen Marktzugang in ganz Indien. Mit fachkundiger
+          Unterstützung wird der Zertifizierungsprozess reibungslos und
+          effizient.
         </p>
 
         {/* Separator Line */}
@@ -774,7 +1221,7 @@ const MainContentLeft = () => {
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                1. Ist BIS-Zertifizierung für Betten in Indien obligatorisch?
+                1. Ist die BIS-Zertifizierung für Betten in Indien obligatorisch?
               </strong>
               <br />
               Ja, gemäß IS 17635:2022.
@@ -783,7 +1230,7 @@ const MainContentLeft = () => {
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Wie ist die Gültigkeit des BIS-Zertifikats?</strong>
+              <strong>2. Wie lange ist das BIS-Zertifikat gültig?</strong>
               <br />
               1–2 Jahre, verlängerbar.
             </p>
@@ -791,17 +1238,15 @@ const MainContentLeft = () => {
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Können ausländische Hersteller sich bewerben?</strong>
+              <strong>3. Können ausländische Hersteller einen Antrag stellen?</strong>
               <br />
-              Ja, unter FMCS.
+              Ja, im Rahmen von FMCS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                4. Kann das BIS-Zertifikat online beantragt werden?
-              </strong>
+              <strong>4. Kann das BIS-Zertifikat online beantragt werden?</strong>
               <br />
               Ja.
             </p>
@@ -829,7 +1274,7 @@ const MainContentLeft = () => {
                 7. Werden sowohl Holz- als auch Metallbetten abgedeckt?
               </strong>
               <br />
-              Ja, wenn sie IS 17635:2022 entsprechen.
+              Ja, bei Einhaltung von IS 17635:2022.
             </p>
           </div>
 
@@ -862,6 +1307,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Verwandte Ressourcen
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISI-Marken-Zertifikat
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              BIS-FMCS-Lizenz
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadGerman />
 

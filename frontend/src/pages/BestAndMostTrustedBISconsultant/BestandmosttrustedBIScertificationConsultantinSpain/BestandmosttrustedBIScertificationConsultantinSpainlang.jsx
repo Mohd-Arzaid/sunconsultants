@@ -18,9 +18,9 @@ import { Services as ServicesSpanish } from "@/pages/SchemeX/SchemeXSpanish";
 const CANONICAL_URL =
   "https://bis-certifications.com/mejor-y-mas-confiable-consultor-certificacion-bis-espana";
 const PAGE_IMAGE_SRC =
-  "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantSpain.webp";
+  "/BestandMostTrustedBISCertificationConsultant/ElmejorconsultordeBISenEspaña.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BestBISConsultantSpain.webp";
+  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/ElmejorconsultordeBISenEspaña.webp";
 
 const PAGE_TITLE =
   "Mejor y más confiable consultor de certificación BIS en España – Sun Certifications India";
@@ -326,7 +326,16 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Lo que los fabricantes españoles están descubriendo ahora — algunos a
           mitad de envío, otros a mitad de contrato — es que el régimen de
-          certificación obligatoria del Bureau of Indian Standards (BIS) de India
+          certificación obligatoria del{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS) de India
           se está expandiendo rápidamente. Los productos que entraban en India
           libremente bajo condiciones de importación anteriores ahora requieren
           una certificación BIS válida antes de poder pasar legalmente por la
@@ -409,6 +418,11 @@ const MainContentLeft = () => {
             <li key={point}>{point}</li>
           ))}
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+        Para las empresas españolas que desean exportar sus productos a la India, cumplir con los requisitos establecidos por el Oficina de Normas de la India (BIS) es un paso fundamental para acceder al mercado indio. Por esta razón, muchas compañías buscan información sobre BIS indio, Certificación BIS para la India, Certificado BIS para la India, Licencia BIS para la India, Certificado BIS indio, Certificación BIS india Registro BIS para la India . El sistema BIS regula una amplia variedad de productos, incluidos equipos electrónicos, maquinaria industrial, componentes eléctricos, productos químicos y bienes de consumo, garantizando que cumplan con las normas obligatorias aplicables en la India. Obtener un Certificado BIS para la India o una Licencia BIS para la India puede ser un requisito legal antes de importar o comercializar determinados productos en el país. Asimismo, completar correctamente el Registro BIS para la India y el proceso de Certificación BIS india ayuda a evitar retrasos regulatorios y problemas de cumplimiento. Sun Certifications India ofrece apoyo integral a los fabricantes españoles durante todo el proceso de certificación, desde la evaluación inicial del producto y la preparación de la documentación técnica hasta la obtención del **Certificado BIS indio  y el cumplimiento de todos los requisitos del BIS indio.
+        </p>
+        
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

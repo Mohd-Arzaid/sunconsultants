@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForChairAndStoolsThai = () => {
   return (
     <div className="relative w-full">
@@ -41,17 +47,18 @@ const BISCertificateForChairAndStoolsThai = () => {
 export default BISCertificateForChairAndStoolsThai;
 
 const MetaTags = () => {
-  const title = "ใบรับรอง BIS สำหรับเก้าอี้และม้านั่ง | IS 17632:2022 ใบอนุญาต BIS";
-  const ogTitle = "การรับรอง BIS สำหรับเก้าอี้และม้านั่ง – คู่มือ IS 17632:2022";
-  const twitterTitle = "ใบอนุญาต BIS สำหรับเก้าอี้และม้านั่ง | IS 17632:2022";
+  const title =
+    "ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป | IS 17632:2022";
+  const ogTitle =
+    "ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป | IS 17632:2022";
+  const twitterTitle =
+    "ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป | IS 17632:2022";
   const metaDescription =
-    "รับใบรับรอง BIS สำหรับเก้าอี้และม้านั่งตาม IS 17632:2022 กระบวนการ เอกสาร การทดสอบ ต้นทุน และระยะเวลาสำหรับการรับรอง BIS ในอินเดีย";
-  const ogDescription =
-    "คู่มือฉบับสมบูรณ์สำหรับการรับรอง BIS สำหรับเก้าอี้และม้านั่งตาม IS 17632:2022 รู้จักกระบวนการ ต้นทุน เอกสาร การทดสอบ และประโยชน์ของใบอนุญาต BIS";
-  const twitterDescription =
-    "สมัครใบรับรอง BIS สำหรับเก้าอี้และม้านั่งตาม IS 17632:2022 เรียนรู้กระบวนการ BIS เอกสาร การทดสอบ ค่าธรรมเนียม และระยะเวลาในอินเดีย";
+    "เรียนรู้ทุกอย่างเกี่ยวกับการรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไปภายใต้ IS 17632:2022 เข้าใจข้อกำหนดเครื่องหมาย ISI การทดสอบ กระบวนการรับรอง เอกสาร ประโยชน์ และคำถามที่พบบ่อย";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "ใบรับรอง BIS สำหรับเก้าอี้และม้านั่ง, ใบอนุญาต BIS สำหรับเก้าอี้และม้านั่ง, IS 17632:2022, การรับรอง BIS สำหรับเก้าอี้และม้านั่ง";
+    "ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป, IS 17632:2022, เครื่องหมาย ISI เก้าอี้และม้านั่ง, ใบอนุญาต BIS เก้าอี้ม้านั่ง, การรับรอง BIS เฟอร์นิเจอร์";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/ghao-lae-mang-is-17632";
   const websiteName = "Sun Certifications India";
@@ -179,7 +186,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    ใบรับรอง BIS สำหรับเก้าอี้และม้านั่ง – IS 17632:2022
+                    ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป (IS 17632:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -210,549 +217,520 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป – คู่มือฉบับสมบูรณ์ IS
-          17632:2022
+          ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป (IS 17632:2022) –
+          คู่มือการรับรองเครื่องหมาย ISI ฉบับสมบูรณ์
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="ใบอนุญาต BIS สำหรับเก้าอี้และม้านั่ง"
-            alt="ใบรับรอง BIS สำหรับเก้าอี้และม้านั่ง - การรับรอง BIS IS 17632:2022"
+            title="ใบอนุญาต BIS สำหรับเก้าอี้และม้านั่งทั่วไป"
+            alt="ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป - คู่มือเครื่องหมาย ISI IS 17632:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไปเป็นข้อกำหนดบังคับตาม
-          มาตรฐานอินเดีย IS 17632:2022 มาตรฐานนี้อธิบายข้อกำหนดด้านความปลอดภัย
-          ความทนทาน และประสิทธิภาพสำหรับเก้าอี้และม้านั่งที่ใช้ในบ้าน สำนักงาน
-          พื้นที่เชิงพาณิชย์ สถาบันการศึกษา โรงอาหาร ร้านอาหาร โรงแรม และ
-          สถานที่สาธารณะ
+          เก้าอี้และม้านั่งทั่วไปเป็นหนึ่งในผลิตภัณฑ์เฟอร์นิเจอร์ที่ใช้กันอย่าง
+          แพร่หลายที่สุดในบ้าน สำนักงาน สถาบันการศึกษา สถานพยาบาล ร้านค้าปลีก
+          พื้นที่สาธารณะ และสภาพแวดล้อมเชิงพาณิชย์ เนื่องจากผลิตภัณฑ์ที่นั่งเหล่านี้
+          ถูกใช้งานอย่างสม่ำเสมอและเป็นเวลานาน จึงต้องเป็นไปตามข้อกำหนดด้านคุณภาพ
+          ความปลอดภัย ความแข็งแรง และความทนทานเพื่อให้มั่นใจในประสิทธิภาพที่เชื่อถือได้
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          เก้าอี้และม้านั่งเป็นหนึ่งในรายการเฟอร์นิเจอร์ที่ใช้มากที่สุดและถูก
-          สัมผัสกับน้ำหนัก การเคลื่อนไหว และความเครียดซ้ำๆ
-          เก้าอี้หรือม้านั่งที่มีโครงสร้างอ่อนแออาจพังทลายกะทันหัน
-          ส่งผลให้เกิดการบาดเจ็บ เพื่อป้องกันอันตรายดังกล่าวและรับประกันความ
-          ปลอดภัยของผู้บริโภค สำนักงานมาตรฐานอินเดีย (BIS)
-          กำหนดให้ผู้ผลิตและผู้นำเข้าทุกคนต้องได้รับใบรับรอง BIS สำหรับเก้าอี้
-          และม้านั่งก่อนขายในอินเดีย
+          ด้วยการเน้นความสำคัญของคุณภาพผลิตภัณฑ์และความปลอดภัยของผู้บริโภคที่เพิ่มขึ้น
+          การปฏิบัติตามมาตรฐานอินเดียจึงกลายเป็นข้อกำหนดสำคัญสำหรับผู้ผลิตและผู้นำเข้า
+          เฟอร์นิเจอร์ การรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไปภายใต้ IS 17632:2022
+          ช่วยให้มั่นใจว่าผลิตภัณฑ์เป็นไปตามข้อกำหนดด้านประสิทธิภาพและความปลอดภัยที่กำหนด
+          ก่อนจำหน่ายในตลาดอินเดีย
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          หน้านี้ให้คำแนะนำฉบับสมบูรณ์เกี่ยวกับการรับรอง BIS สำหรับเก้าอี้และ
-          ม้านั่งตาม IS 17632:2022 รวมถึงกระบวนการรับรอง เอกสารที่ต้องการ
-          ข้อกำหนดการทดสอบ ค่าธรรมเนียม ความท้าทาย โทษ และประโยชน์
+          การรับรองภายใต้สำนักงานมาตรฐานอินเดีย (BIS) ช่วยให้ผู้ผลิตสามารถใช้เครื่องหมาย
+          ISI บนผลิตภัณฑ์ที่เป็นไปตามข้อกำหนด เครื่องหมาย ISI
+          เป็นการรับประกันว่าผลิตภัณฑ์เป็นไปตามมาตรฐานคุณภาพอินเดียที่ได้รับการยอมรับ
+          และได้ผ่านกระบวนการประเมินที่จำเป็น
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ในขณะที่อุตสาหกรรมเฟอร์นิเจอร์ยังคงเติบโตและหน่วยงานจัดซื้อนิยมผลิตภัณฑ์ที่ได้รับการรับรอง
+          มากขึ้น การรับรอง BIS จึงกลายเป็นข้อกำหนดด้านการปฏิบัติตามและการเข้าถึงตลาดที่สำคัญ
+          สำหรับผู้ผลิต
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          การรับรอง BIS คืออะไร?
+          ไฮไลท์สำคัญของการรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          การรับรอง BIS เป็นระบบการปฏิบัติตามผลิตภัณฑ์ที่ควบคุมโดย
-          สำนักงานมาตรฐานอินเดีย ซึ่งเป็นองค์กรมาตรฐานแห่งชาติของอินเดีย
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ความหมายของใบรับรอง BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          ใบรับรอง BIS รับประกันว่าผลิตภัณฑ์:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>เป็นไปตามมาตรฐานความปลอดภัยและคุณภาพของอินเดีย</li>
-          <li>ผ่านการทดสอบในห้องปฏิบัติการที่ BIS อนุมัติ</li>
-          <li>ได้รับการตรวจสอบโรงงาน</li>
-          <li>ปกป้องผู้บริโภคจากผลิตภัณฑ์ที่ไม่ปลอดภัยหรือคุณภาพต่ำ</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ผลิตภัณฑ์ที่รับรองแสดงเครื่องหมาย ISI
-          แสดงการปฏิบัติตามมาตรฐานอินเดีย
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          มาตรฐานที่ใช้ – IS 17632:2022 สำหรับเก้าอี้และม้านั่ง
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          มาตรฐาน BIS สำหรับเก้าอี้และม้านั่งคือ:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – เก้าอี้และม้านั่งทั่วไป:
-          ข้อกำหนดด้านความปลอดภัย
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          มาตรฐานนี้ครอบคลุมเก้าอี้และม้านั่งที่ไม่เฉพาะเจาะจงทั้งหมดที่ใช้สำหรับ
-          วัตถุประสงค์ในการนั่งในบ้าน สำนักงาน สภาพแวดล้อมเชิงพาณิชย์ สถานที่
-          สาธารณะ และการตั้งค่าสถาบัน
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ผลิตภัณฑ์ที่ครอบคลุมภายใต้ IS 17632:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>เก้าอี้ทั่วไป</li>
-          <li>เก้าอี้รับประทานอาหาร</li>
-          <li>เก้าอี้สำหรับผู้เยี่ยมชมสำนักงาน</li>
-          <li>เก้าอี้เรียน</li>
-          <li>เก้าอี้โรงอาหาร</li>
-          <li>เก้าอี้ร้านอาหาร</li>
-          <li>เก้าอี้ห้องประชุม</li>
-          <li>เก้าอี้พื้นที่รอ</li>
-          <li>เก้าอี้ไม้</li>
-          <li>เก้าอี้โลหะ</li>
-          <li>เก้าอี้พลาสติก (ไม่เฉพาะเจาะจง)</li>
-          <li>ม้านั่งทั่วไป</li>
-          <li>ม้านั่งบาร์</li>
-          <li>ม้านั่งรับประทานอาหาร</li>
-          <li>ม้านั่งขั้นบันได (ภายในเกณฑ์ที่กำหนด)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          พารามิเตอร์ความปลอดภัยและประสิทธิภาพหลัก
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 ประเมิน:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ความแข็งแรงของโครงสร้าง</li>
-          <li>ความเสถียร</li>
-          <li>ความทนทานภายใต้การใช้งานซ้ำ</li>
-          <li>ความแข็งแรงของที่นั่ง</li>
-          <li>ประสิทธิภาพของพนักพิง</li>
-          <li>ความต้านทานแรงกระแทกของขา</li>
-          <li>ความแข็งแรงของข้อต่อ</li>
-          <li>คุณภาพการตกแต่งพื้นผิว</li>
-          <li>ความปลอดภัยของขอบและมุม</li>
-          <li>คุณภาพวัสดุ</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เก้าอี้และม้านั่งทั้งหมดที่ขายในอินเดียต้องเป็นไปตามพารามิเตอร์เหล่านี้
-          และได้รับใบอนุญาต BIS สำหรับเก้าอี้และม้านั่ง
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ทำไมการรับรอง BIS จึงเป็นข้อกำหนดสำหรับเก้าอี้และม้านั่ง?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          เก้าอี้และม้านั่งรองรับน้ำหนักของมนุษย์และถูกใช้บ่อยในทุกสภาพแวดล้อม
-          ความล้มเหลวของโครงสร้างอาจนำไปสู่:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>เก้าอี้พังทลาย</li>
-          <li>ขาแตกหัก</li>
-          <li>ที่นั่งแตกร้าว</li>
-          <li>ความล้มเหลวของพนักพิง</li>
-          <li>การบาดเจ็บเนื่องจากขอบคม</li>
-          <li>ความไม่เสถียรที่นำไปสู่การล้ม</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ประโยชน์ของการรับรอง BIS
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>รับประกันผลิตภัณฑ์ที่นั่งที่ปลอดภัย</li>
-          <li>ป้องกันอุบัติเหตุและการบาดเจ็บ</li>
-          <li>ปรับปรุงความทนทานของผลิตภัณฑ์</li>
-          <li>ป้องกันการนำเข้าที่มีคุณภาพต่ำ</li>
-          <li>สร้างคุณภาพตลาดที่สม่ำเสมอ</li>
-          <li>เพิ่มความมั่นใจของลูกค้า</li>
-          <li>บังคับตามกฎหมายอินเดีย (BIS QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          โดยไม่มีการรับรอง BIS ผู้ผลิตไม่สามารถขายเก้าอี้หรือม้านั่งในอินเดีย
-          ตามกฎหมายได้
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          กระบวนการรับรอง BIS สำหรับเก้าอี้และม้านั่ง (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          กระบวนการ BIS ตามแผนการรับรองเครื่องหมาย ISI ซึ่งเกี่ยวข้องกับการ
-          ทดสอบ การตรวจสอบ และการยืนยันการสมัคร
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 1 – ระบุประเภทผลิตภัณฑ์และมาตรฐาน
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ยืนยันว่าเก้าอี้/ม้านั่งอยู่ภายใต้ IS 17632:2022
-          ระบุรูปแบบการออกแบบและวัสดุที่ใช้
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 2 – ส่งใบสมัคร BIS ออนไลน์
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          ใบสมัครถูกยื่นผ่านพอร์ทัลออนไลน์ BIS Manak โดยต้องมี:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>รายละเอียดผู้ผลิต</li>
-          <li>ข้อมูลโรงงาน</li>
-          <li>ข้อกำหนดผลิตภัณฑ์</li>
-          <li>รายละเอียดแบรนด์/เครื่องหมายการค้า</li>
-          <li>ขั้นตอนการทำงานของกระบวนการผลิต</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 3 – จ่ายค่าธรรมเนียมการรับรอง BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">ค่าธรรมเนียมรวม:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ค่าธรรมเนียมการสมัคร</li>
-          <li>ค่าธรรมเนียมการประมวลผล</li>
-          <li>ค่าธรรมเนียมการทดสอบตัวอย่าง</li>
-          <li>ค่าธรรมเนียมการตรวจสอบโรงงาน</li>
-          <li>ค่าธรรมเนียมการทำเครื่องหมาย</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 4 – การทดสอบผลิตภัณฑ์ตาม IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          การทดสอบบังคับดำเนินการในห้องปฏิบัติการที่ BIS รับรอง
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          การทดสอบรวมถึง:
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>การทดสอบความเสถียร</li>
-          <li>การทดสอบความแข็งแรงของที่นั่ง</li>
-          <li>การทดสอบความทนทานของพนักพิง</li>
-          <li>การทดสอบการโหลดขาไปข้างหน้า/ด้านข้าง/หลัง</li>
-          <li>การทดสอบแรงกระแทกที่นั่ง</li>
-          <li>การทดสอบการตก</li>
-          <li>การทดสอบความล้า</li>
-          <li>การทดสอบการตกแต่งพื้นผิว</li>
-          <li>การทดสอบขอบคม</li>
-          <li>ความทนทานของโครงสร้างภายใต้รอบซ้ำ</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ผลการทดสอบต้องแสดงการปฏิบัติตาม IS 17632:2022 อย่างเต็มที่
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 5 – การตรวจสอบโรงงานโดย BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          เจ้าหน้าที่ BIS เยี่ยมชมโรงงานเพื่อประเมิน:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>กระบวนการผลิต</li>
-          <li>การตรวจสอบวัตถุดิบ</li>
-          <li>ขั้นตอนการควบคุมคุณภาพ</li>
-          <li>ความสามารถในการทดสอบ</li>
-          <li>การปรับเทียบอุปกรณ์</li>
-          <li>ปริมาณการผลิต</li>
-          <li>การปฏิบัติตามแผนการทดสอบและการตรวจสอบ BIS (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 6 – การออกใบอนุญาต BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          หากการทดสอบและการตรวจสอบสำเร็จ BIS จะออก:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ใบรับรอง BIS (ใบอนุญาตเครื่องหมาย ISI)</li>
-          <li>หมายเลข CML</li>
-          <li>การอนุมัติให้ติดเครื่องหมาย ISI บนเก้าอี้และม้านั่ง</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ขั้นตอนที่ 7 – ภาระผูกพันหลังใบอนุญาต
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          ผู้ผลิตต้อง:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ใช้เครื่องหมาย ISI ตามข้อกำหนดการติดฉลาก BIS</li>
-          <li>รักษาบันทึกการควบคุมคุณภาพ</li>
-          <li>ผ่านการตรวจสอบการเฝ้าระวัง BIS เป็นประจำ</li>
-          <li>ต่ออายุใบอนุญาตทุก 1–2 ปี</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ขอบเขตของใบอนุญาต BIS สำหรับเก้าอี้และม้านั่ง
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          มาตรฐานนี้ครอบคลุมข้อกำหนดสำหรับเก้าอี้และม้านั่งทั่วไป
-          มาตรฐานนี้ใช้กับเก้าอี้และม้านั่งทั่วไปที่ผลิต/สร้างเสร็จสมบูรณ์
-          ยังใช้กับหน่วยที่พร้อมประกอบ ในกรณีนั้นข้อกำหนดของมาตรฐานนี้จะ
-          ใช้กับหน่วยที่ประกอบแล้ว
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          เอกสารที่ต้องการสำหรับการรับรอง BIS ของเก้าอี้และม้านั่ง
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          เอกสารผู้ผลิต
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ใบอนุญาต/การลงทะเบียนโรงงาน</li>
-          <li>แผนภาพการไหลของกระบวนการผลิต</li>
-          <li>รายการเครื่องจักร</li>
-          <li>รายการอุปกรณ์ทดสอบภายใน</li>
-          <li>ใบรับรองการปรับเทียบ</li>
-          <li>แผนผังโรงงานและแผนผังพื้น</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          เอกสารทางเทคนิค
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ภาพวาดเก้าอี้/ม้านั่ง</li>
-          <li>ขนาดและข้อกำหนด</li>
-          <li>รายการวัสดุ</li>
-          <li>คำอธิบายคุณสมบัติความปลอดภัย</li>
-          <li>รายงานการทดสอบคุณภาพภายใน</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          เอกสารทางกฎหมาย
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>หลักฐานตัวตนและที่อยู่</li>
-          <li>จดหมายอนุญาตแบรนด์</li>
-          <li>ใบรับรองเครื่องหมายการค้า (ไม่บังคับ)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          เอกสารการสมัคร BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>แบบฟอร์มการสมัคร</li>
-          <li>แบบฟอร์มคำขอทดสอบ</li>
-          <li>แบบฟอร์มการประกาศ</li>
-          <li>จดหมายอนุญาต</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ข้อกำหนดการทดสอบสำหรับเก้าอี้และม้านั่ง (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 รวมการทดสอบทางกล โครงสร้าง และความปลอดภัยอย่างกว้างขวาง
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          การทดสอบบังคับ
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  ข้อ
+                  รายการ
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  ข้อกำหนด
+                  รายละเอียด
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  การออกแบบและการทำงาน
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  การพลิกคว่ำไปข้างหน้าและการพลิกคว่ำด้านข้างสำหรับเก้าอี้
-                  ที่ไม่มีแขน
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  การพลิกคว่ำไปข้างหลัง
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  การพลิกคว่ำด้านข้างสำหรับเก้าอี้ที่มีแขน
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  ม้านั่ง/โพฟ (ทุกทิศทาง)
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  การทดสอบความแข็งแรง
-                </TableCell>
-              </TableRow>
+              {[
+                ["ชื่อผลิตภัณฑ์", "เก้าอี้และม้านั่งทั่วไป"],
+                ["มาตรฐานอินเดียที่ใช้บังคับ", "IS 17632:2022"],
+                ["ประเภทการรับรอง", "การรับรองผลิตภัณฑ์ BIS"],
+                ["แผนการรับรอง", "แผน I (การรับรองเครื่องหมาย ISI)"],
+                ["เครื่องหมายที่ใช้", "เครื่องหมาย ISI"],
+                ["หน่วยงานกำกับดูแล", "สำนักงานมาตรฐานอินเดีย (BIS)"],
+                ["กระทรวงที่เกี่ยวข้อง", "กระทรวงพาณิชย์และอุตสาหกรรม"],
+                [
+                  "ข้อกำหนดการปฏิบัติตาม",
+                  "บังคับภายใต้ QCO เฟอร์นิเจอร์ที่เกี่ยวข้อง (Quality Control Order)",
+                ],
+                ["หมวดหมู่ผลิตภัณฑ์", "เฟอร์นิเจอร์"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "แผนการรับรอง" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        แผน I (การรับรองเครื่องหมาย ISI)
+                      </a>
+                    ) : particular === "ข้อกำหนดการปฏิบัติตาม" ? (
+                      <>
+                        บังคับภายใต้{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-chairs-and-stools"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>QCO เฟอร์นิเจอร์ (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          การทดสอบเหล่านี้รับประกันการใช้งานประจำวันที่ปลอดภัยภายใต้สภาวะ
-          จริง
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          การรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไปคืออะไร?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          การรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไปเป็นกระบวนการประเมินความสอดคล้อง
+          ภายใต้แผนการรับรองผลิตภัณฑ์ BIS
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ความท้าทายทั่วไปและวิธีหลีกเลี่ยง
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>เก้าอี้ล้มเหลวในการทดสอบความเสถียร</strong>
-            <br />
-            เกิดขึ้นเนื่องจากการกระจายน้ำหนักที่ไม่เหมาะสม
-            <br />
-            แก้ไข: ปรับปรุงการออกแบบขา ขยายพื้นที่ฐาน
-          </li>
-          <li>
-            <strong>ข้อต่ออ่อนแอที่ทำให้การทดสอบล้มเหลว</strong>
-            <br />
-            แก้ไข: ใช้วัสดุเสริมและตัวเชื่อมต่อที่ดีกว่า
-          </li>
-          <li>
-            <strong>อุปกรณ์ทดสอบภายในไม่เพียงพอ</strong>
-            <br />
-            แก้ไข: ติดตั้งเครื่องมือที่สอดคล้องกับ BIS ที่ต้องการ
-          </li>
-          <li>
-            <strong>ความไม่สอดคล้องของเอกสาร</strong>
-            <br />
-            แก้ไข: เตรียมเอกสารอย่างเป็นระบบก่อนสมัคร
-          </li>
-          <li>
-            <strong>รูปแบบผลิตภัณฑ์ไม่ได้แมปอย่างถูกต้อง</strong>
-            <br />
-            แก้ไข: จัดกลุ่มผลิตภัณฑ์ตามโครงสร้างและพารามิเตอร์การทดสอบ
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ประโยชน์ของการรับรอง BIS สำหรับเก้าอี้และม้านั่ง
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>อนุญาตตามกฎหมายให้ขายในอินเดีย</li>
-          <li>ปรับปรุงความปลอดภัยของผลิตภัณฑ์</li>
-          <li>เพิ่มความไว้วางใจของลูกค้า</li>
-          <li>ลดความเสี่ยงความรับผิดชอบของผลิตภัณฑ์</li>
-          <li>จำเป็นสำหรับรายการอีคอมเมิร์ซ</li>
-          <li>จำเป็นสำหรับการประมูลของรัฐบาล</li>
-          <li>ความน่าเชื่อถือของแบรนด์ที่สูงขึ้น</li>
-          <li>ข้อได้เปรียบในการแข่งขัน</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          โทษสำหรับการไม่ปฏิบัติตาม
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          วัตถุประสงค์ของการรับรองคือเพื่อตรวจสอบว่าผลิตภัณฑ์เป็นไปตามข้อกำหนดที่ระบุใน
+          IS 17632:2022 เมื่อได้รับการรับรองแล้ว ผู้ผลิตจะได้รับอนุญาตให้ใช้เครื่องหมาย ISI
+          บนผลิตภัณฑ์ของตน
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          การขายเก้าอี้หรือม้านั่งโดยไม่มีการรับรอง BIS อาจนำไปสู่:
+          กระบวนการรับรองประเมินด้านประสิทธิภาพของผลิตภัณฑ์หลายด้าน รวมถึง:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ค่าปรับทางเงินที่หนัก</li>
-          <li>การเรียกคืน/ยึดผลิตภัณฑ์</li>
-          <li>การยกเลิกใบอนุญาตโรงงาน</li>
-          <li>การดำเนินคดีทางอาญา</li>
-          <li>ข้อจำกัดการนำเข้า</li>
-          <li>การขึ้นบัญชีดำตลาด</li>
+        <ul className={LIST_CLASS}>
+          <li>ความแข็งแรง</li>
+          <li>ความเสถียร</li>
+          <li>ความทนทาน</li>
+          <li>ประสิทธิภาพโครงสร้าง</li>
+          <li>ข้อกำหนดด้านความปลอดภัย</li>
+          <li>คุณภาพวัสดุ</li>
+          <li>ฝีมือการผลิต</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          โทษถูกบังคับใช้ภายใต้พระราชบัญญัติ BIS พ.ศ. 2559
+          การรับรองช่วยให้มั่นใจว่าผลิตภัณฑ์ที่นั่งที่จำหน่ายในตลาดอินเดียเป็นไปตามเกณฑ์
+          คุณภาพและความปลอดภัยที่กำหนดไว้
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ใครต้องการการรับรอง BIS สำหรับเก้าอี้และม้านั่ง?
+          ภาพรวมของ IS 17632:2022
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          บังคับสำหรับ:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022 เป็นมาตรฐานอินเดียที่กำหนดข้อกำหนดสำหรับเก้าอี้และม้านั่งทั่วไป
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>ผู้ผลิตอินเดีย</li>
-          <li>ผู้ผลิตต่างประเทศที่ส่งออกไปยังอินเดีย</li>
-          <li>ผู้นำเข้า</li>
-          <li>เจ้าของแบรนด์/ผู้ค้า</li>
-          <li>ซัพพลายเออร์ OEM/ODM</li>
-          <li>ห่วงโซ่ค้าปลีก</li>
-          <li>ผู้ขายออนไลน์</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          มาตรฐานนี้กำหนดข้อกำหนดที่เกี่ยวข้องกับความปลอดภัย ความแข็งแรง ความทนทาน
+          ความเสถียร และประสิทธิภาพโดยรวมของเฟอร์นิเจอร์ที่นั่งที่มีไว้สำหรับการใช้งานทั่วไป
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          มาตรฐานนี้ใช้กับ:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>เก้าอี้และม้านั่งที่ผลิตเสร็จสมบูรณ์</li>
+          <li>เก้าอี้และม้านั่งที่ประกอบสร้าง</li>
+          <li>ผลิตภัณฑ์พร้อมประกอบหลังจากประกอบแล้ว</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          แต่ละโรงงานต้องการใบอนุญาต BIS แยกต่างหาก
+          วัตถุประสงค์ของมาตรฐานคือเพื่อให้มั่นใจว่าผลิตภัณฑ์เฟอร์นิเจอร์ให้ประสิทธิภาพที่ปลอดภัย
+          เชื่อถือได้ และทนทานตลอดอายุการใช้งานที่ตั้งใจไว้
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ข้อกำหนดหลักภายใต้ IS 17632:2022
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>ข้อกำหนดด้านความแข็งแรง</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          เก้าอี้และม้านั่งทั่วไปต้องมีความแข็งแรงของโครงสร้างเพียงพอที่จะทนต่อสภาวะ
+          การรับน้ำหนักที่คาดหวังในระหว่างการใช้งานปกติ
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ข้อกำหนดด้านความเสถียร</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          เฟอร์นิเจอร์ควรคงความเสถียรในระหว่างการใช้งานตามวัตถุประสงค์
+          และไม่ควรมีความเสี่ยงในการพลิกคว่ำที่ไม่จำเป็น
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ข้อกำหนดด้านความทนทาน</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ผลิตภัณฑ์ต้องสามารถรักษาความสมบูรณ์ของโครงสร้างและประสิทธิภาพ
+          ผ่านรอบการใช้งานซ้ำๆ ได้
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ข้อกำหนดด้านความปลอดภัย</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          มาตรฐานรวมข้อกำหนดที่เกี่ยวข้องกับความปลอดภัย
+          เพื่อลดความเสี่ยงที่เกี่ยวข้องกับการใช้เฟอร์นิเจอร์
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>คุณภาพวัสดุและฝีมือการผลิต</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          คุณภาพของวัสดุ วิธีการผลิต วิธีการประกอบ ข้อต่อ
+          และการตกแต่งมีส่วนสำคัญอย่างยิ่งต่อการปฏิบัติตามมาตรฐาน
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ข้อพิจารณาด้านสรีรศาสตร์</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          มาตรฐานรวมข้อพิจารณาที่เกี่ยวข้องกับประสิทธิภาพ
+          ซึ่งมีส่วนช่วยในเรื่องความสะดวกสบายของผู้ใช้และการใช้งานที่เป็นประโยชน์
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ผลิตภัณฑ์ที่ครอบคลุมภายใต้ IS 17632:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          มาตรฐานนี้โดยทั่วไปใช้กับ:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>เก้าอี้ทั่วไป</li>
+          <li>ม้านั่งทั่วไป</li>
+          <li>เฟอร์นิเจอร์ที่นั่งแบบติดตั้งที่มีไว้สำหรับการใช้งานทั่วไป</li>
+          <li>ผลิตภัณฑ์ที่นั่งแบบพร้อมประกอบหลังจากประกอบแล้ว</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ผู้ผลิตควรตรวจสอบขอบเขตของมาตรฐานอย่างรอบคอบ
+          เพื่อกำหนดความเกี่ยวข้องกับผลิตภัณฑ์ของตน
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            ตรวจสอบผลิตภัณฑ์เฟอร์นิเจอร์ที่ครอบคลุมภายใต้การรับรอง BIS บังคับ —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>ใบรับรอง BIS สำหรับเฟอร์นิเจอร์</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          การรับรอง BIS เป็นข้อบังคับสำหรับเก้าอี้และม้านั่งทั่วไปหรือไม่?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ใช่ ผลิตภัณฑ์เฟอร์นิเจอร์ที่ครอบคลุมภายใต้คำสั่งควบคุมคุณภาพเฟอร์นิเจอร์ (QCO)
+          ที่เกี่ยวข้อง ต้องปฏิบัติตามมาตรฐานอินเดียที่เกี่ยวข้อง
+          และได้รับการรับรอง BIS ก่อนที่จะผลิต นำเข้า ขาย จัดจำหน่าย
+          หรือจัดหาในตลาดอินเดีย
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ผู้ผลิตที่อยู่ภายใต้กรอบกฎระเบียบที่เกี่ยวข้องต้องได้รับใบอนุญาต BIS
+          และปฏิบัติตามข้อกำหนดการติดเครื่องหมายที่ BIS กำหนด
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ข้อกำหนดการทดสอบสำหรับการรับรอง BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ก่อนที่จะได้รับการรับรอง ตัวอย่างผลิตภัณฑ์ต้องได้รับการประเมินผ่านการทดสอบ
+          ที่ห้องปฏิบัติการที่ได้รับการยอมรับ
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          การทดสอบโดยทั่วไปมุ่งเน้นไปที่พารามิเตอร์ต่อไปนี้:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>การประเมินประสิทธิภาพโครงสร้าง —</strong>{" "}
+            กำหนดว่าเก้าอี้หรือม้านั่งสามารถทนต่อสภาวะการใช้งานปกติได้โดยไม่ล้มเหลวหรือไม่
+          </li>
+          <li>
+            <strong>การทดสอบความเสถียร —</strong>{" "}
+            ประเมินว่าเฟอร์นิเจอร์คงความเสถียรในระหว่างการใช้งานตามวัตถุประสงค์
+            และต้านทานการพลิกคว่ำได้หรือไม่
+          </li>
+          <li>
+            <strong>การประเมินความแข็งแรง —</strong>{" "}
+            ประเมินความสามารถในการรับน้ำหนักและความสมบูรณ์ของโครงสร้างของโครง
+            ข้อต่อ และส่วนค้ำยัน
+          </li>
+          <li>
+            <strong>การประเมินความทนทาน —</strong>{" "}
+            ตรวจสอบการรักษาประสิทธิภาพหลังรอบการใช้งานซ้ำๆ
+            ตลอดอายุการใช้งานของผลิตภัณฑ์
+          </li>
+          <li>
+            <strong>การประเมินความปลอดภัย —</strong>{" "}
+            ระบุอันตรายที่เป็นไปได้และตรวจสอบการปฏิบัติตามข้อกำหนดด้านความปลอดภัยที่กำหนด
+          </li>
+          <li>
+            <strong>การตรวจสอบฝีมือการผลิต —</strong>{" "}
+            ตรวจสอบคุณภาพการก่อสร้าง การตกแต่ง ความสมบูรณ์ของการประกอบ
+            และมาตรฐานการผลิตโดยรวม
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ข้อกำหนดการติดเครื่องหมายผลิตภัณฑ์
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          ผลิตภัณฑ์ที่ได้รับการรับรองภายใต้ IS 17632:2022 โดยทั่วไปต้องมีข้อมูลระบุตัวตน
+          ดังต่อไปนี้:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>ชื่อหรือเครื่องหมายการค้าของผู้ผลิต</li>
+          <li>การระบุรุ่นหรือการออกแบบ</li>
+          <li>หมายเลขชุดหรือล็อต</li>
+          <li>วันที่ผลิต</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          เครื่องหมาย ISI สามารถติดได้เฉพาะหลังจากได้รับใบอนุญาต BIS ที่ถูกต้องเท่านั้น
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          กระบวนการรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>ขั้นตอนที่ 1: การประเมินขอบเขตผลิตภัณฑ์</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ขั้นตอนแรกคือการกำหนดว่าผลิตภัณฑ์อยู่ในขอบเขตของ IS 17632:2022
+          และ QCO เฟอร์นิเจอร์ที่เกี่ยวข้องหรือไม่
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          ตรวจสอบประเภทเก้าอี้หรือม้านั่ง การใช้งานที่ตั้งใจ วัสดุ
+          และการก่อสร้างก่อนเริ่มกระบวนการรับรอง
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ขั้นตอนที่ 2: การจัดเตรียมเอกสาร</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ผู้ผลิตจัดเตรียมเอกสารทางเทคนิคและการปฏิบัติตามที่จำเป็นสำหรับการรับรอง
+          รวมถึงบันทึกบริษัท รายละเอียดโรงงาน ข้อกำหนดผลิตภัณฑ์
+          และขั้นตอนการควบคุมคุณภาพ
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          เอกสารที่ครบถ้วนและถูกต้องช่วยหลีกเลี่ยงความล่าช้าที่ไม่จำเป็นในระหว่างการตรวจสอบของ BIS
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ขั้นตอนที่ 3: การทดสอบผลิตภัณฑ์</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ตัวอย่างที่เป็นตัวแทนจะได้รับการทดสอบที่ห้องปฏิบัติการที่ BIS รับรอง
+          เพื่อตรวจสอบการปฏิบัติตามข้อกำหนดของ IS 17632:2022
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          รายงานการทดสอบจากห้องปฏิบัติการเป็นเอกสารทางเทคนิคสำคัญ
+          ที่สนับสนุนการสมัครขอรับรอง
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ขั้นตอนที่ 4: การยื่นคำขอ BIS</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          คำขอรับรองจะถูกยื่นพร้อมเอกสารประกอบ รายงานการทดสอบ
+          และข้อมูลการผลิต
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          BIS จะตรวจสอบคำขอเพื่อความครบถ้วนและการปฏิบัติตามทางเทคนิค
+          ก่อนดำเนินการในขั้นตอนถัดไป
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ขั้นตอนที่ 5: การตรวจสอบโรงงาน</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS อาจประเมินสถานที่ผลิต ระบบการผลิต และกระบวนการควบคุมคุณภาพ
+          เพื่อตรวจสอบความสามารถในการผลิตผลิตภัณฑ์ที่เป็นไปตามข้อกำหนดอย่างสม่ำเสมอ
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          การประเมินนี้โดยทั่วไปครอบคลุมโครงสร้างพื้นฐานการผลิต ระบบ QC
+          การควบคุมวัตถุดิบ และการติดตามผลิตภัณฑ์
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ขั้นตอนที่ 6: การตรวจสอบทางเทคนิค</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          คำขอ รายงานการทดสอบ และผลการตรวจสอบจะได้รับการพิจารณาโดย BIS
+          ก่อนตัดสินใจเรื่องการรับรอง
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          ข้อสังเกตหรือข้อบกพร่องใดๆ ที่เกิดขึ้นในระหว่างการตรวจสอบ
+          ผู้สมัครต้องดำเนินการแก้ไข
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ขั้นตอนที่ 7: การออกใบอนุญาต</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          เมื่อการปฏิบัติตามเป็นที่น่าพอใจ BIS จะออกใบอนุญาต
+          และอนุญาตให้ใช้เครื่องหมาย ISI บนเก้าอี้และม้านั่งทั่วไปที่ได้รับการรับรอง
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ผู้ผลิตต้องปฏิบัติตามข้อกำหนดของ BIS ตลอดระยะเวลาใบอนุญาต
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ประโยชน์ของการรับรอง BIS
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>การปฏิบัติตามกฎระเบียบอินเดีย —</strong>{" "}
+            เป็นไปตามข้อกำหนดด้านคุณภาพและความปลอดภัยที่บังคับภายใต้ QCO เฟอร์นิเจอร์ที่เกี่ยวข้อง
+          </li>
+          <li>
+            <strong>การเข้าถึงตลาดอย่างถูกกฎหมาย —</strong>{" "}
+            จัดหาเก้าอี้และม้านั่งที่ได้รับการรับรองในอินเดีย
+            ตามข้อกำหนดกฎระเบียบที่เกี่ยวข้อง
+          </li>
+          <li>
+            <strong>ความน่าเชื่อถือของผลิตภัณฑ์ที่เพิ่มขึ้น —</strong>{" "}
+            เครื่องหมาย ISI แสดงถึงการเป็นไปตามมาตรฐานอินเดียที่ได้รับการยอมรับ
+          </li>
+          <li>
+            <strong>ความมั่นใจของลูกค้าที่เพิ่มขึ้น —</strong>{" "}
+            ผู้บริโภคและผู้ซื้อในองค์กรนิยมผลิตภัณฑ์ที่ได้รับการประเมินตามเกณฑ์ที่กำหนด
+          </li>
+          <li>
+            <strong>ข้อได้เปรียบในการแข่งขัน —</strong>{" "}
+            ได้รับการยอมรับมากขึ้นในกระบวนการจัดซื้อเชิงพาณิชย์และของรัฐบาล
+          </li>
+          <li>
+            <strong>ชื่อเสียงแบรนด์ที่ดีขึ้น —</strong>{" "}
+            แสดงถึงความมุ่งมั่นต่อคุณภาพผลิตภัณฑ์ ความปลอดภัย
+            และความน่าเชื่อถือในระยะยาว
+          </li>
+          <li>
+            <strong>การสนับสนุน MSME —</strong>{" "}
+            ช่วยผู้ผลิตขนาดกลางและขนาดย่อมเสริมสร้างการมีอยู่ในตลาด
+            และสร้างความไว้วางใจของลูกค้า
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ความท้าทายทั่วไปในระหว่างการรับรอง
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>การทดสอบผลิตภัณฑ์ไม่ผ่าน —</strong>{" "}
+            ข้อบกพร่องในการออกแบบหรือการผลิตอาจทำให้ไม่เป็นไปตามข้อกำหนดในระหว่างการประเมินในห้องปฏิบัติการ
+          </li>
+          <li>
+            <strong>ปัญหาเอกสาร —</strong>{" "}
+            บันทึกที่ไม่ครบถ้วนหรือไม่สอดคล้องกันมักเป็นสาเหตุของความล่าช้าในการรับรอง
+          </li>
+          <li>
+            <strong>ช่องว่างการปฏิบัติตามในการผลิต —</strong>{" "}
+            ระบบควบคุมคุณภาพอาจต้องได้รับการปรับปรุงก่อนที่จะได้รับการรับรอง
+          </li>
+          <li>
+            <strong>ความซับซ้อนของกฎระเบียบ —</strong>{" "}
+            การจัดการการทดสอบ การตรวจสอบ และขั้นตอนการรับรอง
+            อาจเป็นเรื่องท้าทายหากไม่มีคำแนะนำจากผู้เชี่ยวชาญ
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ทำไมต้องเลือก Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India ช่วยเหลือผู้ผลิต ผู้นำเข้า ผู้ส่งออก
+          และธุรกิจต่างๆ ด้านข้อกำหนดการปฏิบัติตามกฎระเบียบทั่วอินเดีย
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          บริการของเรารวมถึง:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>การประเมินความเกี่ยวข้องของผลิตภัณฑ์</li>
+          <li>ที่ปรึกษาการรับรอง BIS</li>
+          <li>การสนับสนุนเอกสาร</li>
+          <li>การประสานงานการทดสอบในห้องปฏิบัติการ</li>
+          <li>การเตรียมการตรวจสอบโรงงาน</li>
+          <li>การจัดการคำขอ</li>
+          <li>ความช่วยเหลือด้านการปฏิบัติตามกฎระเบียบ</li>
+          <li>การสนับสนุนหลังการรับรอง</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          เป้าหมายของเราคือช่วยให้ลูกค้าดำเนินการตามข้อกำหนดการรับรองได้อย่างมีประสิทธิภาพ
+          และบรรลุการปฏิบัติตามด้วยความล่าช้าน้อยที่สุด
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -760,112 +738,122 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ใบรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไปตาม IS 17632:2022
-          เป็นข้อกำหนดบังคับสำหรับการรับประกันความปลอดภัยของผลิตภัณฑ์
-          ความเสถียรของโครงสร้าง และความทนทาน
-          การรับรอง BIS ไม่เพียงช่วยให้ผู้ผลิตรักษามาตรฐานคุณภาพสูงเท่านั้น
-          แต่ยังเปิดโอกาสการเข้าถึงตลาดตามกฎหมายและเพิ่มความมั่นใจของผู้บริโภค
+          การรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไปภายใต้ IS 17632:2022
+          มีบทบาทสำคัญในการรับประกันคุณภาพ ความปลอดภัย ความแข็งแรง ความเสถียร
+          และความทนทานของผลิตภัณฑ์ การรับรองช่วยให้ผู้ผลิตแสดงการปฏิบัติตามมาตรฐานอินเดีย
+          พร้อมเสริมสร้างความมั่นใจของลูกค้าและสนับสนุนการเข้าถึงตลาด
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ด้วยความช่วยเหลือจากผู้เชี่ยวชาญ กระบวนการรับรอง—ตั้งแต่การทดสอบ
-          ไปจนถึงการตรวจสอบและการอนุมัติ—จะราบรื่น คาดการณ์ได้ และปฏิบัติตาม
-          อย่างเต็มที่
+          ในขณะที่ความต้องการผลิตภัณฑ์เฟอร์นิเจอร์ที่รับประกันคุณภาพยังคงเพิ่มขึ้น
+          การรับรอง BIS และเครื่องหมาย ISI ให้ความมั่นใจที่มีค่าแก่ผู้บริโภค
+          องค์กร และหน่วยงานจัดซื้อ ผู้ผลิตที่ลงทุนในการปฏิบัติตาม
+          ไม่เพียงตอบสนองข้อกำหนดกฎระเบียบเท่านั้น แต่ยังเสริมสร้างความสามารถในการแข่งขัน
+          และชื่อเสียงในตลาดระยะยาว
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          หากคุณวางแผนจะขอรับการรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไปภายใต้
+          IS 17632:2022 Sun Certifications India สามารถให้คำแนะนำจากผู้เชี่ยวชาญ
+          และการสนับสนุนการปฏิบัติตามแบบครบวงจรตลอดกระบวนการรับรอง
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          คำถามที่พบบ่อย – ใบรับรอง BIS สำหรับเก้าอี้และม้านั่ง
+          คำถามที่พบบ่อย – การรับรอง BIS สำหรับเก้าอี้และม้านั่งทั่วไป (IS 17632:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. การรับรอง BIS เป็นข้อกำหนดบังคับสำหรับเก้าอี้และม้านั่งหรือไม่?
-              </strong>
+              <strong>1. IS 17632:2022 คืออะไร?</strong>
               <br />
-              ใช่ ตาม IS 17632:2022 เก้าอี้และม้านั่งทั่วไปทั้งหมดต้องได้รับ
-              การรับรอง BIS ก่อนขายในอินเดีย
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. ต้องทดสอบอะไรบ้าง?</strong>
-              <br />
-              การทดสอบความเสถียร ความแข็งแรง ความทนทาน แรงกระแทก ความล้า และ
-              ความปลอดภัยของวัสดุ
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. การรับรอง BIS ใช้เวลานานเท่าไร?</strong>
-              <br />
-              โดยทั่วไป 30–45 วัน
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. ต้นทุนการรับรองคือเท่าไร?</strong>
-              <br />
-              ประมาณ ₹60,000–₹1,30,000 ขึ้นอยู่กับการทดสอบและการตรวจสอบ
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. ผู้ผลิตต่างประเทศสามารถสมัครได้หรือไม่?</strong>
-              <br />
-              ใช่ ภายใต้แผน FMCS
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. การทำเครื่องหมาย ISI เป็นข้อกำหนดบังคับหรือไม่?</strong>
-              <br />
-              ใช่ หลังจากออกใบอนุญาต BIS แล้ว
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. ทำไมเก้าอี้จึงล้มเหลวในการทดสอบ BIS?</strong>
-              <br />
-              สาเหตุทั่วไปรวมถึงขาอ่อนแอ ความแข็งแรงของข้อต่อต่ำ และความไม่
-              เสถียร
+              IS 17632:2022 เป็นมาตรฐานอินเดียที่กำหนดข้อกำหนดสำหรับเก้าอี้และม้านั่งทั่วไป
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. สามารถครอบคลุมหลายรุ่นภายใต้ใบอนุญาตเดียวได้หรือไม่?
+                2. การรับรอง BIS เป็นข้อบังคับสำหรับเก้าอี้และม้านั่งทั่วไปหรือไม่?
               </strong>
               <br />
-              เฉพาะเมื่อเป็นไปตามเกณฑ์ความคล้ายคลึงและการปฏิบัติตามมาตรฐาน
+              ผลิตภัณฑ์ที่ครอบคลุมภายใต้คำสั่งควบคุมคุณภาพเฟอร์นิเจอร์ (QCO) ที่เกี่ยวข้อง
+              ต้องปฏิบัติตามข้อกำหนดการรับรอง BIS
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. ต้องมีการตรวจสอบโรงงานหรือไม่?</strong>
+              <strong>3. เครื่องหมาย ISI คืออะไร?</strong>
               <br />
-              ใช่ เป็นข้อกำหนดบังคับสำหรับการรับรองเครื่องหมาย ISI
+              เครื่องหมาย ISI เป็นเครื่องหมายรับรองมาตรฐานที่ออกภายใต้แผนการรับรองผลิตภัณฑ์ BIS
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. ต้องใช้เอกสารอะไรบ้าง?</strong>
+              <strong>4. ใครสามารถสมัครขอรับรอง BIS ได้?</strong>
               <br />
-              ใบอนุญาตโรงงาน ข้อกำหนดทางเทคนิค รายการเครื่องจักร แผน QC
-              ภาพวาดผลิตภัณฑ์ ฯลฯ
+              ทั้งผู้ผลิตอินเดียและผู้ผลิตต่างประเทศสามารถสมัครขอรับรองได้
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. การรับรอง BIS ต้องมีการทดสอบผลิตภัณฑ์หรือไม่?</strong>
+              <br />
+              ใช่ การทดสอบผลิตภัณฑ์เป็นส่วนประกอบสำคัญของกระบวนการรับรอง
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                6. เก้าอี้แบบพร้อมประกอบครอบคลุมภายใต้ IS 17632:2022 หรือไม่?
+              </strong>
+              <br />
+              ใช่ มาตรฐานนี้ใช้กับผลิตภัณฑ์พร้อมประกอบหลังจากประกอบแล้ว
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                7. ผลิตภัณฑ์ใดที่ไม่รวมอยู่ในขอบเขตของ IS 17632:2022?
+              </strong>
+              <br />
+              ผลิตภัณฑ์เช่น เก้าอี้เอนหลัง เก้าอี้โยก เก้าอี้เอียง โซฟา
+              และผลิตภัณฑ์ที่นั่งเฉพาะทางบางประเภทโดยทั่วไปจะไม่รวมอยู่
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. ประโยชน์ของการได้รับการรับรอง BIS คืออะไร?</strong>
+              <br />
+              ประโยชน์รวมถึงการปฏิบัติตามกฎระเบียบ ความน่าเชื่อถือของผลิตภัณฑ์ที่ดีขึ้น
+              ความมั่นใจของลูกค้าที่เพิ่มขึ้น และการยอมรับในตลาดที่ดีขึ้น
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>9. ผู้ผลิตต่างประเทศสามารถขอรับรอง BIS ได้หรือไม่?</strong>
+              <br />
+              ใช่ ผู้ผลิตต่างประเทศสามารถสมัครผ่านเส้นทางการรับรอง BIS
+              ที่ใช้สำหรับผู้ผลิตในต่างประเทศ
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. Sun Certifications India ช่วยได้อย่างไร?</strong>
+              <br />
+              Sun Certifications India ให้การสนับสนุนแบบครบวงจรสำหรับการรับรอง BIS
+              รวมถึงเอกสาร การประสานงานการทดสอบ การจัดการคำขอ
+              และความช่วยเหลือด้านการปฏิบัติตาม
             </p>
           </div>
         </div>
@@ -882,6 +870,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          แหล่งข้อมูลที่เกี่ยวข้อง
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ใบรับรอง ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ใบรับรอง BIS สำหรับผู้ผลิตต่างประเทศ
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadThai />
 
@@ -1054,4 +1067,3 @@ const Services = () => {
     </div>
   );
 };
-

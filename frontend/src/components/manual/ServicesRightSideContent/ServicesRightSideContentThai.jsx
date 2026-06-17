@@ -34,6 +34,7 @@ const ServicesRightSideContentThai = () => {
     "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
     "/what-is-crs-bis-or-crs-registration",
     "/kan-rap-rong-bis-nai-prathet-thai",
+    "/konsaltan-bis-thi-di-thi-sut-lae-na-chue-thai-thi-sut-prathet-thai",
     "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
     // ISI Mark Thai Page Url
     "/th/bis-isi-mark-raprong",
@@ -637,6 +638,12 @@ const ContactFormServicesRightSideContentThai = () => {
       return "CRS Registration (Thai)";
     if (path.includes("/kan-rap-rong-bis-nai-prathet-thai"))
       return "Thailand Blog (Thai)";
+    if (
+      path.includes(
+        "/konsaltan-bis-thi-di-thi-sut-lae-na-chue-thai-thi-sut-prathet-thai"
+      )
+    )
+      return "ที่ปรึกษา BIS ที่ดีที่สุดและน่าเชื่อถือที่สุดในประเทศไทย – Sun Certifications India (Thai)";
     if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
       return "CRS Registration (Thai)";
     if (path.includes("/th/bis-isi-mark-raprong"))

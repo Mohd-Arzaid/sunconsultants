@@ -18,9 +18,9 @@ import { Services as ServicesKorean } from "@/pages/SchemeX/SchemeXKorean";
 const CANONICAL_URL =
   "https://bis-certifications.com/hangug-eseo-choegowa-gajang-sinrohaneun-bis-injeung-konsulteonteu";
 const PAGE_IMAGE_SRC =
-  "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantSouthKorea.webp";
+  "/BestandMostTrustedBISCertificationConsultant/대한민국 최고의 BIS 컨설턴트.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BestBISConsultantSouthKorea.webp";
+  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/대한민국 최고의 BIS 컨설턴트.webp";
 
 const PAGE_TITLE =
   "한국에서 최고이자 가장 신뢰할 수 있는 BIS 인증 컨설턴트 – Sun Certifications India";
@@ -380,7 +380,16 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS(Bureau of Indian Standards)는 소비자사업부 산하 인도의 국가
+          BIS(
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>
+          )는 소비자사업부 산하 인도의 국가
           표준 기관입니다. 의무 품질관리령(QCO) 대상 제품은 KC 마크 상태, KS
           인증 또는 기타 한국 규제 준수 자격과 관계없이 유효한 BIS 인증 없이는
           인도에 합법적으로 반입, 판매 또는 유통될 수 없습니다.
@@ -395,6 +404,10 @@ const MainContentLeft = () => {
             <li key={point}>{point}</li>
           ))}
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+        인도 시장으로 제품을 수출하려는 한국 기업에게는 인도 표준국 (BIS)의 규정을 준수하는 것이 매우 중요합니다. 따라서 많은 제조업체와 수출업체가 인도 BIS 인증, 인도 BIS 인증서, 인도용 BIS 인증, 인도용 BIS 인증서, 인도용 BIS 라이선스 및 인도용 BIS 등록 과 관련된 정보를 찾고 있습니다. BIS 제도는 전자제품, 산업기계, 전기장비, 화학제품 및 소비재를 포함한 다양한 제품군에 적용되며, 해당 제품이 인도에서 수입·유통·판매되기 전에 필수 인증을 요구할 수 있습니다. 인도 BIS 인증 을 취득하려는 기업은 제품 시험, 기술 문서 준비, 품질 관리 절차 및 규제 요건을 충족해야 합니다. 또한 인도용 BIS 인증서 와 인도용 BIS 라이선스 는 인도 시장 진출을 위한 중요한 규제 요건으로 간주됩니다. Sun Certifications India 는 한국 제조업체가 인도  요구사항을 충족할 수 있도록 제품 평가, 시험소 조정, 기술 문서 검토, 인도용 BIS 등록, 인도용 BIS 인증 및 인도 BIS 인증서 취득 절차 전반에 걸쳐 전문적인 지원을 제공합니다.
+        </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

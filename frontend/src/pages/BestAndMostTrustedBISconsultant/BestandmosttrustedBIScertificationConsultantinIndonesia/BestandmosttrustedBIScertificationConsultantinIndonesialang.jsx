@@ -18,9 +18,9 @@ import { Services as ServicesIndonesian } from "@/pages/SchemeX/SchemeXIndonesia
 const CANONICAL_URL =
   "https://bis-certifications.com/konsultan-sertifikasi-bis-terbaik-dan-terpercaya-indonesia";
 const PAGE_IMAGE_SRC =
-  "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantIndonesia.webp";
+  "/BestandMostTrustedBISCertificationConsultant/KonsultanBISterbaikdiIndonesia.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BestBISConsultantIndonesia.webp";
+  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/KonsultanBISterbaikdiIndonesia.webp";
 
 const PAGE_TITLE =
   "Konsultan sertifikasi BIS terbaik dan terpercaya di Indonesia – Sun Certifications India";
@@ -321,7 +321,15 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           India memiliki rezim sertifikasi produk wajib yang beroperasi secara
           independen dari SNI, BPOM, atau sistem sertifikasi Indonesia mana pun.
-          Bureau of Indian Standards (BIS) mengatur apa yang masuk ke India — dan
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS) mengatur apa yang masuk ke India — dan
           untuk daftar kategori produk yang terus berkembang, tanpa sertifikasi
           BIS berarti tidak ada masuknya secara legal.
         </p>
@@ -401,6 +409,10 @@ const MainContentLeft = () => {
             <li key={point}>{point}</li>
           ))}
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+        Bagi produsen Indonesia yang berencana mengekspor produk mereka ke India, memahami persyaratan sertifikasi yang ditetapkan oleh Biro Standar India (BIS) merupakan langkah yang sangat penting. Banyak perusahaan mencari informasi terkait Sertifikasi BIS untuk India, Sertifikat BIS untuk India, Lisensi BIS untuk India, maupun Sertifikat BIS India untuk memastikan produk mereka memenuhi standar yang berlaku di pasar India. Regulasi BIS mencakup berbagai kategori produk, mulai dari elektronik, peralatan industri, bahan kimia, hingga barang konsumsi. Baik Anda memerlukan Registrasi BIS untuk India, Sertifikasi BIS India, maupun Lisensi BIS untuk memasuki pasar India secara legal, kepatuhan terhadap persyaratan teknis dan dokumentasi yang benar sangatlah penting. Sun Certifications India membantu produsen Indonesia dalam seluruh proses sertifikasi, mulai dari pengujian produk, penyusunan dokumen teknis, koordinasi dengan laboratorium yang diakui, hingga memperoleh persetujuan BIS yang diperlukan untuk memasuki pasar India dengan lancar.
+        </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

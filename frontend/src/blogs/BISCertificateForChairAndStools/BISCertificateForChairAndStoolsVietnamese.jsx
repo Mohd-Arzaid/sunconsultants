@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForChairAndStoolsVietnamese = () => {
   return (
     <div className="relative w-full">
@@ -42,17 +48,17 @@ export default BISCertificateForChairAndStoolsVietnamese;
 
 const MetaTags = () => {
   const title =
-    "Giấy chứng nhận BIS cho Ghế và Ghế đẩu | Giấy phép BIS IS 17632:2022";
-  const ogTitle = "Chứng nhận BIS cho Ghế và Ghế đẩu – Hướng dẫn IS 17632:2022";
-  const twitterTitle = "Giấy phép BIS cho Ghế và Ghế đẩu | IS 17632:2022";
+    "Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung | IS 17632:2022";
+  const ogTitle =
+    "Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung | IS 17632:2022";
+  const twitterTitle =
+    "Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung | IS 17632:2022";
   const metaDescription =
-    "Nhận Giấy chứng nhận BIS cho Ghế và Ghế đẩu theo IS 17632:2022. Quy trình, tài liệu, kiểm tra, chi phí & thời gian cho Chứng nhận BIS tại Ấn Độ.";
-  const ogDescription =
-    "Hướng dẫn đầy đủ về Chứng nhận BIS cho Ghế và Ghế đẩu theo IS 17632:2022. Biết quy trình, chi phí, tài liệu, kiểm tra & lợi ích giấy phép BIS.";
-  const twitterDescription =
-    "Đăng ký Giấy chứng nhận BIS cho Ghế và Ghế đẩu theo IS 17632:2022. Tìm hiểu quy trình BIS, tài liệu, kiểm tra, phí & thời gian tại Ấn Độ.";
+    "Tìm hiểu mọi điều về Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung theo IS 17632:2022. Yêu cầu Dấu ISI, kiểm tra, quy trình chứng nhận, tài liệu, lợi ích và Câu hỏi thường gặp";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "Giấy chứng nhận BIS cho Ghế và Ghế đẩu, Giấy phép BIS cho Ghế và Ghế đẩu, IS 17632:2022, Chứng nhận BIS cho Ghế và Ghế đẩu";
+    "Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung, IS 17632:2022, Dấu ISI Ghế và Ghế đẩu, Giấy phép BIS Ghế Ghế đẩu, Chứng nhận BIS Nội thất";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/ghe-va-ghe-dau-is-17632";
   const websiteName = "Sun Certifications India";
@@ -180,7 +186,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Giấy chứng nhận BIS cho Ghế và Ghế đẩu – IS 17632:2022
+                    Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung (IS
+                    17632:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -211,552 +218,534 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung – Hướng dẫn Đầy
-          đủ IS 17632:2022
+          Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung (IS 17632:2022)
+          – Hướng dẫn Chứng nhận Dấu ISI Hoàn chỉnh
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="Giấy phép BIS cho Ghế và Ghế đẩu"
-            alt="Giấy chứng nhận BIS cho Ghế và Ghế đẩu - Chứng nhận BIS IS 17632:2022"
+            title="Giấy phép BIS cho Ghế và Ghế đẩu Mục đích Chung"
+            alt="Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung - Hướng dẫn Dấu ISI IS 17632:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung là yêu cầu bắt
-          buộc theo Tiêu chuẩn Ấn Độ IS 17632:2022. Tiêu chuẩn này quy định các
-          yêu cầu về an toàn, độ bền và hiệu suất cho ghế và ghế đẩu được sử
-          dụng trong nhà, văn phòng, khu vực thương mại, cơ sở giáo dục, căng
-          tin, nhà hàng, khách sạn và không gian công cộng.
+          Ghế và ghế đẩu mục đích chung là một trong những sản phẩm nội thất
+          được sử dụng phổ biến nhất trong gia đình, văn phòng, cơ sở giáo dục,
+          cơ sở y tế, cửa hàng bán lẻ, không gian công cộng và môi trường thương
+          mại. Vì các sản phẩm ngồi này chịu sử dụng thường xuyên và kéo dài,
+          chúng phải đáp ứng các yêu cầu cụ thể về chất lượng, an toàn, sức mạnh
+          và độ bền để đảm bảo hiệu suất đáng tin cậy.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ghế và ghế đẩu là một trong những đồ nội thất được sử dụng nhiều nhất
-          và liên tục chịu tải, chuyển động và ứng suất lặp lại. Một chiếc ghế
-          hoặc ghế đẩu có cấu trúc yếu có thể sụp đổ đột ngột, dẫn đến thương
-          tích. Để ngăn chặn những mối nguy hiểm như vậy và đảm bảo an toàn
-          người tiêu dùng, Cục Tiêu chuẩn Ấn Độ (BIS) yêu cầu mọi nhà sản xuất
-          và nhập khẩu phải có Chứng nhận BIS cho Ghế và Ghế đẩu trước khi bán
-          chúng tại Ấn Độ.
+          Với sự chú trọng ngày càng tăng vào chất lượng sản phẩm và an toàn người
+          tiêu dùng, việc tuân thủ Tiêu chuẩn Ấn Độ đã trở thành yêu cầu quan
+          trọng đối với nhà sản xuất và nhà nhập khẩu nội thất. Giấy chứng nhận
+          BIS cho Ghế và Ghế đẩu Mục đích Chung theo IS 17632:2022 giúp đảm bảo
+          sản phẩm đáp ứng các yêu cầu về hiệu suất và an toàn quy định trước khi
+          được đưa ra thị trường Ấn Độ.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Trang này cung cấp hướng dẫn đầy đủ về Chứng nhận BIS cho ghế và ghế
-          đẩu theo IS 17632:2022, bao gồm quy trình chứng nhận, tài liệu yêu
-          cầu, yêu cầu kiểm tra, phí, thách thức, hình phạt và lợi ích.
+          Chứng nhận theo Cục Tiêu chuẩn Ấn Độ (BIS) cho phép nhà sản xuất sử
+          dụng Dấu ISI trên các sản phẩm tuân thủ. Dấu ISI là bảo đảm rằng sản
+          phẩm phù hợp với các tiêu chuẩn chất lượng Ấn Độ được công nhận và đã
+          trải qua quy trình đánh giá bắt buộc.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Khi ngành nội thất tiếp tục phát triển và các cơ quan mua sắm ngày càng
+          ưu tiên sản phẩm được chứng nhận, Giấy chứng nhận BIS đã trở thành yêu
+          cầu tuân thủ và tiếp cận thị trường quan trọng đối với nhà sản xuất.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Chứng nhận BIS là gì?
+          Điểm nổi bật về Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Chứng nhận BIS là hệ thống tuân thủ sản phẩm được quản lý bởi Cục Tiêu
-          chuẩn Ấn Độ, cơ quan tiêu chuẩn quốc gia của Ấn Độ.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Ý nghĩa Giấy chứng nhận BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Giấy chứng nhận BIS đảm bảo rằng sản phẩm:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Đáp ứng các tiêu chuẩn an toàn và chất lượng của Ấn Độ</li>
-          <li>Đã vượt qua kiểm tra phòng thí nghiệm được BIS phê duyệt</li>
-          <li>Đã trải qua kiểm tra nhà máy</li>
-          <li>
-            Bảo vệ người tiêu dùng khỏi các sản phẩm không an toàn hoặc kém chất
-            lượng
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sản phẩm được chứng nhận hiển thị Dấu ISI, chứng minh sự tuân thủ với
-          Tiêu chuẩn Ấn Độ.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tiêu chuẩn Áp dụng – IS 17632:2022 cho Ghế và Ghế đẩu
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tiêu chuẩn BIS cho ghế và ghế đẩu là:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – Ghế và Ghế đẩu Mục đích Chung: Yêu
-          cầu An toàn
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Tiêu chuẩn này bao gồm tất cả ghế và ghế đẩu không chuyên dụng được sử
-          dụng cho mục đích ngồi trong nhà, văn phòng, môi trường thương mại,
-          nơi công cộng và cơ sở thể chế.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Sản phẩm Được Bao phủ Theo IS 17632:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ghế mục đích chung</li>
-          <li>Ghế ăn</li>
-          <li>Ghế khách văn phòng</li>
-          <li>Ghế học</li>
-          <li>Ghế căng tin</li>
-          <li>Ghế nhà hàng</li>
-          <li>Ghế phòng họp</li>
-          <li>Ghế khu vực chờ</li>
-          <li>Ghế gỗ</li>
-          <li>Ghế kim loại</li>
-          <li>Ghế nhựa (không chuyên dụng)</li>
-          <li>Ghế đẩu mục đích chung</li>
-          <li>Ghế đẩu quầy bar</li>
-          <li>Ghế đẩu ăn</li>
-          <li>Ghế đẩu bậc thang (trong tiêu chí xác định)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Thông số An toàn & Hiệu suất Chính
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 đánh giá:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Độ bền cấu trúc</li>
-          <li>Độ ổn định</li>
-          <li>Độ bền dưới sử dụng lặp lại</li>
-          <li>Độ bền ghế ngồi</li>
-          <li>Hiệu suất tựa lưng</li>
-          <li>Khả năng chống va đập chân</li>
-          <li>Độ bền khớp nối</li>
-          <li>Chất lượng hoàn thiện bề mặt</li>
-          <li>An toàn cạnh và góc</li>
-          <li>Chất lượng vật liệu</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tất cả ghế và ghế đẩu được bán tại Ấn Độ phải tuân thủ các thông số
-          này và có Giấy phép BIS cho Ghế và Ghế đẩu.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tại sao Chứng nhận BIS là Bắt buộc cho Ghế và Ghế đẩu?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ghế và ghế đẩu chịu trọng lượng con người và được sử dụng thường xuyên
-          trong tất cả môi trường. Sự cố cấu trúc có thể dẫn đến:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ghế sụp đổ</li>
-          <li>Gãy chân</li>
-          <li>Nứt ghế ngồi</li>
-          <li>Hỏng tựa lưng</li>
-          <li>Thương tích do cạnh sắc</li>
-          <li>Không ổn định dẫn đến ngã</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Lợi ích của Chứng nhận BIS
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Đảm bảo sản phẩm ngồi an toàn</li>
-          <li>Ngăn chặn tai nạn và thương tích</li>
-          <li>Cải thiện độ bền sản phẩm</li>
-          <li>Ngăn chặn nhập khẩu kém chất lượng</li>
-          <li>Thiết lập chất lượng thị trường đồng nhất</li>
-          <li>Tăng cường niềm tin khách hàng</li>
-          <li>Bắt buộc theo luật Ấn Độ (BIS QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Không có Chứng nhận BIS, nhà sản xuất không thể bán ghế hoặc ghế đẩu
-          tại Ấn Độ một cách hợp pháp.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Quy trình Chứng nhận BIS cho Ghế và Ghế đẩu (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Quy trình BIS tuân theo Chương trình Chứng nhận Dấu ISI, bao gồm kiểm
-          tra, thanh tra và xác minh đơn đăng ký.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 1 – Xác định Loại Sản phẩm & Tiêu chuẩn
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Xác nhận rằng ghế/ghế đẩu thuộc IS 17632:2022. Xác định các biến thể
-          thiết kế và vật liệu được sử dụng.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 2 – Gửi Đơn đăng ký BIS Trực tuyến
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Đơn đăng ký được nộp qua Cổng thông tin Trực tuyến BIS Manak, yêu cầu:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chi tiết nhà sản xuất</li>
-          <li>Thông tin nhà máy</li>
-          <li>Thông số kỹ thuật sản phẩm</li>
-          <li>Chi tiết thương hiệu/nhãn hiệu</li>
-          <li>Quy trình làm việc sản xuất</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 3 – Thanh toán Phí Chứng nhận BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Phí bao gồm:</p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Phí đăng ký</li>
-          <li>Phí xử lý</li>
-          <li>Phí kiểm tra mẫu</li>
-          <li>Phí thanh tra nhà máy</li>
-          <li>Phí đánh dấu</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 4 – Kiểm tra Sản phẩm theo IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Kiểm tra bắt buộc được thực hiện trong phòng thí nghiệm được BIS công
-          nhận.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Các Kiểm tra Bao gồm:
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kiểm tra Độ ổn định</li>
-          <li>Kiểm tra Độ bền cho Ghế ngồi</li>
-          <li>Kiểm tra Độ bền Tựa lưng</li>
-          <li>Kiểm tra Tải Trọng Chân Phía trước/Bên/Sau</li>
-          <li>Kiểm tra Va đập Ghế ngồi</li>
-          <li>Kiểm tra Rơi</li>
-          <li>Kiểm tra Mệt mỏi</li>
-          <li>Kiểm tra Hoàn thiện Bề mặt</li>
-          <li>Kiểm tra Cạnh Sắc</li>
-          <li>Độ bền cấu trúc dưới chu kỳ lặp lại</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Kết quả kiểm tra phải cho thấy sự tuân thủ đầy đủ với IS 17632:2022.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 5 – Thanh tra Nhà máy bởi BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Một cán bộ BIS đến thăm nhà máy để đánh giá:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quy trình sản xuất</li>
-          <li>Kiểm tra nguyên liệu thô</li>
-          <li>Quy trình kiểm soát chất lượng</li>
-          <li>Khả năng kiểm tra</li>
-          <li>Hiệu chuẩn thiết bị</li>
-          <li>Khối lượng sản xuất</li>
-          <li>Tuân thủ Chương trình Kiểm tra & Thanh tra BIS (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 6 – Cấp Giấy phép BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Nếu kiểm tra và thanh tra thành công, BIS cấp:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Giấy chứng nhận BIS (Giấy phép Dấu ISI)</li>
-          <li>Số CML</li>
-          <li>Phê duyệt gắn Dấu ISI trên ghế và ghế đẩu</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bước 7 – Nghĩa vụ Sau Giấy phép
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Nhà sản xuất phải:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sử dụng Dấu ISI theo yêu cầu ghi nhãn BIS</li>
-          <li>Duy trì hồ sơ kiểm soát chất lượng</li>
-          <li>Trải qua các cuộc thanh tra giám sát BIS thường xuyên</li>
-          <li>Gia hạn giấy phép mỗi 1–2 năm</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Phạm vi Giấy phép BIS cho Ghế và Ghế đẩu
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Tiêu chuẩn này bao gồm các yêu cầu cho ghế và ghế đẩu mục đích chung.
-          Tiêu chuẩn này áp dụng cho ghế và ghế đẩu mục đích chung được sản
-          xuất/lắp ráp hoàn toàn. Nó cũng áp dụng cho các đơn vị sẵn sàng lắp
-          ráp; trong trường hợp đó các yêu cầu của tiêu chuẩn này sẽ áp dụng cho
-          các đơn vị đã lắp ráp.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tài liệu Yêu cầu cho Chứng nhận BIS của Ghế và Ghế đẩu
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Tài liệu Nhà sản xuất
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Giấy phép/đăng ký nhà máy</li>
-          <li>Sơ đồ quy trình sản xuất</li>
-          <li>Danh sách máy móc</li>
-          <li>Danh sách thiết bị kiểm tra nội bộ</li>
-          <li>Giấy chứng nhận hiệu chuẩn</li>
-          <li>Sơ đồ bố trí & mặt bằng nhà máy</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Tài liệu Kỹ thuật
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Bản vẽ ghế/ghế đẩu</li>
-          <li>Kích thước & thông số kỹ thuật</li>
-          <li>Hóa đơn nguyên vật liệu</li>
-          <li>Mô tả tính năng an toàn</li>
-          <li>Báo cáo kiểm tra chất lượng nội bộ</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Tài liệu Pháp lý
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Giấy tờ tùy thân & bằng chứng địa chỉ</li>
-          <li>Thư ủy quyền thương hiệu</li>
-          <li>Giấy chứng nhận nhãn hiệu (tùy chọn)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Tài liệu Đơn đăng ký BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mẫu đơn đăng ký</li>
-          <li>Mẫu yêu cầu kiểm tra</li>
-          <li>Mẫu tuyên bố</li>
-          <li>Thư ủy quyền</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Yêu cầu Kiểm tra cho Ghế và Ghế đẩu (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 bao gồm kiểm tra cơ khí, cấu trúc và an toàn rộng rãi.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Kiểm tra Bắt buộc
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Điều khoản
+                  Hạng mục
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Yêu cầu
+                  Chi tiết
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Thiết kế và tay nghề
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Mất cân bằng Phía trước và Mất cân bằng Bên cho Ghế không có
-                  Tay
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Mất cân bằng Phía sau
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Mất cân bằng Bên cho Ghế có Tay
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Ghế đẩu/ Poufs (Tất cả Hướng)
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Kiểm tra Độ bền
-                </TableCell>
-              </TableRow>
+              {[
+                ["Tên sản phẩm", "Ghế và Ghế đẩu Mục đích Chung"],
+                ["Tiêu chuẩn Ấn Độ áp dụng", "IS 17632:2022"],
+                ["Loại chứng nhận", "Chứng nhận Sản phẩm BIS"],
+                [
+                  "Chương trình Chứng nhận",
+                  "Chương trình I (Chứng nhận Dấu ISI)",
+                ],
+                ["Dấu hiệu áp dụng", "Dấu ISI"],
+                ["Cơ quan quản lý", "Bureau of Indian Standards (BIS)"],
+                ["Bộ ngành áp dụng", "Bộ Thương mại và Công nghiệp"],
+                [
+                  "Yêu cầu Tuân thủ",
+                  "Bắt buộc theo QCO Nội thất áp dụng (Quality Control Order)",
+                ],
+                ["Danh mục sản phẩm", "Nội thất"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Chương trình Chứng nhận" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Chương trình I (Chứng nhận Dấu ISI)
+                      </a>
+                    ) : particular === "Yêu cầu Tuân thủ" ? (
+                      <>
+                        Bắt buộc theo{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-chairs-and-stools"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>QCO Nội thất (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Các kiểm tra này đảm bảo sử dụng hàng ngày an toàn trong điều kiện
-          thực tế.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung là gì?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung là quy trình đánh
+          giá sự phù hợp được thực hiện theo Chương trình Chứng nhận Sản phẩm
+          BIS.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mục tiêu của chứng nhận là xác minh sản phẩm tuân thủ các yêu cầu quy
+          định trong IS 17632:2022. Sau khi được cấp chứng nhận, nhà sản xuất được
+          phép sử dụng Dấu ISI trên sản phẩm của mình.
+        </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Thách thức Thường gặp & Cách Tránh
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Quy trình chứng nhận đánh giá nhiều khía cạnh hiệu suất sản phẩm, bao
+          gồm:
+        </p>
 
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Ghế không vượt qua kiểm tra độ ổn định</strong>
-            <br />
-            Xảy ra do phân bố trọng lượng không đúng.
-            <br />
-            Sửa: Cải thiện thiết kế chân, mở rộng diện tích đế.
-          </li>
-          <li>
-            <strong>Khớp nối yếu gây thất bại kiểm tra</strong>
-            <br />
-            Sửa: Sử dụng vật liệu gia cố & bộ kết nối tốt hơn.
-          </li>
-          <li>
-            <strong>Thiết bị kiểm tra nội bộ không đầy đủ</strong>
-            <br />
-            Sửa: Lắp đặt các dụng cụ tuân thủ BIS yêu cầu.
-          </li>
-          <li>
-            <strong>Không nhất quán tài liệu</strong>
-            <br />
-            Sửa: Chuẩn bị tài liệu có hệ thống trước khi nộp đơn.
-          </li>
-          <li>
-            <strong>Biến thể sản phẩm không được ánh xạ đúng</strong>
-            <br />
-            Sửa: Nhóm sản phẩm dựa trên cấu trúc & thông số kiểm tra.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Lợi ích của Chứng nhận BIS cho Ghế và Ghế đẩu
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quyền pháp lý bán tại Ấn Độ</li>
-          <li>Cải thiện an toàn sản phẩm</li>
-          <li>Tăng cường niềm tin khách hàng</li>
-          <li>Giảm rủi ro trách nhiệm sản phẩm</li>
-          <li>Yêu cầu cho danh sách thương mại điện tử</li>
-          <li>Cần thiết cho đấu thầu chính phủ</li>
-          <li>Uy tín thương hiệu cao hơn</li>
-          <li>Lợi thế cạnh tranh</li>
+        <ul className={LIST_CLASS}>
+          <li>Sức mạnh</li>
+          <li>Ổn định</li>
+          <li>Độ bền</li>
+          <li>Hiệu suất cấu trúc</li>
+          <li>Yêu cầu an toàn</li>
+          <li>Chất lượng vật liệu</li>
+          <li>Tay nghề gia công</li>
         </ul>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Chứng nhận giúp đảm bảo các sản phẩm ngồi cung cấp trên thị trường Ấn
+          Độ đáp ứng các tiêu chuẩn chất lượng và an toàn đã được thiết lập.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Hình phạt cho Không Tuân thủ
+          Tổng quan về IS 17632:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022 là Tiêu chuẩn Ấn Độ quy định các yêu cầu đối với Ghế và
+          Ghế đẩu Mục đích Chung.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tiêu chuẩn này thiết lập các yêu cầu liên quan đến an toàn, sức mạnh,
+          độ bền, ổn định và hiệu suất tổng thể của nội thất ngồi dùng cho mục
+          đích chung.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tiêu chuẩn áp dụng cho:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Ghế và ghế đẩu được sản xuất hoàn chỉnh</li>
+          <li>Ghế và ghế đẩu được gia công lắp ráp</li>
+          <li>Sản phẩm lắp ráp sẵn sau khi lắp ráp</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mục đích của tiêu chuẩn là đảm bảo sản phẩm nội thất cung cấp hiệu suất
+          an toàn, đáng tin cậy và bền bỉ trong suốt thời gian sử dụng dự kiến.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Yêu cầu chính theo IS 17632:2022
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>Yêu cầu về sức mạnh</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ghế và ghế đẩu mục đích chung phải có sức mạnh cấu trúc đầy đủ để chịu
+          được các điều kiện tải trọng dự kiến trong quá trình sử dụng bình
+          thường.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Yêu cầu về ổn định</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nội thất phải duy trì ổn định trong quá trình sử dụng dự kiến và không
+          gây rủi ro lật ngã không cần thiết.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Yêu cầu về độ bền</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sản phẩm phải có khả năng duy trì tính toàn vẹn cấu trúc và hiệu suất
+          qua nhiều chu kỳ sử dụng lặp lại.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Yêu cầu an toàn</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tiêu chuẩn bao gồm các yêu cầu liên quan đến an toàn nhằm giảm thiểu
+          rủi ro gắn với việc sử dụng nội thất.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Chất lượng vật liệu và tay nghề</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Chất lượng vật liệu, phương pháp sản xuất, cách lắp ráp, mối nối và hoàn
+          thiện đóng vai trò quan trọng trong việc tuân thủ tiêu chuẩn.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Cân nhắc công thái học</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tiêu chuẩn kết hợp các yếu tố liên quan đến hiệu suất góp phần vào sự
+          thoải mái của người dùng và chức năng thực tế.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sản phẩm thuộc phạm vi IS 17632:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Bán ghế hoặc ghế đẩu không có chứng nhận BIS có thể dẫn đến:
+          Tiêu chuẩn này nói chung áp dụng cho:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tiền phạt nặng</li>
-          <li>Thu hồi/tịch thu sản phẩm</li>
-          <li>Hủy giấy phép nhà máy</li>
-          <li>Truy tố hình sự</li>
-          <li>Hạn chế nhập khẩu</li>
-          <li>Đưa vào danh sách đen thị trường</li>
+        <ul className={LIST_CLASS}>
+          <li>Ghế mục đích chung</li>
+          <li>Ghế đẩu mục đích chung</li>
+          <li>Nội thất ngồi cố định dùng cho mục đích chung</li>
+          <li>Sản phẩm ngồi lắp ráp sẵn sau khi lắp ráp</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Hình phạt được thực thi theo Đạo luật BIS, 2016.
+          Nhà sản xuất nên xem xét kỹ phạm vi của tiêu chuẩn để xác định mức độ áp
+          dụng đối với sản phẩm của mình.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Cũng xem các Sản phẩm Nội thất thuộc Chứng nhận BIS Bắt buộc —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Chứng nhận BIS cho nội thất</strong>
+          </a>
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Ai Cần Chứng nhận BIS cho Ghế và Ghế đẩu?
+          Giấy chứng nhận BIS có bắt buộc đối với Ghế và Ghế đẩu Mục đích Chung
+          không?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">Bắt buộc cho:</p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Có. Sản phẩm nội thất thuộc phạm vi Lệnh Kiểm soát Chất lượng Nội thất
+          (QCO) áp dụng phải tuân thủ Tiêu chuẩn Ấn Độ liên quan và có Giấy chứng
+          nhận BIS trước khi được sản xuất, nhập khẩu, bán, phân phối hoặc cung
+          cấp trên thị trường Ấn Độ.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Nhà sản xuất Ấn Độ</li>
-          <li>Nhà sản xuất nước ngoài xuất khẩu sang Ấn Độ</li>
-          <li>Nhà nhập khẩu</li>
-          <li>Chủ sở hữu thương hiệu/thương nhân</li>
-          <li>Nhà cung cấp OEM/ODM</li>
-          <li>Chuỗi bán lẻ</li>
-          <li>Người bán trực tuyến</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nhà sản xuất thuộc khung pháp lý áp dụng phải có giấy phép BIS và tuân
+          thủ các yêu cầu ghi nhãn do BIS quy định.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Yêu cầu kiểm tra cho Giấy chứng nhận BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Trước khi cấp chứng nhận, mẫu sản phẩm phải được đánh giá thông qua
+          kiểm tra tại các phòng thí nghiệm được công nhận.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Kiểm tra thường tập trung vào các thông số sau:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Đánh giá hiệu suất cấu trúc —</strong> Xác định ghế hoặc ghế
+            đẩu có thể chịu được điều kiện sử dụng bình thường mà không bị hỏng
+            hay không.
+          </li>
+          <li>
+            <strong>Kiểm tra ổn định —</strong> Đánh giá nội thất có duy trì ổn
+            định trong quá trình sử dụng dự kiến và chống lật ngã hay không.
+          </li>
+          <li>
+            <strong>Đánh giá sức mạnh —</strong> Đánh giá khả năng chịu tải và
+            tính toàn vẹn cấu trúc của khung, mối nối và bộ phận hỗ trợ.
+          </li>
+          <li>
+            <strong>Đánh giá độ bền —</strong> Kiểm tra khả năng duy trì hiệu
+            suất sau nhiều chu kỳ sử dụng lặp lại trong suốt tuổi thọ dịch vụ của
+            sản phẩm.
+          </li>
+          <li>
+            <strong>Đánh giá an toàn —</strong> Xác định các mối nguy tiềm ẩn và
+            xác minh tuân thủ các yêu cầu an toàn quy định.
+          </li>
+          <li>
+            <strong>Kiểm tra tay nghề —</strong> Xem xét chất lượng cấu tạo, hoàn
+            thiện, tính toàn vẹn lắp ráp và tiêu chuẩn gia công tổng thể.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Yêu cầu ghi nhãn sản phẩm
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Sản phẩm được chứng nhận theo IS 17632:2022 thường phải mang thông tin
+          nhận dạng như:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Tên hoặc nhãn hiệu của nhà sản xuất</li>
+          <li>Mã nhận dạng mẫu hoặc thiết kế</li>
+          <li>Số lô hoặc số lô sản xuất</li>
+          <li>Ngày sản xuất</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mỗi nhà máy yêu cầu một Giấy phép BIS riêng biệt.
+          Dấu ISI chỉ được áp dụng sau khi có giấy phép BIS hợp lệ.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Quy trình Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>Bước 1: Đánh giá phạm vi sản phẩm</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Bước đầu tiên là xác định sản phẩm có thuộc phạm vi IS 17632:2022 và QCO
+          Nội thất áp dụng hay không.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Xem xét loại ghế hoặc ghế đẩu, mục đích sử dụng, vật liệu và cấu tạo
+          trước khi bắt đầu quy trình chứng nhận.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Bước 2: Chuẩn bị tài liệu</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nhà sản xuất chuẩn bị tài liệu kỹ thuật và tuân thủ cần thiết cho chứng
+          nhận, bao gồm hồ sơ công ty, thông tin nhà máy, thông số sản phẩm và quy
+          trình kiểm soát chất lượng.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Tài liệu đầy đủ và chính xác giúp tránh chậm trễ không cần thiết trong
+          quá trình BIS xem xét.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Bước 3: Kiểm tra sản phẩm</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mẫu đại diện được kiểm tra tại phòng thí nghiệm được BIS công nhận để
+          xác minh tuân thủ các yêu cầu của IS 17632:2022.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Báo cáo kiểm tra phòng thí nghiệm là tài liệu kỹ thuật quan trọng hỗ trợ
+          đơn đăng ký chứng nhận.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Bước 4: Nộp đơn đăng ký BIS</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Đơn đăng ký chứng nhận được nộp kèm tài liệu hỗ trợ, báo cáo kiểm tra và
+          thông tin sản xuất.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          BIS xem xét đơn đăng ký về tính đầy đủ và tuân thủ kỹ thuật trước khi tiếp
+          tục.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Bước 5: Kiểm tra nhà máy</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS có thể đánh giá cơ sở sản xuất, hệ thống sản xuất và quy trình kiểm
+          soát chất lượng để xác minh khả năng sản xuất sản phẩm tuân thủ một cách
+          nhất quán.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Đánh giá này thường bao gồm hạ tầng sản xuất, hệ thống QC, kiểm soát
+          nguyên liệu thô và khả năng truy xuất sản phẩm.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Bước 6: Xem xét kỹ thuật</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Đơn đăng ký, báo cáo kiểm tra và kết quả kiểm tra được BIS xem xét trước
+          khi đưa ra quyết định chứng nhận.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Mọi nhận xét hoặc thiếu sót phát sinh trong quá trình xem xét phải được
+          người nộp đơn khắc phục.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Bước 7: Cấp giấy phép</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Khi tuân thủ đạt yêu cầu, BIS cấp giấy phép và cho phép sử dụng Dấu ISI
+          trên ghế và ghế đẩu mục đích chung được chứng nhận.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nhà sản xuất phải tiếp tục tuân thủ các yêu cầu của BIS trong suốt thời
+          hạn giấy phép.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Lợi ích của Giấy chứng nhận BIS
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Tuân thủ quy định Ấn Độ —</strong> Đáp ứng yêu cầu chất lượng
+            và an toàn bắt buộc theo QCO Nội thất áp dụng.
+          </li>
+          <li>
+            <strong>Tiếp cận thị trường hợp pháp —</strong> Cung cấp ghế và ghế
+            đẩu được chứng nhận tại Ấn Độ theo các yêu cầu quy định áp dụng.
+          </li>
+          <li>
+            <strong>Nâng cao uy tín sản phẩm —</strong> Dấu ISI thể hiện sự phù
+            hợp với các tiêu chuẩn Ấn Độ được công nhận.
+          </li>
+          <li>
+            <strong>Tăng niềm tin khách hàng —</strong> Người tiêu dùng và người
+            mua tổ chức ưu tiên sản phẩm được đánh giá theo các tiêu chuẩn đã
+            thiết lập.
+          </li>
+          <li>
+            <strong>Lợi thế cạnh tranh —</strong> Được chấp nhận rộng rãi hơn
+            trong quy trình mua sắm thương mại và chính phủ.
+          </li>
+          <li>
+            <strong>Cải thiện danh tiếng thương hiệu —</strong> Thể hiện cam kết
+            về chất lượng sản phẩm, an toàn và độ tin cậy lâu dài.
+          </li>
+          <li>
+            <strong>Hỗ trợ doanh nghiệp vừa và nhỏ —</strong> Giúp nhà sản xuất
+            quy mô nhỏ và vừa củng cố sự hiện diện trên thị trường và xây dựng
+            niềm tin khách hàng.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Thách thức thường gặp trong quá trình chứng nhận
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Thất bại kiểm tra sản phẩm —</strong> Thiếu sót thiết kế hoặc
+            sản xuất có thể dẫn đến không tuân thủ trong quá trình đánh giá phòng
+            thí nghiệm.
+          </li>
+          <li>
+            <strong>Vấn đề tài liệu —</strong> Hồ sơ không đầy đủ hoặc không nhất
+            quán thường gây chậm trễ chứng nhận.
+          </li>
+          <li>
+            <strong>Khoảng trống tuân thủ sản xuất —</strong> Hệ thống kiểm soát
+            chất lượng có thể cần cải thiện trước khi cấp chứng nhận.
+          </li>
+          <li>
+            <strong>Phức tạp quy định —</strong> Quản lý kiểm tra, thanh tra và
+            thủ tục chứng nhận có thể khó khăn nếu không có hướng dẫn chuyên
+            gia.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tại sao chọn Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India hỗ trợ nhà sản xuất, nhà nhập khẩu, nhà xuất
+          khẩu và doanh nghiệp trong các yêu cầu tuân thủ quy định trên toàn Ấn
+          Độ.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Dịch vụ của chúng tôi bao gồm:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Đánh giá khả năng áp dụng sản phẩm</li>
+          <li>Tư vấn chứng nhận BIS</li>
+          <li>Hỗ trợ tài liệu</li>
+          <li>Phối hợp kiểm tra phòng thí nghiệm</li>
+          <li>Chuẩn bị kiểm tra nhà máy</li>
+          <li>Quản lý đơn đăng ký</li>
+          <li>Hỗ trợ tuân thủ quy định</li>
+          <li>Hỗ trợ sau chứng nhận</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mục tiêu của chúng tôi là giúp khách hàng điều hướng các yêu cầu chứng
+          nhận một cách hiệu quả và đạt tuân thủ với thời gian chậm trễ tối
+          thiểu.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -765,111 +754,131 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích Chung theo IS
-          17632:2022 là bắt buộc để đảm bảo an toàn sản phẩm, ổn định cấu trúc
-          và độ bền. Chứng nhận BIS không chỉ giúp nhà sản xuất duy trì tiêu
-          chuẩn chất lượng cao mà còn cho phép tiếp cận thị trường hợp pháp và
-          tăng cường niềm tin người tiêu dùng.
+          17632:2022 đóng vai trò quan trọng trong việc đảm bảo chất lượng sản
+          phẩm, an toàn, sức mạnh, ổn định và độ bền. Chứng nhận giúp nhà sản
+          xuất chứng minh tuân thủ Tiêu chuẩn Ấn Độ, đồng thời củng cố niềm tin
+          khách hàng và hỗ trợ tiếp cận thị trường.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Với sự hỗ trợ chuyên nghiệp, quy trình chứng nhận—từ kiểm tra đến
-          thanh tra và phê duyệt—trở nên suôn sẻ, có thể dự đoán và tuân thủ đầy
-          đủ.
+          Khi nhu cầu về sản phẩm nội thất đảm bảo chất lượng tiếp tục tăng, Giấy
+          chứng nhận BIS và Dấu ISI cung cấp sự đảm bảo có giá trị cho người tiêu
+          dùng, tổ chức và cơ quan mua sắm. Nhà sản xuất đầu tư vào tuân thủ không
+          chỉ đáp ứng yêu cầu quy định mà còn nâng cao khả năng cạnh tranh và uy
+          tín thị trường lâu dài.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nếu bạn đang lên kế hoạch có Giấy chứng nhận BIS cho Ghế và Ghế đẩu
+          Mục đích Chung theo IS 17632:2022, Sun Certifications India có thể cung
+          cấp hướng dẫn chuyên gia và hỗ trợ tuân thủ toàn diện trong suốt quy
+          trình chứng nhận.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Câu hỏi Thường gặp – Giấy chứng nhận BIS cho Ghế và Ghế đẩu
+          Câu hỏi Thường gặp – Giấy chứng nhận BIS cho Ghế và Ghế đẩu Mục đích
+          Chung (IS 17632:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Chứng nhận BIS có bắt buộc cho ghế và ghế đẩu không?
-              </strong>
+              <strong>1. IS 17632:2022 là gì?</strong>
               <br />
-              Có, theo IS 17632:2022, tất cả ghế và ghế đẩu mục đích chung phải
-              được chứng nhận BIS trước khi bán tại Ấn Độ.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Cần kiểm tra gì?</strong>
-              <br />
-              Kiểm tra độ ổn định, độ bền, độ bền, va đập, mệt mỏi và an toàn
-              vật liệu.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Chứng nhận BIS mất bao lâu?</strong>
-              <br />
-              Thường là 30–45 ngày.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. Chi phí chứng nhận là bao nhiêu?</strong>
-              <br />
-              Khoảng ₹60,000–₹1,30,000 tùy thuộc vào kiểm tra và thanh tra.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Nhà sản xuất nước ngoài có thể đăng ký không?</strong>
-              <br />
-              Có, theo chương trình FMCS.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Đánh dấu ISI có bắt buộc không?</strong>
-              <br />
-              Có, sau khi giấy phép BIS được cấp.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Tại sao ghế không vượt qua kiểm tra BIS?</strong>
-              <br />
-              Nguyên nhân phổ biến bao gồm chân yếu, độ bền khớp nối kém và
-              không ổn định.
+              IS 17632:2022 là Tiêu chuẩn Ấn Độ quy định các yêu cầu đối với Ghế
+              và Ghế đẩu Mục đích Chung.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. Nhiều mẫu có thể được bao phủ dưới một giấy phép không?
+                2. Giấy chứng nhận BIS có bắt buộc đối với Ghế và Ghế đẩu Mục
+                đích Chung không?
               </strong>
               <br />
-              Chỉ khi chúng đáp ứng tiêu chí tương tự và tuân thủ tiêu chuẩn.
+              Sản phẩm thuộc phạm vi Lệnh Kiểm soát Chất lượng Nội thất áp dụng
+              phải tuân thủ các yêu cầu chứng nhận BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Có cần thanh tra nhà máy không?</strong>
+              <strong>3. Dấu ISI là gì?</strong>
               <br />
-              Có, nó là bắt buộc cho chứng nhận dấu ISI.
+              Dấu ISI là dấu chứng nhận tiêu chuẩn được cấp theo Chương trình
+              Chứng nhận Sản phẩm BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. Cần tài liệu gì?</strong>
+              <strong>4. Ai có thể đăng ký Giấy chứng nhận BIS?</strong>
               <br />
-              Giấy phép nhà máy, thông số kỹ thuật, danh sách máy móc, kế hoạch
-              QC, bản vẽ sản phẩm, v.v.
+              Cả nhà sản xuất Ấn Độ và nhà sản xuất nước ngoài đều có thể đăng
+              ký chứng nhận.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Giấy chứng nhận BIS có yêu cầu kiểm tra sản phẩm không?</strong>
+              <br />
+              Có. Kiểm tra sản phẩm là thành phần quan trọng của quy trình chứng
+              nhận.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                6. Ghế lắp ráp sẵn có thuộc phạm vi IS 17632:2022 không?
+              </strong>
+              <br />
+              Có. Tiêu chuẩn áp dụng cho sản phẩm lắp ráp sẵn sau khi lắp ráp.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                7. Những sản phẩm nào bị loại trừ khỏi phạm vi IS 17632:2022?
+              </strong>
+              <br />
+              Các sản phẩm như ghế ngả, ghế bập bênh, ghế nghiêng, ghế sofa và
+              một số sản phẩm ngồi chuyên dụng nhất định thường bị loại trừ.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. Lợi ích của việc có Giấy chứng nhận BIS là gì?</strong>
+              <br />
+              Lợi ích bao gồm tuân thủ quy định, nâng cao uy tín sản phẩm, tăng
+              niềm tin khách hàng và được thị trường chấp nhận tốt hơn.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. Nhà sản xuất nước ngoài có thể có Giấy chứng nhận BIS không?
+              </strong>
+              <br />
+              Có. Nhà sản xuất nước ngoài có thể đăng ký qua lộ trình chứng nhận
+              BIS áp dụng cho nhà sản xuất ở nước ngoài.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. Sun Certifications India có thể hỗ trợ như thế nào?</strong>
+              <br />
+              Sun Certifications India cung cấp hỗ trợ toàn diện cho chứng nhận
+              BIS, bao gồm tài liệu, phối hợp kiểm tra, quản lý đơn đăng ký và hỗ
+              trợ tuân thủ.
             </p>
           </div>
         </div>
@@ -886,6 +895,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tài nguyên Liên quan
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Giấy chứng nhận ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Giấy chứng nhận BIS cho Nhà sản xuất Nước ngoài
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadVietnamese />
 

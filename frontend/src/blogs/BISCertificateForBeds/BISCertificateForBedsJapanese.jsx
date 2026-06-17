@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsJapanese = () => {
   return (
     <div className="relative w-full">
@@ -149,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/beddo-is-17635",
+          },
+          headline: "ベッドのBIS認証",
+          description:
+            "インドにおけるベッドのBIS認証は、主にIS 17635:2022に基づく必須の品質保証制度であり、安全性、耐久性、性能基準を確保します。",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "ベッドのBIS認証",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "インドにおけるベッドのBIS認証は、主にIS 17635:2022に基づく必須の品質保証制度であり、安全性、耐久性、性能基準を確保します。",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "インドでベッドにBIS認証は必須ですか？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "はい、IS 17635:2022に基づきます。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "BIS証明書の有効期限は？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1〜2年、更新可能です。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "外国の製造業者は申請できますか？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "はい、FMCSの下で申請できます。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "BIS証明書はオンラインで申請できますか？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "はい。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "ベッドにISIマークは必須ですか？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "はい。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "プロセスにはどのくらい時間がかかりますか？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30〜45日。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "木製と金属製のベッドの両方が対象ですか？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "はい、IS 17635:2022に準拠している場合。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "工場検査は必須ですか？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "はい。",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "貿易業者はBISに申請できますか？",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "製造管理を有するブランド所有者のみ。",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -227,14 +372,20 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ベッドのBIS認証は、IS
-          17635:2022に基づき、インドで必須要件となっています。この規格は、家庭用および商業用のベッドを製造・輸入する製造業者および輸入業者向けです。最新のインド規格IS
-          17635:2022 –
-          ベッド（安全性要件）に基づき、すべてのベッドはインド市場で販売される前に、厳格な安全性、耐久性、構造、性能の基準を満たす必要があります。
+          ベッドのBIS認証は、家庭用および商業用に供されるベッドを製造・輸入する製造業者および輸入業者にとって、インドにおける必須のコンプライアンス要件です。最新のインド規格IS
+          17635:2022 – ベッド（安全性要件）に基づき、すべてのベッドはインド市場で販売される前に、厳格な安全性、耐久性、構造、性能の基準を満たす必要があります。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ベッドは、家庭、ホテル、病院、ホステル、PG宿泊施設、機関施設で日常的に使用される重要な家具製品です。構造的な弱点、鋭いエッジ、材料の故障、または耐荷重能力の低さは、深刻な怪我を引き起こす可能性があります。このようなリスクを防ぐために、インド標準局（BIS）はベッドのBIS認証を義務付けています。
+          ベッドは、家庭、ホテル、病院、ホステル、PG宿泊施設、機関施設で日常的に使用される重要な家具製品です。構造的な弱点、鋭いエッジ、材料の故障、または耐荷重能力の低さは、深刻な怪我を引き起こす可能性があります。このようなリスクを防ぐために、インド標準局（BIS）はベッドの{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            BIS認証
+          </a>{" "}
+          を義務付けています。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -245,107 +396,412 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS認証とは何ですか？
+          ベッドのBIS認証の主なハイライト
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS認証は、インドの国家標準機関であるインド標準局が導入した適合性評価スキームです。
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  項目
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  詳細
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["製品", "ベッド"],
+                ["インド規格", "IS 17635:2022"],
+                ["規格名称", "ベッド – 仕様"],
+                ["認証スキーム", "BIS ISIマーク認証"],
+                ["規制当局", "Bureau of Indian Standards (BIS)"],
+                ["適用マーク", "ISIマーク"],
+                [
+                  "申請資格者",
+                  "インド国内メーカーおよび外国メーカー",
+                ],
+                [
+                  "コンプライアンス要件",
+                  "該当する家具QCO（Quality Control Order）に基づく義務",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "認証スキーム" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        BIS ISIマーク認証
+                      </a>
+                    ) : particular === "コンプライアンス要件" ? (
+                      <>
+                        該当する{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>家具QCO（Quality Control Order）</strong>
+                        </a>
+                        に基づく義務
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS証明書とは何ですか？
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS証明書は、製品がインド規格に準拠し、安全で信頼性が高く、使用に適していることを確認します。認証製品には、一般的にISIマークとして知られるBIS認証マークが表示されます。
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS証明書の意味
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          製品が以下を正常に通過したことを示します：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>実験室テスト</li>
-          <li>工場検査</li>
-          <li>品質管理の検証</li>
-          <li>安全性コンプライアンスの評価</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          ベッドのBISロゴは、顧客に製品が政府承認の品質および安全性基準を満たしていることを保証します。
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ベッドに適用されるBIS規格 – IS 17635:2022
+          ベッドのBIS認証とは？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ベッドに適用されるインド規格は次のとおりです：
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – ベッド：安全性要件
+          ベッドのBIS認証は、製造業者が自社製品がIS
+          17635:2022で定められた要件に適合していることを証明する適合性評価プロセスです。テスト、工場評価、規制当局による審査を通じてコンプライアンスが確認されると、製造業者にはBISライセンスが付与され、認証製品にISIマークを表示できます。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          この規格は、住宅および商業環境で使用されるベッドの基本的な安全性および性能要件を定義しています。
+          認証フレームワークは、インド市場で流通するベッドが以下に関する確立された要件を満たすことを目的としています：
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022がカバーする内容
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>構造的強度</li>
-          <li>耐荷重能力</li>
-          <li>安定性と耐久性</li>
-          <li>材料品質</li>
-          <li>エッジと表面仕上げ</li>
-          <li>崩壊に対する安全性</li>
-          <li>挟み込みの危険の不在</li>
-          <li>長期性能</li>
+          <li>安定性</li>
+          <li>耐久性</li>
+          <li>表面性能</li>
+          <li>通常使用時の安全性</li>
+          <li>予見可能な誤使用条件下での性能</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          インドで製造または輸入されるすべてのベッドは、IS
-          17635:2022に準拠し、ベッドのBIS登録を取得する必要があります。
+          これらの要件は、さまざまなベッドのデザインや製造材料にわたって、品質と消費者保護の一貫した基準を確立するのに役立ちます。
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ベッドにBIS認証が必須である理由
+          ベッドにBIS認証が重要な理由
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ベッドは長時間使用され、人間の体重を継続的に支えます。設計が不十分なベッドは、怪我、崩壊、または長期的な健康リスクを引き起こす可能性があります。
+          ベッドは長期間にわたって大きな荷重を支えるように設計されているため、ユーザーの安全に直接影響します。設計が不十分またはテストが不十分な製品は、構造的故障、不安定さ、変形、または早期劣化を起こす可能性があります。
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          ベッドにBIS認証が必要な理由
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022は、製品が市場に投入される前に製造業者が満たす必要のある標準化された性能および安全要件を定義することで、これらの懸念に対処します。本規格には、強度、安定性、耐久性、仕上げ、表面性能に関する要件が含まれます。
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>構造的完全性を確保</li>
-          <li>崩壊と破損を防止</li>
-          <li>材料品質を管理</li>
-          <li>鋭いエッジと安全でない仕上げを排除</li>
-          <li>消費者を保護</li>
-          <li>統一された国内品質を確保</li>
-          <li>BIS通知に基づく必須要件</li>
-          <li>インドでの合法的な販売に必要</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          製造業者にとって、BIS認証には以下のような利点があります：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>インドでの対象製品の合法的な販売許可</li>
+          <li>インド規格への適合の証明</li>
+          <li>市場受容性の向上</li>
+          <li>消費者の信頼の強化</li>
+          <li>規制当局による措置のリスク低減</li>
+          <li>機関・商業調達における競争優位</li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ベッド向けIS 17635:2022の概要
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          インド政府は、市場に投入される製品が所定の安全および品質要件を満たすことを確保するため、複数の家具製品に対してQuality
+          Control Order（QCO）を導入しています。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022が該当する家具QCOの対象となる場合、製造業者はスキームIに基づくBIS認証を取得し、BISライセンス要件に従って標準マーク（ISIマーク）を使用する必要があります。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022は、家庭および非家庭環境で使用される成人向けベッドの性能および安全要件を定めるインド規格です。本規格は、ベッドが意図された使用期間を通じて安全で機能的かつ耐久性があることを確保する要件を定めています。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>IS 17635:2022の目的</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022は、さまざまな材料および製造方法で製造される現代的なベッドデザインに適用可能な包括的な性能ベースの規格を提供するために策定されました。本規格は、主に木製ベッドに焦点を当てていた以前のIS
+          7259（Part 1）:1988に取って代わります。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          本規格は、特定の材料や製造プロセスにコンプライアンスを限定することなくベッドを評価します。代わりに、所定のテスト条件下で完成品がどのように性能を発揮するかに焦点を当てます。このアプローチにより、木製、金属製、合板製、その他のベッド構造を一貫して評価できます。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>IS 17635:2022の適用範囲</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          本規格によると、IS
+          17635:2022は成人向けベッドの性能および安全性に関連する要件をカバーします。本規格は、家庭および非家庭環境の両方で使用されることを意図した製品に適用されます。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          本規格は以下に適用されます：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>完全に製造されたベッド</li>
+          <li>組立て製ベッド</li>
+          <li>組立後の即組み立て式（RTA）ベッド</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ベッドのBISライセンスなしでは、インドでベッドを販売または輸入することは違法です。
+          これにより、組立済みまたはノックダウン形式で供給される製品も、同じ性能および安全基準で評価されます。
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>規格の目的</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022の主な目的には以下が含まれます：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>ユーザーの安全確保</li>
+          <li>構造的強度の検証</li>
+          <li>製品安定性の評価</li>
+          <li>反復使用下での耐久性の評価</li>
+          <li>最低性能要件の確立</li>
+          <li>製造業者間での一貫した製品品質の促進</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          本規格には、通常使用条件および合理的に予見可能な誤使用シナリオ下でベッドを評価するためのテスト方法も含まれています。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17635:2022の対象製品
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022は、家庭および非家庭環境で使用される成人向けベッドに適用されます。本規格は、特定の材料や製造方法にコンプライアンスを制限するのではなく、完成品の性能、安全性、強度、安定性、耐久性に焦点を当てています。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          本規格は以下に適用されます：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>完全に製造されたベッド</li>
+          <li>組立て製ベッド</li>
+          <li>組立後の即組み立て式（RTA）ベッド</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ノックダウン状態でベッドを供給する製造業者は、組立後の製品が本規格のすべての適用要件に適合していることを確認する必要があります。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>注：</strong>
+          本規格は、ウォーターベッド、エアベッド、折りたたみベッド、二段ベッド、特別なニーズを持つ人向けのベッド、および医療・ヘルスケア目的のベッドを対象としません。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            必須BIS認証の対象となる家具製品もご確認ください —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>家具のBIS認証</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17635:2022の主要要件
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS
+          17635:2022の主な目的は、ベッドが通常の使用条件下で安全で安定し、耐久性があり、意図された用途に適していることを確保することです。この目的を達成するため、本規格はいくつかの主要な性能要件を定めています。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>安定性要件</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ベッドは、通常使用時に転倒や不安定さに対する十分な抵抗性を示す必要があります。安定性テストでは、予想される荷重条件およびユーザーの動きにさらされた際に製品が安全に保持されるかを評価します。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          安定したベッドは事故のリスクを最小限に抑え、全体的なユーザー安全を向上させます。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>強度要件</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          強度テストは、ベッド構造が構造的故障なく大きな荷重に耐えられる能力を評価します。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          これらの評価では通常、以下を検査します：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>ベッドフレームの完全性</li>
+          <li>接合部の強度</li>
+          <li>耐荷重能力</li>
+          <li>過度の変形に対する抵抗性</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          目的は、製品が日常使用において意図されたユーザーを安全に支えられることを確保することです。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>耐久性要件</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          耐久性テストは、反復的な荷重および動作サイクルを通じて長期使用をシミュレートします。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          目的は以下を判断することです：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>構造接合部が安全に保持されるか</li>
+          <li>部品が正しく機能し続けるか</li>
+          <li>時間経過後も製品性能が許容範囲内か</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          耐久性要件は、認証されたベッドが期待される使用期間を通じて信頼性を維持することを確保するのに役立ちます。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>表面性能要件</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS
+          17635:2022は、家具仕上げに適用される表面性能要件を参照しています。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          構造および使用材料に応じて、表面は以下に対する抵抗性が評価される場合があります：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>機械的損傷</li>
+          <li>湿熱</li>
+          <li>乾熱</li>
+          <li>染色</li>
+          <li>密着性能</li>
+          <li>摩耗と擦れ</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          これらの要件は、通常使用時の機能性と外観の両方を維持するのに役立ちます。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>設計および仕上げ要件</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          本規格には、設計品質および仕上げに関する要件も含まれています。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          その他の考慮事項には以下が含まれます：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>アクセス可能なエッジは怪我の危険を呈してはなりません。</li>
+          <li>鋭いエッジや安全でない突出部は避ける必要があります。</li>
+          <li>必要な場合、中空部は適切に閉じる必要があります。</li>
+          <li>可動部品は怪我のリスクを低減するよう設計する必要があります。</li>
+          <li>
+            完成品は、宣言されたデザインおよびモデル仕様に適合している必要があります。
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>安全要件</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          安全性はIS 17635:2022全体を通じて中核的な原則です。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          本規格には、以下から生じるリスクを低減するための要件が組み込まれています：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>構造的崩壊</li>
+          <li>鋭いエッジ</li>
+          <li>安全でない突出部</li>
+          <li>部品の故障</li>
+          <li>反復使用による応力</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          これらの要件への適合は、ベッドが通常使用および合理的に予見可能な誤使用条件下でも安全であることを確保するのに役立ちます。
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          インドでベッドのBIS認証は必須ですか？
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          はい。該当するQuality Control
+          Order（QCO）の対象となる家具製品については、インドで製造、輸入、販売、流通、保管、または販売提供を行う前にBIS認証が必須です。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          規制要件は随時更新される可能性があるため、製造業者はインド政府が発行する最新の通知状況および実施日を確認する必要があります。
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>ISIマーク使用の要件</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          ISIマークは、製品が関連するインド規格に適合し、有効なBISライセンスの下で製造されていることの証拠となります。
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          マークは以下の後にのみ表示できます：
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>製品テストの成功</li>
+          <li>工場評価</li>
+          <li>BISによる申請承認</li>
+          <li>ライセンスの付与</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          ISIマークの無許可使用は、BIS Act,
+          2016の下で禁止されています。
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -443,28 +899,6 @@ const MainContentLeft = () => {
           <li>1〜2年ごとの更新</li>
           <li>継続的な品質管理</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ベッドのBISライセンスの範囲
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong>
-          この規格は、家庭用および非家庭用の成人用ベッドの性能および安全性に関連する要件をカバーします。
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong>
-          この規格は、完全に製造/組み立てられたベッドに適用されます。組み立て準備済みユニットにも適用され、その場合、この規格の要件は組み立てられたユニットに適用されます。
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong>
-          この規格は、ウォーターベッド、エアベッド、折りたたみベッド、二段ベッド、特別なニーズを持つ人向けのベッド、および医療・医療目的のベッドをカバーしません。
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -636,23 +1070,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ベッドのBIS認証のメリット
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドでの合法的な販売</li>
-          <li>顧客の信頼の向上</li>
-          <li>eコマースプラットフォームへのアクセス</li>
-          <li>政府入札への参加資格</li>
-          <li>責任の軽減</li>
-          <li>強力なブランドの信頼性</li>
-          <li>インド規格への準拠</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           非準拠に対する罰則
         </h2>
 
@@ -667,30 +1084,6 @@ const MainContentLeft = () => {
           <li>法的措置</li>
           <li>市場からの禁止</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ベッドのBIS証明書が必要なのは誰ですか？
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          以下の事業者は、ベッドのBISライセンスを取得する必要があります：
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>インドの製造業者</li>
-          <li>外国の製造業者</li>
-          <li>輸入業者</li>
-          <li>家具ブランド</li>
-          <li>OEM/ODMサプライヤー</li>
-          <li>eコマース販売業者</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          各製造ユニットには、別々のBISライセンスが必要です。
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -819,6 +1212,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          関連リソース
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISIマーク証明書
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              BIS FMCSライセンス
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadJapanese />
 

@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsItalian = () => {
   return (
     <div className="relative w-full">
@@ -149,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/letti-is-17635",
+          },
+          headline: "Certificato BIS per Letti",
+          description:
+            "La certificazione BIS per letti in India è un obbligo di garanzia della qualità, principalmente ai sensi di IS 17635:2022, che garantisce standard di sicurezza, durata e prestazioni.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "Certificato BIS per Letti",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "La certificazione BIS per letti in India è un obbligo di garanzia della qualità, principalmente ai sensi di IS 17635:2022, che garantisce standard di sicurezza, durata e prestazioni.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "La certificazione BIS è obbligatoria per i letti in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sì, ai sensi di IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Qual è la validità del Certificato BIS?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 anni, rinnovabile.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "I produttori stranieri possono fare domanda?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sì, tramite FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Il Certificato BIS può essere richiesto online?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sì.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Il Marchio ISI è obbligatorio sui letti?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sì.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Quanto tempo richiede il processo?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45 giorni.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Sia i letti in legno che in metallo sono coperti?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sì, se conformi a IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "L'ispezione della fabbrica è obbligatoria?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sì.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "I commercianti possono fare domanda per BIS?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Solo i proprietari di marchi con controllo di produzione.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -241,7 +386,15 @@ const MainContentLeft = () => {
           strutture istituzionali. Qualsiasi debolezza strutturale, bordi
           taglienti, cedimento del materiale o scarsa capacità di carico può
           causare lesioni gravi. Per prevenire tali rischi, il Bureau of Indian
-          Standards (BIS) impone la Certificazione BIS per Letti.
+          Standards (BIS) impone la{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Certificazione BIS
+          </a>{" "}
+          per Letti.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -255,118 +408,500 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Cos&apos;è la Certificazione BIS?
+          Punti Chiave della Certificazione BIS per Letti
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          La Certificazione BIS è uno schema di valutazione della conformità
-          introdotto dal Bureau of Indian Standards, l&apos;autorità nazionale
-          di standardizzazione dell&apos;India.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Voce
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Dettagli
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Prodotto", "Letti"],
+                ["Standard Indiano", "IS 17635:2022"],
+                ["Titolo dello Standard", "Letti – Specifica"],
+                ["Schema di Certificazione", "Certificazione BIS con Marchio ISI"],
+                [
+                  "Autorità di Regolamentazione",
+                  "Bureau of Indian Standards (BIS)",
+                ],
+                ["Marchio Applicabile", "Marchio ISI"],
+                [
+                  "Richiedenti Ammissibili",
+                  "Produttori Indiani e Produttori Esteri",
+                ],
+                [
+                  "Requisito di Conformità",
+                  "Obbligatorio ai sensi del QCO Arredamento applicabile (Ordine di Controllo Qualità)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Schema di Certificazione" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Certificazione BIS con Marchio ISI
+                      </a>
+                    ) : particular === "Requisito di Conformità" ? (
+                      <>
+                        Obbligatorio ai sensi del{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            QCO Arredamento (Ordine di Controllo Qualità)
+                          </strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Cos&apos;è il Certificato BIS?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Un Certificato BIS conferma che un prodotto è conforme agli Standard
-          Indiani ed è sicuro, affidabile e idoneo all&apos;uso. I prodotti
-          certificati portano il Marchio di Certificazione BIS, comunemente noto
-          come Marchio ISI.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Significato del Certificato BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Significa che il prodotto ha superato con successo:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Test di laboratorio</li>
-          <li>Ispezione della fabbrica</li>
-          <li>Verifica del controllo qualità</li>
-          <li>Valutazione della conformità alla sicurezza</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Il Logo BIS sui letti assicura ai clienti che il prodotto soddisfa gli
-          standard di qualità e sicurezza approvati dal governo.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Standard BIS Applicabile ai Letti – IS 17635:2022
+          Cos&apos;è la Certificazione BIS per Letti?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Lo Standard Indiano applicabile ai letti è:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – Letti: Requisiti di Sicurezza
+          La Certificazione BIS per Letti è un processo di valutazione della
+          conformità attraverso il quale i produttori dimostrano che i propri
+          prodotti sono conformi ai requisiti specificati in IS 17635:2022. Una
+          volta verificata la conformità tramite test, valutazione della
+          fabbrica e revisione normativa, al produttore viene concessa una
+          licenza BIS e può apporre il Marchio ISI sui prodotti certificati.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Questo standard definisce i requisiti essenziali di sicurezza e
-          prestazioni per i letti utilizzati in ambienti residenziali e
-          commerciali.
+          Il quadro di certificazione mira a garantire che i letti disponibili
+          sul mercato indiano soddisfino i requisiti stabiliti relativi a:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022 Copre
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Resistenza strutturale</li>
-          <li>Capacità di carico</li>
-          <li>Stabilità e durata</li>
-          <li>Qualità dei materiali</li>
-          <li>Finitura dei bordi e della superficie</li>
-          <li>Sicurezza contro il collasso</li>
-          <li>Assenza di rischi di intrappolamento</li>
-          <li>Prestazioni a lungo termine</li>
+          <li>Stabilità</li>
+          <li>Durata</li>
+          <li>Prestazioni superficiali</li>
+          <li>Sicurezza durante l&apos;uso normale</li>
+          <li>Prestazioni in condizioni di uso improprio prevedibile</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Qualsiasi letto prodotto o importato in India deve essere conforme a
-          IS 17635:2022 e ottenere una Registrazione BIS per Letti.
+          Questi requisiti aiutano a creare un parametro di riferimento
+          coerente per la qualità e la protezione dei consumatori tra diversi
+          design di letti e materiali di produzione.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Perché la Certificazione BIS è Obbligatoria per i Letti
+          Perché la Certificazione BIS è Importante per i Letti
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          I letti sono utilizzati per periodi prolungati e supportano il peso
-          umano continuamente. Letti progettati male possono causare lesioni,
-          collasso o rischi per la salute a lungo termine.
+          I letti influenzano direttamente la sicurezza dell&apos;utente perché
+          sono progettati per sostenere carichi significativi per periodi
+          prolungati. Prodotti mal progettati o insufficientemente testati
+          possono subire cedimenti strutturali, instabilità, deformazioni o
+          deterioramento prematuro.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Motivi per cui la Certificazione BIS per Letti è Richiesta
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 affronta queste preoccupazioni definendo requisiti
+          standardizzati di prestazione e sicurezza che i produttori devono
+          soddisfare prima che i loro prodotti entrino sul mercato. Lo standard
+          include requisiti relativi a resistenza, stabilità, durata,
+          lavorazione e prestazioni superficiali.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Garantisce l&apos;integrità strutturale</li>
-          <li>Previene collasso e rottura</li>
-          <li>Controlla la qualità dei materiali</li>
-          <li>Elimina bordi taglienti e finiture non sicure</li>
-          <li>Protegge i consumatori</li>
-          <li>Garantisce una qualità nazionale uniforme</li>
-          <li>Obbligatorio secondo la notifica BIS</li>
-          <li>Richiesto per la vendita legale in India</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Per i produttori, la certificazione BIS offre diversi vantaggi:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Autorizzazione legale alla vendita dei prodotti coperti in India</li>
+          <li>Dimostrazione della conformità agli Standard Indiani</li>
+          <li>Migliore accettazione sul mercato</li>
+          <li>Maggiore fiducia dei consumatori</li>
+          <li>Riduzione del rischio di azioni normative</li>
+          <li>
+            Vantaggio competitivo negli appalti istituzionali e commerciali
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Panoramica di IS 17635:2022 per Letti
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Il Governo dell&apos;India ha introdotto Ordini di Controllo Qualità
+          per diversi prodotti di arredamento al fine di garantire che i prodotti
+          immessi sul mercato soddisfino i requisiti prescritti di sicurezza e
+          qualità.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Quando IS 17635:2022 è coperto dal QCO Arredamento applicabile, i
+          produttori devono ottenere la certificazione BIS ai sensi dello
+          Schema-I e utilizzare il Marchio Standard (Marchio ISI) in conformità
+          ai requisiti di licenza BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 è lo Standard Indiano che specifica i requisiti di
+          prestazione e sicurezza per letti destinati a utenti adulti in
+          ambienti domestici e non domestici. Lo standard stabilisce requisiti
+          che aiutano a garantire che i letti rimangano sicuri, funzionali e
+          durevoli per tutta la loro vita utile prevista.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Scopo di IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 è stato sviluppato per fornire uno standard completo
+          basato sulle prestazioni applicabile ai moderni design di letti
+          prodotti con vari materiali e metodi di costruzione. Lo standard
+          sostituisce il precedente IS 7259 (Parte 1):1988, che si concentrava
+          principalmente sui letti in legno.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Lo standard valuta i letti senza limitare la conformità a un
+          particolare materiale o processo di produzione. Si concentra invece
+          su come il prodotto finito si comporta in condizioni di test
+          prescritte. Questo approccio consente una valutazione coerente di
+          costruzioni in legno, metallo, legno ingegnerizzato e altri materiali.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Ambito di IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Secondo lo standard, IS 17635:2022 copre i requisiti relativi alle
+          prestazioni e alla sicurezza dei letti progettati per utenti adulti.
+          Lo standard si applica ai prodotti destinati all&apos;uso sia in
+          ambienti domestici che non domestici.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Lo standard si applica a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Letti completamente prodotti</li>
+          <li>Letti fabbricati</li>
+          <li>Letti pronti per il montaggio dopo l&apos;assemblaggio</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Senza una Licenza BIS per Letti, vendere o importare letti in India è
-          illegale.
+          Ciò garantisce che i prodotti forniti in forma assemblata o
+          smontabile siano valutati utilizzando gli stessi criteri di
+          prestazione e sicurezza.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Obiettivi dello Standard</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Gli obiettivi principali di IS 17635:2022 includono:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Garantire la sicurezza dell&apos;utente</li>
+          <li>Verificare la resistenza strutturale</li>
+          <li>Valutare la stabilità del prodotto</li>
+          <li>Valutare la durata in condizioni di uso ripetuto</li>
+          <li>Stabilire requisiti minimi di prestazione</li>
+          <li>
+            Promuovere una qualità del prodotto coerente tra i produttori
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Lo standard include anche metodologie di test destinate a valutare i
+          letti in condizioni di uso normale e scenari di uso improprio
+          ragionevolmente prevedibili.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Prodotti Coperti da IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 si applica ai letti destinati a utenti adulti in
+          ambienti domestici e non domestici. Lo standard si concentra sulle
+          prestazioni, la sicurezza, la resistenza, la stabilità e la durata
+          del prodotto finito piuttosto che limitare la conformità a un
+          materiale o metodo di produzione specifico.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Lo standard si applica a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Letti completamente prodotti</li>
+          <li>Letti fabbricati</li>
+          <li>Letti pronti per il montaggio (RTA) dopo l&apos;assemblaggio</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I produttori che forniscono letti in condizione smontabile devono
+          garantire che il prodotto assemblato sia conforme a tutti i requisiti
+          applicabili dello standard.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>Nota:</strong> Questo standard non copre letti ad acqua, letti
+          ad aria, letti pieghevoli, letti a castello e letti per persone con
+          esigenze speciali, né i letti per scopi sanitari e medici.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Consulta anche i Prodotti di Arredamento Coperti dalla Certificazione
+            BIS Obbligatoria —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Certificazione BIS per arredamento</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Requisiti Chiave ai sensi di IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;obiettivo principale di IS 17635:2022 è garantire che i letti
+          rimangano sicuri, stabili, durevoli e idonei al loro scopo previsto
+          durante le normali condizioni d&apos;uso. Per raggiungere questo
+          obiettivo, lo standard stabilisce diversi requisiti chiave di
+          prestazione.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisiti di Stabilità</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I letti devono dimostrare un&apos;adeguata resistenza al ribaltamento
+          e all&apos;instabilità durante l&apos;uso normale. I test di
+          stabilità valutano se il prodotto rimane sicuro quando sottoposto a
+          condizioni di carico previste e movimenti dell&apos;utente.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Un letto stabile riduce al minimo il rischio di incidenti e migliora
+          la sicurezza complessiva dell&apos;utente.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisiti di Resistenza</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          I test di resistenza valutano la capacità della struttura del letto di
+          sopportare carichi significativi senza cedimenti strutturali.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Queste valutazioni esaminano tipicamente:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Integrità del telaio del letto</li>
+          <li>Resistenza dei giunti</li>
+          <li>Capacità di carico</li>
+          <li>Resistenza alla deformazione eccessiva</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Lo scopo è garantire che il prodotto possa supportare in sicurezza gli
+          utenti previsti durante il funzionamento quotidiano.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisiti di Durata</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          I test di durata simulano l&apos;uso a lungo termine attraverso cicli
+          ripetuti di carico e movimento.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          L&apos;obiettivo è determinare se:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Le connessioni strutturali rimangono sicure</li>
+          <li>I componenti continuano a funzionare correttamente</li>
+          <li>
+            Le prestazioni del prodotto rimangono accettabili nel tempo
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I requisiti di durata aiutano a garantire che i letti certificati
+          mantengano l&apos;affidabilità per tutta la loro vita utile prevista.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Requisiti di Prestazione Superficiale
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022 fa riferimento ai requisiti di prestazione superficiale
+          applicabili alle finiture dei mobili.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          A seconda della costruzione e dei materiali utilizzati, le superfici
+          possono essere valutate per la resistenza a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Danni meccanici</li>
+          <li>Calore umido</li>
+          <li>Calore secco</li>
+          <li>Macchie</li>
+          <li>Prestazioni di adesione</li>
+          <li>Abrasione e usura</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Questi requisiti aiutano a preservare sia la funzionalità che
+          l&apos;aspetto durante l&apos;uso normale.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Requisiti di Progettazione e Lavorazione
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Lo standard contiene anche requisiti relativi alla qualità della
+          progettazione e alla lavorazione.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tra le altre considerazioni:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>
+            I bordi accessibili non devono presentare rischi di lesioni.
+          </li>
+          <li>
+            Bordi taglienti e sporgenze pericolose devono essere evitati.
+          </li>
+          <li>
+            Le sezioni cave devono essere adeguatamente chiuse dove richiesto.
+          </li>
+          <li>
+            I componenti mobili devono essere progettati per ridurre il rischio
+            di lesioni.
+          </li>
+          <li>
+            Il prodotto finito deve conformarsi alle specifiche di design e
+            modello dichiarate.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisiti di Sicurezza</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La sicurezza è un principio fondamentale in tutto IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Lo standard incorpora requisiti destinati a ridurre i rischi derivanti
+          da:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Cedimento strutturale</li>
+          <li>Bordi taglienti</li>
+          <li>Sporgenze pericolose</li>
+          <li>Guasto dei componenti</li>
+          <li>Sollecitazioni da uso ripetuto</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La conformità a questi requisiti aiuta a garantire che i letti
+          rimangano sicuri in condizioni di uso normale e di uso improprio
+          ragionevolmente prevedibile.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          La Certificazione BIS per Letti è Obbligatoria in India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sì, per i prodotti di arredamento coperti dall&apos;Ordine di Controllo
+          Qualità applicabile, la certificazione BIS è obbligatoria prima che
+          tali prodotti possano essere prodotti, importati, venduti, distribuiti,
+          immagazzinati o messi in vendita in India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          I produttori devono verificare lo stato delle ultime notifiche e le
+          date di implementazione emesse dal Governo dell&apos;India, poiché i
+          requisiti normativi possono essere aggiornati di volta in volta.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Obbligo di Utilizzo del Marchio ISI
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Il Marchio ISI serve come prova che un prodotto è conforme allo
+          Standard Indiano pertinente ed è prodotto con una valida licenza BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Il marchio può essere applicato solo dopo:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Test del prodotto superati con successo</li>
+          <li>Valutazione della fabbrica</li>
+          <li>Approvazione BIS della domanda</li>
+          <li>Concessione della licenza</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          L&apos;uso non autorizzato del Marchio ISI è vietato ai sensi del BIS
+          Act, 2016.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -466,32 +1001,6 @@ const MainContentLeft = () => {
           <li>Rinnovo ogni 1–2 anni</li>
           <li>Controllo qualità continuo</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Ambito della Licenza BIS per Letti
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Questo standard copre i requisiti relativi alle
-          prestazioni e alla sicurezza dei letti per adulti per uso domestico e
-          non domestico.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Questo standard si applica ai letti completamente
-          prodotti/fabbricati. Si applica anche alle unità pronte per
-          l&apos;assemblaggio; in tal caso i requisiti di questo standard si
-          applicano alle unità assemblate.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> Questo standard non copre letti ad acqua, letti
-          ad aria, letti pieghevoli, letti a castello e letti per persone con
-          esigenze speciali, né i letti per scopi sanitari e medici.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -664,23 +1173,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vantaggi della Certificazione BIS per i Letti
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Vendita legale in India</li>
-          <li>Aumento della fiducia dei clienti</li>
-          <li>Accesso alle piattaforme e-commerce</li>
-          <li>Idoneità per gare d&apos;appalto governative</li>
-          <li>Riduzione della responsabilità</li>
-          <li>Forte credibilità del marchio</li>
-          <li>Conformità agli standard indiani</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Sanzioni per la Non Conformità
         </h2>
 
@@ -695,30 +1187,6 @@ const MainContentLeft = () => {
           <li>Azione legale</li>
           <li>Divieto di mercato</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Chi Ha Bisogno del Certificato BIS per i Letti?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Le seguenti entità devono ottenere una Licenza BIS per Letti:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Produttori indiani</li>
-          <li>Produttori stranieri</li>
-          <li>Importatori</li>
-          <li>Marchi di mobili</li>
-          <li>Fornitori OEM/ODM</li>
-          <li>Venditori e-commerce</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ogni unità di produzione richiede una licenza BIS separata.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -859,6 +1327,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Risorse Correlate
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Certificato Marchio ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Licenza BIS FMCS
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadItalian />
 

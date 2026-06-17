@@ -18,9 +18,9 @@ import { ServicesJapanese } from "@/pages/SchemeX/SchemeXJapanese";
 const CANONICAL_URL =
   "https://bis-certifications.com/saikou-de-saishinraisuru-bis-nintei-konsarutanto-nihon";
 const PAGE_IMAGE_SRC =
-  "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantJapan.webp";
+  "/BestandMostTrustedBISCertificationConsultant/日本最高のBISコンサルタント.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BestBISConsultantJapan.webp";
+  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/日本最高のBISコンサルタント.webp";
 
 const PAGE_TITLE =
   "日本で最高かつ最も信頼できるBIS認証コンサルタント – Sun Certifications India";
@@ -300,7 +300,16 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          しかし、インド進出には顧客や流通チャネルの開拓以上のことが必要です。多くの製品は、インド規格局（Bureau of Indian Standards：BIS）が規制する義務的なコンプライアンス要件の対象となります。適切なBIS認証がなければ、規制対象製品をインドで合法的に輸入、販売、流通することはできません。
+          しかし、インド進出には顧客や流通チャネルの開拓以上のことが必要です。多くの製品は、インド規格局（
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>
+          ：BIS）が規制する義務的なコンプライアンス要件の対象となります。適切なBIS認証がなければ、規制対象製品をインドで合法的に輸入、販売、流通することはできません。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -365,6 +374,12 @@ const MainContentLeft = () => {
             <li key={point}>{point}</li>
           ))}
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+        インド市場への製品輸出を計画している日本企業にとって、インド規格局（BIS）が定める認証要件を理解することは非常に重要です。そのため、多くの企業が「インド向けBIS認証」、「インド向けBIS証明書」、「インド向けBISライセンス」、または「インドBIS証明書」に関する情報を求めています。BIS制度は、電子機器、産業機械、化学製品、消費財など幅広い製品カテゴリーに適用され、対象製品についてはインド市場への輸入・販売前に認証取得が必要となる場合があります。インド向けBIS登録、インドBIS認証、またはBISライセンスの取得を目指す場合、技術文書の準備や規制要件への適合が不可欠です。は、日本の製造業者に対し、製品試験、技術文書の作成、規制対応、BIS当局との手続き支援まで、認証プロセス全体を通じて専門的なサポートを提供しています。
+        </p>
+
+        
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

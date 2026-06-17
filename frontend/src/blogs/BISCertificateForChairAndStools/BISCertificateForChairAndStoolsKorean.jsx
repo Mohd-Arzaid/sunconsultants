@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForChairAndStoolsKorean = () => {
   return (
     <div className="relative w-full">
@@ -41,22 +47,24 @@ const BISCertificateForChairAndStoolsKorean = () => {
 export default BISCertificateForChairAndStoolsKorean;
 
 const MetaTags = () => {
-  const title = "의자 및 스툴용 BIS 인증서 | IS 17632:2022 BIS 라이선스";
-  const ogTitle = "의자 및 스툴용 BIS 인증 – IS 17632:2022 가이드";
-  const twitterTitle = "의자 및 스툴용 BIS 라이선스 | IS 17632:2022";
+  const title =
+    "일반용 의자 및 스툴용 BIS 인증 | IS 17632:2022";
+  const ogTitle =
+    "일반용 의자 및 스툴용 BIS 인증 | IS 17632:2022";
+  const twitterTitle =
+    "일반용 의자 및 스툴용 BIS 인증 | IS 17632:2022";
   const metaDescription =
-    "IS 17632:2022에 따른 의자 및 스툴용 BIS 인증서를 받으세요. 인도의 BIS 인증을 위한 프로세스, 문서, 테스트, 비용 및 일정.";
-  const ogDescription =
-    "IS 17632:2022에 따른 의자 및 스툴용 BIS 인증에 대한 완전한 가이드. 프로세스, 비용, 문서, 테스트 및 BIS 라이선스 혜택을 알아보세요.";
-  const twitterDescription =
-    "IS 17632:2022에 따른 의자 및 스툴용 BIS 인증서를 신청하세요. 인도에서 BIS 프로세스, 문서, 테스트, 수수료 및 일정을 알아보세요.";
+    "IS 17632:2022에 따른 일반용 의자 및 스툴용 BIS 인증에 대해 알아보세요. ISI 마크 요건, 테스트, 인증 프로세스, 문서, 혜택 및 FAQ를 이해하세요.";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "의자 및 스툴용 BIS 인증서, 의자 및 스툴용 BIS 라이선스, IS 17632:2022, 의자 및 스툴용 BIS 인증";
+    "일반용 의자 및 스툴용 BIS 인증, IS 17632:2022, ISI 마크 의자 및 스툴, BIS 라이선스 의자 스툴, BIS 인증 가구";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/uija-mich-seutul-is-17632";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
-  const publisher = "Dhruv Aggarwal, Sun Certification India 운영 책임자";
+  const publisher =
+    "Dhruv Aggarwal, Sun Certification India 운영 책임자";
 
   return (
     <Helmet>
@@ -178,7 +186,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    의자 및 스툴용 BIS 인증서 – IS 17632:2022
+                    일반용 의자 및 스툴용 BIS 인증 (IS 17632:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -209,541 +217,510 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          일반용 의자 및 스툴용 BIS 인증서 – IS 17632:2022 완전 가이드
+          일반용 의자 및 스툴용 BIS 인증 (IS 17632:2022) – 완전한 ISI 마크
+          인증 가이드
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="의자 및 스툴용 BIS 라이선스"
-            alt="의자 및 스툴용 BIS 인증서 - IS 17632:2022 BIS 인증"
+            title="일반용 의자 및 스툴용 BIS 라이선스"
+            alt="일반용 의자 및 스툴용 BIS 인증 - IS 17632:2022 ISI 마크 가이드"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          일반용 의자 및 스툴용 BIS 인증서는 인도 표준 IS 17632:2022에 따라 필수
-          요구사항입니다. 이 표준은 가정, 사무실, 상업 지역, 교육 기관,
-          카페테리아, 레스토랑, 호텔 및 공공 장소에서 사용되는 의자와 스툴의
-          안전성, 내구성 및 성능 요구사항을 규정합니다.
+          일반용 의자와 스툴은 가정, 사무실, 교육 기관, 의료 시설, 소매업체,
+          공공 공간 및 상업 환경에서 가장 널리 사용되는 가구 제품 중 하나입니다.
+          이러한 좌석 제품은 정기적이고 장시간 사용되므로 신뢰할 수 있는 성능을
+          보장하기 위해 특정 품질, 안전, 강도 및 내구성 요건을 충족해야 합니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          의자와 스툴은 가장 많이 사용되는 가구 품목 중 하나이며 지속적으로
-          하중, 움직임 및 반복적인 스트레스를 받습니다. 구조적으로 약한 의자나
-          스툴은 갑자기 무너져 부상을 초래할 수 있습니다. 이러한 위험을 방지하고
-          소비자 안전을 보장하기 위해 인도 표준국(BIS)은 모든 제조업체와
-          수입업체가 인도에서 판매하기 전에 의자 및 스툴용 BIS 인증을 받도록
-          요구합니다.
+          제품 품질과 소비자 안전에 대한 강조가 증가함에 따라 인도 표준 준수는
+          가구 제조업체와 수입업체에게 중요한 요건이 되었습니다. IS
+          17632:2022에 따른 일반용 의자 및 스툴용 BIS 인증은 제품이 인도 시장에
+          출시되기 전에 규정된 성능 및 안전 요건을 충족하도록 돕습니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          이 페이지는 IS 17632:2022에 따른 의자 및 스툴용 BIS 인증에 대한 완전한
-          가이드를 제공하며, 인증 프로세스, 필요한 문서, 테스트 요구사항,
-          수수료, 과제, 처벌 및 혜택을 포함합니다.
+          인도 표준국(Bureau of Indian Standards, BIS)에 따른 인증을 통해
+          제조업체는 적합 제품에 ISI 마크를 사용할 수 있습니다. ISI 마크는
+          제품이 인정된 인도 품질 표준을 준수하며 필요한 평가 절차를 거쳤음을
+          보증합니다.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          가구 산업이 계속 성장하고 조달 기관이 인증 제품을 점점 더 선호함에
+          따라 BIS 인증은 제조업체에게 중요한 규정 준수 및 시장 접근 요건이
+          되었습니다.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS 인증이란 무엇인가요?
+          일반용 의자 및 스툴용 BIS 인증의 주요 하이라이트
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS 인증은 인도의 국가 표준 기관인 인도 표준국이 관리하는 제품 규정
-          준수 시스템입니다.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 인증서의 의미
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS 인증서는 제품이 다음을 보장합니다:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>인도 안전 및 품질 표준을 충족</li>
-          <li>BIS 승인 실험실 테스트를 통과</li>
-          <li>공장 검사를 받음</li>
-          <li>소비자를 불안전하거나 기준 미달 제품으로부터 보호</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          인증 제품은 ISI 마크를 표시하여 인도 표준 준수를 보여줍니다.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          적용 표준 – 의자 및 스툴용 IS 17632:2022
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          의자 및 스툴용 BIS 표준은 다음과 같습니다:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – 일반용 의자 및 스툴: 안전 요구사항
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          이 표준은 가정, 사무실, 상업 환경, 공공 장소 및 기관 설정에서 좌석
-          목적으로 사용되는 모든 비전문 의자 및 스툴을 다룹니다.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17632:2022가 다루는 제품
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>일반용 의자</li>
-          <li>식탁 의자</li>
-          <li>사무실 방문객용 의자</li>
-          <li>학습용 의자</li>
-          <li>카페테리아 의자</li>
-          <li>레스토랑 의자</li>
-          <li>회의실 의자</li>
-          <li>대기실 의자</li>
-          <li>나무 의자</li>
-          <li>금속 의자</li>
-          <li>플라스틱 의자(비전문)</li>
-          <li>일반용 스툴</li>
-          <li>바 스툴</li>
-          <li>식탁 스툴</li>
-          <li>스텝 스툴(정의된 기준 내)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          주요 안전 및 성능 매개변수
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022는 다음을 평가합니다:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>구조적 강도</li>
-          <li>안정성</li>
-          <li>반복 사용 시 내구성</li>
-          <li>좌석 강도</li>
-          <li>등받이 성능</li>
-          <li>다리 충격 저항</li>
-          <li>조인트 강도</li>
-          <li>표면 마감 품질</li>
-          <li>가장자리 및 모서리 안전</li>
-          <li>재료 품질</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          인도에서 판매되는 모든 의자와 스툴은 이러한 매개변수를 준수하고 의자
-          및 스툴용 BIS 라이선스를 받아야 합니다.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          의자 및 스툴에 BIS 인증이 필수인 이유
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          의자와 스툴은 사람의 체중을 지지하며 모든 환경에서 자주 사용됩니다.
-          구조적 실패는 다음을 초래할 수 있습니다:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>의자 붕괴</li>
-          <li>다리 파손</li>
-          <li>좌석 균열</li>
-          <li>등받이 고장</li>
-          <li>날카로운 가장자리로 인한 부상</li>
-          <li>전도로 이어지는 불안정성</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 인증의 혜택
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>안전한 좌석 제품 보장</li>
-          <li>사고 및 부상 방지</li>
-          <li>제품 내구성 향상</li>
-          <li>기준 미달 수입 방지</li>
-          <li>균일한 시장 품질 확립</li>
-          <li>고객 신뢰 향상</li>
-          <li>인도 법률에 의한 필수(BIS QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS 인증 없이는 제조업체가 인도에서 합법적으로 의자나 스툴을 판매할 수
-          없습니다.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          의자 및 스툴용 BIS 인증 프로세스(IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS 프로세스는 ISI 마크 인증 계획을 따르며, 테스트, 검사 및 신청
-          검증을 포함합니다.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          단계 1 – 제품 유형 및 표준 식별
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          의자/스툴이 IS 17632:2022에 해당하는지 확인합니다. 사용된 디자인 변형
-          및 재료를 식별합니다.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          단계 2 – BIS 신청서 온라인 제출
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          신청서는 BIS Manak 온라인 포털을 통해 제출되며 다음이 필요합니다:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>제조업체 세부 정보</li>
-          <li>공장 정보</li>
-          <li>제품 사양</li>
-          <li>브랜드/상표 세부 정보</li>
-          <li>제조 프로세스 워크플로우</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          단계 3 – BIS 인증 수수료 지불
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          수수료에는 다음이 포함됩니다:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>신청 수수료</li>
-          <li>처리 수수료</li>
-          <li>샘플 테스트 요금</li>
-          <li>공장 검사 수수료</li>
-          <li>마킹 수수료</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          단계 4 – IS 17632:2022에 따른 제품 테스트
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          필수 테스트는 BIS 인정 실험실에서 수행됩니다.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          테스트에는 다음이 포함됩니다:
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>안정성 테스트</li>
-          <li>좌석 강도 테스트</li>
-          <li>등받이 내구성 테스트</li>
-          <li>다리 전방/측면/후방 하중 테스트</li>
-          <li>좌석 충격 테스트</li>
-          <li>낙하 테스트</li>
-          <li>피로 테스트</li>
-          <li>표면 마감 테스트</li>
-          <li>날카로운 가장자리 테스트</li>
-          <li>반복 사이클 하의 구조적 내구성</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          테스트 결과는 IS 17632:2022에 대한 완전한 준수를 보여야 합니다.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          단계 5 – BIS에 의한 공장 검사
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS 담당자가 공장을 방문하여 다음을 평가합니다:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>제조 프로세스</li>
-          <li>원자재 검사</li>
-          <li>품질 관리 절차</li>
-          <li>테스트 능력</li>
-          <li>장비 교정</li>
-          <li>생산량</li>
-          <li>BIS 테스트 및 검사 계획(STI) 준수</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          단계 6 – BIS 라이선스 부여
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          테스트와 검사가 성공적이면 BIS는 다음을 발급합니다:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS 인증서(ISI 마크 라이선스)</li>
-          <li>CML 번호</li>
-          <li>의자 및 스툴에 ISI 마크를 부착할 수 있는 승인</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          단계 7 – 라이선스 후 의무
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          제조업체는 다음을 수행해야 합니다:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS 라벨링 요구사항에 따라 ISI 마크 사용</li>
-          <li>품질 관리 기록 유지</li>
-          <li>정기적인 BIS 감시 검사 받기</li>
-          <li>1~2년마다 라이선스 갱신</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          의자 및 스툴용 BIS 라이선스 범위
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          이 표준은 일반용 의자 및 스툴에 대한 요구사항을 다룹니다. 이 표준은
-          완전히 제조/제작된 일반용 의자 및 스툴에 적용됩니다. 또한 조립 준비
-          완료 유닛에도 적용되며, 이 경우 이 표준의 요구사항은 조립된 유닛에
-          적용됩니다.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          의자 및 스툴용 BIS 인증에 필요한 문서
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          제조업체 문서
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>공장 라이선스/등록</li>
-          <li>제조 프로세스 플로우차트</li>
-          <li>기계 목록</li>
-          <li>사내 테스트 장비 목록</li>
-          <li>교정 인증서</li>
-          <li>공장 레이아웃 및 평면도</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          기술 문서
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>의자/스툴 도면</li>
-          <li>치수 및 사양</li>
-          <li>자재 명세서</li>
-          <li>안전 기능 설명</li>
-          <li>내부 품질 테스트 보고서</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          법적 문서
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>신분증 및 주소 증명</li>
-          <li>브랜드 승인서</li>
-          <li>상표 인증서(선택사항)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS 신청 문서
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>신청서</li>
-          <li>테스트 요청서</li>
-          <li>선언서</li>
-          <li>승인서</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          의자 및 스툴용 테스트 요구사항(IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022는 광범위한 기계적, 구조적 및 안전 테스트를 포함합니다.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          필수 테스트
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  조항
+                  항목
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  요구사항
+                  세부사항
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  디자인 및 제작
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  팔걸이 없는 의자의 전방 및 측면 전도
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  후방 전도
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  팔걸이 있는 의자의 측면 전도
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  스툴/푸프(모든 방향)
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  강도 테스트
-                </TableCell>
-              </TableRow>
+              {[
+                ["제품명", "일반용 의자 및 스툴"],
+                ["적용 인도 표준", "IS 17632:2022"],
+                ["인증 유형", "BIS 제품 인증"],
+                ["인증 제도", "Scheme-I (ISI 마크 인증)"],
+                ["적용 마크", "ISI 마크"],
+                ["규제 기관", "Bureau of Indian Standards"],
+                ["해당 부처", "Ministry of Commerce and Industry"],
+                [
+                  "규정 준수 요건",
+                  "해당 가구 QCO(Quality Control Order)에 따른 필수 사항",
+                ],
+                ["제품 카테고리", "가구"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "인증 제도" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Scheme-I (ISI 마크 인증)
+                      </a>
+                    ) : particular === "규정 준수 요건" ? (
+                      <>
+                        해당{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-chairs-and-stools"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>가구 QCO(Quality Control Order)</strong>
+                        </a>
+                        에 따른 필수 사항
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          이러한 테스트는 실제 조건에서 안전한 일상 사용을 보장합니다.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          일반용 의자 및 스툴용 BIS 인증이란?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          일반용 의자 및 스툴용 BIS 인증은 BIS 제품 인증 제도에 따라 수행되는
+          적합성 평가 프로세스입니다.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          인증의 목적은 제품이 IS 17632:2022에 명시된 요구사항을 준수하는지
+          확인하는 것입니다. 인증이 부여되면 제조업체는 제품에 ISI 마크를
+          사용할 수 있습니다.
+        </p>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          일반적인 과제 및 해결 방법
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          인증 프로세스는 다음을 포함한 제품 성능의 다양한 측면을 평가합니다:
+        </p>
 
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>안정성 테스트에 실패하는 의자</strong>
-            <br />
-            부적절한 무게 분배로 인해 발생합니다.
-            <br />
-            해결책: 다리 디자인 개선, 베이스 영역 확대.
-          </li>
-          <li>
-            <strong>테스트 실패를 유발하는 약한 조인트</strong>
-            <br />
-            해결책: 보강 재료 및 더 나은 커넥터 사용.
-          </li>
-          <li>
-            <strong>부적절한 사내 테스트 장비</strong>
-            <br />
-            해결책: 필요한 BIS 준수 장비 설치.
-          </li>
-          <li>
-            <strong>문서 불일치</strong>
-            <br />
-            해결책: 신청 전에 체계적으로 문서 준비.
-          </li>
-          <li>
-            <strong>제품 변형이 제대로 매핑되지 않음</strong>
-            <br />
-            해결책: 구조 및 테스트 매개변수에 따라 제품 그룹화.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          의자 및 스툴용 BIS 인증의 혜택
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>인도에서 판매할 수 있는 법적 허가</li>
-          <li>제품 안전성 향상</li>
-          <li>고객 신뢰 강화</li>
-          <li>제품 책임 위험 감소</li>
-          <li>전자상거래 목록에 필요</li>
-          <li>정부 입찰에 필수</li>
-          <li>브랜드 신뢰성 향상</li>
-          <li>경쟁 우위</li>
+        <ul className={LIST_CLASS}>
+          <li>강도</li>
+          <li>안정성</li>
+          <li>내구성</li>
+          <li>구조적 성능</li>
+          <li>안전 요건</li>
+          <li>재료 품질</li>
+          <li>제작 품질</li>
         </ul>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이 인증은 인도 시장에 공급되는 좌석 제품이 확립된 품질 및 안전
+          기준을 충족하도록 돕습니다.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          비준수에 대한 처벌
+          IS 17632:2022 개요
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022는 일반용 의자 및 스툴에 대한 요구사항을 규정하는 인도
+          표준입니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이 표준은 일반 용도를 위한 좌석 가구의 안전, 강도, 내구성, 안정성 및
+          전반적인 성능과 관련된 요구사항을 수립합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          이 표준은 다음에 적용됩니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>완전히 제조된 의자 및 스툴</li>
+          <li>가공된 의자 및 스툴</li>
+          <li>조립 후의 조립식 제품</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이 표준의 목적은 가구 제품이 의도된 사용 기간 동안 안전하고 신뢰할 수
+          있으며 내구성 있는 성능을 제공하도록 하는 것입니다.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17632:2022의 주요 요건
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>강도 요건</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          일반용 의자와 스툴은 정상 사용 중 예상되는 하중 조건을 견딜 수 있는
+          충분한 구조적 강도를 갖추어야 합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>안정성 요건</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          가구는 의도된 사용 중 안정적으로 유지되어야 하며 불필요한 전도 위험을
+          초래해서는 안 됩니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>내구성 요건</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          제품은 반복적인 사용 주기에 걸쳐 구조적 무결성과 성능을 유지할 수
+          있어야 합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>안전 요건</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이 표준에는 가구 사용과 관련된 위험을 최소화하기 위한 안전 관련
+          요건이 포함되어 있습니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>재료 품질 및 제작 품질</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          재료의 품질, 제조 방식, 조립 방법, 접합부 및 마감은 표준 준수에
+          크게 기여합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>인체공학적 고려사항</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          이 표준은 사용자 편의와 실용적 기능성에 기여하는 성능 관련
+          고려사항을 포함합니다.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          IS 17632:2022 적용 제품
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS 인증 없이 의자나 스툴을 판매하면 다음이 발생할 수 있습니다:
+          이 표준은 일반적으로 다음에 적용됩니다:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>과중한 금전적 벌금</li>
-          <li>제품 리콜/압수</li>
-          <li>공장 라이선스 취소</li>
-          <li>형사 기소</li>
-          <li>수입 제한</li>
-          <li>시장 블랙리스트 등록</li>
+        <ul className={LIST_CLASS}>
+          <li>일반용 의자</li>
+          <li>일반용 스툴</li>
+          <li>일반 용도를 위한 고정 좌석 가구</li>
+          <li>조립 후의 조립식 좌석 제품</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          처벌은 BIS법 2016에 따라 집행됩니다.
+          제조업체는 자사 제품에 대한 적용 가능성을 판단하기 위해 표준의
+          적용 범위를 신중히 검토해야 합니다.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            또한 필수 BIS 인증 대상 가구 제품도 확인하세요 —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>가구용 BIS 인증</strong>
+          </a>
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          의자 및 스툴용 BIS 인증이 필요한 사람
+          일반용 의자 및 스툴에 BIS 인증이 필수인가요?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">필수 대상:</p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          네. 해당 가구 품질관리령(Quality Control Order, QCO)에 포함되는
+          가구 제품은 인도 시장에서 제조, 수입, 판매, 유통 또는 공급되기 전에
+          관련 인도 표준을 준수하고 BIS 인증을 받아야 합니다.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>인도 제조업체</li>
-          <li>인도로 수출하는 외국 제조업체</li>
-          <li>수입업체</li>
-          <li>브랜드 소유자/무역업자</li>
-          <li>OEM/ODM 공급업체</li>
-          <li>소매 체인</li>
-          <li>온라인 판매업체</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          해당 규제 체계에 포함되는 제조업체는 BIS 라이선스를 취득하고 BIS가
+          규정한 마킹 요건을 준수해야 합니다.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS 인증을 위한 테스트 요건
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          인증이 부여되기 전에 제품 샘플은 인정된 실험실에서 수행되는 테스트를
+          통해 평가되어야 합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          테스트는 일반적으로 다음 매개변수에 중점을 둡니다:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>구조적 성능 평가 —</strong> 의자나 스툴이 정상 사용
+            조건에서 고장 없이 견딜 수 있는지 확인합니다.
+          </li>
+          <li>
+            <strong>안정성 테스트 —</strong> 가구가 의도된 사용 중 안정적으로
+            유지되고 전도에 저항하는지 평가합니다.
+          </li>
+          <li>
+            <strong>강도 평가 —</strong> 프레임, 접합부 및 지지대의 하중
+            지지 능력과 구조적 무결성을 평가합니다.
+          </li>
+          <li>
+            <strong>내구성 평가 —</strong> 제품의 사용 수명에 걸친 반복
+            사용 주기 후 성능 유지 여부를 확인합니다.
+          </li>
+          <li>
+            <strong>안전 평가 —</strong> 잠재적 위험을 식별하고 규정된 안전
+            요건 준수 여부를 검증합니다.
+          </li>
+          <li>
+            <strong>제작 품질 검사 —</strong> 구조 품질, 마감, 조립 무결성
+            및 전반적인 제작 기준을 검토합니다.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          제품 마킹 요건
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17632:2022에 따라 인증된 제품은 일반적으로 다음과 같은 식별
+          정보를 표시해야 합니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>제조업체 이름 또는 상표</li>
+          <li>모델 또는 디자인 식별</li>
+          <li>배치 또는 로트 번호</li>
+          <li>제조일</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          각 공장에는 별도의 BIS 라이선스가 필요합니다.
+          ISI 마크는 유효한 BIS 라이선스를 취득한 후에만 부착할 수 있습니다.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          일반용 의자 및 스툴용 BIS 인증 프로세스
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>1단계: 제품 범위 평가</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          첫 번째 단계는 제품이 IS 17632:2022 및 해당 가구 QCO의 적용 범위에
+          해당하는지 확인하는 것입니다.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          인증 프로세스를 시작하기 전에 의자 또는 스툴 유형, 의도된 용도,
+          재료 및 구조를 검토하세요.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>2단계: 문서 준비</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          제조업체는 회사 기록, 공장 세부사항, 제품 사양 및 품질 관리
+          절차를 포함하여 인증에 필요한 기술 및 규정 준수 문서를 준비합니다.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          완전하고 정확한 문서는 BIS 검토 중 불필요한 지연을 방지하는 데
+          도움이 됩니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>3단계: 제품 테스트</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          대표 샘플은 BIS 인정 실험실에서 IS 17632:2022 요건 준수 여부를
+          확인하기 위해 테스트됩니다.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          실험실 테스트 보고서는 인증 신청을 뒷받침하는 핵심 기술 문서입니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>4단계: BIS 신청서 제출</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          인증 신청서는 지원 문서, 테스트 보고서 및 제조 정보와 함께
+          제출됩니다.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          BIS는 다음 단계로 진행하기 전에 신청서의 완전성과 기술적 준수
+          여부를 검토합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>5단계: 공장 검사</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS는 제조 시설, 생산 시스템 및 품질 관리 프로세스를 평가하여
+          적합 제품을 일관되게 생산할 수 있는 능력을 확인할 수 있습니다.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          이 평가는 일반적으로 생산 인프라, QC 시스템, 원자재 관리 및 제품
+          추적성을 포함합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>6단계: 기술 검토</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          인증 결정이 내려지기 전에 신청서, 테스트 보고서 및 검사 결과가
+          BIS에 의해 검토됩니다.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          검토 중 제기된 관찰 사항이나 결함은 신청자가 해결해야 합니다.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>7단계: 라이선스 부여</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          만족스러운 준수가 확인되면 BIS는 라이선스를 부여하고 인증된 일반용
+          의자 및 스툴에 ISI 마크 사용을 승인합니다.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          제조업체는 라이선스 기간 전체에 걸쳐 BIS 요건을 계속 준수해야
+          합니다.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS 인증의 혜택
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>인도 규정 준수 —</strong> 해당 가구 QCO에 따른 필수 품질
+            및 안전 요건 충족.
+          </li>
+          <li>
+            <strong>합법적 시장 접근 —</strong> 관련 규제 요건에 따라 인도에서
+            인증된 의자 및 스툴 공급.
+          </li>
+          <li>
+            <strong>제품 신뢰도 향상 —</strong> ISI 마크는 인정된 인도 표준
+            준수를 입증합니다.
+          </li>
+          <li>
+            <strong>고객 신뢰 증가 —</strong> 소비자와 기관 구매자는 확립된
+            기준에 따라 평가된 제품을 선호합니다.
+          </li>
+          <li>
+            <strong>경쟁 우위 —</strong> 상업 및 정부 조달 프로세스에서 더
+            높은 수용성.
+          </li>
+          <li>
+            <strong>브랜드 평판 개선 —</strong> 제품 품질, 안전 및 장기적
+            신뢰성에 대한 헌신을 보여줍니다.
+          </li>
+          <li>
+            <strong>중소기업 지원 —</strong> 중소 제조업체가 시장 입지를
+            강화하고 고객 신뢰를 구축하는 데 도움.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          인증 과정에서 흔히 직면하는 과제
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>제품 테스트 실패 —</strong> 설계 또는 제조상의 결함으로
+            실험실 평가 중 비준수가 발생할 수 있습니다.
+          </li>
+          <li>
+            <strong>문서 문제 —</strong> 불완전하거나 일관되지 않은 기록은
+            인증 지연의 흔한 원인입니다.
+          </li>
+          <li>
+            <strong>제조 준수 격차 —</strong> 인증이 부여되기 전에 품질 관리
+            시스템을 개선해야 할 수 있습니다.
+          </li>
+          <li>
+            <strong>규제 복잡성 —</strong> 전문가의 안내 없이는 테스트, 검사
+            및 인증 절차를 관리하기 어려울 수 있습니다.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sun Certifications India를 선택하는 이유
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India는 인도 전역의 제조업체, 수입업체, 수출업체
+          및 기업이 규제 준수 요건을 충족하도록 지원합니다.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          저희 서비스에는 다음이 포함됩니다:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>제품 적용 가능성 평가</li>
+          <li>BIS 인증 컨설팅</li>
+          <li>문서 지원</li>
+          <li>실험실 테스트 조정</li>
+          <li>공장 검사 준비</li>
+          <li>신청 관리</li>
+          <li>규제 준수 지원</li>
+          <li>인증 후 지원</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          저희의 목표는 고객이 인증 요건을 효율적으로 탐색하고 최소한의
+          지연으로 규정 준수를 달성하도록 돕는 것입니다.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -751,108 +728,125 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022에 따른 일반용 의자 및 스툴용 BIS 인증서는 제품 안전,
-          구조적 안정성 및 내구성을 보장하기 위해 필수입니다. BIS 인증은
-          제조업체가 고품질 표준을 유지하는 데 도움이 될 뿐만 아니라 합법적인
-          시장 접근을 가능하게 하고 소비자 신뢰를 높입니다.
+          IS 17632:2022에 따른 일반용 의자 및 스툴용 BIS 인증은 제품 품질,
+          안전, 강도, 안정성 및 내구성을 보장하는 데 중요한 역할을 합니다. 이
+          인증은 제조업체가 인도 표준 준수를 입증하는 동시에 고객 신뢰를
+          강화하고 시장 접근을 지원합니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          전문적인 지원을 통해 테스트부터 검사 및 승인까지의 인증 프로세스는
-          원활하고 예측 가능하며 완전히 준수하게 됩니다.
+          품질이 보장된 가구 제품에 대한 수요가 계속 증가함에 따라 BIS 인증과
+          ISI 마크는 소비자, 기관 및 조달 기관에게 귀중한 보증을 제공합니다.
+          규정 준수에 투자하는 제조업체는 규제 요건을 충족할 뿐만 아니라
+          경쟁력과 장기적인 시장 평판을 향상시킵니다.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022에 따른 일반용 의자 및 스툴용 BIS 인증을 계획하고
+          계시다면 Sun Certifications India가 인증 프로세스 전반에 걸쳐 전문
+          안내와 종합적인 규정 준수 지원을 제공할 수 있습니다.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQ – 의자 및 스툴용 BIS 인증서
+          FAQ – 일반용 의자 및 스툴용 BIS 인증 (IS 17632:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. 의자 및 스툴에 BIS 인증이 필수인가요?</strong>
+              <strong>1. IS 17632:2022란 무엇인가요?</strong>
               <br />
-              네, IS 17632:2022에 따라 모든 일반용 의자 및 스툴은 인도에서
-              판매되기 전에 BIS 인증을 받아야 합니다.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. 어떤 테스트가 필요한가요?</strong>
-              <br />
-              안정성, 강도, 내구성, 충격, 피로 및 재료 안전 테스트.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. BIS 인증에는 얼마나 걸리나요?</strong>
-              <br />
-              일반적으로 30~45일.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. 인증 비용은 얼마인가요?</strong>
-              <br />
-              테스트 및 검사에 따라 약 ₹60,000~₹1,30,000.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. 외국 제조업체도 신청할 수 있나요?</strong>
-              <br />
-              네, FMCS 계획 하에서 신청할 수 있습니다.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. ISI 마킹이 필수인가요?</strong>
-              <br />
-              네, BIS 라이선스가 부여된 후 필수입니다.
+              IS 17632:2022는 일반용 의자 및 스툴에 대한 요구사항을 규정하는
+              인도 표준입니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                7. 의자가 BIS 테스트에 실패하는 이유는 무엇인가요?
+                2. 일반용 의자 및 스툴에 BIS 인증이 필수인가요?
               </strong>
               <br />
-              일반적인 원인에는 약한 다리, 조인트 강도 부족, 불안정성이
-              포함됩니다.
+              해당 가구 품질관리령에 포함되는 제품은 BIS 인증 요건을
+              준수해야 합니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>3. ISI 마크란 무엇인가요?</strong>
+              <br />
+              ISI 마크는 BIS 제품 인증 제도에 따라 발급되는 표준 인증
+              마크입니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. 누가 BIS 인증을 신청할 수 있나요?</strong>
+              <br />
+              인도 제조업체와 외국 제조업체 모두 인증을 신청할 수 있습니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. BIS 인증에 제품 테스트가 필요한가요?</strong>
+              <br />
+              네. 제품 테스트는 인증 프로세스의 중요한 구성 요소입니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. 여러 모델을 하나의 라이선스로 커버할 수 있나요?
+                6. 조립식 의자도 IS 17632:2022에 포함되나요?
               </strong>
               <br />
-              유사성 및 표준 준수 기준을 충족하는 경우에만 가능합니다.
+              네. 이 표준은 조립 후의 조립식 제품에 적용됩니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. 공장 검사가 필요한가요?</strong>
+              <strong>
+                7. IS 17632:2022 적용 범위에서 제외되는 제품은 무엇인가요?
+              </strong>
               <br />
-              네, ISI 마크 인증에는 필수입니다.
+              리클라이닝 의자, 흔들 의자, 기울임 의자, 소파 및 특정 전문
+              좌석 제품 등은 일반적으로 제외됩니다.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. 어떤 문서가 필요한가요?</strong>
+              <strong>8. BIS 인증의 혜택은 무엇인가요?</strong>
               <br />
-              공장 라이선스, 기술 사양, 기계 목록, QC 계획, 제품 도면 등.
+              규제 준수, 제품 신뢰도 향상, 고객 신뢰 강화 및 시장 수용성
+              개선 등의 혜택이 있습니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. 외국 제조업체도 BIS 인증을 받을 수 있나요?
+              </strong>
+              <br />
+              네. 외국 제조업체는 해외 제조업체를 위한 해당 BIS 인증 경로를
+              통해 신청할 수 있습니다.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. Sun Certifications India는 어떻게 도울 수 있나요?</strong>
+              <br />
+              Sun Certifications India는 문서, 테스트 조정, 신청 관리 및
+              규정 준수 지원을 포함한 BIS 인증에 대한 종합 지원을
+              제공합니다.
             </p>
           </div>
         </div>
@@ -869,6 +863,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          관련 자료
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISI 인증
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              외국 제조업체용 BIS 인증
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadKorean />
 

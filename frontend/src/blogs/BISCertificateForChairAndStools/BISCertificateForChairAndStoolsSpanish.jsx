@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForChairAndStoolsSpanish = () => {
   return (
     <div className="relative w-full">
@@ -42,18 +48,17 @@ export default BISCertificateForChairAndStoolsSpanish;
 
 const MetaTags = () => {
   const title =
-    "Certificado BIS para Sillas y Taburetes | IS 17632:2022 Licencia BIS";
+    "Certificación BIS para Sillas y Taburetes de Uso General | IS 17632:2022";
   const ogTitle =
-    "Certificación BIS para Sillas y Taburetes – Guía IS 17632:2022";
-  const twitterTitle = "Licencia BIS para Sillas y Taburetes | IS 17632:2022";
+    "Certificación BIS para Sillas y Taburetes de Uso General | IS 17632:2022";
+  const twitterTitle =
+    "Certificación BIS para Sillas y Taburetes de Uso General | IS 17632:2022";
   const metaDescription =
-    "Obtén el Certificado BIS para Sillas y Taburetes según IS 17632:2022. Proceso, documentos, pruebas, costos y cronograma para la Certificación BIS en India.";
-  const ogDescription =
-    "Guía completa sobre la Certificación BIS para Sillas y Taburetes según IS 17632:2022. Conoce el proceso, costos, documentos, pruebas y beneficios de la licencia BIS.";
-  const twitterDescription =
-    "Solicita el Certificado BIS para Sillas y Taburetes según IS 17632:2022. Aprende sobre el proceso BIS, documentos, pruebas, tarifas y cronograma en India.";
+    "Conozca todo sobre la Certificación BIS para Sillas y Taburetes de Uso General según IS 17632:2022. Comprenda los requisitos de la Marca ISI, pruebas, proceso de certificación, documentos, beneficios y preguntas frecuentes";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "Certificado BIS para Sillas y Taburetes, Licencia BIS para Sillas y Taburetes, IS 17632:2022, Certificación BIS para Sillas y Taburetes";
+    "Certificación BIS para Sillas y Taburetes de Uso General, IS 17632:2022, Marca ISI Sillas y Taburetes, Licencia BIS Sillas Taburetes, Certificación BIS Muebles";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/sillas-y-taburetes-is-17632";
   const websiteName = "Sun Certifications India";
@@ -181,7 +186,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Certificado BIS para Sillas y Taburetes – IS 17632:2022
+                    Certificación BIS para Sillas y Taburetes de Uso General (IS
+                    17632:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -212,564 +218,567 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Certificado BIS para Sillas y Taburetes de Uso General – Guía Completa
-          IS 17632:2022
+          Certificación BIS para Sillas y Taburetes de Uso General (IS 17632:2022)
+          – Guía Completa de Certificación de Marca ISI
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="Licencia BIS para Sillas y Taburetes"
-            alt="Certificado BIS para Sillas y Taburetes - Certificación BIS IS 17632:2022"
+            title="Licencia BIS para Sillas y Taburetes de Uso General"
+            alt="Certificación BIS para Sillas y Taburetes de Uso General - Guía de Marca ISI IS 17632:2022"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          El Certificado BIS para Sillas y Taburetes de Uso General es un
-          requisito obligatorio según el Estándar Indio IS 17632:2022. Este
-          estándar especifica los requisitos de seguridad, durabilidad y
-          rendimiento para sillas y taburetes utilizados en hogares, oficinas,
-          áreas comerciales, instituciones educativas, cafeterías, restaurantes,
-          hoteles y espacios públicos.
+          Las sillas y taburetes de uso general se encuentran entre los productos
+          de mobiliario más utilizados en hogares, oficinas, instituciones
+          educativas, centros de salud, establecimientos comerciales, espacios
+          públicos y entornos comerciales. Dado que estos productos de asiento
+          están sujetos a un uso regular y prolongado, deben cumplir con
+          requisitos específicos de calidad, seguridad, resistencia y
+          durabilidad para garantizar un rendimiento confiable.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Las sillas y taburetes se encuentran entre los artículos de mobiliario
-          más utilizados y están constantemente sometidos a carga, movimiento y
-          estrés repetitivo. Una silla o taburete estructuralmente débil puede
-          colapsar repentinamente, provocando lesiones. Para prevenir tales
-          peligros y garantizar la seguridad del consumidor, la Oficina de
-          Estándares de la India (BIS) exige que todos los fabricantes e
-          importadores obtengan la Certificación BIS para Sillas y Taburetes
-          antes de venderlos en India.
+          Con el creciente énfasis en la calidad del producto y la seguridad del
+          consumidor, el cumplimiento de las Normas Indias se ha convertido en un
+          requisito importante para fabricantes e importadores de muebles. La
+          Certificación BIS para Sillas y Taburetes de Uso General según IS
+          17632:2022 ayuda a garantizar que los productos cumplan con los
+          requisitos de rendimiento y seguridad prescritos antes de ser
+          comercializados en el mercado indio.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Esta página proporciona una guía completa sobre la Certificación BIS
-          para sillas y taburetes según IS 17632:2022, incluyendo el proceso de
-          certificación, documentos requeridos, requisitos de pruebas, tarifas,
-          desafíos, sanciones y beneficios.
+          La certificación bajo la Oficina de Normas de India (BIS) permite a
+          los fabricantes usar la Marca ISI en productos conformes. La Marca ISI
+          sirve como garantía de que el producto cumple con las normas indias de
+          calidad reconocidas y ha pasado por el proceso de evaluación requerido.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          A medida que la industria del mobiliario continúa creciendo y las
+          agencias de adquisición prefieren cada vez más productos certificados,
+          la Certificación BIS se ha convertido en un requisito importante de
+          cumplimiento y acceso al mercado para los fabricantes.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ¿Qué es la Certificación BIS?
+          Aspectos Clave de la Certificación BIS para Sillas y Taburetes de Uso
+          General
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          La Certificación BIS es un sistema de cumplimiento de productos
-          gobernado por la Oficina de Estándares de la India, la autoridad
-          nacional de estándares de India.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Significado del Certificado BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Un Certificado BIS garantiza que un producto:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Cumple con los estándares de seguridad y calidad de India</li>
-          <li>Ha pasado las pruebas de laboratorio aprobadas por BIS</li>
-          <li>Ha sido sometido a inspección de fábrica</li>
-          <li>
-            Protege a los consumidores de productos inseguros o de calidad
-            inferior
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Los productos certificados muestran la Marca ISI, demostrando el
-          cumplimiento con los Estándares Indios.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Estándar Aplicable – IS 17632:2022 para Sillas y Taburetes
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          El Estándar BIS para sillas y taburetes es:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – Sillas y Taburetes de Uso General:
-          Requisitos de Seguridad
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Este estándar cubre todas las sillas y taburetes no especializados
-          utilizados para propósitos de asiento en hogares, oficinas, entornos
-          comerciales, lugares públicos y configuraciones institucionales.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Productos Cubiertos por IS 17632:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Sillas de uso general</li>
-          <li>Sillas de comedor</li>
-          <li>Sillas para visitantes de oficina</li>
-          <li>Sillas de estudio</li>
-          <li>Sillas de cafetería</li>
-          <li>Sillas de restaurante</li>
-          <li>Sillas de sala de reuniones</li>
-          <li>Sillas de área de espera</li>
-          <li>Sillas de madera</li>
-          <li>Sillas de metal</li>
-          <li>Sillas de plástico (no especializadas)</li>
-          <li>Taburetes de uso general</li>
-          <li>Taburetes de bar</li>
-          <li>Taburetes de comedor</li>
-          <li>Taburetes escalonados (dentro de criterios definidos)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Parámetros Clave de Seguridad y Rendimiento
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 evalúa:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Resistencia estructural</li>
-          <li>Estabilidad</li>
-          <li>Durabilidad bajo uso repetido</li>
-          <li>Resistencia del asiento</li>
-          <li>Rendimiento del respaldo</li>
-          <li>Resistencia al impacto de las patas</li>
-          <li>Resistencia de las uniones</li>
-          <li>Calidad del acabado superficial</li>
-          <li>Seguridad de bordes y esquinas</li>
-          <li>Calidad del material</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Todas las sillas y taburetes vendidos en India deben cumplir con estos
-          parámetros y obtener una Licencia BIS para Sillas y Taburetes.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ¿Por qué la Certificación BIS es Obligatoria para Sillas y Taburetes?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Las sillas y taburetes soportan el peso humano y se utilizan
-          frecuentemente en todos los entornos. El fallo estructural puede
-          provocar:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Colapso de sillas</li>
-          <li>Rotura de patas</li>
-          <li>Agrietamiento del asiento</li>
-          <li>Fallo del respaldo</li>
-          <li>Lesiones por bordes afilados</li>
-          <li>Inestabilidad que provoca caídas</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Beneficios de la Certificación BIS
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Garantiza productos de asiento seguros</li>
-          <li>Previene accidentes y lesiones</li>
-          <li>Mejora la durabilidad del producto</li>
-          <li>Previene importaciones de calidad inferior</li>
-          <li>Establece una calidad uniforme del mercado</li>
-          <li>Aumenta la confianza del cliente</li>
-          <li>Obligatorio por ley india (BIS QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sin la Certificación BIS, los fabricantes no pueden vender legalmente
-          sillas o taburetes en India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Proceso de Certificación BIS para Sillas y Taburetes (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          El proceso BIS sigue el Esquema de Certificación de Marca ISI, que
-          involucra pruebas, inspección y verificación de solicitud.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 1 – Identificar Tipo de Producto y Estándar
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Confirma que la silla/taburete está bajo IS 17632:2022. Identifica
-          variantes de diseño y materiales utilizados.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 2 – Enviar Solicitud BIS en Línea
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          La solicitud se presenta a través del Portal en Línea BIS Manak,
-          requiriendo:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Detalles del fabricante</li>
-          <li>Información de la fábrica</li>
-          <li>Especificaciones del producto</li>
-          <li>Detalles de marca/marca comercial</li>
-          <li>Flujo de trabajo del proceso de fabricación</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 3 – Pagar Tarifas de Certificación BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Las tarifas incluyen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Tarifa de solicitud</li>
-          <li>Tarifa de procesamiento</li>
-          <li>Cargos por pruebas de muestra</li>
-          <li>Tarifas de inspección de fábrica</li>
-          <li>Tarifas de marcado</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 4 – Pruebas de Producto según IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Las pruebas obligatorias se realizan en un laboratorio reconocido por
-          BIS.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Las Pruebas Incluyen:
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Prueba de Estabilidad</li>
-          <li>Prueba de Resistencia del Asiento</li>
-          <li>Prueba de Durabilidad del Respaldo</li>
-          <li>Prueba de Carga de Pata Adelante/Lateral/Trasera</li>
-          <li>Prueba de Impacto del Asiento</li>
-          <li>Prueba de Caída</li>
-          <li>Prueba de Fatiga</li>
-          <li>Prueba de Acabado Superficial</li>
-          <li>Prueba de Borde Afilado</li>
-          <li>Durabilidad estructural bajo ciclos repetidos</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Los resultados de las pruebas deben mostrar cumplimiento completo con
-          IS 17632:2022.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 5 – Inspección de Fábrica por BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Un oficial de BIS visita la fábrica para evaluar:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Proceso de fabricación</li>
-          <li>Inspección de materias primas</li>
-          <li>Procedimientos de control de calidad</li>
-          <li>Capacidad de pruebas</li>
-          <li>Calibración de equipos</li>
-          <li>Volumen de producción</li>
-          <li>Cumplimiento con el Esquema BIS de Pruebas e Inspección (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 6 – Otorgamiento de Licencia BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Si las pruebas y la inspección son exitosas, BIS emite:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Certificado BIS (Licencia de Marca ISI)</li>
-          <li>Número CML</li>
-          <li>Aprobación para fijar la Marca ISI en sillas y taburetes</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Paso 7 – Obligaciones Post-Licencia
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Los fabricantes deben:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Usar la Marca ISI según los requisitos de etiquetado BIS</li>
-          <li>Mantener registros de control de calidad</li>
-          <li>Someterse a inspecciones de vigilancia BIS regulares</li>
-          <li>Renovar la licencia cada 1–2 años</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Alcance de la Licencia BIS para Sillas y Taburetes
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Este estándar cubre los requisitos para sillas y taburetes de uso
-          general. Este estándar se aplica a sillas y taburetes de uso general
-          completamente fabricados/construidos. También se aplica a unidades
-          listas para ensamblar; en ese caso, los requisitos de este estándar se
-          aplicarán a las unidades ensambladas.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Documentos Requeridos para la Certificación BIS de Sillas y Taburetes
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documentos del Fabricante
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Licencia/registro de fábrica</li>
-          <li>Diagrama de flujo del proceso de fabricación</li>
-          <li>Lista de maquinaria</li>
-          <li>Lista de equipos de prueba internos</li>
-          <li>Certificados de calibración</li>
-          <li>Diseño de fábrica y plano de planta</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documentos Técnicos
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Dibujos de silla/taburete</li>
-          <li>Dimensiones y especificaciones</li>
-          <li>Lista de materiales</li>
-          <li>Descripción de características de seguridad</li>
-          <li>Informes de pruebas de calidad internas</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documentos Legales
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Prueba de identidad y dirección</li>
-          <li>Carta de autorización de marca</li>
-          <li>Certificado de marca comercial (opcional)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Documentos de Solicitud BIS
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Formulario de solicitud</li>
-          <li>Formulario de solicitud de prueba</li>
-          <li>Formularios de declaración</li>
-          <li>Carta de autorización</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Requisitos de Pruebas para Sillas y Taburetes (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 incluye pruebas mecánicas, estructurales y de seguridad
-          extensivas.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Pruebas Obligatorias
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Cláusula
+                  Particular
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requisito
+                  Detalles
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Diseño y fabricación
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco Hacia Adelante y Vuelco Lateral para Sillas sin Brazos
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco Hacia Atrás
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vuelco Lateral para Sillas con Brazos
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Taburetes/Poufs (Todas las Direcciones)
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Prueba de Resistencia
-                </TableCell>
-              </TableRow>
+              {[
+                ["Nombre del Producto", "Sillas y Taburetes de Uso General"],
+                ["Norma India Aplicable", "IS 17632:2022"],
+                ["Tipo de Certificación", "Certificación de Producto BIS"],
+                [
+                  "Esquema de Certificación",
+                  "Esquema-I (Certificación de Marca ISI)",
+                ],
+                ["Marca Aplicable", "Marca ISI"],
+                [
+                  "Autoridad Regulatoria",
+                  "Oficina de Normas de India (BIS)",
+                ],
+                ["Ministerio Aplicable", "Ministerio de Comercio e Industria"],
+                [
+                  "Requisito de Cumplimiento",
+                  "Obligatorio bajo la QCO de Muebles aplicable (Orden de Control de Calidad)",
+                ],
+                ["Categoría del Producto", "Muebles"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Esquema de Certificación" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Esquema-I (Certificación de Marca ISI)
+                      </a>
+                    ) : particular === "Requisito de Cumplimiento" ? (
+                      <>
+                        Obligatorio bajo la{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-chairs-and-stools"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            QCO de Muebles (Orden de Control de Calidad)
+                          </strong>
+                        </a>{" "}
+                        aplicable
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Estas pruebas garantizan un uso diario seguro bajo condiciones del
-          mundo real.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ¿Qué es la Certificación BIS para Sillas y Taburetes de Uso General?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La Certificación BIS para Sillas y Taburetes de Uso General es un
+          proceso de evaluación de conformidad realizado bajo el Esquema de
+          Certificación de Productos BIS.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Desafíos Comunes y Cómo Evitarlos
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Silla que falla en pruebas de estabilidad</strong>
-            <br />
-            Ocurre debido a una distribución inadecuada del peso.
-            <br />
-            Solución: Mejorar el diseño de las patas, ampliar el área de la
-            base.
-          </li>
-          <li>
-            <strong>Uniones débiles que causan fallos en las pruebas</strong>
-            <br />
-            Solución: Usar materiales reforzados y mejores conectores.
-          </li>
-          <li>
-            <strong>Equipos de prueba internos inadecuados</strong>
-            <br />
-            Solución: Instalar instrumentos compatibles con BIS requeridos.
-          </li>
-          <li>
-            <strong>Inconsistencias en la documentación</strong>
-            <br />
-            Solución: Preparar documentos sistemáticamente antes de solicitar.
-          </li>
-          <li>
-            <strong>Variantes de producto no mapeadas correctamente</strong>
-            <br />
-            Solución: Agrupar productos según estructura y parámetros de prueba.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Beneficios de la Certificación BIS para Sillas y Taburetes
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Permiso legal para vender en India</li>
-          <li>Seguridad mejorada del producto</li>
-          <li>Mayor confianza del cliente</li>
-          <li>Menor riesgo de responsabilidad del producto</li>
-          <li>Requerido para listados de comercio electrónico</li>
-          <li>Esencial para licitaciones gubernamentales</li>
-          <li>Mayor credibilidad de marca</li>
-          <li>Ventaja competitiva</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Sanciones por Incumplimiento
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El objetivo de la certificación es verificar que el producto cumple con
+          los requisitos especificados en IS 17632:2022. Una vez otorgada la
+          certificación, los fabricantes están autorizados a usar la Marca ISI en
+          sus productos.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Vender sillas o taburetes sin certificación BIS puede llevar a:
+          El proceso de certificación evalúa varios aspectos del rendimiento del
+          producto, incluyendo:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Multas monetarias severas</li>
-          <li>Retiro/incautación del producto</li>
-          <li>Cancelación de licencias de fábrica</li>
-          <li>Procesamiento penal</li>
-          <li>Restricciones de importación</li>
-          <li>Lista negra del mercado</li>
+        <ul className={LIST_CLASS}>
+          <li>Resistencia</li>
+          <li>Estabilidad</li>
+          <li>Durabilidad</li>
+          <li>Rendimiento estructural</li>
+          <li>Requisitos de seguridad</li>
+          <li>Calidad de los materiales</li>
+          <li>Mano de obra</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Las sanciones se aplican bajo la Ley BIS, 2016.
+          La certificación ayuda a garantizar que los productos de asiento
+          suministrados en el mercado indio cumplan con los referentes
+          establecidos de calidad y seguridad.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          ¿Quién Necesita la Certificación BIS para Sillas y Taburetes?
+          Resumen de IS 17632:2022
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Obligatorio para:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022 es la Norma India que especifica los requisitos para
+          Sillas y Taburetes de Uso General.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabricantes indios</li>
-          <li>Fabricantes extranjeros que exportan a India</li>
-          <li>Importadores</li>
-          <li>Propietarios de marca/comerciantes</li>
-          <li>Proveedores OEM/ODM</li>
-          <li>Cadenas minoristas</li>
-          <li>Vendedores en línea</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La norma establece requisitos relacionados con la seguridad, la
+          resistencia, la durabilidad, la estabilidad y el rendimiento general
+          del mobiliario de asiento destinado al uso general.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norma se aplica a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Sillas y taburetes completamente fabricados</li>
+          <li>Sillas y taburetes fabricados</li>
+          <li>Productos listos para ensamblar después del ensamblaje</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Cada fábrica requiere una Licencia BIS separada.
+          El propósito de la norma es garantizar que los productos de mobiliario
+          proporcionen un rendimiento seguro, confiable y duradero durante toda
+          su vida útil prevista.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Requisitos Clave bajo IS 17632:2022
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisitos de Resistencia</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Las sillas y taburetes de uso general deben poseer una resistencia
+          estructural adecuada para soportar las condiciones de carga previstas
+          durante el uso normal.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisitos de Estabilidad</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El mobiliario debe permanecer estable durante el uso previsto y no
+          debe presentar riesgos innecesarios de vuelco.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisitos de Durabilidad</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los productos deben ser capaces de mantener su integridad estructural y
+          rendimiento a lo largo de ciclos de uso repetidos.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Requisitos de Seguridad</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La norma incluye requisitos relacionados con la seguridad destinados a
+          minimizar los riesgos asociados con el uso del mobiliario.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Calidad de los Materiales y Mano de Obra
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La calidad de los materiales, las prácticas de fabricación, los
+          métodos de ensamblaje, las uniones y el acabado contribuyen
+          significativamente al cumplimiento de la norma.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Consideraciones Ergonómicas</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La norma incorpora consideraciones relacionadas con el rendimiento que
+          contribuyen a la comodidad del usuario y la funcionalidad práctica.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Productos Cubiertos bajo IS 17632:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          La norma generalmente se aplica a:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Sillas de uso general</li>
+          <li>Taburetes de uso general</li>
+          <li>Mobiliario de asiento fijo destinado al uso general</li>
+          <li>Productos de asiento listos para ensamblar después del ensamblaje</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los fabricantes deben revisar cuidadosamente el alcance de la norma para
+          determinar la aplicabilidad a sus productos.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            También consulte los Productos de Muebles Cubiertos bajo la
+            Certificación BIS Obligatoria —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Certificación BIS para muebles</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ¿Es Obligatoria la Certificación BIS para Sillas y Taburetes de Uso
+          General?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sí. Los productos de mobiliario cubiertos bajo la Orden de Control de
+          Calidad de Muebles (QCO) aplicable deben cumplir con la Norma India
+          relevante y obtener la Certificación BIS antes de ser fabricados,
+          importados, vendidos, distribuidos o suministrados en el mercado indio.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los fabricantes cubiertos bajo el marco regulatorio aplicable deben
+          obtener una licencia BIS y cumplir con los requisitos de marcado
+          prescritos por BIS.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Requisitos de Prueba para la Certificación BIS
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Antes de otorgar la certificación, las muestras del producto deben ser
+          evaluadas mediante pruebas realizadas en laboratorios reconocidos.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Las pruebas generalmente se centran en los siguientes parámetros:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Evaluación del Rendimiento Estructural —</strong> Determina
+            si la silla o taburete puede soportar las condiciones de uso normal
+            sin fallar.
+          </li>
+          <li>
+            <strong>Prueba de Estabilidad —</strong> Evalúa si el mobiliario
+            permanece estable durante el uso previsto y resiste el vuelco.
+          </li>
+          <li>
+            <strong>Evaluación de Resistencia —</strong> Evalúa la capacidad de
+            carga y la integridad estructural de marcos, uniones y soportes.
+          </li>
+          <li>
+            <strong>Evaluación de Durabilidad —</strong> Verifica la retención
+            del rendimiento después de ciclos de uso repetidos durante la vida
+            útil del producto.
+          </li>
+          <li>
+            <strong>Evaluación de Seguridad —</strong> Identifica posibles
+            peligros y verifica el cumplimiento con los requisitos de seguridad
+            prescritos.
+          </li>
+          <li>
+            <strong>Inspección de Mano de Obra —</strong> Revisa la calidad de
+            construcción, el acabado, la integridad del ensamblaje y los
+            estándares generales de fabricación.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Requisitos de Marcado del Producto
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Los productos certificados bajo IS 17632:2022 generalmente deben llevar
+          información identificativa como:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Nombre o marca comercial del fabricante</li>
+          <li>Identificación del modelo o diseño</li>
+          <li>Número de lote</li>
+          <li>Fecha de fabricación</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La Marca ISI solo puede aplicarse después de obtener una licencia BIS
+          válida.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Proceso de Certificación BIS para Sillas y Taburetes de Uso General
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Paso 1: Evaluación del Alcance del Producto
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El primer paso consiste en determinar si el producto entra dentro del
+          alcance de IS 17632:2022 y la QCO de Muebles aplicable.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Revise el tipo de silla o taburete, el uso previsto, los materiales y
+          la construcción antes de iniciar el proceso de certificación.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Paso 2: Preparación de Documentación
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          El fabricante prepara la documentación técnica y de cumplimiento
+          requerida para la certificación, incluyendo registros de la empresa,
+          detalles de la fábrica, especificaciones del producto y procedimientos
+          de control de calidad.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Una documentación completa y precisa ayuda a evitar retrasos innecesarios
+          durante la revisión de BIS.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Paso 3: Pruebas del Producto</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Las muestras representativas se prueban en un laboratorio reconocido por
+          BIS para verificar el cumplimiento con los requisitos de IS 17632:2022.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          El informe de pruebas del laboratorio es un documento técnico clave que
+          respalda la solicitud de certificación.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Paso 4: Presentación de la Solicitud BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La solicitud de certificación se presenta junto con la documentación de
+          respaldo, los informes de prueba y la información de fabricación.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          BIS revisa la solicitud para verificar su integridad y cumplimiento
+          técnico antes de continuar.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Paso 5: Inspección de Fábrica</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS puede evaluar la instalación de fabricación, los sistemas de
+          producción y los procesos de control de calidad para verificar la
+          capacidad de producir productos conformes de manera consistente.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Esta evaluación generalmente cubre la infraestructura de producción,
+          los sistemas de control de calidad, los controles de materias primas y
+          la trazabilidad del producto.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Paso 6: Revisión Técnica</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          La solicitud, los informes de prueba y los hallazgos de la inspección
+          son revisados por BIS antes de tomar una decisión de certificación.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Cualquier observación o deficiencia planteada durante la revisión debe
+          ser atendida por el solicitante.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Paso 7: Otorgamiento de Licencia</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tras un cumplimiento satisfactorio, BIS otorga la licencia y autoriza
+          el uso de la Marca ISI en sillas y taburetes de uso general
+          certificados.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Los fabricantes deben continuar cumpliendo con los requisitos de BIS
+          durante todo el período de la licencia.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Beneficios de la Certificación BIS
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Cumplimiento con las Regulaciones Indias —</strong> Cumpla
+            con los requisitos obligatorios de calidad y seguridad bajo la QCO de
+            Muebles aplicable.
+          </li>
+          <li>
+            <strong>Acceso Legal al Mercado —</strong> Suministre sillas y
+            taburetes certificados en India de acuerdo con los requisitos
+            regulatorios aplicables.
+          </li>
+          <li>
+            <strong>Mayor Credibilidad del Producto —</strong> La Marca ISI
+            demuestra conformidad con las normas indias reconocidas.
+          </li>
+          <li>
+            <strong>Mayor Confianza del Cliente —</strong> Los consumidores y
+            compradores institucionales prefieren productos evaluados según
+            referentes establecidos.
+          </li>
+          <li>
+            <strong>Ventaja Competitiva —</strong> Mayor aceptación en procesos
+            de adquisición comercial y gubernamental.
+          </li>
+          <li>
+            <strong>Mejor Reputación de Marca —</strong> Demuestra compromiso con
+            la calidad del producto, la seguridad y la fiabilidad a largo plazo.
+          </li>
+          <li>
+            <strong>Apoyo a las MIPYMES —</strong> Ayuda a los fabricantes
+            pequeños y medianos a fortalecer su presencia en el mercado y
+            generar confianza del cliente.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Desafíos Comunes Durante la Certificación
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Fallos en las Pruebas del Producto —</strong> Deficiencias
+            de diseño o fabricación pueden resultar en incumplimiento durante la
+            evaluación en laboratorio.
+          </li>
+          <li>
+            <strong>Problemas de Documentación —</strong> Registros incompletos o
+            inconsistentes frecuentemente causan retrasos en la certificación.
+          </li>
+          <li>
+            <strong>Brechas de Cumplimiento en la Fabricación —</strong> Los
+            sistemas de control de calidad pueden requerir mejoras antes de que
+            se pueda otorgar la certificación.
+          </li>
+          <li>
+            <strong>Complejidad Regulatoria —</strong> Gestionar pruebas,
+            inspecciones y procedimientos de certificación puede ser desafiante
+            sin orientación experta.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          ¿Por Qué Elegir Sun Certifications India?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India asiste a fabricantes, importadores,
+          exportadores y empresas con los requisitos de cumplimiento regulatorio
+          en toda India.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Nuestros servicios incluyen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Evaluación de aplicabilidad del producto</li>
+          <li>Consultoría de certificación BIS</li>
+          <li>Apoyo con documentación</li>
+          <li>Coordinación de pruebas de laboratorio</li>
+          <li>Preparación para inspección de fábrica</li>
+          <li>Gestión de solicitudes</li>
+          <li>Asistencia en cumplimiento regulatorio</li>
+          <li>Apoyo post-certificación</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nuestro objetivo es ayudar a los clientes a navegar los requisitos de
+          certificación de manera eficiente y lograr el cumplimiento con
+          retrasos mínimos.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -777,116 +786,145 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          El Certificado BIS para Sillas y Taburetes de Uso General según IS
-          17632:2022 es obligatorio para garantizar la seguridad del producto,
-          la estabilidad estructural y la durabilidad. La certificación BIS no
-          solo ayuda a los fabricantes a mantener estándares de alta calidad,
-          sino que también permite el acceso legal al mercado y aumenta la
-          confianza del consumidor.
+          La Certificación BIS para Sillas y Taburetes de Uso General según IS
+          17632:2022 desempeña un papel importante en garantizar la calidad del
+          producto, la seguridad, la resistencia, la estabilidad y la
+          durabilidad. La certificación ayuda a los fabricantes a demostrar el
+          cumplimiento con las Normas Indias mientras fortalece la confianza del
+          cliente y apoya el acceso al mercado.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Con asistencia profesional, el proceso de certificación—desde las
-          pruebas hasta la inspección y aprobación—se vuelve fluido, predecible
-          y totalmente conforme.
+          A medida que la demanda de productos de mobiliario con calidad
+          garantizada continúa creciendo, la Certificación BIS y la Marca ISI
+          proporcionan una valiosa garantía para consumidores, instituciones y
+          agencias de adquisición. Los fabricantes que invierten en el
+          cumplimiento no solo satisfacen los requisitos regulatorios, sino que
+          también mejoran su competitividad y reputación en el mercado a largo
+          plazo.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Si planea obtener la Certificación BIS para Sillas y Taburetes de Uso
+          General según IS 17632:2022, Sun Certifications India puede
+          proporcionar orientación experta y apoyo integral de cumplimiento a lo
+          largo de todo el proceso de certificación.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Preguntas Frecuentes – Certificado BIS para Sillas y Taburetes
+          Preguntas Frecuentes – Certificación BIS para Sillas y Taburetes de Uso
+          General (IS 17632:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. ¿Es obligatoria la Certificación BIS para sillas y taburetes?
-              </strong>
+              <strong>1. ¿Qué es IS 17632:2022?</strong>
               <br />
-              Sí, según IS 17632:2022, todas las sillas y taburetes de uso
-              general deben estar certificados por BIS antes de ser vendidos en
-              India.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. ¿Qué pruebas se requieren?</strong>
-              <br />
-              Pruebas de estabilidad, resistencia, durabilidad, impacto, fatiga
-              y seguridad de materiales.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. ¿Cuánto tiempo tarda la certificación BIS?</strong>
-              <br />
-              Típicamente 30–45 días.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. ¿Cuál es el costo de la certificación?</strong>
-              <br />
-              Alrededor de ₹60,000–₹1,30,000 dependiendo de las pruebas y la
-              inspección.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. ¿Pueden aplicar fabricantes extranjeros?</strong>
-              <br />
-              Sí, bajo el esquema FMCS.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. ¿Es obligatorio el marcado ISI?</strong>
-              <br />
-              Sí, después de que se otorgue la licencia BIS.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. ¿Por qué las sillas fallan en las pruebas BIS?</strong>
-              <br />
-              Las causas comunes incluyen patas débiles, poca resistencia de las
-              uniones e inestabilidad.
+              IS 17632:2022 es la Norma India que especifica los requisitos para
+              Sillas y Taburetes de Uso General.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. ¿Pueden cubrirse múltiples modelos bajo una licencia?
+                2. ¿Es obligatoria la Certificación BIS para Sillas y Taburetes
+                de Uso General?
               </strong>
               <br />
-              Solo si cumplen con los criterios de similitud y cumplimiento de
-              estándares.
+              Los productos cubiertos bajo la Orden de Control de Calidad de
+              Muebles aplicable deben cumplir con los requisitos de certificación
+              BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. ¿Se requiere una inspección de fábrica?</strong>
+              <strong>3. ¿Qué es la Marca ISI?</strong>
               <br />
-              Sí, es obligatorio para la certificación de marca ISI.
+              La Marca ISI es la marca de certificación estándar emitida bajo el
+              Esquema de Certificación de Productos BIS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. ¿Qué documentos se necesitan?</strong>
+              <strong>4. ¿Quién puede solicitar la Certificación BIS?</strong>
               <br />
-              Licencia de fábrica, especificaciones técnicas, lista de
-              maquinaria, plan de control de calidad, dibujos del producto, etc.
+              Tanto fabricantes indios como fabricantes extranjeros pueden
+              solicitar la certificación.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                5. ¿La Certificación BIS requiere pruebas del producto?
+              </strong>
+              <br />
+              Sí. Las pruebas del producto son un componente importante del
+              proceso de certificación.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                6. ¿Las sillas listas para ensamblar están cubiertas bajo IS
+                17632:2022?
+              </strong>
+              <br />
+              Sí. La norma se aplica a productos listos para ensamblar después
+              del ensamblaje.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                7. ¿Qué productos están excluidos del alcance de IS 17632:2022?
+              </strong>
+              <br />
+              Productos como sillas reclinables, mecedoras, sillas basculantes,
+              sofás y ciertos productos de asiento especializados generalmente
+              están excluidos.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                8. ¿Cuáles son los beneficios de obtener la Certificación BIS?
+              </strong>
+              <br />
+              Los beneficios incluyen cumplimiento regulatorio, mayor credibilidad
+              del producto, mayor confianza del cliente y mejor aceptación en el
+              mercado.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. ¿Pueden los fabricantes extranjeros obtener la Certificación
+                BIS?
+              </strong>
+              <br />
+              Sí. Los fabricantes extranjeros pueden solicitar a través de la
+              ruta de certificación BIS aplicable para fabricantes en el extranjero.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. ¿Cómo puede ayudar Sun Certifications India?</strong>
+              <br />
+              Sun Certifications India proporciona apoyo integral para la
+              certificación BIS, incluyendo documentación, coordinación de pruebas,
+              gestión de solicitudes y asistencia en cumplimiento.
             </p>
           </div>
         </div>
@@ -903,6 +941,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Recursos Relacionados
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Certificación ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Certificación BIS para Fabricantes Extranjeros
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadSpanish />
 

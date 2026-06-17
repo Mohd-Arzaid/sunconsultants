@@ -34,6 +34,7 @@ const ServicesRightSideContentVietnamese = () => {
     "/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long",
     "/chung-nhan-bis-scheme-x-cho-may-nen-khi",
     "/chung-nhan-bis-tai-viet-nam",
+    "/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam",
     "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
     "/vi/chung-nhan-bis-isi-mark",
 
@@ -615,6 +616,12 @@ const ContactFormServicesRightSideContentVietnamese = () => {
       return "Scheme X - Pumps and Liquid Elevators (Vietnamese)";
     if (path.includes("/chung-nhan-bis-tai-viet-nam"))
       return "Vietnam Blog (Vietnamese)";
+    if (
+      path.includes(
+        "/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam"
+      )
+    )
+      return "Tư vấn chứng nhận BIS tốt nhất và đáng tin cậy nhất tại Việt Nam – Sun Certifications India (Vietnamese)";
     if (path.includes("/vi/crs-bis-la-gi-hoac-dang-ky-crs"))
       return "CRS Registration (Vietnamese)";
     if (path.includes("/vi/chung-nhan-bis-isi-mark"))

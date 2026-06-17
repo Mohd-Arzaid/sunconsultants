@@ -18,9 +18,9 @@ import { Services as ServicesDutch } from "@/pages/SchemeX/SchemeXDutch";
 const CANONICAL_URL =
   "https://bis-certifications.com/beste-en-meest-betrouwbare-bis-certificeringsconsultant-nederland";
 const PAGE_IMAGE_SRC =
-  "/BestandMostTrustedBISCertificationConsultant/BestISConsultantNetherland.webp";
+  "/BestandMostTrustedBISCertificationConsultant/BesteBISconsultantinNederland.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BestISConsultantNetherland.webp";
+  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BesteBISconsultantinNederland.webp";
 
 const PAGE_TITLE =
   "Beste en meest betrouwbare BIS-certificeringsconsultant in Nederland – Sun Certifications India";
@@ -334,7 +334,15 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Precies daarom is BIS-certificering nu dringend van belang voor
-          Nederlandse fabrikanten. India&apos;s Bureau of Indian Standards
+          Nederlandse fabrikanten. India&apos;s{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>
           breidt zijn verplichte Quality Control Order (QCO)-raamwerk uit
           naar precies de categorieën waar Nederlandse bedrijven het meest
           actief zijn — halfgeleiderapparatuur, medische hulpmiddelen,
@@ -422,6 +430,12 @@ const MainContentLeft = () => {
             <li key={point}>{point}</li>
           ))}
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+        Voor Nederlandse fabrikanten die hun producten op de Indiase markt willen introduceren, is naleving van de BIS-voorschriften vaak een belangrijke wettelijke vereiste. Daarom zoeken veel bedrijven naar informatie over BIS certificering India, BIS-certificaat India, BIS-licentie India of een Indiaas BIS-certificaat. Het Bureau voor Indiase Standaarden (BIS) stelt verplichte normen vast voor verschillende productcategorieën, waaronder elektronica, industriële apparatuur, machines en consumentengoederen. Of u nu een BIS-registratie India, Indiase BIS-certificering of BIS-licentie nodig heeft, een correcte voorbereiding van technische documentatie en naleving van de toepasselijke normen zijn essentieel voor een succesvolle markttoetreding. Sun Certifications India ondersteunt Nederlandse bedrijven gedurende het volledige certificeringsproces en helpt bij producttesten, documentatie, wettelijke conformiteit en de verkrijging van de vereiste BIS-goedkeuringen voor de Indiase markt.
+        </p>
+
+        
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 

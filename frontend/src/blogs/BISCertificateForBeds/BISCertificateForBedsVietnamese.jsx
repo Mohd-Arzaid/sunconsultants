@@ -26,6 +26,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForBedsVietnamese = () => {
   return (
     <div className="relative w-full">
@@ -107,7 +113,7 @@ const MetaTags = () => {
       <link
         rel="alternate"
         hrefLang="fr"
-        href="https://bis-certifications.com/blogs/isi-products/lits-is-17635"
+        href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
       <link
         rel="alternate"
@@ -149,6 +155,145 @@ const MetaTags = () => {
         hrefLang="vi"
         href="https://bis-certifications.com/blogs/isi-products/giuong-is-17635"
       />
+
+      {/* Article Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://bis-certifications.com/blogs/isi-products/giuong-is-17635",
+          },
+          headline: "Giấy chứng nhận BIS cho Giường",
+          description:
+            "Chứng nhận BIS cho giường tại Ấn Độ là yêu cầu đảm bảo chất lượng bắt buộc, chủ yếu theo IS 17635:2022, đảm bảo các tiêu chuẩn về an toàn, độ bền và hiệu suất.",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          author: {
+            "@type": "Person",
+            name: "Dhruv Aggarwal",
+            url: "https://www.linkedin.com/in/dhruv-aggarwal-44b116155",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://bis-certifications.com/company-logo/company-logo.webp",
+            },
+          },
+          datePublished: "2026-02-01",
+          dateModified: "2026-04-14",
+        })}
+      </script>
+
+      {/* Rating Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "Giấy chứng nhận BIS cho Giường",
+          image:
+            "https://bis-certifications.com/BISCertificationProductsImages/BISLicenseforBeds.png",
+          description:
+            "Chứng nhận BIS cho giường tại Ấn Độ là yêu cầu đảm bảo chất lượng bắt buộc, chủ yếu theo IS 17635:2022, đảm bảo các tiêu chuẩn về an toàn, độ bền và hiệu suất.",
+          brand: {
+            "@type": "Brand",
+            name: "Sun Certifications India",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "58042",
+          },
+        })}
+      </script>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Chứng nhận BIS có bắt buộc cho giường tại Ấn Độ không?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Có, theo IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Giấy chứng nhận BIS có hiệu lực bao lâu?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "1–2 năm, có thể gia hạn.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Nhà sản xuất nước ngoài có thể đăng ký không?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Có, theo FMCS.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Có thể đăng ký Giấy chứng nhận BIS trực tuyến không?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Có.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Dấu ISI có bắt buộc trên giường không?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Có.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Quy trình mất bao lâu?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "30–45 ngày.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Giường gỗ và giường kim loại có được bao gồm không?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Có, nếu tuân thủ IS 17635:2022.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kiểm tra nhà máy có bắt buộc không?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Có.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Thương nhân có thể đăng ký BIS không?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Chỉ chủ sở hữu thương hiệu có kiểm soát sản xuất.",
+              },
+            },
+          ],
+        })}
+      </script>
     </Helmet>
   );
 };
@@ -227,142 +372,548 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Giấy chứng nhận BIS cho Giường là yêu cầu tuân thủ bắt buộc tại Ấn Độ
-          cho các nhà sản xuất và nhập khẩu giường dùng cho mục đích sử dụng
-          trong nước và thương mại. Theo Tiêu chuẩn Ấn Độ mới nhất IS 17635:2022
-          – Giường (Yêu cầu An toàn), tất cả giường phải đáp ứng các tiêu chuẩn
-          nghiêm ngặt về an toàn, độ bền, cấu trúc và hiệu suất trước khi được
-          bán trên thị trường Ấn Độ.
+          Giấy chứng nhận BIS cho Giường là yêu cầu tuân thủ bắt buộc
+          tại Ấn Độ cho các nhà sản xuất và nhập khẩu giường dùng cho mục đích sử dụng
+          trong nước và thương mại. Theo Tiêu chuẩn Ấn Độ mới nhất IS
+          17635:2022 – Giường (Yêu cầu An toàn), tất cả giường phải
+          đáp ứng các tiêu chuẩn nghiêm ngặt về an toàn, độ bền, cấu trúc và
+          hiệu suất trước khi được bán trên thị trường
+          Ấn Độ.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Giường là sản phẩm nội thất thiết yếu được sử dụng hàng ngày trong
-          nhà, khách sạn, bệnh viện, ký túc xá, chỗ ở PG và cơ sở thể chế. Bất
-          kỳ điểm yếu cấu trúc, cạnh sắc, hỏng vật liệu hoặc khả năng chịu tải
-          kém đều có thể dẫn đến thương tích nghiêm trọng. Để ngăn chặn những
-          rủi ro như vậy, Cục Tiêu chuẩn Ấn Độ (BIS) yêu cầu Chứng nhận BIS cho
-          Giường.
+          nhà, khách sạn, bệnh viện, ký túc xá,
+          chỗ ở PG và cơ sở thể chế. Bất kỳ điểm yếu cấu trúc,
+          cạnh sắc, hỏng vật liệu hoặc khả năng chịu tải
+          kém đều có thể dẫn đến thương tích nghiêm trọng. Để ngăn chặn
+          những rủi ro như vậy, Cục Tiêu chuẩn Ấn Độ (BIS) yêu cầu{" "}
+          <a
+            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 hover:underline"
+            rel="noopener noreferrer"
+          >
+            Chứng nhận BIS
+          </a>{" "}
+          cho Giường.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Hướng dẫn toàn diện này giải thích mọi thứ về Giấy phép BIS cho
-          Giường, bao gồm các tiêu chuẩn áp dụng, quy trình chứng nhận, yêu cầu
-          kiểm tra, tài liệu, phí, thời gian, hình phạt và lợi ích.
+          Hướng dẫn toàn diện này giải thích mọi thứ về Giấy phép BIS cho Giường, bao gồm
+          các tiêu chuẩn áp dụng, quy trình chứng nhận, yêu cầu
+          kiểm tra, tài liệu, phí, thời gian, hình phạt và
+          lợi ích.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Chứng nhận BIS là gì?
+          Điểm nổi bật của Chứng nhận BIS cho Giường
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Chứng nhận BIS là chương trình đánh giá sự phù hợp được giới thiệu bởi
-          Cục Tiêu chuẩn Ấn Độ, cơ quan tiêu chuẩn quốc gia của Ấn Độ.
-        </p>
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Hạng mục
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Chi tiết
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {[
+                ["Sản phẩm", "Giường"],
+                ["Tiêu chuẩn Ấn Độ", "IS 17635:2022"],
+                ["Tên tiêu chuẩn", "Giường – Quy cách"],
+                ["Chương trình chứng nhận", "Chứng nhận Dấu ISI BIS"],
+                [
+                  "Cơ quan quản lý",
+                  "Cục Tiêu chuẩn Ấn Độ (BIS)",
+                ],
+                ["Dấu hiệu áp dụng", "Dấu ISI"],
+                [
+                  "Đối tượng đăng ký hợp lệ",
+                  "Nhà sản xuất Ấn Độ và Nhà sản xuất nước ngoài",
+                ],
+                [
+                  "Yêu cầu tuân thủ",
+                  "Bắt buộc theo QCO Nội thất áp dụng (Quality Control Order)",
+                ],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Chương trình chứng nhận" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Chứng nhận Dấu ISI BIS
+                      </a>
+                    ) : particular === "Yêu cầu tuân thủ" ? (
+                      <>
+                        Bắt buộc theo{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-beds"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>
+                            QCO Nội thất áp dụng (Quality Control Order)
+                          </strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Giấy chứng nhận BIS là gì?
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Giấy chứng nhận BIS xác nhận rằng sản phẩm tuân thủ Tiêu chuẩn Ấn Độ
-          và an toàn, đáng tin cậy và phù hợp để sử dụng. Sản phẩm được chứng
-          nhận mang Dấu Chứng nhận BIS, thường được gọi là Dấu ISI.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Ý nghĩa Giấy chứng nhận BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Nó có nghĩa là sản phẩm đã vượt qua thành công:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Kiểm tra trong phòng thí nghiệm</li>
-          <li>Kiểm tra nhà máy</li>
-          <li>Xác minh kiểm soát chất lượng</li>
-          <li>Đánh giá tuân thủ an toàn</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Logo BIS trên giường đảm bảo với khách hàng rằng sản phẩm đáp ứng các
-          tiêu chuẩn chất lượng và an toàn được chính phủ phê duyệt.
-        </p>
-
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tiêu chuẩn BIS áp dụng cho Giường – IS 17635:2022
+          Chứng nhận BIS cho Giường là gì?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tiêu chuẩn Ấn Độ áp dụng cho giường là:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17635:2022</strong> – Giường: Yêu cầu An toàn
+          Chứng nhận BIS cho Giường là quy trình đánh giá sự phù hợp
+          thông qua đó các nhà sản xuất chứng minh sản phẩm của họ tuân thủ
+          các yêu cầu quy định trong IS 17635:2022. Sau khi xác minh sự phù hợp
+          thông qua kiểm tra, đánh giá nhà máy
+          và xem xét quy định, nhà sản xuất được cấp giấy phép BIS và
+          có thể dán Dấu ISI lên sản phẩm được chứng nhận.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Tiêu chuẩn này định nghĩa các yêu cầu an toàn và hiệu suất thiết yếu
-          cho giường được sử dụng trong môi trường dân cư và thương mại.
+          Khung chứng nhận nhằm đảm bảo giường có trên
+          thị trường Ấn Độ đáp ứng các yêu cầu đã thiết lập liên quan đến:
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          IS 17635:2022 Bao gồm
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Độ bền cấu trúc</li>
-          <li>Khả năng chịu tải</li>
-          <li>Ổn định và độ bền</li>
-          <li>Chất lượng vật liệu</li>
-          <li>Cạnh và hoàn thiện bề mặt</li>
-          <li>An toàn chống sụp đổ</li>
-          <li>Không có nguy cơ mắc kẹt</li>
-          <li>Hiệu suất dài hạn</li>
+          <li>Độ ổn định</li>
+          <li>Độ bền</li>
+          <li>Hiệu suất bề mặt</li>
+          <li>An toàn trong quá trình sử dụng bình thường</li>
+          <li>
+            Hiệu suất trong điều kiện sử dụng sai cách có thể dự đoán
+          </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bất kỳ giường nào được sản xuất hoặc nhập khẩu vào Ấn Độ phải tuân thủ
-          IS 17635:2022 và có Đăng ký BIS cho Giường.
+          Các yêu cầu này giúp tạo tiêu chuẩn thống nhất về
+          chất lượng và bảo vệ người tiêu dùng cho các thiết kế giường
+          và vật liệu sản xuất khác nhau.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Tại sao Chứng nhận BIS là Bắt buộc cho Giường
+          Tại sao Chứng nhận BIS quan trọng đối với Giường
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Giường được sử dụng trong thời gian dài và hỗ trợ trọng lượng con
-          người liên tục. Giường được thiết kế kém có thể gây thương tích, sụp
-          đổ hoặc rủi ro sức khỏe lâu dài.
+          Giường ảnh hưởng trực tiếp đến an toàn người dùng vì chúng
+          được thiết kế để chịu tải trọng đáng kể trong thời gian dài.
+          Sản phẩm thiết kế kém hoặc kiểm tra không đầy đủ có thể
+          gặp hỏng cấu trúc, mất ổn định,
+          biến dạng hoặc xuống cấp sớm.
         </p>
 
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Lý do Cần Chứng nhận BIS cho Giường
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 giải quyết các mối quan ngại này bằng cách xác định các yêu cầu
+          hiệu suất và an toàn tiêu chuẩn mà nhà sản xuất phải
+          đáp ứng trước khi sản phẩm vào thị trường.
+          Tiêu chuẩn bao gồm các yêu cầu về độ bền, ổn định,
+          độ bền, chất lượng gia công và hiệu suất bề mặt.
+        </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Đảm bảo tính toàn vẹn cấu trúc</li>
-          <li>Ngăn chặn sụp đổ và vỡ</li>
-          <li>Kiểm soát chất lượng vật liệu</li>
-          <li>Loại bỏ cạnh sắc và hoàn thiện không an toàn</li>
-          <li>Bảo vệ người tiêu dùng</li>
-          <li>Đảm bảo chất lượng quốc gia đồng nhất</li>
-          <li>Bắt buộc theo thông báo BIS</li>
-          <li>Cần thiết cho việc bán hợp pháp tại Ấn Độ</li>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Đối với nhà sản xuất, chứng nhận BIS mang lại nhiều lợi ích:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>
+            Quyền bán hợp pháp sản phẩm thuộc phạm vi tại Ấn Độ
+          </li>
+          <li>Chứng minh tuân thủ Tiêu chuẩn Ấn Độ</li>
+          <li>Cải thiện khả năng tiếp nhận thị trường</li>
+          <li>Tăng niềm tin người tiêu dùng</li>
+          <li>Giảm rủi ro hành động quy định</li>
+          <li>
+            Lợi thế cạnh tranh trong mua sắm thể chế và
+            thương mại
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tổng quan về IS 17635:2022 cho Giường
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Chính phủ Ấn Độ đã ban hành các Lệnh Kiểm soát Chất lượng
+          cho nhiều sản phẩm nội thất để đảm bảo sản phẩm
+          đưa ra thị trường đáp ứng yêu cầu an toàn và chất lượng
+          đã quy định.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Khi IS 17635:2022 được bao gồm trong QCO Nội thất áp dụng,
+          nhà sản xuất phải có Chứng nhận BIS theo
+          Chương trình I và sử dụng Dấu Tiêu chuẩn (Dấu ISI) theo
+          yêu cầu cấp phép BIS.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 là Tiêu chuẩn Ấn Độ quy định yêu cầu
+          hiệu suất và an toàn cho giường dành cho người dùng
+          trưởng thành trong môi trường gia đình và phi gia đình.
+          Tiêu chuẩn thiết lập yêu cầu đảm bảo giường
+          an toàn, hoạt động tốt và bền trong suốt
+          tuổi thọ dự kiến.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Mục đích của IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 được phát triển để cung cấp tiêu chuẩn toàn diện dựa trên
+          hiệu suất, áp dụng cho thiết kế giường hiện đại sản xuất
+          bằng nhiều vật liệu và phương pháp chế tạo.
+          Tiêu chuẩn thay thế IS 7259 (Phần 1):1988 trước đây,
+          chủ yếu tập trung vào giường gỗ.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tiêu chuẩn đánh giá giường mà không giới hạn tuân thủ theo vật liệu hoặc
+          quy trình sản xuất cụ thể. Thay vào đó, tập trung vào
+          hiệu suất sản phẩm hoàn thiện trong điều kiện kiểm tra
+          quy định. Cách tiếp cận này cho phép đánh giá nhất quán giường
+          gỗ, kim loại, gỗ công nghiệp và các cấu trúc khác.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Phạm vi áp dụng của IS 17635:2022</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Theo tiêu chuẩn, IS 17635:2022 bao gồm yêu cầu liên quan đến
+          hiệu suất và an toàn của giường thiết kế cho người dùng
+          trưởng thành. Tiêu chuẩn áp dụng cho sản phẩm dùng trong
+          môi trường gia đình và phi gia đình.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tiêu chuẩn áp dụng cho:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Giường sản xuất hoàn chỉnh</li>
+          <li>Giường gia công lắp ráp</li>
+          <li>Giường lắp ráp sẵn sau khi lắp</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Không có Giấy phép BIS cho Giường, việc bán hoặc nhập khẩu giường tại
-          Ấn Độ là bất hợp pháp.
+          Điều này đảm bảo sản phẩm cung cấp dạng lắp sẵn hoặc tháo rời được
+          đánh giá theo cùng tiêu chí hiệu suất và an toàn.
         </p>
 
-        {/* Separator Line */}
+        <h3 className={SUB_HEADING_CLASS}>Mục tiêu của Tiêu chuẩn</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Mục tiêu chính của IS 17635:2022 bao gồm:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Đảm bảo an toàn người dùng</li>
+          <li>Xác minh độ bền cấu trúc</li>
+          <li>Đánh giá độ ổn định sản phẩm</li>
+          <li>Đánh giá độ bền khi sử dụng lặp lại</li>
+          <li>Thiết lập yêu cầu hiệu suất tối thiểu</li>
+          <li>
+            Thúc đẩy chất lượng sản phẩm nhất quán giữa các nhà sản xuất
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tiêu chuẩn cũng bao gồm phương pháp kiểm tra nhằm
+          đánh giá giường trong điều kiện sử dụng bình thường và
+          tình huống sử dụng sai cách có thể dự đoán hợp lý.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Sản phẩm thuộc phạm vi IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17635:2022 áp dụng cho giường dành cho người dùng
+          trưởng thành trong môi trường gia đình và phi gia đình.
+          Tiêu chuẩn tập trung vào hiệu suất, an toàn, độ bền, ổn định
+          và độ bền của sản phẩm hoàn thiện thay vì giới hạn
+          tuân thủ theo vật liệu hoặc phương pháp sản xuất cụ thể.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tiêu chuẩn áp dụng cho:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Giường sản xuất hoàn chỉnh</li>
+          <li>Giường gia công lắp ráp</li>
+          <li>Giường lắp ráp sẵn (RTA) sau khi lắp</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nhà sản xuất cung cấp giường dạng tháo rời phải
+          đảm bảo sản phẩm đã lắp tuân thủ mọi yêu cầu
+          áp dụng của tiêu chuẩn.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>Lưu ý:</strong> Tiêu chuẩn này không bao gồm giường nước,
+          giường hơi, giường gấp, giường tầng và giường cho
+          người có nhu cầu đặc biệt, cũng như giường cho mục đích chăm sóc sức khỏe
+          và y tế.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Xem thêm Sản phẩm Nội thất thuộc Chứng nhận BIS Bắt buộc —
+            
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>Chứng nhận BIS cho nội thất</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Yêu cầu Chính theo IS 17635:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mục tiêu chính của IS 17635:2022 là đảm bảo giường
+          an toàn, ổn định, bền và phù hợp mục đích sử dụng trong
+          điều kiện sử dụng bình thường. Để đạt mục tiêu này, tiêu chuẩn
+          thiết lập nhiều yêu cầu hiệu suất chính.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Yêu cầu về Độ ổn định</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Giường phải thể hiện khả năng chống lật và
+          mất ổn định đầy đủ trong quá trình sử dụng bình thường. Kiểm tra ổn định
+          đánh giá liệu sản phẩm có an toàn khi
+          chịu điều kiện tải dự kiến và chuyển động
+          của người dùng.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Giường ổn định giảm thiểu rủi ro tai nạn và cải thiện
+          an toàn tổng thể cho người dùng.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Yêu cầu về Độ bền</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Kiểm tra độ bền đánh giá khả năng cấu trúc giường
+          chịu tải trọng đáng kể mà không hỏng cấu trúc.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Các đánh giá này thường xem xét:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Tính toàn vẹn khung giường</li>
+          <li>Độ bền mối nối</li>
+          <li>Khả năng chịu tải</li>
+          <li>Khả năng chống biến dạng quá mức</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mục tiêu là đảm bảo sản phẩm có thể an toàn hỗ trợ
+          người dùng dự kiến trong quá trình
+          vận hành hàng ngày.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Yêu cầu về Độ bền lâu dài</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Kiểm tra độ bền mô phỏng sử dụng lâu dài qua các
+          chu kỳ tải và chuyển động lặp lại.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Mục tiêu là xác định liệu:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Kết nối cấu trúc vẫn an toàn</li>
+          <li>Các bộ phận vẫn hoạt động đúng</li>
+          <li>
+            Hiệu suất sản phẩm vẫn chấp nhận được theo thời gian
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Yêu cầu độ bền giúp đảm bảo giường được chứng nhận
+          duy trì độ tin cậy trong suốt
+          tuổi thọ dự kiến.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Yêu cầu về Hiệu suất bề mặt
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          IS 17635:2022 tham chiếu yêu cầu hiệu suất bề mặt
+          áp dụng cho hoàn thiện nội thất.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tùy cấu trúc và vật liệu sử dụng, bề mặt có thể
+          được đánh giá khả năng chống:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Hư hỏng cơ học</li>
+          <li>Nhiệt ẩm</li>
+          <li>Nhiệt khô</li>
+          <li>Vết bẩn</li>
+          <li>Hiệu suất bám dính</li>
+          <li>Mài mòn và hao mòn</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Các yêu cầu này giúp bảo toàn cả chức năng và
+          vẻ ngoài trong quá trình sử dụng bình thường.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Yêu cầu về Thiết kế và Chất lượng gia công
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tiêu chuẩn cũng chứa yêu cầu liên quan đến chất lượng
+          thiết kế và gia công.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Trong các yếu tố cần xem xét:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>
+            Cạnh tiếp cận được không được gây nguy hiểm
+            chấn thương.
+          </li>
+          <li>
+            Tránh cạnh sắc và phần nhô nguy hiểm.
+          </li>
+          <li>
+            Phần rỗng phải được đóng đúng cách khi
+            cần thiết.
+          </li>
+          <li>
+            Bộ phận chuyển động phải được thiết kế giảm rủi ro
+            chấn thương.
+          </li>
+          <li>
+            Sản phẩm hoàn thiện phải phù hợp thông số thiết kế
+            và mẫu đã khai báo.
+          </li>
+        </ul>
+
+        <h3 className={SUB_HEADING_CLASS}>Yêu cầu về An toàn</h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          An toàn là nguyên tắc cốt lõi xuyên suốt IS 17635:2022.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Tiêu chuẩn tích hợp yêu cầu nhằm giảm rủi ro phát sinh từ:
+          
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Sụp đổ cấu trúc</li>
+          <li>Cạnh sắc</li>
+          <li>Phần nhô nguy hiểm</li>
+          <li>Hỏng bộ phận</li>
+          <li>Áp lực sử dụng lặp lại</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tuân thủ các yêu cầu này giúp đảm bảo giường
+          an toàn khi sử dụng bình thường và trong điều kiện
+          sử dụng sai cách có thể dự đoán hợp lý.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Chứng nhận BIS cho Giường có Bắt buộc tại Ấn Độ không?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Có, đối với sản phẩm nội thất thuộc Lệnh Kiểm soát Chất lượng
+          áp dụng, Chứng nhận BIS bắt buộc trước khi
+          các sản phẩm đó có thể sản xuất, nhập khẩu, bán, phân phối,
+          lưu kho hoặc đưa ra bán tại Ấn Độ.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Nhà sản xuất phải xác minh trạng thái thông báo mới nhất và
+          ngày thực thi do Chính phủ Ấn Độ ban hành, vì
+          yêu cầu quy định có thể được cập nhật
+          theo thời gian.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Yêu cầu Sử dụng Dấu ISI
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Dấu ISI là bằng chứng sản phẩm tuân thủ Tiêu chuẩn Ấn Độ
+          liên quan và được sản xuất theo giấy phép BIS hợp lệ.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Dấu hiệu chỉ được dán sau khi:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Kiểm tra sản phẩm thành công</li>
+          <li>Đánh giá nhà máy</li>
+          <li>BIS phê duyệt đơn đăng ký</li>
+          <li>Cấp giấy phép</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sử dụng Dấu ISI trái phép bị cấm theo
+          Luật BIS, 2016.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -370,16 +921,17 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Quy trình chứng nhận BIS tại Ấn Độ tuân theo một thủ tục có cấu trúc
+          Quy trình chứng nhận BIS tại Ấn Độ tuân theo thủ tục có cấu trúc
           theo Chương trình Chứng nhận ISI.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Bước 1 – Xác định Tiêu chuẩn & Phạm vi Sản phẩm
+          
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Xác nhận khả năng áp dụng theo IS 17635:2022 và xác định các biến thể
-          sản phẩm.
+          Xác nhận khả năng áp dụng theo IS 17635:2022 và xác định
+          các biến thể sản phẩm.
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
@@ -388,7 +940,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Gửi đơn đăng ký qua Cổng thông tin trực tuyến BIS Manak với:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Chi tiết nhà sản xuất</li>
           <li>Địa chỉ nhà máy</li>
           <li>Mô tả sản phẩm</li>
@@ -402,11 +954,11 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Thanh toán các khoản phí áp dụng bao gồm:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Phí đăng ký</li>
           <li>Phí xử lý</li>
           <li>Phí kiểm tra</li>
-          <li>Phí kiểm tra</li>
+          <li>Phí kiểm tra nhà máy</li>
           <li>Phí đánh dấu</li>
         </ul>
 
@@ -419,7 +971,7 @@ const MainContentLeft = () => {
         <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
           Kiểm tra Bao gồm
         </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Kiểm tra tải tĩnh</li>
           <li>Kiểm tra độ bền</li>
           <li>Kiểm tra độ ổn định</li>
@@ -434,7 +986,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Cán bộ BIS kiểm tra:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Cơ sở sản xuất</li>
           <li>Kiểm soát nguyên liệu thô</li>
           <li>Kiểm tra trong quá trình</li>
@@ -448,7 +1000,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-3">
           Sau khi tuân thủ, BIS cấp:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Giấy chứng nhận BIS</li>
           <li>Quyền sử dụng Dấu ISI</li>
           <li>Số CML</li>
@@ -457,37 +1009,11 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Bước 7 – Tuân thủ Sau Chứng nhận
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Kiểm tra giám sát</li>
           <li>Gia hạn mỗi 1–2 năm</li>
           <li>Kiểm soát chất lượng liên tục</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Phạm vi Giấy phép BIS cho Giường
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> Tiêu chuẩn này bao gồm các yêu cầu liên quan đến
-          hiệu suất và an toàn của giường cho người lớn cho mục đích sử dụng
-          trong nước và ngoài nước.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> Tiêu chuẩn này áp dụng cho giường được sản xuất/
-          chế tạo hoàn toàn. Nó cũng áp dụng cho các đơn vị sẵn sàng lắp ráp;
-          trong trường hợp đó các yêu cầu của tiêu chuẩn này sẽ áp dụng cho các
-          đơn vị đã lắp ráp.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.3</strong> Tiêu chuẩn này không bao gồm giường nước, giường
-          hơi, giường gấp, giường tầng và giường cho người có nhu cầu đặc biệt,
-          cũng không bao gồm giường cho mục đích chăm sóc sức khỏe và y tế.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -503,7 +1029,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Tài liệu Nhà sản xuất
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Đăng ký/giấy phép nhà máy</li>
           <li>Sơ đồ quy trình sản xuất</li>
           <li>Danh sách máy móc</li>
@@ -516,7 +1042,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Tài liệu Pháp lý
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Bằng chứng địa chỉ</li>
           <li>Bằng chứng ID</li>
           <li>Ủy quyền thương hiệu</li>
@@ -526,7 +1052,7 @@ const MainContentLeft = () => {
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
           Tài liệu Kỹ thuật
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Bản vẽ sản phẩm</li>
           <li>Thông số kỹ thuật</li>
           <li>Hóa đơn vật liệu</li>
@@ -566,7 +1092,7 @@ const MainContentLeft = () => {
                   4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Thiết kế và chất lượng làm việc
+                  Thiết kế và chất lượng gia công
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -582,7 +1108,7 @@ const MainContentLeft = () => {
                   7.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Kiểm tra Độ ổn định
+                  Kiểm tra độ ổn định
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -633,10 +1159,10 @@ const MainContentLeft = () => {
           Thách thức Thường gặp & Cách Tránh
         </h2>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>
-            <strong>Lựa chọn tiêu chuẩn không đúng</strong> – Luôn xác minh Tiêu
-            chuẩn Ấn Độ đúng.
+            <strong>Lựa chọn tiêu chuẩn không đúng</strong> – Luôn xác minh
+            Tiêu chuẩn Ấn Độ đúng.
           </li>
           <li>
             <strong>Tài liệu kém</strong> – Tài liệu thiếu gây chậm trễ; chuẩn
@@ -660,23 +1186,6 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Lợi ích của Chứng nhận BIS cho Giường
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Bán hợp pháp tại Ấn Độ</li>
-          <li>Tăng niềm tin của khách hàng</li>
-          <li>Truy cập các nền tảng thương mại điện tử</li>
-          <li>Đủ điều kiện cho đấu thầu chính phủ</li>
-          <li>Giảm trách nhiệm</li>
-          <li>Uy tín thương hiệu mạnh</li>
-          <li>Tuân thủ tiêu chuẩn Ấn Độ</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Hình phạt cho Vi phạm
         </h2>
 
@@ -684,37 +1193,13 @@ const MainContentLeft = () => {
           Bán giường không có chứng nhận BIS có thể dẫn đến:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Phạt nặng</li>
           <li>Tịch thu sản phẩm</li>
           <li>Đóng cửa kinh doanh</li>
           <li>Hành động pháp lý</li>
           <li>Cấm thị trường</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Ai Cần Giấy chứng nhận BIS cho Giường?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Các thực thể sau phải có Giấy phép BIS cho Giường:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Nhà sản xuất Ấn Độ</li>
-          <li>Nhà sản xuất nước ngoài</li>
-          <li>Nhà nhập khẩu</li>
-          <li>Thương hiệu nội thất</li>
-          <li>Nhà cung cấp OEM/ODM</li>
-          <li>Người bán thương mại điện tử</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Mỗi đơn vị sản xuất yêu cầu giấy phép BIS riêng.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -727,7 +1212,7 @@ const MainContentLeft = () => {
           Chúng tôi cung cấp tư vấn BIS đầu cuối, bao gồm:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className={LIST_CLASS}>
           <li>Lập bản đồ tiêu chuẩn</li>
           <li>Hỗ trợ tài liệu</li>
           <li>Phối hợp kiểm tra</li>
@@ -781,7 +1266,9 @@ const MainContentLeft = () => {
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Nhà sản xuất nước ngoài có thể đăng ký không?</strong>
+              <strong>
+                3. Nhà sản xuất nước ngoài có thể đăng ký không?
+              </strong>
               <br />
               Có, theo FMCS.
             </p>
@@ -799,7 +1286,9 @@ const MainContentLeft = () => {
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Dấu ISI có bắt buộc trên giường không?</strong>
+              <strong>
+                5. Dấu ISI có bắt buộc trên giường không?
+              </strong>
               <br />
               Có.
             </p>
@@ -825,7 +1314,9 @@ const MainContentLeft = () => {
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Kiểm tra nhà máy có bắt buộc không?</strong>
+              <strong>
+                8. Kiểm tra nhà máy có bắt buộc không?
+              </strong>
               <br />
               Có.
             </p>
@@ -852,6 +1343,31 @@ const MainContentLeft = () => {
             }}
           />
         </div>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Tài nguyên liên quan
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Giấy chứng nhận Dấu ISI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              Giấy phép BIS FMCS
+            </a>
+          </li>
+        </ul>
 
         <ManyUsersAlsoReadVietnamese />
 

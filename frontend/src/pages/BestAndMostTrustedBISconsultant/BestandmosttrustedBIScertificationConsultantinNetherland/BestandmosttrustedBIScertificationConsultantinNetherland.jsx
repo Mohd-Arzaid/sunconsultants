@@ -333,7 +333,16 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Which is precisely why BIS certification matters urgently for Dutch
-          manufacturers right now. India&apos;s Bureau of Indian Standards is
+          manufacturers right now. India&apos;s{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          is
           expanding its mandatory Quality Control Order (QCO) framework to cover
           the exact categories where Dutch companies are most active — semiconductor
           equipment, medical devices, agri-technology, chemical compounds, and

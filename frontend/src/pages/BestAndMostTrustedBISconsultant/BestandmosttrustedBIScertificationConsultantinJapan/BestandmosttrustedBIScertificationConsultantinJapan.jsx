@@ -311,7 +311,16 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           However, entering India requires more than identifying customers and
           distribution channels. Many products are subject to mandatory compliance
-          requirements regulated by the Bureau of Indian Standards (BIS). Without
+          requirements regulated by the{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS). Without
           the appropriate BIS certification, regulated products cannot be legally
           imported, sold, or distributed in India.
         </p>

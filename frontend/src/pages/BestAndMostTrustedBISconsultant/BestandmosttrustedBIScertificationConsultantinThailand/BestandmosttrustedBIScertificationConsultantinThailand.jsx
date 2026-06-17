@@ -300,7 +300,16 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           But selling products in India is not as simple as finding a local
           distributor. India has a mandatory product certification framework
-          governed by the Bureau of Indian Standards (BIS) — and for most
+          governed by the{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS) — and for most
           regulated product categories, BIS certification is a legal requirement
           before your product can be imported, sold, or distributed anywhere in
           India.

@@ -314,7 +314,16 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          India&apos;s Bureau of Indian Standards is expanding its mandatory
+          India&apos;s{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          is expanding its mandatory
           Quality Control Orders (QCOs) to cover industrial machinery and capital
           equipment under BIS Schemes. For Italian textile machinery brands,
           ceramic equipment manufacturers, and packaging line suppliers who have

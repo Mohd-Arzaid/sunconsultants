@@ -25,6 +25,12 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
+const SUB_HEADING_CLASS =
+  "text-lg font-geist font-semibold text-[#1A8781] mb-2 mt-1";
+
+const LIST_CLASS =
+  "list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist";
+
 const BISCertificateForChairAndStoolsGerman = () => {
   return (
     <div className="relative w-full">
@@ -41,18 +47,18 @@ const BISCertificateForChairAndStoolsGerman = () => {
 export default BISCertificateForChairAndStoolsGerman;
 
 const MetaTags = () => {
-  const title = "BIS-Zertifikat für Stühle & Hocker | IS 17632:2022 BIS-Lizenz";
+  const title =
+    "BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke | IS 17632:2022";
   const ogTitle =
-    "BIS-Zertifizierung für Stühle & Hocker – IS 17632:2022 Leitfaden";
-  const twitterTitle = "BIS-Lizenz für Stühle & Hocker | IS 17632:2022";
+    "BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke | IS 17632:2022";
+  const twitterTitle =
+    "BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke | IS 17632:2022";
   const metaDescription =
-    "Erhalten Sie ein BIS-Zertifikat für Stühle & Hocker nach IS 17632:2022. Prozess, Dokumente, Tests, Kosten und Zeitplan für die BIS-Zertifizierung in Indien.";
-  const ogDescription =
-    "Vollständiger Leitfaden zur BIS-Zertifizierung für Stühle & Hocker gemäß IS 17632:2022. Erfahren Sie Prozess, Kosten, Dokumente, Tests und BIS-Lizenzvorteile.";
-  const twitterDescription =
-    "Beantragen Sie ein BIS-Zertifikat für Stühle & Hocker nach IS 17632:2022. Lernen Sie den BIS-Prozess, Dokumente, Tests, Gebühren und Zeitplan in Indien kennen.";
+    "Erfahren Sie alles über die BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke nach IS 17632:2022. ISI-Marken-Anforderungen, Tests, Zertifizierungsprozess, Dokumente, Vorteile und FAQs";
+  const ogDescription = metaDescription;
+  const twitterDescription = metaDescription;
   const metaKeywords =
-    "BIS-Zertifikat für Stühle & Hocker, BIS-Lizenz für Stühle & Hocker, IS 17632:2022, BIS-Zertifizierung für Stühle & Hocker";
+    "BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke, IS 17632:2022, ISI-Marke Stühle und Hocker, BIS-Lizenz Stühle Hocker, BIS-Zertifizierung Möbel";
   const websiteUrl =
     "https://bis-certifications.com/blogs/isi-products/stuhle-und-hocker-is-17632";
   const websiteName = "Sun Certifications India";
@@ -180,7 +186,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS-Zertifikat für Stühle & Hocker – IS 17632:2022
+                    BIS-Zertifizierung für Stühle und Hocker für allgemeine
+                    Zwecke (IS 17632:2022)
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -211,571 +218,563 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS-Zertifikat für Stühle und Hocker für allgemeine Zwecke –
-          Vollständiger Leitfaden zu IS 17632:2022
+          BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke (IS
+          17632:2022) – Vollständiger Leitfaden zur ISI-Marken-Zertifizierung
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
             src="/BISCertificationProductsImages/BISLicenseforchairsandstools.png"
-            title="BIS-Lizenz für Stühle & Hocker"
-            alt="BIS-Zertifikat für Stühle & Hocker - IS 17632:2022 BIS-Zertifizierung"
+            title="BIS-Lizenz für Stühle und Hocker für allgemeine Zwecke"
+            alt="BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke - IS 17632:2022 ISI-Marken-Leitfaden"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Zertifikat für Stühle und Hocker für allgemeine Zwecke ist
-          eine obligatorische Anforderung nach dem indischen Standard IS
-          17632:2022. Dieser Standard legt die Sicherheits-, Haltbarkeits- und
-          Leistungsanforderungen für Stühle und Hocker fest, die in Wohnungen,
-          Büros, gewerblichen Bereichen, Bildungseinrichtungen, Cafeterias,
-          Restaurants, Hotels und öffentlichen Räumen verwendet werden.
+          Stühle und Hocker für allgemeine Zwecke gehören zu den am häufigsten
+          verwendeten Möbelprodukten in Privathaushalten, Büros,
+          Bildungseinrichtungen, Gesundheitseinrichtungen, Einzelhandelsbetrieben,
+          öffentlichen Bereichen und gewerblichen Umgebungen. Da diese
+          Sitzmöbel regelmäßig und über längere Zeiträume genutzt werden, müssen
+          sie bestimmte Anforderungen an Qualität, Sicherheit, Festigkeit und
+          Haltbarkeit erfüllen, um eine zuverlässige Leistung zu gewährleisten.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Stühle und Hocker gehören zu den am häufigsten verwendeten
-          Möbelstücken und sind ständig Belastungen, Bewegungen und wiederholtem
-          Stress ausgesetzt. Ein strukturell schwacher Stuhl oder Hocker kann
-          plötzlich zusammenbrechen und zu Verletzungen führen. Um solche
-          Gefahren zu verhindern und die Verbrauchersicherheit zu gewährleisten,
-          verlangt das Bureau of Indian Standards (BIS) von jedem Hersteller und
-          Importeur, eine BIS-Zertifizierung für Stühle und Hocker zu erhalten,
-          bevor sie diese in Indien verkaufen.
+          Mit dem zunehmenden Fokus auf Produktqualität und Verbrauchersicherheit
+          ist die Einhaltung indischer Normen zu einer wichtigen Anforderung für
+          Möbelhersteller und Importeure geworden. Die BIS-Zertifizierung für
+          Stühle und Hocker für allgemeine Zwecke nach IS 17632:2022 stellt
+          sicher, dass Produkte die vorgeschriebenen Leistungs- und
+          Sicherheitsanforderungen erfüllen, bevor sie auf dem indischen Markt
+          in den Verkehr gebracht werden.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Diese Seite bietet einen vollständigen Leitfaden zur
-          BIS-Zertifizierung für Stühle und Hocker nach IS 17632:2022,
-          einschließlich des Zertifizierungsprozesses, erforderlicher Dokumente,
-          Testanforderungen, Gebühren, Herausforderungen, Strafen und Vorteile.
+          Die Zertifizierung durch das Bureau of Indian Standards (BIS) ermöglicht
+          es Herstellern, das ISI-Zeichen auf konformen Produkten zu verwenden.
+          Das ISI-Zeichen dient als Nachweis, dass das Produkt anerkannten
+          indischen Qualitätsstandards entspricht und den erforderlichen
+          Bewertungsprozess durchlaufen hat.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Da die Möbelindustrie weiter wächst und Beschaffungsstellen zunehmend
+          zertifizierte Produkte bevorzugen, ist die BIS-Zertifizierung zu einer
+          wichtigen Compliance- und Marktzugangsanforderung für Hersteller
+          geworden.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Was ist BIS-Zertifizierung?
+          Wichtige Highlights der BIS-Zertifizierung für Stühle und Hocker für
+          allgemeine Zwecke
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Die BIS-Zertifizierung ist ein Produkt-Compliance-System, das vom
-          Bureau of Indian Standards, der nationalen Normungsbehörde Indiens,
-          verwaltet wird.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Bedeutung des BIS-Zertifikats
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Ein BIS-Zertifikat stellt sicher, dass ein Produkt:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Den indischen Sicherheits- und Qualitätsstandards entspricht</li>
-          <li>BIS-zugelassene Labortests bestanden hat</li>
-          <li>Einer Fabrikinspektion unterzogen wurde</li>
-          <li>
-            Verbraucher vor unsicheren oder minderwertigen Produkten schützt
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Zertifizierte Produkte tragen das ISI-Markenzeichen, was die
-          Einhaltung der indischen Standards demonstriert.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Anwendbarer Standard – IS 17632:2022 für Stühle & Hocker
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der BIS-Standard für Stühle und Hocker ist:
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17632:2022</strong> – Stühle und Hocker für allgemeine
-          Zwecke: Sicherheitsanforderungen
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Dieser Standard deckt alle nicht spezialisierten Stühle und Hocker ab,
-          die für Sitzzwecke in Wohnungen, Büros, gewerblichen Umgebungen,
-          öffentlichen Orten und institutionellen Einrichtungen verwendet
-          werden.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Produkte, die unter IS 17632:2022 abgedeckt sind
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stühle für allgemeine Zwecke</li>
-          <li>Esszimmerstühle</li>
-          <li>Büro-Besucherstühle</li>
-          <li>Lernstühle</li>
-          <li>Cafeteria-Stühle</li>
-          <li>Restaurant-Stühle</li>
-          <li>Besprechungsraum-Stühle</li>
-          <li>Wartebereich-Stühle</li>
-          <li>Holzstühle</li>
-          <li>Metallstühle</li>
-          <li>Kunststoffstühle (nicht spezialisiert)</li>
-          <li>Hocker für allgemeine Zwecke</li>
-          <li>Barhocker</li>
-          <li>Esszimmerhocker</li>
-          <li>Tritthocker (innerhalb definierter Kriterien)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Wichtige Sicherheits- und Leistungsparameter
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          IS 17632:2022 bewertet:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Strukturelle Festigkeit</li>
-          <li>Stabilität</li>
-          <li>Haltbarkeit bei wiederholter Verwendung</li>
-          <li>Sitzfestigkeit</li>
-          <li>Rückenlehnenleistung</li>
-          <li>Bein-Impact-Widerstand</li>
-          <li>Verbindungsfestigkeit</li>
-          <li>Oberflächenqualität</li>
-          <li>Kanten- und Ecken-Sicherheit</li>
-          <li>Materialqualität</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Alle in Indien verkauften Stühle und Hocker müssen diesen Parametern
-          entsprechen und eine BIS-Lizenz für Stühle und Hocker erhalten.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Warum BIS-Zertifizierung für Stühle & Hocker obligatorisch ist
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Stühle und Hocker tragen menschliches Gewicht und werden häufig in
-          allen Umgebungen verwendet. Strukturelles Versagen kann zu führen:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Zusammenbrechende Stühle</li>
-          <li>Bruch der Beine</li>
-          <li>Sitzrissbildung</li>
-          <li>Rückenlehnenversagen</li>
-          <li>Verletzungen durch scharfe Kanten</li>
-          <li>Instabilität, die zu Stürzen führt</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Vorteile der BIS-Zertifizierung
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Gewährleistet sichere Sitzprodukte</li>
-          <li>Verhindert Unfälle und Verletzungen</li>
-          <li>Verbessert die Produkthaltbarkeit</li>
-          <li>Verhindert minderwertige Importe</li>
-          <li>Etabliert einheitliche Marktqualität</li>
-          <li>Erhöht das Kundenvertrauen</li>
-          <li>Obligatorisch nach indischem Recht (BIS QCOs)</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Ohne BIS-Zertifizierung können Hersteller Stühle oder Hocker in Indien
-          nicht legal verkaufen.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS-Zertifizierungsprozess für Stühle und Hocker (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Der BIS-Prozess folgt dem ISI-Mark-Zertifizierungsschema, das Tests,
-          Inspektionen und Antragsprüfungen umfasst.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 1 – Produkttyp & Standard identifizieren
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Bestätigen Sie, dass der Stuhl/Hocker unter IS 17632:2022 fällt.
-          Identifizieren Sie Designvarianten und verwendete Materialien.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 2 – BIS-Antrag online einreichen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Der Antrag wird über das BIS Manak Online-Portal eingereicht und
-          erfordert:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Herstellerdetails</li>
-          <li>Fabrikinformationen</li>
-          <li>Produktspezifikationen</li>
-          <li>Marken-/Markendetails</li>
-          <li>Fertigungsprozess-Workflow</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 3 – BIS-Zertifizierungsgebühren zahlen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Gebühren umfassen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Antragsgebühr</li>
-          <li>Bearbeitungsgebühr</li>
-          <li>Musterprüfungsgebühren</li>
-          <li>Fabrikinspektionsgebühren</li>
-          <li>Kennzeichnungsgebühren</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 4 – Produkttests gemäß IS 17632:2022
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Obligatorische Tests werden in einem BIS-anerkannten Labor
-          durchgeführt.
-        </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tests umfassen:
-        </h4>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stabilitätstest</li>
-          <li>Festigkeitstest für Sitz</li>
-          <li>Rückenlehnen-Haltbarkeitstest</li>
-          <li>Bein-Vorwärts-/Seitwärts-/Rückwärts-Belastungstest</li>
-          <li>Sitz-Impact-Test</li>
-          <li>Falltest</li>
-          <li>Ermüdungstest</li>
-          <li>Oberflächenfinish-Test</li>
-          <li>Scharfkanten-Test</li>
-          <li>Strukturelle Haltbarkeit unter wiederholten Zyklen</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Testergebnisse müssen vollständige Einhaltung von IS 17632:2022
-          zeigen.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 5 – Fabrikinspektion durch BIS
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Ein BIS-Beamter besucht die Fabrik, um zu bewerten:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fertigungsprozess</li>
-          <li>Rohstoffinspektion</li>
-          <li>Qualitätskontrollverfahren</li>
-          <li>Testfähigkeit</li>
-          <li>Kalibrierung der Ausrüstung</li>
-          <li>Produktionsvolumen</li>
-          <li>Einhaltung des BIS-Schemas für Tests & Inspektionen (STI)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 6 – Erteilung der BIS-Lizenz
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Wenn Tests und Inspektion erfolgreich sind, erteilt BIS:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS-Zertifikat (ISI-Mark-Lizenz)</li>
-          <li>CML-Nummer</li>
-          <li>
-            Genehmigung zur Anbringung des ISI-Markenzeichens auf Stühlen und
-            Hockern
-          </li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Schritt 7 – Nachlizenz-Verpflichtungen
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Hersteller müssen:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            Das ISI-Markenzeichen gemäß BIS-Kennzeichnungsanforderungen
-            verwenden
-          </li>
-          <li>Qualitätskontrollaufzeichnungen führen</li>
-          <li>Regelmäßigen BIS-Überwachungsinspektionen unterzogen werden</li>
-          <li>Lizenz alle 1–2 Jahre erneuern</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Umfang der BIS-Lizenz für Stühle & Hocker
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dieser Standard deckt die Anforderungen für Stühle und Hocker für
-          allgemeine Zwecke ab. Dieser Standard gilt für vollständig
-          hergestellte/gefertigte Stühle und Hocker für allgemeine Zwecke. Er
-          gilt auch für montagefertige Einheiten; in diesem Fall gelten die
-          Anforderungen dieses Standards für die montierten Einheiten.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Für die BIS-Zertifizierung von Stühlen & Hockern erforderliche
-          Dokumente
-        </h2>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Herstellerdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Fabriklizenz/Registrierung</li>
-          <li>Fertigungsprozess-Flussdiagramm</li>
-          <li>Maschinenliste</li>
-          <li>Liste der internen Testausrüstung</li>
-          <li>Kalibrierungszertifikate</li>
-          <li>Fabriklayout & Grundriss</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Technische Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stuhl/Hocker-Zeichnungen</li>
-          <li>Abmessungen & Spezifikationen</li>
-          <li>Stückliste</li>
-          <li>Beschreibung der Sicherheitsmerkmale</li>
-          <li>Interne Qualitätstestberichte</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          Rechtliche Dokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identitäts- & Adressnachweis</li>
-          <li>Markenautorisierungsschreiben</li>
-          <li>Markenzertifikat (optional)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-          BIS-Antragsdokumente
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Antragsformular</li>
-          <li>Testanfrageformular</li>
-          <li>Erklärungsformulare</li>
-          <li>Autorisierungsschreiben</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Testanforderungen für Stühle & Hocker (IS 17632:2022)
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          IS 17632:2022 umfasst umfangreiche mechanische, strukturelle und
-          Sicherheits- Tests.
-        </p>
-
-        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-4">
-          Obligatorische Tests
-        </h3>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+        <div className="mt-2 mb-6 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
           <Table className="min-w-full border-collapse">
             <TableHeader>
               <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Klausel
+                  Merkmal
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Anforderung
+                  Details
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design und Verarbeitung
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vorwärts-Überkippen und Seitwärts-Überkippen für Stühle ohne
-                  Armlehnen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rückwärts-Überkippen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Seitwärts-Überkippen für Stühle mit Armlehnen
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Hocker/ Poufs (Alle Richtungen)
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Festigkeitstest
-                </TableCell>
-              </TableRow>
+              {[
+                ["Produktname", "Stühle und Hocker für allgemeine Zwecke"],
+                ["Anwendbare indische Norm", "IS 17632:2022"],
+                ["Zertifizierungsart", "BIS-Produktzertifizierung"],
+                [
+                  "Zertifizierungsschema",
+                  "Schema-I (ISI-Marken-Zertifizierung)",
+                ],
+                ["Anwendbare Marke", "ISI-Marke"],
+                ["Regulierungsbehörde", "Bureau of Indian Standards"],
+                ["Zuständiges Ministerium", "Ministerium für Handel und Industrie"],
+                [
+                  "Compliance-Anforderung",
+                  "Obligatorisch gemäß anwendbarer Möbel-QCO (Quality Control Order)",
+                ],
+                ["Produktkategorie", "Möbel"],
+              ].map(([particular, details], index) => (
+                <TableRow
+                  key={particular}
+                  className={`hover:bg-white/50 transition-colors border-b border-gray-200/30 ${index % 2 === 1 ? "bg-white/30" : ""}`}
+                >
+                  <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                    {particular}
+                  </TableCell>
+                  <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                    {particular === "Zertifizierungsschema" ? (
+                      <a
+                        href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Schema-I (ISI-Marken-Zertifizierung)
+                      </a>
+                    ) : particular === "Compliance-Anforderung" ? (
+                      <>
+                        Obligatorisch gemäß anwendbarer{" "}
+                        <a
+                          href="https://bis-certifications.com/bis-qco-updates/bis-certificate-for-chairs-and-stools"
+                          className="text-blue-600 hover:underline"
+                        >
+                          <strong>Möbel-QCO (Quality Control Order)</strong>
+                        </a>
+                      </>
+                    ) : (
+                      details
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Diese Tests gewährleisten eine sichere tägliche Nutzung unter realen
-          Bedingungen.
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Was ist die BIS-Zertifizierung für Stühle und Hocker für allgemeine
+          Zwecke?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke ist
+          ein Konformitätsbewertungsverfahren im Rahmen des BIS-Produktzertifizierungsschemas.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Häufige Herausforderungen & wie man sie vermeidet
-        </h2>
-
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Stuhl fällt Stabilitätstests durch</strong>
-            <br />
-            Tritt aufgrund ungleichmäßiger Gewichtsverteilung auf.
-            <br />
-            Lösung: Beindesign verbessern, Grundfläche verbreitern.
-          </li>
-          <li>
-            <strong>Schwache Verbindungen verursachen Testfehler</strong>
-            <br />
-            Lösung: Verstärkte Materialien & bessere Verbinder verwenden.
-          </li>
-          <li>
-            <strong>Unzureichende interne Testausrüstung</strong>
-            <br />
-            Lösung: Erforderliche BIS-konforme Instrumente installieren.
-          </li>
-          <li>
-            <strong>Dokumentationsinkonsistenzen</strong>
-            <br />
-            Lösung: Dokumente systematisch vor der Beantragung vorbereiten.
-          </li>
-          <li>
-            <strong>Produktvarianten nicht ordnungsgemäß zugeordnet</strong>
-            <br />
-            Lösung: Produkte basierend auf Struktur & Testparametern gruppieren.
-          </li>
-        </ol>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Vorteile der BIS-Zertifizierung für Stühle & Hocker
-        </h2>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Rechtliche Erlaubnis zum Verkauf in Indien</li>
-          <li>Verbesserte Produktsicherheit</li>
-          <li>Erhöhtes Kundenvertrauen</li>
-          <li>Geringeres Produkthaftungsrisiko</li>
-          <li>Erforderlich für E-Commerce-Listen</li>
-          <li>Wesentlich für Regierungsausschreibungen</li>
-          <li>Höhere Markenglaubwürdigkeit</li>
-          <li>Wettbewerbsvorteil</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Strafen bei Nichteinhaltung
-        </h2>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ziel der Zertifizierung ist die Überprüfung, ob das Produkt die in IS
+          17632:2022 festgelegten Anforderungen erfüllt. Nach Erteilung der
+          Zertifizierung sind Hersteller berechtigt, das ISI-Zeichen auf ihren
+          Produkten zu verwenden.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Der Verkauf von Stühlen oder Hockern ohne BIS-Zertifizierung kann zu
-          führen:
+          Der Zertifizierungsprozess bewertet verschiedene Aspekte der
+          Produktleistung, darunter:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Schwere Geldstrafen</li>
-          <li>Produktrückruf/Beschlagnahme</li>
-          <li>Kündigung von Fabriklizenzen</li>
-          <li>Strafverfolgung</li>
-          <li>Importbeschränkungen</li>
-          <li>Markt-Sperrliste</li>
+        <ul className={LIST_CLASS}>
+          <li>Festigkeit</li>
+          <li>Stabilität</li>
+          <li>Haltbarkeit</li>
+          <li>Strukturelle Leistung</li>
+          <li>Sicherheitsanforderungen</li>
+          <li>Materialqualität</li>
+          <li>Verarbeitung</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Strafen werden nach dem BIS-Gesetz von 2016 durchgesetzt.
+          Die Zertifizierung trägt dazu bei, dass auf dem indischen Markt
+          angebotene Sitzmöbel etablierte Qualitäts- und Sicherheitsstandards
+          erfüllen.
         </p>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Wer benötigt eine BIS-Zertifizierung für Stühle & Hocker?
+          Überblick über IS 17632:2022
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Obligatorisch für:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          IS 17632:2022 ist die indische Norm, die Anforderungen an Stühle und
+          Hocker für allgemeine Zwecke festlegt.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indische Hersteller</li>
-          <li>Ausländische Hersteller, die nach Indien exportieren</li>
-          <li>Importeure</li>
-          <li>Markeninhaber/Händler</li>
-          <li>OEM/ODM-Lieferanten</li>
-          <li>Einzelhandelsketten</li>
-          <li>Online-Verkäufer</li>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Norm legt Anforderungen in Bezug auf Sicherheit, Festigkeit,
+          Haltbarkeit, Stabilität und Gesamtleistung von Sitzmöbeln für den
+          allgemeinen Gebrauch fest.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Norm gilt für:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Vollständig hergestellte Stühle und Hocker</li>
+          <li>Gefertigte Stühle und Hocker</li>
+          <li>Montagefertige Produkte nach der Montage</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Jede Fabrik benötigt eine separate BIS-Lizenz.
+          Zweck der Norm ist es sicherzustellen, dass Möbelprodukte während ihrer
+          vorgesehenen Nutzungsdauer eine sichere, zuverlässige und haltbare
+          Leistung bieten.
         </p>
 
-        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Wichtige Anforderungen nach IS 17632:2022
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>Festigkeitsanforderungen</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Stühle und Hocker für allgemeine Zwecke müssen ausreichende
+          strukturelle Festigkeit aufweisen, um erwartete Belastungen bei
+          normaler Nutzung standzuhalten.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Stabilitätsanforderungen</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Das Möbelstück sollte bei der vorgesehenen Nutzung stabil bleiben und
+          keine unnötigen Kippgefahren darstellen.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Haltbarkeitsanforderungen</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Produkte müssen in der Lage sein, ihre strukturelle Integrität und
+          Leistung über wiederholte Nutzungszyklen hinweg aufrechtzuerhalten.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Sicherheitsanforderungen</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Norm umfasst sicherheitsbezogene Anforderungen, die darauf abzielen,
+          mit der Möbelnutzung verbundene Risiken zu minimieren.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Materialqualität und Verarbeitung</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Qualität der Materialien, Fertigungsverfahren, Montagemethoden,
+          Verbindungen und Oberflächenbearbeitung trägt maßgeblich zur Einhaltung
+          der Norm bei.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Ergonomische Aspekte</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Die Norm berücksichtigt leistungsbezogene Aspekte, die zum
+          Nutzerkomfort und zur praktischen Funktionalität beitragen.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Von IS 17632:2022 abgedeckte Produkte
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Norm gilt im Allgemeinen für:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Stühle für allgemeine Zwecke</li>
+          <li>Hocker für allgemeine Zwecke</li>
+          <li>Feste Sitzmöbel für den allgemeinen Gebrauch</li>
+          <li>Montagefertige Sitzprodukte nach der Montage</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller sollten den Anwendungsbereich der Norm sorgfältig prüfen,
+          um die Anwendbarkeit auf ihre Produkte zu bestimmen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>
+            Ebenfalls prüfen: Möbelprodukte unter obligatorischer
+            BIS-Zertifizierung —
+          </strong>{" "}
+          <a
+            href="https://bis-certifications.com/blogs/isi-products/furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <strong>BIS-Zertifizierung für Möbel</strong>
+          </a>
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Ist die BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke
+          obligatorisch?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Ja. Möbelprodukte, die unter die anwendbare Möbel-Quality-Control-Order
+          (QCO) fallen, müssen die relevante indische Norm einhalten und eine
+          BIS-Zertifizierung erhalten, bevor sie auf dem indischen Markt
+          hergestellt, importiert, verkauft, vertrieben oder geliefert werden
+          dürfen.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller, die unter den anwendbaren regulatorischen Rahmen fallen,
+          müssen eine BIS-Lizenz erhalten und die von BIS vorgeschriebenen
+          Kennzeichnungsanforderungen einhalten.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Testanforderungen für die BIS-Zertifizierung
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Vor Erteilung der Zertifizierung müssen Produktproben durch Tests in
+          anerkannten Laboratorien bewertet werden.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Die Tests konzentrieren sich im Allgemeinen auf folgende Parameter:
+        </p>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Bewertung der strukturellen Leistung —</strong> Prüft, ob
+            der Stuhl oder Hocker normalen Nutzungsbedingungen ohne Versagen
+            standhält.
+          </li>
+          <li>
+            <strong>Stabilitätstest —</strong> Beurteilt, ob das Möbelstück bei
+            der vorgesehenen Nutzung stabil bleibt und Kippen widersteht.
+          </li>
+          <li>
+            <strong>Festigkeitsbewertung —</strong> Bewertet die
+            Tragfähigkeit und strukturelle Integrität von Rahmen, Verbindungen
+            und Stützen.
+          </li>
+          <li>
+            <strong>Haltbarkeitsbewertung —</strong> Prüft die
+            Leistungsfähigkeit nach wiederholten Nutzungszyklen über die
+            vorgesehene Nutzungsdauer des Produkts.
+          </li>
+          <li>
+            <strong>Sicherheitsbewertung —</strong> Identifiziert potenzielle
+            Gefahren und überprüft die Einhaltung vorgeschriebener
+            Sicherheitsanforderungen.
+          </li>
+          <li>
+            <strong>Verarbeitungsprüfung —</strong> Überprüft die
+            Bauqualität, Oberflächenbearbeitung, Montageintegrität und
+            Gesamtverarbeitungsstandards.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Produktkennzeichnungsanforderungen
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Produkte, die nach IS 17632:2022 zertifiziert sind, müssen im
+          Allgemeinen folgende Identifikationsinformationen tragen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Name oder Warenzeichen des Herstellers</li>
+          <li>Modell- oder Designbezeichnung</li>
+          <li>Chargen- oder Losnummer</li>
+          <li>Herstellungsdatum</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Das ISI-Zeichen darf erst nach Erhalt einer gültigen BIS-Lizenz
+          angebracht werden.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          BIS-Zertifizierungsprozess für Stühle und Hocker für allgemeine Zwecke
+        </h2>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 1: Bewertung des Produktumfangs
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Der erste Schritt besteht darin festzustellen, ob das Produkt in den
+          Anwendungsbereich von IS 17632:2022 und der anwendbaren Möbel-QCO
+          fällt.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Prüfen Sie Stuhl- oder Hockertyp, vorgesehene Nutzung, Materialien und
+          Konstruktion, bevor Sie den Zertifizierungsprozess einleiten.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 2: Vorbereitung der Dokumentation
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Der Hersteller bereitet die für die Zertifizierung erforderlichen
+          technischen und Compliance-Dokumente vor, einschließlich
+          Unternehmensunterlagen, Werksdetails, Produktspezifikationen und
+          Qualitätskontrollverfahren.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Vollständige und genaue Dokumentation hilft, unnötige Verzögerungen
+          während der BIS-Prüfung zu vermeiden.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Schritt 3: Produkttests</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Repräsentative Proben werden in einem BIS-anerkannten Labor getestet,
+          um die Einhaltung der Anforderungen von IS 17632:2022 zu überprüfen.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Der Laborprüfbericht ist ein wichtiges technisches Dokument zur
+          Unterstützung des Zertifizierungsantrags.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>
+          Schritt 4: Einreichung des BIS-Antrags
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Der Zertifizierungsantrag wird zusammen mit unterstützenden
+          Dokumenten, Prüfberichten und Fertigungsinformationen eingereicht.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          BIS prüft den Antrag auf Vollständigkeit und technische Konformität,
+          bevor es fortfährt.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Schritt 5: Werksinspektion</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS kann die Fertigungsanlage, Produktionssysteme und
+          Qualitätskontrollprozesse bewerten, um die Fähigkeit zur
+          konstanten Herstellung konformer Produkte zu überprüfen.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Diese Bewertung umfasst typischerweise Produktionsinfrastruktur,
+          QC-Systeme, Rohstoffkontrollen und Produktrückverfolgbarkeit.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Schritt 6: Technische Prüfung</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Antrag, Prüfberichte und Inspektionsergebnisse werden von BIS geprüft,
+          bevor eine Zertifizierungsentscheidung getroffen wird.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Beobachtungen oder Mängel, die während der Prüfung festgestellt werden,
+          müssen vom Antragsteller behoben werden.
+        </p>
+
+        <h3 className={SUB_HEADING_CLASS}>Schritt 7: Erteilung der Lizenz</h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Bei zufriedenstellender Konformität erteilt BIS die Lizenz und
+          autorisiert die Verwendung des ISI-Zeichens auf zertifizierten Stühlen
+          und Hockern für allgemeine Zwecke.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hersteller müssen während der gesamten Lizenzlaufzeit die
+          BIS-Anforderungen weiterhin einhalten.
+        </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Vorteile der BIS-Zertifizierung
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Einhaltung indischer Vorschriften —</strong> Erfüllung
+            obligatorischer Qualitäts- und Sicherheitsanforderungen gemäß der
+            anwendbaren Möbel-QCO.
+          </li>
+          <li>
+            <strong>Rechtlicher Marktzugang —</strong> Lieferung zertifizierter
+            Stühle und Hocker in Indien gemäß den anwendbaren regulatorischen
+            Anforderungen.
+          </li>
+          <li>
+            <strong>Verbesserte Produktglaubwürdigkeit —</strong> Das ISI-Zeichen
+            belegt die Konformität mit anerkannten indischen Normen.
+          </li>
+          <li>
+            <strong>Erhöhtes Kundenvertrauen —</strong> Verbraucher und
+            institutionelle Käufer bevorzugen Produkte, die an etablierten
+            Benchmarks geprüft wurden.
+          </li>
+          <li>
+            <strong>Wettbewerbsvorteil —</strong> Größere Akzeptanz bei
+            gewerblichen und behördlichen Beschaffungsverfahren.
+          </li>
+          <li>
+            <strong>Verbesserter Markenruf —</strong> Zeigt Engagement für
+            Produktqualität, Sicherheit und langfristige Zuverlässigkeit.
+          </li>
+          <li>
+            <strong>Unterstützung für KMU —</strong> Hilft kleinen und mittleren
+            Herstellern, ihre Marktpräsenz zu stärken und Kundenvertrauen
+            aufzubauen.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Häufige Herausforderungen während der Zertifizierung
+        </h2>
+
+        <ul className={`${LIST_CLASS} space-y-3`}>
+          <li>
+            <strong>Fehlgeschlagene Produkttests —</strong> Design- oder
+            Fertigungsmängel können während der Laborbewertung zu
+            Nichtkonformität führen.
+          </li>
+          <li>
+            <strong>Dokumentationsprobleme —</strong> Unvollständige oder
+            widersprüchliche Unterlagen verursachen häufig Verzögerungen bei der
+            Zertifizierung.
+          </li>
+          <li>
+            <strong>Lücken bei der Fertigungskonformität —</strong>
+            Qualitätskontrollsysteme müssen möglicherweise verbessert werden,
+            bevor die Zertifizierung erteilt werden kann.
+          </li>
+          <li>
+            <strong>Regulatorische Komplexität —</strong> Die Verwaltung von
+            Tests, Inspektionen und Zertifizierungsverfahren kann ohne
+            fachkundige Begleitung herausfordernd sein.
+          </li>
+        </ul>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Warum Sun Certifications India wählen?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sun Certifications India unterstützt Hersteller, Importeure, Exporteure
+          und Unternehmen bei regulatorischen Compliance-Anforderungen in ganz
+          Indien.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Unsere Leistungen umfassen:
+        </p>
+
+        <ul className={LIST_CLASS}>
+          <li>Bewertung der Produktanwendbarkeit</li>
+          <li>BIS-Zertifizierungsberatung</li>
+          <li>Unterstützung bei der Dokumentation</li>
+          <li>Koordination von Laborprüfungen</li>
+          <li>Vorbereitung auf Werksinspektionen</li>
+          <li>Antragsmanagement</li>
+          <li>Unterstützung bei der regulatorischen Compliance</li>
+          <li>Betreuung nach der Zertifizierung</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Unser Ziel ist es, Kunden bei der effizienten Navigation durch
+          Zertifizierungsanforderungen zu unterstützen und Compliance mit
+          minimalen Verzögerungen zu erreichen.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
@@ -783,116 +782,143 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Das BIS-Zertifikat für Stühle und Hocker für allgemeine Zwecke nach IS
-          17632:2022 ist obligatorisch, um Produktsicherheit, strukturelle
-          Stabilität und Haltbarkeit zu gewährleisten. Die BIS-Zertifizierung
-          hilft Herstellern nicht nur, hohe Qualitätsstandards
-          aufrechtzuerhalten, sondern ermöglicht auch den rechtlichen
-          Marktzugang und erhöht das Verbrauchervertrauen.
+          Die BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke nach
+          IS 17632:2022 spielt eine wichtige Rolle bei der Sicherstellung von
+          Produktqualität, Sicherheit, Festigkeit, Stabilität und Haltbarkeit. Die
+          Zertifizierung hilft Herstellern, die Einhaltung indischer Normen
+          nachzuweisen, stärkt das Kundenvertrauen und unterstützt den
+          Marktzugang.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mit professioneller Unterstützung wird der Zertifizierungsprozess—von
-          Tests bis Inspektion und Genehmigung—reibungslos, vorhersehbar und
-          vollständig konform.
+          Da die Nachfrage nach qualitätsgesicherten Möbelprodukten weiter
+          wächst, bieten die BIS-Zertifizierung und das ISI-Zeichen wertvolle
+          Sicherheit für Verbraucher, Institutionen und Beschaffungsstellen.
+          Hersteller, die in Compliance investieren, erfüllen nicht nur
+          regulatorische Anforderungen, sondern verbessern auch ihre
+          Wettbewerbsfähigkeit und ihren langfristigen Marktruf.
         </p>
 
-        {/* Separator Line */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Wenn Sie planen, eine BIS-Zertifizierung für Stühle und Hocker für
+          allgemeine Zwecke nach IS 17632:2022 zu erhalten, kann Sun
+          Certifications India fachkundige Beratung und umfassende
+          Compliance-Unterstützung während des gesamten Zertifizierungsprozesses
+          bieten.
+        </p>
+
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs – BIS-Zertifikat für Stühle und Hocker
+          FAQs – BIS-Zertifizierung für Stühle und Hocker für allgemeine Zwecke
+          (IS 17632:2022)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Ist die BIS-Zertifizierung für Stühle und Hocker
-                obligatorisch?
-              </strong>
+              <strong>1. Was ist IS 17632:2022?</strong>
               <br />
-              Ja, gemäß IS 17632:2022 müssen alle Stühle und Hocker für
-              allgemeine Zwecke BIS-zertifiziert sein, bevor sie in Indien
-              verkauft werden.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. Welche Tests sind erforderlich?</strong>
-              <br />
-              Stabilitäts-, Festigkeits-, Haltbarkeits-, Impact-, Ermüdungs- und
-              Material- Sicherheitstests.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Wie lange dauert die BIS-Zertifizierung?</strong>
-              <br />
-              Typischerweise 30–45 Tage.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. Was kostet die Zertifizierung?</strong>
-              <br />
-              Etwa ₹60.000–₹1,30.000 je nach Tests und Inspektion.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Können ausländische Hersteller sich bewerben?</strong>
-              <br />
-              Ja, unter dem FMCS-Schema.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. Ist die ISI-Kennzeichnung obligatorisch?</strong>
-              <br />
-              Ja, nach Erteilung der BIS-Lizenz.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Warum fallen Stühle bei BIS-Tests durch?</strong>
-              <br />
-              Häufige Ursachen sind schwache Beine, schlechte
-              Verbindungsfestigkeit und Instabilität.
+              IS 17632:2022 ist die indische Norm, die Anforderungen an Stühle
+              und Hocker für allgemeine Zwecke festlegt.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                8. Können mehrere Modelle unter einer Lizenz abgedeckt werden?
+                2. Ist die BIS-Zertifizierung für Stühle und Hocker für
+                allgemeine Zwecke obligatorisch?
               </strong>
               <br />
-              Nur wenn sie Ähnlichkeits- und Standard-Compliance-Kriterien
-              erfüllen.
+              Produkte, die unter die anwendbare Möbel-Quality-Control-Order
+              fallen, müssen die BIS-Zertifizierungsanforderungen erfüllen.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Ist eine Fabrikinspektion erforderlich?</strong>
+              <strong>3. Was ist das ISI-Zeichen?</strong>
               <br />
-              Ja, sie ist obligatorisch für die ISI-Mark-Zertifizierung.
+              Das ISI-Zeichen ist das standardmäßige Zertifizierungszeichen, das
+              im Rahmen des BIS-Produktzertifizierungsschemas vergeben wird.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. Welche Dokumente werden benötigt?</strong>
+              <strong>4. Wer kann die BIS-Zertifizierung beantragen?</strong>
               <br />
-              Fabriklizenz, technische Spezifikationen, Maschinenliste, QC-Plan,
-              Produkt- Zeichnungen usw.
+              Sowohl indische als auch ausländische Hersteller können die
+              Zertifizierung beantragen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                5. Erfordert die BIS-Zertifizierung Produkttests?
+              </strong>
+              <br />
+              Ja. Produkttests sind ein wichtiger Bestandteil des
+              Zertifizierungsprozesses.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                6. Sind montagefertige Stühle unter IS 17632:2022 abgedeckt?
+              </strong>
+              <br />
+              Ja. Die Norm gilt für montagefertige Produkte nach der Montage.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                7. Welche Produkte sind vom Anwendungsbereich von IS 17632:2022
+                ausgeschlossen?
+              </strong>
+              <br />
+              Produkte wie Liegestühle, Schaukelstühle, Kippstühle, Sofas und
+              bestimmte spezialisierte Sitzmöbel sind im Allgemeinen
+              ausgeschlossen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                8. Welche Vorteile bietet die BIS-Zertifizierung?
+              </strong>
+              <br />
+              Vorteile sind regulatorische Compliance, verbesserte
+              Produktglaubwürdigkeit, erhöhtes Kundenvertrauen und bessere
+              Marktakzeptanz.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                9. Können ausländische Hersteller die BIS-Zertifizierung
+                erhalten?
+              </strong>
+              <br />
+              Ja. Ausländische Hersteller können den anwendbaren
+              BIS-Zertifizierungsweg für Hersteller im Ausland nutzen.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>10. Wie kann Sun Certifications India helfen?</strong>
+              <br />
+              Sun Certifications India bietet umfassende Unterstützung bei der
+              BIS-Zertifizierung, einschließlich Dokumentation,
+              Testkoordination, Antragsmanagement und Compliance-Unterstützung.
             </p>
           </div>
         </div>
@@ -901,7 +927,7 @@ const MainContentLeft = () => {
         <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <iframe
             src="/BIS-Product-Pdf/IS-17632-2022-Sun-Certifications-India.pdf"
-            title="BIS-Zertifikat für Stühle & Hocker - IS 17632:2022 PDF"
+            title="BIS-Zertifikat für Stühle und Hocker - IS 17632:2022 PDF"
             className="w-full h-[800px] bg-white"
             style={{
               boxShadow:
@@ -910,9 +936,34 @@ const MainContentLeft = () => {
           />
         </div>
 
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Verwandte Ressourcen
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              ISI-Zertifizierung
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+              className="text-blue-600 hover:underline"
+            >
+              BIS-Zertifizierung für ausländische Hersteller
+            </a>
+          </li>
+        </ul>
+
         <ManyUsersAlsoReadGerman />
 
-        <FaqAuthorGerman questionNumber={1} /> 
+        <FaqAuthorGerman questionNumber={1} />
       </div>
     </div>
   );

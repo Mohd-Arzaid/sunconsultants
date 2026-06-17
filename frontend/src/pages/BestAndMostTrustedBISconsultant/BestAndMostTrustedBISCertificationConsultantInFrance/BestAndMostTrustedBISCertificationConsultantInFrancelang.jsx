@@ -18,9 +18,9 @@ import { ServicesFrench } from "@/pages/SchemeX/SchemeXFrench";
 const CANONICAL_URL =
   "https://bis-certifications.com/meilleur-et-plus-fiable-consultant-certification-bis-france";
 const PAGE_IMAGE_SRC =
-  "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantinFrance.webp";
+  "/BestandMostTrustedBISCertificationConsultant/MeilleurconsultantBISenFrance.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/BestBISConsultantinFrance.webp";
+  "https://bis-certifications.com/BestandMostTrustedBISCertificationConsultant/MeilleurconsultantBISenFrance.webp";
 
 const PAGE_TITLE =
   "Meilleur et Plus Fiable Consultant en Certification BIS en France – Sun Certifications India";
@@ -394,7 +394,16 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Le Bureau of Indian Standards (BIS) est l&apos;organisme national de
+          Le{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS) est l&apos;organisme national de
           normalisation de l&apos;Inde, opérant sous la loi BIS de 2016. Il administre
           des schémas de certification obligatoire de produits couvrant une liste
           croissante de catégories vendues ou importées en Inde.
@@ -518,6 +527,10 @@ const MainContentLeft = () => {
           La certification BIS n&apos;est pas une activité ponctuelle. Nous vous aidons à
           gérer les audits de surveillance, les renouvellements de licence et les
           modifications de produits nécessitant des approbations mises à jour.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+        Pour les fabricants français souhaitant exporter leurs produits vers l’Inde, la certification BIS l’Inde constitue souvent une exigence réglementaire obligatoire. De nombreuses entreprises recherchent des informations à l’aide de termes tels que certificat BIS l’Inde, licence BIS l’Inde, certificat BIS indien  ou certification BIS indienne afin de comprendre les exigences du Bureau des normes indiennes. Le système BIS indien réglemente un grand nombre de catégories de produits et garantit leur conformité aux normes indiennes applicables. Qu’il s’agisse d’un enregistrement BIS l’Inde, d’une certification BIS l’Inde ou de l’obtention d’une licence BIS, une assistance professionnelle permet de simplifier et d’accélérer considérablement la procédure. Sun Certifications India accompagne les fabricants français à chaque étape du processus de certification BIS et les aide à satisfaire efficacement aux exigences techniques, réglementaires et documentaires du marché indien.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>

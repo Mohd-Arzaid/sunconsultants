@@ -270,9 +270,17 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Whether you are a domestic manufacturer seeking an ISI mark license or
-          a foreign company trying to understand India&apos;s Bureau of Indian
-          Standards requirements for the first time, our team handles every step
-          of the process for you.
+          a foreign company trying to understand India&apos;s{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Bureau of Indian Standards
+          </a>{" "}
+          requirements for the first time, our team handles every step of the
+          process for you.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
