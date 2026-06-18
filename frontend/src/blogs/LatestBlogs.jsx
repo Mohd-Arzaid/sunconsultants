@@ -16,6 +16,55 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 114,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Narrow Necked Boiling Flasks - IS 1381 (Part 1):2003 | Cost, Process, Documents",
+    description:
+      "Get BIS Certificate for Narrow Necked Boiling Flasks under IS 1381 (Part 1):2003. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1",
+    date: "13 May 2026",
+  },
+  {
+    id: 113,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Graduated Measuring Cylinders - IS 878:2008 | Cost, Process, Documents",
+    description:
+      "Get BIS Certificate for Graduated Measuring Cylinders under IS 878:2008. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/graduated-measuring-cyclinders-is-878",
+    date: "13 May 2026",
+  },
+  {
+    id: 112,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Glass Beakers - IS 2619:2018 | Cost, Process, Documents",
+    description:
+      "Get BIS Certificate for Glass Beakers under IS 2619:2018. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/glass-beakers-is-2619",
+    date: "11 May 2026",
+  },
+  {
+    id: 111,
+    color: "#0F766E",
+    title: "BIS Certificate for Double Acting Spring Hinges - IS 453:1993",
+    description:
+      "Get BIS Certificate for Double Acting Spring Hinges under IS 453:1993. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/double-acting-spring-hinges-is-453",
+    date: "19 May 2026",
+  },
+  {
+    id: 110,
+    color: "#0D9488",
+    title:
+      "BIS Certificate for Cycle Rubber Tubes (Moulded or Jointed) - IS 2415:2015",
+    description:
+      "Get BIS Certificate for Cycle Rubber Tubes (Moulded or Jointed) under IS 2415:2015. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/cycle-rubber-tubes-is-2415",
+    date: "19 May 2026",
+  },
+  {
     id: 109,
     color: "#0F766E",
     title:

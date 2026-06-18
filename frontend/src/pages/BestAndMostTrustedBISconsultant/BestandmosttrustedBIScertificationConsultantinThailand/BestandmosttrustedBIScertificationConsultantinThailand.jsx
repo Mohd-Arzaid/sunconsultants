@@ -15,9 +15,18 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  CRS_PATH,
+  FMCS_PATH,
+  getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
+  SCHEME_X_PATH,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-thailand";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-thailand";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantThailand.webp";
 const SCHEMA_IMAGE_URL =
@@ -132,7 +141,6 @@ const INDIA_PRIORITY_POINTS = [
 ];
 
 const BIS_OVERVIEW_POINTS = [
-  "BIS certification is product-specific and scheme-specific — there is no single blanket approval for your company",
   "The mandatory product list is continuously expanding — categories that were unregulated two years ago may be mandatory today",
   "Foreign manufacturers cannot apply to BIS directly — you must appoint an Authorized Indian Representative (AIR) who acts as your official liaison with BIS in India",
   "For ISI Mark products, BIS conducts overseas factory audits — a BIS officer travels to your Thai manufacturing facility to verify compliance",
@@ -366,6 +374,15 @@ const MainContentLeft = () => {
         </p>
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            <Link
+              to={BIS_CERTIFICATE_PATH}
+              className="text-blue-600 hover:underline"
+            >
+              BIS certification
+            </Link>
+            {" is product-specific and scheme-specific — there is no single blanket approval for your company"}
+          </li>
           {BIS_OVERVIEW_POINTS.map((point) => (
             <li key={point}>{point}</li>
           ))}
@@ -378,7 +395,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          1. FMCS — Foreign Manufacturers Certification Scheme
+          <Link to={FMCS_PATH} className="hover:underline">
+            1. FMCS — Foreign Manufacturers Certification Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The primary route for overseas manufacturers seeking the ISI Mark —
@@ -391,7 +410,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          2. CRS — Compulsory Registration Scheme
+          <Link to={CRS_PATH} className="hover:underline">
+            2. CRS — Compulsory Registration Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For electronics and IT products — no factory audit required, but product
@@ -403,7 +424,11 @@ const MainContentLeft = () => {
           and 70+ other electronics categories.
         </p>
 
-        <h3 className={SUB_HEADING_CLASS}>3. BIS Scheme X</h3>
+        <h3 className={SUB_HEADING_CLASS}>
+          <Link to={SCHEME_X_PATH} className="hover:underline">
+            3. BIS Scheme X
+          </Link>
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           A mandatory scheme for industrial machinery and electrical equipment —
           progressively expanded to cover a wide range of capital goods.
@@ -513,8 +538,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is best and most trusted BIS consultant in
-          Thailand
+          Why Sun Certifications India is best and most trusted{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="hover:underline"
+          >
+            BIS consultant in Thailand
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -622,6 +652,22 @@ const MainContentLeft = () => {
           be covered under a single BIS licence, subject to BIS approval. We advise
           on the most efficient licensing strategy upfront.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>

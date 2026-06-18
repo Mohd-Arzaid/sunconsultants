@@ -30356,6 +30356,7 @@ export const productTableData2 = [
     "sno": 540,
     "isNumber": "IS 453:1993",
     "product": "Double-acting spring hinges",
+    "blogPath": "/blogs/isi-products/double-acting-spring-hinges-is-453",
     "notification": {
       "title": "110. Hinges (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2023/12/Hinges-QCO.pdf",
@@ -30435,6 +30436,7 @@ export const productTableData2 = [
     "sno": 543,
     "isNumber": "IS 2415 :2015",
     "product": "Cycle – Rubber Tubes (Moulded or Jointed)",
+    "blogPath": "/blogs/isi-products/cycle-rubber-tubes-is-2415",
     "notification": {
       "title": "111. Cycle and Rickshaw Tyres and Tubes (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2023/12/Cycle-and-Rickshaw-tyres-and-Tubes.pdf",
@@ -30473,6 +30475,7 @@ export const productTableData2 = [
     "sno": 545,
     "isNumber": "IS 878 :2008",
     "product": "Laboratory glassware – Graduated measuring cylinders",
+    "blogPath": "/blogs/isi-products/graduated-measuring-cyclinders-is-878",
     "notification": {
       "title": "113. Laboratory Glassware (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2024/01/Laboratory-Glassware.pdf",
@@ -30531,6 +30534,7 @@ export const productTableData2 = [
     "sno": 547,
     "isNumber": "IS 1381 (Part 1):2003",
     "product": "Laboratory glassware – Narrow-necked boiling flasks",
+    "blogPath": "/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1",
     "notification": {
       "title": "113. Laboratory Glassware (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2024/01/Laboratory-Glassware.pdf",
@@ -30589,6 +30593,7 @@ export const productTableData2 = [
     "sno": 549,
     "isNumber": "IS 2619:2018",
     "product": "Glass beakers",
+    "blogPath": "/blogs/isi-products/glass-beakers-is-2619",
     "notification": {
       "title": "113. Laboratory Glassware (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2024/01/Laboratory-Glassware.pdf",

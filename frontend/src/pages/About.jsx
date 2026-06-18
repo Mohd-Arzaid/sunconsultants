@@ -910,9 +910,12 @@ const AboutStorySections = () => {
                 50+ compliance specialists
               </span>
               , we operate as a full-spectrum consultancy firm where{" "}
-              <span className="font-semibold text-[#1A8781]">
+              <Link
+                to="/what-is-bis-certificate-indian-bis"
+                className="font-semibold text-[#1A8781] hover:underline"
+              >
                 BIS Certification
-              </span>{" "}
+              </Link>{" "}
               is our core expertise.
             </p>
 

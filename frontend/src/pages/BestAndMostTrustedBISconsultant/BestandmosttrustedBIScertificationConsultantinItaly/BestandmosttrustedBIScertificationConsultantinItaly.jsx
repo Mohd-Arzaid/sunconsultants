@@ -15,9 +15,18 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  CRS_PATH,
+  FMCS_PATH,
+  getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
+  SCHEME_X_PATH,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-italy";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-italy";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantinItaly.webp";
 const SCHEMA_IMAGE_URL =
@@ -138,7 +147,6 @@ const INDIA_PRIORITY_POINTS = [
 ];
 
 const BIS_OVERVIEW_POINTS = [
-  "CE marking does not apply in India. The CE mark is a European Economic Area requirement — it has no legal recognition or equivalent standing in India. Indian customs does not treat CE marking as a substitute for BIS certification.",
   "IMQ certification is not recognised by BIS. Italy's IMQ safety mark covers Italian and EU market requirements. BIS certifies products against Indian Standards (IS numbers) — a separate, India-specific framework.",
   "Accredia accreditation is partially useful. Accredia-accredited laboratory test reports may be considered for CRS (electronics/IT product) registrations under mutual recognition arrangements. However, for BIS certification, Accredia lab reports are not a substitute — testing must be conducted at a BIS-recognized laboratory per the applicable IS standard.",
   "UNI standards ≠ Indian Standards. Italian products certified to UNI norms are not automatically compliant with IS specifications. BIS audit preparation must be rebuilt around the applicable IS number for your product.",
@@ -405,6 +413,19 @@ const MainContentLeft = () => {
         </p>
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            CE marking does not apply in India. The CE mark is a European
+            Economic Area requirement — it has no legal recognition or equivalent
+            standing in India. Indian customs does not treat CE marking as a
+            substitute for{" "}
+            <Link
+              to={BIS_CERTIFICATE_PATH}
+              className="text-blue-600 hover:underline"
+            >
+              BIS certification
+            </Link>
+            .
+          </li>
           {BIS_OVERVIEW_POINTS.map((point) => (
             <li key={point}>{point}</li>
           ))}
@@ -417,7 +438,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          1. BIS Scheme X — The Primary Scheme for Italian Machinery Exporters
+          <Link to={SCHEME_X_PATH} className="hover:underline">
+            1. BIS Scheme X — The Primary Scheme for Italian Machinery Exporters
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Scheme X is the mandatory certification route for industrial machinery
@@ -426,7 +449,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          <Link to={FMCS_PATH} className="hover:underline">
+            2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For Italian manufacturers whose products fall under mandatory ISI Mark
@@ -435,7 +460,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          3. CRS — Compulsory Registration Scheme
+          <Link to={CRS_PATH} className="hover:underline">
+            3. CRS — Compulsory Registration Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For electronics and IT products — less commonly applicable to Italian
@@ -543,7 +570,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is best BIS consultant in Italy
+          Why Sun Certifications India is best{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="hover:underline"
+          >
+            BIS consultant in Italy
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -653,6 +686,22 @@ const MainContentLeft = () => {
           submitted as a substitute for IS-standard testing — BIS-recognized
           laboratory testing per the applicable IS number is required.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>

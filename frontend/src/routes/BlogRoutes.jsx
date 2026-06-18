@@ -1082,6 +1082,21 @@ const BISCertificationforContinuousPianoHingesIs3818 = lazy(() =>
 const BISCertificationforCycleandRickshawPneumaticTyresIs2414 = lazy(() =>
   import("@/blogs/BISCertificationforCycleandRickshawPneumaticTyresIs2414")
 );
+const BISCertificationforCycleRubberTubesIs2415 = lazy(() =>
+  import("@/blogs/BISCertificationforCycleRubberTubesIs2415")
+);
+const BISCertificationforDoubleActingSpringHingesIs453 = lazy(() =>
+  import("@/blogs/BISCertificationforDoubleActingSpringHingesIs453")
+);
+const BISCertificationforGlassBeakersIs2619 = lazy(() =>
+  import("@/blogs/BISCertificationforGlassBeakersIs2619")
+);
+const BISCertificationforGraduatedMeasuringCyclindersIs878 = lazy(() =>
+  import("@/blogs/BISCertificationforGraduatedMeasuringCyclindersIs878")
+);
+const BISCertificationforNarrowNeckedBoilingFlasksIs1381Part1 = lazy(() =>
+  import("@/blogs/BISCertificationforNarrowNeckedBoilingFlasksIs1381Part1")
+);
 const BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2 = lazy(() =>
   import("@/blogs/BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2")
 );
@@ -3787,6 +3802,46 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforCycleandRickshawPneumaticTyresIs2414 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cycle-rubber-tubes-is-2415"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCycleRubberTubesIs2415 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/double-acting-spring-hinges-is-453"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforDoubleActingSpringHingesIs453 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/glass-beakers-is-2619"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforGlassBeakersIs2619 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/graduated-measuring-cyclinders-is-878"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforGraduatedMeasuringCyclindersIs878 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforNarrowNeckedBoilingFlasksIs1381Part1 />
           </Suspense>
         }
       />

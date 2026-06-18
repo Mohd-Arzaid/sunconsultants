@@ -15,9 +15,18 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  CRS_PATH,
+  FMCS_PATH,
+  getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
+  SCHEME_X_PATH,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-spain";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-spain";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantSpain.webp";
 const SCHEMA_IMAGE_URL =
@@ -141,7 +150,6 @@ const INDIA_PRIORITY_POINTS = [
 
 const BIS_OVERVIEW_POINTS = [
   "CE marking is not recognised by BIS. Spain's primary product compliance mechanism — CE marking under EU directives — has no legal standing in India. Indian customs does not treat CE as a substitute for BIS, and BIS auditors do not accept CE Technical Files as IS-standard compliance evidence. CE marking certifies fitness for the European market; BIS certifies fitness for the Indian market. They are parallel, independent systems.",
-  "AENOR certification has no BIS equivalence. Spain's Asociación Española de Normalización (UNE) standards and AENOR product certifications — widely recognised across Europe and Latin America — are not recognised by BIS. Products certified by AENOR must still obtain separate BIS certification for India.",
   "ENAC-accredited laboratory reports have limited applicability. Spain's national accreditation body ENAC (Entidad Nacional de Acreditación) accredits laboratories to ISO 17025. For CRS (electronics) registrations, ENAC-accredited lab reports may be considered under mutual recognition arrangements — Sun Certifications India evaluates this per product. For FMCS and Scheme X, BIS-recognized laboratory testing per the applicable IS standard is required regardless of ENAC accreditation.",
   "UNE standards ≠ Indian Standards. Spanish products manufactured and tested to UNE norms must have their technical documentation rebuilt around the applicable IS number for BIS purposes. The gap analysis between UNE and IS standards is a critical early step — one that Sun Certifications India conducts for every Spanish manufacturer we work with.",
   "Foreign manufacturers cannot apply to BIS directly. Spanish companies must appoint an Authorized Indian Representative (AIR) — a legally registered Indian entity that files the BIS application, signs all documents, and manages all correspondence with BIS on the Spanish manufacturer's behalf.",
@@ -403,7 +411,14 @@ const MainContentLeft = () => {
           Consumer Affairs and certifies products against Indian Standards (IS
           numbers) — India&apos;s own national technical standards framework. Every
           product regulated under a mandatory Quality Control Order (QCO) must hold
-          valid BIS certification before it can be legally imported, sold, or
+          valid{" "}
+          <Link
+            to={BIS_CERTIFICATE_PATH}
+            className="text-blue-600 hover:underline"
+          >
+            BIS certification
+          </Link>{" "}
+          before it can be legally imported, sold, or
           installed in India.
         </p>
 
@@ -412,7 +427,24 @@ const MainContentLeft = () => {
         </h3>
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          {BIS_OVERVIEW_POINTS.map((point) => (
+          {BIS_OVERVIEW_POINTS.slice(0, 1).map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+          <li>
+            AENOR certification has no BIS equivalence. Spain&apos;s Asociación
+            Española de Normalización (UNE) standards and AENOR product
+            certifications — widely recognised across Europe and Latin America —
+            are not recognised by BIS. Products certified by AENOR must still obtain
+            separate{" "}
+            <Link
+              to={BIS_CERTIFICATE_PATH}
+              className="text-blue-600 hover:underline"
+            >
+              BIS certification
+            </Link>{" "}
+            for India.
+          </li>
+          {BIS_OVERVIEW_POINTS.slice(1).map((point) => (
             <li key={point}>{point}</li>
           ))}
         </ul>
@@ -424,7 +456,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          1. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          <Link to={FMCS_PATH} className="hover:underline">
+            1. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The primary route for Spanish manufacturers whose products fall under
@@ -433,7 +467,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          2. CRS — Compulsory Registration Scheme
+          <Link to={CRS_PATH} className="hover:underline">
+            2. CRS — Compulsory Registration Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For electronics, electrical products, and IT hardware — applicable to
@@ -442,7 +478,11 @@ const MainContentLeft = () => {
           BIS-recognized laboratory is mandatory.
         </p>
 
-        <h3 className={SUB_HEADING_CLASS}>3. BIS Scheme X</h3>
+        <h3 className={SUB_HEADING_CLASS}>
+          <Link to={SCHEME_X_PATH} className="hover:underline">
+            3. BIS Scheme X
+          </Link>
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The scheme most rapidly expanding in relevance for Spanish manufacturers
           — covering industrial machinery and capital equipment under mandatory
@@ -548,8 +588,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is best and most trusted BIS consultant in
-          Spain
+          Why Sun Certifications India is best and most trusted{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="hover:underline"
+          >
+            BIS consultant in Spain
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -663,6 +708,22 @@ const MainContentLeft = () => {
           regulatory frameworks (like Ministry of Chemicals QCOs) govern chemical
           products in India independently.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>

@@ -15,9 +15,18 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  CRS_PATH,
+  FMCS_PATH,
+  getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
+  SCHEME_X_PATH,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-south-korea";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-south-korea";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantSouthKorea.webp";
 const SCHEMA_IMAGE_URL =
@@ -131,7 +140,6 @@ const INDIA_PRIORITY_POINTS = [
 ];
 
 const BIS_OVERVIEW_POINTS = [
-  "KC Mark ≠ BIS certification. The KC (Korea Certification) Mark is South Korea's mandatory national safety certification — administered by the National Radio Research Agency (NRA) and Korea Testing Laboratory (KTL). KC Mark certifies compliance with Korean Standards (KS) for the Korean market. BIS certifies compliance with Indian Standards (IS numbers) for the Indian market. Both are mandatory national schemes — but they have zero mutual recognition. A product holding a valid KC Mark must still obtain separate BIS certification for India, starting from the beginning.",
   "KS (Korean Industrial Standards) ≠ IS (Indian Standards). Korean Standards and Indian Standards are developed independently. Technical parameters, test methods, and performance benchmarks differ between KS and IS — sometimes substantially. A product that passes KS testing may not meet IS parameters for the same characteristic, and vice versa. IS-specific testing is required regardless of KS compliance.",
   "KOLAS-accredited lab reports may be accepted for CRS. The Korea Laboratory Accreditation Scheme (KOLAS) is Korea's national laboratory accreditation framework under KATS (Korean Agency for Technology and Standards). For CRS registrations (electronics and IT products), KOLAS-accredited laboratory test reports may be accepted by BIS under mutual recognition — a significant advantage for Korean electronics manufacturers with comprehensive existing test documentation. Sun Certifications India evaluates KOLAS report acceptability per product before recommending any retesting — avoiding unnecessary cost for manufacturers with large test libraries.",
   "KC Mark test reports are not KOLAS reports. KC Mark testing and KOLAS-accredited laboratory testing are separate processes. KC Mark test reports from KTL, UL Korea, or Bureau Veritas Korea are not the same as KOLAS-accredited IS-parameter test reports. This distinction matters practically — Korean manufacturers should not assume KC test documentation automatically qualifies for BIS KOLAS evaluation.",
@@ -400,7 +408,14 @@ const MainContentLeft = () => {
           ) is India&apos;s national standards body
           under the Ministry of Consumer Affairs. Products under mandatory Quality
           Control Orders (QCOs) cannot legally enter, be sold, or be distributed in
-          India without valid BIS certification — regardless of KC Mark status, KS
+          India without valid{" "}
+          <Link
+            to={BIS_CERTIFICATE_PATH}
+            className="text-blue-600 hover:underline"
+          >
+            BIS certification
+          </Link>{" "}
+          — regardless of KC Mark status, KS
           certification, or any other Korean compliance credential.
         </p>
 
@@ -409,6 +424,23 @@ const MainContentLeft = () => {
         </h3>
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            KC Mark ≠{" "}
+            <Link
+              to={BIS_CERTIFICATE_PATH}
+              className="text-blue-600 hover:underline"
+            >
+              BIS certification
+            </Link>
+            . The KC (Korea Certification) Mark is South Korea&apos;s mandatory
+            national safety certification — administered by the National Radio
+            Research Agency (NRA) and Korea Testing Laboratory (KTL). KC Mark
+            certifies compliance with Korean Standards (KS) for the Korean market.
+            BIS certifies compliance with Indian Standards (IS numbers) for the
+            Indian market. Both are mandatory national schemes — but they have zero
+            mutual recognition. A product holding a valid KC Mark must still obtain
+            separate BIS certification for India, starting from the beginning.
+          </li>
           {BIS_OVERVIEW_POINTS.map((point) => (
             <li key={point}>{point}</li>
           ))}
@@ -421,7 +453,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          1. CRS — Compulsory Registration Scheme
+          <Link to={CRS_PATH} className="hover:underline">
+            1. CRS — Compulsory Registration Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The dominant BIS scheme for Korean manufacturers — and the one that
@@ -431,7 +465,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          <Link to={FMCS_PATH} className="hover:underline">
+            2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For Korean manufacturers whose products fall under mandatory ISI Mark QCO
@@ -439,7 +475,11 @@ const MainContentLeft = () => {
           automotive components.
         </p>
 
-        <h3 className={SUB_HEADING_CLASS}>3. BIS Scheme X</h3>
+        <h3 className={SUB_HEADING_CLASS}>
+          <Link to={SCHEME_X_PATH} className="hover:underline">
+            3. BIS Scheme X
+          </Link>
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For Korean industrial machinery and capital equipment manufacturers —
           expanding under mandatory QCOs.
@@ -542,8 +582,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is best and most trusted BIS consultant in
-          South Korea
+          Why Sun Certifications India is best and most trusted{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="hover:underline"
+          >
+            BIS consultant in South Korea
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -656,6 +701,22 @@ const MainContentLeft = () => {
           It depends on whether the Korean supplier is the declared manufacturer
           of a product sold in India.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>

@@ -15,9 +15,18 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  CRS_PATH,
+  FMCS_PATH,
+  getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
+  SCHEME_X_PATH,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-japan";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-japan";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantJapan.webp";
 const SCHEMA_IMAGE_URL =
@@ -133,7 +142,6 @@ const INDIA_PRIORITY_POINTS = [
 ];
 
 const BIS_OVERVIEW_POINTS = [
-  "BIS certification is granted for specific products and applicable certification schemes.",
   "The list of regulated products continues to expand as new Quality Control Orders are introduced by the Indian government.",
   "Foreign manufacturers are required to appoint an Authorized Indian Representative (AIR) to communicate with BIS on their behalf.",
   "Certain certification schemes require BIS officials to conduct factory inspections at overseas manufacturing facilities.",
@@ -403,6 +411,15 @@ const MainContentLeft = () => {
         </h3>
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            <Link
+              to={BIS_CERTIFICATE_PATH}
+              className="text-blue-600 hover:underline"
+            >
+              BIS certification
+            </Link>
+            {" is granted for specific products and applicable certification schemes."}
+          </li>
           {BIS_OVERVIEW_POINTS.map((point) => (
             <li key={point}>{point}</li>
           ))}
@@ -420,7 +437,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          1. FMCS — Foreign Manufacturers Certification Scheme
+          <Link to={FMCS_PATH} className="hover:underline">
+            1. FMCS — Foreign Manufacturers Certification Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           FMCS license is designed for overseas manufacturers seeking permission to
@@ -430,7 +449,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          2. CRS — Compulsory Registration Scheme
+          <Link to={CRS_PATH} className="hover:underline">
+            2. CRS — Compulsory Registration Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           CRS applies primarily to electronics and information technology products.
@@ -438,7 +459,11 @@ const MainContentLeft = () => {
           product testing through a BIS-recognised laboratory is mandatory.
         </p>
 
-        <h3 className={SUB_HEADING_CLASS}>3. BIS Scheme X</h3>
+        <h3 className={SUB_HEADING_CLASS}>
+          <Link to={SCHEME_X_PATH} className="hover:underline">
+            3. BIS Scheme X
+          </Link>
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Scheme X is a relatively new certification framework covering various
           categories of industrial machinery and capital equipment. Many product
@@ -544,8 +569,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is the Best and Most Trusted BIS Consultant
-          in Japan
+          Why Sun Certifications India is the Best and Most Trusted{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="hover:underline"
+          >
+            BIS Consultant in Japan
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -681,6 +711,22 @@ const MainContentLeft = () => {
           Japanese companies to obtain BIS certification without establishing a
           local presence in India.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>

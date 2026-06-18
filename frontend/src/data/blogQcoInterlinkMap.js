@@ -265,6 +265,62 @@ export const interlinkPairs = [
     qcoMatchKey: `1.) Cycle and Rickshaw Pneumatic Tyres
   2.) Cycle - Rubber Tubes (Moulded or Jointed)`,
   },
+  {
+    productName: "Cycle – Rubber Tubes (Moulded or Jointed)",
+    isNumber: "IS 2415:2015",
+    blogUrl: "/blogs/isi-products/cycle-rubber-tubes-is-2415",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-cycle-and-rickshaw-tyres-tubes",
+    qcoMatchKey: `1.) Cycle and Rickshaw Pneumatic Tyres
+  2.) Cycle - Rubber Tubes (Moulded or Jointed)`,
+  },
+  {
+    productName: "Double-acting Spring Hinges",
+    isNumber: "IS 453:1993",
+    blogUrl: "/blogs/isi-products/double-acting-spring-hinges-is-453",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-hinges",
+    qcoMatchKey: `1.) Stainless Steel Butt Hinges
+2.) Steel Butt Hinges
+3.) Non-ferrous metal butt Hinges
+4.) Tee and Strap Hinges
+5.) Parliament Hinges
+6.) Continuous (Piano) Hinges
+7.) Steel back flap Hinges
+8.) Double-acting Spring Hinges
+9.) Cabinet Hinges`,
+  },
+  {
+    productName: "Glass Beakers",
+    isNumber: "IS 2619:2018",
+    blogUrl: "/blogs/isi-products/glass-beakers-is-2619",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-laboratory-glassware",
+    qcoMatchKey: `1.) Laboratory glassware - Graduated measuring cylinders
+  2.) Laboratory glassware - One-Mark volumetric flasks
+  3.) Laboratory glassware – Narrow-necked boiling flasks
+  4.) Laboratory glassware – Single volume pipettes
+  5.) Glass beakers`,
+  },
+  {
+    productName: "Graduated Measuring Cylinders",
+    isNumber: "IS 878:2008",
+    blogUrl: "/blogs/isi-products/graduated-measuring-cyclinders-is-878",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-laboratory-glassware",
+    qcoMatchKey: `1.) Laboratory glassware - Graduated measuring cylinders
+  2.) Laboratory glassware - One-Mark volumetric flasks
+  3.) Laboratory glassware – Narrow-necked boiling flasks
+  4.) Laboratory glassware – Single volume pipettes
+  5.) Glass beakers`,
+  },
+  {
+    productName: "Narrow-necked Boiling Flasks",
+    isNumber: "IS 1381 (Part 1):2003",
+    blogUrl: "/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-laboratory-glassware",
+    qcoMatchKey: `1.) Laboratory glassware - Graduated measuring cylinders
+  2.) Laboratory glassware - One-Mark volumetric flasks
+  3.) Laboratory glassware – Narrow-necked boiling flasks
+  4.) Laboratory glassware – Single volume pipettes
+  5.) Glass beakers`,
+  },
 ];
 
 /**

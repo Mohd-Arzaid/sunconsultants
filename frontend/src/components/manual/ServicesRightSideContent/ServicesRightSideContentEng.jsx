@@ -249,6 +249,11 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/cabinet-hinges-is-18297",
     "/blogs/isi-products/continuous-piano-hinges-is-3818",
     "/blogs/isi-products/cycle-and-rickshaw-pneumatic-tyres-is-2414",
+    "/blogs/isi-products/cycle-rubber-tubes-is-2415",
+    "/blogs/isi-products/double-acting-spring-hinges-is-453",
+    "/blogs/isi-products/glass-beakers-is-2619",
+    "/blogs/isi-products/graduated-measuring-cyclinders-is-878",
+    "/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1",
     "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2",
     "/blogs/isi-products/battery-operated-vaccum-cleaners",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
@@ -1401,6 +1406,16 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS Certificate for Cycle and Rickshaw Pneumatic Tyres - English Page";
+    if (path.includes("/blogs/isi-products/cycle-rubber-tubes-is-2415"))
+      return "BIS Certificate for Cycle Rubber Tubes (Moulded or Jointed) - English Page";
+    if (path.includes("/blogs/isi-products/double-acting-spring-hinges-is-453"))
+      return "BIS Certificate for Double Acting Spring Hinges - English Page";
+    if (path.includes("/blogs/isi-products/glass-beakers-is-2619"))
+      return "BIS Certificate for Glass Beakers - English Page";
+    if (path.includes("/blogs/isi-products/graduated-measuring-cyclinders-is-878"))
+      return "BIS Certificate for Graduated Measuring Cylinders - English Page";
+    if (path.includes("/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1"))
+      return "BIS Certificate for Narrow Necked Boiling Flasks - English Page";
     if (
       path.includes(
         "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2"

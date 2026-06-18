@@ -15,9 +15,18 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  CRS_PATH,
+  FMCS_PATH,
+  getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
+  SCHEME_X_PATH,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-france";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-france";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantinFrance.webp";
 const SCHEMA_IMAGE_URL =
@@ -421,7 +430,13 @@ const MainContentLeft = () => {
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            BIS certification is product-specific and scheme-specific
+            <Link
+              to={BIS_CERTIFICATE_PATH}
+              className="text-blue-600 hover:underline"
+            >
+              BIS certification
+            </Link>
+            {" is product-specific and scheme-specific"}
           </li>
           <li>
             Your existing CE Marking, ISO certifications, or AFNOR compliance do
@@ -486,7 +501,11 @@ const MainContentLeft = () => {
           Here is what we offer:
         </p>
 
-        <h3 className={SUB_HEADING_CLASS}>End-to-end FMCS support</h3>
+        <h3 className={SUB_HEADING_CLASS}>
+          <Link to={FMCS_PATH} className="hover:underline">
+            End-to-end FMCS support
+          </Link>
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           We manage documentation preparation, factory inspection scheduling, BIS
           liaison, and ISI Mark compliance — coordinating across time zones with
@@ -494,7 +513,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          CRS registration for electronics and IT products
+          <Link to={CRS_PATH} className="hover:underline">
+            CRS registration for electronics and IT products
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           We identify BIS-empanelled labs, manage sample submission and testing,
@@ -503,7 +524,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          Scheme X for industrial and machinery manufacturers
+          <Link to={SCHEME_X_PATH} className="hover:underline">
+            Scheme X for industrial and machinery manufacturers
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           We have hands-on experience with Scheme X certification for engineering
@@ -625,8 +648,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is the Best and Most Trusted BIS
-          Consultant in France
+          Why Sun Certifications India is the Best and Most Trusted BIS{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="hover:underline"
+          >
+            Consultant in France
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -742,6 +770,22 @@ const MainContentLeft = () => {
           Yes. Many of our French clients certify multiple product lines together.
           We coordinate parallel applications to reduce overall timelines and cost.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>

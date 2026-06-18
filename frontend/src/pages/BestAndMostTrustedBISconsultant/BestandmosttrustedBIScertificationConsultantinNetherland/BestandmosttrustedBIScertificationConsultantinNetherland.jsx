@@ -15,9 +15,18 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  CRS_PATH,
+  FMCS_PATH,
+  getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
+  SCHEME_X_PATH,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-netherland";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-netherland";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BestISConsultantNetherland.webp";
 const SCHEMA_IMAGE_URL =
@@ -143,7 +152,6 @@ const BIS_OVERVIEW_POINTS = [
   "CE marking does not apply in India. The CE mark, central to Dutch product compliance for the European market, carries no legal recognition in India. BIS customs officials and market surveillance officers do not treat CE as a BIS substitute — not for Philips medical equipment, not for NXP automotive chips, not for ASML supply chain components.",
   "RvA accreditation has limited direct applicability. The Dutch Accreditation Council (RvA — Raad voor Accreditatie) accredits laboratories to ISO 17025. For CRS registrations (electronics and IT products), RvA-accredited laboratory test reports may be considered under mutual recognition arrangements — Sun Certifications India evaluates this per product before any retesting is recommended. For FMCS and Scheme X applications, BIS-recognized laboratory testing per the applicable IS standard is required.",
   "NEN standards ≠ Indian Standards. Products designed and tested to NEN (Nederlands Normalisatie-instituut) standards must have their technical documentation rebuilt around the applicable IS number for BIS purposes. The parameter differences between NEN and IS standards — particularly in electrical safety, chemical composition, and machinery performance — require dedicated gap analysis before documentation is prepared.",
-  "Kiwa and Lloyd's Register Netherlands certifications are not BIS equivalents. Dutch manufacturers holding Kiwa product certification or Lloyd's Register Netherlands quality marks — common in water technology and industrial equipment — must still obtain separate BIS certification for Indian market products.",
   "Foreign manufacturers cannot apply to BIS directly. Dutch companies must appoint an Authorized Indian Representative (AIR) — a legally registered Indian entity that files the BIS application, signs all documents, and manages all BIS correspondence on the Dutch manufacturer's behalf. Sun Certifications India provides this service.",
 ];
 
@@ -420,7 +428,23 @@ const MainContentLeft = () => {
         </h3>
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          {BIS_OVERVIEW_POINTS.map((point) => (
+          {BIS_OVERVIEW_POINTS.slice(0, 3).map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+          <li>
+            Kiwa and Lloyd&apos;s Register Netherlands certifications are not BIS
+            equivalents. Dutch manufacturers holding Kiwa product certification or
+            Lloyd&apos;s Register Netherlands quality marks — common in water
+            technology and industrial equipment — must still obtain separate{" "}
+            <Link
+              to={BIS_CERTIFICATE_PATH}
+              className="text-blue-600 hover:underline"
+            >
+              BIS certification
+            </Link>{" "}
+            for Indian market products.
+          </li>
+          {BIS_OVERVIEW_POINTS.slice(3).map((point) => (
             <li key={point}>{point}</li>
           ))}
         </ul>
@@ -432,7 +456,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          1. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          <Link to={FMCS_PATH} className="hover:underline">
+            1. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The primary route for Dutch manufacturers whose products fall under
@@ -440,7 +466,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          2. CRS — Compulsory Registration Scheme
+          <Link to={CRS_PATH} className="hover:underline">
+            2. CRS — Compulsory Registration Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For electronics and IT products — highly relevant for NXP
@@ -448,7 +476,11 @@ const MainContentLeft = () => {
           and Dutch industrial electronics manufacturers.
         </p>
 
-        <h3 className={SUB_HEADING_CLASS}>3. BIS Scheme X</h3>
+        <h3 className={SUB_HEADING_CLASS}>
+          <Link to={SCHEME_X_PATH} className="hover:underline">
+            3. BIS Scheme X
+          </Link>
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The most rapidly expanding scheme for Dutch manufacturers — covering
           industrial machinery, precision equipment, and capital goods under
@@ -550,8 +582,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is best and most trusted BIS consultant in
-          Netherland
+          Why Sun Certifications India is best and most trusted{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="hover:underline"
+          >
+            BIS consultant in Netherland
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -667,6 +704,22 @@ const MainContentLeft = () => {
           India-specific QCOs — it operates independently of the EU Machinery
           Directive.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>

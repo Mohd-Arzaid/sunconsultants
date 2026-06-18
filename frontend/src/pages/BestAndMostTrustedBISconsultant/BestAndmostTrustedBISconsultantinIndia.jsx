@@ -15,9 +15,14 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  getOtherCountryLinks,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-india";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-india";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BISConsultantsinIndia.webp";
 const SCHEMA_IMAGE_URL =
@@ -253,13 +258,12 @@ const MainContentLeft = () => {
             Sun Certifications India
           </a>{" "}
           has been one of the most trusted{" "}
-          <a
-            href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+          <Link
+            to={BIS_CERTIFICATE_PATH}
             className="text-blue-600 hover:underline"
-            rel="noopener noreferrer"
           >
             BIS certification
-          </a>{" "}
+          </Link>{" "}
           consultants for manufacturers, importers, and foreign
           companies looking to enter or operate in the Indian market. Based in
           Delhi and serving clients across the globe, we have guided thousands of
@@ -707,6 +711,22 @@ const MainContentLeft = () => {
           Yes. License renewal, surveillance audit support, and amendments to
           existing BIS licenses are part of our ongoing services.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>

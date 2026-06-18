@@ -15,9 +15,18 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  BIS_CERTIFICATE_PATH,
+  CRS_PATH,
+  FMCS_PATH,
+  getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
+  SCHEME_X_PATH,
+} from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-vietnam";
+const PAGE_PATH = "/best-and-most-trusted-bis-consultant-vietnam";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BestBISConsultantVietnam.webp";
 const SCHEMA_IMAGE_URL =
@@ -139,7 +148,6 @@ const BIS_PRIORITY_POINTS = [
 ];
 
 const BIS_OVERVIEW_POINTS = [
-  "STAMEQ certification does not substitute for BIS. Vietnam's Directorate for Standards, Metrology and Quality (STAMEQ) administers Vietnam's national standards framework — including TCVN (Vietnamese National Standards). TCVN standards and BIS Indian Standards (IS numbers) are separate frameworks with no mutual recognition. STAMEQ-certified products still require separate BIS certification for India.",
   "QUACERT product certifications have no BIS standing. QUACERT (Vietnam Certification Centre) issues product conformity certificates for the Vietnamese market — these are not recognized by BIS and cannot be submitted as part of a BIS application.",
   "VILAS laboratory accreditation is not recognized for BIS submissions. Vietnam's national laboratory accreditation scheme (VILAS) is not currently on BIS's accepted mutual recognition list. Test reports from VILAS-accredited laboratories — including VinaLAB facilities — cannot be submitted for BIS CRS, FMCS, or Scheme X applications. All Vietnamese products require testing at BIS-recognized laboratories.",
   "ISO 9001 and brand-specific quality certifications help but do not replace BIS. Vietnamese factories in the Samsung, Nike, or Intel supply chains typically hold IATF, ISO 9001, or brand-specific quality audits. These demonstrate manufacturing quality maturity — useful context for BIS factory audits — but they certify compliance with international quality management systems, not with Indian Standards.",
@@ -416,7 +424,14 @@ const MainContentLeft = () => {
           ) is India&apos;s national standards body
           under the Ministry of Consumer Affairs. Products in mandatory QCO
           categories cannot legally enter, be sold in, or be distributed within
-          India without valid BIS certification — regardless of what certifications
+          India without valid{" "}
+          <Link
+            to={BIS_CERTIFICATE_PATH}
+            className="text-blue-600 hover:underline"
+          >
+            BIS certification
+          </Link>{" "}
+          — regardless of what certifications
           they carry in Vietnam or in the brand owner&apos;s home country.
         </p>
 
@@ -426,6 +441,21 @@ const MainContentLeft = () => {
         </h3>
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            STAMEQ certification does not substitute for BIS. Vietnam&apos;s
+            Directorate for Standards, Metrology and Quality (STAMEQ) administers
+            Vietnam&apos;s national standards framework — including TCVN (Vietnamese
+            National Standards). TCVN standards and BIS Indian Standards (IS
+            numbers) are separate frameworks with no mutual recognition.
+            STAMEQ-certified products still require separate{" "}
+            <Link
+              to={BIS_CERTIFICATE_PATH}
+              className="text-blue-600 hover:underline"
+            >
+              BIS certification
+            </Link>{" "}
+            for India.
+          </li>
           {BIS_OVERVIEW_POINTS.map((point) => (
             <li key={point}>{point}</li>
           ))}
@@ -438,7 +468,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          1. CRS — Compulsory Registration Scheme
+          <Link to={CRS_PATH} className="hover:underline">
+            1. CRS — Compulsory Registration Scheme
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           The most immediately relevant scheme for Vietnamese manufacturers —
@@ -448,7 +480,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          <Link to={FMCS_PATH} className="hover:underline">
+            2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
           For Vietnamese manufacturers whose products fall under mandatory ISI Mark
@@ -461,7 +495,11 @@ const MainContentLeft = () => {
           ))}
         </ul>
 
-        <h3 className={SUB_HEADING_CLASS}>3. BIS Scheme X Certification</h3>
+        <h3 className={SUB_HEADING_CLASS}>
+          <Link to={SCHEME_X_PATH} className="hover:underline">
+            3. BIS Scheme X Certification
+          </Link>
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For industrial machinery and capital equipment manufactured in Vietnam —
           expanding under new QCOs. BIS officials travel to the Vietnamese
@@ -568,8 +606,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is best and most trusted BIS consultant in
-          Vietnam
+          Why Sun Certifications India is best and most trusted{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="hover:underline"
+          >
+            BIS consultant in Vietnam
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -680,6 +723,22 @@ const MainContentLeft = () => {
           Apparel and readymade garments are not currently under BIS mandatory QCO
           requirements.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Also check our BIS expertise in other countries
+        </h2>
+
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
+          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
+            <li key={path}>
+              <Link to={path} className="text-blue-600 hover:underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
         <FaqAuthorEng questionNumber={1} />
       </div>
