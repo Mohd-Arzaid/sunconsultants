@@ -502,9 +502,11 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
+        End-to-end {" "}
           <Link to={FMCS_PATH} className="hover:underline">
-            End-to-end FMCS support
+        FMCS Certification
           </Link>
+          {" "}support
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           We manage documentation preparation, factory inspection scheduling, BIS
@@ -514,8 +516,9 @@ const MainContentLeft = () => {
 
         <h3 className={SUB_HEADING_CLASS}>
           <Link to={CRS_PATH} className="hover:underline">
-            CRS registration for electronics and IT products
+            CRS registration 
           </Link>
+          {" "}for electronics and IT products
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           We identify BIS-empanelled labs, manage sample submission and testing,
@@ -525,8 +528,9 @@ const MainContentLeft = () => {
 
         <h3 className={SUB_HEADING_CLASS}>
           <Link to={SCHEME_X_PATH} className="hover:underline">
-            Scheme X for industrial and machinery manufacturers
+            Scheme X Certification
           </Link>
+          {" "}for industrial and machinery manufacturers
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           We have hands-on experience with Scheme X certification for engineering
@@ -535,7 +539,12 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          Authorized Indian Representative (AIR) services
+          <Link
+            to="/authorized-indian-representative"
+            className="hover:underline"
+          >
+            Authorized Indian Representative (AIR) services in France
+          </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           BIS requires every foreign applicant to have an AIR based in India. Sun
@@ -648,12 +657,12 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is the Best and Most Trusted BIS{" "}
+          Why Sun Certifications India is the Best and Most Trusted {" "}
           <Link
             to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
             className="hover:underline"
           >
-            Consultant in France
+            BIS Consultant in France
           </Link>
         </h2>
 

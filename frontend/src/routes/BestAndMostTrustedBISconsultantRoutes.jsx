@@ -20,6 +20,10 @@ import BestandmosttrustedBIScertificationConsultantinSpain from "@/pages/BestAnd
 import BestandmosttrustedBIScertificationConsultantinSpainlang from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinSpain/BestandmosttrustedBIScertificationConsultantinSpainlang";
 import BestandmosttrustedBIScertificationConsultantinVietnam from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinVietnam/BestandmosttrustedBIScertificationConsultantinVietnam";
 import BestandmosttrustedBIScertificationConsultantinVietnamlang from "@/pages/BestAndMostTrustedBISconsultant/BestandmosttrustedBIScertificationConsultantinVietnam/BestandmosttrustedBIScertificationConsultantinVietnamlang";
+import BestAndMostTrustedBISCertificationConsultantInChinese from "@/pages/BestAndMostTrustedBISconsultant/BestAndMostTrustedBISCertificationConsultantInChinese/BestAndMostTrustedBISCertificationConsultantInChinese";
+import BestAndMostTrustedBISCertificationConsultantInChineselang from "@/pages/BestAndMostTrustedBISconsultant/BestAndMostTrustedBISCertificationConsultantInChinese/BestAndMostTrustedBISCertificationConsultantInChineselang";
+import BestAndMostTrustedBISCertificationConsultantInArabic from "@/pages/BestAndMostTrustedBISconsultant/BestAndMostTrustedBISCertificationConsultantInArabic/BestAndMostTrustedBISCertificationConsultantInArabic";
+import BestAndMostTrustedBISCertificationConsultantInArabiclang from "@/pages/BestAndMostTrustedBISconsultant/BestAndMostTrustedBISCertificationConsultantInArabic/BestAndMostTrustedBISCertificationConsultantInArabiclang";
 
 export const BestAndMostTrustedBISconsultantRoutes = () => {
   return (
@@ -107,6 +111,22 @@ export const BestAndMostTrustedBISconsultantRoutes = () => {
       <Route
         path="/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam"
         element={<BestandmosttrustedBIScertificationConsultantinVietnamlang />}
+      />
+      <Route
+        path="/best-and-most-trusted-bis-consultant-china"
+        element={<BestAndMostTrustedBISCertificationConsultantInChinese />}
+      />
+      <Route
+        path="/zhongguo-zui-hao-zui-shouxin-de-bis-renzheng-zixun"
+        element={<BestAndMostTrustedBISCertificationConsultantInChineselang />}
+      />
+      <Route
+        path="/best-and-most-trusted-bis-consultant-gulf-countries"
+        element={<BestAndMostTrustedBISCertificationConsultantInArabic />}
+      />
+      <Route
+        path="/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej"
+        element={<BestAndMostTrustedBISCertificationConsultantInArabiclang />}
       />
     </>
   );

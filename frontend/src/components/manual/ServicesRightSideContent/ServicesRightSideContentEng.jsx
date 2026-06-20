@@ -138,6 +138,8 @@ const ServicesRightSideContentEng = () => {
     "/best-and-most-trusted-bis-consultant-thailand",
     "/best-and-most-trusted-bis-consultant-spain",
     "/best-and-most-trusted-bis-consultant-vietnam",
+    "/best-and-most-trusted-bis-consultant-china",
+    "/best-and-most-trusted-bis-consultant-gulf-countries",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -1165,6 +1167,10 @@ const ContactFormServicesRightSideContentEng = () => {
       return "Best and most trusted BIS certification Consultant in Spain – Sun Certifications India (English)";
     if (path.includes("/best-and-most-trusted-bis-consultant-vietnam"))
       return "Best and most trusted BIS certification Consultant in Vietnam – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-china"))
+      return "Best and most trusted BIS Consultant in China – Sun Certifications India (English)";
+    if (path.includes("/best-and-most-trusted-bis-consultant-gulf-countries"))
+      return "Best and most trusted BIS Consultant in Gulf countries – Sun Certifications India (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1

@@ -1025,6 +1025,19 @@ const AboutStorySections = () => {
               institutional knowledge translates directly into faster turnaround
               and fewer unexpected setbacks for our Indian clients.
             </p>
+
+            <div className="p-4 md:p-5 bg-white/60 rounded-md border border-neutral-200/80">
+              <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                We have a large network of laboratories on our panel spreading
+                across India which are capable of testing according to more than
+                one thousand Indian and international standards like IS, IEC,
+                EN, ASTM, ISO etc. which cover products like footwear, toys,
+                aluminium products, steel products, chemical, furniture,
+                electrical products, home appliances, cement, hand tools etc. We
+                also have inhouse complete testing facility for electrical and
+                electronic test.
+              </p>
+            </div>
           </div>
         </div>
 

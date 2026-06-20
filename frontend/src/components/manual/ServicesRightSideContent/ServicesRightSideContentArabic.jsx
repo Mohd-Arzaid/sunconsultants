@@ -100,6 +100,9 @@ const ServicesRightSideContentArabic = () => {
     "/blogs/isi-products/fibre-ropes-polyethylene-8674-arabic",
     // BIS Certificate for Fibre Ropes - Polyamide Arabic Page Url
     "/blogs/isi-products/fibre-ropes-polyamide-is-4572",
+
+    // BEST AND MOST TRUSTED BIS CONSULTANT PATH
+    "/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej",
   ];
 
   // Check if current path should show these components
@@ -639,6 +642,10 @@ const ContactFormServicesRightSideContentArabic = () => {
       return "ISI Mark (Arabic)";
     if (path.includes("/ar/ma-huwa-shahadat-bis-bis-alhind"))
       return "BIS Certification (Arabic)";
+
+    if (path.includes("/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej"))
+      return "أفضل وأوثق مستشار BIS في دول الخليج – Sun Certifications India (Arabic)";
+
     if (
       path.includes(
         "/shahadat-bis-mukhatat-x-lil-taard-almarkazi-wa-alat-altasfiya-aw-altanqiya"

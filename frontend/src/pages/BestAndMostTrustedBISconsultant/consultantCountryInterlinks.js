@@ -49,6 +49,14 @@ export const ENGLISH_COUNTRY_PAGES = [
     label: "BIS Consultant in Vietnam",
     path: "/best-and-most-trusted-bis-consultant-vietnam",
   },
+  {
+    label: "BIS Consultant in China",
+    path: "/best-and-most-trusted-bis-consultant-china",
+  },
+  {
+    label: "BIS Consultant in Gulf countries",
+    path: "/best-and-most-trusted-bis-consultant-gulf-countries",
+  },
 ];
 
 export const LANG_PAGE_BY_ENGLISH_PATH = {
@@ -72,6 +80,10 @@ export const LANG_PAGE_BY_ENGLISH_PATH = {
     "/mejor-y-mas-confiable-consultor-certificacion-bis-espana",
   "/best-and-most-trusted-bis-consultant-vietnam":
     "/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam",
+  "/best-and-most-trusted-bis-consultant-china":
+    "/zhongguo-zui-hao-zui-shouxin-de-bis-renzheng-zixun",
+  "/best-and-most-trusted-bis-consultant-gulf-countries":
+    "/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej",
 };
 
 export function getOtherCountryLinks(currentEnglishPath) {

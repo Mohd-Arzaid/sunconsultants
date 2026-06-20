@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { useState, useEffect, useLayoutEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import {
   Accordion,
@@ -43,12 +43,71 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
+const BIS_CERTIFICATION_HREFLANG_LINKS = [
+  {
+    hrefLang: "x-default",
+    href: "https://bis-certifications.com/what-is-bis-certificate-indian-bis",
+  },
+  {
+    hrefLang: "en",
+    href: "https://bis-certifications.com/what-is-bis-certificate-indian-bis",
+  },
+  {
+    hrefLang: "es",
+    href: "https://bis-certifications.com/es/que-es-el-certificado-bis-bis-indio",
+  },
+  {
+    hrefLang: "de",
+    href: "https://bis-certifications.com/de/was-ist-das-bis-zertifikat-indisches-bis",
+  },
+  {
+    hrefLang: "fr",
+    href: "https://bis-certifications.com/fr/quest-ce-que-le-certificat-bis-indien",
+  },
+  {
+    hrefLang: "id",
+    href: "https://bis-certifications.com/id/apa-itu-sertifikat-bis-bis-india",
+  },
+  {
+    hrefLang: "it",
+    href: "https://bis-certifications.com/it/cose-il-certificato-bis-indiano",
+  },
+  {
+    hrefLang: "ja",
+    href: "https://bis-certifications.com/ja/bis-shomeisho-toha-nani-ka-indo-no-bis",
+  },
+  {
+    hrefLang: "ko",
+    href: "https://bis-certifications.com/ko/bis-jeungmyeongseo-ga-mueos-indo-bis",
+  },
+  {
+    hrefLang: "nl",
+    href: "https://bis-certifications.com/nl/wat-is-het-bis-certificaat-indiaas-bis",
+  },
+  {
+    hrefLang: "th",
+    href: "https://bis-certifications.com/th/bis-certificate-khue-a-rai-bis-india",
+  },
+  {
+    hrefLang: "vi",
+    href: "https://bis-certifications.com/vi/chung-chi-bis-la-gi-bis-an-do",
+  },
+  {
+    hrefLang: "ar",
+    href: "https://bis-certifications.com/ar/ma-huwa-shahadat-bis-bis-alhind",
+  },
+  {
+    hrefLang: "zh",
+    href: "https://bis-certifications.com/zh/bis-zheng-shu-shi-shen-me-yin-du-bis",
+  },
+];
+
 const BISCertification = () => {
   return (
     <div className="relative w-full">
       <BISCertificationMetaTags />
       <BISCertificationFAQSchemaInjector />
-      <BISCertificationSchema />
+      <BISCertificationRatingSchemaInjector />
       <BISCertificationBreadcrumb />
       <BISCertificationHero />
       <BISCertificationIndex />
@@ -71,7 +130,7 @@ export default BISCertification;
 const BISCertificationMetaTags = () => {
   const title = "BIS Certification in India | Types, Process, Documents & Fees";
   const description =
-    "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.";
+    "Complete BIS certification guide for Indian & foreign manufacturers: ISI mark, FMCS, CRS, Scheme X, required documents, fees, step-by-step process & expert consultant support in India.";
   const keywords =
     "BIS Certification, BIS Certification Process, BIS Registration, BIS Registration Process, BIS Certification Scheme, Product Certification Scheme, Mandatory Certification Scheme, BIS Mandatory Products List, ISI Mark, BIS FMCS, BIS Hallmarking Scheme, Eco Mark Scheme, BIS Certification Consultant, ISI Certification Consultant, BIS ISI Mark Consultant, What is BIS Certification, BIS Certification Download, BIS Certification Cost, India BIS Certification, BIS Certification Full Form, BIS Certification India, Indian BIS Certification, BIS Certification Means, BIS Certification Check, BIS License Online in India, BIS Certification Online, BIS Certificate, BIS Certificate Online.";
   const canonicalUrl =
@@ -88,8 +147,7 @@ const BISCertificationMetaTags = () => {
     },
     headline: title,
     name: title,
-    description:
-      "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.",
+    description,
     image:
       "https://bis-certifications.com/services-main-images/indian-bis-certification.webp",
     author: {
@@ -106,52 +164,8 @@ const BISCertificationMetaTags = () => {
       },
     },
     datePublished: "2025-09-15",
-    dateModified: "2026-04-01",
+    dateModified: "2026-06-19",
   };
-
-  // Set critical SEO tags immediately on mount for stronger crawler signals.
-  useLayoutEffect(() => {
-    const upsertMeta = (selector, attributes, content) => {
-      let element = document.head.querySelector(selector);
-      if (!element) {
-        element = document.createElement("meta");
-        Object.entries(attributes).forEach(([key, value]) => {
-          element.setAttribute(key, value);
-        });
-        document.head.appendChild(element);
-      }
-      element.setAttribute("content", content);
-    };
-
-    const upsertCanonical = (href) => {
-      let canonical = document.head.querySelector('link[rel="canonical"]');
-      if (!canonical) {
-        canonical = document.createElement("link");
-        canonical.setAttribute("rel", "canonical");
-        document.head.appendChild(canonical);
-      }
-      canonical.setAttribute("href", href);
-    };
-
-    document.title = title;
-    upsertMeta('meta[name="title"]', { name: "title" }, title);
-    upsertMeta('meta[name="description"]', { name: "description" }, description);
-    upsertMeta('meta[property="og:title"]', { property: "og:title" }, title);
-    upsertMeta(
-      'meta[property="og:description"]',
-      { property: "og:description" },
-      description
-    );
-    upsertMeta('meta[name="twitter:title"]', { name: "twitter:title" }, title);
-    upsertMeta(
-      'meta[name="twitter:description"]',
-      { name: "twitter:description" },
-      description
-    );
-    if (canonicalUrl) {
-      upsertCanonical(canonicalUrl);
-    }
-  }, [title, description, canonicalUrl]);
 
   return (
     <Helmet>
@@ -174,6 +188,9 @@ const BISCertificationMetaTags = () => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {BIS_CERTIFICATION_HREFLANG_LINKS.map(({ hrefLang, href }) => (
+        <link key={hrefLang} rel="alternate" hrefLang={hrefLang} href={href} />
+      ))}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -236,7 +253,7 @@ const BISCertificationFAQSchemaInjector = () => {
   return null;
 };
 
-const BISCertificationSchema = () => {
+const BISCertificationRatingSchemaInjector = () => {
   const ratingSchema = useMemo(
     () => ({
       "@context": "https://schema.org/",
@@ -245,7 +262,7 @@ const BISCertificationSchema = () => {
       image:
         "https://bis-certifications.com/services-main-images/indian-bis-certification.webp",
       description:
-        "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.",
+        "Complete BIS certification guide for Indian & foreign manufacturers: ISI mark, FMCS, CRS, Scheme X, required documents, fees, step-by-step process & expert consultant support in India.",
       brand: {
         "@type": "Brand",
         name: "Sun Certifications India",

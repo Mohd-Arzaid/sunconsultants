@@ -81,6 +81,9 @@ const ServicesRightSideContentChinese = () => {
 
     // BIS FMCS PATH
     "/zh/wai-guo-sheng-chan-shang-yin-du-bis-ren-zheng-zhi-nan",
+
+    // BEST AND MOST TRUSTED BIS CONSULTANT PATH
+    "/zhongguo-zui-hao-zui-shouxin-de-bis-renzheng-zixun",
   ];
 
   // Check if current path should show these components
@@ -599,6 +602,9 @@ const ContactFormServicesRightSideContentChinese = () => {
       path.includes("/zh/wai-guo-sheng-chan-shang-yin-du-bis-ren-zheng-zhi-nan")
     )
       return "BIS Mark (ISI License) for Foreign Manufacturers - Chinese Page";
+
+    if (path.includes("/zhongguo-zui-hao-zui-shouxin-de-bis-renzheng-zixun"))
+      return "中国最佳、最值得信赖的BIS顾问 – Sun Certifications India（中文页面）";
 
     if (path.includes("/zh/crs-bis-shi-shen-me-huo-crs-deng-ji"))
       return "CRS Chinese - 中文页面";

@@ -159,7 +159,7 @@ const FooterChinese = () => {
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
                     M-15，第一阶段，巴德利工业区，德里 -
-                    110034
+                    110042
                   </span>
                 </div>
               </div>
