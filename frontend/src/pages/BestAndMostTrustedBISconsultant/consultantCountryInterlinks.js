@@ -86,6 +86,75 @@ export const LANG_PAGE_BY_ENGLISH_PATH = {
     "/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej",
 };
 
+export const LOCAL_LANGUAGE_COUNTRY_PAGES = [
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-france",
+    path: "/meilleur-et-plus-fiable-consultant-certification-bis-france",
+    label: "BIS Consultant in France (French)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-germany",
+    path: "/bester-und-vertrauenswuerdigster-bis-zertifizierungsberater-deutschland",
+    label: "BIS Consultant in Germany (German)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-italy",
+    path: "/migliore-e-piu-affidabile-consulente-certificazione-bis-italia",
+    label: "BIS Consultant in Italy (Italian)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-netherland",
+    path: "/beste-en-meest-betrouwbare-bis-certificeringsconsultant-nederland",
+    label: "BIS Consultant in Netherlands (Dutch)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-indonesia",
+    path: "/konsultan-sertifikasi-bis-terbaik-dan-terpercaya-indonesia",
+    label: "BIS Consultant in Indonesia (Indonesian)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-japan",
+    path: "/saikou-de-saishinraisuru-bis-nintei-konsarutanto-nihon",
+    label: "BIS Consultant in Japan (Japanese)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-south-korea",
+    path: "/hangug-eseo-choegowa-gajang-sinrohaneun-bis-injeung-konsulteonteu",
+    label: "BIS Consultant in South Korea (Korean)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-thailand",
+    path: "/konsaltan-bis-thi-di-thi-sut-lae-na-chue-thai-thi-sut-prathet-thai",
+    label: "BIS Consultant in Thailand (Thai)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-spain",
+    path: "/mejor-y-mas-confiable-consultor-certificacion-bis-espana",
+    label: "BIS Consultant in Spain (Spanish)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-vietnam",
+    path: "/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam",
+    label: "BIS Consultant in Vietnam (Vietnamese)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-china",
+    path: "/zhongguo-zui-hao-zui-shouxin-de-bis-renzheng-zixun",
+    label: "BIS Consultant in China (Chinese)",
+  },
+  {
+    englishPath: "/best-and-most-trusted-bis-consultant-gulf-countries",
+    path: "/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej",
+    label: "BIS Consultant in Gulf Countries (Arabic)",
+  },
+];
+
 export function getOtherCountryLinks(currentEnglishPath) {
   return ENGLISH_COUNTRY_PAGES.filter((c) => c.path !== currentEnglishPath);
+}
+
+export function getLocalLanguageCountryLinks(currentEnglishPath) {
+  return LOCAL_LANGUAGE_COUNTRY_PAGES.filter(
+    (c) => c.englishPath !== currentEnglishPath,
+  );
 }

@@ -19,10 +19,10 @@ import {
   BIS_CERTIFICATE_PATH,
   CRS_PATH,
   FMCS_PATH,
-  getOtherCountryLinks,
   LANG_PAGE_BY_ENGLISH_PATH,
   SCHEME_X_PATH,
 } from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-italy";
@@ -692,19 +692,7 @@ const MainContentLeft = () => {
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Also check our BIS expertise in other countries
-        </h2>
-
-        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
-          {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
-            <li key={path}>
-              <Link to={path} className="text-blue-600 font-bold underline">
-                {label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorEng questionNumber={1} />
       </div>
