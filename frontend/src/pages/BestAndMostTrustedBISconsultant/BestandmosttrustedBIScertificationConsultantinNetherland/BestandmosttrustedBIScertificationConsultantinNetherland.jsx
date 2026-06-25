@@ -346,7 +346,7 @@ const MainContentLeft = () => {
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             Bureau of Indian Standards
           </a>{" "}
@@ -363,7 +363,7 @@ const MainContentLeft = () => {
           At{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -438,7 +438,7 @@ const MainContentLeft = () => {
             technology and industrial equipment — must still obtain separate{" "}
             <Link
               to={BIS_CERTIFICATE_PATH}
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 font-bold underline"
             >
               BIS certification
             </Link>{" "}
@@ -456,8 +456,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={FMCS_PATH} className="hover:underline">
-            1. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          1. {" "}
+          <Link to={FMCS_PATH} className="font-bold underline">
+             Foreign Manufacturers Certification Scheme (ISI Mark)
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -466,8 +467,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={CRS_PATH} className="hover:underline">
-            2. CRS — Compulsory Registration Scheme
+          2. {" "}
+          <Link to={CRS_PATH} className="font-bold underline">
+     Compulsory Registration Scheme
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -477,7 +479,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={SCHEME_X_PATH} className="hover:underline">
+          <Link to={SCHEME_X_PATH} className="font-bold underline">
             3. BIS Scheme X
           </Link>
         </h3>
@@ -585,7 +587,7 @@ const MainContentLeft = () => {
           Why Sun Certifications India is best and most trusted{" "}
           <Link
             to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
-            className="hover:underline"
+            className="font-bold underline"
           >
             BIS consultant in Netherland
           </Link>
@@ -714,7 +716,7 @@ const MainContentLeft = () => {
         <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
           {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
             <li key={path}>
-              <Link to={path} className="text-blue-600 hover:underline">
+              <Link to={path} className="text-blue-600 font-bold underline">
                 {label}
               </Link>
             </li>

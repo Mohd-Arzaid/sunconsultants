@@ -30456,6 +30456,7 @@ export const productTableData2 = [
     "sno": 544,
     "isNumber": "IS 7466 :1994",
     "product": "Rubber Gaskets for Pressure Cookers",
+    "blogPath": "/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466",
     "notification": {
       "title": "112. Rubber Gaskets for Pressure Cookers (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2023/12/Rubber-Gaskets-for-Pressure-Cookers.pdf",
@@ -30505,6 +30506,7 @@ export const productTableData2 = [
     "sno": 546,
     "isNumber": "IS 915:2012",
     "product": "Laboratory glassware – One – Mark volumetric flasks",
+    "blogPath": "/blogs/isi-products/one-mark-volumetric-flasks-is-915",
     "notification": {
       "title": "113. Laboratory Glassware (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2024/01/Laboratory-Glassware.pdf",

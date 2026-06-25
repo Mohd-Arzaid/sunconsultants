@@ -344,7 +344,7 @@ const MainContentLeft = () => {
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             مكتب المعايير الهندي
           </a>{" "}
@@ -358,7 +358,7 @@ const MainContentLeft = () => {
           في{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -433,7 +433,7 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={FMCS_PATH_AR} className="hover:underline">
+          <Link to={FMCS_PATH_AR} className="font-bold underline">
             1. FMCS — مخطط شهادة المصنّعين الأجانب (علامة ISI)
           </Link>
         </h3>
@@ -444,7 +444,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={CRS_PATH_AR} className="hover:underline">
+          <Link to={CRS_PATH_AR} className="font-bold underline">
             2. CRS — مخطط التسجيل الإلزامي
           </Link>
         </h3>
@@ -455,7 +455,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={SCHEME_X_PATH_AR} className="hover:underline">
+          <Link to={SCHEME_X_PATH_AR} className="font-bold underline">
             3. شهادة BIS مخطط X
           </Link>
         </h3>

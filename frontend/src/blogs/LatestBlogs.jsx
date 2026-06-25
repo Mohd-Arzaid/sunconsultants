@@ -16,6 +16,26 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 116,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Rubber Gasket for Pressure Cookers - IS 7466:1994",
+    description:
+      "Get BIS Certificate for Rubber Gasket for Pressure Cookers under IS 7466:1994. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466",
+    date: "15 May 2026",
+  },
+  {
+    id: 115,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for One Mark Volumetric Flasks - IS 915:2012 | Cost, Process, Documents",
+    description:
+      "Get BIS Certificate for One Mark Volumetric Flasks under IS 915:2012. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/one-mark-volumetric-flasks-is-915",
+    date: "11 May 2026",
+  },
+  {
     id: 114,
     color: "#0F766E",
     title:

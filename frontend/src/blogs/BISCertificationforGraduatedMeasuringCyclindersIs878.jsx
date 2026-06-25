@@ -17,6 +17,9 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
+const blogImageUrl =
+  "https://bis-certifications.com/blogImages/BISLicenseforGraduatedMeasuringCyclinders1.webp";
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -29,8 +32,7 @@ const articleSchema = {
     "BIS Certification for Laboratory Glassware – Graduated Measuring Cylinders IS 878:2008",
   description:
     "A comprehensive guide to BIS Certification for Graduated Measuring Cylinders under IS 878:2008, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
-  image:
-    "https://bis-certifications.com/blogImages/BISLicenseforGraduatedMeasuringCyclinders.webp",
+  image: blogImageUrl,
   author: {
     "@type": "Person",
     name: "Dhruv Aggarwal",
@@ -52,8 +54,7 @@ const ratingSchema = {
   "@context": "https://schema.org/",
   "@type": "Product",
   name: "BIS Certification for Laboratory Glassware – Graduated Measuring Cylinders IS 878:2008",
-  image:
-    "https://bis-certifications.com/blogImages/BISLicenseforGraduatedMeasuringCyclinders.webp",
+  image: blogImageUrl,
   description:
     "A comprehensive guide to BIS Certification for Graduated Measuring Cylinders under IS 878:2008, covering the certification process, testing requirements, cost structure, documents, compliance guidelines, and regulatory obligations in India.",
   brand: {
@@ -205,8 +206,10 @@ const MetaTags = () => {
       <meta property="og:url" content={websiteUrl} />
       <meta property="og:site_name" content={websiteName} />
       <meta property="og:type" content="article" />
+      <meta property="og:image" content={blogImageUrl} />
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
+      <meta name="twitter:image" content={blogImageUrl} />
       <link rel="canonical" href={websiteUrl} />
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -277,6 +280,14 @@ const MainContentLeft = () => {
           Cylinders IS 878:2008
         </h1>
 
+        <div className="mb-6">
+          <img
+            src="/blogImages/BISLicenseforGraduatedMeasuringCyclinders1.webp"
+            title="BIS License for Graduated Measuring Cylinders - IS 878:2008"
+            alt="BIS Certificate for Graduated Measuring Cylinders - IS 878:2008 BIS Certification"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           <Link

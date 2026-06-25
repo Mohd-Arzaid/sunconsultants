@@ -256,6 +256,8 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/glass-beakers-is-2619",
     "/blogs/isi-products/graduated-measuring-cyclinders-is-878",
     "/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1",
+    "/blogs/isi-products/one-mark-volumetric-flasks-is-915",
+    "/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466",
     "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2",
     "/blogs/isi-products/battery-operated-vaccum-cleaners",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
@@ -1422,6 +1424,10 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Graduated Measuring Cylinders - English Page";
     if (path.includes("/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1"))
       return "BIS Certificate for Narrow Necked Boiling Flasks - English Page";
+    if (path.includes("/blogs/isi-products/one-mark-volumetric-flasks-is-915"))
+      return "BIS Certificate for One Mark Volumetric Flasks - English Page";
+    if (path.includes("/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466"))
+      return "BIS Certificate for Rubber Gasket for Pressure Cookers - English Page";
     if (
       path.includes(
         "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2"

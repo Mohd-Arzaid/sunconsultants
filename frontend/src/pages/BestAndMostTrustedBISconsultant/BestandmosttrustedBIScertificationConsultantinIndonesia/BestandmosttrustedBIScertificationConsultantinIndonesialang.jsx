@@ -325,7 +325,7 @@ const MainContentLeft = () => {
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             Bureau of Indian Standards
           </a>{" "}
@@ -338,7 +338,7 @@ const MainContentLeft = () => {
           Di{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India

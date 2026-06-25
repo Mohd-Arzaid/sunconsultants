@@ -348,7 +348,7 @@ const MainContentLeft = () => {
           At{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -408,7 +408,7 @@ const MainContentLeft = () => {
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             Bureau of Indian Standards
           </a>{" "}
@@ -432,7 +432,7 @@ const MainContentLeft = () => {
           <li>
             <Link
               to={BIS_CERTIFICATE_PATH}
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 font-bold underline"
             >
               BIS certification
             </Link>
@@ -503,7 +503,7 @@ const MainContentLeft = () => {
 
         <h3 className={SUB_HEADING_CLASS}>
         End-to-end {" "}
-          <Link to={FMCS_PATH} className="hover:underline">
+          <Link to={FMCS_PATH} className="font-bold underline">
         FMCS Certification
           </Link>
           {" "}support
@@ -515,7 +515,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={CRS_PATH} className="hover:underline">
+          <Link to={CRS_PATH} className="font-bold underline">
             CRS registration 
           </Link>
           {" "}for electronics and IT products
@@ -527,7 +527,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={SCHEME_X_PATH} className="hover:underline">
+          <Link to={SCHEME_X_PATH} className="font-bold underline">
             Scheme X Certification
           </Link>
           {" "}for industrial and machinery manufacturers
@@ -541,7 +541,7 @@ const MainContentLeft = () => {
         <h3 className={SUB_HEADING_CLASS}>
           <Link
             to="/authorized-indian-representative"
-            className="hover:underline"
+            className="font-bold underline"
           >
             Authorized Indian Representative (AIR) services in France
           </Link>
@@ -660,7 +660,7 @@ const MainContentLeft = () => {
           Why Sun Certifications India is the Best and Most Trusted {" "}
           <Link
             to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
-            className="hover:underline"
+            className="font-bold underline"
           >
             BIS Consultant in France
           </Link>
@@ -789,7 +789,7 @@ const MainContentLeft = () => {
         <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
           {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
             <li key={path}>
-              <Link to={path} className="text-blue-600 hover:underline">
+              <Link to={path} className="text-blue-600 font-bold underline">
                 {label}
               </Link>
             </li>

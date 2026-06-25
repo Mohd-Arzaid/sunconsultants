@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Check, SlashIcon } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react"; 
 import {
   Breadcrumb,
   BreadcrumbItem,

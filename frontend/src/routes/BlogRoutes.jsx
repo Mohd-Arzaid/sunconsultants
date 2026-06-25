@@ -1097,6 +1097,12 @@ const BISCertificationforGraduatedMeasuringCyclindersIs878 = lazy(() =>
 const BISCertificationforNarrowNeckedBoilingFlasksIs1381Part1 = lazy(() =>
   import("@/blogs/BISCertificationforNarrowNeckedBoilingFlasksIs1381Part1")
 );
+const BISCertificationforOneMarkVolumetricFlasksIs915 = lazy(() =>
+  import("@/blogs/BISCertificationforOneMarkVolumetricFlasksIs915")
+);
+const BISCertificationforRubberGasketForPressureCookersIs7466 = lazy(() =>
+  import("@/blogs/BISCertificationforRubberGasketForPressureCookersIs7466")
+);
 const BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2 = lazy(() =>
   import("@/blogs/BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2")
 );
@@ -3842,6 +3848,22 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforNarrowNeckedBoilingFlasksIs1381Part1 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/one-mark-volumetric-flasks-is-915"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforOneMarkVolumetricFlasksIs915 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforRubberGasketForPressureCookersIs7466 />
           </Suspense>
         }
       />

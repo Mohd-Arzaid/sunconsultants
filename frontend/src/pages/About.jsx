@@ -986,8 +986,14 @@ const AboutStorySections = () => {
             Indian manufacturers who need multi-license approvals for products
             that touch multiple ministries no longer have to manage several
             consultants simultaneously. And foreign companies dealing with the
-            added complexity of overseas factory audits, sample logistics, and
-            Authorized Indian Representative appointments can rely on a single
+            added complexity of overseas factory audits, sample logistics, and{" "}
+            <Link
+              to="/authorized-indian-representative"
+              className="font-semibold text-[#1A8781] hover:underline"
+            >
+              Authorized Indian Representative
+            </Link>{" "}
+            appointments can rely on a single
             team to manage every touchpoint end-to-end.
           </p>
         </div>

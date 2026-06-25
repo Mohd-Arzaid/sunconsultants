@@ -359,7 +359,7 @@ const MainContentLeft = () => {
           At{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -417,20 +417,17 @@ const MainContentLeft = () => {
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             Bureau of Indian Standards
           </a>
           ) is India&apos;s national standards body
           under the Ministry of Consumer Affairs. Products in mandatory QCO
           categories cannot legally enter, be sold in, or be distributed within
-          India without valid{" "}
-          <Link
-            to={BIS_CERTIFICATE_PATH}
-            className="text-blue-600 hover:underline"
-          >
+          India without valid
+
             BIS certification
-          </Link>{" "}
+
           — regardless of what certifications
           they carry in Vietnam or in the brand owner&apos;s home country.
         </p>
@@ -450,7 +447,7 @@ const MainContentLeft = () => {
             STAMEQ-certified products still require separate{" "}
             <Link
               to={BIS_CERTIFICATE_PATH}
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 font-bold underline"
             >
               BIS certification
             </Link>{" "}
@@ -468,8 +465,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={CRS_PATH} className="hover:underline">
-            1. CRS — Compulsory Registration Scheme
+          1. {" "}
+          <Link to={CRS_PATH} className="font-bold underline">
+            Compulsory Registration Scheme
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -480,8 +478,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={FMCS_PATH} className="hover:underline">
-            2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          2. {" "}
+          <Link to={FMCS_PATH} className="font-bold underline">
+  Foreign Manufacturers Certification Scheme (ISI Mark)
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-2">
@@ -496,8 +495,9 @@ const MainContentLeft = () => {
         </ul>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={SCHEME_X_PATH} className="hover:underline">
-            3. BIS Scheme X Certification
+          3. {" "}
+          <Link to={SCHEME_X_PATH} className="font-bold underline">
+             BIS Scheme X Certification
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -609,7 +609,7 @@ const MainContentLeft = () => {
           Why Sun Certifications India is best and most trusted{" "}
           <Link
             to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
-            className="hover:underline"
+            className="font-bold underline"
           >
             BIS consultant in Vietnam
           </Link>
@@ -733,7 +733,7 @@ const MainContentLeft = () => {
         <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
           {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
             <li key={path}>
-              <Link to={path} className="text-blue-600 hover:underline">
+              <Link to={path} className="text-blue-600 font-bold underline">
                 {label}
               </Link>
             </li>

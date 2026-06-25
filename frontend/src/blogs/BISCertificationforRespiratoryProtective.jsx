@@ -542,10 +542,10 @@ const MainContentLeft = () => {
           evolving industrial safety landscape.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
+        {/* <p className="text-gray-600 text-base font-geist mb-4">
           This draft is optimized for SEO, AEO, featured snippets, semantic search
           relevance, and BIS compliance-focused content marketing.
-        </p>
+        </p> */}
 
         <div className="h-px w-full bg-gray-300 my-6" />
 

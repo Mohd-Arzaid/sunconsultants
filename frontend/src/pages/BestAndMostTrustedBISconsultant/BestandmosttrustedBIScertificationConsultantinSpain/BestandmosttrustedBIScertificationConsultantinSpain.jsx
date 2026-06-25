@@ -337,14 +337,20 @@ const MainContentLeft = () => {
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             Bureau of Indian Standards
           </a>{" "}
           (BIS)
           mandatory certification regime is expanding rapidly. Products that
-          entered India freely under earlier import conditions now require valid
-          BIS certification before they can legally clear Indian customs. For
+          entered India freely under earlier import conditions now require valid{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 font-bold underline"
+          >
+            BIS certification
+          </Link>{" "}
+          before they can legally clear Indian customs. For
           Spanish manufacturers in automotive components, renewable energy
           equipment, ceramics, chemicals, and machinery, the compliance landscape
           has shifted.
@@ -354,7 +360,7 @@ const MainContentLeft = () => {
           At{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -411,13 +417,7 @@ const MainContentLeft = () => {
           Consumer Affairs and certifies products against Indian Standards (IS
           numbers) — India&apos;s own national technical standards framework. Every
           product regulated under a mandatory Quality Control Order (QCO) must hold
-          valid{" "}
-          <Link
-            to={BIS_CERTIFICATE_PATH}
-            className="text-blue-600 hover:underline"
-          >
-            BIS certification
-          </Link>{" "}
+          valid BIS certification.
           before it can be legally imported, sold, or
           installed in India.
         </p>
@@ -435,13 +435,7 @@ const MainContentLeft = () => {
             Española de Normalización (UNE) standards and AENOR product
             certifications — widely recognised across Europe and Latin America —
             are not recognised by BIS. Products certified by AENOR must still obtain
-            separate{" "}
-            <Link
-              to={BIS_CERTIFICATE_PATH}
-              className="text-blue-600 hover:underline"
-            >
-              BIS certification
-            </Link>{" "}
+            separate BIS certification.
             for India.
           </li>
           {BIS_OVERVIEW_POINTS.slice(1).map((point) => (
@@ -456,8 +450,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={FMCS_PATH} className="hover:underline">
-            1. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          1. {" "}
+          <Link to={FMCS_PATH} className="font-bold underline">
+Foreign Manufacturers Certification Scheme (ISI Mark)           
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -467,8 +462,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={CRS_PATH} className="hover:underline">
-            2. CRS — Compulsory Registration Scheme
+          2. {" "}
+          <Link to={CRS_PATH} className="font-bold underline">
+   Compulsory Registration Scheme
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -479,8 +475,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={SCHEME_X_PATH} className="hover:underline">
-            3. BIS Scheme X
+          3. {" "}
+          <Link to={SCHEME_X_PATH} className="font-bold underline">
+BIS Scheme X
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -591,7 +588,7 @@ const MainContentLeft = () => {
           Why Sun Certifications India is best and most trusted{" "}
           <Link
             to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
-            className="hover:underline"
+            className="font-bold underline"
           >
             BIS consultant in Spain
           </Link>
@@ -718,7 +715,7 @@ const MainContentLeft = () => {
         <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
           {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
             <li key={path}>
-              <Link to={path} className="text-blue-600 hover:underline">
+              <Link to={path} className="text-blue-600 font-bold underline">
                 {label}
               </Link>
             </li>

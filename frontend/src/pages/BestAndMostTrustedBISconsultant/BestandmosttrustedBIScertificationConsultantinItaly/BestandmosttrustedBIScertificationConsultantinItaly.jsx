@@ -327,7 +327,7 @@ const MainContentLeft = () => {
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             Bureau of Indian Standards
           </a>{" "}
@@ -345,7 +345,7 @@ const MainContentLeft = () => {
           At{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -357,8 +357,14 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          If your Italian business sells to India and you have not yet checked your
-          BIS certificate requirement, this page is where that process begins.
+          If your Italian business sells to India and you have not yet checked your{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 font-bold underline"
+          >
+            BIS certificate
+          </Link>{" "}
+          requirement, this page is where that process begins.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -417,14 +423,7 @@ const MainContentLeft = () => {
             CE marking does not apply in India. The CE mark is a European
             Economic Area requirement — it has no legal recognition or equivalent
             standing in India. Indian customs does not treat CE marking as a
-            substitute for{" "}
-            <Link
-              to={BIS_CERTIFICATE_PATH}
-              className="text-blue-600 hover:underline"
-            >
-              BIS certification
-            </Link>
-            .
+            substitute for  BIS certification.
           </li>
           {BIS_OVERVIEW_POINTS.map((point) => (
             <li key={point}>{point}</li>
@@ -438,9 +437,10 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={SCHEME_X_PATH} className="hover:underline">
-            1. BIS Scheme X — The Primary Scheme for Italian Machinery Exporters
+          <Link to={SCHEME_X_PATH} className="font-bold underline">
+            1. BIS Scheme X  
           </Link>
+           {""} The Primary Scheme for Italian Machinery Exporters
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           Scheme X is the mandatory certification route for industrial machinery
@@ -449,9 +449,12 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={FMCS_PATH} className="hover:underline">
-            2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          2. {" "}
+          <Link to={FMCS_PATH} className="font-bold underline">
+          Foreign Manufacturers Certification Scheme (ISI Mark)
           </Link>
+
+          
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
           For Italian manufacturers whose products fall under mandatory ISI Mark
@@ -460,7 +463,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={CRS_PATH} className="hover:underline">
+          <Link to={CRS_PATH} className="font-bold underline">
             3. CRS — Compulsory Registration Scheme
           </Link>
         </h3>
@@ -573,7 +576,7 @@ const MainContentLeft = () => {
           Why Sun Certifications India is best{" "}
           <Link
             to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
-            className="hover:underline"
+            className="font-bold underline"
           >
             BIS consultant in Italy
           </Link>
@@ -696,7 +699,7 @@ const MainContentLeft = () => {
         <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
           {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
             <li key={path}>
-              <Link to={path} className="text-blue-600 hover:underline">
+              <Link to={path} className="text-blue-600 font-bold underline">
                 {label}
               </Link>
             </li>

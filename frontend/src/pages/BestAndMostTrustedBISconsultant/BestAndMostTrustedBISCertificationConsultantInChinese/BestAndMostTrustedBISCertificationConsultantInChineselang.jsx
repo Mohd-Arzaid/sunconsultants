@@ -315,7 +315,7 @@ const MainContentLeft = () => {
           在{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -373,7 +373,16 @@ const MainContentLeft = () => {
 
 
         <p className="text-gray-600 text-base font-geist mb-4">
-        对于希望将产品出口到印度市场的中国制造商和出口企业而言，了解并遵守印度标准局（Bureau of Indian Standards，BIS）的相关要求至关重要。因此，许多企业会搜索与  印度BIS、印度BIS认证、印度BIS证书、*印度BIS许可证、印度BIS认证证书、*印度BIS认证体系  以及 **印度BIS注册  相关的信息，以确保产品符合进入印度市场所需的法规要求。BIS认证制度涵盖电子产品、电气设备、工业机械、化工产品以及消费品等多个领域，部分产品在进口、销售或分销至印度之前必须获得相应的认证。无论您需要申请 **印度BIS注册、获得 **印度BIS认证，还是取得 **印度BIS许可证，准确的技术文件、产品测试以及合规流程管理都非常重要。为中国企业提供全面的专业支持，协助完成产品评估、实验室测试、技术文件准备以及 **印度BIS认证证书  的申请流程，帮助企业顺利满足 **印度BIS  的各项要求并高效进入印度市场。
+        对于希望将产品出口到印度市场的中国制造商和出口企业而言，了解并遵守印度标准局（
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 font-bold underline"
+          >
+            Bureau of Indian Standards
+          </a>
+          ，BIS）的相关要求至关重要。因此，许多企业会搜索与  印度BIS、印度BIS认证、印度BIS证书、*印度BIS许可证、印度BIS认证证书、*印度BIS认证体系  以及 **印度BIS注册  相关的信息，以确保产品符合进入印度市场所需的法规要求。BIS认证制度涵盖电子产品、电气设备、工业机械、化工产品以及消费品等多个领域，部分产品在进口、销售或分销至印度之前必须获得相应的认证。无论您需要申请 **印度BIS注册、获得 **印度BIS认证，还是取得 **印度BIS许可证，准确的技术文件、产品测试以及合规流程管理都非常重要。为中国企业提供全面的专业支持，协助完成产品评估、实验室测试、技术文件准备以及 **印度BIS认证证书  的申请流程，帮助企业顺利满足 **印度BIS  的各项要求并高效进入印度市场。
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -383,7 +392,7 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={CRS_PATH_ZH} className="hover:underline">
+          <Link to={CRS_PATH_ZH} className="font-bold underline">
             1. CRS——强制注册计划
           </Link>
         </h3>
@@ -395,7 +404,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={FMCS_PATH_ZH} className="hover:underline">
+          <Link to={FMCS_PATH_ZH} className="font-bold underline">
             2. FMCS——外国制造商认证计划（ISI标志）
           </Link>
         </h3>
@@ -404,7 +413,7 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={SCHEME_X_PATH_ZH} className="hover:underline">
+          <Link to={SCHEME_X_PATH_ZH} className="font-bold underline">
             3. BIS Scheme X认证
           </Link>
         </h3>

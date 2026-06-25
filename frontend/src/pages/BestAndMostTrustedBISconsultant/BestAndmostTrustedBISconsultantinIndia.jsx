@@ -252,7 +252,7 @@ const MainContentLeft = () => {
           Since 2016,{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -260,7 +260,7 @@ const MainContentLeft = () => {
           has been one of the most trusted{" "}
           <Link
             to={BIS_CERTIFICATE_PATH}
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             BIS certification
           </Link>{" "}
@@ -279,7 +279,7 @@ const MainContentLeft = () => {
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
           >
             Bureau of Indian Standards
           </a>{" "}
@@ -332,7 +332,7 @@ const MainContentLeft = () => {
         <h3 className={SUB_HEADING_CLASS}>
           <Link
             to="/a-guide-to-bis-certification-indian-bis"
-            className="hover:underline"
+            className="font-bold underline"
           >
             ISI Mark Certification (Product Certification Scheme)
           </Link>
@@ -348,7 +348,7 @@ const MainContentLeft = () => {
         <h3 className={SUB_HEADING_CLASS}>
           <Link
             to="/what-is-crs-bis-or-crs-registration"
-            className="hover:underline"
+            className="font-bold underline"
           >
             CRS Registration (Compulsory Registration Scheme)
           </Link>
@@ -363,7 +363,7 @@ const MainContentLeft = () => {
         <h3 className={SUB_HEADING_CLASS}>
           <Link
             to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-            className="hover:underline"
+            className="font-bold underline"
           >
             FMCS Certification (Foreign Manufacturers Certification Scheme)
           </Link>
@@ -379,7 +379,7 @@ const MainContentLeft = () => {
         <h3 className={SUB_HEADING_CLASS}>
           <Link
             to="/indian-bis-certification-under-scheme-x"
-            className="hover:underline"
+            className="font-bold underline"
           >
             BIS Scheme X Certification
           </Link>
@@ -721,7 +721,7 @@ const MainContentLeft = () => {
         <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
           {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
             <li key={path}>
-              <Link to={path} className="text-blue-600 hover:underline">
+              <Link to={path} className="text-blue-600 font-bold underline">
                 {label}
               </Link>
             </li>

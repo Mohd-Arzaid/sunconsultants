@@ -321,6 +321,24 @@ export const interlinkPairs = [
   4.) Laboratory glassware – Single volume pipettes
   5.) Glass beakers`,
   },
+  {
+    productName: "One-Mark Volumetric Flasks",
+    isNumber: "IS 915:2012",
+    blogUrl: "/blogs/isi-products/one-mark-volumetric-flasks-is-915",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-laboratory-glassware",
+    qcoMatchKey: `1.) Laboratory glassware - Graduated measuring cylinders
+  2.) Laboratory glassware - One-Mark volumetric flasks
+  3.) Laboratory glassware – Narrow-necked boiling flasks
+  4.) Laboratory glassware – Single volume pipettes
+  5.) Glass beakers`,
+  },
+  {
+    productName: "Rubber Gaskets for Pressure Cookers",
+    isNumber: "IS 7466:1994",
+    blogUrl: "/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-rubber-gaskets-for-pressure-cookers",
+    qcoMatchKey: "Rubber Gaskets for Pressure Cookers- Specification",
+  },
 ];
 
 /**

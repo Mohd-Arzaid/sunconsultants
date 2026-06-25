@@ -19,6 +19,7 @@ import {
   CRS_PATH,
   FMCS_PATH,
   getOtherCountryLinks,
+  LANG_PAGE_BY_ENGLISH_PATH,
   SCHEME_X_PATH,
 } from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
@@ -336,7 +337,14 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           The manufacturers getting this right are not the largest factories or the
           ones with the most established Indian relationships. They are the ones who
-          started BIS certification early, managed the multi-product registration
+          started{" "}
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="text-blue-600 font-bold underline"
+          >
+            BIS certification
+          </Link>{" "}
+          early, managed the multi-product registration
           complexity efficiently, and understood that CCC certification and GB
           standards — however rigorous — carry zero weight at Indian customs.
         </p>
@@ -345,7 +353,7 @@ const MainContentLeft = () => {
           At{" "}
           <a
             href="https://bis-certifications.com/"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 font-bold underline"
             rel="noopener noreferrer"
           >
             Sun Certifications India
@@ -400,7 +408,16 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS (Bureau of Indian Standards) is India&apos;s national standards body
+          BIS (
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 font-bold underline"
+          >
+            Bureau of Indian Standards
+          </a>
+          ) is India&apos;s national standards body
           under the Ministry of Consumer Affairs. Products covered by mandatory
           Quality Control Orders (QCOs) cannot legally enter, be sold, or be
           distributed in India without valid BIS certification — and for
@@ -424,8 +441,9 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={CRS_PATH} className="hover:underline">
-            1. CRS — Compulsory Registration Scheme
+          1. {" "}
+          <Link to={CRS_PATH} className="font-bold underline">
+         CRS Registration
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -439,8 +457,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={FMCS_PATH} className="hover:underline">
-            2. FMCS — Foreign Manufacturers Certification Scheme (ISI Mark)
+          2. {" "}
+          <Link to={FMCS_PATH} className="font-bold underline">
+        FMCS Certification
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -450,8 +469,9 @@ const MainContentLeft = () => {
         </p>
 
         <h3 className={SUB_HEADING_CLASS}>
-          <Link to={SCHEME_X_PATH} className="hover:underline">
-            3. BIS Scheme X Certification
+          3. {" "}  
+          <Link to={SCHEME_X_PATH} className="font-bold underline">
+BIS Scheme X Certification
           </Link>
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -555,8 +575,13 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Why Sun Certifications India is the Best and Most Trusted BIS Consultant
-          in China
+          Why Sun Certifications India is the Best and Most Trusted{" "}
+          <Link
+            to={LANG_PAGE_BY_ENGLISH_PATH[PAGE_PATH]}
+            className="font-bold underline"
+          >
+            BIS Consultant in China
+          </Link>
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -673,7 +698,7 @@ const MainContentLeft = () => {
         <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600 text-base font-geist">
           {getOtherCountryLinks(PAGE_PATH).map(({ label, path }) => (
             <li key={path}>
-              <Link to={path} className="text-blue-600 hover:underline">
+              <Link to={path} className="text-blue-600 font-bold underline">
                 {label}
               </Link>
             </li>
