@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
 import { ServicesJapanese } from "@/pages/SchemeX/SchemeXJapanese";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/saikou-de-saishinraisuru-bis-nintei-konsarutanto-nihon";
+const PAGE_PATH =
+  "/saikou-de-saishinraisuru-bis-nintei-konsarutanto-nihon";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/日本最高のBISコンサルタント.webp";
 const SCHEMA_IMAGE_URL =
@@ -294,6 +298,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           日本は、品質、イノベーション、精密エンジニアリングへの取り組みで知られる、世界有数の製造経済国として長年認められてきました。先端電子機器や産業機械から自動車部品、消費財に至るまで、日本メーカーは世界市場で高い評価を築いてきました。インドが世界で最も成長の早い経済国の一つとして台頭を続ける中、ますます多くの日本企業がインド市場への展開という新たな機会を模索しています。
@@ -604,6 +610,10 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           はい。当社は海外メーカー向けに完全なAIRサービスを提供しており、日本企業がインドに現地拠点を設立することなくBIS認証を取得できるよう支援します。
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorJapanese questionNumber={1} />
       </div>

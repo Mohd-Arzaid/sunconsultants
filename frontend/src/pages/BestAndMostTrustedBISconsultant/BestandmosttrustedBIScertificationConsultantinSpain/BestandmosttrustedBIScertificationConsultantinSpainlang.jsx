@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterSpanish from "@/components/manual/Footer/FooterSpanish";
 import { Services as ServicesSpanish } from "@/pages/SchemeX/SchemeXSpanish";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/mejor-y-mas-confiable-consultor-certificacion-bis-espana";
+const PAGE_PATH =
+  "/mejor-y-mas-confiable-consultor-certificacion-bis-espana";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/ElmejorconsultordeBISenEspaña.webp";
 const SCHEMA_IMAGE_URL =
@@ -303,6 +307,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           España no es el primer país europeo que viene a la mente de los
@@ -683,6 +689,10 @@ const MainContentLeft = () => {
           Químicos) regulan los productos químicos en India de forma
           independiente.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorSpanish questionNumber={1} />
       </div>

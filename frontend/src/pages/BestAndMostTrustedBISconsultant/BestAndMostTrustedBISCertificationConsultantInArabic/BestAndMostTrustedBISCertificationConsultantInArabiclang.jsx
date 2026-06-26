@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterArabic from "@/components/manual/Footer/FooterArabic";
 import { Services as ServicesArabic } from "@/pages/SchemeX/SchemeXArabic";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej";
+const PAGE_PATH =
+  "/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/استشاري BIS في دول الخليج.png";
 const SCHEMA_IMAGE_URL =
@@ -310,6 +314,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           يتشارك مجلس التعاون الخليجي والهند أحد أهم علاقات التجارة في العالم —
@@ -670,6 +676,10 @@ const MainContentLeft = () => {
           المساواة — تُطبَّق متطلبات شهادة BIS بالتساوي بغض النظر عن وجود
           اتفاقية تجارة حرة بين بلدكم والهند.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorArabic questionNumber={1} />
       </div>

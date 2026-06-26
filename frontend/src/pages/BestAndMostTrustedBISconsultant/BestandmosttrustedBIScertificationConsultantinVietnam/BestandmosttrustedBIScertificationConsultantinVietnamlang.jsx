@@ -15,9 +15,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
 import { Services } from "@/pages/SchemeX/SchemeXVietnamese";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam";
+const PAGE_PATH =
+  "/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/ChuyêngiatưvấnBIStốtnhất tạiVeitnam.png";
 const SCHEMA_IMAGE_URL =
@@ -310,6 +314,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Việt Nam không còn chỉ là trung tâm lắp ráp chi phí thấp.
@@ -673,6 +679,10 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Quần áo và hàng may mặc hiện không nằm trong yêu cầu QCO bắt buộc của BIS.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorVietnamese questionNumber={1} />
       </div>

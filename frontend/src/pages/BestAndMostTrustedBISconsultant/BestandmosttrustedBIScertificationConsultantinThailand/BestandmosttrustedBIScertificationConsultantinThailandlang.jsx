@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterThai from "@/components/manual/Footer/FooterThai";
 import { Services } from "@/pages/SchemeX/SchemeXThai";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/konsaltan-bis-thi-di-thi-sut-lae-na-chue-thai-thi-sut-prathet-thai";
+const PAGE_PATH =
+  "/konsaltan-bis-thi-di-thi-sut-lae-na-chue-thai-thi-sut-prathet-thai";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/ที่ปรึกษาด้านBISที่ดีที่สุดในประเทศไทย.png";
 const SCHEMA_IMAGE_URL =
@@ -284,6 +288,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           ประเทศไทยและอินเดียมีมากกว่าแค่ภูมิศาสตร์ที่ใกล้เคียงกัน — ทั้งสองประเทศมีความสัมพันธ์ทางการค้าที่มีพลวัตและเติบโตเร็วที่สุดแห่งหนึ่งในเอเชีย
@@ -607,6 +613,10 @@ const MainContentLeft = () => {
           ในหลายกรณี ได้ — รุ่นหลายรุ่นภายในตระกูลผลิตภัณฑ์เดียวกันสามารถครอบคลุมภายใต้ใบอนุญาต BIS เดียวได้
           ขึ้นอยู่กับการอนุมัติของ BIS เราให้คำแนะนำเกี่ยวกับกลยุทธ์การออกใบอนุญาตที่มีประสิทธิภาพที่สุดตั้งแต่ต้น
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorThai questionNumber={1} />
       </div>

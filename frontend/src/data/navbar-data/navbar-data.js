@@ -352,7 +352,7 @@ export const NAVIGATION_DATA = {
     },
     {
       id: 7,
-      name: "Best BIS consltuten india",
+      name: "Best BIS Consultant India",
       link: "/best-and-most-trusted-bis-consultant-india",
       icon: CheckCircle,
     },

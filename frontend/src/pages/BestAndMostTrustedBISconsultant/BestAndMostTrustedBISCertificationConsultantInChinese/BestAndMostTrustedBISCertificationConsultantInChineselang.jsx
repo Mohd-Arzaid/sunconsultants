@@ -14,9 +14,12 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterChinese from "@/components/manual/Footer/FooterChinese";
 import { Services as ServicesChinese } from "@/pages/SchemeX/SchemeXChainese";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/zhongguo-zui-hao-zui-shouxin-de-bis-renzheng-zixun";
+const PAGE_PATH = "/zhongguo-zui-hao-zui-shouxin-de-bis-renzheng-zixun";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BIS中国顾问.png";
 const SCHEMA_IMAGE_URL =
@@ -295,6 +298,8 @@ const MainContentLeft = () => {
           />
         </div>
 
+        <ConsultantIntroButtonRow />
+
         <p className="text-gray-600 text-base font-geist mb-4">
           印度针对中国进口类别发布的质量控制令（QCO）数量超过任何其他国家——然而，取得BIS认证的中国制造商持续从未获认证者手中赢得印度市场份额。
         </p>
@@ -568,6 +573,10 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           在强制QCO类别中，于印度海关被扣留且未持有有效BIS认证的产品将面临多种后果；若在海关当局规定的时限内无法证明BIS认证，货物可能被退运（费用由进口商承担）或销毁。
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorChinese questionNumber={1} />
       </div>

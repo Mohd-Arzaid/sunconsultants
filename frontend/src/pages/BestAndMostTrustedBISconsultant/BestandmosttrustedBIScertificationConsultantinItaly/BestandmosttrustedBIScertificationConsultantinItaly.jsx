@@ -23,6 +23,7 @@ import {
   SCHEME_X_PATH,
 } from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-italy";
@@ -306,6 +307,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           The mills of Surat, Ludhiana, and Coimbatore run on Marzoli spinning

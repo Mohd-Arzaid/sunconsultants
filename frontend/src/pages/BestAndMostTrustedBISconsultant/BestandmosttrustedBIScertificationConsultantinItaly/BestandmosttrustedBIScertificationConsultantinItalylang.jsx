@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterItalian from "@/components/manual/Footer/FooterItalian";
 import { Services as ServicesItalian } from "@/pages/SchemeX/SchemeXItalian";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/migliore-e-piu-affidabile-consulente-certificazione-bis-italia";
+const PAGE_PATH =
+  "/migliore-e-piu-affidabile-consulente-certificazione-bis-italia";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/IlmigliorconsulenteBISinItalia.webp";
 const SCHEMA_IMAGE_URL =
@@ -298,6 +302,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           I filati di Surat, Ludhiana e Coimbatore funzionano con telai di
@@ -683,6 +689,10 @@ const MainContentLeft = () => {
           prove in un laboratorio riconosciuto dal BIS secondo il numero IS
           applicabile.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorItalian questionNumber={1} />
       </div>

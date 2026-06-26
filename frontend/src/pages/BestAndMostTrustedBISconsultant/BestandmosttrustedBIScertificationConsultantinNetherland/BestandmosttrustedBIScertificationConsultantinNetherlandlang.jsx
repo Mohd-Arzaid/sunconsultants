@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterDutch from "@/components/manual/Footer/FooterDutch";
 import { Services as ServicesDutch } from "@/pages/SchemeX/SchemeXDutch";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/beste-en-meest-betrouwbare-bis-certificeringsconsultant-nederland";
+const PAGE_PATH =
+  "/beste-en-meest-betrouwbare-bis-certificeringsconsultant-nederland";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BesteBISconsultantinNederland.webp";
 const SCHEMA_IMAGE_URL =
@@ -305,6 +309,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Nederland slaat boven zijn gewicht uit in wereldwijde productie — en
@@ -690,6 +696,10 @@ const MainContentLeft = () => {
           India-specifieke QCO&apos;s — het werkt onafhankelijk van de
           EU-machinerichtlijn.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorDutch questionNumber={1} />
       </div>

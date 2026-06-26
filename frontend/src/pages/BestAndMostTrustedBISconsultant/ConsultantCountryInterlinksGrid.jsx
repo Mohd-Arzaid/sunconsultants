@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import {
   getLocalLanguageCountryLinks,
   getOtherCountryLinks,
+  OTHER_COUNTRIES_CONTENT_SECTION_ID,
 } from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 
 const HEADING_CLASS = "text-xl font-geist font-bold text-[#1e1e1e] mb-4";
@@ -15,7 +16,10 @@ const ConsultantCountryInterlinksGrid = ({ currentEnglishPath }) => {
   const localLanguageLinks = getLocalLanguageCountryLinks(currentEnglishPath);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+    <div
+      id={OTHER_COUNTRIES_CONTENT_SECTION_ID}
+      className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6"
+    >
       <section aria-labelledby="english-country-interlinks">
         <h2 id="english-country-interlinks" className={HEADING_CLASS}>
           Also check our BIS expertise in other countries
@@ -33,7 +37,7 @@ const ConsultantCountryInterlinksGrid = ({ currentEnglishPath }) => {
 
       <section aria-labelledby="local-language-country-interlinks">
         <h2 id="local-language-country-interlinks" className={HEADING_CLASS}>
-          Also Check Our BIS Expertise in Other Countries in Their Local
+          Also check our BIS expertise in other countries in their local
           Languages
         </h2>
         <ul className={LIST_CLASS}>

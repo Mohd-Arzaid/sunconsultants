@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
 import { Services as ServicesIndonesian } from "@/pages/SchemeX/SchemeXIndonesian";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/konsultan-sertifikasi-bis-terbaik-dan-terpercaya-indonesia";
+const PAGE_PATH =
+  "/konsultan-sertifikasi-bis-terbaik-dan-terpercaya-indonesia";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/KonsultanBISterbaikdiIndonesia.webp";
 const SCHEMA_IMAGE_URL =
@@ -302,6 +306,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Indonesia dan India adalah dua ekonomi terbesar di Asia Tenggara dan
@@ -662,6 +668,10 @@ const MainContentLeft = () => {
           Tanggung jawab sertifikasi BIS tetap berada pada Anda sebagai
           produsen.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorIndonesian questionNumber={1} />
       </div>

@@ -90,71 +90,99 @@ export const LOCAL_LANGUAGE_COUNTRY_PAGES = [
   {
     englishPath: "/best-and-most-trusted-bis-consultant-france",
     path: "/meilleur-et-plus-fiable-consultant-certification-bis-france",
-    label: "BIS Consultant in France (French)",
+    label: "Consultant en certification BIS en France",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-germany",
     path: "/bester-und-vertrauenswuerdigster-bis-zertifizierungsberater-deutschland",
-    label: "BIS Consultant in Germany (German)",
+    label: "BIS-Zertifizierungsberater in Deutschland",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-italy",
     path: "/migliore-e-piu-affidabile-consulente-certificazione-bis-italia",
-    label: "BIS Consultant in Italy (Italian)",
+    label: "Consulente di certificazione BIS in Italia",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-netherland",
     path: "/beste-en-meest-betrouwbare-bis-certificeringsconsultant-nederland",
-    label: "BIS Consultant in Netherlands (Dutch)",
+    label: "BIS-certificeringsconsultant in Nederland",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-indonesia",
     path: "/konsultan-sertifikasi-bis-terbaik-dan-terpercaya-indonesia",
-    label: "BIS Consultant in Indonesia (Indonesian)",
+    label: "Konsultan sertifikasi BIS di Indonesia",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-japan",
     path: "/saikou-de-saishinraisuru-bis-nintei-konsarutanto-nihon",
-    label: "BIS Consultant in Japan (Japanese)",
+    label: "日本のBIS認証コンサルタント",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-south-korea",
     path: "/hangug-eseo-choegowa-gajang-sinrohaneun-bis-injeung-konsulteonteu",
-    label: "BIS Consultant in South Korea (Korean)",
+    label: "한국의 BIS 인증 컨설턴트",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-thailand",
     path: "/konsaltan-bis-thi-di-thi-sut-lae-na-chue-thai-thi-sut-prathet-thai",
-    label: "BIS Consultant in Thailand (Thai)",
+    label: "ที่ปรึกษา BIS ในประเทศไทย",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-spain",
     path: "/mejor-y-mas-confiable-consultor-certificacion-bis-espana",
-    label: "BIS Consultant in Spain (Spanish)",
+    label: "Consultor de certificación BIS en España",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-vietnam",
     path: "/tu-van-chung-nhan-bis-tot-nhat-va-dang-tin-cay-nhat-tai-viet-nam",
-    label: "BIS Consultant in Vietnam (Vietnamese)",
+    label: "Tư vấn chứng nhận BIS tại Việt Nam",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-china",
     path: "/zhongguo-zui-hao-zui-shouxin-de-bis-renzheng-zixun",
-    label: "BIS Consultant in China (Chinese)",
+    label: "中国BIS认证顾问",
   },
   {
     englishPath: "/best-and-most-trusted-bis-consultant-gulf-countries",
     path: "/afdal-wa-athqa-mustashar-shahadat-bis-fi-duwal-al-khaleej",
-    label: "BIS Consultant in Gulf Countries (Arabic)",
+    label: "مستشار BIS في دول الخليج",
   },
 ];
 
-export function getOtherCountryLinks(currentEnglishPath) {
-  return ENGLISH_COUNTRY_PAGES.filter((c) => c.path !== currentEnglishPath);
+export const ENGLISH_PATH_BY_LANG_PATH = Object.fromEntries(
+  Object.entries(LANG_PAGE_BY_ENGLISH_PATH).map(([englishPath, langPath]) => [
+    langPath,
+    englishPath,
+  ]),
+);
+
+export function getEnglishPathForConsultantPage(pagePath) {
+  return ENGLISH_PATH_BY_LANG_PATH[pagePath] ?? pagePath;
 }
 
-export function getLocalLanguageCountryLinks(currentEnglishPath) {
-  return LOCAL_LANGUAGE_COUNTRY_PAGES.filter(
-    (c) => c.englishPath !== currentEnglishPath,
-  );
+export function getOtherCountryLinks(currentPagePath) {
+  if (ENGLISH_PATH_BY_LANG_PATH[currentPagePath]) {
+    return ENGLISH_COUNTRY_PAGES;
+  }
+  const englishPath = getEnglishPathForConsultantPage(currentPagePath);
+  return ENGLISH_COUNTRY_PAGES.filter((c) => c.path !== englishPath);
+}
+
+export function getLocalLanguageCountryLinks(currentPagePath) {
+  if (ENGLISH_PATH_BY_LANG_PATH[currentPagePath]) {
+    return LOCAL_LANGUAGE_COUNTRY_PAGES.filter(
+      (c) => c.path !== currentPagePath,
+    );
+  }
+  return LOCAL_LANGUAGE_COUNTRY_PAGES;
+}
+
+export const OTHER_COUNTRIES_CONTENT_SECTION_ID = "other-countries-content";
+
+export function scrollToOtherCountriesContent() {
+  const el = document.getElementById(OTHER_COUNTRIES_CONTENT_SECTION_ID);
+  if (!el) return;
+  const top =
+    el.getBoundingClientRect().top + window.scrollY - 80;
+  window.scrollTo({ top, behavior: "smooth" });
 }

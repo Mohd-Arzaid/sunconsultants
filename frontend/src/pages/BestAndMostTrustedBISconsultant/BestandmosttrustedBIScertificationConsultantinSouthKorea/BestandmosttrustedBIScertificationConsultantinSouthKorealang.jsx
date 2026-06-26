@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterKorean from "@/components/manual/Footer/FooterKorean";
 import { Services as ServicesKorean } from "@/pages/SchemeX/SchemeXKorean";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/hangug-eseo-choegowa-gajang-sinrohaneun-bis-injeung-konsulteonteu";
+const PAGE_PATH =
+  "/hangug-eseo-choegowa-gajang-sinrohaneun-bis-injeung-konsulteonteu";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/대한민국 최고의 BIS 컨설턴트.webp";
 const SCHEMA_IMAGE_URL =
@@ -295,6 +299,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           한국과 인도는 2010년 아시아에서 가장 중대한 무역 협정 중 하나에
@@ -641,6 +647,10 @@ const MainContentLeft = () => {
           한국 공급업체가 인도에서 판매되는 제품의 신고된 제조업체인지 여부에
           따라 달라집니다.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorKorean questionNumber={1} />
       </div>

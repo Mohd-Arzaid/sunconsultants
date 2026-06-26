@@ -17,6 +17,7 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 import { BIS_CERTIFICATE_PATH } from "@/pages/BestAndMostTrustedBISconsultant/consultantCountryInterlinks";
 import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/best-and-most-trusted-bis-consultant-india";
@@ -241,10 +242,7 @@ const MainContentLeft = () => {
           />
         </div>
 
-        <p className="text-gray-600 text-base font-geist mb-4 font-semibold">
-          Navigating BIS certification is complicated. We make it
-          straightforward.
-        </p>
+        <ConsultantIntroButtonRow tagline="Navigating BIS certification is complicated. We make it straightforward." />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Since 2016,{" "}

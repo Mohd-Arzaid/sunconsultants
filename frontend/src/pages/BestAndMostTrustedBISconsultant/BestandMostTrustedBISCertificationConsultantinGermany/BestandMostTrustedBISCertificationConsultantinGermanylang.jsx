@@ -14,9 +14,13 @@ import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterGerman from "@/components/manual/Footer/FooterGerman";
 import { ServicesGerman } from "@/pages/SchemeX/SchemeXGerman";
+import ConsultantCountryInterlinksGrid from "@/pages/BestAndMostTrustedBISconsultant/ConsultantCountryInterlinksGrid";
+import ConsultantIntroButtonRow from "@/pages/BestAndMostTrustedBISconsultant/ConsultantIntroButtonRow";
 
 const CANONICAL_URL =
   "https://bis-certifications.com/bester-und-vertrauenswuerdigster-bis-zertifizierungsberater-deutschland";
+const PAGE_PATH =
+  "/bester-und-vertrauenswuerdigster-bis-zertifizierungsberater-deutschland";
 const PAGE_IMAGE_SRC =
   "/BestandMostTrustedBISCertificationConsultant/BesterBISBeraterinDeutschland.webp";
 const SCHEMA_IMAGE_URL =
@@ -303,6 +307,8 @@ const MainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
+
+        <ConsultantIntroButtonRow />
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Deutschland ist einer der wichtigsten Handelspartner Indiens in Europa —
@@ -682,6 +688,10 @@ const MainContentLeft = () => {
           In vielen Fällen kann eine einzelne BIS-Lizenz mehrere Modelle innerhalb
           derselben Produktfamilie abdecken, vorbehaltlich der BIS-Genehmigung.
         </p>
+
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <ConsultantCountryInterlinksGrid currentEnglishPath={PAGE_PATH} />
 
         <FaqAuthorGerman questionNumber={1} />
       </div>
