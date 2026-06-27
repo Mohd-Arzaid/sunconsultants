@@ -339,6 +339,43 @@ export const interlinkPairs = [
     qcoUrl: "/bis-qco-updates/bis-certificate-for-rubber-gaskets-for-pressure-cookers",
     qcoMatchKey: "Rubber Gaskets for Pressure Cookers- Specification",
   },
+  {
+    productName: "Primary Lead",
+    isNumber: "IS 27:2023",
+    blogUrl: "/blogs/isi-products/primary-lead-is-27-2023",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-bis-qco-notification-for-primary-lead",
+    qcoMatchKey: "Primary Lead",
+  },
+  {
+    productName: "Refined Nickel",
+    isNumber: "IS 2782:2023",
+    blogUrl: "/blogs/isi-products/refined-nickel-is-2782-2023",
+    qcoUrl:
+      "/bis-qco-updates/bis-certificate-for-bis-qco-notification-for-refined-nickel",
+    qcoMatchKey: "Refined Nickel",
+  },
+  {
+    productName: "Vinyl Sulphone",
+    isNumber: "IS 18340:2023",
+    blogUrl: "/blogs/isi-products/vinyl-sulphone-is-18340-2023",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-vinyl-sulphone",
+    qcoMatchKey: "Vinyl Sulphone",
+  },
+  {
+    productName: "K Acid",
+    isNumber: "IS 11557:1986",
+    blogUrl: "/blogs/isi-products/k-acid-is-11557-1986",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-k-acid",
+    qcoMatchKey: "K Acid",
+  },
+  {
+    productName: "H Acid",
+    isNumber: "IS 8637:2020",
+    blogUrl: "/blogs/isi-products/h-acid-is-8637-2020",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-h-acid",
+    qcoMatchKey: "H Acid",
+  },
 ];
 
 /**

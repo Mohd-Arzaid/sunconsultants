@@ -1103,6 +1103,33 @@ const BISCertificationforOneMarkVolumetricFlasksIs915 = lazy(() =>
 const BISCertificationforRubberGasketForPressureCookersIs7466 = lazy(() =>
   import("@/blogs/BISCertificationforRubberGasketForPressureCookersIs7466")
 );
+const BISCertificationforCarbonBlackIs174402020 = lazy(() =>
+  import("@/blogs/BISCertificationforCarbonBlackIs174402020")
+);
+const BISCertificationforCylinderCartridgesForLocksIs18841 = lazy(() =>
+  import("@/blogs/BISCertificationforCylinderCartridgesForLocksIs18841")
+);
+const BISCertificationforPrimaryLeadIs272023 = lazy(() =>
+  import("@/blogs/BISCertificationforPrimaryLeadIs272023")
+);
+const BISCertificationforRigidPvcSheetIs63072023 = lazy(() =>
+  import("@/blogs/BISCertificationforRigidPvcSheetIs63072023")
+);
+const BISCertificationforHAcidIs86372020 = lazy(() =>
+  import("@/blogs/BISCertificationforHAcidIs86372020")
+);
+const BISCertificationforKAcidIs115571986 = lazy(() =>
+  import("@/blogs/BISCertificationforKAcidIs115571986")
+);
+const BISCertificationforVinylSulphoneIs183402023 = lazy(() =>
+  import("@/blogs/BISCertificationforVinylSulphoneIs183402023")
+);
+const BISCertificationforRefinedNickelIs27822023 = lazy(() =>
+  import("@/blogs/BISCertificationforRefinedNickelIs27822023")
+);
+const BISCertificationforRubberHotWaterBottlesIs18672023 = lazy(() =>
+  import("@/blogs/BISCertificationforRubberHotWaterBottlesIs18672023")
+);
 const BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2 = lazy(() =>
   import("@/blogs/BISCertificationforCableTrunkingAndDuctingSystemIs14927Part2")
 );
@@ -3864,6 +3891,78 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforRubberGasketForPressureCookersIs7466 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/carbon-black-is-17440-2020"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCarbonBlackIs174402020 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/cylinder-cartridges-for-locks-is-18841"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforCylinderCartridgesForLocksIs18841 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/primary-lead-is-27-2023"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforPrimaryLeadIs272023 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/rigid-pvc-sheet-is-6307-2023"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforRigidPvcSheetIs63072023 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/h-acid-is-8637-2020"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforHAcidIs86372020 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/k-acid-is-11557-1986"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforKAcidIs115571986 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/vinyl-sulphone-is-18340-2023"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforVinylSulphoneIs183402023 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/refined-nickel-is-2782-2023"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforRefinedNickelIs27822023 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/rubber-hot-water-bottles-is-1867-2023"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforRubberHotWaterBottlesIs18672023 />
           </Suspense>
         }
       />

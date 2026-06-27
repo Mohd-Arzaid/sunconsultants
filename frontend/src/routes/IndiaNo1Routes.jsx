@@ -19,6 +19,10 @@ const AllIndiaFirstBISLicenseforPolyesterFibreFilledPillow = lazy(() =>
   )
 );
 
+const AllIndiaFirstBISLicenseforCarbonBlack = lazy(() =>
+  import("@/pages/INDIA-NO-1/AllIndiaFirstBISLicenseforCarbonBlack")
+);
+
 export const IndiaNo1Routes = () => {
   return (
     <>
@@ -43,6 +47,14 @@ export const IndiaNo1Routes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <AllIndiaFirstBISLicenseforPolyesterFibreFilledPillow />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/all-india-first/bis-license-carbon-black-17440-2020"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <AllIndiaFirstBISLicenseforCarbonBlack />
           </Suspense>
         }
       />

@@ -5,7 +5,7 @@ $ErrorActionPreference = "Stop"
 
 $sourceFile = Join-Path $PSScriptRoot "src\blogs\BISCertificationforCrossRecessedTappingScrew.jsx"
 $oldName    = "BISCertificationforCrossRecessedTappingScrew"
-$newName    = "BISCertificationforRubberGasketForPressureCookersIs7466"
+$newName    = "BISCertificationforHAcidIs86372020"
 $destFile   = Join-Path $PSScriptRoot "src\blogs\$newName.jsx"
 
 if (-not (Test-Path $sourceFile)) {

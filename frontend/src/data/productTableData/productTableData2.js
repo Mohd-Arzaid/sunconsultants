@@ -33120,6 +33120,7 @@ export const productTableData2 = [
     "sno": " ",
     "isNumber": "IS 8637 : 2020",
     "product": "H Acid",
+    "blogPath": "/blogs/isi-products/h-acid-is-8637-2020",
     "notification": {
       "title": "H Acid (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/11/Quality-Control-Order-of-03-Chemicals-viz.-i-H-Acid-ii-K-Acid-iii-Vinyl-Sulphone.pdf",
@@ -33146,6 +33147,7 @@ export const productTableData2 = [
     "sno": " ",
     "isNumber": "IS 11557: 1986",
     "product": "K Acid",
+    "blogPath": "/blogs/isi-products/k-acid-is-11557-1986",
     "notification": {
       "title": "K Acid (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/11/Quality-Control-Order-of-03-Chemicals-viz.-i-H-Acid-ii-K-Acid-iii-Vinyl-Sulphone.pdf",
@@ -33168,6 +33170,7 @@ export const productTableData2 = [
     "sno": " ",
     "isNumber": "IS 18340 : 2023",
     "product": "Vinyl Sulphone",
+    "blogPath": "/blogs/isi-products/vinyl-sulphone-is-18340-2023",
     "notification": {
       "title": "Vinyl Sulphone (Quality Control) Order, 2024",
       "link": "https://bis.gov.in/wp-content/uploads/2024/11/Quality-Control-Order-of-03-Chemicals-viz.-i-H-Acid-ii-K-Acid-iii-Vinyl-Sulphone.pdf",
@@ -33458,6 +33461,7 @@ export const productTableData2 = [
     "sno": " ",
     "isNumber": "IS 2782: 2023",
     "product": "Refined Nickel",
+    "blogPath": "/blogs/isi-products/refined-nickel-is-2782-2023",
     "notification": {
       "title": "Refined Nickel (Quality Control) Order, 2025",
       "link": "https://bis.gov.in/wp-content/uploads/2025/04/Refined-Nickel-Quality-Control-Order-2025.pdf",
@@ -33480,6 +33484,7 @@ export const productTableData2 = [
     "sno": " ",
     "isNumber": "IS 27: 2023",
     "product": "Primary Lead",
+    "blogPath": "/blogs/isi-products/primary-lead-is-27-2023",
     "notification": {
       "title": "Primary Lead (Quality Control) Order, 2025",
       "link": "https://bis.gov.in/wp-content/uploads/2025/04/Primary-Lead-Quality-Control-Order-2025.pdf",

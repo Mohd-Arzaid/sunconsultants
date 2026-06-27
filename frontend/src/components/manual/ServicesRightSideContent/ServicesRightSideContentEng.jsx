@@ -125,6 +125,7 @@ const ServicesRightSideContentEng = () => {
     "/all-india-first/bis-license-for-respiratory-protective-devices-is-19089-2025",
     "/all-india-first/bis-license-for-forged-steel-socket-welding-fittings-is-4712-1984",
     "/all-india-first/bis-license-for-polyester-fibre-filled-pillow-is-18930-2024",
+    "/all-india-first/bis-license-carbon-black-17440-2020",
 
     // BEST AND MOST TRUSTED BIS CONSULTANT PATH
     "/best-and-most-trusted-bis-consultant-india",
@@ -258,6 +259,15 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1",
     "/blogs/isi-products/one-mark-volumetric-flasks-is-915",
     "/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466",
+    "/blogs/isi-products/carbon-black-is-17440-2020",
+    "/blogs/isi-products/cylinder-cartridges-for-locks-is-18841",
+    "/blogs/isi-products/primary-lead-is-27-2023",
+    "/blogs/isi-products/rigid-pvc-sheet-is-6307-2023",
+    "/blogs/isi-products/h-acid-is-8637-2020",
+    "/blogs/isi-products/k-acid-is-11557-1986",
+    "/blogs/isi-products/vinyl-sulphone-is-18340-2023",
+    "/blogs/isi-products/refined-nickel-is-2782-2023",
+    "/blogs/isi-products/rubber-hot-water-bottles-is-1867-2023",
     "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2",
     "/blogs/isi-products/battery-operated-vaccum-cleaners",
     "/blogs/isi-products/battery-operated-tootbrush-is-302",
@@ -1145,6 +1155,12 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "All India First BIS License for Polyester Fibre Filled Pillow under IS 18930:2024 - India No 1 (English)";
+    if (
+      path.includes(
+        "/all-india-first/bis-license-carbon-black-17440-2020"
+      )
+    )
+      return "All India First BIS License for Carbon Black under IS 17440:2020 - India No 1 (English)";
 
     // BEST AND MOST TRUSTED BIS CONSULTANT PATH
     if (path.includes("/best-and-most-trusted-bis-consultant-india"))
@@ -1428,6 +1444,24 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for One Mark Volumetric Flasks - English Page";
     if (path.includes("/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466"))
       return "BIS Certificate for Rubber Gasket for Pressure Cookers - English Page";
+    if (path.includes("/blogs/isi-products/carbon-black-is-17440-2020"))
+      return "BIS Certificate for Carbon Black - English Page";
+    if (path.includes("/blogs/isi-products/cylinder-cartridges-for-locks-is-18841"))
+      return "BIS Certification for Cylinder Cartridges for Locks - English Page";
+    if (path.includes("/blogs/isi-products/primary-lead-is-27-2023"))
+      return "BIS Certification for Primary Lead - English Page";
+    if (path.includes("/blogs/isi-products/rigid-pvc-sheet-is-6307-2023"))
+      return "BIS Certificate for Rigid PVC Sheet - English Page";
+    if (path.includes("/blogs/isi-products/h-acid-is-8637-2020"))
+      return "BIS Certification for H Acid - English Page";
+    if (path.includes("/blogs/isi-products/k-acid-is-11557-1986"))
+      return "BIS Certification for K Acid - English Page";
+    if (path.includes("/blogs/isi-products/vinyl-sulphone-is-18340-2023"))
+      return "BIS Certification for Vinyl Sulphone - English Page";
+    if (path.includes("/blogs/isi-products/refined-nickel-is-2782-2023"))
+      return "BIS Certification for Refined Nickel - English Page";
+    if (path.includes("/blogs/isi-products/rubber-hot-water-bottles-is-1867-2023"))
+      return "BIS Certification for Rubber Hot Water Bottles - English Page";
     if (
       path.includes(
         "/blogs/isi-products/cable-trunking-and-ducting-system-is-14927-part-2"

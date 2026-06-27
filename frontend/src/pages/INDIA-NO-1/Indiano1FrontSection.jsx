@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const indiaNo1Pages = [
   {
+    id: 4,
+    color: "#0284C7",
+    title:
+      "All India First BIS License for Carbon Black under IS 17440:2020",
+    description:
+      "Get complete information about all India first BIS Certification for Carbon Black under IS 17440:2020. Check requirements , process and documentation of ISI mark license for Carbon Black.",
+    slug: "all-india-first/bis-license-carbon-black-17440-2020",
+    date: "20 June 2026",
+  },
+  {
     id: 1,
     color: "#0284C7",
     title:

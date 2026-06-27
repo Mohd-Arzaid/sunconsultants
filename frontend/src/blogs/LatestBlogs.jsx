@@ -16,6 +16,92 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 125,
+    color: "#0F766E",
+    title: "BIS Certification for H Acid | IS 8637:2020 | Complete Guide",
+    description:
+      "Learn everything about BIS Certification for H Acid under IS 8637:2020, including the certification process, required documents, testing requirements, costs, eligibility, and compliance guidelines for manufacturers and importers in India.",
+    slug: "blogs/isi-products/h-acid-is-8637-2020",
+    date: "29 April 2026",
+  },
+  {
+    id: 124,
+    color: "#0F766E",
+    title: "BIS Certification for K Acid | IS 11557:1986 | Complete Guide",
+    description:
+      "Learn everything about BIS Certification for K Acid under IS 11557:1986, including the certification process, required documents, testing requirements, costs, eligibility, and compliance guidelines for manufacturers and importers in India.",
+    slug: "blogs/isi-products/k-acid-is-11557-1986",
+    date: "29 April 2026",
+  },
+  {
+    id: 123,
+    color: "#0F766E",
+    title:
+      "BIS Certification for Vinyl Sulphone | IS 18340:2023 | Complete Guide",
+    description:
+      "Learn everything about BIS Certification for Vinyl Sulphone under IS 18340:2023, including the certification process, required documents, testing requirements, costs, eligibility, and compliance guidelines for manufacturers and importers in India.",
+    slug: "blogs/isi-products/vinyl-sulphone-is-18340-2023",
+    date: "29 April 2026",
+  },
+  {
+    id: 122,
+    color: "#0F766E",
+    title:
+      "BIS Certification for Refined Nickel | IS 2782:2023 | Complete Guide",
+    description:
+      "Learn everything about BIS Certification for Refined Nickel under IS 2782:2023, including the certification process, required documents, testing requirements, costs, eligibility, and compliance guidelines for manufacturers and importers in India.",
+    slug: "blogs/isi-products/refined-nickel-is-2782-2023",
+    date: "29 April 2026",
+  },
+  {
+    id: 121,
+    color: "#0F766E",
+    title:
+      "BIS Certification for Rubber Hot Water Bottles | IS 1867:2023 | Complete Guide",
+    description:
+      "Learn everything about BIS Certification for Rubber Hot Water Bottles under IS 1867:2023, including the certification process, required documents, testing requirements, costs, eligibility, and compliance guidelines for manufacturers and importers in India.",
+    slug: "blogs/isi-products/rubber-hot-water-bottles-is-1867-2023",
+    date: "29 April 2026",
+  },
+  {
+    id: 120,
+    color: "#0F766E",
+    title: "BIS Certificate for Rigid PVC Sheet - IS 6307:2023",
+    description:
+      "Get BIS Certificate for Rigid PVC Sheet under IS 6307:2023. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/rigid-pvc-sheet-is-6307-2023",
+    date: "29 April 2026",
+  },
+  {
+    id: 119,
+    color: "#0F766E",
+    title:
+      "BIS Certification for Primary Lead | IS 27:2023 | Complete Guide",
+    description:
+      "Learn everything about BIS Certification for Primary Lead under IS 27:2023, including the certification process, required documents, testing requirements, costs, eligibility, and compliance guidelines for manufacturers and importers in India.",
+    slug: "blogs/isi-products/primary-lead-is-27-2023",
+    date: "29 April 2026",
+  },
+  {
+    id: 118,
+    color: "#0F766E",
+    title:
+      "BIS Certification for Cylinder Cartridges for Locks | IS 18841 | Complete Guide",
+    description:
+      "Learn everything about BIS Certification for Cylinder Cartridges for Locks under IS 18841, including the certification process, required documents, testing requirements, costs, eligibility, and compliance guidelines for manufacturers and importers in India.",
+    slug: "blogs/isi-products/cylinder-cartridges-for-locks-is-18841",
+    date: "29 April 2026",
+  },
+  {
+    id: 117,
+    color: "#0F766E",
+    title: "BIS Certificate for Carbon Black - IS 17440:2020",
+    description:
+      "Get BIS Certificate for Carbon Black under IS 17440:2020. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/carbon-black-is-17440-2020",
+    date: "29 April 2026",
+  },
+  {
     id: 116,
     color: "#0F766E",
     title:
