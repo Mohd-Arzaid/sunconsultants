@@ -121,10 +121,14 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/bis-fmcs-certification-process-digitalization",
     "/ministry-updates/bis-manak-samachar-may-2026",
     "/ministry-updates/bis-new-standards-2026-department-wise-indian-standards",
+    "/ministry-updates/steel-and-steel-products-quality-control-amendment-order-2026",
     // ALL INDIA FIRST BIS LICENSE PATH
     "/all-india-first/bis-license-for-respiratory-protective-devices-is-19089-2025",
     "/all-india-first/bis-license-for-forged-steel-socket-welding-fittings-is-4712-1984",
     "/all-india-first/bis-license-for-polyester-fibre-filled-pillow-is-18930-2024",
+    "/all-india-first/bis-license-for-rubber-hot-water-bottles-is-1867-2023",
+    "/all-india-first/bis-license-for-rigid-pvc-sheet-is-6307-2023",
+    "/all-india-first/bis-license-for-cylinder-cartridges-for-locks-is-18841",
     "/all-india-first/bis-license-carbon-black-17440-2020",
 
     // BEST AND MOST TRUSTED BIS CONSULTANT PATH
@@ -1136,6 +1140,13 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS New Upcoming Indian Standards 2026 – Complete Department-Wise Indian Standards & IS Codes Guide - Ministry Updates (English)";
+
+    if (
+      path.includes(
+        "/ministry-updates/steel-and-steel-products-quality-control-amendment-order-2026"
+      )
+    )
+      return "Steel and Steel Products (Quality Control) Amendment Order, 2026 - Ministry Updates (English)";
     // ALL INDIA FIRST BIS LICENSE PATH
     if (
       path.includes(
@@ -1155,6 +1166,24 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "All India First BIS License for Polyester Fibre Filled Pillow under IS 18930:2024 - India No 1 (English)";
+    if (
+      path.includes(
+        "/all-india-first/bis-license-for-rubber-hot-water-bottles-is-1867-2023"
+      )
+    )
+      return "All India First BIS License for Rubber Hot Water Bottles under IS 1867:2023 - India No 1 (English)";
+    if (
+      path.includes(
+        "/all-india-first/bis-license-for-rigid-pvc-sheet-is-6307-2023"
+      )
+    )
+      return "All India First BIS License for Rigid PVC Sheets under IS 6307:2023 - India No 1 (English)";
+    if (
+      path.includes(
+        "/all-india-first/bis-license-for-cylinder-cartridges-for-locks-is-18841"
+      )
+    )
+      return "All India First BIS License for Cylinder Cartridges for Locks under IS 18841 - India No 1 (English)";
     if (
       path.includes(
         "/all-india-first/bis-license-carbon-black-17440-2020"

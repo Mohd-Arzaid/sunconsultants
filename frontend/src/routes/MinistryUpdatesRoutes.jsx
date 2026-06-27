@@ -133,6 +133,11 @@ const BISManakSamacharMay2026 = lazy(() =>
 const BISNewUpcomingIndianStandards2026 = lazy(() =>
   import("@/pages/MinistryUpdatesPages/BISNewUpcomingIndianStandards2026")
 );
+const SteelandSteelProductsQualityControlAmendmentOrder = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/SteelandSteelProductsQualityControlAmendmentOrder"
+  )
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -416,6 +421,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <BISNewUpcomingIndianStandards2026 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/steel-and-steel-products-quality-control-amendment-order-2026"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <SteelandSteelProductsQualityControlAmendmentOrder />
           </Suspense>
         }
       />

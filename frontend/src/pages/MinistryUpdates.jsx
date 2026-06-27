@@ -24,6 +24,18 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Single source of truth for ministry updates – used by NotificationCard and Pagination
 const MINISTRY_UPDATES_LIST = [
   {
+    id: 34,
+    color: "#1D4ED8",
+    tagType: "Ministry Update",
+    date: "June 20, 2026",
+    displayDate: "20 Jun 2026",
+    title:
+      "Steel and Steel Products (Quality Control) Amendment Order, 2026",
+    description:
+      "Learn about the Steel and Steel Products (Quality Control) Amendment Order, 2026. Understand the 3-year abeyance, deferred enforcement till 31 March 2027, affected IS standards, and BIS compliance requirements.",
+    link: "/ministry-updates/steel-and-steel-products-quality-control-amendment-order-2026",
+  },
+  {
     id: 33,
     color: "#2563EB",
     tagType: "BIS Update",

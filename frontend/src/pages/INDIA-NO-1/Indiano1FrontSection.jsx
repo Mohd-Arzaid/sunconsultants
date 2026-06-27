@@ -16,6 +16,36 @@ import Footer from "@/common/Footer";
 
 const indiaNo1Pages = [
   {
+    id: 7,
+    color: "#0284C7",
+    title:
+      "All India First BIS License for Rubber Hot Water Bottles under IS 1867:2023",
+    description:
+      "Get complete information about all India first BIS Certification for Rubber Hot Water Bottles under IS 1867:2023. Check requirements , process and documentation of ISI mark license for Rubber Hot Water Bottles.",
+    slug: "all-india-first/bis-license-for-rubber-hot-water-bottles-is-1867-2023",
+    date: "20 June 2026",
+  },
+  {
+    id: 6,
+    color: "#0284C7",
+    title:
+      "All India First BIS License for Rigid PVC Sheets under IS 6307:2023",
+    description:
+      "Get complete information about all India first BIS Certification for Rigid PVC Sheet under IS 6307:2023. Check requirements , process and documentation of ISI mark license for Rigid PVC Sheet.",
+    slug: "all-india-first/bis-license-for-rigid-pvc-sheet-is-6307-2023",
+    date: "20 June 2026",
+  },
+  {
+    id: 5,
+    color: "#0284C7",
+    title:
+      "All India First BIS License for Cylinder Cartridges for Locks under IS 18841",
+    description:
+      "Get complete information about all India first BIS Certification for Cylinder Cartridges for Locks under IS 18841. Check requirements , process and documentation of ISI mark license for Cylinder Cartridges for Locks.",
+    slug: "all-india-first/bis-license-for-cylinder-cartridges-for-locks-is-18841",
+    date: "20 June 2026",
+  },
+  {
     id: 4,
     color: "#0284C7",
     title:

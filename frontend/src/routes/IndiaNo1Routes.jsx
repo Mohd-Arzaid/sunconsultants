@@ -19,6 +19,22 @@ const AllIndiaFirstBISLicenseforPolyesterFibreFilledPillow = lazy(() =>
   )
 );
 
+const AllIndiaFirstBISLicenseforRubberHotWaterBottlesunder = lazy(() =>
+  import(
+    "@/pages/INDIA-NO-1/AllIndiaFirstBISLicenseforRubberHotWaterBottlesunder"
+  )
+);
+
+const AllIndiaFirstBISLicenseforRigidPVCSheetsunder = lazy(() =>
+  import("@/pages/INDIA-NO-1/AllIndiaFirstBISLicenseforRigidPVCSheetsunder")
+);
+
+const AllIndiaFirstBISLicenseforCylinderCartridgesforLocks = lazy(() =>
+  import(
+    "@/pages/INDIA-NO-1/AllIndiaFirstBISLicenseforCylinderCartridgesforLocks"
+  )
+);
+
 const AllIndiaFirstBISLicenseforCarbonBlack = lazy(() =>
   import("@/pages/INDIA-NO-1/AllIndiaFirstBISLicenseforCarbonBlack")
 );
@@ -47,6 +63,30 @@ export const IndiaNo1Routes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <AllIndiaFirstBISLicenseforPolyesterFibreFilledPillow />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/all-india-first/bis-license-for-rubber-hot-water-bottles-is-1867-2023"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <AllIndiaFirstBISLicenseforRubberHotWaterBottlesunder />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/all-india-first/bis-license-for-rigid-pvc-sheet-is-6307-2023"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <AllIndiaFirstBISLicenseforRigidPVCSheetsunder />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/all-india-first/bis-license-for-cylinder-cartridges-for-locks-is-18841"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <AllIndiaFirstBISLicenseforCylinderCartridgesforLocks />
           </Suspense>
         }
       />

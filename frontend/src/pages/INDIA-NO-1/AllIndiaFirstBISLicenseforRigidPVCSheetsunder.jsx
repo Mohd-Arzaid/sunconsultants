@@ -17,18 +17,22 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
 const CANONICAL_URL =
-  "https://bis-certifications.com/all-india-first/bis-license-carbon-black-17440-2020";
-const PAGE_IMAGE_SRC = "/IndiaNo1Img/BISLicenseofCarbonBlack.png";
+  "https://bis-certifications.com/all-india-first/bis-license-for-rigid-pvc-sheet-is-6307-2023";
+const PAGE_IMAGE_SRC = "/blogImages/BISLicenseofRigidPVCSheet.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/blogImages/allindiafirstbislicenseofcarbonblack.webp";
-const PDF_SRC = "/pdf/IS-17440-AIF.pdf";
+  "https://bis-certifications.com/blogImages/allindiafirstbislicenseofrigidpvcsheet.webp";
+const PDF_SRC = "/pdf/IS-6307-AIF.pdf";
 
 const PAGE_TITLE =
-  "All India First BIS License for Carbon Black under IS 17440:2020";
+  "All India First BIS License for Rigid PVC Sheets under IS 6307:2023";
+const META_TITLE =
+  "All India first BIS License for Rigid PVC Sheet under IS 6307:2023";
 const META_DESCRIPTION =
-  "Get complete information about all India first BIS Certification for Carbon Black under IS 17440:2020. Check requirements , process and documentation of ISI mark license for Carbon Black.";
+  "Get complete information about all India first BIS Certification for Rigid PVC Sheet under IS 6307:2023. Check requirements , process and documentation of ISI mark license for Rigid PVC Sheet.";
 const META_KEYWORDS =
-  "All India First BIS License for Carbon Black, Carbon Black BIS certification, BIS Certification for Carbon Black, BIS License for Carbon Black, BIS Licence for Carbon Black, ISI Mark License for Carbon Black , ISI mark certificate for Carbon Black, IS 17440:2020";
+  "All India First BIS License for Rigid PVC Sheet, Rigid PVC Sheet BIS certification, BIS Certification for Rigid PVC Sheet, BIS License for Rigid PVC Sheet, BIS Licence for Rigid PVC Sheet, ISI Mark License for Rigid PVC Sheet , ISI mark certificate for Rigid PVC Sheet, IS 6307:2023";
+const SCHEMA_DESCRIPTION =
+  "Get complete information about all India first BIS Certification for Rigid PVC Sheet under IS 6307:2023. Check requirements, process and documentation of ISI mark license for Rigid PVC Sheet.";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -38,7 +42,7 @@ const articleSchema = {
     "@id": CANONICAL_URL,
   },
   headline: PAGE_TITLE,
-  description: META_DESCRIPTION,
+  description: SCHEMA_DESCRIPTION,
   image: SCHEMA_IMAGE_URL,
   author: {
     "@type": "Person",
@@ -62,7 +66,7 @@ const ratingSchema = {
   "@type": "Product",
   name: PAGE_TITLE,
   image: SCHEMA_IMAGE_URL,
-  description: META_DESCRIPTION,
+  description: SCHEMA_DESCRIPTION,
   brand: {
     "@type": "Brand",
     name: "Sun Certifications India",
@@ -82,48 +86,48 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Who received the All India First BIS License for Carbon Black under IS 17440:2020?",
+      name: "Who received the All India First BIS License for Rigid PVC Sheets under IS 6307:2023?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The All India First BIS License for Carbon Black under IS 17440:2020 was granted to M/s EPSILON CARBON PVT LTD. with BIS Licence Number CM/L 6800168114.",
+        text: "The first BIS license for Rigid PVC Sheets under IS 6307:2023 was granted to M/s. AVSL INDUSTRIES LIMITED with Licence Number CM/L 8400356212.",
       },
     },
     {
       "@type": "Question",
-      name: "What is BIS Certification for Carbon Black?",
+      name: "What is the applicable Indian Standard for Rigid PVC Sheets?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BIS Certification for Carbon Black is a conformity assessment process conducted by BIS to verify that the product complies with the requirements specified under IS 17440:2020 and is eligible to bear the ISI Mark.",
+        text: "The applicable Indian Standard is IS 6307:2023, under which BIS certification has been granted for Rigid PVC Sheets.",
       },
     },
     {
       "@type": "Question",
-      name: "What is the significance of the First BIS License in India?",
+      name: "Why is BIS Certification for Rigid PVC Sheets important?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The First BIS License in India signifies that the manufacturer was the first to successfully meet all BIS requirements for the product category and obtain certification under the applicable Indian Standard.",
+        text: "BIS certification helps ensure quality, consistency, regulatory compliance, and customer confidence while promoting standardized manufacturing practices.",
       },
     },
     {
       "@type": "Question",
-      name: "What is IS 17440:2020?",
+      name: "What does the ISI Mark for Rigid PVC Sheets indicate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "IS 17440:2020 is the Indian Standard applicable to Carbon Black. It establishes the quality and conformity requirements that manufacturers must follow to obtain BIS certification.",
+        text: "The ISI Mark indicates that the product conforms to the applicable BIS standard and has been manufactured under a valid BIS license.",
       },
     },
     {
       "@type": "Question",
-      name: "Why is the ISI Mark for Carbon Black important?",
+      name: "Where can I find detailed information about Rigid PVC Sheets and BIS certification requirements?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The ISI Mark for Carbon Black indicates that the product has been evaluated under the BIS certification system and complies with the requirements of the applicable Indian Standard, helping build confidence among buyers and industry stakeholders.",
+        text: "You can visit the dedicated product page for Rigid PVC Sheets to explore detailed information regarding product specifications, applications, certification requirements, testing procedures, and compliance guidelines.",
       },
     },
   ],
 };
 
-const AllIndiaFirstBISLicenseforCarbonBlack = () => {
+const AllIndiaFirstBISLicenseforRigidPVCSheetsunder = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -136,7 +140,7 @@ const AllIndiaFirstBISLicenseforCarbonBlack = () => {
   );
 };
 
-export default AllIndiaFirstBISLicenseforCarbonBlack;
+export default AllIndiaFirstBISLicenseforRigidPVCSheetsunder;
 
 const MetaTags = () => {
   const websiteName = "Sun Certifications India";
@@ -146,18 +150,18 @@ const MetaTags = () => {
 
   return (
     <Helmet>
-      <title>{PAGE_TITLE}</title>
+      <title>{META_TITLE}</title>
       <meta name="description" content={META_DESCRIPTION} />
       <meta name="keywords" content={META_KEYWORDS} />
       <meta name="author" content={author} />
       <meta name="publisher" content={publisher} />
-      <meta property="og:title" content={PAGE_TITLE} />
+      <meta property="og:title" content={META_TITLE} />
       <meta property="og:description" content={META_DESCRIPTION} />
       <meta property="og:url" content={CANONICAL_URL} />
       <meta property="og:site_name" content={websiteName} />
       <meta property="og:type" content="article" />
       <meta property="og:image" content={SCHEMA_IMAGE_URL} />
-      <meta name="twitter:title" content={PAGE_TITLE} />
+      <meta name="twitter:title" content={META_TITLE} />
       <meta name="twitter:description" content={META_DESCRIPTION} />
       <meta name="twitter:image" content={SCHEMA_IMAGE_URL} />
       <link rel="canonical" href={CANONICAL_URL} />
@@ -194,7 +198,7 @@ const BreadcrumbContent = () => {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    All India First BIS License for Carbon Black
+                    All India First BIS License for Rigid PVC Sheets
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -235,46 +239,38 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Indian manufacturing sector continues to move towards higher
-          standards of quality, safety, and consistency through the
-          implementation of mandatory quality regulations and certification
-          systems. One of the most important quality assurance frameworks in
-          India is the certification system administered by the{" "}
+          The grant of the All India First BIS License for Rigid PVC Sheets under
+          IS 6307:2023 marks a significant milestone for the Indian plastics and
+          polymer industry. The{" "}
           <a
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
-            Bureau of Indian Standards 
-          </a>
-           {" "}(BIS) . BIS certification
-          ensures that products manufactured and supplied in the Indian market
-          conform to the prescribed Indian Standards and meet the required
-          quality benchmarks.
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS), India&apos;s national standards body, has awarded the
+          country&apos;s first license for this product category to M/s. AVSL
+          INDUSTRIES LIMITED under Licence Number CM/L 8400356212. This
+          achievement reflects the company&apos;s commitment to quality,
+          compliance, and adherence to Indian Standards.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          A significant milestone has been achieved in the Carbon Black industry
-          with the grant of the All India First BIS License for Carbon Black
-          under IS 17440:2020 to M/s EPSILON CARBON PVT LTD. The company
-          received BIS Licence Number CM/L 6800168114, making it the first
-          manufacturer in India to obtain BIS certification for this product
-          under the applicable Indian Standard.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This achievement highlights the manufacturer&apos;s commitment to
-          quality, regulatory compliance, and adherence to national standards. It
-          also reflects the growing importance of BIS certification in
-          strengthening consumer confidence and supporting industrial development
-          across India.
+          As India continues to strengthen its quality infrastructure and
+          manufacturing ecosystem, BIS certification plays a crucial role in
+          ensuring that products available in the market meet prescribed safety
+          and quality benchmarks. The issuance of the first BIS license for Rigid
+          PVC Sheets under the latest Indian Standard demonstrates the
+          industry&apos;s progress toward standardized and quality-assured
+          manufacturing practices.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Significance of the All India First BIS Certificate for Carbon Black
+          Importance of the All India First BIS License for Rigid PVC Sheets
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -285,282 +281,316 @@ const MainContentLeft = () => {
           >
             BIS License
           </Link>{" "}
-          in India for a product category is a remarkable accomplishment. It
-          demonstrates that the manufacturer has successfully fulfilled all the
-          requirements prescribed by BIS and has established a quality
-          management system capable of consistently producing products that
-          comply with the relevant Indian Standard.
+          in India for any product category is a noteworthy achievement. It
+          indicates that the manufacturer has successfully demonstrated
+          compliance with all applicable BIS requirements and has become a
+          pioneer in adopting the latest Indian Standard.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          For Carbon Black manufacturers, obtaining the first BIS license carries
-          several advantages:
+        <p className="text-gray-600 text-base font-geist mb-2">
+          In the case of Rigid PVC Sheets, the first BIS license has been
+          granted to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Recognition as an industry pioneer.</li>
-          <li>Demonstration of commitment to quality and compliance.</li>
-          <li>Enhanced market credibility and customer trust.</li>
-          <li>Competitive advantage in regulated markets.</li>
-          <li>
-            Improved acceptance among industrial buyers and government
-            procurement agencies.
-          </li>
+          <li>License Holder: M/s. AVSL INDUSTRIES LIMITED</li>
+          <li>BIS Licence Number: CM/L 8400356212</li>
+          <li>Indian Standard: IS 6307:2023</li>
+          <li>Branch Office: Jaipur Branch Office</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The grant of the All India First BIS License for Carbon Black to M/s
-          EPSILON CARBON PVT LTD. sets a benchmark for other manufacturers
-          seeking compliance with Indian quality standards.
+          Being the first license holder under a newly implemented standard
+          reflects strong quality management systems, manufacturing excellence,
+          and readiness to align with evolving regulatory requirements.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          As India continues to emphasize product quality and standardization,
-          early adopters of BIS certification often gain stronger market
-          positioning and improved business opportunities.
+          The recognition also sets a benchmark for other manufacturers seeking
+          BIS certification for Rigid PVC Sheets and contributes to raising
+          industry-wide quality standards.
         </p>
 
-        <div className="h-px w-full bg-gray-300 my-6" />
-
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Carbon Black
+          BIS Certification for Rigid PVC Sheets
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           <Link
-            to="/blogs/isi-products/carbon-black-is-17440-2020"
+            to="/blogs/isi-products/rigid-pvc-sheet-is-6307-2023"
             className="text-blue-600 hover:underline"
           >
-            BIS Certification for Carbon Black
+            BIS Certification for Rigid PVC Sheets
           </Link>{" "}
-          is intended to ensure that the product conforms to the quality,
-          performance, and consistency requirements specified under the
-          applicable Indian Standard.
+          serves as an assurance that the product conforms to the requirements
+          specified under the relevant Indian Standard.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certification process generally involves:
+        <p className="text-gray-600 text-base font-geist mb-2">
+          The certification process involves comprehensive evaluation by BIS,
+          including:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application submission to BIS.</li>
-          <li>Product testing in BIS-recognized laboratories.</li>
-          <li>Assessment of manufacturing facilities.</li>
-          <li>Verification of quality control systems.</li>
-          <li>Grant of BIS License upon successful compliance.</li>
+          <li>Assessment of manufacturing facilities</li>
+          <li>Verification of quality control systems</li>
+          <li>Product testing as per applicable standards</li>
+          <li>Inspection and compliance review</li>
+          <li>Ongoing surveillance after grant of license</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Once certified, manufacturers are authorized to use the ISI Mark for
-          Carbon Black, indicating conformity with the applicable Indian
-          Standard.
+          Manufacturers obtaining BIS certification demonstrate their commitment
+          to delivering products that consistently meet established quality
+          requirements.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The presence of the ISI Mark serves as a visible assurance that the
-          product has undergone rigorous evaluation and complies with established
-          quality requirements.
+          For buyers, contractors, project developers, industrial users, and
+          procurement agencies, the presence of a valid BIS license provides
+          confidence regarding product reliability and conformity.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For manufacturers, obtaining a BIS License for Carbon Black not only
-          supports regulatory compliance but also strengthens their reputation
-          in domestic and international markets.
+          The ISI Mark for Rigid PVC Sheets further acts as a visible symbol of
+          quality and compliance, helping customers identify products that meet
+          Indian regulatory requirements.
         </p>
-
-        <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable Indian Standard – IS 17440:2020
+          Applicable Indian Standard – IS 6307:2023
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable standard for this certification is:
+          The applicable standard for this certification is IS 6307:2023.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>IS 17440:2020 – Carbon Black</strong>
+          Indian Standards are developed by BIS through a structured process
+          involving industry experts, manufacturers, technical committees,
+          regulators, and other stakeholders.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This Indian Standard was developed to establish uniform quality
-          requirements and evaluation criteria for Carbon Black products supplied
-          within the Indian market.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Indian Standards play a crucial role in:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standardizing product quality.</li>
-          <li>Improving reliability and consistency.</li>
-          <li>Supporting industrial growth.</li>
-          <li>Facilitating fair trade practices.</li>
-          <li>Enhancing customer confidence.</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The implementation of IS 17440:2020 helps ensure that manufacturers
-          maintain consistent production quality and comply with nationally
-          accepted requirements.
+          The objective of IS 6307:2023 is to establish uniform quality
+          requirements for Rigid PVC Sheets manufactured and supplied within the
+          Indian market.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          By adhering to this standard, manufacturers contribute to the broader
-          objective of promoting quality infrastructure and industrial
-          excellence in India.
+          The introduction of this standard provides a consistent framework that
+          manufacturers can follow to ensure quality and reliability.
         </p>
 
-        <div className="h-px w-full bg-gray-300 my-6" />
+        <p className="text-gray-600 text-base font-geist mb-4">
+          With the grant of the All India First BIS License for Rigid PVC Sheets
+          under IS 6307:2023, the implementation of this standard has entered an
+          important phase where manufacturers begin aligning their production
+          systems with the updated requirements.
+        </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of IS 17440:2020
+          Scope of IS 6307:2023
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The scope of IS 17440:2020 primarily focuses on establishing
-          requirements for Carbon Black products covered under the standard.
+          The scope of IS 6307:2023 broadly covers quality requirements
+          applicable to Rigid PVC Sheets and provides a framework for conformity
+          assessment under the BIS certification scheme.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The standard provides a framework for:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quality assessment.</li>
-          <li>Product conformity evaluation.</li>
-          <li>Testing requirements.</li>
-          <li>Manufacturing consistency.</li>
-          <li>Compliance verification.</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The objective is to ensure that Carbon Black products supplied in the
-          market meet defined quality expectations and can perform reliably in
-          their intended industrial applications.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Standards such as IS 17440:2020 support the creation of a structured
-          quality ecosystem by ensuring that manufacturers follow uniform
-          production and quality control practices.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This contributes to:
+        <p className="text-gray-600 text-base font-geist mb-2">
+          The standard establishes requirements intended to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Better product reliability.</li>
-          <li>Reduced quality variations.</li>
-          <li>Improved customer satisfaction.</li>
-          <li>Increased industrial confidence.</li>
-          <li>Strengthened supply chain performance.</li>
+          <li>Promote product consistency</li>
+          <li>Ensure manufacturing quality</li>
+          <li>Support reliable performance</li>
+          <li>Facilitate standardization across the industry</li>
+          <li>Strengthen confidence among users and buyers</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers seeking BIS certification under IS 17440:2020 must
-          demonstrate compliance with all applicable provisions before the
-          grant of a BIS license.
+          By defining a common quality benchmark, IS 6307:2023 helps
+          manufacturers and consumers operate within a transparent and recognized
+          quality ecosystem.
         </p>
 
-        <div className="h-px w-full bg-gray-300 my-6" />
+        <p className="text-gray-600 text-base font-geist mb-4">
+          It is important to note that this page focuses on the BIS license
+          achievement and industry significance. Readers looking for detailed
+          product specifications, technical parameters, testing requirements,
+          and compliance criteria can refer to the
+       
+          
+            dedicated product page for Rigid PVC Sheets
+          
+          .
+        </p>
+
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Industries Using Rigid PVC Sheets
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Rigid PVC Sheets are widely used across numerous industrial and
+          commercial sectors due to their versatility and suitability for various
+          applications.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-2">
+          Some of the major industries utilizing Rigid PVC Sheets include:
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Construction Industry
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Used in building and infrastructure-related applications where durable
+          sheet materials are required.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Industrial Manufacturing
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Various manufacturing sectors utilize PVC sheets in fabrication and
+          industrial processes.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Signage and Advertising
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          PVC sheets are commonly employed in display systems, signage, branding,
+          and promotional applications.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Furniture and Interior Applications
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The material finds usage in interior design and furniture-related
+          manufacturing processes.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Packaging and Fabrication
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Many packaging and fabrication industries rely on PVC sheet products
+          for specialized requirements.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Electrical and Engineering Sectors
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Rigid PVC Sheets are also utilized in engineering and industrial
+          environments where standardized materials are preferred.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          As industrial demand continues to grow, the importance of ensuring
+          product quality through BIS Certification for Rigid PVC Sheets becomes
+          increasingly significant.
+        </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The grant of the All India First BIS License for Carbon Black under IS
-          17440:2020 to M/s EPSILON CARBON PVT LTD. marks an important
-          milestone in India&apos;s quality assurance landscape.
+          The grant of the All India First BIS License for Rigid PVC Sheets
+          under IS 6307:2023 to M/s. AVSL INDUSTRIES LIMITED represents an
+          important development in India&apos;s quality assurance landscape. With
+          Licence Number CM/L 8400356212, the company has become the first
+          manufacturer in the country to receive BIS certification for this
+          product category under the latest Indian Standard.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          With BIS Licence Number CM/L 6800168114, the company has become the
-          first manufacturer in India to receive BIS certification for Carbon
-          Black under the applicable Indian Standard. This achievement reflects a
-          strong commitment to quality, regulatory compliance, and industry
-          leadership.
+          This achievement highlights the growing importance of quality
+          compliance, standardization, and adherence to BIS requirements across
+          Indian industries. As more manufacturers adopt the standard, the industry
+          can expect improved consistency, enhanced consumer confidence, and
+          greater alignment with national quality objectives.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          As BIS certification continues to play a critical role in promoting
-          standardization and consumer confidence, achievements such as this
-          encourage greater adoption of quality standards across industries.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The implementation of IS 17440:2020 and the growing emphasis on
-          Bureau of Indian Standards Certification will continue to support
-          India&apos;s vision of manufacturing excellence, product reliability,
-          and global competitiveness.
+          The milestone not only benefits the license holder but also contributes
+          to the broader goal of strengthening India&apos;s manufacturing
+          ecosystem through recognized quality standards and certification
+          practices.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs for BIS Certificate for Carbon Black
+          FAQs for Rigid PVC Sheets
         </h2>
 
         <div className="space-y-6">
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              1. Who received the All India First BIS License for Carbon Black
-              under IS 17440:2020?
+              1. Who received the All India First BIS License for Rigid PVC
+              Sheets under IS 6307:2023?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The All India First BIS License for Carbon Black under IS
-              17440:2020 was granted to M/s EPSILON CARBON PVT LTD. with BIS
-              Licence Number CM/L 6800168114.
+              The first BIS license for Rigid PVC Sheets under IS 6307:2023 was
+              granted to M/s. AVSL INDUSTRIES LIMITED with Licence Number CM/L
+              8400356212.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              2. What is BIS Certification for Carbon Black?
+              2. What is the applicable Indian Standard for Rigid PVC Sheets?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              BIS Certification for Carbon Black is a conformity assessment
-              process conducted by BIS to verify that the product complies with
-              the requirements specified under IS 17440:2020 and is eligible to
-              bear the ISI Mark.
+              The applicable Indian Standard is IS 6307:2023, under which BIS
+              certification has been granted for Rigid PVC Sheets.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              3. What is the significance of the First BIS License in India?
+              3. Why is BIS Certification for Rigid PVC Sheets important?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The First BIS License in India signifies that the manufacturer was
-              the first to successfully meet all BIS requirements for the product
-              category and obtain certification under the applicable Indian
-              Standard.
+              BIS certification helps ensure quality, consistency, regulatory
+              compliance, and customer confidence while promoting standardized
+              manufacturing practices.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              4. What is IS 17440:2020?
+              4. What does the ISI Mark for Rigid PVC Sheets indicate?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              IS 17440:2020 is the Indian Standard applicable to Carbon Black.
-              It establishes the quality and conformity requirements that
-              manufacturers must follow to obtain BIS certification.
+              The ISI Mark indicates that the product conforms to the applicable
+              BIS standard and has been manufactured under a valid BIS license.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              5. Why is the ISI Mark for Carbon Black important?
+              5. Where can I find detailed information about Rigid PVC Sheets
+              and BIS certification requirements?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The ISI Mark for Carbon Black indicates that the product has been
-              evaluated under the BIS certification system and complies with the
-              requirements of the applicable Indian Standard, helping build
-              confidence among buyers and industry stakeholders.
+              You can visit the{" "}
+              <Link
+                to="/blogs/isi-products/rigid-pvc-sheet-is-6307-2023"
+                className="text-blue-600 hover:underline"
+              >
+                dedicated product page for Rigid PVC Sheets
+              </Link>{" "}
+              to explore detailed information regarding product specifications,
+              applications, certification requirements, testing procedures, and
+              compliance guidelines.
             </p>
           </div>
         </div>
@@ -596,7 +626,7 @@ const MainContentLeft = () => {
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
           src={PDF_SRC}
-          title="All India First BIS License for Carbon Black under IS 17440:2020 PDF"
+          title="All India First BIS License for Rigid PVC Sheets under IS 6307:2023 PDF"
           className="w-full h-[800px] bg-white"
           style={{
             boxShadow:

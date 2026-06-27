@@ -17,18 +17,31 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
 const CANONICAL_URL =
-  "https://bis-certifications.com/all-india-first/bis-license-carbon-black-17440-2020";
-const PAGE_IMAGE_SRC = "/IndiaNo1Img/BISLicenseofCarbonBlack.png";
+  "https://bis-certifications.com/all-india-first/bis-license-for-rubber-hot-water-bottles-is-1867-2023";
+const PAGE_IMAGE_SRC =
+  "/blogImages/AllIndiaFirstBISLicenseofRubberHotWaterBottles.webp";
 const SCHEMA_IMAGE_URL =
-  "https://bis-certifications.com/blogImages/allindiafirstbislicenseofcarbonblack.webp";
-const PDF_SRC = "/pdf/IS-17440-AIF.pdf";
+  "https://bis-certifications.com/blogImages/allindiafirstbislicenseofrubberhotwaterbottles.webp";
+const PDF_SRC = "/pdf/IS-1867-AIF.pdf";
 
 const PAGE_TITLE =
-  "All India First BIS License for Carbon Black under IS 17440:2020";
+  "All India First BIS License for Rubber Hot Water Bottles under IS 1867:2023";
+const META_TITLE =
+  "All India first BIS License for Rubber Hot Water Bottles under IS 1867:2023";
+const OG_TITLE =
+  "All India first BIS Certificate for Rubber Hot Water Bottles under IS 1867:2023";
+const TWITTER_TITLE =
+  "All India first BIS Licence for Rubber Hot Water Bottles under IS 1867:2023";
 const META_DESCRIPTION =
-  "Get complete information about all India first BIS Certification for Carbon Black under IS 17440:2020. Check requirements , process and documentation of ISI mark license for Carbon Black.";
+  "Get complete information about all India first BIS Certification for Rubber Hot Water Bottles under IS 1867:2023. Check requirements , process and documentation of ISI mark license for Rubber Hot Water Bottles.";
+const OG_DESCRIPTION =
+  "Get complete information about all India first BIS License for Rubber Hot Water Bottles under IS 1867:2023. Check requirements , process and documentation of ISI mark license for Rubber Hot Water Bottles.";
+const TWITTER_DESCRIPTION =
+  "Get complete information about all India first BIS Certificate for Rubber Hot Water Bottles under IS 1867:2023. Check requirements , process and documentation of ISI mark license for Rubber Hot Water Bottles.";
 const META_KEYWORDS =
-  "All India First BIS License for Carbon Black, Carbon Black BIS certification, BIS Certification for Carbon Black, BIS License for Carbon Black, BIS Licence for Carbon Black, ISI Mark License for Carbon Black , ISI mark certificate for Carbon Black, IS 17440:2020";
+  "All India First BIS License for Rubber Hot Water Bottles, Rubber Hot Water Bottles BIS certification, BIS Certification for Rubber Hot Water Bottles, BIS License for Rubber Hot Water Bottles, BIS Licence for Rubber Hot Water Bottles, ISI Mark License for Rubber Hot Water Bottles , ISI mark certificate for Rubber Hot Water Bottles, IS 1867:2023";
+const SCHEMA_DESCRIPTION =
+  "Get complete information about all India first BIS Certification for Rubber Hot Water Bottles under IS 1867:2023. Check requirements, process and documentation of ISI mark license for Rubber Hot Water Bottles.";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -38,7 +51,7 @@ const articleSchema = {
     "@id": CANONICAL_URL,
   },
   headline: PAGE_TITLE,
-  description: META_DESCRIPTION,
+  description: SCHEMA_DESCRIPTION,
   image: SCHEMA_IMAGE_URL,
   author: {
     "@type": "Person",
@@ -62,7 +75,7 @@ const ratingSchema = {
   "@type": "Product",
   name: PAGE_TITLE,
   image: SCHEMA_IMAGE_URL,
-  description: META_DESCRIPTION,
+  description: SCHEMA_DESCRIPTION,
   brand: {
     "@type": "Brand",
     name: "Sun Certifications India",
@@ -82,48 +95,48 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Who received the All India First BIS License for Carbon Black under IS 17440:2020?",
+      name: "What is the All India First BIS License for Rubber Hot Water Bottles?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The All India First BIS License for Carbon Black under IS 17440:2020 was granted to M/s EPSILON CARBON PVT LTD. with BIS Licence Number CM/L 6800168114.",
+        text: "The All India First BIS License for Rubber Hot Water Bottles refers to the first BIS certification granted under IS 1867:2023 to M/s. Duckback (India) Limited.",
       },
     },
     {
       "@type": "Question",
-      name: "What is BIS Certification for Carbon Black?",
+      name: "What is IS 1867:2023?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BIS Certification for Carbon Black is a conformity assessment process conducted by BIS to verify that the product complies with the requirements specified under IS 17440:2020 and is eligible to bear the ISI Mark.",
+        text: "IS 1867:2023 is the Indian Standard applicable to Rubber Hot Water Bottles and provides quality requirements for this product category.",
       },
     },
     {
       "@type": "Question",
-      name: "What is the significance of the First BIS License in India?",
+      name: "Why is BIS Certification important for Rubber Hot Water Bottles?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The First BIS License in India signifies that the manufacturer was the first to successfully meet all BIS requirements for the product category and obtain certification under the applicable Indian Standard.",
+        text: "BIS Certification helps ensure quality, consistency, consumer confidence, and compliance with recognized Indian Standards.",
       },
     },
     {
       "@type": "Question",
-      name: "What is IS 17440:2020?",
+      name: "Who received the first BIS licence under IS 1867:2023?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "IS 17440:2020 is the Indian Standard applicable to Carbon Black. It establishes the quality and conformity requirements that manufacturers must follow to obtain BIS certification.",
+        text: "M/s. Duckback (India) Limited received the All India First BIS License under IS 1867:2023 with Licence Number 5100291488.",
       },
     },
     {
       "@type": "Question",
-      name: "Why is the ISI Mark for Carbon Black important?",
+      name: "What are the benefits of purchasing BIS-certified Rubber Hot Water Bottles?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The ISI Mark for Carbon Black indicates that the product has been evaluated under the BIS certification system and complies with the requirements of the applicable Indian Standard, helping build confidence among buyers and industry stakeholders.",
+        text: "BIS-certified products provide greater confidence regarding quality, manufacturing consistency, and compliance with established Indian Standards.",
       },
     },
   ],
 };
 
-const AllIndiaFirstBISLicenseforCarbonBlack = () => {
+const AllIndiaFirstBISLicenseforRubberHotWaterBottlesunder = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -136,7 +149,7 @@ const AllIndiaFirstBISLicenseforCarbonBlack = () => {
   );
 };
 
-export default AllIndiaFirstBISLicenseforCarbonBlack;
+export default AllIndiaFirstBISLicenseforRubberHotWaterBottlesunder;
 
 const MetaTags = () => {
   const websiteName = "Sun Certifications India";
@@ -146,19 +159,19 @@ const MetaTags = () => {
 
   return (
     <Helmet>
-      <title>{PAGE_TITLE}</title>
+      <title>{META_TITLE}</title>
       <meta name="description" content={META_DESCRIPTION} />
       <meta name="keywords" content={META_KEYWORDS} />
       <meta name="author" content={author} />
       <meta name="publisher" content={publisher} />
-      <meta property="og:title" content={PAGE_TITLE} />
-      <meta property="og:description" content={META_DESCRIPTION} />
+      <meta property="og:title" content={OG_TITLE} />
+      <meta property="og:description" content={OG_DESCRIPTION} />
       <meta property="og:url" content={CANONICAL_URL} />
       <meta property="og:site_name" content={websiteName} />
       <meta property="og:type" content="article" />
       <meta property="og:image" content={SCHEMA_IMAGE_URL} />
-      <meta name="twitter:title" content={PAGE_TITLE} />
-      <meta name="twitter:description" content={META_DESCRIPTION} />
+      <meta name="twitter:title" content={TWITTER_TITLE} />
+      <meta name="twitter:description" content={TWITTER_DESCRIPTION} />
       <meta name="twitter:image" content={SCHEMA_IMAGE_URL} />
       <link rel="canonical" href={CANONICAL_URL} />
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
@@ -194,7 +207,7 @@ const BreadcrumbContent = () => {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    All India First BIS License for Carbon Black
+                    All India First BIS License for Rubber Hot Water Bottles
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -235,332 +248,363 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Indian manufacturing sector continues to move towards higher
-          standards of quality, safety, and consistency through the
-          implementation of mandatory quality regulations and certification
-          systems. One of the most important quality assurance frameworks in
-          India is the certification system administered by the{" "}
+          The{" "}
           <a
             href="https://www.bis.gov.in/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
-            Bureau of Indian Standards 
-          </a>
-           {" "}(BIS) . BIS certification
-          ensures that products manufactured and supplied in the Indian market
-          conform to the prescribed Indian Standards and meet the required
-          quality benchmarks.
+            Bureau of Indian Standards
+          </a>{" "}
+          (BIS) plays a crucial role in strengthening India&apos;s quality
+          infrastructure by establishing standards that promote safety,
+          reliability, and consumer confidence. BIS certification serves as an
+          assurance that products manufactured and sold in India conform to
+          prescribed quality requirements and meet recognized national standards.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          A significant milestone has been achieved in the Carbon Black industry
-          with the grant of the All India First BIS License for Carbon Black
-          under IS 17440:2020 to M/s EPSILON CARBON PVT LTD. The company
-          received BIS Licence Number CM/L 6800168114, making it the first
-          manufacturer in India to obtain BIS certification for this product
-          under the applicable Indian Standard.
+          In a significant achievement for the healthcare and rubber products
+          industry, the All India First BIS License for Rubber Hot Water Bottles
+          under IS 1867:2023 has been granted to M/s. Duckback (India) Limited
+          with BIS Licence Number (CM/L) 5100291488.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This achievement highlights the manufacturer&apos;s commitment to
-          quality, regulatory compliance, and adherence to national standards. It
-          also reflects the growing importance of BIS certification in
-          strengthening consumer confidence and supporting industrial development
-          across India.
+          Receiving the first BIS licence under a newly implemented Indian
+          Standard is a remarkable milestone. It reflects a manufacturer&apos;s
+          commitment to quality, regulatory compliance, consumer safety, and
+          manufacturing excellence. The achievement also highlights the increasing
+          importance of standardization in products that are widely used for
+          therapeutic, healthcare, and personal comfort applications.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The grant of the first licence under IS 1867:2023 establishes an
+          important benchmark for the industry and encourages other manufacturers
+          to adopt quality-focused production practices aligned with BIS
+          requirements.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Significance of the All India First BIS Certificate for Carbon Black
+          Importance of the All India First BIS License for Rubber Hot Water
+          Bottles
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Receiving the First{" "}
+          The recognition of being awarded the First{" "}
           <Link
             to="/what-is-bis-certificate-indian-bis"
             className="text-blue-600 hover:underline"
           >
             BIS License
           </Link>{" "}
-          in India for a product category is a remarkable accomplishment. It
-          demonstrates that the manufacturer has successfully fulfilled all the
-          requirements prescribed by BIS and has established a quality
-          management system capable of consistently producing products that
-          comply with the relevant Indian Standard.
+          in India under a specific Indian Standard is a prestigious
+          accomplishment.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          For Carbon Black manufacturers, obtaining the first BIS license carries
-          several advantages:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          When a company becomes the first licensee under a newly introduced or
+          revised standard, it demonstrates its readiness to meet the latest
+          quality requirements before others in the market. Such recognition often
+          reflects strong quality management systems, manufacturing capabilities,
+          testing compliance, and commitment to consumer safety.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-2">
+          The All India First BIS License for Rubber Hot Water Bottles carries
+          significance for several reasons:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Recognition as an industry pioneer.</li>
-          <li>Demonstration of commitment to quality and compliance.</li>
-          <li>Enhanced market credibility and customer trust.</li>
-          <li>Competitive advantage in regulated markets.</li>
-          <li>
-            Improved acceptance among industrial buyers and government
-            procurement agencies.
-          </li>
+          <li>Establishes a quality benchmark for the industry.</li>
+          <li>Demonstrates compliance with the latest Indian Standard.</li>
+          <li>Enhances trust among consumers and healthcare users.</li>
+          <li>Promotes the adoption of standardized manufacturing practices.</li>
+          <li>Encourages other manufacturers to pursue BIS certification.</li>
+          <li>Supports India&apos;s vision of quality-driven manufacturing.</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The grant of the All India First BIS License for Carbon Black to M/s
-          EPSILON CARBON PVT LTD. sets a benchmark for other manufacturers
-          seeking compliance with Indian quality standards.
+          For M/s. Duckback (India) Limited, this achievement reflects leadership
+          in product quality and commitment to delivering products that meet
+          nationally recognized standards.
         </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          As India continues to emphasize product quality and standardization,
-          early adopters of BIS certification often gain stronger market
-          positioning and improved business opportunities.
-        </p>
-
-        <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Carbon Black
+          BIS Certification for Rubber Hot Water Bottles
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           <Link
-            to="/blogs/isi-products/carbon-black-is-17440-2020"
+            to="/blogs/isi-products/rubber-hot-water-bottles-is-1867-2023"
             className="text-blue-600 hover:underline"
           >
-            BIS Certification for Carbon Black
+            BIS Certification for Rubber Hot Water Bottles
           </Link>{" "}
-          is intended to ensure that the product conforms to the quality,
-          performance, and consistency requirements specified under the
-          applicable Indian Standard.
+          is a formal recognition that a product complies with the requirements
+          specified under the applicable Indian Standard.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certification process generally involves:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Rubber Hot Water Bottles are commonly used for providing warmth,
+          comfort, and temporary relief from muscular discomfort. Since these
+          products come into direct contact with users and are exposed to heated
+          water, maintaining quality and safety is extremely important.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-2">
+          The BIS certification process typically involves:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application submission to BIS.</li>
-          <li>Product testing in BIS-recognized laboratories.</li>
-          <li>Assessment of manufacturing facilities.</li>
-          <li>Verification of quality control systems.</li>
-          <li>Grant of BIS License upon successful compliance.</li>
+          <li>Submission of an application to BIS.</li>
+          <li>Product testing as per applicable standards.</li>
+          <li>Factory inspection and assessment.</li>
+          <li>Verification of quality control measures.</li>
+          <li>Evaluation of manufacturing processes.</li>
+          <li>Grant of licence upon successful compliance.</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Once certified, manufacturers are authorized to use the ISI Mark for
-          Carbon Black, indicating conformity with the applicable Indian
-          Standard.
+          Once certified, manufacturers are permitted to use the ISI Mark in
+          accordance with BIS guidelines, indicating that the product conforms
+          to prescribed quality requirements.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The presence of the ISI Mark serves as a visible assurance that the
-          product has undergone rigorous evaluation and complies with established
-          quality requirements.
+          The BIS Licence for Rubber Hot Water Bottles provides confidence to
+          distributors, retailers, institutions, and consumers regarding product
+          quality and consistency.
         </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For manufacturers, obtaining a BIS License for Carbon Black not only
-          supports regulatory compliance but also strengthens their reputation
-          in domestic and international markets.
-        </p>
-
-        <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Applicable Indian Standard – IS 17440:2020
+          Applicable Indian Standard – IS 1867:2023
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable standard for this certification is:
-        </p>
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          IS 1867:2023 – Rubber Hot Water Bottles
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>IS 17440:2020 – Carbon Black</strong>
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This Indian Standard was developed to establish uniform quality
-          requirements and evaluation criteria for Carbon Black products supplied
-          within the Indian market.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Indian Standards play a crucial role in:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standardizing product quality.</li>
-          <li>Improving reliability and consistency.</li>
-          <li>Supporting industrial growth.</li>
-          <li>Facilitating fair trade practices.</li>
-          <li>Enhancing customer confidence.</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The implementation of IS 17440:2020 helps ensure that manufacturers
-          maintain consistent production quality and comply with nationally
-          accepted requirements.
+          The applicable Indian Standard for this product category is IS
+          1867:2023.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          By adhering to this standard, manufacturers contribute to the broader
-          objective of promoting quality infrastructure and industrial
-          excellence in India.
+          This standard provides the quality framework applicable to Rubber Hot
+          Water Bottles manufactured and supplied in India. It establishes
+          uniform requirements that help ensure product consistency, quality
+          assurance, and consumer confidence.
         </p>
-
-        <div className="h-px w-full bg-gray-300 my-6" />
-
-        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          Scope of IS 17440:2020
-        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The scope of IS 17440:2020 primarily focuses on establishing
-          requirements for Carbon Black products covered under the standard.
+          The implementation of IS 1867:2023 demonstrates BIS&apos;s continued
+          efforts to strengthen quality standards across consumer and
+          healthcare-related products.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The grant of the All India First BIS License for Rubber Hot Water
+          Bottles under IS 1867:2023 marks an important milestone in the adoption
+          of this standard by the industry.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Scope of IS 1867:2023
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The scope of IS 1867:2023 primarily covers Rubber Hot Water Bottles
+          intended for use in applications where heat retention and user comfort
+          are important.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-2">
           The standard provides a framework for:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quality assessment.</li>
-          <li>Product conformity evaluation.</li>
-          <li>Testing requirements.</li>
+          <li>Product quality requirements.</li>
           <li>Manufacturing consistency.</li>
-          <li>Compliance verification.</li>
+          <li>Inspection and testing procedures.</li>
+          <li>Quality control measures.</li>
+          <li>Compliance evaluation.</li>
+          <li>Standardized production practices.</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The objective is to ensure that Carbon Black products supplied in the
-          market meet defined quality expectations and can perform reliably in
-          their intended industrial applications.
+          Rather than focusing on individual product features, the standard aims
+          to establish a uniform quality benchmark for manufacturers operating
+          within this product category.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Standards such as IS 17440:2020 support the creation of a structured
-          quality ecosystem by ensuring that manufacturers follow uniform
-          production and quality control practices.
+          Through standardization, IS 1867:2023 helps improve consumer confidence
+          while encouraging industry-wide quality enhancement.
         </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This contributes to:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Better product reliability.</li>
-          <li>Reduced quality variations.</li>
-          <li>Improved customer satisfaction.</li>
-          <li>Increased industrial confidence.</li>
-          <li>Strengthened supply chain performance.</li>
-        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers seeking BIS certification under IS 17440:2020 must
-          demonstrate compliance with all applicable provisions before the
-          grant of a BIS license.
+          Manufacturers seeking BIS certification under this standard are required
+          to demonstrate conformity with prescribed requirements before being
+          granted a licence.
         </p>
 
-        <div className="h-px w-full bg-gray-300 my-6" />
+        <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
+          Industries Using Rubber Hot Water Bottles
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Rubber Hot Water Bottles are widely used across several sectors due to
+          their practical utility and comfort applications.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Healthcare Sector
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Hospitals, clinics, physiotherapy centers, and healthcare facilities often
+          utilize hot water bottles for patient comfort and supportive care.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Home Healthcare
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Many households use Rubber Hot Water Bottles as part of everyday comfort
+          and wellness practices.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Wellness and Therapy Centers
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Spa facilities, wellness clinics, and therapeutic centers frequently use
+          hot water bottles as supportive comfort products.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Elderly Care Facilities
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Care homes and assisted living facilities often use such products to
+          improve comfort and warmth for residents.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Rehabilitation Centers
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Rehabilitation and physiotherapy centers may use hot water bottles as
+          part of supportive patient care programs.
+        </p>
+
+        <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
+          Consumer Retail Industry
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Rubber Hot Water Bottles are widely distributed through pharmacies,
+          healthcare stores, supermarkets, and online retail channels.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The widespread use of these products highlights the importance of
+          maintaining consistent quality standards through BIS certification.
+        </p>
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The grant of the All India First BIS License for Carbon Black under IS
-          17440:2020 to M/s EPSILON CARBON PVT LTD. marks an important
-          milestone in India&apos;s quality assurance landscape.
+          The grant of the All India First BIS License for Rubber Hot Water
+          Bottles under IS 1867:2023 to M/s. Duckback (India) Limited with
+          Licence Number 5100291488 represents a significant milestone for the
+          Indian rubber products and healthcare support industry.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          With BIS Licence Number CM/L 6800168114, the company has become the
-          first manufacturer in India to receive BIS certification for Carbon
-          Black under the applicable Indian Standard. This achievement reflects a
-          strong commitment to quality, regulatory compliance, and industry
-          leadership.
+          This achievement demonstrates the growing emphasis on quality,
+          standardization, consumer safety, and manufacturing excellence within
+          India. It also reflects the important role played by BIS in
+          establishing trusted quality benchmarks across industries.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          As BIS certification continues to play a critical role in promoting
-          standardization and consumer confidence, achievements such as this
-          encourage greater adoption of quality standards across industries.
+          As more manufacturers pursue BIS Certification for Rubber Hot Water
+          Bottles, the industry can expect greater product reliability, improved
+          consumer confidence, and stronger adherence to national quality
+          standards.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The implementation of IS 17440:2020 and the growing emphasis on
-          Bureau of Indian Standards Certification will continue to support
-          India&apos;s vision of manufacturing excellence, product reliability,
-          and global competitiveness.
+          The adoption of IS 1867:2023 will continue to strengthen India&apos;s
+          quality ecosystem and support the country&apos;s vision of globally
+          competitive manufacturing.
         </p>
 
         <div className="h-px w-full bg-gray-300 my-6" />
 
         <h2 className="text-xl font-geist font-bold text-[#1e1e1e] mb-4">
-          FAQs for BIS Certificate for Carbon Black
+          FAQs for Rubber Hot Water Bottles
         </h2>
 
         <div className="space-y-6">
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              1. Who received the All India First BIS License for Carbon Black
-              under IS 17440:2020?
+              1. What is the All India First BIS License for Rubber Hot Water
+              Bottles?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The All India First BIS License for Carbon Black under IS
-              17440:2020 was granted to M/s EPSILON CARBON PVT LTD. with BIS
-              Licence Number CM/L 6800168114.
+              The All India First BIS License for Rubber Hot Water Bottles refers
+              to the first BIS certification granted under IS 1867:2023 to M/s.
+              Duckback (India) Limited.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              2. What is BIS Certification for Carbon Black?
+              2. What is IS 1867:2023?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              BIS Certification for Carbon Black is a conformity assessment
-              process conducted by BIS to verify that the product complies with
-              the requirements specified under IS 17440:2020 and is eligible to
-              bear the ISI Mark.
+              IS 1867:2023 is the Indian Standard applicable to Rubber Hot Water
+              Bottles and provides quality requirements for this product category.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              3. What is the significance of the First BIS License in India?
+              3. Why is BIS Certification important for Rubber Hot Water
+              Bottles?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The First BIS License in India signifies that the manufacturer was
-              the first to successfully meet all BIS requirements for the product
-              category and obtain certification under the applicable Indian
-              Standard.
+              BIS Certification helps ensure quality, consistency, consumer
+              confidence, and compliance with recognized Indian Standards.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              4. What is IS 17440:2020?
+              4. Who received the first BIS licence under IS 1867:2023?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              IS 17440:2020 is the Indian Standard applicable to Carbon Black.
-              It establishes the quality and conformity requirements that
-              manufacturers must follow to obtain BIS certification.
+              M/s. Duckback (India) Limited received the All India First BIS
+              License under IS 1867:2023 with Licence Number 5100291488.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
-              5. Why is the ISI Mark for Carbon Black important?
+              5. What are the benefits of purchasing BIS-certified Rubber Hot
+              Water Bottles?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              The ISI Mark for Carbon Black indicates that the product has been
-              evaluated under the BIS certification system and complies with the
-              requirements of the applicable Indian Standard, helping build
-              confidence among buyers and industry stakeholders.
+              BIS-certified products provide greater confidence regarding quality,
+              manufacturing consistency, and compliance with established Indian
+              Standards.
             </p>
           </div>
         </div>
@@ -577,7 +621,7 @@ const MainContentLeft = () => {
               href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
               className="text-blue-600 hover:underline"
             >
-              ISI Mark Certification
+              ISI Mark License
             </a>
           </li>
           <li>
@@ -585,7 +629,7 @@ const MainContentLeft = () => {
               href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
               className="text-blue-600 hover:underline"
             >
-              BIS FMCS Certification
+              BIS FMCS License
             </a>
           </li>
         </ul>
@@ -596,7 +640,7 @@ const MainContentLeft = () => {
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
           src={PDF_SRC}
-          title="All India First BIS License for Carbon Black under IS 17440:2020 PDF"
+          title="All India First BIS License for Rubber Hot Water Bottles under IS 1867:2023 PDF"
           className="w-full h-[800px] bg-white"
           style={{
             boxShadow:
