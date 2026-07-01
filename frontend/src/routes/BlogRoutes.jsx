@@ -773,6 +773,9 @@ const BISCertificationFibreRopesPolyamideChinese = lazy(() =>
 const BISCertificateForSteelWireRopes = lazy(() =>
   import("@/blogs/BISCertificationforSteelWireRopes")
 );
+const BISCertificationforBraidedNylonRopesForMountaineeringPurposesIs6590 = lazy(() =>
+  import("@/blogs/BISCertificationforBraidedNylonRopesForMountaineeringPurposesIs6590")
+);
 const BISCertificateForOralHygiene = lazy(() =>
   import("@/blogs/BISCertificationforOralHygiene")
 );
@@ -886,6 +889,9 @@ const BISCertificationforDieselEngines = lazy(() =>
 );
 const BISCertificationforBayonetLampHolders = lazy(() =>
   import("@/blogs/BISCertificationforBayonetLampHolders")
+);
+const BISCertificationforSwitchSocketOutletsIs15787 = lazy(() =>
+  import("@/blogs/BISCertificationforSwitchSocketOutletsIs15787")
 );
 const BISCertificationforCorrugatedandSemi = lazy(() =>
   import("@/blogs/BISCertificationforCorrugatedandSemi")
@@ -1088,6 +1094,9 @@ const BISCertificationforCycleRubberTubesIs2415 = lazy(() =>
 const BISCertificationforDoubleActingSpringHingesIs453 = lazy(() =>
   import("@/blogs/BISCertificationforDoubleActingSpringHingesIs453")
 );
+const BISCertificationforSteelBackFlapHingesIs3843 = lazy(() =>
+  import("@/blogs/BISCertificationforSteelBackFlapHingesIs3843")
+);
 const BISCertificationforGlassBeakersIs2619 = lazy(() =>
   import("@/blogs/BISCertificationforGlassBeakersIs2619")
 );
@@ -1099,6 +1108,9 @@ const BISCertificationforNarrowNeckedBoilingFlasksIs1381Part1 = lazy(() =>
 );
 const BISCertificationforOneMarkVolumetricFlasksIs915 = lazy(() =>
   import("@/blogs/BISCertificationforOneMarkVolumetricFlasksIs915")
+);
+const BISCertificationforSingleVolumePipettesIs1117 = lazy(() =>
+  import("@/blogs/BISCertificationforSingleVolumePipettesIs1117")
 );
 const BISCertificationforRubberGasketForPressureCookersIs7466 = lazy(() =>
   import("@/blogs/BISCertificationforRubberGasketForPressureCookersIs7466")
@@ -2951,6 +2963,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         }
       />
       <Route
+        path="/blogs/isi-products/braided-nylon-ropes-for-mountaineering-purposes-is-6590"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforBraidedNylonRopesForMountaineeringPurposesIs6590 />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -3235,6 +3255,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforBayonetLampHolders />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/switch-socket-outlets-is-15787"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforSwitchSocketOutletsIs15787 />
           </Suspense>
         }
       />
@@ -3855,6 +3883,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         }
       />
       <Route
+        path="/blogs/isi-products/steel-back-flap-hinges-is-3843"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforSteelBackFlapHingesIs3843 />
+          </Suspense>
+        }
+      />
+      <Route
         path="/blogs/isi-products/glass-beakers-is-2619"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
@@ -3883,6 +3919,14 @@ x      {/* Hand-held electric engraving tools - early route for reliable match *
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforOneMarkVolumetricFlasksIs915 />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/single-volume-pipettes-is-1117"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforSingleVolumePipettesIs1117 />
           </Suspense>
         }
       />

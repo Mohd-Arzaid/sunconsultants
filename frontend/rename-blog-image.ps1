@@ -4,8 +4,8 @@
 
 $ErrorActionPreference = "Stop"
 
-$sourceFileName = "BIS-License-for-Carbon-Black.webp"
-$destFileName   = "BISLicenseforCarbonBlack.webp"
+$sourceFileName = "BIS License for Braided Nylon Ropes.png"
+$destFileName   = "BISLicenseforBraidedNylonRopes.webp"
 
 $imagesDir  = Join-Path $PSScriptRoot "public\blogImages"
 $sourcePath = Join-Path $imagesDir $sourceFileName

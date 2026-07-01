@@ -64,6 +64,20 @@ export const interlinkPairs = [
 
   // ===== Electrical / Solar =====
   {
+    productName: "Switch Socket Outlets",
+    isNumber: "IS 15787:2008",
+    blogUrl: "/blogs/isi-products/switch-socket-outlets-is-15787",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-electrical-accessories",
+    qcoMatchKey: `1.) Boxes and Enclosures for Electrical Accessories for Household and Similar Fixed Electrical Installations
+  2.) Cable Trunking and Ducting Systems for Electrical Installations - Cable Trunking and Ducting Systems Intended for Mounting on Walls or Ceiling
+  3.) Bayonet Lamp Holders
+  4.) Switch-socket-outlets (non-interlock type)
+  5.) Live Working Gloves of Insulating Material
+  6.) Insulating Mats for Electrical Purposes
+  7.) Specification for Pressure sensitive adhesive insulating tapes for electrical purposes - Part 3 requirements for individual materials – Sec 1: plasticized polyvinyl chloride tapes with non-thermosetting adhesive
+  8.) Poly-Laminated aluminium cable wrap`,
+  },
+  {
     productName: "Electric Fence Energizers",
     isNumber: "IS 302-2-76",
     blogUrl: "/blogs/isi-products/electric-fence-energizers-is-302-2-76",
@@ -127,6 +141,21 @@ export const interlinkPairs = [
     blogUrl: "/blogs/isi-products/steel-wire-ropes-is-1804",
     qcoUrl: "/bis-qco-updates/bis-certificate-for-steel-wire-ropes-fibre-main-cores",
     qcoMatchKey: "Steel wire ropes – Fibre main cores",
+  },
+  {
+    productName: "Braided Nylon Ropes for Mountaineering Purposes",
+    isNumber: "IS 6590:1972",
+    blogUrl: "/blogs/isi-products/braided-nylon-ropes-for-mountaineering-purposes-is-6590",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-bis-for-steel-wires-or-strands-nylon-or-wire-ropes-and-wire-mesh",
+    qcoMatchKey: `1.) Steel Wire Ropes for General Engineering Purposes
+  2.) Steel Wire Suspension Ropes for Lifts, Elevators and Hoists
+  3.) Stranded steel wire ropes for winding and man – Riding haulages in mines
+  4.) Steel Wire Ropes for Haulage Purposes
+  5.) Hot Dip Galvanized Stay Strand
+  6.) Wire Ropes Used in Oil Wells and Oil Well Drilling
+  7.) Braided Nylon Ropes for Mountaineering
+  8.) Galvanized Steel
+  9.) Mechanically Woven, Double Twisted, Hexagonal Wire Mesh Gabions, Revet Mattresses and Rock Fall Netting and Other products for Civil Engineering Purposes (Galvanized Steel Wire or Galvanized Steel Wire with polymer coating)`,
   },
   {
     productName: "Fibre Ropes (Polyamide)",
@@ -289,6 +318,21 @@ export const interlinkPairs = [
 9.) Cabinet Hinges`,
   },
   {
+    productName: "Steel Back Flap Hinges",
+    isNumber: "IS 3843:1995",
+    blogUrl: "/blogs/isi-products/steel-back-flap-hinges-is-3843",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-hinges",
+    qcoMatchKey: `1.) Stainless Steel Butt Hinges
+2.) Steel Butt Hinges
+3.) Non-ferrous metal butt Hinges
+4.) Tee and Strap Hinges
+5.) Parliament Hinges
+6.) Continuous (Piano) Hinges
+7.) Steel back flap Hinges
+8.) Double-acting Spring Hinges
+9.) Cabinet Hinges`,
+  },
+  {
     productName: "Glass Beakers",
     isNumber: "IS 2619:2018",
     blogUrl: "/blogs/isi-products/glass-beakers-is-2619",
@@ -325,6 +369,17 @@ export const interlinkPairs = [
     productName: "One-Mark Volumetric Flasks",
     isNumber: "IS 915:2012",
     blogUrl: "/blogs/isi-products/one-mark-volumetric-flasks-is-915",
+    qcoUrl: "/bis-qco-updates/bis-certificate-for-laboratory-glassware",
+    qcoMatchKey: `1.) Laboratory glassware - Graduated measuring cylinders
+  2.) Laboratory glassware - One-Mark volumetric flasks
+  3.) Laboratory glassware – Narrow-necked boiling flasks
+  4.) Laboratory glassware – Single volume pipettes
+  5.) Glass beakers`,
+  },
+  {
+    productName: "Single Volume Pipettes",
+    isNumber: "IS 1117:2018",
+    blogUrl: "/blogs/isi-products/single-volume-pipettes-is-1117",
     qcoUrl: "/bis-qco-updates/bis-certificate-for-laboratory-glassware",
     qcoMatchKey: `1.) Laboratory glassware - Graduated measuring cylinders
   2.) Laboratory glassware - One-Mark volumetric flasks

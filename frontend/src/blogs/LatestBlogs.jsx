@@ -16,6 +16,16 @@ import Footer from "@/common/Footer";
 
 const blogs = [
   {
+    id: 126,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Braided Nylon Ropes for mountaineering purposes - IS 6590:1972",
+    description:
+      "Get BIS Certificate for Braided Nylon Ropes for mountaineering purposes under IS 6590:1972. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/braided-nylon-ropes-for-mountaineering-purposes-is-6590",
+    date: "15 June 2026",
+  },
+  {
     id: 125,
     color: "#0F766E",
     title: "BIS Certification for H Acid | IS 8637:2020 | Complete Guide",
@@ -91,6 +101,35 @@ const blogs = [
       "Learn everything about BIS Certification for Cylinder Cartridges for Locks under IS 18841, including the certification process, required documents, testing requirements, costs, eligibility, and compliance guidelines for manufacturers and importers in India.",
     slug: "blogs/isi-products/cylinder-cartridges-for-locks-is-18841",
     date: "29 April 2026",
+  },
+  {
+    id: 120,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Switch Socket Outlets - IS 15787:2008 | Process, Cost, Documents",
+    description:
+      "Get BIS Certificate for Switch Socket Outlets under IS 15787:2008. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/switch-socket-outlets-is-15787",
+    date: "9 May 2026",
+  },
+  {
+    id: 119,
+    color: "#0F766E",
+    title: "BIS Certificate for Steel back flap hinges - IS 3843:1995",
+    description:
+      "Get BIS Certificate for Steel back flap hinges under IS 3843:1995. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/steel-back-flap-hinges-is-3843",
+    date: "19 May 2026",
+  },
+  {
+    id: 118,
+    color: "#0F766E",
+    title:
+      "BIS Certificate for Single Volume Pipettes - IS 1117:2018 | Cost, Process, Documents",
+    description:
+      "Get BIS Certificate for Single Volume Pipettes under IS 1117:2018. Process, documents, testing, cost & timeline for BIS Certification in India.",
+    slug: "blogs/isi-products/single-volume-pipettes-is-1117",
+    date: "11 May 2026",
   },
   {
     id: 117,

@@ -18,7 +18,7 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
 const blogImageUrl =
-  "https://bis-certifications.com/blogImages/BISLicenseforRubberGasketsForPressureCookers.webp";
+  "https://bis-certifications.com/blogImages/BISLicenseforRubberGasketsforPressureCookers.webp";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -282,7 +282,7 @@ const MainContentLeft = () => {
 
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforRubberGasketsForPressureCookers.webp"
+            src="/blogImages/BISLicenseforRubberGasketsforPressureCookers.webp"
             title="Rubber Gaskets for Pressure Cookers - IS 7466:1994"
             alt="Rubber Gaskets for Pressure Cookers - IS 7466:1994"
             className="w-full h-auto rounded-lg shadow-md"
@@ -475,7 +475,16 @@ const MainContentLeft = () => {
           Testing is the most critical stage in obtaining a BIS Certificate for
           Rubber Gaskets for Pressure Cookers, as it verifies whether the gasket
           can perform safely under real cooking conditions. All tests must be
-          conducted in BIS-recognized laboratories.
+          conducted in laboratories recognized by the{" "}
+          <a
+            href="https://www.bis.gov.in/?lang=en"
+            className="text-blue-600 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bureau of Indian Standards
+          </a>
+          .
         </p>
 
         <h3 className="text-lg font-geist font-semibold text-[#1e1e1e] mb-2">
@@ -796,6 +805,18 @@ const MainContentLeft = () => {
             </a>
           </li>
         </ul>
+
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src="/pdf/7466_2023.pdf"
+            title="IS 7466:1994 - Rubber Gaskets for Pressure Cookers PDF"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        </div>
 
         <ManyUsersAlsoRead />
 

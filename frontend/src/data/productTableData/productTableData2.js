@@ -29875,6 +29875,7 @@ export const productTableData2 = [
     "sno": 520,
     "isNumber": "IS 6590:1972",
     "product": "Braided Nylon Ropes for Mountaineering Purposes",
+    "blogPath": "/blogs/isi-products/braided-nylon-ropes-for-mountaineering-purposes-is-6590",
     "notification": {
       "title": "102. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
@@ -30327,6 +30328,7 @@ export const productTableData2 = [
     "sno": 539,
     "isNumber": "IS 3843:1995",
     "product": "Steel back flap hinges",
+    "blogPath": "/blogs/isi-products/steel-back-flap-hinges-is-3843",
     "notification": {
       "title": "110. Hinges (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2023/12/Hinges-QCO.pdf",
@@ -30566,6 +30568,7 @@ export const productTableData2 = [
     "sno": 548,
     "isNumber": "IS 1117:2018",
     "product": "Laboratory glassware – Single volume pipettes",
+    "blogPath": "/blogs/isi-products/single-volume-pipettes-is-1117",
     "notification": {
       "title": "113. Laboratory Glassware (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2024/01/Laboratory-Glassware.pdf",
@@ -30710,6 +30713,7 @@ export const productTableData2 = [
     "sno": 553,
     "isNumber": "IS 15787: 2008",
     "product": "Switch-socket-outlets (non-interlock type)",
+    "blogPath": "/blogs/isi-products/switch-socket-outlets-is-15787",
     "notification": {
       "title": "Electrical Accessories (Quality Control) Order, 2023",
       "link": "https://bis.gov.in/wp-content/uploads/2024/01/Electrical-Accessories1.pdf",

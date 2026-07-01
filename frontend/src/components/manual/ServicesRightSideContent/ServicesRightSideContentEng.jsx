@@ -236,6 +236,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/fibre-ropes-polyethylene-8674",
     "/blogs/isi-products/fibre-ropes-polyamide-is-4572",
     "/blogs/isi-products/steel-wire-ropes-is-1804",
+    "/blogs/isi-products/braided-nylon-ropes-for-mountaineering-purposes-is-6590",
     "/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022",
     "/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928",
     "/blogs/isi-products/manila-ropes-is-1084",
@@ -258,10 +259,12 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/cycle-and-rickshaw-pneumatic-tyres-is-2414",
     "/blogs/isi-products/cycle-rubber-tubes-is-2415",
     "/blogs/isi-products/double-acting-spring-hinges-is-453",
+    "/blogs/isi-products/steel-back-flap-hinges-is-3843",
     "/blogs/isi-products/glass-beakers-is-2619",
     "/blogs/isi-products/graduated-measuring-cyclinders-is-878",
     "/blogs/isi-products/narrow-necked-boiling-flasks-is-1381-part-1",
     "/blogs/isi-products/one-mark-volumetric-flasks-is-915",
+    "/blogs/isi-products/single-volume-pipettes-is-1117",
     "/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466",
     "/blogs/isi-products/carbon-black-is-17440-2020",
     "/blogs/isi-products/cylinder-cartridges-for-locks-is-18841",
@@ -310,6 +313,7 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/cement-flat-sheets-is-2096",
     "/blogs/isi-products/cement-pressure-pipes-and-joints-is-1592",
     "/blogs/isi-products/bayonet-lamp-holders-is-1258",
+    "/blogs/isi-products/switch-socket-outlets-is-15787",
     "/blogs/isi-products/bis-license-for-toys",
     "/blogs/isi-products/corrugated-and-semi-corrugated-cement-sheets-is-459",
     "/blogs/isi-products/diesel-engines-reduction-agent-is-17042-part-1",
@@ -1397,6 +1401,12 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Steel Wire Ropes - English Page";
     if (
       path.includes(
+        "/blogs/isi-products/braided-nylon-ropes-for-mountaineering-purposes-is-6590"
+      )
+    )
+      return "BIS Certificate for Braided Nylon Ropes for mountaineering purposes - English Page";
+    if (
+      path.includes(
         "/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022"
       )
     )
@@ -1463,6 +1473,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Cycle Rubber Tubes (Moulded or Jointed) - English Page";
     if (path.includes("/blogs/isi-products/double-acting-spring-hinges-is-453"))
       return "BIS Certificate for Double Acting Spring Hinges - English Page";
+    if (path.includes("/blogs/isi-products/steel-back-flap-hinges-is-3843"))
+      return "BIS Certificate for Steel back flap hinges - English Page";
     if (path.includes("/blogs/isi-products/glass-beakers-is-2619"))
       return "BIS Certificate for Glass Beakers - English Page";
     if (path.includes("/blogs/isi-products/graduated-measuring-cyclinders-is-878"))
@@ -1471,6 +1483,8 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Narrow Necked Boiling Flasks - English Page";
     if (path.includes("/blogs/isi-products/one-mark-volumetric-flasks-is-915"))
       return "BIS Certificate for One Mark Volumetric Flasks - English Page";
+    if (path.includes("/blogs/isi-products/single-volume-pipettes-is-1117"))
+      return "BIS Certificate for Single Volume Pipettes - English Page";
     if (path.includes("/blogs/isi-products/rubber-gasket-for-pressure-cookers-is-7466"))
       return "BIS Certificate for Rubber Gasket for Pressure Cookers - English Page";
     if (path.includes("/blogs/isi-products/carbon-black-is-17440-2020"))
@@ -1585,6 +1599,8 @@ const ContactFormServicesRightSideContentEng = () => {
       path.includes("/blogs/isi-products/bayonet-lamp-holders-is-1258")
     )
       return "BIS Certificate for Bayonet Lamp Holders - English Page";
+    if (path.includes("/blogs/isi-products/switch-socket-outlets-is-15787"))
+      return "BIS Certificate for Switch Socket Outlets - English Page";
     if (path.includes("/blogs/isi-products/bis-license-for-toys"))
       return "BIS Certificate for Toys | Complete Guide - IS 9873 and IS 15644 - English Page";
     if (
